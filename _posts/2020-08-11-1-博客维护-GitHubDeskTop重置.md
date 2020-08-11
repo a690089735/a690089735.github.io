@@ -15,6 +15,6 @@ comments: false
 
 经过多方查询,可以指向下方地址删除应用数据文件夹,这个文件夹就算卸载了也不会自动被删除.这里面的数据就是导致库冲突的元凶了.
 
-%userprofile%\AppData\Roaming\GitHub Desktop
+`%userprofile%\AppData\Roaming\GitHub Desktop`
 
 经实测,删除了这个目录,GitHub Desktop果然焕然一新,各种操作和显示,也一切正常了.

@@ -1,0 +1,51 @@
+# Basic
+title: 许铮
+subtitle: / 工作 / 学习 / 娱乐 / 生活 /
+#welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">下载这个主题</a>
+description: 不为无益之事,何以遣有涯之生.
+creator: <a href="https://a690089735.github.io/">@许铮</a>
+
+url: "https://a690089735.github.io/"
+pimg: "https://a690089735.github.io/assets/img/"
+
+permalink: /:year/:month/:title/
+
+# Format
+highlighter: rouge
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: red
+
+# The blog button should not be removed.
+blog_button:
+    title: 主页
+    description: 博客主页
+
+# Navigation buttons in the front page.
+nav:
+    - {title: 博文, description: 按时间查看全部博文, url: '/posts'}
+    - {title: 标签, description: 按标签检索文章, url: '/tags'}
+    - {title: 作品, description: 阅览我的职业作品, url: '/works'}
+
+# Pagination
+plugins: [jekyll-paginate]
+paginate: 32
+paginate_path: "page/:num/"
+
+# Comment
+comment:
+    # disqus: vno-jekyll
+    # duoshuo: 
+    
+# Social
+social:
+    weibo: 
+    github: 
+    twitter: 
+    #gplus: 107108267983477358170
+    mail: 690089735@qq.com
+
+# Google Analytics
+ga:
+    # id: 174168556-1
+    # host: your_host

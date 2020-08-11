@@ -23,7 +23,7 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-    - {title: 博文, description: 按时间查看全部博文, url: '/posts'}
+    - {title: 归档, description: 按时间查看全部博文, url: '/posts'}
     - {title: 标签, description: 按标签检索文章, url: '/tags'}
     - {title: 作品, description: 阅览我的职业作品, url: '/works'}
 

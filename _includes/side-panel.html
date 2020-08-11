@@ -10,7 +10,24 @@
         <span class="panel-cover__subtitle panel-subtitle">{{site.subtitle}}</span>
         {% endif %}
         <hr class="panel-cover__divider" />
-        <p class="panel-cover__description">{{ site.description }}</p>
+        <!-- <p class="panel-cover__description">{{ site.description }}</p> -->
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+		<!-- //目标容器 -->
+		<div style="text-align: center;">
+			<span class="element"></span>
+		</div>
+		
+		<script>
+		    var typed = new Typed('.element', {
+		      strings: ["纠正一个错误的方法有很多", "而解决一个错误的终极方法，就是不给它发生的机会。", "不为无益之事，何以遣有涯之生。"], //输入内容, 支持html标签
+		      typeSpeed: 50, //打字速度
+			  startDelay: 0, //延迟开始,没啥用,只在每组循环的第一次开始时有效
+		      backSpeed: 30 , //回退速度
+			  backDelay: 2500, //延迟回退
+			  shuffle: false, //随机洗牌,开了会出问题,后续输入没有打字效果,在打字完突然变化.
+			  loop: true , //循环
+		    });
+		</script>
         <hr class="panel-cover__divider panel-cover__divider--secondary" />
         
         {% if site.welcome_message %}

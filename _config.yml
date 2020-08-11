@@ -20,7 +20,7 @@ cover_color: red
 
 # The blog button should not be removed.
 blog_button:
-    title: 主页
+    title: 首页
     description: 博客主页
 
 # Navigation buttons in the front page.

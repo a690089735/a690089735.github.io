@@ -1,7 +1,6 @@
 ---
 layout: page
 title:  动画师 - 许铮 - 个人简历
-permalink: /works 
 ---
 
 

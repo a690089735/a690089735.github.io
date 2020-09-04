@@ -1,6 +1,6 @@
 import os,sys
 
-oldstr='F:\\GitHub\\MyBlogAsset\\images\\'
+oldstr='{{site.img}}images\\'
 newstr=r'{{site.img}}'
 r = input('输入1为直接替换,其他均会生成后缀为.txt的新文件:\n')
 

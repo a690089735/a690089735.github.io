@@ -3,7 +3,7 @@ layout: post
 title: youtube上一些比较好的3dsmax教程
 date: 2020-08-22 10:09:23.00 +08:00
 categories: 经验
-tags: 经验 3dsmax
+tags: 3dsmax
 comments: false
 ---
 

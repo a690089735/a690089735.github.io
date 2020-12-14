@@ -6,9 +6,13 @@ description: 不为无益之事,何以遣有涯之生.
 creator: <a href="https://a690089735.github.io/">@许铮</a>
 
 # 基本链接 下面两个是资源床
-url: "https://a690089735.github.io/"
-img: "https://a690089735.imfast.io/images/"
-pic: "https://a690089735.imfast.io/picture/"
+#url: "https://a690089735.github.io/"
+#img: "https://a690089735.imfast.io/images/"
+#pic: "https://a690089735.imfast.io/picture/"
+url: "https://a690089735.gitee.io/"
+img: "assets-images/"
+pic: "assets-picture/"
+video: "assets-video/"
 
 permalink: /:year/:month/:title/
 

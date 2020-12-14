@@ -2,7 +2,7 @@
 layout: post
 title: MaxScript使用提示和技巧
 date: 2020-10-14 22:38:38.00 +08:00
-categories: 未分类
+categories: 经验
 tags: 3dsmax
 comments: false
 ---

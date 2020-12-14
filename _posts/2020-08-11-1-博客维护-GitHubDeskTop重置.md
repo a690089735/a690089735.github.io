@@ -2,7 +2,7 @@
 layout: post
 title: GitHub Desktop的重置
 date: 2020-08-11 10:25:01.00 +08:00
-categories: 未分类
+categories: 学习
 tags: 博客维护 github
 comments: false
 ---

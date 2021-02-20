@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="stylesheet" href="plugins/scale.css" type="text/css" />
 <style>
 body {
     background-color: #cccccc;
@@ -13,7 +16,24 @@ body {
 <body>
 <div style="height: 100px; background-color: #e6b500; text-align: center; line-height: 100px">
 <h1>简历和作品<small><small><small>3D动画师-许铮</small></small></small></h1>
-<img src="B.简历-许铮-3D动画.Jpeg" width="820" height="1200"  />
+<!-- <img src="B.简历-许铮-3D动画.Jpeg" width="820" height="1200"  /> -->
+
+<div class="list">
+         <img src="B.简历-许铮-3D动画.Jpeg" width="820"/>
+    </div>
+    <section class="imgzoom_pack">
+        <div class="imgzoom_x">X</div>
+        <div class="imgzoom_img"><img src="" /></div>
+    </section>
+    <script src="plugins/scale.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event){
+            ImagesZoom.init({
+                "elem": ".list"
+            });
+        }, false);
+    </script>
+
 <!-- <embed src="B.简历-许铮-3D动画.pdf" width="820px" height="1200px"/> -->
 <h2>近期作品</h2>
 <video id="myVideo1" src="C.近期作品-许铮.mov" width="800" height="600" controls="controls" autoplay="autoplay">太遗憾了,此浏览器不支持播放这些视频,请移步文件夹内查看..</video><!-- muted="muted" -->

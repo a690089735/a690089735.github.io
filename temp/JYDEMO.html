@@ -1,1 +1,23 @@
-<video src="Video.mov" controls="controls" autoplay="autoplay" muted></video>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div style="text-align: center;">
+			<video src="Video.mov" width="35%" controls="controls" autoplay="autoplay" muted></video>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+		<!-- //目标容器 -->
+		<div style="text-align: center;">
+			<span class="element"></span>
+		</div>
+		
+		<script>
+		    var typed = new Typed('.element', {
+		      strings: [""], //输入内容, 支持html标签
+		      typeSpeed: 75, //打字速度
+		    });
+		</script>
+	</body>
+</html>

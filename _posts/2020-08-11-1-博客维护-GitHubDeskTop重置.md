@@ -2,9 +2,10 @@
 layout: post
 title: 重置GitHub Desktop
 date: 2020-08-11 10:25:01.00 +08:00
-categories: 学习
+categories: 博客维护
 tags: 博客维护 github
 comments: false
+typora-root-url: ..
 ---
 
 我的GitHub Desktop果然是有问题...

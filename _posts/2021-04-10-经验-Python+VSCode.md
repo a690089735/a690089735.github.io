@@ -5,15 +5,18 @@ date: 2021-04-10 08:25:05.00 +08:00
 categories: 经验
 tags: 经验
 comments: false
+typora-root-url: ..
 ---
 
-文章内容
+
 
 ### 预览
 
 界面如下
 
-![image-20210410083511106](F:%5CGitHub%5Ca690089735.github.io%5Cassets-images%5C2021-04-10-%E7%BB%8F%E9%AA%8C-%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%5Cimage-20210410083511106.png)
+![image-20210410082759857](/assets-images/2021-04-10-经验-Python+VSCode-imgs/image-20210410082759857.png)
+
+![image-20210410083511106](/assets-images/2021-04-10-经验-Python+VSCode-imgs/image-20210410083511106.png)
 
  对于日常开发需求不多的自己,平常最多使用的是Python自带的IDLE,但是最近实在是受不了中文输入法下出现错误输入的问题了,就按一些需求找到了这个替代品.
 

@@ -2,12 +2,11 @@
 layout: post
 title: youtube上一些比较好的3dsmax教程
 date: 2020-08-22 10:09:23.00 +08:00
-categories: 经验
+categories: 笔记
 tags: 3dsmax
 comments: false
+typora-root-url: ..
 ---
-
-文章内容
 
 
 

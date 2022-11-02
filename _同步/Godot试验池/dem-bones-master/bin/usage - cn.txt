@@ -1,0 +1,129 @@
+https://www.youtube.com/watch?v=rY7s_2HNw8I
+
+USAGE: 
+
+   DemBones      -a=<filename> ...  -i=<filename> ...  -o=<filename> ... 
+                 [-b=<int>] [--nInitIters=<int>] [-n=<int>]
+                 [--tolerance=<double>] [--patience=<int>]
+                 [--nTransIters=<int>] [--bindUpdate=<int>]
+                 [--transAffine=<double>] [--transAffineNorm=<double>]
+                 [--nWeightsIters=<int>] [-z=<int>]
+                 [--weightsSmooth=<double>] [--weightsSmoothStep=<double>]
+                 [--dbg=<int>] [--log=<filename>] [--] [--version] [-h]
+
+
+Where: 
+
+   -a=<filename>,  --abc=<filename>  (accepted multiple times)
+     (required)  animated mesh sequences (alembic geometry cache files)
+     (必需的)动画网格序列(alembic几何缓存文件)
+
+   -i=<filename>,  --init=<filename>  (accepted multiple times)
+     (required)  rest pose/init skin clusters (fbx files), each file
+     correspond to one abc file
+     (必需的)  初始姿态/初始的蒙皮集簇 (fbx文件)，每个输出对应一个ABC文件
+
+   -o=<filename>,  --out=<filename>  (accepted multiple times)
+     (required)  output (fbx files), each outut correspond to one abc file
+     (必需的)输出(fbx文件)，每个输出对应一个ABC文件
+
+   -b=<int>,  --nBones=<int>
+     number of bones
+     骨骼数量
+
+   --nInitIters=<int>
+     number iterations per init cluster splitting
+     初始集簇每次拆分的迭代次数
+
+   -n=<int>,  --nIters=<int>
+     number of global iterations
+     全局迭代次数
+
+   --tolerance=<double>
+     convergence tolerance, stop if error relatively reduces less than
+     [--tolerance] in [--patience] consecutive iterations
+     收敛容忍度(容差)，如果[--tolerance(容差)]在[--patience(耐心)]的连续迭代中,误差相对减少小于容差，则停止。
+
+   --patience=<int>
+     convergence patience, stop if error relatively reduces less than
+     [--tolerance] in [--patience] consecutive iterations
+     收敛的耐心，如果如果[--tolerance(容差)]在[--patience(耐心)]的连续迭代中,误差相对减少小于10％就停止。
+
+   --nTransIters=<int> 
+     number of transformation update iterations per global iteration
+     每次全局迭代中的变换更新迭代数
+
+   --bindUpdate=<int> (绑定更新)
+     update bind pose (0=no update, 1=update joint positions, 2=regroup
+     joints under one root)
+    更新绑定姿势（0=不更新，1=更新关节位置，2=重新组合
+     关节在一个根下)
+
+   --transAffine=<double> (移动亲和性,软移动)还是应该翻译成转化?
+     bone translations affinity soft constraint
+     骨骼平移的亲和性软约束
+
+   --transAffineNorm=<double>
+     p-Norm for bone translations affinity
+     骨骼平移的亲和力p范数
+
+   --nWeightsIters=<int>
+     number of weights update iterations per global iteration
+     每个全局迭代的权重更新迭代次数
+
+   -z=<int>,  --nnz=<int>
+     number of non-zero weights per vertex
+     每个顶点的非零权数(一个顶点最多被几个骨骼影响)
+
+   --weightsSmooth=<double>
+     weights smoothness soft constraint
+     权重平滑软约束
+
+   --weightsSmoothStep=<double>
+     step size for the weights smoothness
+     权重平滑的步长
+
+   --dbg=<int>
+     debug level
+     调试级别
+
+   --log=<filename>
+     log file name
+     日志文件名(路径)
+
+   --,  --ignore_rest
+     Ignores the rest of the labeled arguments following this flag.
+     忽略该标志后面的其他标记参数。
+
+   --version
+     Displays version information and exits.
+     显示版本信息并退出。
+
+   -h,  --help
+     Displays usage information and exits.
+     显示使用信息并退出。
+
+
+   Dem Bones - (c) Electronic Arts 2019
+
+   - This tool only handles clean input data, i.e. only one piece of
+   geometry with one skinCluster and no excessive joint.
+
+   - To hard-lock the transformations of bones: in the input fbx files,
+   create bool attributes for joint nodes (bones) with name "demLock" and
+   set the value to "true".
+
+   - To soft-lock skinning weights of vertices: in the input fbx files,
+   paint per-vertex colors in gray-scale. The closer the color to white,
+   the more skinning weights of the vertex are preserved.
+
+  Dem Bones - (c) Electronic Arts 2019
+
+  -   这个工具只处理干净的输入数据，也就是说, 只有一块几何体有一个skinCluster，没有过多的关节。
+
+  - 要硬锁定骨骼的变换：
+  在输入的fbx文件中。为关节节点（骨骼）创建名为 "demLock " 的bool属性，并将值设为 "true"。
+
+  - 软锁顶点的蒙皮权重:在输入的fbx文件中，
+  用灰度绘制每个顶点的颜色。颜色越接近白色，
+  顶点的蒙皮权重就会被保留得越多。

@@ -1,0 +1,4 @@
+DemBones.exe -a=blender_test.abc -i=blender_test.fbx -o=blender_test_out.fbx
+
+
+不太适合为粒子输出.因为要保证初始pose和abc相同(第一帧一样?).

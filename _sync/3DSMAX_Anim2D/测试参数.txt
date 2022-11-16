@@ -1,0 +1,26 @@
+渲染器
+ART Renderer
+
+
+视口渲染
+Standard
+FlatColor
+without shadows
+without AO
+enabled trans...
+
+
+材质
+Standard
+Diffuse->map
+Specular->black
+Specular highlights -> 0 0 0.0
+Opacity ->map
+map
+Filtering None
+MonoChannelOutput Alpha
+Aplha Source Alpha
+
+
+环境
+flatcolor不用设置环境

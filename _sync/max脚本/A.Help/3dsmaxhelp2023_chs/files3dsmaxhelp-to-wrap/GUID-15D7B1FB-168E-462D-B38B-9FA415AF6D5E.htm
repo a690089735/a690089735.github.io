@@ -1,0 +1,560 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-15D7B1FB-168E-462D-B38B-9FA415AF6D5E">
+      <meta name="indexterm" content="Alembic">
+      <meta name="topic-type" content="concept">
+      <title>3ds Max Alembic 文件扩展名参考</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-15D7B1FB-168E-462D-B38B-9FA415AF6D5E"></a><div class="head">
+            <h1>3ds Max Alembic 文件扩展名参考</h1>
+         </div>
+         <p> 3ds Max 增强了 Alembic 文件规范来存储额外的数据，并且可以更好地与其他应用程序交换数据。这些扩展名遵循 Autodesk 标准，以增强与其他 Autodesk 产品（如 Maya）的互操作性。本主题介绍 Autodesk 标准，并列出了
+            3ds Max 为 Alembic 文件导出而增加的特定扩展名。 
+            	 
+         </p>
+         <div class="section"><a name="SECTION_3ECF57CC94DC48D9B02F8432A945B124"></a> 
+            <h2><a name="GUID-2DFA0313-2468-47D2-BB13-E72299482147"></a>一般性说明
+            </h2> 
+            <p> <a name="UL_82D0FACD3D11417D8F3877D545FA4326"></a><ul>
+                  <li>节点和属性的名称中没有空格。 
+                     		  
+                  </li>
+                  <li>自定义属性存储在 <span class="code">.userProperties</span> 属性下。这些属性可以位于 <span class="code">.geom</span> 或 <span class="code">.xform</span> 节点下，因此没有几何体的对象也可具有自定义数据。 
+                     		  
+                  </li>
+               </ul> 
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_A92DA92806C54006833F2E98F8BA9041"></a> 
+            <h2><a name="GUID-5A9AB2E4-0F34-4929-8D7E-02B548D289F3"></a>其他 UV 通道
+            </h2> 
+            <p> <a name="UL_69404F8064A844B2A1C8B72772E4C88D"></a><ul>
+                  <li>额外的 UV 通道存储在 .arbGeomParams 的 .geom 属性下。 
+                     		  
+                  </li>
+                  <li>属性名称即为通道名称。 
+                     		  
+                  </li>
+                  <li>仅导出 UV 数据，不导出 UVW。 
+                     		  
+                  </li>
+                  <li><span class="code">.vals</span> 是 kFloat32POD 的数组，其中范围 = 2 
+                     		  
+                  </li>
+                  <li><span class="code">.indices</span> 是 kUint32POD 的数组，其中范围 = 1 
+                     		  
+                  </li>
+               </ul> 
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_3DE7A3F4FCB04F1B909083E64E40E9B2"></a> 
+            <h2><a name="GUID-D7FD25B0-AAC7-43EE-88AE-9B8082224F07"></a>未导出的数据
+            </h2> 
+            <p>Alembic 中不支持样条线。样条线已转换为 NURBS 以便于导出。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_8ABAEACB9CD9486189C7CBCD2E70AE29"></a> 
+            <h2><a name="GUID-0B004469-6392-4746-B828-31BFE2AD848B"></a>实例
+            </h2> 
+            <p>实例需遵循 Alembic 规范才能受支持。但是，导入时不检测重复的几何体，也不将其转换为实例。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_341A5B13A8954E599461FD0398B8D6AA"></a> 
+            <h2><a name="GUID-4144290E-2D7B-44ED-B557-01B6A874C7ED"></a>摄影机
+            </h2> 
+            <p>3ds Max 场景摄影机在 Alembic 中导出。 
+               		
+            </p> 
+            <p>Maya 默认会导出透视摄影机（前、透视、侧和顶）。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_E8C8F74A552A4784A2B9997E8FB0B5CA"></a> 
+            <h2><a name="GUID-B23ABC6E-EC4A-4AEC-864E-DB2579303BCD"></a>3ds Max 的自定义数据节点
+            </h2> 
+            <p> </p> 
+            <p class="table-title">Max 节点</p><a name="TABLE_496100F3973F42F9A93DBEA6E0B707C5"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="28.28025477707007%">
+                     <col width="12.738853503184714%">
+                     <col width="58.98089171974522%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">节点 
+                        				
+                     </th>
+                     <th class="table-heading">类型 
+                        				
+                     </th>
+                     <th class="table-heading">注释 
+                        				
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body"><em class="strong">Node/Node/MaxVisibility </em> 
+                     </td>
+                     <td class="table-body"> 标量：Float32 
+                        				
+                     </td>
+                     <td class="table-body"> 
+                        <p class="table-body">用来容纳 Max 对象属性的容器。支持的属性包括： 
+                           				  
+                        </p> 
+                        <div class="codeBlock"><pre>{ kHide, _T("Hide"), CustomAttribute::DataType::kBool},
+
+{ kFreeze, _T("Freeze"), CustomAttribute::DataType::kBool},
+
+{ kSeeThrough, _T("SeeThrough"), CustomAttribute::DataType::kBool},
+
+{ kDisplayAsBox,_T("DisplayAsBox"), CustomAttribute::DataType::kBool },
+
+{ kBackfaceCull,_T("BackfaceCull"), CustomAttribute::DataType::kBool },
+
+{ kEdgesOnly,_T("EdgesOnly"), CustomAttribute::DataType::kBool},
+
+{ kVertexTicks,_T("VertexTicks"), CustomAttribute::DataType::kBool},
+
+ kMotionPaths,_T("MotionPaths"), CustomAttribute::DataType::kBool},
+
+{ kIgnoreExtents,_T("IgnoreExtents"), CustomAttribute::DataType::kBool},
+
+{ kShowFrozenInGray,_T("ShowFrozenInGray"), CustomAttribute::DataType::kBool},
+
+{ kNeverDegrade,_T("NeverDegrade"), CustomAttribute::DataType::kBool},
+
+{ kRenderable,_T("Renderable"), CustomAttribute::DataType::kBool},
+
+{ kInheritVisibility,_T("InheritVisibility"), CustomAttribute::DataType::kBool },
+
+{ kVisibleToCamera,_T("VisibleToCamera"), CustomAttribute::DataType::kBool},
+
+{ kVisibleToReflection,_T("VisibleToReflection"), CustomAttribute::DataType::kBool },
+
+{ kReceiveShadows,_T("ReceiveShadows"), CustomAttribute::DataType::kBool},
+
+{ kCastShadows,_T("CastShadows"), CustomAttribute::DataType::kBool},
+
+{ kApplyAtmospherics,_T("ApplyAtmospherics"), CustomAttribute::DataType::kBool},
+
+{ kRenderOccludedObjects,_T("RenderOccludedObjects"), CustomAttribute::DataType::kBool },
+
+{ kDisplayByLayer,_T("DisplayByLayer"), CustomAttribute::DataType::kBool },
+
+{ kRenderingByLayer,_T("RenderingByLayer"), CustomAttribute::DataType::kBool },
+
+{ kMotionBlurByLayer,_T("MotionBlurByLayer"), CustomAttribute::DataType::kBool },
+
+{ kMotionBlurEnabled,_T("MotionBlurEnabled"), CustomAttribute::DataType::kBool},
+
+{ kMotionBlurMultiplier,_T("MotionBlurMultiplier"), CustomAttribute::DataType::kFloat},
+
+{ kMotionBlurType,_T("MotionBlurType"), CustomAttribute::DataType::kInt },
+
+{ kObjectID,_T("ObjectID"), CustomAttribute::DataType::kULong },
+
+{ kUserPropBuffer,_T("UserPropBuffer"), CustomAttribute::DataType::kString },</pre></div> 
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body"><em class="strong">Node/Node/MaxCustomAttributes_BaseObject </em> 
+                     </td>
+                     <td class="table-body"> 复合 
+                        				
+                     </td>
+                     <td class="table-body"> 
+                        <p class="table-body">用来容纳指定给基础对象的自定义属性的容器。请注意，所有 CA 类型均直接受支持，节点、纹理贴图、材质除外，其中参考名称存储为一个字符串以及仅存储选定元素索引的数组。 
+                           				  
+                        </p> 
+                        <p class="table-body">元数据：“max_a_uihint”附加到每个属性，以提供有关数据如何使用，以及哪些是 ParamType 和 ParamType2 枚举的提示。 
+                           				  
+                        </p> 
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body"><em class="strong">Node/Node/MaxCustomAttributes_Modifier </em> 
+                     </td>
+                     <td class="table-body"> 复合 
+                        				
+                     </td>
+                     <td class="table-body">用来容纳指定给对象修改器的自定义属性的容器。同上。当前导入时不支持注释。 
+                        				
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+            <p> </p> 
+            <p> 
+               <p class="table-title">1.0.0 中的新增功能</p><a name="TABLE_9B700215F21840BA8CED29E96993ED44"></a><div class="table-not-ruled">
+                  <table cellpadding="0" cellspacing="0" class="not-ruled">
+                     <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                     </colgroup>
+                     <tr class="not-ruled-heading">
+                        <th class="table-heading">节点 
+                           				
+                        </th>
+                        <th class="table-heading">类型 
+                           				
+                        </th>
+                        <th class="table-heading">注释 
+                           				
+                        </th>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/Node/.userProperties/Max_CustomAttributes_BaseObject </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/Node/.userProperties/Max_CustomAttributes_Modifier </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/Node/.userProperties/Max_CustomAttributes_Modifier </em> 
+                        </td>
+                        <td class="table-body"> OStringProperty 
+                           				
+                        </td>
+                        <td class="table-body"> 包含具有此节点的层的名称 
+                           				
+                        </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/.arbGeomParams/Max_Map_Channel "Name" </em> 
+                        </td>
+                        <td class="table-body"> 复合 
+                           				
+                        </td>
+                        <td class="table-body">用于容纳单个通道的容器 
+                           				
+                        </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/.arbGeomParams/Max_Map_Channel "Name"/.vals </em> 
+                        </td>
+                        <td class="table-body"> OV2fGeomParam 或 OV3fGeomParam 的数组 
+                           				
+                        </td>
+                        <td class="table-body"> 包含纹理数据 
+                           				
+                        </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/.arbGeomParams/Max_Map_Channel "Name"/.indices </em> 
+                        </td>
+                        <td class="table-body"> OInt32Property 的数组 
+                           				
+                        </td>
+                        <td class="table-body">包含纹理索引 
+                           				
+                        </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/.arbGeomParams/Max_Map_Channel "Name"/Max_Map_ChannelNumber </em> 
+                        </td>
+                        <td class="table-body">标量 OInt32Property 
+                           				
+                        </td>
+                        <td class="table-body"> Max 使用的贴图通道 
+                           				
+                        </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/.arbGeomParams/Max_Vertex_Color_Map </em> 
+                        </td>
+                        <td class="table-body"> 复合 
+                           				
+                        </td>
+                        <td class="table-body"> 顶点颜色通道的容器 
+                           				
+                        </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/.arbGeomParams/Max_Vertex_Color_Map/.vals </em> 
+                        </td>
+                        <td class="table-body"> OC3fGeomParam 的数组 
+                           				
+                        </td>
+                        <td class="table-body">包含顶点颜色数据 
+                           				
+                        </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/.arbGeomParams/Max_Vertex_Color_Map/.indices </em> 
+                        </td>
+                        <td class="table-body"> OInt32Property 的数组 
+                           				
+                        </td>
+                        <td class="table-body">顶点颜色索引 
+                           				
+                        </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/.userProperties/Max_MaterialName </em> 
+                        </td>
+                        <td class="table-body"> OStringProperty 
+                           				
+                        </td>
+                        <td class="table-body">包含节点的材质的名称 
+                           				
+                        </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/.userProperties/Max_ObjectID </em> 
+                        </td>
+                        <td class="table-body"> OUInt32Property 
+                           				
+                        </td>
+                        <td class="table-body"> 包含节点的对象 ID 
+                           				
+                        </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/Max_MaterialID_# </em> 
+                        </td>
+                        <td class="table-body"> 复合 
+                           				
+                        </td>
+                        <td class="table-body"> 包含面集模式 OFaceSetSchema 
+                           				
+                        </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/Max_MaterialID_#/.faceset </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/Max_MaterialID_#/.faceset/.selfBnds </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/Max_MaterialID_#/.faceset/.faces </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/Node/.geom/Max_MaterialID_#/Max_MaterialID </em> 
+                        </td>
+                        <td class="table-body"> OInt32Property 
+                           				
+                        </td>
+                        <td class="table-body">面材质 ID 的附加属性 
+                           				
+                        </td>
+                     </tr>
+                  </table>
+               </div> 
+            </p> 
+            <div class="section"><a name="SECTION_10AE043ABA274FE0A86E0D958C6C26DF"></a> 
+               <h3><a name="GUID-45CDF4C0-1111-4714-B4A2-D70CE10DD620"></a> 支持的曲线属性
+               </h3> <a name="TABLE_2FC14F64198D40D1B6B73B3A00EB346C"></a><div class="table-not-ruled">
+                  <table cellpadding="0" cellspacing="0" class="not-ruled">
+                     <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                     </colgroup>
+                     <tr class="not-ruled-heading">
+                        <th class="table-heading">节点
+                           					 
+                        </th>
+                        <th class="table-heading">类型
+                           					 
+                        </th>
+                        <th class="table-heading">注释
+                           					 
+                        </th>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">BezierName/BezierName:# </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">BezierName/BezierName:#/.geom/ </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">BezierName/BezierName:#/.geom/.selfBnds </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">BezierName/BezierName:#/.geom/.P </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">BezierName/BezierName:#/.geom/nVertices </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">BezierName/BezierName:#/.geom/curveBasisAndType </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">BezierName/BezierName:#/.geom/width </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">BezierName/BezierName:#/MaxLayerName </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">BezierName/BezierName:#/\MaxObjectID </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/NURBSName </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/NURBSName/.geom/ </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/NURBSName/.geom/.selfBnds </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/NURBSName/.geom/.P </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/NURBSName/.geom/nVertices </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/NURBSName/.geom/curveBasisAndType </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/NURBSName/.geom/width </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-odd-row">
+                        <td class="table-body"><em class="strong">Node/NURBSName/MaxLayerName </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                     <tr class="not-ruled-even-row">
+                        <td class="table-body"><em class="strong">Node/NURBSName/\MaxObjectID </em> 
+                        </td>
+                        <td class="table-body">&nbsp; </td>
+                        <td class="table-body">&nbsp; </td>
+                     </tr>
+                  </table>
+               </div> 
+            </div> 
+            <div class="section"><a name="SECTION_658D3502E9C1493F8508E38F737AF488"></a> 
+               <h3><a name="GUID-26AA034D-7C1F-4A48-83D6-B844938FC8AB"></a> 支持的摄影机属性
+               </h3> 
+               <p> </p> 
+               <p>以下是支持的摄影机属性及其在 Max 中的计算方式 
+                  		  
+               </p> 
+               <div class="codeBlock"><pre>       CameraState lCameraState;
+
+       Interval lValid( TIME_NegInfinity, TIME_PosInfinity );
+       RefResult lRefResult;
+
+       lRefResult = lGenCamera-&gt;EvalCameraState( t, lValid, &amp;lCameraState );
+       Interface *lMaxInterface = GetCOREInterface();
+
+       double lLensSqueeenzeRatio = lMaxInterface ? lMaxInterface-&gt;GetRendApect() : 1.0;
+       mSample.setLensSqueezeRatio( lLensSqueeenzeRatio );
+
+       double lApertureWidth = 3.6f;
+       double lApertureHeight = 2.4f;
+       if ( lMaxInterface ) {
+             lApertureWidth = lMaxInterface-&gt;GetRendApertureWidth() * MATH_MM_TO_CM;
+             float lImageAspect = lMaxInterface-&gt;GetRendImageAspect();
+             if ( lImageAspect &lt;= 0.0f ) {
+                    lImageAspect = 0.001f;
+             }
+
+             lApertureHeight = lApertureWidth * ( 1.0 / lImageAspect );
+       }
+       mSample.setHorizontalAperture( lApertureWidth );
+       mSample.setVerticalAperture( lApertureHeight );      
+
+       double lAngleOfView = lCameraState.fov * MATH_RAD_TO_DEG;
+       int lFovType = lGenCamera-&gt;GetFOVType();
+       double lFocalLength = CalculateFocalLength( lAngleOfView, lApertureWidth,
+             lApertureHeight, lFovType, lLensSqueeenzeRatio ) * ( 1.0 / MATH_MM_TO_CM );
+       mSample.setFocalLength( lFocalLength );
+      
+
+       mSample.setNearClippingPlane( lCameraState.nearRange );
+       mSample.setFarClippingPlane( lCameraState.farRange );
+       mSample.setFStop( lGenCamera-&gt;GetDOFFStop( t ) );
+       mSample.setFocusDistance( lCameraState.tdist );</pre></div> 
+            </div> 
+            <div class="section"><a name="SECTION_022D63FDC66248EE95CAAD05C89B9766"></a> 
+               <h3><a name="GUID-30B7F883-B6D0-4C5E-AC1F-039276253400"></a> 支持的细分属性
+               </h3> 
+               <p>不受支持。 
+                  		  
+               </p> 
+               <p> </p> 
+            </div> 
+            <div class="section"><a name="SECTION_92F73A78BF214741A677AA2DDEE3D5B5"></a> 
+               <h3><a name="GUID-74BF9833-0AC2-475F-B2AB-8661C5D9B77C"></a>支持的点基本体属性
+               </h3> 
+               <p>简单和粒子流粒子在 OPointsSchema 中均受支持。 
+                  		  
+               </p> 
+            </div> 
+         </div>
+         <p> </p>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

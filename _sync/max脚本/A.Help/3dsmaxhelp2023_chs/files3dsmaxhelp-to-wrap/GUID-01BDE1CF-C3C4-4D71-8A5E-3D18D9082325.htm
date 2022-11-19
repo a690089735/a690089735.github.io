@@ -1,0 +1,96 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-01BDE1CF-C3C4-4D71-8A5E-3D18D9082325">
+      <meta name="description" content="该轨迹视图工具通过处理所选动画轨迹中现有的动画关键点，对使用 Euler 旋转设置动画的对象中进行的方向翻转（反常旋转模拟）进行修正。这点对于导入原始运动捕获数据时清除旋转人工效果非常有用。该过程并不会破坏任何已经设置关键点的方向。">
+      <meta name="indexterm" content="工具: 过滤器选定的 Euler 轨迹（轨迹视图）">
+      <meta name="indexterm" content="轨迹视图: 工具">
+      <meta name="indexterm" content="过滤器: Euler 轨迹（轨迹视图）">
+      <meta name="indexterm" content="过滤: Euler 轨迹（轨迹视图）">
+      <meta name="indexterm" content="对话框: 过滤器选定的 Euler 轨迹（轨迹视图）">
+      <meta name="indexterm" content="Euler 过滤器">
+      <meta name="topic-type" content="concept">
+      <title>Euler 过滤器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-01BDE1CF-C3C4-4D71-8A5E-3D18D9082325"></a><div class="head">
+            <h1>Euler 过滤器</h1>
+         </div>
+         <p class="blurb">该轨迹视图工具通过处理所选动画轨迹中现有的动画关键点，对使用 <span class="char_link"><a href="GUID-76A80A5B-9440-45A0-AD82-BE5F379C4504.htm">Euler 旋转</a></span>设置动画的对象中进行的方向翻转（反常旋转模拟）进行修正。这点对于导入原始运动捕获数据时清除旋转人工效果非常有用。该过程并不会破坏任何已经设置关键点的方向。 
+         </p><a name="UL_D79295AB257B4A3D8CB5335552A6F53A"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-6E34408F-8C6D-4948-82DB-72516DF1B689">轨迹视图  <img src="../images/ac.menuaro.gif"> “编辑”菜单  <img src="../images/ac.menuaro.gif"> “轨迹视图实用程序”对话框  <img src="../images/ac.menuaro.gif"> “Euler 过滤器”</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-38BF"></a>默认情况下，该工具使用三个轨迹（X、Y 和 Z）上的关键点仅对帧进行修改。根据需要启用添加“关键点”，您可以使用 X、Y 和 Z 关键点对帧进行修正，同时您还对仅包括一个或两个已设置关键点的轴但需要进行修正的帧添加关键点，使 X、Y 和 Z 关键点在这些帧上。
+            
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-38BE"></a>过滤的默认范围是场景的当前活动范围，可以自动出现在工具中。要对动画特定子集的操作进行孤立，则更改“开始时间”和“结束时间”设置。对工具所做的任何更改在当前 <span class="charspan-msgph">3ds Max</span> 会话期间都处于活动状态。 
+         </p>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E5AF"></a><div class="note-tip"><span class="label label-target-language">提示</span>该工具以“摄影表”模式进行工作，但是如果您使用“曲线编辑器”模式，则更容易看见该工具进行的内容。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-38BD"></a> 
+            <h2><a name="GUID-B33BAC4D-8762-45AD-B17D-722F0B400904"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900450EE"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900450EF"></a>要使用 Euler 过滤器，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择一个使用<span class="char_link"><a href="GUID-76A80A5B-9440-45A0-AD82-BE5F379C4504.htm">“Euler”旋转</a></span>设置动画的对象。 
+               </li>
+               <li>右键单击该对象，然后从四元菜单中选择“曲线编辑器”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-38BC"></a>轨迹视图在“曲线编辑器”模式下打开，此时动画轨迹高亮显示。 
+                  </p> 
+               </li>
+               <li>确保要进行过滤的旋转轨迹在轨迹视图中高亮显示。 </li>
+               <li>从轨迹视图的“编辑”菜单中选择“轨迹视图实用程序”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-38BB"></a>这将打开“轨迹视图工具”对话框。 
+                  </p> 
+               </li>
+               <li>在工具列表中，单击“Euler 过滤器”，然后单击“确定”或仅双击“Euler 过滤器”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-38BA"></a>这将打开“过滤器选择的 Euler 轨迹”对话框。 
+                  </p> 
+               </li>
+               <li>根据需要更改参数，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-38B9"></a>该工具可以将旋转关键点调整到移除的方向翻转。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-38B8"></a> 
+            <h2><a name="GUID-B838E030-07AC-4F3E-A0C3-2ADA25672B7A"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900450F0"></a><div class="figure-anchor"><img src="../images/GUID-8D74A140-054C-4D1C-B60A-3AD79597F5BD-low.png"></div>  <a name="GUID-006A8682-EAA1-490A-9C7A-9D60920C2687"></a><dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D2558"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-38B7"></a>起始/结束时间</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487557109353211EEADCAF73-73D1"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752560"></a>进行过滤的时间范围。默认为当前动画范围。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D2559"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-38B6"></a>必要时添加关键点</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487557109353211EEADCAF73-73D0"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752561"></a>启用该选项之后，工具使用 X、Y 和 Z 关键点对帧进行修正，同时还可以对仅包括一个或两个已设置关键点的轴但需要进行修正的帧添加关键点，使 X、Y 和 Z 关键点在这些帧上。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D255A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-38B5"></a>确定</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487557109353211EEADCAF73-73CF"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752562"></a>使用当前设置执行过滤。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D255B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-38B4"></a>取消</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487557109353211EEADCAF73-73CE"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752563"></a>关闭对话框而不执行过滤。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

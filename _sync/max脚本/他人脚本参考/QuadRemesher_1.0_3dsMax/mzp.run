@@ -1,0 +1,17 @@
+name "Quad Remesher"
+description "Quad Remesher"
+version 1
+
+treeCopy "QuadRemesher" to "$userScripts\"
+copy "quadremesher_24i.bmp" to "$usericons\"
+copy "quadremesher_24a.bmp" to "$usericons\"
+copy "quadremesher_16i.bmp" to "$usericons\"
+copy "quadremesher_16a.bmp" to "$usericons\"
+copy "QuadRemesher.mcr" to "$temp\"
+
+drop "InstallerScript.ms"
+
+clear temp on MAX exit
+
+
+

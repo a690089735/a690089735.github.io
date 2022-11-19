@@ -1,0 +1,225 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-38AD2EF6-FBC1-4038-887C-C57D4258AF37">
+      <meta name="description" content="显示包含当前场景中用作外部参照对象的源对象的源文件名。使用“创建外部参照记录”按钮添加这些源文件，并使用“删除外部参照记录”按钮删除这些文件。">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="using">
+      <title>“外部参照记录”列表</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-38AD2EF6-FBC1-4038-887C-C57D4258AF37"></a><div class="head">
+            <h1>“外部参照记录”列表</h1>
+         </div>
+         <div class="abstract"> 
+            <p class="blurb"> 显示包含当前场景中用作外部参照对象的源对象的源文件名。使用“创建外部参照记录”按钮添加这些源文件，并使用“删除外部参照记录”按钮删除这些文件。 
+               
+            </p> 
+         </div>
+         <div class="bodyReference"><a name="FIG_B193FC6DFED148D0A4E39264C568E5CF"></a><div class="figure-anchor"><img src="../images/GUID-F08F9AEA-2AC8-4156-8266-77D5D640DE4D-low.png"></div>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2652"></a>要查看源文件的完整路径，可将光标移到外部参照记录的名称上面。完整路径将显示在工具提示中。 
+               
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2651"></a>如果源文件本身含有外部参照对象，在名称的左边将会显示一个加号或减号的图标。单击该图标展开或折叠叠加的外部参照实体的显示。丢失的或不能解析的叠加外部参照记录显示为灰色。 
+               
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2650"></a>右键单击“外部参照记录”列表将显示一个弹出菜单，该菜单中包含用于管理列表及其记录的附加选项。 
+               
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004-1E8"></a> 
+               <h2><a name="GUID-B36AA79B-F914-438A-878E-EC2EDA0119EA"></a>记录列表控制
+               </h2> <a name="GUID-CA76793E-D365-45A9-8227-1106A3F4C16B"></a><dl><a name="GUID-802B1BBC-7BD4-4B23-BBBA-60CF7EA980D2"></a><dt><span class="term"><a name="GUID-31F982F0-FFED-4213-A898-B118083B55A3"></a>启用 
+                        		</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-09090A14-22DC-4921-B764-BA8966B89212"></a>关闭可禁用参考自当前在外部参照记录列表中高亮显示的 MAX 文件的所有外部参照对象。禁用的外部参照文件和对象不加载到内存中。默认设置为启用。 
+                        		
+                     </div>
+                  </dd><a name="GUID-B83F2FEC-A3CA-4CB9-9C1E-8D913495953F"></a><dt><span class="term"><a name="GUID-C6FDBE2F-40BB-40F3-B685-ED52BD502C20"></a>包含所有 
+                        		</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-B0B03698-B4C0-43E7-8A52-0693BD50E2B8"></a> 如果在添加外部参照记录前打开此选项，则源文件中的所有记录都将包含为外部参照。该选项将忽略“外部参照合并”对话框。默认设置为禁用。 
+                        		  
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-264D"></a>如果关闭“包含所有”时创建外部参照记录，则仅（在“外部参照合并”对话框中）为外部参照记录选择的这些实体会成为该记录的一部分，源文件中创建的任意对象都不会成为其中的一部分。如果在创建记录时启用“包含所有”，则当您重新打开文件或更新主文件时，在源文件中新创建的所有对象都将包含在外部参照记录中。如果在更新记录之前（第一个外部参照对象之后）启用“包含所有”，则所有新对象都将包含在外部参照对象中，但之后禁用此选项不会从该记录中删除它们。
+                           
+                           		  
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-264C"></a>当源场景包含嵌套外部参照对象时，如果不注意场景树，则使用“包含所有”可能会引起一些混乱。请看下面的排列： 
+                           		  
+                        </p> 
+                        <div class="codeBlock"><pre>main.max (Include All) --&gt; a.max (Include All) --&gt; b.max</pre></div> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-264B"></a>如果后来打开 <em class="mild">b.max</em>，创建对象并保存它，然后在打开和保存 <em class="mild">a.max</em> 之前打开 <em class="mild">main.max</em>，您将无法看到在 <em class="mild">b.max</em> 中创建的新对象。场景 <em class="mild">main.max</em> 只是读取 <em class="mild">a.max</em>，由于 <em class="mild">a.max</em> 没有变化，因此新对象不会出现。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-8847113B-31AA-43C5-BFB2-9A315CA2C20A"></a><dt><span class="term"><a name="GUID-F24E46BF-0D96-4DBF-B9FE-EACAD7596CB9"></a>立即更新 
+                        		</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-BB931CCF-B71A-49C1-B2C6-CD05181725C5"></a>启用时，对源场景中的外部参照对象、控制器、材质和操纵器所作的更改，会在保存源文件时自动更新到主文件中。这不需要单击“更新”。默认设置为禁用。 
+                        		  
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E381"></a><div class="note-note"><span class="label label-target-language">注意:</span>创建记录后，可以更改“启用”、“包含所有”和“自动更新”的状态。 
+                              		  
+                           </div>
+                        </div> 
+                     </div>
+                  </dd><a name="GUID-E5A4B828-570C-4894-B069-26EA6C999D78"></a><dt><span class="term"><a name="GUID-720EF037-CE65-4E94-B7F3-5D92B1A9F32C"></a> 按名称和父项匹配层 
+                        		</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-349BF9BD-50C0-4BFE-81A0-5F1BE33841B6"></a>启用时，会将对象像源场景中一样放置在与父项层名称和层次相同的层上。禁用此选项时，会将对象放置名称相同的层上，但不考虑父项层的名称。默认设置为启用。 
+                        		  
+                        <p><a name="GUID-A8652D64-239E-4D96-8BE1-5E2B4D076637"></a>启用该复选框且层名称匹配但其父项不匹配时，<span class="charspan-msgph">3ds Max</span> 将创建一个新的无父项层，名称相同，并后跟序列号。 
+                           		  
+                        </p> 
+                        <p><a name="GUID-438B70D8-ED96-4D7D-B32A-7CCF854C0D9B"></a>例如，假设源文件有此排列： 
+                           		  
+                        </p> 
+                        <div class="codeBlock"><pre>Layer: Men
+   Layer: Soldiers
+      Soldier character objects</pre></div> 
+                        <p><a name="GUID-140EB17C-1C52-4B53-81AD-1C0485F6F558"></a>...并且本地文件具有此排列： 
+                           		  
+                        </p> 
+                        <div class="codeBlock"><pre>Layer: Women
+   Layer: Soldiers
+      Soldier character objects</pre></div> 
+                        <p><a name="GUID-F0D7FA4A-A817-49C5-89BE-5CB208EAC426"></a>禁用“按名称和父项匹配层”后，外部参照的字符将放置在<em class="mild">女性</em> <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> <em class="mild">士兵</em>层上。<em class="mild">启用</em>“按名称和父项匹配层”后，外部参照的字符将放置在没有父项的新层上，名称为 <em class="mild">Soldiers.001</em>。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-1DD381DA-3CC7-464B-B618-FF14CAFF3300"></a><dt><span class="term"><a name="GUID-03B78A9C-9217-4551-A8DB-2EF62A76E0D6"></a> “预设”下拉列表 
+                        		</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-12D70EFD-65A0-45EC-9CAD-F7C96D19F874"></a>这些选项可用于选择如何处理外部参照数据。 
+                        		  
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2648"></a>必须在添加外部参照记录（源）文件<em class="mild">之前</em> 选择此选项。 
+                           		  
+                        </p> <a name="UL_18553588349346EDBDDE360D3C3490A1"></a><ul>
+                           <li><em class="strong">内容</em> 仅参考几何体信息。 
+                              				
+                              <p><a name="GUID-C77C0137-D0C6-44A9-A7DF-EEC868CA0F3D"></a>如果仅添加几何体内容，建议使用此选项；例如，从几何体模型库添加。 
+                                 				
+                              </p> 
+                           </li>
+                           <li><em class="strong">静态资源</em> 参考几何体和变换数据。材质更新存储在本地场景。 
+                              				
+                              <p><a name="GUID-DC9752DF-571D-491E-804A-BA89064C2675"></a>建议用于明暗处理和照明工作流。 
+                                 				
+                              </p> 
+                           </li>
+                           <li><em class="strong">装备设置动画</em> 参考几何体和装备数据。动画和材质更新存储在本地场景。几何体或装备的源文件更新可由局部场景继承。 
+                              				
+                              <p><a name="GUID-AF61A86C-16A8-43EA-9144-BE103486844D"></a>建议用于动画工作流。 
+                                 				
+                              </p> 
+                           </li>
+                           <li><em class="strong">场景/动画资源</em>（默认设置）。参考几何体和动画数据。材质更新存储在本地场景。几何体或动画的源文件更新可由局部场景继承。 
+                              				
+                              <p><a name="GUID-3C3A8E7E-29D0-41FE-A22E-2B62AC945115"></a>建议用于明暗处理和照明工作流。 
+                                 				
+                              </p> 
+                           </li>
+                           <li><em class="strong">自定义</em> 如果所选“记录列表”设置组合与其中一个预设项不匹配，则“预设”下拉列表设置将更改为“自定义”。 
+                              			 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd><a name="GUID-C853B192-D798-4F63-9342-D1827FC926DE"></a><dt><span class="term"><a name="GUID-28EC51AF-BD4C-417C-BE96-D52BABB9D357"></a> “轨迹”下拉列表 
+                        		</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-6874C60E-08C1-436D-B3CE-35C5256EEB42"></a>选择如何参考变换控制器。 
+                        		  
+                        <p><a name="GUID-36D2120C-CC5A-43AC-8AAB-FBBB6775CF3B"></a>必须在添加外部参照记录（源）文件<em class="mild"></em>之前 选择此选项。 
+                           		  
+                        </p> <a name="UL_BCABE252B30D4FC4A2560202B968B1FD"></a><ul>
+                           <li> <em class="strong">外部参照</em> 变换仍然从源文件中参考。不能在主文件中对参照对象设置动画。 
+                              			 
+                           </li>
+                           <li> <em class="strong">局部</em> 所有<em class="mild">可设置关键点</em>的轨迹将被设置为局部轨迹，以便您可以在主场景中设置对象动画，并且动画将存储在本地。 
+                              				
+                              <p><a name="GUID-29DA9A90-B071-45D6-A220-AD345EF2D108"></a>使用“局部”时，如果对源对象使用“冻结变换”，则主场景将从源文件继承变换信息。这在调整装备时特别有用。 
+                                 				
+                              </p> 
+                              <p><a name="GUID-75DC743F-C0E4-40DE-9B3C-47CAE7321E94"></a>您在本地设置的关键点仍然处于活动状态。 
+                                 				
+                              </p> 
+                           </li>
+                           <li><em class="strong">合并</em> 将源文件中所有对象的外部参照变换控制器合并到主文件中。这意味着变换控制器会被加载到主文件中，并且不再和源文件保持实时链接。如果您不需要实时链接，并且想在主场景中更改变换控制器（更新后不会丢失编辑内容），则这非常有用。 
+                              			 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd><a name="GUID-3E4FD6E4-7801-42B3-A4EC-7AD864B4C108"></a><dt><span class="term"><a name="GUID-ACB64AA0-D961-4363-9F6E-9E57A0A8432A"></a>“修改器”下拉列表 
+                        		</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-9910BA59-6388-4F6D-9907-B44FE1078CBA"></a>确定如何将源文件中的修改器加载到主文件中。修改器不作为外部参照实体列出。要查看“修改”面板上的外部参照修改器，必须使用“合并”选项。或者，可以选择完全不合并修改器信息（使用“忽略”选项），或使用“外部参照修改器”选项合并对象上的信息。 
+                        		  
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2641"></a>必须在添加外部参照记录（源）文件<em class="mild">之前</em> 选择“修改器”选项。 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-1E6"></a><ul>
+                           <li> <em class="strong">外部参照</em> 修改器包含在外部参照对象中，不能在主场景中进行更改。加载外部参照文件时，将会看到修改器的结果，但是他们不会和“修改”面板上的对象分开而单独列出来。可以对外部参照对象使用其他修改器，这些修改器将作为场景的一部分，然而这些修改器不会反射回源文件。
+                              
+                              				
+                              <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E382"></a><div class="note-note"><span class="label label-target-language">注意:</span>世界空间修改器保持位于修改器堆栈的最顶层，并且不与外部参照对象合并。 
+                                    				
+                                 </div>
+                              </div> 
+                           </li>
+                           <li> <em class="strong">合并</em>（默认设置）。将（源文件中）指定给外部参照对象的修改器合并到主场景中。加载外部参照文件时，将看到修改器引起的变化并且这些修改器会出现在“修改”面板的修改器堆栈中。该修改器是源修改器的副本。尽管它们继承原始状态，但是对外部参照对象的更新不会覆盖在主场景中所做的更改。然而，这些更改不会反映到源文件中。
+                              
+                              			 
+                           </li>
+                           <li> <em class="strong">忽略</em> 忽略（源文件中）指定给外部参照对象的任意修改器，并将基础对象作为外部参照对象合并到主场景中。加载外部参照文件时，修改器不会应用到对象上，因此源文件中的修改不会反映到主文件中。 
+                              			 
+                           </li>
+                        </ul> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2640"></a>虽然“合并变换”、“合并材质”、“合并操纵器”和“修改器”的设置在添加一个记录之后被禁用，但是在“外部参照记录”列表中高亮显示记录时，切换和列表字段将会显示创建该记录时使用的设置。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-876AD08B-BD64-4693-8989-C8C5A7F24301"></a><dt><span class="term"><a name="GUID-36775DDB-CEF0-4098-8656-82593E51BDC8"></a> 合并材质 
+                        		</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-04E0B3EF-B364-45D4-B569-3CBC69C18E94"></a> 启用时，会将源文件中的所有外部参照材质合并到主文件中。这意味着材质会被加载到主文件中，并且不再和源文件保持实时链接。如果您不需要实时链接，并且想在主场景中更改材质（更新后不会丢失编辑内容），则这非常有用。默认设置为禁用。 
+                        		  
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2646"></a>要使用“合并材质”，必须在添加外部参照记录（源）文件<em class="mild">之前</em> 启用此选项。 
+                           		  
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2645"></a>如果启用“合并材质”选项并且目标场景与外部参照源场景中的材质之间（或是两个外部参照记录中的材质之间）存在名称上的冲突，<span class="charspan-msgph">3ds Max</span> 将显示“重复名称”对话框，以便您可以解决这些冲突。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-AD33C14E-56D6-422E-97C5-782512D49851"></a><dt><span class="term"><a name="GUID-612EB801-9B98-4DB9-B6B6-0F5CBF6D6F9A"></a> 合并操纵器 
+                        		</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-DC951380-2E95-46EF-B0F6-FC6553728E54"></a> 打开时，源文件中应用于外部参照对象的任意操纵器都会合并到场景中。这些操纵器应用于外部参照对象中，并可以更改。然而这些更改对外部参照源文件没有任何影响。默认设置为禁用。 
+                        		  
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2643"></a>要使用“合并操纵器”，必须在添加外部参照记录（源）文件<em class="mild">之前</em> 启用此选项。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-75EEB193-E683-42C5-80D0-4747CF013800.htm">外部参照记录列表右键单击菜单</a><p>当您右键单击“外部参照记录”列表时，该上下文菜单将出现在“外部参照对象”对话框中。它提供了用来管理该列表的附加选项。 
+                        
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-8D82194B-6CEA-4FD0-88AB-D5347912675F.htm">外部参照变换</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

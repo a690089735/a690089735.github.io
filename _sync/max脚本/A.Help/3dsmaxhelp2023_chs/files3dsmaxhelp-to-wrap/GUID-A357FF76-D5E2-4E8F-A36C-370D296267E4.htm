@@ -1,0 +1,266 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-A357FF76-D5E2-4E8F-A36C-370D296267E4">
+      <meta name="description" content="默认情况下，粒子从“粒子流”图标中出生或发射。使用“位置对象”操作符可以从场景中的任意其他对象（一个或多个对象）发射粒子。本主题中的术语发射器 指通常使用此操作符发射粒子所用的一个或多个对象。例如，用它创建流星的火焰尾巴。">
+      <meta name="indexterm" content="位置操作符: 位置对象">
+      <meta name="indexterm" content="粒子: 定位">
+      <meta name="indexterm" content="粒子流操作符: 位置对象">
+      <meta name="indexterm" content="“选择发射器对象”对话框">
+      <meta name="topic-type" content="concept">
+      <title>位置对象操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-A357FF76-D5E2-4E8F-A36C-370D296267E4"></a><div class="head">
+            <h1>位置对象操作符</h1>
+         </div>
+         <p class="blurb">默认情况下，粒子从“粒子流”图标中出生或<em class="mild">发射</em>。使用“位置对象”操作符可以从场景中的任意其他对象（一个或多个对象）发射粒子。本主题中的术语<em class="mild">发射器</em> 指通常使用此操作符发射粒子所用的一个或多个对象。例如，用它创建流星的火焰尾巴。 
+         </p>
+         <div class="bodyReference"><a name="GUID-0506C1AF-F951-4B26-9903-6C500AD09EEA"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-1ED4D193-F2AD-4AEA-AF20-1394ED4EFA53">粒子视图  <img src="../images/ac.menuaro.gif">  在某个事件中单击“位置对象”，或将“位置对象”操作符添加到粒子系统中，然后选择它。</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63A5"></a>使用“位置对象”设置来控制发射器上粒子的初始置换。可以设置发射器从其曲面、体积、边、顶点、轴或子对象选择发射粒子。还可以使用应用于对象的材质来控制粒子发射。 
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63A4"></a>另外，也可以使用<span class="char_link"><a href="GUID-666B3463-3109-43D7-B1B3-E52B57C8A336.htm">“位置图标”操作符</a></span>来从“粒子流”图标上发射粒子。 
+            </p>
+            <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FD2"></a><div class="note-note"><span class="label label-target-language">注意:</span>通常，在出生事件中使用“位置对象”，这样粒子最初会出现在一个或多个发射器对象上。如果在非出生事件中使用“位置对象”，则只要进入事件，粒子就会跳转到指定的一个或多个发射器。这可以用于远距传物效果。 
+               </div>
+            </div>
+            <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FD1"></a><div class="note-tip"><span class="label label-target-language">提示</span>默认的速度操作符，即<span class="char_link"><a href="GUID-25FB64C0-DFCF-402B-8174-DA3278F05770.htm">速度</a></span>，通常使用“粒子流”图标来控制粒子流的方向，这样如果发射器对象（一个或多个）和图标不一致且未对齐，则可能产生意想不到的结果。为了在使用“位置对象”时更好地控制粒子移动的方向，使用<span class="char_link"><a href="GUID-FC6D23C4-D71D-46CC-AC58-D433EBFD40A0.htm">“速度按曲面”操作符</a></span>并指定为“曲面几何体”，这与通过“位置对象”指定的一个或多个对象相同。 
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-63A3"></a> 
+               <h2><a name="GUID-5EA33AD7-46E3-4A9A-836A-3B90881F37ED"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900423E4"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900423E5"></a>要使用“位置对象”，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建“粒子流”系统，然后将一个或更多个网格对象用作发射器。对发射器对象设置动画，并且按照需要设置粒子系统的参数。 </li>
+                  <li>在“粒子视图”中，为出生事件添加“位置对象”操作符，如果已存在“位置图标”操作符，会将其替换。单击操作符以显示其参数。 </li>
+                  <li>在“发射器对象”组中，单击“添加”，然后选择要用作发射器的对象。另外，也可以单击“按列表”，然后使用“选择发射器对象”对话框来指定一个或多个对象作为发射器。 </li>
+                  <li>使用“位置”下拉列表选择粒子应该在发射器上出现的位置：曲面、顶点等等。 </li>
+                  <li>按照需要设置其他选项。例如，如果想在发射时让粒子的运动与发射器相同，则启用“继承发射器移动”。或者如果正在使用其图形设置了动画的发射器对象，则启用“动画图形”。 </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-63A2"></a> 
+               <h2><a name="GUID-C7A3563C-A8A7-4D9B-92C7-602C51B3C5BB"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900423E6"></a><div class="figure-anchor"><img src="../images/GUID-3E551C79-98CC-453E-A963-EE09F9FE4C3A-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63A1"></a>该用户界面出现在“粒子视图”对话框右侧的“参数”面板中。 
+               </p> <a name="GUID-5AC0885A-94A1-450F-8340-086A08A60B25"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64F1"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63A0"></a>锁定发射器</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65F8"></a> 启用时，所有粒子都保持在发射器上的其最初位置。实际上，它们是“粘结”在发射器上。禁用时，每个粒子的出生位置由发射器的当前位置确定。默认设置为禁用状态。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64F0"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-639F"></a>继承发射器移动</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65F7"></a> 启用时，“粒子流”会将每个粒子的运动速度和运动方向设置为粒子出生时发射器的速度和方向。禁用时，发射器的移动不会影响粒子的移动。只有“锁定发射器”处于禁用状态时才可以使用该选项。默认设置为禁用状态。 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FD0"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果事件中随后出现“速度”操作符，它会覆盖“继承发射器移动”所赋予的所有运动。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64EF"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-639E"></a>倍增</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65F6"></a> 确定粒子继承发射器运动的程度，以百分比为单位。只有“继承发射器移动”处于启用状态时才能使用该选项。默认设置为 100。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-639D"></a>要使粒子以发射器一半的速度移动，请将“倍增”设置为 50。要使它们以相同的速度移动，则使用默认的设置 100。要使粒子以发射器两倍的速度移动，则将“倍增”设置为 200。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64EE"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-639C"></a>变化</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65F5"></a> 确定继承发射器运动根据每个粒子有所变化的程度，以百分比为单位。要确定每个粒子最后的倍增，请将“变化”值与一个介于 -1.0 与 1.0 之间的随机数相乘，然后与“倍增”值相加。默认设置为 0。 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-2E13C4FE-CC39-452A-BC15-AC2B73ABD8DE"></a><p class="title"><a name="GUID-59C353DE-DAC1-498F-8F06-03744A5054F2"></a>“发射器对象”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-639B"></a>使用以下控件可以指定用作粒子发射器的对象。此组中的列表显示了对象或参考几何体，操作符将其用作发射器。 
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-639A"></a>如果没有指定任何对象，则“粒子流”使用世界原点 (0,0,0) 作为发射器源。 
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6399"></a>如果有不止一个发射器对象，则对象之间的粒子划分取决于“位置”选择。如果将“位置”设置为“轴”，则每个对象都有一个发射点，同时每个对象都发射相同数量的粒子（粒子总数/对象数量）。但是如果将“位置”设置成任意其他选项，那么每个对象发射的粒子数与每个对象上的可用发射点数成正比。例如，如果将“位置”设置为“体积”，那么较大的对象将比较小的对象发射更多的粒子。同样，将“位置”设置为“顶点”时，有
+                     100 个顶点的对象发射粒子的数量将是有 50 个顶点的对象的两倍。 
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6398"></a>如果从场景中删除指定为发射器的对象，那么它在列表中的项目就替换为“&lt; 已删除 &gt;”。 
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6397"></a>使用“添加”和移除按钮可以编辑此列表。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64ED"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6396"></a>添加</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65F4"></a> 向列表中添加对象。单击“添加”，然后单击视口中的对象。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64EC"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6395"></a> 按列表</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65F3"></a> 向列表中添加多个对象。单击“按列表”以打开“选择发射器对象”对话框。此对话框的功能类似于<span class="char_link"><a href="GUID-0E53BB0B-8F4A-4C32-8968-6D5226ECE8FF.htm">“从场景选择”</a></span>：高亮显示对象以将其用作发射器，然后单击“选择”按钮。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64EB"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6394"></a>移除</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65F2"></a> 移除列表中的对象。高亮显示列表中的对象，然后单击移除。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64EA"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6393"></a>动画图形</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65F1"></a> 启用时，可以允许粒子跟随通过变形或使用修改器设置了对象外形动画的对象的曲面。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64E9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6392"></a>子帧采样</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65F0"></a> 启用时，操作符以 Tick 为基础（每一秒钟的 1/4800）而不是以帧为基础获取发射器图标的动画。这使得粒子位置能够更加精确地跟随发射器对象外形的动画。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-6669D64C-E619-4D58-841C-4DC6621EC365"></a><p class="title"><a name="GUID-BE738A46-F7F9-4013-856C-6F660546162F"></a>“位置”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6391"></a>使用“位置”下拉列表可以指定粒子出现在每一发射器上的位置。此选项应用于所有发射器对象。默认设置为“曲面”。 
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6390"></a>使用列表中的“选定顶点/边/面”选项，可以通过使用现有的子对象选择从发射器对象的特定部分发射粒子。要创建此选择，请首先将对象转化为可编辑网格或多边形，或者应用“网格选择”或“多边形选择”修改器（或同等物），选择要发射粒子的子对象，然后选择相应的“位置”选项。如果“粒子流”没有找到子对象选择，它将使用所有指示类型的子对象。
+                     
+                  </p><a name="UL_DD3CCD4248ED4DB586E82071F8894FA8"></a><ul>
+                     <li><em class="strong">轴</em> 从发射器对象轴的<em class="mild">初始位置</em>发射粒子。移动轴并不影响此选项。 
+                     </li>
+                     <li> <em class="strong">所有顶点</em>按照顶点编号的顺序，从发射器对象的所有顶点上发射粒子。 
+                        <p><a name="GUID-CC74F343-4FC5-4B75-B2E2-BF0DF9502B4F"></a>使用此选项的一种方法是让对象从每个顶点发射出相同数目的粒子。若要保证这一点，请将“出生”操作符设置为发射出数量为发射器对象中顶点倍数的粒子。例如，长方体有八个顶点，因此如果将“出生数量”设置为 16 并使用长方体作为发射器，然后选择“所有顶点”选项，那么每个角点（顶点）将恰好发射两个粒子。
+                           
+                        </p> 
+                     </li>
+                     <li> <em class="strong">随机顶点</em>从随机选择的发射器对象顶点发射粒子。使用此选项，某些顶点可能会不发射粒子。（该选项在 3ds Max 2014 之前的版本中称为“顶点”选项。） 
+                     </li>
+                     <li><em class="strong">边</em> 从沿发射器对象的边子对象的随机点发射粒子。 
+                     </li>
+                     <li><em class="strong">曲面</em>从图标曲面上的随机点发射粒子。 
+                     </li>
+                     <li><em class="strong">体积</em>从图标体积内部的随机点发射粒子。 
+                     </li>
+                     <li><em class="strong">选定顶点</em> 从当前顶点子对象选择发射粒子。 
+                     </li>
+                     <li><em class="strong">选定边</em> 从当前边子对象选择发射粒子。 
+                     </li>
+                     <li><em class="strong">选定面</em> 从当前面或多边形子对象选择发射粒子。 
+                     </li>
+                  </ul>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6387"></a>使用以下任意组合可以修改“位置”选择： 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64E0"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6386"></a>曲面偏移</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65E7"></a> 指定粒子置换距离对象曲面的距离范围。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6385"></a>“位置”设置为“轴”或“体积”时，无法使用“曲面置换”。使用“最小”和“最大”参数来设置范围。 
+                           </p> 
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FCF"></a><div class="note-note"><span class="label label-target-language">注意:</span>负数会将粒子偏移至曲面的下方。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64DF"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6384"></a>最小/最大</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65E6"></a> “曲面偏移”启用时，可以指定距离对象曲面的偏移距离的范围。“最小”值不能超过“最大”值，反之亦然。如果试图将“最小”值提高到“最大”值以上，或者将“最大”值降低到“最小”值以下，则两个值的变化相同。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64DE"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6383"></a>密度按材质</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65E5"></a> 根据应用于发射器的材质的属性的不同，发射器曲面的发射也有所区别。例如，如果对象指定为黑白方格交叉漫反射贴图，并且选择了“灰度”选项，则粒子只从白色方格发射出来。 
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FCE"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>为了让受材质影响的发射在视口中正确显示，需要两个条件： <a name="WS1A9193826455F5FFBA679E112A6A1900423EB"></a><ul>
+                                    <li>至少有一个视口必须设置为着色显示模式。 </li>
+                                    <li>材质或贴图必须在“材质编辑器”中启用“在视口中显示贴图”。 </li>
+                                 </ul> 
+                              </div>
+                           </div> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6382"></a>选项如下所示： 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A1900423EC"></a><ul>
+                              <li> <em class="strong">灰度</em>“粒子流”会在内部将基于材质的颜色（漫反射）转化为灰度，然后在较明亮的区域发射较多的粒子，在较暗的区域发射较少的粒子。 <a name="WS1A9193826455F5FFBA679E112A6A1900423ED"></a><div class="figure-anchor"><img src="../images/GUID-7D2ACEBE-19C4-4C53-A622-4D048FBFA266-low.png"><p></p>
+                                    <p class="figure-title">长方体发射器通过渐变进行贴图。“位置对象”设置为“密度按材质”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“灰度”时，在长方体较亮区域粒子出现的频率较高。
+                                    </p>
+                                 </div>  
+                              </li>
+                              <li> <em class="strong">不透明度</em>不透明区域上比透明区域上更有可能出现粒子。 
+                              </li>
+                              <li> <em class="strong">灰度和不透明度</em>将二者结合：明亮且不透明区域出现的粒子要比黑暗且透明的区域多。 
+                              </li>
+                              <li> <em class="strong">红/绿/蓝</em>只考虑指定的颜色通道。在任意特定像素的位置，值越高，粒子越有可能出现。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64DD"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6381"></a>使用子材质</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65E4"></a> 启用时，使用指定给发射器的“多维/子对象”材质中的子材质，以定义密度值。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6380"></a>此选项允许粒子置换使用“不可见”材质。如果发射器使用了“多维/子对象”材质，但是其几何体并没有使用与某个子材质相对应的 ID 号，则子材质不会出现。然而，操作符能够利用它计算粒子置换的密度。“粒子流”假设要在整个对象曲面使用该材质。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64DC"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-637F"></a>材质 ID</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65E3"></a> 指定用于粒子发射的子材质的材质 ID。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64DB"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-637E"></a>分离</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65E2"></a> 启用时，“粒子流”会尝试按照“距离”中指定的量来保持粒子隔开。是否能成功隔开粒子取决于粒子的数量、指定的距离以及“最大尝试次数”值。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64DA"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-637D"></a>距离</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65E1"></a> 指定以系统单位计的距离，“粒子流”将按照此距离保持粒子分隔。默认设置为 1.0。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64D9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-637C"></a>仅特殊点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65E0"></a> 在指定的“位置”类型将发射限制为特定数量的点（请参见下面的“总计”）。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-637B"></a>发射点仍然是随机的，可通过更改“唯一性”设置来改变。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64D8"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-637A"></a>总计</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65DF"></a> 设置发射点的数量。只有“仅特殊点”启用时才能使用该选项。默认设置为 10。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-BC140E7C-E2A2-4097-BEA9-0BE974AA9D7F"></a><p class="title"><a name="GUID-14EF5BEE-A867-4129-94CD-2BBFD740068C"></a>“如果位置无效”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64D7"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6379"></a>删除粒子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65DE"></a> 启用时，如果“粒子流”无法按照当前选项放置粒子，它将删除粒子。禁用此选项时，则粒子置换未定义，即它取决于其他变量。默认设置为禁用。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6378"></a>如果粒子数量要比对象上的位置更为重要，则禁用此选项。然而，如果精确的置换要比粒子数量拥有更高的优先级，则启用“删除粒子”。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-A47AD8B6-854D-48CD-8F51-24BE361D97C5"></a><p class="title"><a name="GUID-681B3E7C-9648-4DFF-8E49-90C70DFF6C0A"></a>“唯一性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6377"></a>“唯一性”设置能够随机化发射器的置换。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64D6"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6376"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65DD"></a> 指定随机化值。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64D5"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6375"></a>新增特性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65DC"></a> 使用随机化公式计算新种子。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64D4"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6374"></a>最大尝试次数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65DB"></a> 使用“分离”选项时，它会指定“粒子流”尝试设置粒子位置（保持要求的距离）的最大次数。如果在此尝试次数内未成功，则粒子之间可能要比要求的距离近。使用任一个“灰度”选项的情况下，还会影响使用“密度按材质”的置换。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,22 @@
+{
+   "version": "2.0.0",
+   "tasks": [
+     {
+       "label": "MXSPyCOM execute Script",
+       "type": "shell",
+       // Add MXSPyCOM.exe to PATH or use file root, i.e: "C:/MXSPyCOM/MXSPyCOM.exe"
+       "command":".\\MXSPyCOM.exe",
+       "args": [
+           "-s",
+           { "value": "${file}", "quoting": "strong" }
+       ],
+       "group": "test",
+       "presentation": {
+           "echo": true,
+           "reveal": "silent",
+           "focus": false,
+           "panel": "shared"
+       }
+   }
+ ]
+}

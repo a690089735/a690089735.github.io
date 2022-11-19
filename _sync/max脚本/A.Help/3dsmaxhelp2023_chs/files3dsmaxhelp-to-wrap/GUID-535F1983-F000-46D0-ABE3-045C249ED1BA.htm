@@ -1,0 +1,120 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-535F1983-F000-46D0-ABE3-045C249ED1BA">
+      <meta name="description" content="将“mParticles 粘合”测试绑定类型设置为“距离”时，“mParticles 粘合”会从一个粒子向另一个粒子、导向器或地面创建“绳索”绑定。此虚拟绳索的端点称为“定位”。">
+      <meta name="topic-type" content="concept">
+      <title>“mParticles 粘合”测试：“距离绑定”卷展栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-535F1983-F000-46D0-ABE3-045C249ED1BA"></a><div class="head">
+            <h1>“mParticles 粘合”测试：“距离绑定”卷展栏</h1>
+         </div>
+         <p class="blurb">将“mParticles 粘合”测试绑定类型设置为“距离”时，“mParticles 粘合”会从一个粒子向另一个粒子、导向器或地面创建“绳索”绑定。此虚拟绳索的端点称为“定位”<em class="mild"></em>。 
+         </p>
+         <div class="bodyReference"><a name="GUID-C2F813F0-96A1-4937-A091-1EFB09B6C1D2"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-47C827F7-6329-4217-8740-0029014AEAFE">“粒子视图” <img src="../images/ac.menuaro.gif">  单击或添加“mP 粘合”测试。 <img src="../images/ac.menuaro.gif">  将“绑定类型”设置为“距离”。</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-184B5084-457C-4E20-BDDB-4F50D35513A6"></a> 在粒子图形之间、或粒子与导向器图形之间的最近的点上放置定位。创建绑定绳索后，其长度取决于所指定的限制。可以限制绳索的最小长度（如保持粒子处于分离状态的一个木条）或最大长度，或者可以同时限制最小长度和最大长度，或者将弹簧属性添加到绳索中。 
+            </p>
+            <div class="section"><a name="AA1010234"></a> 
+               <h2><a name="GUID-2492E5A6-A194-4D03-9E2B-6E52C79B4993"></a>界面
+               </h2> <a name="FIG_6A851719705D41E4A85B8D8F7DDF2BC7"></a><div class="figure-anchor"><img src="../images/GUID-AB62C39D-D280-46C7-B04B-E4D5CBB71EBB-low.png"></div>  <a name="GUID-BB464FB2-EA21-461E-937F-A96411E7A4AF"></a><dl>
+                  <dt><a name="GUID-649E2B24-E4A5-4601-8791-51BD5D0B0E2E"></a><span class="term"><a name="GUID-CDBC187A-9E52-4EDB-8421-49CCDA7F6C3C"></a>最小距离限制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-4C138481-9A52-446E-861D-AD773D35BF17"></a>启用时，应至少通过“绝对”或“相对”设置指定的距离来保持绑定定位分离： <a name="UL_246A821343CE47E48BE2038FA9D68BF9"></a><ul>
+                           <li><em class="strong">绝对</em>以相同的距离（以世界单位表示）使所有定位保持分离状态。 
+                           </li>
+                           <li><em class="strong">相对 %</em>定义绑定时相对于绑定长度（指定位之间的距离）的最小距离。因此相比其他的粒子，具有指定定位距离的粒子将分离的更远。通常此值小于 100%。 
+                              <p><a name="GUID-9C6C0B55-4769-4F85-8D16-1FF4F41D597F"></a>有关显示“最小距离限制”选项效果的视频，请参见<span class="char_link"><a href="GUID-41F475B4-87BD-4E6D-8FC3-60BAC4C7D7C0.htm#SECTION_42622A7A015E44B59B00855CDC54A902">最小距离限制</a></span>。 
+                              </p> 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-98270A1F-FABA-45F7-ABEB-76679F2EF164"></a><span class="term"><a name="GUID-DAB22265-0CF0-480D-9D59-1B23D6E1F1D3"></a>最大距离限制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-EC84481F-ECF3-4E6E-8C16-EE8DCAE105B4"></a>启用时，可通过“绝对”或“相对”设置来指定绑定定位之间的最大距离限制。 
+                        <p><a name="GUID-3C14897E-9417-44EE-8A34-82E631C9C58D"></a> 在绑定时更改此设置并不影响粒子间的距离，但如果增大限制，则在外力作用下粒子将分离的更远，但还保持绑定在一起。 
+                        </p> <a name="UL_6B1B7918AC0145A894A13DA175E92FB1"></a><ul>
+                           <li><em class="strong">绝对</em>以相同的距离（以世界单位表示）禁止所有定位超出距离限制。 
+                           </li>
+                           <li><em class="strong">相对 %</em>定义绑定时相对于绑定长度（定位之间的距离）的最大分离距离。通常此值大于 100%。 
+                              <p><a name="GUID-C8C77C08-02F1-4B9F-8543-A512222A58E6"></a>有关显示“最大距离限制”选项效果的视频，请参见<span class="char_link"><a href="GUID-41F475B4-87BD-4E6D-8FC3-60BAC4C7D7C0.htm#SECTION_F28B968112204C12B19C642F0D855183">最大距离限制</a></span>。 
+                              </p> 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-FFA138EE-6AC7-4DBD-B716-A640EA7F8A7C"></a><span class="term"><a name="GUID-2E8730E3-67AF-420D-B65B-E1400149203D"></a>启用弹簧力</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-E61BF8F7-F410-4016-831A-D5BF5172392E"></a>启用时，意味着最小距离限制和最大距离限制会发生更改。如果绑定定位之间的距离在指定的最小值和最大值之间，则没有额外的力应用于绑定粒子。 
+                        <p><a name="GUID-6DBE684E-BD77-4B9C-903C-EE10D4493391"></a> 如果绑定定位之间的距离小于最小值（启用“最小距离限制”时）或大于最大值（启用“最大距离限制”时），则“mParticles 粘合”将尝试通过施加力使粒子分开或并拢，从而使分离距离恢复到指定的限制值内。力的大小通常由弹性系数设置和最小距离或最大距离中的当前绑定长度的相对偏离决定。因此，指定的最小或最大距离中的偏离越大，则所应用的力将越大。还可以通过阻尼器系数设置定义动力学。
+                           
+                        </p>
+                     </div>
+                  </dd>
+               </dl> <a name="GUID-3C3B6864-983F-48DA-8CEB-2813B9719769"></a><dl>
+                  <dt><a name="GUID-59B00E95-A8D9-4A0E-814D-A84F0724F363"></a><span class="term"><a name="GUID-5336BE59-7122-4531-B28F-F7C65C27D4F6"></a>按粒子质量调整</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-EB113669-E651-4835-90D9-7585DF1BE59C"></a>启用时，无论粒子质量大小，力还可以通过与粒子质量相乘来获得稳定的加速度。 <a name="UL_1644F33E8DC04054815F4470A0449E8B"></a><ul>
+                           <li><em class="strong">弹性系数(ficient)</em>作为要计算的力的乘法器需要还原指定的绑定距离范围。 
+                           </li>
+                           <li><em class="strong">阻尼器系数(ficient)</em>作为阻尼力，在为还原指定的绑定范围进行的模拟尝试中，可减慢粒子运动速度。如果使用弹簧力，粒子似乎捕捉环绕过快，可尝试增加此值。 
+                              <p><a name="GUID-5B9F007F-1713-4107-B60E-8660D16BF8EC"></a>有关显示“启用弹簧力”和“按粒子质量调整”选项效果的视频，请参见<span class="char_link"><a href="GUID-41F475B4-87BD-4E6D-8FC3-60BAC4C7D7C0.htm#SECTION_C95F0AD97D604305BF67E7F4450B7A4C">“启用弹簧力”和“按粒子质量调整”</a></span>。 
+                              </p> 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-F00469EE-5C6F-41FD-9036-5BDCBA8C2741"></a><span class="term"><a name="GUID-D786D44F-81FC-4B89-AAFB-9D07FD1083A8"></a>隐藏绑定锚定 </span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-697947EA-128B-4F95-9EB0-D6485BBAB77E"></a>启用时，绑定定位并未放置在粒子碰撞图形的曲面上，而是隐藏在通过“深度”设置指定距离的曲面下面（请参见下文）。 
+                        <p><a name="GUID-48B751CA-E232-4A53-9590-23A88C96D34A"></a> 当粒子图形之间非常接近时（比如碰撞球体）使用该选项，其结果会导致正常绑定长度接近零。通过隐藏碰撞曲面下的定位，定位距离将会被“人为”放大，而绑定粒子的相对运动将更自由。 
+                        </p> <a name="UL_5956681167764D12BCA53D3C004F56E3"></a><ul>
+                           <li><em class="strong">深度</em>粒子碰撞图形曲面下绑定定位的距离。 
+                              <p><a name="GUID-603EF39D-03C7-43D9-B2C9-4AB4D67891DA"></a>有关显示“隐藏绑定定位”选项效果的视频，请参见<span class="char_link"><a href="GUID-41F475B4-87BD-4E6D-8FC3-60BAC4C7D7C0.htm#SECTION_B0EEDDD30B48411A846D189EFD9A8B3D">隐藏绑定定位</a></span>。 
+                              </p> 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-251D2DE3-F47E-4648-950C-CBC91309C587"></a><p class="title"><a name="GUID-1263CE07-D7B3-46A9-830E-F251D81BE7F2"></a>“可打破性”组
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-DC35C472-5658-4263-90E4-D79687ED7545"></a><span class="term"><a name="GUID-E0436C8C-876B-4048-965B-655E235E950B"></a>可通过过度拉伸断开</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-00F11812-3CDC-4D3E-AB03-8925C8C52C5A"></a>启用时，如果绑定的长度（指定位之间的距离）超出指定值，则可打破距离绑定。需要注意的是，在某些情况下模拟无法保证绑定在最大距离限制内；因此距离绑定可以过度拉伸。 
+                           <p><a name="GUID-0C2D3DB9-3CF3-473A-8B25-788958A92F33"></a> 如果条件不允许绑定保持其“最大距离”参数，则“可通过过度拉伸打破”是释放绑定的一种保护措施。 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-17991655-61A2-43B2-AF02-9B52AC131556"></a><span class="term"><a name="GUID-720450B2-7DDA-4D71-9B15-80457FD4B04F"></a>最大距离限制 </span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-BAEF891F-4F40-4D19-9C80-803A41B5CBBF"></a>在绝对或相对条件中绑定断开所达到的距离。此值通常大于相应的<span class="char_link"><a href="GUID-535F1983-F000-46D0-ABE3-045C249ED1BA.htm#GUID-98270A1F-FABA-45F7-ABEB-76679F2EF164">最大距离限制</a></span>值。 <a name="UL_8D2DD677C5664678A0BE1795918282D2"></a><ul>
+                              <li><em class="strong">绝对</em>绑定可断开的绝对距离（以世界单位表示）。 
+                              </li>
+                              <li><em class="strong">相对 %</em>绑定时相对于绑定长度（指定位之间的距离）的最大分离距离（超出该距离可断开绑定）。通常此值大于 100%。 
+                              </li>
+                           </ul> 
+                           <p><a name="GUID-5A99AE51-E39A-4131-B052-E5001E1F6A41"></a>有关显示“可通过过度拉伸断开”选项效果的视频，请参见<span class="char_link"><a href="GUID-41F475B4-87BD-4E6D-8FC3-60BAC4C7D7C0.htm#SECTION_3A2D1B60F7B4463BBB275857F2207FE1">可通过过度拉伸断开</a></span>。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-41F475B4-87BD-4E6D-8FC3-60BAC4C7D7C0.htm">mP 粘合测试：“距离绑定”卷展栏视频</a></li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

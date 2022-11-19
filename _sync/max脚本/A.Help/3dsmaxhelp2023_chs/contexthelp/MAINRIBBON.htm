@@ -1,0 +1,40 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="topic-type" content="redirect">
+      <meta name="robots" content="noindex">
+      <title>石墨建模工具</title>
+   </head>
+   <body><script language="javascript">
+                        (function() {
+
+                            function isFromLocalFilesystem() {
+                                switch(window.location.protocol) {
+                                    case 'http:':
+                                    case 'https:':
+                                        //remote file over http or https
+                                        return false;
+                                        break;
+                                    case 'file:':
+                                        //local file
+                                        return true;
+                                        break;
+                                    default:
+                                        //some other protocol
+                                        return false;
+                                }
+                            }
+
+                            var search = window.location.search,
+                                indexUrl = '../index3dsmaxhelp.html' + search + '#!/url=./files3dsmaxhelp/GUID-1D637181-862A-49C9-B6BE-4E7982549C57.htm',
+                                topicUrl = '../files3dsmaxhelp/GUID-1D637181-862A-49C9-B6BE-4E7982549C57.htm' + search;
+
+                            if (isFromLocalFilesystem()) {
+                                location.replace(indexUrl);
+                            } else {
+                                location.replace(topicUrl);
+                            }
+
+                        })();
+                    </script></body>
+</html>

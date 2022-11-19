@@ -1,0 +1,89 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-2B2C5BF0-6FB0-4601-9F0E-628D32C3AE0F">
+      <meta name="description" content="控制 ProOptimizer 处理对象边界的方式。">
+      <meta name="indexterm" content="ProOptimizer 修改器: 边界选项">
+      <meta name="topic-type" content="concept">
+      <title>“优化模式”组</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-2B2C5BF0-6FB0-4601-9F0E-628D32C3AE0F"></a><div class="head">
+            <h1>“优化模式”组</h1>
+         </div>
+         <p class="blurb">控制 ProOptimizer 处理对象边界的方式。 </p>
+         <div class="bodyReference"><a name="UL_56256CFA37C4416F9EBFE6E68E94C4BB"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-CBAD5297-CC46-4E9C-97F7-7DF2777D5B6D">创建或导入一个对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “ProOptimizer”修改器  <img src="../images/ac.menuaro.gif"> “优化选项”卷展栏  <img src="../images/ac.menuaro.gif"> “优化模式”组</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF68908C3E11A1FA06A23-3258"></a>当边缘不为其他面共享时，即被视为位于对象的“边界”上。保留边界对于保留模型外观很重要。 
+            </p><a name="WS73099CC142F48755-42A8108711A530FF1D3-56FC"></a><div class="figure-anchor"><img src="../images/GUID-D83E22CE-EA53-4C29-871D-CAF97EBFF9B4-low.png"></div>
+            <p><a name="GUID-4148F264-C20A-4E01-9D28-0237C0A3D118"></a> <em class="strong">原始模型</em> 
+            </p>
+            <p><a name="GUID-4FDC544D-CFD4-4D7C-AB06-B3354F4931EA"></a> <em class="strong">顶点数：557</em> 
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FF68908C3E11A1FA06A23-23EC"></a> 
+               <h2><a name="GUID-0B4F9A99-A5D4-4611-B9E7-E6E63A790D60"></a>界面
+               </h2> <a name="WS73099CC142F48755-63C0748611A1FA08F71-252E"></a><div class="figure-anchor"><img src="../images/GUID-301FEB7F-BE56-4563-9A41-70C03B223F4E-low.png"></div>  <a name="GUID-B55CD247-A41B-4065-ABDE-973645B9F143"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7A1B"></a><span class="term"><a name="WS73099CC142F48755-63C0748611A1FA08F71-252D"></a>压碎边界</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7C7D"></a> 
+                        <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-252C"></a>ProOptimizer 在优化对象时不考虑边缘或面是否位于边界上。 
+                        </p> <a name="WS73099CC142F48755-42A8108711A530FF1D3-56FB"></a><div class="figure-anchor"><img src="../images/GUID-74B5AA62-119A-4CBD-8519-D0E5DEB28DB5-low.png"></div>  
+                        <p><a name="GUID-BA543610-0516-440F-8851-D31CE6505A4E"></a> <em class="strong">“压碎边界”处于启用状态</em> 
+                        </p> 
+                        <p><a name="GUID-A52E2635-FBFA-4426-AB5C-CA92627E52CD"></a> <em class="strong">顶点 % = 50.0</em> 
+                        </p> 
+                        <p><a name="GUID-BD93A43F-16D6-427D-AB5C-D2CACA7AE37B"></a> <em class="strong">顶点数 = 278</em> 
+                        </p> 
+                        <p><a name="GUID-34F2072D-037E-4568-809E-05236CC703A6"></a> <em class="strong">面数减少但不保留对象边界。</em> 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7A1A"></a><span class="term"><a name="WS73099CC142F48755-63C0748611A1FA08F71-252B"></a>保护边界</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7C7C"></a> 
+                        <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-252A"></a>（默认设置。）ProOptimizer 将保护那些边缘位于对象边界上的面。不过，高优化级别仍然可能导致边界面被移除。如果对多个相连对象进行优化，则这些对象之间可能出现间隙。 
+                        </p> <a name="WS73099CC142F48755-42A8108711A530FF1D3-56FA"></a><div class="figure-anchor"><img src="../images/GUID-38C19187-4FE2-436B-8DC2-3D1582F354B1-low.png"></div>  
+                        <p><a name="GUID-60195524-CB98-42AB-AA9C-6B41063892E6"></a> <em class="strong">“保护边界”处于启用状态</em> 
+                        </p> 
+                        <p><a name="GUID-171FC8D9-DB46-4AD7-849F-F11AB6A1B324"></a> <em class="strong">顶点 % = 50.0</em> 
+                        </p> 
+                        <p><a name="GUID-EA3458B9-109B-43C8-94C0-9622B4F0A20B"></a> <em class="strong">顶点数：557</em> 
+                        </p> 
+                        <p><a name="GUID-ED51A5B4-3A48-42F3-AC66-057977013FBB"></a> <em class="strong">保留了边界。</em> 
+                        </p> <a name="WS73099CC142F48755-42A8108711A530FF1D3-56F9"></a><div class="figure-anchor"><img src="../images/GUID-5AC0F969-FF0F-4E18-A823-DDECD0F2CE4B-low.png"></div>  
+                        <p><a name="GUID-D1FCE6E1-C951-443A-AAD8-C9C10888CEE6"></a> <em class="strong">“保护边界”处于启用状态</em> 
+                        </p> 
+                        <p><a name="GUID-A9F550C4-DE4E-4D83-A8B2-BD64C6B8C034"></a> <em class="strong">顶点 % = 1.0</em> 
+                        </p> 
+                        <p><a name="GUID-AB37D51F-CF1C-48BA-AD16-390CE66CAD17"></a> <em class="strong">顶点数：5</em> 
+                        </p> 
+                        <p><a name="GUID-5451625F-44B3-4788-AC8B-1F717C9BC54B"></a> <em class="strong">减少“顶点 %”或“顶点数”可能会导致边界扭曲。</em> 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7A19"></a><span class="term"><a name="WS73099CC142F48755-63C0748611A1FA08F71-2529"></a>排除边界</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7C7B"></a> 
+                        <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-2528"></a>ProOptimizer 从不移除带边界边缘的面。这会减少能够从模型移除的面数，但可确保在优化多个互连对象时不会出现间隙。 
+                        </p> <a name="WS73099CC142F48755-42A8108711A530FF1D3-56F8"></a><div class="figure-anchor"><img src="../images/GUID-ED625950-E5C4-41EE-97D4-1D8AB7BB649A-low.png"></div>  
+                        <p><a name="GUID-BD8ED7E3-2BA3-419D-A0B8-84B7C58FBD11"></a> <em class="strong">“排除边界”处于启用状态</em> 
+                        </p> 
+                        <p><a name="GUID-800274D8-AA92-4A1C-A80B-2C9C16B84192"></a> <em class="strong">顶点 % = 10.0</em> 
+                        </p> 
+                        <p><a name="GUID-772828DB-36BE-4CD1-AEBC-7D479BC6B157"></a> <em class="strong">顶点数：65</em> 
+                        </p> 
+                        <p><a name="GUID-2F9D53FB-BD33-4152-A4F9-B0CCCAC57B79"></a> <em class="strong">“顶点 %”值较低时，“排除边界”可能会干扰优化。</em> 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

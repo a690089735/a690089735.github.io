@@ -1,0 +1,97 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-37DAC2AD-9AB9-4B99-A633-D76B65FEAAB2">
+      <meta name="topic-type" content="concept">
+      <title>Texture Object Mask</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-37DAC2AD-9AB9-4B99-A633-D76B65FEAAB2"></a><div class="head">
+            <h1>Texture Object Mask</h1>
+         </div>
+         <p class="blurb"> </p>
+         <div class="bodyReference">
+            <p>使用 Texture Object Mask 可通过将其他对象用作遮罩，来定位纹理和设置纹理动画。通过根据其他对象定位控制对象，您可以快速、精确地放置独特的纹理，而不必调整材质 ID 和更新 UV 贴图。就位后，通过设置控制对象参数的动画来设置材质位置的动画。控制对象的大小、位置、旋转或其他任何定义参数将直接影响其影响范围内的所有材质。纹理可一次应用于多个对象。
+               
+               
+            </p><a name="UL_73D15D5E2ABE4874B1F17D769ED8085A"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-3DA87188-4231-40AC-A825-930DF707FC34">“材质编辑器” <img src="../images/ac.menuaro.gif"> “材质/贴图浏览器” <img src="../images/ac.menuaro.gif"> “贴图” <img src="../images/ac.menuaro.gif"> “常规” <img src="../images/ac.menuaro.gif"> “TextObjMask”</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2A14"></a> 
+               <h2><a name="GUID-A09330AA-CDEB-4B42-9364-4FDE21864B92"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004-4B4"></a><div class="figure-anchor"><img src="../images/GUID-15CB9F91-2B77-420A-8942-569CDC5AF6E5-low.png"></div> <a name="GUID-B6A3B3CC-6E61-49F9-81B2-76537AD236F9"></a><div class="dl_section"><a name="GUID-23115C16-4769-4BFD-B618-0377C6DD5607"></a><p class="title"><a name="GUID-0014DC06-1D53-4736-8B1C-598CB131B08A"></a>参数
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7AA0"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-749B"></a>控制对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1891"></a> 从场景选择控制对象。可以是平面、长方体或球体。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7A9F"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-749A"></a>上方/内侧</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1892"></a>选择要放置在平面曲面上方或者长方体或球体内侧的材质的颜色。或者，启用该复选框来使用选定的贴图。
+                        </div>
+                     </dd>
+                     <dt><span class="term">下方/外侧</span></dt>
+                     <dd>
+                        <div class="definition">选择要放置在平面曲面下方或者长方体或球体外侧的材质的颜色。或者，启用该复选框来使用选定的贴图。</div>
+                     </dd>
+                     <dt><span class="term">过渡范围</span></dt>
+                     <dd>
+                        <div class="definition">设置用于混合颜色或贴图的过渡。</div>
+                     </dd>
+                     <dt><span class="term">过渡偏移</span></dt>
+                     <dd>
+                        <div class="definition">展开或收缩遮罩区域。</div>
+                     </dd>
+                     <dt><span class="term">过渡置换</span></dt>
+                     <dd>
+                        <div class="definition">使用选定贴图置换遮罩区域。</div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+            <div class="section"><a name="SECTION_534A102D9ABF4356A9664FDF975AF5A0"></a> 
+               <h2><a name="GUID-BD11E38B-C52E-4131-8C0B-CB95162BC496"></a>操作步骤
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004-4D4"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004-4D3"></a>若要将对象用作纹理遮罩，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建平面、长方体或球体以用作场景中的遮罩。 
+                     	 
+                  </li>
+                  <li>在“参数”卷展栏中，单击“控制对象”按钮，然后拾取平面、长方体或球体。 
+                     	 
+                  </li>
+                  <li>选择要用于控制对象的颜色和/或贴图。 
+                     	 
+                  </li>
+                  <li>根据场景中的其他对象放置该对象以定位纹理。 
+                     		
+                     <div><a name="GUID-D810C748-B04A-41A6-A972-71A640C8B6A0"></a><div class="note-tip"><span class="label label-target-language">提示</span>右键单击控制对象，并使用“对象属性”对话框关闭渲染和/或可见性。 
+                           		
+                        </div>
+                     </div> 
+                  </li>
+                  <li>移动和变换控制对象以创建动画纹理。 
+                     	 
+                  </li>
+               </ol> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-59167E4A-64F0-4575-A100-4116D0EBC403"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-8AE3643F-BDB4-498B-B220-92646FC8A562.htm">“坐标”卷展栏 (2D) 
+                        		</a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

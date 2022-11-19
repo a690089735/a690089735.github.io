@@ -1,0 +1,130 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-46AF968C-720E-4E35-9F60-55BC10A1B651">
+      <meta name="description" content="向量投影曲线依赖于曲面。除了从原始曲线到曲面的投影位于您可控制的矢量方向外，该曲线几乎与“法向投影曲线”完全相同。">
+      <meta name="indexterm" content="NURBS 曲面: 修剪">
+      <meta name="indexterm" content="NURBS 曲线: 矢量投影">
+      <meta name="indexterm" content="矢量投影曲线 (NURBS)">
+      <meta name="topic-type" content="concept">
+      <title>向量投影曲线</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-46AF968C-720E-4E35-9F60-55BC10A1B651"></a><div class="head">
+            <h1>向量投影曲线</h1>
+         </div>
+         <div class="abstract"> 
+            <p><a name="GUID-B851A852-07D5-42C3-B631-1948105B8F41"></a> <img src="../images/GUID-CEA563E5-E8E2-4378-9E00-2165D9B14469-low.png"> 
+            </p> 
+            <p class="blurb">向量投影曲线依赖于曲面。除了从原始曲线到曲面的投影位于您可控制的矢量方向外，该曲线几乎与“法向投影曲线”完全相同。 </p> 
+         </div><a name="UL_53F034E0133E4C8AA689C7F642A94779"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-09FB377C-E102-4672-B934-FF97EC003F95">选择 NURBS 对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “创建曲线”卷展栏  <img src="../images/ac.menuaro.gif"> “从属曲线”组框  <img src="../images/ac.menuaro.gif"> “向量投影”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-56339317-98C5-4408-89BE-848166FA387E">选择 NURBS 对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “NURBS”工具箱  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-CEA563E5-E8E2-4378-9E00-2165D9B14469-low.png">（创建向量投影曲线）</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6C19"></a>可以将向量投影曲线用于<span class="char_link"><a href="GUID-6DC30BD4-6592-42D9-8FC6-C25D539F29A9.htm">修剪</a></span>。 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190041FB8"></a><div class="figure-anchor"><img src="../images/GUID-A972783F-D714-4814-97F6-7A2ED7C6FB33-low.png"><p class="figure-title">使用向量投影曲线修剪曲面</p>
+         </div>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6C18"></a>如果投影在两个或多个位置上与曲面相交，则与种子点最近的交点是创建曲线的交点。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-6C17"></a> 
+            <h2><a name="GUID-021F155E-FE00-4422-9A4B-9993245F69FE"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041FB9"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041FBA"></a>要创建向量投影曲线，请执行以下操作：
+            </p>
+            <p><a name="WS1A9193826455F5FF-316FD70E123DECE8002-4F9A"></a>NURBS 对象必须至少包含一个曲面及一条曲线。 
+            </p>
+            <ol type="1" start="1">
+               <li>在 NURBS 工具箱中，启用 <img src="../images/GUID-CEA563E5-E8E2-4378-9E00-2165D9B14469-low.png">（创建向量投影曲线）。 
+               </li>
+               <li>单击该曲线，然后单击使向量投影曲线依赖的曲面。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6C16"></a>初始矢量方向位于视图方向。即，当注视视口时矢量点背离您。如果曲线从此方向投射到曲面，则可以创建投射曲线。原始父曲线可以离开“曲面的边”。只可以在投射和曲面相交的位置创建投射曲线。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-6C15"></a> 
+            <h2><a name="GUID-40821AC8-394B-4F31-99E3-D9B60A0D2E9A"></a>界面
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6C14"></a>在视口中，gizmo（默认情况下为黄色）指示投影轴。变换 gizmo 可以更改曲线上的投影。旋转 gizmo 对变换非常有用。可以使用旋转来调整投影引起的扭曲。 
+            </p> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041FBB"></a> 
+               <h3><a name="GUID-C844519E-D943-41B2-AC3A-6CB50B5BB4D8"></a>“向量投影曲线”卷展栏（创建时间）
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A190041FBC"></a><div class="figure-anchor"><img src="../images/GUID-159F0E6A-8BA0-417C-B08A-3E4537A6E3AD-low.png"></div>  <a name="GUID-3E15546E-1E1F-4B9A-8532-FA94AC306C56"></a><div class="dl_section"><a name="GUID-8481066A-28BC-40DD-9586-C919FB01C532"></a><p class="title"><a name="GUID-A510E0D0-16BA-4C47-8309-B34C9956898B"></a>“修剪控件”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D27D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6C13"></a>修剪</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-61BB"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753135"></a>启用此选项后，将针对曲线修剪曲面。禁用此选项后，不能修剪曲面。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6C12"></a>如果不可以使用该曲线进行修剪，则曲面将以错误的颜色显示（默认情况下为橙色）。例如，如果该曲线既不能与曲面的边交叉也不能形成闭合的环，则曲线将无法用于修剪。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D27E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6C11"></a>翻转修剪</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-61BA"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753136"></a>启用此选项后，将以相反的方向修剪曲面。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D27F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6C10"></a>U 向种子/V 向种子</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-61B9"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753137"></a>更改曲面上种子值的 UV 向位置。如果可以选择投影，则离种子点最近的投影是用于创建曲线的投影。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041FBE"></a> 
+               <h3><a name="GUID-6EE01E63-0CB5-4B73-BFED-6CC7BFB4C371"></a>“向量投影曲线”卷展栏（修改时间）
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A190041FBF"></a><div class="figure-anchor"><img src="../images/GUID-9F8822A0-F9F5-43CD-B983-B0785FB6C335-low.png"></div>  <a name="GUID-C153EEAB-96DF-49EF-B885-0F3778BB172E"></a><div class="dl_section"><a name="GUID-D1963825-B762-46A3-BEC0-34AA213DC621"></a><p class="title"><a name="GUID-6ED86EDE-C6B4-4DBC-9623-6B28FEA5DDED"></a>“修剪控件”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D280"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6C0F"></a>修剪</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-61B8"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753138"></a>启用此选项后，将针对曲线修剪曲面。禁用此选项后，不能修剪曲面。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6C0E"></a>如果不可以使用该曲线进行修剪，则曲面将以错误的颜色显示（默认情况下为橙色）。例如，如果该曲线既不能与曲面的边交叉也不能形成闭合的环，则曲线将无法用于修剪。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D281"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6C0D"></a>翻转修剪</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-61B7"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753139"></a>启用此选项后，将以相反的方向修剪曲面。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D282"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6C0C"></a>U 向种子/V 向种子</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-61B6"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875313A"></a>更改曲面上种子值的 UV 向位置。如果可以选择投影，则离种子点最近的投影是用于创建曲线的投影。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D283"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6C0B"></a>替换曲线 / 替换曲面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-61B5"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875313B"></a>用于替换父子对象。单击该按钮，然后单击曲线或曲面可以替换原始父对象。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C6126DFA-213C-4844-AEFF-9AED3B8497AC">
+      <meta name="description" content="通过这些控件，可以增加渲染的景深。只有当渲染摄影机或透视视图时，景深才可用。">
+      <meta name="indexterm" content="quicksilver 硬件渲染器: 景深">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="using">
+      <title>“景深”卷展栏 (Quicksilver 渲染器）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C6126DFA-213C-4844-AEFF-9AED3B8497AC"></a><div class="head">
+            <h1> “景深”卷展栏 (Quicksilver 渲染器）</h1>
+         </div>
+         <p class="blurb">通过这些控件，可以增加渲染的景深。只有当渲染摄影机或透视视图时，景深才可用。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_6DEADB0549ED4A67BC60E49C5E26339A"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-EA34BAC8-66DD-4511-84A5-6A78FFCDAA55">主工具栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-D7B21710-141B-4E81-BB93-6175D09E68D0-low.png">（渲染设置） <img src="../images/ac.menuaro.gif"> “渲染设置”对话框  <img src="../images/ac.menuaro.gif"> “公用”面板  <img src="../images/ac.menuaro.gif"> “指定渲染器”卷展栏  <img src="../images/ac.menuaro.gif">  选择“Quicksilver 硬件渲染器”作为活动的产品级渲染器。 <img src="../images/ac.menuaro.gif"> “渲染器”面板  <img src="../images/ac.menuaro.gif"> “景深”卷展栏</span> 
+               </li>
+            </ul><a name="FIG_5EF9B7C3F3D643298E49EA479312E5B8"></a><div class="figure-anchor"><img src="../images/GUID-8655437A-CE99-414F-AE81-F9220ECDE4E9-low.png"></div>
+            <div><a name="GUID-BC4F2422-714B-4980-AC0A-B86D9D9552BD"></a><div class="note-note"><span class="label label-target-language">注意:</span>通过 MAXScript，可以控制焦点外区域中<a href="http://en.wikipedia.org/wiki/bokeh" target="_blank">散景效果</a>的颜色和图形。有关详细信息，请参见 MAXScript 帮助 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> MAXScript 语言参考 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 3ds Max 对象 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> RendererClass <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> Quicksilver_Hardware_Renderer : RendererClass。 
+                  
+               </div>
+            </div><a name="GUID-BFE382DA-85C9-4648-8670-34B3D9303042"></a><dl>
+               <dt><a name="WS73099CC142F487551D68DD061249D36330F-705B"></a><span class="term"><a name="WS73099CC142F487551D68DD061249D36330F-705A"></a>启用</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551D68DD061249D36330F-7059"></a> 
+                     <p><a name="WS73099CC142F487551D68DD061249D36330F-7058"></a>当启用时，渲染生成景深。默认设置为禁用。 
+                        
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551D68DD061249D36330F-7057"></a><span class="term"><a name="WS73099CC142F487551D68DD061249D36330F-7056"></a>[“摄影机”下拉列表]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551D68DD061249D36330F-7055"></a> 
+                     <p><a name="WS73099CC142F487551D68DD061249D36330F-7054"></a>当选择“与摄影机之间”（默认值）时，Quicksilver 渲染器使用摄影机的“目标距离”和“f 制光圈”设置来生成景深。 
+                        
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF219F8B8B1249CF2CB82-46B7"></a>当选择“覆盖摄影机”时，可以选择用于生成与“摄影机”设置不同的景深的值。 
+                        
+                     </p> <a name="WS1A9193826455F5FF219F8B8B1249CF2CB82-46B6"></a><ul>
+                        <li> <em class="strong">焦平面</em>按相对于摄影机对象的距离设置焦平面的位置（使用 3ds Max 单位）。默认设置为 100.0。 
+                           
+                        </li>
+                        <li> <em class="strong">f 制光圈</em>设置与焦点平面结合使用的 f 制光圈值。增大 f 制光圈值将使景深扩大（增大焦点范围），减小 f 制光圈值将使景深缩窄（减小焦点范围）。默认设置为 1.0。 
+                           
+                        </li>
+                     </ul> 
+                  </div>
+               </dd>
+            </dl>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

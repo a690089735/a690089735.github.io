@@ -1,0 +1,44 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-2A599FB6-D538-47BC-837A-F39E02DDB9A0">
+      <meta name="indexterm" content="MaxZip">
+      <meta name="indexterm" content="MaxUnzip">
+      <meta name="indexterm" content="归档">
+      <meta name="indexterm" content="压缩">
+      <meta name="topic-type" content="concept">
+      <title>MaxZip 和 MaxUnzip 归档实用程序</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-2A599FB6-D538-47BC-837A-F39E02DDB9A0"></a><div class="head">
+            <h1>MaxZip 和 MaxUnzip 归档实用程序</h1>
+         </div>
+         <p>3ds Max 提供了两个实用程序，用于归档（“压缩”）场景及相关资源以进行存储或与其他用户共享。<span class="filePath">MaxZip.exe</span> 和 <span class="filePath">MaxUnzip.exe</span> 实用程序位于 3ds Max 安装目录中，当您使用“文件”&gt;“归档”<em class="strong"></em>命令时，3ds Max 使用这两个默认实用程序。您可以在<span class="MenuCascade">“自定义” <img src="../images/ac.menuaro.gif"> “首选项”</span>下更改此设置。 
+            	 
+         </p>
+         <div class="codeBlock"><pre><em class="codeEmphasisStrong">maxzip</em> &lt;archive_file_name&gt; @&lt;manifest_file&gt; [-q[uiet]]</pre></div>
+         <p>以指定的文件名归档指定的文件列表。如果归档文件已存在，则将替换为新的归档。 
+            	 
+         </p>
+         <p>清单文件中列出了完全限定文件名，每行显示一个文件名。清单不支持注释。如果同一文件在清单文件中多次列出，则只向归档添加一次该文件。如果指定了位于不同位置但名称相同的多个文件，则将显示一个警告对话框，询问您是否要取消操作。这是因为 <span class="filePath">MaxUnzip</span> 将所有文件提取到单个目录中。文件名不区分大小写。 
+            	 
+         </p>
+         <p> 如果指定了静默模式，则不会显示重复文件名对话框，归档操作会继续，且重复的文件名会写入控制台。 
+            	 
+         </p>
+         <p> 例如： 
+            	 
+         </p>
+         <div class="codeBlock"><pre>.\MaxZip.exe ".\archives\myzip.zip" @".\archives\archive_manifest.txt"
+4 files specified; 4 unique files; 4 files successfully archived; processing time 0.1012889 seconds</pre></div>
+         <p> </p>
+         <p><em class="strong">maxunzip</em> 命令将指定归档中包含的文件解压缩到当前工作目录。所有文件路径信息都将丢弃。请注意，<span class="filePath">MaxZip</span> 会在其创建的归档文件中保留相对路径信息，如果您要求此信息保持不变，应使用其他归档实用程序（例如 7-Zip）解压缩归档。 
+            	 
+         </p>
+         <div class="codeBlock"><pre><em class="codeEmphasisStrong">maxunzip</em> &lt;archive file name&gt;</pre></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-146CAC45-1D4B-4F95-8EA2-7B662D6A3B30">
+      <meta name="indexterm" content="包含: 几何体（导入）">
+      <meta name="indexterm" content="几何体: 平滑组（导入）">
+      <meta name="indexterm" content="导入: 平滑组">
+      <meta name="indexterm" content="重新计算“平滑组”: 使用时间">
+      <meta name="indexterm" content="平滑组（导入）: 示例">
+      <meta name="indexterm" content="示例: 平滑组">
+      <meta name="indexterm" content="显示层: 导入">
+      <meta name="indexterm" content="导入: 显示层">
+      <meta name="topic-type" content="concept">
+      <title>几何体</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-146CAC45-1D4B-4F95-8EA2-7B662D6A3B30"></a><div class="head">
+            <h1>几何体</h1>
+         </div>
+         <p><a name="WS73099CC142F487551051018113CCCDB767-4B42"></a> 展开“几何体”卷展栏可以访问与向场景中导入几何体相关的选项。 
+         </p>
+         <div class="section"><a name="SECTION_9288D3D6DEAD49568A1F64899A66F09D"></a> 
+            <h2><a name="GUID-8C3D7C42-D6C4-46F5-94A8-AA7AB44E00FA"></a>平滑组
+            </h2> 
+            <p><a name="WS73099CC142F48755-42D82BFB116E746D5A6-5469"></a> 如果希望保留所导入的 FBX 文件中的平滑组信息，请激活此选项。如果 FBX 文件中不包含平滑组数据，并且此选项处于激活状态，则该插件会重新计算几何体并基于明确的法线数据为所有导入的几何体创建平滑组。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF-29C43AA6117A24C0284-4225"></a>激活此选项会直接影响性能。性能降低是由于插件必须重新计算所有几何体。 
+            </p> 
+            <div><a name="WS73099CC142F48755-42D82BFB116E746D5A6-5468"></a><div class="note-note"><span class="label label-target-language">注意:</span> 如果导入 Revit 导出的或 MotionBuilder 保存的 FBX 场景，则可以使用此选项，因为它们不包含平滑组信息，但某些平滑组可能不会生成属性，并且可能会导致明暗处理不一致。 
+               </div>
+            </div> 
+            <p><a name="WS73099CC142F487553B93539F117A2602BD5-5F66"></a>默认情况下，<span class="char_link"><a href="GUID-AE794918-3077-4203-A926-DB0A4C164788.htm#SECTION_FA4207600EED407B9F1157BB015851F4">Autodesk Media &amp; Entertainment 预设</a></span>中的此选项处于禁用状态。<span class="char_link"><a href="GUID-AE794918-3077-4203-A926-DB0A4C164788.htm#SECTION_1204436EFE6D4347B278CBF8FEFEABFB">Autodesk Architectural (Revit) 预设</a></span>中的此选项同样处于禁用状态。 
+            </p> 
+            <p><a name="WS73099CC142F48755-42D82BFB116E746D5A6-5466"></a>如果 FBX 场景中已包含平滑组数据并且此选项处于禁用状态，则 <span class="charspan-msgph">3ds Max FBX plug-in</span>将仅导入显式法线数据（而忽略所有平滑组信息）。 
+            </p> 
+            <div><a name="WS1A9193826455F5FF-6AB24494123382A9C4B-61D3"></a><div class="note-note"><span class="label label-target-language">注意:</span> 显式法线和平滑组存在一定的限制。有关说明，请参见<span class="char_link"><a href="GUID-26768445-268E-48B4-9271-B16E5AD43713.htm">导入显式法线和平滑组</a></span>。 
+               </div>
+            </div> <a name="GUID-A33FC658-4E3E-4761-9200-6F143B7B6DF8"></a><dl>
+               <dt><a name="GUID-BC0907AD-4BA0-4B68-A514-0BE845482017"></a><span class="term"><a name="GUID-98686332-BCE9-451C-81A5-E2270D1D7DFE"></a>适用情况</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-B3BF1116-769D-4E57-B1BD-64658E4738C6"></a> 
+                     <p><a name="WS73099CC142F487553B93539F11736330C40-7DFC"></a> 对于导入场景并要使用和修改“平滑组”信息的 3ds Max 用户而言，最好激活此选项。 
+                     </p> 
+                     <div><a name="WS73099CC142F487553B93539F11736330C40-7DFB"></a><div class="note-note"><span class="label label-target-language">注意:</span> 
+                           <p><a name="GUID-D8D396C1-4848-4323-97A9-25BF40AC6BEA"></a>如果场景中包含成千上万的对象，并且您知道自己不需要使用“平滑组”，则不要使用此选项。否则，<span class="charspan-msgph">3ds Max FBX plug-in</span>必须在导入时重新计算每个对象，此过程很耗时。 
+                           </p> 
+                        </div>
+                     </div> 
+                     <p><a name="WS73099CC142F487553B93539F11736330C40-7DFA"></a>如果您是 Maya 用户，则该插件已导出了平滑信息（硬边/软边）。激活和禁用此选项所显示的结果通常相同。但附加的平滑组信息/ID（例如，哪一面会被标识为属于平滑组 1、2 等等）会有所不同。 
+                     </p> 
+                     <div class="section"><a name="GUID-24E5B6D1-CDE6-44B7-BD69-BC0A8F0F81EB"></a> 
+                        <h4><a name="GUID-D3EFD82C-2532-49DE-844D-31C17094DCD3"></a>示例
+                        </h4> 例如，如果您要编辑来自 Revit 的对象的平滑，激活此选项可以在导入时创建平滑组。然后，您就可以在 3ds Max 中编辑这些“平滑组”。由于 Revit 没有要导出的平滑组数据，因此 <span class="charspan-msgph">3ds Max FBX plug-in</span>导入器必须创建此数据。同样，Maya 默认也不会导出平滑组数据。除非您激活 Maya FBX 导出器插件的“平滑组”选项，并随后根据硬/软边信息生成了平滑组，否则，Maya 将使用直接应用于几何体法线的硬/软边信息。 
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-BA885AF9-F76F-4D9E-AC50-CFF18B7092A9"></a><span class="term"><a name="GUID-DFA5FA38-B556-47D9-8072-ED65F51F5A46"></a>平滑组和 Collada</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-53F86DC0-DA6F-42EB-B005-D119CB487ECD"></a> 
+                     <p><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD1-141B"></a> FBX Collada 导入器中的“平滑组”选项不会从 FBX 文件中导入平滑组。相反，如果激活此选项，则该导入器会在导入过程中创建平滑组。Collada 导入器必须在导入时创建平滑组，因为 FBX Collada 导出器不会从 3ds Max
+                        中导出平滑组数据。如果禁用“平滑组”选项，则该导入器不会生成平滑组。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="section"><a name="SECTION_967A382BF6F04A4B8F9A96085B261F97"></a> 
+            <h2><a name="GUID-6C8FE92C-2A7A-49A5-B708-B629B2365423"></a>显示层
+            </h2> 
+            <p><a name="WS73099CC142F48755-385A98B0121D1BB015F-4002"></a> <span class="charspan-msgph">3ds Max FBX plug-in</span>将自动导入显示层，此功能并未显示在 3ds Max FBX 插件的用户界面中。此选项会在“对象属性”设置为“按对象”时导入 3ds Max 对象。 
+            </p> 
+            <div><a name="WS73099CC142F48755-385A98B0121D1BB015F-4001"></a><div class="note-note"><span class="label label-target-language">注意:</span> 仅层 0 以外的层支持层属性；FBX 无法识别层 0。例如，如果您在层 0 和层 1 中均有对象，则 FBX 会忽略层 0 的属性但保留层 1 的层属性信息。 
+               </div>
+            </div> <a name="WS73099CC142F48755-385A98B0121D1BB015F-4000"></a><p class="list-intro"><a name="WS73099CC142F48755-385A98B0121D1BB015F-3FFF"></a>将导入以下显示层属性：
+            </p>
+            <ul>
+               <li>层成员列表 </li>
+               <li>层名 </li>
+               <li>显示为外框 </li>
+               <li>冻结属性 </li>
+               <li>隐藏 </li>
+               <li>颜色 </li>
+            </ul> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-EF7467CE-6FCB-4267-B183-C7529A7876DA">
+      <meta name="description" content="连接实体和焊接及“布尔”选项可以将分离的对象合并为单个实体对象。此卷展栏上的选项确定了对象的连接方式。">
+      <meta name="indexterm" content="连接实体转换参数">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>“转换参数”卷展栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-EF7467CE-6FCB-4267-B183-C7529A7876DA"></a><div class="head">
+            <h1>“转换参数”卷展栏</h1>
+         </div>
+         <p class="blurb"> 连接实体和焊接及“布尔”选项可以将分离的对象合并为单个实体对象。此卷展栏上的选项确定了对象的连接方式。 </p>
+         <div class="bodyReference"><a name="UL_1865BBCF374B4EE69D74C779C7BA27EB"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-AA192E18-9E8D-4E03-B5A9-6A23BEE1905A"> 选择两个或多个对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">“几何体”按钮  <img src="../images/ac.menuaro.gif"> “实体对象”（在下拉列表中） <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “连接实体”</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WS73099CC142F48755F2FC9DF120970276F73CFC"></a> <a name="WS73099CC142F48755F2FC9DF120970276F73CFB"></a><div class="figure-anchor"><img src="../images/GUID-107D44C2-39DB-4AD2-B8D4-A8C9F694FB03-low.png"></div>  <a name="GUID-DE95D023-BAC7-42D3-9A9B-5D1FE0FBC80B"></a><dl>
+                  <dt><a name="WS73099CC142F48755-385A98B012180D20F19-4B7B"></a><span class="term"><a name="WS73099CC142F48755-385A98B012180D20F19-4B7A"></a>[统计信息]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-385A98B012180D20F19-4B79"></a> 显示通过“连接实体”生成的实体对象中的边、顶点、开放边、面、元素和体积的数目。 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-FBFC0DCA-ECAF-4475-8A92-2D12D3E95633"></a><p class="title"><a name="GUID-A7D2E297-C402-41F2-A0FE-4CCD9C818A4C"></a>“运算”组
+                  </p>
+                  <p><a name="WS73099CC142F48755-385A98B012180D20F19-4B74"></a>选择如何合并连接实体： 
+                  </p><a name="WS73099CC142F48755-385A98B012180D20F19-4B73"></a><ul>
+                     <li><em class="strong">仅焊接成边</em>焊接连接曲面的边（移除接缝或缝隙），使其成为一个曲面。此选项不尝试确定对象是否为实体。这对于渲染或合并不形成闭合实体的对象来说通常已足够了。 
+                     </li>
+                     <li><em class="strong">焊接成实体</em>如果可以，焊接连接曲面的边（移除接缝或缝隙），使其成为一个实体。确定对象是否为实体的计算可能比较耗时。 
+                     </li>
+                     <li><em class="strong">将边焊接成曲面</em>此选项类似于“仅焊接成边”，不同之处在于边也可以焊接至曲面的中部。 
+                     </li>
+                     <li><em class="strong">不执行任何操作</em>不执行任何焊接或合并操作。 
+                     </li>
+                     <li><em class="strong">交集 + 合并面</em>将曲面相交并合并在一起以形成一个以合并面为界限的实体对象。 
+                     </li>
+                     <li><em class="strong">布尔并集</em>将图形从逻辑上合并在一起，从而移除相交几何体并从整体图形中形成一个真实的实体。 
+                     </li>
+                  </ul>
+               </div>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-385A98B012180D20F19-4B6C"></a><span class="term"><a name="WS73099CC142F48755-385A98B012180D20F19-4B6B"></a>移除过多的面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-385A98B012180D20F19-4B6A"></a> 移除在生成的实体对象之外的修剪面。例如，将对使用“交集 + 合并面”选项合并的曲面进行修剪，并且移除多余的材质（生成的实体边界之外的面）。 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

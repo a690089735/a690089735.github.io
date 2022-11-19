@@ -1,0 +1,126 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-4B45DE7D-3893-41D2-92DC-51C98FE859C2">
+      <meta name="description" content="方向行为可让您控制代理是否旋转，如何旋转（旋转与其运动方向无关）。通常，代理始终面向它移动的方向。您可以使用方向行为指定代理的旋转活动的限制，同时又不影响其他行为生成的代理路径。例如，使用以下设置可以使代理在移动时保持朝向一个方向。">
+      <meta name="indexterm" content="“群组”卷展栏: 方向行为">
+      <meta name="indexterm" content="群组动画: 方向行为">
+      <meta name="indexterm" content="群组行为: 方向">
+      <meta name="topic-type" content="concept">
+      <title>方向行为</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-4B45DE7D-3893-41D2-92DC-51C98FE859C2"></a><div class="head">
+            <h1>方向行为</h1>
+         </div>
+         <p class="blurb">方向行为可让您控制代理是否旋转，如何旋转（旋转与其运动方向无关）。通常，代理始终面向它移动的方向。您可以使用方向行为指定代理的旋转活动的限制，同时又不影响其他行为生成的代理路径。例如，使用以下设置可以使代理在移动时保持朝向一个方向。 </p><a name="GUID-D54FD124-24FA-469E-93EA-D2C7D2D64A06"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-C699E62C-7ECD-40F6-A71C-E5BFBEB4851A"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-9A23D2B8-9CE2-40BE-98B6-651DBC94F4F7-low.png">（辅助对象） <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “群组” <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “行为”组  <img src="../images/ac.menuaro.gif">  单击“新建”按钮。 <img src="../images/ac.menuaro.gif"> “选择行为类型”对话框  <img src="../images/ac.menuaro.gif"> “定向行为”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-F8450D5B-CDDC-4F7E-932B-8CC3F07DC6DE">选择群组对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “行为”组  <img src="../images/ac.menuaro.gif">  单击“新建”按钮。 <img src="../images/ac.menuaro.gif"> “选择行为类型”对话框  <img src="../images/ac.menuaro.gif"> “定向行为”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-67AAF21C-4C3F-4BA1-8E4F-F6817E6F93C7">选择群组对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “行为”组  <img src="../images/ac.menuaro.gif">  从下拉列表中选择“方向”。</span> 
+            </li>
+         </ul>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E839"></a><div class="note-note"><span class="label label-target-language">注意:</span>这些设置并不影响其他行为（如查找行为和回避行为）为代理生成的路径。它们只影响代理在沿路径运动时面朝的方向。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4631"></a> 
+            <h2><a name="GUID-A2B4837D-A96F-47C4-865B-3DE1FC89E3A8"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045F6B"></a><div class="figure-anchor"><img src="../images/GUID-10A8273E-0384-4990-9223-833BB80A7084-low.png"></div> <a name="GUID-9E5C8A2A-009E-41DF-84DC-81187B96BC8C"></a><div class="dl_section"><a name="GUID-F6FBC312-D57D-4A80-9BDD-464AD07241B0"></a><p class="title"><a name="GUID-708F30A5-D0AA-4858-91A8-A9F8E20347D1"></a>“方向”组
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16C17"></a>使用这些控制可以影响代理如何在垂直轴上转向。默认情况下，方向是绝对方向，0 表示世界坐标的正 X 轴。-90 表示负 Y 轴，90 表示正 Y 轴，180 或 -180 表示负 X 轴。 
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190045F6D"></a><div class="figure-anchor"><img src="../images/GUID-452DA7A5-4619-4D91-8B42-8CF562C36D9C-low.png"><p class="figure-title">从顶部看到的绝对方向 </p>
+               </div>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16C18"></a>例如，如果希望代理能够在正 X 轴和正 Y 轴之间转向，需要将“最大方向”设为 0，将“最小方向”设为 90。 
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16C19"></a>还可以在“方向”行为生效时通过选中“相对”复选框，指定相对于代理方向的方向限制数值。 
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A87"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C1A"></a>相对</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B38"></a> 打开此设置后，会在方向行为生效时，相对于代理方向应用“方向”设置。关闭此设置后，设置指的是绝对设置。默认设置为禁用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A86"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C1B"></a>最小方向</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B37"></a> 所允许的最小方向。此数值应低于“最大方向”值。默认设置为 180。范围从 -180 到 180。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A85"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C1C"></a>最大方向</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B36"></a> 所允许的最大方向。此数值应高于“最小方向”值。默认设置为 180。范围从 -180 到 180。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A84"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C1D"></a>最大方向速度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B35"></a> 指定代理的方向每帧可以变化多少。此设置控制角速度加速和减速。默认设置为 180。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A83"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C1E"></a>方向响应</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B34"></a> 确定前后朝向跟随对象前进方向的速度。值 1.0 表示最大响应度，因此会指出代理的前进方向（限制内），而较低值表示它的响应度比较低。默认设置为 1。范围从 0 到 1。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-C222126E-93C5-4272-95AC-21E22142F0F4"></a><p class="title"><a name="GUID-9E62F088-9A0C-4CF6-B47F-6358857E088C"></a>“俯仰”组
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16C1F"></a>使用这些控制可以影响代理如何在左右轴上转向。 
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A82"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C20"></a>相对</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B33"></a> 打开此设置后，会在方向行为生效时，相对于代理俯仰方向应用“俯仰”设置。关闭此设置后，设置指的是绝对设置。默认设置为禁用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A81"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C21"></a>最小俯仰</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B32"></a> 代理可以倾斜或下降的最小角度。此数值应低于“最大角度”值。默认设置为 -180。范围从 -180 到 180。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A80"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C22"></a>最大俯仰</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B31"></a> 代理可以倾斜或下降的最大角度。此数值应高于“最小角度”值。默认设置为 180。范围从 -180 到 180。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A7F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C23"></a>最大俯仰速度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B30"></a> 指定代理的上下倾斜每帧可以变化多少。此设置控制角速度加速和减速。默认设置为 180。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A7E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C24"></a>俯仰响应</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B2F"></a> 确定上下倾斜跟随对象前进方向的速度。值 1.0 表示最大响应度，因此会指出代理的前进方向（限制内），而较低值表示它的响应度比较低。默认设置为 1。范围从 0 到 1。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-BFF77E18-099E-4598-AC83-1EE92B00D8D4"></a><p class="title"><a name="GUID-CEAC3F36-A22D-44B9-8F04-BEA3876271D6"></a>“倾斜”组
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16C25"></a>使用这些控制可以影响代理如何在内外轴上转向。倾斜主要是方向变化的结果。 
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A7D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C26"></a>最大倾斜</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B2E"></a> 代理可以倾斜的最大角度。默认设置为 30.0。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A7C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C27"></a>最大倾斜速度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B2D"></a> 代理倾斜角度在每帧可以变化的最大角度。此设置控制角速度加速和减速。默认设置为 3.0。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A7B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16C28"></a>每次翻转的倾斜度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B2C"></a> 作为当前帧的翻转角度的函数，代理将倾斜多少度。例如，如果每次翻转的倾斜度为 1，那么在特定帧中，代理将在它每翻转一度时倾斜一度。默认设置为 1.0。 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

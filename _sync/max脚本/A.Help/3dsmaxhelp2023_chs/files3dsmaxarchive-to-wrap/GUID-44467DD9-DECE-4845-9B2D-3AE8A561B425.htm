@@ -1,0 +1,75 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-44467DD9-DECE-4845-9B2D-3AE8A561B425">
+      <meta name="description" content="每个粒子移动的位置和方向由粒子创建时发射器的位置和方向确定。如果发射器穿过场景，粒子将沿着发射器的路径散开。">
+      <meta name="indexterm" content="对象运动继承卷展栏（粒子阵列）">
+      <meta name="indexterm" content="卷展栏: “粒子阵列”卷展栏">
+      <meta name="indexterm" content="粒子阵列">
+      <meta name="topic-type" content="concept">
+      <title>“对象运动继承”卷展栏（粒子阵列）</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-44467DD9-DECE-4845-9B2D-3AE8A561B425"></a><div class="head">
+            <h1>“对象运动继承”卷展栏（粒子阵列）</h1>
+         </div>
+         <p class="blurb">每个粒子移动的位置和方向由粒子创建时发射器的位置和方向确定。如果发射器穿过场景，粒子将沿着发射器的路径散开。 </p><a name="GUID-6223C9EF-A9B8-4CBC-93EA-CAD94F2EF462"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-D0C369AB-71FE-4BCB-ACAE-A78F124226E4"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">（几何体） <img src="../images/ac.menuaro.gif">  从下拉列表中选择“粒子系统”。 <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “超级喷射/暴风雪/粒子阵列/粒子云” <img src="../images/ac.menuaro.gif"> “对象运动继承”卷展栏</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-7F5FAA25-B6E7-42D4-89B8-1D84754D72F1">选择“超级喷射/暴风雪/粒子阵列/粒子云”发射器。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “对象运动继承”卷展栏</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5E11"></a>使用以下选项可以通过发射器的运动影响粒子的运动。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-5E10"></a> 
+            <h2><a name="GUID-81BD3B76-1A77-4B0C-B92C-3DC37FBB8362"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190042633"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190042634"></a>示例：观察对象运动继承：
+            </p>
+            <ol type="1" start="1">
+               <li>创建超级喷射粒子系统。 </li>
+               <li> <img src="../images/GUID-48CE32A3-32F5-433A-B89D-C6F12E6A7C44-low.png"> 在第 1 帧到第 15 帧之间设置发射器向侧面（与粒子流的方向垂直）移动的动画。 
+               </li>
+               <li> <img src="../images/GUID-5B32F2AB-610D-42BB-8C54-81463BE72359-low.png"> 播放动画，同时从顶视口中观察。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5E0F"></a>发射器在第 15 帧停止，发射器在该点前已发射的粒子继续沿着发射器路径与粒子路径之间的对角线移动。剩余粒子从发射器沿直线移出。 
+                  </p> 
+               </li>
+               <li>在“对象运动继承”卷展栏上，将“影响”设置为 <em class="strong">50</em>。 
+               </li>
+               <li> <img src="../images/GUID-5B32F2AB-610D-42BB-8C54-81463BE72359-low.png"> 再次播放动画。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5E0E"></a>这次，只有部分粒子继承了发射器的运动，而其他粒子从发射器沿直线移出。请注意，后者形成了对角线粒子流，因为每个粒子在发射器路径的后续点上出现。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-5E0D"></a> 
+            <h2><a name="GUID-69B6A295-2B1B-4001-A09E-B58DB0A13B8F"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190042635"></a><div class="figure-anchor"><img src="../images/GUID-707F2308-B992-432E-BD81-B6D198A46BD2-low.png"></div> <a name="GUID-DC417D59-DB80-476F-B9AB-435699FBF2C3"></a><dl>
+               <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6223"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5E0C"></a>影响</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-632A"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752DF3"></a>在粒子产生时，继承基于对象的发射器的运动的粒子所占的百分比。例如，如果将此选项设置为 100（默认设置），则所有粒子均与移动的对象一同移动；如果设置为 0，则所有粒子都不会受对象平移的影响，也不会继承对象的移动。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6222"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5E0B"></a>倍增</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6329"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752DF4"></a>修改发射器运动影响粒子运动的量。此设置可以是正数，也可以是负数。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6221"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5E0A"></a>变化</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6328"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752DF5"></a>提供倍增值的变化的百分比。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

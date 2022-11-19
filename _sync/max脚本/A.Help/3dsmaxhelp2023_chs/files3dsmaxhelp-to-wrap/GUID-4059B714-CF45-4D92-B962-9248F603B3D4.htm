@@ -1,0 +1,159 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-4059B714-CF45-4D92-B962-9248F603B3D4">
+      <meta name="description" content="粒子流中的高级数据操纵工具集使用多种数据类型；以下是带有每种类型的插图作为子操作符输入连接器的综合列表：">
+      <meta name="topic-type" content="concept">
+      <title>数据类型</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-4059B714-CF45-4D92-B962-9248F603B3D4"></a><div class="head">
+            <h1> 数据类型</h1>
+         </div>
+         <p class="blurb">粒子流中的高级数据操纵工具集使用多种数据类型；以下是带有每种类型的插图作为子操作符输入连接器的综合列表： 
+            
+         </p>
+         <div class="bodyReference">
+            <p><a name="GUID-483459E1-C6F4-4867-9266-DAA7ABF6D133"></a><img src="../images/GUID-6788874B-5FC2-44AF-B523-5EC43D08D999-low.png"> 布尔 - 蓝色 
+               
+            </p>
+            <p><a name="GUID-9C910FE9-21C4-4B4D-AEE6-362AB04123C5"></a><img src="../images/GUID-F71E6840-4CAC-4E15-8BC2-FCF937A35783-low.png"> 复数 - 青色 
+               
+            </p>
+            <p><a name="GUID-52C2641C-C87B-44B6-9BC8-35091ACF6674"></a><img src="../images/GUID-F4142D09-8AEB-4041-8D58-877ABA6FFC23-low.png"> 等于 - 绿色 
+               
+            </p>
+            <p><a name="GUID-A0830923-7FCE-4B13-8E47-CA9267B5A2E9"></a><img src="../images/GUID-0DEA8BF2-49A6-49B7-BA41-38020AF5DDD2-low.png"> 整数 - 靛蓝色 
+               
+            </p>
+            <p><a name="GUID-4D288459-5727-4B02-9055-EE7C8057B7C9"></a><img src="../images/GUID-8625B25F-5298-4EC7-B5A8-1DC7017CF6E9-low.png"> 矩阵 - 栗色 
+               
+            </p>
+            <p><a name="GUID-EA545A98-D378-4278-B9D8-DA577E5F4B0E"></a><img src="../images/GUID-874DE326-C66C-472B-88CA-72BF27330C51-low.png"> 对象 - 橙色 
+               
+            </p>
+            <p><a name="GUID-01875B2D-BB2B-496B-8006-733B3F5B6635"></a><img src="../images/GUID-0BA91F2D-F821-4A1C-84D2-3E043873D670-low.png"> 对 - 粉红色 
+               
+            </p>
+            <p><a name="GUID-530DF433-50B7-4B7D-8D7F-2826B32C964E"></a><img src="../images/GUID-F8E5FB12-FB2D-4AA8-B486-5768DB6BCDDE-low.png"> 四元数 - 黄色 
+               
+            </p>
+            <p><a name="GUID-0F72E745-9EE2-4267-95D3-03EA5C03395B"></a><img src="../images/GUID-78F70404-7FA1-42CB-8BB6-4E38931E885C-low.png"> 实数 - 红色 
+               
+            </p>
+            <p><a name="GUID-8ADB1E00-324A-43FC-A991-44910A519A53"></a><img src="../images/GUID-7784090D-DF57-4E6D-A51E-BD0A80EF379F-low.png"> 时间 - 青绿色 
+               
+            </p>
+            <p><a name="GUID-24D09EBE-3419-4633-895E-3FC917AC8662"></a><img src="../images/GUID-6EA5CFD9-F427-4872-A571-6394D0E4CBF4-low.png"> 向量 - 紫色 
+               
+            </p>
+            <p><a name="GUID-9B16853F-CD07-4A61-BB42-A1EAD8867255"></a>这些颜色在“数据视图”中用于输入和输出连接器，在某些情况下用于按钮，以启用其他输入作为在常规界面中指定值的备选方案。 
+               
+            </p>
+            <p><a name="GUID-D534A661-0B91-420F-9531-7AF892112B67"></a>大多数数据类型都不言自明。以下讨论涵盖了其他类型： 
+               
+            </p>
+            <div class="section"><a name="AB1004628"></a> 
+               <h2><a name="GUID-C3E48315-7296-4B22-B3BF-3CBF88CAEB7E"></a>对和复数数据类型
+               </h2> 
+               <p><a name="GUID-D7BBAB6F-0AF2-4E4A-86C8-0BFFD37AF276"></a>某些子操作符生成的数据不适合向量、整数或时间格式。因此，添加了两个新的“人工”类型： 
+                  
+               </p> 
+               <p><a name="GUID-981B907B-7DBC-4D1F-B9E9-304E5A04441D"></a> <em class="strong">对</em> = {向量 + 整数} 
+                  
+               </p> 
+               <p><a name="GUID-E9491847-83A6-4E67-B761-07C3AD834BDA"></a> <em class="strong">复数</em> = {向量 + 整数 + 时间}（不是传统的复数）。 
+                  
+               </p> 
+               <p><a name="GUID-2D619E77-265A-4A64-9357-00C737E84C24"></a>下面讨论了使用“对”和“复数”类型的情况： 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="AB1004675"></a> 
+               <h2><a name="GUID-EC2700C1-5AF7-41C8-A446-BC5EB17ED402"></a>对象子操作符 - 点位置选项 
+               </h2> 
+               <p><a name="GUID-30BD335A-30B0-49CE-884D-C95A725ED144"></a>其中一个输入类型是“对”类型 = {向量 + 整数}，其中“向量”输入是在对象的局部坐标中的位置，“整数”输入是对象的索引，如<span class="char_link"><a href="GUID-BDECE712-8441-4E15-B213-8DBAFE144268.htm">选择对象子操作符</a></span>中所定义。对象索引是必需的，因为对象子操作符可以同时使用多个对象。如果有一个参考对象可以使用，那么整数值应设置为 0。另外，请注意，“数据视图”中的索引基于 0（从 0 开始计数）。这不同于 MAXScript，其索引基于 1。因此，如果有“选择对象”子操作符中所定义的多个参考对象，则其索引为
+                  0、1、2 等。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="AB1004695"></a> 
+               <h2><a name="GUID-089CAF50-5777-4B4D-A202-E296CAADA839"></a>几何体子操作符 - 最近点选项 
+               </h2> 
+               <p><a name="GUID-8708C52D-EE8A-4D47-A062-B7FC50131259"></a>输出类型为“对”类型 = {向量 + 整数}，其中“整数”是包含对象索引和面索引的复合索引，“向量”是在局部面坐标上的位置。计算最近点时，该操作符将搜索所有参考对象，如“选择对象”子操作符所定义，并查找最近面以及该面的曲面上的最近点。局部面坐标使用该面的边作为基准向量。
+                  
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="AB1004713"></a> 
+               <h2><a name="GUID-1A4FA24A-9482-4EAD-83EA-205141D0924B"></a>几何体子操作符 - 碰撞点选项 
+               </h2> 
+               <p><a name="GUID-BC8799BE-8AC0-4335-AE2D-DEB3B29F3A7C"></a>输出类型为“复数”类型 = {向量 + 整数 + 时间}，其中“整数”和“向量”的含义与上述实例中相同，“时间”是指碰撞时间。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="AB1004731"></a> 
+               <h2><a name="GUID-CA0AEF47-868D-4A01-87B3-2DB0C0B2C9FD"></a>几何体子操作符 - 面区域和面选择选项 
+               </h2> 
+               <p><a name="GUID-F56D5C04-D2D7-4B21-A5D8-09AD6AD35F64"></a>该选项可用于计算对象的某个面的区域（或面的选择状态）。并且作为索引（对象索引 + 面索引）时，它看起来足够提供复合索引。但是，子操作符的输入为“对”类型。这是为了从将“对”作为输出的“最近点”选项简化关联。如果使用其他方法创建对象索引 + 面索引，那么您可以使用转换子操作符创建“对”类型；只需使用零向量作为“对”类型的另一个分量。
+                  
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="AB1004749"></a> 
+               <h2><a name="GUID-213CAD14-4957-4E88-B201-20684D967E28"></a>几何体子操作符 - 点颜色、点颜色渐变、点自发光、点贴图、点贴图渐变、点材质索引、点法线、点不透明度、点位置、点软选择、点速度选项 
+               </h2> 
+               <p><a name="GUID-6C9C572E-D73C-4993-8548-4217376CDD25"></a>其中一个输入类型是“对”类型 = {向量 + 整数}，其中“向量”和“整数”在“最近点”选项中的含义相同。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="AB1004767"></a> 
+               <h2><a name="GUID-73655184-832C-45F7-836A-3EB4E0DC964C"></a>几何体子操作符 - 随机曲面点选项 
+               </h2> 
+               <p><a name="GUID-4E29D45A-33B0-4DAA-A681-AF082092D42B"></a>输出类型为“对”类型；与“最近点”选项中的含义相同。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="AB1004785"></a> 
+               <h2><a name="GUID-42900F18-1A49-4840-9240-C3873804BBC1"></a>几何体子操作符 - 随机体积点选项 
+               </h2> 
+               <p><a name="GUID-57C1C960-8C83-4C76-A3C8-AD117D8CC9DF"></a>输出类型为“对”类型 = {向量 + 整数}，其中“向量”是在世界坐标上的位置，“整数”是用作体积空间的对象的索引。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="AB1004803"></a> 
+               <h2><a name="GUID-4CADA2B2-BE2A-4CDF-BB4C-85DB164362A6"></a>等于数据类型
+               </h2> 
+               <p><a name="GUID-85914C92-5F5B-40DA-B4FD-7B483E2AF4ED"></a>唯一能产生“等于”数据类型的子操作符是<span class="char_link"><a href="GUID-291B5691-D4C7-4E85-A1FA-F6690107CAA8.htm">参数子操作符</a></span>。参数子操作符对于为几个子操作符设置（或允许用户设置）相同的参数值特别有用。通常此公用参数稍后将显示在界面中。 
+                  
+               </p> 
+               <p><a name="GUID-3E49301A-BDF2-4F6F-8C3C-3B56C01D3608"></a>一个简单的例子：您希望有一个数据操作符将粒子随机放置在对象的曲面上并设置随机初始速度。位置使用几何体子操作符（随机曲面点），方向随机扩散使用将速度定义为偏差设置为 360 度的向量子操作符。 
+                  
+               </p> 
+               <p><a name="GUID-ABE668E1-4A8F-4379-9B91-BCC5414A833F"></a>两个子操作符都具有“随机种子”参数。因此，您自然会希望显示“随机种子”参数，以便用户可以使用混乱设置。但是，如果界面中有两个“随机种子”参数，可能看起来会很奇怪。因此，您可以将几何体和向量子操作符中的两个“种子”参数关联到类型为“唯一性种子”的单个参数子操作符中。然后可以显示参数子操作符中的“随机种子”。
+                  
+                  
+               </p> 
+               <p><a name="GUID-EFC9630D-CBB3-414D-A868-869C965EB1E4"></a>“等于”数据类型具有以下子类型：实数、整数、时间、同步和种子。每种类型使用不同色调的绿色。参数子操作符具有多种输出类型：角度、浮点数、百分比、世界（所有类型均为“实数”类型）、整数、时间、动画同步（作为“同步”）和唯一性种子（作为“种子”）。角度、浮点数、百分比和世界仅在用户界面中对用户显示时不同，它们都是实数。您只能将“参数”输出关联到匹配的
+                  E 输入，这通常很明显 -- 如果链接子操作符的“随机种子”，那么“参数”子操作符也应具有“唯一性种子”类型。 
+                  
+               </p> 
+               <p><a name="GUID-D61D9702-1BAA-4BA6-A79B-5427194D5771"></a>通过使用标准 3ds Max 脚本关联技术以及对子操作符的参数进行脚本关联，而不是将它们链接到“参数”子操作符，没有“参数”子操作符也可以运行。但是，脚本关联设置更为耗时，它不像参数子操作符一样具有良好的视觉参考，并且很容易出现保存/加载和克隆的问题。
+                  
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="AB1004865"></a> 
+               <h2><a name="GUID-6A85EDF6-70D1-4B45-9B0F-792FB206E966"></a>复合索引
+               </h2> 
+               <p><a name="GUID-829B793A-2709-4CA3-B120-64255677BEC3"></a>有时，需要将两个整数值合并为一个值，例如，当一个整数用作复合索引 = {对象索引和面/顶点索引}。使用<span class="char_link"><a href="GUID-636D3B6B-5A4A-4D0E-A485-06F16A1B02EE.htm">转换子操作符</a></span>可以执行以下操作：a) 将复合索引创建为整数数据；或 b) 从复合索引拆分对象索引或面/顶点索引。复合索引不是新的数据类型 -- 它是一种将更多信息合并到一个整数数据通道的方式。 
+                  
+               </p> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-7E7FC066-7ED7-44B8-858A-5B9426E8715E">
+      <meta name="description" content="使用“交互式操纵”模式中用于松弛顶点的这些设置。“编辑/可编辑多边形”中的“松弛”工作方式与松弛修改器非常相似：使用该选项可以通过朝向其相邻顶点的平均位置移动顶点来规格化每个受影响的顶点和其相邻顶点的距离。">
+      <meta name="indexterm" content="编辑多边形: 松弛设置">
+      <meta name="indexterm" content="可编辑多边形: 松弛设置">
+      <meta name="indexterm" content="松弛设置（编辑/可编辑多边形）">
+      <meta name="topic-type" content="concept">
+      <title>松弛（多边网格）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-7E7FC066-7ED7-44B8-858A-5B9426E8715E"></a><div class="head">
+            <h1>松弛（多边网格）</h1>
+         </div>
+         <p class="blurb">使用“交互式操纵”模式中用于松弛顶点的这些设置。“编辑/可编辑多边形”中的“松弛”工作方式与<span class="char_link"><a href="GUID-4D0327CC-BDC3-4687-8158-042436CE4FCD.htm">松弛修改器</a></span>非常相似：使用该选项可以通过朝向其相邻顶点的平均位置移动顶点来规格化每个受影响的顶点和其相邻顶点的距离。 
+         </p><a name="UL_10E0A6D89B4E49B39D0CADEF9160D32E"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-F824C3BA-94C6-4A1B-AB08-A1F9A33DBD9C">选择“编辑多边形”或可编辑的多边形对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif">  对象层级或任意子对象层级  <img src="../images/ac.menuaro.gif"> “编辑几何体”卷展栏  <img src="../images/ac.menuaro.gif"> “松弛” <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-5597122D-B27A-4ABD-8370-D28F91D067E1-low.png">（设置）</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-E9863257-8026-4FE7-9509-3663DC5FF5C9">选择“编辑多边形”或可编辑的多边形对象。 <img src="../images/ac.menuaro.gif"> 功能区 <img src="../images/ac.menuaro.gif"> “建模”选项卡  <img src="../images/ac.menuaro.gif"> “多边形建模”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-8E2644D0-66CA-4DC2-96F4-3F9EAA90CBBB-low.png">（多边形）子对象层级  <img src="../images/ac.menuaro.gif"> “几何体(全部)”面板  <img src="../images/ac.menuaro.gif">  在按住 Shift 键的同时单击 <img src="../images/GUID-A139245C-FF14-403D-BE8D-2BC37E3EE324-low.png">（松弛），或从下拉列表中选择“松弛设置”。</span> 
+            </li>
+         </ul>
+         <div><a name="WS73099CC142F487551FACE55114134B88B1-72AA"></a><div class="note-note"><span class="label label-target-language">注意:</span>在对象层级，可以将“松弛”应用于整个对象。在任何子对象层级上，将“松弛”只应用于选定的子对象。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-7079"></a> 
+            <h2><a name="GUID-C88A1CFA-4A46-477F-A8B3-C8873612F23B"></a>界面
+            </h2> 
+            <p><a name="WS1A9193826455F5FF-1E1423D1125831BDA67-6BFB"></a>启用了<span class="char_link"><a href="GUID-86205F0D-6143-432A-B0D4-5CCC4DB2699F.htm#GUID-51F9D8AE-A125-4295-A9BE-D8258093A5B7">“启用小盒控件”</a></span>时，“松弛”使用小盒界面；禁用此选项时，则使用标准设置对话框。有关使用助手控件的详细信息，请参见<span class="char_link"><a href="GUID-0F0E1E2D-7F99-4EF5-B37C-7F486379CFD0.htm#WS73099CC142F487553BD5B66812435C29801-2F0E">助手界面</a></span>。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041D79"></a><div class="figure-anchor"><img src="../images/GUID-7DF7D8F8-D749-4698-9E1D-0CD306F0E2CA-low.png"><img src="../images/GUID-83FEA1A9-0EFA-4B49-B0E6-42A9509F48BC-low.png"><p class="figure-title">左侧：助手界面；右侧：标准对话框</p>
+            </div>   <a name="GUID-508A9B52-92CE-4A2A-BF1A-65371134EE80"></a><dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-1DDA"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7078"></a> <img src="../images/GUID-36343684-BD6A-4D51-8C01-37EED9C831EC-low.png"> 数量</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-55BA"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752FE0"></a>控制移动每个迭代次数的顶点程度。该值指定从顶点原始位置到其相邻顶点平均位置的距离的百分比。范围在 -1.0 到 1.0 之间；默认为 0.5。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-1DD9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7077"></a> <img src="../images/GUID-D7664CA8-C4BC-4A6A-AE7D-EBD61BBDE199-low.png"> 迭代次数</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-55B9"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752FE1"></a>设置重复此过程的次数。对每次迭代来说，需要重新计算平均位置，重新将“松弛值”应用到每一个顶点。默认值为 1。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-1DD8"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7076"></a> <img src="../images/GUID-72DDCFBD-33F9-46E5-A2F7-D2B188FCE96F-low.png"> 保留边界点</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-55B8"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752FE2"></a>控制是否移动打开网格边上的顶点。默认设置为启用。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7075"></a>当启用此选项后，在松弛其他对象时不移动边界顶点。当使用共享打开边的单个对象中的多个元素时，此选项尤其有用。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7074"></a>当禁用此复选框时，对象的所有顶点都处于松弛状态。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-1DD7"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7073"></a> <img src="../images/GUID-632A10A1-92F7-41DF-9017-98E775253B26-low.png"> 保留外部点</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-55B7"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752FE3"></a>启用此选项后，保留距离对象中心最远的顶点的原始位置。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+            <div class="section"><a name="WS73099CC142F487551D68DD061249D36330F-6E5B"></a> 
+               <h3><a name="GUID-9A007EA0-AC9C-4712-ACF2-3DEA12BF156F"></a>_____
+               </h3> <a name="GUID-73A50C76-39E0-408E-8DEA-DB16136D5495"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-1E23"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7105"></a> <img src="../images/GUID-7EE4CD5D-B3EA-4498-BA92-9806A0E4E5EE-low.png"> 确定</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-5603"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752F95"></a>将设置应用于当前选择，然后关闭界面。等同的键盘按键：<span class="keyboardEntry">Enter</span> 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-1E24"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7106"></a> <img src="../images/GUID-806F0C66-71E4-4B02-B015-C8FD7A65FFCF-low.png"> 应用并继续</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-5604"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752F94"></a>将设置应用于当前选择，并保留设置以便在随后更改选择时进行预览。等同的键盘按键：<span class="keyboardEntry">Ctrl+Enter</span> 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-1E22"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7104"></a> <img src="../images/GUID-2B94FDA3-FF4E-498B-A761-D1FD100EFA39-low.png"> 取消</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-5602"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752F96"></a>关闭界面而不将设置应用于当前选择。不要反转以前使用的“应用并继续”。等同的键盘按键：<span class="keyboardEntry">Esc</span> 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

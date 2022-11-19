@@ -1,0 +1,79 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C2C7C2F8-083F-4FDC-93AD-AD1D3F5045FD">
+      <meta name="description" content="Targa (TGA) 格式是 Truevision 为其视频板而开发。该格式支持 32 位真彩色；即 24 位彩色和一个 alpha 通道，通常用作真彩色格式。">
+      <meta name="indexterm" content="VST 文件 (Targa)">
+      <meta name="indexterm" content="文件类型: VST (Targa)">
+      <meta name="indexterm" content="ICB 文件 (Targa)">
+      <meta name="indexterm" content="文件类型: ICB (Targa)">
+      <meta name="indexterm" content="VDA 文件 (Targa)">
+      <meta name="indexterm" content="文件类型: VDA (Targa)">
+      <meta name="indexterm" content="TGA 文件 (Targa)">
+      <meta name="indexterm" content="文件类型: TGA (Targa)">
+      <meta name="indexterm" content="Targa 文件">
+      <meta name="indexterm" content="预乘 Alpha">
+      <meta name="topic-type" content="concept">
+      <title>TGA (Targa) 文件</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C2C7C2F8-083F-4FDC-93AD-AD1D3F5045FD"></a><div class="head">
+            <h1>TGA (Targa) 文件</h1>
+         </div>
+         <p class="blurb">Targa (TGA) 格式是 Truevision 为其视频板而开发。该格式支持 32 位真彩色；即 24 位彩色和一个 alpha 通道，通常用作真彩色格式。 </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C24"></a>Targa 文件广泛用于渲染静止图像并将静止图像序列渲染到录像机。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C23"></a>某些由其他应用程序创建的 Targa 文件具有不同的文件扩展名。<span class="charspan-msgph">3ds Max</span> 可以渲染 <em class="mild">.vda</em>、<em class="mild">.icb</em> 和 <em class="mild">.vst</em> 变型以及 <em class="mild">.tga</em>。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2ACB"></a> 
+            <h2><a name="GUID-1AE8B3CB-90A2-49C8-AB4C-181018DD1653"></a>界面
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C22"></a>单击<span class="char_link"><a href="GUID-82297B32-B4CC-4EBB-80B4-C77217687895.htm">“渲染输出文件”对话框</a></span>中的“渲染”或“设置”可显示“Targa 图像控制”对话框。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A19004413"></a><div class="figure-anchor"><img src="../images/GUID-2C86B9A6-4169-4CAC-9C09-645BAAFC2A10-low.png"></div>  <a name="GUID-24A69429-0B44-4EE9-98E7-C3072FD95CEE"></a><div class="dl_section"><a name="GUID-32FA35E3-B578-4F5A-9775-AA287BE640EE"></a><p class="title"><a name="GUID-1672BBC6-25E3-413B-9598-C2C1E18BC60E"></a>“图像属性”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-248A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C20"></a>每像素位数</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-12A9"></a> 选择颜色深度：16 位、24 位或 32 位。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-2489"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C1F"></a>压缩</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-12A8"></a> 对文件应用无损压缩。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-2488"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C1E"></a>Alpha 分割</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-12A7"></a> 为 Aplha 通道创建单独的文件。为 alpha 通道文件创建的文件名以 a_ 开始，然后附加完整文件名。例如，如果选中此框，并渲染文件 <em class="mild">Greek3.tga</em>，<span class="charspan-msgph">3ds Max</span> 将为 Alpha 通道创建文件 <em class="mild">a_greek004.tga</em>。（有时该名称的长度将超过 8 个字符。） 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-2487"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C1D"></a>预乘 Alpha</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-12A6"></a> 打开时，预乘 Alpha 通道。如果以后在合成中使用此图像，则预乘可以缩短计算时间。请参见<span class="char_link"><a href="GUID-E49782BE-6486-4B9D-929A-7A02535F1829.htm">“预乘 Alpha”</a></span>。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-EB2B7908-D6A5-40F9-A91D-0FF815B66251"></a><p class="title"><a name="GUID-F101DBC1-7D37-43B7-941D-49C93158ED13"></a>“其他信息”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-2486"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C1C"></a>创作者姓名、作业名/ID、注释</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-12A5"></a> 这些字段可用于添加有关文件的信息。 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E489"></a><div class="note-note"><span class="label label-target-language">注意:</span>要控制渲染器是否在为渲染图像创建 alpha 时使用环境贴图的 alpha 通道，请选择“自定义”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“首选项”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“渲染”，然后在“背景抗锯齿”组中启用“使用环境 Alpha”。 
+                           </div>
+                        </div> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C19"></a>如果禁用了“使用环境 Alpha”（默认设置），则背景的 Alpha 值将为 0（完全透明）。如果启用了“使用环境 Alpha”，结果图像的 Alpha 是场景和背景图像的 Alpha 的组合。此外，如果在禁用“预乘 Alpha”时写入 TGA
+                           文件，则启用“使用环境 Alpha”可以避免出现不正确的结果。注意，在其他程序中（如 Photoshop）进行合成时，只支持带有 Alpha 通道的背景图像或黑色背景。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-51233298-312D-4773-AD22-ADB08E70CCE1">
+      <meta name="description" content="锥化修改器通过缩放对象几何体的两端产生锥化轮廓；一段放大而另一端缩小。可以在两组轴上控制锥化的量和曲线。也可以对几何体的一段限制锥化。">
+      <meta name="indexterm" content="“锥化”修改器">
+      <meta name="indexterm" content="修改器: 锥化">
+      <meta name="indexterm" content="对象空间修改器: 锥化">
+      <meta name="contextid" content="TAPER.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS-TAPER">
+      <meta name="topic-type" content="concept">
+      <title>锥化修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-51233298-312D-4773-AD22-ADB08E70CCE1"></a><div class="head">
+            <h1>锥化修改器</h1>
+         </div>
+         <p class="blurb">锥化修改器通过缩放对象几何体的两端产生锥化轮廓；一段放大而另一端缩小。可以在两组轴上控制锥化的量和曲线。也可以对几何体的一段限制锥化。 </p>
+         <div class="bodyReference"><a name="UL_B68881B3DE494B68A0CA07C249273B0A"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-304CBE24-0B6D-419A-95D3-B420A65F4D73"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif">  作出选择。 <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “锥化”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-A41DE61B-745B-440F-B2E9-E6B117813E92">默认菜单：进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “参数化变形器” <img src="../images/ac.menuaro.gif"> “锥化”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-40AE7735-A8A2-4316-A987-806775805443">Alt 菜单：进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “几何体(参数化)” <img src="../images/ac.menuaro.gif"> “锥化”</span> 
+               </li>
+            </ul><a name="WS1A9193826455F5FFBA679E112A6A190043C4A"></a><div class="figure-anchor"><img src="../images/GUID-EC11999E-7D60-4A63-92D0-D280C071BBF5-low.png"><p class="figure-title">默认锥化的例子</p>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2911"></a> 
+               <h2><a name="GUID-F066E2B0-FCE1-4F88-92E0-05E5B2D5556C"></a>界面
+               </h2> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043C4B"></a> 
+                  <h3><a name="GUID-EF82FDAD-486F-4318-8841-BF697A98BC8B"></a>修改器堆栈
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043C4C"></a><div class="figure-anchor"><img src="../images/GUID-FEA8F03E-B1C8-416F-B307-92B0463BFCDE-low.png"></div>  <a name="GUID-93B11913-7541-4408-A156-EEBEB2C27780"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F6A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-39EF"></a>Gizmo</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7E3A"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751DB8"></a>在该子对象层级，可以像其他任何对象那样平移 Gizmo 和设置 Gizmo 的动画，从而改变“锥化”修改器的效果。转换 gizmo 将以相等的距离转换它的中心。根据中心转动和缩放 Gizmo。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F69"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-39EE"></a>中心</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7E39"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751DB9"></a>在该子对象层级，可以平移中心和设置中心的动画，从而改变“锥化”Gizmo 的形状，以此改变锥化对象的形状。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-39ED"></a>关于堆栈显示的更多信息，请参见<span class="char_link"><a href="GUID-80209C3A-C2E4-4541-8738-D1E5ECE16E9C.htm">修改器堆栈</a></span>。 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A190043C4D"></a><div class="figure-anchor"><img src="../images/GUID-A8997EB4-451D-4520-A735-E76C239F9D95-low.png"><p class="figure-title">移动修改器的中心改变 Gizmo 的图形。</p>
+                           </div>  
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043C4E"></a> 
+                  <h3><a name="GUID-5E305AD1-DD06-482F-B261-9BE6308226C1"></a>“参数”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043C4F"></a><div class="figure-anchor"><img src="../images/GUID-EF6F6651-653D-40A2-A314-FF77919CD1CE-low.png"></div>  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-39EC"></a>锥化修改器在“参数”卷展栏的“锥化轴”组框中提供两组轴和一个对称设置。与其他修改器一样，这些轴指向锥化 Gizmo，而不是对象本身。 
+                  </p> <a name="GUID-E0E4F7D6-1483-45CF-BBD2-8D4B11935980"></a><div class="dl_section"><a name="GUID-52D70F4B-5332-4873-BE42-9B2BECFF02A3"></a><p class="title"><a name="GUID-B35F35EC-7804-44D1-8B91-103980F09438"></a>“锥化”组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F68"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-39EB"></a>数量</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7E38"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751DBA"></a>缩放扩展的末端。这个量是一个相对值，最大为 10。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F67"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-39EA"></a>曲线</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7E37"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751DBB"></a>对锥化 gizmo 的侧面应用曲率，因此影响锥化对象的图形。正值会沿着锥化侧面产生向外的曲线，负值产生向内的曲线。值为 0 时，侧面不变。默认值为 0。 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-E64E6B1E-595F-47F6-A823-CCD7E019509A"></a><p class="title"><a name="GUID-5CC79343-6432-41C0-B24D-1FA603A47525"></a>“锥化轴”组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F66"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-39E9"></a>主轴</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7E36"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751DBC"></a>锥化的中心轴或中心线：X、Y 或 Z。默认为 Z。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F65"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-39E8"></a>效果</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7E35"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751DBD"></a>用于表示主轴上的锥化方向的轴或轴对。可用选项取决于主轴的选取。影响轴可以是剩下两个轴的任意一个，或者是它们的合集。如果主轴是 X，影响轴可以是 Y、Z 或 YZ。默认设置为 XY。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F64"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-39E7"></a>对称</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7E34"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751DBE"></a>围绕主轴产生对称锥化。锥化始终围绕影响轴对称。默认设置为禁用状态。 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A190043C52"></a><div class="figure-anchor"><img src="../images/GUID-4F7C3632-6050-4487-AF78-9102DD97EA71-low.png"><p class="figure-title">改变影响轴会改变修改器的效果。</p>
+                              </div>  
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-68AD892D-9D53-4075-938E-2084A2472C77"></a><p class="title"><a name="GUID-C9E4FBDC-876C-48FB-A3BA-A646B56C891D"></a>“限制”组
+                     </p>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-39E6"></a>锥化偏移应用于上下限之间。围绕的几何体不受锥化本身的影响，它会旋转以保持对象完好。 
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F63"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-39E5"></a>限制效果</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7E33"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751DBF"></a>对锥化效果启用上下限。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F62"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-39E4"></a>上限</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7E32"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751DC0"></a>用世界单位从倾斜中心点设置上限边界，超出这一边界以外，倾斜将不再影响几何体。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F61"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-39E3"></a>下限</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7E31"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751DC1"></a>用世界单位从倾斜中心点设置下限边界，超出这一边界以外，倾斜将不再影响几何体。 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A190043C54"></a><div class="figure-anchor"><img src="../images/GUID-AFBB154D-691A-498F-BEE6-BD658F2B2A48-low.png"></div>  
+                              <p><a name="GUID-D5835D0A-AF29-48A8-842F-EBB66D39568F"></a> <em class="strong">左：限制锥化的效果。</em> 
+                              </p> 
+                              <p><a name="GUID-80A29012-CAC6-4E42-A6C8-383DA0EF8197"></a> <em class="strong">右：使用对称。</em> 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div> 
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

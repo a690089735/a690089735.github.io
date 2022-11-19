@@ -1,0 +1,5 @@
+MyStartFn.ms 放到 C:\Program Files\Autodesk\3ds Max 20xx\scripts\Startup
+各个mcr 放到 C:\Program Files\Autodesk\3ds Max 20xx\MacroScripts
+可以独立于用户配置
+
+然后以管理员模式启动max,设置快捷键.再重启max.

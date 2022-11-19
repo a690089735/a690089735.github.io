@@ -1,0 +1,11 @@
+<map id="Ufe::UndoableCommand" name="Ufe::UndoableCommand">
+<area shape="rect" id="node2" href="$class_ufe_1_1_base_undoable_command.html" title="Base class for undoable set operation commands. " alt="" coords="233,45,425,71"/>
+<area shape="rect" id="node5" href="$class_ufe_1_1_composite_undoable_command.html" title="Composite undoable command. " alt="" coords="217,95,441,122"/>
+<area shape="rect" id="node6" href="$class_ufe_1_1_insert_child_command.html" title="Command to change the parent of a scene item. " alt="" coords="243,146,415,173"/>
+<area shape="rect" id="node7" href="$class_ufe_1_1_selection_append_item.html" title="Append an item to the argument selection. " alt="" coords="243,197,416,223"/>
+<area shape="rect" id="node8" href="$class_ufe_1_1_selection_clear.html" title="Clear the argument selection. " alt="" coords="263,247,396,274"/>
+<area shape="rect" id="node9" href="$class_ufe_1_1_selection_remove_item.html" title="Remove an item from the argument selection. " alt="" coords="241,298,418,325"/>
+<area shape="rect" id="node10" href="$class_ufe_1_1_selection_replace_with.html" title="Replace the argument selection. " alt="" coords="242,349,417,375"/>
+<area shape="rect" id="node3" href="$class_ufe_1_1_set_value3_undoable_command.html" title="Abstract class for set Value3 command. " alt="" coords="489,5,711,47"/>
+<area shape="rect" id="node4" href="$class_ufe_1_1_set_value_undoable_command.html" title="Abstract class for set value command. " alt="" coords="493,71,707,112"/>
+</map>

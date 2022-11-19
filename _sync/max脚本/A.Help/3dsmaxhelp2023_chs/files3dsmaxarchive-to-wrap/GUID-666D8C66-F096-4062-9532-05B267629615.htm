@@ -1,0 +1,80 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-666D8C66-F096-4062-9532-05B267629615">
+      <meta name="description" content="“镜头效果过滤器”将具有真实感的摄影机光斑、光晕、微光、闪光、以及景深模糊添加到场景中。“镜头效果”会影响整个场景，场景中的特定对象周围可会生成镜头效果。">
+      <meta name="indexterm" content="视频后期处理过滤器: 镜头效果">
+      <meta name="indexterm" content="视频后期处理: 镜头效果过滤器">
+      <meta name="indexterm" content="镜头效果过滤器（视频后期处理）">
+      <meta name="topic-type" content="concept">
+      <title>镜头效果过滤器</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-666D8C66-F096-4062-9532-05B267629615"></a><div class="head">
+            <h1>镜头效果过滤器</h1>
+         </div>
+         <p class="blurb">“镜头效果过滤器”将具有真实感的摄影机光斑、光晕、微光、闪光、以及景深模糊添加到场景中。“镜头效果”会影响整个场景，场景中的特定对象周围可会生成镜头效果。</p><a name="GUID-66E526F8-F788-4968-A9E8-A11CCAC5424A"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-590F082D-E0DE-4F27-86C0-368693123912">“渲染”菜单  <img src="../images/ac.menuaro.gif"> “视频后期处理” <img src="../images/ac.menuaro.gif"> “视频后期处理”工具栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-8A18F5CC-A85E-49BC-833C-1CE3F9A37C40-low.png">（添加图像过滤器事件） <img src="../images/ac.menuaro.gif">  从“过滤器插件”列表中选择“镜头效果过滤器”。</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7A62"></a>“镜头效果”应用于“Video Post”界面。要了解有关将场景和图像过滤器事件添加到 Video Post 队列中的内容，请参见<span class="char_link"><a href="GUID-63BB3393-F0CA-434B-B7BF-990985227528.htm">添加场景事件</a></span>和<span class="char_link"><a href="GUID-6A2962BA-AA19-4191-8FF6-59DCEB3350CC.htm">添加图像过滤器事件</a></span>。
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7A61"></a>“镜头效果”包括以下过滤器：
+         </p><a name="WS1A9193826455F5FFBA679E112A6A1900446AE"></a><ul>
+            <li> <span class="char_link"><a href="GUID-7469F059-A72B-4FF9-AD9D-BD46EA22CC75.htm">镜头效果光斑</a></span>：创建光学效果，此光学效果只有当亮光反射过摄影机镜头时才会出现。
+            </li>
+            <li> <span class="char_link"><a href="GUID-77C39877-168D-46CE-A492-F6F7C2483627.htm">镜头效果焦点</a></span>：根据对象到摄影机的距离，在对象上创建模糊。使用“Z 缓冲区”跟踪对象到摄影机的距离。焦点使用场景中的“Z 缓冲区”信息来创建其模糊效果。
+            </li>
+            <li> <span class="char_link"><a href="GUID-F3F29498-80A7-400D-9120-ECFC1D4CAE3F.htm">镜头效果光晕</a></span>：在任一指定对象周围创建光晕灯光，如激光束或宇宙飞船上的推进器。
+            </li>
+            <li> <span class="char_link"><a href="GUID-C04999B3-39AD-4E8E-8ECF-8050EB0932DA.htm">镜头效果高光</a></span>：在指定对象上创建明亮十字星效果。
+            </li>
+         </ul>
+         <div><a name="WS73099CC142F4875518DA1CE114C8D67215-799D"></a><div class="note-warning"><span class="label label-target-language">警告:</span>设置“镜头效果”参数的动画时，会在实际场景中创建指针，所以如果将“Video Post”队列保存在 <span class="char_link"><a href="GUID-E38786B0-D0FD-4367-88F8-11ECB54ECC51.htm#WS73099CC142F48755-2231E4B3128F27EE529159A">VPX 文件</a></span>中，则“镜头效果”动画会丢失。要保留动画，请将“Video Post”数据（包括“镜头效果”动画）保存在 MAX 文件中。
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-7A60"></a> 
+            <h2><a name="GUID-7884E97C-EE65-4FB7-BA8F-60133664EA72"></a>过程
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7A5F"></a>“光晕”和“高光”这样的“镜头效果”可设置用来根据场景中指定对象的 <span class="char_link"><a href="../files3dsmaxhelp/GUID-866E101D-7974-4EBA-BF07-1D6A123C620C.htm">G 缓冲区 ID</a></span> 来影响相应对象。这使您可以将光晕和高光应用到对象或材质，或同时应用于两者。
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A1900446AF"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900446B0"></a>要设置对象的“G 缓冲区 ID”，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择对象。
+               </li>
+               <li>右键单击此对象，然后从四元菜单中选择“属性”。</li>
+               <li>在“对象属性”对话框中，将“G 缓冲区对象通道”设置为非零值，然后单击“确定”。
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7A5E"></a>“G 缓冲区 ID”可以是任一正整数。
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7A5D"></a>如果将相同的“G 缓冲区 ID”值分配给多个对象，则所有这些对象都将进行后处理。
+                  </p>
+               </li>
+            </ol> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-A79DE868-1DF1-44D1-AAE7-5CF785C23A3E.htm">镜头效果文件类型</a><p>一些文件类型可以用来保存镜头效果设置。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-CD33166D-40D6-4BE9-A9A0-D8A7CF7117DF.htm">设置镜头效果属性动画</a><p>“镜头效果”可用于使用“轨迹视图”来控制 Video Post 保持打开时可设置动画的参数。在旁边带有绿色箭头按钮的参数都可以设置动画。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-7469F059-A72B-4FF9-AD9D-BD46EA22CC75.htm">镜头效果光斑过滤器</a><p>“镜头效果光斑”对话框用于将镜头光斑效果作为后期处理添加到渲染中。通常对场景中的灯光应用光斑效果。随后对象周围会产生镜头光斑。可以在“镜头效果光斑”对话框中控制镜头光斑的各个方面。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-77C39877-168D-46CE-A492-F6F7C2483627.htm">镜头效果焦点过滤器</a><p>“镜头效果焦点”对话框可用于根据对象距摄影机的距离来模糊对象。焦点使用场景中的“Z 缓冲区”信息来创建其模糊效果。可以使用“焦点”创建效果，如焦点中的前景元素和焦点外的背景元素。 
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-F3F29498-80A7-400D-9120-ECFC1D4CAE3F.htm">镜头效果光晕过滤器</a><p>“镜头效果光晕”对话框可以用于在任何指定的对象周围添加有光晕的光环。例如，对于爆炸粒子系统，给粒子添加光晕使它们看起来好像更明亮而且更热。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-C04999B3-39AD-4E8E-8ECF-8050EB0932DA.htm">镜头效果高光过滤器</a><p>使用“镜头效果高光”对话框可以指定明亮的、星形的高光。将其应用在具有发光材质的对象上。例如，在明亮的阳光下一辆闪闪发光的红色汽车可能会显示出高光。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-620A59B0-38C6-4411-B18E-90F34B77F24A.htm">镜头效果渐变</a><p>渐变是从一种颜色或亮度转变为另外一种颜色或亮度的平滑线性变换，如下所示。“镜头效果”使用渐变来控制镜头光斑的各个方面，例如颜色和透明度。“镜头效果”使用几种<span class="char_link"><a href="GUID-C6ADD138-4C8A-4A9B-B5CC-E56A082FE183.htm">渐变类型</a></span>。
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

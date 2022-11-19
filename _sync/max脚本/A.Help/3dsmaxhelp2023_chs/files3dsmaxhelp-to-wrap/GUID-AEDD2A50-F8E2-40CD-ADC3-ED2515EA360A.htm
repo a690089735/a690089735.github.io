@@ -1,0 +1,89 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-AEDD2A50-F8E2-40CD-ADC3-ED2515EA360A">
+      <meta name="description" content="设置用于景深的散景效果。">
+      <meta name="indexterm" content="物理摄影机: “散景(景深)”卷展栏">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="using">
+      <title>“散景(景深)”卷展栏（物理摄影机）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-AEDD2A50-F8E2-40CD-ADC3-ED2515EA360A"></a><div class="head">
+            <h1>“散景(景深)”卷展栏（物理摄影机）</h1>
+         </div>
+         <p class="blurb"> 设置用于景深的散景效果。 </p>
+         <div class="bodyReference"><a name="UL_EF152002C5744699B3FE5A38B04F3B65"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-D7A2E532-C961-44A4-8ADF-14AB28407BD2"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-309E15DB-B338-4EB1-9D0F-6B1A5676297F-low.png">（摄影机） <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “物理” <img src="../images/ac.menuaro.gif"> “散景(景深)”卷展栏</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-B931BE60-15CD-4616-B3D4-29516DA168B3"></a>如果景深应用到图像（此设置在“物理摄影机”卷展栏中），出现在焦点之外的图像区域中的图案称为<a href="http://en.wikipedia.org/wiki/Bokeh" target="_blank">散景效果</a>。这种效果也称为“模糊圈”。在物理摄影机中，镜头的形状影响散景图案。 
+            </p>
+            <div><a name="GUID-4B67092C-C599-409C-AE68-79AB3F520F72"></a><div class="note-tip"><span class="label label-target-language">提示</span> 当场景焦外区域具有小的高对比度点（通常来自光源或其他明亮物体）时，散景效果最为明显。 
+               </div>
+            </div><a name="FIG_36D2737059A94415BFE0C3BF5375E920"></a><div class="figure-anchor"><img src="../images/GUID-32F2305A-D619-4A93-B42A-574CD565EB21-low.png"></div>
+            <div class="section"><a name="SECTION_C67C414E2BF04A35ADBA274E83B835F2"></a> 
+               <h2><a name="GUID-21555A9C-77FD-46FC-B8D5-6F8AEF987440"></a>“光圈形状”组
+               </h2> <a name="UL_1E9D6856D62D417AB902C0AFEAB3DA70"></a><ul>
+                  <li><em class="strong">圆形</em>（默认设置。）散景效果基于圆形光圈。 
+                  </li>
+                  <li> <em class="strong">叶片式</em> 散景效果使用带有边的光圈。使用“叶片数”值设置每个模糊圈的边数。使用“旋转”值设置每个模糊圈旋转的角度。 
+                  </li>
+                  <li> <em class="strong">自定义纹理</em> 使用贴图来用图案替换每种模糊圈。（如果贴图为填充黑色背景的白色圈，则等效于标准模糊圈。） 
+                     <p><a name="GUID-615D7F04-81C3-4F4F-8C8A-FAAA92343E16"></a>将纹理映射到与镜头纵横比相匹配的矩形：会忽略纹理的初始纵横比。 
+                     </p> 
+                     <p><a name="GUID-D5A055BF-3058-4910-832D-993622D77B6F"></a> <em class="strong">影响曝光</em> 启用时，自定义纹理将影响场景的曝光。根据纹理的透明度，这样可以允许相比标准的圆形光圈通过更多或更少的灯光（同样地，如果贴图为填充黑色背景的白色圈，则允许进入的灯光量与圆形光圈相同）。禁用此选项后，纹理允许的通光量始终与通过圆形光圈的灯光量相同。默认设置为启用。
+                        
+                     </p> <a name="FIG_66731027D4474CE2B3555B80424B59DA"></a><div class="figure-anchor"><img src="../images/GUID-D0CD6551-F53D-4145-B53D-CB466B1CE6C8-low.png"></div>  
+                     <p><a name="GUID-C87F68E8-AD4A-4A32-860B-151EF84FDD38"></a> <em class="strong">左：光圈形状为圆形（默认）。</em> 
+                     </p> 
+                     <p><a name="GUID-F50E97C3-5B2E-46AD-8AE9-6D762736CBBC"></a> <em class="strong">右：光圈形状为叶片式，叶片数 = 5。</em> 
+                     </p> 
+                  </li>
+               </ul> 
+            </div>
+            <div class="section"><a name="SECTION_FDB668D6B6124F21956C061F31B5E7AC"></a> 
+               <h2><a name="GUID-B5ED73A3-BA8F-4C82-A4F9-CEF31D14614E"></a>“中心偏移(光环效果)”组
+               </h2> 
+               <p><a name="GUID-C75DF9A5-D8D4-457B-A436-4811053AE274"></a>使光圈透明度向中心（负值）或边（正值）偏移。正值会增加焦外区域的模糊量，而负值会减小模糊量。 
+               </p> 
+               <p><a name="GUID-110B3A2D-7D42-441F-83AB-DF7D1E553BFB"></a>中心偏移设置的场景中尤其明显显示散景效果。 
+               </p> <a name="FIG_AE3CBB6DEF334F37826F5CE5FC595FEF"></a><div class="figure-anchor"><img src="../images/GUID-ED689720-8E84-4DBA-9524-EA559A222D32-low.png"></div>  
+               <p><a name="GUID-67D04199-A8B0-49DE-9A14-16C295CC352A"></a> <em class="strong">左：环形效果，中心偏移 = 50.0</em> 
+               </p> 
+               <p><a name="GUID-0DB39532-411D-409B-B778-F792E78B9A8F"></a> <em class="strong">右：中心效果，中心偏移 = –50.0</em> 
+               </p> 
+            </div>
+            <div class="section"><a name="SECTION_63F0C82EE2484FE4B94C397C7B3963D5"></a> 
+               <h2><a name="GUID-665C7091-07CE-450D-BCCD-CACFB95742D1"></a>“光学渐晕(CAT 眼睛)”组
+               </h2> 
+               <p><a name="GUID-DF8F2209-72F6-447E-B6DB-F37429B0E372"></a>通过模拟“猫眼”效果使帧呈现渐晕效果（部分广角镜头可以形成这种效果）。 
+               </p> <a name="FIG_562D704FE7B34C9EA3EABB5E7EC25428"></a><div class="figure-anchor"><img src="../images/GUID-2E2251B9-994C-4EBC-9804-B9B53FF20FCA-low.png"></div>  
+               <p><a name="GUID-441F2205-7D41-4147-8E4B-45D181A405F2"></a> <em class="strong">左：渐晕 = 1.0</em> 
+               </p> 
+               <p><a name="GUID-76EEEFAD-B3B2-47BE-A8CC-61FFF9627FFF"></a> <em class="strong">右：渐晕 = 2.0</em> 
+               </p> 
+               <p><a name="GUID-88340149-6EF1-4900-AE08-8F6AE373D5EE"></a>负渐晕值会产生类似于正值的结果。 
+               </p> 
+            </div>
+            <div class="section"><a name="SECTION_70BD6E73A9444E7398BE8CEA52B75D00"></a> 
+               <h2><a name="GUID-F2958186-ACAF-4DA5-BB95-85613E5BE983"></a>“各向异性(失真镜头)”组
+               </h2> 
+               <p><a name="GUID-59129205-0BCC-45B9-BEEC-14A979320D7E"></a>通过垂直（负值）或水平（正值）拉伸光圈模拟失真镜头。 
+               </p> 
+               <p><a name="GUID-6564723F-917A-4A8E-9B7F-7288F8013A54"></a>与“中心偏移”时，“各向异性”设置在显示散景效果的场景中是最明显的。 
+               </p> <a name="FIG_E4CD6CA3B96B4E338B6BD82010FEE2B1"></a><div class="figure-anchor"><img src="../images/GUID-7C3BB1D3-3AA2-4B1A-B935-C832230CD195-low.png"></div>  
+               <p><a name="GUID-6CA35B84-FC52-4DE4-A7B4-6BAB698F6667"></a> <em class="strong">左：水平各向异性，值 = 0.5</em> 
+               </p> 
+               <p><a name="GUID-0CAC8903-AA59-4029-88E5-EA54D58C8D45"></a> <em class="strong">右：垂直各向异性，值 = -0.5</em> 
+               </p> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

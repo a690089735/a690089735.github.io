@@ -1,0 +1,192 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-19F11016-515C-4979-8654-78EA52DBAAE8">
+      <meta name="description" content="顶点是空间中的点：它们定义组成多边形对象的其他子对象（边和多边形）的结构。移动或编辑顶点时，也会影响连接的几何体。顶点也可以独立存在；这些孤立顶点可以用来构建其他几何体，但在渲染时，它们是不可见的。">
+      <meta name="indexterm" content="功能区面板: 顶点">
+      <meta name="indexterm" content="“顶点”面板（功能区）">
+      <meta name="contextid" content="MTOGGLEEDITVEXTRUDE">
+      <meta name="contextid" content="MACTIONEDITEXTRUDEOPTIONSV">
+      <meta name="contextid" content="MTOGGLEEDITVCHAMFER">
+      <meta name="contextid" content="MACTIONEDITCHAMFEROPTIONS">
+      <meta name="contextid" content="MACTIONEDITVWELD">
+      <meta name="contextid" content="MACTIONEDITWELDOPTIONS">
+      <meta name="contextid" content="MACTIONEDITVREMOVE">
+      <meta name="contextid" content="MACTIONEDITBREAK">
+      <meta name="contextid" content="MTOGGLEEDITVTARGETWELD">
+      <meta name="contextid" content="MLABELVWEIGHT">
+      <meta name="contextid" content="MSPINNERVWEIGHT">
+      <meta name="contextid" content="MADDTOCADDYVWEIGHT">
+      <meta name="contextid" content="MACTIONEDITREMOVEISOLATEDVERTICES">
+      <meta name="contextid" content="MACTIONEDITREMOVEUNUSEDMAPVERTICES">
+      <meta name="topic-type" content="concept">
+      <title>“顶点”面板</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-19F11016-515C-4979-8654-78EA52DBAAE8"></a><div class="head">
+            <h1>“顶点”面板</h1>
+         </div>
+         <p class="blurb">顶点是空间中的点：它们定义组成多边形对象的其他子对象（边和多边形）的结构。移动或编辑顶点时，也会影响连接的几何体。顶点也可以独立存在；这些孤立顶点可以用来构建其他几何体，但在渲染时，它们是不可见的。 </p><a name="UL_8A453318186C425DA7B2CF55ED6A7B85"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-B6DB31A5-C6BD-4A1F-B873-58EA6395BD58">功能区  <img src="../images/ac.menuaro.gif"> “建模”选项卡  <img src="../images/ac.menuaro.gif"> “多边形建模”面板  <img src="../images/ac.menuaro.gif">  访问“顶点”子对象层级  <img src="../images/ac.menuaro.gif"> “顶点”面板</span> 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F4875546792D6511E4BADA40D-3888"></a>在可编辑多边形的“顶点”子对象层级上，可以选择单个或多个顶点，并使用标准方法移动它们。 
+         </p>
+         <div class="section"><a name="WS73099CC142F487551A80AE1B11DF600637E-7577"></a> 
+            <h2><a name="GUID-5849FEC1-A78E-4D1D-9598-BED967983373"></a>界面
+            </h2> <a name="WS73099CC142F4875546792D6511E4BADA40D-71FE"></a><div class="figure-anchor"><img src="../images/GUID-58BC503A-58FA-44AB-883C-95BD7EE6298B-low.png"></div>  <a name="GUID-E30C3B25-5E11-478C-9699-AD4CE78B7237"></a><dl>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-7576"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-7575"></a> <img src="../images/GUID-9E92A0C0-C234-4415-9FD2-9FFEC2C1E6C9-low.png"> 挤出
+                     <!--CPM-ContextId = 'mToggleEditVExtrude'--><a name="GUID-E37BF1CA-AC20-49D5-A5D6-32BAAEFFA571"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-5697"></a> 可以手动挤出顶点，方法是在视口中直接操作。单击此按钮，然后垂直拖动到任何顶点上，就可以挤出此顶点。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7244"></a>挤出顶点时，它会沿法线方向移动，并且创建新的多边形，形成挤出的面，将顶点与对象相连。挤出对象的面的数目，与原来使用挤出顶点的多边形数目一样。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7243"></a>下面是顶点挤出的重要方面： 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190041CA6"></a><ul>
+                        <li>如果鼠标光标位于选定顶点上，将会更改为“挤出”光标。 </li>
+                        <li>垂直拖动时，可以指定挤出的范围；水平拖动时，可以设置基本多边形的大小。 </li>
+                        <li>选定多个顶点时，拖动任何一个，也会同样地挤出所有选定顶点。 </li>
+                        <li>当“挤出”按钮处于活动状态时，可以轮流拖动其它顶点，以挤出它们。再次单击“挤出”或在活动视口中右键单击，以便结束操作。 </li>
+                     </ul> <a name="WS1A9193826455F5FFBA679E112A6A190041CA7"></a><div class="figure-anchor"><img src="../images/GUID-7CC3DB8E-8C65-4002-8017-620A4ED8648C-low.png"><p class="figure-title">切角长方体显示挤出的顶点</p>
+                     </div>  
+                     <div><a name="WS73099CC142F4875546792D6511E4BADA40D-71F8"></a><div class="note-note"><span class="label label-target-language">注意:</span>若要打开“挤出顶点”对话框，请从下拉菜单中选择“挤出设置”，或者按住 <span class="keyboardEntry">Shift</span> 键并单击“挤出”按钮。 
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F4875546792D6511E4BADA40D-71F7"></a><span class="term"><a name="WS73099CC142F4875546792D6511E4BADA40D-71F6"></a>挤出设置（位于“挤出”下拉列表中）
+                     <!--CPM-ContextId = 'mActionEditExtrudeOptionsV'--><a name="GUID-F428C669-3E84-4A9D-8A69-E35B6D33A5D8"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-1747853B-2762-48E7-9474-0DE64D860CE7"></a>打开<span class="char_link"><a href="GUID-120012A8-90FC-460F-9287-5FB4545B1EA0.htm">“挤出顶点”助手</a></span>，以便通过交互式操纵执行挤出。 
+                     <p><a name="GUID-E48B5E73-86A8-4AE3-9C5E-9358C735F676"></a>如果在执行手动挤出后单击该按钮，则会以预览的形式对当前选择执行相同的挤出，并打开助手，其中“挤出高度”设置为最后一次手动挤出的量。 
+                     </p>
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-7573"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-7572"></a> <img src="../images/GUID-41E421CD-119C-4657-8505-B6D33C2CDE5F-low.png"> 切角
+                     <!--CPM-ContextId = 'mToggleEditVChamfer'--><a name="GUID-5C639C32-B2E0-4532-8855-4A0542A9E090"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-5693"></a> 单击此按钮，然后在活动对象中拖动顶点。要用数字切角顶点，请单击“切角设置”按钮，然后使用“切角量”值。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-723B"></a>如果切角多个选定顶点，那么它们都会被同样地切角。如果拖动某个未选定的顶点，则首先取消选择任何已选定的顶点。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-723A"></a>所有连向原来顶点的边上都会产生一个新顶点，每个切角的顶点都会被一个新面有效替换，这个新面会连接所有的新顶点。这些新点正好是从原始顶点沿每一个边到新点的 &lt;切角量&gt; 距离。新切角面是用其中一个邻近面（随意拾取）的材质 ID 和作为所有邻近平滑组的相交组的平滑组创建的。
+                        
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7239"></a>例如，如果切角了正方体的一个角，那么外角顶点就会被三角面替换，三角面的顶点处在连向原来外角的三条边上。外侧面被重新整理和分割，来使用这三个新顶点，并且在角上创建出了一个新三角形。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7238"></a>或者，也可以在切角顶点的周围创建开放的空间；有关详细信息，请参见<span class="char_link"><a href="GUID-FB852041-9E26-4F4A-9E17-154CD4CB504A.htm">切角</a></span>。 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190041CA8"></a><div class="figure-anchor"><img src="../images/GUID-8F295C24-BD7C-4DFB-8C5D-678913769354-low.png"></div>  
+                     <p><a name="GUID-13D7D9A6-A894-471E-B1F7-3899A766B3AA"></a> <em class="strong">顶部：初始的顶点选择</em> 
+                     </p> 
+                     <p><a name="GUID-C4AA7868-4E1C-43B2-820A-37908E99470C"></a> <em class="strong">中心：切角的顶点</em> 
+                     </p> 
+                     <p><a name="GUID-612CF270-BEF7-4F56-AA55-E318B68113D1"></a> <em class="strong">底部：启用“打开”切角的顶点</em> 
+                     </p> 
+                     <div><a name="WS73099CC142F4875546792D6511E4BADA40D-71EE"></a><div class="note-note"><span class="label label-target-language">注意:</span>若要打开“切角顶点”对话框，请从下拉菜单中选择“切角设置”，或者按住 <span class="keyboardEntry">Shift</span> 键并单击“切角”按钮。 
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F4875546792D6511E4BADA40D-71ED"></a><span class="term"><a name="WS73099CC142F4875546792D6511E4BADA40D-71EC"></a>切角设置（位于“切角”下拉列表中）
+                     <!--CPM-ContextId = 'mActionEditChamferOptions'--><a name="GUID-BB6B3DBB-6B41-4481-9916-2D19CA305578"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-F2749831-7B21-43B8-9200-7F9F97991323"></a>打开<span class="char_link"><a href="GUID-FB852041-9E26-4F4A-9E17-154CD4CB504A.htm">“切角”助手</a></span>，以便通过交互式操纵对顶点进行切角处理，以及切换“打开”选项。 
+                     <p><a name="GUID-CD0E4EE9-1A10-4783-BCB9-2B00CE6C0CA1"></a>如果在执行手动切角后单击该按钮，则会以预览的形式对当前选择执行相同的切角操作，并打开助手，其中“切角量”设置为最后一次手动切角的量。 
+                     </p>
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-756D"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-756C"></a> <img src="../images/GUID-FF90DCDB-7138-49F9-A516-322C778BBCC7-low.png"> 焊接
+                     <!--CPM-ContextId = 'mActionEditVWeld'--><a name="GUID-E16F2668-F714-4D8A-84D7-C8C4F689117E"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-5695"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752F04"></a>对<span class="char_link"><a href="GUID-697BAC48-F5F7-4B5B-9E98-DF979887AEA6.htm">“焊接”助手</a></span>中指定的公差范围内选定的连续顶点进行合并。所有边都会与产生的单个顶点连接。 
+                     </p> <a name="WS1A9193826455F5FF-7F10494411F03A24F24-7AA6"></a><div class="figure-anchor"><img src="../images/GUID-DE767867-542C-4E64-9484-47DF0BEFF7B7-low.gif"></div>  
+                     <p><a name="GUID-260302D4-9F7A-467D-9C24-71B2C3FA4751"></a> <em class="strong">在“顶点”级别使用焊接</em> 
+                     </p> 
+                     <p><a name="GUID-9C31354D-791A-41DF-AC7E-1478D531F09A"></a> <em class="strong">不会对超过阈值距离的顶点进行焊接。</em> 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-723F"></a>如果几何体区域有很多非常接近的顶点，那么它最适合用焊接来进行自动简化。使用“焊接”前，请通过<span class="char_link"><a href="GUID-697BAC48-F5F7-4B5B-9E98-DF979887AEA6.htm">“焊接”助手</a></span>设置“焊接阈值”。要焊接相对较远的顶点，则使用“<span class="char_link"><a href="GUID-047B00EC-D4E3-4D05-8FB7-220795D13874.htm#WSF742DAB041063133-48601C13112A1CEBBD0-7FD4">目标焊接</a></span>”。 
+                     </p> 
+                     <div><a name="WS73099CC142F4875546792D6511E4BADA40D-71E4"></a><div class="note-note"><span class="label label-target-language">注意:</span>若要打开“焊接顶点”对话框，请从下拉菜单中选择“焊接设置”，或者按住 <span class="keyboardEntry">Shift</span> 键并单击“焊接”按钮。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F4875546792D6511E4BADA40D-71E3"></a><span class="term"><a name="WS73099CC142F4875546792D6511E4BADA40D-71E2"></a>焊接设置（位于“焊接”下拉列表中）
+                     <!--CPM-ContextId = 'mActionEditWeldOptions'--><a name="GUID-C042D19D-EE95-4B78-A3B3-DB92120ED1AB"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-0D5AC3CD-1AB5-4175-9406-84E182B7F18B"></a>打开<span class="char_link"><a href="GUID-697BAC48-F5F7-4B5B-9E98-DF979887AEA6.htm">“焊接顶点”助手</a></span>以便指定焊接阈值。 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-756A"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-7569"></a> <img src="../images/GUID-C2D6860C-1FBD-43C0-AC20-7B8B0741ABB3-low.png"> 移除
+                     <!--CPM-ContextId = 'mActionEditVRemove'--><a name="GUID-FF24583A-04FA-4E58-9753-853C2FB1E23F"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E4BADA40D-4890"></a> 删除选中的顶点，并接合起使用它们的多边形。键盘快捷键是 <span class="keyboardEntry">Backspace</span>。 
+                     	 <a name="WS1A9193826455F5FFBA679E112A6A190041CA5"></a><div class="figure-anchor"><img src="../images/GUID-FE007520-7D6D-45E5-B99A-2B5B43C6DB7B-low.png"><p class="figure-title">移除一个或多个顶点将删除它们，然后对网格使用重复三角算法，使表面保持完整。如果使用 DELETE 键，那么依赖于那些顶点的多边形也会被删除，这样就在网格中创建了一个洞。</p>
+                     </div>  
+                     <div><a name="WS73099CC142F487551FACE55114134B88B1-72DF"></a><div class="note-warning"><span class="label label-target-language">警告:</span>使用移除可能导致网格形状变化并生成非平面的多边形。 
+                           	 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-7567"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-7566"></a> <img src="../images/GUID-64358767-0BE8-41CC-8CA0-649ACD3A8E73-low.png"> 断开
+                     <!--CPM-ContextId = 'mActionEditBreak'--><a name="GUID-0ED97F21-3B2B-4E40-9ACA-94CCC3DA139A"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E4BADA40D-488E"></a> 在与选定顶点相连的每个多边形上，都创建一个新顶点，这可以使多边形的转角相互分开，使它们不再相连于原来的顶点上。如果顶点是孤立的或者只有一个多边形使用，则顶点将不受影响。 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-7564"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-7563"></a> <img src="../images/GUID-CF3CC81F-1D3F-4297-AB9A-92B0ECA80325-low.png"> 目标焊接
+                     <!--CPM-ContextId = 'mToggleEditVTargetWeld'--><a name="GUID-AF235646-1E8C-4E06-A9B1-53A628C8B410"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E4BADA40D-488C"></a> 可以选择一个顶点，并将它焊接到相邻目标顶点。目标焊接只焊接成对的连续顶点；也就是说，顶点有一个边相连。 
+                     	 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7235"></a>在目标焊接模式中，当鼠标光标处在顶点之上时，它会变成 + 光标。单击然后移动鼠标；一条橡皮筋虚线将该顶点与鼠标光标连接。将光标放在其他附近的顶点之上，当再出现 + 光标时，单击鼠标。第一个顶点移动到了第二个的位置上，它们两个焊接在一起。目标焊接将一直保持活动状态，直到您再次单击按扭或在视口中右键单击。
+                        
+                        	 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+            <div><a name="WS73099CC142F4875546792D6511E4BADA40D-488A"></a><div class="note-note"><span class="label label-target-language">注意:</span>当功能区最大化或“顶点”面板处于浮动状态时，下列控件会显示在展开的“顶点”面板上。 
+               </div>
+            </div> <a name="GUID-C4D60407-2559-4D05-9F6E-5109C326A77C"></a><dl>
+               <dt><a name="GUID-129729A2-0B5E-4220-BAFA-FC2FF1BB61E6"></a><span class="term"><a name="GUID-8EF45052-78C4-4850-A77D-2E5DA08CA788"></a>权重
+                     <!--CPM-ContextId = 'mLabelVWeight'--><a name="GUID-74A07DEE-81AC-47B4-A3CC-8516A3B7C21A"></a>
+                     <!--CPM-ContextId = 'mSpinnerVWeight'--><a name="GUID-9E211A0B-54A6-403D-ACB4-D1ABCE5A1CA6"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-21CA5BB3-B49E-4E5C-85A4-1004F1DBCBF9"></a> 设置选定顶点的权重。供 <span class="char_link"><a href="GUID-642809FB-1C98-4960-8689-24B8108F3B10.htm#WSF742DAB041063133-48601C13112A1CEBBD0-7FB8">NURMS 细分选项</a></span>和<span class="char_link"><a href="GUID-D204B817-8B87-42FF-B152-0E360D0035A2.htm">“网格平滑”修改器</a></span>使用。增加顶点权重，效果是将平滑时的结果向顶点拉。 
+                     	 
+                     <div><a name="WS73099CC142F487551D68DD061249D36330F-6EE3"></a><div class="note-note"><span class="label label-target-language">注意:</span>当<span class="char_link"><a href="GUID-603061A3-D8A6-4F13-B3C7-C4330BD69C65.htm">“选择并操纵”</a></span>工具在“顶点”子对象层级处于活动状态时，助手将出现在视口中并带有一个顶点权重控件：。<img src="../images/GUID-8C55509D-CCF7-43EF-9846-F8C6AC609DF6-low.png">有关使用小盒的说明，请参见<span class="char_link"><a href="GUID-0F0E1E2D-7F99-4EF5-B37C-7F486379CFD0.htm#WS73099CC142F487553BD5B66812435C29801-2F0E">小盒界面</a></span>。 
+                           	 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF219F8B8B1249CF2CB82-4D53"></a><span class="term"><a name="WS1A9193826455F5FF219F8B8B1249CF2CB82-4D52"></a>向小盒操纵器添加顶点权重（在“权重”下拉列表中）
+                     <!--CPM-ContextId = 'mAddtoCaddyVWeight'--><a name="GUID-F6A4233C-5206-4275-9F55-5BFCE918D520"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF219F8B8B1249CF2CB82-4D51"></a> 
+                     <p><a name="WS1A9193826455F5FF219F8B8B1249CF2CB82-4D50"></a>切换<span class="char_link"><a href="GUID-603061A3-D8A6-4F13-B3C7-C4330BD69C65.htm">“选择并操纵”</a></span>处于活动状态时<span class="char_link"><a href="GUID-0F0E1E2D-7F99-4EF5-B37C-7F486379CFD0.htm#WS73099CC142F487553BD5B66812435C29801-2F0E">小盒界面</a></span>上权重控件的可用性。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-755E"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-755D"></a>删除孤立顶点
+                     <!--CPM-ContextId = 'mActionEditRemoveIsolatedVertices'--><a name="GUID-DEBD3024-8827-481E-801A-DCDCCD0313E3"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E4BADA40D-4886"></a> 将不属于任何多边形的所有顶点删除。 
+                  </div>
+               </dd>
+               <dt><a name="GUID-AF2ADA1A-34BC-4BBF-93CC-D161EB5D4864"></a><span class="term"><a name="GUID-594FC7F5-FB74-48ED-BA3B-6B313CBE7D4C"></a>移除未使用的贴图顶点
+                     <!--CPM-ContextId = 'mActionEditRemoveUnusedMapVertices'--><a name="GUID-E9A1F6F1-6AD8-43DD-9F80-6CB0EB59A3F3"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-50ED7655-4F87-437B-BE94-57AD64604EC3"></a> 某些建模操作会留下未使用的（孤立）贴图顶点，它们会显示在<span class="char_link"><a href="GUID-A7CC32F5-40BE-4DE5-A364-05E7986D4BA5.htm">“展开 UVW”编辑器</a></span>中，但是不能用于贴图。可以使用这一按钮，来自动删除这些贴图顶点。 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

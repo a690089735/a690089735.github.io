@@ -1,0 +1,137 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-54DAD9E2-DB0B-4C97-B43D-E7FBE5F60C33">
+      <meta name="description" content="“mParticles 力”操作符类似于标准“力”操作符，但更适合模拟使用。常规“力”操作符可调整粒子速度。如果使用“mParticles 世界”运行模拟，就很不方便，这是因为需要使用“mParticles 切换”操作符，通过启用“匹配位置”或“速度”&gt;“速度”将已调整的速度信息传递给模拟。即使这样，速度数据的恒定的直接操作可以扭曲模拟工作流程。mParticles 力定义了影响粒子的实际力，力场信息将传递给 MassFX 模拟。">
+      <meta name="indexterm" content="粒子流操作符: mParticles 力">
+      <meta name="indexterm" content="“mParticles 力”操作符">
+      <meta name="topic-type" content="concept">
+      <title>“mParticles 力”操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-54DAD9E2-DB0B-4C97-B43D-E7FBE5F60C33"></a><div class="head">
+            <h1>“mParticles 力”操作符</h1>
+         </div>
+         <p class="blurb">“mParticles 力”操作符类似于标准<span class="char_link"><a href="GUID-A90C3AB5-9A6A-4E21-A461-1DB6192C5D93.htm">“力”操作符</a></span>，但更适合模拟使用。常规“力”操作符可调整粒子速度。如果使用“mParticles 世界”运行模拟，就很不方便，这是因为需要使用“mParticles 切换”操作符，通过启用“匹配位置”或“速度”&gt;“速度”将已调整的速度信息传递给模拟。即使这样，速度数据的恒定的直接操作可以扭曲模拟工作流程。mParticles
+            力定义了影响粒子的实际力，力场信息将传递给 MassFX 模拟。 
+         </p>
+         <div class="bodyReference"><a name="GUID-C6147FA7-292A-413A-ABA8-6E17441C23A3"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-060DCE4B-3CC0-4306-88E8-F7881E602AFC">粒子视图  <img src="../images/ac.menuaro.gif">  添加或选择“mP 力”。</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-5B5C672A-CB81-4ADA-83A4-BD99B018C1A8"></a> 与标准“力”操作符一样，可将“脚本关联”与“mParticles 力”操作符结合使用来定义“影响”设置。还有一个额外的选项，可用于将“影响”参数与“数据”操作符中的数据通道相关联。为此，选择“从数据操作符”选项，然后使用要设置为“力影响”类型的“输出
+               mParticles”子操作符进行输出。 
+            </p>
+            <div><a name="GUID-8DDB0882-B668-49C0-B1FE-EBDBA83070CC"></a><div class="note-tip"><span class="label label-target-language">提示</span>通常，将所有 mParticles 操作符放置在事件中的“mParticles 世界”操作符上方，因此在模拟循环开始之前，操作符定义的 MassFX 属性对模拟引擎来说是已知的。 
+               </div>
+            </div>
+            <p><a name="GUID-0BCD98D0-9F0C-472D-BAC6-2E9D02FE6155"></a> 请参见：<span class="char_link"><a href="GUID-16C98508-A8D8-460E-9030-A92BAE40BF1E.htm">“mParticles 阻力”操作符</a></span> 
+            </p>
+            <div class="section"><a name="AA1006461"></a> 
+               <h2><a name="GUID-4ABC8AE4-BD6B-4260-8A80-6811B9478AF7"></a>界面
+               </h2> 
+               <p><a name="GUID-381AB7B6-6228-486C-9E01-3ADF1E8C8D2D"></a> 由于“mParticles 力”操作符专用于模拟，因此比标准“力”操作符多几个选项。 
+               </p> <a name="FIG_161E83DEF4E8463E83D2915E06C243DA"></a><div class="figure-anchor"><img src="../images/GUID-186FA981-2087-445A-B9E4-8D6768AB57AF-low.png"></div>  <a name="GUID-F04A7F93-D85B-48EC-9ED5-28CAAC324D50"></a><dl>
+                  <dt><a name="GUID-C3308823-6D1C-4F31-8C06-2B8880D84F3D"></a><span class="term"><a name="GUID-486D49DD-C13C-431D-9D68-A5CC755CFFD1"></a>力空间扭曲</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-8BC48EC9-6E64-40CE-8CA3-BC3432B6FE63"></a>列出当前模拟中的空间扭曲。 
+                        <p><a name="GUID-8C133382-5D91-4ED2-A61A-E3CD1D3C5929"></a>若要将空间扭曲添加到模拟中，请单击“添加”，然后选择空间扭曲，或者使用“按列表”一次性添加多个空间扭曲。若要移除空间扭曲，请高亮显示列表中该空间扭曲的名称，然后单击“移除”。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-4BF15C2F-F9BA-431C-A734-741E3BA7952D"></a><span class="term"><a name="GUID-96B0097F-B48B-4F22-B271-E12222128BF1"></a>=&gt;</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-DE7FE915-D03B-49ED-8860-A76A8826024D"></a>若要选择在“mParticles 力”中指定的空间扭曲，请将其在列表中高亮显示，然后单击此按钮。这样可选择场景中的空间扭曲，使得更容易访问空间扭曲参数。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-963656D5-F71B-4EAD-91D7-BD508D62AB7B"></a><span class="term"><a name="GUID-7F14798C-CFD7-402A-82B4-0A84E31A3E85"></a>力类型</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-28CB0F95-A1A0-4DC3-8A7B-20921F2AD88D"></a>定义受粒子属性影响的力大小。标准“力”操作符可以将相同力值应用于粒子；力大小仅受粒子速度和所处位置的影响。使用标准“力”操作符时，如果两个粒子具有相同的位置和速度，则会向这两个粒子应用相同的力。 
+                        <p><a name="GUID-F700AF6B-5AEB-41E6-94E8-B920761E91D6"></a> 通过使用适当的“力类型”选项，“mParticles 力”操作符还可以考虑其他粒子属性（比如粒子质量和粒子图形）： 
+                        </p> <a name="UL_5BEE18FD272F4C90872117CF937BE857"></a><ul>
+                           <li><em class="strong">重力</em>力大小可通过粒子质量调整，两者成正比（即，粒子质量越大，则力越大），在某种程度上类似于重力效应。该选项与标准“力”操作符非常相似。由于按与粒子质量成正比的方式调整力，因此，即使是质量不同的两个粒子也将以相同的速度运行，正如伽利略将两个重量不同的物体从比萨斜塔上投下的实验所验证的结果一样。
+                              
+                           </li>
+                           <li><em class="strong">曲面</em>可通过力方向中可见的粒子表面积来调整力大小。此类型可以模拟出风力的效果。 
+                           </li>
+                           <li><em class="strong">统一</em>按原样应用力大小，而不由粒子质量或大小进行调整。这类似于外部力中的有限力。使用此力类型，如果两个大小不同的粒子质量不同，则越大的粒子加速度将越小。 
+                           </li>
+                        </ul> 
+                        <p><a name="GUID-05CC2D0F-7116-456E-A7CF-79476C021DC6"></a>有关显示“力类型”选项效果的视频，请参见<span class="char_link"><a href="GUID-3FE42123-208D-46A1-9E8C-356AE7FD47D8.htm#SECTION_552AA516B6D24834B540F4FD04AE941C">力类型</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-2C3462A8-E959-4DE5-903F-D0C47B44443E"></a><span class="term"><a name="GUID-08C45DEC-D941-4D0F-A7AC-281B363D7765"></a>力变化阈值</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-9BF8B320-F622-4114-915F-E1176F54C997"></a>启用时，应用于粒子的力根据应用于粒子图形所有顶点的累加力来计算。因此，非均匀力可瞬间创建扭矩。 
+                        <p><a name="GUID-8BC140F3-812D-46B0-957F-B9A621AE698E"></a> 标准“力”操作符通过粒子位置和速度来计算所应用的力。并不会考虑粒子的空间属性；一个粒子视为一个点。 
+                        </p> 
+                        <p><a name="GUID-3922A4CC-356B-43D6-BE00-7A311FAE6E86"></a> “mParticles 力”操作符可以在处理非均匀力（在空间中值发生变化的力）的同时考虑粒子大小。如果粒子大小分布均匀，则应用到粒子一端的力与应用到粒子另一端的力不同。力上的差异还可以创建一个对粒子施加的扭矩力。 
+                        </p> 
+                        <p><a name="GUID-FAC2BBFE-D764-4A8A-AC92-5FA86EBCCF0D"></a>有关显示“力变化阈值”选项效果的视频，请参见<span class="char_link"><a href="GUID-3FE42123-208D-46A1-9E8C-356AE7FD47D8.htm#SECTION_49B62B56A2B14541B704C33CA9EF1C5B">力变化阈值</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-6030BC59-432E-4EE5-97A3-65B846205CAC"></a><span class="term"><a name="GUID-4D896683-21F2-47DC-AB67-6232B7A329E1"></a>图形大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-D4D5C306-95E4-42DB-B4C1-C8B032AE1CF4"></a>力所应用的最小粒子大小根据应用于粒子图形所有顶点的累加力来计算。使用此选项，通过指定计算为应用到粒子点的足够小的粒子的力，可加速计算的速度。仅当“力变化阈值”处于启用状态时可用。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-16373B5E-3596-469A-8791-70BC11211372"></a><span class="term"><a name="GUID-5B5F6F6D-2C15-4974-8F01-D236B11CFCB4"></a>力场重叠</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-6674FCC9-AF89-448F-8F8D-207B59795012"></a>确定占用相同空间体积的多个力影响粒子的方式。如果使用“相加”，则按照所有力的相对强度来合并它们。如果使用“最大”，则只有强度最大的力才会影响粒子。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-99BCD038-7794-4111-9078-DF0CC4F47B0B"></a><span class="term"><a name="GUID-65D24BBE-742B-420B-92DD-6B70A4BD9998"></a>影响 %</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-1E4DF13F-2017-4F5C-8FEB-0EEE4E6B4C1F"></a>按百分比指定单个力或多个力应用于粒子的强度。默认值为 1000.0。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-D113B5B5-BE44-49C1-ACFB-7EB29ACA8C9F"></a><span class="term"><a name="GUID-D89B509C-A0D3-4DE3-A2CE-E316FBD68F02"></a>指数 (10**N)</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-871FD8D8-2E31-4FA6-9F71-271C333E946F"></a>此设置可用于处理不同力类型。可通过粒子质量/大小影响所应用的力的整体效果，因此处理小粒子时可能需要应用较大的力值。为简化该过程，并不需要根据大小的顺序增加“影响 %”值；相反，只需要将指数微调器增加 1。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-37AFD6FD-5C23-491F-834B-0868847BEB79"></a><span class="term"><a name="GUID-4934667F-9481-439D-A989-670BEC3B0E57"></a>偏移影响</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-9A9765FB-3FDD-4CF8-92E2-DB2C65C917CE"></a>为应用动画参数选择时间帧。此选项在标准“力”操作符中使用相同的工作方式。这些选项包括： <a name="UL_D0A5CAFE3AA048BCA5C35F2DB34E5D0F"></a><ul>
+                           <li><em class="strong">绝对时间</em>为参数设置的任意关键点在设置关键点的实际帧应用。 
+                           </li>
+                           <li><em class="strong">粒子年龄</em>为参数设置的任意关键点在每个粒子存在的相应帧应用。 
+                           </li>
+                           <li><em class="strong">事件持续时间</em>参数设置的任意关键点在每个粒子第一次进入事件时开始应用于粒子。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-B62B94E8-9D71-4A27-8DBE-A85CE0420A49"></a><span class="term"><a name="GUID-18267272-FB56-4F4A-80F9-C57E13D8B17C"></a>事件输入时的冲量</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-D1636D56-CB6F-4354-85AA-C36483449ACA"></a>当粒子进入事件时，只需应用一次力。如果在“时间扭曲”值指定的时间段内不断地应用力，则可计算所应用的力的值。 
+                        <div><a name="GUID-71A6B159-1C88-4658-82E4-86B9BACC202C"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>当 <span class="char_link"><a href="GUID-2193B625-E0E0-4908-B566-6214952086E2.htm">mParticles 图形</a></span>设置为按密度定义质量，以及“mParticles 力”&gt;“力类型”设置为“重力”（请参见上文）时，不应使用“事件输入时的冲量”，因为这可能导致模拟出错。 
+                           </div>
+                        </div> 
+                        <p><a name="GUID-1AB064E5-7D07-4B47-8405-C7666D34422B"></a> 禁用时，可在包含“mParticles 力”操作符的事件中存在粒子时恒定地应用力。仅当粒子进入事件需要应用力时，“事件输入时的冲量”选项非常有用，可能是由于“颠簸”或“冲量”应用于粒子可使其速度发生改变或出现自旋。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-28655779-923B-4B1A-8C6C-63D8DA262C87"></a><span class="term"><a name="GUID-A5DE0D6F-ACF3-49A2-AEA6-5D3842C4EF9C"></a>时间扭曲</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-4EFC4508-8CFA-43ED-8A19-6EF1CCB6B645"></a>当启用“事件输入时的冲量”时，可计算该力的持续时间；当粒子进入事件时，此派生力可瞬间应用到每个粒子中。 
+                        <p><a name="GUID-8FFF32C8-8193-4CE7-A865-7848AAC3923E"></a>有关显示“时间扭曲”值效果的视频，请参见<span class="char_link"><a href="GUID-3FE42123-208D-46A1-9E8C-356AE7FD47D8.htm#SECTION_F9B0A7A6FF4548A7A27136C8EF026F6C">时间扭曲</a></span>。 
+                        </p>
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-3FE42123-208D-46A1-9E8C-356AE7FD47D8.htm">mP 力操作符视频</a></li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

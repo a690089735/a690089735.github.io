@@ -1,0 +1,405 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-34949ADC-7B53-4D74-AFC7-5EEA7CABF88F">
+      <meta name="description" content="在“可编辑样条线（顶点）”层级时，可以使用标准方法选择一个和多个顶点并移动它们。">
+      <meta name="indexterm" content="可编辑样条线: 顶点">
+      <meta name="contextid" content="SUBOBJECT_1.MODIFIER_STACK">
+      <meta name="contextid" content="ESPLINE_FILLET.EDITABLE_SPLINE_OBJECT">
+      <meta name="contextid" content="ESPLINE_VCHAMFER.EDITABLE_SPLINE_OBJECT">
+      <meta name="contextid" content="ESPLINE_WELD.EDITABLE_SPLINE_OBJECT">
+      <meta name="topic-type" content="concept">
+      <title>可编辑样条线（顶点）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-34949ADC-7B53-4D74-AFC7-5EEA7CABF88F"></a><div class="head">
+            <h1>可编辑样条线（顶点）</h1>
+         </div>
+         <div class="abstract"> 
+            <p><a name="GUID-A540C72F-ACBB-41E2-912C-91593B00A974"></a> <img src="../images/GUID-E9E933AA-F706-4479-A8FA-FA601CFD0A16-low.png"> 
+            </p> 
+            <p class="blurb">在“可编辑样条线（顶点）”层级时，可以使用标准方法选择一个和多个顶点并移动它们。 </p> 
+         </div><a name="UL_A4D844440FB14A7CBD734BBCC1BD75BF"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-6BA26B66-A0A2-41CD-91CD-B572D24A5BEF">选择一个可编辑样条线或“编辑样条线”对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板 <img src="../images/ac.menuaro.gif"> 在堆栈显示中展开可编辑样条线 <img src="../images/ac.menuaro.gif"> “顶点”子对象层级</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-94150408-B738-42B5-A541-A1B4EFDEA30F">选择一个可编辑样条线或“编辑样条线”对象。 <img src="../images/ac.menuaro.gif"> “修改”面板  <img src="../images/ac.menuaro.gif"> “选择”卷展栏  <img src="../images/ac.menuaro.gif"> “顶点”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-290BCC83-7C22-4564-8080-0753995D5712">选择一个可编辑样条线或“编辑样条线”对象。 <img src="../images/ac.menuaro.gif"> 右键单击样条线  <img src="../images/ac.menuaro.gif"> “工具 1”（左上方）四边形菜单的象限  <img src="../images/ac.menuaro.gif"> “子对象” <img src="../images/ac.menuaro.gif"> “顶点”</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF-2ADE9D9118A20D4F813EED"></a>如果顶点属于 Bezier 或“Bezier 角点”类型，您还可以移动和旋转控制柄，进而影响在顶点联接的任何线段的形状。您可以使用切线复制/粘贴操作在顶点之间复制和粘贴控制柄。您可以使用四元菜单重置控制柄或在不同类型之间切换。选择顶点后，四元菜单中始终有切线类型可用；您不必将光标直接放在视口中的相应对象之上。
+            
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B2C"></a> 
+            <h2><a name="GUID-C0E27C09-0876-423E-A695-43F4696FB8F7"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004169F"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900416A0"></a>要设置顶点类型，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>右键单击选择中的任意顶点。 </li>
+               <li>从快捷菜单中选择一个类型。在一个图形中，每个顶点可能属于下面四种类型之一： <a name="WS1A9193826455F5FFBA679E112A6A1900416A1"></a><ul>
+                     <li><em class="strong">平滑：</em>创建平滑连续曲线的不可调整的顶点。平滑顶点处的曲率是由相邻顶点的间距决定的。 
+                     </li>
+                     <li><em class="strong">角：</em>创建锐角转角的不可调整的顶点。 
+                     </li>
+                     <li><em class="strong">Bezier：</em>带有锁定连续切线控制柄的不可调解的顶点，用于创建平滑曲线。顶点处的曲率由切线控制柄的方向和量级确定。 
+                     </li>
+                     <li><em class="strong">Bezier 角点：</em>带有不连续的切线控制柄的不可调整的顶点，用于创建锐角转角。线段离开转角时的曲率是由切线控制柄的方向和量级设置的。 <a name="WS1A9193826455F5FFBA679E112A6A1900416A5"></a><div class="figure-anchor"><img src="../images/GUID-D4C0760A-6695-4B72-A35B-CB2D772F5225-low.png"><p></p>
+                           <p class="figure-title">平滑顶点（左）和角点顶点（右）</p>
+                        </div> <a name="WS1A9193826455F5FFBA679E112A6A1900416A6"></a><div class="figure-anchor"><img src="../images/GUID-F9902C7E-9396-4EC0-90F6-6259D568D2A9-low.png"></div>   
+                     </li>
+                  </ul> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900416A7"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900416A8"></a>要复制和粘贴顶点切线控制柄，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>启用 <img src="../images/GUID-E9E933AA-F706-4479-A8FA-FA601CFD0A16-low.png">（顶点），然后 <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择作为复制来源的顶点。 
+               </li>
+               <li>在“几何体”卷展栏上向下滚动到“切线”组，然后单击“复制”。 </li>
+               <li>将光标移至视口中的顶点上面。光标将变成复制光标。单击要复制的控制柄。 </li>
+               <li>在“几何体”卷展栏上向下滚动到“切线”组，然后单击“粘贴”。 </li>
+               <li>将光标移至视口中的顶点上面。光标将变成粘贴光标。单击要粘贴到的控制柄。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B2B"></a>视口中的顶点切线将相应更改。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900416A9"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900416AA"></a>要重置顶点控制柄切线，请执行以下操作：
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B2A"></a>控制柄很容易缩的非常小并与顶点重叠，这样会使选择和编辑控制柄的操作变的很困难。重置顶点控制柄切线以重新绘制控制柄 
+            </p>
+            <ol type="1" start="1">
+               <li>选择有问题的顶点。 </li>
+               <li>右键单击并选择“重置切线”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B29"></a>您已经完成的任何顶点控制柄编辑将被丢弃，并重置控制柄。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B28"></a> 
+            <h2><a name="GUID-98C1A1D6-479A-4E89-A452-D53C036FEEEE"></a>界面
+            </h2> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900416AC"></a> 
+               <h3><a name="GUID-5D49067B-D9B4-447D-9870-36CC94F1A71C"></a>“软选择”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B26"></a>有关“软选择”卷展栏设置的信息，请参见<span class="char_link"><a href="GUID-BEF2CC1E-40BE-45DD-A8E9-228EE4A1EE98.htm">“软选择”卷展栏</a></span>。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900416AD"></a> 
+               <h3><a name="GUID-C219BE42-9502-4EFC-A927-4441BDD2C992"></a>“几何体”卷展栏
+               </h3> <a name="GUID-EFBEB43A-DDB4-4BD8-8CD2-F53DFDB7173C"></a><div class="dl_section"><a name="GUID-F7585AC2-CAF2-4494-8FBF-97BDF1656394"></a><p class="title"><a name="GUID-D9CDCB15-A91C-43AA-AED7-CF531F4F6168"></a>“新顶点类型”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900416AF"></a><div class="figure-anchor"><img src="../images/GUID-6802FA91-37B8-45EB-98CD-BBB980C75F84-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B25"></a>可使用此组中的单选按钮确定在按住 <span class="keyboardEntry">Shift</span> 键的同时克隆线段或样条线时创建的新顶点的切线。如果之后使用“连接复制”，则对于将原始线段或样条线与新线段或样条线相连的样条线，其上的顶点在此组中具有指定的类型。 
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B24"></a>该设置对使用如“创建线”按钮、“优化”等工具创建的顶点的切线没有影响。 
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900416B0"></a><ul>
+                     <li><em class="strong">线性</em> 新顶点将具有线性切线。 
+                     </li>
+                     <li><em class="strong">平滑</em> 新顶点将具有平滑切线。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B23"></a>选中此选项之后，会自动焊接覆盖的新顶点。 
+                        </p> 
+                     </li>
+                     <li><em class="strong">Bezier</em> 新顶点将具有 Bezier 切线。 
+                     </li>
+                     <li><em class="strong">Bezier 角点</em> 新顶点将具有 Bezier 角点切线。 
+                     </li>
+                  </ul>
+               </div> <a name="WS1A9193826455F5FFBA679E112A6A1900416B2"></a><div class="figure-anchor"><img src="../images/GUID-8B09FC2E-B6D3-407E-A28C-E6EA68361EF2-low.png"></div>  <a name="GUID-8599EBD6-BD8C-4AD9-BC36-BF750157FB30"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EDF"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B22"></a>创建线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F5F"></a> 向所选对象添加更多样条线。这些线是独立的样条线子对象；创建它们的方式与创建<span class="char_link"><a href="GUID-1408D223-7A05-4163-A7FA-5314DF5352BE.htm">线形样条线</a></span>的方式相同。要退出线的创建，请右键单击或单击以禁用“创建线”。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EE0"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B21"></a>断开</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F5E"></a> 在选定的一个或多个顶点拆分样条线。选择一个或多个顶点，然后单击“断裂”以创建拆分。对于每上一个样条线，目前有两个叠加的不相连顶点，允许曾经联接的线段端点向相互远离的方向移动。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EE1"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B20"></a>附加</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F5D"></a> 将场景中的其他样条线附加到所选样条线。单击要附加到当前选定的样条线对象的对象。您要附加的对象也必须是样条线。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B1F"></a>有关详细信息，请参见<span class="char_link"><a href="GUID-8ACC3EF9-EA2A-4E36-AA16-CAEAD1C244C0.htm#WSF742DAB041063133-2A605991112A1CE7A04-7F7C">附加</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EE2"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B1E"></a>附加多个</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F5C"></a> 单击此按钮可以显示“附加多个”对话框，它包含场景中所有其他图形的列表。选择要附加到当前可编辑样条线的形状，然后单击“确定”。 <a name="WS1A9193826455F5FFBA679E112A6A1900416B3"></a><ul>
+                           <li><em class="strong">重定向</em> 启用后，将重定向附加的样条线，使每个样条线的创建局部坐标系与所选样条线的创建局部坐标系对齐。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EE3"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B1D"></a>横截面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F5B"></a> 在横截面形状外面创建样条线框架。单击“横截面”，选择一个形状，然后选择第二个形状，将创建连接这两个形状的样条线。继续单击形状将其添加到框架。此功能与“横截面”修改器相似，但您可以在此确定横截面的顺序。可以通过在“新顶点类型”组中选择“线性”、“Bezier”、“Bezier
+                        角点”或“平滑”来定义样条线框架切线。 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6152"></a><div class="note-tip"><span class="label label-target-language">提示</span>编辑样条线边框时，请在选择顶点之前使用“区域选择”。这将在您变换顶点时使它们保持在一起。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-B8EEB5AE-D950-44FF-927A-6F3AB0D2A072"></a><p class="title"><a name="GUID-567FE088-4620-4831-A7E0-8DB91AB5ECB0"></a>[“优化”组]
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900416B5"></a><div class="figure-anchor"><img src="../images/GUID-0D1C6924-69FA-4308-BD58-D1C16E4FC349-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B1B"></a>“优化”组包括许多可与<span class="char_link"><a href="GUID-1456D1B2-7B31-4894-AC2C-A2F60660C922.htm">“曲面”修改器</a></span>一起使用以生成样条线网络的功能。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EE4"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B1A"></a>优化</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F5A"></a> 允许您添加顶点，而不更改样条线的曲率值。单击“优化”，然后选择每次单击时要添加顶点的任意数量的样条线线段（鼠标光标经过合格的线段时会变为一个“连接”符号）。要完成顶点的添加，请再次单击“优化”，或在视口中右键单击。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B19"></a>您还可以在优化操作过程中单击现有的顶点，此时，<span class="charspan-msgph">3ds Max</span> 会显示一个对话框，询问您是要<em class="strong">优化</em>顶点还是<em class="strong">仅连接</em>到顶点。如果选择“仅连接”，<span class="charspan-msgph">3ds Max</span> 将不会创建顶点：而只是连接到现有的顶点。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B18"></a>取决于要优化的线段端点上的顶点类型，“优化”操作创建的顶点类型会有不同。 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A1900416B6"></a><ul>
+                              <li>如果边界顶点都是“平滑”类型，“优化”操作将创建一个“平滑”类型的顶点。 </li>
+                              <li>如果边界顶点都是“角点”类型，“优化”操作将创建一个“角点”类型的顶点。 </li>
+                              <li>如果某个边界顶点是“角点”或“Bezier 角点”，优化操作将创建“Bezier 角点”类型的顶点。 </li>
+                              <li>否则，操作将创建“Bezier 类型”的顶点。 </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EE5"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B17"></a>连接</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F59"></a> 启用时，通过连接新顶点创建一个新的样条线子对象。使用“优化”添加顶点完成后，“连接”会为每个新顶点创建一个单独的副本，然后将所有副本与一个新样条线相连。 
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6151"></a><div class="note-note"><span class="label label-target-language">注意:</span>要使“连接”起作用，必须在单击“优化”之前启用“连接”。 
+                              </div>
+                           </div> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B16"></a>在启用“连接”之后、开始优化进程之前，启用以下选项的任何组合： 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A1900416B7"></a><ul>
+                              <li><em class="strong">线性</em> 启用后，通过使用“角点”顶点使新样条直线中的所有线段成为线性。禁用“线性”时，用于创建新样条线的顶点是“平滑”类型的顶点。 
+                              </li>
+                              <li><em class="strong">绑定首点</em> 可以使在优化操作中创建的第一个顶点绑定到所选线段的中心。请参见<span class="char_link"><a href="GUID-37535C71-25A6-45B8-8EBF-CF4D9D21ABF2.htm">边界顶点</a></span>。 
+                              </li>
+                              <li><em class="strong">闭合</em> 启用后，连接新样条线中的第一个和最后一个顶点，创建一个闭合样条线。如果禁用“关闭”，“连接”将始终创建一个开口样条线。 
+                              </li>
+                              <li><em class="strong">绑定末点</em> 可以使在优化操作中创建的最后一个顶点绑定到所选线段的中心。请参见<span class="char_link"><a href="GUID-37535C71-25A6-45B8-8EBF-CF4D9D21ABF2.htm">边界顶点</a></span>。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-F8A5DA61-0670-440A-A17F-60F47019EB99"></a><p class="title"><a name="GUID-78A35092-0F4A-4BA7-902B-C1D0063C867F"></a>“端点自动焊接”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900416B9"></a><div class="figure-anchor"><img src="../images/GUID-AB55605A-7F95-41CB-8A82-1F4408E41784-low.png"></div>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EE6"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B15"></a>自动焊接</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F58"></a> 启用“自动焊接”后，会自动焊接在与同一样条线的另一个端点的阈值距离内放置和移动的端点顶点。此功能可以在对象层级和所有子对象层级使用。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EE7"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B14"></a>阈值</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F57"></a> 阈值距离微调器是一个近似设置，用于控制在自动焊接顶点之前，顶点可以与另一个顶点接近的程度。默认值为 6.0。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> <a name="WS1A9193826455F5FFBA679E112A6A1900416BB"></a><div class="figure-anchor"><img src="../images/GUID-C55ECF23-F61B-40A6-B784-CB5FD0369AF9-low.png"></div>  <a name="GUID-4AB6F51E-E345-4E2D-8908-F6F225288B80"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EE8"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B13"></a>焊接</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F56"></a> 将两个端点顶点或同一样条线中的两个相邻顶点转化为一个顶点。移近两个端点顶点或两个相邻顶点，选择两个顶点，然后单击“焊接”。如果这两个顶点在由“焊接阈值”微调器（按钮的右侧）设置的单位距离内，将转化为一个顶点。您可以焊接选择的一组顶点，只要每对顶点在阈值范围内。
+                        
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EE9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B12"></a>连接</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F55"></a> 连接两个端点顶点以生成一个线性线段，而无论端点顶点的切线值是多少。单击“连接”按钮，将鼠标光标移过某个端点顶点，直到光标变成一个十子形，然后从一个端点顶点拖动到另一个端点顶点。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EEA"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B11"></a>插入</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F54"></a> 插入一个或多个顶点，以创建其他线段。单击线段中的任意某处可以插入顶点并将鼠标附加到样条线。然后可以选择性地移动鼠标，并单击以放置新顶点。继续移动鼠标，然后单击，以添加新顶点。单击一次可以插入一个角点顶点，而拖动则可以创建一个 Bezier（平滑）顶点。
+                        
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B10"></a>右键单击以完成操作并释放鼠标按键。此时，您仍处于“插入”模式，可以开始在其他线段中插入顶点。否则，再次右键单击或单击“插入”，将退出“插入”模式。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EEB"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B0F"></a>设为首顶点</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F53"></a> 指定所选形状中的哪个顶点是第一个顶点。样条线的第一个顶点指定为四周带有小框的顶点。选择您要更改的当前已编辑的形状中每个样条线上的顶点，然后单击“设为首顶点”按钮。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B0E"></a>在开口样条线中，第一个顶点必须是还没有成为第一个顶点的端点。在闭合样条线中，它可以是还没有成为第一个顶点的任何点。单击“设为首顶点”按钮，将设置第一个顶点。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B0D"></a>样条线上的第一个顶点有特殊重要性。下表定义了如何使用第一个顶点。 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A1900416BC"></a><div class="table-ruled">
+                           <table cellpadding="0" cellspacing="0" class="ruled">
+                              <colgroup>
+                                 <col width="26.997840172786177%">
+                                 <col width="73.00215982721382%">
+                              </colgroup>
+                              <tr class="ruled-heading">
+                                 <th class="table-heading">使用的形状 </th>
+                                 <th class="table-heading">第一个顶点的含义 </th>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">放样路径 </td>
+                                 <td class="table-body">路径的开始。级别 0。 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">放样形状 </td>
+                                 <td class="table-body">最初的蒙皮对齐。 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">路径约束 </td>
+                                 <td class="table-body">运动路径的开始。路径中的 0% 位置。 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">轨迹 </td>
+                                 <td class="table-body">第一个位置关键点。 </td>
+                              </tr>
+                           </table>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EEC"></a><span class="term"><a name="WSF742DAB041063133-2A605991112A1CE7A04-7F77"></a>熔合</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F52"></a> 将所有选定顶点移至它们的平均中心位置。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B0C"></a>生成样条线网络以供<span class="char_link"><a href="GUID-1456D1B2-7B31-4894-AC2C-A2F60660C922.htm">“曲面”修改器</a></span>使用时，可以使用“熔合”功能使顶点重叠。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6150"></a><div class="note-note"><span class="label label-target-language">注意:</span>“熔合”不会联接顶点；它只是将它们移至同一位置。 
+                           </div>
+                        </div> <a name="WS1A9193826455F5FFBA679E112A6A1900416BD"></a><div class="figure-anchor"><img src="../images/GUID-6FF496AF-7469-4E2B-9127-0A37145600E7-low.png"><p class="figure-title">三个所选顶点（左）；熔合的顶点（右）</p>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EED"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B0B"></a>循环</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F51"></a> 选择连续的重叠顶点。选择两个或更多在 3D 空间中处于同一位置的顶点中的一个，然后重复单击，直到选中了您想要的顶点。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B0A"></a>生成样条线网络以供<span class="char_link"><a href="GUID-1456D1B2-7B31-4894-AC2C-A2F60660C922.htm">“曲面”修改器</a></span>使用时，可以使用“圆”从样条线相交处的一组重叠顶点中选择某个特定顶点。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-614F"></a><div class="note-tip"><span class="label label-target-language">提示</span>观察“选择”卷展栏底部显示的信息，可以查看选择了哪个顶点。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EEE"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B09"></a>相交</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F50"></a> 在属于同一个样条线对象的两个样条线的相交处添加顶点。单击“相交”，然后单击两个样条线之间的相交点。如果样条线之间的距离在由“相交阈值”微调器（在按钮的右侧）设置的距离内，单击的顶点将添加到两个样条线上。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B08"></a>您可以通过单击其他样条线相交点继续使用“相交”。要完成此操作，请在活动视口中右键单击或再次单击“相交”按钮。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B07"></a>生成样条线网络以供<span class="char_link"><a href="GUID-1456D1B2-7B31-4894-AC2C-A2F60660C922.htm">“曲面”修改器</a></span>使用时，可以使用“相交”功能在样条线相交处创建顶点。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-614E"></a><div class="note-note"><span class="label label-target-language">注意:</span>“相交”不会联接两个样条线，而只是在它们的相交处添加顶点。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EEF"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B06"></a>圆角</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F4F"></a> 允许您在线段会合的地方设置圆角，添加新的控制点。您可以交互地（通过拖动顶点）应用此效果，也可以通过使用数字（使用“圆角”微调器）来应用此效果。单击“圆角”按钮，然后在活动对象中拖动顶点。拖动时，“圆角”微调器将相应地更新，以指示当前的圆角量。
+                        <a name="WS1A9193826455F5FFBA679E112A6A1900416BE"></a><div class="figure-anchor"><img src="../images/GUID-5910511C-AB28-4052-A63F-6F5558714972-low.png"><p class="figure-title">原始矩形（左）、应用“圆角”之后（右上方）和应用“切角”之后（右下方）</p>
+                        </div>  
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B05"></a>如果拖动一个或多个所选顶点，所有选定顶点将以同样的方式设置圆角。如果拖动某个未选定的顶点，则首先取消选择任何已选定的顶点。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B04"></a>您可以通过在其他顶点上拖动来继续使用“圆角”。要完成此操作，请在活动视口中右键单击或再次单击“圆角”按钮。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B03"></a>“圆角”会创建一个新的线段，此线段将指向原始顶点的两个线段上的新点连接在一起。这些新点沿两条线段上的离原始顶点的距离都是准确的&lt;圆角量&gt;距离。新圆角线段是使用某个邻近线段（随机拾取）的材质 ID 创建的。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B02"></a>例如，如果您设置矩形某个角的圆角，将使用沿着指向该角的两个线段上移动的两个顶点来替换一个角点顶点，并且在该角创建一个新的圆角线段。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-614D"></a><div class="note-note"><span class="label label-target-language">注意:</span>与“圆角/切角”修改器不同，您可以将“圆角”功能应用于<em class="mild">任意</em> 类型的顶点，而不仅仅是“角点”和“Bezier 角点”顶点。同样，相邻线段不必是线性的。 
+                           </div>
+                        </div> <a name="WS1A9193826455F5FFBA679E112A6A1900416BF"></a><ul>
+                           <li><em class="strong">圆角量</em>调整此微调器（在“圆角”按钮的右侧）可以将圆角效果应用于所选顶点。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EF0"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4B01"></a>切角</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F4E"></a> 允许您使用“切角”功能设置形状角部的倒角。可以交互式地（通过拖动顶点）或者在数字上（通过使用“切角”微调器）应用此效果。单击“切角”按钮，然后在活动对象中拖动顶点。“切角”微调器更新显示拖动的切角量。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4B00"></a>如果拖动一个或多个所选顶点，所有选定顶点将以同样的方式设置切角。如果拖动某个未选定的顶点，则首先取消选择任何已选定的顶点。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4AFF"></a>您可以通过在其他顶点上拖动来继续使用“切角”。要完成此操作，请在活动视口中右键单击或再次单击“切角”按钮。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4AFE"></a>“切角”操作会“切除”所选顶点，创建一个新线段，此线段将指向原始顶点的两条线段上的新点连接在一起。这些新点沿两条线段上的离原始顶点的距离都是准确的 &lt;切角量&gt; 距离。新切角线段是使用某个邻近线段（随机拾取）的材质 ID 创建的。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4AFD"></a>例如，如果您设置矩形某个角的切角，将使用沿着指向该角的两个线段上移动的两个顶点来替换一个角点顶点，并且在该角创建一条新线段。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-614C"></a><div class="note-note"><span class="label label-target-language">注意:</span>与“圆角/切角”修改器不同，您可以将“切角”功能应用于<em class="mild">任意</em> 类型的顶点，而不仅仅是“角点”和“Bezier 角点”顶点。同样，相邻线段不必是线性的。 
+                           </div>
+                        </div> <a name="WS1A9193826455F5FFBA679E112A6A1900416C0"></a><ul>
+                           <li><em class="strong">切角量</em> 调整此微调器（在“切角”按钮的右侧）可以将切角效果应用于所选顶点。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-36E249A9-BF25-41B0-896F-6304C62B46E6"></a><p class="title"><a name="GUID-D0BBAE0D-BAB7-4E26-BB93-19D7A9B0A2DE"></a>“切线”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900416C2"></a><div class="figure-anchor"><img src="../images/GUID-3ED42616-EB10-4DC0-A0CF-731B26D2EF1F-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4AFC"></a> 使用此组中的工具可以将一个顶点的控制柄复制并粘贴到另一个顶点。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EF1"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4AFB"></a>复制</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F4D"></a> 启用此按钮，然后选择一个控制柄。此操作将把所选控制柄切线复制到缓冲区。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EF2"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4AFA"></a>粘贴</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F4C"></a> 启用此按钮，然后单击一个控制柄。此操作将把控制柄切线粘贴到所选顶点。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EF3"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4AF9"></a>粘贴长度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F4B"></a> 启用此按钮后，还会复制控制柄长度。如果禁用此按钮，则只考虑控制柄角度，而不改变控制柄长度。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> <a name="WS1A9193826455F5FFBA679E112A6A1900416C4"></a><div class="figure-anchor"><img src="../images/GUID-3B640222-FBB0-48DE-89F3-021910F44624-low.png"></div>  <a name="GUID-77489807-B646-4F58-98EF-FA6BBB1BE7E1"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EF4"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4AF8"></a>隐藏</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F4A"></a> 隐藏所选顶点和任何相连的线段。选择一个或多个顶点，然后单击“隐藏”。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EF5"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4AF7"></a>全部取消隐藏</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F49"></a> 显示任何隐藏的子对象。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EF6"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4AF6"></a>绑定</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F48"></a> 允许您创建<span class="char_link"><a href="GUID-37535C71-25A6-45B8-8EBF-CF4D9D21ABF2.htm">绑定顶点</a></span>。单击“绑定”，然后从当前选择中的任何端点顶点拖动到当前选择中的任何线段（但与该顶点相连的线段除外）。拖动之前，当光标在合格的顶点上时，会变成一个十字形光标。在拖动过程中，会出现一条连接顶点和当前鼠标位置的虚线，当鼠标光标经过合格的线段时，会变成一个“连接”符号。在合格线段上释放鼠标按钮时，顶点会跳至该线段的中心，并绑定到该中心。
+                        
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4AF5"></a>生成样条线网络以供<span class="char_link"><a href="GUID-1456D1B2-7B31-4894-AC2C-A2F60660C922.htm">“曲面”修改器</a></span>使用时，可以使用“绑定”功能连接样条线。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EF7"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4AF4"></a>取消绑定</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F47"></a> 允许您断开<span class="char_link"><a href="GUID-37535C71-25A6-45B8-8EBF-CF4D9D21ABF2.htm">绑定顶点</a></span>与所附加线段的连接。选择一个或多个绑定顶点，然后单击“绑定顶点”按钮。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EF8"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4AF3"></a>删除</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F46"></a> 删除所选的一个或多个顶点，以及与每个要删除的顶点相连的那条线段。 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-2F08C6C1-23B3-47C8-B4D1-AB08AB63865A"></a><p class="title"><a name="GUID-45CB31CE-9B19-4EC3-9FC0-DB74FE4DF188"></a>“显示”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900416C6"></a><div class="figure-anchor"><img src="../images/GUID-BB0BE232-7162-4D0C-9CA1-53B4AAF61997-low.png"></div>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7EF9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4AF2"></a>显示选定线段</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7F45"></a> 启用后，顶点子对象层级的任何所选线段将高亮显示为红色。禁用（默认设置）后，仅高亮显示线段子对象层级的所选线段。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4AF1"></a>相互比较复杂曲线时，此功能有用。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div> 
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-72EBDC6F-B85A-425F-A4A7-D568CC8FBC40"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-4CCA4890-83E8-41C6-9FFB-0A3959194CCA.htm">放样复合对象 </a></span></li>
+               <li><span class="char_link"><a href="GUID-FC720C8E-0015-4D86-AC09-AD122EDC7929.htm">路径约束 </a></span></li>
+               <li><span class="char_link"><a href="GUID-D3B1A9C1-BFD9-41C8-ADEE-D79F55EC4A18.htm">轨迹 </a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

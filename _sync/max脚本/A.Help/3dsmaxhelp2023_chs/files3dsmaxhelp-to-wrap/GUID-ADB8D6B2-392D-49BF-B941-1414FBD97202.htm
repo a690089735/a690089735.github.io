@@ -1,0 +1,135 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-ADB8D6B2-392D-49BF-B941-1414FBD97202">
+      <meta name="description" content="动画基于称为视觉暂留现象的人类视觉原理。如果快速查看一系列相关的静态图像，那么我们会感觉到这是一个连续的运动。将每个单独图像称为一帧，产生的运动实际上源自您的视觉系统在每看到一帧后会在该帧停留一小段时间。">
+      <meta name="indexterm" content="动画: 概念">
+      <meta name="indexterm" content="中间帧">
+      <meta name="topic-type" content="concept">
+      <title>动画概念</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-ADB8D6B2-392D-49BF-B941-1414FBD97202"></a><div class="head">
+            <h1>动画概念</h1>
+         </div>
+         <p class="blurb">动画基于称为<em class="mild">视觉暂留</em>现象的人类视觉原理。如果快速查看一系列相关的静态图像，那么我们会感觉到这是一个连续的运动。将每个单独图像称为一<em class="mild">帧</em>，产生的运动实际上源自您的视觉系统在每看到一帧后会在该帧停留一小段时间。 
+            
+         </p><a name="WS1A9193826455F5FFBA679E112A6A1900448E8"></a><div class="figure-anchor"><img src="../images/GUID-05F98C25-F653-4DD4-A774-F28AA56C7CFC-low.png"><p class="figure-title">帧是动画电影中的单个图像。</p>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900448E9"></a> 
+            <h2><a name="GUID-F5A15368-CB18-41A6-A4DE-5785F28ED785"></a>传统动画方法
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45FE"></a>通常，创建动画的主要难点在于动画师必须生成大量帧。一分钟的动画大概需要 720 到 1800 个单独图像，这取决于动画的质量。用手来绘制图像是一项艰巨的任务。因此出现了一种称之为<em class="mild">关键帧</em> 的技术。 
+               		
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45FD"></a>动画中的大多数帧都是例程，从上一帧直接向一些目标不断增加变化。传统动画工作室意识到，通过让美工人员只绘制重要的帧（称为<em class="mild">关键帧</em>），可以提高他们的工作效率。然后助手再计算出关键帧之间需要的帧。填充在关键帧中的帧称为<em class="mild">中间帧</em>。 
+               		
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45FC"></a>画出了所有关键帧和中间帧之后，需要链接或渲染图像以产生最终图像。即使在今天，传统动画的制作过程通常都需要数百名艺术家生成上千个图像。 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A1900448EB"></a><div class="figure-anchor"><img src="../images/GUID-2310DC1D-D00C-4935-A5B6-D5044FF61059-low.png"><p class="figure-title">帧标记为 1、2 和 3 的是关键帧。其他帧是中间帧。</p>
+            </div>  
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900448EC"></a> 
+            <h2><a name="GUID-87BB544A-2A1F-49D5-9925-00C689F7BAA7"></a><span class="charspan-msgph">3ds Max</span> 方法
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45FB"></a>这个程序是您的动画助手。作为主要动画师，您将创建用于记录每个动画序列起点和终点的关键帧。这些关键帧的值称为<em class="mild">关键点</em>。<span class="charspan-msgph">3ds Max</span> 将计算各对关键点之间的插补值，从而生成完整动画。 
+               		
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45FA"></a> <span class="charspan-msgph">3ds Max</span> 几乎可以为场景中的任意参数创建动画。可以设置修改器参数的动画（如“弯曲”角度或“锥化”量）、材质参数的动画（如对象的颜色或透明度）等等。 
+               		
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45F8"></a>指定动画参数之后，渲染器承担着色和渲染每个关键帧的工作。结果是生成高质量的动画。 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A1900448ED"></a><div class="figure-anchor"><img src="../images/GUID-3C7E94C4-3FE7-4352-A318-450CE9AEC257-low.png"><p class="figure-title">位于 1 和 2 的对象位置是不同帧上的关键帧模型。计算机产生中间帧。</p>
+            </div>  
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900448EE"></a> 
+            <h2><a name="GUID-959C26E0-42C4-47C9-B7D3-B2F252DE6E6F"></a>比较帧和时间
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45F7"></a>传统动画方法以及早期的计算机动画程序，都僵化地逐帧生成动画。如果总是使用单一格式，或不需要在特定时间指定动画效果时，这种方法没有什么问题。 
+               		
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45F6"></a>不幸的是，动画有很多格式。两种常用的格式为电影格式：每秒钟 24 帧 (FPS) 和 <span class="char_link"><a href="GUID-A35B5A04-D6A4-410E-B472-661934A40D01.htm">NTSC 视频</a></span>：每秒 30 帧。而且，随着动画在科学展示及法制展示方面变得越来越普遍，便更需要基于时间的动画和基于帧动画之间的准确对应关系。 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A1900448EF"></a><div class="figure-anchor"><img src="../images/GUID-724F490F-A665-4693-9DB0-20F1394E2C13-low.png"><p class="figure-title">不同的动画格式具有不同的帧速率。</p>
+            </div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45F5"></a> <span class="charspan-msgph">3ds Max</span> 是一个基于时间的动画程序。它测量时间，并存储动画值，内部精度为 1/4800 秒。可以配置 <span class="charspan-msgph">3ds Max</span> 使其以最适合您作品的格式（包括传统帧格式）显示时间。请参见<span class="char_link"><a href="GUID-9473CAF3-AF73-4127-A98C-58ACEF01ACAC.htm">时间配置</a></span>。 
+               		
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45F4"></a>为了理解并熟悉传统动画，后续章节中的很多例子使用帧方法描述时间。请记住，如果使用非常精确的基于时间的方法来设置动画，那么不会创建任何帧除非指示 <span class="charspan-msgph">3ds Max</span> 渲染动画。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900448F0"></a> 
+            <h2><a name="GUID-ED0E66B9-428D-4B5F-8BA6-5E51B55684F4"></a>确定动画工具
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45F3"></a>可以在界面的以下区域找到基本动画工具： 
+               		
+            </p> <a name="GUID-80405FCC-915B-4A16-B87C-A541EBC8D761"></a><dl>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7940"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-45F2"></a>轨迹视图</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B26"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526A9"></a>在几个浮动或可停靠窗口中，提供了细节动画编辑功能。请参看<span class="char_link"><a href="GUID-2B5EE43F-F86F-42C9-82C7-48BAFC0EE9F4.htm">轨迹视图</a></span>。 
+                        		
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-793F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-45F1"></a>轨迹栏</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B25"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526AA"></a>快速访问关键帧和插值控件。可以展开用于函数曲线编辑。请参见<span class="char_link"><a href="GUID-A55E4702-263E-4768-9964-5866698784DA.htm">轨迹栏</a></span>。 
+                        		
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-793E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-45F0"></a>“运动”面板</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B24"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526AB"></a>使用该面板调整影响所有位置、旋转和缩放动画的变换控制器。请参见<span class="char_link"><a href="GUID-3F72F38A-5DE2-4C48-996E-CB0E89CFDAA1.htm">使用控制器</a></span>。 
+                        		
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-793D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-45EF"></a>“层次”面板</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B23"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526AC"></a>使用该面板调整控制两个或多个对象链接的所有参数。包括反向运动学参数和轴点调整。请参见<span class="char_link"><a href="GUID-2C0E3C6A-7E0B-46A7-BB64-C9523E677A2F.htm">“层次”面板</a></span>。 
+                        		
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-793C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-45EE"></a>时间控件</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B22"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526AD"></a>使用这些控件在时间中移动并在视口中显示出来。可以移动到时间上的任意点，并在视口中播放动画。在文档<span class="char_link"><a href="GUID-818205DD-D58A-495E-BD0C-DC69BDE8DAC2.htm">动画和时间控件</a></span>中的时间控件包括： 
+                        		
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A1900448F1"></a><ul>
+                        <li> <span class="char_link"><a href="GUID-A612A8B5-5F68-4B8F-9A4C-4E60A746E1CB.htm">时间滑块</a></span> 
+                        </li>
+                        <li> <span class="char_link"><a href="GUID-81590519-B1AC-4E8E-A8F4-4113AC324800.htm">“自动关键点”按钮</a></span> 
+                        </li>
+                        <li> <span class="char_link"><a href="GUID-99745DB9-C1A9-47B2-8481-91975FC3A399.htm">“设置关键点”按钮</a></span> 
+                        </li>
+                        <li> <span class="char_link"><a href="GUID-4DC44019-A6BA-40F4-B860-520AD1B16AB7.htm">“动画播放”按钮</a></span> 
+                        </li>
+                        <li> <span class="char_link"><a href="GUID-147B5A36-5949-47A0-8EBD-E2FF021FFEAE.htm">“当前帧”字段</a></span> 
+                        </li>
+                        <li> <span class="char_link"><a href="GUID-DF2FD675-FD07-44A5-8BAA-24906662AC05.htm">关键点模式切换</a></span> 
+                        </li>
+                        <li> <span class="char_link"><a href="GUID-9473CAF3-AF73-4127-A98C-58ACEF01ACAC.htm">“时间配置”按钮</a></span> 
+                        </li>
+                     </ul> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-45ED"></a>要开始使用动画，请参见<span class="char_link"><a href="GUID-AAAA5C89-3711-4EDD-99FB-52B9AFD1EBC2.htm">使用自动关键点模式</a></span>。 
+                        		
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

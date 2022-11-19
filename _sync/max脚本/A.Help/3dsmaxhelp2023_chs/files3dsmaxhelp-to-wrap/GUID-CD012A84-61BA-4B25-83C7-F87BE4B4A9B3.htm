@@ -1,0 +1,194 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-CD012A84-61BA-4B25-83C7-F87BE4B4A9B3">
+      <meta name="description" content="在应用全局和肢体相位控件之后，装备在层次上细分到不同的连接部组中。">
+      <meta name="indexterm" content="CAT: CATMotion 控制器">
+      <meta name="topic-type" content="concept">
+      <title>CATMotion 控制器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-CD012A84-61BA-4B25-83C7-F87BE4B4A9B3"></a><div class="head">
+            <h1>CATMotion 控制器</h1>
+         </div>
+         <p class="blurb">在应用<span class="char_link"><a href="GUID-173A8825-D399-44C4-B943-F8FE691BFA68.htm">全局</a></span>和<span class="char_link"><a href="GUID-F2B9EEA2-CE7C-4FD4-B563-06868085CD8F.htm">肢体相位</a></span>控件之后，装备在层次上细分到不同的<span class="char_link"><a href="GUID-99D11254-CDBD-4FB9-A7B7-C32C20A664AE.htm">连接部组</a></span>中。 
+         </p>
+         <div class="bodyReference">
+            <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3C41"></a>每个连接部组及其子对象均分配有一系列控制器，通常以图形表示，用户可用于编辑动作循环。在这些控制器中，多数会在所有区域中重复出现，而部分则为某个特定区域专用。 
+            </p>
+            <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3C3E"></a>每个 CATMotion 循环默认长度为 100 帧。然后，将<span class="char_link"><a href="GUID-173A8825-D399-44C4-B943-F8FE691BFA68.htm">全局</a></span>控件（“最大步数时间”和“最大步幅长度”）与路径节点的速度结合起来，将动画压缩或拉伸到合适的长度。这意味着，最好按照运动循环的百分比而非绝对值来处理时间值。例如，时间为 50 则表示在循环的一半。 
+            </p>
+            <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3C3D"></a>图形背景中的浅绿色表示脚在地面上的时间。深绿色表示脚抬起的时间。 
+            </p>
+            <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3C3C"></a>除 OffsetRot 和 OffsetPos 之外的所有控制器均有图形，用于显示所选控制器在运动循环内的运动曲线。 
+            </p>
+            <div><a name="WS73099CC142F48755-6BF62AC8120443AF808-573F"></a><div class="note-tip"><span class="label label-target-language">提示</span>由于各个连接部组具有多种不同的子对象，因此在控制器协同工作时很难说明每个控制器的行为。要检查单个元素的效果，如“骨盆”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“扭曲”，请将连接部组中所有元素的控制点值设置为零，然后转到要检查的元素并开始调整其控制点值。在新的 CATMotion 层中执行此操作很可能是较好的方法，这样可以返回原始层而无需还原所有控制点值。 
+               </div>
+            </div>
+            <div class="section"><a name="WS73099CC142F48755-6BF62AC8120443AF808-62C8"></a> 
+               <h2><a name="GUID-91E34B81-E4E7-4347-A11D-2CCE2EFC5459"></a>界面
+               </h2> 
+            </div>
+            <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-573E"></a>要打开特定控制器的图形/设置面板，请在 CATMotion 编辑器左侧面板的层次列表中单击其名称。 
+            </p>
+            <div><a name="WS73099CC142F48755-6BF62AC8120443AF808-573D"></a><div class="note-tip"><span class="label label-target-language">提示</span>要比较不同图形，请按住 <img src="../images/GUID-08667A50-F943-4CA7-AF8B-4BF2A40E3297-low.png"> 键并单击各种控制器。最后单击的控制器将可以编辑。 
+               </div>
+            </div><a name="WS73099CC142F48755-6BF62AC8120443AF808-62C7"></a><div class="figure-anchor"><img src="../images/GUID-80FFD124-615F-44E2-826D-A3667229888C-low.png"><p class="figure-title">脚部平台 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“抬起”控制器
+               </p>
+            </div><a name="GUID-2F98056E-57EC-41FD-A73B-3243E8CF0A5F"></a><dl>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-573C"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-573B"></a> <img src="../images/GUID-C4CF68DE-1F1D-4B99-88C3-CB5F27A958F7-low.png">/<img src="../images/GUID-216567A5-231A-492B-A670-7C17BE6F5EFC-low.png"> 使唯一（禁用/启用）</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-573A"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-5739"></a>将肢体拆分为单独的轨迹。 
+                     </p> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-5738"></a>在“使唯一”和“锁定”（参见下图）按钮下，是用于在启用“使唯一”并禁用“锁定”时提供对单个肢体访问的框。在该上下文中，可以选择列表项目之一来对该肢体进行单独设置。 
+                     </p> <a name="WS73099CC142F48755-6BF62AC8120443AF808-5737"></a><div class="figure-anchor"><img src="../images/GUID-7AD01D23-F8A6-4ECA-BE3E-DA9271010AFE-low.png"></div>  
+                     <p><a name="GUID-4A0C5F30-9452-4BA0-A4C5-68C11591E6A4"></a> <em class="strong">左：肢体已焊接（禁用“使唯一”）</em> 
+                     </p> 
+                     <p><a name="GUID-D95C0E8E-E193-43C5-B314-C7D6F4015807"></a> <em class="strong">中：选择要调整的肢体（启用“使唯一”/禁用“锁定”）</em> 
+                     </p> 
+                     <p><a name="GUID-48EEDE7E-648F-4301-B6C1-516EB1D2208C"></a> <em class="strong">右：肢体已锁定（启用“锁定”）</em> 
+                     </p> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-5736"></a>对单个肢体进行控制时，采用与肢体自身相同的颜色绘制每个肢体的曲线。 
+                     </p> <a name="WS73099CC142F48755-6BF62AC8120443AF808-5735"></a><div class="figure-anchor"><img src="../images/GUID-A5B1DAEA-A58B-4946-8019-A0FF275063CE-low.png"><p class="figure-title">每条曲线使用其相应肢体的颜色。</p>
+                     </div>  
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-5734"></a>此外，如果直接在曲线上移动点，则相应肢体将在列表中突出显示。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-5733"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-5732"></a> <img src="../images/GUID-C63CE322-D67B-49E0-A105-908AA3E3CBC3-low.png">/<img src="../images/GUID-5C18331D-1ACD-4A8F-A37A-EC653FDA3137-low.png"> 锁定（禁用/启用）</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-5731"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-5730"></a>不同轨迹之间的设置实例。只有在启用“使唯一”时才能使用该选项。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-62C6"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-62C5"></a> <img src="../images/GUID-53485960-E1DE-4F88-8F68-2DAAA25EA18E-low.png">（上一个）/<img src="../images/GUID-BDE17590-9389-4F40-A042-319BF5AFED3C-low.png">（下一个）</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-62C4"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-62C3"></a>依次单击样条线上的结。也可通过在窗口中直接单击某个样条线结来进行选择。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3C39"></a>选择某个结之后，将显示其时间、值、切线和切线长度设置并可供编辑。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3C38"></a>在某些情况下，设置不可用（灰显），因此不能编辑。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-62C2"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-62C1"></a> <img src="../images/GUID-F44DC59D-D8C2-4484-BC2E-DAA23B5830AE-low.png"> </span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-62C0"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-62BF"></a>复制当前 CATMotion 控制器的设置。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-62BE"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-62BD"></a> <img src="../images/GUID-06F51362-2126-4EF4-80C0-65325149D5ED-low.png"> </span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-62BC"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-62BB"></a>粘贴另一个 CATMotion 控制器的设置。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-62BA"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-62B9"></a>缩放 </span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-62B8"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-62B7"></a>用作所有非零控制点和曲线上切线的百分比乘数。增加值将使所有非零点远离水平轴 (Y=0)，而减少值将使所有非零点靠近轴。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-62B6"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-62B5"></a>偏移</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-62B4"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-62B3"></a>水平移动所有控制点，更改其“时间”值。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-572F"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-572E"></a>重置</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-572D"></a> 
+                     <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3C32"></a>还原曲线的默认值。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-572C"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-572B"></a> <img src="../images/GUID-37694040-0E0C-49D8-89C8-49B92E64708B-low.png"> </span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-572A"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-5729"></a>所有参数均可设置动画。“曲线编辑器”按钮打开相关区域的轨迹视图，用于编辑该控制器的动画关键点。 
+                     </p> 
+                     <div><a name="WS73099CC142F48755-6BF62AC8120443AF808-5728"></a><div class="note-tip"><span class="label label-target-language">提示</span>在轨迹视图中，通过导航至“对象”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">（角色名称）<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“对象”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“层”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“CATMotion 层”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“CATHierarchyroot”，也可使用 CATMotion 编辑器中的层次。在此处可将标准动画控制器分配到不同参数。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-5727"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-5726"></a> <img src="../images/GUID-516212E4-A0AB-415F-A1AD-8AB2C6812F4B-low.png"> </span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-5725"></a> 
+                     <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3C2F"></a>将图形缩放到曲线范围。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-5724"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-5723"></a>时间</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-5722"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-5721"></a>所选控制点（水平轴）的时间。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-5720"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-571F"></a>值</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-571E"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-571D"></a>所选控制点（垂直轴）的值。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-571C"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-571B"></a>切线</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-571A"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-5719"></a>到所选控制点的切线的角度。调整此项会更改围绕该点的曲线的图形。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-6BF62AC8120443AF808-5718"></a><span class="term"><a name="WS73099CC142F48755-6BF62AC8120443AF808-5717"></a>长度</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-6BF62AC8120443AF808-5716"></a> 
+                     <p><a name="WS73099CC142F48755-6BF62AC8120443AF808-5715"></a>引入和外出切线的长度。调整这些项将更改相应曲线边的图形。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl>
+            <div><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7C02"></a><div class="note-note"><span class="label label-target-language">注意:</span> 在<span class="char_link"><a href="GUID-F2B9EEA2-CE7C-4FD4-B563-06868085CD8F.htm">“肢体相位”面板</a></span>上控制肢体总相位。 
+               </div>
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-F26CFCB6-708E-430B-A443-10F43922FEA9.htm">CATMotion 控制器的工作方式</a><p>每个 CATMotion 控制器的输出是不同因子的组合。例如，“FootPlatform”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“抬起”的最终结果是以下内容的组合：最大步数时间、最大步幅长度、路径节点的速度以及分配给脚部平台的所有单个控制器的值。 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-DB61B54B-15AC-459B-A602-2F4394DA2117.htm">CATMotion 和重定位</a><p>CATMotion 还集成了 CAT 的<span class="char_link"><a href="GUID-6D34E39E-3E3C-47B3-A193-9CE383AA7461.htm">重定位</a></span>系统，与标准 IK 相比具有两个优点：重定位消除了由于 IK 链过度伸长造成的膝关节捕捉问题，并且由于腿推动骨盆上升，角色自动具有了“权重”。 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-4F7A49F7-B8F3-4C81-96BB-9ED6F7EFF581.htm">为 CATMotion 参数设置动画</a><p>一般情况下，最好不要对单个 CATMotion 参数设置动画，而是采用通过对权重值设置动画来简单地混合 CATMotion 层。这使得您需要管理的关键帧大为减少。 
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-FB6B4629-351D-43D9-AF69-7BDB7FF30679.htm">肢体控制器</a><p>仅可由腿部使用的动画控制器包括 LiftPlantMod、KneeAngle 和 LegWeight。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-EC2C9153-2BFB-4E23-B13A-849585157F63.htm">踝部控制器</a><p>踝部控制器包括 DigitRollAngle、DigitSpreadAngle、DigitCurlAngle、TargetAlign 和 FootBend。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-0E2F0A54-EE66-41FD-AB00-702FC8DDB449.htm">脚部平台控制器</a><p>脚部平台是脚部的 IK 目标。其运动是腿部动画设置的关键所在。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-B1794896-744D-4646-BE75-8D901570E734.htm">手臂控制器</a><p>手臂控制器包括 CrossSwing、Swing 和 Bend。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-08F13072-3894-4042-A3AF-F4D876329477.htm">锁骨控制器</a><p>锁骨控制器包括 MotionX、MotionY 和 MotionZ。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-9F317809-6828-4206-BFCE-773D327B7EA0.htm">手掌控制器</a><p>在大多数情况下，手掌具有与<span class="char_link"><a href="GUID-EC2C9153-2BFB-4E23-B13A-849585157F63.htm">踝部</a></span>相同的控制器。HandFlop 是例外。 
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

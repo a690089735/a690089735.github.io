@@ -1,0 +1,59 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-22E831B0-8B6B-4759-B5FB-4B86B6276A00">
+      <meta name="description" content="使用 Physique 修改器可将蒙皮附加到骨骼结构上，比如 Biped。蒙皮是一个 3ds Max 对象：它可以是任何可变形的、基于顶点的对象，如网格、面片或图形。当以附加蒙皮制作骨骼动画时，Physique 使蒙皮变形，以与骨骼移动相匹配。">
+      <meta name="indexterm" content="Biped: 与 Physique 一起蒙皮">
+      <meta name="indexterm" content="Physique">
+      <meta name="contextid" content="MODIFIERS-PHYSIQUEMOD">
+      <meta name="contextid" content="PHYSIQUEMOD.MODIFIERS">
+      <meta name="topic-type" content="concept">
+      <title>Physique</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-22E831B0-8B6B-4759-B5FB-4B86B6276A00"></a><div class="head">
+            <h1>Physique</h1>
+         </div>
+         <p class="blurb">使用 Physique 修改器可将蒙皮附加到骨骼结构上，比如 Biped。蒙皮是一个 <span class="charspan-msgph">3ds Max</span> 对象：它可以是任何可变形的、基于顶点的对象，如网格、面片或图形。当以附加蒙皮制作骨骼动画时，Physique 使蒙皮变形，以与骨骼移动相匹配。 
+         </p><a name="WS1A9193826455F5FF-2ADE9D9118A20D4F811DC3"></a><div class="figure-anchor"><img src="../images/GUID-5EEDA2D5-F956-48F5-B76C-B51CA4400541-low.png"></div><a name="WS1A9193826455F5FF-2ADE9D9118A20D4F811DC4"></a><div class="figure-anchor"><img src="../images/GUID-83F81D99-A79D-42D6-8E7B-FF975AA3799B-low.png"></div>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF166BD"></a>制作基本骨骼的动画使您可以制作角色的单个连续模型，涉及附加骨骼内任意关节数量的弯曲、折缝以及凸出。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF166BE"></a>使用 Physique，能够定义蒙皮变形时的行为模式。例如： 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190045B8E"></a><ul>
+            <li>可以制作蒙皮实体部分，将其从 Physique 的变形中排除，但是实体部分仍然沿着蒙皮附着的骨骼的根节点移动。这些实体部分可被视为根顶点。 </li>
+            <li>您可以使蒙皮的一部分变形。它们随着变形样条线移动，平滑曲线贯穿蒙皮附着的骨骼链接。 </li>
+            <li>您可以使一部分蒙皮成为刚性，直接沿着蒙皮附着的骨骼移动。 </li>
+            <li>您可以将凸出添加到模拟的凸出肌肉。凸出可以由蒙皮的可编辑横截面以及设置的凸出角度控制。 </li>
+            <li>您可以添加腱，以将一个骨骼运动的效果分配到蒙皮区域，而不是围绕骨骼自身的区域。 </li>
+            <li>可以将 Physique 数据保存到 Physique (<em class="mild">.phy</em>) 文件，保存共享指定 Physique 修改器的所有对象常用的数据数据。随后可以重新加载数据文件，以还原属于特定蒙皮或部分蒙皮的数据。 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF166BF"></a>Physique 可以与使用 Biped 插件创建并设置动画的 Biped 一起使用，也可以与 <span class="charspan-msgph">3ds Max</span> 层次一起使用，包括骨骼系统。Physique 还使用未在一个层次和样条线中的骨骼。 
+         </p>
+         <div class="see-also">
+            <h4>请参见</h4>
+            <div class="related-links">
+               <ul>
+                  <li> <span class="char_link"><a href="../files3dsmaxhelp/GUID-7DB3BD2D-C14E-4E23-834D-23B4B7115E5E.htm">调整 Biped 姿势</a></span> 
+                  </li>
+               </ul>
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-8EBDF2AC-B318-4CEA-8FF7-EEC6363CCD30.htm">了解 Physique</a><p> 将 Physique 修改器应用到网格后，底层骨骼的移动可以流畅地移动网格，就像人类皮肤下骨骼和肌肉的运动。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-1066DCDE-474E-4B53-8B4B-53BE9FE1670D.htm">使用 Physique</a><p>本部分中的主题全面介绍如何使用 Physique。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-65E7B69B-033B-48B1-A19D-C1FB78218431.htm">Physique 用户界面</a><p>Physique 修改器的主要控制包括“Physique”卷展栏和“浮动骨骼”卷展栏，用于附加网格至 biped、样条线或骨骼。“Physique 细节级别”卷展栏中的“其他”控制用于解决封套、凸出和腱的问题。子对象控件用于微调封套、创建和调整腱部和凸出，以及编辑顶点。
+                        
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

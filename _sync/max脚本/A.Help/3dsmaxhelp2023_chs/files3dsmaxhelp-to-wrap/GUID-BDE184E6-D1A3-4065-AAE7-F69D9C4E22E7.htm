@@ -1,0 +1,81 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-BDE184E6-D1A3-4065-AAE7-F69D9C4E22E7">
+      <meta name="description" content="摄影机贴图修改器（对象空间版本）基于当前帧和摄影机贴图修改器中指定的摄影机来指定平面贴图坐标。此修改器与摄影机贴图 (WSM) 修改器的区别在于，前者更新对象在每一帧的贴图坐标。">
+      <meta name="indexterm" content="摄影机贴图修改器: 对象空间">
+      <meta name="indexterm" content="修改器: 摄影机贴图">
+      <meta name="indexterm" content="对象空间修改器: 摄影机贴图">
+      <meta name="topic-type" content="concept">
+      <title>使用摄影机贴图修改器（对象空间）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-BDE184E6-D1A3-4065-AAE7-F69D9C4E22E7"></a><div class="head">
+            <h1>使用摄影机贴图修改器（对象空间）</h1>
+         </div>
+         <p class="blurb">摄影机贴图修改器（对象空间版本）基于当前帧和摄影机贴图修改器中指定的摄影机来指定平面贴图坐标。此修改器与摄影机贴图 (WSM) 修改器的区别在于，前者更新对象在每一帧的贴图坐标。 </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-449A"></a>下面的步骤显示了应用摄影机贴图修改器和设置场景的方法。 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190043673"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043674"></a>应用摄影机贴图修改器：
+         </p>
+         <ol type="1" start="1">
+            <li>创建一个场景，使它包含一个摄影机和一个或多个对象。确保要贴图的对象在摄影机视口中可见。 </li>
+            <li>选中对象并应用摄影机贴图修改器。 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4499"></a>确保使用对象空间版本的摄影机贴图修改器。 
+               </p> 
+            </li>
+            <li>如果场景中存在动画，将该帧移至想要对象贴图与背景相匹配的位置。例如，如果摄影机设置为动画，贴图仅在此帧与背景匹配。 </li>
+            <li>在“摄影机贴图”卷展栏中，单击“拾取摄影机”，并选中用于渲染视图的摄影机。 </li>
+         </ol><a name="WS1A9193826455F5FFBA679E112A6A190043675"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043676"></a>对摄影机视口指定一个背景图像：
+         </p>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E93C"></a><div class="note-note"><span class="label label-target-language">注意:</span>此过程对成功的渲染是不必要的，但是如果想要在视口中观察效果，执行以下步骤。 
+            </div>
+         </div>
+         <ol type="1" start="1">
+            <li>激活摄影机视口并禁用栅格。 </li>
+            <li>选择“视图”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“视口背景”。 
+            </li>
+            <li>在显示的“视口背景”对话框中，单击“文件”按钮并选中要对渲染场景应用为背景的相同位图，此位图同时会作为对象上的漫反射贴图。 </li>
+            <li>在“纵横比”组中，选择“匹配渲染输出”。 </li>
+            <li>启用“显示背景”并单击“确定”。 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4498"></a>此时 <span class="charspan-msgph">3ds Max</span> 会关闭对话框并在视口中显示贴图。 
+               </p> 
+            </li>
+         </ol><a name="WS1A9193826455F5FFBA679E112A6A190043677"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043678"></a>将贴图材质指定给对象：
+         </p>
+         <ol type="1" start="1">
+            <li>在 <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器”中，对刚才所指定的与指定背景位图相同的位图的漫反射组件创建一个标准材质。 
+            </li>
+            <li>在材质的“漫反射贴图”层次，启用 <img src="../images/GUID-9A853C0B-5274-4CBB-8C82-3AC342AB9860-low.png">（“在视口中显示贴图”）。 
+            </li>
+            <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选中对象，单击 <img src="../images/GUID-42F45144-BC1D-4F04-B1BE-1D75357E056E-low.png">（“将材质指定给选定对象”）。 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4497"></a>视口中对象的贴图与视口背景相匹配，但是阴影使对象可见。要使对象完全不可见，转到下一步骤。 
+               </p> 
+            </li>
+            <li>在对象材质的顶层级，将“高光级别”和“光泽度”设置为 0。禁用“自身照明颜色”，并将自身照明设置为 100。 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4496"></a>现在对象伪装于背景之下。 
+               </p> 
+            </li>
+         </ol><a name="WS1A9193826455F5FFBA679E112A6A190043679"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004367A"></a>将背景指定给渲染背景：
+         </p>
+         <ol type="1" start="1">
+            <li>选择“渲染”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“环境”。 
+            </li>
+            <li>在显示的“环境”对话框中，单击“环境贴图”下的按钮打开“材质/贴图浏览器”。 </li>
+            <li>在“浏览自”组框中，选择“材质编辑器”。 </li>
+            <li>禁用“仅根”，在列表窗口中找到贴图，将其高亮显示并选择“确定”。 </li>
+            <li>选择对话框中的“复制”，然后单击“确定”。 </li>
+            <li>在“环境”对话框上的“曝光控制”卷展栏中，确保曝光设置为<em class="mild">&lt;无曝光控制&gt;</em>，或者关闭“活动”开关。 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4495"></a>如果没有这样操作，则在渲染中可以看到对象。 
+               </p> 
+            </li>
+            <li> <img src="../images/GUID-86006E53-F3A5-4CDA-A11A-6E92CFA7540F-low.png"> 渲染“摄影机”视口。 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4494"></a>在渲染场景中，贴图对象伪装于背景之下。 
+               </p> 
+            </li>
+         </ol>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

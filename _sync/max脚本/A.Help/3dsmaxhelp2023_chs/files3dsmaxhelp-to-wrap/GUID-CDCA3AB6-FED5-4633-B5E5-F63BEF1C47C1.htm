@@ -1,0 +1,60 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-CDCA3AB6-FED5-4633-B5E5-F63BEF1C47C1">
+      <meta name="description" content="多数关节沿着活动轴所做的运动，有它们的限制范围。例如：铰链仅能打开到 120 度；活塞只能在其圆柱体的长度内滑动。要限制在活动轴上允许的运动范围，启用“限制”并在“关节”卷展栏上设置“起点”和“终点”字段的值。">
+      <meta name="indexterm" content="限制关节运动">
+      <meta name="indexterm" content="关节: 限制关节运动">
+      <meta name="indexterm" content="滑动关节">
+      <meta name="indexterm" content="路径关节">
+      <meta name="indexterm" content="旋转: 转动关节">
+      <meta name="indexterm" content="曲面关节">
+      <meta name="topic-type" content="concept">
+      <title>限制关节运动</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-CDCA3AB6-FED5-4633-B5E5-F63BEF1C47C1"></a><div class="head">
+            <h1>限制关节运动</h1>
+         </div>
+         <p class="blurb">多数关节沿着活动轴所做的运动，有它们的限制范围。例如：铰链仅能打开到 120 度；活塞只能在其圆柱体的长度内滑动。要限制在活动轴上允许的运动范围，启用“限制”并在“关节”卷展栏上设置“起点”和“终点”字段的值。</p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3CC6"></a>还可以在视口中查看关节限制，方法是在限制字段的“从”或“到”标签上，按住鼠标按钮。对象会移动或旋转到限制值，直到松开鼠标按钮。
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044E60"></a> 
+            <h2><a name="GUID-EBFC0B12-C219-41A1-A6A0-1E5E80492EE4"></a>限制旋转关节
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3CC5"></a>旋转关节的限制定义对象可绕其父对象的轴旋转多大角度。“起点”和“终点”字段中的值代表在父对象上，从 0 度开始测量的绕活动轴的旋转角度。
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3CC4"></a>例如，肘关节相对于上臂旋转前臂。在图中，X 轴旋转限制从 0 到 135 度。Y、Z 轴未处于活动状态，因为肘关节绕一个轴旋转。
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044E61"></a> 
+            <h2><a name="GUID-0B6B8CC5-587B-4335-8F95-A2DF5D721A65"></a>限制滑动关节
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3CC3"></a>滑动关节的限制定义关节可沿其父对象的轴移动多远。“起点”和“终点”字段中的值代表沿活动轴，所测量的从父对象的轴点到选定对象的轴点的移动距离。
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3CC2"></a>例如，活塞上的滑动关节将活塞移入和移出圆柱体。在图中，将 Z 轴的移动限制为从第 10 帧到第 90 帧。这样可防止活塞撞到底部或移动时超过圆柱体末端。
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044E62"></a> 
+            <h2><a name="GUID-DC1D2959-8CB2-4A7E-9061-8FD9E421AC4B"></a>限制路径和表面关节
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3CC1"></a>路径和表面关节的限制定义对象可沿路径或表面移动多远。“起点”和“终点”字段中的值代表沿路径或表面测量的总距离的百分比。
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3CC0"></a>例如，房间钥匙的路径关节沿钥匙环移动钥匙。将路径关节的限制设置为 5% 到 95% 可防止钥匙沿系表链的环移动。
+            </p> 
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-DA40C52E-0C29-4BD4-A23E-D8DDA2374CC4"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-74BF337B-CABA-4693-87D4-41D3D9D85FBD.htm">滑动关节和转动关节（HI 解算器）</a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-0BE922A4-AB53-4389-B83F-53FB4F1C6186">
+      <meta name="description" content="运动分析 HTR（层次平移-旋转）文件格式是运动捕捉文件格式，可以导入到 3ds Max 中。">
+      <meta name="indexterm" content="HTR 文件（层次平移 - 旋转）: 导入">
+      <meta name="indexterm" content="文件类型: HTR（层次平移 - 旋转）: 导入">
+      <meta name="indexterm" content="HTR/HTR2: 导入">
+      <meta name="indexterm" content="导入: HTR/HTR2">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>“导入 HTR”对话框</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-0BE922A4-AB53-4389-B83F-53FB4F1C6186"></a><div class="head">
+            <h1>“导入 HTR”对话框</h1>
+         </div>
+         <p class="blurb">运动分析 HTR（层次平移-旋转）文件格式是运动捕捉文件格式，可以导入到 <span class="charspan-msgph">3ds Max</span> 中。 
+         </p>
+         <div class="bodyReference"><a name="UL_D9FA6DAB2E104093A9250A5E3FE81F1B"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-F54A399E-5857-4DA1-BB6F-20CBA2B85431">“文件”菜单  <img src="../images/ac.menuaro.gif"> “导入” <img src="../images/ac.menuaro.gif"> “运动分析 HTR 文件(*.HTR)”</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2B05"></a> <a name="WS1A9193826455F5FFBA679E112A6A190042B0"></a><div class="figure-anchor"><img src="../images/GUID-0F896270-2670-479E-8D74-0E3710EC8A8B-low.png"></div>  <a name="GUID-09E5AA9E-52D5-47B7-803B-191806425103"></a><div class="dl_section"><a name="GUID-15602B0A-C855-451B-AAE3-7BD2BDEE4208"></a><p class="title"><a name="GUID-AC57EDFE-181A-463D-B3AE-D6C0B92D2B7B"></a>“骨骼”组
+                  </p><a name="UL_875D5BC41CAD468C9139F77612634C79"></a><ul>
+                     <li><em class="strong">创建</em>（默认设置。）选择此选项以从传入数据构建新的骨骼。 
+                        <p><a name="GUID-C26C8ABE-4A37-4955-9041-9F0E3E13728A"></a><em class="strong">分段大小</em>设置此值可根据运动捕捉数据修改所有骨骼的重量和高度的比例因子。仅当“创建”处于活动状态时才可用。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E45D"></a><div class="note-note"><span class="label label-target-language">注意:</span>这不会更改骨骼的比例。 
+                           </div>
+                        </div> 
+                        <p><a name="GUID-ED608AAE-8E30-42DA-A36E-83B95990FDF6"></a><em class="strong">末端效应器</em>切换此选项可根据传入数据（如果存在）导入末端效应器。仅当“创建”处于活动状态时才可用。 
+                        </p> 
+                     </li>
+                     <li><em class="strong">应用</em>选择此选项可将传入数据映射到场景中选定骨骼根的子对象上。 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-F98B0D31-DD6A-4985-9331-507CD5D207B6"></a><p class="title"><a name="GUID-0F79928D-5DB4-4C95-BC53-B5E7949D8A2C"></a>“关键帧选项”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-25E9"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EA9"></a>基本位置</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1410"></a> 打开时仅导入基本姿势的关键点。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-25E8"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EA8"></a>动画</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-140F"></a> 打开时，导入所有动画关键点。默认设置为启用。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-4D6FCAB9-6933-4234-8C4B-2B818D1BF937"></a><p class="title"><a name="GUID-10FDFC09-D043-4DD6-A8B2-079F4269D645"></a>“旋转控制器”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-25E7"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EA7"></a>Euler/TCB</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-140E"></a> 选择两个旋转控制器之一以应用于导入的数据。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-FA000FC4-E0BA-421F-92C8-EBACB728B01F"></a><p class="title"><a name="GUID-40B23C29-0F6E-4E06-BEBB-FD05E8E7E649"></a>“时间选项”组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EA6"></a>这些选项（除了“设置帧速率”之外）只在启用“关键帧选项”组中的“动画”选项时起作用。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-25E6"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EA5"></a>全部/范围</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-140D"></a> 选择使用运动捕捉文件的整个动画范围或者定义的部分范围。 <a name="WS1A9193826455F5FF11D4ED1B128F2317A08342B"></a><ul>
+                              <li> <em class="strong">从/至</em>这些值表示定义范围的起始和结束帧。仅在“范围”处于启用状态时可用。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-25E4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EA3"></a>偏移</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-140B"></a> 设置导入动画开始前插入空帧的数目。 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E45E"></a><div class="note-note"><span class="label label-target-language">注意:</span>这不会影响“基础位置”设置（在“关键帧选项”组中），它在第 0 帧处设置关键点。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-25E3"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EA2"></a>设置帧速率</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-140A"></a> 启用后，HTR 文件的帧速率将覆盖“时间配置”对话框中的当前帧速率。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-68260EB6-ECD6-4113-BA4D-BB1C24CB9704"></a><p class="title"><a name="GUID-021C83D3-ABC0-469C-BD0A-FC02AA1392F1"></a>“缩放”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-25E2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EA1"></a>全局</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1409"></a> 设置结果骨骼的大小。 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E45F"></a><div class="note-note"><span class="label label-target-language">注意:</span><span class="charspan-msgph">3ds Max</span> 中的比例值仍然为 100。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-7A35B53A-BF95-40EB-B053-15868E469127.htm">末端效应器</a></li>
+                     <li class="topiclist-litem"><a href="GUID-9473CAF3-AF73-4127-A98C-58ACEF01ACAC.htm">时间配置 </a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-3DF27678-5163-46CA-AD9E-0098EE5AB775">
+      <meta name="description" content="“摄影机 IMBlur”操作符更正了摄影机设置动画后，应用到粒子流系统的图像运动模糊可能无法正确渲染的问题。由于摄影机运动，在其传递到视口显示和/或渲染器之前，操作符将调整粒子速度。在内部，粒子流引擎将继续对动画使用实际的粒子速度。">
+      <meta name="indexterm" content="粒子: 和图像运动模糊">
+      <meta name="indexterm" content="运动模糊: 和粒子流">
+      <meta name="indexterm" content="摄影机 IMBlur 操作符（粒子流）">
+      <meta name="indexterm" content="粒子流操作符: 摄影机 IMBlur">
+      <meta name="topic-type" content="concept">
+      <title>摄影机 IMBlur 操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-3DF27678-5163-46CA-AD9E-0098EE5AB775"></a><div class="head">
+            <h1> 摄影机 IMBlur 操作符</h1>
+         </div>
+         <p class="blurb">“摄影机 IMBlur”操作符更正了摄影机设置动画后，应用到粒子流系统的<span class="char_link"><a href="GUID-CDD7A087-F914-4B53-8DFC-1E406F8DC881.htm">图像运动模糊</a></span>可能无法正确渲染的问题。由于摄影机运动，在其传递到视口显示和/或渲染器之前，操作符将调整粒子速度。在内部，粒子流引擎将继续对动画使用实际的粒子速度。 
+         </p>
+         <div class="bodyReference"><a name="GUID-901C0246-2518-4054-B54C-77A42C23991B"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-F96EA7A1-0C67-47B5-8A1B-170417C0CA7F">“粒子视图” <img src="../images/ac.menuaro.gif">  在某个事件中单击“摄影机 IMBlur”，或将“摄影机 IMBlur”操作符添加到粒子系统中，然后选择它。</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-D8943ABC-D811-4EF7-9514-19175463A98B"></a>将摄影机 IMBlur 操作符添加到任何应用了“图像运动模糊”的事件。此外，可以将“图像运动模糊”应用到整个动画，将摄影机 IMBlur 操作符添加到全局事件（默认设置为粒子流源 01），并为全局事件启用“图像运动模糊”（通过“属性”）。 
+            </p>
+            <div><a name="GUID-C5FCDB76-B806-4CB2-AC65-481D631B2CAD"></a><div class="note-tip"><span class="label label-target-language">提示</span>使用“线”显示类型可以在视口中轻松查看操作符对粒子运动作用的效果。 
+               </div>
+            </div>
+            <div class="section"><a name="GUID-FE0ABEE8-CD8F-4572-8AA1-8FFD162739EF"></a> 
+               <h2><a name="GUID-2358DC35-FDB4-417E-B441-BDC34B9E3426"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900424C6"></a><div class="figure-anchor"><img src="../images/GUID-9C93EA30-4966-4B55-946D-FAFD7D353F69-low.png"></div>  <a name="GUID-7E82A5D0-1664-419F-A4C3-1F946FD43992"></a><dl>
+                  <dt><a name="GUID-CCB20164-AFE4-4296-ADE6-7B44F824FC14"></a><span class="term"><a name="GUID-636828AD-E43E-4A44-BB6F-840C9A055638"></a>使用活动摄影机</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-3BEDFB46-5A95-4C2D-93B6-56A09520663C"></a> 启用时，使用指定到活动视口的摄影机。禁用时，可以将其他摄影机指定到操作符。默认设置为启用。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-DD1E60F1-DDE3-4E34-9867-52D794625186"></a><span class="term"><a name="GUID-E828AD1F-0590-4FAA-9AC8-C0EB515860D2"></a>摄影机</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-36539A75-8AFE-4D78-8330-3A5E2401A3FB"></a> 单击“无”按钮，然后在场景中选择摄影机（操作符将使用其运动）。随后，摄影机的名称将显示在该按钮上。仅当“使用活动摄影机”处于禁用状态时可用。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-36DA0E61-411D-4427-B3EF-E1F5DB06F3B4"></a><span class="term"><a name="GUID-76C086AB-9FAC-439A-80E0-C3D43F6C0CEF"></a>使用事件 IMBlur 倍增</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-43340B57-FD69-4C7F-BBB5-BDA9D83A90B7"></a> - 启用时，为摄影机运动使用事件的“图像运动模糊”倍增（选择事件。<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 右键单击并选择“属性”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“对象属性”对话框 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“运动模糊”组）。启用此选项后，更改事件的运动模糊属性时不需要同步操作符的倍增值。 
+                        <p><a name="GUID-AC4AF1F5-CC87-485B-AA4D-580122272A47"></a>此外，您可以通过在界面中设置特定的“倍增”值放大摄影机运动。默认设置为启用。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-F906A2A2-D3CE-40A4-A410-658FA56D3FB7"></a><span class="term"><a name="GUID-1BE6E67A-F502-4FB8-9750-6F7DBD08D4DC"></a>倍增</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-B53928E2-03D7-4DF2-A1DA-11824D9CF9BE"></a> 特定于操作符的模糊值。例如，您可以通过将操作符的“倍增”值设置为小于 1.0，减少相机运动模糊的相对量。仅当“使用事件 IMBlur 倍增”处于禁用状态时可用。
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-2818B285-15A3-4E7F-8E0F-8C00B37D0FA8">
+      <meta name="description" content="您可以将位图文件或程序贴图用作凹凸贴图，该贴图能够使对象看起来具有凹凸不平或不规则的曲面。用凹凸贴图材质渲染对象时，贴图较明亮（较白）的区域看上去被提升，而较暗（较黑）的区域看上去被降低。">
+      <meta name="indexterm" content="作为材质组件贴图: 凹凸">
+      <meta name="indexterm" content="凹凸贴图">
+      <meta name="topic-type" content="concept">
+      <title>凹凸贴图</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-2818B285-15A3-4E7F-8E0F-8C00B37D0FA8"></a><div class="head">
+            <h1>凹凸贴图</h1>
+         </div>
+         <p class="blurb">您可以将位图文件或<span class="char_link"><a href="GUID-783C7A59-F829-41DA-A2A2-E967E516172D.htm">程序贴图</a></span>用作凹凸贴图，该贴图能够使对象看起来具有凹凸不平或不规则的曲面。用凹凸贴图材质渲染对象时，贴图较明亮（较白）的区域看上去被提升，而较暗（较黑）的区域看上去被降低。 
+         </p><a name="UL_375A438F141C4E1FB3A157AAA0F29D2E"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-13146314-E56F-43DF-9C44-FEC1C79D5F84"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “标准”材质  <img src="../images/ac.menuaro.gif"> “贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “凹凸”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-F19EC007-815F-43B9-906B-B512D12764CE"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “光线跟踪”材质 <img src="../images/ac.menuaro.gif"> “贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “凹凸”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-FAD49DAA-9590-4D2F-ADBA-7AAEE86C5698"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “Arch &amp; Design”材质  <img src="../images/ac.menuaro.gif"> “特殊用途贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “凹凸”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-A4AC0A93-C767-42D2-A556-208A7B27B1EA"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif">  具有凹凸组件的其他材质</span> 
+            </li>
+         </ul><a name="WS73099CC142F487554E67820D1283FBC0BF32723"></a><div class="figure-anchor"><img src="../images/GUID-16DE017D-614B-4A7B-AF81-850FB72899C7-low.png"><p class="figure-title">具有两种不同凹凸贴图的对象。</p>
+         </div>
+         <div style="margin-top: 9pt;"><a name="WS73099CC142F487554E67820D1283FBC0BF32724"></a><div class="note-note"><span class="label label-target-language">注意:</span> 在视口中不能预览凹凸贴图的效果。必须渲染场景才能看到凹凸效果。 
+            </div>
+         </div>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32725"></a>凹凸贴图使用贴图图像的强度来影响材质的曲面。在此情况下，强度影响曲面的外观凹凸度：白色区域凸出，黑色区域凹进。 
+         </p>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32726"></a>使用凹凸贴图去除曲面的平滑度或创建浮雕效果。但是，要记住，凹凸贴图的深度效果是有限的。如果希望曲面上出现很深的深度，请使用建模技术。例如，<span class="char_link"><a href="GUID-12F0E0BA-3FCA-4C8F-8C9B-C77C8FB4A45C.htm">置换修改器</a></span>根据贴图图像的强度将曲面或面拉伸突出或推挤凹陷。（使用<span class="char_link"><a href="GUID-14B36287-F9FB-4D92-98D3-A95D100DA296.htm">置换贴图</a></span>是使曲面具有浮雕效果的另一种方法。） 
+         </p>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32727"></a>灰度图像可用来创建有效的凹凸贴图。黑白之间渐变明暗处理的贴图通常比黑白之间硬边的贴图效果更好。 
+         </p>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32728"></a>“凹凸贴图量”设置调节凹凸程度。较高的值渲染产生较大的浮雕效果；较低的值渲染产生较小的浮雕效果。 
+         </p>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32729"></a>凹凸是由扰动面法线在渲染对象之前创建的模拟效果。因此，凹凸贴图对象的轮廓上不出现凹凸效果。 
+         </p>
+         <div><a name="WS73099CC142F487554E67820D1283FBC0BF32735"></a><div class="note-tip"><span class="label label-target-language">提示</span>为了避免由 2D 凹凸贴图引起的锯齿效果，请转到凹凸贴图的“坐标”卷展栏。将“模糊”设置在 0.3 到 0.6 的范围内，并将“模糊偏移”设置为大于 0.0。默认的“模糊”和“模糊偏移”值对其他材质组件来说效果很好，但对凹凸贴图却不是这样。降低“模糊”并升高“模糊偏移”值效果会更好。
+               
+            </div>
+         </div>
+         <div><a name="WS73099CC142F487554E67820D1283FBC0BF3272A"></a><div class="note-tip"><span class="label label-target-language">提示</span>当使用“标准”或“光线跟踪”材质时，如果注意到凹凸高光中有锯齿，请尝试启用<span class="char_link"><a href="GUID-97BC995B-D697-488E-B4FC-4AE8B07537DC.htm">超级采样</a></span>并再次进行渲染。 
+            </div>
+         </div>
+         <div><a name="WS73099CC142F487554E67820D1283FBC0BF3272B"></a><div class="note-note"><span class="label label-target-language">注意:</span><span class="char_link"><a href="GUID-9E9C1FBF-6C6F-4418-AE0F-92EB0D5C8139.htm">“输出”卷展栏</a></span>上的大部分控件不影响凹凸贴图。只考虑“反转”切换：它可以反转凹凸的方向。 
+            </div>
+         </div>
+         <div class="section"><a name="WS73099CC142F487554E67820D1283FBC0BF3272C"></a> 
+            <h2><a name="GUID-D398E550-A65B-4055-AE1C-9F170E8C7E2D"></a>过程
+            </h2> <a name="WS73099CC142F487554E67820D1283FBC0BF3272D"></a><p class="list-intro"><a name="WS73099CC142F487554E67820D1283FBC0BF3272E"></a>要指定凹凸贴图，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>单击标签为“凹凸”的贴图按钮。 
+                  <p><a name="WS73099CC142F487554E67820D1283FBC0BF32730"></a><span class="charspan-msgph">3ds Max</span> 打开“<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>”。 
+                  </p> 
+               </li>
+               <li>从<span class="char_link"><a href="GUID-0F4CC48B-8245-46C8-995D-43403C583EA3.htm">贴图类型</a></span>列表中进行选择，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867D7"></a>（如果选择将“位图”作为贴图类型，则 <span class="charspan-msgph">3ds Max</span> 打开用于选择图像文件的文件对话框。） 
+                  </p> 
+               </li>
+               <li>使用贴图控件可设置贴图。 </li>
+            </ol> 
+            <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867D8"></a>或者，您可以使用 <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <span class="char_link"><a href="GUID-7B51EF9F-E660-4C10-886C-6F6ADE9E8F56.htm"> Slate 材质编辑器</a></span>来<span class="char_link"><a href="GUID-9BF3A6D1-6665-4EC8-89BD-187FF34BA588.htm">关联贴图节点</a></span>到凹凸组件。 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

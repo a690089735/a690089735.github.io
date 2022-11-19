@@ -1,0 +1,66 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-1A857F2B-9AF2-4F3F-B279-1CDE03C73EB2">
+      <meta name="description" content="特征名称遮罩和对象名称遮罩在 Civil View 样式编辑器面板中广泛使用，它们通常以通配符来表示。正则表达式扩展了通配符的概念：它们是用于描述多组字符串的字符串。">
+      <meta name="indexterm" content="Civil View: 通配符">
+      <meta name="indexterm" content="Civil View: 正则表达式">
+      <meta name="topic-type" content="concept">
+      <title>通配符和正则表达式</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-1A857F2B-9AF2-4F3F-B279-1CDE03C73EB2"></a><div class="head">
+            <h1>通配符和正则表达式</h1>
+         </div>
+         <p class="blurb"> <em class="mild">特征名称遮罩</em>和<em class="mild">对象名称遮罩</em>在 Civil View 样式编辑器面板中广泛使用，它们通常以通配符来表示。正则表达式扩展了通配符的概念：它们是用于描述多组字符串的字符串。 
+         </p>
+         <div class="section"><a name="GUID-141F6C37-77B0-4772-A93C-01BD46BBADE0"></a> 
+            <h2><a name="GUID-0F9DD910-673E-4C9B-BC97-C2C8AE0BCF7F"></a>通配符
+            </h2> 
+            <p><a name="GUID-D31FC733-4A0A-4A63-8458-A544BBD4EE4B"></a>通配符是一个文本字符串，该字符串使用特殊的通配符字符<em class="mild"></em>来替代字符串中其他任一字符或多个字符。 
+            </p> 
+            <div class="section"><a name="GUID-5705D7CB-A817-45CA-8F73-2DB9FB120C6D"></a> 
+               <h3><a name="GUID-E7C84303-EDCC-41DC-ACE9-EF72A65F6CB6"></a>特殊通配符
+               </h3> 
+               <p><a name="GUID-3AFE0329-6A0D-49F3-96EE-44A73C2609C5"></a>星号 (*) 通配符通常替代零个或零个以上的字符。 
+               </p> 
+               <p><a name="GUID-9A613378-BBB5-4E18-A4E7-25E4B6EE64D3"></a>问号 (?) 通配符通常替代任意单一<em class="mild"></em>字符。 
+               </p> 
+            </div> 
+            <div class="section"><a name="GUID-C7B1162F-7776-4131-B13F-0D4EBF6BCEA0"></a> 
+               <h3><a name="GUID-17C2932E-C409-45ED-9618-4EB9199F0404"></a>通配符示例
+               </h3> 
+               <p><a name="GUID-4A4A4286-531F-4561-8A8F-81961A523575"></a>有效的通配符表达式示例如下： 
+               </p> <a name="UL_FB0D6CCD273448A6AF9DE1136CCC48F8"></a><ul>
+                  <li> <em class="strong">MC*</em>选择以字符“MC”开头的任意长度的字符串。 
+                  </li>
+                  <li> <em class="strong">*01</em>选择以字符“01”结尾的任意长度的字符串。 
+                  </li>
+                  <li> <em class="strong">AF?1</em>选择以“AF”开头并以数字“1”结尾的任意四字符字符串。 
+                  </li>
+                  <li> <em class="strong">?D*</em>选择第二个字符为“D”的任意长度的字符串。 
+                  </li>
+               </ul> 
+            </div> 
+         </div>
+         <div class="section"><a name="GUID-5275F1B6-A5BE-49BC-8489-54614C8145FC"></a> 
+            <h2><a name="GUID-D816274E-A307-4CE6-9E99-557B062FAEF0"></a>正则表达式
+            </h2> 
+            <p><a name="GUID-5FC09189-C3A4-492B-9183-462E865A9E67"></a><em class="mild"></em>正则表达式是用于描述一组字符串的文本字符串。正则表达式（“regex”）可用于搜索文本字符串中的模式。它们比通配符的功能更强大。实际上，您可以将正则表达式视为组合在一起的通配符。通配符表达式（如“*.txt”）用于在文件管理器中查找所有文本文件，如果将其作为正则表达式，则将成为“.*\.txt”。
+               
+            </p> 
+            <p><a name="GUID-851736B7-8C48-49F3-89E6-670E232C6253"></a>Civil View 在 <em class="mild"> <span class="filePath">civilview.cfg</span> </em> 文件中使用正则表达式，该文件包含用于定义线框颜色的默认设置，以及应用于从 LandXML 文件、12D ASCII 文件、GENIO 文件和 MX 模型文件导入的对象的材质 ID 设置。<em class="mild"> <span class="filePath">civilview.cfg</span> </em> 文件保存在 <em class="mild"> <span class="filePath">/plugcfg</span> </em> 文件夹中（3ds Max 所使用的每一种语言都具有此文件夹的一个副本）。 
+            </p> 
+            <p><a name="GUID-D623E6F5-6493-4C0F-ABD8-DF1A17120858"></a>正则表达式功能强大，本文档将不探讨其功能。有关正则表达式的更多详细信息以及典型正则表达式的示例库，请参见以下链接： 
+            </p> 
+            <p><a name="GUID-D3F8BDB4-D638-4163-B19D-FC97FC97623C"></a> <a href="http://www.regular-expressions.info/" target="_blank">http://www.regular-expressions.info/</a> 
+            </p> 
+            <p><a name="GUID-0C089EA4-4A6F-45B7-BE4F-B72C3B177940"></a> <a href="http://www.regular-expressions.info/tutorial.html" target="_blank">http://www.regular-expressions.info/tutorial.html</a> 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

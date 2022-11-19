@@ -1,0 +1,216 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-262664D2-C971-46B2-BDA6-64DD19370C60">
+      <meta name="description" content="滑块操纵器是显示在活动视口中的一个图形控件。通过将其值与另一个对象的参数相关联，可以创建带有在场景内可视反馈的一个自定义控件。">
+      <meta name="indexterm" content="辅助对象: 滑块">
+      <meta name="indexterm" content="滑块操纵器">
+      <meta name="indexterm" content="操纵器辅助对象: 滑块">
+      <meta name="contextid" content="MANIPSLIDER.OBJECTS_HELPERS">
+      <meta name="contextid" content="OBJECTS HELPERS-MANIPSLIDER">
+      <meta name="topic-type" content="concept">
+      <title>滑块操纵器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-262664D2-C971-46B2-BDA6-64DD19370C60"></a><div class="head">
+            <h1>滑块操纵器</h1>
+         </div>
+         <p class="blurb">滑块操纵器是显示在活动视口中的一个图形控件。通过将其值与另一个对象的参数相关联，可以创建带有在场景内可视反馈的一个自定义控件。 </p><a name="UL_8CE7E7A8D5BE40E8B1BB438954C614F8"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-5413C57A-73CB-4F13-8F2D-853848424636"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-9A23D2B8-9CE2-40BE-98B6-651DBC94F4F7-low.png">（辅助对象） <img src="../images/ac.menuaro.gif"> “操纵器” <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “滑块”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-19DAE70F-54CF-40EB-8FD7-59DBCC4B9224">默认菜单：“创建”菜单  <img src="../images/ac.menuaro.gif"> “辅助对象” <img src="../images/ac.menuaro.gif"> “操纵器” <img src="../images/ac.menuaro.gif"> “滑块”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-F4689918-39D7-4D83-ABC9-12C12EB6A366">Alt 菜单：“对象”菜单  <img src="../images/ac.menuaro.gif"> “多个辅助对象” <img src="../images/ac.menuaro.gif"> “滑块操纵器”</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A1900432DD"></a><div class="figure-anchor"><img src="../images/GUID-E52E3EB2-D51D-4645-8A3D-736619BDA95D-low.png"><p class="figure-title">滑块操纵器</p>
+         </div>
+         <div style="margin-top: 9pt;"><a name="WS73099CC142F487551FACE5511473254FC3-37B8"></a><div class="note-note"><span class="label label-target-language">注意:</span> 由于滑块操纵器是一个自定义控件，其值没有固定的单位。它显示与之关联的参数的单位。当最小值为 0.0 并且最大值为 100.0 时，滑块“值”可以代表一个百分比。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900432DE"></a> 
+            <h2><a name="GUID-220C0047-4A65-4E1E-BA75-963D1A0DBEB1"></a>使用滑块操纵器
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900432DF"></a><div class="figure-anchor"><img src="../images/GUID-B8ED2E19-A9BF-42E8-A3D5-9FE15C386BED-low.png"></div>  
+            <p><a name="GUID-6967A19F-71F2-46C4-9167-AA321FEB2053"></a> <em class="strong">滑块操纵器组件：</em> 
+            </p> 
+            <p><a name="GUID-15ABBBDE-0E70-4906-A961-A1BFD04845E4"></a> <em class="strong">1.&nbsp;标签</em> 
+            </p> 
+            <p><a name="GUID-7ACB26BF-4235-458F-8A0F-55F82EE2F044"></a> <em class="strong">2.&nbsp;值</em> 
+            </p> 
+            <p><a name="GUID-DCE18BB1-7B61-4724-9649-B35E1CC060CE"></a> <em class="strong">3.&nbsp;移动</em> 
+            </p> 
+            <p><a name="GUID-F5C7513C-871E-49C4-A73A-23988A5D4E45"></a> <em class="strong">4.&nbsp;显示/隐藏</em> 
+            </p> 
+            <p><a name="GUID-7AC0ED73-4C56-4885-8200-EB47FF6C5F10"></a> <em class="strong">5.&nbsp;滑块栏</em> 
+            </p> 
+            <p><a name="GUID-B1D58A85-DFBC-474F-87B2-AC97DCD3611F"></a> <em class="strong">6.&nbsp;调整值</em> 
+            </p> 
+            <p><a name="GUID-C7646F84-9395-4AB3-AE50-0A8893BD4E47"></a> <em class="strong">7.&nbsp;更改宽度</em> 
+            </p> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-62B"></a>滑块显示在任何活动视口的相同位置。 
+            </p> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-62A"></a>通过拖动滑块栏下的三角形可以调整滑块的值。当鼠标移动到三角形上时，三角形变为红色。它表示滑块的值，并且随着拖动三角形该值发生更改。无需进入“修改”面板，也可以做出以下更改： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A1900432E0"></a><ul>
+               <li>拖动左侧的小方形可以移动滑块。 </li>
+               <li>拖动右侧的菱形可以更改滑块的宽度。 </li>
+               <li>单击加号（位于左侧的移动图标旁边）可以隐藏所有滑块，但标签和移动图标除外。 </li>
+            </ul> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-629"></a>与“值”三角形一样，当鼠标移动到这些组件上时，这些组件也变为红色。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-28C3"></a> 
+            <h2><a name="GUID-5F14F087-CE59-44AA-876C-5652C43871DC"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900432E1"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900432E2"></a>要创建一个滑块操纵器，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板中，激活 <img src="../images/GUID-9A23D2B8-9CE2-40BE-98B6-651DBC94F4F7-low.png">（“辅助对象”）并从下拉列表中选择“操纵器”。 
+               </li>
+               <li>单击“滑块”按钮。 </li>
+               <li>单击视口。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-628"></a>创建滑块操纵器，使其默认宽度为 100 个单位。它将显示在任何活动视口的相同位置上。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900432E3"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900432E4"></a>要更改滑块操纵器的值，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>启用 <img src="../images/GUID-FB7448B2-D8BD-4DCF-BACD-8D66F04834CC-low.png">（“选择并操纵”）。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-627"></a>滑块变为绿色。 
+                  </p> 
+                  <div><a name="WS73099CC142F487551FACE5511473254FC3-37B0"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果仍处于“创建”面板中，请在使用该操纵器之前启用 <img src="../images/GUID-103C0FB3-CA74-4C80-9CAF-FA8E106752EF-low.png">（“选择对象”）。否则，创建一个新的操纵器不是很容易。 
+                     </div>
+                  </div> 
+               </li>
+               <li>在视口中，将鼠标移动到滑块栏下面的三角形上。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-626"></a>当鼠标位于三角形上时，该三角形变为红色，并且可用于被拖动。 
+                  </p> 
+               </li>
+               <li>拖动滑块操纵器的值三角形。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-625"></a>滑块的值显示随着拖动三角形发生的更改。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900432E5"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900432E6"></a>要移动一个滑块操纵器，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>启用 <img src="../images/GUID-FB7448B2-D8BD-4DCF-BACD-8D66F04834CC-low.png">（“选择并操纵”）。 
+               </li>
+               <li>在活动视口中，将鼠标移动到移动图标上，该图标是滑块左侧的小方形,在滑块标签（如果有的话）和值显示下面。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-624"></a>当鼠标位于方形上时，该方形变为红色，并且可以被拖动。 
+                  </p> 
+               </li>
+               <li>拖动方形以移动滑块。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-623"></a>与角度操纵器不同，变换对于滑块无效。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900432E7"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900432E8"></a>要连接滑块操纵器以便它控制另一个对象，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择滑块。 
+                  <div><a name="WS73099CC142F487551FACE5511473254FC3-37A9"></a><div class="note-note"><span class="label label-target-language">注意:</span><img src="../images/GUID-FB7448B2-D8BD-4DCF-BACD-8D66F04834CC-low.png">（“选择并操纵”）必须处于<em class="mild">禁用</em>状态，才能选择滑块。 
+                     </div>
+                  </div> 
+               </li>
+               <li>选择“动画”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“连线参数”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“连线参数”。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-622"></a>也可以右键单击操纵器，然后从四元菜单的“变换”（右下方）区域中选择“连线参数”。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-621"></a>该操纵上出现一个弹出菜单。 
+                  </p> 
+               </li>
+               <li>在弹出菜单中，选择“对象”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“值”。 
+               </li>
+               <li>拖动到想要操纵的对象，并单击该对象。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-620"></a>该对象上出现一个弹出菜单。 
+                  </p> 
+               </li>
+               <li>在弹出菜单中，选择“对象”，然后选择要操纵参数的名称。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-61F"></a>显示<span class="char_link"><a href="GUID-FF7FE175-2BE8-4504-88E4-12276BFDF30A.htm">“参数关联”对话框</a></span>。 
+                  </p> 
+               </li>
+               <li>在“参数关联”对话框中，确保方向从滑块指向对象（或双向），然后单击“连接”。 </li>
+               <li>关闭“参数关联”对话框。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-61E"></a>现在，当您启用 <img src="../images/GUID-FB7448B2-D8BD-4DCF-BACD-8D66F04834CC-low.png">（“选择并操纵”）并使用滑块时，对象将在该滑块的控制下进行更新。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-28C2"></a> 
+            <h2><a name="GUID-D5535B6B-E4A0-43E8-A7F1-05FE8F8324AB"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900432E9"></a><div class="figure-anchor"><img src="../images/GUID-2A8B6D4C-CC53-4FCF-B105-347AEF591900-low.png"></div>  <a name="GUID-25791B78-2E06-4B5D-9D0F-A536358D4EF4"></a><dl>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E2395"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-61D"></a>标签</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B7A"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751979"></a>显示在视口中的滑块名称。默认设置为“否”。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E2396"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-61C"></a>值</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B79"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875197A"></a>滑块的值基于可滑动三角形的位置。默认设置是 0.0。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E2397"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-61B"></a>最小</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B78"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875197B"></a>滑块可能的最小值。默认设置是 0.0。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E2398"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-61A"></a>最大</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B77"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875197C"></a>滑块可能的最大值。默认设置为 100.0。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-619"></a>当最小值为 0.0 并且最大值为 100.0 时，滑块“值”可以代表一个百分比。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E2399"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-618"></a>X 位置</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B76"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875197D"></a>活动视口中滑块的 X 位置。默认设置为当创建滑块时单击的视口 X 位置。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E239A"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-617"></a>Y 位置</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B75"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875197E"></a>活动视口中滑块的 Y 位置。默认设置为当创建滑块时单击的视口 Y 位置。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E239B"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-616"></a>宽度</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B74"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875197F"></a>滑块的宽度，采用 <span class="charspan-msgph">3ds Max</span> 单位。默认设置为 100.0。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E239C"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-615"></a>捕捉</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B73"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751980"></a>启用该选项后，滑块“捕捉”到由“捕捉值”设置确定的增量值。默认设置为启用。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E239D"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-614"></a>捕捉值</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B72"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751981"></a>当“捕捉”处于启用状态时滑块使用的增量。默认值为 0.01。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E239E"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-613"></a>隐藏</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B71"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751982"></a>启用此选项后，隐藏所有滑块，但标签、移动和显示/隐藏组件除外。默认设置为禁用状态。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

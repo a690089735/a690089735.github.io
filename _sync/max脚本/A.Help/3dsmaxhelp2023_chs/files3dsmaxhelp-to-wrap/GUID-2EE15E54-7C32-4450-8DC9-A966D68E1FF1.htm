@@ -1,0 +1,226 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-2EE15E54-7C32-4450-8DC9-A966D68E1FF1">
+      <meta name="description" content="“设置”卷展栏上的参数可确定粒子种子的密度和位置以及笔划计时。">
+      <meta name="indexterm" content="粒子绘制辅助对象: 设置卷展栏">
+      <meta name="topic-type" content="concept">
+      <title>“设置”卷展栏（粒子绘制）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-2EE15E54-7C32-4450-8DC9-A966D68E1FF1"></a><div class="head">
+            <h1>“设置”卷展栏（粒子绘制）</h1>
+         </div>
+         <p class="blurb">“设置”卷展栏上的参数可确定粒子种子的密度和位置以及笔划计时。 </p>
+         <div class="bodyReference"><a name="GUID-B0AF2352-AAA1-438B-AD28-B11BAF636253"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-35368615-6C5C-4BFF-9266-BB91AF721470">选择“粒子绘制辅助对象”。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “设置”卷展栏</span> 
+               </li>
+            </ul>
+            <div><a name="WS1A9193826455F5FF5CF1D02511B1D000978-287C"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>对于影响笔划或种子的这些参数，必须在创建粒子种子<em class="mild">之前</em> 进行设置。在创建粒子种子之后更改值将不会对现有笔划或种子产生影响。 
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-287B"></a> 
+               <h2><a name="GUID-3AFB8962-EF7F-4C25-8606-62CB7AE9DAE1"></a>界面
+               </h2> <a name="WS1A9193826455F5FF5CF1D02511B1D000978-287A"></a><div class="figure-anchor"><img src="../images/GUID-C26A9E30-35EC-47FD-A381-A5DE92A9EAB8-low.png"></div>  <a name="GUID-A50AF3B5-CCAB-472E-A050-DAF2B138491C"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63CC"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2879"></a>徒手绘制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64D3"></a> 激活徒手绘制工具，便可在<em class="mild">正交</em> 视口的任何位置上进行拖动以设置粒子种子。在使用“出生绘制”或“粒子绘制”操作符时，对在对象上拖动进行的计时可确定粒子出生的基准计时。此选项仅在“修改”面板中可用。 
+                        <div><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2877"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>要使用徒手绘制工具，必须在其中一个正交视口（例如“顶”视口或“前”视口）中操作。不能在“透视”、“摄影机”或“聚光灯”视口中使用该工具。 
+                           </div>
+                        </div> 
+                        <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2876"></a>使用该工具时，每当释放鼠标，即可创建单个笔划。您可为每个粒子绘制辅助对象创建任意多个笔划。每个笔划的粒子计时和其他选项都会受到“设置”卷展栏上其他设置的控制。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2875"></a>要停止创建笔划，请右键单击活动视口或再次单击“徒手绘制”按钮。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63CB"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2874"></a>拾取笔划样条线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64D2"></a> 您可以利用它来拾取一个或多个标准样条线作为粒子种子的路径。然后粒子会沿着样条线放置，但会投影到正交视口中的 3D 曲面。样条线不必位于正交视口中的 3D 曲面之前；无论样条线在 3D 空间中的实际位置如何，粒子绘制都将从样条线投影到曲面上，就像这些样条线位于对象的前面一样。
+                        
+                        <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2872"></a>拾取的样条线可以是开放式样条线，也可以是封闭式样条线。NURBS 曲线不能用作喷射样条线。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2871"></a>您可以拾取任意多个样条线，并且拾取的每个样条线都会视为单独的笔划。笔划从样条线的第一个顶点开始，一直沿着样条线，直到到达样条线末端（或者对于封闭式样条线而言，则为第一个顶点）。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63CA"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2870"></a>粒子种子总数</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64D1"></a> 已生成的粒子种子总数。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63C9"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-286E"></a>笔划</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64D0"></a> 粒子绘制辅助对象创建的笔划数量。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63C8"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-286C"></a>笔刷半径</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64CF"></a> 调整喷射发射器喷嘴的大小。大小的更改已反映在“粒子绘制”图标中。在使用任意一种方法生成粒子种子时，该值可确定到喷嘴中心的距离，而粒子种子是根据此距离扩散的。该值可以随时间生成动画。 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-51703888-9C3E-4A1E-9C54-D14F80F85BD2"></a><p class="title"><a name="GUID-8B1FA5B3-E639-4871-B58E-E450861A8E8B"></a>“绘制密度”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2869"></a>这些控件可设置在发射器喷嘴内粒子种子的区域分布。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63C7"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2868"></a>中心 (%)</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64CE"></a> 在喷嘴中心处喷射的粒子种子数百分比。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63C6"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2866"></a>边 (%)</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64CD"></a> 在喷嘴的边缘处喷射的粒子种子数百分比。百分比越大，粒子条带就会越宽。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-016F7CFE-BFD3-4DDC-BC62-3AE136159ACE"></a><p class="title"><a name="GUID-B6667593-AFA6-4F39-AEDA-2A077345F7C3"></a>“绘制流速率”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2863"></a>这些控件可确定在绘制单个笔划过程中发射粒子种子的数量以及发射粒子种子的速率。对于徒手绘制方法，笔划是在以下时间段上定义的：从按下鼠标按钮开始笔划，直到释放鼠标按钮为止。对于样条线，在每个拾取的样条线上会分布一个笔划。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63C5"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2862"></a>笔划限制</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64CC"></a> 使用徒手或样条线方法时，用于设置针对每个笔划可发射的粒子种子总数。因此，如果“种子点/秒”为 25.0 并且“笔划限制”为 100.0，则一个笔划的粒子种子只能喷射四秒。此参数会由在“类型”下选定的“笔划”喷射速率类型覆盖（参见下文）。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63C4"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2860"></a>类型</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64CB"></a> 设置喷射速率类型。可用的选择有“时间”、“长度”和“笔划”。每个参数都可与后面的其中一个参数共同来设置喷射速率。 <a name="WS1A9193826455F5FF5CF1D02511B1D000978-285E"></a><ul>
+                              <li> <em class="strong">时间</em>以每秒喷射的粒子种子数来设置喷射速率。 
+                              </li>
+                              <li> <em class="strong">长度</em>以喷嘴的空间移动来设置喷射速率。 
+                              </li>
+                              <li> <em class="strong">笔划</em>以每个笔划具有的特定数目的粒子种子设置喷射速率，而不考虑笔划的长度。此选项会覆盖“笔划限制”参数（参见上文）。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63C3"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-285A"></a>[速率值]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64CA"></a> 根据“类型”设置的不同（参见上文），可以使用这些选项中的某一选项来设置绘制时创建的种子数。 <a name="WS1A9193826455F5FF5CF1D02511B1D000978-2858"></a><ul>
+                              <li> <em class="strong">种子点/秒</em>在视口中绘制时每秒发射的粒子种子数。值越大，发射的种子就会越多。此选项仅适用于“时间”喷射速率类型（参见上文）。 
+                              </li>
+                              <li> <em class="strong">绘制步骤</em>喷嘴中心在发射各粒子种子之间必须移动的距离。值越大，在绘制一个笔划期间要发射的种子就会越少。此选项仅适用于“长度”喷射速率类型。 
+                              </li>
+                              <li> <em class="strong">总量</em>可确定每个笔划的粒子种子总数，无论笔划长度以单位长度表示还是以时间表示。种子会在笔划时间内均匀分布。此选项仅适用于“笔划”喷射速率类型。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-6572E1FA-1DC3-4295-9ED6-612BCDAF110B"></a><p class="title"><a name="GUID-B00F66B9-0A7A-4D66-8E00-FDFFBE193EE5"></a>“笔刷调整”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2853"></a>这些控件可用于根据笔划计时来微调“笔刷半径”和“流速率”。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63C2"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2852"></a>半径</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64C9"></a> 用于在绘制每个笔划的过程中改变种子绘制的半径。此外，您可以设置“笔刷半径”参数的动画以改变笔刷大小，但该动画是在绝对时间（即，在特定帧范围内）发生的。使用此选项可在单个笔划内调整笔刷半径，而无论其开始时间和结束时间如何。 
+                           <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2850"></a>单击“半径”可打开<span class="char_link"><a href="GUID-492D7961-AA86-4C43-B026-49B9038EC6C5.htm">“笔刷半径图形</a></span>。图形上的这些设置将在“半径”选项启用时生效。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63C1"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-284F"></a>速率 </span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64C8"></a> 用于在绘制每个笔划的过程中改变种子绘制速率。此外，您可以设置“种子点/秒”参数的动画以改变速率，但该动画是在绝对时间（即，在特定帧范围内）发生的。使用“速率”选项可在单个笔划内调整种子绘制速率，而无论其开始时间和结束时间如何。 
+                           <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-284D"></a>单击“速率”可显示<span class="char_link"><a href="GUID-46C49E4B-5F4E-48F3-B6A5-9454E3ACE6DF.htm">“绘制流速率图形”</a></span>。图形上的这些设置将在“速率”选项启用时生效。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63C0"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-284B"></a>显示类型</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64C7"></a> 通过此下拉列表，可选择粒子在视口中的显示方式。您可以选择“十字叉”或“标志”作为显示类型。“标志”类型可提供有关每个种子的旋转数据的更多信息。标志标记的旗杆与其种子的局部坐标系 Z 轴的对齐；旗帜指向局部坐标系 X 轴的方向。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63BF"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2849"></a>种子大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64C6"></a> 设置标志标记的大小。仅适用于“标志”类型。 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-2B7960C7-B17C-495E-8B17-970BF6CADCF0"></a><p class="title"><a name="GUID-32579D1E-3F75-4F3D-9B3E-3691D4250FBC"></a>“笔划开始时间”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2846"></a>此组中的设置可确定由笔划生成的粒子种子的开始帧。这些计时值稍后可由<span class="char_link"><a href="GUID-A4A1EE50-59DF-4A5E-8C57-7A3453A63D3A.htm">出生绘制</a></span>和<span class="char_link"><a href="GUID-078C7FCB-FF0C-43C9-A371-562DFB4953B0.htm">放置绘制</a></span>操作符使用，以对每个发射的粒子进行精确计时。 
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2844"></a>选择以下两选项之一： 
+                  </p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2843"></a><ul>
+                     <li> <em class="strong">当前帧</em>从当前帧开始笔划计时。 
+                     </li>
+                     <li> <em class="strong">固定</em>从指示的帧开始笔划计时。 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-CA3085D8-8334-4857-A049-EAD0EB6AC6CA"></a><p class="title"><a name="GUID-AAE23F0A-A7C9-4547-8CEF-F396885B2F2F"></a>“笔划停止”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-283F"></a>这些设置可指定用于确定笔划的持续时间或停止帧的方法。 
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-283D"></a>选择下列选项之一： 
+                  </p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-283C"></a><ul>
+                     <li> <em class="strong">实时偏移</em>由绘制笔划所花费的实际时间定义的笔划时间。如果已通过拾取样条线创建了一个笔划，则笔划的默认时间为一秒。 
+                        <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-283A"></a>使用“时间缩放 %”参数来定义在绘制笔划时动画时间（动画帧数）和现实世界时间之间的对应关系。例如，值 100.0 表示 1 秒的实际时间对应于 30 帧的动画（对于 NTSC 而言），而值 50.0 表示 1 秒的笔划绘制对应于 15 帧的动画。
+                           
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2839"></a><div class="note-note"><span class="label label-target-language">注意:</span>调整“时间缩放 %”值会改变绘制的有效流速率，因为<span class="char_link"><a href="GUID-2EE15E54-7C32-4450-8DC9-A966D68E1FF1.htm#WS1A9193826455F5FF-7C11D46C11CB8605735-63C3">种子点/秒</a></span>参数使用的是动画时间，而非绘制时间。 
+                           </div>
+                        </div> 
+                     </li>
+                     <li> <em class="strong">固定</em>在指定帧（以绝对时间的形式）处停止笔划。 
+                     </li>
+                     <li> <em class="strong">持续时间</em>以帧的形式设置笔划长度。 
+                     </li>
+                  </ul>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63BC"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2836"></a>自动调整当前帧</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64C3"></a> 自动将每个连续笔划的开始时间与上一个笔划的停止时间对齐。如果为现有笔划启用该选项，则时间滑块会调整到笔划的停止时间。此选项仅在“笔划开始时间”设置为“当前帧”并且“笔划停止”设置为“实时偏移”或“持续时间”时才可用。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63BB"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2834"></a>自动调整全局计时</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64C2"></a> 自动调整相关“出生绘制”操作符的发射计时。 
+                        <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2832"></a>“出生绘制”操作符本身具有定义粒子发射开始和停止时间的参数。此开关禁用时，粒子流会使笔划计时适合“出生绘制”的开始/停止时间间隔。但当此选项启用时，“粒子绘制”允许相关“出生绘制”操作符将其发射计时调整到笔划计时。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63BA"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2831"></a>图标大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64C1"></a> 调整辅助对象图标的总体大小，但不影响喷嘴半径。 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-D72BE304-E376-4B81-BAFE-CFE05A955BEF"></a><p class="title"><a name="GUID-6ECC4825-46F8-466A-B65A-E7E51E523671"></a>“绘制扩散唯一性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-282E"></a>这些设置可随机化笔划上的粒子-种子分布。如果为笔划拾取了同一样条线，则辅助对象会为种子生成相同放置。要为样条线生成各种粒子放置，请更改“种子”值。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63B9"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-282D"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64C0"></a> 指定随机化值。否则与粒子种子无关。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63B8"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-282B"></a>新增特性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64BF"></a> 生成新的种子值。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

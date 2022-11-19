@@ -1,0 +1,75 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-3DA51A42-AB12-48D6-B6D5-A82B481CD686">
+      <meta name="description" content="IPT 和 IAM 是用于部分(IPT) 和集合(IAM) 的固有 Autodesk Inventor® 文件格式。您可以将两种文件格式导入到 3ds Max。">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>Autodesk Inventor (IPT、IAM) 文件</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-3DA51A42-AB12-48D6-B6D5-A82B481CD686"></a><div class="head">
+            <h1>Autodesk Inventor (IPT、IAM) 文件</h1>
+         </div>
+         <p class="blurb">IPT 和 IAM 是用于<em class="mild">部分</em>(IPT) 和<em class="mild">集合</em>(IAM) 的固有 Autodesk Inventor® 文件格式。您可以将两种文件格式导入到 <span class="charspan-msgph">3ds Max</span>。 
+            
+         </p><a name="UL_0E087126C2864FA8A970E06B3E92B1CB"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-43814D94-CC5C-483B-A33A-3D4C65417D55">“文件”菜单  <img src="../images/ac.menuaro.gif"> “导入” <img src="../images/ac.menuaro.gif"> “选择要导入的文件”对话框  <img src="../images/ac.menuaro.gif"> “文件类型” <img src="../images/ac.menuaro.gif"> “Autodesk Inventor (*.IPT, *.IAM)”</span> 
+            </li>
+         </ul>
+         <p><a name="GUID-99FD6ECB-F53C-4335-A320-608220F622A3"></a>可以将 Inventor 文件作为实体对象导入。这允许 ACIS 实体格式的几何体在 <span class="charspan-msgph">3ds Max</span> 中保留该格式。要输出此格式，请使用 SAT 导出器。 
+            	 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1F82"></a>导入到 <span class="charspan-msgph">3ds Max</span> 中的模型的组件将保留其在 Autodesk Inventor 中指定的对象命名，并且可以作为可编辑网格或实体对象导入。导入后，可以像编辑创建的其他对象类型一样编辑该模型。可以应用修改器、改变材质、添加灯光和摄影机、创建动画等等。 
+            	 
+         </p>
+         <p><a name="GUID-B04B7613-8087-4464-B8F5-94850CF56E22"></a> 将约束和关节驱动动画作为烘焙关键帧导入到 3ds Max 中。您可以创建高质量的机械设计动画，并在 3ds Max 中查看该动画，而无需使用 3ds Max 的 IK 和装配特征。 
+            	 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041F5"></a> 
+            <h2><a name="GUID-CE0D2A25-7C27-4511-95CD-AA521F99C693"></a>要求和限制
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1F80"></a>Inventor 导入功能的限制如下： 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041F6"></a><ul>
+               <li>摄影机动画路径不会转换为 <span class="charspan-msgph">3ds Max</span> 摄影机，因此导入过程中将丢失在 Inventor 中设置的任何动画。 
+                  		  
+               </li>
+               <li>将不能导入在 Inventor 文件中创建的来自亮度和环境光设置的任何照明。导入完成后需要重新设置场景照明。 
+                  		  
+               </li>
+               <li>将 Inventor 文件拖放到 <span class="charspan-msgph">3ds Max</span> 中时，将使用上一次“Inventor 文件导入”对话框采用的设置，但“网格分辨率”设置例外，该设置始终重置为 0。 
+                  		  
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041F7"></a> 
+            <h2><a name="GUID-5A276018-D3AF-4CF6-A1B1-6527935959D6"></a>材质处理
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1F7F"></a>原始 Inventor 模型的材质布局保持不变并与几何体一起导入。作为建筑材质导入的材质，或指定了多种材质的单个对象，将作为“多维/子对象”材质导入。 
+               		
+            </p> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-CCF94205-D5DA-4EA0-A3F1-F2281EE1FC01.htm">导入 Autodesk Inventor 文件</a></li>
+                  <li class="topiclist-litem"><a href="GUID-31FB2A11-506D-40B8-B3CA-F199F0A03831.htm"> “Autodesk Inventor 文件导入”对话框</a><p>您可以选择将 Inventor 对象作为“实体对象”或“可编辑网格”对象导入。其他各种选项可以控制 Inventor 文件导入。 </p>
+                  </li>
+               </ul>
+            </div></span><div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-E2F3B8B6-9C07-4CB0-A8EC-FD36DB764B49.htm">“SAT 导出”对话框</a></li>
+                     <li class="topiclist-litem"><a href="GUID-D968CDD9-4C5D-489D-A311-ED7486FCD4AA.htm">多维/子对象材质</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

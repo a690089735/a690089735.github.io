@@ -1,0 +1,87 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-291B5691-D4C7-4E85-A1FA-F6690107CAA8">
+      <meta name="description" content="“参数”子操作符定义其他子操作符的可显示值。当出于保持操作员界面简单的目的，而为两个以上的不同子操作符显示相同值时（例如，随机种子），此选项极其有用。有关详细信息，请参见相等数据类型。">
+      <meta name="topic-type" content="concept">
+      <title>参数子操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-291B5691-D4C7-4E85-A1FA-F6690107CAA8"></a><div class="head">
+            <h1>参数子操作符</h1>
+         </div>
+         <p class="blurb">“参数”子操作符定义其他子操作符的可显示值。当出于保持操作员界面简单的目的，而为两个以上的不同子操作符显示相同值时（例如，随机种子），此选项极其有用。有关详细信息，请参见<span class="char_link"><a href="GUID-4059B714-CF45-4D92-B962-9248F603B3D4.htm#AB1004803">相等数据类型</a></span>。 
+         </p>
+         <div class="bodyReference"><a name="GUID-A4932A83-E40D-49BD-8633-6E0C8E5F0391"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-DA5FFBD3-215F-4B79-B1F0-E451D203125D">“粒子视图” <img src="../images/ac.menuaro.gif"> “数据图标/操作符/图标测试/测试” <img src="../images/ac.menuaro.gif">  单击“编辑数据流”。 <img src="../images/ac.menuaro.gif"> 添加或选择“参数”。</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="AB1010257"></a> 
+               <h2><a name="GUID-AAF7355F-F0A0-4103-A7F8-6FBDAD718A1A"></a>界面
+               </h2> <a name="FIG_0C85D46E6D204B61BAE339BDADC3CBD5"></a><div class="figure-anchor"><img src="../images/GUID-9E9E0E6C-2160-4673-9F0A-39D7791BCF4F-low.png"></div>  <a name="GUID-CE3180B7-BD5C-48FA-9AE5-CE992371D958"></a><dl>
+                  <dt><a name="GUID-5A1789DF-AA27-445E-A267-85CB01DB1E55"></a><span class="term"><a name="GUID-C6044A9F-6276-4A93-9E7D-26005A53A942"></a>类型</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-32F00861-71A8-42F3-ACAA-9126506290F6"></a>从列表中选择参数的数据类型： <a name="UL_F058DFA4E67D4110AD0624307279A17F"></a><ul>
+                           <li>角度 </li>
+                           <li>动画同步 </li>
+                           <li>浮点 </li>
+                           <li>整数 </li>
+                           <li>百分比 </li>
+                           <li>时间 </li>
+                           <li>唯一性种子 </li>
+                           <li>世界单位 </li>
+                        </ul> 
+                        <p><a name="GUID-1ED26805-3D36-4752-9DFD-1D6C858D9DD5"></a>对于大多数数据类型，仅可以设置默认值；露出参数将在粒子视图 UI 中显示值并允许用户更改此值。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-118592EE-CFAD-47C2-9AD3-50B1A2BE9F58"></a><span class="term"><a name="GUID-EF77FBF8-79FB-4E26-BF64-C03E877BA0B7"></a>值</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-41991EA1-AFD6-4B36-8AF0-65F8E26E486D"></a>指定参数的默认值。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-4DB4DD61-E325-4657-B8A0-769270A0B03B"></a><span class="term"><a name="GUID-52451B86-CFD8-4FE7-881F-4BC9C67E227F"></a>参数动画/唯一性</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-C5230ED2-8DCA-4C08-908C-5599C2E4F42D"></a>可分别与“动画同步”和“唯一性种子”数据类型一起使用。使用“动画同步”时，可以从下拉列表中选择“同步方式”的值；使用“唯一性种子”时，可以设置“种子”的值。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-B1FE64B2-BD58-4928-9C62-00B5C1248707"></a><span class="term"><a name="GUID-7547FA44-E10B-44AE-B66A-C9F1ADB51664"></a>同步方式</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-6674CE7D-1243-4810-90E3-EDDBBF968F16"></a>如果对子操作符参数进行了动画设置，则软件可以从动画的开始帧或当前事件的第一帧开始，将此动画应用于所有粒子，或根据每个粒子的年龄应用于相应粒子。这些选项包括： <a name="UL_82F914CBE6704EBDBEECFE1D213702CF"></a><ul>
+                           <li><em class="strong">绝对时间</em>为参数设置的任意关键点在为其设置关键点的实际帧处应用。 
+                           </li>
+                           <li><em class="strong">事件持续时间</em>为参数设置的任意关键点相对于每个粒子第一次进入事件的帧应用于每个粒子。 
+                           </li>
+                           <li><em class="strong">粒子年龄</em>为参数设置的任意关键点在每个粒子存在的相应帧处应用。 
+                           </li>
+                           <li><em class="strong">粒子寿命</em>将参数动画缩放/映射到粒子寿命期间。例如，如果在 0 至 100 帧中从 5 至 20 帧为参数值设置动画，则当粒子出生时该参数的值为 5，当粒子死亡时该参数的值为 20。例如，用这种方法可以定义粒子的缩放在其寿命期间发生的更改。 
+                              <p><a name="GUID-4926B3B5-0A8A-4E57-9491-25678A7DF79C"></a>为了使此选项正常工作，必须在流中将“删除”操作符设置为“按粒子年龄”，以定义粒子寿命。 
+                              </p> 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-05424C7E-F739-46E5-B849-2279DB8CF0D8"></a><span class="term"><a name="GUID-01BC8AAB-B792-40B1-9220-637B32640EE1"></a>用作参数修改器</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-2BC1D162-7D0C-4AB9-BCA0-242CD304BA82"></a>启用时，可以通过偏移或乘积因子修改现有的参数。 
+                        <p><a name="GUID-674C896A-D3EF-47DF-91B8-3797443CF387"></a>在多个不同的子操作符中使用相同的随机种子可能导致不同属性之间出现关联问题。在这种情况下，可以创建“类型”设置为“唯一性种子”的“参数”子操作符，然后将其馈送到一个子操作符中。对于另一个子操作符，再创建一个“参数”子操作符，启用“用作参数修改器”选项，然后将其设置为相同数据类型。然后，参数连接应通过此附加的“参数”子操作符。通过此方式，随机种子会发生偏移，且基本子操作符中的随机值不会关联。同时，您可以将单个（原始）“参数”子操作符用于参数露出。
+                           
+                        </p> 
+                        <p><a name="GUID-DE953366-98E7-48B1-BA21-4CAAB2886F7F"></a>有关用法的示例，请参见附带的示例文件 <span class="filePath">RandomWalk.max</span>。若要查看“随机行走”操作符的基本逻辑，请添加一个“数据”操作符，然后使用“加载预设”打开“随机行走”预设。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-3506A42E-C883-4A56-B0BC-AA0271D4F84A"></a><span class="term"><a name="GUID-818BD5BB-A921-4727-B72D-CA3EC9915665"></a>偏移量/倍增值</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-8584FAA8-2329-4D70-B164-9A52E1B8E813"></a>选择一种方法，然后设置修改参数的量。对于“唯一性种子”类型，只有“偏移量”选项可用。对于“动画同步”数据类型，不可能修改参数，因此所有新的选项都不可用。
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

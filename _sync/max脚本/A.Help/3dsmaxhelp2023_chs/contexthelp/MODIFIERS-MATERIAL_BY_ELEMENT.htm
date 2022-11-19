@@ -1,0 +1,40 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="topic-type" content="redirect">
+      <meta name="robots" content="noindex">
+      <title>按元素分配材质修改器</title>
+   </head>
+   <body><script language="javascript">
+                        (function() {
+
+                            function isFromLocalFilesystem() {
+                                switch(window.location.protocol) {
+                                    case 'http:':
+                                    case 'https:':
+                                        //remote file over http or https
+                                        return false;
+                                        break;
+                                    case 'file:':
+                                        //local file
+                                        return true;
+                                        break;
+                                    default:
+                                        //some other protocol
+                                        return false;
+                                }
+                            }
+
+                            var search = window.location.search,
+                                indexUrl = '../index3dsmaxhelp.html' + search + '#!/url=./files3dsmaxhelp/GUID-2E6EA6FE-B177-4794-96C6-1F387859E4BD.htm',
+                                topicUrl = '../files3dsmaxhelp/GUID-2E6EA6FE-B177-4794-96C6-1F387859E4BD.htm' + search;
+
+                            if (isFromLocalFilesystem()) {
+                                location.replace(indexUrl);
+                            } else {
+                                location.replace(topicUrl);
+                            }
+
+                        })();
+                    </script></body>
+</html>

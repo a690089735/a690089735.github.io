@@ -1,0 +1,102 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-683A329B-4048-47D2-AF73-8E544EF4149B">
+      <meta name="description" content="有时候可能需要使用“文件”“合并”命令将角色合并到场景中。也可以使用“合并”命令来克隆一个应用了 Physique 修改器网格的 Biped，本帮助主体将讲述这方面的内容。">
+      <meta name="indexterm" content="Biped: 虚拟对象">
+      <meta name="indexterm" content="虚拟对象">
+      <meta name="indexterm" content="合并角色">
+      <meta name="indexterm" content="克隆角色">
+      <meta name="topic-type" content="concept">
+      <title>合并及克隆角色</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-683A329B-4048-47D2-AF73-8E544EF4149B"></a><div class="head">
+            <h1>合并及克隆角色</h1>
+         </div>
+         <p class="blurb">有时候可能需要使用“文件”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“合并”命令将角色合并到场景中。也可以使用“合并”命令来克隆一个应用了 Physique 修改器网格的 Biped，本帮助主体将讲述这方面的内容。 
+         </p>
+         <div class="bodyReference">
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900456DF"></a> 
+               <h2><a name="GUID-9E1753F4-9ACA-4781-A456-950A9AE23123"></a>克隆角色
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16119"></a>要克隆角色（具有 Physique 网格的 Biped），请保存包含该角色的场景，更改原始 Biped 的名称，然后使用“文件”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“合并”从已保存的文件中合并副本。可以在场景打开的情况下合并该场景的已保存版本。详细信息请参看步骤。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-46BC"></a> 
+               <h2><a name="GUID-A198A02C-99E1-4FDC-B72E-077A25EC6214"></a>过程
+               </h2> <a name="WSF742DAB041063133728B9B2112A1CE7292-7F6D"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900456E0"></a>要合并一个已蒙皮的 Biped，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>合并之前，请确保要导入的 Biped 的根名称不同于当前场景中已有的 Biped。如果存在名称冲突，则 <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择有冲突的 Biped，转到 <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板，使用“结构”卷展栏的“根名称”字段来更改此 Biped 的根名称。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF1611A"></a>如果跳过此步，在已合并的 Biped 层次中每一个对象都会出现一个“名称重复”对话框！ 
+                     </p> 
+                  </li>
+                  <li>选择“文件”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“合并”，然后选择包含要导入的 Biped 的 MAX 文件。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF1611B"></a><span class="charspan-msgph">3ds Max</span> 将打开“合并”对话框。 
+                     </p> 
+                  </li>
+                  <li>在“合并”对话框中，单击以启用“选择子树”。 </li>
+                  <li>在“合并”对话框列表中找到并单击 Biped 的重心名称。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF1611C"></a>Biped 质心的默认名称是 <em class="mild">Bip001</em>。如果 Biped 在“结构”卷展栏上已重命名，那么从列表中找出已重命名的重心。 
+                     </p> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6ED"></a><div class="note-note"><span class="label label-target-language">注意:</span>重心是 Biped 层次中的根对象，如果在打开“选择子树”的情况下选中重心，那么所有的子链接都会被选中，包括附加骨骼和网格蒙皮（在 Physique 中使用了“附加到节点”时，会链接上网格蒙皮）。 <a name="WS1A9193826455F5FFBA679E112A6A1900456E1"></a><div class="figure-anchor"><img src="../images/GUID-F30C8031-1AB6-4A55-A90F-FDAE30B5BCA1-low.png"><p></p>
+                              <p class="figure-title">在合并 MAX 场景时选择 Biped</p>
+                           </div>  
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF1611D"></a>在演示中，重心对象的名称为 <em class="mild">Hero</em>。当激活“选择子树”时，单击 <em class="mild">Hero</em> 将会选中所有的子对象，包括 Physique 网格在内。 
+                           </p> 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>单击“确定”。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF1611E"></a>可能会出现“名称重复”对话框。如果没有出现该对话框，那么合并完成；如果出现该对话框，请参见以下步骤。 
+                     </p> 
+                  </li>
+                  <li>在“名称重复”对话框中，打开“应用于所有重复项”，然后单击“合并”。 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6EE"></a><div class="note-note"><span class="label label-target-language">注意:</span>即使当前场景中的 Biped 与要合并的 Biped 的根名称不同，然而文件中 Biped 的虚拟手指/脚趾/头也可能与当前场景中的 Biped 的虚拟对象名称相同。此步骤将合并这些虚拟对象。名称重复的虚拟对象会出现在“从场景选择”对话框中，因此名称重复不是一个问题。
+                           
+                        </div>
+                     </div> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF1611F"></a>Biped 及其动画就与场景合并了。 
+                     </p> 
+                  </li>
+               </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7F6C"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900456E2"></a>要隐藏手指、脚趾和头虚拟对象，请执行以下操作：
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16120"></a>在新合并后的 Biped 中，手指、脚趾和头虚拟对象是可视的。通常情况下要隐藏这些虚拟对象。Physique 使用虚拟对象来创建所有手指、脚趾和头的封套，在合并角色时，这些虚拟对象会显示出来。将它们再度隐藏的最快捷的方法只是在“Biped”卷展栏的“显示”组中切换对象按钮，如以下步骤所述。
+                  
+               </p>
+               <ol type="1" start="1">
+                  <li>保持选中已合并的 Biped，并转到 <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板。 <a name="WS1A9193826455F5FFBA679E112A6A1900456E3"></a><div class="figure-anchor"><img src="../images/GUID-2948CA8C-69C8-4220-83F4-33BCA55828B6-low.png"><p></p>
+                        <p class="figure-title">手指虚拟对象以蓝色立方体显示</p>
+                     </div>  
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16121"></a>Biped 虚拟对象的数量取决于该角色有多少手指和脚趾。 
+                     </p> 
+                  </li>
+                  <li>在“Biped”卷展栏的底部，单击扩展栏上的加号，展开卷展栏。 <a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD1-4992"></a><div class="figure-anchor"><img src="../images/GUID-7C4D36FE-4524-485D-9FF1-9249CF869141-low.png"></div>  
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16122"></a>（如果卷展栏已经展开，该栏的左侧会显示减号，而不是加号。） 
+                     </p> 
+                  </li>
+                  <li>在“显示”组中，禁用 <img src="../images/GUID-994358F2-E6DA-4024-BCBE-D788ABA229BA-low.png">（“对象”），然后再启用它，以隐藏 Biped 的手指/脚趾/头部虚拟对象。 
+                  </li>
+               </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7F6B"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900456E4"></a>要克隆一个已蒙皮的 Biped，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>保存包含要克隆的 Biped 的场景副本。 </li>
+                  <li>在“结构”卷展栏中，按照上面讲述的方法更改原有 Biped 的根名称。 </li>
+                  <li>按照前面<span class="char_link"><a href="GUID-683A329B-4048-47D2-AF73-8E544EF4149B.htm#WS1A9193826455F5FFBA679E112A6A1900456E0">合并已蒙皮的 Biped</a></span> 的步骤所述，合并已保存的 Biped。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16123"></a>原始 Biped 及其 Physique 修改器将同时被克隆。它与原有 Biped 出现在同一位置上。 
+                     </p> 
+                  </li>
+                  <li>在 <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“Biped”卷展栏上，启用 <img src="../images/GUID-51159E1A-C6A6-452B-8CC9-EB64A28DDCBF-low.png">（“移动所有模式”）。 
+                  </li>
+                  <li>使用 <img src="../images/GUID-BF2BA051-F34B-479D-B2B3-A814AD7E7AD8-low.png">（“选择并移动”）将克隆移至场景中的新位置。 
+                  </li>
+               </ol> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

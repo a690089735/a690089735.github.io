@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$class_ufe_1_1_attribute.html" title="Abstract base class for Attribute interface. " alt="" coords="240,56,341,83"/>
+<area shape="rect" id="node6" href="$class_ufe_1_1_trie_node.html" title="Ufe::TrieNode\&lt; T \&gt;" alt="" coords="220,107,361,133"/>
+<area shape="rect" id="node3" href="$class_ufe_1_1_attribute_enum_string.html" title="Attribute which has a list of strings as enumerated values. " alt="" coords="413,5,579,32"/>
+<area shape="rect" id="node4" href="$class_ufe_1_1_attribute_generic.html" title="Generic attribute which doesn&#39;t match any defined type. " alt="" coords="423,56,569,83"/>
+<area shape="rect" id="node5" href="$class_ufe_1_1_typed_attribute.html" title="Typed attribute template for creating a specialized type. " alt="" coords="409,107,583,133"/>
+</map>

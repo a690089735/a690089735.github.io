@@ -1,0 +1,82 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-611F1525-7025-43CD-93A6-231ADE376254">
+      <meta name="description" content="有许多用于分析和调试粒子系统的有用选项。">
+      <meta name="indexterm" content="动态名（粒子流）">
+      <meta name="indexterm" content="选项菜单（粒子视图）">
+      <meta name="indexterm" content="粒子视图: 选项菜单">
+      <meta name="indexterm" content="动作（粒子流）: 顺序">
+      <meta name="indexterm" content="更新: 更新类型（粒子流）">
+      <meta name="topic-type" content="concept">
+      <meta name="keywords" content="6, 6">
+      <meta name="keyword" content="6">
+      <meta name="keyword" content="6">
+      <title>选项菜单（粒子视图）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-611F1525-7025-43CD-93A6-231ADE376254"></a><div class="head">
+            <h1>选项菜单（粒子视图）</h1>
+         </div>
+         <p class="blurb">有许多用于分析和调试粒子系统的有用选项。 </p>
+         <div class="bodyReference"><a name="UL_EE07DDF1229847A19D4359B67222B1D0"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-F2DEA5B9-F98D-49BF-AA43-EFED88DE8021">选择“粒子流源”图标。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif">  单击“粒子视图”（或按  <span class="keyword">6</span>). <img src="../images/ac.menuaro.gif"> “选项”菜单</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-438E42D4-4E99-48BC-9398-150499CEAC31"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">（几何体） <img src="../images/ac.menuaro.gif"> “粒子系统” <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif">  单击“粒子流源”。 <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif">  单击“粒子视图”（或按  <span class="keyword">6</span>). <img src="../images/ac.menuaro.gif"> “选项”菜单</span> 
+               </li>
+            </ul><a name="WS1A9193826455F5FFBA679E112A6A19004234D"></a><div class="figure-anchor"><img src="../images/GUID-257703A5-61C0-461E-BDCD-37E36C1F9868-low.png"></div><a name="GUID-206888E7-B147-4F89-B725-9C68E9CD1C0C"></a><dl><a name="GUID-984E0404-EC6E-44C1-AD14-25716FB44B26"></a><dt><span class="term"><a name="GUID-2BF646A4-B386-482C-9EEF-EB951CDABCC5"></a>默认显示 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-54B027C9-88B7-4630-BE09-6F17ED7A92DC"></a> 确定“显示”操作符是局部还是全局应用于新粒子系统和事件。默认设置为“局部”。 <a name="WS1A9193826455F5FFBA679E112A6A190042350"></a><ul>
+                        <li> <em class="strong">全局</em>创建新的粒子系统时，“粒子流”会向全局事件添加单个的“显示”操作符。它不会向每个新事件添加“显示”操作符。 
+                        </li>
+                        <li> <em class="strong">局部</em>“粒子流”为每个新事件添加“显示”操作符。这样可以方便地区分视口中不同事件中的粒子。 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd><a name="GUID-B2EAA29F-3AFA-4027-AA39-DA50EEBCBD6A"></a><dt><span class="term"><a name="GUID-EE29B419-F96D-491C-8F73-DCF6685DAA17"></a>动作顺序 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-C7C7F6A1-3247-4CA6-BCFA-213872D29923"></a>为达到预期的结果，请勿在全局和局部事件中使用类似的动作。然而，如果类似的动作确实存在于全局事件和其他事件中，“粒子流”就会按照这里指定的顺序将它们应用于系统。通常<em class="mild">最后</em> 应用的效果在粒子系统中可见。默认设置为“局部优先”。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-648C"></a>例如，需要考虑以下情况，全局事件包含设置为“立方体”的“形状”操作符，而在同一系统中的其他事件包含设置为“四面体”或“球体”的“形状”操作符。默认情况下，“粒子流”按照每个积分步长最后应用全局“形状”操作符，而覆盖任何局部图形，这样所有粒子将成为立方体。但是如果先将“动作顺序”设置为“全局优先”，则局部图形最后被应用，粒子就以四面体或者球体出现，这取决于它们处于哪一个事件中。
+                        
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190042352"></a><ul>
+                        <li> <em class="strong">全局优先</em>按照每积分步长，“粒子流”首先应用全局事件中的动作，然后是其他（局部）事件中的动作。通常这会造成局部事件中的动作覆盖全局事件中的类似动作。 
+                        </li>
+                        <li> <em class="strong">局部优先</em> 按照每积分步长，“粒子流”首先应用局部事件中的动作，然后是全局事件中的动作。通常这会造成全局事件中的动作覆盖局部事件中的类似动作。 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd><a name="GUID-C2BADB9F-1764-4D35-B0E6-F42235C5E207"></a><dt><span class="term"><a name="GUID-E626E187-199D-473E-9313-BA1756E0EA12"></a> 更新类型 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-2EDBFD48-EB4F-4EA5-8641-DCCD01CB9CE5"></a>此设置确定在播放过程中更改参数时“粒子流”更新系统的方式。因为指定帧中的粒子系统状态依赖先前帧中的事件，使用“完全”选项能够提供更加准确的更改结果描述，但是这要损失速度，从第一帧开始重新计算整个系统要花费更多的时间。默认设置为“完全”。 <a name="WS1A9193826455F5FFBA679E112A6A190042354"></a><ul>
+                        <li> <em class="strong">完全</em>在播放期间更改设置时，“粒子流”会从第一帧开始更新整个系统。 
+                        </li>
+                        <li> <em class="strong">向前</em>在播放期间更改设置时，“粒子流”会从当前帧开始更新系统。 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd><a name="GUID-DBD5048B-8607-4BD1-9F10-8441038E0BC1"></a><dt><span class="term"><a name="GUID-3F59CC19-39E9-4EFF-AD1D-A6DC7C7C07C0"></a>跟踪更新 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-BDF38141-9A10-4220-BF6D-F245032EB141"></a>为在“粒子视图”中可视化粒子系统状态提供选项。 <a name="WS1A9193826455F5FFBA679E112A6A190042355"></a><ul>
+                        <li> <em class="strong">粒子数</em>在每个事件上面添加显示事件中粒子数量的选项卡。全局事件计数会显示粒子系统中粒子的总数。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6489"></a>使用此选项，除了能够在每个事件中以不同的方式显示粒子外，还可通过系统跟踪粒子进度。 
+                           </p> 
+                        </li>
+                        <li> <em class="strong">更新进度</em>无论何时“粒子流”对每一项动作进行计算时，都以彩色高亮显示它。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6488"></a>高亮显示是非常快速的，但是此选项会给粒子系统增加巨大的计算负荷，从而造成实时播放时可能会跳过大量帧。要查看所有帧，请关闭“时间配置”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“实时”。 
+                           </p> 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd><a name="GUID-62BAEA52-8974-4FC6-AA4F-CD8CBC85333E"></a><dt><span class="term"><a name="GUID-DE967476-1ADA-4DD8-AC4F-0F1B76D7C5FF"></a>使用动态名 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-EC43BAF1-C542-4536-BE4D-CFAA28E50ECE"></a>启用时，事件中的动作名后面会带有其最为重要的一个设置或多个设置（在括号内）。禁用时，只会显示名称。默认设置为启用。 
+                  </div>
+               </dd>
+            </dl>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

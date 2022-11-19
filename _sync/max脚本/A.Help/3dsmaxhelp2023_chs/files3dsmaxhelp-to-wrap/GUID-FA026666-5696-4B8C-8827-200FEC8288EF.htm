@@ -1,0 +1,256 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-FA026666-5696-4B8C-8827-200FEC8288EF">
+      <meta name="description" content="“可编辑面片”提供了各种控件，不仅可以将对象作为面片对象进行操纵，而且可以在下面五个子对象层级进行操纵：顶点、控制柄、边、面片和元素。">
+      <meta name="indexterm" content="可编辑面片">
+      <meta name="topic-type" content="concept">
+      <title>可编辑面片曲面</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-FA026666-5696-4B8C-8827-200FEC8288EF"></a><div class="head">
+            <h1>可编辑面片曲面</h1>
+         </div>
+         <p class="blurb">“可编辑面片”提供了各种控件，不仅可以将对象作为面片对象进行操纵，而且可以在下面五个子对象层级进行操纵：顶点、控制柄、边、面片和元素。 </p><a name="UL_D84B9B5C74EE473588A0339DFAB44BA6"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-7D1399A5-C90C-4FAB-A2B1-597E472C106D">创建或选择对象  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif">  右键单击堆栈显示中的对象项  <img src="../images/ac.menuaro.gif"> “转换为: 可编辑面片”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-D172E3DE-A1CD-466A-B1B0-932E67704623">创建或选择对象  <img src="../images/ac.menuaro.gif">  右键单击该对象  <img src="../images/ac.menuaro.gif">  四元菜单的“变换”象限（右下部） <img src="../images/ac.menuaro.gif"> “转换为:” <img src="../images/ac.menuaro.gif"> “转换为可编辑面片”</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-749D"></a>“可编辑面片”对象与<span class="char_link"><a href="GUID-AA0DB9F3-81F9-4F2C-AD5B-0E619A9C578A.htm">“编辑面片”修改器</a></span>的基本功能相同。因为使用这些对象时需要的处理和内存较少，所以，我们建议您尽可能使用“可编辑面片”对象，而不要使用“可编辑面片”修改器。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-749C"></a>将某个对象转化为“可编辑面片”形式或应用编辑面片修改器时，<span class="charspan-msgph">3ds Max</span> 可以将该对象的几何体转化为单个 Bezier <span class="char_link"><a href="GUID-B37AE392-D9E5-44F3-BBE9-B10145652DCC.htm">面片</a></span>的集合，其中，每个面片由顶点和边的框架以及曲面组成。 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190041AC1"></a><ul>
+            <li>控制点的<em class="mild">框架</em> 和连接切线可以定义该曲面。变换该框架的组件是重要的面片建模方法。此时，框架不会显示在扫描线渲染中。 
+            </li>
+            <li><em class="mild">曲面</em> 是 Bezier 面片曲面，其形状由顶点和边共同控制。曲面是可渲染的对象几何体。 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-749A"></a><span class="char_link"><a href="GUID-1456D1B2-7B31-4894-AC2C-A2F60660C922.htm">“曲面”修改器</a></span>的输出是面片曲面。如果使用样条线进行建模，且使用“曲面”修改器从样条线框架生成面片曲面，可以使用<span class="char_link"><a href="GUID-AA0DB9F3-81F9-4F2C-AD5B-0E619A9C578A.htm">“编辑面片”修改器</a></span>执行进一步的建模操作。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041AC2"></a> 
+            <h2><a name="GUID-EB1AC70B-9676-44D8-A36E-4C3D7913C358"></a>显示最终结果
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7499"></a> 如果要编辑已应用修改器的面片对象并希望查看堆栈中所有修改器的结果，请在“修改”面板上启用 <img src="../images/GUID-4CD02AD7-7D68-49D4-BA3D-D1F7A8DD642C-low.png">（显示最终结果）。该选项将保持启用状态，直到您禁用它。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-7495"></a> 
+            <h2><a name="GUID-68CA1666-C695-4B8A-B173-EED1E24A9228"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041AC3"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041AC4"></a>要在子对象层级进行操作，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li><img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png"> 在修改器堆栈显示中，选中某个选择层级：“元素”、“面片”、“边”或“顶点”。 
+               </li>
+               <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择要编辑的子对象几何体。 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041AC5"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041AC6"></a>要使用“编辑面片”附加对象，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择可编辑网格对象或应用修改器的“编辑网格”对象。 
+               </li>
+               <li>在 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“几何体”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“拓朴”组中，单击“附加”。 
+               </li>
+               <li>根据需要禁用“重定向”。 </li>
+               <li>选择要附加的对象。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7494"></a>该对象采用面片结构，且一直处于原始位置。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7493"></a>此时，附加的对象属于可编辑的面片对象。原始对象的“细化”设置也会影响附加的对象。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041AC7"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041AC8"></a>要附加和重定向某个对象，请执行下列操作：
+            </p>
+            <ul>
+               <li>附加对象前启用“重定向”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7492"></a>此时，将会附加和移动对象，使其与面片对象对齐。附加对象的枢轴与“可编辑面片”对象的枢轴相匹配。 
+                  </p> 
+               </li>
+            </ul> <a name="WS1A9193826455F5FFBA679E112A6A190041AC9"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041ACA"></a>要分离面片曲面，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 在“面片”子对象层级进行选择。 
+               </li>
+               <li>如果要重定向分离的曲面，请启用“重定向”。 </li>
+               <li>单击“分离”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7491"></a>将会显示“分离”对话框。 
+                  </p> 
+               </li>
+               <li>命名分离的曲面。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7490"></a>如果选择不重定向分离的曲面，则该曲面将保持原位。取消选择该曲面，然后为其分配不同的颜色。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041ACB"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041ACC"></a>要复制面片曲面，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 在“面片”子对象层级进行选择。 
+               </li>
+               <li>在“几何体”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“拓朴”组中，启用“复制”。 
+               </li>
+               <li>如果要重定向复制的曲面，请启用“重定向”。 </li>
+               <li>单击“分离”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-748F"></a>将会显示“分离”对话框。 
+                  </p> 
+               </li>
+               <li>命名面片副本。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-748E"></a>如果选择不重定向复制的对象，则该对象将保持原位。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041ACD"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041ACE"></a>要删除面片，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 在“面片”子对象层级进行选择。 
+               </li>
+               <li>单击“删除”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-748D"></a>面片将消失。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041ACF"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041AD0"></a>要细分面片，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 在“面片”子对象层级进行选择。 
+               </li>
+               <li>启用“传播”以保持曲面的连续性。 </li>
+               <li>单击“细分”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-748C"></a>细分选定的面片，以便增加面片数。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-748B"></a>您可以重复该步骤进行多次细分。每次细分时，都会增加面片数。此时，面片越变越小。下图是为细分曲面建立模型的示例。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A190041AD1"></a><div class="figure-anchor"><img src="../images/GUID-A7B40B7B-3D0C-49DF-A42B-C0E01664D15C-low.png"></div>  
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041AD2"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041AD3"></a>要细分边，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在“边”子对象层级，<img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择一条边。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-748A"></a>单条边可以通过其坐标轴或该边中心处的变换 gizmo 加以指定。对于多条边，轴图标位于选择集的中心。 
+                  </p> 
+               </li>
+               <li>或者，启用“传播”以保持曲面的连续性。 </li>
+               <li>单击“细分”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7489"></a>细分选定的边。每条新边都位于全新的较小面片的边界上。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041AD4"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041AD5"></a>要添加面片，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在“边”子对象层级，<img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择开放边（单个面片范围内的边，因此不能与其他面片共享）。 
+               </li>
+               <li>单击“添加三角形”或“添加四边形”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7488"></a>新面片已添加至曲面。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041AD6"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041AD7"></a>要取消锁定选定面片的内部边，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在“面片”子对象层级，<img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择一个或多个面片。 
+               </li>
+               <li>右键单击该选择，然后从弹出菜单中选择“手动内部”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7487"></a>复选标记从“自动内部”（默认值）移动到“手动内部”。此时，将会取消对内部边及其顶点的锁定。如果现在变换面片，则内部边将处于静止状态。要变换内部顶点，请参见下面的步骤。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041AD8"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041AD9"></a>要变换内部顶点，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在“面片”子对象层级，<img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择一个或多个面片。 
+               </li>
+               <li>右键单击该选择，然后从弹出菜单中选择“手动内部”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7486"></a>复选标记从“自动内部”（默认值）移动到“手动内部”。 
+                  </p> 
+               </li>
+               <li>切换到“控制柄”层级。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7485"></a>内部顶点显示为黄色方框。 
+                  </p> 
+               </li>
+               <li>变换选定面片的内部顶点。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041ADA"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041ADB"></a>要设置面片的锚，请执行下列操作：
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7484"></a>默认情况下，在焊接过程中，面片的几何体将会移动到公共中心。您可以设置一个面片的锚，使其他面片在焊接时可以移动到其所在的位置处。 
+            </p>
+            <ol type="1" start="1">
+               <li>在“面片”层级，开始焊接之前，<img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择要设置锚的面片。 
+               </li>
+               <li>返回到“顶点”层级，然后焊接相关的顶点。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7483"></a>焊接时，锚面片保持固定，而其他面片将会发生移动，以便于进行焊接。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041ADC"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041ADD"></a>要创建新元素，请执行下列操作之一：
+            </p>
+            <ul>
+               <li>按住 <span class="keyboardEntry">Shift</span> 并拖动一个或多个面片。 
+               </li>
+               <li>按住 <span class="keyboardEntry">Shift</span> 并挤出一个或多个面片。 
+               </li>
+               <li>按住 <span class="keyboardEntry">Shift</span> 并挤出一个或多个边。 
+               </li>
+               <li>按住 <span class="keyboardEntry">Shift</span> 并拖动元素。 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-7482"></a> 
+            <h2><a name="GUID-76FAB621-232E-41F2-94BC-CEB9568BB0E9"></a>界面
+            </h2> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041ADE"></a> 
+               <h3><a name="GUID-00E6756A-AC45-4CD3-B83C-555353C3C6D2"></a>“选择”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7481"></a>有关这些设置的信息，请参见<span class="char_link"><a href="GUID-36954D19-CEED-4DE6-A1B3-4B72EB36EE81.htm">“选择”卷展栏（可编辑面片）</a></span>。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041ADF"></a> 
+               <h3><a name="GUID-A7881A72-DF0E-486C-9946-4AD70F6687CA"></a> “软选择”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7480"></a>有关“软选择”卷展栏设置的信息，请参见<span class="char_link"><a href="GUID-BEF2CC1E-40BE-45DD-A8E9-228EE4A1EE98.htm">“软选择”卷展栏</a></span>。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041AE0"></a> 
+               <h3><a name="GUID-1B582A11-AE59-4F5F-8174-1865DED9546B"></a>“几何体”和“曲面属性”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-747F"></a><span class="char_link"><a href="GUID-736151D9-332E-491D-BBFF-E941E795E2A9.htm">“几何体”卷展栏</a></span>提供了各种功能，用于编辑面片对象及其子对象。使用“曲面属性”控件，可以修改对象的渲染特性。有关特定于子对象的控件的详细信息，请参见本节中的主题。 
+               </p> 
+            </div> 
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-468B812F-50CA-4397-8873-9A3638453052"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-C34D1F16-CF66-4C8F-8A82-5EC8D38567C9.htm">编辑修改器和可编辑对象 </a></span></li>
+               <li><span class="char_link"><a href="GUID-86AF500F-4A42-46E6-9409-0184E9DBA238.htm">在子对象层级进行工作 </a></span></li>
+               <li><span class="char_link"><a href="GUID-80209C3A-C2E4-4541-8738-D1E5ECE16E9C.htm">修改器堆栈控件 </a></span></li>
+            </ul>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-36954D19-CEED-4DE6-A1B3-4B72EB36EE81.htm">“选择”卷展栏（可编辑面片）</a><p>“选择”卷展栏提供了各种按钮，用于选择子对象层级和使用命名的选择以及显示和过滤器设置，还显示了与选定实体有关的信息。 
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-8BE319FE-0100-4756-BF4F-309819665D85.htm">可编辑面片（对象）</a><p>在可编辑面片对象级别可用的功能（即未选择子对象级别时）还可适用于所有子对象级别，并且在每个级别的工作方式完全相同。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-A32C37DE-87C0-4B5D-8076-22764FE24FC4.htm">可编辑面片（顶点）</a><p>在“可编辑面片（顶点）”层级，可以选择一个和多个顶点，然后使用标准方法对其进行移动。 
+                        	 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-1C81DDA1-8AEF-43F1-A792-49F66744DC3C.htm">可编辑面片（控制柄）</a><p>“可编辑面片”中的“控制柄”子对象层级提供对顶点控制柄或向量的直接访问，而无需通过顶点子对象层级。 
+                        	 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-02B393C6-C9D1-4CD4-BCDE-5AB95BB520E3.htm">可编辑面片（边）</a><p>边指的是面片对象上在两个相邻顶点间的部分。 
+                        	 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-1B6A3956-7B78-4A37-BBA9-781A18D379F0.htm">可编辑面片（面片）</a><p>面片是面片对象的一个区域，由三或四个围绕的边和顶点定义。 
+                        	 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-31D8FE46-71BA-44D9-83AF-ED368FC09DAB.htm">可编辑面片（元素）</a><p>想要选择并使用元素中的所有连续面时，请使用“元素”子对象层级。 
+                        	 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-736151D9-332E-491D-BBFF-E941E795E2A9.htm">“几何体”卷展栏（面片）</a><p>面片对象的“几何体”卷展栏包含用于在“对象”（最高）层级或某一个子对象层级更改面片几何体的大多数控件。 </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

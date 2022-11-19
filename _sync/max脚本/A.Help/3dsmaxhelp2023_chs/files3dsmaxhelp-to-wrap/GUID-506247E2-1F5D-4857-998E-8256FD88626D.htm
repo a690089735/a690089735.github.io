@@ -1,0 +1,701 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-506247E2-1F5D-4857-998E-8256FD88626D">
+      <meta name="description" content="使用“变形器”修改器更改网格、面片或 NURBS 模型的形状。还可以变形形状（样条线）和世界空间 FFD。">
+      <meta name="indexterm" content="口型同步">
+      <meta name="indexterm" content="面部表情">
+      <meta name="indexterm" content="修改器: 变形器">
+      <meta name="indexterm" content="变形: 变形器修改器">
+      <meta name="indexterm" content="对象空间修改器: 变形器">
+      <meta name="indexterm" content="右键单击菜单: 变形器修改器">
+      <meta name="indexterm" content="渐进变形">
+      <meta name="contextid" content="MORPHER.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS-MORPHER">
+      <meta name="topic-type" content="concept">
+      <title>变形器修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-506247E2-1F5D-4857-998E-8256FD88626D"></a><div class="head">
+            <h1>变形器修改器</h1>
+         </div>
+         <p class="blurb">使用“变形器”修改器更改网格、面片或 NURBS 模型的形状。还可以变形形状（样条线）和世界空间 FFD。 
+            
+         </p>
+         <div class="bodyReference">
+            <p>除了从一个形状变形为另一个形状，“变形器”修改器还支持材质变形。 
+               
+            </p>
+            <p>“变形器”修改器还支持无限的变形目标。
+               
+            </p><a name="UL_74468B910D174B9BBC4B6D640D71F1CB"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-EC12528C-EE3A-4CFD-B57D-7205FC20BC4C">选择网格、面片或 NURBS 对象。 <img src="../images/ac.menuaro.gif"> “修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “变形器”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-A74E3700-D4A8-475D-970A-9A733CBB494A">选择网格、面片或 NURBS 对象。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “动画” <img src="../images/ac.menuaro.gif"> “变形器”</span> 
+               </li>
+            </ul><a name="WS1A9193826455F5FFBA679E112A6A19004395C"></a><div class="figure-anchor"><img src="../images/GUID-849099EF-071F-4CB7-93E1-AB1C7DC50937-low.png"></div><a name="WS1A9193826455F5FFBA679E112A6A19004395D"></a><div class="figure-anchor"><img src="../images/GUID-D07C1CCC-4687-4632-9751-5DB8776D2DE3-low.png"><p class="figure-title">在此面片模型上，在“可编辑面片”中移动控制顶点和切线控制柄可创建变形目标。</p>
+            </div>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F04"></a>变形一般用于 3D 角色的口型同步和面部表情，但也可以用于更改任何 3D 模型的形状。修改器为变形目标和材质提供 100 个通道。您可以混合通道百分比并使用混合结果来创建新目标。 
+               
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F03"></a>在网格对象上，基础对象和目标上的顶点数必须相同。在面片或 NURBS 对象上，“变形器”修改器仅在控制点上起作用。这意味着您可以提高基础对象上面片或 NURBS 曲面的分辨率，以在渲染时增强细节。 
+               
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F02"></a>“变形器”修改器上方的“柔体”修改器了解“变形器”修改器中的顶点或控制点运动。例如，如果下颚被变形为合拢，那么可使用修改器堆栈中“变形器”修改器上方的“柔体”修改器创建唇部颤动以模拟软组织。 
+               
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043963"></a> 
+               <h2><a name="GUID-A954869A-D8D3-49EE-810E-1939045C074A"></a>口型同步和面部动画
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F00"></a>对于口型同步和面部动画，创建处于“静止”姿势的角色头部。头部可以是网格、面片或 NURBS 模型。复制和修改原始头部，以创建口型同步和面部表情目标。请选择原始或“静止”头部，然后应用“变形器”修改器。在“变形器”修改器中，将每个口型同步和面部表情目标指定给通道。在“轨迹视图”声音轨迹中加载音频文件，启用“自动关键点”，拖动时间滑块，然后在“轨迹视图”中查看音频波形以找到口型同步的帧。然后在“变形器”修改器上设置通道微调器，以便为唇部位置和面部表情创建关键帧。
+                  
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EFF"></a>牙齿既可以是模型的一部分，也可以单独设置动画。如果牙齿和头部是两个不同对象，请建模处于张开位置的牙齿，应用“变形器”修改器，并创建一个具有合拢牙齿的目标。可在创建变形关键点后设置眼睛和头部运动的动画。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043964"></a> 
+               <h2><a name="GUID-8BB6D09E-CD36-4C23-AB3D-3B8A493A3DCB"></a>发音变形目标
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EFE"></a>语音动画通常使用九个嘴形目标。如果角色讲不同语言，您可能需要创建额外的变形目标以包括这些嘴形。 
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EFD"></a>在创建嘴部目标时，请包含脸颊、鼻孔和下颚的移动。必要时，在发出音位时查看镜子中您自己的脸或将手指放在脸上，以建立脸颊运动的方向和范围。 
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EFC"></a>通过在移动时间滑块时查看音频波形和倾听声音来设置口型同步关键点。许多嘴部关键点都能从提前设置帧受益。通常，嘴部必须具有一个形状，然后才能发出适当声音。例如，对于单词“kilo”，实际发出声音之前先有“K”嘴形。 
+                  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190043965"></a><div class="figure-anchor"><img src="../images/GUID-6BAA37E1-55CD-4FB2-B11B-CD185331DCE0-low.png"><p class="figure-title">A、I</p>
+               </div>  <a name="WS1A9193826455F5FFBA679E112A6A190043966"></a><div class="figure-anchor"><img src="../images/GUID-C4246612-5F07-435E-B45E-97C07A6E3A32-low.png"><p class="figure-title">E</p>
+               </div>  <a name="WS1A9193826455F5FFBA679E112A6A190043967"></a><div class="figure-anchor"><img src="../images/GUID-A9B4B156-38D6-4B55-9A21-1227771D57EB-low.png"><p class="figure-title">F、V</p>
+               </div>  <a name="WS1A9193826455F5FFBA679E112A6A190043968"></a><div class="figure-anchor"><img src="../images/GUID-21465217-41F5-40EC-A88A-808F0E9100DB-low.png"><p class="figure-title">C、D、G、J、K、N、S、T、Y、Z</p>
+               </div>  <a name="WS1A9193826455F5FFBA679E112A6A190043969"></a><div class="figure-anchor"><img src="../images/GUID-FA064A79-B4CF-4E38-9B07-CDB3F578A7D0-low.png"><p class="figure-title">L、T</p>
+               </div>  <a name="WS1A9193826455F5FFBA679E112A6A19004396A"></a><div class="figure-anchor"><img src="../images/GUID-14B33B07-0A18-4C29-B039-8523A1789A9D-low.png"><p class="figure-title">O</p>
+               </div>  <a name="WS1A9193826455F5FFBA679E112A6A19004396B"></a><div class="figure-anchor"><img src="../images/GUID-8BD4DEEB-DEB7-4AAA-BDEF-2D170ECAFA95-low.png"><p class="figure-title">U</p>
+               </div>  <a name="WS1A9193826455F5FFBA679E112A6A19004396C"></a><div class="figure-anchor"><img src="../images/GUID-596E7566-C137-458A-98B8-E50D43CA259F-low.png"><p class="figure-title">W、Q</p>
+               </div>  <a name="WS1A9193826455F5FFBA679E112A6A19004396D"></a><div class="figure-anchor"><img src="../images/GUID-99EC4037-207C-44DC-97E1-14B145717BE0-low.png"><p class="figure-title">M、B、P（此目标可以和“静止”基础对象是相同形状）</p>
+               </div>  
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004396E"></a> 
+               <h2><a name="GUID-B3468070-7869-4188-BA94-54A46ACEBE31"></a>表情变形目标
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EFB"></a>为角色创建需要的任意多个表情目标。高兴、悲伤、惊讶、邪恶都可以有它们自己的目标。取决于角色的个性，可能不需要恐惧目标等部分目标。鼻孔张开、下鄂肌肉凸起和鬓角颤搐等目标可作为角色的边。每个变形通道也可以包含一个材质：例如，当使眉毛向上变形时，凹凸贴图可以将前额弄皱。
+                  
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EFA"></a>按需要保存时间和创建目标；如果正在处理的音频文件或场景需要惊奇表情，请在由您控制场景的情绪时创建“惊奇”目标。 
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EF9"></a>如果角色具有牙齿，请复制牙齿和基础头部以创建新目标。牙齿作为确定唇部形状和位置的基准。 
+                  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A19004396F"></a><div class="figure-anchor"><img src="../images/GUID-F11EBE2D-5470-4106-8485-F7023D63EDF7-low.png"><p class="figure-title">眨眼</p>
+               </div>  <a name="WS1A9193826455F5FFBA679E112A6A190043970"></a><div class="figure-anchor"><img src="../images/GUID-BE6EB89B-0D26-4443-A758-34314D67823A-low.png"><p class="figure-title">眼眉上扬</p>
+               </div>  <a name="WS1A9193826455F5FFBA679E112A6A190043971"></a><div class="figure-anchor"><img src="../images/GUID-DA8FF315-A188-4C4B-BD18-2F078620F0A0-low.png"><p class="figure-title">痛苦、眨眼和眼眉目标的混合体</p>
+               </div>  
+            </div>
+            <div class="section"><a name="WSF742DAB04106313366400BF6112A1CEA097-7F25"></a> 
+               <h2><a name="GUID-FC8E57C8-9627-4CC4-9B61-22717856A50D"></a>过程
+               </h2> 
+               <div><a name="GUID-87BADFBB-3E10-424E-83B2-70A0DD5E6FB7"></a><div class="note-note"><span class="label label-target-language">注意:</span>“变形器”修改器支持无限的变形目标。 
+                     
+                  </div>
+               </div> <a name="WS1A9193826455F5FFBA679E112A6A190043972"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043973"></a>示例：要将变形器修改器添加到对象和将变形目标指定到通道，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>如有必要，请在“创建”面板上单击“几何体”。 
+                     	 
+                  </li>
+                  <li>从下拉列表（默认情况下其中显示“标准基本体”）中，选择“面片栅格”。 
+                     	 
+                  </li>
+                  <li>在“对象类型”卷展栏上，单击“四边形面片”。 
+                     	 
+                  </li>
+                  <li>在“顶”视口中，单击并拖动以创建面片栅格。 
+                     	 
+                  </li>
+                  <li>在“修改”面板上的修改器堆栈显示中，右键单击“四边形面片”，然后从右键单击菜单中选择“转换为: 可编辑面片”。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EF8"></a>现在，基础对象为“可编辑面片”。 
+                        		
+                     </p> 
+                  </li>
+                  <li>在“顶”视口中，按 <span class="keyboardEntry">Shift</span> 键的同时移动以创建面片对象的副本。 
+                     	 
+                  </li>
+                  <li> 在“修改”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“选择”卷展栏上，单击“顶点”。 
+                     	 
+                  </li>
+                  <li>在“前”视口中，移动面片顶点以变形面片曲面。 
+                     	 
+                  </li>
+                  <li>在修改器堆栈中，选择“可编辑面片”以转到对象（顶部）层级。（高亮显示应更改为灰色，而“顶点”子对象图标不再显示在堆栈右侧。） 
+                     	 
+                  </li>
+                  <li>选择第一个面片对象。 
+                     	 
+                  </li>
+                  <li>在“修改”面板上，从“修改器列表”中选择“变形器”。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EF7"></a>“变形器”修改器被添加到修改器堆栈中。 
+                        		
+                     </p> 
+                  </li>
+                  <li>在“变形器”修改器上，在“通道列表”卷展栏上，右键单击第一个通道（在单词“empty”上）。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EF6"></a>会显示右键单击菜单。 
+                        		
+                     </p> 
+                  </li>
+                  <li>在右键单击菜单上选择“从场景中拾取”，然后在视口中单击变形的面片栅格。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EF5"></a>通道中列出 QuadPatch02 作为变形目标。 
+                        		
+                     </p> 
+                  </li>
+                  <li>上下拖动“通道”变形器，将其拖动到 QuadPatch02 右侧。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EF4"></a>平面的面片栅格“变形”为目标的形状。 
+                        		
+                     </p> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A190043974"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043975"></a>要使用渐进变形，请执行以下步骤：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建起始和结束变形目标以及一个或多个中间目标。 
+                     	 
+                  </li>
+                  <li>对起始变形目标应用“变形器”修改器，然后单击“加载多个目标”以加载起始和结束变形目标。 
+                     	 
+                  </li>
+                  <li>在“通道列表”卷展栏中，按中间目标选择要影响的通道。 
+                     	 
+                  </li>
+                  <li>在“通道参数”卷展栏中，单击“从场景中拾取对象”，然后单击中间目标。 
+                     	 
+                  </li>
+                  <li>在“渐进变形”组的“目标列表”中，设置“目标百分比”，以确定每个目标影响通道的程度。 
+                     	 
+                  </li>
+                  <li>使用向下箭头按钮，将原始通道目标移动到“目标列表”的底部。 
+                     	 
+                  </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WSF742DAB04106313366400BF6112A1CEA097-7F24"></a> 
+               <h2><a name="GUID-5931C64A-49C1-4FF9-97FF-201906F41B62"></a>界面
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EF3"></a>凡在 <span class="charspan-msgph">3ds Max</span> 中指定为<span class="char_link"><a href="GUID-79E5AFC8-10A9-4799-AE3D-3F2766C28617.htm">默认浮点控制器</a></span>的元素，在变形通道上也会指定为浮点控制器。浮点控制器处理关键点之间的插补；Bezier 为默认浮点控制器。如果愿意，可以在“轨迹视图”中将 TCB 浮点控制器指定给变形通道。 
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EF2"></a>对于变形，Bezier 控制器允许您将功能曲线与关键点上的矢量控制柄一起使用，以便在“轨迹视图”中平滑和便于控制插补。不过，使用 TCB 控制器的默认参数处理变形插补可减少泛光化。试用这两个变形器，以确定希望使用哪一个。 
+                  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190043976"></a><div class="figure-anchor"><img src="../images/GUID-0D811C7C-8B5E-41E3-ADC2-9B8AA691D8FE-low.png"></div>  <a name="GUID-C4926715-1883-47ED-ABB1-FA376C12B8B2"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AFF"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EF1"></a>灰色</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D61"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E5B"></a>通道为空且尚未编辑。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AFE"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EF0"></a>橙色</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D60"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E5C"></a>通道已在某些方面更改，但不包含变形数据。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EEF"></a>设计人员可能希望在实际指定变形目标前命名通道并设置其参数。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AFD"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EEE"></a>绿色</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D5F"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E5D"></a>通道处于活动状态。通道包含变形数据，且目标对象仍然存在于场景中（目标可用于刷新）。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AFC"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EED"></a>蓝</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D5E"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E5E"></a>通道包含变形数据，但尚未从场景中删除目标。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AFB"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EEC"></a>深灰色</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D5D"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E5F"></a>通道已被禁用。 
+                           
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A190043977"></a><ul>
+                           <li>变形存在问题，基础对象或目标的拓扑已更改且不再有效；例如，顶点数可能已更改。不能使用通道。 
+                              	 
+                           </li>
+                           <li>通道未处于活动状态。这一点由“通道参数”卷展栏中的“通道处于活动状态”控制。 
+                              	 
+                           </li>
+                           <li>禁用通道不包含在变形结果中。 
+                              	 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043978"></a> 
+                  <h3><a name="GUID-3CB23C7B-381E-4D9D-A0B3-3182010F5EA5"></a>“全局参数”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043979"></a><div class="figure-anchor"><img src="../images/GUID-EC83E8CF-0635-4B9C-BB13-963B4E81C5CD-low.png"></div>  <a name="GUID-366ED804-1A30-4751-B0EA-C68E7153C666"></a><div class="dl_section"><a name="GUID-D7016249-C076-427E-88DD-15C8C5274004"></a><p class="title"><a name="GUID-5147BB5B-A1D6-4241-AEAA-7A9A35B33B54"></a>“全局设置”组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AFA"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EEB"></a>使用限制</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D5C"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E60"></a>为所有通道使用最小和最大限制。 
+                                 	 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EEA"></a>可以禁用限制，从而使目标具有双重用途。例如，为微笑目标使用负值，可用于将嘴角向下拉。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AF9"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EE9"></a>最小值</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D5B"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E61"></a>设置最小限制。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AF8"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EE8"></a>最大</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D5A"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E62"></a>设置最大限制。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AF7"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EE7"></a>使用顶点选择</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D59"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E63"></a>启用该控件，可限制在修改器堆栈中“变形器”修改器下方的修改器中选定顶点的变形。 
+                                 	 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EE6"></a>例如，如果正在使用 Character Studio Physique，可将基础对象上的变形动画限制为仅限头部且不包含颈部。将“Physique”修改器放在“变形器”修改器上方，并在“Physique”修改器中将头部顶点指定为刚体（绿色）。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-F975E16E-B756-468F-81CC-3F1D3E601B73"></a><p class="title"><a name="GUID-B519DFA1-F15E-4396-8E56-B1B0C1EFF686"></a>“通道激活”组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AF6"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EE5"></a>设置全部</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D58"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E64"></a>单击可激活所有通道。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AF5"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EE4"></a>不设置</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D57"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E65"></a>单击可取消激活所有通道。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-22D5256F-BA41-4D03-AA0B-E4D7999B2392"></a><p class="title"><a name="GUID-72FEED69-3D25-4AF5-8CBD-D3A3E3877348"></a>“变形材质”组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AF4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EE3"></a>指定新材质</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D56"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E66"></a>单击可将“变形器”材质指定给基础对象（应用“变形器”修改器的对象）。 
+                                 	 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EE2"></a>要查看和编辑指定的“变形器”材质，请使用<span class="char_link"><a href="GUID-78705B35-7DAF-408F-BB6F-7E69D3A384F2.htm">材质编辑器</a></span>。“通道材质贴图”与“变形器”修改器中的“通道”列表之间存在直接相关性（100 个通道和 100 个贴图）。例如，如果通道 1 包含一个眼眉上扬目标，而“变形器”材质具有指定给贴图 1 的材质，那么眼眉变形时材质也会变形。 
+                                 	 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EE1"></a>在“变形器”材质中，如果材质被指定给在“变形器”修改器中没有变形目标的贴图或通道，那么“变形器”修改器中的通道微调器可用于简单变形静态对象上的材质。请参见 <span class="char_link"><a href="GUID-9E4C8FF9-F981-4882-BAFB-D241C4FC57EF.htm">Mopher 材质</a></span>。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004397D"></a> 
+                  <h3><a name="GUID-2D3EEBF6-1FF7-4C73-9A30-85047FCAE919"></a>“通道列表”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A19004397E"></a><div class="figure-anchor"><img src="../images/GUID-F5D74C42-AC8E-444C-8BA0-089E59034B59-low.png"></div>  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EE0"></a>“通道列表”卷展栏上半部分包含管理标记的控件，标记在变形目标的列表中指定不同位置。例如，通道 15 到 24 可能包含所有表情目标。除滚动以显示这些轨迹外，还可以从列表中选择标记以显示对应通道。 
+                     	 
+                  </p> <a name="GUID-9D15835B-37DC-43EB-AEEE-4DC186D4CF4F"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AF3"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EDF"></a>[标记下拉列表]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D55"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E67"></a>在列表中选择以前保存的标记，或者在文本字段中输入新名称，然后单击“保存标记”以创建新标记。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EDE"></a>例如，通道 15 到 24 可能包含所有表情目标。除滚动以显示这些轨迹外，还可以从列表中选择标记以显示列表中的对应通道。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AF2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EDD"></a>保存标记</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D54"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E68"></a>移动滚动栏以包含特定的一组 10 个通道，在文本字段中输入名称，然后单击“保存标记”以存储通道选择。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AF1"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EDC"></a>删除标记</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D53"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E69"></a>从下拉列表中选择要删除的标记名，然后单击“删除标记”可删除它。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AF0"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EDB"></a>[通道列表]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D52"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E6A"></a>“变形器”修改器最多提供 100 个变形通道。使用滑块滚动通道。为通道指定变形目标后，该目标的名称显示在通道列表中。每个通道具有一个百分比值字段和一个用于更改该值的微调器。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EDA"></a>可在<span class="char_link"><a href="GUID-506247E2-1F5D-4857-998E-8256FD88626D.htm#WSF742DAB04106313366400BF6112A1CEA097-7F23">通道参数</a></span>卷展栏中更改通道名和顺序。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ED9"></a>右键单击变形通道以显示右键单击菜单： 
+                              	 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A190043980"></a><div class="figure-anchor"><img src="../images/GUID-632753E2-2A6B-4594-8836-020CA80EA840-low.png"></div>  <a name="WS1A9193826455F5FF4E421D7D11BF108001D-5A1F"></a><ul>
+                              <li><em class="strong">从场景中拾取</em>选择此命令并在视口中选择对象，可将变形目标指定给通道。 
+                                 		
+                              </li>
+                              <li><em class="strong">删除通道</em>从通道删除变形数据、名称和参数。仅在通道中包含数据时显示。 
+                                 		
+                              </li>
+                              <li><em class="strong">重新加载目标</em>从目标检索变形数据。编辑目标后使用此命令。 
+                                 		
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                  </dl>
+                  <div class="dl_section"><a name="GUID-5D822DD8-6C41-4F42-B11D-A7ADF70B2452"></a><a name="WS1A9193826455F5FFBA679E112A6A190043981"></a><div class="figure-anchor"><img src="../images/GUID-13A83B75-1149-4455-80C2-6C1BE6B0D7D8-low.png"></div>
+                  </div>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AEF"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ED5"></a>列出范围</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D51"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E6E"></a>显示通道列表中的可见通道范围。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AEE"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ED4"></a>加载多个目标</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D50"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E6F"></a>通过在选择对话框中选择对象名并单击“加载”，将多个变形目标加载到空通道中。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ED3"></a>如果目标数大于空通道数，会显示警告，并且不指定通道。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AED"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ED2"></a>重新加载所有变形目标</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D4F"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E70"></a>重新加载所有变形目标。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ED1"></a>如果已对目标进行了编辑，通道会更新以反映更改。如果已从场景中删除变形目标，则会使用通道中存储的数据更新变形器，各种功能使用最后存储的变形数据。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AEC"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ED0"></a>活动通道值清零</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D4E"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E71"></a>如果已启用“自动关键点”，那么单击可为所有活动变形通道创建值为 0 的关键点。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ECF"></a>这便于防止关键点插补使模型变形。首先单击“活动通道值清零”，然后将特定通道设置为所需值；只有已改变的通道会影响模型。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AEB"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ECE"></a>自动重新加载目标</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D4D"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E72"></a>启用此命令可允许“变形器”修改器自动更新动画目标。使用此选项会造成性能损失。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WSF742DAB04106313366400BF6112A1CEA097-7F23"></a> 
+                  <h3><a name="GUID-12A5CDAF-4A60-4F1B-8FA4-2C2A0D02A7A8"></a>“通道参数”卷展栏
+                  </h3> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ECD"></a>此卷展栏顶部的通道编号按钮和通道名称字段反映通道列表中的当前活动通道。 
+                     	 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A190043982"></a><div class="figure-anchor"><img src="../images/GUID-1D2AEB8C-724D-40A0-B964-017E0885915B-low.png"></div>  <a name="GUID-984178AB-6EC2-4410-B664-17CC8DF61318"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AEA"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ECC"></a>[通道编号]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D4C"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E73"></a>单击通道名旁边的编号会显示一个菜单。使用该菜单上的命令可分组和组织通道，还可以查找通道。 
+                              	 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A190043983"></a><div class="figure-anchor"><img src="../images/GUID-63C17AC9-7528-4039-B783-FE35266B3C3E-low.png"></div>  <a name="WS1A9193826455F5FF4E421D7D11BF108001D-5A1B"></a><ul>
+                              <li><em class="strong">移动至</em>显示“通道操作”对话框。要将当前通道移动到选定通道，请在列表中选择一个通道，然后单击“移动至”。 
+                                 		
+                              </li>
+                              <li><em class="strong">交换对象</em>显示“通道操作”对话框。要将当前通道移动到选定通道，请在列表中选择一个通道，然后单击“交换对象”。 
+                                 		
+                              </li>
+                              <li><em class="strong">已用的通道</em>显示活动通道的列表。选择一个通道，以将其放在“通道列表”卷展栏中的通道列表显示的顶部。 
+                                 		
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AE9"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EC8"></a>通道名称</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D4B"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E77"></a>显示当前目标的名称。如果需要，在文本字段中更改目标的名称。“通道参数”卷展栏中的参数更改影响当前目标。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AE8"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EC7"></a>通道处于活动状态</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D4A"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E78"></a>切换通道的启用和禁用。不活动通道不影响变形结果。使用此控件可禁用特定通道，从而专注于设置其他通道的动画。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+                  <div class="dl_section"><a name="GUID-8D4395A5-3B1C-4C2B-B277-7722F983E89C"></a><p class="title"><a name="GUID-3E77122E-B7F2-4E4D-B3BB-87E779142290"></a>“创建变形目标”组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AE7"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EC6"></a>从场景中拾取对象</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D49"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E79"></a>启用此命令并在视口中单击一个对象，将变形目标指定给当前通道。拾取对象会将其添加到“渐进变形”列表中。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AE6"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EC5"></a>捕获当前状态</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D48"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E7A"></a>选择一个空通道以激活此功能。单击可创建使用当前通道值的目标。 
+                                 	 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EC4"></a>捕获的通道始终为蓝色，因为其中包含变形数据但不包含特定几何体。使用“提取”可创建具有所捕获状态的网格副本。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AE5"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EC3"></a>删除</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D47"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E7B"></a>删除当前通道的目标指定。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AE4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EC2"></a>提取</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D46"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E7C"></a>选择蓝色通道并单击此选项，可使用变形数据创建对象。 
+                                 	 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EC1"></a>如果已使用“捕获当前状态”拍摄了一组通道值的快照，但之后希望编辑这组值，请使用“提取”创建新对象，拾取它作为通道目标，然后开始编辑。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-999CE9A3-399B-4243-9488-599A26606A8F"></a><p class="title"><a name="GUID-A6945589-10F2-4D69-969E-6FC0C89A9663"></a>“通道设置”组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AE3"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EC0"></a>使用限制</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D45"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E7D"></a>如果“全局参数”卷展栏中的“使用限制”已禁用，那么启用它可在当前通道上使用限制。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AE2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EBF"></a>最小值</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D44"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E7E"></a>设置最低限制。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AE1"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EBE"></a>最大</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D43"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E7F"></a>设置最高限制。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AE0"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EBD"></a>使用顶点选择</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D42"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E80"></a>仅变形当前通道上的选定顶点。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-64884E52-083A-41E9-8FA0-6C22989A0E69"></a><p class="title"><a name="GUID-E83B006D-6BFD-44EE-8A69-C4475D300DE7"></a>“渐进变形”组
+                     </p>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EBC"></a>渐进变形执行类似于 TCB 动画控制器的基于张力的插补，会创建通过每个中间目标的平滑插补。这为设计人员提供了前所未有的变形变换控制。 
+                        	 
+                     </p><a name="WS1A9193826455F5FFBA679E112A6A190043988"></a><div class="figure-anchor"><img src="../images/GUID-CFE69BD7-636D-4EA1-9A7E-03225800EE63-low.png"><p class="figure-title">使用多个中间目标的变形对象</p>
+                     </div><a name="WS1A9193826455F5FFBA679E112A6A190043989"></a><div class="figure-anchor"><img src="../images/GUID-4CAA5C33-DC1C-4178-9AFC-F5F2D280AF72-low.png"><p class="figure-title">使用单个目标的变形对象</p>
+                     </div>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EBB"></a>在从一个目标变形到另一个目标时，对象有时会通过不需要的中间阶段。例如，直接将直圆柱体变形到弯曲圆柱体将会在中间阶段挤压该圆柱体。 
+                        	 
+                     </p>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EBA"></a>通过为对象创建多个中间变形目标，然后使用它们作为通道，可以获得更好效果。不过，更方便的方法是减少所创建中间目标的数量，然后使用渐进变形。使用渐进变形，将不使用中间目标作为通道；您使用它们影响末端目标。 
+                        	 
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7ADF"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EB9"></a>目标列表</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D41"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E81"></a>列出与当前通道关联的所有中间变形目标。要将变形目标添加到列表中，请单击“从场景中拾取对象”。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7ADE"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EB8"></a>上移</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D40"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E82"></a>在列表中向上移动选定的中间变形目标。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7ADD"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EB7"></a>下移</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D3F"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E83"></a>在列表中向下移动选定的中间变形目标。 
+                                 	 
+                              </p> 
+                              <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9C2"></a><div class="note-tip"><span class="label label-target-language">提示</span>为获得最佳效果，将原始变形目标（通道中的目标）移动到列表底部。 
+                                    	 
+                                 </div>
+                              </div> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7ADC"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EB6"></a>目标 %</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D3E"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E84"></a>指定选定中间变形目标在整个变形解决方案中所占百分比。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7ADB"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EB5"></a>张力</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D3D"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E85"></a>指定中间变形目标之间的顶点变换的整体线性。值为 <em class="mild">1.0</em> 时，将创建“松”变换，使插补略微使每个目标泛光化。值为 <em class="mild">0.0</em> 时，会在每个中间目标创建直接的线性变换。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7ADA"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EB4"></a>删除目标</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D3C"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E86"></a>从目标列表中删除选定的中间变形目标。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AD9"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EB3"></a>重新加载变形目标</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D3B"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E87"></a>将数据从当前目标重新加载到通道中。重新加载已调整或编辑的目标。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EB2"></a>如果通道列表中的活动变形目标条目为空，此按钮不可用，并显示文本“没有要重新加载的目标”。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004398A"></a> 
+                  <h3><a name="GUID-7A735684-82A5-4CCD-91F8-FC149434BFFA"></a>“高级参数”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A19004398B"></a><div class="figure-anchor"><img src="../images/GUID-A5FC34E1-0D9F-4F60-8D74-6E4E8249162E-low.png"></div>  <a name="GUID-522D4BBC-189E-4C8B-B3D0-11B29A122896"></a><div class="dl_section"><a name="GUID-B001D679-9B95-44D1-89C2-83604A1A46A6"></a><p class="title"><a name="GUID-E120164D-2718-4F5D-A52F-6F79F6BE7871"></a>“微调器增量”组
+                     </p>
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E88"></a>指定微调器增量的大小。5.0 为大增量，而 0.1 为小增量。默认值为 1.0。 
+                        	 
+                     </p>
+                  </div>
+                  <div class="dl_section"><a name="GUID-99E47554-1EB6-4139-945E-E2EB04D94017"></a><p class="title"><a name="GUID-B01618D1-E498-4BE3-886E-F161F045D2C9"></a>“通道使用”组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AD7"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EB0"></a>精简通道列表</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D39"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E89"></a>通过填充指定通道之间的所有空通道来精简通道列表。状态窗口会显示已移动通道的数量。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-0CE9D726-E21E-4FF2-ABE5-457B0A37756F"></a><p class="title"><a name="GUID-3B81F0C1-61AC-4594-B9CF-2D860D93D8E4"></a>“近似内存使用情况”组
+                     </p>
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E8A"></a>显示当前的近似内存使用情况。 
+                        	 
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7AD6"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3EAF"></a>近似内存使用情况</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D38"></a></div>
+                        </dd>
+                     </dl>
+                  </div> 
+               </div> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-C5D1B45D-A1FE-4779-A64D-38CFD702A958"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-9E4C8FF9-F981-4882-BAFB-D241C4FC57EF.htm">变形器材质 
+                        		</a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

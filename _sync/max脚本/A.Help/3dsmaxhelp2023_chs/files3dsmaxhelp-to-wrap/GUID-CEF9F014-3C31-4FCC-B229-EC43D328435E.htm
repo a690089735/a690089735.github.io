@@ -1,0 +1,189 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-CEF9F014-3C31-4FCC-B229-EC43D328435E">
+      <meta name="description" content="使用“路径”菜单可解决如丢失文件等文件路径问题。">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="administering">
+      <title>“路径”菜单（资源跟踪器）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-CEF9F014-3C31-4FCC-B229-EC43D328435E"></a><div class="head">
+            <h1>“路径”菜单（资源跟踪器）</h1>
+         </div>
+         <p class="blurb">使用“路径”菜单可解决如丢失文件等文件路径问题。 
+            
+         </p>
+         <div class="bodyReference">
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-222F"></a>也可以在“位图/光度学路径编辑器”实用程序中找到此菜单中的工具包含的功能，但将它们集成到“资源追踪”对话框中有助于加快管理场景资源的工作流程的速度。 
+               
+            </p><a name="GUID-CD4CE045-4A9A-48E3-BA27-0C336FB90766"></a><dl>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-720B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-222E"></a>高亮显示可编辑资源</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AD"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754734"></a>高亮显示其路径受此菜单中其余命令影响的所有资源。 
+                        
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-222D"></a>例如，如果场景材质所使用的位图来自不同的文件夹，可以将所有的位图复制到工作文件夹内的一个常用目录中，使用“高亮显示可编辑资源”以高亮显示所有位图资源，然后使用“设置路径”（请参见以下内容）来指定该常用目录。 
+                        
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-720A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-222C"></a>设置路径</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AC"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754735"></a>打开一个对话框，其用于编辑高亮显示的资源的场景记录或资源的路径，如果只有单个资源，则编辑该资源的文件名。两个版本的对话框都包含用于还原为上一路径或上一文件名的下拉历史列表。 
+                        
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-222B"></a>此命令的主要功能是用来更改 3ds Max 为位置已更改的现有资源所指的路径。然而，对于如渲染图像和渲染元素等输出文件，也可以使用“设置路径”来创建并使用新的输出目录。如果将输出路径更改为某一并不存在的位置，则系统会向您确认是否要创建文件夹。如果确认，则所有适当位置（如“渲染设置”对话框）的输出路径都将发生更改。
+                        
+                        
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-222A"></a>出现的对话框版本取决于高亮显示的资源的数目： 
+                        
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A1900458"></a><ul>
+                        <li>如果高亮显示单个资源，则可以更改路径名和文件名。将出现以下对话框。 
+                           	 <a name="WS1A9193826455F5FFBA679E112A6A1900459"></a><div class="figure-anchor"><img src="../images/GUID-A3A18828-CE80-471D-976E-BACD5B5FC734-low.png"></div>  
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2229"></a>要更改路径，请编辑路径字段或使用省略号 [...] 按钮来浏览新路径。此时只可以更改路径。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2228"></a>要返回到上一个路径，可从下拉列表中进行选择。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2227"></a>要更改文件名，请编辑文件字段或从下拉历史列表中选择名称。注意，这只是更改了场景中所指的资源文件名；并没有更改真正的资源文件名。如果资源文件名已更改，则使用此项更新场景。 
+                              	 
+                           </p> 
+                        </li>
+                        <li>如果高亮显示多个资源，则可以更改路径名，但不可以更改文件名。将出现以下对话框。 
+                           	 <a name="WS1A9193826455F5FFBA679E112A6A190045A"></a><div class="figure-anchor"><img src="../images/GUID-5008AC8E-7895-4E99-BA60-D16E62987498-low.png"></div>  
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2226"></a>对话框显示了高亮显示的资源的当前路径的一部分，并通过编辑“指定路径”字段的内容或通过单击省略号 [...] 按钮并浏览到其他路径来指定新的路径。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2225"></a>例如，如果高亮显示两个资源，其中一个资源的路径是 <em class="mild">c:\max_files\maps1\</em>，而另一个资源的路径是 <em class="mild">c:\max_files\maps2\</em>，则“指定路径”字段将显示 <em class="mild">c:\max_files\</em>。通过更改该选项可更改所有高亮显示的<em class="mild">整个</em>路径。当然，它们必须存在于此以使“资源追踪”找到它们。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2224"></a>要返回到上一个路径，可从下拉列表中进行选择。 
+                              	 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2223"></a>要只更改所有高亮显示的资源路径的公用部分，则使用“重定位公用根”（请参见下文）。 
+                              	 
+                           </p> 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-7209"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-2222"></a>重新定位共同根</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AB"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754736"></a>用于只更改所有高亮显示的资源路径的共同部分。此命令打开“指定资源”路径对话框的一个版本，该对话框显示高亮显示的资源共同路径的前缀，并通过编辑“指定新共同路径前缀”字段或单击省略号 [...] 按钮并浏览到其他路径来指定新的路径。使用“重新定位共同根”来重新设置多个文件的路径，特别是那些位于共同根内不同目录下的文件。
+                        
+                        
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190045B"></a><div class="figure-anchor"><img src="../images/GUID-B9CD3911-7532-415A-A2C9-9828A4DE4E83-low.png"></div>  
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2221"></a>例如，如果所有贴图最初都在 <em class="mild">c:\maps\</em> 内的不同子目录中，而整个子目录结构移到了 <em class="mild">d:\resources\maps\</em> ，则可以使用“重新定位共同根”来同时重设所有文件的路径。 
+                        
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2220"></a>要返回到上一个路径，可从下拉列表中进行选择。 
+                        
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-221F"></a>如果将输出文件的公用根更改为某一并不存在的位置，则系统会向您确认是否要创建文件夹。<em class="mild"></em>如果确认，则所有适当位置（如“渲染设置”对话框）的输出路径都将发生更改。 
+                        
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-7208"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-221E"></a>去除路径</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AA"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754737"></a>去除高亮显示的资源中的所有路径信息，仅保留文件名。 
+                        
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-221D"></a>去除的路径信息保存在“设置路径”对话框的下拉列表中。要还原去除掉的路径，请高亮显示该资源，选择“路径”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“设置路径”，然后从下拉列表中选择所需的路径以进行还原。 
+                        
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-7207"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-221C"></a>使路径绝对</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A9"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754738"></a>提供已找到的资源文件的完整路径。这在显示相对路径并在查看整个路径时很有用。 
+                        
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-7206"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-221B"></a>使路径相对于项目文件夹</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A8"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754739"></a>这将获得已找到资源文件的当前路径，并使其对应于项目文件夹。 
+                        
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-7205"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-221A"></a>解析路径到 UNC 位置</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A7"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875473A"></a>将指向映射驱动器的高亮显示的路径解析成通用命名约定 (UNC) 格式。 
+                        
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-7204"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-2219"></a>设置“项目文件夹”</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A6"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875473B"></a>等同于“文件”菜单<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“项目”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“设置活动项目”。 
+                        
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-7203"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-2218"></a>配置用户路径</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A5"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875473C"></a>打开“配置用户路径”对话框，使用该对话框，可以解析支持文件（如位图）的位置。 
+                        
+                     </p> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E406"></a><div class="note-note"><span class="label label-target-language">注意:</span>此选项使其可以在不同的用户之间轻松共用文件，即使您未使用相同的项目文件夹。如果用户 A 从用户 B 加载文件，并且它们不具有相同的文件夹，则这不是一个问题。 
+                           
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-7202"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-2216"></a>首选项</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A4"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875473E"></a>使用此子菜单切换选项。 
+                        
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190045C"></a><ul>
+                        <li><em class="strong">将文件路径转化为 UNC</em>启用此选项之后，“资源追踪”对话框中显示的任何添加的资源的路径出现在使用通用命名约定 (UNC) 格式的映射的驱动器上。禁用该选项后，每个路径将以映射的驱动器盘符（例如，<em class="mild">w:\</em>）开头。 
+                           	 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2215"></a>此选项的切换链接到“首选项”对话框 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“文件”面板上的“将文件路径转化为 UNC”切换。切换一个切换或两个。 
+                              	 
+                           </p> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E408"></a><div class="note-note"><span class="label label-target-language">注意:</span>此切换只影响新添加的路径。切换它对现有的路径没有影响。例如，如果在切换处于启用的状态下从映射的驱动器中添加资源，则将其禁用并不会更改映射版本的路径。 
+                                 	 
+                              </div>
+                           </div> 
+                        </li>
+                        <li><em class="strong">将本地路径转换为相对</em>启用时，转换场景中所有新添加了资源的文件路径，以便它们与项目文件夹相关。默认设置为禁用。 
+                           	 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2214"></a>此选项的切换链接到“首选项”对话框 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“文件”面板上的“将本地路径转化为相对路径”切换。切换一个切换或两个。 
+                              	 
+                           </p> 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd>
+            </dl>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-561B57EF-88A1-4E11-8A05-F3C43C2AFC2F.htm">位图/光度学路径实用程序</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

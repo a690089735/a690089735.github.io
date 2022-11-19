@@ -1,0 +1,103 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-FE4C7540-499D-4B9C-81E9-878EA337B261">
+      <meta name="description" content="曲面跟随行为移动与对象曲面相关的代理，曲面既可以是静止的也可以是动画的。例如，可以应用面片栅格的动画噪波修改器来模拟波浪起伏的水面，由曲面追随管理的对象会一直保持在顶部。">
+      <meta name="indexterm" content="群组卷展栏: 曲面追随行为">
+      <meta name="indexterm" content="群组动画: 曲面追随行为">
+      <meta name="indexterm" content="群组行为: 曲面跟随">
+      <meta name="contextid" content="TOPIC_SURFACE_FOLLOW_BEHAVIOR">
+      <meta name="topic-type" content="concept">
+      <title>曲面跟随行为</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-FE4C7540-499D-4B9C-81E9-878EA337B261"></a><div class="head">
+            <h1>曲面跟随行为</h1>
+         </div>
+         <p class="blurb">曲面跟随行为移动与对象曲面相关的代理，曲面既可以是静止的也可以是动画的。例如，可以应用面片栅格的动画噪波修改器来模拟波浪起伏的水面，由曲面追随管理的对象会一直保持在顶部。 </p><a name="GUID-E8BE8612-C93B-43A1-9DA5-A7B9F40C6BE8"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-45E72A20-F524-44D7-8C96-61BAB0AA64E8"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-9A23D2B8-9CE2-40BE-98B6-651DBC94F4F7-low.png">（辅助对象） <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “群组” <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “行为”组  <img src="../images/ac.menuaro.gif">  单击“新建”按钮。 <img src="../images/ac.menuaro.gif"> “选择行为类型”对话框  <img src="../images/ac.menuaro.gif"> “曲面跟随行为”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-9F6A5BB7-ECC4-47ED-8046-0671E1827DBE">选择群组对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “行为”组  <img src="../images/ac.menuaro.gif">  单击“新建”按钮。 <img src="../images/ac.menuaro.gif"> “选择行为类型”对话框  <img src="../images/ac.menuaro.gif"> “曲面跟随行为”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-D5F99F23-29B6-4989-A87C-C05C4D6734FD">选择群组对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “行为”组  <img src="../images/ac.menuaro.gif">  从下拉列表中选择“Surface Follow”。</span> 
+            </li>
+         </ul>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E83F"></a><div class="note-note"><span class="label label-target-language">注意:</span>默认情况下，曲面追随所影响的代理在任意帧上选取一个方向来移动，方向取决于对象目前所面对的方向和其所在的平面。因此对象爬山时，一边搜索另一边山底的点，一边转向左边或右边来绕山而行，而不是沿着向上的斜坡爬山。可以使用投影向量选项来覆盖该方法。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4629"></a> 
+            <h2><a name="GUID-FE9CC9CB-A2F0-42E8-87C1-1E3E31D9D2B6"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045FA4"></a><div class="figure-anchor"><img src="../images/GUID-D8B93424-C05E-4396-9C5E-A052E858A5AA-low.png"></div> <a name="GUID-C98C0F9E-040D-4422-8A07-F624694C0F97"></a><dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A28"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CBB"></a>[目标曲面按钮]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AD9"></a> 指定一个用作曲面的“目标”对象。单击该按钮，然后在视口中点击目标对象。目标名称会出现在按钮上。在选择目标曲面之前，标签显示为“无”。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CBC"></a>如果使用“多个选择”选择了多个目标（请参见下一条），按钮上会出现“多个”字样。要查看哪些对象被指定为目标，单击“多个选择”按钮。选择对话框中指定的目标高亮显示。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A27"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CBD"></a> <img src="../images/GUID-E5CE408A-1FB1-4208-AE86-3B5497C9BE96-low.png"> 多个选择</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AD8"></a> 打开选择对话框来指定多个目标。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CBE"></a>当目标不止一个时，代理首先移向组中最近的目标，然后在其曲面上移动直到遇到另一个目标，在这一点上代理切换到新的曲面，以此类推。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl>
+            <div class="dl_section"><a name="GUID-972A6330-795C-4D86-9992-58DDAEF788B1"></a><p class="title"><a name="GUID-6F2A7EA6-ADE4-4DBC-AAF5-BA25D9679E1D"></a>“投影向量”组
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CBF"></a>通过描述代理移动的虚拟平面，这些控制覆盖由曲面跟随行为计算得到的默认方向。通过指定向量来实现这一目的，在世界坐标系中，该向量垂直于所需的虚拟平面。 
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CC0"></a>例如，如果想让代理遇到山丘时继续向前移动，直接沿着山坡爬上爬下，而不是环山绕过，那么应当使用下列投影向量默认设置：X=Y=0、Z=1。该向量与世界坐标系 Z（垂直）轴对齐，因此它指定平行于世界坐标系 XY 面的平面。这样，当沿着曲面移动时代理总是直接向前。
+                  
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A26"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CC1"></a>使用投影</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AD7"></a> 当打开该选项时，曲面追随按照指定向量计算代理方向，而不是使用默认值。 
+                        <p><a name="GUID-C7DCE987-F228-4C60-AC1D-8B4568B117CA"></a><em class="strong">X/Y/Z</em>使用世界坐标系指定一个向量。X 和 Y 的默认值为 0，Z 的值为 1。范围从 -1.0 到 1.0。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CC3"></a>如果这些设置中只有一项不为 0，那么投影向量就与非零轴相对齐。非零值的组合设置为曲面追随创建倾斜平面。例如，要创建一个以世界 Y 轴为中心顺时针旋转 45 度的虚拟平面，需将 X 和 Z 设置为值 1，将 Y 设置为 0。此外，还可以将这三个轴全部设置为
+                           0，即不指定向量，这样可以有效地禁用“使用投影”。 
+                        </p>
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-64842013-4EA4-42FB-9357-A8354E452F98"></a><p class="title"><a name="GUID-5BF873C3-7948-459C-90EB-642A03C0C3C9"></a>曲面上的位置
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A24"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CC4"></a>偏移</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AD5"></a> 使用曲面法线指定代理在区面上的距离。在每一帧中都重新计算。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A23"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CC5"></a>显示偏移</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AD4"></a> 当打开该选项时，用从每个曲面对象的顶点发出的线段显示偏移距离，这些线段都垂直于曲面。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A22"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CC6"></a>[曲面追随目标色样]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AD3"></a> 在求解过程中显示用来绘制“曲面跟随”目标（参见下面的“显示目标”）的颜色。单击此框可选择不同的颜色。 
+                     <p><a name="GUID-6C430287-83F2-4254-88D8-C406949BEE94"></a><em class="strong">显示目标</em>启用后，在求解模拟过程中，会在视口中以线框球体的形式绘制每个受“曲面追随”行为影响的代理的中间目标。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CC8"></a>如果代理开始离开所追随的曲面，那么在代理到达曲面前目标是大部分可见的；然后沿着曲面边定位目标。在实际中代理追随曲面时，目标通常与代理保持一致，因为曲面追随只提前一或两帧设置新目标。 
+                     </p>
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A20"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CC9"></a>目标缩放</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AD1"></a> 设置目标大小。 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

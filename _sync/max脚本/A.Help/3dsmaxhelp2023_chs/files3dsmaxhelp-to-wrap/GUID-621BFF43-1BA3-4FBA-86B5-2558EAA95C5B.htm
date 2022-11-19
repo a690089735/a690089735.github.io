@@ -1,0 +1,162 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-621BFF43-1BA3-4FBA-86B5-2558EAA95C5B">
+      <meta name="description" content="肢体控件位于“肢体动画”卷展栏上，可在设置和动画模式下使用此卷展栏。">
+      <meta name="indexterm" content="CAT: 肢体动画控件">
+      <meta name="topic-type" content="concept">
+      <title>肢体动画控件</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-621BFF43-1BA3-4FBA-86B5-2558EAA95C5B"></a><div class="head">
+            <h1>肢体动画控件</h1>
+         </div>
+         <p class="blurb">肢体控件位于“肢体动画”卷展栏上，可在<span class="char_link"><a href="GUID-275009EE-A6EA-4788-AD30-63EFB950EABC.htm">设置和动画模式</a></span>下使用此卷展栏。 
+         </p>
+         <div class="bodyReference"><a name="UL_2F1BE2CAC61A4A28A2B5A097B751A9A1"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-70ACF837-F21E-4C7E-A0FD-15994DDF6FD0">选择肢体骨骼。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板  <img src="../images/ac.menuaro.gif"> “肢体动画”卷展栏</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WS7AF5CAC11814013A75AF40B111FDE8BF657-7F8E"></a> 
+               <h2><a name="GUID-56593F84-CF7D-4172-900E-848498E2C687"></a>将 IK 目标移至肢体上方
+               </h2> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3DC0"></a>传统上，IK 目标位于肢体末端，但有时需要将其放置到不同位置。例如，对于爬行角色，IK 目标应位于膝部。使用“<span class="char_link"><a href="GUID-621BFF43-1BA3-4FBA-86B5-2558EAA95C5B.htm#WS73099CC142F48755-5C83E7B1120018DE8C0-92B">IK 骨骼数</a></span>”设置，可以在肢体上方和下方设置 IK 目标动画。 
+               </p> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3DBF"></a>“IK 骨骼数”允许您将 IK 目标滑动到肢体上方和下方。“IK 骨骼数”值的范围介于 0.0 到肢体骨骼数之间（包括手掌）。例如，在一个由两块腿部骨骼和一个踝部组成的典型腿部设置中，此范围介于 0.0 到 3.0 之间。 
+               </p> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3DBE"></a>降低“IK 骨骼数”值会根据骨骼依次将 IK 目标（如脚部平台）移至肢体上方。在典型腿部设置中，值为 1.0 会将 IK 目标放置到膝部，而值为 0.0 会将其放置到腿部以上：即骨盆。 
+               </p> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3DBD"></a>当该值发生更改时，将通过 IK 目标来降低肢体。这是正常现象。位于 IK 目标以外的肢体部位处于 FK 模式。 
+               </p> <a name="WS1A9193826455F5FF79F44A0A120254C3E48-7D2E"></a><div class="figure-anchor"><img src="../images/GUID-D4E3735C-D8AE-4D64-868F-48F5F4CFE734-low.png"><p class="figure-title">IK 骨骼数 = 1.0</p>
+               </div>  <a name="WS1A9193826455F5FF79F44A0A120254C3E48-7D2D"></a><div class="figure-anchor"><img src="../images/GUID-A34BD12E-59CE-4E36-B7ED-60C3D8E3CFC5-low.png"><p class="figure-title">在此设置中，可以在 FK 下旋转小腿。</p>
+               </div>  
+            </div>
+            <div class="section"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-94A"></a> 
+               <h2><a name="GUID-103D16BB-5AC3-4B18-93AC-197957BFBEC6"></a>过程
+               </h2> <a name="WS73099CC142F48755-5C83E7B111FDE81A742-3DE6"></a><p class="list-intro"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-949"></a>要访问“肢体动画”卷展栏，请执行下列操作：
+               </p>
+               <ul>
+                  <li>肢体的 IK 控件适用于所有肢体骨骼。选择肢体，并转到 <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“肢体动画”卷展栏。 
+                  </li>
+               </ul> <a name="WS73099CC142F48755-5C83E7B111FDE81A742-3DD4"></a><p class="list-intro"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-948"></a>要将肢体从 IK 无缝混合到 FK，请执行下列操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>确保<span class="char_link"><a href="GUID-CC4C47A1-01EA-4E82-A240-F9E04578710F.htm">绝对层</a></span>和<span class="char_link"><a href="GUID-275009EE-A6EA-4788-AD30-63EFB950EABC.htm">动画模式</a></span>处于活动状态。 
+                  </li>
+                  <li>转到混合起始帧。 
+                     <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-947"></a>这将为 IK 帧，表示 IK/FK 值为 0.0。 
+                     </p> 
+                  </li>
+                  <li>启用 <img src="../images/GUID-859D11E8-44CA-4A08-A696-F5A17CA856E0-low.png">。 
+                  </li>
+                  <li>单击“匹配 IK 和 FK”按钮。 <a name="WS73099CC142F48755-575EAB4C124F5234AA8-5A30"></a><div class="figure-anchor"><img src="../images/GUID-A5F16A2D-E26D-4987-830A-7C3D6FDDBC71-low.png"></div> 
+                  </li>
+                  <li>调整 IK/FK 滑块以创建关键帧。 </li>
+                  <li>转到混合结束帧。 </li>
+                  <li>将 IK/FK 滑块移至 1.0。 </li>
+               </ol> <a name="WS73099CC142F48755-5C83E7B111FDE81A742-3DCA"></a><p class="list-intro"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-946"></a>要从 FK 混合到 IK，请执行下列操作：
+               </p>
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3DC2"></a>当降低 IK/FK 值时，肢体将保留在同一位置，但已准备好在 IK 下设置动画。 
+               </p>
+               <ol type="1" start="1">
+                  <li>确保<span class="char_link"><a href="GUID-CC4C47A1-01EA-4E82-A240-F9E04578710F.htm">绝对层</a></span>和<span class="char_link"><a href="GUID-275009EE-A6EA-4788-AD30-63EFB950EABC.htm">动画模式</a></span>处于活动状态。 
+                  </li>
+                  <li>转到混合起始帧。 
+                     <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-943"></a>这将为 FK 帧，表示 IK/FK 值为 1.0。 
+                     </p> 
+                  </li>
+                  <li>单击“将 IK 目标移动到手掌”按钮。 <a name="WS73099CC142F48755-575EAB4C124F5234AA8-5A2F"></a><div class="figure-anchor"><img src="../images/GUID-2A6BA35C-8F98-49F8-AE34-DF43B2E44B0C-low.png"></div> 
+                  </li>
+                  <li>启用 <img src="../images/GUID-859D11E8-44CA-4A08-A696-F5A17CA856E0-low.png">。 
+                  </li>
+                  <li>调整 IK/FK 滑块以创建关键帧。 </li>
+                  <li>转到混合结束帧。 </li>
+                  <li>将 IK/FK 设置为 0.0。 </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS7AF5CAC11814013A75AF40B111FDE8BF657-7F91"></a> 
+               <h2><a name="GUID-D8E009C1-043A-42E8-82AF-542D56F47C4D"></a>界面
+               </h2> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3DE1"></a>“肢体动画”卷展栏提供对肢体的 IK 和 FK 设置的访问。 
+               </p> <a name="WS73099CC142F48755-5C83E7B111FDE81A742-3DE4"></a><div class="figure-anchor"><img src="../images/GUID-782375E2-9D4D-491B-9AFA-80AE72D1E15A-low.png"></div>  <a name="GUID-6A88F5F9-347B-4FE7-A0E2-B93BBB22067F"></a><div class="dl_section"><a name="GUID-03454830-2934-4BD9-9E87-E55036553B67"></a><p class="title"><a name="GUID-E1321540-F5BC-4BAB-B510-247620FEDDB4"></a>“IK 系统”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-942"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-941"></a>创建 IK 目标</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-940"></a> 默认情况下，装备手臂没有任何 IK 目标。要在 IK 下设置动画，请首先使用“创建 IK 目标”功能。这会创建一个特殊的点辅助对象，以用作手臂的 IK 目标。 
+                           <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-93F"></a>腿部的 IK 目标为脚部平台。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-93D"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-93C"></a>选择 IK 目标</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-93B"></a> 为所选手掌或踝部选择 IK 目标而无需在场景中搜索。 
+                           <div><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-93A"></a><div class="note-note"><span class="label label-target-language">注意:</span>移动 IK 目标仅在 IK/FK 值（请参见本主题中的下文）小于最大值 1.0 时才影响肢体。此外，选中 IK 目标时，此按钮的功能和名称将切换为“选择肢体末端”。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-939"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-938"></a>将 IKTarget 移动到手掌</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-937"></a> 将 IK 目标在手掌末端居中。在 FK 模式中设置动画、将 IK 目标留在后方并希望混合并返回 IK 时，使用此功能。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-936"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-935"></a>匹配 IK 和 FK</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-934"></a> 创建 IK 和 FK 模式之间的无缝混合。在混合到 IK 或从 IK 混合时，启用“自动关键点”并单击此按钮。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-933"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-932"></a>IK/FK</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-931"></a> 在肢体上混合 IK 和 FK，0.0 为 IK，1.0 为 FK。 
+                        <div><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-930"></a><div class="note-tip"><span class="label label-target-language">提示</span>通常，在设置动画时，不会将值保留在 0.0 与 1.0 之间。中间值主要用于混合 IK 和 FK。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-92F"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-92E"></a>显示 IK 中的 FK 肢体</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-92D"></a> 启用此项并且肢体在 IK 中时，如果在使用 FK，则显示肢体所在位置的重影/线框图像。如果出现问题，IK 解算器在错误的方向弯曲，在设置动画以快速查看 FK 解决方案在 IK 中所进行的操作时，此选项非常有用。 
+                        <p><a name="WS1A9193826455F5FF79F44A0A120254C3E48-77C8"></a>将 IK/FK 滑块滑向右侧时，肢体逐渐呈现重影位置。 
+                        </p> <a name="WS1A9193826455F5FF79F44A0A120254C3E48-7D2C"></a><div class="figure-anchor"><img src="../images/GUID-698C9103-FC7A-4944-8F9F-747EEE888D7A-low.png"></div>  
+                        <p><a name="GUID-60CC2A66-3862-409F-874F-A5957F117D0A"></a> <em class="strong">左：IK 中的肢体，启用了“显示 IK 中的 FK 肢体”</em> 
+                        </p> 
+                        <p><a name="GUID-34245029-A164-4503-88DD-72F81AE945F2"></a> <em class="strong">右：FK 中的肢体</em> 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-92B"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-92A"></a>IK 骨骼数</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-929"></a> 将 IK 目标在肢体上下滑动。 
+                        <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-928"></a>该值的范围是 0.0 到肢体（包括手掌）上的骨骼数。例如，典型腿的设置有两根腿骨和一个踝部，则范围是 0.0 到 3.0。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-927"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-926"></a>重定位</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-925"></a> 此滑块混合所选肢体的 <span class="charspan-msgph">CAT</span> 的<span class="char_link"><a href="GUID-6D34E39E-3E3C-47B3-A193-9CE383AA7461.htm">重定位</a></span>。值为 0.0 时，禁用重定位，值为 1.0 表示完全启用重定位。
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-FA51F77B-A617-4113-8396-A02CA9D2F464"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-C92A9587-8F1B-4A61-990A-9FE5C9B2FFD8.htm">操纵装备 </a></span></li>
+               <li><span class="char_link"><a href="GUID-1D80FD75-5175-4748-909C-BEB2514DCAA9.htm">CATProdName 的 IK 系统 </a></span></li>
+               <li><span class="char_link"><a href="GUID-6D34E39E-3E3C-47B3-A193-9CE383AA7461.htm">重定位 </a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D686C1E7-23F4-49BF-8FA6-4D63430746FF">
+      <meta name="description" content="目标灯光具有可以用于指向灯光的目标子对象。">
+      <meta name="contextid" content="TARGET_POINT.LIGHTS_AND_CAMERAS">
+      <meta name="contextid" content="LIGHTS AND CAMERAS-TARGET_POINT">
+      <meta name="topic-type" content="topic">
+      <title>目标灯光（光度学）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D686C1E7-23F4-49BF-8FA6-4D63430746FF"></a><div class="head">
+            <h1>目标灯光（光度学）</h1>
+         </div>
+         <p class="blurb">目标灯光具有可以用于指向灯光的目标子对象。 </p><a name="UL_F849D16DD699412B90CB47C84F12961D"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-0A9B79AF-E241-4B68-842D-C462E77786A1"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-EE6A9DC1-43D8-4EEC-AE55-2C415AB62C52-low.png">（灯光） <img src="../images/ac.menuaro.gif"> “光度学” <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “目标灯光”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-54565500-0014-4E61-8A17-B8130CE0D2D3">默认菜单：“创建”菜单  <img src="../images/ac.menuaro.gif"> “灯光” <img src="../images/ac.menuaro.gif"> “光度学灯光” <img src="../images/ac.menuaro.gif"> “目标灯光”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-BB9E2C09-AD5A-43B4-9635-CA0E7DFECC6D">Alt 菜单：“对象”菜单  <img src="../images/ac.menuaro.gif"> “灯光” <img src="../images/ac.menuaro.gif"> “目标灯光(光度学)”</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A190045E8"></a><div class="figure-anchor"><img src="../images/GUID-6C9C0AC2-208B-4CB2-AA4E-0A644E452A66-low.png"><p class="figure-title">采用球形分布、聚光灯分布以及 Web 分布的目标灯光的视口示意图</p>
+         </div>
+         <div style="margin-top: 9pt;"><a name="WS1A9193826455F5FF662FFB11407B58D52-6B39"></a><div class="note-note"><span class="label label-target-language">注意:</span> 当添加目标灯光时，<span class="charspan-msgph">3ds Max</span> 会自动为其指定<span class="char_link"><a href="GUID-B0B3683F-DFBB-41B5-9265-4444DA7067A6.htm">“注视”控制器</a></span>，且灯光目标对象指定为“注视”目标。您可以使用“运动”面板上的控制器设置将场景中的任何其他对象指定为“注视”目标。 
+            </div>
+         </div>
+         <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6B38"></a><div class="note-note"><span class="label label-target-language">注意:</span>当重命名“目标点“灯光时，目标将自动重命名以与之相匹配。例如，如果将 <em class="mild">TPhotometricLight01</em> 重命名为 <em class="mild">Klieg</em>，则会导致 <em class="mild">TPhotometricLight01.Target</em> 变为 <em class="mild">Klieg.Target</em>。目标名称必须有扩展名 <em class="mild">.Target</em>。重命名目标对象不会重命名灯光对象。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2BCC"></a> 
+            <h2><a name="GUID-5F0CE534-49E2-45E8-A7BF-4805AB076A38"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045E9"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045EA"></a>要创建目标灯光，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板上，单击 <img src="../images/GUID-EE6A9DC1-43D8-4EEC-AE55-2C415AB62C52-low.png">（灯光）。 
+               </li>
+               <li>从下拉列表中选择“光度学”。（这是默认设置。） </li>
+               <li>在“对象类型”卷展栏中，单击“目标灯光”。 </li>
+               <li>在视口中拖动。拖动的初始点是灯光的位置，释放鼠标的点就是目标位置。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5879"></a>现在灯光成为场景的一部分。 
+                  </p> 
+               </li>
+               <li>设置创建参数。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5878"></a>通过使用移动变换，可调整灯光的位置和方向。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190045EB"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045EC"></a>要选择目标，请执行以下操作：
+            </p>
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5877"></a>显示为小方形的目标，他通常与要照亮的对象在相同区域里。单击也很难进行选择。 
+            </p>
+            <ol type="1" start="1">
+               <li>首先，<img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择目标点灯光。 
+               </li>
+               <li>右键单击该灯光，然后从<span class="char_link"><a href="GUID-3A803F43-6F87-40FB-97CA-33844078AF9A.htm">四元菜单</a></span>中选择“选择灯光目标”。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5876"></a>也可以从主工具栏上的“选择过滤器”列表中选择“灯光”，然后单击目标。单击灯光与其目标连接的直线选择两个对象。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190045ED"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045EE"></a>要调整灯光和目标位置，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择灯光和/或目标。 
+               </li>
+               <li>在主工具栏上，启用 <img src="../images/GUID-BF2BA051-F34B-479D-B2B3-A814AD7E7AD8-low.png">（选择并移动）。拖动选定对象可以调整灯光。 
+                  <p><a name="WS73099CC142F48755-368A1299115EE23C248-6946"></a>也可以通过右键单击灯光，从四元菜单中选择“移动”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“变换”区域。 
+                  </p> 
+               </li>
+            </ol> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5875"></a>由于灯光始终指向其目标，所以不能沿着其局部 X 或 Y 轴进行旋转。但是，可以选择并移动目标对象以及灯光自身。当移动灯光或目标时，灯光的方向改变，所以他始终指向目标。 
+            </p> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5945"></a>单击灯光与其目标连接的直线选择两个对象。但是，区域选择不能识别链接直线。 
+            </p> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5874"></a>可以使用<span class="char_link"><a href="GUID-C85C15B9-7739-414B-A2CC-30D42647BCB9.htm">放置高光</a></span>命令更改灯光的位置。 
+            </p> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5873"></a>对于采用聚光灯分布的目标灯光，还可以使用<span class="char_link"><a href="GUID-4430AA94-35BB-4F31-830D-F519AC69188D.htm">灯光视口</a></span>调整灯光。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190045EF"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045F0"></a>要将视口更改为灯光视图，请执行以下操作：
+            </p>
+            <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6B37"></a><div class="note-note"><span class="label label-target-language">注意:</span>仅当目标灯光分布为聚光灯时，才可将视口设置为灯光视图。 
+               </div>
+            </div>
+            <ol type="1" start="1">
+               <li>单击或右键单击“观察点”视口标签。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5872"></a><span class="charspan-msgph">3ds Max</span> 将打开 <span class="char_link"><a href="GUID-F86CB637-685E-4874-82C5-CFACB8486D35.htm">POV 视口标签菜单</a></span>。 
+                  </p> 
+               </li>
+               <li>选择灯光。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5871"></a><span class="charspan-msgph">3ds Max</span> 将打开一个子菜单，其中显示每个灯光的名称。默认情况下，目标灯光的名称为 <em class="mild">TPhotometricLight01</em><em class="mild">、TPhotometricLight02</em> 等。 
+                  </p> 
+               </li>
+               <li>选择您想要的灯光名称。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5870"></a>现在视口显示灯光的观察点。使用<span class="char_link"><a href="GUID-4430AA94-35BB-4F31-830D-F519AC69188D.htm">灯光视口</a></span>控件调整灯光。 
+                  </p> 
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6B36"></a><div class="note-tip"><span class="label label-target-language">提示</span>灯光视口的默认键盘快捷键为 <span class="keyboardEntry">$</span>。 
+                     </div>
+                  </div> 
+               </li>
+            </ol> 
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-E337DCA6-6B8D-4689-BCB8-6A6EEF06E6EE.htm">光度学灯光</a></li>
+                     <li class="topiclist-litem"><a href="GUID-8EF2DC6B-446D-4081-ADD8-3F9441370813.htm">自由灯光（光度学）</a></li>
+                     <li class="topiclist-litem"><a href="GUID-DC2CF460-BE73-409B-8A3D-8ECE9CB47EC1.htm">太阳光和日光系统</a></li>
+                     <li class="topiclist-litem"><a href="GUID-84822BED-4DFD-474B-A80D-6A1056638C62.htm">统一球形分布（光度学灯光）</a></li>
+                     <li class="topiclist-litem"><a href="GUID-E656E701-8955-4D5C-8A6E-F84AFC8FB125.htm">统一漫反射分布（光度学灯光）</a></li>
+                     <li class="topiclist-litem"><a href="GUID-EF243573-74AF-4A34-B5E8-1D9A86565002.htm">聚光灯分布（光度学灯光）</a></li>
+                     <li class="topiclist-litem"><a href="GUID-8CF2ABB6-41F1-48B4-9BA3-C8E8C47941B6.htm">光度学 Web 分布（光度学灯光）</a></li>
+                     <li class="topiclist-litem"><a href="GUID-59EFB702-F34A-4471-B4E4-E259A6C51638.htm">“名称和颜色”卷展栏（灯光）</a></li>
+                     <li class="topiclist-litem"><a href="GUID-0B9C3B02-BD99-4FAF-89E8-7B64899520E6.htm">“公用照明”卷展栏和对话框</a></li>
+                     <li class="topiclist-litem"><a href="GUID-CB5F2A06-B774-4F27-9FDE-DE4926BE847C.htm">阴影类型和阴影控件</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

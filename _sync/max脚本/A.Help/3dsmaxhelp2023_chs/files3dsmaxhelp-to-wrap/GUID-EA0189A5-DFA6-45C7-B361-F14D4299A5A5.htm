@@ -1,0 +1,201 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-EA0189A5-DFA6-45C7-B361-F14D4299A5A5">
+      <meta name="description" content="附着约束是一种位置约束，它将一个对象的位置附着到另一个对象的面上（目标对象不用必须是网格，但必须能够转化为网格）。">
+      <meta name="indexterm" content="约束: 附着">
+      <meta name="indexterm" content="动画菜单: 约束">
+      <meta name="indexterm" content="附着: 约束">
+      <meta name="contextid" content="CONSTRAINTS-ATTACHMENT">
+      <meta name="topic-type" content="concept">
+      <title>附着约束</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-EA0189A5-DFA6-45C7-B361-F14D4299A5A5"></a><div class="head">
+            <h1>附着约束</h1>
+         </div>
+         <p class="blurb">附着约束是一种位置约束，它将一个对象的位置附着到另一个对象的面上（目标对象不用必须是网格，但必须能够转化为网格）。 </p><a name="UL_F9BE12CB9BF847FBA5EEA34B6E652412"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-10C14C89-5B78-43A6-A7C5-BC01FE03CCE0">“指定控制器”（对象位置轨迹） <img src="../images/ac.menuaro.gif"> “附着”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-DF4AB23B-0F4A-4F7B-99F1-111F7FCCF36A">默认菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “位置控制器” <img src="../images/ac.menuaro.gif"> “附着约束”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-B9F4ED3A-3E6B-4C88-A81F-9F33452EE4B1">Alt 菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “约束” <img src="../images/ac.menuaro.gif"> “附着约束”</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A190044BCE"></a><div class="figure-anchor"><img src="../images/GUID-AF2D53AD-A4C3-4EB7-89C0-9F20FFA7288F-low.png"><p class="figure-title">附着约束保持圆柱体位于表面上。</p>
+         </div>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-403A"></a>通过随着时间设置不同的附着关键点，可以在另一对象的不规则曲面上设置对象位置的动画，即使这一曲面是随着时间而改变的也可以。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4039"></a> 
+            <h2><a name="GUID-6D1748BE-8013-4ECE-90DA-BF35C1F87C6E"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044BD4"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044BD5"></a> <span class="charspan-emphasis">示例：要将圆锥体附着到弯曲的圆柱体上，可以执行以下操作：</span> 
+            </p>
+            <ol type="1" start="1">
+               <li>在“透视”视口中，创建具有以下设置的圆柱体： <a name="UL_F879B0AA6B8741EBA0CE848C13D984CC"></a><ul>
+                     <li>半径 = <em class="strong">20</em> 
+                     </li>
+                     <li>高度 = <em class="strong">30</em> 
+                     </li>
+                     <li>高度分段 = <em class="strong">10</em> 
+                     </li>
+                  </ul> 
+               </li>
+               <li>在“透视”视口中，创建具有以下设置的圆锥体： <a name="UL_EF90A00EF7D54A858C097EBEF9A62CBA"></a><ul>
+                     <li>半径 1 = <em class="strong">15</em> 
+                     </li>
+                     <li>半径 2 = <em class="strong">5</em> 
+                     </li>
+                     <li>高度 = <em class="strong">30</em> 
+                     </li>
+                  </ul> 
+               </li>
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择该圆柱体，应用弯曲修改器，然后将“折弯角度”设置为 <em class="strong">–70</em> 度。 
+               </li>
+               <li>启用 <img src="../images/GUID-859D11E8-44CA-4A08-A696-F5A17CA856E0-low.png">，转至第 100 帧，然后将“折弯角度”设置为 <em class="strong">70</em> 度。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4037"></a>这样圆柱体就会在 100 帧的范围里从一个方向弯曲到另一个方向。 
+                  </p> 
+               </li>
+               <li>禁用 <img src="../images/GUID-48CE32A3-32F5-433A-B89D-C6F12E6A7C44-low.png">。 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190044BD6"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044BD7"></a> 继续示例：要指定附着约束并调整圆锥体，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择圆锥体。 
+               </li>
+               <li>在 <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板上，打开“指定控制器”卷展栏，依次单击“位置”轨迹、<img src="../images/GUID-B37F3828-8B20-4C02-BF02-B151E0CBBB68-low.png">（指定控制器），然后选择“附加”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4036"></a>圆锥体移动到场景的原点，并打开“附着参数”卷展栏。 
+                  </p> 
+               </li>
+               <li>单击“拾取对象”按钮，然后单击该圆柱体。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4035"></a>圆柱体的名称出现在“拾取对象”按钮上面。 
+                  </p> 
+               </li>
+               <li>转至第 0 帧。旋转“透视”视口，因此您可以看到圆柱体的顶部表面。 </li>
+               <li>在“关键点信息”组中，单击“设置位置”，然后在圆柱体顶部曲面上单击并拖动面。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4033"></a>圆锥体会跳至圆柱体的顶部。拖动鼠标时，圆锥体会跳到所拖动的面上。 
+                  </p> 
+               </li>
+               <li>当圆锥体位于圆柱体顶部曲面上时，释放鼠标键。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190044BD8"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044BD9"></a> 继续示例：要调整圆锥体相对于面的位置，请执行以下操作： 
+            </p>
+            <ol type="1" start="1">
+               <li>在“设置位置”按钮上方的面显示窗口中拖动，以相对于代表面的三角形来放置红 x。（因为在圆柱体上封口面的径向排列，所以显示的三角形的左上角才是圆柱体封口的中心。要查看此效果，请对圆柱体禁用“仅边”。） </li>
+               <li>调整 A 和 B 微调器以穿过面的曲面来移动圆锥体。 </li>
+               <li>将时间滑块拖动到各个帧。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4032"></a>当圆柱体前后弯曲时，圆锥体一直保持附着在其上表面。继续调整 A 和 B 微调器并在面显示窗口中拖动来调整圆锥体的位置。 
+                  </p> 
+               </li>
+               <li>记下“面”微调器中的数字，然后降低微调器的值直到圆锥体离开圆柱体封口并绕着圆柱体的多个区域开始跳动。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4031"></a>“面”微调器指定圆锥体附着在那个面上。更改其值时，圆锥体移动到圆柱体不同的面上。 
+                  </p> 
+               </li>
+               <li>在“面”微调器中重新输入原始值，使得圆锥体回到圆柱体的顶部。 </li>
+               <li> <img src="../images/GUID-5B32F2AB-610D-42BB-8C54-81463BE72359-low.png"> 播放动画。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4030"></a>圆柱体前后弯曲时，圆锥体保持附着在其上封口。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-402F"></a> 
+            <h2><a name="GUID-278CCD56-D320-4E87-A799-05202F14C2FA"></a>界面
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-402E"></a>指定约束后，其参数将显示在 <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“附着参数”卷展栏上。 
+            </p> <a name="GUID-E9B1395A-A18C-42F0-ACD9-57AF085515A8"></a><div class="dl_section"><a name="GUID-F05AFE76-B6E0-4789-BFE0-CEE25C213875"></a><p class="title"><a name="GUID-E0CA6807-EA41-458A-8A3D-031D0C04D4D6"></a>“附加到”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190044BDB"></a><div class="figure-anchor"><img src="../images/GUID-AA6DC807-165C-4E5B-98EE-DEB304B3BE26-low.png"></div>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C7D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-402D"></a>[对象名称文本]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59B4"></a> 指定源对象所要附着的目标对象。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C7E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-402C"></a>拾取对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59B3"></a> 在视口中为附着选择并拾取目标对象。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C7F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-402B"></a>对齐到曲面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59B2"></a> 将附加的对象的方向固定在其所指定到的面上。禁用“对齐到曲面”后，附加对象的方向不受目标对象上的面的方向影响。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-1A0B4C3B-B973-4E32-B1FC-166C2E035C13"></a><p class="title"><a name="GUID-7CE80B38-4079-4188-B180-9DC0C9DAB4F5"></a>“更新”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190044BDD"></a><div class="figure-anchor"><img src="../images/GUID-6BADEFB1-C251-4F0F-B4B0-2E986BEED81A-low.png"></div>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C80"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-402A"></a>更新</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59B1"></a> 更新显示。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C81"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4029"></a>手动更新</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59B0"></a> 启用“更新”。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-5BA9887E-3124-4D7E-85E7-1DEFCC8A1392"></a><p class="title"><a name="GUID-3D56F4D5-D4FB-494C-AD1D-CE461073A687"></a>“关键点信息”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190044BDF"></a><div class="figure-anchor"><img src="../images/GUID-BB73C2A9-C5AB-4A60-A079-24C0A8F71B91-low.png"></div>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C82"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4028"></a>当前关键点</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59AF"></a> 显示当前关键点编号并可以移动到其他关键点。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C83"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4027"></a>时间</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59AE"></a> 显示当前帧，并可以将当前关键点移动到不同的帧中。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-4C47D273-0574-4950-A287-54E49B9F249D"></a><span class="term"><a name="GUID-F5DC3C7A-11FB-49F3-B78A-0279CFFB2694"></a>位置</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-E9BA541B-AB19-4849-86FC-F6FFCE22E958"></a><em class="strong">面</em>设置对象所附加到的面的索引。范围从 0 到 268435455。 
+                        <p><a name="GUID-6DCF964E-C89D-4DF5-950E-A6FBEF16CD2A"></a><em class="strong">A/B</em>设置定义面上附加对象的位置的重心坐标。范围从 –999,999 到 999,999。 
+                        </p> 
+                        <p><a name="GUID-05037DA6-D338-43BB-8E22-2D8311A9BA60"></a><em class="strong">[显示图形]</em>显示源对象在附着面内部的位置。要调整对象相对于面的位置，请在该窗口中拖动。 
+                        </p> 
+                        <p><a name="GUID-1DCC8B76-18C2-45A7-93C6-2776393E1C65"></a><em class="strong">设置位置</em>要调整源对象在目标对象上的放置，请启用此选项。在视口中，在目标对象上拖动来指定面和面上的位置。在拖动时，源对象将移动到目标对象上。 
+                        </p>
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-333B29CD-BBDB-4A1B-81E7-9F3CA6C4BB28"></a><p class="title"><a name="GUID-F7D89E88-B375-449A-A96C-81A74A1B3890"></a>“TCB”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190044BE2"></a><div class="figure-anchor"><img src="../images/GUID-2B29803E-2380-49B3-815D-9FE9E1AD4E4A-low.png"></div>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4022"></a>该组中的控件与其他 <span class="char_link"><a href="GUID-87EBDEA2-9F70-437D-8D42-948E18FC6582.htm">TCB 控制器</a></span>中的控件相同。源对象的方向也受这些设置的影响并按照这些设置进行插值。 
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C88"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4021"></a>张力</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59A9"></a> 范围从 0 到 50 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C89"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4020"></a>连续性</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59A8"></a> 范围从 0 到 50 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C8A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-401F"></a>偏移</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59A7"></a> 范围从 0 到 50 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C8B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-401E"></a>缓入</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59A6"></a> 范围从 0 到 50 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1C8C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-401D"></a>缓出</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59A5"></a> 范围从 0 到 50 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

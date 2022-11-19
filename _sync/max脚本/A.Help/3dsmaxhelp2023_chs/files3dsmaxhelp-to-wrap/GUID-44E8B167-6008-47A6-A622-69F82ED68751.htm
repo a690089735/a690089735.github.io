@@ -1,0 +1,99 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-44E8B167-6008-47A6-A622-69F82ED68751">
+      <meta name="description" content="用于设置“关节角度”、“凸出角度”和“变形角度”变形。">
+      <meta name="indexterm" content="蒙皮修改器: gizmo 卷展栏">
+      <meta name="topic-type" content="concept">
+      <title>“Gizmo”卷展栏（“蒙皮”修改器）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-44E8B167-6008-47A6-A622-69F82ED68751"></a><div class="head">
+            <h1>“Gizmo”卷展栏（“蒙皮”修改器）</h1>
+         </div>
+         <p class="blurb">用于设置“关节角度”、“凸出角度”和“变形角度”变形。 </p>
+         <div class="bodyReference"><a name="UL_D3C60021DD894754ABE82FFA4257B0F4"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-6DEBB10C-BB2E-4370-BDF2-395C4C3FA827">选择网格、面片或 NURBS 对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “蒙皮” <img src="../images/ac.menuaro.gif"> “Gizmo”卷展栏</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-BCE31E62-07B5-4581-B8C3-09A678117572">选择网格、面片或 NURBS 对象。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “动画修改器” <img src="../images/ac.menuaro.gif"> “蒙皮” <img src="../images/ac.menuaro.gif"> “Gizmo”卷展栏</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WSF742DAB04106313366400BF6112A1CEA097-7EFB"></a> 
+               <h2><a name="GUID-E6E1CB2B-3BDE-4494-9602-49B478FE2328"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043AE4"></a><div class="figure-anchor"><img src="../images/GUID-B484A8BB-D7F7-46C1-810C-76EAA2806173-low.png"></div>  
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C24"></a>“Gizmo”卷展栏中的控件用于根据关节的角度变形网格，以及将 Gizmo 添加到对象上的选定点。卷展栏包括一个列表框（其中包含此修改器的所有 Gizmo）、一个当前类型的 Gizmo 的下拉列表和四个按钮（“添加”、移除、“复制”和“粘贴”）。
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C23"></a>添加 Gizmo 的工作流程是选择要影响的顶点、选择将进行变形的骨骼，然后单击“添加”按钮。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C22"></a>共有三个变形器可用： 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190043AE5"></a><ul>
+                  <li>“关节角度”变形器具有一个晶格，它可变形父骨骼和子骨骼上的顶点。 </li>
+                  <li>“凸出角度”变形器具有一个晶格，它仅在父骨骼上的顶点起作用。 </li>
+                  <li>“变形角度”变形器在父骨骼和子骨骼上的顶点上起作用。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C21"></a>在选择要变形的顶点时，请记住这些差异。例如，如果要使用“关节角度”变形器，那么请选择接近将进行变形的关节的顶点。如果希望父骨骼顶点像二头肌一样变形，那么请在添加“凸出角度”变形器之前，仅选择指定给父骨骼的顶点。如果父骨骼和子骨骼的顶点必须变形，那么选择所有顶点并添加“变形角度”变形器。
+                        
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190043AE6"></a><div class="figure-anchor"><img src="../images/GUID-A456F6C8-AC66-4CB1-AC8D-93BC3E4C9E13-low.png"><p></p>
+                        <p class="figure-title">如果不使用“变形角度”变形器就弯曲手臂，会使衣袖弯曲。</p>
+                     </div> <a name="WS1A9193826455F5FFBA679E112A6A190043AE7"></a><div class="figure-anchor"><img src="../images/GUID-7BE22B75-F377-4A0D-B558-6608FB430366-low.png"><p></p>
+                        <p class="figure-title">使用“变形角度”变形器在衣袖中创建平滑弯曲。</p>
+                     </div>   
+                  </li>
+               </ul> <a name="GUID-AF1939D9-78CC-42C5-A171-6A119D1A3F16"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-609B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C20"></a>Gizmo 列表窗口</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F6B"></a> 列出当前的“角度”变形器。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C1F"></a>“变形器参数”卷展栏根据所选择的 Gizmo 类型变化。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-609A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C1E"></a>变形器下拉列表</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F6A"></a> 列出可用变形器。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6099"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C1D"></a> <img src="../images/GUID-ECA6DED5-EA87-4D1D-9D60-DD0D8A4AC64A-low.png"> 添加 Gizmo</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F69"></a> 将当前 Gizmo 添加到选定顶点。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C1C"></a>要添加 Gizmo，请首先为要变形的关节选择子骨骼，然后选择要变形的顶点。然后添加 Gizmo。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C1B"></a>在添加或高亮显示 Gizmo 之后，将打开“变形器参数”或“Gizmo 参数”卷展栏，其中包含您可以进行调整的 Gizmo 参数（参见下文）。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6098"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C1A"></a> <img src="../images/GUID-55C61EA7-E73E-4972-9469-91AC062E08A9-low.png"> 移除 Gizmo</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F68"></a> 从列表中移除选定 Gizmo。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6097"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C19"></a> <img src="../images/GUID-A6E56E55-1FCB-4C41-BC0E-2CAC1B64A0BB-low.png"> 复制 Gizmo</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F67"></a> 将高亮显示的 Gizmo 复制到缓冲区以便粘贴（参见下文）。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6096"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C18"></a> 粘贴 Gizmo</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F66"></a> 从复制缓冲区粘贴 Gizmo。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C17"></a>“粘贴”按钮会将复制缓冲区的内容应用于高亮显示的 Gizmo。可以仅粘贴到类似 Gizmo。例如，不能从凸出 Gizmo 粘贴到关节 Gizmo。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-02FE6D79-7DD7-45F6-AF15-7417BC4A724A.htm">“变形器参数”卷展栏（变形角度变形器）</a><p>将变形角度变形器添加到蒙皮修改器并在 <span class="char_link"><a href="GUID-44E8B167-6008-47A6-A622-69F82ED68751.htm">Gizmos 卷展栏</a></span>上高亮显示它时，会显示此卷展栏。 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-94865877-0C04-4AC6-A01D-F0FD4BDFDD86.htm">“Gizmo 参数”/“变形器参数”卷展栏（关节角度和凸出角度变形器）</a><p>将关节角度或凸出角度变形器添加到蒙皮修改器并在 <span class="char_link"><a href="GUID-44E8B167-6008-47A6-A622-69F82ED68751.htm">Gizmos 卷展栏</a></span>上高亮显示它时，会显示此卷展栏。 
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

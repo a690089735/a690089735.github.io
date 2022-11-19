@@ -1,0 +1,252 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D112D015-8BE6-4172-B816-B5432A50F911">
+      <meta name="description" content="“细节级别”工具可以用于构建对象，此对象可以基于渲染图像大小改变几何复杂性或者细节级别。可以创建几个相同对象的版本，每个版本都具有不同的细节级别，将它们组成一组，然后运行“细节级别”工具，此工具可以自动创建像“可见性”轨迹一样的特殊的 LOD 控制器。然后 LOD 控制器在组中将对象隐藏和取消隐藏，具体情况取决于渲染场景的大小。">
+      <meta name="indexterm" content="工具: 细节级别">
+      <meta name="indexterm" content="工具: LOD">
+      <meta name="indexterm" content="细节级别: 工具">
+      <meta name="indexterm" content="LOD: 细节级别工具">
+      <meta name="indexterm" content="LOD: 阈值">
+      <meta name="topic-type" content="concept">
+      <title>细节级别工具</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D112D015-8BE6-4172-B816-B5432A50F911"></a><div class="head">
+            <h1>细节级别工具</h1>
+         </div>
+         <p class="blurb">“细节级别”工具可以用于构建对象，此对象可以基于渲染图像大小改变几何复杂性或者细节级别。可以创建几个相同对象的版本，每个版本都具有不同的细节级别，将它们组成一组，然后运行“细节级别”工具，此工具可以自动创建像“可见性”轨迹一样的特殊的 LOD
+            控制器。然后 LOD 控制器在组中将对象隐藏和取消隐藏，具体情况取决于渲染场景的大小。 
+            
+         </p><a name="UL_374592043BFF40FFAFDF0EE9C705C666"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-FB159570-FFA9-419B-A39B-634B9924F063">“工具”面板  <img src="../images/ac.menuaro.gif"> “工具”卷展栏  <img src="../images/ac.menuaro.gif"> “更多”按钮  <img src="../images/ac.menuaro.gif"> “工具”对话框  <img src="../images/ac.menuaro.gif"> “细节级别”</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6790"></a>此工具的主要目的是在渲染复杂对象以及在视口中操纵对象时节省时间。因为一部分渲染速度直接和在场景中渲染的面数有关，所以使用“细节级别”工具可以在对象减少其明显大小时减少渲染面的数量。另外，可以使用这一工具来为视口中更复杂的对象显示简单的替代对象。因为不为在视口中隐藏的对象计算堆栈，可以使用该工具来提高视口操纵速度，来用简单的替代对象替代复杂的堆栈对象。
+            
+            	 
+         </p>
+         <div class="section"><a name="WSF742DAB041063133-48601C13112A1CEBBD0-7F30"></a> 
+            <h2><a name="GUID-571ED431-A806-417B-B35F-2408E1356216"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004216B"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004216C"></a>要为“细节级别”工具设置对象，可以执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>创建两个或多个除了复杂性以外都相同的对象。 
+                  			 
+                  <div><a name="WS73099CC142F487551FACE55114134B88B1-723E"></a><div class="note-note"><span class="label label-target-language">注意:</span>最好指定材质和贴图坐标，以及当对象仍分离时的所有修改器。 
+                        			 
+                     </div>
+                  </div> 
+               </li>
+               <li> 选择所有对象，然后使用“对齐”工具将它们居中到公共中心。 
+                  		  
+               </li>
+               <li>将对象分组。 
+                  		  
+               </li>
+               <li>选择“细节级别”工具。 
+                  		  
+               </li>
+               <li>选定分组的对象后，单击“创建新集”按钮。 
+                  			 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-678F"></a>在“细节级别”列表中以复杂程度为顺序显示了组内对象的名称；当其他对象不可见时，视口中只显示组内最不复杂的对象。 
+                     			 
+                  </p> 
+               </li>
+               <li>当要对象在渲染场景中转换其显示时，可以使用“细节级别”卷展栏中的控件来调整。 
+                  		  
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A19004216D"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004216E"></a>要访问对象堆栈，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> 选择“细节级别”对象，然后选择“组”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“打开”。 
+                  		  
+               </li>
+               <li>在“细节级别”工具中，从列表窗口选择所要访问的对象，然后启用“在视口中显示”（或者双击列表窗口中的对象名称）。 
+                  		  
+               </li>
+               <li> 在视口中选择对象。 
+                  		  
+               </li>
+               <li>打开“修改”面板访问该对象的参数。 
+                  		  
+               </li>
+               <li>完成后，选择“组”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“关闭”。 
+                  		  
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A19004216F"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190042170"></a>要在组中指定材质，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>选择分组的对象。 
+                  		  
+               </li>
+               <li>在“细节级别”工具中使用“在视口中显示”来显示将材质指定给分组的对象。 
+                  		  
+               </li>
+               <li>将材质从“材质编辑器”（或者“浏览器”）中拖动到视口对象上。 
+                  		  
+               </li>
+               <li>在“指定材质”警报中选择“指定给对象”，然后单击“确定”。 
+                  			 
+                  <div><a name="WS73099CC142F487551FACE55114134B88B1-723D"></a><div class="note-note"><span class="label label-target-language">注意:</span>确保选择“指定给对象”。如果选择默认的“指定给选择”，则将组中所有对象指定为同一材质。 
+                        			 
+                     </div>
+                  </div> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190042171"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190042172"></a>要拆除“细节级别”对象，请执行以下操作：
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-678E"></a>如果在“轨迹视图”中查看“细节级别”对象，将只会看到在当前视口中显示的子对象轨迹。要在“轨迹视图”中查看所有的子对象，需要禁用“可见对象”。 
+               		
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-678D"></a>要拆除分组的“细节级别”对象，并将其子对象还原为独立状态，请遵循以下步骤： 
+               		
+            </p>
+            <ol type="1" start="1">
+               <li>打开“轨迹视图”中的“过滤器”对话框，然后关闭在“只显示”组框中的“可见对象”。 
+                  		
+               </li>
+               <li>在“细节级别”对象中所有子对象的轨迹现在均可见。 
+                  		
+               </li>
+               <li>打开每个子对象的层次，然后选择每个“可见性”轨迹。 
+                  		
+               </li>
+               <li> 在“轨迹视图”工具栏上，单击“删除控制器”按钮。 
+                  		
+               </li>
+               <li>如果还要移除组，可以选择分组对象，然后选择“组”菜单中的“分解”。 
+                  		
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WSF742DAB041063133-48601C13112A1CEBBD0-7F2F"></a> 
+            <h2><a name="GUID-A39A6ED7-7302-4683-9A4E-44D2933DCF9B"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190042173"></a><div class="figure-anchor"><img src="../images/GUID-A5F571C8-0395-4490-B75B-7E654501920B-low.png"></div>  <a name="GUID-522559E8-8DAC-44A1-970A-AFB1620F313C"></a><div class="dl_section"><a name="GUID-020A32E3-29D1-4681-A5E8-E3A05F288E8D"></a><p class="title"><a name="GUID-282057FC-E9D8-4C75-AD5F-C695772FE0DC"></a>“细节级别集”组
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-678C"></a>可以创建一个新集，并从当前集中添加或移除对象。 
+                  		
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D44F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-678B"></a>创建新集</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FE9"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753307"></a>在当前选择的组对象基础上创建新的“细节级别”集。 
+                           		
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D450"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-678A"></a>添加到集</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FE8"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753308"></a>将对象添加到“细节级别”集。必须首先将想要添加的对象连接到组对象上。要把对象添加到集，可以使用“对齐”将对象和组对象一起居中。选择所要添加的对象，然后在“组”菜单中选择“连接”，再单击组对象。最后，单击“添加到集”按钮，然后单击所要添加的对象。
+                           
+                           		
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D451"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6789"></a>从集中移除</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FE7"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753309"></a>在当前集移除列表窗口中高亮显示的对象。请注意对象然后会在视口中变得可见，但仍是组的一部分。要从组中移除对象，选择“组”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“打开”，选择所要移除的对象，再选择“组”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“分离”。再次选择组对象，并选择“组”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“关闭”。 
+                           		
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-FD13212B-F051-41C7-9533-90750F824BB5"></a><p class="title"><a name="GUID-0B974F80-CB94-4555-A370-3FECF8804C56"></a>“图像输出大小”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D452"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6788"></a>宽度/高度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FE6"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875330A"></a>每次进入“细节级别”工具时，将该区域微调器的“宽度”和“高度”设置为当前渲染输出大小。使用微调器，可以更改为任何分辨率。如果选择“目标图像”选项的百分比，可以更改“目标图像大小”，也可以更改阈值。 
+                           		
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D453"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6787"></a>重置为当前值</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FE5"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875330B"></a>将两个微调器重置为当前渲染输出大小。 
+                           		
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D454"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6786"></a>[列表窗口]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FE4"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875330C"></a>按复杂性列出组中的所有对象，复杂性最小的将在表格顶端。每个对象名称左边的数字是阈值，它表明了渲染场景中显示的对象的大小。数字可以是一种或几种类型的单位、像素或者目标图像的百分比。可以在“阈值单位”组中设置单位类型。 
+                        		
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D455"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6785"></a>在视口中显示</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FE3"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875330D"></a>在视口中显示高亮显示在列表窗口中的对象。在视口中只随时显示组中一个对象。默认情况下，显示最不复杂的对象，但可以通过在列表中高亮显示并选择此选项来查看其他对象。双击列表中的对象名称可以执行同样的功能。 
+                        		
+                     </p> 
+                  </div>
+               </dd>
+            </dl>
+            <div class="dl_section"><a name="GUID-A67AA0D8-59CE-4298-9291-0ED39B8129AD"></a><p class="title"><a name="GUID-F532075F-875E-4983-8275-FD1950253268"></a>“阈值单位”组
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6784"></a>组框中的选项可以用于在两种类型的阈值单位中进行选择。在这两种选项中切换不会改变其效果；它改变了设置阈值的方法。 
+                  		
+               </p><a name="UL_B116C8F53EC84559A21602E29C2C71B4"></a><ul>
+                  <li><em class="strong">像素</em>通过指定图像像素最大大小（斜向测量）来决定阈值。当设置传输阈值时使用此选项，要使用绝对值而不是相对值。 
+                     		  
+                  </li>
+                  <li><em class="strong">目标图像的 %</em> 基于相对于渲染输出大小的图像大小（斜向测量）百分比设置阈值。 
+                     		  
+                  </li>
+               </ul>
+            </div>
+            <div class="dl_section"><a name="GUID-2D4002A3-7271-4590-8E9A-09BC7F46D867"></a><p class="title"><a name="GUID-98F619C8-9D6B-4FF2-B673-1E614B32FEB7"></a>“阈值”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D458"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6781"></a> 最小大小/最大大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FE0"></a>  
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753310"></a>在对象被复杂程度较低的对象代替前，设置该对象的最小大小，在对象被复杂程度较高的对象代替前，设置该对象的最大大小。值会根据当前“阈值单位”的类型改变。默认阈值被初始化，以便最复杂对象的图像输出大小是 100％。使用算法设置其余的阈值，该算法基于每个对象面的比。假定所有的面尺寸相同，然后拾取阈值，这样可以使这些面显示在屏幕上时大小保持恒定。通常，这将提供所需平滑变换的类型，但是可以自定义阈值。阈值在对象之间交互关联，例如，改变一个对象的最小大小将会改变下一个对象的最大大小。
+                           
+                           		
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D459"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6780"></a>全部重置</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FDF"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753311"></a>使用如上所述的算法，为表中所有对象重置阈值。 
+                           		
+                        </p> 
+                        <div><a name="WS73099CC142F487551FACE55114134B88B1-723C"></a><div class="note-tip"><span class="label label-target-language">提示</span>当在渲染场景中显示复杂几何体时，可以使用“细节级别”工具来创建对象，这个对象显示视口中简单的几何体。创建分组的“细节级别”对象，该对象只包含两个对象，即复杂对象和简单对象。在列表窗口中选择简单对象，并且在“阈值”中，将其“最小大小”和“最大大小”都设为
+                              0。这样将在视口中显示简单对象，但复杂对象无论外观大小如何，始终会显示在渲染过的场景中。 
+                              		
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D45A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-677F"></a>关闭</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FDE"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753312"></a>关闭此工具。 
+                        		
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

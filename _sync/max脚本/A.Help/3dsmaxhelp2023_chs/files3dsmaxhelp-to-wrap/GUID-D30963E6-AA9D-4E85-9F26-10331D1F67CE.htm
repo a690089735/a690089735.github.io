@@ -1,0 +1,169 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D30963E6-AA9D-4E85-9F26-10331D1F67CE">
+      <meta name="description" content="提供导出到 VRML97 的选项，">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>“VRML97 导出器”对话框</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D30963E6-AA9D-4E85-9F26-10331D1F67CE"></a><div class="head">
+            <h1>“VRML97 导出器”对话框 </h1>
+         </div>
+         <p class="blurb">提供导出到 VRML97 的选项， </p>
+         <div class="bodyReference">
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2AFA"></a> <a name="WS1A9193826455F5FFBA679E112A6A19004320"></a><div class="figure-anchor"><img src="../images/GUID-1C43ABF5-D155-408E-A21E-717310C990ED-low.png"></div>  <a name="GUID-2E90FAF1-29A9-4301-8876-F725D48937DB"></a><div class="dl_section"><a name="GUID-44F6CFE0-B4EA-4DCC-8D52-1BE6CFE4D3B4"></a><p class="title"><a name="GUID-AA41CE65-06FC-4A3C-BD52-6AA7D87EC7F0"></a>“生成”组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E10"></a>启用下列任何选项都会增加由导出过程所生成的 VRML97 文件大小。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-2560"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E0F"></a>法线</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-137F"></a> 为对象生成真实法线。某些浏览器需要法线以实现正确的平滑。如果在 <span class="charspan-msgph">3ds Max</span> 中要导出使用平滑组的几何体，请选中该框以查看正确的明暗处理。默认设置为禁用。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-255F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E0E"></a>坐标插补器</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-137E"></a> 导出动画效果，它们涉及到实际的网格对象修改，而不仅仅是移动旋转和缩放。示例包含其参数可设置动画的修改器，如锥化修改器、弯曲修改器、扭曲修改器和空间扭曲。该选项会生成较大文件，因为导出器需要为这些类型的动画计算每个顶点的位置。 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E0D"></a>如果动画不能正确地导出，则使用该选项进行导出。需要“坐标插补器”的一个动画运动的例子是，由简单矩形框组成的杆状体形，在这一体形中骨骼链接到矩形框上形成骨架结构。即使这些矩形框在空间移动时变形不明显，也不能不使用“坐标插补器”来导出这些运动，因为它们的运动并不是由简单的变换生成的。任何通过使用修改器堆栈或对象参数而实现的动画都需要“坐标插补器”。这也包括动画“变换”修改器。
+                              
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E0C"></a>某些类型的动画无法使用“坐标插补器”实现；例如，当动画网格在帧间改变大小时。在球体中设置分段数目的动画就是这样。如果 <span class="charspan-msgph">3ds Max</span> 检测到这一类型的动画正在导出，它会发出警告。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-255E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E0B"></a>缩进</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-137D"></a> 缩进 VRML97 源代码使其更加易读。默认设置为启用。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-255D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E0A"></a>导出隐藏对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-137C"></a> 导出隐藏的对象。默认设置为禁用。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-255C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E09"></a>基本体</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-137B"></a> 导出 VRML97 基本体，这可以减少文件的大小，因为基本体的描述比较简单（例如球体仅由半径来描述）。要查看场景中有多少多边形，请禁用该框以导出 <span class="charspan-msgph">3ds Max</span> 基本体，其为每个对象设置了一个索引的面。默认设置为启用。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-255B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E08"></a>翻转书</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-137A"></a> 导出场景到多个文件。在“采样率”对话框的“翻转书”部分设置采样率。指定的文件名成为文件序列的基本名。例如，如果指定文件名为 <em class="mild">test.wrl</em>，选择每个动画帧一个文件，假如有五帧的话，则 <span class="charspan-msgph">3ds Max</span> 导出下列文件： 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E07"></a> <em class="mild">test.txt</em> 含有常规信息、开始/停止时间以及帧数。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E06"></a> <em class="mild">test0.wrl</em> 到 <em class="mild">test4.wrl</em> 是从第 0 帧到第 4 帧中动画的快照。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-255A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1E05"></a>每个顶点的颜色</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1379"></a> 导出几何体的顶点颜色。如果启用该选项，则“每个顶点颜色源”会让您选择顶点颜色源。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="GUID-4680185C-E25F-4083-BE51-BB5E0A8B2439"></a><span class="term"><a name="GUID-C9298BCE-7DD3-45EC-88E4-17B9E7673B87"></a>多边形类型</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-3EBBA68F-7776-4648-B063-3FF02294A030"></a>确定几何体面如何作为 VRML97 IndexedFaceSet 节点写出。 <a name="UL_CC3ED58AB65840B0ACCF14525BA5777C"></a><ul>
+                           <li><em class="strong">多边形</em>使用尽可能多的边来编写面。 
+                           </li>
+                           <li><em class="strong">四边形</em>尽可能编写四边形面（否则为三角形）。 
+                           </li>
+                           <li><em class="strong">三角形</em>仅写入三角形面。 
+                           </li>
+                           <li><em class="strong">可见边</em>在标记为可见的内部边上打断面。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-412E19C4-18C5-48E3-BB2F-8862F3EFB384"></a><span class="term"><a name="GUID-B4953375-EFF5-4253-A153-1D86503FA535"></a>初始视图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-E6CFF27D-730B-44D7-BE96-9C118A0D5188"></a>为场景设置输入摄影机并控制在浏览器中首先显示的内容。如果场景中没有摄影机，则场景以默认视口显示（可能只给出部分视图）。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DFE"></a>所有场景应当至少拥有一个摄影机，这样就可以控制场景如何进行初始渲染。向场景中添加比初始使用的更多的摄影机，这样只要 VRML97 浏览器允许的话，查看者就可以在多个摄影机间切换。这样就能够使用预先安装的有利位置来设置场景。否则，如果世界非常大的话，就可能会给查看者的系统带来更多负担而且也会使导航变得困难。某些浏览器设置摄影机移动动画，这样其他摄影机就可以使查看场景变得更有趣。
+                           
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-EAB2E9E4-6127-4365-B55B-6A68B620E20E"></a><span class="term"><a name="GUID-0D77352F-3E8E-4C9A-BC4C-FE6FE65D5BE3"></a>初始漫游信息</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-514B956D-9BFE-4C0E-87D7-50F298EB6E15"></a>指定在浏览器中加载世界时，要使用的漫游信息辅助对象。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-4CD15314-0F89-4E86-B178-1A6C71B28894"></a><span class="term"><a name="GUID-3FD38282-78F8-4DC8-A62D-D8CBE68B5B41"></a>初始背景</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-936839C3-C7E3-495A-93FC-4C69C3CD6DE7"></a>指定在浏览器中加载世界时，要使用的背景辅助对象。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-4AC53251-8A9B-4496-84D8-2534DFB8CE9E"></a><span class="term"><a name="GUID-A524C17A-AC0D-41DF-BB11-159763625B9D"></a>初始雾</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-F0E32647-BA5D-4443-8278-0EC5815D86F2"></a>指定在浏览器中加载世界时，要使用的雾辅助对象。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-27C09960-6C0D-4CDE-9F7E-09E418EE1AD0"></a><span class="term"><a name="GUID-AED31F0E-308B-48A9-B009-0C4B53F84149"></a>精度位数</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-8CB4DE9D-4103-452A-8D89-86174C36543D"></a>设置用于计算尺寸的小数点位数。默认值 4 通常就足够了。如果您所创建的部分世界距场景中心大于 100,000 个单位的时候，那么就需要设置位数大于 4。将该值设置为 3 可以减小文件大小。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-72038C7A-C28D-4DBF-847D-DC3BC8700529"></a><span class="term"><a name="GUID-8434C1EF-E3EA-499A-9C76-988FE2E29667"></a>显示进度条</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-EF992E4A-0B89-4F05-8373-79C6EF463AC3"></a>提供当场景导出时查看进度条的选项。 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-3C32CE6E-69D2-463B-83B2-5A479833DC41"></a><p class="title"><a name="GUID-E52913E2-88CF-4623-8BB7-6DAF8764E75E"></a>“顶点颜色源”组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DF8"></a>当启用“每个顶点的颜色”选项时，可以为顶点颜色选择源。 
+                  </p><a name="UL_EC0FB5D8BC9D4982A62E474C9F56B1F3"></a><ul>
+                     <li><em class="strong">使用 Max 的</em>导出场景中定义的对象的当前顶点颜色。 
+                     </li>
+                     <li><em class="strong">在导出时计算</em>根据当前灯光和对象的材质，导出时计算顶点处的漫反射颜色。 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-E2A29C9A-33A4-4327-B077-17E16A2BF246"></a><p class="title"><a name="GUID-AC976E62-5202-43EB-B95A-D2B15A5FB78D"></a>“位图 URL 前缀”组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DF4"></a>可以为场景中指定给对象的位图指定一个 URL 前缀。必须使所有纹理位图或者与 WRL 文件在同一目录下，或者位于此处指定的其他位置中。如果贴图存储在其他位置中，则需要手动搜索 WRL 格式的贴图并更改其位置。即使没有在 WWW 服务器上找到贴图，也并不是所有的浏览器都会显示错误消息。
+                     
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-2553"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DF3"></a>使用前缀</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1372"></a> 启用前缀机制。如果禁用此框，则图像贴图必须位于 WRL 文件所在的位置。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-2552"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DF2"></a>前缀</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1371"></a> 将此处输入的前缀添加至所有指定的位图的名称。名称可以是全 URL（以 HTTP 开头），或者也可以是相对路径（VRML97 文件所在位置的子目录）。例如，如果为前缀输入“Maps”，则当浏览器打开一个指定了纹理贴图的 VRML97 文件时，它会寻找子目录“Maps”。“Maps”必须是
+                           VRML97 文件所在目录下层的直接目录。 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DF1"></a>使用正斜杠（不是反斜杠）输入更长的路径，例如：<em class="mild">Myfiles/maps</em>。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="GUID-8090DFFA-79D4-44AE-B3C9-57ECFF2F347B"></a><span class="term"><a name="GUID-73728681-6AE0-4920-9466-FCFFFB243294"></a>采样速率</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-0616179A-9D0E-4427-B318-BC7A113CE7EB"></a>显示一个对话框，可以在其中指定基于控制器和坐标插值的动画采样率，也可以指定“翻转书”的输出速率。设置采样率使您可以在动画逼真度和文件大小间获得平衡。默认值在大多数情况下会得到很好的效果。要实现更高的动画精度，就使用较低的数值（更高的采样率）。
+                        
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-1F2C3757-F87A-4C38-905B-E7FE79687DE8"></a><span class="term"><a name="GUID-913E4B31-23D0-4190-94F5-B5175CDDAC01"></a>世界信息</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-F8DF22D5-ADE2-42BC-B260-E00B857E91D8"></a>输入关于世界的信息。这对可视化外观或世界的行为没有影响。某些浏览器可以显示“标题”字段中输入的内容，例如，在浏览器窗口的标题栏。可以使用“信息”字段来提供作者、版本和版权信息。 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

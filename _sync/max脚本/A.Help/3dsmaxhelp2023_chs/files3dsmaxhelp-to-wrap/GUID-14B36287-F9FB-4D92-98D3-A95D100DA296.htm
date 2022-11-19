@@ -1,0 +1,110 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-14B36287-F9FB-4D92-98D3-A95D100DA296">
+      <meta name="description" content="置换贴图可以使曲面的几何体产生置换。它的效果与使用置换修改器类似。与凹凸贴图不同，置换贴图实际上更改了曲面的几何体或面片细分。位移贴图应用贴图的灰度来生成位移。在 2D 图像中，较亮的颜色比较暗的颜色更多的向外突出，导致几何体的 3D 置换。">
+      <meta name="indexterm" content="作为材质组件的贴图: 置换">
+      <meta name="indexterm" content="置换贴图">
+      <meta name="topic-type" content="topic">
+      <title>置换贴图</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-14B36287-F9FB-4D92-98D3-A95D100DA296"></a><div class="head">
+            <h1>置换贴图</h1>
+         </div>
+         <p class="blurb">置换贴图可以使曲面的几何体产生置换。它的效果与使用<span class="char_link"><a href="GUID-12F0E0BA-3FCA-4C8F-8C9B-C77C8FB4A45C.htm">置换修改器</a></span>类似。与<span class="char_link"><a href="GUID-2818B285-15A3-4E7F-8E0F-8C00B37D0FA8.htm">凹凸贴图</a></span>不同，置换贴图实际上更改了曲面的几何体或面片细分。位移贴图应用贴图的灰度来生成位移。在 2D 图像中，较亮的颜色比较暗的颜色更多的向外突出，导致几何体的 3D 置换。 
+         </p><a name="UL_E2DB4889379A4D749B477249AC9A6472"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-1DAD8E35-8EBB-454F-A985-936ED03C5E6E"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “标准”材质 <img src="../images/ac.menuaro.gif"> “贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “置换”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-0C26E3A4-0361-4AAC-916D-E478DE262486"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “光线跟踪”材质 <img src="../images/ac.menuaro.gif"> “贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “置换”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-88A358F5-3800-4E2A-92BE-45AF6D9DF57C"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “Arch &amp; Design”材质 <img src="../images/ac.menuaro.gif"> “特殊用途贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “置换”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-F25E664D-DF65-425D-86EB-84D85B92428E"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif">  具有置换组件的其他材质</span> 
+            </li>
+         </ul><a name="WS73099CC142F487554E67820D1283FBC0BF32780"></a><div class="figure-anchor"><img src="../images/GUID-D58029AC-6D1F-42B8-B8A0-A9A926450FF6-low.png"><p class="figure-title">使用置换贴图改变曲面</p>
+         </div>
+         <div style="margin-top: 9pt;"><a name="WS73099CC142F487554E67820D1283FBC0BF32781"></a><div class="note-warning"><span class="label label-target-language">警告:</span> 置换贴图会在每个曲面上生成许多个三角形面，有时生成的面数会超过一百万。虽然使用置换贴图可以生成令人印象深刻的效果，但同时会消耗大量的计算时间和内存。 
+            </div>
+         </div>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32782"></a>对于包含面片或曲面的对象，置换量值会被测量为边界框对角线的百分比。这使位移效果对于对象中的所有曲面来说都是一致的，并且也意味着在缩放对象时，位移也会同样缩放。 
+         </p>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32783"></a>可以将置换贴图直接应用到以下种类的对象中： 
+         </p><a name="WS73099CC142F487554E67820D1283FBC0BF32784"></a><ul>
+            <li> <span class="char_link"><a href="GUID-004BE4A2-F179-4343-BADA-55B55B1DF8D6.htm">Bezier 面片</a></span> 
+            </li>
+            <li> <span class="char_link"><a href="GUID-3CBF3773-3CDC-4ED7-8C34-D0EAF9CD9F66.htm">可编辑网格</a></span> 
+            </li>
+            <li> <span class="char_link"><a href="GUID-D05DF785-F905-453E-BF64-DB4D59A9F200.htm">可编辑多边形</a></span> 
+            </li>
+            <li> <span class="char_link"><a href="GUID-FD120DDE-E8BE-4DB9-A2CA-62069059B4FF.htm">NURBS 曲面</a></span> 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32789"></a>对于其他各种几何体，例如基本体、扩展基本体、复合对象等等，不支持直接使用置换贴图。要对这些对象的曲面进行置换，请应用<span class="char_link"><a href="GUID-0F23DF48-AF93-4C36-B28C-933762294E52.htm">置换近似修改器</a></span>。“置换近似”可以处理任何能转换成可编辑网格的对象。 
+         </p>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF3278A"></a>置换贴图的效果在视口中不可见，除非使用修改器： 
+         </p><a name="WS73099CC142F487554E67820D1283FBC0BF3278B"></a><ul>
+            <li>对于 NURBS 曲面，可以使用<span class="char_link"><a href="GUID-6B3BB57D-4C05-47BB-9C85-F6C9AD423B04.htm">置换 NURBS 世界空间修改器</a></span>，来使置换贴图在视口中可见，并作为一个网格对象而具有可编辑性。 
+            </li>
+            <li>对于可编辑网格和应用了“置换近似”的对象，使用<span class="char_link"><a href="GUID-F88DA9B9-1786-4EF6-98C8-35E8A481D465.htm">置换网格修改器</a></span>可以达到同样的效果。 
+               <div><a name="WS73099CC142F487554E67820D1283FBC0BF3278E"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果将 <span class="char_link"><a href="GUID-78327298-4741-470C-848D-4C3618B18FCA.htm">UVW 贴图修改器</a></span>应用到曲面，那么除置换贴图外，所有其他的贴图都从修改器上获取它们的坐标，而置换贴图总是从初始曲面或置换近似修改器上获取它的坐标。 
+                  </div>
+               </div> 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF3278F"></a>在某些情况下，如当基本网格非常简单时，在可编辑网格上使用置换贴图可能会因为细分基本网格的方式而产生问题。（在将位移贴图应用到 NURBS 曲面上时不会发生这些问题。）当发生这种问题时，平滑将不能正常工作，并且可以在曲面本身中看到基本线框网格。要更正这个问题，使用这些技术：
+            
+         </p><a name="WS73099CC142F487554E67820D1283FBC0BF32790"></a><ul>
+            <li>避免将置换贴图应用到单一颜色的大片区域。映射漫反射颜色的贴图，并在用作漫反射颜色的贴图中使用少量的变化，诸如微量的噪波。 </li>
+            <li>向用于位移的贴图中添加少量噪波。这能使细分变得足够复杂而缓解问题。 </li>
+            <li>将详细信息添加到网格。越是初始的面，网格曲率就越平滑，贴图位移将越均匀。 </li>
+         </ul>
+         <div class="section"><a name="WS73099CC142F487554E67820D1283FBC0BF32794"></a> 
+            <h2><a name="GUID-516F1B3C-394B-4710-9A11-9BA49C298C4F"></a>过程
+            </h2> <a name="WS73099CC142F487554E67820D1283FBC0BF32795"></a><p class="list-intro"><a name="WS73099CC142F487554E67820D1283FBC0BF32796"></a>要将置换贴图应用到 NURBS 曲面、可编辑网格或面片，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>单击“置换”的“贴图”按钮。 
+                  <p><a name="WS73099CC142F487554E67820D1283FBC0BF32798"></a><span class="charspan-msgph">3ds Max</span> 打开<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>。 
+                  </p> 
+               </li>
+               <li>从贴图类型列表中进行选择，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867EC"></a>（如果选择将“位图”作为贴图类型，则 <span class="charspan-msgph">3ds Max</span> 将打开用于选择图像文件的文件对话框。） 
+                  </p> 
+               </li>
+               <li>使用贴图控件可设置贴图。 </li>
+            </ol> <a name="WS73099CC142F487554E67820D1283FBC0BF3279C"></a><p class="list-intro"><a name="WS73099CC142F487554E67820D1283FBC0BF3279D"></a>要将置换贴图应用到其他种类的对象，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择对象。转到 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">（“修改”面板），然后从“修改器”下拉列表中选择“置换近似”。 
+                  <p><a name="WS73099CC142F487554E67820D1283FBC0BF3279F"></a>可以对“置换近似”修改器参数进行调整，或者保留它们的默认值。 
+                  </p> 
+               </li>
+               <li> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png"> 打开材质编辑器。 
+               </li>
+               <li>单击“置换”的“贴图”按钮。 
+                  <p><a name="WS73099CC142F487554E67820D1283FBC0BF327A2"></a><span class="charspan-msgph">3ds Max</span> 打开<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>。 
+                  </p> 
+               </li>
+               <li>从贴图类型列表中进行选择，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867ED"></a>（如果选择将“位图”作为贴图类型，则 <span class="charspan-msgph">3ds Max</span> 将打开用于选择图像文件的文件对话框。） 
+                  </p> 
+               </li>
+               <li>使用贴图控件可设置贴图。 </li>
+            </ol> 
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-0F23DF48-AF93-4C36-B28C-933762294E52.htm">置换近似修改器参考</a></li>
+                     <li class="topiclist-litem"><a href="GUID-78705B35-7DAF-408F-BB6F-7E69D3A384F2.htm">材质编辑器</a></li>
+                     <li class="topiclist-litem"><a href="GUID-A66E61B1-8B69-4A61-A7AF-40C8927DA00E.htm">NURBS 曲面近似</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

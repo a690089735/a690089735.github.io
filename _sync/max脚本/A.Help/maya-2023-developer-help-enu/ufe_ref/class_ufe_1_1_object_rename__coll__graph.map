@@ -1,0 +1,6 @@
+<map id="Ufe::ObjectRename" name="Ufe::ObjectRename">
+<area shape="rect" id="node2" href="$class_ufe_1_1_object_path_change.html" title="Base class for object path change scene notifications. " alt="" coords="5,157,163,184"/>
+<area shape="rect" id="node3" href="$class_ufe_1_1_scene_changed.html" title="Base class for all scene notifications. " alt="" coords="16,81,152,108"/>
+<area shape="rect" id="node4" href="$class_ufe_1_1_notification.html" title="Base class for all notifications. " alt="" coords="26,5,142,32"/>
+<area shape="rect" id="node5" href="$class_ufe_1_1_path.html" title="Identify an object or 3D path in the scene. " alt="" coords="187,157,264,184"/>
+</map>

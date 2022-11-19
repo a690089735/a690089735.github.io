@@ -1,0 +1,1 @@
+messageBox "ProTrajectoryHandles installed!\nYou can find the macro in the 'JDBgraphics' catergory."

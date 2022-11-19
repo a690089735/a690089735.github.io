@@ -1,0 +1,4 @@
+CommandPluginBasics
+doItAndredoIt
+UndoableCommands
+Flags

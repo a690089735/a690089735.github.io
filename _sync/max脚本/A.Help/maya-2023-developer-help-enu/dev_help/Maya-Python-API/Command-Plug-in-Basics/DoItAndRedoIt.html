@@ -1,0 +1,21 @@
+<!-- saved from url=(0024)http://docs.autodesk.com -->
+<html>
+   <head>
+<link href="../../../style/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../../../scripts/prettify.js"></script><script src="../../../scripts/lib/jquery-1.11.1.min.js" type="text/javascript"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="generator" content="pandoc" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript" src="../../../scripts/utils/adsk.redirect.js"></script>
+      <title>The doIt() and redoIt() functions</title>
+   </head>
+   <body height="100%"><div class="body_content" id="body-content"><style type="text/css">code{white-space: pre;}</style><script>$(document).ready(function() { yepnope.injectJs("./scripts/multireflink.js"); });</script><script>$(document).ready(function () { prettyPrint(); } );</script><script></script><script></script><div id="reflinkdiv"></div>
+      <div>
+         <div class="head">
+            <h1>The doIt() and redoIt() functions</h1>
+         </div>
+
+<div class='section'><a id="the-doit-and-redoit-functions"></a></div>
+<p>A command plug-in must define <span class='code'>doIt()</span> and <span class='code'>redoIt()</span> functions. These functions execute the command&#39;s actions.</p>
+<p><span class='code'>doIt()</span> is invoked only once, the first time the command is run. <span class='code'>redoIt()</span> is called every subsequent time the command is run.</p>
+<p><span class='code'>doIt()</span> should instantiate all the objects and variables your command will require, and then it should call <span class='code'>redoIt()</span>.</p>
+<p><span class='code'>redoIt()</span> should manipulate the state of the objects used in the command. These are the manipulations that are undone in <a href='#!/url=./dev_help/Maya-Python-API/Command-Plug-in-Basics/UndoableCommands.html' title=''><span class='code'>undoIt()</span></a>.</p>
+      <div class="footer-block"><a href="../html/ac.cmtdialog.htm" class="comments-anchor" target="_blank"><span class="comments-link">Please send us your comment about this page</span></a></div></div>
+   </div></body>
+</html>

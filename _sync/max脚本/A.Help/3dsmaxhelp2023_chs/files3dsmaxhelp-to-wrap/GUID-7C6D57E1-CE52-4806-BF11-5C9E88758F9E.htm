@@ -1,0 +1,218 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-7C6D57E1-CE52-4806-BF11-5C9E88758F9E">
+      <meta name="description" content="使用“强度/颜色/衰减参数”卷展栏可以设置灯光的颜色和强度。也可以定义灯光的衰减。">
+      <meta name="indexterm" content="衰减: 参数">
+      <meta name="indexterm" content="颜色: 参数">
+      <meta name="indexterm" content="淡入/淡出（灯光）">
+      <meta name="indexterm" content="衰退">
+      <meta name="indexterm" content="强度/颜色/衰减参数">
+      <meta name="topic-type" content="concept">
+      <title>“强度/颜色/衰减”卷展栏（标准灯光）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-7C6D57E1-CE52-4806-BF11-5C9E88758F9E"></a><div class="head">
+            <h1>“强度/颜色/衰减”卷展栏（标准灯光）</h1>
+         </div>
+         <p class="blurb">使用“强度/颜色/衰减参数”卷展栏可以设置灯光的颜色和强度。也可以定义灯光的衰减。 </p><a name="UL_73B52664EA734AB09BB4F962C689EC54"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-200175A1-6066-4D2F-8B2F-ED0538B0F5B5"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-EE6A9DC1-43D8-4EEC-AE55-2C415AB62C52-low.png">（灯光） <img src="../images/ac.menuaro.gif"> “标准” <img src="../images/ac.menuaro.gif">  创建标准灯光。 <img src="../images/ac.menuaro.gif"> “衰减参数”卷展栏</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A19004733"></a><div class="figure-anchor"><img src="../images/GUID-A6B2ABF2-CF6F-497E-940A-6F7332D33283-low.png"><p class="figure-title">衰减设置使远处对象更暗。</p>
+         </div>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-565A"></a> <span class="char_link"><a href="GUID-DCAA85A2-F058-4920-BBFE-DB742FE665A0.htm">衰减</a></span>是灯光的强度将随着距离的加长而减弱的效果。在 <span class="charspan-msgph">3ds Max</span> 中，可以显式设置衰减值。该效果与现实世界的灯光不同，它使您获得对灯光淡入或淡出方式的更直接控制。 
+         </p>
+         <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6AEB"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果没有衰减，则当它远离光源时，将荒谬地显示一个对象以使其变得更亮。这是因为该对象的大多数面的入射角更接近 0 度。 
+            </div>
+         </div>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5659"></a>两组值控制对象的衰减。“远”距衰减值设置在灯光减为 0 处的距离。“近距衰减”值可用于设置灯光“淡入”的距离。这两个控件均可通过称为“使用”的切换选项进行启用和禁用。 
+         </p>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5658"></a>当对于远距衰减设置“使用”时，在其源处的灯光使用由其颜色和倍增控件指定的值。当从源到“开始”指定的距离处仍然保留该值，然后在“结束”指定的距离处该值减为 0。 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A19004739"></a><div class="figure-anchor"><img src="../images/GUID-EEA28623-85D1-475E-A424-4DB3CABF2979-low.png"><p class="figure-title">将衰减添加到场景中</p>
+         </div>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5657"></a> 当对于近距衰减设置“使用”时，从 0 到“开始”指定的距离处仍然保留该灯光值。从“开始”到“结束”指定的距离，其值增加。除了“结束”之外，在颜色和倍增控件指定的值处仍然保留该灯光，除非远距衰减也处于活动状态。 
+         </p>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5656"></a>不可以设置“近”距衰减和“远”距衰减距离，否则他们将互相覆盖。 
+         </p>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5655"></a>“衰退”控件是使灯光淡出的另一种方法。 
+         </p>
+         <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6AEA"></a><div class="note-tip"><span class="label label-target-language">提示</span>灯光衰减时，近距曲面上的灯光可能过亮，或者远距曲面上的灯光可能过暗。如果在渲染中查看该效果，曝光控件有助于纠正该问题。它将（模拟）物理场景的动态范围调整为更大，将显示的动态范围调整为更小。有关曝光控制的其他信息，请参见<span class="char_link"><a href="GUID-EF33AEB1-44BE-403E-B4CC-3C29495988C2.htm">环境面板</a></span>。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2BA8"></a> 
+            <h2><a name="GUID-56FBA5CE-8BD4-4B0D-A5CE-DDBDED69AEAA"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900473A"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900473B"></a>要使用颜色选择器选择灯光的颜色，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>单击“倍增”微调器旁边的色样。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5654"></a>将显示模式的<span class="char_link"><a href="GUID-73A38CF6-FE78-443F-BB42-CC8C60449585.htm">颜色选择器</a></span>。 
+                  </p> 
+               </li>
+               <li>使用“颜色选择器”选择一个新颜色，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5653"></a>更新着色视口以显示新的灯光颜色，该颜色也显示在渲染中。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900473C"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900473D"></a>要更改灯光的强度，请执行以下操作：
+            </p>
+            <ul>
+               <li>增加灯光的“倍增”值。 </li>
+            </ul> <a name="WS1A9193826455F5FFBA679E112A6A1900473E"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900473F"></a>要使用衰减，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>设置“开始”和“结束”值。 </li>
+               <li>启用“使用”。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5652"></a>现在当场景被着色或渲染时，该灯光的衰减有效。 
+                  </p> 
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6AE9"></a><div class="note-note"><span class="label label-target-language">注意:</span>也可以更改衰退类型（和值）以减少远处灯光的强度。 
+                     </div>
+                  </div> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A19004740"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004741"></a>要在视口中查看衰减范围，请执行以下操作：
+            </p>
+            <ul>
+               <li>设置“显示”远距衰减或近距衰减。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5651"></a>只有启用该选项，如同<span class="char_link"><a href="GUID-3D743E3A-B01D-4C3F-9E16-CD1D3BAF7F2A.htm">视口首选项</a></span>中的一个选项，才可以在着色的视口中预览衰减的效果。 
+                  </p> 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2BA7"></a> 
+            <h2><a name="GUID-9610C68B-D72A-4A98-9A1B-4303B7FB61D1"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004742"></a><div class="figure-anchor"><img src="../images/GUID-6476665B-6A3C-4168-A1BD-5650AF065CB5-low.png"></div>  <a name="GUID-A961DBF0-3067-4691-B21C-29645E49ABEC"></a><dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-8E"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5650"></a>倍增</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6F79"></a> 将灯光的功率放大一个正或负的量。例如，如果将<span class="char_link"><a href="GUID-A643C0DD-2738-4934-9088-9009C6ECF902.htm">倍增</a></span>设置为 2，灯光将亮两倍。负值可以减去灯光，这对于在场景中有选择地放置黑暗区域非常有用。默认值为 1.0。 
+                     <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-564F"></a>使用该参数增加强度可以使颜色看起来有“烧坏”的效果。它也可以生成颜色，该颜色不可用于视频中。通常，将“倍增”设置为其默认值 1.0，特殊效果和特殊情况除外。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-564E"></a>高“倍增”值会冲蚀颜色。例如，如果将聚光灯设置为红色，之后将其“倍增”增加到 10，则在聚光区中的灯光为白色并且只有在衰减区域的灯光为红色，其中并没有应用“倍增”。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-564D"></a>负的“倍增”值导致“黑色灯光”。即灯光使对象变暗而不是使对象变亮。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-8D"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-564C"></a>[色样]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6F78"></a> 显示灯光的颜色。单击色样将显示<span class="char_link"><a href="GUID-73A38CF6-FE78-443F-BB42-CC8C60449585.htm">颜色选择器</a></span>，用于选择灯光的颜色。 
+                  </div>
+               </dd>
+            </dl>
+            <div class="dl_section"><a name="GUID-1834EB6F-D87B-41A5-9EAE-993C2940E095"></a><p class="title"><a name="GUID-D0638354-99D8-4EEB-8B30-ADFE02E3497D"></a>“衰退”组
+               </p>
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-564B"></a>“衰退”是使远处灯光强度减小的另一种方法。 
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-8C"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-564A"></a>“类型”下拉列表</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6F77"></a> 选择要使用的衰退类型。有三种类型可选择。 <a name="WS1A9193826455F5FFBA679E112A6A19004744"></a><ul>
+                           <li> <em class="strong">无</em>（默认设置。）不应用衰退。从其源到无穷大灯光仍然保持全部强度，除非启用远距衰减。 
+                           </li>
+                           <li> <em class="strong">反向</em>应用反向衰退。公式亮度为 R<sub> <span class="charspan-emphasis">0</span> </sub>/R，其中 <em class="mild">R0</em> 为灯光的径向源（如果不使用衰减），为灯光的“近距结束”值（如果不使用衰减）。<em class="mild">R</em> 为与 <em class="mild">R0</em> 照明曲面的径向距离。 
+                           </li>
+                           <li> <em class="strong">平方反比</em>应用平方反比衰退。该公式为 (R<sub> <span class="charspan-emphasis">0  </span> </sub>/R)<sup> <span class="charspan-emphasis">2</span> </sup>。实际上这是灯光的“真实”衰退，但在计算机图形中可能很难查找。 
+                              <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5649"></a>这是<span class="char_link"><a href="GUID-E337DCA6-6B8D-4689-BCB8-6A6EEF06E6EE.htm">光度学灯光</a></span>使用的衰退公式。 
+                              </p> 
+                              <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6AE8"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果“平方反比”衰退使场景太暗，可以尝试使用<span class="char_link"><a href="GUID-EF33AEB1-44BE-403E-B4CC-3C29495988C2.htm">环境面板</a></span>来增加“全局照明级别”值。 
+                                 </div>
+                              </div> 
+                           </li>
+                        </ul> 
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5648"></a>衰退开始的点取决于是否使用衰减： 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004745"></a><ul>
+                           <li>如果不使用衰减，则光源处开始衰退。 </li>
+                           <li>使用近距衰减，则从近距结束位置开始衰退。 </li>
+                        </ul> 
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5647"></a>建立开始点之后，衰退遵循其公式到无穷大，或直到灯光本身由“远距结束”距离切除。换句话说，“近距结束”和“远距结束”不成比例，否则影响衰退灯光的明显坡度。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6AE7"></a><div class="note-tip"><span class="label label-target-language">提示</span>由于随着灯光距离的增加，衰退继续计算越来越暗值，最好至少设置衰减的“远距结束”以消除不必要的计算。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-74979349-0EB1-459F-9E74-E628E563AC05"></a><span class="term"><a name="GUID-266CD6FD-0785-4D50-9EC8-7B65B3C928A8"></a>开始</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-CA29BFAE-79C9-40E2-905C-A2DBB2170F47"></a>如果不使用衰减，则设置灯光开始衰退的距离。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-D87A255F-16A6-42B7-A6DA-C0D13BF3E4EF"></a><span class="term"><a name="GUID-753DC7C3-76A7-4E37-B230-673DCDA1C538"></a>显示</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-4B19F0B3-8583-4AD4-910D-C2E9FFABFEC9"></a> 
+                        <p><a name="GUID-1BA086C6-9ED1-4141-9D8B-A4640AE97FED"></a>在视口中显示衰退范围。对于聚光灯，衰退范围看起来好像锥形的镜头状截面。对于平行光，范围看起来好像锥形的圆形截面。对于启用“泛光化”的泛光灯和聚光灯或平行光，范围看起来好像球形。默认情况下，开始范围呈蓝绿色。 
+                        </p> 
+                        <div><a name="GUID-E5F1C624-D6A0-4795-93A9-A8E7AA2316FA"></a><div class="note-note"><span class="label label-target-language">注意:</span>当选中一个灯光时，衰退范围始终可见，因此在取消选择该灯光后清除此复选框才会有明显效果。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-73A6D064-1F8D-4A06-BDA8-B9BF6E0550EC"></a><p class="title"><a name="GUID-64A74010-06A8-4EF6-93CF-612AE25A9EFF"></a>“近距衰减”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-8B"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5646"></a>开始</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6F76"></a> 设置灯光开始淡入的距离。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-8A"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5645"></a>结束</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6F75"></a> 设置灯光达到其全值的距离。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-89"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5644"></a>使用</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6F74"></a> 启用灯光的近距衰减。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-88"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5643"></a>显示</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6F73"></a> 在视口中显示近距衰减范围设置。对于聚光灯，衰减范围看起来好像圆锥体的镜头形部分。对于平行光，范围看起来好像圆锥体的圆形部分。对于启用“泛光化”的泛光灯和聚光灯或平行光，范围看起来好像球形。默认情况下，“近距开始”为深蓝色并且“近距结束”为浅蓝色。
+                        
+                        <div><a name="WS73099CC142F48755-789C4B1E11D24BE26D7-64DD"></a><div class="note-note"><span class="label label-target-language">注意:</span>当选中一个灯光时，衰减范围始终可见，因此在取消选择该灯光后清除此复选框才会有明显效果。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-3E2232BE-733F-46BA-A089-3153B7F0E806"></a><p class="title"><a name="GUID-39E3D7F8-CC41-417C-8FE6-6187ED9A488A"></a>“远距衰减”组
+               </p>
+               <p><a name="WS1A9193826455F5FF1DBC298511635BEA875C84"></a>设置远距衰减范围可有助于大大缩短渲染时间。 
+               </p>
+               <div><a name="WS1A9193826455F5FF1DBC298511635BEA875C85"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果场景中存在大量的灯光，则使用“远距衰减”可以限制每个灯光所照场景的比例。例如，如果办公区域存在几排顶上照明，则通过设置“远距衰减”范围，可在处于渲染接待区域而非主办公区域时，保持无需计算灯光照明。再如，楼梯的每个台阶上可能都存在嵌入式灯光，如同剧院所布置的一样。将这些灯光的“远距衰减”值设置为较小的值，可在渲染整个剧院时无需计算它们各自（忽略）的照明。
+                     
+                  </div>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-87"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5642"></a>开始</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6F72"></a> 设置灯光开始淡出的距离。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-86"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5641"></a>结束</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6F71"></a> 设置灯光减为 0 的距离。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-85"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5640"></a>使用</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6F70"></a> 启用灯光的远距衰减。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-84"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-563F"></a>显示</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6F6F"></a> 在视口中显示远距衰减范围设置。对于聚光灯，衰减范围看起来好像圆锥体的镜头形部分。对于平行光，范围看起来好像圆锥体的圆形部分。对于启用“泛光化”的泛光灯和聚光灯或平行光，范围看起来好像球形。默认情况下，“远距开始”为浅棕色并且“远距结束”为深棕色。
+                        
+                        <div><a name="WS73099CC142F48755-789C4B1E11D24BE26D7-64DC"></a><div class="note-note"><span class="label label-target-language">注意:</span>当选中一个灯光时，衰减范围始终可见，因此在取消选择该灯光后清除此复选框才会有明显效果。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

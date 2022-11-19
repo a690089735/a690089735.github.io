@@ -1,0 +1,100 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-BBAA6BD7-6710-402C-A928-B8DA0618FFA8">
+      <meta name="description" content="当无法选择对称修改器时（例如，当处理变形目标）时，这些工具可以使模型对称。可以对模型的一个侧面进行建模，并应用这些工具以使其沿轴对称。">
+      <meta name="indexterm" content="对象: 对称">
+      <meta name="indexterm" content="“对称工具”对话框（功能区）">
+      <meta name="indexterm" content="功能区: “对称工具”对话框">
+      <meta name="indexterm" content="对称工具">
+      <meta name="contextid" content="MACTIONSYMMETRYDIALOG">
+      <meta name="topic-type" content="concept">
+      <title>“对称工具”对话框</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-BBAA6BD7-6710-402C-A928-B8DA0618FFA8"></a><div class="head">
+            <h1>“对称工具”对话框</h1>
+         </div>
+         <p class="blurb">当无法选择<span class="char_link"><a href="GUID-EB0B7B9B-117D-4CC3-A966-A3E007E0C68A.htm">对称修改器</a></span>时（例如，当处理变形目标）时，这些工具可以使模型对称。可以对模型的一个侧面进行建模，并应用这些工具以使其沿轴对称。 
+         </p><a name="UL_F86F2D647EE94DCF8D0D28AD0F87C7D5"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-03E1C226-2C75-4A0B-A5D5-2BAEA3201C11">功能区  <img src="../images/ac.menuaro.gif"> “建模”选项卡  <img src="../images/ac.menuaro.gif"> “多边形建模”面板 [展开]  <img src="../images/ac.menuaro.gif"> “对称工具”</span> 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7C8F"></a>对称基于所拾取的、沿所选轴对称的对象。然后它将确定哪些顶点是对称的，并允许您在共享相同顶点数的任何其他模型上使用该信息。“对称”工具在对象的局部坐标系中使用。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF211A40BE11DCC57291C3637"></a> 
+            <h2><a name="GUID-1FCEC301-EA54-477A-B57E-AB8688CE4537"></a>界面
+            </h2> <a name="WS1A9193826455F5FF211A40BE11DCC57291C3638"></a><div class="figure-anchor"><img src="../images/GUID-DD3C134B-DF0F-4F2B-B2A5-0113FD831452-low.png"></div>  <a name="GUID-7F7994CA-881F-4AA5-AA3B-E6E5FD864867"></a><dl>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-75EE"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-75ED"></a>拾取主模型</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C3639"></a> 
+                     <p><a name="WS73099CC142F487551A80AE1B11DF600637E-75EC"></a>单击此按钮，然后选择对称要基于的对象。然后软件使用指定“公差”值（见下文）计算基于指定轴的对称。 
+                     </p> 
+                     <p><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7C8E"></a>计算完对称后，软件将选择模型中的所有非对称顶点，包括中缝中的顶点。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-75EB"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-75EA"></a>轴</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C363A"></a> 
+                     <p><a name="WS73099CC142F487551A80AE1B11DF600637E-75E9"></a>对称所基于的轴，位于对象的局部坐标系中。 
+                     </p> 
+                     <p><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7C8D"></a>轴中心由所拾取对象的轴点确定。更改轴会重新计算所拾取模型的对称。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-75E8"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-75E7"></a>公差</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C363B"></a> 
+                     <p><a name="WS73099CC142F487551A80AE1B11DF600637E-75E6"></a>软件用于确定两个顶点是否对称的距离（以世界单位表示）。如果所拾取的模型不是完全对称的，则稍微增大该值。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl>
+            <div class="dl_section"><a name="GUID-FB5AC266-52C1-43C3-936E-B4FF764167EF"></a><p class="title"><a name="GUID-60E45AEF-2191-4CC3-92B0-ABA617DA61E1"></a>创建对称组
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-75E5"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-75E4"></a>+ 到 -/- 到 + </span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C363C"></a> 
+                        <p><a name="WS73099CC142F487551A80AE1B11DF600637E-75E3"></a>使用这两个按钮可使模型沿所选轴对称。单击 <img src="../images/GUID-5ED2E2F9-ECD2-4D94-8F19-ED64307DD0D8-low.png"> 可使轴减号侧面上的所有内容与加号侧面对称。单击 <img src="../images/GUID-EAB483F2-4E6D-4142-A157-42EBFB1ACBB1-low.png"> 可使轴加号侧面上的所有内容与减号侧面对称。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-75E2"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-75E1"></a>翻转对称</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C363D"></a> 
+                        <p><a name="WS73099CC142F487551A80AE1B11DF600637E-75E0"></a>工作方式与镜像工具类似，为切换选定轴上的顶点位置。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-CC067381-82CE-4620-B825-2FF74DCAAD8B"></a><p class="title"><a name="GUID-967BACA3-15E7-4CB5-93AC-8E2498668467"></a>顶点位置组
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-75DF"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-75DE"></a>复制选定位置</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C363E"></a> 
+                        <p><a name="WS73099CC142F487551A80AE1B11DF600637E-75DD"></a>使用此工具可复制当前选定顶点的位置。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-75DC"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-75DB"></a>粘贴</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C363F"></a> 
+                        <p><a name="WS73099CC142F487551A80AE1B11DF600637E-75DA"></a>使用此工具可粘贴使用“复制选定位置”工具复制的顶点位置。 
+                        </p> 
+                        <p><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7C8A"></a>例如，可以将闭合的眼睛或某一嘴形或从一个模型复制到另一个模型。也可以将可编辑多边形对象中的位置复制并粘贴到编辑多边形修改器中。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

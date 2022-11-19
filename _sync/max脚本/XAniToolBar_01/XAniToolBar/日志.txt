@@ -1,0 +1,10 @@
+精心打磨UI和UX
+
+完成UI响应代码
+
+-添加扩展功能
+
+添加logo功能(能做个高光条动画吗?)
+
+调节高度,附带一些python示例
+https://forums.autodesk.com/t5/3ds-max-programming/how-to-resize-a-script-toolbar/td-p/10014788

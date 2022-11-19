@@ -1,0 +1,280 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-CCD9B76C-9AC6-46E6-8B9C-E367CFC0FDAF">
+      <meta name="description" content="可以使用位图文件或程序贴图（例如反射/折射）来控制对象的折射。">
+      <meta name="indexterm" content="作为材质组件贴图: 折射">
+      <meta name="indexterm" content="折射贴图">
+      <meta name="topic-type" content="concept">
+      <title>折射贴图</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-CCD9B76C-9AC6-46E6-8B9C-E367CFC0FDAF"></a><div class="head">
+            <h1>折射贴图</h1>
+         </div>
+         <p class="blurb">可以使用位图文件或<span class="char_link"><a href="GUID-783C7A59-F829-41DA-A2A2-E967E516172D.htm">程序贴图</a></span>（例如<span class="char_link"><a href="GUID-D3621A9C-931C-4D24-8D32-60C2494F5F9E.htm">反射/折射</a></span>）来控制对象的折射。 
+         </p><a name="UL_D8ED8A6572764D218B46002286CA1E03"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-130FFB55-FB36-48A8-AB0D-E362D1819F66"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “标准”材质  <img src="../images/ac.menuaro.gif"> “贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “折射”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-250D03BD-5064-488F-8572-D3C609101BF2"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “Arch &amp; Design”材质 <img src="../images/ac.menuaro.gif"> “通用贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “主要贴图”组  <img src="../images/ac.menuaro.gif"> “折射颜色”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-D9C323FA-69FF-4927-8FF0-7DB9A3B5BA94"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif">  具有折射组件的其他材质</span> 
+            </li>
+         </ul><a name="WS73099CC142F487554E67820D1283FBC0BF32760"></a><div class="figure-anchor"><img src="../images/GUID-60A5DE77-E42C-477B-B85C-7299DEEFF418-low.png"><p class="figure-title">折射显示透过折射对象的场景或背景。</p>
+         </div>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32761"></a> 折射贴图的用法类似于反射贴图。折射将视图贴在曲面上，这样图像看起来就象透过曲面所看到的一样，而不是从曲面反射的样子。 
+         </p>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32762"></a>与反射贴图一样，折射贴图不需要<span class="char_link"><a href="GUID-245C4F26-7D3B-40E4-B815-531E3DF49967.htm">贴图坐标</a></span>，因为其方向锁定到世界坐标系，而不是对象。即，在移动或旋转对象时，折射图像的位置仍固定不变。 
+         </p>
+         <div class="section"><a name="WS73099CC142F487554E67820D1283FBC0BF32763"></a> 
+            <h2><a name="GUID-A3B4E89C-C019-402F-8C5E-ED4C76EABD3D"></a>设置折射率
+            </h2> 
+            <p><a name="WS73099CC142F487554E67820D1283FBC0BF32764"></a>折射对象的物理属性是通常扭曲图像。此参数由父材质控制。 
+            </p> <a name="GUID-41DE19DF-7C8F-4B49-8946-DE018BDE312C"></a><dl>
+               <dt><a name="WS73099CC142F487554E67820D1283FBC0BF32765"></a><span class="term"><a name="WS73099CC142F487554E67820D1283FBC0BF32766"></a>折射率</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487554E67820D1283FBC0BF32767"></a> 
+                     <p><a name="WS73099CC142F487554E67820D1283FBC0BF32768"></a>折射率 (IOR) 用来控制材质折射透射灯光的量。空气的 IOR 为 1.0，表示透明对象后的对象不会发生扭曲。折射率为 1.5 表明后面的对象扭曲严重（像透过玻璃球一样）。对于略低于 1.0 的 IOR，对象沿其边缘反射，如从水面下看到的气泡。默认设置为
+                        1.5（典型玻璃的折射率）。 
+                     </p> 
+                     <p><a name="WS73099CC142F487554E67820D1283FBC0BF32769"></a>常见的 IOR 值为（假设摄影机在空气或真空中）： 
+                     </p> <a name="WS73099CC142F487554E67820D1283FBC0BF3276A"></a><div class="table-ruled">
+                        <table cellpadding="0" cellspacing="0" class="ruled">
+                           <colgroup>
+                              <col width="50%">
+                              <col width="50%">
+                           </colgroup>
+                           <tr class="ruled-heading">
+                              <th class="table-heading">材质 </th>
+                              <th class="table-heading">IOR 值 </th>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">真空 </td>
+                              <td class="table-body">1.0（精确） </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">空气 </td>
+                              <td class="table-body">1.0003 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">水 </td>
+                              <td class="table-body">1.333 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">玻璃 </td>
+                              <td class="table-body">1.5 to 1.7 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">钻石 </td>
+                              <td class="table-body">2.418 </td>
+                           </tr>
+                        </table>
+                     </div> 
+                     <p><a name="WS73099CC142F487554E67820D1283FBC0BF3276B"></a>在物理世界中，IOR 为灯光穿过透明材质与观察者用眼睛或摄影机观看时所在介质的相对速度。这通常与对象的密度相关。IOR 越高，对象的密度越大。 
+                     </p> 
+                     <p><a name="WS73099CC142F487554E67820D1283FBC0BF3276C"></a>还可以使用贴图来控制折射率。IOR 贴图始终在 1.0（空气的 IOR）和 IOR 参数中的设置之间进行插补。例如，如果将 IOR 设置为 3.55 并使用黑白“噪波”贴图来控制 IOR，那么渲染在对象上的 IOR 将设置为 1.0 到 3.55
+                        之间；对象的密度看起来要大于空气。另一方面，如果 IOR 设置为 0.5，则同一贴图的值将在 0.5 到 1.0 之间渲染，这种情况就像摄影机位于水下，而对象的密度小于水一样。 
+                     </p> 
+                     <p><a name="WS73099CC142F487554E67820D1283FBC0BF3276D"></a>以下是各种材质的 IOR 值： 
+                     </p> <a name="WS73099CC142F487554E67820D1283FBC0BF3276E"></a><div class="table-ruled">
+                        <table cellpadding="0" cellspacing="0" class="ruled">
+                           <colgroup>
+                              <col width="50%">
+                              <col width="50%">
+                           </colgroup>
+                           <tr class="ruled-heading">
+                              <th class="table-heading">材质 </th>
+                              <th class="table-heading">IOR 值 </th>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">液态二氧化碳 </td>
+                              <td class="table-body">1.200 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">冰 </td>
+                              <td class="table-body">1.309 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">丙酮 </td>
+                              <td class="table-body">1.360 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">普通酒精 </td>
+                              <td class="table-body">1.360 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">糖水 (30%) </td>
+                              <td class="table-body">1.380 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">酒精 </td>
+                              <td class="table-body">1.329 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">Flourite </td>
+                              <td class="table-body">1.434 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">熔凝石英 </td>
+                              <td class="table-body">1.460 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">Calspar2 </td>
+                              <td class="table-body">1.486 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">糖水 (80%) </td>
+                              <td class="table-body">1.490 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">玻璃 </td>
+                              <td class="table-body">1.500 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">玻璃，锌冠 </td>
+                              <td class="table-body">1.517 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">玻璃，冠 </td>
+                              <td class="table-body">1.520 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">氯化钠 </td>
+                              <td class="table-body">1.530 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">氯化钠（食盐）1 </td>
+                              <td class="table-body">1.544 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">聚苯乙烯 </td>
+                              <td class="table-body">1.550 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">石英 2 </td>
+                              <td class="table-body">1.553 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">绿宝石 </td>
+                              <td class="table-body">1.570 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">轻火石玻璃 </td>
+                              <td class="table-body">1.575 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">青金石 </td>
+                              <td class="table-body">1.610 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">黄玉 </td>
+                              <td class="table-body">1.610 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">二硫化碳 </td>
+                              <td class="table-body">1.630 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">石英 1 </td>
+                              <td class="table-body">1.644 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">氯化钠（食盐）2 </td>
+                              <td class="table-body">1.644 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">重火石玻璃 </td>
+                              <td class="table-body">1.650 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">二碘甲烷 </td>
+                              <td class="table-body">1.740 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">红宝石 </td>
+                              <td class="table-body">1.770 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">兰宝石 </td>
+                              <td class="table-body">1.770 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">重火石玻璃 </td>
+                              <td class="table-body">1.890 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">水晶 </td>
+                              <td class="table-body">2.000 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">钻石 </td>
+                              <td class="table-body">2.418 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">氧化铬 </td>
+                              <td class="table-body">2.705 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">氧化铜 </td>
+                              <td class="table-body">2.705 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">非结晶硒 </td>
+                              <td class="table-body">2.920 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">碘晶 </td>
+                              <td class="table-body">3.340 </td>
+                           </tr>
+                        </table>
+                     </div> 
+                     <div><a name="WS1A9193826455F5FF-2248B67F12850E5FD48-7C3B"></a><div class="note-tip"><span class="label label-target-language">提示</span>用作折射贴图的<span class="char_link"><a href="GUID-D3621A9C-931C-4D24-8D32-60C2494F5F9E.htm">反射/折射贴图类型</a></span>不会有效地为对象周围的材质（如盛水的玻璃杯中的铅笔）建模。要获取此类效果，请使用<span class="char_link"><a href="GUID-F8B3A71F-EAD2-4364-907C-E6006E6B1A52.htm">薄壁折射</a></span>或<span class="char_link"><a href="GUID-4D919F24-F0BB-47F0-9C2D-28D393C1A1DE.htm">光线跟踪</a></span>贴图类型。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="section"><a name="WS73099CC142F487554E67820D1283FBC0BF32770"></a> 
+            <h2><a name="GUID-6A114104-8092-4FBD-823A-3AB8210EDEAE"></a>过程
+            </h2> <a name="WS73099CC142F487554E67820D1283FBC0BF32771"></a><p class="list-intro"><a name="WS73099CC142F487554E67820D1283FBC0BF32772"></a>要创建自动折射，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>单击标签为“折射”的“贴图”按钮。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867E3"></a><span class="charspan-msgph">3ds Max</span> 打开“<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>”。 
+                  </p> 
+               </li>
+               <li>选择“贴图”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“标准”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> <span class="char_link"><a href="GUID-D3621A9C-931C-4D24-8D32-60C2494F5F9E.htm">“反射/折射”</a></span>，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867E5"></a>或者，您可以使用 <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <span class="char_link"><a href="GUID-7B51EF9F-E660-4C10-886C-6F6ADE9E8F56.htm">Slate 材质编辑器</a></span>将<span class="char_link"><a href="GUID-9BF3A6D1-6665-4EC8-89BD-187FF34BA588.htm">反射/折射贴图节点关联</a></span>到“折射”组件。 
+                  </p> 
+               </li>
+               <li>在父材质的“贴图”卷展栏中，调整“数量”来控制材质的折射量。 
+                  <p><a name="WS73099CC142F487554E67820D1283FBC0BF32775"></a>折射量为 100% 时，材质被完全反射，无论材质的“不透明度”设置是多少。折射量为 0% 时，将关闭贴图。折射量小于 100% 时，“反射/折射”贴图和“不透明度”设置都会控制透明度。 
+                  </p> 
+               </li>
+            </ol> <a name="WS73099CC142F487554E67820D1283FBC0BF32776"></a><p class="list-intro"><a name="WS73099CC142F487554E67820D1283FBC0BF32777"></a>要将位图指定为折射贴图，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在“贴图”卷展栏中，单击“折射”贴图按钮。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867E7"></a><span class="charspan-msgph">3ds Max</span> 打开“<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>”。 
+                  </p> 
+               </li>
+               <li>选择“贴图”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“标准”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> <span class="char_link"><a href="GUID-A1654CD2-2A7C-42A6-816D-28F7A849F96F.htm">“位图”</a></span>，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867E9"></a>或者，您可以使用 <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <span class="char_link"><a href="GUID-7B51EF9F-E660-4C10-886C-6F6ADE9E8F56.htm">Slate 材质编辑器</a></span>将<span class="char_link"><a href="GUID-9BF3A6D1-6665-4EC8-89BD-187FF34BA588.htm">位图节点关联</a></span>到“折射”组件。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867EA"></a><span class="charspan-msgph">3ds Max</span> 将打开一个文件对话框。 
+                  </p> 
+               </li>
+               <li>使用该文件对话框来选择位图文件。 </li>
+               <li>在父材质的“贴图”卷展栏中，调整“数量”来控制材质的折射量。 
+                  <p><a name="WS73099CC142F487554E67820D1283FBC0BF3277B"></a>对于位图折射，不需要降低贴图量。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

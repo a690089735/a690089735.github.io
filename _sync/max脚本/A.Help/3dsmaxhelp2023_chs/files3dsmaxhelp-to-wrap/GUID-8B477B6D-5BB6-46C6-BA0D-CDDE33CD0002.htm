@@ -1,0 +1,63 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-8B477B6D-5BB6-46C6-BA0D-CDDE33CD0002">
+      <meta name="description" content="“mParticles 世界”操作符将当前事件或系统中的粒子关联到特定模拟世界，所用形式为场景中的“mParticles 世界”辅助对象（驱动程序）。完成连接后，该辅助对象的设置会影响事件中的所有粒子。">
+      <meta name="indexterm" content="粒子流操作符: mParticles 世界">
+      <meta name="indexterm" content="“mParticles 世界”操作符">
+      <meta name="topic-type" content="concept">
+      <title>“mParticles 世界”操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-8B477B6D-5BB6-46C6-BA0D-CDDE33CD0002"></a><div class="head">
+            <h1>“mParticles 世界”操作符</h1>
+         </div>
+         <p class="blurb">“mParticles 世界”操作符将当前事件或系统中的粒子关联到特定模拟世界，所用形式为场景中的<span class="char_link"><a href="GUID-B2B8C721-457F-46C4-838A-400A47AA49AC.htm">“mParticles 世界”辅助对象</a></span>（驱动程序）。完成连接后，该辅助对象的设置会影响事件中的所有粒子。 
+         </p>
+         <div class="bodyReference"><a name="GUID-30173746-6FF4-471E-B5C1-CF4742B00934"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-CEF01AF0-4A60-45DA-B9B4-94AD1B7F4A69">粒子视图  <img src="../images/ac.menuaro.gif">  添加或选择“mP 世界”。</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-C0A4FF02-2E36-4A75-9110-FAE0B5CDB2D8"></a> 可以将“mParticles 世界”操作符放置于局部事件和全局事件。事件中操作符的存在表示该事件中的粒子参与物理模拟。如果此操作符位于全局事件中，则粒子流系统中的所有粒子始终参与模拟。 
+            </p>
+            <p><a name="GUID-16D72F4C-B30D-43A1-832E-1544F466E1AF"></a>事件中的粒子只能属于一个模拟世界，相应粒子由事件中的“mParticles 世界”操作符指定。虽然可以将多个“mParticles 世界”操作符添加至事件，但是该操作会产生歧义，导致粒子流会将其全部忽略。 
+            </p>
+            <p><a name="GUID-9CE7ED60-9AA7-401B-8AD0-F5F238BDF6FA"></a> 事件中“mParticles 世界”操作符（带有关联的“mParticles 世界”驱动程序）的存在不足以启动模拟。第二个必需的组件是用于定义粒子模拟属性的<span class="char_link"><a href="GUID-2193B625-E0E0-4908-B566-6214952086E2.htm">“mParticles 图形”操作符</a></span>。始终在事件中的“mParticles 世界”操作符前放置“mParticles 图形”操作符，因此针对模拟，“mParticles 世界”操作符将了解由 mParticles 图形定义的粒子属性。 
+            </p>
+            <div><a name="GUID-872B8124-2444-442A-8A19-C37881360EEB"></a><div class="note-note"><span class="label label-target-language">注意:</span>不同粒子流系统中的粒子（具有不同的全局粒子流源事件）无法参与相同的模拟世界。这是由于粒子是通过模拟世界中的粒子 ID 来追踪的，而每个粒子流源创建自己的 ID 集合。即使两个不同粒子流系统中的“mParticles 世界”操作符关联同一“mParticles
+                  世界”驱动程序，并且创建两个模拟世界（每个粒子流系统一个世界），但两个模拟具有“mParticles 世界”驱动程序定义的相同全局属性。 
+               </div>
+            </div>
+            <div class="section"><a name="AA1004822"></a> 
+               <h2><a name="GUID-94A3021A-6726-444E-A1A8-925513C0AF4A"></a>界面
+               </h2> <a name="FIG_0C1C93A2325E427DA2AB64AB53263AE0"></a><div class="figure-anchor"><img src="../images/GUID-4C122097-6CD5-47DE-B18E-31387D1D836C-low.png"></div>  <a name="GUID-3B42EE39-9E68-487A-A76D-0981349B5D56"></a><dl>
+                  <dt><a name="GUID-A8554076-3C02-42FD-A390-2C774E1F4C05"></a><span class="term"><a name="GUID-30651066-873E-41B0-BC44-203464416C04"></a>[无]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-CB6F73E4-1BB3-4E40-9C6C-0862D2654924"></a>若要指定影响当前事件中的粒子的“mParticles 世界”辅助对象，请单击此按钮，然后选择辅助对象。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-C46CD65A-CDC7-494D-8F39-181660D33BD8"></a><span class="term"><a name="GUID-6A539863-349E-41BA-84C7-99EE23B6230D"></a>=&gt;</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-F56DEBE1-2A8B-4642-B4F8-CED0F316C6FA"></a>在标准命令面板打开关联的“mParticles 世界”驱动程序的参数。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-D14EF140-912F-4866-8EEE-2510BBF95C26"></a><span class="term"><a name="GUID-BAABF7FF-919B-4B6F-A165-22AF96C5BD3F"></a>创建新的驱动程序</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-C7F4CF4D-A296-4D5A-892A-E2F32FEDAB15"></a>在场景中自动创建新的“mParticles 世界”辅助对象，并使“mParticles 世界”操作符关联该辅助对象。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-EDDACF99-DFB6-4505-A2DF-2744B6779D33"></a><span class="term"><a name="GUID-D24B41C6-403A-4858-BABC-553833FA4ECC"></a>取消快速保存</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-A1AA5825-24E3-424F-961F-2152822B9C17"></a>粒子流具有已集成的“快速保存”功能，该功能允许当前帧不为 0 时进行快速保存。但是，此功能可能会干扰 MassFX 模拟的完整性。因此，如果您拥有复杂的 MassFX 设置，并且模拟在第 0 帧时或在第 0 帧之前开始，则建议启用“取消快速保存”（默认为启用状态）。这时，已集成的“快速保存”功能在具有“mParticles
+                        世界”操作符的事件中禁用。
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

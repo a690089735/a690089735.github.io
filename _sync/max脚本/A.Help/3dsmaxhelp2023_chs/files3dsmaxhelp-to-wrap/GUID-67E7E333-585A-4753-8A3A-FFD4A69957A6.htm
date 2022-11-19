@@ -1,0 +1,287 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-67E7E333-585A-4753-8A3A-FFD4A69957A6">
+      <meta name="description" content="细分修改器提供多种用于生成输入几何体的精细三角化表示的算法。尤其是自适应算法和可变曲率算法，除了简单地细化网格外，这些算法通常还会生成高质量的三角剖分，其主要由大致等边的三角形组成。通过细分修改器重新划分网格有助于获取条件良好的输入网格，以便进行复杂的几何体处理操作（例如，适用于 3ds Max 的 Autodesk 重新拓扑工具提供的重新拓扑操作），或者使用光能传递渲染器进行渲染。此外，网格密度越高，在渲染期间就可以获得越精细的照明细节和精度。">
+      <meta name="indexterm" content="光能传递: “细分”修改器">
+      <meta name="indexterm" content="“细分”修改器: 对象空间">
+      <meta name="indexterm" content="对象空间修改器: 细分">
+      <meta name="indexterm" content="修改器: 细分">
+      <meta name="contextid" content="SUBDIVIDE.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS-SUBDIVIDE">
+      <meta name="topic-type" content="concept">
+      <title>细分修改器（对象空间）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-67E7E333-585A-4753-8A3A-FFD4A69957A6"></a><div class="head">
+            <h1>细分修改器（对象空间）</h1>
+         </div>
+         <p class="blurb"> 细分修改器提供多种用于生成输入几何体的精细三角化表示的算法。尤其是自适应算法和可变曲率算法，除了简单地细化网格外，这些算法通常还会生成高质量的三角剖分，其主要由大致等边的三角形组成。通过细分修改器重新划分网格有助于获取条件良好的输入网格，以便进行复杂的几何体处理操作（例如，适用于
+            3ds Max 的 Autodesk 重新拓扑工具提供的重新拓扑操作），或者使用光能传递渲染器进行渲染。此外，网格密度越高，在渲染期间就可以获得越精细的照明细节和精度。 
+            
+         </p>
+         <div class="bodyReference">
+            <div><a name="GUID-15771B36-6DEB-45B2-9952-716222E493B8"></a><div class="note-note"><span class="label label-target-language">注意:</span> 处理密度较高的网格时，内存需求和计算时间通常会增加。
+                  
+               </div>
+            </div><a name="UL_D8ACE164FAC84193BD5713A6E9A3FB13"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-15ED8BC1-D34F-4109-99AE-06E76C9EF9E3">选择对象  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “细分”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-D06B7E3D-39FD-416B-B318-D6F9C098FC70">默认菜单：进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “光能传递” <img src="../images/ac.menuaro.gif"> “细分”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-0B222DEC-E5BF-4484-B7CD-ADC5A4CCE74A">Alt 菜单：进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “细分曲面” <img src="../images/ac.menuaro.gif"> “细分”</span> 
+               </li>
+            </ul><a name="WS1A9193826455F5FFBA679E112A6A190043BA5"></a><div class="figure-anchor"><img src="../images/GUID-05F800BE-F270-468E-86C0-BBFA8F976D84-low.png"><p class="figure-title">已应用“细分”修改器并选择“可变曲率”模式的对象</p>
+            </div>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ACC"></a>尽管这主要是为了增加光能传递解决方案的质量而开发的，但“细分”修改器也可以被需要形状良好的网格的任何应用程序所使用。例如，可以改善为地形复合对象而生成的不规则的网格元素。 
+               
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3ACB"></a>该修改器有世界空间和对象空间变量。在世界空间修改器中，在变换成世界空间坐标系后，大小限制是在网格上。对象空间修改器在对象空间坐标中限制大小。 
+               
+            </p>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA1B"></a><div class="note-note"><span class="label label-target-language">注意:</span>通常，在处理光能传递解决方案时，就会自动地将细分修改器<span class="MenuCascade"></span>应用到场景中的对象上。可以在光能传递控件面板中在全局基础上对网格参数进行设置，也可以在“对象属性”对话框中为单独的对象设置网格参数。 
+                  
+               </div>
+            </div>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA1C"></a><div class="note-tip"><span class="label label-target-language">提示</span>当对一个对象上的细分设置感到满意时，可以将该修改器拖到其他对象上来进行传播。 
+                  
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-291F"></a> 
+               <h2><a name="GUID-F7A7395C-3827-493D-A634-E99D46E77810"></a>界面
+               </h2> <a name="FIG_C9D6148902414504A5FA3E0EFFD31DA6"></a><div class="figure-anchor"><img src="../images/GUID-EDF6C25D-F128-44B4-8732-D564FDF3A3A2-low.png"></div>  
+               <div class="section"><a name="SECTION_67619DFB43144E33AD272942DBDB0C44"></a> 
+                  <h3><a name="GUID-57120478-63FD-4615-81EE-9C10A3CED166"></a>“细分模式”卷展栏
+                  </h3> 
+                  <dl><a name="GUID-6BD3926D-D51D-44DC-9152-44ED6345FD56"></a><dt><span class="term">细分模式 
+                           		  </span></dt>
+                     <dd>
+                        <div class="definition"> 选择要使用的细分算法： 
+                           			 <a name="UL_B864B963AFF743B290D3B795CA6AEFC2"></a><ul>
+                              <li><em class="strong">细分</em>：高度约束的旧版解算器，可保持所有现有边。 
+                                 				
+                              </li>
+                              <li><em class="strong">Delaunay</em>：在“保留网格数据”<span class="MenuCascade"></span>选项处于启用状态时，约束具有数据的边。此模式还包括用于松弛不受约束曲面的选项。 
+                                 				
+                              </li>
+                              <li><em class="strong">自适应</em>：尝试实现相对均匀的网格，像“细分”<span class="MenuCascade"></span>和“Delaunay”<span class="MenuCascade"></span>模式那样，但计算时间更长，结果通常也更好。由于对输入网格的依赖性较小，因此在该模式下，原始网格的不受约束边与输出网格的边之间通常没有对应关系。 
+                                 				
+                              </li>
+                              <li><em class="strong">可变曲率</em>：与“自适应”<span class="MenuCascade"></span>算法具有一样高的质量，并在网格的平面区域中提供类似的结果。不过，此模式将在高曲面曲率的区域中进一步优化，以便准确捕获形状。“可变曲率”模式对高曲率区域的优化程度由“可变密度”参数控制。此模式需要的计算时间最多，但通常可为复杂几何体提供最佳结果。
+                                 
+                                 				
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                  </dl> 
+                  <div class="section"><a name="SECTION_DEB8EB97450B4231A33EEBCE8EBE1987"></a> 
+                     <h4><a name="GUID-B3C12E7F-5467-4F8B-AC5A-5F6E3ECA3FC8"></a>细分模式
+                     </h4> 
+                     <dl><a name="GUID-2D725E16-2A8C-4325-A68F-CD2D56574983"></a><dt><span class="term"> 大小 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition"> 在输出网格上设置目标面长度比例。 
+                              			 
+                           </div>
+                        </dd>
+                     </dl> 
+                  </div> 
+                  <div class="section"><a name="SECTION_46B10207306D4F9090609A164BE46DB5"></a> 
+                     <h4><a name="GUID-DE762607-6286-47EF-9B12-84EDA85B45DB"></a>Delaunay 模式
+                     </h4> <a name="FIG_B02CB8C5196E44C78418FACA2F90B943"></a><div class="figure-anchor"><img src="../images/GUID-034AB200-975C-4985-88AB-512C55103BE2-low.png"></div> 
+                     <dl><a name="GUID-20791288-6B24-4DB7-B4DE-D01C56432439"></a><dt><span class="term">大小 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">在输出网格上设置目标面长度比例。这类似于其他模式下的边长。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-E8D44B5F-7ED7-497B-A2DC-0C77DB6843B9"></a><dt><span class="term">松弛 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">在每个松弛迭代中设置松弛和未松弛顶点位置之间的混合。值为 1.0 将产生完全松弛的结果。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-5A9BC498-A55A-4320-B7F9-9587D7125C11"></a><dt><span class="term">松弛迭代次数 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">设置要应用于输出网格的松弛迭代次数。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-35A53D40-98EE-4E4D-978D-5D867EC7611C"></a><dt><span class="term">保留网格数据 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">启用后，在进行细分时，将保留网格数据（例如平滑组、材质 ID、布尔接缝、法线、指定的 UV 和顶点浮点数据通道）。这在“重新拓扑”<span class="MenuCascade"></span>等修改器中会有所帮助，在修改器中，可以将这些网格数据用作自动边约束。 
+                              			 
+                           </div>
+                           <div class="definition">禁用此选项后，细分结果中将没有网格数据。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-C26FC95E-F83D-4FF6-9DBE-F299C972DFED"></a><dt><span class="term">UV 通道 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition"> 仅当“保留网格数据”<span class="MenuCascade"></span>处于启用状态时，“UV 通道”才处于活动状态。将为指定的贴图通道创建索引并保留此贴图通道，为此，应将贴图坐标和接缝传播到输出网格。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-A2E9ED3C-542E-4673-9BEA-A71ABA2BE5EF"></a><dt><span class="term">保留锐边 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition"> 允许将硬边传播到输出网格。检测到的边基于相邻面法线之间的角度。此设置影响此类边附近的细化程度，类似于“平滑修改器”<span class="MenuCascade"></span>使用边角度阈值来确定硬边和软边的方式。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-963712E9-16B9-473C-86DA-25E6FB158B5E"></a><dt><span class="term">角度 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">设置角度（以度为单位），超过该角度时将检测硬边。 
+                              			 
+                           </div>
+                        </dd>
+                     </dl> 
+                  </div> 
+                  <div class="section"><a name="SECTION_7193E47FFE204DC0BE135F043BC3571A"></a> 
+                     <h4><a name="GUID-A3B520DF-1A3B-42BF-970A-759705EAA0CB"></a>自适应模式
+                     </h4> <a name="FIG_740711A551B343A99D2D4B4C55E0998B"></a><div class="figure-anchor"><img src="../images/GUID-4AB47E5B-3E0C-42FD-9C83-22EF6B565BC6-low.png"></div> 
+                     <dl><a name="GUID-2A19E8DA-656D-48A1-A5F1-0B4C1AB7BE3C"></a><dt><span class="term">边长 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition"> 在输出网格上设置目标边长。如果网格上的边超过指定的边长量，则将细分该边及其关联面。边长量基于世界单位。值越小，处理时间越长。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-0AED229E-8BD7-4931-BEA0-9FBEBB466283"></a><dt><span class="term">规则性 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">控制在输出网格上施加的规则性程度。规则性越高，网格越均匀。例如，规则性为 1.0 时，输出网格上的大小相对均匀，三角形更接近等边。规则性越接近 0.0，大小变化越大，精度也越高。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-D96690F4-F6BF-4C77-9730-EB0CB4B62C4F"></a><dt><span class="term">阈值 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">为算法设置法线阈值。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-CC4CA497-901F-493F-ABA4-BA792965CC27"></a><dt><span class="term">保留网格数据 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">启用后，在进行细分时，将保留网格数据（例如平滑组、材质 ID、布尔接缝、法线、指定的 UV 和顶点浮点数据通道）。这在“重新拓扑”<span class="MenuCascade"></span>等修改器中会有所帮助，在修改器中，可以将这些网格数据用作自动边约束。 
+                              			 
+                           </div>
+                           <div class="definition">禁用此选项后，细分结果中将没有网格数据。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-8B6A0C7F-93DB-43E7-9D1D-7E4DEFEF4883"></a><dt><span class="term">UV 通道 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition"> 仅当“保留网格数据”<span class="MenuCascade"></span>处于启用状态时，“UV 通道”才处于活动状态。将为指定的贴图通道创建索引并保留此贴图通道，为此，应将贴图坐标和接缝传播到输出网格。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-BDFFFE62-6DF2-4BF8-86A5-773B0B55C598"></a><dt><span class="term">保留锐边 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition"> 允许将硬边传播到输出网格。检测到的边基于相邻面法线之间的角度。此设置影响此类边附近的细化程度，类似于“平滑修改器”<span class="MenuCascade"></span>使用边角度阈值来确定硬边和软边的方式。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-F91C879F-20AB-404D-963C-1BAA1DB11C59"></a><dt><span class="term">角度 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">设置角度（以度为单位），超过该角度时将检测硬边。 
+                              			 
+                           </div>
+                        </dd>
+                     </dl> 
+                  </div> 
+                  <div class="section"><a name="SECTION_6C53687082094AA5B231C8A9870F334C"></a> 
+                     <h4><a name="GUID-F0AA1666-0A2C-4D91-B04D-8E7867CDEE91"></a>可变曲率模式
+                     </h4> <a name="FIG_19C13DB7EB81433A80CFBC3B27066A35"></a><div class="figure-anchor"><img src="../images/GUID-52641C75-5BBE-452F-9581-F50F32AF3CDD-low.png"></div> 
+                     <dl><a name="GUID-F4AF311E-FE16-4215-A5B4-337D432504D3"></a><dt><span class="term">边长 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition"> 在输出网格上设置目标边长。如果网格上的边超过指定的边长量，则将细分该边及其关联面。边长量基于世界单位。值越小，处理时间越长。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-DA82493E-1113-4DCC-8955-FF73814E4DAE"></a><dt><span class="term">规则性 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">控制在输出网格上施加的规则性程度。规则性越高，网格越均匀。例如，规则性为 1.0 时，输出网格上的大小相对均匀，三角形更接近等边。规则性越接近 0.0，大小变化越大，精度也越高。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-1C3D36C9-405B-4C49-8428-57CD3F08E710"></a><dt><span class="term">阈值 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">为重置网格算法设置法线阈值。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-1E7A131E-C341-4542-AF31-1494302DA243"></a><dt><span class="term">可变密度 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">控制强曲率区域中网格密度的变化。值越小，细化程度越高。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-6BB10B6B-2951-4216-B309-216A3C481DD8"></a><dt><span class="term">过渡 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">设置靠近边界或受约束边的过渡区域的宽度。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-877B4CD5-3C60-499C-A070-96C5F9A60593"></a><dt><span class="term">保留网格数据 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">启用后，在进行细分时，将保留网格数据（例如平滑组、材质 ID、布尔接缝、法线、指定的 UV 和顶点浮点数据通道）。这在“重新拓扑”<span class="MenuCascade"></span>等修改器中会有所帮助，在修改器中，可以将这些网格数据用作自动边约束。 
+                              			 
+                           </div>
+                           <div class="definition">禁用此选项后，细分结果中将没有网格数据。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-DDCBEBB2-9D93-4E07-9E47-CCE310F67255"></a><dt><span class="term">UV 通道 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">仅当“保留网格数据”<span class="MenuCascade"></span>处于启用状态时，“UV 通道”才处于活动状态。将为指定的贴图通道创建索引并保留此贴图通道，为此，应将贴图坐标和接缝传播到输出网格。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-9E77E0F9-4552-4F50-B120-2DCC7AADCAA9"></a><dt><span class="term">保留锐边 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition"> 允许将硬边传播到输出网格。检测到的边基于相邻面法线之间的角度。此设置影响此类边附近的细化程度，类似于“平滑修改器”<span class="MenuCascade"></span>使用边角度阈值来确定硬边和软边的方式。 
+                              			 
+                           </div>
+                        </dd><a name="GUID-72922C9D-BDEE-4458-B9F9-BEE58B041558"></a><dt><span class="term">角度 
+                              			 </span></dt>
+                        <dd>
+                           <div class="definition">设置角度（以度为单位），超过该角度时将检测硬边。 
+                              			 
+                           </div>
+                        </dd>
+                     </dl> 
+                  </div> 
+                  <dl><a name="GUID-D4D06514-8D78-4771-A18B-B7314001C827"></a><dt><span class="term">更新 
+                           		  </span></dt>
+                     <dd>
+                        <div class="definition">选择更新输出网格的间隔： 
+                           			 <a name="UL_928578FC5AAC4CF7910049E56A95F1F9"></a><ul>
+                              <li><em class="strong">自动</em> 当控件或网格发生更改时立即进行更新。 
+                                 				
+                              </li>
+                              <li><em class="strong">渲染</em> 仅渲染时更新。 
+                                 				
+                              </li>
+                              <li><em class="strong">手动</em> 手动更新。可以按下 <span class="keyboardEntry">Esc</span> 来中断细分。如果中断了细分，“更新”模式将更改为“手动”。 
+                                 				
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd><a name="GUID-8A5C4282-E806-48AF-A975-76258A2D2E78"></a><dt><span class="term">“立即更新”按钮 
+                           		  </span></dt>
+                     <dd>
+                        <div class="definition">在选择“渲染”<span class="MenuCascade"></span>或“手动”<span class="MenuCascade"></span>模式时更新网格。 
+                           		  
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

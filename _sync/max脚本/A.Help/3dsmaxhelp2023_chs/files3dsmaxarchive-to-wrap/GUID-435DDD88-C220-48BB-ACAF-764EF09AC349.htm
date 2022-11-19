@@ -1,0 +1,129 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-435DDD88-C220-48BB-ACAF-764EF09AC349">
+      <meta name="description" content="使用“认知控制器”编辑器可以将行为合并到状态中。更重要的是，您可以使用状态图表对不同的行为和行为组合进行排序，其中以 MAXScript 编写的条件可以更改行为。">
+      <meta name="indexterm" content="群组: 认知控制器">
+      <meta name="contextid" content="TOPIC_COGNITIVE_CONTROLLER_EDITOR">
+      <meta name="topic-type" content="concept">
+      <title>认知控制器编辑器</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-435DDD88-C220-48BB-ACAF-764EF09AC349"></a><div class="head">
+            <h1>认知控制器编辑器 </h1>
+         </div>
+         <p class="blurb">使用“认知控制器”编辑器可以将行为合并到状态中。更重要的是，您可以使用状态图表对不同的<span class="char_link"><a href="GUID-5CDDE2B2-DA06-4003-872D-5B181E58EEF1.htm">行为</a></span>和行为组合进行排序，其中以 MAXScript 编写的条件可以更改行为。 
+         </p><a name="GUID-A02A5596-48A0-4C1F-8A0E-5EE40C114585"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-F0CCC6CE-3298-4B2A-A057-1DB2904875C8"><img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-9A23D2B8-9CE2-40BE-98B6-651DBC94F4F7-low.png">（辅助对象） <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “群组” <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-3015B9FB-1B62-4864-860C-1DC395CF1EB6-low.png">（认知控制器）</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-19B75AFF-09F4-4C7B-BBB6-59BBD9D1D49A">选择群组对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-3015B9FB-1B62-4864-860C-1DC395CF1EB6-low.png">（认知控制器）</span> 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F487552A50A53111913E7C26F-7719"></a>例如，可以指定一个角色或对象毫无目的地漫步，直到它移动到和另一对象相距一定距离时开始朝那个对象直行。或者，仅当第二个角色正在躲避第一个角色时，指定一个角色躲避另一角色。 
+         </p>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E82B"></a><div class="note-note"><span class="label label-target-language">注意:</span>在认知控制器中使用的 MAXScript 条件通常由单行代码组成。可以分别将它们作为 <span class="charspan-emphasis"> <em class="mild">.ms</em> </span> 文件来加载和保存，但是它们也存储在它们驻留的 MAX 场景文件中。 
+            </div>
+         </div>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16B9D"></a>编辑器界面由包含状态图表窗口上面的图标工具栏组成。当第一次打开编辑器时，不存在状态图表。通过单击“新建”按钮创建一个新状态图表。 
+         </p>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E82C"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果要连续地给代理或组合指定两个或多个行为，那么将这些行为合并到一个单独状态认知控制器或“行为模块”中，通过将其指定给代理或组合来节省时间。它的唯一缺点是无法使制作认知控制器中的行为权重动画，但是可以使用变换来达到此目的。 
+            </div>
+         </div>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E82D"></a><div class="note-note"><span class="label label-target-language">注意:</span>群组不允许在代理中使用多个认知控制器。可以指定多个控制器，但在求解时，character studio 通知您它将只使用第一个指定的认知控制器。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4635"></a> 
+            <h2><a name="GUID-39712F6D-2C86-412E-A135-8DEE4CA40F24"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045F4F"></a><div class="figure-anchor"><img src="../images/GUID-667802A4-B515-4299-8A00-D89BB470729E-low.png"></div> <a name="GUID-AF41BD15-A13C-4E01-88A4-A6E5A333FAB0"></a><dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AB1"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BA0"></a><img src="../images/GUID-0BEB2699-1E9D-42B6-BA1A-71C13C2FB6F6-low.png"> 创建状态</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B62"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875384D"></a>您可以在图表中创建新状态。单击此按钮，然后单击状态图表区域来添加状态。此状态以包含其名称的矩形框显示。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BA1"></a>默认情况下，当模拟运行时，执行控制器中的第一个状态。它用红色标出，后来添加的状态用蓝色标出。为设置一个不同的首先执行状态，使用“设置开始状态”函数。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BA2"></a>编辑此状态来可以指定状态名称和行为。右键单击状态便可进行编辑。这将打开<span class="char_link"><a href="GUID-533D2EC1-1943-4123-BD62-101F02A5AA3B.htm">“状态”对话框</a></span>。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AB0"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BA3"></a><img src="../images/GUID-E3E68807-9771-478D-84F6-1CBF87A1FFBC-low.png"> 创建过渡</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B61"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875384E"></a>您可以将状态链接到过渡。单击此按钮，然后在两个状态之间拖动来创建变换，变换从较早的状态开始。变换以从第一个状态开始指向第二个状态的黑箭头显示。另外，在“创建变换”工具处于活动状态时，如果单击状态，那么就创建了一个循环回到该状态自身的变换。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BA4"></a>右键单击变换，通过编辑可以指定此变换的特征和条件。这将打开<span class="char_link"><a href="GUID-AE3F62AF-0988-4859-B1FE-1D8886548B61.htm">“状态变换”对话框</a></span>。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AAF"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BA5"></a><img src="../images/GUID-1EA28109-96E0-4816-890D-D95E6C349456-low.png"> 设置开始状态</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B60"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875384F"></a>通常，在认知控制器中首先执行的状态是第一个添加的状态。使用此工具选择要首先执行的状态。开始状态用红色标出，其它的用蓝色标出。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BA6"></a>当已有一个状态的循环序列时，如果想更改初始执行的状态，通常使用此选项。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AAE"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BA7"></a><img src="../images/GUID-B171BB2C-AF64-4EBD-BDF6-E9B05300B5E2-low.png"> 移动状态</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B5F"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753850"></a>您可以通过拖动的方式在窗口移动状态。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AAD"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BA8"></a><img src="../images/GUID-58E0DF20-75C2-461A-9C21-06D073877A04-low.png"> 选择状态/过渡</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B5E"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753851"></a>您可以选择用于后续删除操作的状态和过渡。选定的状态和变换具有白色轮廓。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BA9"></a>可以拖动选取框来选择多个状态。也可以按下 <span class="keyboardEntry">Ctrl</span> 键，通过单击状态和变换来选择多个状态和变换。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AAC"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BAA"></a><img src="../images/GUID-C520433D-6E7C-44B9-8E11-B7CAC1ECB0CD-low.png"> 删除状态/过渡</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B5D"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753852"></a>您可以删除一个或多个状态或过渡。首先选中要删除状态或变换的任意联合，然后单击此按钮。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AAB"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BAB"></a>（名称）</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B5C"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753853"></a>显示当前状态图表的名称。从列表中选择其它要显示和/或编辑的状态图表。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BAC"></a>要更改状态图表名称，在此对话框中单击名称并使用键盘输入文本。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AAA"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BAD"></a>新增特性</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B5B"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753854"></a>添加一个新的认知控制器。默认情况下，认知控制器命名为“Cognitive Controller”加上一个数字，但是可以更改为任何您想使用的名称。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AA9"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BAE"></a>删除</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B5A"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753855"></a>删除当前认知控制器。这是不可恢复的操作。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-533D2EC1-1943-4123-BD62-101F02A5AA3B.htm">“状态”对话框</a><p>使用“状态”对话框可添加行为到群组模拟的认知控制器状态中，或从其中删除行为，并为每一行为指定权重。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-AE3F62AF-0988-4859-B1FE-1D8886548B61.htm">“状态变换”对话框</a><p>当使用<span class="char_link"><a href="GUID-435DDD88-C220-48BB-ACAF-764EF09AC349.htm">认知控制器</a></span>时，这些设置控制了 character studio 如何影响状态的变换。更多详细信息，请参阅<span class="char_link"><a href="GUID-448891C9-CE10-4356-931A-51A8ACB3257D.htm#WSF742DAB041063133728B9B2112A1CE7292-7E38">设置并使用认知控制器</a></span>。 
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

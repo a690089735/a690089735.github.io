@@ -1,0 +1,5 @@
+<map id="Ufe::BaseUndoableCommand" name="Ufe::BaseUndoableCommand">
+<area shape="rect" id="node3" href="$class_ufe_1_1_set_value3_undoable_command.html" title="Abstract class for set Value3 command. " alt="" coords="457,5,679,47"/>
+<area shape="rect" id="node4" href="$class_ufe_1_1_set_value_undoable_command.html" title="Abstract class for set value command. " alt="" coords="461,71,675,112"/>
+<area shape="rect" id="node2" href="$class_ufe_1_1_undoable_command.html" title="Abstract base class for undoable commands. " alt="" coords="5,46,169,73"/>
+</map>

@@ -1,0 +1,450 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D204B817-8B87-42FF-B152-0E360D0035A2">
+      <meta name="description" content="“网格平滑”修改器通过多种不同方法平滑场景中的几何体。它允许您细分几何体，同时在角和边插补新面的角度以及将单个平滑组应用于对象中的所有面。“网格平滑”的效果是使角和边变圆，就像它们被锉平或刨平一样。使用“网格平滑”参数可控制新面的大小和数量，以及它们如何影响对象曲面。">
+      <meta name="indexterm" content="网格平滑: “网格平滑”修改器">
+      <meta name="indexterm" content="修改器: 网格平滑">
+      <meta name="indexterm" content="对象空间修改器: 网格平滑">
+      <meta name="indexterm" content="NURMS（“网格平滑”修改器）">
+      <meta name="contextid" content="MESHSMOOTH.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS-MESHSMOOTH">
+      <meta name="topic-type" content="topic">
+      <title>网格平滑修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D204B817-8B87-42FF-B152-0E360D0035A2"></a><div class="head">
+            <h1>网格平滑修改器</h1>
+         </div>
+         <p class="blurb">“网格平滑”修改器通过多种不同方法平滑场景中的几何体。它允许您细分几何体，同时在角和边插补新面的角度以及将单个平滑组应用于对象中的所有面。“网格平滑”的效果是使角和边变圆，就像它们被锉平或刨平一样。使用“网格平滑”参数可控制新面的大小和数量，以及它们如何影响对象曲面。
+            
+         </p>
+         <div class="bodyReference"><a name="UL_C209BEC8269942FF9C283FBDB31D07C7"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-A48757F6-AC2A-4062-876B-AA988564D322"><img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif">  作出选择。 <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “网格平滑”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-55F50A89-2561-48AF-859C-2AF09D1DE6B5"> 进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “细分曲面” <img src="../images/ac.menuaro.gif"> “网格平滑”</span> 
+               </li>
+            </ul><a name="WS1A9193826455F5FFBA679E112A6A190043936"></a><div class="figure-anchor"><img src="../images/GUID-9585BFA1-A0E6-412B-B845-5CEC60F138CB-low.png"><p class="figure-title">平滑使用挤出建模的对象</p>
+            </div><a name="WS1A9193826455F5FFBA679E112A6A190043935"></a><div class="figure-anchor"><img src="../images/GUID-FD1A76C7-110F-4068-BB50-E80EC0C39C22-low.png"><p class="figure-title">角度模型（显示在右侧）通过网格平滑更改为平滑模型</p>
+            </div>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F43"></a>可使用“网格平滑”生成非均匀有理数网格平滑对象（缩写为 NURMS）。此 NURBS 对象与可以为每个控制顶点设置不同权重的 NURBS 对象相似。通过更改边权重，可进一步控制对象形状。 
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F42"></a>网格平滑的效果在锐角上最明显，而在弧形曲面上最不明显。在长方体和具有尖锐角度的几何体上使用“网格平滑”。避免在球体和与其相似的对象上使用。 
+            </p>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9BD"></a><div class="note-tip"><span class="label label-target-language">提示</span>为更好的了解“网格平滑”，请创建一个球体和一个立方体，然后对二者应用“网格平滑”。立方体的锐角变得圆滑，而球体的几何体变得更复杂而不是明显改变图形。 
+               </div>
+            </div>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9BE"></a><div class="note-note"><span class="label label-target-language">注意:</span>在受控制等级编辑约束的网格平滑对象之前放置动画变形器，将导致对象图形扭曲。为获得最佳效果，如果正在为动画使用变形器，请在堆栈中的“网格平滑”修改器之后放置变形修改器。 
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2966"></a> 
+               <h2><a name="GUID-DF45DE02-5EA5-424F-B683-170AB44A4858"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043937"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043938"></a>要对对象应用“网格平滑”，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择角度对象。 
+                  </li>
+                  <li>应用“网格平滑”修改器。 </li>
+                  <li>设置“网格平滑”参数。 </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A190043939"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004393A"></a>要对子对象应用“网格平滑”，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择对象。 
+                  </li>
+                  <li>应用“网格选择”修改器。 </li>
+                  <li>选择一组顶点或面。 </li>
+                  <li>应用涡轮平滑。 </li>
+                  <li>在“细分方法”卷展栏上，禁用“应用于整个网格”。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F41"></a>这样，“网格平滑”将仅对子对象选择起作用。 
+                     </p> 
+                  </li>
+                  <li>设置“网格平滑”参数。 </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2965"></a> 
+               <h2><a name="GUID-399C21EF-C472-480F-BC49-83C402F5A037"></a>界面
+               </h2> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004393B"></a> 
+                  <h3><a name="GUID-92F43C26-4615-4B68-BB79-05F5CC3DCDFA"></a>修改器堆栈
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A19004393C"></a><div class="figure-anchor"><img src="../images/GUID-C7B829B4-C03C-4770-8A00-9B4DD4E3361B-low.png"></div>  <a name="GUID-75674035-E15B-4EC3-84D4-645385417020"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B27"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F40"></a>顶点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D89"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E33"></a>在此子对象层级，可变换或编辑平滑网格中的顶点。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B26"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F3F"></a>边</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D88"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E34"></a>在此子对象层级，可变换或编辑平滑网格中的面边。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F3E"></a>请参见<span class="char_link"><a href="GUID-D204B817-8B87-42FF-B152-0E360D0035A2.htm#WSF742DAB04106313366400BF6112A1CEA097-7F29">“局部控制”卷展栏</a></span>. 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F3D"></a>关于堆栈显示的更多信息，请参见<span class="char_link"><a href="GUID-80209C3A-C2E4-4541-8738-D1E5ECE16E9C.htm">修改器堆栈</a></span>。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004393D"></a> 
+                  <h3><a name="GUID-6119CF68-4968-43FC-9ECC-5F7D1BD18F49"></a>“细分方法”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A19004393E"></a><div class="figure-anchor"><img src="../images/GUID-903C992D-7EAA-4D13-8813-28140D5F128C-low.png"></div>  <a name="GUID-80ACC80D-DC2F-4512-A927-64DDAC843195"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B25"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F3C"></a>细分方法列表</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D87"></a>  
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E35"></a>选择以下控件之一可确定“网格平滑”操作的输出： 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A19004393F"></a><ul>
+                              <li><em class="strong">NURMS</em>减少非均匀有理数网格平滑对象（缩写为 NURMS）。“强度”和“松弛”平滑参数对于 NURMS 类型不可用。 
+                                 <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F3B"></a>此 NURBS 对象与可以为每个控制顶点设置不同权重的 NURBS 对象相似。通过更改边权重，可进一步控制对象形状。有关更改权重的详细信息，请参见下文中的“显示/权重”组。 
+                                 </p> 
+                              </li>
+                              <li><em class="strong">经典</em>生成三面和四面的多面体。（这与在版本 2.x 中启用“四边形输出”时应用“网格平滑”相同。） 
+                              </li>
+                              <li><em class="strong">四边形输出</em>仅生成四面多面体（假设看不到隐藏的边，因为对象仍然由三角形面组成）。如果对整个对象（如长方体）应用使用默认参数的此控件，其拓扑与<span class="char_link"><a href="GUID-C0C572AA-9F42-4AB0-8123-DAB75817690D.htm">细化</a></span>完全相同，即为边样式。不过，不是使用张力从网格投影面和边顶点，而是使用“网格平滑强度”将原来的顶点和新的边顶点松弛到网格中。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B24"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F3A"></a>应用于整个网格</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D86"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E36"></a>启用时，在堆栈中向上传递的所有子对象选择被忽略，且“网格平滑”应用于整个对象。请注意，子对象选择仍然在堆栈中向上传递到所有后续修改器。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B23"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F39"></a>旧式贴图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D85"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E37"></a>使用 <span class="charspan-msgph">3ds Max</span> 版本 3 算法将“网格平滑”应用于贴图坐标。此方法会在创建新面和纹理坐标移动时变形基本贴图坐标。 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A190043940"></a><div class="figure-anchor"><img src="../images/GUID-792AB06E-A059-437D-A21F-AAD0E065FB44-low.png"></div>  
+                           <p><a name="GUID-AEC078B0-9981-4F99-92B4-1C39B274BEE0"></a> <em class="strong">在立方体上进行两次迭代的“网格平滑”效果和不同迭代方法：</em> 
+                           </p> 
+                           <p><a name="GUID-0ED46AD7-92CB-46C8-B2E9-7A1186B2D43E"></a> <em class="strong">A. NURMS</em> 
+                           </p> 
+                           <p><a name="GUID-C116002B-581B-42E9-8898-E90B27F98080"></a> <em class="strong">B. 四元菜单</em> 
+                           </p> 
+                           <p><a name="GUID-E03299A5-FDC9-451A-861F-567B43BF3C6A"></a> <em class="strong">C. 经典</em> 
+                           </p> 
+                           <p><a name="GUID-EBD2595D-868E-40F9-9BB7-0CB2291BFF28"></a> <em class="strong">D. 未应用“网格平滑”的原始对象</em> 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WSF742DAB04106313366400BF6112A1CEA097-7F2B"></a> 
+                  <h3><a name="GUID-845CE2E6-23F9-414A-921C-D0E8DAA7B1F0"></a>“细分量”卷展栏
+                  </h3> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F38"></a>设置应用“网格平滑”的次数。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A190043941"></a><div class="figure-anchor"><img src="../images/GUID-B33D90AF-5CF8-4DD8-B08E-F58F9CDA0788-low.png"></div>  <a name="GUID-1F5E69C1-9375-41A3-9452-200EF411D240"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B22"></a><span class="term"><a name="WSF742DAB04106313366400BF6112A1CEA097-7F2A"></a>迭代次数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D84"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E38"></a>设置网格细分的次数。增加该值时，每次新的迭代会通过在迭代之前对顶点、边和曲面创建平滑差补顶点来细分网格。修改器会细分曲面来使用这些新的顶点。默认设置为 0。范围从 0 到 10。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F37"></a>默认值为 0 次迭代，允许在 <span class="charspan-msgph">3ds Max</span> 开始细分网格之前，修改任何设置或参数，例如“网格平滑”类型或更新选项。 
+                           </p> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9BF"></a><div class="note-note"><span class="label label-target-language">注意:</span>在增加迭代次数时要注意。对于每次迭代，对象中的顶点和曲面数量（以及计算时间）增加四倍。对平均适度的复杂对象应用四次迭代会花费很长时间来进行计算。可按 <img src="../images/GUID-2A9D6F33-E77A-4D09-9D6F-B574BDC24FC5-low.png"> 停止计算，此操作还将“更新选项”自动设置为“手动”。在将“更新选项”重新设置为“始终”之前，减少迭代次数。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B21"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F36"></a>平滑度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D83"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E39"></a>确定对多尖锐的锐角添加面以平滑它。计算得到的平滑度为顶点连接的所有边的平均角度。值为 0.0 会禁止创建任何面。值为 1.0 会将面添加到所有顶点，即使它们位于一个平面上。 
+                           </p> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9C0"></a><div class="note-tip"><span class="label label-target-language">提示</span>要仅细分锐化边和角，请使用小于 1.0 的“平滑度”值。要在“线框/边面”视口中查看细分，请禁用<span class="char_link"><a href="GUID-D204B817-8B87-42FF-B152-0E360D0035A2.htm#WSF742DAB04106313366400BF6112A1CEA097-7F28">等值线显示</a></span>。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B20"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F35"></a>渲染值</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D82"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E3A"></a>用于在渲染时对对象应用不同平滑迭代次数和不同的“平滑度”值。一般，将使用较低迭代次数和较低“平滑度”值进行建模，使用较高值进行渲染。这样，可在视口中迅速处理低分辨率对象，同时生成更平滑的对象以供渲染。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B1F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F34"></a>迭代次数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D81"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E3B"></a>允许在渲染时选择一个不同数量的<span class="char_link"><a href="GUID-D204B817-8B87-42FF-B152-0E360D0035A2.htm#WSF742DAB04106313366400BF6112A1CEA097-7F2A">平滑迭代次数</a></span>应用于对象。启用“迭代次数”，然后使用其右侧的微调器设置迭代次数。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B1E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F33"></a>平滑度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D80"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E3C"></a>用于选择不同的“平滑度”值，以便在渲染时应用于对象。启用“平滑度”，然后使用其右侧的微调器设置平滑度的值。 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A190043942"></a><div class="figure-anchor"><img src="../images/GUID-C3D402D9-A17C-41DF-8758-B745B33CB476-low.png"><p class="figure-title">增加迭代次数的效果从左到右变化</p>
+                           </div>  
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WSF742DAB04106313366400BF6112A1CEA097-7F29"></a> 
+                  <h3><a name="GUID-42D4925F-1B95-4454-9E1F-7F89465535B9"></a>“局部控制”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043943"></a><div class="figure-anchor"><img src="../images/GUID-5FDD2CB3-B7AC-4AC5-8EA5-9B4C05B00FA5-low.png"></div>  <a name="GUID-75575432-7C31-4BBF-9C30-B7305702A040"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B1D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F32"></a>子对象层级</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D7F"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E3D"></a>启用或禁用“边”或“顶点”层级。如果两个层级都被禁用，将在对象层级工作。有关选定边或顶点的信息显示在“忽略背面”复选框下的消息区域中。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B1C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F31"></a>忽略背面</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D7E"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E3E"></a>启用时，子对象选择会仅选择其法线使其在视口中可见的那些子对象。禁用（默认设置）时，选择包括所有子对象，而与它们的法线方向无关。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B1B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F30"></a>控制级别</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D7D"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E3F"></a>用于在一次或多次迭代后查看控制网格，并在该级别编辑子对象点和边。“变换”控件和“权重”设置对所有层级的所有子对象可用。“折逢”设置仅在“边”子对象层级可用。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B1A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F2F"></a>折缝</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D7C"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E40"></a>创建曲面不连续，从而获得褶皱或唇状结构等硬边。选择一个或多个边子对象，然后调整“折缝”设置；折缝显示在与选定边关联的曲面上。只在“边”子对象层级下才可以使用。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B19"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F2E"></a>权重</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D7B"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E41"></a>设置选定顶点或边的权重。增加顶点权重会朝该顶点“拉动”平滑结果。边权重更复杂，且在某些方面的行为具有相反形式。它们实际并不是上文所述的“权重”，而是 NURBS 术语中的“结间隔”。因此，增加边权重会将平滑结果推走。如果使用权重 0，结果中将形成纽结。
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B18"></a><span class="term"><a name="WSF742DAB04106313366400BF6112A1CEA097-7F28"></a>等值线显示</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D7A"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E42"></a>启用该选项后，<span class="charspan-msgph">3ds Max</span> 仅显示等值线，即对象在进行光滑处理之前的原始边缘。使用此项的好处是减少混乱的显示。禁用时，<span class="charspan-msgph">3ds Max</span> 显示“网格平滑”添加的所有面；所以，提高“迭代次数”设置（请参见<span class="char_link"><a href="GUID-D204B817-8B87-42FF-B152-0E360D0035A2.htm#WSF742DAB04106313366400BF6112A1CEA097-7F2B">“细分量”卷展栏</a></span>）会导致线条数增多。默认设置为启用。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B17"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F2D"></a>显示框架</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D79"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E43"></a>在细分之前，切换显示修改对象的两种颜色线框的显示。框架颜色显示为复选框右侧的色样。第一种颜色表示“顶点”子对象层级的未选定的边，第二种颜色表示“边”子对象层级的未选定的边。通过单击其色样更改颜色。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043944"></a> 
+                  <h3><a name="GUID-B87A6493-65D7-406D-8C3F-CD45EEFB4CD3"></a>“软选择”卷展栏
+                  </h3> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F2C"></a>“软选择”控件影响子对象的“移动”、“旋转”和“缩放”功能操作。当这些处于启用状态时，<span class="charspan-msgph">3ds Max</span> 将样条线曲线变形应用到变换的选定子对象周围的未选择顶点。这提供一种类似磁场的效果，在变换周围产生影响的球体。 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F2B"></a>详细信息，请参见<span class="char_link"><a href="GUID-BEF2CC1E-40BE-45DD-A8E9-228EE4A1EE98.htm">“软选择”卷展栏</a></span>。 
+                  </p> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043945"></a> 
+                  <h3><a name="GUID-7B263027-6E8E-402D-BCAF-1EDF775A52C7"></a>“参数”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043946"></a><div class="figure-anchor"><img src="../images/GUID-555A2AD8-00A8-448F-ADB0-42B02526A62B-low.png"></div>  <a name="GUID-83AF2766-B9EE-44A2-8ABC-0FFF27E7834D"></a><div class="dl_section"><a name="GUID-886EE401-B407-426D-BA3C-2E1C9F56DE18"></a><p class="title"><a name="GUID-E4EB1AF3-E648-432E-B01E-B9E3DF25FA10"></a>“平滑参数”组
+                     </p>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F2A"></a>这些设置仅在“网格平滑类型”设置为“经典”或“四边形输出”时可用。另外，“投影到限定曲面”仅在“经典”模式下可用。 
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B16"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F29"></a>强度</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D78"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E44"></a>使用 0.0 至 1.0 的范围设置所添加面的大小。 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A190043948"></a><ul>
+                                 <li>接近 0.0 的值会创建非常薄并且靠近原始顶点和边的小面。 </li>
+                                 <li>接近 0.5 的值在边之间均匀设置面大小。 </li>
+                                 <li>接近 1.0 的值创建新的大面，并将原始面调整为非常小。 </li>
+                              </ul> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B15"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F28"></a>松弛</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D77"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E45"></a>应用正的松弛效果以平滑所有顶点。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B14"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F27"></a>投影到限定曲面</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D76"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E46"></a>将所有点放置到“网格平滑”结果的“限定曲面”上，即在无数次迭代后生成的曲面上。拓扑仍然受迭代次数控制。 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-3145B3FA-C2A4-4443-AD8A-1352EFA1A5D4"></a><p class="title"><a name="GUID-E3ADCF94-873B-474E-B740-ABBBA518D83F"></a>“曲面参数”组
+                     </p>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F26"></a>将平滑组应用于对象，并使用曲面属性限制“网格平滑”效果。 
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B13"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F25"></a>平滑结果</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D75"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E47"></a>对所有曲面应用相同的平滑组。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B12"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F24"></a>材质</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D74"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E48"></a>防止在不共享材质 ID 的曲面之间的边创建新曲面。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B11"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F23"></a>平滑组</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D73"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E49"></a>防止在不共享至少一个平滑组的曲面之间的边上创建新曲面。 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004394A"></a> 
+                  <h3><a name="GUID-35D02528-68A1-4932-AA30-F882A3EBE932"></a>“设置”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A19004394B"></a><div class="figure-anchor"><img src="../images/GUID-8B9FBDF0-1A7F-4995-9212-34493DBD4E2F-low.png"></div>  <a name="GUID-58F59C97-6D5D-411F-9F65-276A43477F11"></a><div class="dl_section"><a name="GUID-694E6BF5-2311-4148-91C6-C9EB2E19BC61"></a><p class="title"><a name="GUID-A830D3E4-5286-42E5-A512-46FE8197387B"></a>“输入转换”组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B10"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F22"></a>操作于面/多边形</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D72"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E4A"></a>“作用于面”将每个三角形作为面并对所有边（即使是不可见边）进行平滑。“操作于多边形”忽略不可见边，将多边形（如组成长方体的四边形或圆柱体上的封口）作为单个面。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B0F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F21"></a>保持凸面</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D71"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E4B"></a>（仅在“操作于多边形”模式下可用）。保持所有输入多边形为凸面。选择此选项后，会将非凸面多边形为最低数量的单独面（每个面都为凸面）进行处理。（启用“显示/权重”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“显示控制网格”以查看此处所述操作。） 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F20"></a>“凸面”意味着可以用一条线连接多边形的任意两点而不会超出多边形以外。大多数字母都不是凸面的。例如，在大写字母“T”中，不能使用不超出该形状的直线，从底部连接到左上角。圆、三角形和规则多边形都是凸面的。 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F1F"></a>非凸面的面会出现的问题包括：输入对象几何体中的更改会导致“网格平滑”结果具有不同拓扑。例如，在长方体中，如果将一个顶角拖至穿过顶面中心的位置，此长方体变为非凸面长方体。然后，“网格平滑”会将此面作为两个三角形而不是一个四边形，且结果中的点数也会更改。
+                                 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F1E"></a>如果需要确保输出拓扑的稳定，请禁用此选项。如果网格中包含许多字母或其他非凸面的面，您可能希望启用它。 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-96FCCACA-3D40-46D2-AFC9-12561935D0E6"></a><p class="title"><a name="GUID-58DB352B-E285-4A69-A5C3-5422576ACD5B"></a>“更新选项”组
+                     </p>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F1D"></a>设置手动或渲染时更新选项，适用于平滑对象的复杂度过高而不能应用自动更新的情况。请注意，也可以在“细分量”卷展栏上，设置仅在渲染时应用的更高平滑度。 
+                     </p><a name="UL_0BC9C0661E3D490284A91EEFE29BC38B"></a><ul>
+                        <li><em class="strong">始终</em>更改任意“平滑网格”设置时自动更新对象。 
+                        </li>
+                        <li><em class="strong">渲染时</em>只在渲染时更新对象的视口显示。 
+                        </li>
+                        <li><em class="strong">手动</em>启用手动更新。选中手动更新时，改变的任意设置直到单击“更新”按钮时才起作用。 
+                        </li>
+                     </ul>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B0B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F19"></a>更新</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D6D"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E4F"></a>更新视口中的对象，使其与当前的“网格平滑”设置。仅在选择“渲染”或“手动”时才起作用。 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004394E"></a> 
+                  <h3><a name="GUID-3CB31CBE-F00E-4AE5-B013-9F6B1EDB11BD"></a>“重置”卷展栏
+                  </h3> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F18"></a>使用此卷展栏可将所做的任何更改（例如，几何体编辑等子对象变换）以及编辑折缝更改、顶点权重和边权重的更改恢复为默认或初始设置。 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F17"></a>可重置所有控制级别的更改或重置为当前控制级别。为需要的子对象层级启用重置选项，然后单击适当按钮。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A19004394F"></a><div class="figure-anchor"><img src="../images/GUID-ED198533-154B-4897-9C2E-BB77459E7017-low.png"></div>  <a name="GUID-4A23A7E9-8AB1-49D2-8C0F-74710787E1D6"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B0A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F16"></a>重置所有层级</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D6C"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E50"></a>将所有子对象层级的几何体编辑、折缝和权重恢复为默认或初始设置。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B09"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F15"></a>重置该层级</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D6B"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E51"></a>将当前子对象层级的几何体编辑、折缝和权重恢复为默认或初始设置。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B08"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F14"></a>重置几何体编辑</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D6A"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E52"></a>将对顶点或边所做的任何变换恢复为默认或初始设置。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B07"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F13"></a>重置边折缝</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D69"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E53"></a>将边折缝恢复为默认或初始设置。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B06"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F12"></a>重置顶点权重</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D68"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E54"></a>将顶点权重恢复为默认或初始设置。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B05"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F11"></a>重置边权重</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D67"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E55"></a>将边权重恢复为默认或初始设置。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B04"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F10"></a>全部重置</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7D66"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E56"></a>将全部设置恢复为默认或初始设置。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-C8565E3E-CAB3-4F91-A1D2-7596A5E12017"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-86C91698-9BAC-4A62-82DC-288E2815375B.htm">四边形网格化修改器</a></span></li>
+               <li><span class="char_link"><a href="GUID-EA8FF838-B197-4565-9A85-71CE93DA4F68.htm">涡轮平滑修改器</a></span></li>
+            </ul>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-CB7FD47E-D809-429C-98D3-20CB56B72EBF.htm">细分曲面</a></li>
+                     <li class="topiclist-litem"><a href="GUID-AC9DDAB2-52E4-482A-B245-F5C30CC45544.htm">OpenSubdiv 修改器</a></li>
+                     <li class="topiclist-litem"><a href="GUID-18EAB13E-EBEB-4103-BFDB-5416CAF68CFA.htm">折缝修改器</a></li>
+                     <li class="topiclist-litem"><a href="GUID-55365F39-B5C9-4836-82EF-F0CD7EA3C1D2.htm">CreaseSet 修改器</a></li>
+                     <li class="topiclist-litem"><a href="GUID-E7312BB6-AB50-4328-8855-64AD828CAEC5.htm">HSDS 修改器</a></li>
+                     <li class="topiclist-litem"><a href="GUID-EA8FF838-B197-4565-9A85-71CE93DA4F68.htm">涡轮平滑修改器</a></li>
+                     <li class="topiclist-litem"><a href="GUID-642809FB-1C98-4960-8689-24B8108F3B10.htm">“细分曲面”卷展栏（多边形网格）</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

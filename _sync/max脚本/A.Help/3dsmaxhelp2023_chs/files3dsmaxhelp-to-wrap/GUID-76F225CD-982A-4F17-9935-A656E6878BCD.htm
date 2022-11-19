@@ -1,0 +1,52 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-76F225CD-982A-4F17-9935-A656E6878BCD">
+      <meta name="description" content="您可以使用位图文件或程序贴图控制反射高光显示位置。指定给光泽度材质组件的贴图决定整个曲面的哪些区域更有光泽，哪些区域不太有光泽，具体情况取决于贴图中颜色的强度。贴图中的黑色像素将产生全面的光泽。白色像素将完全消除光泽，中间值会减少高光的大小。">
+      <meta name="indexterm" content="光泽度贴图">
+      <meta name="indexterm" content="作为材质组件的贴图: 光泽度">
+      <meta name="topic-type" content="concept">
+      <title>光泽度贴图</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-76F225CD-982A-4F17-9935-A656E6878BCD"></a><div class="head">
+            <h1>光泽度贴图</h1>
+         </div>
+         <p class="blurb">您可以使用位图文件或<span class="char_link"><a href="GUID-783C7A59-F829-41DA-A2A2-E967E516172D.htm">程序贴图</a></span>控制反射高光显示位置。指定给光泽度材质组件的贴图决定整个曲面的哪些区域更有光泽，哪些区域不太有光泽，具体情况取决于贴图中颜色的强度。贴图中的黑色像素将产生全面的光泽。白色像素将完全消除光泽，中间值会减少高光的大小。 
+         </p><a name="UL_61162AF7B3A5413591D353FF22FB692E"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-976158A4-AE8A-40F2-810F-8B799DF97E79"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “标准”材质  <img src="../images/ac.menuaro.gif"> “贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “光泽度”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-FEB10724-DBAB-4F05-8475-5CD08ED61B6F"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “光线跟踪”材质  <img src="../images/ac.menuaro.gif"> “贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “光泽度”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-DFACB0F2-0484-4879-974F-F50DF9829350"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif">  具有光泽度组件的其他材质</span> 
+            </li>
+         </ul><a name="WS73099CC142F487554E67820D1283FBC0BF3269C"></a><div class="figure-anchor"><img src="../images/GUID-B16DCE9E-43D6-489C-8837-3B892311C0CA-low.png"><p class="figure-title">带有光泽度贴图的对象。海洋比陆地的反光效果强。</p>
+         </div>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF3269D"></a> 光泽度组件与高光颜色不同，光泽度会影响高光的<em class="mild">位置</em>，而高光贴图会影响高光的<em class="mild">颜色</em>。 
+         </p>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF3269E"></a>将相同贴图同时指定为“光泽度”和“高光级别”时，光泽度贴图通常最有效。（在“标准”或“光线跟踪”材质的“贴图”卷展栏上，通过将贴图从一个贴图按钮拖至另一个按钮可以执行此操作；在“Slate 材质编辑器”中，您可以同时<span class="char_link"><a href="GUID-9BF3A6D1-6665-4EC8-89BD-187FF34BA588.htm">将一个贴图节点关联</a></span>到两个组件。） 
+         </p>
+         <div class="section"><a name="WS73099CC142F487554E67820D1283FBC0BF3269F"></a> 
+            <h2><a name="GUID-1E1ACF25-2439-4CC9-B1C5-5B09964CAD27"></a>过程
+            </h2> <a name="WS73099CC142F487554E67820D1283FBC0BF326A0"></a><p class="list-intro"><a name="WS73099CC142F487554E67820D1283FBC0BF326A1"></a>要使用“光泽度”贴图，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>单击“光泽度”值对应的贴图按钮。 
+                  <p><a name="WS73099CC142F487554E67820D1283FBC0BF326A3"></a><span class="charspan-msgph">3ds Max</span> 将打开<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">“材质/贴图浏览器”</a></span>。 
+                  </p> 
+               </li>
+               <li>从贴图类型列表中进行选择，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867C3"></a>（如果选择将“位图”作为贴图类型，则 <span class="charspan-msgph">3ds Max</span> 将打开用于选择图像文件的文件对话框。） 
+                  </p> 
+               </li>
+               <li>使用贴图控件可设置贴图。 </li>
+            </ol> 
+            <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867C4"></a>或者，您可以使用 <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <span class="char_link"><a href="GUID-7B51EF9F-E660-4C10-886C-6F6ADE9E8F56.htm">Slate 材质编辑器</a></span>将<span class="char_link"><a href="GUID-9BF3A6D1-6665-4EC8-89BD-187FF34BA588.htm">贴图节点关联</a></span>到“光泽度”组件。 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

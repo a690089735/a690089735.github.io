@@ -1,0 +1,595 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B33631D4-AB68-46A1-AE19-6E04F913002C">
+      <meta name="description" content="使用外部设备（如 MIDI 键盘、游戏杆和鼠标），“运动捕捉”工具可以驱动动画。驱动动画时，可以对其进行实时记录。">
+      <meta name="indexterm" content="运动捕捉的输入设备">
+      <meta name="indexterm" content="采样阈值（运动捕捉）">
+      <meta name="indexterm" content="工具: 运动捕捉">
+      <meta name="indexterm" content="阈值: 运动捕捉采样">
+      <meta name="indexterm" content="运动捕捉">
+      <meta name="topic-type" content="concept">
+      <title>“运动捕捉”工具</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B33631D4-AB68-46A1-AE19-6E04F913002C"></a><div class="head">
+            <h1>“运动捕捉”工具</h1>
+         </div>
+         <p class="blurb">使用外部设备（如 MIDI 键盘、游戏杆和鼠标），“运动捕捉”工具可以驱动动画。驱动动画时，可以对其进行实时记录。 </p><a name="UL_48B926FBEFAF423CBC759476EF3B60FF"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-5C9B04C4-FCA4-4F33-AE35-3BB9A7191B98"> <img src="../images/GUID-26D492F7-3E48-4209-AB7B-FEC655C6DA3D-low.png">“实用程序”面板  <img src="../images/ac.menuaro.gif"> “实用程序”卷展栏  <img src="../images/ac.menuaro.gif"> “运动捕捉”按钮</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34F1"></a><span class="charspan-msgph">3ds Max</span> 中的运动捕捉系统的处理方式如下： 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A1900453AA"></a><ol type="1" start="1">
+            <li>在轨迹视图中，向需要由外部设备控制的特定轨迹分配运动捕捉动画控制器。 </li>
+            <li>分配运动捕捉控制器之后，可以为该轨迹打开“属性”对话框，然后绑定外部设备的类型。例如，旋转运动捕捉控制器包含可以分别绑定每个设备的三个旋转轴。 </li>
+            <li>绑定设备之后，在“轨迹属性”对话框下面部分中调整设置和参数。这些控件因设备类型而异。 </li>
+            <li>在“工具”面板中，打开“运动捕捉”工具。您可以测试和记录任何帧范围内的轨迹的全部组合。 </li>
+         </ol>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34F0"></a><span class="charspan-msgph">3ds Max</span> 附带的运动捕捉设备如下： 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34EF"></a> <span class="char_link"><a href="GUID-B33631D4-AB68-46A1-AE19-6E04F913002C.htm#WSF742DAB041063133-128E6F4112A1CE6C39-7E73">“鼠标输入设备”卷展栏</a></span> 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34EE"></a> <span class="char_link"><a href="GUID-B33631D4-AB68-46A1-AE19-6E04F913002C.htm#WSF742DAB041063133-128E6F4112A1CE6C39-7E72">“键盘输入设备”卷展栏</a></span> 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34ED"></a> <span class="char_link"><a href="GUID-B33631D4-AB68-46A1-AE19-6E04F913002C.htm#WSF742DAB041063133-128E6F4112A1CE6C39-7E71">“游戏杆输入设备”卷展栏</a></span> 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34EC"></a> <span class="char_link"><a href="GUID-B33631D4-AB68-46A1-AE19-6E04F913002C.htm#WSF742DAB041063133-128E6F4112A1CE6C39-7E70">“MIDI 设备”卷展栏</a></span> 
+         </p>
+         <div class="section"><a name="WSF742DAB041063133-128E6F4112A1CE6C39-7E76"></a> 
+            <h2><a name="GUID-8CAF05DC-2F38-415F-ABA1-E3185A5C8F03"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900453AB"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900453AC"></a>要向轨迹分配运动捕捉控制器，请执行下列操作：
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34EB"></a>使用运动捕捉的第一步是，向所需的轨迹分配运动捕捉控制器。 
+            </p>
+            <ol type="1" start="1">
+               <li>在“轨迹视图”层次中，高亮显示所需的变换轨迹。 </li>
+               <li>选择“控制器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“指定”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34EA"></a><span class="charspan-msgph">3ds Max</span> 将打开“指定控制器”对话框。 
+                  </p> 
+               </li>
+               <li>选择“运动捕捉”（可能以“位置”、“浮点”、“缩放”或其他开头），然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34E9"></a>此时，将会显示“运动捕捉”对话框。其标题栏包括对象的名称和为其分配控制器的轨迹。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34E8"></a>如果打开的是“数据”对话框，请将其关闭，并右键单击轨迹名称，然后选择“属性”。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A1900453AD"></a><div class="figure-anchor"><img src="../images/GUID-713CA83F-01EA-495D-8DE0-85FBC7BF1D9E-low.png"></div>  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34E7"></a>分配运动捕捉控制器时，以前分配的控制器将作为该控制器的子级进行维护。这样，便可继续使用标准变换控件调整对象，即便仍旧使用运动捕捉控件，也是如此。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900453AE"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900453AF"></a>要绑定和调整设备，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li>分配运动捕捉控制器之后，可以确定要生成运动的设备类型。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34E6"></a>根据控制器的类型，可以绑定一个或多个设备。例如，旋转运动捕捉控制器有三个设备，每个设备对应每个旋转轴。另外一方面，圆柱体半径控制器只能使用一个设备控制半径值。 
+                  </p> 
+               </li>
+               <li>为轨迹绑定“属性”对话框中的设备。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900453B0"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900453B1"></a>要指定设备，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li>选定旋转轨迹时，单击“属性”按钮。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34E5"></a>旋转运动捕捉的“属性”对话框包括三个绑定按钮（一个按钮对应一个轴）。 
+                  </p> 
+               </li>
+               <li>单击“Y 旋转”按钮。在结果对话框中，选择“鼠标输入设备”，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34E4"></a>此时，“属性”对话框的下半部分将会显示特定于新设备的控件。假定这是一个没有连接其他对象的段，且需要水平移动鼠标。 
+                  </p> 
+               </li>
+               <li>在“鼠标输入”的下方，选择“水平”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34E3"></a>使用缩放微调器，可以调整鼠标相对于旋转的运动效果。“翻转”可以反转鼠标移动的旋转方向。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900453B2"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900453B3"></a>示例：要设置游戏杆控制器以便移动自由摄影机，请执行下列操作：
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34E2"></a>设置游戏杆控制器，以便在 XY 平面上来回移动自由摄影机。游戏杆在 Y 方向的移动将会影响摄影机的前后移动，而游戏杆在 X 方向的移动将会使摄影机发生旋转。您可以使用“基于方向的增量”，使摄影机在 Y 方向的移动是局部的，而不是全局的。 
+            </p>
+            <ol type="1" start="1">
+               <li>在“前”视口中创建“自由摄影机”。 </li>
+               <li>在轨迹视图中，为摄影机的旋转轨迹分配旋转运动捕捉控制器。 </li>
+               <li>右键单击旋转轨迹，以便显示“运动捕捉属性”对话框。 </li>
+               <li>单击“Z 旋转”旁的按钮，然后分配“游戏杆输入设备”。 </li>
+               <li>在“游戏杆轴”的下方，选中“X”选项（如果尚未选中）。 </li>
+               <li>选中“积累”，以便在每次释放游戏杆时，旋转都不会归零。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900453B4"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900453B5"></a>示例：要设置随游戏杆一起移动的摄影机的位置控制器，请执行下列操作：
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34E1"></a>摄影机绕全局 Z 轴的旋转将由该游戏杆在 X 方向的运动控制。可以对该摄影机的位置控制器进行设置，以便使该摄影机可以随游戏杆在 Y 方向的运动而来回移动。 
+            </p>
+            <ol type="1" start="1">
+               <li>向摄影机的位置轨迹分配位置运动捕捉控制器，然后访问其“属性”对话框。 </li>
+               <li>同时向“X 位置”和“Y 位置”按钮分配游戏杆输入设备。 </li>
+               <li>单击“编辑绑定 X”按钮，然后选中“游戏杆轴”下方的“Y”选项。 </li>
+               <li>选中“积累”。 </li>
+               <li>单击“编辑绑定 Y”按钮，然后选中“游戏杆轴”下方的“Y”。 </li>
+               <li>选中“积累”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34E0"></a>此时，游戏杆在 Y 方向的运动将会同时影响摄影机在 X 和 Y 方向的位置。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900453B6"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900453B7"></a>继续示例：要添加基于方向的增量选项，请执行下列操作：
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34DF"></a>如果此时已测试该摄影机，沿着 Y 方向前后移动游戏杆时，将会生成对角线运动，原因在于位置轨迹将会获得同等数量的 X 和 Y 值。添加“基于方向的增量”选项时，将会更改上述操作。 
+            </p>
+            <ol type="1" start="1">
+               <li>单击“X 编辑绑定”按钮。 </li>
+               <li>在“基于方向的增量”选项的下方，单击控制器旁的按钮。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34DE"></a>此时，将会显示一个对话框，其中列出了一组控制器。 
+                  </p> 
+               </li>
+               <li>为摄影机查找和选择旋转运动捕捉控制器。 </li>
+               <li>将“方向”选项设置为 Z（方向所指的局部轴）。 </li>
+               <li>将“组件”选项设置为 X（匹配的“编辑绑定”按钮）。 </li>
+               <li>单击“Y 编辑绑定”按钮。 </li>
+               <li>单击控制器旁的该按钮，然后分配旋转运动捕捉控制器。 </li>
+               <li>将“方向”选项设置为 Z，然后将“组件”选项设置为 Y。 </li>
+               <li>打开“运动捕捉”工具，启用列表中的两个轨迹，并单击“测试”按钮，然后在“顶”视口中查看摄影机时移动该摄影机。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34DD"></a>沿着 Y 方向移动游戏杆时，摄影机也会随之前后移动。沿着 X 方向移动游戏杆时，将会旋转摄影机，但是，此时，继续沿着 Y 方向移动摄影机时，该摄影机将会沿着其局部轴前后移动。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WSF742DAB041063133-128E6F4112A1CE6C39-7E75"></a> 
+            <h2><a name="GUID-5E1BE29E-3346-4162-BBE6-6CB1C019D1F6"></a>界面
+            </h2> 
+            <div class="section"><a name="SECTION_02E2338842C64572A8FE4B9BA1173BE9"></a> 
+               <h3><a name="GUID-D97B797D-9711-48AE-B9E4-83A73305D144"></a>“运动捕捉”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A1900453B8"></a><div class="figure-anchor"><img src="../images/GUID-F5DCF431-665B-43E3-8C45-601700A1AC10-low.png"></div>  <a name="GUID-447E266C-F950-4733-87A2-BE65C830A9DF"></a><div class="dl_section"><a name="GUID-17698D79-E670-44EF-A648-9A8E75233BAF"></a><p class="title"><a name="GUID-7A0067EB-32C6-41E6-A491-6D31BE907B87"></a>“记录控制”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900453BA"></a><div class="figure-anchor"><img src="../images/GUID-C2345512-DAB0-43D5-8957-012860E287DD-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34DC"></a>测试和记录动画。使用前三个按钮，可以直接控制记录，而使用“开始/停止”按钮，可以通过 MIDI 设备控制记录。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-759F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34DB"></a>开始</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5777"></a> 开始使用“轨迹”列表下方“记录范围”下方设置的值进行记录。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-759E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34DA"></a>停止</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5776"></a> 在到达“输出”帧之前停止记录。另外，还可以按 <span class="keyboardEntry">Esc</span> 或单击鼠标右键停止记录。按 <span class="keyboardEntry">Esc</span> 将取消记录且不保存关键点，而单击鼠标右键可提交记录并保存截至该点已记录的关键点。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-759D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34D9"></a>测试</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5775"></a> 测试运动。没有做任何记录。重新单击“测试”、<span class="keyboardEntry">Esc</span> 键或鼠标右键即可退出。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-759C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34D8"></a>测试期间播放</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5774"></a> 启用并单击“测试”后，场景中的动画将会在测试运动期间循环播放。请注意，“运动捕捉”列表中选定的轨迹不会播放，原因在于这些轨迹正在等待来自指定外部设备的输入。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-759B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34D7"></a>开始/停止</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5773"></a> 显示<span class="char_link"><a href="GUID-B33631D4-AB68-46A1-AE19-6E04F913002C.htm#SUBLINK_MOTION_CAPTURE_UTILITY_START_STOP_TRIGGER_SETUP_DIALOG">“开始/停止触发器设置”对话框</a></span>。您可以选择要控制记录的 MIDI 设备的类型。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-759A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34D6"></a>启用</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5772"></a> 使用指定的 MIDI 设备而不使用“开始”、“停止”和“测试”按钮进行记录。 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E604"></a><div class="note-tip"><span class="label label-target-language">提示</span>在“时间配置”对话框中，可以减小视口播放速度，并以较低的速度进行测试或记录，然后将速度重置为常值，以便查看相应的结果。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-656F5DCB-A876-4A01-B8AF-088643586322"></a><p class="title"><a name="GUID-505F3027-9448-45B5-900A-996CC47F168F"></a>“轨迹”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900453BE"></a><div class="figure-anchor"><img src="../images/GUID-C7A180AD-40AF-440A-BCD8-1968C35CDBEE-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34D2"></a>“轨迹”区域显示了已经分配运动捕捉控制器的所有轨迹。此后，选择要受“记录控制”组中三个按钮影响的轨迹。单击某个轨迹，以便启用或禁用选择框。只有显示红框的选定轨迹才会受“记录控制”组的影响。 
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34D1"></a>通过单击轨迹或使用“全部”、“反选”和“无”按钮，可以对其进行选择。此后，可以创建轨迹的命名选择集。要创建命名选择集，请单击所需的轨迹，然后在轨迹列表上方的“编辑”字段中输入相应的名称。要选择以前命名的集，请打开“编辑”窗口，然后从该列表中进行选择。若要删除命名集，请从该列表中将其选中，然后单击右侧的
+                     <img src="../images/GUID-370ECBA5-35BC-4969-8C6A-F0C08CD36A1F-low.png">（“删除”）。 
+                  </p>
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E605"></a><div class="note-note"><span class="label label-target-language">注意:</span>特定轨迹一次只能属于一个命名选择集。 
+                     </div>
+                  </div>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7596"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34D0"></a>全部</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-576E"></a> 向“记录控制”组分配所有轨迹。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7595"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34CF"></a>反转</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-576D"></a> 选定轨迹后，将会向“记录控制”区域分配未选定的轨迹。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7594"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34CE"></a>无</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-576C"></a> 不向“记录控制”组分配轨迹。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34CD"></a>默认情况下，将会向每个轨迹提供一个名称，它包含对象的名称以及紧跟其后的反斜杠和参数名称。例如，Sphere01\Angle 是一个应用于分配给球体的修改器之一的“角度”参数。重命名轨迹时，不仅可以使用轨迹视图中的“属性”对话框，而且可以双击“运动捕捉”工具中的轨迹名称。每个“属性”对话框的上卷展栏都包含一个“轨迹名称”字段。“轨迹名称”字段中输入的任何名称都显示在“属性”对话框标题栏中“命令”面板的“轨迹列表”中，且位于轨迹视图中“层次”列表中“数据”轨迹的旁边。
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-7F0546A8-F543-424C-8567-575034683960"></a><p class="title"><a name="GUID-DCA81AF8-978E-4B39-8331-DD46BB3E0257"></a>“记录范围”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900453C0"></a><div class="figure-anchor"><img src="../images/GUID-456784E6-312E-4C40-B07A-F5A7C8C7EB77-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34CC"></a>指定记录影响的帧范围。您还可以设置帧的<em class="mild">预卷</em> 范围（如下所述）。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7593"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34CB"></a>预卷</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-576B"></a> 指定按下“开始”按钮时开始播放动画所在的帧编号。如果该数字大于或等于“内”编号，将会忽略“预卷”编号。例如，如果“输入”为 0，“而“输出”为 200，则“预卷”为 -100 时，将会在开始记录之前提供 -100 帧。如果“预卷”为 50，则毫无意义。如果“预卷”和“外”编号定义的范围大于当前段，记录时，将会暂时放大该段。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7592"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34CA"></a>输入</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-576A"></a> 指定单击“开始”后记录开始所在的帧编号。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7591"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34C9"></a>输出</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5769"></a> 指定单击“开始”后记录结束所在的帧编号。单击“停止”，可以在此前停止记录。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7590"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34C8"></a>预卷期间激活</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5768"></a> 激活该选项时，运动捕捉在整个预卷帧期间都处于活动状态。此时，将会产生运动，但不会予以记录。因为到达“内”帧时活动运动可能与动画不符，所以会使运动在“内”帧处突然发生改变。如果未激活该选项，到达“内”帧之前，将会禁用或冻结运动。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-13C13230-452A-41F4-8A55-3AAA988D0D15"></a><p class="title"><a name="GUID-A027CA79-E9AE-4861-90BA-EE70D7421AD4"></a>“采样”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900453C2"></a><div class="figure-anchor"><img src="../images/GUID-19DFA7BC-3D4C-4E92-86A1-C84757AB84A2-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34C7"></a>捕捉运动数据时，将会以相对于当前帧速率的速率对其进行采样。其中，默认速率值为每秒 30 帧。采样速率随帧速率的增加而增加。 
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-2187FADF-DFE6-45CA-AB59-8D2BE05E7D6B"></a><span class="term"><a name="GUID-53155596-599E-4864-A557-50DDB3089B3F"></a>每帧</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-3BEDD41A-A0DA-4B32-A9A9-FDBBC7CFA209"></a>使用这两个单选按钮，每帧可以选择一个或两个采样。这是一种以字段速率进行采样的简便方法。如果对字段进行渲染，捕捉速率不必达到每秒 60 帧。控制器可以在采样之间插补。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-758F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34C6"></a>减少关键点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5767"></a> 减少捕捉运动时生成的关键点。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-758E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34C5"></a>阈值</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5766"></a> 在“阈值”字段中输入的值可以约束 <span class="charspan-msgph">3ds Max</span> 更改选定轨迹的方式。对任何帧而言，新动画和原始动画之差小于阈值。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34C4"></a>较低的阈值与原始动画的匹配度高，但是不会大幅减少关键点数。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34C3"></a>较高的阈值生成的关键点最少，但不能提高与原始动画的匹配精度。 
+                           </p> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E606"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果激活“减少关键点”，每完成一次记录，还需要额外的计算时间。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div> 
+            <div class="section"><a name="SUBLINK_MOTION_CAPTURE_UTILITY_START_STOP_TRIGGER_SETUP_DIALOG"></a> 
+               <h3><a name="GUID-7EF3CEDB-235B-4CC7-8966-4BD1E771B2C0"></a>“开始/停止触发器设置”对话框
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A1900453BB"></a><div class="figure-anchor"><img src="../images/GUID-85BC0D6F-94F3-47F9-B956-2D36190BE911-low.png"></div>  <a name="GUID-C25AE9EF-CD8C-4620-9A9E-62E7CB2765A6"></a><dl>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7599"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34D5"></a>预设</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5771"></a> 选择 MIDI 设备的类型。如果选择“第二个媒体控制站”，可以使用其按钮执行“停止”、“播放”和“记录”操作。（媒体控制站是一种 MIDI 设备，它包含标准的 VCR 类型播放按钮和一个缓进。）通过选择“自定义”，可以启用该对话框中的其余微调器。您可以在该对话框中设置通道和音符编号。另外，也可以使用“自定义”来定制“媒体控制站”使用的控件。
+                        
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7598"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34D4"></a>通道</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5770"></a> 指定分配给 MIDI 设备的通道。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7597"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34D3"></a>音符编号</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-576F"></a> 使用后面带该标签的“停止”、“播放”和“记录”微调器，可以指定哪些音符事件可以触发哪项功能。 <a name="WS1A9193826455F5FFBA679E112A6A1900453BC"></a><ul>
+                           <li> <em class="strong">停止</em>该音符事件可以停止播放或记录。在“媒体控制站”中，它可能是方形按钮。其作用与单击“记录控制”组中的“停止”按钮相同。 
+                           </li>
+                           <li> <em class="strong">播放</em>播放动画。这是“媒体控制站”中的箭头按钮。 
+                           </li>
+                           <li> <em class="strong">记录</em>如果该音符由自身发送，其作用与单击“记录控制”组中的“测试”按钮相同。要记录运动捕捉，必须同时按下“播放”和“记录”按钮（其作用与单击“记录控制”组中的“开始”按钮相同）。您可以在按下“记录”按钮之前或后按下“播放”按钮，然后在按下“记录”按钮之前或之后按下“播放”按钮。释放该按钮后，将会开始进行记录。
+                              
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133-128E6F4112A1CE6C39-7E73"></a> 
+               <h3><a name="GUID-A7FAF7FE-1E3B-402E-87EF-AA02EBE2A8E6"></a>“鼠标输入设备”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A1900453C3"></a><div class="figure-anchor"><img src="../images/GUID-2C9F6A5E-FA93-4796-B980-367084E01990-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34C2"></a>通过鼠标的水平或垂直运动控制动画。可用的设置包括： 
+               </p> <a name="GUID-F154B33D-3DA1-4F86-A354-FB5EE5E6E303"></a><dl>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-758D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34C1"></a>水平/垂直</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5765"></a> 指定驱动动画的鼠标运动。
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-758C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34C0"></a>比例</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5764"></a> 缩放鼠标移动相对于动画响应的效果。（微调器值：浮点值，0 至 999,999）
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-758B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34BF"></a>翻转</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5763"></a> 翻转响应相对于鼠标移动的方向。例如，向右水平移动鼠标时，将会对旋转控制器产生顺时针效果。激活“翻转”时，将会翻转旋转成逆时针方向。
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133-128E6F4112A1CE6C39-7E72"></a> 
+               <h3><a name="GUID-9DA42B22-9EFC-499C-8916-093C4A734BEE"></a>“键盘输入设备”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34BE"></a>用于分配大多数键盘键，以便驱动动画。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900453C4"></a><div class="figure-anchor"><img src="../images/GUID-09B05C9E-59E6-4BB7-A759-2244552707B1-low.png"></div>  <a name="GUID-56948E2A-FA00-469D-9190-C818A42C9699"></a><div class="dl_section"><a name="GUID-1CEDE7C5-0B1D-4702-84E4-20D488FD612F"></a><p class="title"><a name="GUID-5F7CE681-C9B4-425A-99EF-E9BBABBA5FA1"></a>“关键点分配”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34BD"></a>单击“分配”按钮，然后按任何键。此时，分配的键将会显示在右侧的列表中。或者，可以打开该列表，然后从其中选择某个键。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-758A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34BC"></a>指定</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5762"></a> 单击“分配”按钮，然后按任何键。此时，分配的键将会显示在右侧的下部列表中。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7589"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34BB"></a>[下拉列表]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5761"></a> 您可以打开该列表，然后从中选择某个键。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-4606405D-FED7-4799-BCF2-2592A3CD0A92"></a><p class="title"><a name="GUID-54DAA151-CC76-4AF9-888A-A5F7DFE56163"></a>“封套图形”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34BA"></a>显示振幅曲线随时变化的表示。 
+                  </p>
+               </div>
+               <div class="dl_section"><a name="GUID-60AD7459-2E87-435B-BB92-E04AD57356A2"></a><p class="title"><a name="GUID-0ABE4B31-D258-43B1-B702-B62A34F75C86"></a>“封套参数”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34B9"></a>指定相对于按键和释放键操作封套生效的时间。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7588"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34B8"></a>击打</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5760"></a> 显示按键后使该值达到最大所需的时间。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7587"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34B7"></a>衰退</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-575F"></a> 显示达到最大值后使该值减小到“持续”微调器指定值所需的时间。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7586"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34B6"></a>持续</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-575E"></a> 继“击打”和“衰退”之后，此处指定的值是释放键之前持续的值。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7585"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34B5"></a>释放</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-575D"></a> 释放键后，它是该值减小为 0 时所需的时间。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-10338CAB-6D09-4F0C-AB02-6F4D80E20281"></a><p class="title"><a name="GUID-2BBE664B-190E-4BCA-9AD8-53CA66F2F757"></a>“参数缩放”组
+                  </p>
+                  <p><a name="GUID-3F45BF11-2B20-4D76-A5C8-023605608CC0"></a>设置封套的比例和输出值的范围。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7583"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34B3"></a>时间</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-575B"></a> 指定“击打”、“衰退”和“释放”参数的比例。该值表示一个单位包含的秒数。例如，如果该值为 1.0，则“击打”值为 1.0 相当于 1 秒。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7582"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34B2"></a>范围</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-575A"></a> 设置控制器的最大输出值。 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E607"></a><div class="note-note"><span class="label label-target-language">注意:</span>该控制器将会忽略 <span class="keyboardEntry">Ctrl</span>、<span class="keyboardEntry">Alt</span> 和 <span class="keyboardEntry">Shift</span> 键的状态。 
+                              </div>
+                           </div> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E608"></a><div class="note-tip"><span class="label label-target-language">提示</span>因为一个键盘键只能生成正值或负值，所以，如果要控制“弯曲角度”的两个方向，例如，可以使用列表控制器。首选，确保该列表包含第一次分配的标准控制器（如 Bezier 控制器），以便保持中心位置。然后，向该列表中添加两个键盘运动捕捉控制器（一个分配给一个键，其他分配给另外一个键）。将一个控制器的范围设置为正，而将另外一个控制器的范围设置为负。
+                                 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133-128E6F4112A1CE6C39-7E71"></a> 
+               <h3><a name="GUID-5594520C-A60B-40BF-814F-2CA9BAD07838"></a>“游戏杆输入设备”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34B1"></a>“游戏杆输入设备”驱动程序是专门为 Microsoft Sidewinder 游戏杆设计的，它包含的控件超过了标准游戏杆。另外，还可以将该设备驱动程序用于标准游戏杆。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900453C8"></a><div class="figure-anchor"><img src="../images/GUID-549CD715-E180-4DF0-834C-60187F038E07-low.png"></div>  <a name="GUID-0E14ED57-C7B0-49E5-B971-5CB2E0ECB534"></a><div class="dl_section"><a name="GUID-2CEAF179-AD60-4368-A2A4-AE06689D6DC5"></a><p class="title"><a name="GUID-FAAB57D4-C990-4167-904A-82B13D642AE0"></a>“游戏杆轴”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7581"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34B0"></a>X、Y、Z</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5759"></a> 指定哪些游戏杆指令可以驱动动画。（标准游戏杆只有 X 和 Y 轴。扭曲游戏杆时，Sidewinder 提供有 Z 轴。）
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7580"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34AF"></a>减速</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5758"></a> 对于 Sidewinder，这是游戏杆之旁的滑块。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-757F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34AE"></a>比例</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5757"></a> 缩放游戏杆操作相对于动画响应的效果。（微调器值：浮点值，0 至 999,999）
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-757E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34AD"></a>翻转</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5756"></a> 翻转响应方向。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-757D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34AC"></a>积累</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5755"></a> 禁用该选项时，游戏杆的位置表示绝对位置，所以，只能在游戏杆限制定义的“矩形”内操作。游戏杆返回到停止位置时，生成的值会恢复为 0。启用该选项时，游戏杆表示当前位置发生了更改。例如，向前移动游戏杆时，可能会使对象开始移动。此后，它将会继续移动，直到该游戏杆返回到停止位置为止。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-27BF6D42-21B6-423C-A7C7-C4BCCAFC8A73"></a><p class="title"><a name="GUID-4FCEABF6-E0F9-47B5-8D98-3F4D63B7A576"></a>“游戏杆按钮”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-757C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34AB"></a>触动盖的触点（左右、上下）</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5754"></a> Sidewinder 包括主游戏杆尖端的小型游戏杆。指定该游戏杆在动画中控制的方向。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-757B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34AA"></a>1, 2, 3, 4</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5753"></a> 指定 Sidewinder 游戏杆中四个按钮之一。这些按钮与触动盖的触点的工作方式相同，但不同的是每个按钮只能在按下时增加方向值。释放按钮时，该值将会恢复为 0（居中）。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-757A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34A9"></a>增大/减小</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5752"></a> 只有在选择其中一个数字游戏杆按钮选项时可用的三个选项之一。该选项（增大/减小）表示，按下按钮时可以增大值；释放按钮时可以减小值。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7579"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34A8"></a>增大</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5751"></a> 启用时，按下按钮时可以增大值；释放按钮时可以保持值不变。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7578"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34A7"></a>绝对</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5750"></a> 启用时，如果按下按钮，分配的参数会转为“速度”微调器中设置的值；如果释放按钮，该参数会恢复为 0。请使用此选项打开/关闭动画，如闪烁的灯光。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7577"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34A6"></a>速度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-574F"></a> 用于控制使用触动盖的触点或四个按钮时值的更改速率。如果使用按钮选项和“绝对”选项，按下按钮时，将会指定输出值。（微调器值：浮点值，-999,999 至 999,999）
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-4A809D9A-5733-4C1B-84A3-0A76FB718B04"></a><p class="title"><a name="GUID-45FB5CDF-8FDA-46DD-9130-18066565D044"></a>“基于方向的增量”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34A5"></a>提供了各种组件，用于从旋转控制器生成移动方向。这些选项主要是在设置第一人称飞行动画时（如控制摄影机时）使用。 
+                  </p>
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E609"></a><div class="note-note"><span class="label label-target-language">注意:</span>只有在“游戏杆轴”组中选中“积累”时，才能使用该区域中的项。 
+                     </div>
+                  </div>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7576"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34A4"></a>控制器</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-574E"></a> 分配要通过其生成方向的旋转捉控制器。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7575"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34A3"></a>清除</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-574D"></a> 删除分配的控制器。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7574"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34A2"></a>方向 X/Y/Z</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-574C"></a> 指定要用作方向的局部轴。例如，对“自由摄影机”而言，它会是 Z，原因在于该摄影机指向 Z 方向。但是，如果驾驶的汽车指向 Y 轴，则最好使用 Y。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7573"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-34A1"></a>组分 X/Y/Z</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-574B"></a> 指定要使用的编辑绑定。使其与“设备绑定”下方的“编辑绑定”按钮匹配。例如，如果选择“Y 编辑绑定”按钮，将会选中“Y 组件”选项。
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133-128E6F4112A1CE6C39-7E70"></a> 
+               <h3><a name="GUID-608D5C01-5BBF-4F1F-B3B7-028946D6A5DD"></a>“MIDI 设备”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-34A0"></a>使用 MIDI 设备控制动画。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900453CC"></a><div class="figure-anchor"><img src="../images/GUID-51A6EB8F-57F2-4C4D-B293-1E24C38E8245-low.png"></div>  <a name="GUID-BB1B1FB9-1CCA-452A-AAE2-5E44750B9747"></a><div class="dl_section"><a name="GUID-2A9215E8-1E52-4293-89E9-B4321417DDB2"></a><p class="title"><a name="GUID-FB652C6E-E078-4556-BABB-FB88CB04F6B8"></a>“MIDI 通道”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-349F"></a>包含 16 个按钮。单击以便指定为其分配 MIDI 设备的通道。 
+                  </p>
+               </div>
+               <div class="dl_section"><a name="GUID-9A0D8C7D-C462-45E4-90E8-F7762BDC5DA2"></a><p class="title"><a name="GUID-4AD442E8-D882-4D98-8917-7948592163A1"></a>“MIDI 触发器”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-349E"></a>定义要生成运动的 MIDI 事件（消息）的类型。它包含四个选项。 
+                  </p><a name="UL_DDE13FBFFE334B89963BDB49B70ECE76"></a><ul>
+                     <li><em class="strong">音符</em>选中此选项时，音符编号或音高将会定义输出值。该值是从音符范围内的音符生成的，如下面的“音符范围”组中所述。如果音符是音符范围的下限，该值是“参数缩放”组下方指定的最小值。如果音符是音符范围的上限，该值是相同区域中指定的最大值。范围内的音符都可以插补在最小值和最大值之间。（注意，最小值不一定要小于最大值。）按下不同的键时，生成的值将左右滑动。按键越难，值的更改速度就越快。“速度”设置可以从整体上定义按下键时值的更改快慢程度。
+                        
+                     </li>
+                     <li><em class="strong">速率</em>选中该选项时，按下音符的速率将会确定输出值。“音符范围”组下方设置的音符可以指定按下后生效的音符。按下“音符范围”内的键时，该值一直是最小值。按下该键时，该值会根据按键的难易程度接近最大值。（事实上，该值沿着抛物线的轨迹向最大值接近。）“持续”设置可以定义值沿着抛物线的轨迹移动的时间。选中“变量”时，持续长度也可以通过按键的难易程度进行缩放。
+                        
+                     </li>
+                     <li><em class="strong">弯音</em>MIDI 乐器的弯音按键将会定义输出值。在这种情况下，“音符范围”不适用，所以没有提供。 
+                     </li>
+                     <li><em class="strong">MIDI 控制器</em>在连接不同于典型键盘的 MIDI 控制器类型时指定音符事件。例如，如果使用的是 MIDI 滑块框，请选中“MIDI 控制器”选项，然后使用 # 微调器指定特定滑块的音符事件。 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-E8A84574-14AF-430C-AE8B-3F97822245C9"></a><p class="title"><a name="GUID-5AD4F599-663C-4998-99C2-6B257EE91B6E"></a>“音符范围”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-756F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-349A"></a>低音/高音</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5747"></a> 对这些音符进行设置，以便在启用“MIDI 触发器”下方的“音符”选项时，指定音符范围的低端和高端值。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-5B6BD7DE-92D6-4347-9F06-9648565D5F0F"></a><p class="title"><a name="GUID-8E978FBB-24DB-4438-92EC-FC496A022E42"></a>“参数缩放”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3499"></a>包含用于指定生成值范围的“最小”和“最大”微调器。请参见“音符”和“速率”。 
+                  </p>
+               </div>
+               <dl>
+                  <dt><a name="GUID-871B8C29-7D9F-427A-8011-50EE66741690"></a><span class="term"><a name="GUID-E2B2E502-D0E9-4086-BAA7-4F246828D8AC"></a>MIDI 通道查看器</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-49A6A68E-C1CE-49EC-B889-5A4EDE544C93"></a>单击以显示一个对话框，从中可以测试 MIDI 设备，以查看正在接收事件的 MIDI 通道和正在触发的音符。
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_4B226EFAA9C944FA89328BE05FB468CF"></a> 
+               <h3><a name="GUID-E1BBEF21-CF41-4933-853D-152B9880DEAA"></a>“MIDI 通道查看器”对话框
+               </h3> <a name="FIG_5E643149F01B45109D2FFD3735DD392C"></a><div class="figure-anchor"><img src="../images/GUID-C6C4E075-5040-4C1A-AF17-9298E236FEC7-low.png"></div>  <a name="GUID-E8791716-64EC-4BFC-B73A-085879ECFE49"></a><div class="dl_section"><a name="GUID-5A815F3A-92A3-45A0-B7CB-898EFC63F038"></a><p class="title"><a name="GUID-CC5874C0-D530-422A-B270-F52CD3BCF4EA"></a>“MIDI 通道”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3497"></a>提供排成一列的 16 个按钮和表示 16 个 MIDI 通道的进度栏。选择要查看音符活动的通道。如果任何通道中包含事件，该通道进度栏将会亮起。 
+                  </p>
+               </div>
+               <div class="dl_section"><a name="GUID-30BBF0FC-1C06-4629-89CF-1FA4CF8BD07A"></a><p class="title"><a name="GUID-25F093E3-6637-42B9-92C0-8608ABB8FF8C"></a>“MIDI 音符”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3496"></a>使用 11 个八度音阶按钮，可以选择要查看的八度音阶。如果使用该八度音阶播放音符，“音符”栏中的相应进度栏将会亮起。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-756E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3495"></a>MIDI 控制器编号</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5746"></a> 使用不同类型的 MIDI 控制器（如滑块框）时，可以指定音符事件，然后在激活该事件时查看相应的进度栏是否亮起。您可以查找正确的音符编号，方法是激活该事件，同时查看对话框底部的“音符编号”字段。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-756D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3494"></a>通道</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5745"></a> 这是四个文本字段之一。这些文本字段可以在激活事件时显示 MIDI 设备生成的所有值。“通道”字段可以显示当前选定的通道。
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-756C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3493"></a>事件</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5744"></a> 显示正在发送的 MIDI 事件的类型。类型可能如下： 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3492"></a>启用音符：9 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3491"></a>禁用音符：8 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3490"></a>弯音：14 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-348F"></a>MIDI 控制器：11 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-756B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-348E"></a>速率</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5743"></a> 显示速率。速率的含义因事件而异。对最常见的事件而言，按下音符时，该值表示的是击打键的速率。但是，对其他事件而言，可能会生成连续值。例如，弯音事件可以传输弯音的位置。
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-756A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-348D"></a>音符编号</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5742"></a> 为事件显示相应的音符编号。例如，如果使用的是非键盘 MIDI 设备，如滑块框，可以使用该选项识别特定滑块的音符编号。
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

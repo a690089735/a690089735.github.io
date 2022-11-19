@@ -1,0 +1,219 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D82476F1-FE3F-4B51-BC73-868B0A28281B">
+      <meta name="description" content="使用“间隔”工具可以基于当前选择沿样条线或一对点定义的路径分布对象。">
+      <meta name="indexterm" content="间隔工具">
+      <meta name="indexterm" content="工具菜单: 间隔工具">
+      <meta name="contextid" content="IDH_SPACING_TOOL">
+      <meta name="contextid" content="IDH_TB_SPACING_TOOL">
+      <meta name="contextid" content="TOOLSPACING">
+      <meta name="contextid" content="0-30">
+      <meta name="contextid" content="30.0">
+      <meta name="topic-type" content="concept">
+      <title>间隔工具</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D82476F1-FE3F-4B51-BC73-868B0A28281B"></a><div class="head">
+            <h1> 间隔工具</h1>
+         </div>
+         <div class="abstract"> 
+            <p><a name="GUID-BF67ADE7-5ABA-4E15-90C6-76E90FFC75F8"></a> <img src="../images/GUID-C87031CF-60F8-4117-B9A4-84A1236703AA-low.png"> 
+            </p> 
+            <p class="blurb">使用“间隔”工具可以基于当前选择沿样条线或一对点定义的路径分布对象。 </p> 
+         </div><a name="UL_242627DB27D145528D6F7DC9DF28279D"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-18AB11D2-ED2A-4590-855B-51AAD9F2C24A">“附加”工具栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-C87031CF-60F8-4117-B9A4-84A1236703AA-low.png">（间隔工具），在“阵列”弹出按钮上</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-A262A65B-BE06-43BA-AAF7-36B7871BCF7A">默认菜单：“工具”菜单  <img src="../images/ac.menuaro.gif"> “对齐” <img src="../images/ac.menuaro.gif"> “间隔工具”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-25AAC6F2-E2A8-4D99-A0DB-541008857802">Alt 菜单：“编辑”菜单  <img src="../images/ac.menuaro.gif"> “复制” <img src="../images/ac.menuaro.gif"> “间隔工具”</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7579"></a>分布的对象可以是当前选定对象的副本、<span class="char_link"><a href="GUID-66FDAD95-1504-4639-B1A4-7D080E0C7FFA.htm">实例</a></span>或<span class="char_link"><a href="GUID-301406EA-BFC0-4141-94E4-55C97641A3CB.htm">参考</a></span>。通过拾取样条线或两个点并设置许多参数，可以定义路径。也可以指定确定对象之间间隔的方式，以及对象的轴点是否与样条线的切线对齐。 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190043F56"></a><div class="figure-anchor"><img src="../images/GUID-5D580942-09E9-43DB-AB98-AEAB23095724-low.png"><p class="figure-title">间隔工具沿着弯曲的街道两侧分布花瓶。花瓶之间均等距；在较短一边花瓶的数量较少。</p>
+         </div>
+         <div style="margin-top: 9pt;"><a name="WS1A9193826455F5FF662FFB11407B58D52-7483"></a><div class="note-tip"><span class="label label-target-language">提示</span> 可以使用包含多个样条线的复合图形作为分布对象的样条线路径。在创建图形之前，请禁用“创建”面板上的“开始新图形”。然后再创建图形。<span class="charspan-msgph">3ds Max</span> 可将每个样条线添加到当前图形中，直至您重新启用“开始新图形”。如果选择复合图形以便间隔工具可以将它用作路径，则对象会沿复合图形的所有样条线进行分布。例如，沿着单独样条线定义的路径为灯光标准设置间隔时，您可能会发现此技术非常有用。 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7578"></a>您可以将外部参照场景中的样条线用作路径参考。 
+               </p> 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-7576"></a> 
+            <h2><a name="GUID-6C637B62-6225-4B55-9E88-393F1E8AF0D1"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043F57"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043F58"></a>要沿路径分布对象，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择要分布的对象。 
+               </li>
+               <li>执行下列操作之一： <a name="WS73099CC142F487557BFAA8DA122EC01152F518B"></a><ul>
+                     <li>在“附加”工具栏上，单击 <img src="../images/GUID-C87031CF-60F8-4117-B9A4-84A1236703AA-low.png">（“间隔工具”）（在“阵列”弹出按钮上）。 
+                     </li>
+                     <li>在“工具”菜单上，选择“对齐”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“间隔工具”。如果使用 Alt 菜单系统，请选择“编辑”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“复制”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“间隔工具”。 
+                     </li>
+                  </ul> 
+                  <p><a name="WS73099CC142F487557BFAA8DA122EC01152F518E"></a><span class="charspan-msgph">3ds Max</span> 将打开“间隔工具”对话框。 
+                  </p> 
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-7482"></a><div class="note-note"><span class="label label-target-language">注意:</span>间隔工具也可在<span class="char_link"><a href="GUID-D23202D3-5439-48ED-B973-8577770A1F98.htm">栏杆对象</a></span>的各种组件的卷展栏上应用。 
+                     </div>
+                  </div> 
+               </li>
+               <li>在“间隔工具”对话框中，单击“拾取路径”或“拾取点”来指定路径。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7575"></a>如果单击“拾取路径”，请从场景中选择要用作路径的样条线。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7574"></a>如果单击“拾取点”，请拾取一个起点和一个终点，以定义一条样条线作为路径。使用完“间隔工具”后，<span class="charspan-msgph">3ds Max</span> 会删除此样条线。 
+                  </p> 
+               </li>
+               <li>从“参数”列表中选择间隔选项。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7573"></a>可用于“计数”、“间隔”、“始端偏移”和“末端偏移”的参数取决于所选择的间隔选项。 
+                  </p> 
+               </li>
+               <li>通过设置“计数”的值，指定要分布的对象数量。 </li>
+               <li>根据所选择的间隔选项，调整间隔和偏移。 </li>
+               <li>在“前后关系”下，选择“边”以指定通过各对象边界框的相对边确定间隔，或选择“中心”以指定通过各对象边界框的中心确定间隔。 </li>
+               <li>如果要将分布对象的轴点与样条线的切线对齐，请启用“跟随”。 </li>
+               <li>在“对象类型”下，选择要输出的对象类型（副本、<span class="char_link"><a href="GUID-66FDAD95-1504-4639-B1A4-7D080E0C7FFA.htm">实例</a></span>或<span class="char_link"><a href="GUID-301406EA-BFC0-4141-94E4-55C97641A3CB.htm">参考</a></span>）。 
+               </li>
+               <li>单击“应用”。 </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-7572"></a> 
+            <h2><a name="GUID-8FB16B13-37BD-406E-B5A7-B37404B4E3DD"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043F59"></a><div class="figure-anchor"><img src="../images/GUID-BCFFBFB9-4D20-4E34-AA21-13DE1C0BD215-low.png"></div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7571"></a>间隔工具提供了设置间隔的两种基本方法供您选择：使用路径或明确指定端点。 
+            </p> <a name="GUID-1B96A5C3-E81B-4D4D-AC00-EEE0D4F3AFCB"></a><dl>
+               <dt><a name="WS73099CC142F487557579AB9211CD73FDB9E3B73"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7570"></a>拾取路径</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-66EE48BA11EAAE17D71-7DE4"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753348"></a>单击它，然后单击视口中的样条线以作为路径使用。<span class="charspan-msgph">3ds Max</span> 会将此样条线用作分布对象所沿循的路径。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211CD73FDB9E3B74"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-756F"></a>拾取点</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F48755-66EE48BA11EAAE17D71-7DE3"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753349"></a>单击它，然后单击起始点和结束点以在构造栅格上定义路径。也可以使用对象捕捉指定空间中的点。<span class="charspan-msgph">3ds Max</span> 使用这些点创建作为分布对象所沿循的路径的样条线。使用完“间隔工具”后，<span class="charspan-msgph">3ds Max</span> 会删除此样条线。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl>
+            <div class="dl_section"><a name="GUID-E7CE99A1-6A32-47F3-8A0F-8F116FAE968A"></a><p class="title"><a name="GUID-D6B53444-92FC-4EB1-A97E-A6E35107AD05"></a>“参数”组
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F487557579AB9211CD73FDB9E3B75"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-756E"></a>计数</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-66EE48BA11EAAE17D71-7DE2"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875334A"></a>要分布的对象的数量。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F487557579AB9211CD73FDB9E3B76"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-756D"></a>间距</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-66EE48BA11EAAE17D71-7DE1"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875334B"></a>指定对象之间的间距（以单位计）。<span class="charspan-msgph">3ds Max</span> 会根据您选择的是“边”还是“中心”来确定此间隔。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F487557579AB9211CD73FDB9E3B77"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-756C"></a>始端偏移</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-66EE48BA11EAAE17D71-7DE0"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875334C"></a>指定距路径始端偏移的单位数量。单击锁定图标，可针对间隔值锁定始端偏移值并保持该数量。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F487557579AB9211CD73FDB9E3B78"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-756B"></a>末端偏移</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-66EE48BA11EAAE17D71-7DDF"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875334D"></a>指定距路径末端偏移的单位数量。单击锁定图标，可针对间隔值锁定末端偏移值并保持该数量。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F487557579AB9211CD73FDB9E3B79"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-756A"></a>分布下拉列表</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-66EE48BA11EAAE17D71-7DDE"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875334E"></a>此列表包含许多沿路径分布对象方式的选项，如下所示： 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A190043F5B"></a><ul>
+                           <li> <em class="strong">自由中心</em>从路径始端开始，沿直线朝路径末端等距分布对象。样条线或一对点可定义路径。您可以指定对象数量和间隔。 
+                           </li>
+                           <li> <em class="strong">均匀分隔，对象位于端点</em>沿样条线分布对象。对象组以样条线的中间为中心。间隔工具根据您指定的对象数量均匀地填充样条线，并确定对象之间的间隔。如果您指定了多个对象，则在样条线的端点始终存在对象。 
+                           </li>
+                           <li> <em class="strong">居中，指定间距</em>沿路径分布对象。对象组以路径的中间为中心。使用您指定的间隔量，间隔工具尝试沿路径长度尽可能多地将对象均匀填充路径。路径端点是否有对象取决于路径长度以及您提供的间隔。 
+                           </li>
+                           <li> <em class="strong">末端偏移</em>沿直线分布您指定数量的对象。对象从您指定的偏移距离处开始分布。此距离是从样条线的端点到其起点，或者从一对点的第二个点到第一个点。也可以指定对象之间的间隔。 
+                           </li>
+                           <li> <em class="strong">末端偏移，均匀分隔</em>在样条线或一对点的始端与您指定的末端偏移之间，分布您指定数量的对象。<span class="charspan-msgph">3ds Max</span> 始终将对象放置在末端或其偏移处。如果您指定了多个对象，则在始端始终放有对象。间隔工具尝试在末端偏移与始端之间将对象均匀地填充该距离。 
+                           </li>
+                           <li> <em class="strong">末端偏移，指定间距</em>从末端或其偏移处开始，朝样条线或一对点的始端分布对象。<span class="charspan-msgph">3ds Max</span> 始终将对象放置在末端或其偏移处。您可以指定对象之间的间隔以及距末端的偏移。间隔工具尝试在末端或其偏移与始端之间尽可能多地将对象均匀填充该距离。在始端并非始终放有对象。 
+                           </li>
+                           <li> <em class="strong">始端偏移</em>沿直线分布您指定数量的对象。对象从您指定的偏移距离处开始分布。此距离是从样条线的始端到其端点，或者从一对点的第一个点到第二个点。也可以指定对象之间的间隔。 
+                           </li>
+                           <li> <em class="strong">始端偏移，均匀分隔</em>从您指定的距始端的偏移处开始，在样条线或一对点的末端之间分布您指定数量的对象。<span class="charspan-msgph">3ds Max</span> 始终将对象放置在始端或其偏移处。如果您指定了多个对象，则在末端始终放有对象。间隔工具尝试在始端或其偏移与末端之间将对象均匀地填充该距离。 
+                           </li>
+                           <li> <em class="strong">始端偏移，指定间距</em>从始端开始，朝样条线或一对点的末端分布对象。<span class="charspan-msgph">3ds Max</span> 始终将对象放置在始端或其偏移处。您可以指定对象之间的间隔以及距始端的偏移。间隔工具尝试在始端或其偏移与末端之间尽可能多地将对象均匀填充该距离。在末端并非始终放有对象。 
+                           </li>
+                           <li> <em class="strong">指定偏移和间距</em>沿样条线或在一对点之间分布尽可能多的等距对象。您可以指定对象之间的间隔。如果指定距始端和末端的偏移，则 <span class="charspan-msgph">3ds Max</span> 会在这两个偏移之间分布等距对象。在始端和末端并非始终放有对象。 
+                           </li>
+                           <li> <em class="strong">指定偏移，均匀分隔</em>沿样条线或在一对点之间分布您指定数量的对象。如果指定一个对象，<span class="charspan-msgph">3ds Max</span> 会将其放置在路径的中央。如果指定一个以上的对象，则 <span class="charspan-msgph">3ds Max</span> 始终会将对象放置在始端偏移和末端偏移处。如果指定两个以上的对象，则 <span class="charspan-msgph">3ds Max</span> 会在上述偏移之间均匀地分布对象。 
+                           </li>
+                           <li> <em class="strong">从末端间隔，无限的</em>从样条线或一对点的末端朝始端沿直线分布您指定数量的对象。您可以指定对象之间的间隔。<span class="charspan-msgph">3ds Max</span> 会锁定末端偏移，以便末端偏移与间隔相同。 
+                           </li>
+                           <li> <em class="strong">从末端间隔，指定数量</em>从末端开始，朝样条线或一对点的始端分布您指定数量的对象。间隔工具根据对象数量以及样条线长度或一对点之间的距离来确定对象之间的间距。<span class="charspan-msgph">3ds Max</span> 会锁定末端偏移，以便末端偏移与间隔相同。 
+                           </li>
+                           <li> <em class="strong">从末端间隔，指定间距</em>从末端开始，朝样条线或一对点的始端分布尽可能多的等距对象。您可以指定对象之间的间隔。<span class="charspan-msgph">3ds Max</span> 会锁定末端偏移，以便末端偏移与间隔相同。 
+                           </li>
+                           <li> <em class="strong">从始端间隔，无限的</em>从始端开始，朝样条线或一对点的末端沿直线分布您指定数量的对象。您可以指定对象之间的间隔。<span class="charspan-msgph">3ds Max</span> 会锁定始端偏移，以便始端偏移与间隔相同。 
+                           </li>
+                           <li> <em class="strong">从始端间隔，指定数量</em>从始端开始，朝样条线或一对点的末端分布您指定数量的对象。间隔工具根据对象数量以及样条线长度或一对点之间的距离来确定对象之间的间距。<span class="charspan-msgph">3ds Max</span> 会锁定始端偏移，以便始端偏移与间隔相同。 
+                           </li>
+                           <li> <em class="strong">从始端间隔，指定间距</em>从始端开始，朝样条线或一对点的末端分布尽可能多的等距对象。您可以指定对象之间的间隔。<span class="charspan-msgph">3ds Max</span> 会锁定始端偏移，以便始端偏移与间隔相同。 
+                           </li>
+                           <li> <em class="strong">指定间距，匹配偏移</em>沿样条线或在一对点（及其偏移）之间分布尽可能多的等距对象。您可以指定间隔。<span class="charspan-msgph">3ds Max</span> 会锁定始端和末端偏移，以便这些偏移与间隔相同。 
+                           </li>
+                           <li> <em class="strong">均匀分隔，没有对象位于端点</em>沿样条线或在一对点（及其偏移）之间分布您指定数量的对象。间隔工具会确定对象之间的间隔。<span class="charspan-msgph">3ds Max</span> 会锁定始端和末端偏移，以便这些偏移与间隔相同。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-600DFB9A-FEAC-413F-A03D-25E7F6736FEF"></a><p class="title"><a name="GUID-760B7520-167A-4DB7-B005-E5743E788714"></a>“前后关系”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190043F5D"></a><div class="figure-anchor"><img src="../images/GUID-E3A543FA-AFFF-43F8-A527-12A656F45C73-low.png"></div>
+               <p><a name="GUID-D0FA370B-6AB7-4FBF-93AC-8EF4983D2107"></a> <em class="strong">1. 边至边的间距</em> 
+               </p>
+               <p><a name="GUID-C54025D0-0C67-405C-A5EE-B8D5EF465061"></a> <em class="strong">2. 中心至中心的间距</em> 
+               </p><a name="UL_8A1699AF35454F0D8B7C1BCA8D1E1B72"></a><ul>
+                  <li> <em class="strong">边</em>使用此选项指定通过各对象边界框的相对边确定间隔。 
+                  </li>
+                  <li><em class="strong">中心</em>使用此选项指定通过各对象边界框的中心确定间隔。 
+                  </li>
+               </ul>
+               <dl>
+                  <dt><a name="WS73099CC142F487557579AB9211CD73FDB9E3B7C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7569"></a>跟随</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-66EE48BA11EAAE17D71-7DDB"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753351"></a>启用此选项可将分布对象的轴点与样条线的切线对齐。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-30CFF151-C7A4-4FE6-A224-15FAC4B4BA0A"></a><p class="title"><a name="GUID-768D3BC1-20FB-4433-ABA8-809993274867"></a>“对象类型”组
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7568"></a>确定由间隔工具创建的副本的类型。默认设置为“副本”。您可以创建对象的副本、<span class="char_link"><a href="GUID-66FDAD95-1504-4639-B1A4-7D080E0C7FFA.htm">实例</a></span>或<span class="char_link"><a href="GUID-301406EA-BFC0-4141-94E4-55C97641A3CB.htm">参考</a></span>。 
+               </p><a name="UL_7976521D047C420597BEE0D1A665B002"></a><ul>
+                  <li><em class="strong">副本</em>将选定对象的副本分布到指定位置。 
+                  </li>
+                  <li><em class="strong">实例</em>将选定对象的实例分布到指定位置。 
+                  </li>
+                  <li><em class="strong">参考</em>将选定对象的参考分布到指定位置。 
+                  </li>
+               </ul>
+               <div><a name="WS1A9193826455F5FF662FFB11407B58D52-7481"></a><div class="note-tip"><span class="label label-target-language">提示</span>可以使用包含多个样条线的复合图形作为分布对象的样条线路径。在创建图形之前，请禁用“创建”面板的“图形”下的“开始新图形”。然后再创建图形。<span class="charspan-msgph">3ds Max</span> 会将每个样条线添加到当前图形中，直到您单击“开始新图形”按钮选中它为止。如果选择复合图形以便间隔工具可以将它用作路径，则对象会沿复合图形的所有样条线进行分布。例如，沿着单独样条线定义的路径为灯光标准设置间隔时，您可能会发现此技术非常有用。 
+                  </div>
+               </div>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

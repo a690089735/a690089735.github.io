@@ -1,0 +1,138 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-E2795746-E982-48C8-8A0F-F8C8F43CE0D8">
+      <meta name="description" content="当太阳在地球表面上投影（适用于所有实践）时，所有平行光以一个方向投影平行光线。平行光主要用于模拟太阳光。可以调整灯光的颜色和位置并在 3D 空间中旋转灯光。">
+      <meta name="indexterm" content="灯光: 目标平行光">
+      <meta name="indexterm" content="目标平行光">
+      <meta name="indexterm" content="灯光: 目标平行光">
+      <meta name="indexterm" content="目标平行光">
+      <meta name="indexterm" content="目标: 灯光">
+      <meta name="indexterm" content="创建菜单: 标准灯光">
+      <meta name="contextid" content="TARGET_DIRECTIONAL_LIGHT.LIGHTS_AND_CAMERAS">
+      <meta name="contextid" content="LIGHTS AND CAMERAS-TARGET_DIRECTIONAL_LIGHT">
+      <meta name="topic-type" content="concept">
+      <title>目标平行光</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-E2795746-E982-48C8-8A0F-F8C8F43CE0D8"></a><div class="head">
+            <h1>目标平行光</h1>
+         </div>
+         <p class="blurb">当太阳在地球表面上投影（适用于所有实践）时，所有平行光以一个方向投影平行光线。平行光主要用于模拟太阳光。可以调整灯光的颜色和位置并在 3D 空间中旋转灯光。 
+            
+         </p><a name="UL_51E46C1224C04E3883967C4E70000342"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-8BE05EB4-D9F5-4392-89E0-1BD356AC8B78">“创建”面板  <img src="../images/ac.menuaro.gif"> “灯光” <img src="../images/ac.menuaro.gif"> “标准” <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “目标平行光”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-A73C401F-A398-43DB-8365-1D19FC8323B0">默认菜单：“创建”菜单  <img src="../images/ac.menuaro.gif"> “灯光” <img src="../images/ac.menuaro.gif"> “标准灯光” <img src="../images/ac.menuaro.gif"> “目标平行光”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-10223F93-AA81-40CE-AAF7-3E3472EB1D00">Alt 菜单：“对象”菜单  <img src="../images/ac.menuaro.gif"> “灯光” <img src="../images/ac.menuaro.gif"> “目标平行光”</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A1900458F"></a><div class="figure-anchor"><img src="../images/GUID-E2E51019-0150-4D04-9C83-64826F886611-low.png"></div><a name="WS1A9193826455F5FFBA679E112A6A19004590"></a><div class="figure-anchor"><img src="../images/GUID-3E900584-1263-46D1-BE78-3979A969CF53-low.png"></div>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5925"></a> <em class="strong">顶部：目标平行光的顶视图</em> 
+         </p>
+         <p><a name="GUID-B47033B4-2318-472D-B323-78090019C6BC"></a> <em class="strong">底部：相同灯光的透视视图</em> 
+         </p>
+         <p><a name="GUID-C3D80D4C-171F-4E7F-B649-56AAE6505592"></a> 目标平行光使用目标对象指向灯光。 
+            	 
+         </p>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5924"></a>由于平行光线是平行的，所以平行光线呈圆形或矩形棱柱而不是“圆锥体”。 
+            	 
+         </p>
+         <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6B4F"></a><div class="note-note"><span class="label label-target-language">注意:</span>当添加目标平行光时，<span class="charspan-msgph">3ds Max</span> 会自动为其指定<span class="char_link"><a href="GUID-B0B3683F-DFBB-41B5-9265-4444DA7067A6.htm">“注视”控制器</a></span>，且灯光目标对象指定为“注视”目标。您可以使用“运动”面板上的控制器设置将场景中的任何其他对象指定为“注视”目标。 
+               	 
+            </div>
+         </div>
+         <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6B4E"></a><div class="note-note"><span class="label label-target-language">注意:</span>仅在平行光向下指向场景几何体的边框的外侧时，<span class="char_link"><a href="">光能传递解决方案</a></span>才支持该灯光。 
+               	 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2BD9"></a> 
+            <h2><a name="GUID-07C89407-AD6B-4557-A45C-3DB2A5AEAAE2"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004594"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004595"></a>要创建目标平行光，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在“创建”面板上，单击“灯光”。 
+                  		  
+               </li>
+               <li>从下拉列表中选择“标准”。 
+                  		  
+               </li>
+               <li>在“对象类型”卷展栏上，单击“目标平行光”。 
+                  		  
+               </li>
+               <li>在视口中拖动。拖动的初始点是灯光的位置，释放鼠标的点就是目标位置。 
+                  			 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-591B"></a>现在灯光成为场景的一部分。 
+                     			 
+                  </p> 
+               </li>
+               <li>设置创建参数。 
+                  			 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-591A"></a>要调整灯光的方向，请移动目标对象。 
+                     			 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A19004596"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004597"></a>要将视口更改为灯光视图，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>单击或右键单击 POV 视口标签。 
+                  			 
+                  <p><a name="WS1A9193826455F5FF4E421D7D11BF108001D-B1"></a><span class="charspan-msgph">3ds Max</span> 将打开<span class="char_link"><a href="GUID-F86CB637-685E-4874-82C5-CFACB8486D35.htm">“观察点”视口标签菜单</a></span>。 
+                     			 
+                  </p> 
+               </li>
+               <li>选择灯光。 
+                  			 
+                  <p><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AF"></a>“灯光”子菜单将显示场景中每个聚光灯或平行光的名称。 
+                     			 
+                  </p> 
+               </li>
+               <li>选择您想要的灯光名称。 
+                  			 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5917"></a>现在视口显示灯光的观察点。您可以使用<span class="char_link"><a href="GUID-4430AA94-35BB-4F31-830D-F519AC69188D.htm">灯光视口控件</a></span>调整灯光。 
+                     			 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5916"></a>切换到灯光视口的默认键盘快捷键是 <span class="keyboardEntry">$</span>。 
+                     			 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2BD8"></a> 
+            <h2><a name="GUID-5BF04A71-CCBA-4E32-B1F6-1BEB5F1CFC6D"></a>界面
+            </h2> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5915"></a>单击灯光与其目标连接的直线选择两个对象。但是，区域选择不能识别链接直线。 
+               		
+            </p> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5914"></a>当重命名目标平行光时，目标将自动重命以与之相匹配。例如，将 <em class="mild">Light01</em> 重命名为 <em class="mild">Sol</em> ，则 <em class="mild">Light01.Target</em> 成为 <em class="mild">Sol.Target</em>。目标名称的扩展名必须为 .<em class="mild">Target</em>。重命名目标对象不会重命名灯光对象。 
+               		
+            </p> 
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-6AE43498-8886-4437-85BC-F942D3E85306"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-57B15284-C5F3-46A8-BBD3-6333FE5E80DE.htm">灯光 
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-59EFB702-F34A-4471-B4E4-E259A6C51638.htm">“名称和颜色”卷展栏（灯光） 
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-D4232034-E0A5-4761-A212-E3BDF8DB8A14.htm">“常规参数”卷展栏（标准灯光） 
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-7C6D57E1-CE52-4806-BF11-5C9E88758F9E.htm">“强度/颜色/衰减”卷展栏（标准灯光） 
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-A5AB2530-3AB0-40FD-AACF-4DBE4432EE33.htm">高级效果卷展栏 
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-83861E77-30EF-4FB8-A49D-BE428E156152.htm">阴影参数 
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-6F0C746D-C3D0-40FC-B5AF-ECD07DDB92DD.htm">平行光参数 
+                        		  </a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

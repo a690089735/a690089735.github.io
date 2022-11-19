@@ -1,0 +1,101 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-43BE9C68-C2F6-4283-9F4C-AA83118B2221">
+      <meta name="description" content="在基于松弛默认姿势保留细节的同时对网格进行平滑处理。">
+      <meta name="indexterm" content="delta mush: 数据通道">
+      <meta name="indexterm" content="数据通道修改器: delta mush">
+      <meta name="indexterm" content="delta mush: 操作符">
+      <meta name="indexterm" content="新功能">
+      <meta name="topic-type" content="concept">
+      <title>Delta Mush</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-43BE9C68-C2F6-4283-9F4C-AA83118B2221"></a><div class="head">
+            <h1>Delta Mush</h1>
+         </div>
+         <p class="blurb">在基于松弛默认姿势保留细节的同时对网格进行平滑处理。 
+            
+         </p>
+         <p> 使用 Delta Mush 操作符可过滤变形瑕疵和创建平滑效果。Delta Mush 操作符提供顶点数据 <img src="../images/GUID-321C3847-6D19-4CA9-BF0B-CA79AE705C58-low.png">。 
+            	 
+         </p>
+         <div class="section"><a name="SECTION_BAE14BFB9FBA48EE95C8CAA6DE1E16AC"></a> 
+            <h2><a name="GUID-3227BCAD-C7A9-4566-BB8D-77152018C82A"></a>“Delta Mush 参数”卷展栏
+            </h2> <a name="FIG_31C3149966B14687BA141662C8085E37"></a><div class="figure-anchor"><img src="../images/GUID-0D1AD299-603C-4AD1-89C3-3C65D92EA8FA-low.png"></div> 
+            <div class="section"><a name="SECTION_C9E492F8FD7145B5A56513C285DE9C31"></a> 
+               <h3><a name="GUID-4D515D14-EE25-4E4A-A8DA-B4EBF1A768DF"></a>“松弛”组
+               </h3> 
+               <dl><a name="GUID-66BFDCA8-24F3-44A5-BEE4-CE4388106BDC"></a><dt><span class="term">强度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 控制每个平滑操作过程中顶点移动的距离。 
+                        				
+                     </div>
+                  </dd><a name="GUID-760F1063-1D3D-4140-ABAB-1AAF0C65686F"></a><dt><span class="term">迭代次数 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置重复平滑过程的次数。 
+                        				
+                     </div>
+                  </dd><a name="GUID-1984815C-C7C5-4985-A197-E5AAF057E60F"></a><dt><span class="term">“固定边界”开关 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">启用时，边界顶点将固定到其当前位置，从而在平滑操作期间不会发生移动。当使用共享开放边的多个对象或者一个对象内的多个元素时，此选项特别有用。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_FF680D8E56B44D05A1789D87EBBA0B48"></a> 
+               <h3><a name="GUID-8B1679B1-374A-4BD4-9F48-8F3050EBA9E3"></a>“遮罩”组
+               </h3> 
+               <dl><a name="GUID-428E7BCB-9D40-4AC2-B6D2-343B218797CE"></a><dt><span class="term">“具有顶点颜色的遮罩”开关 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">隐藏使用某一顶点颜色的对象的区域。 
+                        				
+                     </div>
+                     <div class="definition">此设置可用于控制 Delta Mush 的强度，特别是要保留较小特征的细节。 
+                        				
+                     </div>
+                  </dd><a name="GUID-36EE1E11-B277-4E60-AE93-1CBBFAB4E361"></a><dt><span class="term">贴图通道 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置指定给选定顶点颜色的贴图通道。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_C06E92FAD1F44CA7BB49FB24735F3E8F"></a> 
+               <h3><a name="GUID-C1984635-7061-480A-867B-1916FF7F92EC"></a>“静止姿势”组
+               </h3> 
+               <dl><a name="GUID-A8566166-5F84-4006-B318-02E5370853E6"></a><dt><span class="term">“捕获静止姿势”按钮 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置默认的中性姿势，用于计算平滑操作。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_0AE6B20AFC0E4BA08589EBFADF5C9741"></a> 
+               <h3><a name="GUID-FF26E408-3875-48A4-838E-2B0E693227E2"></a>“变形”组
+               </h3> 
+               <dl><a name="GUID-BEF404B4-488F-4FF5-BE86-2E79F4964BD3"></a><dt><span class="term">“变形”(Deform)菜单 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">指定当前变形：“松弛的基础网格”、“松弛”或“松弛增量”。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

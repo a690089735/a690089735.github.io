@@ -1,0 +1,413 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-8923E3FA-7822-49B0-9A5F-C6B4B6BB3481">
+      <meta name="description" content="光线跟踪材质的“光线跟踪基本参数”卷展栏控制该材质的明暗处理、颜色组件、反射或折射以及凹凸。">
+      <meta name="indexterm" content="光线跟踪材质: 基本参数">
+      <meta name="topic-type" content="concept">
+      <title>“光线跟踪基本参数”卷展栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-8923E3FA-7822-49B0-9A5F-C6B4B6BB3481"></a><div class="head">
+            <h1>“光线跟踪基本参数”卷展栏</h1>
+         </div>
+         <p class="blurb"><span class="char_link"><a href="GUID-06832470-021B-47A4-B912-E347156B74A6.htm">光线跟踪材质</a></span>的“光线跟踪基本参数”卷展栏控制该材质的明暗处理、颜色组件、反射或折射以及凹凸。 
+         </p><a name="UL_4BBA4F2053204C2BA7CEA6D94064B4D3"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-B0A5817B-8B78-4254-A05F-41CD74610846"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “光线跟踪”材质  <img src="../images/ac.menuaro.gif"> “光线跟踪基本参数”卷展栏</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2A59"></a> 
+            <h2><a name="GUID-1F19D8B0-12D4-4B61-BBDD-0688A279AD4E"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004-7DC"></a><div class="figure-anchor"><img src="../images/GUID-5DB7BA26-1EA6-4B5F-BFB1-864154BEE819-low.png"></div>  
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A51"></a>此卷展栏中的基本参数与标准材质的基本参数相似，但“光线跟踪”材质的颜色组件具有不同行为。 
+            </p> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A50"></a>与标准材质一样，可以为光线跟踪颜色分量和各种其他参数使用贴图。色样和参数右侧的小按钮用于打开<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>，从中可选择对应类型的贴图。这些快捷方式在“贴图”卷展栏中也有对应的按钮。如果已经将一个贴图指定给这些颜色之一，则该按钮显示字母 M。大写的 M 表示已指定和启用对应贴图。小写的 m 表示已指定该贴图，但它处于非活动状态（禁用）。 
+            </p> <a name="GUID-C2A563DC-1759-44B6-9C28-F6BDDCB3EA1F"></a><dl>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CAA"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A4F"></a>明暗处理下拉列表</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16BC"></a> 选择一个明暗器。取决于您选择的明暗器，“反射高光”会更改以显示该明暗器的控件。替代项如下： <a name="WS1A9193826455F5FFBA679E112A6A19004-7DB"></a><ul>
+                        <li> <span class="char_link"><a href="GUID-9912728C-0E15-4AF8-B81A-6619E04F3120.htm">各向异性</a></span>：适用于椭圆形曲面，这种情况有“各向异性”高光 
+                        </li>
+                        <li> <span class="char_link"><a href="GUID-7C791BBC-B27F-4BD2-821D-D7DBEA9E7CC9.htm">Blinn</a></span>：适用于圆形物体，这种情况高光要比 Phong 明暗处理柔和 
+                        </li>
+                        <li> <span class="char_link"><a href="GUID-8E3FF64C-63B6-42FA-A198-D65E10387A5D.htm">金属：</a></span>用于金属高光 
+                        </li>
+                        <li> <span class="char_link"><a href="GUID-7C791BBC-B27F-4BD2-821D-D7DBEA9E7CC9.htm">Oren-Nayar-Blinn</a></span>：用于不光滑曲面，如布料或陶土 
+                        </li>
+                        <li> <span class="char_link"><a href="GUID-7C791BBC-B27F-4BD2-821D-D7DBEA9E7CC9.htm">Phong</a></span>（默认值）：适用于具有强度很高的、圆形高光的曲面 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CA9"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A4E"></a>双面</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16BD"></a> 与用于标准材质相同。启用时，在面的两面明暗处理和进行光线跟踪。在默认情况下，对象只有一面，以便提高渲染速度。 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A4D"></a>如果存在 2 面的反射且折射对象，而且您使用<span class="char_link"><a href="GUID-4D919F24-F0BB-47F0-9C2D-28D393C1A1DE.htm">光线跟踪贴图</a></span>而不是材质，则光线跟踪器将一直运行直到达到最大递归级别。这可能占用很多的时间。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CA8"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A4C"></a>关联</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16BE"></a> 与用于标准材质相同。启用时，在<span class="char_link"><a href="GUID-E7D5074C-E45F-4CC5-B22F-80F77F63F6E6.htm">线框模式</a></span>下渲染材质。可以在“扩展参数”卷展栏中指定线框大小。 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A4B"></a>对于像素，线框保持相同的透明厚度，无论几何体的大小是多少，或者对象位置多远或多近。根据单位，线框在远处变得较细，在近距离范围内较粗，如同在几何体中经过建模一样。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CA7"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A4A"></a>面贴图</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16BF"></a> 将材质应用到几何体的各面。如果材质是贴图材质，则不需要<span class="char_link"><a href="GUID-245C4F26-7D3B-40E4-B815-531E3DF49967.htm">贴图坐标</a></span>。贴图会自动应用到对象的每一面。 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CA6"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A49"></a>面状</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16C0"></a> 就像表面是平面一样，渲染表面的每一面。 
+                     <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B0F"></a><div class="note-note"><span class="label label-target-language">注意:</span>“光线跟踪”材质具有与“标准”材质相同的<span class="char_link"><a href="GUID-97BC995B-D697-488E-B4FC-4AE8B07537DC.htm">“超级采样”卷展栏</a></span>选项。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CA5"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A48"></a>环境光</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16C1"></a> 这与标准材质的环境光颜色<em class="mild">不</em>相同。对于光线跟踪材质，此控件控制环境光吸收系数：也就是说，该材质吸收多少环境光。将“环境光”设置为白色与在标准材质中锁定环境光和漫反射光颜色相同。默认设置为黑色。 <a name="WS1A9193826455F5FFBA679E112A6A19004-7DA"></a><ul>
+                        <li> <em class="strong">“环境光颜色”复选框</em>启用该复选框后，材质使用环境光颜色。禁用时，材质使用微调器，以便仅设置灰度值。默认设置为启用。 
+                        </li>
+                        <li> <em class="strong">色样</em>启用该选项之后，色样显示环境光。要更改颜色，请单击色样，然后使用<span class="char_link"><a href="GUID-73A38CF6-FE78-443F-BB42-CC8C60449585.htm">“颜色选择器”</a></span>。 
+                        </li>
+                        <li> <em class="strong">单色微调器</em>禁用该复选框后，环境组件为灰色，使用此微调器可调整灰色值。 
+                        </li>
+                     </ul> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A47"></a>单击贴图按钮可以指定<span class="char_link"><a href="GUID-C01E4AFD-392A-4736-BD8C-E6B0D220FD71.htm">“环境光颜色”贴图</a></span>。该按钮是一个快捷方式：还可以在<span class="char_link"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏</a></span>上指定“环境光”贴图。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CA4"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A46"></a>漫反射</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16C2"></a> 设置漫反射颜色。这与标准漫反射颜色相同。这是对象反射的颜色，<em class="mild">未经</em> 镜面反射。反射和透明度效果在漫反射效果顶端分层显示。如果反射为 100%（纯白），则漫反射颜色不可见。（这一点与标准材质不同。）默认值为 50% 灰色。 
+                     <p><a name="WS1A9193826455F5FFF0124D0128744E2E7D32E1"></a>单击贴图按钮可以指定<span class="char_link"><a href="GUID-69603DC2-F58C-4053-A955-EA19FDB8D084.htm">“漫反射颜色”贴图</a></span>。该按钮是一个快捷方式：还可以在<span class="char_link"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏</a></span>上指定“漫反射颜色”贴图。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CA3"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A45"></a>反射</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16C3"></a> 设置镜面反射颜色。此颜色是反射环境（即场景的其余部分）被过滤。该颜色的值控制反射数量。如果反射颜色为饱和颜色，而漫反射颜色为黑色，则效果类似彩色铬合金（例如，彩色的圣诞树装饰球）。默认设置为黑色（无反射）。 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A44"></a>如果光线跟踪已禁用（在“光线跟踪器控制”卷展栏上），该对象仍然反射环境，但忽略场景中的其他对象。该环境可以是背景颜色、环境贴图或光线跟踪材质的环境组件中的贴图。 
+                     </p> 
+                     <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B0E"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果禁用光线跟踪反射，请将反射颜色设置为黑色以外的颜色，并为本地环境使用反射/折射贴图（请参见下文中的环境参数），可以实现与标准材质中的反射贴图相同的效果。这会增加渲染时间。 
+                        </div>
+                     </div> 
+                     <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B0D"></a><div class="note-note"><span class="label label-target-language">注意:</span>光线跟踪在<span class="char_link"><a href="GUID-876287AE-69EE-4C32-9E12-20068E83031A.htm">材质 ID 通道</a></span>（<span class="char_link"><a href="GUID-866E101D-7974-4EBA-BF07-1D6A123C620C.htm">G 缓冲区</a></span>）中反射和透射 ID，以使其能够产生光晕反射等效果。 
+                        </div>
+                     </div> <a name="WS1A9193826455F5FFBA679E112A6A19004-7D9"></a><ul>
+                        <li> <em class="strong">“反射颜色”复选框</em>启用该复选框后，材质使用反射颜色。禁用时，材质使用微调器，以便仅设置灰度值。默认设置为启用。 
+                        </li>
+                        <li> <em class="strong">色样</em>启用该复选框后，色样显示反射颜色。要更改颜色，请单击色样，然后使用<span class="char_link"><a href="GUID-73A38CF6-FE78-443F-BB42-CC8C60449585.htm">“颜色选择器”</a></span>。 
+                        </li>
+                        <li> <em class="strong">单色微调器</em>禁用该复选框后，反射颜色组件为灰色，使用此微调器可调整灰色值。 
+                        </li>
+                        <li> <em class="strong">Fresnel</em>单击该复选框会第二次显示此选项。当处于活动状态时，对反射应用 Fresnel 效果。取决于对象的查看角度，这会给反射对象添加一定的反射。 
+                        </li>
+                     </ul> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A43"></a>单击贴图按钮可以指定<span class="char_link"><a href="GUID-C65DE825-BAB0-4CDA-82E2-CCE1EAFAFAC5.htm">“反射”贴图</a></span>。该按钮是一个快捷方式：还可以在<span class="char_link"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏</a></span>上指定“反射”贴图。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CA2"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A42"></a>发光度</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16C4"></a> 与标准材质的自发光组件相似，但它不依赖于漫反射颜色。蓝色的漫反射对象可以具有红色的发光度。默认设置为黑色。 
+                     <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B0C"></a><div class="note-note"><span class="label label-target-language">注意:</span>禁用发光度时，此控件的名称会更改为自发光（自发光）。 <a name="WS1A9193826455F5FFBA679E112A6A19004-7D8"></a><ul>
+                              <li><em class="strong">“发光度”复选框</em>启用该复选框后，材质使用发光度颜色。禁用时，材质使用微调器，以便仅设置自发光的灰度值。默认设置为启用。 
+                              </li>
+                              <li><em class="strong">色样</em>启用该复选框后，色样显示发光度颜色。要更改颜色，请单击色样，然后使用<span class="char_link"><a href="GUID-73A38CF6-FE78-443F-BB42-CC8C60449585.htm">“颜色选择器”</a></span>。 
+                              </li>
+                              <li><em class="strong">单色微调器</em>禁用该复选框后，发光度颜色组件为灰色，使用此微调器可调整灰色值。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </div> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A41"></a>单击贴图按钮可指定<span class="char_link"><a href="GUID-0584ED4B-FE91-4B0B-A09C-22557D5D51DD.htm">自发光贴图</a></span>。该按钮是一个快捷方式：还可以在<span class="char_link"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏</a></span>上指定“自发光”贴图。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CA1"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A40"></a>透明度</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16C5"></a> 与标准材质的不透明度控件相结合，类似于基本材质的透射灯光的过滤色。此颜色过滤具有光线跟踪材质的对象后的场景元素。黑色为不透明，白色为完全透明，任何中间值会过滤光线跟踪对象后的对象。漫反射和透明度组件中的完全饱和颜色实现染色玻璃的效果。如果需要更多不透明外观，请拾取希望作为透明颜色的颜色，将其复制到漫反射颜色，使漫反射颜色完全饱和，然后调整透明度以获得需要的效果。默认设置为黑色（不透明）。
+                     
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A3F"></a>如果光线跟踪已禁用（在“光线跟踪器控制”卷展栏中），该对象仍然折射环境贴图，但忽略场景中的其他对象。 
+                     </p> 
+                     <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B0B"></a><div class="note-note"><span class="label label-target-language">注意:</span>通过分隔漫反射、反射和透明度组件，跟线跟踪材质使您能够充分控制如何将对象反射到其环境。例如，一个对象可能漫反射红色、镜面反射绿色并透射蓝色。这不是真实效果，但会有用。 
+                        </div>
+                     </div> <a name="WS1A9193826455F5FFBA679E112A6A19004-7D7"></a><ul>
+                        <li> <em class="strong">“透明度颜色”复选框</em>启用该复选框后，材质使用透明度颜色。禁用时，材质使用微调器，以便仅设置灰度值。默认设置为启用。 
+                        </li>
+                        <li> <em class="strong">色样</em>启用该复选框后，色样显示透明度颜色。要更改颜色，请单击色样，然后使用<span class="char_link"><a href="GUID-73A38CF6-FE78-443F-BB42-CC8C60449585.htm">“颜色选择器”</a></span>。 
+                        </li>
+                        <li> <em class="strong">单色微调器</em>禁用该复选框后，透明度颜色组件为灰色，使用此微调器可调整灰色值。 
+                        </li>
+                     </ul> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A3E"></a>单击贴图按钮可以指定<span class="char_link"><a href="GUID-3A448CA5-9351-430C-94F2-608FED248D32.htm">“过滤颜色”贴图</a></span>。该按钮是一个快捷方式：还可以在<span class="char_link"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏</a></span>上指定“过滤颜色（透明）”贴图。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CA0"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A3D"></a>折射率</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16C6"></a> 折射率 (IOR) 控制材质折射透射光线的严重程度。值为 1.0 时为空气 IOR，透明对象后的对象不失真。值为 1.5 时，后面的对象严重失真。对于略低于 1.0 的 IOR，对象沿其边缘反射，如从水面下看到的气泡。默认值为 1.55。 
+                     <p><a name="WS1A9193826455F5FFF0124D0128744E2E7D32E2"></a>单击贴图按钮可以指定<span class="char_link"><a href="GUID-CCD9B76C-9AC6-46E6-8B9C-E367CFC0FDAF.htm">“折射”贴图</a></span>。该按钮是一个快捷方式：还可以在<span class="char_link"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏</a></span>上指定“折射”贴图。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A3C"></a>常见的折射率为（假设摄影机在空气或真空中）： 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-7D6"></a><div class="table-ruled">
+                        <table cellpadding="0" cellspacing="0" class="ruled">
+                           <colgroup>
+                              <col width="50%">
+                              <col width="50%">
+                           </colgroup>
+                           <tr class="ruled-heading">
+                              <th class="table-heading">材质 </th>
+                              <th class="table-heading">IOR 值 </th>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">真空 </td>
+                              <td class="table-body">1.0（精确） </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">空气 </td>
+                              <td class="table-body">1.0003 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">水 </td>
+                              <td class="table-body">1.333 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">玻璃 </td>
+                              <td class="table-body">1.5 to 1.7 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">钻石 </td>
+                              <td class="table-body">2.418 </td>
+                           </tr>
+                        </table>
+                     </div> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A3B"></a>在物理世界中，IOR 为灯光穿过透明材质与观察者用眼睛或摄影机观看时所在介质的相对速度。通常这与对象的密度有关，IOR 越大，对象的密度越大。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A3A"></a>也可以使用贴图控制 IOR。IOR 贴图始终在 1.0（空气的 IOR）和 IOR 参数中的设置之间进行插补。例如，如果折射率设置为 3.55 并且使用黑白“噪波”来控制折射率，那么在对象上渲染的折射率值将会设置在 1.0 到 3.55 之间；该对象看起来就会比空气来的稠密。另一方面，如果
+                        IOR 设置为 0.5，则同一贴图的值将在 0.5 到 1.0 之间渲染，这种情况就像摄影机位于水下，而对象的密度小于水一样。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A39"></a>以下是各种材质的 IOR 值： 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-7D5"></a><div class="table-ruled">
+                        <table cellpadding="0" cellspacing="0" class="ruled">
+                           <colgroup>
+                              <col width="50%">
+                              <col width="50%">
+                           </colgroup>
+                           <tr class="ruled-heading">
+                              <th class="table-heading">材质 </th>
+                              <th class="table-heading">IOR 值 </th>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">液态二氧化碳 </td>
+                              <td class="table-body">1.200 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">冰 </td>
+                              <td class="table-body">1.309 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">丙酮 </td>
+                              <td class="table-body">1.360 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">普通酒精 </td>
+                              <td class="table-body">1.360 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">糖水 (30%) </td>
+                              <td class="table-body">1.380 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">酒精 </td>
+                              <td class="table-body">1.329 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">Flourite </td>
+                              <td class="table-body">1.434 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">熔凝石英 </td>
+                              <td class="table-body">1.460 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">Calspar2 </td>
+                              <td class="table-body">1.486 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">糖水 (80%) </td>
+                              <td class="table-body">1.490 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">玻璃 </td>
+                              <td class="table-body">1.500 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">玻璃，锌冠 </td>
+                              <td class="table-body">1.517 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">玻璃，冠 </td>
+                              <td class="table-body">1.520 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">氯化钠 </td>
+                              <td class="table-body">1.530 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">氯化钠（食盐）1 </td>
+                              <td class="table-body">1.544 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">聚苯乙烯 </td>
+                              <td class="table-body">1.550 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">石英 2 </td>
+                              <td class="table-body">1.553 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">绿宝石 </td>
+                              <td class="table-body">1.570 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">轻火石玻璃 </td>
+                              <td class="table-body">1.575 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">青金石 </td>
+                              <td class="table-body">1.610 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">黄玉 </td>
+                              <td class="table-body">1.610 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">二硫化碳 </td>
+                              <td class="table-body">1.630 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">石英 1 </td>
+                              <td class="table-body">1.644 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">氯化钠（食盐）2 </td>
+                              <td class="table-body">1.644 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">重火石玻璃 </td>
+                              <td class="table-body">1.650 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">二碘甲烷 </td>
+                              <td class="table-body">1.740 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">红宝石 </td>
+                              <td class="table-body">1.770 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">兰宝石 </td>
+                              <td class="table-body">1.770 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">重火石玻璃 </td>
+                              <td class="table-body">1.890 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">水晶 </td>
+                              <td class="table-body">2.000 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">钻石 </td>
+                              <td class="table-body">2.418 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">氧化铬 </td>
+                              <td class="table-body">2.705 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">氧化铜 </td>
+                              <td class="table-body">2.705 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">非结晶硒 </td>
+                              <td class="table-body">2.920 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">碘晶 </td>
+                              <td class="table-body">3.340 </td>
+                           </tr>
+                        </table>
+                     </div> 
+                  </div>
+               </dd>
+            </dl>
+            <div class="dl_section"><a name="GUID-2EDA6F5C-2C79-41E5-A7F7-90161BE43FAF"></a><p class="title"><a name="GUID-C4F39B21-3433-4545-8800-F951E0465177"></a>“反射高光”组
+               </p><a name="WS1A9193826455F5FFF0124D0128744E2E7D32E3"></a><div class="figure-anchor"><img src="../images/GUID-1C3F126B-41F5-4677-8789-BEF5F280E6E6-low.png"></div>
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A38"></a> 此组中的控件影响反射高光的外观。反射高光模拟在场景中反射光线的光线跟踪对象的表面。更改场景中的光线的颜色或密度会更改反射高光的颜色或密度。 
+               </p>
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A37"></a>在标准材质中，在调整此组中的值时，右侧的高光曲线会更改，向您演示其效果。示例窗中的材质预览也会更新。 
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-C9F"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A36"></a>高光颜色</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16C7"></a> 设置<span class="char_link"><a href="GUID-90065A74-C223-474C-8D85-7596D70E5004.htm">高光颜色</a></span>，假设场景中存在白色光。 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A35"></a>单击色样以显示<span class="char_link"><a href="GUID-73A38CF6-FE78-443F-BB42-CC8C60449585.htm">颜色选择器</a></span>并更改高光颜色。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A34"></a>单击贴图按钮可以指定<span class="char_link"><a href="GUID-C6E7C770-B86C-40B9-9900-4A22544E31B0.htm">“高光颜色”贴图</a></span>。该按钮是一个快捷方式：还可以在<span class="char_link"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏</a></span>上指定“高光颜色”贴图。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A33"></a>“反射高光”组中的其余控件取决于活动明暗器，如此卷展栏顶部的“明暗处理：”旁所示。这些高光控件与用于标准材质明暗器的控件相同。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A32"></a>这些是可用于光线跟踪材质的高光控件。 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-7D3"></a><ul>
+                           <li> <span class="char_link"><a href="GUID-9912728C-0E15-4AF8-B81A-6619E04F3120.htm">各向异性高光</a></span> 
+                           </li>
+                           <li> <span class="char_link"><a href="GUID-7C791BBC-B27F-4BD2-821D-D7DBEA9E7CC9.htm">Blinn、Oren-Nayar-Blinn 和 Phong 高光</a></span> 
+                           </li>
+                           <li> <span class="char_link"><a href="GUID-8E3FF64C-63B6-42FA-A198-D65E10387A5D.htm">金属高光</a></span> 
+                              <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B0A"></a><div class="note-note"><span class="label label-target-language">注意:</span>与当前明暗器无关的高光控件标记为“N/A”。 
+                                 </div>
+                              </div> 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <dl>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-C9E"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A31"></a>环境</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16C8"></a> 单击此按钮可指定该光线跟踪材质的局部<span class="char_link"><a href="GUID-34D36047-F87E-4FAC-912F-CDFD8CE82937.htm">环境贴图</a></span>。反射和透明度都使用整个场景范围内的环境贴图，除非使用此按钮指定另一贴图。使用此控件，您可以基于每个对象来使用不同的环境贴图，或没有作为整体的场景时，向指定对象提供环境。 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A30"></a>此帖图覆盖反射和折射的整个场景范围环境。要仅覆盖折射，请参见“展开参数”卷展栏中的“透明度环境”控件。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A2F"></a>使用复选框可启用或禁用此贴图。 
+                     </p> 
+                     <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B09"></a><div class="note-tip"><span class="label label-target-language">提示</span>可以使用任何贴图作为光线跟踪环境，包括<span class="char_link"><a href="GUID-D3621A9C-931C-4D24-8D32-60C2494F5F9E.htm">反射/折射贴图</a></span>。反射/折射贴图一般足以获得需要的外观，而且与光线跟踪整个场景相比，渲染速度一般更快，特别是在光线跟踪材质透明时。如果使用光线跟踪材质仅仅是为了使汽车前灯或房间中央悬挂的灯泡上的玻璃看起来更真实，请禁用光线跟踪器，改为使用环境贴图。 
+                        </div>
+                     </div> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754C09"></a>右侧的 <img src="../images/GUID-E8AF5827-BEFA-4EBF-A763-C194B03BFF3D-low.png"> 锁定按钮将环境贴图锁定到透明度环境贴图（位于<span class="char_link"><a href="GUID-1DFC57D3-1899-457C-86AD-4B003AC0B4BD.htm">“展开参数”卷展栏</a></span>中）。启用此选项后，“透明环境”贴图控件被禁用，应用于“光线跟踪环境”的贴图也会被应用于“透明环境”。禁用此选项后，启用“透明环境”贴图控件，将另一个贴图指定给“透明环境”。默认设置为启用。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7A2D"></a>在此处更改此按钮的设置还会在<span class="char_link"><a href="GUID-1DFC57D3-1899-457C-86AD-4B003AC0B4BD.htm">“展开参数”卷展栏</a></span>和<span class="char_link"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏</a></span>上更改它。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-C9C"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7A2C"></a>凹凸</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16CA"></a> 单击该按钮可指定<span class="char_link"><a href="GUID-2818B285-15A3-4E7F-8E0F-8C00B37D0FA8.htm">凹凸贴图</a></span>。该按钮是一个快捷方式：还可以在<span class="char_link"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏</a></span>上指定“凹凸”贴图。 
+                     <p><a name="WS1A9193826455F5FFF0124D0128744E2E7D32E5"></a>使用微调器可更改凹凸量。使用复选框可切换贴图。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

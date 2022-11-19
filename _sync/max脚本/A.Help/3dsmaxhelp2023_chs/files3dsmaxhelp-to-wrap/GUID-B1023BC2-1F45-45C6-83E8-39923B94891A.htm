@@ -1,0 +1,48 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B1023BC2-1F45-45C6-83E8-39923B94891A">
+      <meta name="indexterm" content="保存旋转的边">
+      <meta name="indexterm" content="边: 保存旋转的边">
+      <meta name="indexterm" content="旋转的边: 保存">
+      <meta name="indexterm" content="故障诊断: 旋转的边">
+      <meta name="indexterm" content="保存旋转的边">
+      <meta name="indexterm" content="方法: 保存旋转的边">
+      <meta name="indexterm" content="旋转的边: 如何保存">
+      <meta name="topic-type" content="concept">
+      <title>3ds Max 旋转的边出了什么问题？</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B1023BC2-1F45-45C6-83E8-39923B94891A"></a><div class="head">
+            <h1>3ds Max 旋转的边出了什么问题？</h1>
+         </div>
+         <p><a name="WS1A9193826455F5FF-72A156FC122CE7955E0-7F27"></a> <span class="charspan-msgph">3ds Max FBX plug-in</span>支持旋转隐藏的边。此支持将受影响的多边形对象三角化为可编辑网格对象。网格三角化后，无论可见边是否旋转，系统都会全部导出和烘焙它们。 
+         </p>
+         <div><a name="GUID-BD9D9F3C-D84D-4B29-8394-3E6E37222CC5"></a><div class="note-note"><span class="label label-target-language">注意:</span>可以禁用此插件的“保留边方向”选项，也可以使用 Mudbox 预设停止自动三角剖分。请参见<span class="char_link"><a href="GUID-249100FE-67BE-43B8-AF12-D20703CDF8D1.htm#SECTION_589D35BAEB9D4C85862D6AE08A138AA1">保留边方向</a></span>。 
+            </div>
+         </div>
+         <p><a name="WS1A9193826455F5FF-72A156FC122CE7955E0-7F23"></a>可编辑多边形具有隐藏的边。在 3ds Max 中查看多边形时，除非打开了“可见性”，否则隐藏的边不可见。“旋转”工具激活后，在打开了“可见性”的情况下，隐藏边显示为虚线。这样会造成一种假象：实际上由三角形组成的可编辑多边形模型，看起来像是由多边形组成的。唯一的区别是，三角形的边在正常情况下是隐藏的。
+            
+         </p>
+         <p><a name="WS1A9193826455F5FF-72A156FC122CE7955E0-7F22"></a>可通过旋转可编辑多边形和网格对象中的隐藏边来修改多边形中隐藏三角形的形状。如果您希望修改多边形的细分方式，这是一种有用的优化处理。例如，旋转边可避免在多边形中出现很尖的三角形。对于某些 3ds Max 建模工具而言，旋转隐藏的边是作为最后一个步骤执行的优化处理。
+            
+         </p><a name="WS1A9193826455F5FF-72A156FC122CE7955E0-7F21"></a><p class="list-intro"><a name="WS1A9193826455F5FF-72A156FC122CE7955E0-7F20"></a> 要在 3ds Max 中旋转边，请执行以下操作：
+         </p>
+         <ol type="1" start="1">
+            <li>在 3ds Max 中创建一个平面基本体。 </li>
+            <li>将 Plane001 对象转换为可编辑多边形。 </li>
+            <li>转到修改器堆栈的“多边形”子对象层级，选择“编辑多边形”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“旋转”。 
+            </li>
+            <li>按<span class="keyboardEntry"> F4 </span>键在视口中显示隐藏的边。 
+            </li>
+            <li>如果单击任何隐藏边，则可以看到相应的边仍是虚线状态。 
+               <p><a name="WS1A9193826455F5FF-72A156FC122CE7955E0-7F19"></a>当导出此场景时，系统会通过将可编辑的多边形对象转换为可编辑的网格对象来保留隐藏边的方向。 
+               </p> 
+            </li>
+         </ol>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

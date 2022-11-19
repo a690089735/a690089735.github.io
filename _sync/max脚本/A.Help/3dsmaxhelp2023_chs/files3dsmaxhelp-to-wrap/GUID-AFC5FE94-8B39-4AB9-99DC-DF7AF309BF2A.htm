@@ -1,0 +1,143 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-AFC5FE94-8B39-4AB9-99DC-DF7AF309BF2A">
+      <meta name="description" content="3ds Max 使用名称为 3dsmax.ini 的文件来存储会话之间的设置。在大多数情况下，不需要直接访问此文件。要找到该文件（如有必要），请使用 Windows 搜索功能。">
+      <meta name="indexterm" content="3dsmax.ini 文件">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="expert">
+      <meta name="topic-subtype" content="administering">
+      <title>初始化文件</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-AFC5FE94-8B39-4AB9-99DC-DF7AF309BF2A"></a><div class="head">
+            <h1>初始化文件</h1>
+         </div>
+         <p class="blurb">3ds Max 使用名称为 <em class="mild">3dsmax.ini</em> 的文件来存储会话之间的设置。在大多数情况下，不需要直接访问此文件。要找到该文件（如有必要），请使用 Windows 搜索功能。 
+         </p>
+         <div class="bodyReference">
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-584B"></a>在文本编辑器（例如记事本）中编辑 <em class="mild">3dsmax.ini </em>文件就可以更改 3ds Max 启动条件。如果你确实要编辑文件，请确保保持源文件的结构和语法。 
+            </p>
+            <div><a name="WS1A9193826455F5FF13D8321148F78DFD9-2680"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果您使用 3ds Max 时遇到异常和无法解释的用户界面问题，请尝试删除 <em class="mild">3dsmax.ini</em> 文件并重新启动。3ds Max 会写入一个新的 INI 文件来替换被删除的文件。这通常可以解决与用户界面状态有关的问题。 
+               </div>
+            </div>
+            <div><a name="WS1A9193826455F5FF13D8321148F78DFD9-267F"></a><div class="note-note"><span class="label label-target-language">注意:</span>启动场景条件都由您选择的启动模板定义。如果启动模板不含 MAX 场景，并且存在 <em class="mild">maxstart.max</em> 文件，3ds Max 将使用 <em class="mild">maxstart.max</em> 作为启动场景。如果启动模板不含 MAX 场景，并且 <em class="mild">maxstart.max</em> 文件<em class="mild">不存在</em>，3ds Max 将打开一个空的场景。 
+               </div>
+            </div>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-584A"></a><em class="mild">3dsmax.ini</em> 文件包含以下设置类别： 
+            </p><a name="GUID-AFCB4E52-3BB8-47B5-B974-2E4A2588E5FB"></a><dl>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D9C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5849"></a>[Directories]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1ACD"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875440B"></a>定义各种文件操作的默认路径。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D9B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5848"></a>[Performance]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1ACC"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875440C"></a>提高视口性能的控制。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D9A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5847"></a>[PlugInKeys]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1ACB"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875440D"></a>启用或禁用插件的键盘快捷方式。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D99"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5846"></a>[Renderer]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1ACA"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875440E"></a>渲染 Alpha 和过滤背景的控制。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D98"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5845"></a>[RenderPresets]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1AC9"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875440F"></a>定义渲染预设文件的路径。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D97"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5844"></a>[BitmapDirs]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1AC8"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754410"></a>定义材质所使用的位图的默认贴图路径。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D96"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5843"></a>[Modstack]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1AC7"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754411"></a>控制修改器堆栈按钮集和图标显示项。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D95"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5842"></a>[WindowState]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1AC6"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754412"></a>活动视口驱动程序设置。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D94"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5841"></a>[CustomMenus]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1AC5"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754413"></a>定义<em class="mild">mnu</em> 文件的路径。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D93"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5840"></a>[CustomColors]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1AC4"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754414"></a>定义<em class="mild">clr</em> 文件的路径。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D92"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-583F"></a>[KeyboardFile]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1AC3"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754415"></a>定义<em class="mild">kbd</em> 文件的路径。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D91"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-583E"></a>[Material Editor]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1AC2"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754416"></a>材质编辑器设置。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D90"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-583D"></a>[ObjectSnapSettings]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1AC1"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754417"></a>与捕捉有关的设置。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7D8F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-583C"></a>[CommandPanel]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1AC0"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754418"></a>设定列的数目，控制多个列中的卷展栏显示。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-B5FF2780-6D57-4FBB-A37A-60FFFC80CA7D.htm">启动模板</a></li>
+                     <li class="topiclist-litem"><a href="GUID-C31A8D0D-666A-4AF3-8C1E-DFC07417EF4E.htm">启动文件和默认值</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

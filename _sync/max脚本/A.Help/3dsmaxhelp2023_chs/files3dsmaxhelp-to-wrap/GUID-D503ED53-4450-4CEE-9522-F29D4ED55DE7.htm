@@ -1,0 +1,46 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D503ED53-4450-4CEE-9522-F29D4ED55DE7">
+      <meta name="description" content="默认情况下，CAT 使用 X 轴作为所有骨骼的长度轴。这意味着：如果您选择某块骨骼，激活“移动”变换模式，并将坐标系设置为“局部”，指定为长度轴的轴将与骨骼长度对齐。">
+      <meta name="indexterm" content="CAT: 骨骼长度轴">
+      <meta name="topic-type" content="concept">
+      <title>了解骨骼长度轴</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D503ED53-4450-4CEE-9522-F29D4ED55DE7"></a><div class="head">
+            <h1>了解骨骼长度轴</h1>
+         </div>
+         <p class="blurb">默认情况下，<span class="charspan-msgph">CAT</span> 使用 X 轴作为所有骨骼的长度轴。这意味着：如果您选择某块骨骼，激活“移动”变换模式，并将坐标系设置为“局部”，指定为长度轴的轴将与骨骼长度对齐。 
+         </p>
+         <div class="bodyReference"><a name="WS73099CC142F48755-5C83E7B111FDE81A742-41B6"></a><div class="figure-anchor"><img src="../images/GUID-5CCCB4AA-FAE2-49B9-A30E-BD9EE5CC5734-low.png"><p class="figure-title">骨骼长度轴设置为 X 轴</p>
+            </div>
+            <div class="section"><a name="WS73099CC142F48755-5C83E7B111FDE81A742-41B7"></a> 
+               <h2><a name="GUID-3542C432-99B5-4917-9F2C-0CE34B9C8DA1"></a>设置骨骼长度轴
+               </h2> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-41B3"></a>如果您选择 CATParent，并转到“修改”面板，您将看到“骨骼长度轴”组。如果将此设置从 X 更改为 Z，您将看到骨骼现在将与 Z 轴对齐。 
+               </p> <a name="WS73099CC142F48755-5C83E7B111FDE81A742-41B4"></a><div class="figure-anchor"><img src="../images/GUID-2CF7B397-0DBA-43F8-B952-9E8D63B2AE5F-low.png"></div>  <a name="WS73099CC142F48755-5C83E7B111FDE81A742-41B2"></a><div class="figure-anchor"><img src="../images/GUID-A445E005-7444-43CB-8D2A-CDB2BDC659A5-low.png"><p class="figure-title">骨骼长度轴设置为 Z 轴</p>
+               </div>  
+            </div>
+            <div class="section"><a name="WS73099CC142F48755-5C83E7B111FDE81A742-41B0"></a> 
+               <h2><a name="GUID-ABC80048-DA79-4DEE-83CE-6BC8100304B7"></a>为何采用 X 对齐模式？
+               </h2> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-41AF"></a><span class="charspan-msgph">CAT</span> 在最初设计时使用 Z 轴，这在当时看来是合理的。然而，许多游戏开发人员都要求软件应从使用 Z 轴更改为使用 X 轴。目前，大多数导出器都是围绕 <span class="charspan-msgph">3ds Max</span> 骨骼、Biped 或 Motion Builder 角色的导出而设计的，并且所有这些导出器全都使用 X 轴。如果骨骼对齐模式不是 X 对齐模式，游戏物理引擎通常将无法运行。 
+               </p> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-41AE"></a>因此添加了 X 对齐模式，以便满足围绕特定角色绑定设计的引擎的需求。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS73099CC142F48755-5C83E7B111FDE81A742-41AD"></a> 
+               <h2><a name="GUID-56832F44-0234-469A-85B9-7A499B0E72BF"></a>大家为何使用 X 轴来表示其骨骼？
+               </h2> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-41AC"></a>有一天，两位著名的机器人专家认为大家需要就机器人坐标系达成一致，因此，他们制定了 Denavit-Hartenberg 坐标系，该坐标系将 X 轴定义为任何骨骼的长度轴。以后的事便众人皆知了。后来，大多数动画系统都是围绕 Z 轴的使用而制定的，但万向节死锁导致了许多问题。
+                  
+               </p> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

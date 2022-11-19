@@ -1,0 +1,104 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-74D532DF-2F7A-46E0-BA4B-2FC5CC975BC6">
+      <meta name="description" content="替换原始版本的新的“Shape”操作符会扩展现成几何体的选择以适用于粒子系统中。可以使用许多不同的预定义 2D 和 3D 图形指定粒子，如基本几何体、字母数字字符、音符以及粒子大小和比例。">
+      <meta name="indexterm" content="图形操作符（粒子流）: 图形">
+      <meta name="indexterm" content="粒子: 大小">
+      <meta name="indexterm" content="粒子: 几何体类型">
+      <meta name="indexterm" content="粒子流操作符: 图形">
+      <meta name="topic-type" content="topic">
+      <title>图形操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-74D532DF-2F7A-46E0-BA4B-2FC5CC975BC6"></a><div class="head">
+            <h1>图形操作符</h1>
+         </div>
+         <p class="blurb">替换原始版本的新的“Shape”操作符会扩展现成几何体的选择以适用于粒子系统中。可以使用许多不同的预定义 2D 和 3D 图形指定粒子，如基本几何体、字母数字字符、音符以及粒子大小和比例。 </p>
+         <div class="bodyReference"><a name="UL_AA4447BA0C494F5BA192294DDDFA965A"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-AB9F7EBE-6667-4EF5-B8C6-B5B13130C752">“粒子视图” <img src="../images/ac.menuaro.gif">  在某个事件中单击“图形”，或将“图形”操作符添加到粒子系统中，然后选择它。</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-32DA"></a>使用“Shape”创建的基本粒子在其几何中心上都拥有轴点。这些粒子也会根据局部 3D 粒子空间中的顶点位置指定 UVW 贴图。 
+            </p>
+            <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-32D9"></a>2D 粒子具有零厚度，并且在粒子的背面朝向摄影机时粒子是不可见的，除非为粒子或发射器指定了双面材质。 
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-32D5"></a> 
+               <h2><a name="GUID-ACBB341D-7F80-4AEA-A960-CBB626AE14B8"></a>界面
+               </h2> <a name="WS1A9193826455F5FF5CF1D02511B1D000978-32D4"></a><div class="figure-anchor"><img src="../images/GUID-288A4E52-9FD4-4AA2-8485-3C1A562C3C89-low.png"></div>  <a name="GUID-79ED15B4-4625-41E7-850E-C91C13224948"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6475"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-32D3"></a>2D/3D</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-657C"></a> 使下拉列表中预构建的 2D 或 3D 对象可用作粒子图形。缩略图图像采用了颜色编码以指示其与其他预构建对象的相对复杂性。较简单的图形为蓝色或绿色，而较复杂的图形为紫色或红色。每种类型都有 20 个图形。 
+                        <p><a name="GUID-E6BC5626-D578-4241-BB4D-B6A9DE0DA793"></a>对于每种类型（2D 或 3D），有 20 种形状可用。对于数字、字母和注释等连续形状，您可以通过启用“多图形随机顺序”生成随机序列（请参见下文）。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6474"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-32D1"></a>大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-657B"></a> 按系统单位设置粒子的总体大小。默认值为 10.0。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6473"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-32CF"></a>缩放</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-657A"></a> 启用后可以将粒子大小设置为“大小”值的百分比。使用数值字段来设置“缩放”百分比值。默认值为 100.0。 
+                        <div><a name="GUID-515B4C2F-EA67-42F5-9AB7-34CEF1F39587"></a><div class="note-note"><span class="label label-target-language">注意:</span>可以对“缩放”设置动画，而不能对“大小”设置动画。启用“缩放”可创建“Scale”操作符稍后可在流中使用的缩放数据。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6472"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-32CC"></a>变化</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6579"></a>使用百分比值改变总体粒子大小。粒子进入事件时，结果比例因子只设置一次。仅在启用“缩放”时才可用。 
+                        <div><a name="GUID-F6377129-E9D4-431D-BE1B-B6046266ADB0"></a><div class="note-tip"><span class="label label-target-language">提示</span>要持续性控制比例因子，请使用“缩放”操作符。 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6471"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-32CA"></a>多图形随机顺序</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6578"></a> 启用时，按随机顺序将图形指定到粒子。此选项只适用于多图形形式。禁用时，图形将以其自然顺序（例如，字母顺序 A, B, C 和数字顺序 1, 2, 3）进行指定。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-4D642F25-07C5-4BDD-9B38-8CE56D8297AC"></a><span class="term"><a name="GUID-B36DA238-FD7F-404C-A21D-A1A2F01248B1"></a>生成贴图坐标</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-684891A0-1545-4AA3-A4AF-94CFEFFA853D"></a>启用后，会将贴图坐标应用到每个粒子。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-3179CC80-A0F6-4A91-B7D1-877BDDAA7494"></a><span class="term"><a name="GUID-132F45B1-C62B-4DEB-B13E-8EB1BC14C4A6"></a>贴图适配</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-A1074749-E4EC-4B29-A2F2-ABC1182337D0"></a>启用后，将根据每个粒子的大小调整其贴图坐标。仅在启用了“生成贴图坐标”时可用。
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-2B20A815-8E03-44F3-A512-73B462335272"></a><p class="title"><a name="GUID-553E7054-C5F7-483D-965A-F3CE6C88F473"></a>“唯一性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-32C7"></a>“唯一性”组中的选项仅在“多图形随机顺序”启用时才可用（见前文）。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6470"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-32C6"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6577"></a> 为按随机顺序生成的粒子指定随机化种子。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-646F"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-32C4"></a>新增特性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6576"></a> 使用随机化公式计算新种子。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-649BCBB7-FC88-40A2-8554-47928A197A02.htm">粒子视图中的材质和贴图</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

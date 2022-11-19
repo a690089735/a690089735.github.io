@@ -1,0 +1,128 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-BCC5D81D-3355-49CF-ADB3-0748C4631301">
+      <meta name="description" content="此对话框用于确定 3ds Max 如何创建和使用材质中并入的位图的代理版本。它还允许禁用或启用位图分页。">
+      <meta name="indexterm" content="每个位图分辨率">
+      <meta name="indexterm" content="位图: “代理”对话框">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="administering">
+      <title>“位图代理”对话框的全局设置和默认设置</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-BCC5D81D-3355-49CF-ADB3-0748C4631301"></a><div class="head">
+            <h1>“位图代理”对话框的全局设置和默认设置</h1>
+         </div>
+         <p class="blurb">此对话框用于确定 3ds Max 如何创建和使用材质中并入的位图的代理版本。它还允许禁用或启用位图分页。 </p>
+         <div class="bodyReference"><a name="UL_19DFD69982EA4A838E69088AC4C58516"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-74936C63-D125-49F1-A572-3F91ED8D273F">“资源追踪”对话框  <img src="../images/ac.menuaro.gif"> “位图性能和内存”菜单  <img src="../images/ac.menuaro.gif"> “全局设置”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-461D2A9E-B339-49CB-9CC1-ACFAD31BC1FA">“资源追踪”对话框  <img src="../images/ac.menuaro.gif">  高亮显示位图资源。 <img src="../images/ac.menuaro.gif"> “位图性能和内存”菜单  <img src="../images/ac.menuaro.gif"> “设置代理分辨率”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-515F1627-9B05-4592-BD01-7FF37A5ACFDC">“资源追踪”对话框  <img src="../images/ac.menuaro.gif">  右键单击位图资源。 <img src="../images/ac.menuaro.gif">  设置代理分辨率</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-1C4A4684-DC54-4A84-9CC9-52FD2ACE7762"><img src="../images/GUID-D7B21710-141B-4E81-BB93-6175D09E68D0-low.png">“渲染设置”对话框  <img src="../images/ac.menuaro.gif"> “公用”面板  <img src="../images/ac.menuaro.gif"> “公用参数”卷展栏  <img src="../images/ac.menuaro.gif"> “位图性能和内存选项”组  <img src="../images/ac.menuaro.gif"> “设置”</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF61D1E3E812435C7CB1B-3BBD"></a>当构建和编辑场景以减少位图纹理所需的内存量时，视口中主要使用代理，但您还可以在渲染时使用它们。 
+            </p>
+            <div><a name="WSF742DAB04106313339AEF003112A1CE9423-7F94"></a><div class="note-note"><span class="label label-target-language">注意:</span>当使用此主题顶部的任一“设置代理分辨率”命令打开此对话框时，标题将更改为“位图代理的每个位图分辨率”，“启用代理系统”复选框将更改为“使用全局设置”，并且您可以只设置代理分辨率。 
+               </div>
+            </div><a name="WS1A9193826455F5FFBA679E112A6A1900468"></a><div class="figure-anchor"><img src="../images/GUID-DE292DAF-8ABE-4A0A-B60F-51CCE0CCB3BA-low.png"></div><a name="GUID-034D5B41-924C-4A42-B04C-D5E78DE13112"></a><div class="dl_section"><a name="GUID-74177702-F88B-4923-A952-079CA20066AB"></a><p class="title"><a name="GUID-ECC6F98C-5527-4F17-A0D1-86860350CB80"></a>“代理分辨率”组
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-21FA"></a>该对话框上第一个复选框的标签和功能取决于您是否使用“设置/全局设置”命令或“设置代理分辨率”来调用它： 
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190046A"></a><ul>
+                  <li> <em class="strong">启用代理系统</em>切换代理系统的使用。禁用此选项后，3ds Max 将只使用原始的完全分辨率贴图。只在该对话框的“全局”版本上可用。 
+                  </li>
+                  <li> <em class="strong">使用全局设置</em>启用此选项之后，代理系统将与通过该对话框的“全局”版本设置相同的设置应用于受代理替换影响的所有位图。禁用此选项之后，在调用“设置代理分辨率”之前使用“缩减贴图...”设置（请参见以下内容）来指定专用于高亮显示的位图的分辨率。只在该对话框的“每个位图”版本上可用。
+                     
+                  </li>
+               </ul><a name="GUID-FA93E733-3FC1-4FD5-9E61-FF92959C52C0"></a><dl>
+                  <dt><a name="WS73099CC142F487557579AB9211C98C460A4-71F0"></a><span class="term"><a name="WSF742DAB04106313339AEF003112A1CE9423-7F93"></a>将贴图比例缩小到 [...] 原始大小。</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-192"></a> 使用下拉菜单选择代理系统减少位图的比例：一（未减少）、二分之一、三分之一、四分之一或八分之一的分数。减少的比例越多，节省的内存空间越大，并且速度提高的越快，特别是在具有许多贴图的场景中，除了少数可识别的贴图之外。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-7245639A-69F2-4CA3-8DC3-E3AB937EB0DE"></a><p class="title"><a name="GUID-CF4C74B0-034D-4CF8-A5D8-BB824028E8B7"></a>“代理系统”组
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-21F9"></a>只有在使用主题顶部的“设置”或“全局设置”命令打开该对话框时这些设置才可用。 
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F487557579AB9211C98C460A4-71EF"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-21F8"></a>仅当原始贴图的最大尺寸大于 [...] 像素时才使用代理。</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-191"></a> 用于表明小于您所指定尺寸的位图不会减小。缩减较小的贴图不是特别有效或有用。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-21F7"></a>要确保系统为<em class="mild">所有</em>贴图创建代理，则将此值设置为 0。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F487557579AB9211C98C460A4-71EE"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-21F6"></a>渲染模式</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-190"></a> 用于确定是否在渲染时间使用代理。下拉列表提供的选项是自描述的： <a name="WS1A9193826455F5FFBA679E112A6A190046C"></a><ul>
+                           <li> <em class="strong">使用代理进行渲染（高性能，低内存）</em> 
+                           </li>
+                           <li> <em class="strong">使用高分辨率图像进行渲染，并使其保持在内存中（高性能，高内存）</em> 
+                           </li>
+                           <li> <em class="strong">使用高分辨率图像进行渲染，并使其从内存中释放（低性能，低内存）</em> 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F487557579AB9211C98C460A4-71ED"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-21F5"></a>代理缓存文件夹</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-18F"></a> 此只读字段显示 3ds Max 存储代理位图文件的路径。要更改路径，请转到“配置用户路径”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“文件 I/O”，然后编辑 BitmapProxies 条目。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-3C65D900-8DB0-46FB-9B1E-E0E9C7F6BC6C"></a><p class="title"><a name="GUID-7048C486-4ED7-43F1-8FE8-7EBBD068B8B5"></a>“纹理和渲染图像内存选项”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF61D1E3E812435C7CB1B-4EDA"></a><span class="term"><a name="WS1A9193826455F5FF61D1E3E812435C7CB1B-4ED9"></a>将大的图像分页到磁盘（节省内存）</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF61D1E3E812435C7CB1B-4ED8"></a> 启用此选项后，3ds Max 将在处理大型位图纹理或大型渲染时使用磁盘上的页面文件。这可以节省内存，但完成时间可能会延长。默认设置为启用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF61D1E3E812435C7CB1B-4ED6"></a><span class="term"><a name="WS1A9193826455F5FF61D1E3E812435C7CB1B-4ED5"></a>页面文件位置</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF61D1E3E812435C7CB1B-4ED4"></a> 此字段显示保存页面文件的文件夹的路径名称。 
+                        <p><a name="WS1A9193826455F5FF61D1E3E812435C7CB1B-4ED2"></a>要更改页面文件的位置，请使用“配置系统路径”命令。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <dl>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-71EC"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-21F4"></a>好，立即生成代理</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-18E"></a> 根据对话框设置指定的内容生成代理位图，并关闭该对话框。 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-71EB"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-21F3"></a>好，稍后再生成代理</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-18D"></a> 保存对话框设置，并关闭该对话框，但不生成代理位图。必须使用“资源追踪”对话框中的“生成选定/陈旧代理”命令手动生成代理。 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211C98C460A4-71EA"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-21F2"></a>取消</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-18C"></a> 关闭对话框，不保存任何更改的设置。 
+                  </div>
+               </dd>
+            </dl>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-279538EC-0674-4FCB-9E36-C8910A9FC7F1.htm">配置用户和系统路径</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

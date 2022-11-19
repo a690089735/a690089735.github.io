@@ -1,0 +1,85 @@
+<Saves>
+  <root scale="[1,1,1]" size="[38.0,58.0]">
+    <hub name="hub1" mr="false" transform="(matrix3 [1,0,0] [0,1,0] [0,0,1] [0,0,0])" size="[100.0,100.0,100.0]" expr="#(&quot;20*Bezier_Float&quot;,&quot;25*Bezier_Float&quot;,&quot;10*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])">
+      <leg transform="(matrix3 [0,0,-1] [0,1,0] [1,0,0] [0,0,0])" name="leg1" mr="false">
+        <pole pos="25.0" />
+        <upperarm>
+          <twist transform="(matrix3 [1.21685e-007,0.0697565,-0.997564] [-1.57726e-006,-0.997564,-0.0697565] [-1,1.5819e-006,0] [12.5,0,0])" size="[100.0,100.0]" expr="#(&quot;7.5*Bezier_Float&quot;,&quot;5.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+          <twist size="[100.0,100.0]" expr="#(&quot;7.5*Bezier_Float&quot;,&quot;5.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+        </upperarm>
+        <foretarm>
+          <twist transform="(matrix3 [0.994522,-0.104528,0] [0.104528,0.994522,0] [0,0,1] [60.65,0,0])" size="[100.0,100.0]" expr="#(&quot;6.75*Bezier_Float&quot;,&quot;4.5*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+          <twist size="[100.0,100.0]" expr="#(&quot;6.75*Bezier_Float&quot;,&quot;4.5*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+        </foretarm>
+        <hand transform="(matrix3 [0.707107,0.707107,0] [-0.707107,0.707107,0] [0,0,1] [60.65,0,0])" size="[100.0,100.0]" expr="#(&quot;3.15*Bezier_Float&quot;,&quot;8.775*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])">
+          <heel transform="(matrix3 [0.681998,0.731354,-3.25841e-007] [-0.731354,0.681998,0] [2.8616e-007,1.78683e-007,1] [3.18002,-7.31353,1.90735e-006])" size="[100.0,100.0,100.0]" expr="#(&quot;3*Bezier_Float&quot;,&quot;3*Bezier_Float&quot;,&quot;3*Bezier_Float&quot;)" />
+          <footIK transform="(matrix3 [0.681998,0.731354,-3.25841e-007] [-0.731354,0.681998,3.25841e-007] [4.60529e-007,0,1] [10.1289,-2.17118,0])" size="[100.0,100.0]" expr="#(&quot;25.5*Bezier_Float&quot;,&quot;17.55*Bezier_Float&quot;,&quot;1.755&quot;)" offset="#([0,0,0],(quat 0.5 -0.5 -0.5 0.5),[1,1,1])" />
+          <toe transform="(matrix3 [0.681998,0.731354,0] [-0.731354,0.681998,0] [1.23559e-007,0,1] [10,0,0])" size="[100.0,100.0,100.0]" expr="#(&quot;3.15*Bezier_Float&quot;,&quot;8.775*Bezier_Float&quot;,&quot;7.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+        </hand>
+      </leg>
+      <leg transform="(matrix3 [0,0,1] [0,1,0] [-1,0,0] [0,0,0])" name="leg2" mr="true">
+        <pole pos="25.0" />
+        <upperarm>
+          <twist transform="(matrix3 [1.21685e-007,0.0697564,0.997564] [-1.7521e-006,-0.997564,0.0697564] [1,-1.75632e-006,0] [12.5,0,0])" size="[100.0,100.0]" expr="#(&quot;7.5*Bezier_Float&quot;,&quot;5.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 0.707107 0 0.707107),[1,1,-1])" />
+          <twist size="[100.0,100.0]" expr="#(&quot;7.5*Bezier_Float&quot;,&quot;5.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+        </upperarm>
+        <foretarm>
+          <twist transform="(matrix3 [0.994522,-0.104528,0] [0.104528,0.994522,0] [0,0,1] [60.65,0,0])" size="[100.0,100.0]" expr="#(&quot;6.75*Bezier_Float&quot;,&quot;4.5*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 0.707107 0 0.707107),[1,1,-1])" />
+          <twist size="[100.0,100.0]" expr="#(&quot;6.75*Bezier_Float&quot;,&quot;4.5*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+        </foretarm>
+        <hand transform="(matrix3 [0.707107,0.707107,0] [-0.707107,0.707107,0] [0,0,1] [60.65,-1.90735e-006,0])" size="[100.0,100.0]" expr="#(&quot;3.15*Bezier_Float&quot;,&quot;8.775*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 0.707107 0 0.707107),[1,1,-1])">
+          <heel transform="(matrix3 [0.681998,0.731354,1.50996e-007] [-0.731354,0.681998,-3.89414e-007] [-3.87778e-007,1.55149e-007,1] [3.18002,-7.31353,-9.53674e-007])" size="[100.0,100.0,100.0]" expr="#(&quot;3*Bezier_Float&quot;,&quot;3*Bezier_Float&quot;,&quot;3*Bezier_Float&quot;)" />
+          <footIK transform="(matrix3 [0.681998,0.731354,1.50996e-007] [-0.731354,0.681998,-3.89414e-007] [-3.87778e-007,1.55149e-007,1] [10.1289,-2.17118,0])" size="[100.0,100.0]" expr="#(&quot;25.5*Bezier_Float&quot;,&quot;17.55*Bezier_Float&quot;,&quot;1.755&quot;)" offset="#([0,0,0],(quat -0.5 0.5 -0.5 0.5),[1,1,-1])" />
+          <toe transform="(matrix3 [0.681998,0.731354,0] [-0.731354,0.681998,0] [1.23559e-007,0,1] [10,1.43051e-006,0])" size="[100.0,100.0,100.0]" expr="#(&quot;3.15*Bezier_Float&quot;,&quot;8.775*Bezier_Float&quot;,&quot;7.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 0.707107 0 0.707107),[1,1,-1])" />
+        </hand>
+      </leg>
+      <spine transform="(matrix3 [1,0,0] [0,1,0] [0,0,1] [10,0,0])" name="spine1" mr="false" mCheck="false">
+        <spineEnd transform="(matrix3 [1,0,0] [0,1,0] [0,0,1] [0,0,0])" size="[100.0,100.0,100.0]" expr="#(&quot;16.0*Bezier_Float&quot;,&quot;20.0*Bezier_Float&quot;,&quot;5.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+        <chest transform="(matrix3 [1,0,0] [0,1,0] [0,0,1] [40,0,0])" size="[100.0,100.0,100.0]" expr="#(&quot;16.0*Bezier_Float&quot;,&quot;32.5*Bezier_Float&quot;,&quot;30.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])">
+          <arm transform="(matrix3 [0,0,-1] [0,1,0] [1,0,0] [0,0,0])" name="arm1" mr="false">
+            <pole pos="32.5" />
+            <upperarm>
+              <twist transform="(matrix3 [1,0,0] [0,1,0] [0,0,1] [19.5,0,30])" size="[100.0,100.0]" expr="#(&quot;9.75*Bezier_Float&quot;,&quot;6.5*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+              <twist size="[100.0,100.0]" expr="#(&quot;9.75*Bezier_Float&quot;,&quot;6.5*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+            </upperarm>
+            <foretarm>
+              <twist transform="(matrix3 [0.999391,-0.0348995,0] [0.0348995,0.999391,0] [0,0,1] [32.5,0,0])" size="[100.0,100.0]" expr="#(&quot;8.775*Bezier_Float&quot;,&quot;5.85*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+              <twist size="[100.0,100.0]" expr="#(&quot;8.775*Bezier_Float&quot;,&quot;5.85*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+              <twist size="[100.0,100.0]" expr="#(&quot;8.775*Bezier_Float&quot;,&quot;5.85*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+            </foretarm>
+            <hand transform="(matrix3 [1,0,0] [0,0,1] [0,-1,0] [32.5,0,0])" size="[100.0,100.0,100.0]" expr="#(&quot;4.095*Bezier_Float&quot;,&quot;11.4075*Bezier_Float&quot;,&quot;13.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+            <clavicle transform="(matrix3 [-0.107703,0,0.994183] [0,-1,0] [0.994183,0,0.107703] [0,0,30])" size="[100.0,100.0]" expr="#(&quot;6.825*Bezier_Float&quot;,&quot;4.55*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])">
+              <clavicleParts pos="16.25" rot="0.0" />
+            </clavicle>
+          </arm>
+          <arm transform="(matrix3 [0,0,1] [0,1,0] [-1,0,0] [0,0,0])" name="arm2" mr="true">
+            <pole pos="32.5" />
+            <upperarm>
+              <twist transform="(matrix3 [1,0,0] [0,1,0] [0,0,1] [19.5,0,-30])" size="[100.0,100.0]" expr="#(&quot;9.75*Bezier_Float&quot;,&quot;6.5*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 0.707107 0 0.707107),[1,1,-1])" />
+              <twist size="[100.0,100.0]" expr="#(&quot;9.75*Bezier_Float&quot;,&quot;6.5*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+            </upperarm>
+            <foretarm>
+              <twist transform="(matrix3 [0.999391,-0.0348993,0] [0.0348993,0.999391,0] [0,0,1] [32.5,0,0])" size="[100.0,100.0]" expr="#(&quot;8.775*Bezier_Float&quot;,&quot;5.85*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 0.707107 0 0.707107),[1,1,-1])" />
+              <twist size="[100.0,100.0]" expr="#(&quot;8.775*Bezier_Float&quot;,&quot;5.85*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+              <twist size="[100.0,100.0]" expr="#(&quot;8.775*Bezier_Float&quot;,&quot;5.85*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+            </foretarm>
+            <hand transform="(matrix3 [1,0,0] [0,0,-1] [0,1,0] [32.5,0,0])" size="[100.0,100.0,100.0]" expr="#(&quot;4.095*Bezier_Float&quot;,&quot;11.4075*Bezier_Float&quot;,&quot;13.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 0.707107 0 0.707107),[1,1,-1])" />
+            <clavicle transform="(matrix3 [0.080983,0,0.996715] [0,-1,0] [0.996715,0,-0.080983] [0,0,-30])" size="[100.0,100.0]" expr="#(&quot;6.825*Bezier_Float&quot;,&quot;4.55*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 0.707107 0 0.707107),[1,1,-1])">
+              <clavicleParts pos="16.25" rot="0.0" />
+            </clavicle>
+          </arm>
+          <spine transform="(matrix3 [1,0,0] [0,1,0] [0,0,1] [30,0,0])" name="spine1" mr="false" mCheck="false">
+            <spineEnd transform="(matrix3 [1,0,0] [0,1,0] [0,0,1] [0,0,0])" size="[100.0,100.0,100.0]" expr="#(&quot;12.8*Bezier_Float&quot;,&quot;26.0*Bezier_Float&quot;,&quot;3.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+            <chest transform="(matrix3 [1,0,0] [0,1,0] [0,0,1] [30,0,0])" size="[100.0,100.0,100.0]" expr="#(&quot;12.8*Bezier_Float&quot;,&quot;26.0*Bezier_Float&quot;,&quot;24.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+            <spineBones>
+              <spineBone pos="[0,0,0]" size="[100.0,100.0]" expr="#(&quot;6.4*Bezier_Float&quot;,&quot;13.0*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+            </spineBones>
+          </spine>
+        </chest>
+        <spineBones>
+          <spineBone pos="[0,0,0]" size="[100.0,100.0]" expr="#(&quot;8.0*Bezier_Float&quot;,&quot;16.25*Bezier_Float&quot;)" offset="#([0,0,0],(quat 0 -0.707107 0 0.707107),[1,1,1])" />
+        </spineBones>
+      </spine>
+    </hub>
+  </root>
+</Saves>

@@ -1,0 +1,114 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-052F345D-566D-4E30-920A-215A4B1571A4">
+      <meta name="description" content="编辑手臂和腿大致相同，但存在一些细小差异，本主题将对这些差异进行说明。">
+      <meta name="indexterm" content="CAT: 编辑肢体">
+      <meta name="indexterm" content="CAT: 锁骨">
+      <meta name="topic-type" content="concept">
+      <title>编辑肢体</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-052F345D-566D-4E30-920A-215A4B1571A4"></a><div class="head">
+            <h1>编辑肢体</h1>
+         </div>
+         <p class="blurb">编辑手臂和腿大致相同，但存在一些细小差异，本主题将对这些差异进行说明。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_1D8827626F134FD79F00F52AB65B516E"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-9EFDB565-43CB-4B72-8AD2-A50A75CCB39A">选择肢体骨骼。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “肢体设置”卷展栏</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WS7AF5CAC11814013A17BA0FBF11FDE8BF84B-7F8B"></a> 
+               <h2><a name="GUID-CE53CE32-3709-4A41-A626-5A11043B4D64"></a>手臂和腿之间的差异
+               </h2> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-40E8"></a>未提供“创建肢体”按钮，而提供了创建手臂或腿的选项。不过，手臂和腿之间的差异微乎其微。默认情况下，腿采用脚部平台（一个矩形 <span class="char_link"><a href="GUID-C7120A31-3F4E-40A2-9D9C-CD515AA04172.htm">IK 目标</a></span>），您可以根据需要将手臂更改为采用脚部平台，而非十字形的 IK 目标。 
+                  
+               </p> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-40E7"></a>手臂从连接部继承运动的方式不同于腿。手臂继承胸腔旋转，但旋转幅度会超过胸腔以便指向侧面，腿则会发生完全翻转，以使其在默认情况下指向下方。通过添加一个新层，将肢体设置为 FK，并将所有旋转值设置为 0，您可以查看此效果。您可以看到，腿旋转与它附加到的连接部的旋转相差
+                  180 度，而手臂与它附加到的连接部的旋转相差 90 度 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49F5"></a> 
+               <h2><a name="GUID-1C36A38D-15E1-4D75-BC7C-4A501AD4AAE0"></a>界面
+               </h2> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-40F2"></a>肢体由许多可能的子元素构成。这些子元素包括锁骨、肢体骨骼和手掌。肢体的驱动者参数保存在“肢体设置”卷展栏中。 
+                  
+               </p> <a name="WS73099CC142F48755-5C83E7B111FDE81A742-40F3"></a><div class="figure-anchor"><img src="../images/GUID-71A54187-EA6A-499A-A5E9-8724511A190B-low.png"></div>  <a name="GUID-B460147C-D9B6-4805-9E59-F2DD5D803316"></a><dl>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49F4"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49F3"></a>名称</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49F2"></a> 
+                        <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49F1"></a>在此字段框中编辑肢体的名称。请参见<span class="char_link"><a href="GUID-13672B8B-4BE8-46DA-95A7-4F595D2D753F.htm">使用 CAT 命名系统</a></span>。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49F0"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49EF"></a>色样</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49EE"></a> 
+                        <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49ED"></a>单击此选项可更改肢体颜色。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49EC"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49EB"></a>L/M/R</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49EA"></a> 
+                        <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49E9"></a>选择肢体是用作左臂/左腿、中臂/中腿还是右臂/右腿。中间肢体在三脚结构中非常有用。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49E8"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49E7"></a> <img src="../images/GUID-B5E73941-7259-4FF8-9187-82B3B7610C4B-low.png">“复制”/“粘贴”/“镜像粘贴”</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49E6"></a> 
+                        <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49E5"></a>使用这些按钮在其他肢体中复制和粘贴此肢体设置。请参见<span class="char_link"><a href="GUID-3BE167AA-8DE3-49F6-869D-19433C4E3A4D.htm">复制和粘贴装备部位</a></span>。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49E4"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49E3"></a>锁骨</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49E2"></a>  
+                        <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49E1"></a>如果启用此选项，肢体将并入一块<span class="char_link"><a href="GUID-CC7A005B-6FC7-48E3-9DDF-8DE8487D88B8.htm">锁骨</a></span>，该锁骨用作肢体和连接部之间的附加骨骼。锁骨不属于肢体的 IK 链的一部分。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49E0"></a>默认情况下，手臂将启用“锁骨”选项，而腿会禁用此选项。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49DF"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49DE"></a>“手掌”/“踝部”</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49DD"></a> 
+                        <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49DC"></a>如果启用此选项，手臂末端将包含手掌，而腿末端将包含踝部。请参见<span class="char_link"><a href="GUID-BE4FD61B-69D2-4081-B59A-F4577EACF4E9.htm">手掌、脚踝和手指</a></span>。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49DB"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49DA"></a>骨骼数量</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49D9"></a> 
+                        <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49D8"></a>肢体中的骨骼数。范围为 1 至 20。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49D7"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49D6"></a>使用上方向节点</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49D5"></a> 
+                        <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-49D4"></a>如果启用此选项，软件将创建一个上方向节点作为 IK 目标：即肢体轴上的十字形的点辅助对象。此时会定义肢体的上方向向量，并会进一步约束运动（相较于默认设置而言）。当使用注视约束时，上方向节点对定义哪个方向为“上方”非常有用。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

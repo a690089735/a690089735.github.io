@@ -1,0 +1,56 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-EB812FAD-58F4-42F1-AADD-95A1AB76BD2A">
+      <meta name="description" content="您可以使用位图文件或程序贴图来控制“基本参数”卷展栏上的“粗糙度”参数。贴图中的白色像素增加粗糙度。黑色像素将粗糙度减少到 0。中间值相应地会调整粗糙度。">
+      <meta name="indexterm" content="粗糙度贴图">
+      <meta name="indexterm" content="漫反射: 粗糙度贴图">
+      <meta name="indexterm" content="作为材质组件的贴图: 漫反射粗糙度">
+      <meta name="topic-type" content="concept">
+      <title>漫反射粗糙度贴图</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-EB812FAD-58F4-42F1-AADD-95A1AB76BD2A"></a><div class="head">
+            <h1>漫反射粗糙度贴图</h1>
+         </div>
+         <p class="blurb">您可以使用位图文件或<span class="char_link"><a href="GUID-783C7A59-F829-41DA-A2A2-E967E516172D.htm">程序贴图</a></span>来控制“基本参数”卷展栏上的“粗糙度”参数。贴图中的白色像素增加粗糙度。黑色像素将粗糙度减少到 0。中间值相应地会调整粗糙度。 
+         </p><a name="UL_3CC470C00E20442187A6081A2BD796A6"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-D1D09DBA-FE8A-4288-BB06-E04903E6EB2F"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “标准”材质  <img src="../images/ac.menuaro.gif"> “贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “漫反射粗糙度”按钮（仅针对 Oren-Nayar-Blinn 或多层明暗器才显示）</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-8E8EFAB6-A943-4306-8BC1-DF42FB9E616E"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “光线跟踪”材质  <img src="../images/ac.menuaro.gif"> “贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “ONB 粗糙”。按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-4E7767B2-C301-489F-A333-5BC3989B389E"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “Arch &amp; Design”材质  <img src="../images/ac.menuaro.gif"> “通用贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “主要贴图”组  <img src="../images/ac.menuaro.gif"> “漫反射粗糙度”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-02482853-94C6-4340-A48A-05A53952876B"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif">  具有粗糙度组件的其他材质</span> 
+            </li>
+         </ul><a name="WS73099CC142F487554E67820D1283FBC0BF3266B"></a><div class="figure-anchor"><img src="../images/GUID-D44E42AB-D9A7-4F11-9994-865EB4D3FD9F-low.png"><p class="figure-title">粗糙度贴图向花瓶添加了一个带纹理的图案。</p>
+         </div>
+         <div style="margin-top: 9pt;"><a name="WS73099CC142F487554E67820D1283FBC0BF3266C"></a><div class="note-note"><span class="label label-target-language">注意:</span> 对于光线跟踪材质，“粗糙度”参数仅适用于 <span class="char_link"><a href="GUID-C047BBE5-4095-4C39-99EF-C3488D6AC05D.htm">Oren-Nayar-Blinn 明暗器</a></span>。对于标准材质，该参数可用于 Oren-Nayar-Blinn 和<span class="char_link"><a href="GUID-CADE44B1-88D6-4D3E-947B-DCD7BF5C7820.htm">多层</a></span>明暗器。 
+            </div>
+         </div>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF3266D"></a>减少“漫反射粗糙度”贴图的“数量”会降低贴图的效果，同时提高“基本参数”卷展栏上“粗糙度”值的效果。“数量”是 0% 时，根本不使用贴图。 
+         </p>
+         <div class="section"><a name="WS73099CC142F487554E67820D1283FBC0BF3266E"></a> 
+            <h2><a name="GUID-DF35B657-8140-4CB0-A960-19ABD3B8941D"></a>过程
+            </h2> <a name="WS73099CC142F487554E67820D1283FBC0BF3266F"></a><p class="list-intro"><a name="WS73099CC142F487554E67820D1283FBC0BF32670"></a>要设置粗糙度值的贴图，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>单击“漫反射粗糙度”的贴图按钮。 
+                  <p><a name="WS73099CC142F487554E67820D1283FBC0BF32672"></a><span class="charspan-msgph">3ds Max</span> 打开“<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>”。 
+                  </p> 
+               </li>
+               <li>从贴图类型列表中进行选择，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867BD"></a>（如果选择将“位图”作为贴图类型，则 <span class="charspan-msgph">3ds Max</span> 将打开用于选择图像文件的文件对话框。） 
+                  </p> 
+               </li>
+               <li>使用贴图控件可设置贴图。 </li>
+            </ol> 
+            <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867BE"></a>或者，您可以使用 <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <span class="char_link"><a href="GUID-7B51EF9F-E660-4C10-886C-6F6ADE9E8F56.htm">Slate 材质编辑器</a></span>将<span class="char_link"><a href="GUID-9BF3A6D1-6665-4EC8-89BD-187FF34BA588.htm">贴图节点关联</a></span>到“漫反射粗糙度”组件。 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

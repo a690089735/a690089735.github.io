@@ -1,0 +1,70 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-BDECE712-8441-4E15-B213-8DBAFE144268">
+      <meta name="description" content="如果您的操作符/测试需要场景中的一个或多个对象作为参数，请使用“选择对象”来指定对象。“选择对象”将输出“对象”数据类型，并且通常与“对象”或“几何体”子操作符的输入关联。">
+      <meta name="topic-type" content="concept">
+      <title>“选择对象”子操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-BDECE712-8441-4E15-B213-8DBAFE144268"></a><div class="head">
+            <h1>“选择对象”子操作符</h1>
+         </div>
+         <p class="blurb">如果您的操作符/测试需要场景中的一个或多个对象作为参数，请使用“选择对象”来指定对象。“选择对象”将输出“对象”数据类型，并且通常与“对象”或“几何体”子操作符的输入关联。 </p>
+         <div class="bodyReference"><a name="GUID-45F42F4B-2696-4129-BA34-01891B88860D"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-93796350-154D-4008-8B98-FCF49CA31359">“粒子视图” <img src="../images/ac.menuaro.gif"> “数据图标/数据图标测试” <img src="../images/ac.menuaro.gif">  单击“编辑数据流”。 <img src="../images/ac.menuaro.gif">  添加或选择“选择对象”。</span> 
+               </li>
+            </ul>
+            <div><a name="GUID-19597B25-2F18-43D2-A02E-8DAB28F035D9"></a><div class="note-note"><span class="label label-target-language">注意:</span>某些子操作符（如“几何体”）可以处理“对象索引”属性；在此子操作符中，该索引由列表中对象的顺序确定。列表中第一个对象的索引为 0；第二个对象的索引为 1，依此类推。 
+               </div>
+            </div>
+            <div class="section"><a name="AB1012700"></a> 
+               <h2><a name="GUID-6372613A-B6BF-4190-BEFD-7C1F71DF3279"></a>界面
+               </h2> <a name="FIG_35126E3E0EC841C2AFB623D692B1AEC1"></a><div class="figure-anchor"><img src="../images/GUID-895A85E6-9428-42E7-A74B-1F2936D9A0C8-low.png"></div>  <a name="GUID-23AF83D6-63CF-42D4-A049-4AE4006D15F0"></a><dl>
+                  <dt><a name="GUID-5E3C4AEC-ABE3-4CE7-88A2-BAC7B7DCBDB8"></a><span class="term"><a name="GUID-063BFBBE-7732-48C0-BA1A-E27278B68C1C"></a>类型</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-5C1377D8-A8CE-418E-B53D-8760F474E36E"></a>可以指定可选择的对象类型。对象选项是一个可显示参数，因此可以防止用户指定意外的对象类型。选项如下： <a name="UL_84719A36E7CE40E381103CC16F28BD55"></a><ul>
+                           <li><em class="strong">全部</em>可以选择场景中的所有对象，包括非几何体对象（如灯光和空间扭曲），但不包括粒子系统。 
+                           </li>
+                           <li><em class="strong">几何体</em>只能选择几何体对象。 
+                           </li>
+                           <li><em class="strong">粒子流系统</em>只能选择粒子流系统。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-1536B555-3341-4D3E-9836-358ADC1351DA"></a><span class="term"><a name="GUID-ED1AC919-C31B-4D4F-813C-770853047648"></a>独立粒子流系统</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-B3A35958-21E4-444F-9B7B-5E998F57E168"></a>“选择对象”子操作符允许使用其他粒子流作为数据收集的参考对象。如果两个粒子流相互参考，可能会产生问题，因为这会构成一个错误参考循环。若要解决该情况，请使用此选项。 
+                        <p><a name="GUID-B550A403-D1CD-4987-989F-7C406C4308E5"></a>启用时，在收集数据之前，必须将参考粒子流更新到当前帧才能收集数据。禁用时，在收集数据之前，不会尝试更新参考粒子流。 
+                        </p> 
+                        <p><a name="GUID-D320DDE4-E0D9-497E-BBA0-08649D77D2A8"></a>如果有两个粒子流可相互依赖，请首先使用“缓存磁盘”操作符预计算所有帧的总体粒子系统状态。否则，可进行参考循环的历史依赖型粒子流的网络渲染可能不一致。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-939681C3-2FBB-4CB0-8715-1AFFBCCB0D98"></a><span class="term"><a name="GUID-27760534-CF8C-46EB-8198-49073E1862CB"></a>单个对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-1B8DFD54-DACE-45DE-BD4C-314A6772667F"></a>选择该选项后，可以通过单击按钮（默认情况下标记为“无”），然后选择视口中的一个对象来指定场景中的单个默认对象。如果露出此参数，则该按钮可供用户使用。 
+                        <div><a name="GUID-7D8D01CB-1125-4686-8572-299FD5C344ED"></a><div class="note-note"><span class="label label-target-language">注意:</span>选择组中的一个对象可指定整个组。若要指定组成员，请选择“多个对象”，单击“添加”按钮，然后再选择对象。 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-1D69CAE8-A12F-4A33-9922-94F0CA34F228"></a><span class="term"><a name="GUID-33F591C2-5546-43E7-9CD0-2D2D6C80D888"></a>多个对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-C6349821-E069-45A0-9C91-577B86DFF12D"></a>选择该选项后，可以添加任意数量的对象，方法是单击“添加”，然后选择要添加到列表的对象，或单击“按列表”，然后高亮显示尽可能多的对象。使用“移除”从列表中删除高亮显示的项目。 
+                        <p><a name="GUID-8017E741-2AFE-4ECB-AF8C-2524C9EF7E31"></a>如果使用“添加”，则可以指定单个组成员，而无需添加整个组。但是，如果使用“按列表”，则仅列出组（以及其他对象），而不是组成员。 
+                        </p> 
+                        <p><a name="GUID-49956034-76B2-4362-9949-F1773004D2FC"></a>与 <span class="charspan-msgph">3ds Max</span> 中的相似列表不同的是，您可以将同一对象尽可能多地添加到此列表中。这是因为此列表中对象的放置确定了其索引，其他子操作符（如<span class="char_link"><a href="GUID-779BD0C7-6849-4599-A4C8-96DBE3086CF6.htm">几何体</a></span>）可以在其上操作。对于某些计算，与其他对象相比，将对象多次添加到列表中会提供额外权重。 
+                        </p>
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

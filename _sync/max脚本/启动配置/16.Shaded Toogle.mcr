@@ -1,0 +1,1 @@
+macroScript Shaded_Toogle category:"My_Macors" toolTip:"16.Shaded Toogle" (::MyCustomFn 16)

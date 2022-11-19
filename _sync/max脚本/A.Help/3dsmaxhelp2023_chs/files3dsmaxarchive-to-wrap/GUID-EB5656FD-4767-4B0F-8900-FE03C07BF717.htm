@@ -1,0 +1,56 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-EB5656FD-4767-4B0F-8900-FE03C07BF717">
+      <meta name="description" content="尽管可以使用修改器将 Physique 应用到对象中，但这可能会影响动画的性能。如果将 Physique 和其他动画修改器组合，那么性能降低是不可避免的。如果其他修改器没有制作为动画效果，可以塌陷堆栈来删除先于 Physique 的修改器。这可以明显提高动画性能。">
+      <meta name="indexterm" content="Physique: 和其他修改器">
+      <meta name="indexterm" content="Physique: 和更改几何体">
+      <meta name="topic-type" content="concept">
+      <title>结合使用 Physique 和其他修改器</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-EB5656FD-4767-4B0F-8900-FE03C07BF717"></a><div class="head">
+            <h1>结合使用 Physique 和其他修改器</h1>
+         </div>
+         <p class="blurb">尽管可以使用修改器将 Physique 应用到对象中，但这可能会影响动画的性能。如果将 Physique 和其他动画修改器组合，那么性能降低是不可避免的。如果其他修改器没有制作为动画效果，可以塌陷堆栈来删除先于 Physique 的修改器。这可以明显提高动画性能。</p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF1677F"></a>Physique 如何重新评估即将达到堆栈中的顶点，取决于堆栈更新选项。
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045CA9"></a> 
+            <h2><a name="GUID-267E7C0E-E865-4CD8-85BE-2895929DF8E9"></a>堆栈更新选项
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16780"></a>在 Physique 中，可以使用<span class="char_link"><a href="GUID-B97BEEBB-EA07-45D7-A9F4-8BCC8858233A.htm">“Physique 细节级别”卷展栏</a></span>中的三个堆栈更新选项来确定 Physique 怎样处理即将达到修改器堆栈中的动画顶点。
+            </p> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045CAA"></a> 
+               <h3><a name="GUID-BE080067-AD4A-4773-AE52-9D2B6C84C57E"></a>添加更改
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16781"></a>使用“添加更改”从堆栈添加更改，然后应用网格变形。没有重新映射或重新指定顶点。这是默认选项，通常能提供需要的变形。这没有降低 Physique 的性能。
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045CAB"></a> 
+               <h3><a name="GUID-B6F73646-90BA-4973-A026-CB263265DF68"></a>局部重新贴图
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16782"></a>使用“局部重新贴图”在样条线上重新设置顶点位置，样条线用来弯曲并链接进行插值扭曲的位置。当顶点沿着样条线滑动并希望基于样条位置来混合和扭曲顶点且不更改其权重时，使用此选项。
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045CAC"></a> 
+               <h3><a name="GUID-893E51D3-A327-4E87-85B7-0FF6689B653E"></a>全局重新分配
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16783"></a>“全局重新分配”给每一帧做完整的顶点重新分配。当顶点向不同的封套移动、并想给它们重新分配封套时，使用此选项。很少使用此选项。唯一的情况是：如果顶点沿链接滑动，同时想基于新位置插入扭曲时，可能会用到此选项。
+               </p> 
+            </div> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045CAD"></a> 
+            <h2><a name="GUID-1C1C6E87-4CC7-4969-B600-EE51EEAE1762"></a>将 Physique 用于不断更改的几何体
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16784"></a>Physique 可以有效地动态处理更改几何体。也就是说，如果经过修改器堆栈到达 Physique 的几何体发生更改，那么 Physique 会动态地调整以适应几何体的更改，同时保持包括手动顶点指定在内的自身参数设置不变。这是因为，当使用“优化”时，可以有效地更改由
+               Physique 变形的几何体分辨率。
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16785"></a>仅在所作的更改动态地增加数据密度这一情况下，需要手动调整顶点指定。Physique 记住手动顶点指定，并在几何体更改时使用这些指定来重新分配顶点。
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

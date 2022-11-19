@@ -1,0 +1,85 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-34254FA2-F566-4E99-B32B-FF23ED36B989">
+      <meta name="description" content="“位置 XYZ”控制器将 X、Y 和 Z 组件分为三个单独轨迹，与 Euler XYZ 旋转控制器相似。在从“表达式”控制器引用时，这提供了对三个轨迹的单独控制。">
+      <meta name="indexterm" content="位置 XYZ 控制器">
+      <meta name="indexterm" content="控制器: 位置 XYZ">
+      <meta name="indexterm" content="XYZ 控制器">
+      <meta name="topic-type" content="concept">
+      <title>位置 XYZ 控制器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-34254FA2-F566-4E99-B32B-FF23ED36B989"></a><div class="head">
+            <h1>位置 XYZ 控制器</h1>
+         </div>
+         <p class="blurb">“位置 XYZ”控制器将 X、Y 和 Z 组件分为三个单独轨迹，与 <span class="char_link"><a href="GUID-76A80A5B-9440-45A0-AD82-BE5F379C4504.htm">Euler XYZ 旋转控制器</a></span>相似。在从“表达式”控制器引用时，这提供了对三个轨迹的单独控制。 
+         </p><a name="UL_F02FA6E0A8C44063BD9A44A28317D288"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-52F89A5B-B395-45C1-B3F8-88A7ADD86582">指定控制器  <img src="../images/ac.menuaro.gif">  位置 XYZ</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A190044B21"></a><div class="figure-anchor"><img src="../images/GUID-DAC93CA3-97E3-41CD-9588-610CB5192F68-low.png"></div>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-422B"></a>在默认情况下，“位置 XYZ”控制器指定三个关键点（每个轴一个）。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-422A"></a>在 <span class="charspan-msgph">3ds Max</span> 以前的版本中，必须手动编辑关键点才能创建明确的轴关键点。不过，现在使用<span class="char_link"><a href="GUID-71DEAF46-80B6-47D8-8F58-F103CECEE1F5.htm">“自定义用户界面”对话框</a></span>中的可用操作，即可<span class="char_link"><a href="GUID-98467413-F295-4862-971A-FB179A7D2E3C.htm">使用设置关键点模式</a></span>创建明确的轴关键点。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4229"></a> 
+            <h2><a name="GUID-6D9EC8B0-B5E4-4A57-874A-BEB9233A043C"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044B25"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044B26"></a>示例：要一起使用“位置 XYZ”和“噪波”控制器，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>创建一个球体。 </li>
+               <li>在 <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“参数”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“指定控制器”卷展栏上，单击球体的“位置”轨迹。 
+               </li>
+               <li>单击 <img src="../images/GUID-B37F3828-8B20-4C02-BF02-B151E0CBBB68-low.png">（指定控制器）并选择“位置 XYZ”。 
+               </li>
+               <li>启用 <img src="../images/GUID-859D11E8-44CA-4A08-A696-F5A17CA856E0-low.png">，并在 XY 平面上创建 <img src="../images/GUID-5D7D7630-6D16-400D-AE6F-87F13C97DEA2-low.png"> 移动球体的三个关键点。 
+               </li>
+               <li>在“指定控制器”卷展栏上，展开“位置”轨迹并单击“Z 位置”。 </li>
+               <li>单击 <img src="../images/GUID-B37F3828-8B20-4C02-BF02-B151E0CBBB68-low.png">（指定控制器），然后选择“噪波浮点”。 
+               </li>
+               <li> <img src="../images/GUID-5B32F2AB-610D-42BB-8C54-81463BE72359-low.png"> 播放动画。球体沿之前创建的关键点移动。通过噪波控制器在 Z 轨迹上生成随机垂直移动。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4228"></a>使用“列表控制器”组合控制器，可以生成相同的效果。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4227"></a> 
+            <h2><a name="GUID-18903CA6-1BC0-4AB2-9751-C6881D3C3041"></a>界面
+            </h2> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044B27"></a> 
+               <h3><a name="GUID-055FB712-445C-4879-AA01-96AC9896B4CB"></a>“运动”面板 &gt;“参数”&gt;“位置 XYZ 参数”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A190044B28"></a><div class="figure-anchor"><img src="../images/GUID-3D8BFF2B-672B-424C-879B-6ECB9BFF4A0B-low.png"></div>  <a name="GUID-4DC031DC-B88B-4145-8F06-CE4EB083D1CE"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-783A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4226"></a>X</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A20"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752780"></a>显示 X 轴变换的控制器属性。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7839"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4225"></a>Y 轴</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A1F"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752781"></a>显示 Y 轴变换的控制器属性。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7838"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4224"></a>Z 轴</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A1E"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752782"></a>显示 Z 轴变换的控制器属性。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4223"></a>当您选择一个轴时，可使用“关键点信息（基本）”和“关键点信息（高级）”卷展栏更改值。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4222"></a>在默认情况下，为每个轨迹指定“Bezier 浮点”控制器。使用“关键点信息（基本）”和“关键点信息（高级）”控制关键点的行为。请参见 <span class="char_link"><a href="GUID-4E481765-765E-4BD6-918A-C7D72326752F.htm">Bezier 控制器</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

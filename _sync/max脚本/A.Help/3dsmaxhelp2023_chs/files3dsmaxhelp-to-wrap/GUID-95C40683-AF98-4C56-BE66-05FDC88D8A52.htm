@@ -1,0 +1,66 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-95C40683-AF98-4C56-BE66-05FDC88D8A52">
+      <meta name="description" content="您在真实世界中碰到的每一个对象几乎需要倒角。这是因为制作一个非常尖的边很困难且耗时间，创建的大多数对象都具有已切角化、倒角或减缓的边。使用“倒角”变形来模拟这些效果。">
+      <meta name="indexterm" content="放样对象中的变形: 倒角">
+      <meta name="indexterm" content="放样对象: 变形倒角">
+      <meta name="indexterm" content="倒角: 放样对象中的变形">
+      <meta name="topic-type" content="concept">
+      <title>变形倒角</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-95C40683-AF98-4C56-BE66-05FDC88D8A52"></a><div class="head">
+            <h1>变形倒角</h1>
+         </div>
+         <p class="blurb">您在真实世界中碰到的每一个对象几乎需要倒角。这是因为制作一个非常尖的边很困难且耗时间，创建的大多数对象都具有已切角化、倒角或减缓的边。使用“倒角”变形来模拟这些效果。 </p><a name="UL_D24FBC402508411FB747B2DE6E65FB86"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-EFEA3FEC-FFF4-4B38-8016-164A2FF01F8A">选择放样对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板 <img src="../images/ac.menuaro.gif"> “变形”卷展栏  <img src="../images/ac.menuaro.gif"> “倒角”</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A190041873"></a><div class="figure-anchor"><img src="../images/GUID-F0DF0498-3C56-4107-9B9D-532B313A4023-low.png"><p class="figure-title">具有倒角边的路线</p>
+         </div>
+         <div style="margin-top: 9pt;"><a name="WS1A9193826455F5FF662FFB11407B58D52-6121"></a><div class="note-note"><span class="label label-target-language">注意:</span> 当放样输出设置为“面片”时“倒角”不可用。 
+            </div>
+         </div>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-48C4"></a>以下是“倒角”变形曲线的属性： 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190041878"></a><ul>
+            <li>单个红色曲线是倒角量。 </li>
+            <li>倒角值以当前单位指定。 </li>
+            <li>默认曲线值为 0 单位。 </li>
+            <li>正值减少图形，从而使其更接近路径。 </li>
+            <li>负值添加到图形，从而背离路径将其移动。 </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-48C3"></a>当嵌套图形时，内部图形的倒角方向被翻转。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-48C2"></a>有关对话框控件的特定信息，请参见<span class="char_link"><a href="GUID-9BA02E03-956F-40D0-8146-95C2334FA50D.htm">“变形”对话框</a></span>。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041879"></a> 
+            <h2><a name="GUID-6EC7B15B-1A9E-45C9-8ED4-7C5AE0882AB7"></a>法线和自适应倒角
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-48C1"></a>“倒角变形”对话框提供三种类型的倒角：“法线”、“自适应线性”和“自适应立方”。对话框工具栏右端的弹出按钮提供这些倒角。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-48C0"></a>使用法线倒角，倒角图形平行于原始图形，而不论图形交叉而成的角如何。倾斜与过多的倒角量组合的交叉而成的角只会在交叉而成的角处泛光化。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-48BF"></a>自适应倒角将改变基于交叉而成的角的倒角图形的长度。自适应线性将采用线性方式改变“长度到角度”。自适应立方在倾斜角上改变的角度比在小角度上的大，从而生成各种不同的微妙效果。自适应倒角的两种形式将导致倒角边的不平行，而且由于在交叉而成的角处泛光化，所以这两种形式可能很少生成有效的倒角。
+               
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-48BE"></a>要查看三种类型倒角的区别之处，请沿着直路径放样星形图形，并应用倒角。当在这三种类型的倒角之间进行切换时，您会在倒角轮廓中看到该区别之处。改变星形半径，以检查倒角以及小而尖的交叉而成的角。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-48BD"></a> 
+            <h2><a name="GUID-3562012C-7F93-4E7B-A2C7-F4029A08DBE0"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004187A"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004187B"></a>要使用“倒角”变形，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择一个放样对象。 
+               </li>
+               <li>右键单击修改器堆栈显示中的放样。 </li>
+               <li>单击“变形”卷展栏上的“倒角”。 </li>
+               <li>调整该变形曲线。 </li>
+            </ol> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

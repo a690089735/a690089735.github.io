@@ -1,0 +1,103 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B5F0FE98-B42C-48EC-AC94-0D1B25AD97F2">
+      <meta name="description" content="产品数据交换标准 (STEP) 是一种 ISO 标准交换格式，用于在 CAD/CAM 系统之间传输图形数据。STEP 和 STP 文件均可导入到 3ds Max 中。">
+      <meta name="indexterm" content="STEP 文件">
+      <meta name="indexterm" content="STP 文件 (STEP)">
+      <meta name="indexterm" content="文件类型: STEP">
+      <meta name="indexterm" content="文件类型: STP (STEP)">
+      <meta name="indexterm" content="导入 step 文件">
+      <meta name="contextid" content="IDH_ATF_IMPORTER_STEP">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>STEP（STP、STEP）文件</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B5F0FE98-B42C-48EC-AC94-0D1B25AD97F2"></a><div class="head">
+            <h1>STEP（STP、STEP）文件</h1>
+         </div>
+         <p class="blurb">产品数据交换标准 (STEP) 是一种 ISO 标准交换格式，用于在 CAD/CAM 系统之间传输图形数据。STEP 和 STP 文件均可导入到 3ds Max 中。 
+            
+         </p><a name="UL_C7203A85A9A446C69FD91CDB724852E7"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-E6CE1148-8F78-4CE5-9C82-0335B4BBC883">“文件”菜单  <img src="../images/ac.menuaro.gif"> “导入” <img src="../images/ac.menuaro.gif"> “选择要导入的文件”对话框  <img src="../images/ac.menuaro.gif"> “文件类型”下拉列表  <img src="../images/ac.menuaro.gif">  选择“STEP (*.STP, *.STEP)”。</span> 
+            </li>
+            <li>键盘：<span class="MenuCascade">Alt+F  <img src="../images/ac.menuaro.gif">  I  <img src="../images/ac.menuaro.gif">  I  <img src="../images/ac.menuaro.gif">  从“文件类型”字段选择“STEP (.stp/.step)” <img src="../images/ac.menuaro.gif">  导航到您的文件  <img src="../images/ac.menuaro.gif">  单击“打开”</span> 
+            </li>
+         </ul>
+         <p><a name="GUID-8BF48718-0111-421A-8BFE-1667EED702DE"></a>. 
+            
+         </p>
+         <p><a name="GUID-23FC6279-BE49-4373-BB7A-CB481E4C5739"></a><span class="charspan-msgph">3ds Max</span> 不导出 STEP 格式。 
+            
+         </p>
+         <div><a name="GUID-A301EC96-0B2A-4CBB-A160-6C18D982AB43"></a><div class="note-note"><span class="label label-target-language">注意:</span>3ds Max 支持 AP214、AP203E2 和 AP242 版本。 
+               
+            </div>
+         </div>
+         <div class="section"><a name="SECTION_3FB33B62EE0E44AAA44CE5AD4C60B33B"></a> 
+            <h2><a name="GUID-D4ACFB2B-6488-461E-9855-9F69EE37A3AA"></a>界面
+            </h2><img src="../images/GUID-58CB825F-CF9A-48F4-AB4F-2E92EF1A777F-low.png"> 
+            <dl><a name="GUID-29314218-E71E-47D6-A6D9-CD737E0CA65E"></a><dt><span class="term">转换为网格 
+                     		</span></dt>
+               <dd>
+                  <div class="definition">启用时，导入的几何体将转换为 3ds Max 可编辑网格对象。禁用时，导入的几何体将转换为实体对象格式。默认设置为启用。 
+                     		
+                  </div>
+               </dd><a name="GUID-53C0610A-3FFE-47DE-A1AF-6540070588AB"></a><dt><span class="term">网格分辨率 
+                     		</span></dt>
+               <dd>
+                  <div class="definition">设置当对象作为可编辑网格对象导入时的对象分辨率。较高的值会产生比较精细的对象，这可能占用大量时间和存储空间。较低的值会产生比较粗略的对象。范围从 –10 到 10。默认值为 0。 
+                     		
+                  </div>
+               </dd><a name="GUID-0310B36D-9D27-4AC2-88DD-89ABFE62040E"></a><dt><span class="term">上方向轴 
+                     		</span></dt>
+               <dd>
+                  <div class="definition">不同应用程序使用不同轴作为上方向轴。为要导入的文件选择相应的轴。默认设置为 Z - 上。 
+                     		
+                  </div>
+               </dd><a name="GUID-412CF300-3A56-494F-B1A1-C6B60008CF97"></a><dt><span class="term">层次模式 
+                     		</span></dt>
+               <dd>
+                  <div class="definition">对导入的对象进行分组。要保留分组，您可以使用 3ds Max 组或层。 根据原始场景的组织，该组或层是嵌套结构。默认设置为“使用组”。
+                     		  <a name="UL_9D895488AF8140B4B90A39561593FB8E"></a><ul>
+                        <li><em class="strong">使用组</em>：根据对象在导入的文件中所属的组，将它们放置在 3ds Max 组中。 
+                           			 
+                        </li>
+                        <li><em class="strong">使用层</em>：根据对象在导入的文件中所处的层，将它们放置在 3ds Max 中。 
+                           			 
+                        </li>
+                        <li><em class="strong">展平</em>：不对对象进行分组，而是作为独立的 3ds Max 对象导入它们。 
+                           			 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd>
+            </dl> 
+            <div class="section"><a name="SECTION_8494E407035047A391403C91025E2867"></a> 
+               <h3><a name="GUID-35F73C7B-AAE5-435D-9900-60470FEF4D76"></a>服务组
+               </h3> 
+               <dl><a name="GUID-1417E918-30D4-477C-AD55-1D99816B2677"></a><dt><span class="term">保留虚拟节点 
+                        		  </span></dt>
+                  <dd>
+                     <div class="definition">将所导入文件中的虚拟对象转换为 3ds Max 虚拟对象。默认设置为禁用状态。 
+                        		  
+                     </div>
+                  </dd><a name="GUID-4F0D8258-448F-4713-A7FF-3BDF62C9D43D"></a><dt><span class="term">Import Cameras 
+                        		  </span></dt>
+                  <dd>
+                     <div class="definition">导入相机。 
+                        		  
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

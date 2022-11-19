@@ -1,0 +1,65 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B8E91618-A9E9-423D-8F1C-A83CFDAA5449">
+      <meta name="description" content="脚本操作符可以使用 MAXScript 脚本控制粒子流系统中的粒子。该脚本可以使用对于 MAXScript 可用的任何程序功能。">
+      <meta name="indexterm" content="MAXScript: 和粒子流">
+      <meta name="indexterm" content="脚本: 脚本操作符">
+      <meta name="indexterm" content="粒子流操作符: 脚本">
+      <meta name="topic-type" content="concept">
+      <title>脚本操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B8E91618-A9E9-423D-8F1C-A83CFDAA5449"></a><div class="head">
+            <h1>脚本操作符</h1>
+         </div>
+         <p class="blurb">脚本操作符可以使用 MAXScript 脚本控制粒子流系统中的粒子。该脚本可以使用对于 MAXScript 可用的任何程序功能。 </p>
+         <div class="bodyReference"><a name="GUID-BD7087C5-83A8-43DD-9008-6CA519A99D92"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-E738E2F8-D492-49E5-910D-4554283BC2AC">粒子视图  <img src="../images/ac.menuaro.gif">  在某个事件中单击脚本操作符，或者将脚本操作符添加到粒子系统中，然后选择它。</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-60E8"></a>在您添加新的脚本操作符时，它包含有降低粒子速度的默认脚本，在这些粒子速度降到一定程度后，该脚本会将前 50 个粒子分割到一个流中，并且沿世界 X 轴的负向移动，其余粒子沿相反方向移动。 
+            </p>
+            <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5F99"></a><div class="note-tip"><span class="label label-target-language">提示</span>您可以使用 MAXScript 将粒子缩放与基本位图保持一致，这样可以实现“缩放位图”功能。这需要如下构成的三项操作符：两个脚本操作符以及一个放置在这两个操作符之间的“速度按曲面”操作符。第一个脚本操作符将当前速度向量读入到 MXVector
+                  通道中，以缓存当前速度。“速度按曲面”操作符根据基本位图更改速度。然后，第二个脚本操作符将该速度通道读入到临时变量中，再从 MXVector 通道中还原该速度（缓存值），最后使用临时变量定义缩放。这样，还原了原始速度，并且由该位图定义了缩放值。
+                  
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-60E7"></a> 
+               <h2><a name="GUID-7F1A8F58-CCA4-48BE-81B2-B728F4366EAF"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900424E8"></a><div class="figure-anchor"><img src="../images/GUID-B5AC87F0-FB3E-4C74-850F-9E22FF3C9C9E-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-60E6"></a>该用户界面出现在“粒子视图”对话框右侧的“参数”面板中。 
+               </p> <a name="GUID-2D757926-2CBE-465B-A4E7-6438F696FBAB"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63CF"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-60E5"></a>编辑脚本</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64D6"></a> 单击该按钮可以在“MAXScript 编辑器”窗口中打开当前脚本。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-60E4"></a>有关 MAXScript 工具的详细信息，请打开“MAXScript 帮助”，位于“帮助”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“MAXScript 帮助”。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-51E740E9-530F-4F08-9400-6C4C5F1C666D"></a><p class="title"><a name="GUID-3B08FE28-4621-4061-AD4F-78DF7215117C"></a>“唯一性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-60E3"></a>“唯一性”设置提供脚本可以使用或忽略的随机化种子。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63CE"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-60E2"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64D5"></a> 指定随机化值。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63CD"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-60E1"></a>新增特性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64D4"></a> 使用随机化公式计算新种子。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

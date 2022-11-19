@@ -1,0 +1,205 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-2193B625-E0E0-4908-B566-6214952086E2">
+      <meta name="description" content="使用“mParticles 图形”操作符可定义在物理模拟期间用于碰撞目的的粒子图形。“mParticles 世界”操作符和“mParticles 图形”操作符对进行模拟均是必要的。此外，将“mParticles 图形”操作符置于事件中的“图形”操作符之后。">
+      <meta name="indexterm" content="粒子流操作符: mParticles 图形">
+      <meta name="indexterm" content="“mParticles 图形”操作符">
+      <meta name="topic-type" content="concept">
+      <title>“mParticles 图形”操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-2193B625-E0E0-4908-B566-6214952086E2"></a><div class="head">
+            <h1>“mParticles 图形”操作符</h1>
+         </div>
+         <p class="blurb">使用“mParticles 图形”操作符可定义在物理模拟期间用于碰撞目的的粒子图形。“mParticles 世界”操作符和“mParticles 图形”操作符对进行模拟均是必要的。此外，将“mParticles 图形”操作符置于事件中的“图形”操作符之后。
+            
+         </p>
+         <div class="bodyReference"><a name="UL_E17AE5006D2A4B178A2B0AC58D6F9DA9"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-EAE5B125-728F-422B-822C-1ECA455866B7">“粒子视图” <img src="../images/ac.menuaro.gif">  添加或选择“mP 图形”。</span> 
+               </li>
+            </ul>
+            <div><a name="GUID-6FFA27D5-8A96-4553-ABB6-D4A8052476C5"></a><div class="note-note"><span class="label label-target-language">注意:</span> 通常，将所有 mParticles 操作符放置在事件中的“mParticles 世界”操作符上方，因此在模拟循环开始之前，操作符定义的 MassFX 属性对模拟引擎来说是已知的。 
+               </div>
+            </div>
+            <p><a name="GUID-E6802DE9-0241-4027-AB8E-D5702FAC123C"></a> 请参见<span class="char_link"><a href="GUID-3A3B197F-8953-46A6-ACD8-0F46F3015E25.htm">“粒子流碰撞图形 (WSM)”修改器</a></span>。 
+            </p>
+            <div class="section"><a name="AA1005899"></a> 
+               <h2><a name="GUID-795F1692-23AD-485A-B830-69AA39762FF3"></a>界面
+               </h2> <a name="FIG_B2510FC68D514D14A9C5BD717B9712CD"></a><div class="figure-anchor"><img src="../images/GUID-64367E1B-0BF7-4B59-B328-1F5EF4C75A74-low.png"></div>  <a name="GUID-634B8BD1-5319-4A92-815E-220BE43C8C33"></a><dl>
+                  <dt><a name="GUID-41C35FAC-05B1-4F24-B4E1-CFC2F89DE6DD"></a><span class="term"><a name="GUID-D3FE8BA5-4A38-4144-94A8-52C7D3CD6816"></a>碰撞为</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-8E45D0A7-B795-4BA9-A139-1BBA35406170"></a>指定要在模拟期间用于碰撞目的的图形。选项如下： <a name="UL_DBC79F114951453CBEAA1E4D48A2967A"></a><ul>
+                           <li><em class="strong">长方体</em>这是最简单的图形，以便允许最快的模拟，但可能的代价是牺牲精度。在许多情况下，无需使用“长方体”图形即可测试模拟，但会切换到其他图形以进行渲染。 
+                           </li>
+                           <li><em class="strong">胶囊</em>使用胶囊图形。 
+                           </li>
+                           <li><em class="strong">凸面外壳</em>创建接近粒子图形的边界网格，而不允许任何凹面，如茶壶壶嘴顶面与茶壶之间的区域。 
+                           </li>
+                           <li><em class="strong">球体</em>使用球形进行碰撞。 
+                           </li>
+                        </ul> 
+                        <div><a name="GUID-86437C85-6268-493A-BC74-2A5946BA0A47"></a><div class="note-note"><span class="label label-target-language">注意:</span>与粒子图形相似，即使当粒子移动到其他事件时，此处指定的碰撞图形也会持续在整个粒子流中。此外，定义后的碰撞图形将无法由连续事件中的其他“mParticles 图形”操作符更改。 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+               </dl> <a name="GUID-244CED23-3EB2-4716-B79A-D6CF5197E49A"></a><dl>
+                  <dt><a name="GUID-FAEBC088-1CEB-43DE-9C74-DD2817A170F7"></a><span class="term"><a name="GUID-442E4C92-719B-40D0-A76A-3471638FAD05"></a>显示为</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-42101EBB-EE10-4795-AF0C-6918CE64CE1A"></a>指定如何显示“碰撞为”图形。选项如下： <a name="UL_4027FD4D25F649009D2E324A0D6499F3"></a><ul>
+                           <li><em class="strong">无</em>将不会显示碰撞图形。 
+                           </li>
+                           <li><em class="strong">明暗处理</em>碰撞图形显示为明暗处理网格；仅在明暗处理视口中可见。在线框视口中，该图形显示为线框。 
+                           </li>
+                           <li><em class="strong">线框</em>在所有视口中，碰撞图形显示为线框。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-DF7CF148-8EDE-4694-8D1C-3D3D85F41475"></a><p class="title"><a name="GUID-91E4F5D6-CA99-4323-B1B3-27B2127994A6"></a>“碰撞图形大小”组
+                  </p>
+                  <p><a name="GUID-811CEF32-B4DB-4D1F-AD7F-1F84994E53B3"></a>当“碰撞为”设置为“凸面外壳”时此组不可用。在这种情况下，请改用“凸面外壳生成”组设置（请参见下文）。 
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-6901BFD5-5396-4322-A49B-1CC121722571"></a><span class="term"><a name="GUID-E2303938-DD9B-40A3-BE8A-C0A8A8E1A3DA"></a>与粒子图形一致</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-56789977-B25D-45F7-9628-384155420BF8"></a> 启用时，可以自动设置每个碰撞图形以与其粒子一致。禁用时，可以使用此组中的剩余控件显式指定碰撞图形尺寸。可用控件取决于“碰撞为”设置：
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-6511E836-BB91-4EC0-A2F8-A288D8DBE338"></a><span class="term"><a name="GUID-921D3146-517C-4A1B-9773-861D1A2601AC"></a>半径/宽度/长度/高度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-5871572F-CAA5-4A36-8370-A077F079CFD2"></a>对于“长方体”，设置“宽度”、“长度”和“高度”；对于“胶囊”，设置“半径”和“长度”；对于“球体”，设置“半径”。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-4C9C664A-5573-4A7C-8AF5-B99528D2A01B"></a><span class="term"><a name="GUID-568902F5-6023-4E6C-B2EA-5B690AD253EF"></a>[缩放类型]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-F02CF03A-7105-408C-AD37-6F56FA3D2ECB"></a>可以将比例设置为显式尺寸的百分比，或者基于事件中的现有缩放值： <a name="UL_FB48413CFCA14A0E84BFF253B1E8BD3D"></a><ul>
+                              <li><em class="strong">比例 %</em> 充当现有尺寸的倍增。因此，例如，使用“长方体”设置，可以设置“宽度”/“长度”/“高度”的比例，然后使用“比例 %”设置实际大小。 
+                              </li>
+                              <li><em class="strong">使用图形比例因子</em>基于事件中的先前缩放值调整碰撞图形的比例，如“图形”操作符中的“比例 %”设置。 
+                              </li>
+                           </ul>
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-7BE36626-324E-4A9B-B6E8-87E96145AC8E"></a><p class="title"><a name="GUID-40CA4655-5863-44B5-8FC9-DF86DF4EC951"></a>“凸面外壳生成”组
+                  </p>
+                  <p><a name="GUID-D6F1AB34-E0EF-4317-A049-9CBE573CB57A"></a>仅当“碰撞为”设置为“凸面外壳”时此组可用。 
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-076C7035-D11E-466C-9E17-200C8EB852A9"></a><span class="term"><a name="GUID-320C383C-31FE-4465-90DD-42E47E4BE833"></a>焊接阈值</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-D7A5F95E-65B7-4FBC-87F4-D5C3D65DB5FC"></a> 使用此设置可通过将粒子图形的顶点焊接在一起来降低碰撞图形的网格分辨率。 <a name="FIG_75DBC157355C498D875FCE9F695435BF"></a><div class="figure-anchor"><img src="../images/GUID-39D3B610-676D-48CD-9D3A-CD09282E5B7A-low.png"></div> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-F62AA639-11DA-4B1E-8362-E96212925BF6"></a><span class="term"><a name="GUID-5966A841-CD64-40CB-B83F-D0EDDB5B5AAC"></a>膨胀宽度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-24008A82-D092-43FF-A854-68B0D9F3D22F"></a> 按封套层在所有边上均匀扩充图形。 <a name="FIG_FF80986D81D04A839846E8E02F2CBC8F"></a><div class="figure-anchor"><img src="../images/GUID-33304B95-3352-40C8-8375-D1120FA0A47C-low.png"></div> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-0A4B76CF-2A86-43B1-AD06-DB0F04C49846"></a><span class="term"><a name="GUID-1BE8C2F8-F7BD-492E-A381-38178F099E38"></a>缩放边距 %</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-AB82C786-D2E7-4442-955D-ED03A1306B7B"></a> 若要加速计算不同图形和/或大小的粒子的凸面外壳，“mParticles 图形”可以将具有相近缩放值的粒子批处理到组中，并对具有相近缩放值的每个组计算一次凸面外壳数据。“缩放边距”设置可定义不同组中粒子的缩放差异。 <a name="FIG_CDC6EFC8077A4EF79BE75D176F019429"></a><div class="figure-anchor"><img src="../images/GUID-BC953DB7-96B0-4547-B272-948142004426-low.png"></div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-E88777C4-1209-4524-BB50-C09812AFA038"></a><p class="title"><a name="GUID-A1ED6605-5BE5-4934-B469-050BD64979A1"></a>“反弹和摩擦力”组
+                  </p>
+                  <div><a name="GUID-35CC5884-642C-4665-B2EA-2FC4AFA78485"></a><div class="note-note"><span class="label label-target-language">注意:</span>这些设置可确定粒子如何与模拟中的其他元素（其他粒子、导向器、地面）交互（在孤立时无意义）。为了确定交互的实际值，该软件采用交互元素的属性平均值。 
+                     </div>
+                  </div>
+                  <dl>
+                     <dt><a name="GUID-31BC8490-3C35-4672-A76E-310708B5EE95"></a><span class="term"><a name="GUID-2CD49E7B-A91A-4E54-9E39-6A23E73E4F12"></a>恢复系数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-9B4A8D7A-3EE4-4484-A4B2-4370D5A8C245"></a>每个粒子在碰撞后保留的能量。通常这会产生反弹效果。将其设置为最大值 1.0 可能会导致满足“牛顿第三定律”：每一个作用力都有一个大小相等、方向相反的反作用力。 
+                           <p><a name="GUID-38176C48-652D-4770-9483-EA50CD054FBF"></a>当“恢复系数”接近 1.0 时，反弹效果会很明显，但结果是碰撞期间消耗的能量并不多，且动力学解决方案可能缺乏稳定性。如果碰撞对象比较少，并且它们也未捆绑在一起时，则使用接近于 1.0 的值会有一定风险。 
+                           </p> 
+                           <p><a name="GUID-BFB47914-2648-45C2-8F10-A05FA9CD57B1"></a>有关显示“恢复系数”值效果的视频，请参见<span class="char_link"><a href="GUID-531AF020-FBA9-4CBA-B2BA-F46C9E52B05A.htm#SECTION_24F203473ADF42D1B09B3B718C22C0BA">恢复系数</a></span>。 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-F2DC1631-0A6D-4FBD-B1F2-A637D08E04C9"></a><span class="term"><a name="GUID-EEE1A529-105A-41C9-92BF-D3F2BE8AB490"></a>静摩擦力</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-E409FBC2-EC3C-4D46-BD5A-92168513047E"></a> <span class="charspan-emphasis">阻碍两个非移动曲面（粒子和地面或其他粒子）之间的运动的力</span>。 
+                           <p><a name="GUID-E0216C10-1AC3-4ADC-8A60-1CC4DE204953"></a>有关显示“静摩擦力”值效果的视频，请参见<span class="char_link"><a href="GUID-531AF020-FBA9-4CBA-B2BA-F46C9E52B05A.htm#SECTION_AAA65B05D2B14DC983F9604E0C6D30B6">静摩擦力</a></span>。 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-7BE5AFF1-A1BF-46DC-9788-5CF0B9D6135F"></a><span class="term"><a name="GUID-1EDC214A-068A-40E4-B7D8-EC26BF6A1F6A"></a>动摩擦力</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-E8C4B28F-97F9-45CA-88BA-29F7789F0FA2"></a> <span class="charspan-emphasis">阻碍两个移动曲面（粒子和地面或其他粒子）之间的运动的力</span>。 
+                           <p><a name="GUID-0A3224F4-4EE5-4426-90EE-4D9016977F3F"></a>有关显示“动摩擦力”值效果的视频，请参见<span class="char_link"><a href="GUID-531AF020-FBA9-4CBA-B2BA-F46C9E52B05A.htm#SECTION_ACC12F5E279B4960B73E56AC02756ECA">动摩擦力</a></span>。 
+                           </p>
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="GUID-01F405C9-3B53-4728-BCBF-BF0CA40C9995"></a><span class="term"><a name="GUID-4BE7D0DF-B211-4AE0-8F27-4A62C77D3E9B"></a>质量</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-E3711C00-584A-4F0C-8C2C-2316B9CA59E4"></a>可以由指定的值显式定义粒子质量，或作为密度时，每个粒子的质量将取决于产品的体积和指定的“密度”值。此外，粒子质量可以由“数据”操作符计算，从而可以定义每个粒子的粒子质量。若要通过“数据”操作符定义（和读取）粒子质量，请使用“输出 mParticles”和“输入
+                        mParticles”子操作符。 
+                        <div><a name="GUID-B3A47577-BBF1-4B46-B1E5-62029605DFD8"></a><div class="note-note"><span class="label label-target-language">注意:</span>虽然可以针对粒子质量对“值”或“密度”设置进行动画设置，但在动画设置期间不会导致粒子质量本身的更改。与此相反，当粒子参与包含“mParticles 图形”操作符的事件时，当前设置可在整个事件过程中确定粒子质量。若要在事件内对粒子质量设置动画，请使用事件中包含<span class="char_link"><a href="GUID-F4588CCE-728C-430D-8386-8B1E323B4F28.htm">输出 mParticles 子操作符</a></span>的“数据”操作符，将其设置为“质量”选项，并将“质量”设置为“来自质量通道”（请参见下文）。 
+                           </div>
+                        </div> 
+                        <p><a name="GUID-8072531D-189B-4533-972E-04EDFA49BE8A"></a> 选择一种方法来确定粒子质量： 
+                        </p> <a name="UL_5AAF0156F0584753AD8A7F6F5CFA66A4"></a><ul>
+                           <li><em class="strong">按值</em>显式指定每个粒子的质量（无论其大小如何）。 
+                              <p><a name="GUID-ADDD9ECE-0125-4C14-A71D-6E906BA6398B"></a>有关显示“力类型”设置为“统一”和“曲面”的“按值”选项效果的视频，请参见<span class="char_link"><a href="GUID-531AF020-FBA9-4CBA-B2BA-F46C9E52B05A.htm#SECTION_08E3D2A0BC7D4EEBB55B6A0D7843251D">质量：按值</a></span>。 
+                              </p> 
+                           </li>
+                           <li><em class="strong">按密度</em>将“密度”值用作粒子体积的倍增，以便粒子越大，质量就越大。 
+                              <p><a name="GUID-EA7DED94-FD73-4E92-97BB-41506096DDE8"></a>有关显示“力类型”设置为“统一”和“重力”的“按密度”选项效果的视频，请参见<span class="char_link"><a href="GUID-531AF020-FBA9-4CBA-B2BA-F46C9E52B05A.htm#SECTION_08E3D2A0BC7D4EEBB55B6A0D7843251D">质量：按密度</a></span> 
+                              </p> 
+                           </li>
+                           <li><em class="strong">来自质量通道</em>您可以使用<span class="char_link"><a href="GUID-B5AE412C-C09A-4436-9268-5953A4607738.htm">“数据”操作符</a></span>定义每粒子的粒子质量。若要通过“数据”操作符定义（和读取）粒子质量，请使用<span class="char_link"><a href="GUID-F4588CCE-728C-430D-8386-8B1E323B4F28.htm">输出 mParticles</a></span> 和<span class="char_link"><a href="GUID-8C8B3E85-C0D4-48C6-A0E3-A8431104A3D0.htm">输入 mParticles</a></span> 子操作符。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-2B865E49-F53D-4A4D-B719-597D71387C00"></a><p class="title"><a name="GUID-26E22073-CC44-4C68-BBA0-0A14027DFFB3"></a>“图形互相穿透”组
+                  </p>
+                  <p><a name="GUID-6A8A3A3E-C585-4150-B3D1-A4A36936AB6F"></a>指定粒子在检测到碰撞之前可以进行互相穿透的程度。 
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-9F2305FA-D12E-4627-8A0D-A47FC6D4D9E2"></a><span class="term"><a name="GUID-F27E4ED6-C7C6-47D9-9E3D-A096FC31E914"></a>公差</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-4D3E2E53-62F6-4F1B-BB29-CF2CC19B1E83"></a> 粒子可以进行互相穿透的距离。两个粒子将按其“公差”值之和进行互相穿透。如果模拟抖动，则增加“公差”值可以改进动画。 
+                           <p><a name="GUID-3906914E-1854-4623-BA14-ABB0BD4F5D26"></a>有关显示“公差”值效果的视频，请参见<span class="char_link"><a href="GUID-531AF020-FBA9-4CBA-B2BA-F46C9E52B05A.htm#SECTION_3DA01B7D88E2428095A1DEC2A5D18DE4">公差</a></span>。 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-31B270A4-5E92-485E-91DD-1AC820858783"></a><span class="term"><a name="GUID-7D858BBA-12BB-4226-81FD-9BC02C320BD6"></a>生成数据通道</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-70200842-1489-4DF3-8A1E-FAD35FF936BC"></a>若要定义每个粒子的“公差”参数，请启用“生成数据通道”，并使用“数据”操作符（将<span class="char_link"><a href="GUID-8C8B3E85-C0D4-48C6-A0E3-A8431104A3D0.htm">输入 mParticles</a></span> 和<span class="char_link"><a href="GUID-F4588CCE-728C-430D-8386-8B1E323B4F28.htm">输出 mParticles</a></span> 子操作符设置为使用“互相穿透公差”选项）。此外，使用“数据”操作符，还可以通过对数据通道值设置动画（进行更改）来对“公差”值设置动画。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="GUID-C699408B-70E7-490F-8DBD-9250AF00A837"></a><span class="term"><a name="GUID-7CAA4D21-1F91-4449-AC18-3F1B4FD792B6"></a>碰撞组</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-10E3AD76-E710-49BB-85D1-0E688BDF4442"></a>使用此设置进行碰撞排除，如<span class="char_link"><a href="GUID-B2B8C721-457F-46C4-838A-400A47AA49AC.htm">“mParticles 世界”辅助对象</a></span>主题中所述。 
+                        <p><a name="GUID-049C24AF-B8D3-4F3C-926D-5B0851F03BF7"></a>有关显示“碰撞组”值效果的视频，请参见<span class="char_link"><a href="GUID-531AF020-FBA9-4CBA-B2BA-F46C9E52B05A.htm#SECTION_057A7B8C7E7140C6890AD60F56EF3BDC">碰撞组</a></span>。 
+                        </p>
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-531AF020-FBA9-4CBA-B2BA-F46C9E52B05A.htm">mP 图形操作符视频</a></li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

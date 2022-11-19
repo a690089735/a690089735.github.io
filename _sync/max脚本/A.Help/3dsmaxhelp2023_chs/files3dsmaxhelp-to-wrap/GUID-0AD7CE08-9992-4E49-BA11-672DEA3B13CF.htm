@@ -1,0 +1,163 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-0AD7CE08-9992-4E49-BA11-672DEA3B13CF">
+      <meta name="description" content="扭曲修改器在对象几何体中产生一个旋转效果（就像拧湿抹布）。可以控制任意三个轴上扭曲的角度，并设置偏移来压缩扭曲相对于轴点的效果。也可以对几何体的一段限制扭曲。">
+      <meta name="indexterm" content="扭曲: 扭曲修改器">
+      <meta name="indexterm" content="修改器: 扭曲">
+      <meta name="indexterm" content="对象空间修改器: 扭曲">
+      <meta name="contextid" content="TWIST.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS-TWIST">
+      <meta name="topic-type" content="concept">
+      <title>扭曲修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-0AD7CE08-9992-4E49-BA11-672DEA3B13CF"></a><div class="head">
+            <h1>扭曲修改器</h1>
+         </div>
+         <p class="blurb">扭曲修改器在对象几何体中产生一个旋转效果（就像拧湿抹布）。可以控制任意三个轴上扭曲的角度，并设置偏移来压缩扭曲相对于轴点的效果。也可以对几何体的一段限制扭曲。 </p>
+         <div class="bodyReference"><a name="UL_3A9B7A6B86A34349820FE6436D56F9C5"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-970E5FC3-B149-41C8-AD03-529167ED5934"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif">  作出选择。 <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “扭曲”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-361AF724-1FD0-43CB-B274-4F4333010F87">默认菜单：进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “参数化变形器” <img src="../images/ac.menuaro.gif"> “扭曲”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-A5DB82E1-E94C-4174-9498-5038A0D6234E">Alt 菜单：进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “几何体(参数化)” <img src="../images/ac.menuaro.gif"> “扭曲”</span> 
+               </li>
+            </ul>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA4B"></a><div class="note-note"><span class="label label-target-language">注意:</span>当应用扭曲修改器时，会将扭曲 Gizmo 的中心放置于对象的轴点，并且 Gizmo 与对象局部轴排列成行。 
+               </div>
+            </div><a name="WS1A9193826455F5FFBA679E112A6A190043C9A"></a><div class="figure-anchor"><img src="../images/GUID-ABD77F87-7737-4B0C-A1C7-3494E68638B7-low.png"></div>
+            <p><a name="GUID-D248EFD4-3CE2-438D-AD31-B569E60D467E"></a> <em class="strong">左：原始模型</em> 
+            </p>
+            <p><a name="GUID-0878DD41-1F8B-4094-89B0-3422BBD505AA"></a> <em class="strong">中：适度扭曲</em> 
+            </p>
+            <p><a name="GUID-2C7B42B4-A500-4AA6-B8B6-5E397CE213F3"></a> <em class="strong">右：极度扭曲</em> 
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2905"></a> 
+               <h2><a name="GUID-F9EF402F-E182-44E4-9D54-2B6102CEA18B"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043C9B"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043C9C"></a>要扭曲对象，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选中对象并 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png"> 应用扭曲。 
+                  </li>
+                  <li>在“参数”卷展栏上，将扭曲的轴设为 X、Y、Z。这是扭曲 Gizmo 的轴而不是选中对象的轴。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3974"></a>可以随意在轴之间切换，但是修改器只支持一个轴的设置。 
+                     </p> 
+                  </li>
+                  <li>设置扭曲的角度。正值产生顺时针扭曲，负值产生逆时针扭曲。360 度角会产生完全旋转。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3973"></a>对象扭曲至开始于较低限制的量（默认设置为修改器中心位置）。 
+                     </p> 
+                  </li>
+                  <li>设置扭曲的偏移。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3972"></a>正值会将扭曲向远离轴点末端方向压缩，而负值会向着轴点方向压缩。 
+                     </p> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A190043C9D"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043C9E"></a>要限制扭曲，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>启用“限制”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“限制效果”。 
+                  </li>
+                  <li>设置值的上限和下限。这是当前单位位于修改器中心上方和下方之间的距离，在 Gizmo 的 Z 轴上为 0。上限可以是 0 或正值，下限可以是 0 或负值。如果上下限相等，其效果相当于禁用“限制效果”。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3971"></a>扭曲偏移应用于这些限制之间。围绕的几何体不受扭曲本身的影响，它会旋转以保持对象完好。 
+                     </p> 
+                  </li>
+                  <li>在子对象层级，可以选中并移动修改器的中心。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3970"></a>在移动时限制的设置保持在中心的任意一个侧面上。这允许对对象的另一部分的扭曲区域进行重定位。 
+                     </p> 
+                  </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2904"></a> 
+               <h2><a name="GUID-8E435B85-097C-4ED8-96C7-570AE535FA70"></a>界面
+               </h2> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043C9F"></a> 
+                  <h3><a name="GUID-B550392B-4B6A-4F1E-98F9-599ACC016BE7"></a>修改器堆栈
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043CA0"></a><div class="figure-anchor"><img src="../images/GUID-B186BEBB-F74E-4F87-88D3-9180B34B76DD-low.png"></div>  <a name="GUID-DC2A40DF-4A8B-4791-9592-610AF9759B06"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F1F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-396F"></a>Gizmo</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7DEF"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E03"></a>可以在此子对象层级上与其它对象一样对 Gizmo 进行变换并设置动画，也可以改变扭曲修改器的效果。转换 gizmo 将以相等的距离转换它的中心。根据中心转动和缩放 Gizmo。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F1E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-396E"></a>中心</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7DEE"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E04"></a>可以在子对象层级上平移中心并对其设置动画，改变弯曲 Gizmo 的图形，并由此改变弯曲对象的图形。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-396D"></a>关于堆栈显示的更多信息，请参见<span class="char_link"><a href="GUID-80209C3A-C2E4-4541-8738-D1E5ECE16E9C.htm">修改器堆栈</a></span>。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043CA1"></a> 
+                  <h3><a name="GUID-CD23B253-3F7A-4FD3-BDF9-025CFE9D5A5E"></a>“扭曲参数”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043CA2"></a><div class="figure-anchor"><img src="../images/GUID-6FCBFE43-F64F-4C4B-952C-22CC86060EF9-low.png"></div>  <a name="GUID-A0D49568-FEAD-403E-8D70-160529092E5E"></a><div class="dl_section"><a name="GUID-AC5D0CE3-2442-4AB3-B713-1C4295A86FBC"></a><p class="title"><a name="GUID-441055F2-AB0A-4CFD-85AF-ED64842E00FF"></a>扭曲组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F1D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-396C"></a>角度</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7DED"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E05"></a>确定围绕垂直轴扭曲的量。默认设置是 0.0。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F1C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-396B"></a>偏移</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7DEC"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E06"></a>使扭曲旋转在对象的任意末端聚团。此参数为负时，对象扭曲会与 Gizmo 中心相邻。此值为正时，对象扭曲远离于 Gizmo 中心。如果参数为 0，将均匀扭曲。范围为 100 至 -100。默认设置是 0.0。 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-8FC5A57B-B40B-4262-9A55-3188601C9667"></a><p class="title"><a name="GUID-4E28DA1F-7542-4EF7-BACC-E549242E8A43"></a>“扭曲轴”组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F1B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-396A"></a>X/Y/Z</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7DEB"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E07"></a>指定执行扭曲所沿着的轴。这是扭曲 Gizmo 的局部轴。默认设置为 Z 轴。 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-FB9ED105-F9FF-4D19-AB55-60460E5F238B"></a><p class="title"><a name="GUID-3E089D67-911D-4733-A772-9DB503DF7619"></a>“限制”组
+                     </p>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3969"></a>仅对位于上下限之间的顶点应用扭曲效果。这两个微调器表示沿 Gizmo 的 Z 轴的距离（Z 为 0 代表 Gizmo 的中心）。当它们相等时，相当于禁用扭曲效果。 
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F1A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3968"></a>限制效果</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7DEA"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E08"></a>对扭曲效果应用限制约束。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F19"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3967"></a>上限</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7DE9"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E09"></a>设置扭曲效果的上限。默认值为 0。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5F18"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3966"></a>下限</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7DE8"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E0A"></a>设置扭曲效果的下限。默认值为 0。 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div> 
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

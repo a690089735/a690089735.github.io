@@ -1,0 +1,1 @@
+macroScript Set_Viewport_to_Clay category:"My_Macors" toolTip:"07.Set Viewport to Clay" (::MyCustomFn 7)

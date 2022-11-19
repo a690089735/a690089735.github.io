@@ -1,0 +1,333 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C0137D57-C170-4533-B20F-700BF01BFDFF">
+      <meta name="description" content="“指定顶点颜色”工具基于指定给对象的材质和场景中的照明指定顶点颜色。单击“指定给选定对象”时，该工具会将“顶点绘制”修改器应用于对象。一旦在对象上应用了“顶点绘制”修改器，就会转到“修改”面板，或者也可以单击“编辑”以访问“顶点绘制”工具。">
+      <meta name="indexterm" content="指定: 顶点颜色工具">
+      <meta name="indexterm" content="工具: 指定顶点颜色">
+      <meta name="contextid" content="TOPIC_ASSIGN_VERTEX_COLORS_UTILITY">
+      <meta name="contextid" content="TOOLS-ASSIGN_VERTEX_COLORS">
+      <meta name="topic-type" content="topic">
+      <title>指定顶点颜色工具</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C0137D57-C170-4533-B20F-700BF01BFDFF"></a><div class="head">
+            <h1>指定顶点颜色工具</h1>
+         </div>
+         <p class="blurb">“指定顶点颜色”工具基于指定给对象的材质和场景中的照明指定顶点颜色。单击“指定给选定对象”时，该工具会将“顶点绘制”修改器应用于对象。一旦在对象上应用了“顶点绘制”修改器，就会转到“修改”面板，或者也可以单击“编辑”以访问“顶点绘制”工具。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_01E61D3BB9A848C69DA0046EA442B00D"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-CA72CDA1-7F2F-4647-AD0D-5D1BBEA6C782"><img src="../images/GUID-26D492F7-3E48-4209-AB7B-FEC655C6DA3D-low.png">“工具”面板  <img src="../images/ac.menuaro.gif"> “工具”卷展栏  <img src="../images/ac.menuaro.gif"> “更多”按钮  <img src="../images/ac.menuaro.gif"> “工具”对话框  <img src="../images/ac.menuaro.gif"> “指定顶点颜色”</span> 
+               </li>
+            </ul>
+            <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A37"></a><div class="note-tip"><span class="label label-target-language">提示</span>要渲染顶点颜色，必须在其漫反射组件中应用含有顶点颜色贴图的材质。要查看视口中的顶点颜色，右键单击对象，从方形菜单中选择<span class="char_link"><a href="GUID-59F27B9D-889F-4917-A1C0-BB9B313555F1.htm#WSF742DAB04106313322C48997112A1CEA460-8000">对象属性</a></span>，然后启用“显示属性”组中的“顶点通道显示”并确保下拉选项设置为“顶点颜色”。 
+                  
+               </div>
+            </div>
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7146"></a>当使用“场景灯光”选项时，“指定顶点颜色”工具支持灯光包含或排除。 
+               
+            </p>
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7145"></a>当“顶点绘制”修改器应用于对象时，“指定顶点颜色”工具中的所有命令也适用于“修改”面板。 
+               
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004-295"></a> 
+               <h2><a name="GUID-B820E45A-184D-4826-BE88-8AE4CAE94140"></a>顶点颜色和光能传递
+               </h2> 
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-7144"></a>“顶点颜色”工具支持<span class="char_link"><a href="">光能传递</a></span>。如果以指定的顶点颜色使用光能传递，那么确保启用了“重用光能传递解决方案中的直接照明”选项。该选项位于“渲染参数”卷展栏中。请参阅<span class="char_link"><a href="">光能传递控件</a></span>。启用该选项后，渲染器通过光能传递解决方案简单的显示指定的顶点颜色：严格来说，它并没有渲染。 
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-7142"></a>其他选项“渲染直接照明”也位于“渲染参数”卷展栏上，造成直接照明不在相应网格中保存。这对应于使用选项“光能传递”和“渲染直接照明”，在这种情况下，“指定顶点颜色”从光能传递网格获取直接照明，而且单独渲染直接照明；或者对应于使用选项“光能传递”和“只用间接照明”，这时“指定顶点颜色”对顶点完全不应用直接照明。
+                  
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-29D2"></a> 
+               <h2><a name="GUID-1D9DBE02-2CF6-456E-AB5D-B473E572BE23"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004-294"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004-293"></a>要使用“指定顶点颜色”工具，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>为想要影响的对象指定材质。可以任意是贴图或未贴图材质。 
+                     	 
+                  </li>
+                  <li>照明对象。 
+                     	 
+                  </li>
+                  <li>选择想要影响的对象。 
+                     	 
+                  </li>
+                  <li>打开每个对象的“对象属性”对话框，单击以禁用“按层”按钮，启用<em class="strong">顶点通道显示</em>，然后单击“确定”。 
+                     	 
+                  </li>
+                  <li>展开“显示”面板中的“显示属性”卷展栏并启用“顶点颜色”。 
+                     	 
+                  </li>
+                  <li>访问“指定顶点颜色”工具。 
+                     	 
+                  </li>
+                  <li>选择“灯光模型”选项之一。 
+                     	 
+                  </li>
+                  <li>选择一种“颜色指定”。 
+                     	 
+                  </li>
+                  <li>单击“指定给选定对象”。 
+                     		
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-713F"></a>“顶点绘制”修改器就应用到选定对象上，根据在“灯光模型”中选择的选项，对象的顶点颜色取决于其材质和场景中的照明。 
+                        		
+                     </p> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-713E"></a>更改材质和场景中的照明不会改变顶点颜色。要改变顶点颜色，单击“全部更新”按钮。 
+                        		
+                     </p> 
+                     <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A36"></a><div class="note-note"><span class="label label-target-language">注意:</span>新的顶点颜色存储在“顶点绘制”修改器中。如果想访问它们，转到“修改”面板并访问卷展栏中的参数。也可以使用“顶点绘制”浮动对话框中的工具来创建层、绘画、模糊或调整颜色。当转到“修改”面板并选中对象时，弹出“顶点绘制”浮动框。 
+                           		
+                        </div>
+                     </div> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A19004-292"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004-291"></a>示例：要在特定对象上使用“指定顶点颜色”工具，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建一个具有 24 个分段的球体。 
+                     	 
+                  </li>
+                  <li>在球体上应用一个贴图材质，并启用“在视口中显示贴图”选项。 
+                     		
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-713D"></a>贴图球体会显示在视口中。 
+                        		
+                     </p> 
+                  </li>
+                  <li>在球体上应用一个贴图的材质。 
+                     		
+                     <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A35"></a><div class="note-note"><span class="label label-target-language">注意:</span>选择一个简单的、定义很好的贴图，其区域很大，且容易区分。 
+                           		
+                        </div>
+                     </div> 
+                  </li>
+                  <li>打开球体的“对象属性”对话框，如果“显示属性”组中右侧的按钮显示为“按层”，单击，使其显示“按对象”。还可以在“显示属性”组中，启用“<em class="strong">顶点通道显示</em>”，并单击“确定”。 
+                     	 
+                  </li>
+                  <li>球体变成白色，因为您现在显示其顶点颜色，默认情况下，它们全身都为白色。 
+                     	 
+                  </li>
+                  <li>在选中球体的同时，打开“指定顶点颜色”工具。 
+                     	 
+                  </li>
+                  <li>选择“明暗处理”并启用“使用贴图”。 
+                     	 
+                  </li>
+                  <li>启用贴图。 
+                     	 
+                  </li>
+                  <li>单击“指定给选定对象”。 
+                     		
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-713C"></a>贴图的一个模糊版本出现在球体上。现在顶点基于材质和场景中的照明而明暗处理。贴图是模糊的，因为使用 24 个分段的网格分辨率比贴图的像素分辨率小很多。 
+                        		
+                     </p> 
+                  </li>
+                  <li>转到<img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板，并注意“顶点绘制”修改器。 
+                     	 
+                  </li>
+                  <li>在堆栈中向下移动到创建参数，在警告提示中单击“是”，并将“分段”数增加到 <em class="strong">70</em>。 
+                     		
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-713B"></a>新顶点会移动已经指定的顶点。 
+                        		
+                     </p> 
+                  </li>
+                  <li>返回到堆栈的“顶点绘制”层级，并在“指定顶点颜色”卷展栏中单击“指定”。要返回到“工具”面板，必须向堆栈添加另外的“顶点绘制”修改器；在“顶点绘制修改器”中单击“指定”只会更新该修改器。 
+                     		
+                     <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A33"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果将“顶点颜色”贴图指定到漫反射通道，那么顶点颜色只在已渲染场景中出现。但是，如果这样做的话，就不能使用“指定顶点颜色”工具正确的更新顶点颜色。解决方法是为对象指定“混合”材质。将直接漫反射位图指定为“混合”的“材质 1”，将“顶点颜色”贴图指定为“混合”的“材质
+                           2”。渲染时切换到“材质 2”的 100%，而更新顶点颜色时切换到“材质 1”的 100%。 
+                           		
+                        </div>
+                     </div> 
+                  </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-29D1"></a> 
+               <h2><a name="GUID-1F2B7AEB-D96F-43D3-9EFE-A33F302FB365"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004-290"></a><div class="figure-anchor"><img src="../images/GUID-69F8DE89-F057-409B-813D-4695E4F186C9-low.png"></div>  <a name="GUID-6928EA9A-3BCF-44A4-A282-FEAA24811A7C"></a><div class="dl_section"><a name="GUID-7F4086F4-F045-42A1-9F05-B6F6884CE264"></a><p class="title"><a name="GUID-3631D5C2-3481-4375-8919-CECF1FB66C0B"></a>“通道”组
+                  </p>
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-713A"></a>使用该组中的工具可以选择顶点颜色工具要指定的通道类型。如果选择贴图通道，那么也可以指定贴图通道 ID 编号。 
+                     
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A19004-28E"></a><div class="figure-anchor"><img src="../images/GUID-451F3904-F0A0-49F7-8FC4-06969A697631-low.png"></div><a name="WS1A9193826455F5FFBA679E112A6A19004-28D"></a><ul>
+                     <li><em class="strong">顶点颜色</em>选择该选项可指定顶点颜色层。 
+                        	 
+                     </li>
+                     <li><em class="strong">顶点照明</em>选择该选项可指定顶点照明层。 
+                        	 
+                     </li>
+                     <li><em class="strong">顶点 Alpha</em>选择该选项可指定顶点透明度层。 
+                        	 
+                     </li>
+                     <li><em class="strong">贴图通道</em>选择该选项可指定特定编号的贴图通道。<a name="GUID-0416B16F-A6D1-4F48-A270-7336DD22875D"></a><dl>
+                           <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-790E"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7139"></a>贴图通道微调器</span></dt>
+                           <dd>
+                              <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1A50"></a> 
+                                 <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754F8B"></a>使用该工具可定义通道编号。只有选择了“贴图通道”时可用。 
+                                    		
+                                 </p> 
+                              </div>
+                           </dd>
+                        </dl> 
+                     </li>
+                  </ul>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-790D"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7138"></a>名称</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1A51"></a> 如果一个通道有定义的名称，则名称会在此出现。使用<span class="char_link"><a href="GUID-5945F5FC-0D14-48BF-B2C5-31CE6C4DCB05.htm">通道信息实用程序</a></span>可以为通道命名。 
+                           
+                           <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A32"></a><div class="note-note"><span class="label label-target-language">注意:</span>虽然“颜色”、“照明”和“Alpha”通道有特定的名称，但是实际上 <span class="charspan-msgph">3ds Max</span> 并不强制它们保存何种类型的数据，而且三种通道中的任何一个都可以含有四通道 (RGBA) 顶点颜色数据。 
+                                 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-093D73BC-67C4-4704-9779-9C3FF1F60F02"></a><p class="title"><a name="GUID-B0016772-7585-4E75-9A98-5845E2E6877A"></a>“灯光模型”组
+                  </p>
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-7137"></a>提供指定如何照明对象曲面的选项。 
+                     
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A19004-28B"></a><div class="figure-anchor"><img src="../images/GUID-59912448-88FE-4BB1-8D91-F323FBBEDF7A-low.png"></div><a name="WS1A9193826455F5FFBA679E112A6A19004-28A"></a><ul>
+                     <li><em class="strong">照明 + 漫反射</em>使用当前场景照明和材质来影响顶点颜色。 
+                        	 
+                     </li>
+                     <li><em class="strong">仅照明</em>只使用照明来指定顶点颜色，忽略材质属性。 
+                        		
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7136"></a>选择该选项后，会在“渲染选项”卷展栏中禁用“阴影”和“贴图”选项。 
+                           		
+                        </p> 
+                     </li>
+                     <li><em class="strong">仅漫反射</em>使用材质的漫反射颜色，忽略照明。 
+                        	 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-F312850A-8E01-4032-AAC2-FC3D9DE51FC4"></a><p class="title"><a name="GUID-335F41B2-3FBF-4E66-857B-40B773BD0353"></a>“颜色指定”组
+                  </p>
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-7135"></a>指定颜色如何在曲面上插补。 
+                     
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A19004-288"></a><div class="figure-anchor"><img src="../images/GUID-C71FB970-C27A-4A6D-8D0C-BD4B8314F973-low.png"></div><a name="WS1A9193826455F5FFBA679E112A6A19004-287"></a><ul>
+                     <li><em class="strong">按面指定颜色</em>（默认设置。）颜色在每个面的中心间插补。 
+                        		
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7134"></a>“按面指定颜色”采样较少的点，因此它是较快的方法。但另一方面，结果精确度较低。 
+                           		
+                        </p> 
+                     </li>
+                     <li><em class="strong">按顶点指定颜色</em>颜色在顶点间插补。 
+                        		
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7133"></a>对每个面，该方法使用三个点而不是一个点，这样该方法稍慢一些但通常也更精确。当对象的阴影落在两个顶点之间时，会发生例外：这种情况下，对象会阻挡照明，但是因为仅考虑顶点，所以不计算阴影，从而发生“光泄露”。 
+                           		
+                        </p> 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-58FAB87F-87EF-474C-B76B-B55E8DEEC88C"></a><p class="title"><a name="GUID-DE35F13D-C3A4-43A0-98DB-A6CB2B53D702"></a>“渲染选项”组
+                  </p>
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-7132"></a>通过本组中的选项，可以选择在顶点颜色中是否包含阴影、纹理贴图或光能传递解决方案。 
+                     
+                  </p>
+                  <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A31"></a><div class="note-note"><span class="label label-target-language">注意:</span>可以在顶点颜色中保存光能传递解决方案，但是不能保存<span class="char_link"><a href="GUID-27F990DA-E4FA-4949-A073-9AA608EA44DF.htm">光跟踪器</a></span>照明，它并不存储在场景的几何体中。 
+                        
+                     </div>
+                  </div><a name="WS1A9193826455F5FFBA679E112A6A19004-285"></a><div class="figure-anchor"><img src="../images/GUID-D4B967F0-021D-4AB1-99D9-D8EC8669AA41-low.png"></div>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-790C"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7131"></a>阴影</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1A52"></a> 启用该选项后，顶点明暗处理时使用阴影。默认设置为禁用状态。 
+                           
+                           <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A30"></a><div class="note-tip"><span class="label label-target-language">提示</span>可以通过使用“顶点绘制”修改器的“绘制”或“模糊”工具来柔化阴影边缘。 
+                                 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-790B"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7130"></a>贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1A53"></a> 启用该选项后，顶点明暗处理时使用纹理贴图。默认设置为禁用状态。 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-DA6CC123-E460-4B42-8DAB-A1D7AE70087A"></a><p class="title"><a name="GUID-C04EBD8B-0F54-4C8B-A18E-70526E296A34"></a>[光能传递选项]
+                  </p>
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-712F"></a>该单选按钮指定如何使用光能传递数据。 
+                     
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A19004-284"></a><ul>
+                     <li><em class="strong">无光能传递</em>（默认设置。）指定顶点颜色时不使用光能传递解决方案。 
+                        		
+                        <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A2F"></a><div class="note-note"><span class="label label-target-language">注意:</span>该选项是唯一可用的选项，除非场景中存在<span class="char_link"><a href="">光能传递解决方案</a></span>。 
+                              		
+                           </div>
+                        </div> 
+                     </li>
+                     <li><em class="strong">光能传递，重新使用解决方案中的直接照明</em>包括顶点颜色指定中的光能传递，并使用解决方案的直接照明。 
+                        		
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-712E"></a>该选项相当于<span class="char_link"><a href="">“渲染参数”卷展栏</a></span>中的“重用光能传递解决方案中的直接照明”选项。 
+                           		
+                        </p> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-712D"></a>该选项禁用“阴影”切换，因为不需要重新计算阴影。 
+                           		
+                        </p> 
+                     </li>
+                     <li><em class="strong">光能传递，渲染直接照明</em>在顶点颜色指定中包括光能传递，但是使用单独的过程来渲染直接照明。 
+                        		
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-712C"></a>该选项相当于<span class="char_link"><a href="">“渲染参数”卷展栏</a></span>中的“渲染直接照明”选项。 
+                           		
+                        </p> 
+                     </li>
+                     <li><em class="strong">光能传递，仅间接照明</em>在顶点颜色指定中只包括光能传递解决方案中的间接照明。 
+                        		
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-712B"></a>该选项禁用“阴影”切换，因为不需要重新计算阴影。 
+                           		
+                        </p> 
+                     </li>
+                  </ul>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-790A"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-712A"></a>提醒字段</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1A54"></a> 显示表明启用还是禁用重聚集的消息。重聚集提供最精确的光能传递结果，但是同时也会极大增加光能传递的计算时间。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7909"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7129"></a>光能传递设置</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1A55"></a> 单击以显示“渲染设置”对话框的<span class="char_link"><a href="GUID-8D21416E-DF57-4D1F-B141-29C1D30612BF.htm">“高级照明”面板</a></span>，在对话框中可以设置并生成光能传递解决方案。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7908"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7127"></a>指定给选定对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1A56"></a> 根据指定材质和在前面的组框中指定的选项，将顶点颜色指定给选定对象。“指定给选定对象”创建一个“顶点绘制”修改器，并将其添加到选定对象的堆栈中。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7907"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7126"></a>编辑</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1A57"></a>切换到指定的“顶点绘制”修改器，并在“修改”面板上打开其界面，以及含有顶点绘制工具的浮动对话框<span class="char_link"><a href="GUID-C6746472-B239-45F1-B8F0-38420ACD7399.htm">“顶点绘制颜料盒”</a></span>。 
+                        
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7125"></a>如果没有单击“指定给选定对象”，那么该按钮不可用。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-D8D278F1-D5ED-4961-801A-A970C0CBCB87.htm"> “常规”面板（对象属性对话框）</a></li>
+                     <li class="topiclist-litem"><a href="GUID-2701B80A-9335-4E45-859F-11D5EC1CB76B.htm">顶点颜色贴图</a></li>
+                     <li class="topiclist-litem"><a href="GUID-EADD121F-482F-4387-8D6C-0548533E4F56.htm">顶点绘制修改器</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

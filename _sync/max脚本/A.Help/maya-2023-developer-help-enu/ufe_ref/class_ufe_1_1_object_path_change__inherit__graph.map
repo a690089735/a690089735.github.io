@@ -1,0 +1,8 @@
+<map id="Ufe::ObjectPathChange" name="Ufe::ObjectPathChange">
+<area shape="rect" id="node4" href="$class_ufe_1_1_object_path_add.html" title="Path added to object scene notification. " alt="" coords="5,229,141,256"/>
+<area shape="rect" id="node5" href="$class_ufe_1_1_object_path_remove.html" title="Path removed from object scene notification. " alt="" coords="166,229,327,256"/>
+<area shape="rect" id="node6" href="$class_ufe_1_1_object_rename.html" title="Object renamed scene notification. " alt="" coords="352,229,488,256"/>
+<area shape="rect" id="node7" href="$class_ufe_1_1_object_reparent.html" title="Object reparented scene notification. " alt="" coords="512,229,653,256"/>
+<area shape="rect" id="node2" href="$class_ufe_1_1_scene_changed.html" title="Base class for all scene notifications. " alt="" coords="265,80,401,107"/>
+<area shape="rect" id="node3" href="$class_ufe_1_1_notification.html" title="Base class for all notifications. " alt="" coords="275,5,391,32"/>
+</map>

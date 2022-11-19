@@ -1,0 +1,5 @@
+<map id="Ufe::Attribute" name="Ufe::Attribute">
+<area shape="rect" id="node3" href="$class_ufe_1_1_attribute_enum_string.html" title="Attribute which has a list of strings as enumerated values. " alt="" coords="5,169,172,196"/>
+<area shape="rect" id="node4" href="$class_ufe_1_1_attribute_generic.html" title="Generic attribute which doesn&#39;t match any defined type. " alt="" coords="196,169,341,196"/>
+<area shape="rect" id="node5" href="$class_ufe_1_1_typed_attribute.html" title="Typed attribute template for creating a specialized type. " alt="" coords="366,169,539,196"/>
+</map>

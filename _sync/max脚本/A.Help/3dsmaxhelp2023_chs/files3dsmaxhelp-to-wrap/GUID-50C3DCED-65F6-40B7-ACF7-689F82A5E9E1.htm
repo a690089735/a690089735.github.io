@@ -1,0 +1,64 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-50C3DCED-65F6-40B7-ACF7-689F82A5E9E1">
+      <meta name="description" content="CATMotion 是 CAT 的程序运动循环生成系统。使用 CATMotion 可以创建与装备的速度和方向相适应的运动循环而不会出现滑动足迹，即使是在不平坦的表面上移动时也是如此。">
+      <meta name="indexterm" content="CAT: CATMotion">
+      <meta name="indexterm" content="CATMotion">
+      <meta name="indexterm" content="CAT: 循环生成">
+      <meta name="topic-type" content="concept">
+      <title>CATMotion</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-50C3DCED-65F6-40B7-ACF7-689F82A5E9E1"></a><div class="head">
+            <h1>CATMotion</h1>
+         </div>
+         <p class="blurb">CATMotion 是 <span class="charspan-msgph">CAT</span> 的程序运动循环生成系统。使用 CATMotion 可以创建与装备的速度和方向相适应的运动循环而不会出现滑动足迹，即使是在不平坦的表面上移动时也是如此。 
+         </p>
+         <div class="bodyReference">
+            <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3CFF"></a>CATMotion 为基本的运动循环创建过程提供了一种“原地行走”模式。然后可以通过将装备链接到路径节点（通常是虚拟对象或点对象）来围绕场景移动装备，并按照 3ds Max 中的常规方式制作动画。例如，指定一个路径约束或将虚拟对象链接到某个群组系统。
+               
+            </p>
+            <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3CFE"></a>可以将 CATMotion 设置保存为预设，然后将其应用于具有相同配置的任何装备。可以同时加载多个预设，然后通过设置动画权重将其彼此混合在一起。混合时不会出现滑动足迹。 
+            </p>
+            <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3CFD"></a>CATMotion 的工作方式是将装备的运动分解为各个组件部分，或<em class="mild">控制器</em>。例如，骨盆的运动循环具有八个不同控制器，其中包括“扭曲”、“旋转”、“抬起”和“推力”。每个组件可以通过参数进行控制，通常是通过编辑一个四点曲线。可以为所有参数制作动画，并为参数指定任何类型的标准动画控制器。 
+            </p>
+            <div><a name="WS1A9193826455F5FF7718A51C1204C8F42FA-64C2"></a><div class="note-note"><span class="label label-target-language">注意:</span>CATMotion 主要用于生成基本循环。它通常不是用来制作单个组件的动画，而是用于在<span class="char_link"><a href="GUID-D4ED7A8C-D54D-4E2C-A5F1-31685027039B.htm">层</a></span>中创建不同循环，然后通过设置动画权重值将其彼此混合在一起。 
+               </div>
+            </div><a name="WS1A9193826455F5FF79F44A0A120254C3E48-72E8"></a><div class="figure-anchor"><img src="../images/GUID-5C7A0938-ACB1-4B4E-AB61-EE554B0E4D01-low.png"><p class="figure-title">图片提供：Cobalt VFX</p>
+            </div>
+            <div class="section"><a name="WS7AF5CAC11814013A-2EE5B21011FDE8C01A2-7FFD"></a> 
+               <h2><a name="GUID-AFFB4B25-2AA2-42E1-BD4E-6CA273DB7099"></a>CATMotion 控件
+               </h2> 
+               <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-3CF4"></a>CATMotion 层次反映了装备的结构。<span class="charspan-msgph">CAT</span> 具有五个基本装备元素（腿、手臂、脊椎、尾部、附加骨骼），它们定义了 CATMotion 中的可用控件。CATMotion 只会为定义为腿部的肢体生成足迹。在 CATMotion 中，足迹不适用于手臂，虽然在某些情况下这是有意义的；例如，在制作大猩猩的动画时，它会用两条腿走路，但会用四肢奔跑。因此，在开始构建装备之前应认真思考角色的运动方式，以便在制作动画时获得全部所需控件，这一点很重要。
+                  
+               </p> 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-6D4BBB65-0A36-4E00-A154-1CD0AAED8906.htm">CATMotion 编辑器</a><p>无模型的“CATMotion 编辑器”对话框包含了 CATMotion 的所有控件。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-D4ED7A8C-D54D-4E2C-A5F1-31685027039B.htm">CATMotion 预设/层</a><p>CATMotion 预设包含特定运动循环的所有 CATMotion 控制器的设置。这些数据包含在 CATMotion 层中，该层不同于“层管理器”卷展栏中的动画层。可以使用带有 .cmp 扩展名的文本文件保存和加载单个层。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-173A8825-D399-44C4-B943-F8FE691BFA68.htm">全局</a><p>“全局”面板包含当前 CATMotion 层的主要设置。 
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-F2B9EEA2-CE7C-4FD4-B563-06868085CD8F.htm">肢体相位</a><p>“肢体相位”面板提供 CATMotion 中手臂和腿部运动的全局设置。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-CD012A84-61BA-4B25-83C7-F87BE4B4A9B3.htm">CATMotion 控制器</a><p>在应用<span class="char_link"><a href="GUID-173A8825-D399-44C4-B943-F8FE691BFA68.htm">全局</a></span>和<span class="char_link"><a href="GUID-F2B9EEA2-CE7C-4FD4-B563-06868085CD8F.htm">肢体相位</a></span>控件之后，装备在层次上细分到不同的<span class="char_link"><a href="GUID-99D11254-CDBD-4FB9-A7B7-C32C20A664AE.htm">连接部组</a></span>中。 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-CC4955D6-EB68-4D82-BD9F-39FE9EEDB33D.htm">了解 CATUnits</a><p>“CAT 单位比”值在 CAT 中用于缩放角色及其运动，以便在角色之间共享。可以通过选择 CATParent 并转至“修改”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“CATRig 参数”卷展栏来调整该值。 
+                        
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

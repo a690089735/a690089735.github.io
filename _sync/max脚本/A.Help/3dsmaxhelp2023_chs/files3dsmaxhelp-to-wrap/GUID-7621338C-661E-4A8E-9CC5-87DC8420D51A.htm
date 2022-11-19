@@ -1,0 +1,556 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-7621338C-661E-4A8E-9CC5-87DC8420D51A">
+      <meta name="description" content="布尔对象通过对两个或多个其他对象执行布尔运算将它们组合起来。ProBoolean 提供了一系列功能，例如一次合并多个对象的能力，每个使用不同的布尔操作。">
+      <meta name="indexterm" content="合并对象: ProBoolean 复合对象">
+      <meta name="indexterm" content="ProBoolean 复合对象">
+      <meta name="indexterm" content="复合对象: ProBoolean">
+      <meta name="indexterm" content="对象: 合并 (ProBoolean)">
+      <meta name="indexterm" content="布尔: ProBoolean 复合对象">
+      <meta name="contextid" content="PROBOOLEAN.OBJECTS_COMPOUNDS">
+      <meta name="contextid" content="CREATEPROBOOLEANACTION">
+      <meta name="contextid" content="OBJECTS COMPOUNDS-PROBOOLEAN">
+      <meta name="topic-type" content="concept">
+      <title>ProBoolean 复合对象</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-7621338C-661E-4A8E-9CC5-87DC8420D51A"></a><div class="head">
+            <h1>ProBoolean 复合对象</h1>
+         </div>
+         <p class="blurb">布尔对象通过对两个或多个其他对象执行布尔运算将它们组合起来。ProBoolean 提供了一系列功能，例如一次合并多个对象的能力，每个使用不同的布尔操作。 
+            
+         </p><a name="UL_8D33AAAF511E4AE3B5D77EF68F3A478F"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-06E1A612-ABCC-4DBB-8B47-F7C0C601F1EF">选择对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">（几何体） <img src="../images/ac.menuaro.gif"> “复合对象” <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “ProBoolean”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-B4DBDE1D-C035-47B5-A985-C15976B4C902">默认菜单：“创建”菜单  <img src="../images/ac.menuaro.gif"> “复合” <img src="../images/ac.menuaro.gif"> “ProBoolean”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-CE6F07DB-E0AC-4990-A990-4334A3BDD93E">Alt 菜单：“对象”菜单  <img src="../images/ac.menuaro.gif"> “复合对象” <img src="../images/ac.menuaro.gif"> “ProBoolean”</span> 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F48755558158A8119D88FB23C-45FE"></a>ProBoolean 还可以自动将布尔结果细分为四边形面，这有助于将<span class="char_link"><a href="GUID-D204B817-8B87-42FF-B152-0E360D0035A2.htm">网格平滑</a></span>和<span class="char_link"><a href="GUID-EA8FF838-B197-4565-9A85-71CE93DA4F68.htm">涡轮平滑</a></span>。 
+            	 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900418CA"></a> 
+            <h2><a name="GUID-E603DD9A-5620-4D53-B8F3-A9CD50DF3AA6"></a>材质、纹理、顶点颜色
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4832"></a>ProBoolean 和 ProCutter 将纹理坐标、顶点颜色、可选材质和贴图从运算对象传输到最终结果。可以选择将运算对象材质应用于所得到的面，也可以保留原始材质。如果其中一个原始运算对象具有材质贴图或顶点颜色，则所得到的面是由于运算对象保持这些图形属性获得的。但是，当纹理坐标或顶点颜色存在时，不能移除共面的面，因此所得到的网格质量会降低。我们建议在
+               ProBoolean 运算之后应用纹理。 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418CB"></a><div class="figure-anchor"><img src="../images/GUID-A85F572E-1D33-40DD-BF25-5F01BEDFA3AB-low.png"></div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4831"></a>ProBoolean 提供了 2 个用于应用材质的选项，这两个选项在“参数”卷展栏的“应用材质”组中提供（请参见上图）。默认方法是“应用运算对象材质”，该方法可将操作对象材质应用于所得到的面。另一种方法“保留原始材质”会使所得到的面使用在布尔运算中第一个选定对象的材质。
+               
+               		
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4830"></a>下图显示了两种方法的区别。布尔运算从左侧图的一个红色的长方体和一个蓝色的球体开始。该长方体用作基本对象，球体是减去的运算对象。使用默认的“应用运算对象材质”选项给出在图中心显示的结果。选择“保留原始材质”会产生在图右侧显示的结果。 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418CC"></a><div class="figure-anchor"><img src="../images/GUID-BD66F045-2694-4B93-9387-D1B48D7BD8D6-low.png"></div>  
+            <p><a name="GUID-201D3221-0069-447A-8037-69C1859C5224"></a> <em class="strong">左：原始运算对象</em> 
+            </p> 
+            <p><a name="GUID-89EA87E5-F283-4A53-965E-D7F4E5A70B1F"></a> <em class="strong">中：“应用运算对象材质”处于激活状态</em> 
+            </p> 
+            <p><a name="GUID-2C2EB2BD-9FCB-42FE-896F-43C8A5A8DF01"></a> <em class="strong">右：“保留原始材质”处于激活状态</em> 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900418CD"></a> 
+            <h2><a name="GUID-438399D7-EBCF-4440-B5E9-2782E3CD81D9"></a>支持的布尔运算
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-482F"></a>ProBoolean 支持并集、交集、差集、合并、附加和插入。前三个运算与标准布尔复合对象中执行的运算很相似。“合集”运算相交并组合两个网格，不用移除任何原始多边形。对于需要有选择地移除网格的某些部分的情况，这可能很有用。 
+               		
+            </p> 
+            <p><a name="WS1A9193826455F5FF2B5A256211D5F2B3E4A-5497"></a>附加操作可将多个对象合并成一个对象，而不影响各对象的拓扑；各对象实质上是复合对象中的独立<span class="char_link"><a href="GUID-08770848-2797-489E-AEE1-2A83C07729C4.htm">元素</a></span>。而插入操作会从操作对象 B 减去操作对象 A 的边界图形，然后用操作对象 A 替换切掉的部分。 
+               		
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-482E"></a>还支持的是布尔运算的两个变体：盖印和切面切割器。“盖印”选项在运算对象和原始网格中插入（盖印）相交边，而不用移除或添加面。“盖印”只分割面，并将新边添加到基本对象（原始选定对象）的网格中。切面切割器执行指定的布尔运算，但不会将运算对象的面添加到原始网格中。可以使用它在网格中剪切一个洞，或获取网格在其他对象内部的部分。
+               
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900418CE"></a> 
+            <h2><a name="GUID-F22C568D-735D-4923-A4CA-B7AC1066E839"></a>编辑布尔对象
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-482D"></a>当从“修改”面板中访问 ProBoolean 或 ProCutter 对象时，可以将运算对象添加到现有的集合中。您还可以移除和变换（移动、旋转或缩放）操作对象。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900418CF"></a> 
+            <h2><a name="GUID-CBA554D4-B2CF-4DCC-B69F-82F554A0C179"></a>多边形减少
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-482C"></a>ProBoolean 和 ProCutter 具有内置的百分数功能。通常情况下，如果将百分数与布尔运算结合在一起，则效果会很更好。原因是布尔对象包含有关哪些边是相交边的元信息。百分数功能将考虑该信息，并使用它正确保持相交边。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900418D0"></a> 
+            <h2><a name="GUID-8714C3BE-F50B-498E-94CB-63BC8D5CEB8B"></a>文本、放样和 NURBS
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-482B"></a>当对<span class="char_link"><a href="GUID-7704F896-982D-4DCC-8041-5CCD24EC9E05.htm">文本对象</a></span>执行布尔操作时，应确保字符彼此不相交，并且每个字母都是闭合的。此外，用这种方法很容易不小心创建<span class="char_link"><a href="GUID-4CCA4890-83E8-41C6-9FFB-0A3959194CCA.htm">放样对象</a></span>和 <span class="char_link"><a href="GUID-FD120DDE-E8BE-4DB9-A2CA-62069059B4FF.htm">NURBS 对象</a></span>，以致产生自相交。借助放样对象，检查端点以及放样曲线弯曲处的点。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4829"></a> 
+            <h2><a name="GUID-AD13B0C7-E33F-4FAB-A394-C6515B398185"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900418D1"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900418D2"></a>要创建 ProBoolean 复合对象，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>为布尔运算设置对象。例如，要从长方体中减去球体，创建该长方体和球体，并排列球体，以便其体积与长方体相交，去掉相交部分就得到了所需结果。 
+                  		  
+               </li>
+               <li>选择基本对象。在示例的步骤 1 中，选择长方体。 
+                  		  
+               </li>
+               <li>在 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板上，<img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">（几何体）处于激活状态时，从下拉列表中选择“复合对象”。在“对象类型”卷展栏中，启用“ProBoolean”。 
+                  		  
+               </li>
+               <li>在“参数”卷展栏上，选择要使用的布尔运算类型：“并集”、“交集”、“差集”等。还要选择 <span class="charspan-msgph">3ds Max</span> 如何将拾取的下一个运算对象传输到布尔型对象：“参考”、“复制”、“移动”或“实例化”。您也可以选择保留原始材质，或保持默认的“应用材质”选择：应用运算对象材质。 
+                  		  
+               </li>
+               <li>单击“开始拾取”按钮。 
+                  		  
+               </li>
+               <li>拾取一个或多个对象参与布尔运算。 
+                  		  
+               </li>
+               <li>拾取对象时，还可以为每个新拾取的对象更改布尔运算（合并等）和选项（切面或盖印），并将下一个操作对象传输到布尔（参考、复制等）和“应用材质”选项。只要“开始拾取”按钮一直处于按下的状态，就可以继续拾取操作对象。拾取的每一个对象都会添加到布尔运算。
+                  
+                  			 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4828"></a>当“修改”面板处于活动状态时，可以通过单击“开始拾取”按钮，然后拾取要添加的对象将这些对象添加到选定的 ProBoolean 对象中。 
+                     			 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900418D3"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900418D4"></a>示例：要对子对象运算更改现有的布尔，请执行以下操作：
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4827"></a>ProBoolean 提供了组合各种布尔运算的诸多灵活性，并提供了在构建布尔对象时以及构建了布尔对象后，更改运算对象组合方式的能力。 
+               		
+            </p>
+            <ol type="1" start="1">
+               <li>通过添加长方体、球体、小的长方体和圆柱体开始，如下图所示： 
+                  		  <a name="WS1A9193826455F5FFBA679E112A6A1900418D5"></a><div class="figure-anchor"><img src="../images/GUID-B36E441A-B056-4617-9115-8FDCCF1E7C7F-low.png"></div>  
+                  <p><a name="GUID-45918D46-F922-4259-AD69-CA8F352AB976"></a> <em class="strong">顶部：“前”视口</em> 
+                  </p> 
+                  <p><a name="GUID-B1C0BB0B-040E-434A-B081-67BF246FD56F"></a> <em class="strong">底部：“透视”视口</em> 
+                  </p> 
+               </li>
+               <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择长方体。 
+                  		
+               </li>
+               <li>在 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板上，<img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">（几何体）处于激活状态时，从下拉列表中选择“复合对象”。在“对象类型”卷展栏中，启用“ProBoolean”。 
+                  		
+               </li>
+               <li>在“参数”卷展栏的“运算”组中，选择“交集”。 
+                  		  <a name="WS1A9193826455F5FFBA679E112A6A1900418D6"></a><div class="figure-anchor"><img src="../images/GUID-E09F10E4-1B3C-46E4-86C0-104F81543138-low.png"></div>  
+               </li>
+               <li>在“拾取布尔”卷展栏上，单击“开始拾取”，然后单击球体。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4826"></a>结果是球体和长方体相交，即代表两个对象都拥有的<em class="mild">共同</em> 体积的一个对象。在这种情况下，这个对象就是是球体和长方体的重叠部分。尽管球体和长方体在此处都没有材质，但是所得到的结果使用创建长方体时，最初由 <span class="charspan-msgph">3ds Max</span> 随机指定给它的默认颜色。 
+                     		  
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418D7"></a><div class="figure-anchor"><img src="../images/GUID-C25AA79A-E7F7-4668-A363-253FFC9605FA-low.png"></div>  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4825"></a>注意，“开始拾取”保持活动状态（蓝色、黄色，具体取决于颜色方案）。这意味着可以继续拾取对象以合并到布尔对象中，执行操作时也可以更改运算。 
+                     		  
+                  </p> 
+               </li>
+               <li>将“运算”设置为“并集”，然后单击小的长方体。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4824"></a>所得到的结果是小的长方体和球体与较大长方体交集的并集（增加）。再次将原始对象的颜色指定给结果。 
+                     		  
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418D8"></a><div class="figure-anchor"><img src="../images/GUID-C1FAB96E-0114-48EC-A1BA-A830FDED977A-low.png"></div>  
+               </li>
+               <li>将“运算”设置为“差集”，然后单击圆柱体。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4823"></a>圆柱体的相交体积是从以前的布尔结果中减去得到的。 
+                     		  
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418D9"></a><div class="figure-anchor"><img src="../images/GUID-58299C33-1F30-4762-BB42-723447FA888C-low.png"></div>  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4822"></a>注意，在“参数”卷展栏底部的层次视图列表中，列出了用于构建布尔对象的运算对象和运算的整个历史。用“并集”合并 Box01 开始布尔运算，然后用“交集”合并 Sphere01，用“并集”合并 Box02，最后，用“差集”合并 Cylinder01。
+                     
+                     		  
+                  </p> 
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-611D"></a><div class="note-note"><span class="label label-target-language">注意:</span>列表中第一个对象的运算对布尔对象没有影响，但是如果将其移动到列表的其他位置，则会产生影响。此练习结束时您会看到一个这样的示例。 
+                        		  
+                     </div>
+                  </div> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4821"></a>可以使用“子对象运算”组中的列表和其他控件来更改结果。 
+                     		  
+                  </p> 
+               </li>
+               <li>在列表中，高亮显示“差集 - Cylinder01”项，然后将“运算”设置为“并集”。 
+                  		
+               </li>
+               <li>在“子对象运算”组中，单击“更改运算”按钮。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4820"></a>更改元素的结果是，圆柱体会作为增加的体积而非减少的体积出现在布尔对象中。另外，它在列表中的项更改为“并集 - Cylinder01”，显示现在对圆柱体进行的布尔运算是“并集”。 
+                     		  
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418DA"></a><div class="figure-anchor"><img src="../images/GUID-CD7B4404-8F7B-4145-B2AE-A5374A6A5A92-low.png"></div>  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-481F"></a>还可以更改运算的顺序，这可能会影响结果。 
+                     		  
+                  </p> 
+               </li>
+               <li>在列表中，单击“并集 - Cylinder01”项以移除高亮显示的内容，然后高亮显示项 1：交集 - Sphere01。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-481E"></a>注意，其在列表中的位置 1 出现在“重排运算对象”按钮旁边的可编辑字段中。 
+                     		  
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418DB"></a><div class="figure-anchor"><img src="../images/GUID-2844D9D9-DF74-4133-9B2C-9BDA33B693C4-low.png"></div>  
+               </li>
+               <li>将字段中的值从 1 改为 <em class="strong">3</em>，然后单击“重排运算对象”按钮。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-481D"></a>“交集 - Sphere01”项跳到列表结尾。 
+                     		  
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418DC"></a><div class="figure-anchor"><img src="../images/GUID-492E70F6-3713-4FB2-888D-4DB4740A3C67-low.png"></div>  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-481C"></a>此时，布尔对象会发生很大变化。您可以通过列表中的新顺序获知如何得到此形状：利用“并集”组合两个长方体和圆柱体，将它们的体积增加到一起，然后利用“交集”将球体合并到得到的结果中，只留下所有四个对象共有的体积。 
+                     		  
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418DD"></a><div class="figure-anchor"><img src="../images/GUID-AA660131-8C30-4CE7-8970-871A192C374D-low.png"></div>  
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-481B"></a> 
+            <h2><a name="GUID-43BD0020-EF15-4B1F-ADB6-1121CA54CC24"></a>界面
+            </h2> 
+            <div class="section"><a name="WSF742DAB041063133-2A605991112A1CE7A04-7F55"></a> 
+               <h3><a name="GUID-35A94CEF-7B94-41F0-A27E-1EC451135774"></a>修改器堆栈
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-481A"></a>选择未修改的 ProBoolean 对象之后，修改器堆栈会显示单个的可扩展条目：ProBoolean。 
+                  		  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418DE"></a><div class="figure-anchor"><img src="../images/GUID-BD9C4E6F-41DF-48B9-B6E2-117D2966E8B7-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4819"></a>开此条目（通过单击 + 图标）会出现一个子分支：运算对象。 
+                  		  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418DF"></a><div class="figure-anchor"><img src="../images/GUID-7EBA8D7A-BBE0-41B5-8A83-5DB87DFFF335-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4818"></a>要独立于整个对象转换 ProBoolean 对象中的运算对象，请单击“运算对象”分支以将其高亮显示。 
+                  		  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418E0"></a><div class="figure-anchor"><img src="../images/GUID-5C2D8BE0-ECEB-4FA6-AD77-AD088AB9EEE0-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4817"></a>然后，在视口中使用标准选择方法，或在“参数”卷展栏底部的<span class="char_link"><a href="GUID-7621338C-661E-4A8E-9CC5-87DC8420D51A.htm#GUID-47B3C1C0-1E12-43AF-B438-BDBDADEBAA36">层次视图</a></span>列表中高亮显示它们的名称来选择一个或多个运算对象。 
+                  		  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418E1"></a><div class="figure-anchor"><img src="../images/GUID-CB77281E-5F85-4663-B500-1C62828B7F60-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4816"></a>当仅选择一个运算对象时，在 ProBoolean 条目下面，对象类型（而不是其名称）会作为单独的堆栈条目出现。单击此条目可直接访问“修改”面板上的运算对象的参数。 
+                  		  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418E2"></a><div class="figure-anchor"><img src="../images/GUID-1BF31DE6-A237-4D58-AC28-62371CD6B6F6-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4815"></a>如果“参数”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“显示”设置为“结果”，尽管默认情况下操作对象本身不可见，但是选择操作对象可在视口中显示操作对象的三轴架或变换 Gizmo。 
+                  		  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418E3"></a><div class="figure-anchor"><img src="../images/GUID-ABBFE8CE-CEEB-463E-B115-E003B48A3DA5-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4814"></a>要查看操作对象，请将“参数”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“显示”设置为“操作对象”。 
+                  		  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418E4"></a><div class="figure-anchor"><img src="../images/GUID-8FA439A3-80DA-4B32-91E7-10E8E313665B-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4813"></a>不管运算对象是否可见，您都可以在“运算对象”子对象层级下变换并设置它们的动画，就像在 <span class="charspan-msgph">3ds Max</span> 中处理其他任何对象一样。 
+                  		  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418E5"></a><div class="figure-anchor"><img src="../images/GUID-96DD5FCB-2178-4220-8596-C0AA37383BBC-low.png"><p class="figure-title">通过设置所减去操作对象的位置的动画来更改 ProBoolean 对象</p>
+               </div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4812"></a>还可以变换和设置基础对象（即层次视图列表中的第一个对象）的动画。 
+                  		  
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900418E6"></a> 
+               <h3><a name="GUID-D1AF4C38-DE92-421F-8EE6-1537D8076E73"></a>“拾取布尔”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A1900418E7"></a><div class="figure-anchor"><img src="../images/GUID-E261B13F-64C7-4CDB-87C4-8452C5B4E0A3-low.png"></div>  <a name="GUID-E06C097A-BE81-44F8-ADB5-7B9D425804A4"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FDA"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4811"></a>开始拾取</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E19"></a> 单击此选项，然后依次单击要传输至布尔对象的每个运算对象。在拾取每个运算对象之前，可以更改“参考/复制/移动/实例化”选择、“运算”选项和“应用材质”选择。 
+                        		  
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-611C"></a><div class="note-tip"><span class="label label-target-language">提示</span>在使用默认设置将许多运算对象添加到布尔对象时，每次拾取一个对象时都计算结果可能会降低该过程的速度。要保持最适合的反馈，请将“参数”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“显示”设置为“操作对象”。然后，当完成时，将其设置回“结果”。另外，在“高级选项”卷展栏上将“更新”设置为“手动”，然后单击“更新”按钮以查看执行完布尔运算之后的结果。 
+                              		  
+                           </div>
+                        </div> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4810"></a>选择一个单选按钮以指定如何将您拾取的下一个运算对象传输到布尔对象： 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A1900418E8"></a><ul>
+                           <li><em class="strong">参考</em>布尔运算使用所拾取的运算对象的参考<span class="char_link"><a href="GUID-301406EA-BFC0-4141-94E4-55C97641A3CB.htm">参考</a></span>，这样，在合并到布尔对象中后，对象仍然存在。将来修改原来拾取的对象时，也会修改布尔运算。使用“参考”可使对原始运算对象所做的修改器产生的更改与新的运算对象同步，反之则不行。 
+                              			 
+                           </li>
+                           <li><em class="strong">复制</em>布尔运算使用所拾取运算对象的一个副本。布尔运算不会影响选定的对象，但其副本会参与布尔运算。 
+                              			 
+                           </li>
+                           <li><em class="strong">移动</em>所拾取的运算对象成为布尔运算的一部分，不能再作为场景中的单独对象。这是默认选择。 
+                              			 
+                           </li>
+                           <li><em class="strong">实例化</em>布尔运算会创建选定对象的一个<span class="char_link"><a href="GUID-66FDAD95-1504-4639-B1A4-7D080E0C7FFA.htm">实例</a></span>。将来修改选定的对象时，也会修改参与布尔运算的实例化对象，反之亦然。 
+                              			 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900418E9"></a> 
+               <h3><a name="GUID-DD31EA2C-E0FE-408E-9E71-CCA879DB18E9"></a> “参数”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A1900418EA"></a><div class="figure-anchor"><img src="../images/GUID-B1370A4C-6D7D-4209-A1A7-7684BD86665B-low.png"></div>  <a name="GUID-AA476B80-F7EA-486F-BA72-B80BF2A25B8D"></a><div class="dl_section"><a name="GUID-52E0901A-7C8B-4BAA-B803-553A0C6D4686"></a><p class="title"><a name="GUID-D8BBCF1C-87F2-4FB7-92C6-712776FB352E"></a>“运算”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-480F"></a>这些设置确定布尔运算对象实际如何交互。 
+                     		  
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FD9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-480E"></a>并集</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E18"></a> 将两个或多个单独的实体组合到单个布尔对象中。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FD8"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-480D"></a>交集</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E17"></a> 从原始对象之间的物理交集中创建一个“新”对象；移除未相交的体积。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FD7"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-480C"></a>差集</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E16"></a> 从原始对象中移除选定对象的体积。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FD6"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-480B"></a>合并</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E15"></a> 将对象组合到单个对象中，而不移除任何几何体。在相交对象的位置创建新边。 
+                           		  
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-611B"></a><div class="note-note"><span class="label label-target-language">注意:</span>在下图中，禁用显示属性背面消隐，以便所有边都可见。 
+                                 		  
+                              </div>
+                           </div> <a name="WS1A9193826455F5FFBA679E112A6A1900418EB"></a><div class="figure-anchor"><img src="../images/GUID-D354059F-A29A-4EA5-AB3F-D6AF20C021B9-low.png"></div>  
+                           <p><a name="GUID-4415E552-EF81-43BA-8CB5-9D2832D1D3DB"></a> <em class="strong">左图：原始对象（长方体）和操作对象（小的长方体）</em> 
+                           </p> 
+                           <p><a name="GUID-FA7CEBB8-D2AA-44D9-BE85-4D5BF3C70319"></a> <em class="strong">中图：并集运算；移除小长方体的部分。</em> 
+                           </p> 
+                           <p><a name="GUID-F4017C25-1BA8-4722-9855-9BD2B9E0E4EA"></a> <em class="strong">右图：合集运算，在相交处显示新边</em> 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF2B5A256211D5F2B3E4A-5496"></a><span class="term"><a name="WS1A9193826455F5FF2B5A256211D5F2B3E4A-5495"></a>附加</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E14"></a> 将两个或多个单独的实体合并成单个布尔型对象，而不更改各实体的拓扑。实质上，操作对象在整个合并成的对象内仍为单独的元素。 
+                           		  <a name="WS73099CC142F487551DC3623711DA7B58889-7D4A"></a><div class="figure-anchor"><img src="../images/GUID-F464E459-6633-41C7-97D2-B13453CCB9DF-low.png"><p class="figure-title">长方体和球体基本体可通过附加（左）和并集（右）进行合并</p>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF2B5A256211D5F2B3E4A-5493"></a><span class="term"><a name="WS1A9193826455F5FF2B5A256211D5F2B3E4A-5492"></a>插入</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E13"></a> 先从第一个操作对象减去第二个操作对象的边界体积，然后再组合这两个对象。 
+                           		  
+                           <p><a name="WS73099CC142F487551DC3623711DA7B58889-7EF6"></a>实际上，插入操作会将第一个操作对象视为液体体积，因此，如果插入的操作对象存在孔洞或存在使“液体”进入其体积的某些其他特征，则的确会将其视为液体体积。下图显示了此效果的示例，其中明暗处理的几何体在左侧而线框对应物在右侧。 
+                              		  
+                           </p> <a name="WS73099CC142F487551DC3623711DA7B58889-7EF5"></a><div class="figure-anchor"><img src="../images/GUID-AC798E47-2E2F-48D4-B177-994C5387CBB1-low.png"><p class="figure-title">一个已放入液体中的碗；如果碗上有洞或发生了倾斜，则液体会进入相应的空处。</p>
+                           </div>  
+                           <div><a name="WS73099CC142F487551DC3623711DA7B58889-7EF4"></a><div class="note-note"><span class="label label-target-language">注意:</span>插入操作不会模拟液体的置换；第一个操作对象的整体尺寸保持不变。 
+                                 		  
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FD4"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4809"></a>盖印</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E11"></a> 将图形轮廓（或相交边）打印到原始网格对象上。 
+                           		  <a name="WS1A9193826455F5FFBA679E112A6A1900418ED"></a><div class="figure-anchor"><img src="../images/GUID-FD6AC920-7182-4710-B65F-E7D7ADDD21CA-low.png"></div>  
+                           <p><a name="GUID-C03AB9F0-1BDF-4983-999E-B46BCD2EF724"></a> <em class="strong">左：原始对象（长方体）和运算对象（文本）</em> 
+                           </p> 
+                           <p><a name="GUID-8C15856B-C55C-4138-B0A0-DDB19588EAEA"></a> <em class="strong">中：标准差集运算</em> 
+                           </p> 
+                           <p><a name="GUID-FB23D81B-8785-42B0-8368-ECA1F7A47576"></a> <em class="strong">右：带有盖印的差集</em> 
+                           </p> 
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-611A"></a><div class="note-note"><span class="label label-target-language">注意:</span>因为主运算选择对其没有影响，因此盖印运算的结果始终相同。 
+                                 		  
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FD5"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-480A"></a>切面</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E12"></a> 切割原始网格图形的面，只影响这些面。选定运算对象的面未添加到布尔结果中。 
+                           		  <a name="WS1A9193826455F5FFBA679E112A6A1900418EC"></a><div class="figure-anchor"><img src="../images/GUID-02BC7E93-88E5-4907-9A85-3AF59611FAC1-low.png"></div>  
+                           <p><a name="GUID-347169AC-FB95-4E46-B59E-79B94FF21061"></a> <em class="strong">1. 原始对象（长方体）和运算对象（球体）</em> 
+                           </p> 
+                           <p><a name="GUID-4A40F431-9F57-4ACF-9EDB-6E144666D540"></a> <em class="strong">2. 标准差集运算</em> 
+                           </p> 
+                           <p><a name="GUID-CED4F902-0A37-4BDB-9E4D-A4F6CECC083F"></a> <em class="strong">3. 启用切面时的差集</em> 
+                           </p> 
+                           <p><a name="GUID-B483F2CD-A573-4B31-8CF5-0B895A18EB18"></a> <em class="strong">4. 标准交集运算</em> 
+                           </p> 
+                           <p><a name="GUID-8A4DC773-4A0C-4006-B988-B9E04C6E372C"></a> <em class="strong">5. 启用切面时的交集</em> 
+                           </p>
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-35311AD7-DB83-4E35-8965-38AD7B62503D"></a><p class="title"><a name="GUID-7D468826-CC62-477D-9F9B-C84C883EAE86"></a>“显示”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753E5C"></a>选择下面一个显示模式。 
+                     		  
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900418EF"></a><ul>
+                     <li><em class="strong">结果</em>只显示布尔运算而非单个运算对象的结果。 
+                        				
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4807"></a>选择“结果”还将激活<span class="char_link"><a href="GUID-7621338C-661E-4A8E-9CC5-87DC8420D51A.htm#WSF742DAB041063133-2A605991112A1CE7A04-7F55">修改器堆栈</a></span>中的 ProBoolean 层级。 
+                           				
+                        </p> 
+                     </li>
+                     <li><em class="strong">运算对象</em> 显示定义布尔结果的运算对象。使用该模式编辑运算对象并修改结果。 
+                        				
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4806"></a>选择“操作对象”还将激活<span class="char_link"><a href="GUID-7621338C-661E-4A8E-9CC5-87DC8420D51A.htm#WSF742DAB041063133-2A605991112A1CE7A04-7F55">修改器堆栈</a></span>中的“操作对象”层级。 
+                           				
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4805"></a>此外，当拾取许多运算对象时，使用此模式可避免每次重复计算该结果，然后在结束时将“显示”设置回“结果”。 
+                           				
+                        </p> 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-12534034-F2FF-470A-B50A-6E42C18D7B73"></a><p class="title"><a name="GUID-48DE9F6F-FCF2-4CC1-9656-21276BE4840B"></a>“应用材质”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753E5D"></a>选择下面一个材质应用模式： 
+                     		  
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900418F0"></a><ul>
+                     <li><em class="strong">应用运算对象材质</em>布尔运算产生的新面获取运算对象的材质。 
+                        			 
+                     </li>
+                     <li><em class="strong">保留原始材质</em>布尔运算产生的新面保留原始对象的材质。 
+                        			 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-27177E0B-632E-464B-8F84-487113310315"></a><p class="title"><a name="GUID-9ACA6DC6-3498-4CAC-B39A-F62BF68C03C9"></a>“子对象运算”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4803"></a>这些函数对在层次视图列表中高亮显示的运算对象进行运算（参见下面）。 
+                     		  
+                  </p>
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6119"></a><div class="note-note"><span class="label label-target-language">注意:</span>对于这些运算，不需要在修改器堆栈的“运算对象”子对象层级下进行。 
+                        		  
+                     </div>
+                  </div>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FD1"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4802"></a>提取所选对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E0E"></a> 根据选择的单选按钮（移除、复制或实例化；参见下面），“提取所选对象”对在层次视图列表中高亮显示的运算对象应用运算。有以下三种提取模式： 
+                           		  <a name="WS1A9193826455F5FFBA679E112A6A1900418F1"></a><ul>
+                              <li><em class="strong">移除</em>从布尔结果中移除在层次视图列表中高亮显示的运算对象。它本质上撤消了加到布尔对象中的高亮显示的运算对象。提取的每个运算对象都再次成为顶层对象。 
+                                 			 
+                              </li>
+                              <li><em class="strong">复制</em>提取在层次视图列表中高亮显示的一个或多个运算对象的副本。原始的运算对象仍然是布尔运算结果的一部分。 
+                                 			 
+                              </li>
+                              <li><em class="strong">实例化</em>提取在层次视图列表中高亮显示的一个或多个运算对象的一个实例。对提取的这个运算对象的后续修改也会修改原始的运算对象，因此会影响布尔对象。 
+                                 			 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FD0"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4801"></a>重排运算对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E0D"></a> 在层次视图列表中更改高亮显示的运算对象的顺序。将重排的运算对象移动到“重排运算对象”按钮旁边的文本字段中列出的位置。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FCF"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4800"></a>更改运算</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E0C"></a> 为高亮显示的运算对象更改运算类型（请参见<span class="char_link"><a href="GUID-7621338C-661E-4A8E-9CC5-87DC8420D51A.htm#GUID-52E0901A-7C8B-4BAA-B803-553A0C6D4686">“运算”组</a></span>）。要更改运算类型，请高亮显示层次视图中的运算对象，并选择运算类型单选按钮选项，然后单击“更改运算”。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-47B3C1C0-1E12-43AF-B438-BDBDADEBAA36"></a><p class="title"><a name="GUID-B9CFF7F6-EB46-4B68-B32B-621C5DC9D65C"></a>[层次视图]
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900418F2"></a><div class="figure-anchor"><img src="../images/GUID-CB77281E-5F85-4663-B500-1C62828B7F60-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47FF"></a>在“参数”卷展栏底部的层次视图显示定义选定网格的所有布尔运算的列表。每次执行新的布尔运算时，<span class="charspan-msgph">3ds Max</span> 都会向该列表中添加一个条目。 
+                     		  
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47FE"></a>通过单击层次视图列表中要修改的运算对象将其高亮显示。要高亮显示列表中的多个连续项，请单击第一项，然后按住 <span class="keyboardEntry">Shift</span> 键并单击最后一项。要高亮显示多个非连续条目，请按住 <span class="keyboardEntry">Ctrl</span> 键并单击。要从列表条目中删除高亮显示的项，请按住 <span class="keyboardEntry">Alt</span> 键并单击高亮显示的项。 
+                     		  
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47FD"></a>在修改器堆栈的 ProBoolean 层级，可以只对高亮显示的项上执行<span class="char_link"><a href="GUID-7621338C-661E-4A8E-9CC5-87DC8420D51A.htm#GUID-27177E0B-632E-464B-8F84-487113310315">子对象运</a></span>。在“操作对象”子对象层级上，可以转换高亮显示的操作对象，并执行子对象操作；有关详细信息，请参见<span class="char_link"><a href="GUID-7621338C-661E-4A8E-9CC5-87DC8420D51A.htm#WSF742DAB041063133-2A605991112A1CE7A04-7F55">修改器堆栈</a></span>。 
+                     		  
+                  </p>
+               </div> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900418F3"></a> 
+               <h3><a name="GUID-0302B001-6ED7-4853-868C-E68F30F7E25C"></a>“高级选项”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A1900418F4"></a><div class="figure-anchor"><img src="../images/GUID-8B534D9B-9FA9-45A5-8399-EAAC39D0A5D7-low.png"></div>  <a name="GUID-E145CDE5-20DF-48B4-B59A-69005AD8F546"></a><div class="dl_section"><a name="GUID-1E2C9137-7632-407E-A5A6-D7DAE6D7CA86"></a><p class="title"><a name="GUID-9D8BF3F2-A441-4EB3-888F-9D16C9F443D0"></a>“更新”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47FC"></a>这些选项确定在进行更改后，何时在布尔对象上执行更新。选择下列选项之一： 
+                     		  
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900418F6"></a><ul>
+                     <li><em class="strong">始终</em>只要您更改了布尔对象，就会进行更新。 
+                        			 
+                     </li>
+                     <li><em class="strong">手动</em>仅在单击“更新”按钮后进行更新。 
+                        			 
+                     </li>
+                     <li><em class="strong">仅限选定时</em>不论何时，只要选定了布尔对象，就会进行更新。 
+                        			 
+                     </li>
+                     <li><em class="strong">仅限渲染时</em>仅在渲染或单击“更新”时才将更新应用于布尔对象。 
+                        			 
+                     </li>
+                  </ul><a name="GUID-9CB4F7AA-1B5A-43B0-A7B4-2265AA0F9F21"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FCE"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-47FB"></a>更新</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E0B"></a> 对布尔对象应用更改。除了“始终”外，可用于所有选项。 
+                           		  
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6118"></a><div class="note-note"><span class="label label-target-language">注意:</span>当您首次在“手动”或“仅在渲染时”处于活动状态的情况下创建 ProCutter 对象时，只有在至少更新一次之后，才能看到运算对象（包括基础对象）。因此，基础对象是可见的，但再次更新之后，随后拾取的运算对象才可见。 
+                                 		  
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FCD"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-47FA"></a>百分数</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E0A"></a> 从布尔对象中的多边形上移除边从而减少多边形数目的边百分比。例如，将“百分数”设置为 20.0 会将多边形的边移除 20％。 
+                        		  <a name="WS1A9193826455F5FFBA679E112A6A1900418F8"></a><div class="figure-anchor"><img src="../images/GUID-DCDC06B3-2087-49A2-A332-3630C1089923-low.png"></div>  
+                        <p><a name="GUID-BFF523CC-E59C-468C-8101-D4030F47D4A4"></a> <em class="strong">1. 消减 %=0.0</em> 
+                        </p> 
+                        <p><a name="GUID-E98EBD07-0FD7-495F-8972-0073325B0867"></a> <em class="strong">2. 消减 %=30.0</em> 
+                        </p> 
+                        <p><a name="GUID-751A10C2-426A-4330-8325-CD06AC76ACBD"></a> <em class="strong">3. 消减 %=60.0</em> 
+                        </p> 
+                        <p><a name="GUID-0495388F-AD30-462D-B5B4-599B948DB6C4"></a> <em class="strong">4. 消减 %=80.0</em> 
+                        </p>
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-94274B17-3AE7-4EDC-9730-8961C7CB7BCF"></a><p class="title"><a name="GUID-A0BE8011-8687-4B97-AE9A-4A60780EFE5B"></a>“四边形镶嵌”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47F9"></a>这些选项启用布尔对象的四边形镶嵌。这会使该对象适合于编辑<span class="char_link"><a href="GUID-CB7FD47E-D809-429C-98D3-20CB56B72EBF.htm">细分曲面</a></span>和平滑网格。它还会使该对象适合于转换为“可编辑多边形”格式。 
+                     		  
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47F8"></a>有关此选项的进一步讨论，请参见主题<span class="char_link"><a href="GUID-EC3DD1B9-6524-418C-B18C-567938A9DD24.htm">四边形网格和平滑</a></span>。 
+                     		  
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FCC"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-47F7"></a>设为四边形</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E09"></a> 启用时，会将布尔对象的镶嵌从三角形改为四边形。 
+                           		  
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6117"></a><div class="note-note"><span class="label label-target-language">注意:</span>当启用“设为四边形”之后，对“百分数”设置没有影响。 
+                                 		  
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7FCB"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-47F6"></a>四边形大小 %</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7E08"></a> 确定四边形的大小作为总体布尔对象长度的百分比。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-EFCF6A1C-32B8-401C-93C0-4C27462F63E8"></a><p class="title"><a name="GUID-ECAD6BCD-9AB8-4BFA-8CAC-71BB97252B47"></a>“移除平面上的边”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47F5"></a>此选项确定如何处理平面上的多边形。选择下列选项之一： 
+                     		  
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900418FB"></a><ul>
+                     <li><em class="strong">全部移除</em>移除一个面上的所有其他共面的边，这样该面本身将定义多边形。 
+                        			 
+                     </li>
+                     <li><em class="strong">只移除不可见</em>移除每个面上的不可见边。 
+                        			 
+                     </li>
+                     <li><em class="strong">不移除边</em>不移除边。 
+                        			 
+                     </li>
+                  </ul>
+               </div> 
+            </div> 
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-38047A10-BD05-4BA6-A4AA-3D23F309310B"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-D8229784-21AC-4CF4-9CEA-F5BE8DEC4494.htm">ProCutter 复合对象 
+                        		  </a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

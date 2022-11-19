@@ -1,0 +1,215 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-ED7E8CFA-A640-4D21-8C85-78F3719823EB">
+      <meta name="description" content="“缓存磁盘”操作符的工作方式与“缓存”操作符非常相似，不同之处在于它可以让您将缓存存储到独立于 MAX 文件的磁盘文件中。">
+      <meta name="indexterm" content="粒子: 缓存">
+      <meta name="indexterm" content="缓存磁盘操作符（粒子流）">
+      <meta name="indexterm" content="粒子流操作符: 缓存磁盘">
+      <meta name="topic-type" content="concept">
+      <title>“缓存磁盘”操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-ED7E8CFA-A640-4D21-8C85-78F3719823EB"></a><div class="head">
+            <h1> “缓存磁盘”操作符</h1>
+         </div>
+         <p class="blurb">“缓存磁盘”操作符的工作方式与<span class="char_link"><a href="GUID-62DE88FC-D95C-4D9C-8923-FA6A6895B154.htm">“缓存”操作符</a></span>非常相似，不同之处在于它可以让您将缓存存储到独立于 MAX 文件的磁盘文件中。 
+         </p>
+         <div class="bodyReference"><a name="UL_F279CE4960E8496990A37DB2FC04CF81"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-98461E18-E7C0-4467-95A2-8C03C33484FA">“粒子视图” <img src="../images/ac.menuaro.gif">  添加或选择“缓存磁盘”。</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-E254F9DF-EE80-45E7-8F9D-4E3C2639B697"></a>与“缓存”操作符相同，它允许您预先计算所有活动并将其存储在粒子系统中，以便可以快速播放或拖动动画而无需等待计算。主要区别不是使用磁盘文件，而是因为磁盘缓存的速度比内存缓存慢，没有自动更新的选项。优点是，缓存大小仅受硬盘驱动器上可用空间的限制。
+               
+            </p>
+            <p><a name="GUID-51EF8392-FC5D-4020-ABF5-B63FDA12781D"></a>若要使用“缓存磁盘”，请将其添加到要存入缓存的事件；如果要将整个粒子流存入缓存，请将其添加到全局事件。单击“选择文件”，指定一个文件名，然后单击“保存”。然后，若要创建缓存，请播放动画，或单击“更新”按钮。 
+            </p>
+            <p><a name="GUID-54F5ED12-B3EC-47DA-978B-6FD1A774A4DE"></a>此外，由于磁盘缓存的速度比内存缓存慢，因此“缓存磁盘”没有自动更新选项。如果您更改了参数，并想要查看更改的结果，您必须单击“更新”按钮。 
+            </p>
+            <div><a name="GUID-BC5F7308-77C4-4A08-82CE-86294E1F803C"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果遇到粒子系统相互依赖的情况，请使用“缓存”操作符，然后在可以渲染前解算模拟，尤其是如果要在网络上渲染，或要无序地渲染帧。由于粒子系统相互依赖，粒子流一次仅可以迭代一个帧。 
+               </div>
+            </div>
+            <p><a name="GUID-C8D7D807-BD0F-4081-B324-8FE66E79C9B6"></a>有关缓存如何在粒子流中工作的常规背景信息，请参见<span class="char_link"><a href="GUID-62DE88FC-D95C-4D9C-8923-FA6A6895B154.htm">“缓存”操作符</a></span>主题的简介。 
+            </p>
+            <p><a name="GUID-FFE0172B-AC60-4029-BC0A-CFA06E8C440F"></a>请参见<span class="char_link"><a href="GUID-84494B69-CBEF-42DC-A699-2EE15AC9EAD6.htm">“缓存选择性”操作符</a></span>。 
+            </p>
+            <div class="section"><a name="GUID-C0B3EDF1-764B-4C52-8336-9EB4B30DB6B1"></a> 
+               <h2><a name="GUID-C77BDD9A-41EE-44BD-820A-673033188B0D"></a>界面
+               </h2> <a name="FIG_34F56C742499497881EE70E25BBF56B5"></a><div class="figure-anchor"><img src="../images/GUID-CEEEF375-0412-451A-9EF6-E41C942BA12C-low.png"></div>  <a name="GUID-BA36D2EC-CCE8-4012-B1EF-ECDFAD8A9839"></a><dl>
+                  <dt><a name="GUID-FF313DAA-8A4E-40E1-813C-2B2FC77BF80A"></a><span class="term"><a name="GUID-6C552063-0F26-4159-8AB5-A3BF7BBF963A"></a>使用位置</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-D17721EB-61AB-45F4-BB53-229DC70CAC26"></a>在视口中播放时，或在渲染时，或在这两种情况下，将粒子运动存入缓存。默认设置为“视口”。 
+                        <div><a name="GUID-23E70ECE-B4F5-4262-90F4-F9E2BFF7639E"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>仅当在视口中和在渲染时使用相同数量的粒子时，才选择“视口/渲染”选项。换句话说，全局事件（或粒子流源）的“发射”卷展栏上的两个<span class="char_link"><a href="GUID-89DA4474-E8F4-496F-9339-305D8C8E241E.htm#GUID-BD4C4353-23A0-4FDD-8964-298B2350AE10">“数量倍增”设置</a></span>必须相同。否则，会发生不可预测的结果。 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-CDFFD861-8D49-4E57-BF66-ED87E592B0DB"></a><span class="term"><a name="GUID-4F05AD91-5EF3-4B91-97F4-1AC246F9B553"></a>范围</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-47D759C0-2891-4272-9E5F-10B2A6ABD8B5"></a>设置“缓存磁盘”操作符在其中操作的帧范围。默认设置为“活动段”。 <a name="UL_09222907B3AA4C7694012B76A3A6FF81"></a><ul>
+                           <li> <em class="strong">活动段</em>粒子流仅将活动段中的帧存入缓存，活动段由<span class="char_link"><a href="GUID-9473CAF3-AF73-4127-A98C-58ACEF01ACAC.htm">“时间配置”对话框</a></span>上的“开始时间”和“结束时间”设置来定义。这是轨迹栏上显示的帧范围。您还可以更改活动段：按住 <span class="keyboardEntry">Alt+Ctrl</span> 并拖动轨迹栏 - 要执行此操作，您可以使用鼠标左键、中键或右键。 
+                           </li>
+                           <li> <em class="strong">自定义</em>“粒子流”仅将自定义范围中的帧存入缓存，该范围由“缓存磁盘”操作符的“开始时间”和“结束时间”设置来定义（请参见以下说明）。 
+                           </li>
+                        </ul> 
+                        <div><a name="GUID-20FFC723-0451-4094-BA5C-D73ECDC59F3E"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果您仅将部分动画存入缓存，“粒子流”会按顺序计算粒子行为，没有缓存的帧则使用已缓存的数据。例如，如果您将第 0 帧到第 50 帧存入缓存，然后跳至第 60 帧，则“粒子流”会基于缓存的数据计算第 51 帧，以及基于每一前面帧计算第 52 帧到第
+                              60 帧。 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-F4D5AF4F-CC1C-4CE1-9B0E-5C6CFD1D917E"></a><span class="term"><a name="GUID-3DBE1794-8622-4EA3-8822-CFB02CD4C106"></a>开始/结束时间</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-A47ECDBF-9F68-47C9-817C-7CC93F2C89D9"></a>当“范围”设置为“自定义”时（请参见上文），则为缓存时帧范围的开始帧和结束帧。默认设置为 0, 30。 
+                        <div><a name="GUID-CCEFEA54-8490-439C-AACE-A3F8B4C6A466"></a><div class="note-note"><span class="label label-target-language">注意:</span>帧范围时间是绝对时间，也就是说，对整个动画而言。如果您在局部使用“缓存磁盘”操作符，并且在您指定的帧范围内没有粒子出现在事件中，则粒子流不会使用缓存。 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-2AD7CD24-8FD4-450E-8AE1-6E52C8168726"></a><span class="term"><a name="GUID-53AC3073-E752-4F22-92F7-304584DA67AD"></a>采样</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-A2285488-4257-4E1F-9D6B-9A9A885CCF4F"></a>确定“缓存磁盘”操作符采样和缓存动画的频率。默认设置为“每帧”。 <a name="UL_C2469E9DBFAE47F0BBB2D9C452A56F85"></a><ul>
+                           <li> <em class="strong">每帧</em>“粒子流”将动画数据存入缓存的频率为每帧一次。 
+                           </li>
+                           <li> <em class="strong">积分步长</em>粒子流在每个积分步长使用由“使用位置”设置（请参见上文）指定的“积分步长”设置和用于流的“系统管理”卷展栏（选择全局事件），将动画数据存入缓存。如果“使用位置”设置为“视口/渲染”，则它会使用两个“积分步长”值中较小的那一个。例如，如果“视口”设置为“半帧”，“渲染”为“八分之一帧”，则采样率为每帧八次。
+                              
+                           </li>
+                           <li> <em class="strong">每 N 帧</em>粒子流按照由 N 值指定的帧间隔将动画数据存入缓存（请参见下文）。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-B2C28C4F-C876-456C-BE0E-2DA58532C82A"></a><span class="term"><a name="GUID-E728F6B1-0517-4310-B8F8-8176D08C408B"></a>N</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-AD6F551E-B678-431C-A3B4-194D93343831"></a>当“采样”（请参见以上说明）设置为“每 N 帧”时，确定执行缓存的帧间隔。默认设置为 5。 
+                        <p><a name="GUID-E2275BF0-9FD9-400D-B0CE-DFF1ECDE4546"></a>例如，当 N 设置为默认值 5 时，缓存为每 5 帧存储动画数据。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-6354A9F7-2695-4FF2-B518-0C7360F003DA"></a><span class="term"><a name="GUID-747ACAD2-A898-43FC-82F0-6339CC43E715"></a>缓存测试结果</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-A9A7F123-9EBA-4013-929F-E2C7E3974E8D"></a>当将粒子数据存入缓存时，该项也将测试操作的结果存入缓存。默认设置为启用。 
+                        <p><a name="GUID-53342A1C-2C63-456E-AB02-8683C1C7DB3E"></a>当“缓存磁盘”用作局部操作符，且下一个事件没有缓存类型操作符时，这一点很重要。为了使下一个事件工作正常，它应该从当前事件接收粒子。这些粒子由测试操作活动产生。“缓存磁盘”操作符可以记录测试活动以便在以后进行播放。 
+                        </p> 
+                        <p><a name="GUID-6AC29C24-D025-4603-A96C-B81007B4B5A5"></a>如果将“缓存磁盘”操作符用作全局操作符，则无需将测试结果存入缓存。这是因为系统有每个事件的缓存数据，并且无需测试结果就能跳至任意帧。 
+                        </p>
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-52C7860C-6597-4AD1-BD25-72E122845B6F"></a><p class="title"><a name="GUID-1C2AB099-A14D-456D-8909-F8FBF9B6539C"></a>“缓存文件”组
+                  </p>
+                  <p><a name="GUID-6F1B021E-81DE-4A1D-A17E-62D4710BB990"></a>每个“缓存磁盘”操作符会将其数据存储到一系列磁盘文件中；一个磁盘文件用于一个动画帧。文件名使用 base_name####.pfc 格式，其中 base_name 是您提供的名称，#### 是具有前导零的四位数，.pfc（粒子流缓存）是文件扩展名。
+                     
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-803F34B7-D967-4750-8FFE-8A8E41DE65B7"></a><span class="term"><a name="GUID-DE7727D2-0980-4B41-988D-1CD84DFEF346"></a>[“选择文件”按钮]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-89A2E4F4-DCC4-4A4B-9B8E-8E5A378FB679"></a>单击此按钮可指定缓存文件的位置和基础名称。之后，基础名称会显示在按钮上。将鼠标光标悬停在该按钮上，即可在工具提示中看到整个路径和基础名称。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-D898A528-F90B-4AF1-B566-2EA7B7992401"></a><p class="title"><a name="GUID-F21976E4-01EF-484E-91D6-5FBD628FD951"></a>“更新和重置”组
+                  </p>
+                  <p><a name="GUID-C5CEB0A6-4BF5-4E12-B140-6EA4614AC476"></a>由于磁盘缓存的速度比内存缓存慢，因此“缓存磁盘”没有自动更新磁盘缓存的选项。如果您更改了参数，并想要查看更改的结果，您必须单击“更新”按钮。 
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-A169EB1E-73B1-4A98-BB40-D285BE9A91BA"></a><span class="term"><a name="GUID-AEBB951B-C6FB-4013-94E3-CB310238057E"></a>更新</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-F8FBAD46-E0F9-4A25-8EB8-903FD0E95F14"></a>如果您更改粒子系统中的参数，缓存数据可能会变为无效。使用该组指定的范围，单击此按钮手动更新缓存。 
+                           <p><a name="GUID-E8DBF490-753C-4DFD-92B6-7EF492178ACE"></a>若要取消正在进行的更新，请按 <span class="keyboardEntry">Esc</span>。 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-95271140-971B-4C34-A529-0E37B1E5E763"></a><span class="term"><a name="GUID-4309F2A8-2DED-4806-A562-AF5EF0F0E70F"></a>清除</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-57138EEE-5F09-42EA-89C2-DA86E3B8F9A7"></a>使用该组指定的范围，删除缓存文件。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-C390B346-5C6C-43E4-85E5-F2DB03DAED05"></a><span class="term"><a name="GUID-BF39E843-C05C-49F9-B6B6-E8AD1BCD1860"></a>范围</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-269680FF-79A0-4D7A-9271-A7D45CA297EB"></a>设置当您单击“更新”或“清除”时，“缓存”操作符重新计算数据的帧范围。默认设置为“活动段”。 <a name="UL_4154545659EC4A38B26A4D429BE602D9"></a><ul>
+                              <li> <em class="strong">活动段</em>粒子流仅针对活动段中的帧更新缓存，活动段由<span class="char_link"><a href="GUID-9473CAF3-AF73-4127-A98C-58ACEF01ACAC.htm">“时间配置”对话框</a></span>上的“开始时间”和“结束时间”设置来定义。这是轨迹栏上显示的帧范围。您还可以更改活动段：按住 <span class="keyboardEntry">Alt+Ctrl</span> 并拖动轨迹栏 - 要执行此操作，您可以使用鼠标左键、中键或右键。 
+                              </li>
+                              <li> <em class="strong">自定义</em>“粒子流”仅更新自定义范围中的帧的缓存，该范围由“缓存”操作符的“开始时间”和“结束时间”设置来定义（请参见下列说明）。 
+                              </li>
+                           </ul>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-B3888239-A27A-46A3-BAC2-34E34FB958F5"></a><span class="term"><a name="GUID-ED3F06C7-D828-4E53-B293-A1867F19DC27"></a>开始/结束时间</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-1711F727-103C-43BB-91A0-484F88DF8AD7"></a>当“范围”设置为“自定义”时（请参见上述说明），更新范围的开始帧和结束帧。默认设置为 0, 30。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-032A8FB6-5EA3-4CEF-B733-A640DE99AB0F"></a><span class="term"><a name="GUID-7301D15F-45B4-4B69-A78A-6F86B8580367"></a>更新视口</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-203022B5-3808-4425-BB30-7EC6C79708EB"></a>启用时，在手动更新缓存的过程中，动画会在视口中播放。禁用该项可以禁止在手动执行缓存过程中在视口中播放动画，这能提高缓存进程的速度，特别是大型的或复杂的粒子系统。默认设置为启用。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-39BCF4F0-C03F-4DBC-8832-67AD85EA4917"></a><span class="term"><a name="GUID-72F1AFB1-DF68-404E-AE62-F40C05648DD8"></a>全部更新</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-A52E5241-0E1A-4C15-B33E-2A4A8C37FF4F"></a> 更新当前流中所有“缓存磁盘”操作符的缓存。使用此选项可以避免在更改参数（该参数会影响整个流）后必须分别更新每个缓存。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-EAEB980E-994A-43C4-8B17-086A31094210"></a><span class="term"><a name="GUID-29E5B16B-1233-477E-8663-7D8584DC61E2"></a>全部清除</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-AB3FE711-E67D-4BAB-A36E-969048E6C3AC"></a> 删除当前流中所有“缓存磁盘”操作符的缓存文件。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="GUID-56D0D5F6-67D1-42D6-8369-AEC7F60002FC"></a><span class="term"><a name="GUID-39A5E6A3-5790-46F5-B404-A5130ACA4083"></a>从缓存排除数据</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-0C492974-AA4E-4428-8646-A6AEC5A52325"></a> 防止粒子流将指定的动画数据保存在缓存文件中。启用某一选项可从缓存排除相应类型的数据。数据类型为：图形、脚本数据、缩放、材质 ID、贴图和旋转。 
+                        <p><a name="GUID-268CA08E-FAAB-4509-9B90-CE4E547BD257"></a>使用这些选项有助于减小缓存文件的大小，尤其是当排除的数据将使用后缓存操作符计算时（请参见下文）。通常图形数据占用的存储最多。如果粒子图形是由后缓存操作符定义的，则无需将数据保存在缓存文件中，因为无论如何该数据都将被忽略。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-9723220C-A128-4AD4-9885-175D204DF9BB"></a><span class="term"><a name="GUID-287793CD-7F2D-4050-8433-141F8963511C"></a>使用后缓存操作符</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-24BAB740-52D8-4B34-8155-35B444A01AD8"></a> 允许在缓存操作后应用操作符，因此这些操作将不会存储在缓存中。启用该选项之后，单击“按列表添加”打开一个对话框，该对话框列出了当前流中所有会影响行为的操作符，然后从对话框中选择操作符。此后，它们将出现在“后缓存操作符”列表中。 
+                        <p><a name="GUID-6C0D0BEF-8F15-496B-8818-E2D909EBB0CB"></a>使用后缓存操作符可微调预先计算的粒子系统。有时大多数计算都用于粒子移动（由于与参考对象的碰撞以及可能的粒子间碰撞）。在这种情况下，最好先计算运动，并将其存储在缓存文件中。其他粒子方面（大小、图形、颜色、贴图、方向）可以在存入缓存后计算，并稍后应用。
+                           
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-44A857D6-45DB-44D9-AE2B-63ABCD59F2D4"></a><span class="term"><a name="GUID-5BCAAFD3-93E1-4ED3-AFC5-DDFDFF0AFD83"></a>后缓存操作符</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-FC8928DB-12ED-42D9-928A-677A2E5C3735"></a> 列出由“使用后缓存操作符”指定的操作符。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-3E1E80CD-E7F9-49E0-B4B6-BC003D0713B9"></a><span class="term"><a name="GUID-B0A2300C-1779-488D-BEBD-8BA92A8BD464"></a>按列表添加</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-D9269EBC-1C8C-47E1-8D79-FD9A3DE643D9"></a> 打开可从中选择操作符的对话框（将在缓存运行后应用该操作符的影响），因此这些操作将不会存储在缓存中。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-CFC0F083-1AD1-440F-8AC4-2AB11E76BEE0"></a><span class="term"><a name="GUID-D5298BE1-3816-4731-A08E-19F13414D381"></a>移除</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-D4AC47B5-2480-4984-B153-58169EFA5026"></a> 从“后缓存操作符”列表中删除所有高亮显示的操作符。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-07C45C19-3B6B-468D-AA84-643502AA67D9"></a><span class="term"><a name="GUID-E6D4C4CE-6C56-4239-9D64-C35F402290B3"></a>内存限制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-B7696A3B-1E63-4660-B620-889016E9C9BE"></a>为了获得最佳性能，“缓存磁盘”操作符一直作为内存中缓存的一部分。此参数确定了 RAM 缓存的最大大小。如果总缓存大小超过内存限制值，则操作符仅在 RAM 中保留最新的帧。一旦特定帧的缓存信息可用，它将以扩展名为 .pfc 的文件形式写入到磁盘上。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-168F15B2-C8CF-40BD-AEF0-2B0A8B04C5F3"></a><span class="term"><a name="GUID-A1702CCD-11F6-46D6-828C-1927DE0FD896"></a>清除内存</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-117F6DB4-C365-451A-866F-C54C39DF2195"></a> 清除 RAM 缓存并强制操作符从文件（如果可用）中获取缓存数据或重新计算数据（如果缓存文件不可用）。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-88D81458-6170-4267-B47D-993E4CEECF19"></a><span class="term"><a name="GUID-5B23DD22-D421-42AF-B8B0-6A9C643F5ED9"></a>全部清除</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-70DED42B-71B0-45D5-BD12-122FAF12673C"></a>执行所有“缓存磁盘”操作符的“清除内存”函数（请参见上文）。
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

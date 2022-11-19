@@ -1,0 +1,59 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-7C87C4BC-215B-4C51-AF06-B1CD3A88E702">
+      <meta name="description" content="可以将其他 INI 文件的路径纳入本地 plugin.ini 文件中；3ds Max 会将这些文件视为原始 plugin.ini 文件的一部分进行处理。如果网络上的多个系统使用相同插件，则此功能非常有用。网络管理员只需要维护单个远程 INI 文件，而不必对每台机器进行单独升级。">
+      <meta name="indexterm" content="网络插件配置">
+      <meta name="indexterm" content="插件: 通过网络共享">
+      <meta name="indexterm" content="通过网络共享插件">
+      <meta name="topic-type" content="topic">
+      <title>网络插件配置</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-7C87C4BC-215B-4C51-AF06-B1CD3A88E702"></a><div class="head">
+            <h1>网络插件配置</h1>
+         </div>
+         <p class="blurb">可以将其他 INI 文件的路径纳入本地 <em class="mild">plugin.ini</em> 文件中；<span class="charspan-msgph">3ds Max</span> 会将这些文件视为原始 <em class="mild">plugin.ini</em> 文件的一部分进行处理。如果网络上的多个系统使用相同插件，则此功能非常有用。网络管理员只需要维护单个远程 INI 文件，而不必对每台机器进行单独升级。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-5596"></a> 
+            <h2><a name="GUID-1F845048-E84E-437B-B734-DC3858610CDE"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041042"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041043"></a>示例：要将远程的 INI 文件添加到本地 <em class="mild">plugin.ini</em> 中，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>使用文本编辑器打开 <em class="mild">plugin.ini</em> 的本地副本。 
+               </li>
+               <li>在文件底部，键入 <em class="strong">[Include]</em>，然后按 <span class="keyboardEntry">输入</span> 键。 
+               </li>
+               <li>在 [Include] 后，键入以下两行：<em class="mild"></em> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5595"></a> <em class="strong">myremote=\\remote_dir\remote_plugin.ini </em> 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5594"></a> <em class="strong">anotherdir=d:\test\extra_plugin.ini</em> 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A190041044"></a><div class="figure-anchor"><img src="../images/GUID-0E41A3C7-B6B5-4CA3-9A36-6208D8F2799C-low.png"></div>  
+                  <div><a name="WS73099CC142F487551051018113CCCDB767-934"></a><div class="note-note"><span class="label label-target-language">注意:</span>可以为目录（在本例中为 <em class="mild">myremote</em> 或 <em class="mild">anotherdir</em>）指定任何标题，目录可以是任何本地目录或远程目录。另外，INI 文件可以具有任何名称。 
+                     </div>
+                  </div> 
+               </li>
+               <li>保存 <em class="mild">plugin.ini</em>，然后退出文本编辑器。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5593"></a>下次启动 <span class="charspan-msgph">3ds Max</span> 时，将从 <em class="mild">plugin.ini</em> 文件中定义的目录加载插件，并加载 <em class="mild">plugin.ini</em> 文件中指定的任何远程 INI 文件中的插件。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5592"></a>可以按需要添加很多远程 INI 文件，从而便于组织插件组。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-C31A8D0D-666A-4AF3-8C1E-DFC07417EF4E.htm">启动文件和默认值</a></li>
+                     <li class="topiclist-litem"><a href="GUID-5D9D999B-A5D3-402F-B4E3-0B7433A31C1A.htm">特定市场默认值</a></li>
+                     <li class="topiclist-litem"><a href="GUID-AFC5FE94-8B39-4AB9-99DC-DF7AF309BF2A.htm">初始化文件</a></li>
+                     <li class="topiclist-litem"><a href="GUID-B5FF2780-6D57-4FBB-A37A-60FFFC80CA7D.htm">启动模板</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

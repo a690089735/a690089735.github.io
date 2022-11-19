@@ -1,0 +1,146 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-159913A5-0779-4E4B-8479-0BF5BE6626D6">
+      <meta name="description" content="控制光能传递网格的创建及其大小（以世界单位表示）。">
+      <meta name="indexterm" content="网格参数卷展栏（光能传递）">
+      <meta name="indexterm" content="光能传递: 网格参数卷展栏">
+      <meta name="contextid" content="TOPIC_RADIOSITY_MESHING_PARAMETERS_ROLLOUT">
+      <meta name="topic-type" content="concept">
+      <title>“光能传递网格参数”卷展栏</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-159913A5-0779-4E4B-8479-0BF5BE6626D6"></a><div class="head">
+            <h1>“光能传递网格参数”卷展栏</h1>
+         </div>
+         <p class="blurb">控制光能传递网格的创建及其大小（以世界单位表示）。 </p><a name="GUID-66B0E464-A2DA-4BEC-A54B-0D09B9528E6B"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-46548A90-2F35-47A1-98D2-24047E7CA3F9">“渲染设置”对话框 <img src="../images/ac.menuaro.gif"> 选择“默认扫描线渲染器”作为活动产品级渲染器。 <img src="../images/ac.menuaro.gif"> “高级照明”面板  <img src="../images/ac.menuaro.gif"> “选择高级照明”卷展栏  <img src="../images/ac.menuaro.gif">  从下拉列表中选择“光能传递”。 <img src="../images/ac.menuaro.gif"> “光能传递网格参数”卷展栏</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-51A0"></a>为了创建场景照明，<span class="charspan-msgph">3ds Max</span> 会将原始曲面细分为光能传递网格<em class="mild"></em>的元素，以便为环境中的离散点计算强度。使用该卷展栏可以确定是否需要网格，并且可以指定网格元素的大小（以世界单位表示）。要快速测试，可能需要全局禁用网格。场景将看起来像平面，但解决方案将仍然为您快速提供总体亮度。 
+         </p>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-519F"></a>网格分辨率细分得越细，照明细节将越精确。但这涉及到时间和内存方面的平衡。 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A1900429E1"></a><div class="figure-anchor"><img src="../images/GUID-5586DA28-80B3-4B25-BB65-A21771D74443-low.png"><p class="figure-title">在场景中对平面进行网格细分（以亮红色显示）。</p>
+         </div><a name="WS1A9193826455F5FFBA679E112A6A1900429E2"></a><div class="figure-anchor"><img src="../images/GUID-E035EDDF-8A5E-44FE-A2B2-E7642C7A2CF2-low.png"><p class="figure-title">左：无网格。解决方案看起来很平。</p>
+            <p class="figure-desc"> 
+               <p><a name="GUID-3B7A0A11-B141-4D82-B338-D2744664145D"></a>中间：粗糙的网格，每 24 英寸。照明得到改善。 
+               </p> 
+               <p><a name="GUID-A2C4F01F-2412-4D6A-A678-902F50262392"></a>右：精细的网格，每 4 英寸。照明展示更细微效果。 
+               </p> 
+            </p>
+         </div>
+         <div style="margin-top: 9pt;"><a name="WS1A9193826455F5FF662FFB11407B58D52-709A"></a><div class="note-note"><span class="label label-target-language">注意:</span>使用<span class="char_link"><a href="GUID-D0F1351F-2339-4FD0-B88A-0533241E975A.htm">“渲染参数”卷展栏</a></span>中的重聚集功能时，没有必要将网格细分得太密。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-5D7D"></a> 
+            <h2><a name="GUID-BB7B134F-3680-4048-9BA6-F0D49CD6604F"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900429E3"></a><div class="figure-anchor"><img src="../images/GUID-30AF135D-371B-4188-B07D-53303591CA38-low.png"></div> 
+            <div style="margin-top: 9pt;"><a name="WS1A9193826455F5FF662FFB11407B58D52-7099"></a><div class="note-note"><span class="label label-target-language">注意:</span>可以覆盖“对象属性”对话框的<span class="char_link"><a href="../files3dsmaxhelp/GUID-F2E94749-A8A4-4B1B-AF35-4A595112E625.htm">“高级照明”面板</a></span>的该组中的细分设置。这样在某些对象上可以有不同的网格分辨率。例如，可能需要在拥有很多细节的重要墙面上进一步细分网格。要显示“对象属性”对话框，右键单击选定对象并从四元菜单中选择“属性”。 
+               </div>
+            </div> <a name="GUID-6CF835EA-80AF-486C-AEA5-289AC54B904F"></a><div class="dl_section"><a name="GUID-D2FBE66D-2590-4C7C-90F1-74FFAC11F2B4"></a><p class="title"><a name="GUID-4A798DDF-D9EF-49E3-9D5E-9F331A951B05"></a>“全局细分设置”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AA9"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-519E"></a>启用</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BC3"></a> 用于启用整个场景的光能传递网格。当要执行快速测试时，禁用网格。 <a name="WS1A9193826455F5FFBA679E112A6A1900429E5"></a><ul>
+                           <li> <em class="strong">使用自适应细分</em>启用和禁用自适应细分。默认设置为启用。 
+                              <div><a name="WS1A9193826455F5FF662FFB11407B58D52-7098"></a><div class="note-note"><span class="label label-target-language">注意:</span>只有启用“使用自适应细分”后网格设置组参数最小网格大小、对比度阈值和初始网格大小才可用。 
+                                 </div>
+                              </div> 
+                           </li>
+                        </ul> <a name="WS1A9193826455F5FFBA679E112A6A1900429E6"></a><div class="figure-anchor"><img src="../images/GUID-D403A013-DC9D-4BB6-AEE5-5F5D00754B35-low.png"><p class="figure-title">左：没有细分的简单长方体</p>
+                           <p class="figure-desc"> 
+                              <p><a name="GUID-A93F237E-F9AD-4725-A1EA-D0EC047524C3"></a>中间偏左：细分的长方体面。 
+                              </p> 
+                              <p><a name="GUID-FC99AB8D-D77F-4EA2-9512-E4E5AA106A5C"></a>中间偏右：用更小的网格大小细分的长方体面 
+                              </p> 
+                              <p><a name="GUID-9CDA5EC7-C0FD-4DDE-88BB-47D7DA1F070A"></a>右：用“自适应细分”细分的长方体面 
+                              </p> 
+                           </p>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-749E19F8-EBF1-4F4A-97C8-157271C62414"></a><p class="title"><a name="GUID-65BB1BC1-5D1C-441E-BB72-61311B8FB21B"></a>“网格设置”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A1900429E8"></a><div class="figure-anchor"><img src="../images/GUID-B32AEF87-B546-4676-A467-D0F718E2741A-low.png"><p class="figure-title">使用默认网格和灯光设置的“自适应细分”</p>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AA8"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-519D"></a>最大网格大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BC2"></a> 自适应细分之后最大面的大小。对于英制单位，默认值为 36 英寸，对于公制单位，默认值为 100 厘米。 
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-519C"></a>禁用“使用自适应细分”后，将最大网格大小设置为以世界单位表示的光能传递网格的大小。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AA7"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-519B"></a>最小网格大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BC1"></a> 不能将面细分使其小于最小网格大小。对于英制单位，默认值为 3 英寸，对于公制单位，默认值为 10 厘米。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AA6"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-519A"></a>对比度阈值</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BC0"></a> 细分具有顶点照明的面，顶点照明因多个对比度阈值设置而异。默认值为 75.0。 <a name="WS1A9193826455F5FFBA679E112A6A1900429E9"></a><div class="figure-anchor"><img src="../images/GUID-BC288A54-2FE6-4519-89F9-F83AA6664A64-low.png"><p class="figure-title">具有不同对比度阈值的光能传递解决方案。最佳的解决方案是位于中心处，并将对比度阈值设置为 60。</p>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AA5"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5199"></a>初始网格大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BBF"></a> 改进面图形之后，不细分小于初始网格大小的面。用于决定面是否是不佳图形的阈值当面大小接近初始网格大小时还将变得更大。对于美国标准单位，默认值为 12 英寸（1 英尺），对于公制单位，默认值为 30.5 厘米 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-4CBB1F18-C19E-43A5-A500-C77788FC7112"></a><p class="title"><a name="GUID-B2E4571C-6088-40D9-81C6-7E7E3B15E96A"></a>“灯光设置”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AA4"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5198"></a>投影直射光</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BBE"></a> 启用自适应细分或投影直射光之后，根据以下开关来解析计算场景中所有对象上的直射光。照明是解析计算的并不用修改对象的网格，这样可以产生噪波较少且视觉效果更舒适的照明。既然有要求，使用自适应细分时隐性启用该开关。默认设置为启用。 
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5197"></a>禁用“使用自适应细分”之后该开关仍然可以使用。 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A1900429EA"></a><div class="figure-anchor"><img src="../images/GUID-CA764AEB-FC7D-4770-9A68-E0FB9AFD88A7-low.png"><p class="figure-title">禁用灯光设置时的“自适应细分”</p>
+                        </div> 
+                        <div style="margin-top: 9pt;"><a name="WS1A9193826455F5FF662FFB11407B58D52-7097"></a><div class="note-note"><span class="label label-target-language">注意:</span>使用随机采样计算投影直射光时，不包含灯光的照明。这些灯光也不会影响对象的自适应细分。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AA3"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5196"></a>在细分中包含点灯光</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BBD"></a> 控制投影直射光时是否使用点灯光。如果关闭该开关，则在直接计算的顶点照明中不包括点灯光。默认设置为启用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AA2"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5195"></a>在细分中包含线性灯光</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BBC"></a> 控制投影直射光时是否使用线性灯光。如果关闭该开关，则在计算的顶点照明中不使用线性灯光。默认设置为启用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AA1"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5194"></a>在细分中包含区域灯光</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BBB"></a> 控制投影直射光时是否使用区域灯光。如果关闭该开关，则在直接计算的顶点照明中不使用区域灯光。默认设置为启用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AA0"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5193"></a>包括天光</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BBA"></a> 启用该选项后，投影直射光时使用天光。如果关闭该开关，则在直接计算的顶点照明中不使用天光。默认设置为禁用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7A9F"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5192"></a>在细分中包括自发射面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BB9"></a> 该开关控制投影直射光时如何使用自发射面。如果关闭该开关，则在直接计算的顶点照明中不使用自发射面。默认设置为禁用。 <a name="WS1A9193826455F5FF-3A17572711DA7B6E15F1B13"></a><ul>
+                           <li> <em class="strong">最小自发射大小</em>这是计算其照明时用来细分自发射面的最小大小。使用最小大小而不是采样数目以使较大面的采样数多于较小面。默认值为 6.0。 
+                              <p><a name="WS1A9193826455F5FF-3A17572711DA7B6E15F1B15"></a>此设置仅在“在细分中包括自发射面”启用时才可用。 
+                              </p> 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

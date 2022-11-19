@@ -1,0 +1,54 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-1C60B21C-3A3B-4EF9-AFAE-69C4383E4B3B">
+      <meta name="description" content="此卷展栏提供了一些附加选项。">
+      <meta name="indexterm" content="ProOptimizer 修改器: 高级选项">
+      <meta name="topic-type" content="concept">
+      <title>“高级选项”卷展栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-1C60B21C-3A3B-4EF9-AFAE-69C4383E4B3B"></a><div class="head">
+            <h1>“高级选项”卷展栏</h1>
+         </div>
+         <p class="blurb">此卷展栏提供了一些附加选项。 </p>
+         <div class="bodyReference"><a name="UL_C1C70CB79A7847A981FC131EECE6E68B"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-BF101E97-CF51-4798-A08E-2F960FA933E6">创建或导入一个对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “ProOptimizer”修改器  <img src="../images/ac.menuaro.gif"> “高级选项”卷展栏</span> 
+               </li>
+            </ul>
+            <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-E2C"></a>默认情况下，将启用此卷展栏中的选项，因为在大多数情况下启用这些选项将获得最佳的优化结果。 
+            </p>
+            <div><a name="WS73099CC142F48755-63C0748611A1FA08F71-24B6"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>在此卷展栏上的控件是<em class="mild">非交互式的</em>。如果更改设置，则“优化级别”卷展栏上的“状态”窗口将显示“优化无效”，且必须再次单击“计算”，才能观察更改选项值的结果。 
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF68908C3E11A1FA06A23-23BE"></a> 
+               <h2><a name="GUID-59CACE69-5E25-440E-BA6F-6AC908EF387D"></a>界面
+               </h2> <a name="WS73099CC142F48755-63C0748611A1FA08F71-24F8"></a><div class="figure-anchor"><img src="../images/GUID-76AB8C2F-FE39-456F-ACBB-59526A820D23-low.png"></div>  <a name="GUID-224CD2D5-56D2-4694-BAC5-0F01D9718EC9"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7A0A"></a><span class="term"><a name="WS73099CC142F48755-63C0748611A1FA08F71-24F7"></a>收藏精简面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7C6A"></a> 
+                        <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-24F6"></a>当一个面所形成的三角形是等边三角形或接近等边三角形时，该面就是“精简”的。启用“收藏精简面”时，ProOptimizer 将验证移除一个面不会产生尖锐的面。经过此测试后，所优化的模型会更均匀一致。默认设置为启用。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7A09"></a><span class="term"><a name="WS73099CC142F48755-63C0748611A1FA08F71-24F5"></a>防止翻转的法线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7C69"></a> 
+                        <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-24F4"></a>启用时，ProOptimizer 将验证移除一个顶点不会导致面法线翻转。禁用时，ProOptimizer 不执行此测试；使用 1 侧视口明暗处理进行查看或使用 1 侧材质进行渲染时，所生成的网格可能会看起来有孔。默认设置为启用。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-45AA6844-6461-49A9-9777-B01488D94DC2"></a><span class="term"><a name="GUID-9B7F1E4D-7011-4804-92A0-45B981933F2F"></a> 锁定顶点位置</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-5D71C3D9-5077-472A-B9E5-81294CB88707"></a>启用该选项后，优化不会改变从网格移除的顶点的位置。禁用该选项后，顶点可以在优化过程中移动，但 ProOptimizer 修改器仍然会尝试保留对象的形状。对于某些模型，启用“锁定顶点位置”可以防止丢失所需的形状。默认设置为启用。
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

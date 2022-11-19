@@ -1,0 +1,138 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-DD9FAF84-D843-4E80-9463-8BCD2AA71204">
+      <meta name="description" content="交通工具库对象直接从现有 3ds Max (. max) 文件导出的静态网格对象合并到当前场景中。">
+      <meta name="indexterm" content="Civil View: 对象库: 交通工具">
+      <meta name="topic-type" content="concept">
+      <title>交通工具库</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-DD9FAF84-D843-4E80-9463-8BCD2AA71204"></a><div class="head">
+            <h1>交通工具库</h1>
+         </div>
+         <p class="blurb">交通工具库对象直接从现有 3ds Max (.<em class="mild"> <span class="filePath">max)</span> </em> 文件导出的静态网格对象合并到当前场景中。 
+         </p>
+         <p><a name="GUID-665792BD-D87C-422E-AF23-20A2FB1B5C03"></a> 放置到场景中后，Civil View 会将随机选择的车身颜色应用到每个车辆，造成间隔不同车辆类型的幻觉。此外，排除区域设置可帮助确保来自同一 OPS 元素的任何两个车辆永远不会被放置在相同的位置。 
+         </p>
+         <p><a name="GUID-B861B030-6F62-4AFB-AB53-1D55A79CD438"></a><span class="char_link"><a href="GUID-EC47D04A-256A-4039-9351-6313DFFC2037.htm">CivilViewVehicles 材质</a></span>将自动应用于所有车辆对象，但当对象定义使用 3ds Max (.<em class="mild"> <span class="filePath">max)</span> </em> 文件作为其源和 <em class="mild"> <span class="filePath">.max</span> </em> 文件中的对象已有指定材质时除外。在这种情况下，“Civil View 首选项”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> <span class="char_link"><a href="GUID-E1D894D5-95A8-4210-9B5A-DA6684A0B7BE.htm#GUID-3C84C309-CB64-4A29-88A7-EECAC9A0C1F1">“材质和渲染”面板</a></span>中的“覆盖预先指定的材质”选项指示此预先指定的材质是保留还是由 <span class="char_link"><a href="GUID-EC47D04A-256A-4039-9351-6313DFFC2037.htm">CivilViewVehicles 材质</a></span>覆盖。 
+         </p>
+         <div class="section"><a name="GUID-4F1E5DAD-1B47-44FA-8F1E-7A3C6991F39E"></a> 
+            <h2><a name="GUID-6D2F5631-3897-4F0F-8630-95EDE71F6D65"></a>对象 INI 文件结构
+            </h2> <a name="TABLE_E9BDE5B6E27F430180F6F3F1744CD12B"></a><div class="table-ruled">
+               <table cellpadding="0" cellspacing="0" class="ruled">
+                  <colgroup>
+                     <col>
+                  </colgroup>
+                  <tr class="ruled-odd-row">
+                     <td class="table-body"> <a name="GUID-93B705C7-BCBE-4EF7-81D5-CA14A54BB9AF"></a><p class="table-body">车辆对象 INI 文件 </p> 
+                     </td>
+                  </tr>
+                  <tr class="ruled-even-row">
+                     <td class="table-body"> <a name="GUID-AA37F2D0-8AF3-4410-B93D-473A5601E492"></a><p class="table-body">[参数] </p> <a name="GUID-030708F4-902A-4720-B120-B4618385351B"></a><p class="table-body">长度= </p> <a name="GUID-2AA0DF7F-6807-4E7A-90E5-C6FBB27870F4"></a><p class="table-body">宽度= </p> <a name="GUID-312F47C1-1953-445D-B132-3320B1BAE10C"></a><p class="table-body">高度= </p> <a name="GUID-17ABFF36-5E89-4A46-9470-85244EB20BAF"></a><p class="table-body">&nbsp; </p> <a name="GUID-D85138BF-B3CF-4A48-AE35-46535614E8BE"></a><p class="table-body">[对象] </p> <a name="GUID-014AC84C-24EA-4DEF-9C53-353578E552FE"></a><p class="table-body">源= </p> <a name="GUID-79B98094-71C3-43DE-880E-F28824DA56C5"></a><p class="table-body">代理= </p> <a name="GUID-F29FE3F3-2BE4-4541-A6CC-D120F6ED2B05"></a><p class="table-body">预览= </p> <a name="GUID-23795872-D96A-49F7-86F8-6F04184918C0"></a><p class="table-body">&nbsp; </p> <a name="GUID-08CB7755-EF0B-4BE4-991A-F49279047AC1"></a><p class="table-body">[组] </p> <a name="GUID-89C86C7A-1A05-4950-B5ED-E83CC0AC21CD"></a><p class="table-body">名称= </p> <a name="GUID-50F70AE3-9FCA-4D3C-BA75-F83BA8A083BA"></a><p class="table-body">&nbsp; </p> 
+                     </td>
+                  </tr>
+               </table>
+            </div> <a name="GUID-6E711833-8D3C-47D8-80A4-F3E1100A3A81"></a><div class="dl_section"><a name="GUID-07C3B37C-0CE0-4E23-9E9E-A3E5136C918D"></a><p class="title"><a name="GUID-AEC515E6-0693-41D6-94D8-D849833277E5"></a>[参数]
+               </p>
+               <dl>
+                  <dt><a name="GUID-C56C259D-2DDE-4386-976F-A80DF4D96F64"></a><span class="term"><a name="GUID-C290FF2B-60B2-48C8-BB3E-AC33260A880B"></a>长度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-CA85971D-BB9A-434A-B05D-EB512750075F"></a>指定车辆周围的“排除区域”。这可确保其他车辆不会被放置在同一位置或该位置附近。 
+                        <p><a name="GUID-CD00EC8F-FE6B-43BA-B657-A44D7E54EB47"></a>“长度”值可有效地指定车辆在道路上已占有的沥青长度。<em class="mild">来自同一 OPS 元素</em>的其他车辆都不会被放置在此区域中。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-89C26B2A-0259-440E-BE96-D000BF217F06"></a><span class="term"><a name="GUID-760B459B-21BD-4CA2-B736-844D5719476C"></a>宽度/高度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-468FE59B-1C7B-45FA-973B-15790E294B4C"></a> 
+                        <p><a name="GUID-03938991-4F51-4066-A967-1D18DD9A3226"></a>交通工具库对象的“高度”和“宽度”参数当前没有任何作用。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <p><a name="GUID-E432F387-E61D-45FD-A7FE-9E3ACBAC52BD"></a>所有车辆尺寸值均应为正数。 
+               </p>
+            </div>
+            <div class="dl_section"><a name="GUID-BC2FE282-2462-4369-B022-FAC64F7D1C92"></a><p class="title"><a name="GUID-C958A6CE-FE5A-429C-9222-542F93EE8818"></a>[对象]
+               </p>
+               <dl>
+                  <dt><a name="GUID-EB9FA70D-88A7-4658-8BEE-73E29679B94E"></a><span class="term"><a name="GUID-C0BC55F0-94E6-4EB8-ABD1-53D40DA22BC8"></a>源</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-EBF74D2F-756E-4652-9686-F49606E571B7"></a>指定从其导出车辆对象的外部 3ds Max 文件。 
+                        <p><a name="GUID-4E64BCA8-D6AB-4DA4-9A2E-C4AA5DD1696D"></a>此 <em class="mild">.max</em> 文件必须存在于任何当前 Civil View 资源工具包的 <em class="mild"> <span class="filePath">/objlibs/vehicles</span> </em> 目录中。 
+                        </p> 
+                        <p><a name="GUID-FCB21940-FA44-41D1-A774-1C7A117CA38A"></a>此条目不需要包括“.max”文件扩展名。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-48BB73AC-40DC-42AE-9954-B5B3C40B133B"></a><span class="term"><a name="GUID-FA1F7DCC-E7C7-40BF-AB8C-C8D7313BC0CD"></a>代理</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-9465CA2C-2202-466A-9258-8E3065CCE772"></a>当前未使用。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-ADC938D9-337C-4C61-B913-DAC9D4829FAC"></a><span class="term"><a name="GUID-06E9FBD6-8948-4F18-BE95-C7CBEB67F44F"></a>预览</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-26742327-BAE0-4308-9F53-F0B162CCBE82"></a> 
+                        <p><a name="GUID-09D2B4CF-FB36-4B6A-9933-CE0944BA69E8"></a>指定<span class="char_link"><a href="GUID-8B278D6D-2267-4D69-9EF8-1E682A15A200.htm">对象放置样式编辑器</a></span>中使用的缩略图图像，以提供与此对象定义文件关联的几何体预览。如果此条目为空或找不到文件，将显示空白缩略图。 
+                        </p> 
+                        <p><a name="GUID-485FC1C0-CCA1-40B5-A192-D137784C6F0B"></a>此缩略图图像文件必须存在于任何当前 Civil View 资源工具包的 <em class="mild"> <span class="filePath">/objlibs/previews</span> </em> 目录中。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-70D753A9-C0FA-4736-90BB-2DDCA18A828F"></a><p class="title"><a name="GUID-6FBA12EF-C1B8-4070-B69E-EA12D0E0C7D9"></a>[组]
+               </p>
+               <dl>
+                  <dt><a name="GUID-3C85643E-9CA7-43D7-A640-CF1F061A91EB"></a><span class="term"><a name="GUID-B70F41D6-CEEE-405A-BE8B-1C486148F9C3"></a>名称</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-A7D4723C-388C-45B2-9CED-5E652CFA5E0D"></a>应该在其中列出该对象的类别子组的名称。如果未指定名称，则对象将以未分组的状态列出。 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="section"><a name="GUID-7A53422F-64BE-446D-9529-5AA48265484F"></a> 
+            <h2><a name="GUID-D9AEFC03-CB78-4A6A-BABC-B626E1AE0379"></a>将自定义车辆添加到库中
+            </h2> 
+            <p><a name="GUID-A6AD64C6-FA56-4276-BB13-3CEA0F56C914"></a>若要将车辆添加到库中，请将包含您自己的车辆对象的 <em class="mild">.max</em> 文件添加到要使用的 Civil View 资源工具包内的 <em class="mild"> <span class="filePath">/objlibs/vehicles</span> </em> 文件夹中。然后按照上述格式创建一个关联的 INI 文本文件，并将其放置在同一文件夹中。多个 INI 文件可参考同一 <em class="mild">.max</em> 文件。 
+            </p> 
+            <p><a name="GUID-7B94FFB4-FFE9-4095-A6A5-00101F7C2F52"></a>另请参见<span class="char_link"><a href="GUID-F8CCF537-1A83-47FC-B0D5-8A55720DE30F.htm">对象库概述</a></span>中有关对象库自定义的常规说明。 
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_0AF9475115C94E219F0A6E4EFA2B9775"></a> 
+            <h2><a name="GUID-9EBBAA10-EFC0-417B-9EFF-577D89D0D87D"></a> 支持旋转轮子
+            </h2> 
+            <p><a name="GUID-8429CEA8-973A-4822-B25D-9CBD6C562598"></a>Civil View 中包含一个选项，可在任何给定时间以与每个车辆当前速度相应的速率自动旋转动画车辆的轮子。可以从<span class="char_link"><a href="GUID-E1D894D5-95A8-4210-9B5A-DA6684A0B7BE.htm">“Civil View 首选项”面板</a></span>中启用或禁用此功能。也可以从<span class="char_link"><a href="GUID-8B278D6D-2267-4D69-9EF8-1E682A15A200.htm">“对象放置样式编辑器”</a></span>和<span class="char_link"><a href="GUID-2B6CFFDE-30D8-428B-AF88-F8AAADAC1508.htm">“车辆替换管理器”面板</a></span>中控制旋转轮子。 
+            </p> 
+            <p><a name="GUID-82ABC80B-EA5C-470D-9C85-1C6020EA91AE"></a>只有当选定的交通工具库对象满足以下要求时，才能生成旋转轮子。 
+            </p> <a name="UL_2CB8046D98D24769A5E27DEF011893C1"></a><ul>
+               <li>车辆几何体必须是可编辑多边形。 
+                  <p><a name="GUID-FDB55EB1-B110-4BBC-8966-819569C1D566"></a>可编辑网格不支持旋转轮子。 
+                  </p> 
+               </li>
+               <li>轮子几何体由其材质 ID 标识： <a name="UL_B0A9A5E6D1CE4D8BB3ECCC477F8B3DDE"></a><ul>
+                     <li>轮子几何体为 14 </li>
+                     <li>轮胎几何体为 15 </li>
+                  </ul> 
+                  <p><a name="GUID-5C216903-3B58-4322-A702-84789A626630"></a>有关详细信息，请参见<span class="char_link"><a href="GUID-EC47D04A-256A-4039-9351-6313DFFC2037.htm">材质：CivilViewVehicles</a></span>。 
+                  </p> 
+               </li>
+               <li>车辆的其他零件不可以使用预留的材质 ID（14 和 15）。 </li>
+               <li>如果可能，轮子和轮胎集合均应为单个多边形元素。 
+                  <p><a name="GUID-0C3281BF-CF3D-4C6A-9151-70EDD9DD8A53"></a>焊接重合的顶点。 
+                  </p> 
+                  <p><a name="GUID-83AB861F-BD60-474F-BA40-B8A601493812"></a>任何在车辆的 Y 轴或 Z 轴重叠的多边形元素均将被视为在相同的车轴上旋转。 
+                  </p> 
+               </li>
+               <li>必须在“Civil View 首选项”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> <span class="char_link"><a href="GUID-E1D894D5-95A8-4210-9B5A-DA6684A0B7BE.htm#GUID-D1C59E16-1402-470B-A8D1-4419FAE93F2F">“常规”选项卡</a></span>上启用“旋转动画车辆轮子？”。 
+               </li>
+            </ul> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

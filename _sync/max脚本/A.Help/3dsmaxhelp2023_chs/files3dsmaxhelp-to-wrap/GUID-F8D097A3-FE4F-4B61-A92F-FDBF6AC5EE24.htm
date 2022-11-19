@@ -1,0 +1,37 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-F8D097A3-FE4F-4B61-A92F-FDBF6AC5EE24">
+      <meta name="description" content="“子对象-&gt;父对象”优先级使最靠近应用力的位置（终端感应器）的关节比距离力较远的关节移动的距离大。和默认优先级一样，“子对象-&gt;父对象”优先级实现适合许多 IK 解决方案的自然效果。">
+      <meta name="indexterm" content="优先级: 子对象至父对象">
+      <meta name="indexterm" content="选择: 子对象至父对象优先级">
+      <meta name="topic-type" content="concept">
+      <title>选择子到父优先级（HD 解算器）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-F8D097A3-FE4F-4B61-A92F-FDBF6AC5EE24"></a><div class="head">
+            <h1>选择子到父优先级（HD 解算器）</h1>
+         </div>
+         <p class="blurb">“子对象-&gt;父对象”优先级使最靠近应用力的位置（终端感应器）的关节比距离力较远的关节移动的距离大。和默认优先级一样，“子对象-&gt;父对象”优先级实现适合许多 IK 解决方案的自然效果。 </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3D5D"></a>区别是“子对象-&gt;父对象”优先级为运动学链中的每个对象指定唯一的值（默认优先级为每个对象使用值 0）。如果您希望返回并手动更改优先级的值，“子对象-&gt;父对象”优先级更灵活。 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190044DE1"></a><div class="figure-anchor"><img src="../images/GUID-68DE70A0-B2FA-4EED-86D0-45AA382775CC-low.png"><p class="figure-title">第一个图显示子对象至父对象优先级的值。</p>
+         </div><a name="WS1A9193826455F5FFBA679E112A6A190044DE3"></a><div class="figure-anchor"><img src="../images/GUID-5E41DDD5-8F42-480D-B8BA-677B30969669-low.png"><p class="figure-title">第一个图显示子对象至父对象优先级的值。</p>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044DE5"></a> 
+            <h2><a name="GUID-867AB544-E368-4A59-A5E0-737F6137B283"></a>指定子对象-&gt;父对象优先级
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3D5C"></a>单击“子对象-&gt;父对象”，基于优先级高于其父对象优先级的子对象来设置关节优先级。通过将整个层次的根优先级值设置为 0，并将每个子对象的值设置为 10 乘以从根开始的深度，来计算各个值。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3D5A"></a>几乎总是将“子对象-&gt;父对象”优先级指定给整个运动学链。图中的结构链使用身体作为根对象，使用鸭子作为终端感应器。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3D59"></a>每个对象收到的值均等于它相对于层次根的深度乘以 10。请注意，无论是否将层次的根选为运动链的一部分，优先级值的计算均基于层次的根。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3D58"></a>您可能希望仅为运动学链中的单个对象指定“子对象-&gt;父对象”优先级。例如，如果一直手动更改优先级的值，您可能希望将对象设置为其原始的“子对象-&gt;父对象”值。为对象指定的值等于从层次根开始的深度乘以 10。 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

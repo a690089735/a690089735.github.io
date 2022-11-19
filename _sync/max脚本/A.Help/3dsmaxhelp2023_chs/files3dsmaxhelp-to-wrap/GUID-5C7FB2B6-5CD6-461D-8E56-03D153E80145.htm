@@ -1,0 +1,67 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5C7FB2B6-5CD6-461D-8E56-03D153E80145">
+      <meta name="description" content="“蒙皮”修改器是一种骨骼变形工具，主要设计用于通过另一个对象对一个对象进行变形来创建角色动画。可使用骨骼、样条线和其他对象变形网格、面片和 NURBS 对象。">
+      <meta name="indexterm" content="蒙皮修改器">
+      <meta name="indexterm" content="修改器: 蒙皮">
+      <meta name="topic-type" content="topic">
+      <title>关于“蒙皮”修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5C7FB2B6-5CD6-461D-8E56-03D153E80145"></a><div class="head">
+            <h1>关于“蒙皮”修改器</h1>
+         </div>
+         <p class="blurb">“蒙皮”修改器是一种骨骼变形工具，主要设计用于通过另一个对象对一个对象进行变形来创建角色动画。可使用骨骼、样条线和其他对象变形网格、面片和 NURBS 对象。 
+            
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C8E"></a>如果将“蒙皮”修改器应用到网格，然后使用修改器指定骨骼，则每个骨骼都将收到一个胶囊形状的“封套”。这些封套中的修改对象的顶点随骨骼移动。在封套重叠处，每个顶点的运动都是影响该顶点的骨骼运动的混合。使用<em class="mild">权重</em>来实现此操作。 
+            	 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C8D"></a>默认情况下，将为受单个骨骼影响的每个顶点指定 1.0 的权重值，这意味着顶点仅响应该骨骼的运动。两个骨骼封套的相交处的顶点有两个权重值：每个骨骼一个。您可以使用“蒙皮”修改器工具集（如“权重工具”对话框）向任意数量的骨骼任意指定顶点。 
+            	 
+         </p>
+         <p><a name="GUID-DC023E40-808F-494E-A940-17249DA45A67"></a>顶点权重值的比例（总数始终为 1.0）决定每个骨骼的运动对顶点所造成影响的相对范围。例如，如果对于 <em class="mild">bone 1</em> 的顶点权重是 0.8，而对于 <em class="mild">bone 2</em> 的顶点权重是 0.2，则 <em class="mild">bone 1</em> 的运动对顶点造成的影响将是 <em class="mild">bone 2</em> 的运动对顶点所造成影响的四倍。 
+            	 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C8C"></a>初始的封套形状和位置取决于骨骼对象的类型。骨骼会创建一个沿骨骼几何体的最长轴扩展的线性封套。样条线对象创建跟随样条线曲线的封套。基本体对象创建跟随对象的最长轴的封套。 
+            	 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C8A"></a>可同时对多个对象应用“蒙皮”修改器。 
+            	 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190043ABF"></a><div class="figure-anchor"><img src="../images/GUID-49C4990C-7C49-4FAE-89B1-5EBB6607935E-low.png"><p class="figure-title">使用“蒙皮”修改器变形夹克对象。</p>
+         </div>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C89"></a>在 <span class="charspan-msgph">3ds Max</span> 中，可使用“镜像参数”卷展栏上的命令，在网格两侧镜像封套和顶点指定。 
+            	 
+         </p>
+         <div class="section"><a name="SECTION_803B1E52FECD42C8B25C99511456B1E6"></a> 
+            <h2><a name="GUID-BE35263C-6C50-4921-9AFF-19963FB2505C"></a>角度变形器
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3C8B"></a>可以根据骨骼的角度变形蒙皮网格。通过“Gizmos”卷展栏添加的三个变形器可用于基于骨骼角度对网格进行塑形： 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190043ABE"></a><ul>
+               <li>关节角度变形器和凸出角度变形器使用与 FFD 晶格相似的晶格按指定角度对网格进行塑形。 
+                  		  
+               </li>
+               <li> 变形角度变形器按指定角度变形网格。可以使用堆栈中蒙皮修改器上方的修改器创建变形目标。或者，您可以使用“快照”工具创建网格副本，然后使用标准工具变形网格。 
+                  		  
+               </li>
+            </ul> 
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-326B0F77-E276-421F-823E-C80E3F725FD8.htm">To Use the gPoly Object Type</a></li>
+                     <li class="topiclist-litem"><a href="GUID-94865877-0C04-4AC6-A01D-F0FD4BDFDD86.htm">“Gizmo 参数”/“变形器参数”卷展栏（关节角度和凸出角度变形器）</a></li>
+                     <li class="topiclist-litem"><a href="GUID-1129177A-6B3D-47EB-8636-B6D38BE816F8.htm">FFD（自由形式变形）修改器</a></li>
+                     <li class="topiclist-litem"><a href="GUID-02FE6D79-7DD7-45F6-AF15-7417BC4A724A.htm">“变形器参数”卷展栏（变形角度变形器）</a></li>
+                     <li class="topiclist-litem"><a href="GUID-F548BC3F-2E01-44DF-A6FA-8C6BBE59555D.htm"> 快照</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

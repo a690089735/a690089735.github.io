@@ -1,0 +1,1137 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D">
+      <meta name="description" content="展开 UVW 修改器用于将贴图（纹理）坐标指定给对象和子对象选择，并手动或通过各种工具来编辑这些坐标。还可以使用它来展开和编辑对象上已有的 UVW 坐标。可以使用手动方法和多种程序方法的任意组合来调整贴图，使其适合网格、面片、多边形、HSDS 和 NURBS 模型。">
+      <meta name="indexterm" content="展开 UVW 修改器">
+      <meta name="indexterm" content="修改器: 展开 UVW">
+      <meta name="indexterm" content="对象空间修改器: 展开 UVW">
+      <meta name="indexterm" content="UVW: 展开修改器">
+      <meta name="indexterm" content="展开 UVW: 多实例修改器">
+      <meta name="indexterm" content="展开 UVW: 多个对象">
+      <meta name="indexterm" content="纹理: 冻结">
+      <meta name="indexterm" content="贴图: 平面（快速)（UVW 展开）">
+      <meta name="indexterm" content="贴图: 毛皮（UVW 展开）">
+      <meta name="indexterm" content="贴图: 平面（UVW 展开）">
+      <meta name="indexterm" content="贴图: 柱形（UVW 展开）">
+      <meta name="indexterm" content="贴图: 球形（UVW 展开）">
+      <meta name="indexterm" content="贴图: 长方体（UVW 展开）">
+      <meta name="indexterm" content="贴图: 样条线（UVW 展开）">
+      <meta name="contextid" content="UNWRAP_UVW.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS-UNWRAP_UVW">
+      <meta name="topic-type" content="concept">
+      <title>展开 UVW 修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D"></a><div class="head">
+            <h1>展开 UVW 修改器</h1>
+         </div>
+         <p class="blurb">展开 UVW 修改器用于将贴图（纹理）坐标指定给对象和子对象选择，并手动或通过各种工具来编辑这些坐标。还可以使用它来展开和编辑对象上已有的 UVW 坐标。可以使用手动方法和多种程序方法的任意组合来调整贴图，使其适合网格、面片、多边形、HSDS
+            和 NURBS 模型。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_509F40F1FA7746F09BD9D2BFC8F503BB"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-3310A89F-10FE-4A67-A464-A84607CAEA98"> 选择一个或多个对象。 <img src="../images/ac.menuaro.gif"> “修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “展开 UVW”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-CA0CD0B3-DD03-4233-8514-B3F52D392739">默认菜单：选择一个或多个对象。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “UV 坐标” <img src="../images/ac.menuaro.gif"> “展开 UVW”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-900E919E-5DDA-4130-B538-E1985418FF35">Alt 菜单：选择一个或多个对象。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “UV、贴图和材质” <img src="../images/ac.menuaro.gif"> “展开 UVW”</span> 
+               </li>
+            </ul>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3962"></a>您可以使用“展开 UVW”作为独立的 UVW 贴图工具和纹理坐标编辑器，或与<span class="char_link"><a href="GUID-78327298-4741-470C-848D-4C3618B18FCA.htm">“UVW 贴图”修改器</a></span>结合使用。在后一种情况下，这样做通常是为了使用在“展开 UVW”中无法使用的贴图方法，例如“收缩包裹”。可以为 UVW 坐标设置动画，方法是启用“自动键”按钮，然后在不同的帧中转换坐标。 
+               
+            </p>
+            <p><a name="GUID-CD87061F-7E16-428B-9F6F-CDB6D6ABB6F9"></a>使用“展开 UVW”时，通常将对象的纹理坐标分解为更小的组，称为簇。这样就可以在基本纹理贴图的不同区域中精确地定位簇，从而实现最佳的贴图精度。每个簇包含一个称为贴图接缝的轮廓，该轮廓在视口中叠加在对象上。这可以帮助看到对象表面上的贴图簇的位置。可以使用<span class="char_link"><a href="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D.htm#GUID-FDACEF81-C1D8-4892-9AA7-33CC1CF23BF8">“显示”设置</a></span>，来切换这一功能，并设置线的粗细。 
+               
+            </p><a name="WS1A9193826455F5FFBA679E112A6A190043CA9"></a><div class="figure-anchor"><img src="../images/GUID-F5315210-76A0-4489-BCE8-CAB7EDFD5506-low.png"><p class="figure-title">打开在视口中头部模型上显示的 UVW 贴图接缝</p>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043CAA"></a> 
+               <h2><a name="GUID-074A619F-EFB5-4F8C-9C67-B7E028424E6D"></a>独立贴图器与 UVW 坐标编辑器
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3961"></a>可以通过先进行子对象多边形选择，然后添加“UVW 贴图”修改器来创建一个大的修改器堆栈，以指定贴图类型，然而，可以使用“展开 UVW”修改器一举两得。仅需要在“展开 UVW”修改器之内，就可以选择子对象顶点、边、多边形或面片，将子对象选择存储为命名选择，使用平面和其他方法对其进行贴图，然后编辑每个子对象选择的
+                  UVW 坐标。例如，要使用三幅平面贴图来为角色面部贴图，可以先创建面部前面和侧面的三幅子对象选择，然后单独为选择进行平面贴图，接着对每个选择编辑 UVW 坐标，这些都可以在“展开 UVW”修改器内完成。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF13CFD6E1136132A36F-755B"></a> 
+               <h2><a name="GUID-F900835E-BE3F-429A-B3E2-BE230A978475"></a>支持多个展开对象
+               </h2> 
+               <p><a name="WS1A9193826455F5FF13CFD6E1136132A36F-755A"></a>“展开 UVW”中的实例化功能使在多个对象间应用纹理坐标变得更加简单。首先选择对象，然后应用“展开 UVW”。在打开编辑器时，您将看到所有包含修改器实例的选定对象的贴图坐标。编辑器将显示每个对象的<span class="char_link"><a href="GUID-090A31AA-AE7D-41BA-9DAA-C97125140274.htm">线框颜色</a></span>，以帮助您查看对于每个对象哪一组坐标属于该对象。 
+                  
+               </p> <a name="FIG_5D16EA19F6794A16B45AD13366B2DFD8"></a><div class="figure-anchor"><img src="../images/GUID-BD78F843-FC30-49A1-B4B8-23961D3D5B8C-low.png"></div>  
+               <p><a name="GUID-9A3431D5-6AD5-4963-B548-20C3F2595B39"></a> <em class="strong">左：编辑器中的两个对象的 UVW 坐标（显示线框颜色）</em> 
+               </p> 
+               <p><a name="GUID-179DCDE4-EA76-4F3D-BD60-71F9C8F6CF17"></a> <em class="strong">右 (插入)：视口中带有共享“展开 UVW”修改器的对象</em> 
+               </p> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA4D"></a><div class="note-tip"><span class="label label-target-language">提示</span>不同对象的 UVW 在编辑器中通常在开始时是重叠的，因此，最好在编辑前将它们分离。要节省时间，请使用一个<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#GUID-DD9D8696-617A-4ABC-8FA8-1BB2258AD0FC">“紧缩”工具</a></span>。 
+                     
+                  </div>
+               </div> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043CAB"></a> 
+               <h2><a name="GUID-F758EA6E-E22C-4948-A3EA-1A525B741D58"></a>现有 UVW 坐标发生的情况
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3960"></a>当应用“展开 UVW”修改器时，它会在修改器中存储对象当前的贴图坐标。如果对象没有贴图坐标，那么修改器会通过应用平面贴图创建新的贴图坐标。如果堆栈中的传入数据是面级或多边形级的子对象选择，那么只有选定多边形的 UVW 会进入修改器。 
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-395F"></a>当计算修改器时，它的 UVW 会重新指定到管道下面的对象上。所以如果更改了 UVW 上游，那么这些更改不会经过“展开 UVW”修改器。如果“展开”修改器操作于选择的多边形上，那么对未选择的多边形所做的上游更改将仍能流过“展开”修改器。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043CAC"></a> 
+               <h2><a name="GUID-A6A6A8A8-1F37-4557-95A3-4754C20B346D"></a>“HSDS”、“多边形对象”和“面片”贴图的本地支持
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-395E"></a>“展开 UVW”除了支持三角和四元菜单外，还能支持多边形和 Beizer 四元和三角形面片面。 
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-395D"></a>下面是一个例子，展示的是根据传入类型，不同面类型的外观。对于 HSDS 和多边形曲面，基本界面保持不变，但每个多边形的最多边数从 4 增加到两百万。HSDS 仅支持一个细节级别：贴图所在的级别。“面片”在非线性顶点上具有控制柄。这些控制柄与通常的面片控制柄的工作方式一样。
+                  
+                  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190043CAD"></a><div class="figure-anchor"><img src="../images/GUID-090A1C22-F026-4591-84E0-E819E3951D03-low.png"><p class="figure-title">HSDS 和多边形曲面中的多边形和面；对于非线性顶点显示控制柄</p>
+               </div>  
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043CAE"></a> 
+               <h2><a name="GUID-99B9D751-D418-4F35-9EC0-B5C65B52A39F"></a>冻结纹理
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-395C"></a>尽管不是其主要目的，但您可以使用“展开 UVW”修改器来冻结 UVW。在为变形设置动画之后，可以应用贴图，然后将贴图粘在对象上。例如，可以在修改器堆栈中的“变形”修改器上，应用“展开 UVW”，来应用平面贴图并编辑 UVW 坐标。贴图将会跟随变形几何体。
+                  
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2903"></a> 
+               <h2><a name="GUID-1351D493-5AB7-4AFD-B6F1-3684F29DC748"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043CB0"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043CB1"></a>要执行快速平面贴图，请执行以下操作：
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-394E"></a>可在“展开 UVW”修改器的“编辑 UV”卷展栏中找到“快速平面贴图”控件。 
+                  
+               </p>
+               <ol type="1" start="1">
+                  <li>将“展开 UVW”应用于对象。 
+                     
+                  </li>
+                  <li>转至“多边形”子对象层级。 
+                     
+                  </li>
+                  <li>确保“显示快速平面贴图”处于启用状态。 
+                     
+                  </li>
+                  <li>选择要进行贴图的多边形。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-394D"></a>“快速平面贴图”Gizmo 将显示为一个叠合在多边形选择上的黄色线框矩形，显示默认的“平均法线”贴图。尽管默认显示 X 按钮，但默认设置是“平均法线”。 
+                        	 
+                     </p> <a name="FIG_B476D318225045329C8B30D4795CA24E"></a><div class="figure-anchor"><img src="../images/GUID-979790DF-D167-43F2-87E3-E73B84D9D212-low.png"><p class="figure-desc"> 
+                           <p><a name="GUID-877343A1-23DC-40EF-AF4F-E1085AAB45FB"></a>在选定多边形上叠加“快速平面贴图”Gizmo 
+                              		  
+                           </p> 
+                        </p>
+                     </div>  
+                  </li>
+                  <li>要使用不同方向进行贴图，请从弹出按钮中选择“X”、“Y”或“Z”。 
+                     
+                  </li>
+                  <li>若要应用贴图，请单击“快速平面贴图”。要对其他多边形进行贴图，请从步骤 3 继续操作。 
+                     
+                  </li>
+               </ol> <a name="WSF742DAB04106313366400BF6112A1CEA097-7ECF"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043CAF"></a>要通过标准贴图方法使用“展开 UVW”，请执行以下操作：
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-395B"></a>本步骤提供了使用“展开 UVW”基本工具的总体概述，这些工具位于“修改”面板和<span class="char_link"><a href="GUID-A7CC32F5-40BE-4DE5-A364-05E7986D4BA5.htm">“编辑 UVW”对话框</a></span>。“展开 UVW”还提供了许多该步骤中尤其是编辑器中没有描述的其他工具。 
+                  
+               </p>
+               <p><a name="WS73099CC142F4875535A241551166AC8792F-AC6"></a>有关“展开 UVW”提供的其他贴图方法的详细过程，请参见<span class="char_link"><a href="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D.htm#OL_A698F7FD33BE4A48B41B629F0D2BDA6D">使用剥模式</a></span>、<span class="char_link"><a href="GUID-08EAEC2D-6532-4EE6-94EE-FFCD93581D49.htm#WSF742DAB04106313366400BF6112A1CEA097-7ECE">使用毛皮贴图</a></span>和<span class="char_link"><a href="GUID-0ECEB654-76FB-4C2F-9CCD-57A03EA3A9C0.htm#WS73099CC142F4875535A241551166AC8792F-AB4">使用样条线贴图</a></span>。 
+                  
+               </p>
+               <ol type="1" start="1">
+                  <li>将修改器和纹理材质（通常包含基于图像或图案的漫反射贴图）应用于对象。设置将在视口中显示的材质，至少设置一个要进行明暗处理的视口（例如，按 <span class="keyboardEntry">F3</span> 键在线框和明暗处理模式之间切换），然后根据需要为该视口禁用“明暗处理选定面”（按 <span class="keyboardEntry">F2</span> 键），使纹理贴图可见。 
+                     
+                  </li>
+                  <li>转到“展开”修改器的“多边形”子对象层级，并选择一组相邻的多边形。在此选择集上只应用一种贴图类型。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-395A"></a>在单个修改器中，可以为不同的多边形选择应用任意多的不同贴图。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>使用主工具栏上的<span class="char_link"><a href="GUID-93B01505-5474-43D6-8B83-810BA0157A9B.htm">“命名选择集”</a></span>功能对多边形选择进行命名。此步骤不是必需的，但建议执行，使得可以轻松地恢复选择进行后续的贴图调整。例如，如果正在处理一个房子模型，可以使用如<em class="strong">“roof”</em>和<em class="strong">“front”</em>这样的名称。 
+                     	 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA4E"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>键入选择集名称之后，务必按 <span class="keyboardEntry">Enter</span> 键。 
+                           	 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>在<span class="char_link"><a href="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D.htm#SECTION_7A0C356AB465402DA5F6880911A2D772">“投影”卷展栏</a></span>中，单击适当的贴图类型按钮（“平面贴图”、“长方体贴图”等），然后使用视口中的变换工具（“移动”、“旋转”、“缩放”）和“投影”卷展栏上的“对齐选项”工具（“对齐到 X”等）的任意组合来调整 Gizmo。 
+                     	 <a name="FIG_0164B8E7CA4D43B68C8E58FD2D4D771E"></a><div class="figure-anchor"><img src="../images/GUID-52587A1D-06A4-4CC5-ADAE-586CD93C1A8B-low.png"><p class="figure-desc"> 
+                           <p><a name="GUID-A21E30FE-47D4-448E-95A1-C64B54BC597E"></a>“投影”卷展栏上的贴图选项（顶行）从左到右依次为： 
+                              		  
+                           </p> 
+                           <p><a name="GUID-4DCD7626-414C-49AC-ACC4-1FACC5E5FE66"></a>平面、圆柱体、球体和长方体 
+                              		  
+                           </p> 
+                        </p>
+                     </div>  
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA4F"></a><div class="note-tip"><span class="label label-target-language">提示</span>要将贴图重置为默认设置，请单击 <img src="../images/GUID-2741C6C6-CAB1-42B0-BA70-24E5CECBA5BE-low.png">（最佳对齐）。 
+                           	 
+                        </div>
+                     </div> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3959"></a>每次调整贴图 Gizmo 时，显示在视口中的纹理将随之更新，以反映贴图的变化。 
+                        	 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3958"></a>也可以打开编辑器（“编辑 UV”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“打开 UV 编辑器”）来查看在调整 Gizmo 过程中生成的纹理坐标的变化。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>要退出此多边形选择的贴图操作，请再次单击贴图类型按钮。 
+                     
+                  </li>
+                  <li>继续选择并命名选择集，应用贴图直到整个网格完成贴图。使用绿色接缝显示线作为基准。如果没有看到这些工具和按钮，请确保启用“配置”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“显示组”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“贴图接缝”。 
+                     
+                  </li>
+                  <li>打开<span class="char_link"><a href="GUID-A7CC32F5-40BE-4DE5-A364-05E7986D4BA5.htm">“编辑 UVW”对话框</a></span>（“编辑 UV”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“打开 UV 编辑器”）。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3957"></a>默认情况下，编辑器显示方格背景。要查看对象上的材质贴图，需要更改某项设置。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>在工具栏上方编辑器的最右边，单击下拉列表，下拉列表中现在显示的是“方格图案”，然后选择应用到材质上的贴图。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3956"></a>贴图便显示为背景图案。 
+                        	 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3955"></a>默认情况下，将显示全部 UVW 簇。想要每次只操作一个簇，需要过滤 UVW。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>在“编辑 UVW”对话框 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 下方的工具栏上，单击“仅显示选定的多边形”。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3954"></a>此时，编辑器将仅显示您在视口中选择的多边形，而隐藏其余的多边形。您可以选择要直接显示在视口中的多边形，或选择已命名的选择集。在下一步中，将使用后一种方法。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>在主工具栏上，打开“命名选择集”下拉列表，然后从命名选择集中选择一个。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3953"></a>视口中显示该选择集为激活状态，用于该选择集的 UVW 坐标出现在“编辑 UVW”窗口中。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>在“编辑 UVW”窗口中，<img src="../images/GUID-FC96ADD1-AD08-4FA6-8764-30E4C11FD1E6-low.png"> 选择并移动一个或多个 UVW 多边形。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3952"></a>在视口中，纹理会在对象网格的选中部分周围滑动。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>选择一个不同的选择集并编辑它的 UVW 坐标。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3951"></a>编辑所做的修改会再次在视口中显示出来。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>在视口中，拖动一个区域来选择一组多边形。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3950"></a>多边形的 UVW 坐标显示在“编辑 UVW”窗口中。这是选择需要操作对象的另一种方法。 
+                        	 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-394F"></a>就像您可以看到的那样，从“展开 UVW”修改器中，可以给不同的、可选命名的多边形选择集指定多种贴图类型，然后编辑 UVW 坐标，从而来调整贴图在几何体上的位置。 
+                        	 
+                     </p> 
+                  </li>
+               </ol> <a name="WSF742DAB04106313366400BF6112A1CEA097-7ECD"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043CB3"></a>要将纹理坐标导出到绘图程序，请执行以下操作：
+               </p>
+               <p><a name="GUID-7C2152D5-A645-458B-9D85-8DEAC3AD810D"></a>在“展开 UVW”修改器编辑器中布置对象的纹理坐标后，即可使用此功能将它们导出到某个绘制程序中，以便创建纹理贴图。 
+                  
+               </p>
+               <div><a name="GUID-B874BD7F-B950-4D2F-85A7-4304AF620CF5"></a><div class="note-tip"><span class="label label-target-language">提示</span>或者，也可以使用“<span class="char_link"><a href="GUID-F5518487-A253-44F0-A8D9-9CB537A8F392.htm">视口画布</a></span>”功能将纹理直接绘制到 <span class="charspan-msgph">3ds Max</span> 视口内的对象曲面上。 
+                     
+                  </div>
+               </div>
+               <ol type="1" start="1">
+                  <li>为对象应用“展开 UVW”修改器，并使用修改器工具设置贴图。使用纹理贴图的相同部分的纹理坐标区域，在编辑器中是重叠的。 
+                     
+                  </li>
+                  <li>从“编辑 UVW”对话框的菜单栏中，选择“工具”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“渲染 UVW 模版”。 
+                     	 
+                     <div><a name="GUID-1A737D1D-B937-422E-9444-95C69BCDBA51"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果您的驱动程序不支持图形模式，则不能选择“渲染 UVW 模板”。 
+                           	 
+                        </div>
+                     </div> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3947"></a>这将打开“渲染 UV”对话框： 
+                        	 
+                     </p> <a name="FIG_8C759D177EC64AB7960C1C1D22376B94"></a><div class="figure-anchor"><img src="../images/GUID-FB0B58FD-DBA4-403F-97D0-5974EEC53133-low.png"></div>  
+                  </li>
+                  <li>选择渲染目标。 
+                     
+                  </li>
+                  <li>在渲染模板中设置希望输出的“宽度”和“高度”分辨率。设置好宽度后单击“猜测纵横比”通常可以得到较好的结果。 
+                     	 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA54"></a><div class="note-tip"><span class="label label-target-language">提示</span>为游戏和其他实时 3D 引擎创建纹理贴图时，请确保两个尺寸均为 2 的幂：256、512、1024，等等。 
+                           	 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>根据需要修改剩下的值。默认情况下，模板的边被渲染为白色且不透明 (alpha=1.0)，而背景为空且透明（背景 alpha=0.0），但是可以有很多不同的选择，详情请参见<span class="char_link"><a href="GUID-4525C148-7DC9-4FE4-8C34-0B174CD8E0D6.htm">“渲染 UV”对话框</a></span>。 
+                     
+                  </li>
+                  <li>在该对话框的底部，单击“渲染 UV 模板”。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3946"></a>这将打开一个新的<span class="char_link"><a href="GUID-DB20C3DE-93A8-4FF5-BD97-CA05DD3A89B4.htm">“渲染帧窗口”</a></span>，其中含有渲染为位图的模板。检查输出，如果还需要进行更改，在“渲染 UV”对话框中更改并重新渲染。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>如果对结果满意，则在“渲染帧窗口”工具栏上单击“保存位图”，然后使用文件对话框指定文件类型和名称。单击“保存”导出文件。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3945"></a>如果希望在绘图程序中使用渲染透明度信息，请确保将文件保存为支持 alpha 通道的文件格式，如 TIF 或 Targa。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>在绘图程序中打开导出的图像，利用渲染边作为绘制纹理贴图的向导。完成后保存图像。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3944"></a>确保为所有边上色，或擦除所有边使它们不出现在最终得到的纹理中。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>回到 <span class="charspan-msgph">3ds Max</span>，创建一种材质，将“漫反射”贴图设置为“位图”，打开上一步中保存的文件。 
+                     
+                  </li>
+                  <li>将材质应用到网格对象上。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3943"></a>绘制的纹理贴图与根据导出的 UV 设置的轮廓吻合。 
+                        	 
+                     </p> 
+                  </li>
+               </ol> <a name="OL_A698F7FD33BE4A48B41B629F0D2BDA6D"></a><p class="list-intro"><a name="GUID-6EB3F5A4-41C0-4734-B5D1-A44ECCEB4D55"></a> 示例：要使用“剥模式”，请执行以下操作：
+               </p>
+               <p><a name="GUID-D70BBA59-BFE6-46CF-8A7B-5EA74F9D56F5"></a> “剥”工具集可通过执行 LSCM（最小方形保形贴图）方法来展开纹理坐标，从而使用简单直观的工作流来展平复杂曲面。此过程通过一个简单的角色模型展示了“剥”工具提供的一些基本方法。目的是让您大致了解在带有更复杂对象（例如角色网格）的项目中如何使用这些方法。
+                  
+                  
+               </p>
+               <ol type="1" start="1">
+                  <li> 创建或加载一个模型，然后对其应用“展开 UVW”。 
+                     
+                  </li>
+                  <li> 创建<span class="char_link"><a href="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D.htm#GUID-043D3A42-ED36-483D-8371-C3174B97FC98">接缝</a></span>，用于将模型细分，以便进行剥操作。 
+                     	 
+                     <div><a name="GUID-5BB9705E-BF00-4228-989F-49BAD09D7D90"></a><div class="note-tip"><span class="label label-target-language">提示</span>创建接缝的一个方便方法是，使用该层级提供的其他工具（例如“循环”）选择边。然后可以通过“将边选择转换为接缝”以便在边选择范围外创建接缝。 
+                           	 
+                        </div>
+                     </div> 
+                     <p><a name="GUID-6C2C28C8-EF84-45A2-8212-47B16EF1B515"></a>下图显示了为手臂创建的接缝： 
+                        	 
+                     </p> <a name="FIG_34ABFC1948D74FBEABA6B8BCE7776484"></a><div class="figure-anchor"><img src="../images/GUID-3550EBC2-F2B7-464D-AFE4-A2BECC1F43D5-low.png"></div>  
+                     <p><a name="GUID-5531F1EF-22A9-414C-A594-AE64C3FE8AE0"></a>通常情况下，在继续操作前，应当为整个角色网格创建接缝。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>在修改器“选择”卷展栏上，转到“多边形”子对象层级，然后在手臂上选择一个多边形。 
+                     
+                  </li>
+                  <li>在“剥”卷展栏上，单击“将多边形选择扩展到接缝”。 
+                     	 
+                     <p><a name="GUID-659961E0-DAAA-439C-8262-70549204A85D"></a>这样将选定在手臂上由接缝包围的所有多边形。 
+                        	 
+                     </p> <a name="FIG_DC31ACD1A93F487E91828FED323C5C78"></a><div class="figure-anchor"><img src="../images/GUID-DAF88DDE-816D-416E-9DD2-EECC66B93C6F-low.png"></div>  
+                  </li>
+                  <li> 在“剥”卷展栏上，单击“剥模式”。 
+                     	 
+                     <p><a name="GUID-8610AC2C-109D-45BC-A26F-012D5111363D"></a>将打开“编辑 UVW”对话框，手臂簇将在其中展平并准备在“剥模式”下工作，对话框中还将显示其他的未展平簇（例如左下方的手）。（注意：您的结果可能略有不同）。 
+                        	 
+                     </p> 
+                     <p><a name="GUID-E39B7989-3C64-464D-B004-D85401FFDA0C"></a>这样的结果说明，当您激活“剥”模式时，如果多边形子对象层级处于活动状态，并且已经选定任何多边形，将只有这些多边形进行剥操作。下一步会进一步证明这一点。 
+                        	 
+                     </p> <a name="FIG_32016ADB7EE9432DA67B2342D1618F04"></a><div class="figure-anchor"><img src="../images/GUID-3CC467EB-0E34-4690-AD14-94BE396920F2-low.png"></div>  
+                     <p><a name="GUID-FC9A8B34-5F0E-4E1D-B27D-820396C6E06E"></a> 已剥群集使用独特的着色，让您更轻松地查看正在剥的纹理坐标部分。默认情况下，颜色是紫色；要调整颜色，请更改<span class="char_link"><a href="GUID-630DAA9E-F9AF-49AD-97B6-56F4A250C906.htm#WS1A9193826455F5FF-6672057A11CE3B1F807-7BF6">“剥颜色”设置</a></span>。 
+                        	 
+                     </p> 
+                     <div><a name="GUID-F69C39E2-E943-44AB-B241-3D540B6A68EC"></a><div class="note-note"><span class="label label-target-language">注意:</span>编辑器对话框还提供了与“修改”面板具有相同“剥”工具的“剥”卷展栏，以及一些用于处理锁定点的其他工具，此过程很快将用到这些工具。 
+                           	 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>如果群集重叠，如上面的插图中所示，则单击“排列元素”卷展栏上的<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#GUID-DD9D8696-617A-4ABC-8FA8-1BB2258AD0FC">紧缩: 自定义</a></span>以将其分离。 
+                     
+                  </li>
+                  <li>确保“顶点”子对象层级处于活动状态（默认情况下，启用“剥模式”时，会发生此情况），并确保未选择任何顶点，然后拖动未剥群集（如手）中的一个顶点。接着，拖动已剥群集中的一个顶点。 
+                     	 
+                     <p><a name="GUID-9C1B7177-33E2-49A5-9EB2-40F782CD2FA8"></a>要观看此过程，请播放以下视频： 
+                        	 
+                     </p> 
+                     <p><a name="GUID-F35032A7-B523-491D-8B19-4B151034525D"></a> 
+                        <div><a name="GUID-45A4F1E4-1607-4B75-8882-68D632624560"></a><div class="note-note"><span class="label label-target-language">注意:</span>有关更多视频内容，请查看此在线主题。请参见 <a href="http://www.autodesk.com/3dsmax-docs-chs" target="_blank">http://www.autodesk.com/3dsmax-docs-chs</a> 
+                           </div>
+                        </div> 
+                     </p>  
+                     <p><a name="GUID-AA746F50-CE0F-48BB-9B1B-1AD2083EAFFC"></a>如您所见，拖动未剥簇中的顶点时，仅移动该顶点，而拖动已剥簇中的顶点时，则会影响整个簇。这是“剥”功能的主要用途之一：只需移动少数顶点便可重塑群集，同时保持其整体地形完整性。 
+                        	 
+                     </p> 
+                     <p><a name="GUID-6416211A-9B65-4DB7-8510-FB2D3780FF6C"></a>“展开 UVW”的一个主要用途使纹理坐标相对于网格是规则的，从而避免产生拉伸和其他纹理异常。执行此过程时，为了获得更好的视觉效果，可以在明暗处理视口中允许在模型上显示方格背景。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>撤消上一步中所做的所有更改，然后打开对话框右上角的下拉列表并选择“CheckerPattern（方格）”。 
+                     	 <a name="FIG_61DE3EFEA78E4265B3E3F1A9073F6127"></a><div class="figure-anchor"><img src="../images/GUID-7E5EB0BE-33F5-42C9-AA73-42D3F915FC2D-low.png"></div>  
+                     <p><a name="GUID-C9C72FDF-634A-4719-8133-1782852A4157"></a>该标签已经显示，但从列表中进行选择后可以将其激活，使其显示在模型上。 
+                        	 
+                     </p> <a name="FIG_08BEF9B38F614640A1E900B7096EFFBC"></a><div class="figure-anchor"><img src="../images/GUID-D12742B1-1B0C-4824-9D30-FBD88132C207-low.png"></div>  
+                     <p><a name="GUID-5D1392B4-9EDD-466B-8552-DC4ED2CAB8BA"></a>如您所见，由于在第一次调用“剥模式”时应用了“快速剥”，因此图案已经相当规则。此过程的后续步骤将仅展示“剥模式”中的一部分可用工具。 
+                        	 
+                     </p> 
+                     <p><a name="GUID-5AC5FA57-FCE2-48E4-BC49-148F156A54AB"></a>例如，为了更方便地将手臂或衣袖簇与现有纹理进行匹配，您可能希望它更接近矩形。但首先要将该簇隔离出来。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>通过选择并移开其他簇，来隔离簇。确保“顶点”子对象层级处于活动状态，并且未选定任何顶点。 
+                     	 
+                     <p><a name="GUID-409A36BC-7FD8-49E2-86DE-17D795265BBB"></a>有时候，启动剥步骤的一个不错方法是，确定群集中要保持图形的部分，然后锁定或“锁定”关键纹理顶点。簇的左侧已经几乎接近矩形，因此可以从这里开始。 
+                        	 
+                     </p> 
+                     <div><a name="GUID-0D6E26BC-5471-4874-ADD2-C7022F43E86A"></a><div class="note-note"><span class="label label-target-language">注意:</span> “剥模式”将纹理坐标分布在群集的锁定顶点（具有蓝色轮廓）之间。由于至少需要两个锁定才能进行剥操作，因此如果在不指定任何锁定的情况下开始移动顶点，则默认情况下，“展开 UVW”修改器会选择使用的两个锁定。但是，您可以指定要使用的锁定。可以通过“锁定选定对象”手动锁定顶点，如下一步所示。或者，当<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#GUID-826EACD6-6A90-43CB-A5D1-8679C9F7C4C2">自动锁定移动的顶点</a></span>处于启用状态时，通过移动顶点将其锁定。通常，比较好的做法是，首先将要保持静止的所有顶点锁定，然后移动要重新定位的顶点。 
+                           	 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>选择两个角顶点，然后单击 <img src="../images/GUID-3C2490F0-990E-4AD4-B629-BC74A44ADC68-low.png">（<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#GUID-5435D612-03AB-4103-954D-F440670231CE">锁定选定对象</a></span>）。然后选择默认锁定，并单击“取消固定选定对象”。 
+                     	 
+                     <p><a name="GUID-427024E4-FEE0-4C32-B8D3-A16D705F00FB"></a>要观看此过程，请播放以下视频： 
+                        	 
+                     </p> 
+                     <p><a name="GUID-C3D112BA-008A-4DAD-BD79-666484EFB279"></a> 
+                        <div><a name="GUID-0509FC7F-2477-4777-9CEB-62C5D3E71AEA"></a><div class="note-note"><span class="label label-target-language">注意:</span>有关更多视频内容，请查看此在线主题。请参见 <a href="http://www.autodesk.com/3dsmax-docs-chs" target="_blank">http://www.autodesk.com/3dsmax-docs-chs</a> 
+                           </div>
+                        </div> 
+                     </p>  
+                     <p><a name="GUID-51BFC1A4-A255-48B0-BDDC-88A88D714C14"></a>在锁定和取消锁定顶点后，请注意群集尺寸的变化。由于“剥模式”仍然有效，更改锁定的顶点会影响群集的张力，从而导致尺寸发生变化。 
+                        	 
+                     </p> 
+                     <div><a name="GUID-3C476DE2-26A2-4B2C-8D9C-A9CED7D6FFD2"></a><div class="note-note"><span class="label label-target-language">注意:</span>可以通过拖动来直接移动锁定顶点；其行为与“剥模式”中的任何其他顶点一样。唯一的区别是，当您拖动其他顶点时，它不会做出响应。 
+                           	 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>必要时更改缩放级别，然后移动不规则一侧的顶点，直到获得接近矩形的形状。 
+                     	 
+                     <p><a name="GUID-76F80732-27C3-4382-A5F3-0E9F6E4ADD8A"></a>要观看此过程，请播放以下视频： 
+                        	 
+                     </p> 
+                     <p><a name="GUID-F5651D86-FEE8-4E12-8E13-F14140F4C55C"></a> 
+                        <div><a name="GUID-4F9B18B1-920E-4A96-9F91-05CB902B7315"></a><div class="note-note"><span class="label label-target-language">注意:</span>有关更多视频内容，请查看此在线主题。请参见 <a href="http://www.autodesk.com/3dsmax-docs-chs" target="_blank">http://www.autodesk.com/3dsmax-docs-chs</a> 
+                           </div>
+                        </div> 
+                     </p>  
+                     <p><a name="GUID-D3446CA9-BDD9-49C9-83CA-B3D8B9D4174B"></a>拖动时，其他未锁定的顶点也会随之移动；“剥模式”通过此方式来维持总体的拓扑形状。 
+                        	 
+                     </p> 
+                     <p><a name="GUID-268E6F57-08B1-444A-ADC8-A4BA66E8DEFE"></a>请注意，所移动顶点周围的锁定顶点越多，您对于局部的控制力就越强。此外，还请记住，您随时可以直接移动锁定顶点。 
+                        	 
+                     </p> 
+                     <div><a name="GUID-2637A23F-04BB-4803-BA13-C6DB3A242F29"></a><div class="note-tip"><span class="label label-target-language">提示</span>在“剥模式”中对齐（请参见<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#SECTION_9B76629208D14FA6932AA0BDC1D0BDA5">“快速变换”卷展栏</a></span>）或松弛（请参见<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#SECTION_0FF7ECA8B8FE4C5D81AE1EBFF42ACC20">“重新塑造元素”卷展栏</a></span>）顶点非常有用，但首先需要锁定这些顶点。 
+                           	 
+                        </div>
+                     </div> 
+                     <p><a name="GUID-B5EAA507-3575-41C4-8F88-58E4AFBEFF54"></a>有时候，在进行剥操作时，您可能希望对簇进行部分地细分，例如将从颈部后面到头顶部的头部纹理进行细分。我们将在后面的几个步骤中模拟此操作。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>从簇轮廓开始，在一条线上选择多个边。 
+                     	 <a name="FIG_DB02ACC189704612BB9E3AFA5DA9B83D"></a><div class="figure-anchor"><img src="../images/GUID-5390923E-F1B9-4C05-BA0B-953799790EB9-low.png"></div>  
+                  </li>
+                  <li>在“炸开”卷展栏上，单击 <img src="../images/GUID-79395305-57EC-4B36-865C-1EB4A10A19DD-low.png">（断开）。 
+                     	 
+                     <p><a name="GUID-AD8F20EE-3F56-442B-AE2B-893E16BEF58C"></a>这些边将会分离，被“剥模式”的拉伸效果拉开。 
+                        	 
+                     </p> <a name="FIG_AF0F0EF01742488D978E2FAAFF5ED9F6"></a><div class="figure-anchor"><img src="../images/GUID-15FF0CF4-2F7F-4562-8067-ED38A14DF8EA-low.png"></div>  
+                  </li>
+                  <li> 下面是在“剥模式”中可能要使用的一些其他工具： 
+                     	 <a name="UL_761F6583BB55451194C134B0AA3C481B"></a><ul>
+                        <li>要创建新簇，请选择一些连续的多边形，然后单击 <img src="../images/GUID-A0995FF7-F5F3-4F6D-ACEA-FBF5DFA408EE-low.png">（重置剥）。此操作将剥离用作群集的选择项，然后应用“快速剥”。 
+                           		  <a name="FIG_49163E23E40C47328B124F31EA013E31"></a><div class="figure-anchor"><img src="../images/GUID-71D464F8-60AD-48DD-8067-8346D8BDD28E-low.png"></div>  
+                        </li>
+                        <li>若要移除顶点的锁定，请选择顶点，然后单击“取消固定选定对象”。有关与锁定相关的其他工具的信息，请参见<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#GUID-A8D32E47-AC7B-48CF-8800-66666EBBB968">“锁定”组</a></span>。 
+                           		
+                        </li>
+                     </ul> 
+                  </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2902"></a> 
+               <h2><a name="GUID-EAA71BE3-AB3B-4D3C-8D4D-31C863AD5AF7"></a>界面
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3942"></a>应用“展开 UVW”修改器后，其界面显示在“修改”面板上，其中包含修改器堆栈和几个卷展栏： 
+                  
+               </p> 
+               <div class="section"><a name="WSF742DAB04106313366400BF6112A1CEA097-7ECC"></a> 
+                  <h3><a name="GUID-9D1859AA-F1AC-44CA-B529-1F86EA11C5EF"></a>修改器堆栈显示
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043CB5"></a><div class="figure-anchor"><img src="../images/GUID-470DECA8-C6DB-4A8D-9014-333A255974FD-low.png"></div>  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3941"></a>通常，对一个对象应用“UVW 展开”时，修改器堆栈将在“顶点”、“边”和“多边形”子对象层级上提供对纹理坐标的访问。在视口中选择 UVW 顶点和边时，“顶点”和“边”子对象层级非常有用，其中对象表面的纹理贴图更易于看到，而且“边”层级对于设置以后可以将其转换为接缝的边选择非常有用，这些接缝用于“毛皮”和“剥”工具。
+                     
+                     	 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3940"></a>如果对“可编辑网格”或“可编辑多边形”对象的活动面或多边形选择应用了“展开 UVW”，或者对“可编辑面片”对象的活动面片选择应用了它，那么在修改器中只能编辑该选择。然后，如果更改对象中的面或多边形选择，则修改器更新继承的选择，并再次仅使这些多边形可用于编辑。
+                     
+                     	 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-393F"></a>当您首次对某个对象应用“展开 UVW”修改器时，所有子对象层级均不处于活动状态（即使“选择”卷展栏中的一个子对象按钮始终高亮显示）。您可以从修改器堆栈或“选择”卷展栏以访问子对象层级，或者也可以只打开“编辑 UVW”对话框，这样可以激活“顶点”子对象层级，除非另一个层级已经处于活动状态。在编辑器处于打开状态时，子对象层级将在修改器堆栈、“选择”卷展栏（请参见下文）和“编辑
+                     UVW”对话框上的<span class="char_link"><a href="GUID-C65A1B09-3670-4E7E-BCFC-13E10C831817.htm#SECTION_CCFFDBB114174E64B5A3720F738AC267">“子对象选择”工具栏</a></span>之间保持同步。如果在其中一个元素中激活某个子对象层级，该层级在另两个元素中也会随之激活。与此类似，在视口中选中子对象也同样在编辑器中选中了这些对象，反之亦然。 
+                     	 
+                  </p> 
+                  <p><a name="GUID-809FD7BE-8D99-42E7-BA17-CFA463571715"></a>关闭编辑器时，当前子对象层级将保持活动状态。可以通过单击修改器名称或高亮显示的层级，在修改器堆栈显示中退出该层级。 
+                     	 
+                  </p> 
+               </div> 
+               <div class="section"><a name="SECTION_C9E4D97B20DE4263AF41E90B43F67DD2"></a> 
+                  <h3><a name="GUID-CE3B774B-5A9A-4CCA-B2A1-C36DB1BE94E5"></a>“选择”卷展栏
+                  </h3> 
+                  <p><a name="GUID-5AD3ACC8-426A-4015-978F-D5491EC377ED"></a>此卷展栏包含的工具用于选择要使用“展开 UVW”修改器中的其他工具进行操纵的纹理坐标。 
+                     	 
+                  </p> 
+                  <p><a name="GUID-9B0182E1-7977-403C-9BC0-2A67AEB572BB"></a>此处的一些工具用于按程序（而不是显式地）选择子对象。例如，“扩大: XY 选择”工具将自动选择已连接到当前选择的子对象。这些工具作用于对象 (XY) 空间，相比之下，“编辑 UVW”对话框上的对应工具作用于纹理 (UV) 空间。 
+                     	 
+                  </p> 
+                  <p><a name="GUID-07A27BE6-FE7E-44D1-8D42-D755E3B4B4A0"></a>例如，假设有一个角色网格，其几何体是单个元素，但是在编辑器中，为了贴图的目的，其纹理坐标分隔为不同的群集（头部、手部等）。如果在命令面板上转到修改器的“多边形”子对象层级，在视口中选择多边形，并重复单击“扩大”按钮，则最终将选择整个模型。但是，如果在编辑器中从一个选定的多边形开始执行相同的操作，则使用“扩大”工具最终能选择到该子对象所从属的群集，例如头部。
+                     
+                     	 
+                  </p> 
+                  <p><a name="GUID-86635B6E-9DCE-4E3F-ADA1-56062CD2B032"></a>以下视频将演示一个应用了“展开 UVW”的球体，然后进行展平贴图，从而生成多个 UVW 群集。首先，在视口中选择一个群集中的几个顶点，然后重复单击“扩大: XY 选择”，直到顶点选择扩大到超出群集。然后取消选择顶点，并在编辑器中选择群集中的一个顶点。此时，在编辑器中再次重复单击“扩大”按钮来扩大选择，但不要超出群集。
+                     
+                     	 
+                  </p> 
+                  <p><a name="GUID-EAB9315E-C753-457E-83EE-DE15BC4F949D"></a> 
+                     <div><a name="GUID-939AE051-D8E6-4D75-95E8-6BB71C72AF74"></a><div class="note-note"><span class="label label-target-language">注意:</span>有关更多视频内容，请查看此在线主题。请参见 <a href="http://www.autodesk.com/3dsmax-docs-chs" target="_blank">http://www.autodesk.com/3dsmax-docs-chs</a> 
+                        </div>
+                     </div> 
+                  </p>  <a name="FIG_86A785E5FE584B9C922FBB3A13052CB2"></a><div class="figure-anchor"><img src="../images/GUID-98E2A60D-1BB3-4866-A821-0812C52532B7-low.png"></div>  <a name="GUID-A467530F-CF04-4117-98D3-6A608F5E3A65"></a><dl>
+                     <dt><a name="GUID-32C7F72B-0274-4C8E-AAAE-6E3E54BF9FC1"></a><span class="term"><a name="GUID-B9C77DBF-0BBD-4710-80AA-08A8D6D0027D"></a><img src="../images/GUID-E0AE0CFD-BDDA-4129-80AE-045E3AA54D72-low.png"> 顶点/<img src="../images/GUID-814FA90C-9B1F-4CC9-BFDD-0E58A57B8C3C-low.png"> 边/<img src="../images/GUID-EDF80DAD-EB4A-4666-8698-080A85FE24E5-low.png"> 多边形</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-2DB5AFF7-DE07-4183-9759-B4ACC7AD221F"></a>在各自的纹理子对象层级启用选择。这些按钮等效于修改器堆栈（请参见上文）和“编辑 UVW”对话框上的子对象层级。 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-96033897-40AE-4EB6-A135-38D965A48637"></a><span class="term"><a name="GUID-E10E77C8-4FEB-47B9-A291-6BA8450805A8"></a> <img src="../images/GUID-10EFCBEF-E80B-43BA-B562-E7E8D3843732-low.png"> 按元素 XY 切换选择</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-023C4C39-DCE7-4BC8-A00E-658C71CA55D2"></a>当此选项处于启用状态并修改器的子对象层级处于活动状态时，在修改的对象上单击<span class="char_link"><a href="GUID-08770848-2797-489E-AEE1-2A83C07729C4.htm">元素</a></span>，将选择该元素中活动层级上的所有子对象。这不同于“编辑 UVW”对话框具栏中的“<span class="char_link"><a href="GUID-C65A1B09-3670-4E7E-BCFC-13E10C831817.htm#GUID-38DD3AAC-D6A5-441C-AD6D-2D18EDA8400C">按元素 UV 切换选择</a></span>”，后者适用于纹理坐标簇。
+                        </div>
+                     </dd>
+                  </dl>
+                  <div class="dl_section"><a name="GUID-04C03D14-6FDE-4E63-B0B3-400057E70303"></a><p class="title"><a name="GUID-70C80D71-27DA-4562-A41E-CACD39D0C1D7"></a>“修改选择”组
+                     </p>
+                     <dl>
+                        <dt><a name="GUID-7EF98241-48A2-46B4-A424-CC3F4792739C"></a><span class="term"><a name="GUID-6686F899-9CDD-4A7A-B2FF-DB0FF12AE474"></a><img src="../images/GUID-EF83DF1E-7D60-4B35-9FDA-7C0600479D29-low.png"> 扩大: XY 选择</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-054FFEFD-7FE5-49E7-81C8-5F1052F5D2E3"></a> 通过选择连接到选定子对象的所有子对象来扩展选择。 
+                              	 
+                              <p><a name="GUID-6C786D1A-2124-4369-856A-32524A7EDB49"></a>有关此“扩大”工具和“UV”编辑器上的“扩大”工具的不同点，请参见本部分的说明。 
+                                 	 
+                              </p>
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-6A1F11E3-AD2D-4657-830E-17706366A062"></a><span class="term"><a name="GUID-56C99661-03B8-4B4B-ADA0-E5F219B546BD"></a><img src="../images/GUID-B6DC02B0-C124-4C95-A551-9BB03B57A791-low.png"> 收缩: XY 选择</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-C28AB355-064F-4EDE-A3F4-E6B91D5AD229"></a> 通过取消选择与非选定子对象相邻的所有子对象，减少选择。 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-0C195C5B-06A5-4CFE-B3AA-ECC2C1A06E24"></a><span class="term"><a name="GUID-20CE79E9-429D-4CC2-95F3-849E1070A138"></a><img src="../images/GUID-E4BCE22D-EFB7-43B7-81C3-9882EC4EED38-low.png"> 循环: XY 边</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-FCA4AF1A-C318-4DE8-9F0E-8E756B607984"></a> 在与选中边相对齐的同时，尽可能远地扩展选择。循环仅用于边选择，而且仅沿着偶数边的交点传播。 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-C222A1FC-4DA9-45C9-91CB-F4747831CF0E"></a><span class="term"><a name="GUID-AE7A73C8-9D4F-4166-ADD6-44F8F00994D4"></a> <img src="../images/GUID-02B83626-2B3F-486A-8F1B-20FD1D9434A9-low.png"> 环形: XY 边</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-9B613C9E-20ED-4982-B67B-1F291E0A28F0"></a> 通过选择所有平行于选中边的边来扩展边选择。圆环只应用于边选择。 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-8F8B1FF4-004E-4240-AF8B-7CF843A606B0"></a><p class="title"><a name="GUID-63B2865B-C428-48D1-A3EB-5DC23EA93E81"></a>“选择方式”组
+                     </p>
+                     <dl>
+                        <dt><a name="GUID-E85B1E2E-E8DA-4EDC-B485-D4C9291E2130"></a><span class="term"><a name="GUID-D1236C75-1860-4F2E-856A-CB4550465B86"></a><img src="../images/GUID-1379E3BC-620B-4CCE-A9B9-7D685E31294D-low.png"> 忽略背面</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-56CDAB21-1174-435C-BA54-33A50E4BE0E6"></a> 启用时，将不选中视口中不可见的子对象。 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-A342ABB7-9843-40A0-9698-71B6DF6A6827"></a><span class="term"><a name="GUID-CA728A0D-1884-46D9-AD37-8500A275FA66"></a><img src="../images/GUID-3CA6BAEA-FA38-4FC0-8BFF-3ACE72F1FBC9-low.png"> 点对点边选择</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-0AA8AA88-DE40-4BDE-95A2-E60C49C16379"></a> 启用时，可通过单击对象上的连续边来选择连接边。当此工具处于活动状态时，将有一个橡皮筋线连接到您使用鼠标光标单击的最后一条边。当前选择将以橙色进行预览。单击以确认选择。 
+                              	 
+                              <p><a name="GUID-FCEB3B64-8F8F-46C6-8968-B4214BB184E2"></a>要从当前选择中退出，请单击鼠标右键。此时，该工具保持活动状态，以便您可以在对象上的其他位置开始新的选择。要彻底退出该工具，请再次单击鼠标右键。 
+                                 	 
+                              </p> 
+                              <p>“点对点边选择”仅在“边”子对象层级可用。 
+                                 	 
+                              </p>
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-2F4622FE-CA09-4204-82D9-167AB9EAA451"></a><span class="term"><a name="GUID-1EA618DD-F597-419D-AC29-775CF96AA601"></a><img src="../images/GUID-E21F2A93-F0F7-44D8-A09C-32E7315A11B1-low.png"> 按平面角选</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-14A1DECA-DAA0-424B-852E-99D38D9E9948"></a> 
+                              <p><a name="GUID-F35F6308-7327-403A-B7A4-EA09FFF037A5"></a>当处于活动状态时，单击一次就可以选择连续共面的多边形。此选项处于启用状态并使用数值设置来指定的阈值角度值，该值确定哪些多边形是共面的。然后单击一个多边形以选择该多边形和其角度比阈值角度值低的所有连续多边形。 
+                                 	 
+                              </p> 
+                              <p><a name="GUID-BBE84795-78FC-48F1-88DD-B53719015182"></a>“按平面角选”仅用于“多边形”子对象层级。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-397BF3E9-7A09-45E8-AA77-07BB1191AE3F"></a><span class="term"><a name="GUID-A453BFB7-74F7-4C4A-A6D7-262546E26A3C"></a><img src="../images/GUID-88773268-41D9-4EC5-858E-26264D2AB611-low.png"> 按平滑组选择: XY</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-7634772C-9DFD-425F-82A4-C7693AC221D7"></a> 
+                              <p><a name="GUID-F88B0CFD-1D1B-4391-AFC7-2683CD866FC9"></a>可以通过<span class="char_link"><a href="GUID-1244162D-A063-486C-BD9B-168466F6488B.htm">平滑组</a></span>启用多边形选择。指定要选择的平滑组，然后单击“按平滑组选择”。 
+                                 	 
+                              </p> 
+                              <p><a name="GUID-08D828C2-6FC9-4563-9AC1-07B8EAA2C8A7"></a>“按平滑组选择”仅用于“多边形”子对象层级。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><span class="term"> <img src="../images/GUID-7C5D3AC3-0F9C-4998-AFF6-44A6D0D91C2C-low.png"> 对称几何选择</span></dt>
+                        <dd>
+                           <div class="definition"> 
+                              <p>启用对称选择。单击 X、Y 或 Z 以指定所需的对称平面。蓝色边界框将显示在对象上，以显示当前选定的平面。 
+                                 	 
+                              </p> 
+                              <p>对象不必完全对称，就能使用此功能。您可以调整用于弥补不完美对称的阈值。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><span class="term"> 阈值</span></dt>
+                        <dd>
+                           <div class="definition"> 
+                              <p>设置用于进行对称选择的阈值。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div> 
+               </div> 
+               <div class="section"><a name="SECTION_55F080CCB7A3482EB273FD9F6119D822"></a> 
+                  <h3><a name="GUID-9E8A43F1-60F1-4C71-943A-B164827D087C"></a>材质 ID
+                  </h3> <a name="FIG_5B27FB81571B439DA58E5EE772BF8B36"></a><div class="figure-anchor"><img src="../images/GUID-0045920B-760B-42CF-BCB2-004CF99C2A9D-low.png"></div><a name="GUID-17B57927-8677-4752-B3DC-F1A47BDD0F12"></a><dl>
+                     <dt><span class="term">设置 ID</span></dt>
+                     <dd>
+                        <div class="definition">为选定的多边形设置<span class="char_link"><a href="GUID-D8EDE0E1-9694-4844-B58B-A8CB0EBD473B.htm">材质 ID</a></span>。 
+                        </div>
+                     </dd>
+                  </dl><a name="GUID-6746E48C-FDFD-4F12-A15A-4B8D7FDD014D"></a><dl>
+                     <dt><span class="term">选择 ID</span></dt>
+                     <dd>
+                        <div class="definition">选择与指定的材质 ID 匹配的所有多边形。 
+                           	 
+                           <p><a name="GUID-6D254062-E0FB-484E-A75A-19BBF0EE9157"></a>“选择 ID”仅在“多边形”子对象层级可用。 
+                              	 
+                           </p>
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="SECTION_7F614BCF612E4898A1B808882593BACC"></a> 
+                  <h3><a name="GUID-408F6162-F404-45F5-B999-08599DE380B1"></a>“编辑 UV”卷展栏
+                  </h3> <a name="FIG_F661FB5FA3D14AFFB4A9F0A6924A0D1A"></a><div class="figure-anchor"><img src="../images/GUID-6DEE1280-0BB9-4F80-A6A8-9F7259FEDC32-low.png"></div>  <a name="GUID-1C86FC19-2C84-4062-8227-287E4A021946"></a><dl>
+                     <dt><a name="GUID-0A9B38E6-9C6D-4D02-8BBA-63BCA3AB66FC"></a><span class="term"><a name="GUID-88DAC90E-E714-44D5-8F70-9F76B892A432"></a>打开 UV 编辑器</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-9F93CF4D-B36F-411E-9976-D71C954E925E"></a> 
+                           <p><a name="GUID-E6FFC6FD-69D8-4ECE-BA40-CFDAC3D2E437"></a>打开<span class="char_link"><a href="GUID-A7CC32F5-40BE-4DE5-A364-05E7986D4BA5.htm">“编辑 UVW”对话框</a></span>。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-0B08C222-633B-4B1C-9B27-1B00F5077664"></a><span class="term"><a name="GUID-65F8F5C7-0EBC-4A85-8A82-53440353C141"></a>视图中扭曲</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-209BC7A2-DE24-4A77-9E3A-B169BBD68E1A"></a>启用时，通过在视口中的模型上拖动顶点，每次可以调整一个纹理顶点。执行此操作时，顶点不会在视口中移动，但是编辑器中顶点的移动会导致贴图发生变化。要在调整顶点时看到贴图的变化，对象必须使用纹理进行了贴图并且纹理必须<span class="char_link"><a href="GUID-39E321E5-962B-49C2-BD05-B1FA3F48BA26.htm">在视口中可见</a></span>。 
+                           	 
+                           <p><a name="GUID-D7550816-D587-4A9E-8B58-C429E4C87D4C"></a>如果“编辑 UVW”对话框处于打开状态，则其会实时更新。在修改器层级和所有子对象层级应用。 
+                              	 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-3E13E333-12A4-49AD-B417-B0115EA7E066"></a><span class="term"><a name="GUID-F2F939CC-B03B-4468-BA6B-DF099AD1147C"></a><img src="../images/GUID-C08D7073-6711-46E9-B2AF-D65188B09AFB-low.png"> 快速平面贴图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-F2D7D7E8-5CCA-4ED0-838D-40EB23782D6D"></a> 基于“快速贴图”Gizmo 的方向将平面贴图应用于当前的纹理多边形选择集。 
+                           	 
+                           <p><a name="GUID-034B62CA-DA07-424B-BB09-CE6CBCB0CA39"></a>通过此工具，可以将选定的纹理多边形“剥离”为单独的簇，随后将使用此卷展栏上指定的对齐方式，根据编辑器的范围缩放该簇。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-6A130AA7-CB32-4410-8909-C85868B81948"></a><span class="term"><a name="GUID-62E18DFB-F740-4EC8-823A-945887A99F7A"></a><img src="../images/GUID-108B5206-1605-44B2-89D0-65B446357B5F-low.png"> 显示快速平面贴图 </span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-E298617E-2B1D-4F79-A3AF-8EB5D002E306"></a> 启用此选项时，只适用于“快速平面贴图”工具的矩形平面贴图 Gizmo 会显示在视口中选择的多边形的上方。不能手动调整此 Gizmo，但是可以使用以下控件将其重新定位。 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-3C810887-69FB-4033-8325-AA06B525D27C"></a><span class="term"><a name="GUID-331C802F-076C-49F7-8DE8-87891C440CBB"></a><img src="../images/GUID-03504BE3-38A9-40E6-9DEA-6B0BCE80C487-low.png"> X/Y/Z/平均法线</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-D67D5E03-0302-43D3-BB24-A974223C8572"></a> 从弹出按钮中选择快速平面贴图 Gizmo 的对齐方式：垂直于对象的局部 X、Y 或 Z 轴，或者基于多边形的平均法线对齐。 
+                           	 
+                           <div><a name="GUID-31F4BD40-F2C0-4399-A1AD-C703FB73E338"></a><div class="note-note"><span class="label label-target-language">注意:</span>虽然默认显示 X 图标，但此设置的实际默认选择是“平均法线”。 
+                                 	 
+                              </div>
+                           </div>
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="SECTION_D5B339043BB140168E2969F9D2613BF7"></a> 
+                  <h3><a name="GUID-F27CEF0C-F3DC-448A-8B3E-57A760245525"></a>“通道”卷展栏
+                  </h3> <a name="FIG_36723533CAC34ECCA866DF4410AC6ECB"></a><div class="figure-anchor"><img src="../images/GUID-23883EC4-1205-47EB-B1E5-84044E468546-low.png"></div>  <a name="GUID-C5A263DC-B7CE-4B45-A4FE-2D9A2076BA21"></a><dl>
+                     <dt><a name="GUID-48F8FE0A-0F39-4D48-97A1-A6A44A29571C"></a><span class="term"><a name="GUID-B65FF801-D2A1-46F3-8428-763E4BA88BEB"></a>重置 UVW</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-A6812784-2DBB-45C8-A50F-224CEEC1CC12"></a> 
+                           <p><a name="GUID-C11E28E0-206D-4CF6-AC1C-0AEAA5572BAE"></a>在修改器堆栈上将 UVW 坐标还原为先前的状态，即通过“展开”修改器从堆栈中继承的坐标。 
+                              	 
+                           </p> 
+                           <p><a name="GUID-D98672E5-5A3B-4299-955F-02301843EAAF"></a>单击它，基本上相当于移除并重新应用修改器，不同的只是在“编辑 UVW”对话框中指定的贴图不会删除。例如，如果忘记了启用对象的“生成贴图坐标”复选框，然后应用了“展开 UVW”修改器，那么修改器将没有 UVW 坐标可用，并且其设置会发生错误。这时如果回到“堆栈”中，然后启用了“生成贴图坐标”，那么就需要单击“重置
+                              UVW”按钮。单击此按钮时，会发出警报，正在进行的所有编辑都将丢失。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-963A6FC9-4740-4808-8761-3C8FF556EAC6"></a><span class="term"><a name="GUID-B97D76D1-FF30-4721-AC82-C95051AD49F5"></a>保存</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-7E803F45-1E2F-4970-8964-D3F7F200A4A3"></a> 
+                           <p><a name="GUID-E6B04813-CCC2-4C70-AFB2-456A2DFF17EB"></a>将 UVW 坐标保存为 UVW (.<em class="mild">uvw)</em> 文件。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-F92190DC-1088-47DF-BD8A-84BD5FDFA27E"></a><span class="term"><a name="GUID-6A75DAFF-E9F2-4880-BA55-11CCD5899F40"></a>加载</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-1DCF186C-D6CF-4A34-87FE-3B39467C9475"></a> 
+                           <p><a name="GUID-E0696C02-3A86-4D83-A1B1-764F8FB1D5CE"></a>加载一个以前保存的 UVW 文件。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+                  <div class="dl_section"><a name="GUID-58F7F4AD-0A56-43B4-B6D3-E8615042560F"></a><p class="title"><a name="GUID-F7431739-A345-4447-8C19-287178D1BA0B"></a>“通道”组
+                     </p>
+                     <p><a name="GUID-68B7948C-3586-4809-879E-B6ED5B51773C"></a>每个对象最多可拥有 99 个 UVW 贴图坐标通道。默认贴图通道（通过对象的<span class="char_link"><a href="GUID-DD7DD872-F491-46B9-B781-94A49659E2D2.htm">创建参数</a></span>中的“生成贴图坐标”切换）始终为通道 1。通过使用各通道的不同“展开 UVW”或“UVW 贴图”修改器，可以为任意通道指定纹理坐标。 
+                        	 
+                     </p>
+                     <dl>
+                        <dt><a name="GUID-33ACA9E2-A894-4411-8DCF-1BF654A750F9"></a><span class="term"><a name="GUID-3B77267E-C6E2-4A8D-9460-F29AE317B073"></a>贴图通道</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-9CF4B4E7-1BC1-4AE5-8689-8440141ACA25"></a> 
+                              <p><a name="GUID-495A9B2C-2D43-4D48-BDB5-F6C4F910A9DD"></a>设置由此修改器控制的纹理坐标的标识号。此通道值与贴图参数中设置的“贴图通道”值一致，这样修改器就可以控制设置为同一通道的贴图应用于对象曲面的方式。默认值为 1。范围为 1 至 99 
+                                 	 
+                              </p> 
+                              <p><a name="GUID-57BA314E-91DD-479F-8567-4070834CFC94"></a>请注意以下有关“展开 UVW”修改器中贴图通道的重要信息： 
+                                 	 
+                              </p> <a name="UL_67815917FE5A4F3299BA57701E05A744"></a><ul>
+                                 <li>每个修改器只能针对一个通道进行编辑，该通道在修改器中设置。 
+                                    		
+                                 </li>
+                                 <li> 修改器中的贴图必须使用在材质图像贴图中设置的同一个通道（请参见下面的列表）。 
+                                    		
+                                 </li>
+                                 <li> 在修改器中更改贴图通道时，将打开“通道切换警告”对话框，您可以在该对话框中选择将现有编辑复制到新通道，或者放弃这些编辑，然后使用在修改器做出更改前此通道中的贴图（请参见下图）。 
+                                    		
+                                 </li>
+                                 <li> 要为同一对象上的不同贴图应用不同的贴图坐标，请使用新的修改器，其中针对每个图像贴图使用唯一的贴图通道。完成后，可以塌陷堆栈，贴图将保持不变。 
+                                    		
+                                 </li>
+                              </ul> <a name="FIG_9D1095C4318C41FEAEBC1F77F4A8B742"></a><div class="figure-anchor"><img src="../images/GUID-9C6C3B0E-B006-47D9-A74D-CC35CA19CEFA-low.png"></div>  
+                              <p><a name="GUID-F2ADFA90-227A-48B7-BAAA-0271618B8DFF"></a>可在 <span class="charspan-msgph">3ds Max</span> 中的多处位置使用“贴图通道”设置，如下所示： 
+                                 	 
+                              </p> <a name="UL_C9A68F59AB564222AFC9C9A96AA0F941"></a><ul>
+                                 <li> <em class="strong">生成贴图坐标</em>大多数对象的创建参数中提供此复选框，在启用时会指定贴图通道 1。 
+                                    		
+                                 </li>
+                                 <li> <em class="strong">“UVW 贴图”、“UVW 变换”和“UVW 展开”修改器</em>这些修改器用于设置贴图通道 1 到 99，从而指定修改器将使用的 UVW 坐标。修改器堆栈可同时为任何多边形传递这些通道。 
+                                    		
+                                 </li>
+                                 <li> <em class="strong">材质编辑器通道指定</em>可以在“材质编辑器”的贴图层级，在“坐标”卷展栏中指定贴图要使用的通道。“显式贴图通道”选项必须处于活动状态。 
+                                    		
+                                 </li>
+                                 <li> <em class="strong">NURBS 曲面对象和子对象</em>用于指定曲面使用的贴图通道。 
+                                    		
+                                 </li>
+                              </ul> 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-B2482A04-2A9F-4135-8D99-016628B31C42"></a><span class="term"><a name="GUID-0638AB4E-93BC-4310-8D36-BB9E55AFBB49"></a>顶点颜色通道</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-2D5853AB-5BA7-4AD7-BD46-C3E91061A80C"></a> 
+                              <p><a name="GUID-A4050991-4D12-4F3C-A580-0B767D940873"></a>通过选择此选项，可将贴图通道定义为顶点颜色通道。另外，确保将坐标卷展栏中的任何材质贴图匹配为“顶点颜色”，或者使用<span class="char_link"><a href="GUID-C0137D57-C170-4533-B20F-700BF01BFDFF.htm">指定顶点颜色工具</a></span>。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div> 
+               </div> 
+               <div class="section"><a name="SECTION_E543ADCC33744B4B938BFCD72A41221A"></a> 
+                  <h3><a name="GUID-31E7F7FE-DC32-4D85-B48F-27A7F61BB51A"></a> “剥”卷展栏
+                  </h3> 
+                  <p><a name="GUID-02C3E074-81EF-4E11-9202-F82CD51E5F5C"></a> “剥”工具结合了展开纹理坐标的“展开 3D”方法，以便在展平复杂曲面时实现简单直观的工作流。通过此卷展栏，还可以访问用于展开纹理坐标的“毛皮”方法，以及由“剥”和“毛皮”工具使用的接缝工具。 
+                     	 
+                  </p> 
+                  <div><a name="GUID-13CDED17-7B73-4B44-8557-3D79A5E415D7"></a><div class="note-note"><span class="label label-target-language">注意:</span>将<em class="strong"><span class="MenuCascade">“剥模式”</span></em>工具与“展开 3D”一起使用时，默认情况下不会使用此算法锁定任何顶点。 
+                        	 
+                     </div>
+                  </div> 
+                  <p>必须在子对象模式下才能使用命令面板的“剥”卷展栏，但在 <a href="https://help.autodesk.com/view/3DSMAX/2022/CHS/?guid=GUID-A7CC32F5-40BE-4DE5-A364-05E7986D4BA5">UV 编辑器</a>中不需要。 
+                     	 
+                  </p> 
+                  <p><a name="GUID-73626ABE-2FBC-476F-863D-6E09A8221361"></a>最初只有在子对象层级处于活动状态且已选择纹理多边形时，“剥”工具才可用。所选的剥操作仅适用于这些选定的多边形。但是，当<em class="strong"><span class="MenuCascade">“剥模式”</span></em>处于活动状态时，<em class="strong"><span class="MenuCascade">“剥模式”</span></em>按钮将保持活动状态和可用状态（无论激活哪个子对象层级）。在使用<em class="strong"><span class="MenuCascade">“剥模式”</span></em>时可以选择不同的子对象，但是，只有属于在第一次激活<em class="strong"><span class="MenuCascade">“剥模式”</span></em>时选定的多边形的纹理坐标会受限于剥操作。要剥不同的多边形，请禁用<em class="strong"><span class="MenuCascade">“剥模式”</span></em>，进行不同的选择，然后重新激活<em class="strong"><span class="MenuCascade">“剥模式”</span></em>。 
+                     	 
+                  </p> 
+                  <p><a name="GUID-2B343448-88AD-40CA-9D5B-4B85FC8132D8"></a>要获得“剥”工具使用方法的简单演示，请参见<span class="char_link"><a href="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D.htm#OL_A698F7FD33BE4A48B41B629F0D2BDA6D">此步骤</a></span>。 
+                     	 
+                  </p> 
+                  <div><a name="GUID-C5AE23C6-EDCD-42EF-9A87-34E47E24487C"></a><div class="note-note"><span class="label label-target-language">注意:</span><em class="strong"><span class="MenuCascade">“编辑 UV”</span></em>对话框 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> <span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#SECTION_00F3CD2390B24158B726A3EBA85CB4CC">“剥”卷展栏</a></span>上也提供“剥”工具。该卷展栏还包含“分离”选项以及用于与“剥”功能的“锁定”方面配合使用的工具。使用“剥”功能时，当其余顶点移动时，锁定顶点始终固定不动。 
+                        	 
+                     </div>
+                  </div> <a name="FIG_EAE3B95AD7974AC69F4EA620ED0CC3A9"></a><div class="figure-anchor"><img src="../images/GUID-141F8A33-47F2-4406-8C8E-F21FF49384EF-low.png"></div>  <a name="GUID-5FD11E35-0567-4994-B72E-74806A5896BA"></a><dl>
+                     <dt><a name="GUID-E44DBB10-B5E1-4E5B-BF07-4E3B76C3109D"></a><span class="term"><a name="GUID-FB1E8515-E9B7-4882-8D1D-B5AF20F230A4"></a><img src="../images/GUID-4B9B3670-BEA4-4652-B8E0-0749AAF8921F-low.png"> 快速剥</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-3FF555BE-72C5-40C0-8CFA-45E836BFEDDF"></a> 在属于选定纹理多边形的所有顶点（锁定顶点除外）上执行“最佳猜测”剥操作。要执行此操作，“快速剥”会基于顶点的平均位置来均匀分布顶点，同时尝试保持现有多边形图形。如果<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#GUID-8D677F74-02AE-4C91-A4A9-3683F9B1DE06">“分离”</a></span>处于启用状态，则“快速剥”也会将已剥群集与其他纹理坐标分离。 
+                           	 
+                           <p><a name="GUID-BC272E34-D18C-447C-8E23-EB3161A3438C"></a>“快速剥”适用于简单的纹理贴图应用，但要更好地进行控制，应改用“剥模式”（请参见下文）。 
+                              	 
+                           </p> 
+                           <div><a name="GUID-244D0DFC-EEC0-4C85-874D-9DF7DD62FDD5"></a><div class="note-tip"><span class="label label-target-language">提示</span>在某些情况下，重复应用“快速剥”可以改进效果。 
+                                 	 
+                              </div>
+                           </div>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-0EF0837D-7470-43EE-9B7F-1940AF88D0A5"></a><span class="term"><a name="GUID-83891AC1-902B-409A-B8D8-BA6E220F090C"></a><img src="../images/GUID-90B54AC9-5352-4BE7-932D-819D32A8F8C1-low.png"> 剥模式</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-5DCF4080-475D-4DFE-BF21-A2452ACCEB29"></a>应用“快速剥”（请参见上文），然后保持活动状态，以便交互调整纹理坐标的布局。可以通过在“编辑 UVW”对话框窗口中拖动子对象来完成此操作，这样会在任何锁定顶点周围均匀地重新分布簇中的所有顶点。要退出“剥模式”，请再次单击此按钮。 
+                           	 
+                           <p><a name="GUID-E10ACCCB-08D9-4DD6-92B5-8DC2E29FBEE7"></a> 当“剥模式”处于活动状态时，已剥多边形会使用独特的着色，让您更轻松地查看正在剥的纹理坐标部分。默认情况下，颜色是紫色；要调整颜色，请更改<span class="char_link"><a href="GUID-630DAA9E-F9AF-49AD-97B6-56F4A250C906.htm#WS1A9193826455F5FF-6672057A11CE3B1F807-7BF6">“剥颜色”设置</a></span>。 
+                              	 
+                           </p> 
+                           <p><a name="GUID-2F4C4EAE-C5AC-40C4-94DA-8F1B8B1FCA16"></a>激活“剥模式”将自动切换到“顶点”子对象层级，但可以在任何子对象层级使用“剥模式”。当<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#GUID-8D677F74-02AE-4C91-A4A9-3683F9B1DE06">“分离”</a></span>处于启用状态时，“剥模式”也会将已剥群集与其他纹理坐标分离。 
+                              	 
+                           </p> 
+                           <p><a name="GUID-ACA108E7-9E24-417E-826B-77F30D6B069D"></a>当“剥模式”处于活动状态时，可以使用“<span class="char_link"><a href="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D.htm#GUID-A840A784-FF75-4C23-A8B3-C9D9FB4BBE24">编辑接缝</a></span>”和“<span class="char_link"><a href="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D.htm#GUID-A1115E90-54F2-46CF-9790-4F53C8257729">点对点接缝</a></span>”工具创建接缝，这些接缝将在您移动时自动“剥”离。或者，也可以在编辑器中选择一些边，并使用<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#GUID-8FAFD576-F3CE-44E2-B080-D226C5A70F1E">“断开”工具</a></span>拆分这些边并自动重剥该簇。 
+                              	 
+                           </p> 
+                           <p><a name="GUID-349E4AA4-6E07-4BC9-ACD5-567B2171AD49"></a>在“<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#GUID-826EACD6-6A90-43CB-A5D1-8679C9F7C4C2">自动锁定移动的顶点</a></span>”处于启用状态（默认设置）时，在“剥模式”中移动子对象时将锁定属于该子对象的所有子对象。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-A36CB14C-973B-4E7A-A8E5-263A3DB2E512"></a><span class="term"><a name="GUID-48CE714F-94C3-480B-B354-5E3844D677F2"></a> <img src="../images/GUID-A0995FF7-F5F3-4F6D-ACEA-FBF5DFA408EE-low.png"> 重置剥</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-6EFB1C79-4EFF-431E-94A7-4F05301E16E0"></a>合并多边形选择的现有贴图接缝，将“剥”接缝转换为新的贴图接缝，然后对生成的群集执行“剥”操作。选择内容的边界将与其他群集分离开来，成为新的贴图接缝。 
+                           	 
+                           <p><a name="GUID-5C804628-91FD-4D8A-AE16-E34FEDE22608"></a>使用“重置剥”可以重新连接先前已贴图几何体上的贴图接缝，或者将选择内容快速断开并执行“剥”操作。 
+                              	 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-B2FD8731-2D01-4E3C-A9B0-EB4ECDD6F59E"></a><span class="term"><a name="GUID-A6BC5FC7-CA3A-4B8B-8440-1C9D9EABECA0"></a><img src="../images/GUID-900BFC6A-D52F-4C5B-9134-AC748A1E3C44-low.png"> 毛皮</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-C11F2CF8-AE0F-42B9-9AEE-62191F0D7A64"></a>  
+                           <p><a name="GUID-9C688DA4-610C-466F-81FC-2D24AD59BA4D"></a>将毛皮贴图应用于选定的多边形。单击此按钮激活“毛皮”模式，在这种模式下可以调整贴图和<span class="char_link"><a href="GUID-08EAEC2D-6532-4EE6-94EE-FFCD93581D49.htm">编辑毛皮贴图</a></span>。 
+                              	 
+                           </p> 
+                           <div><a name="GUID-90529795-70A3-4C22-8462-02E07DADEDB1"></a><div class="note-note"><span class="label label-target-language">注意:</span>毛皮贴图总是对整块毛皮使用一个单独的平面贴图。如果应用了如“长方体”等不同种类的贴图，然后切换到“毛皮”，那么刚才的贴图将会消失。 
+                                 	 
+                              </div>
+                           </div> 
+                           <div><a name="GUID-33166255-59C5-4CCD-A2B4-4DE1355F090C"></a><div class="note-tip"><span class="label label-target-language">提示</span>有关使用毛皮贴图的基本方法，请参见<span class="char_link"><a href="GUID-08EAEC2D-6532-4EE6-94EE-FFCD93581D49.htm#WSF742DAB04106313366400BF6112A1CEA097-7ECE">本步骤</a></span>。 
+                                 	 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+                  <div class="dl_section"><a name="GUID-043D3A42-ED36-483D-8371-C3174B97FC98"></a><p class="title"><a name="GUID-0447D058-A2FB-4944-B48D-614383127D6F"></a>“接缝”组
+                     </p>
+                     <p><a name="GUID-27BEC309-9CAE-4C2C-A9AC-280F081125AB"></a>可以使用接缝为剥贴图（请参见上文）、毛皮贴图以及样条线贴图（使用<span class="char_link"><a href="GUID-0ECEB654-76FB-4C2F-9CCD-57A03EA3A9C0.htm#WS73099CC142F4875535A241551166AC8792F-AA0">手动接缝</a></span>时）指定簇轮廓。毛皮接缝为蓝色<em class="mild"></em>，而绿色的<em class="mild"></em>贴图接缝指示簇边界。 
+                        	 
+                     </p><a name="FIG_EEB8AE93EE864A81B9F4407E2CCBB6B6"></a><div class="figure-anchor"><img src="../images/GUID-7DB623E2-0EB1-43D2-8D9B-4DF73CCC0D61-low.png"><p class="figure-title">在执行剥操作后，毛皮接缝（左）将转换为“贴图”接缝（右）。</p>
+                     </div>
+                     <dl>
+                        <dt><a name="GUID-A840A784-FF75-4C23-A8B3-C9D9FB4BBE24"></a><span class="term"><a name="GUID-C1184FED-64BE-4058-A5F0-59FA5F9909B9"></a><img src="../images/GUID-0E7EBA02-5C9E-4066-B2CC-EF9DC5156851-low.png"> 编辑接缝</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-2DB925ED-2A78-41F2-8E44-142548F376A5"></a> 
+                              <p><a name="GUID-3AC3ECD3-FCB4-4273-80A4-2CAC341B9084"></a>通过此功能，您可以在视口中使用鼠标选择边，来创建毛皮/剥接缝。可在“展开 UVW”修改器的所有子对象层级中使用。 
+                                 	 
+                              </p> 
+                              <p><a name="GUID-17D1EB88-124F-4ABE-866F-95475D429546"></a>“编辑接缝”的用法与标准的边选择方式类似，但有一个区别：默认情况下，接缝的指定是累计式的。也就是说，您无需按住 <span class="keyboardEntry">Ctrl</span> 键，即可将边添加到接缝集合中。启用“编辑接缝”功能时： 
+                                 	 
+                              </p> <a name="UL_4265158C85174347AD31872159AC7B02"></a><ul>
+                                 <li>要将边指定为接缝的一部分，请单击边。此操作不会移除当前已接缝中的边。 
+                                    		
+                                 </li>
+                                 <li>要指定多个边作为接缝变，请拖出一个区域。 
+                                    		
+                                 </li>
+                                 <li> 要从当前接缝中移除一个或多个边，请按住 <span class="keyboardEntry">Alt</span> 键并单击边，或者拖出一个区域。 
+                                    		
+                                 </li>
+                              </ul> 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-A1115E90-54F2-46CF-9790-4F53C8257729"></a><span class="term"><a name="GUID-586E0046-2690-4195-B47A-58F12F4B3F27"></a><img src="../images/GUID-78AD25A2-192A-4A97-8410-73AF49AD18ED-low.png"> 点对点接缝</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-46CAC05C-5725-4593-9D92-5957103ABA78"></a> 用于在视口中使用鼠标选择顶点来指定毛皮/剥接缝。使用该工具指定的接缝总是添加到当前接缝选择中。可在“展开 UVW”修改器的所有子对象层级中使用。 
+                              	 
+                              <p><a name="GUID-9F00E2BC-2D2C-49B0-97C3-BC8C14810E8A"></a>在此模式中，单击一个顶点之后，从单击的地方出现一条橡皮筋线跟随着鼠标光标。单击另一个不同的顶点创建一个接缝，然后继续单击顶点以在每个顶点到上一个顶点之间创建一个接缝。如果要在此模式中从另一个不同点开始，请单击右键，然后单击一个不同的顶点。要停止绘制接缝，请再次单击鼠标右键，或再次单击“点对点接缝”按钮，以将其禁用。
+                                 
+                                 	 
+                              </p> 
+                              <div><a name="GUID-F27F8DE8-206F-447E-9434-79830EF4A8BD"></a><div class="note-tip"><span class="label label-target-language">提示</span>当激活“点对点接缝”时，可以在任何时候使用上下文控件（中键拖放、<span class="keyboardEntry">Alt</span> + 中键拖放、转动鼠标滚轮）进行平移、旋转和缩放视口，以此来访问网格曲面的不同部位。还可以使用 <span class="char_link"><a href="GUID-F8D9EF38-A2BB-4502-95A7-4897A7F30F21.htm">ViewCube</a></span> 和 <span class="char_link"><a href="GUID-914837A2-AE0A-4A4C-BBAB-0CC96337DC19.htm">SteeringWheels</a></span> 进行导航。这样操作之后，<span class="charspan-msgph">3ds Max</span> 仍然能记住上一次单击的顶点，并在下一次单击的地方绘制一个准确的接缝。与此类似，可以使用<span class="char_link"><a href="GUID-B39C0590-058C-4E59-B03D-AEC52DE830AB.htm">“视口控件”按钮</a></span>调整视口，然后返回选择接缝。如果完成控件操作不止需要一次单击，例如“平移”操作，可以在视口中单击右键退出此控件，恢复到橡皮筋线，该线条从上一次单击的顶点处延伸出来。 
+                                    	 
+                                 </div>
+                              </div> 
+                              <div><a name="GUID-4D3C28BB-9482-41F2-960B-C1D4CE66A84E"></a><div class="note-tip"><span class="label label-target-language">提示</span>“点对点接缝”用来计算路径的算法可能会创建一个与您的想像不同的接缝。如果发生了这种情况，撤消操作（<span class="keyboardEntry">Ctrl+Z</span>），然后把绘制点排列得紧凑一些来指定希望得到的路径。 
+                                    	 
+                                 </div>
+                              </div> 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-DE9EC3B2-8404-4B83-A4F5-824A24025180"></a><span class="term"><a name="GUID-95D34983-C929-4096-9663-B8C0B643E3D2"></a><img src="../images/GUID-E224E8AD-843C-4DCF-BD7E-4128A32055DB-low.png"> 将边选择转换为接缝</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-FFF171D9-E4E2-4D0B-8C74-3471A1740518"></a> 将修改器中的当前边选择转化为毛皮/剥接缝。这些接缝将添加到任何现有的接缝中。只能在“展开 UVW”修改器的“边”子对象层级中使用。
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-07D3F159-8160-4076-BABF-E167F363014A"></a><span class="term"><a name="GUID-2F162842-21AE-455B-A5CE-FA08FF8AEBDD"></a><img src="../images/GUID-AFC9177C-9578-4BDF-88FC-B5807BAE312A-low.png"> 将多边形选择扩展到接缝</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-81CEC9D7-D8A5-47DD-BE0D-D7AE15647E30"></a> 
+                              <p><a name="GUID-788628E4-78F5-4468-A078-AAE8E7DBAC39"></a>将当前的多边形选择扩展到接缝轮廓。如果存在多个接缝轮廓并且每个轮廓都包含选定的多边形，将只有一个轮廓（根据最大的多边形 ID）实现扩展；其余轮廓将被取消选定。只能在“展开 UVW”修改器的“多边形”子对象层级中使用。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div> 
+               </div> 
+               <div class="section"><a name="SECTION_7A0C356AB465402DA5F6880911A2D772"></a> 
+                  <h3><a name="GUID-898135FF-2CF4-426A-9D6B-7A2F6B93D988"></a>“投影”卷展栏
+                  </h3> 
+                  <p><a name="GUID-9A5B825D-1F0B-4FB5-9BB0-420631921F38"></a> 使用这些控件可以将四个不同贴图 Gizmo 之一应用和调整到多边形选择。 
+                     	 
+                  </p> 
+                  <div><a name="GUID-D0CDFBC4-E56B-48DF-96AB-8B7CB8585E1A"></a><div class="note-note"><span class="label label-target-language">注意:</span>当一种投影模式处于活动状态时，可以编辑 Gizmo，但不能更改选择。 
+                        	 
+                     </div>
+                  </div> <a name="FIG_7692A4DE4B2F4B518EB3104920C5D1A7"></a><div class="figure-anchor"><img src="../images/GUID-52587A1D-06A4-4CC5-ADAE-586CD93C1A8B-low.png"></div>  <a name="GUID-47D59232-0EA0-40E1-AB1B-DA3313B102BD"></a><dl>
+                     <dt><a name="GUID-20CBE8C3-3F5A-4362-8DA9-37256A9EE1F0"></a><span class="term"><a name="GUID-0F0C7FF6-E1D2-4460-9EBB-B0B18561152F"></a><img src="../images/GUID-A81DEC62-F15B-49DE-99D3-32DAC459E187-low.png"> 平面贴图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-70BA5607-FAA8-49D0-9695-D6D75C0F05A2"></a>  
+                           <p><a name="GUID-F9B0E5AE-85AC-4657-9239-892443E05D1C"></a>将平面贴图应用于选定的多边形。 
+                              	 
+                           </p> 
+                           <p><a name="GUID-4FFD48E3-72CE-4865-94BA-4376AEAFD0E1"></a>选择多边形，单击“平面贴图”，使用<span class="char_link"><a href="GUID-C6495658-553E-4A33-BFA4-955DB6D3DEE8.htm">变换工具</a></span>和“对齐选项”工具调整平面 Gizmo，然后再次单击“平面贴图”以退出。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-B8CB850D-578B-486B-ACFF-A8DF1061DD8A"></a><span class="term"><a name="GUID-C965C502-1C6B-49ED-91EC-7F7AC8C71229"></a><img src="../images/GUID-5142F346-7BF7-4EB6-8431-0EF28668E56A-low.png"> 柱形贴图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-BBB76AF3-A23C-4C59-85F6-5522DBA330FE"></a>  
+                           <p><a name="GUID-4850A5ED-CEBE-4F6B-8140-41D387163229"></a>将柱形贴图应用于选定的多边形。 
+                              	 
+                           </p> 
+                           <p><a name="GUID-72579E67-29A7-4353-BE64-0243493D6998"></a>选择多边形，单击“柱形贴图”，使用<span class="char_link"><a href="GUID-C6495658-553E-4A33-BFA4-955DB6D3DEE8.htm">变换工具</a></span>和“对齐选项”工具调整柱形 Gizmo，然后再次单击“柱形贴图”以退出。 
+                              	 
+                           </p> 
+                           <div><a name="GUID-C6305EC6-B61A-4AFE-BA03-72FCB54672BE"></a><div class="note-note"><span class="label label-target-language">注意:</span>将柱形贴图应用于选择上时，<span class="charspan-msgph">3ds Max</span> 将每一个面都贴图至圆柱体 Gizmo 的边上使其最吻合圆柱体方向。为了得到最好的效果，请对柱形的对象或对象部位使用圆柱贴图。 
+                                 	 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-F6E4D0B8-BB59-4281-8E12-C6662B3D7474"></a><span class="term"><a name="GUID-643BA402-C852-441E-9000-B3FC814B00F1"></a><img src="../images/GUID-FB7E42F1-2A67-460D-9E8C-855DD0D56FDC-low.png"> 球形贴图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-800EE9A6-BF2D-4D46-8563-B2E4EB48A580"></a>  
+                           <p><a name="GUID-187F4B30-677E-4619-9BD5-9447A9399508"></a>将球形贴图应用于当前选定的多边形。 
+                              	 
+                           </p> 
+                           <p><a name="GUID-34A2358F-B5B5-4D33-AD86-3D8CB2CA09A0"></a>选择多边形，单击“球形贴图”，使用<span class="char_link"><a href="GUID-C6495658-553E-4A33-BFA4-955DB6D3DEE8.htm">变换工具</a></span>和“对齐选项”工具调整球形 Gizmo，然后再次单击“球形贴图”以退出。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-07C46C40-97FF-4E8B-88A9-22A6561B9599"></a><span class="term"><a name="GUID-B1568CE4-097F-4D02-A9AE-4E01087AF18F"></a><img src="../images/GUID-CB1CA283-3101-4BB3-981A-06E769BEDA2E-low.png"> 长方体贴图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-26CB70A4-A1CA-4976-8FBE-625D72E86A05"></a>  
+                           <p><a name="GUID-978925DF-7F0F-4FFC-ADD8-1C9D4B404965"></a>将长方体贴图应用于当前选定的多边形。 
+                              	 
+                           </p> 
+                           <p><a name="GUID-21891A87-944E-44C3-89CD-521240C2095F"></a>选择多边形，单击“长方体贴图”，使用<span class="char_link"><a href="GUID-C6495658-553E-4A33-BFA4-955DB6D3DEE8.htm">变换工具</a></span>和“对齐选项”工具调整长方体 Gizmo，然后再次单击“长方体贴图”以退出。 
+                              	 
+                           </p> 
+                           <div><a name="GUID-01EDB57D-7ECC-4AC2-821D-E31D881549A1"></a><div class="note-note"><span class="label label-target-language">注意:</span>将长方体贴图应用于选择上时，<span class="charspan-msgph">3ds Max</span> 将每一个多边形贴图至长方体 Gizmo 上最吻合长方体方向的边。为了得到最好的效果，请对长方形对象或对象部位使用“长方体”贴图。 
+                                 	 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+                  <div class="dl_section"><a name="GUID-EB851AA6-67DE-4B5E-894A-FAFB7EA6C995"></a><p class="title"><a name="GUID-68DB5CEB-5CDE-4A01-B2F3-EB8020B05CD7"></a>“对齐选项”组
+                     </p>
+                     <p><a name="GUID-D92BC394-5052-4BAE-8289-7DF5F8F117C4"></a>使用这些控件按程序对齐贴图。 
+                        	 
+                     </p>
+                     <dl>
+                        <dt><a name="GUID-765D1EDD-81DB-4467-8D2D-49A40E613C0F"></a><span class="term"><a name="GUID-B7A386A3-C98C-4F72-9EC7-E5C030713671"></a>X/Y/Z</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-92187E43-B0DA-4FA5-8DCC-1DCC6D51F452"></a> 
+                              <p><a name="GUID-906DE58E-A223-4F4E-A7D9-E59E92EFE00A"></a>将贴图 Gizmo 对齐到对象局部坐标系中的 X、Y 或 Z 轴。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-83FAB677-EA37-4146-8F93-88CA4D472611"></a><span class="term"><a name="GUID-165BBE88-9161-4E3C-8AAA-25EB14E1DC84"></a><img src="../images/GUID-2741C6C6-CAB1-42B0-BA70-24E5CECBA5BE-low.png"> 最佳对齐</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-139558FE-7D5B-44DE-91F1-25F3889387D6"></a> 
+                              <p><a name="GUID-CED14C6D-F32E-4B07-8496-8060F9DD1FCD"></a>调整贴图 Gizmo 的位置、方向，根据选择的范围和平均多边形法线缩放使其适合多边形选择。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-0059F4BA-5A84-45E1-9B9A-3DF4A5D736A6"></a><span class="term"><a name="GUID-93F9BE8D-ABF2-465B-BD3B-331B06F7F47B"></a><img src="../images/GUID-5310BD73-B547-4346-9163-20EC5689D3E0-low.png"> 视图对齐</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-619D97AD-1FDF-46B9-880E-B15424F53A58"></a> 
+                              <p><a name="GUID-C002A481-6BF6-4C52-BF78-650A1FEDEC19"></a>重新调整贴图 Gizmo 的方向使其面对活动视口，然后根据需要调整其大小和位置以使其与多边形选择范围相适合。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-F22A9A3D-703B-469C-91F7-31E6ADD5B7B1"></a><span class="term"><a name="GUID-F1B60226-33B6-4562-9710-4C130488A7A7"></a>调整</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-E29E8723-836E-4686-B3F2-8BF5A60F8A95"></a> 
+                              <p><a name="GUID-BD4529CB-7E3B-4C82-8E85-9AC09EDEBA53"></a>将贴图 Gizmo 缩放为多边形选择的范围，并使其居中位于所选择的范围上。不要更改方向。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-5C856206-71BF-430F-BAE8-F2AF61DEE1C2"></a><span class="term"><a name="GUID-9799F700-91ED-47C3-8D6E-1BC2AA0180B8"></a>中心</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-C238B6FC-6F9D-46E1-A1B8-7AFBAFCDE605"></a> 
+                              <p><a name="GUID-61CBF274-69DA-4C5D-BBFE-BCA82865FE86"></a>移动贴图 Gizmo，以使它的轴与多边形选择的中心一致。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-32FFCFA7-B459-43DC-9D3F-D5C68428E78A"></a><span class="term"><a name="GUID-6CD0F2A6-FAB6-40F3-8E18-D9114C583BCE"></a><img src="../images/GUID-FA5737BA-BF53-4C0C-83E9-CBAE01CBA0DF-low.png"> 重置贴图 Gizmo</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-F7D37724-21E2-43E0-B12E-094DBA561EED"></a> 
+                              <p><a name="GUID-0BE18430-D15E-43CD-85D8-4BE883DE98CF"></a>缩放贴图 Gizmo 以适合多边形选择，并将其与对象的局部空间对齐。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div> 
+               </div> 
+               <div class="section"><a name="SECTION_422F9371B8DF4B878AB24F0058953CC4"></a> 
+                  <h3><a name="GUID-C579EF17-E457-4DA1-90B2-107FEC9B56D3"></a> “包”卷展栏
+                  </h3> 
+                  <p><a name="GUID-B95B23AA-6F53-4F59-ADA6-6871CD4578BA"></a> 可以使用这些工具，将规则纹理坐标应用于不规则对象。 
+                     	 
+                  </p> <a name="FIG_C510FD4AB6D34545B375CC2E87E09956"></a><div class="figure-anchor"><img src="../images/GUID-EDD450F5-D283-4B58-8FC1-4F5FF9BCEC5D-low.png"></div>  <a name="GUID-7647644A-72DC-4CF3-A08B-6E99F01B5311"></a><dl>
+                     <dt><a name="GUID-1CEC9868-2F4A-4B53-961E-881E9441B252"></a><span class="term"><a name="GUID-3254375A-4EC1-4A76-A2B2-2CED7105D0A5"></a><img src="../images/GUID-C85A0E6B-8B56-4616-8442-41DDD38A9006-low.png"> 样条线贴图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-76A9B7B2-4DD8-4B1B-A39D-9569EE1BDF91"></a>  
+                           <p><a name="GUID-8A97ACF6-D232-4BD7-8CB3-48CC6221FE6E"></a>将样条线贴图应用于当前选定的多边形。单击该按钮可激活“样条线”模式，在该模式下，您可以调整贴图以及<span class="char_link"><a href="GUID-0ECEB654-76FB-4C2F-9CCD-57A03EA3A9C0.htm">编辑样条线贴图</a></span>。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-F2433181-0C58-41B2-B006-3F9B2D1EA6D5"></a><span class="term"><a name="GUID-32E4CC84-9EEC-496B-9B69-8918293FF0C0"></a><img src="../images/GUID-D800CB51-CE53-4417-8526-78E17876B2A5-low.png"> 从循环展开条带</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-62A41A2D-4A89-4E49-905A-0B99BC9E7329"></a> 使用对象拓扑可以沿线性路径快速展开几何体。要使用，请选择与要展开的边平行的边循环，然后单击此按钮。这可能会使纹理坐标产生明显的比例变化，因此通常随后应使用<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#GUID-DD9D8696-617A-4ABC-8FA8-1BB2258AD0FC">“紧缩”工具</a></span>将它们恢复到 0 到 1 的标准 UV 范围内。 
+                           	 
+                           <div><a name="GUID-00A8896C-F626-4184-81C0-E0515A7C6874"></a><div class="note-tip"><span class="label label-target-language">提示</span>“从循环展开条带”使用<span class="char_link"><a href="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D.htm#GUID-0C195C5B-06A5-4CFE-B3AA-ECC2C1A06E24">“环形”方法</a></span>找到平行边，因此，为了获得最佳的效果，请在常规几何体上使用该功能。您可以使用“环形”功能来了解它将如何找到边。 
+                                 	 
+                              </div>
+                           </div> <a name="FIG_CFFBCC02707A40CE939B0196445665CE"></a><div class="figure-anchor"><img src="../images/GUID-F19206B8-27CB-4A82-87A6-1B3627B252FE-low.png"></div>  
+                           <p><a name="GUID-F95DC2C9-2B3A-49B8-9309-1B577563A884"></a> <em class="strong">1. 应用了默认棋盘格图案并选定了边环的原始放样对象</em> 
+                           </p> 
+                           <p><a name="GUID-314664AB-557D-4503-95F0-C2F9F5A8FC47"></a> <em class="strong">2. 应用“从循环展开条带”后（特写视图）</em> 
+                           </p> 
+                           <p><a name="GUID-5826AEBB-D59C-417A-93B9-DE302AEF0A91"></a> <em class="strong">3. 通过“环形 UV”选择平行边环并应用<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#GUID-DCF57224-0AF3-4156-93EB-2AC5A0013E02">水平间隔</a></span>后（特写视图）</em> 
+                           </p>
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="SECTION_1B11397E8AB4456AB05A6C217AB9FAED"></a> 
+                  <h3><a name="GUID-91A1250E-10FF-487B-AE0F-0ACB7FDD9F3C"></a> “配置”卷展栏
+                  </h3> 
+                  <p><a name="GUID-0BCB26EA-0472-4C1C-A11E-5F35834625D5"></a> 使用这些设置可以指定修改器的默认设置，包括是否以及如何显示接缝。 
+                     	 
+                  </p> <a name="FIG_3060AD7521464FCA8F69D8A5C899595F"></a><div class="figure-anchor"><img src="../images/GUID-257EA1D2-ACD4-4826-A3BF-6795FF9550AE-low.png"></div>  <a name="GUID-FDACEF81-C1D8-4892-9AA7-33CC1CF23BF8"></a><div class="dl_section"><a name="GUID-8AAB5216-CD3B-4891-8A6A-0905D98BCF4C"></a><p class="title"><a name="GUID-87696DB7-292B-4502-9119-566216B2109D"></a>“显示”组
+                     </p>
+                     <p><a name="GUID-7A4EF3EB-A94E-4E3F-AAA2-7569309AC80D"></a>这些设置决定是否以及如何在视口中显示接缝： 
+                        	 
+                     </p>
+                     <dl>
+                        <dt><a name="GUID-B21876AD-EE7D-4CF4-93FC-77506AD173FE"></a><span class="term"><a name="GUID-6F3746B9-FC06-47AE-9E3F-774B9A8FE33E"></a>贴图接缝</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-79575F73-A142-40F4-A1B3-F77E1542A433"></a> 
+                              <p><a name="GUID-F8F48E42-C2D4-41DF-86C9-03B752F787F3"></a>启用此选项时，贴图簇边界在视口中显示为绿线。您可以通过调整<span class="char_link"><a href="GUID-630DAA9E-F9AF-49AD-97B6-56F4A250C906.htm#WSF742DAB04106313366400BF6112A1CEA097-7EAA">显示接缝颜色</a></span>来更改该颜色。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-C7FCCFCA-17F5-47B3-B196-8E078A087CD2"></a><span class="term"><a name="GUID-7308287D-A7E2-4C33-8F23-81C15D2D8ECC"></a>接缝</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-EC0EA374-79B8-4A52-982A-47B86B09DD42"></a> 
+                              <p><a name="GUID-91F9753F-B5C6-48A0-8852-3E101C61C8E0"></a>此选项处于启用状态时，剥和毛皮边界在视口中显示为蓝线。有关详细信息，请参见<span class="char_link"><a href="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D.htm#SECTION_E543ADCC33744B4B938BFCD72A41221A">“剥”卷展栏</a></span>。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="GUID-50FF3F15-9B07-452B-ACFE-3D2E1F7D8F84"></a><span class="term"><a name="GUID-5959111F-A11C-4617-B659-C5D1769ADC6D"></a>厚/薄</span></dt>
+                        <dd>
+                           <div class="definition"><a name="GUID-53DE4181-7C5A-4543-B76E-204696F83FCB"></a> 
+                              <p><a name="GUID-9E8A0BAC-7FE5-4383-8F66-063156D329A8"></a>显示厚度设置适用于毛皮结合口和贴图结合口： 
+                                 	 
+                              </p> <a name="UL_AE776E2ABFEF4222B2BE1D6121D5FC5E"></a><ul>
+                                 <li> <em class="strong">厚</em> - 使用相对粗的线条，在视口中显示对象曲面上的贴图接缝和毛皮接缝。在放大视图时，线条变粗；而在缩小视图时，线条变细。这是默认选择。 
+                                    		
+                                 </li>
+                                 <li> <em class="strong">显示薄的接缝</em> - 使用相对细的线条，在视口中显示对象曲面上的贴图接缝和毛皮接缝。放大或缩小视图时，线条的粗细保持不变。 
+                                    		
+                                 </li>
+                              </ul> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <dl>
+                     <dt><a name="GUID-3A0E3EE9-D262-49D9-93BC-5BCE502FAC9E"></a><span class="term"><a name="GUID-767F35C8-3B6C-430C-877F-ED86E9FD223F"></a>防止重展平</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-F5F68028-5A77-46D9-827E-0165C99303FE"></a> 
+                           <p><a name="GUID-E0F25F72-727C-4D8F-AD0A-92BB19AEE2C6"></a>此选项主要用于纹理烘焙。此选项处于启用状态时，<span class="char_link"><a href="GUID-76F1E8AE-9E8F-40A7-A948-471D17E09DA9.htm">渲染到纹理</a></span>自动应用的“展开 UVW”修改器的版本（默认情况下命名为“自动展平 UV”）将不会展平多边形。另外，请确保“渲染到纹理”和修改器使用同一个贴图通道。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-8FEB89CF-4306-4929-BD62-0F611B7531D5"></a><span class="term"><a name="GUID-65000403-F419-4559-8337-4A0878D21412"></a>规格化贴图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-8E801B24-55FB-4A35-B9FA-2AFF0076616D"></a> 
+                           <p><a name="GUID-3962CAFB-1E67-4A80-89D0-9E003AFF3DFB"></a>启用此选项后，缩放贴图坐标使其符合标准坐标贴图空间：0 至 1。禁用此选项后，贴图坐标的尺寸与对象本身相同。贴图总是在 0–1 坐标空间中平铺一次；贴图的部位基于其“补偿”和“平铺”值 
+                              	 
+                           </p> 
+                           <p><a name="GUID-FE7D8828-06EF-47E9-A87A-586D4F5AA1DE"></a>例如，如果有一个从顶部进行平面贴图的大小为 25 单位的球体，应用“展开 UVW”并禁用“规格化贴图”，那么打开编辑器的时候，球体的贴图坐标半径为 25 单位。因此，纹理贴图会平铺在球体表面上很多次。启用“规格化贴图”后，球体和贴图都满足 0–1
+                              坐标空间，因此它们具有相同的大小。 
+                              	 
+                           </p> 
+                           <p><a name="GUID-D420F081-AA76-442D-A6C8-E01B234735D4"></a>总之，为了得到最好的效果，请总是启用“规格化贴图”。禁用此选项的一个原因是希望使用一种特定纵横比的纹理对几个不同比例的元素进行贴图，例如砖块，在每个对象上保持相同的纹理尺寸。 
+                              	 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-A7CC32F5-40BE-4DE5-A364-05E7986D4BA5.htm"> UV 编辑器</a><p>UV 编辑器的中心（也称为“编辑 UVW”对话框）是一个窗口，其中显示纹理坐标，以顶点、边和多边形描绘，统称为子对象。默认情况下，这些与贴图对象的几何体相匹配；通过编辑坐标，可以更改它们相对于对象网格的位置。这样您可以微调纹理贴图与模型的“拟合”。
+                        
+                        
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

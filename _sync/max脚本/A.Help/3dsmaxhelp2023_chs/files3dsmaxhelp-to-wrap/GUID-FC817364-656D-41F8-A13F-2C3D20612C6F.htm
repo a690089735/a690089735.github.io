@@ -1,0 +1,42 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-FC817364-656D-41F8-A13F-2C3D20612C6F">
+      <meta name="description" content="使用 Backburner 进行批处理渲染是启动 3ds Max、运行 Backburner 管理器和服务器程序、指定要渲染的场景，然后进行渲染的简单方法。在这种情况下，Backburner 协调一系列在单个计算机上进行网络渲染的渲染任务。">
+      <meta name="indexterm" content="网络渲染: 单个计算机">
+      <meta name="indexterm" content="批处理渲染: Backburner">
+      <meta name="indexterm" content="批处理渲染: 使用">
+      <meta name="indexterm" content="使用: 批处理渲染">
+      <meta name="indexterm" content="渲染: 批处理">
+      <meta name="topic-type" content="concept">
+      <title>关于使用 Backburner 进行批处理渲染</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-FC817364-656D-41F8-A13F-2C3D20612C6F"></a><div class="head">
+            <h1>关于使用 Backburner 进行批处理渲染</h1>
+         </div>
+         <p class="blurb">使用 Backburner 进行批处理渲染是启动 3ds Max、运行 Backburner 管理器和服务器程序、指定要渲染的场景，然后进行渲染的简单方法。在这种情况下，Backburner 协调一系列在单个计算机上进行网络渲染的渲染任务。 </p>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4A32"></a>此进程与在网络上进行渲染非常类似。在网络渲染时，提交到渲染队列中的场景称为“作业”。以下步骤显示如何向渲染队列提交多个作业。 
+         </p>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4A31"></a>系统必须在 TCP/IP 协议中正确配置（请参见<em class="mild">《Autodesk B ckburner 安装指南》</em> 中的“ CP/IP 设置”，网址为 <a href="http://www.autodesk.com/backburner-documentation-chs" target="_blank">www.autodesk.com/backburner-documentation-chs</a>）以执行·Backburner·批处理渲染。如果未装有网络卡或不能连接到 Internet，则可能需要使用 Microsoft Loopback 适配器来配置 TCP/IP。 
+         </p>
+         <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6FD0"></a><div class="note-note"><span class="label label-target-language">注意:</span>使用 Backburner 进行的批处理渲染不同于使用“批处理渲染”工具进行的批处理渲染。然而，您可以使用“批处理渲染”工具创建一个渲染任务队列，然后把这些任务传递给Backburner，以协调渲染进程。 
+            </div>
+         </div>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4A2C"></a>提交要渲染的作业之后，可以退出 3ds Max（不要关闭 Backburner 管理器或服务器），或开始在新场景上执行操作，或编辑旧场景。然而要切记，您的处理器将在渲染时花费大量时间，因此计算机的速度将比平常要慢。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190042E4C"></a> 
+            <h2><a name="GUID-A4E363D2-CD7D-4BB9-989B-5EF22E4759A0"></a>网络文件
+            </h2> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4A30"></a>Backburner 管理器开始处理作业时，将在 Backburner 文件夹的<em class="mild">\network\jobs</em> 文件夹中创建一系列文件。在此意味着您可以完全关闭计算机（有目的关闭或由于以外电力故障关闭），并且当您下次启动 Backburner 管理器和服务器时，它们会拾取中断处的操作，并继续执行渲染队列。 
+            </p> 
+            <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6FCF"></a><div class="note-note"><span class="label label-target-language">注意:</span>上述规则的例外情况是渲染多帧文件格式，如 AVI 和 MOV。由于这些文件格式存在限制，因此如果在这些文件之一的渲染中间停止，则再次开始渲染时，必须从一开始渲染整个文件。 
+               </div>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

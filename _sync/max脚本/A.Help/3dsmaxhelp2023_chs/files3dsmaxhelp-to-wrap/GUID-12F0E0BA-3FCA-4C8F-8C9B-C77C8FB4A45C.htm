@@ -1,0 +1,239 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-12F0E0BA-3FCA-4C8F-8C9B-C77C8FB4A45C">
+      <meta name="indexterm" content="修改器: 置换">
+      <meta name="indexterm" content="置换: “置换”修改器">
+      <meta name="indexterm" content="对象空间修改器: 置换">
+      <meta name="contextid" content="DISPLACE.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS_DISPLACE">
+      <meta name="topic-type" content="topic">
+      <title>置换修改器参考</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-12F0E0BA-3FCA-4C8F-8C9B-C77C8FB4A45C"></a><div class="head">
+            <h1>置换修改器参考</h1>
+         </div>
+         <div class="bodyReference"><a name="UL_1513AB0E19C64D4BA3C208DECABB0BB8"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-6339EBB8-E712-493C-ACB3-A9FBCA266894"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif">  作出选择。 <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “置换”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-37D62B18-4386-42C9-A89A-1678C3F93174">默认菜单：进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “参数化变形器” <img src="../images/ac.menuaro.gif"> “置换”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-12107BEA-F0C1-4FF3-B05A-73BF465C3910">Alt 菜单：进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “几何体(参数化)” <img src="../images/ac.menuaro.gif"> “置换”</span> 
+               </li>
+            </ul><a name="GUID-6220E5B7-0270-42C9-95A0-A76783164FA3"></a><div class="dl_section"><a name="GUID-2C6A47E0-7AB0-4C17-BA4E-4829CC7A9BDD"></a><p class="title"><a name="GUID-FCE1634D-A4B0-4D71-BA70-099A35117613"></a>“置换”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A19004378C"></a><div class="figure-anchor"><img src="../images/GUID-24912336-4E80-458C-8277-BC0B13FC26CD-low.png"></div>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27D4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42BD"></a>强度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A5F"></a> 设置为 0.0 时，“置换”没有任何效果。大于 0.0 的值会使对象几何体或粒子按偏离 Gizmo 所在位置的方向发生位移。小于 0.0 的值会使几何体朝 Gizmo 置换。默认值为 0.0。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27D5"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42BC"></a>衰退</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A5E"></a> 根据距离变化置换强度。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-42BB"></a>默认情况下，“置换”在整个世界空间中有同样的强度。增加“ 衰退”值会导致置换强度从“置换”Gizmo 的所在位置开始随距离的增加而减弱。这具有集中 Gizmo 附近力场的效果，类似于磁体附近的场，磁体是异性相斥的。默认值为 0.0。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27D6"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42BA"></a>亮度中心</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A5D"></a> 决定“置换”使用什么层级的灰度作为 0 置换值。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-42B9"></a>默认情况下，通过使用中等 (50%) 灰度作为 0 置换值，“置换”以亮度为中心。大于 128 的灰色值以向外的方向（背离置换 Gizmo ）进行置换，而小于 128 的灰色值以向内的方向（朝向置换 Gizmo ）进行置换。使用“中心”微调器来调整默认值。利用平面投影，可以将置换后的几何体重新定位在平面
+                           gizmo 的上方或下方。默认值为 0.5。范围为 0 至 1.0。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-624F44DB-EC03-4126-B924-9F4F3F390A83"></a><p class="title"><a name="GUID-42979961-E5C6-41BA-A7A7-EEEAD5B9DA4A"></a>“图像”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A19004378E"></a><div class="figure-anchor"><img src="../images/GUID-FFD5E072-CEB8-4051-98FA-140F2122B4F8-low.png"></div>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-42B8"></a>可以选择<span class="char_link"><a href="GUID-D8BD1CBD-90B3-485A-A70C-F5919D245015.htm">位图</a></span>和对置换使用的<span class="char_link"><a href="GUID-3392E6CC-17BD-40B5-88B2-31CEFBA5324B.htm">贴图</a></span>。两者以同样方式指定和移除。 
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27D7"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42B7"></a>位图按钮</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6747"></a> （默认情况下标为“无”。）单击以从选择对话框中指定位图文件。选择位图后，此按钮会显示位图的名称。
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27D8"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42B5"></a>移除位图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A5B"></a> 移除指定的位图或贴图。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-FC45F297-C0F2-4726-880C-6A9DF14A9F7F"></a><span class="term"><a name="GUID-4CB5B0A0-1985-4272-B45A-000D81B6FE3F"></a>贴图按钮</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-22DFBF88-2419-4BFA-A882-420FFC47E249"></a>（默认情况下标为“无”。）单击以从<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>中指定位图或贴图。选择完位图或贴图后，该按钮会显示贴图的名称。 
+                        <p><a name="GUID-0FCD8278-4040-4BE7-A56F-7A07F5DC08AB"></a>您还可以从“材质编辑器”<span class="char_link"><a href="GUID-4CAB4668-21C1-409A-9426-C874D18B9455.htm">示例窗</a></span>中拖放贴图。如果“<span class="char_link"><a href="GUID-7B51EF9F-E660-4C10-886C-6F6ADE9E8F56.htm">Slate 材质编辑器</a></span>”处于打开状态，则可以从贴图节点的输出套接字拖动，然后放置到该按钮上。也可以从“材质编辑器”中的贴图按钮或 <span class="charspan-msgph">3ds Max</span> 界面中的其他任意位置进行拖放。将贴图放置到置换贴图按钮时，将出现一个对话框，询问您希望该贴图成为源贴图的副本（独立）还是实例。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2B92"></a>要调整置换贴图的参数（例如，要指定位图或更改坐标设置），请将“贴图”按钮拖到“材质编辑器”中，并确保将其作为实例进行放置。在“精简材质编辑器”中，将贴图置于未使用的示例窗上。在“Slate 材质编辑器”中，将其置于<span class="char_link"><a href="GUID-77AB42B0-B11F-48BD-8FD7-BBFDF31CD623.htm">活动视图</a></span>上。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-99A2BAD6-8190-4D95-A9D4-16F578A3FBD5"></a><span class="term"><a name="GUID-4B372AE7-3EED-46A1-A6BE-E50749067720"></a>移除贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-0E2ECAFD-BA0A-4753-90C6-3268C7F727AC"></a> 单击此处移除指定的位图或贴图。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27D9"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42B4"></a>模糊</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A5A"></a> 增加该值可以模糊或柔化位图置换的效果。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-B2AD5BE7-D54F-4520-9D98-E163B30AA4B5"></a><p class="title"><a name="GUID-392C40D1-1C7C-4337-B1CA-4DE0023F385C"></a>“贴图”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190043790"></a><div class="figure-anchor"><img src="../images/GUID-D30BFC09-E93D-4C9F-B9B2-5C239548F4C6-low.png"></div>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-42B3"></a>包含位图置换的贴图参数。请参见 <span class="char_link"><a href="GUID-78327298-4741-470C-848D-4C3618B18FCA.htm">UVW 贴图修改器</a></span>。 
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-42B2"></a>4 种贴图模式控制着置换对其置换进行投影的方式。“置换”Gizmo 的类型和在场景中位置决定最终效果。 
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190043791"></a><div class="figure-anchor"><img src="../images/GUID-52EDE2D7-C20E-42CE-A82B-9E58C750D233-low.png"><p class="figure-title">置换 gizmo：平面、柱形、球形和收缩包裹</p>
+               </div><a name="UL_A90F142DB5BF4488927B177FEA51E3EF"></a><ul>
+                  <li><em class="strong">平面</em> 从单独的平面对贴图进行投影。 
+                  </li>
+                  <li><em class="strong">柱形</em> 像将其环绕在圆柱体上那样对贴图进行投影。启用“封口”可以从圆柱体的末端投影贴图副本。 
+                  </li>
+                  <li><em class="strong">球形</em> 从球体对贴图进行投影，球体的顶部和底部，即位图边缘在球体两极的交汇处均为奇点。 
+                  </li>
+                  <li><em class="strong">收缩包裹</em> 从球体对贴图进行投影，像“球形”所作的那样，但是它会截去贴图的各个角，然后在一个单独的极点将它们全部结合在一起，在底部创建一个奇点。 
+                  </li>
+               </ul>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27DE"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42AD"></a>长度、宽度、高度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A55"></a> 指定“置换”gizmo 的边界框尺寸。高度对平面贴图没有任何影响。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27DF"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42AC"></a>U/V/W 向平铺</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A54"></a> 设置位图沿指定尺寸重复的次数。默认值 1.0 对位图执行只一次贴图操作，数值 2.0 对位图执行两次贴图操作，依此类推。分数值会在除了重复整个贴图之外对位图执行部分贴图操作。例如，数值 2.5 会对位图执行两次半贴图操作。 
+                        <p><a name="GUID-2481F257-2855-4ACE-BB70-E23CF0067D61"></a><em class="strong">翻转</em> 沿相应的 U、V 或 W 轴反转贴图的方向。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27E1"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42AA"></a>使用现有贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A52"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875209F"></a>让“置换”使用堆栈中较早的贴图设置。如果没有对对象贴图，该功能就没有效果。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27E2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42A9"></a>应用贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A51"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520A0"></a>将“置换 UV”贴图应用到绑定对象。该功能用于将材质贴图应用到使用与修改器一样的贴图坐标的对象。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-C83C8477-7BFB-44F6-A3A7-5C569265A635"></a><p class="title"><a name="GUID-333E3625-2FD9-4AED-9311-512E2875537B"></a>“通道”组
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-42A8"></a>指定是否将置换投影应用到贴图通道或者顶点颜色通道，并决定使用哪个通道。有关这些通道的更多信息，请参见“UVW 贴图修改器”。 
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27E3"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42A7"></a>贴图通道</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A50"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520A1"></a>选择该功能可以指定 UVW 通道用来贴图，使用它右侧的微调器设置通道数目。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27E4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42A6"></a>顶点颜色通道</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A4F"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520A2"></a>选择该功能可以对贴图使用顶点颜色通道。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-056D640E-3700-4B8A-9F8F-E527ADAB6213"></a><p class="title"><a name="GUID-9F1BCF6D-4E16-490C-A33E-91AC97FA6191"></a>“对齐”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190043794"></a><div class="figure-anchor"><img src="../images/GUID-94B4A6BD-77B5-4251-BB7A-2B1F319F277F-low.png"></div>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-42A5"></a>包含用来调整贴图 Gizmo 尺寸、位置和方向的控制。 
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27E5"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42A4"></a>X、Y、Z</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A4E"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520A3"></a>沿三个轴翻转贴图 gizmo 的对齐。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27E6"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42A3"></a>适配</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A4D"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520A4"></a>缩放 gizmo 以适配对象的边界框。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27E7"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42A2"></a>中心</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A4C"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520A5"></a>相对于对象的中心调整 Gizmo 的中心。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27E8"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42A1"></a>位图适配</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A4B"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520A6"></a>显示“选择位图”对话框。缩放 Gizmo 以适配选定位图的纵横比。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27E9"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-42A0"></a>法线对齐</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A4A"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520A7"></a>启用“拾取”模式可以选择曲面。Gizmo 对齐于那个曲面的法线。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27EA"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-429F"></a>视图对齐</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A49"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520A8"></a>使 gizmo 指向视图的方向。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27EB"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-429E"></a>区域适配</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A48"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520A9"></a>启用“拾取”模式可以拖动两个点。缩放 Gizmo 以适配指定区域。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27EC"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-429D"></a>重置</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A47"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520AA"></a>将 gizmo 返回到默认值。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E27ED"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-429C"></a>获取</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4A46"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87520AB"></a>启用“拾取”模式可以选择另一个对象并获得它的“置换”Gizmo 设置。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-2BACEAD4-D75C-4F1D-AC78-44B598B83D6B.htm">拖放贴图和材质</a></li>
+                     <li class="topiclist-litem"><a href="GUID-567FEE3B-22FD-46DE-A7A6-F11456012F0C.htm"> 类型按钮的右键单击菜单</a></li>
+                     <li class="topiclist-litem"><a href="GUID-A5AB2530-3AB0-40FD-AACF-4DBE4432EE33.htm">高级效果卷展栏</a></li>
+                     <li class="topiclist-litem"><a href="GUID-EF33AEB1-44BE-403E-B4CC-3C29495988C2.htm"> “环境”面板</a></li>
+                     <li class="topiclist-litem"><a href="GUID-3E2DD837-66B9-4BA5-BEDB-CF72CBF185EB.htm">雾环境效果</a></li>
+                     <li class="topiclist-litem"><a href="GUID-C7F01818-502C-499B-8FD5-1F6742298DC7.htm">曲面建模</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

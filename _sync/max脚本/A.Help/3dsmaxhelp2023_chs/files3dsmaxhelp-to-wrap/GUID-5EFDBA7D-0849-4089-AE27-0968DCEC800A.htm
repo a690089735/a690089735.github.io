@@ -1,0 +1,93 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5EFDBA7D-0849-4089-AE27-0968DCEC800A">
+      <meta name="description" content="PSD 是 Adobe® Photoshop® 固有的图形文件的文件扩展名。此图像格式支持将图像的多个层叠加起来，以获得最终的图像。每层都可以拥有任意数量的通道（R、G、B、遮罩等等）。由于使用多个层可以生成各种特殊的效果，因此这是一种功能强大的文件格式。">
+      <meta name="indexterm" content="PSD 文件（Photoshop 文档）">
+      <meta name="indexterm" content="文件类型: PSD（Photoshop 文档）">
+      <meta name="topic-type" content="concept">
+      <title>PSD 文件</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5EFDBA7D-0849-4089-AE27-0968DCEC800A"></a><div class="head">
+            <h1>PSD 文件</h1>
+         </div>
+         <p class="blurb">PSD 是 Adobe<sup>®</sup> Photoshop<sup>®</sup> 固有的图形文件的文件扩展名。此图像格式支持将图像的多个层叠加起来，以获得最终的图像。每层都可以拥有任意数量的通道（R、G、B、遮罩等等）。由于使用多个层可以生成各种特殊的效果，因此这是一种功能强大的文件格式。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C68"></a>Adobe 提供了很多叠加层的不同模式，包括正常、变暗、加亮、差别、倍增、屏幕、分解、强光、色调、饱和度、颜色、湿度、叠加和柔光。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C67"></a>您可以将 PSD 文件用作位图、视口背景等等。不能对 PSD 文件进行渲染。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C66"></a> <span class="charspan-msgph">3ds Max</span> 支持 Photoshop 格式，并允许使用图像层作为位图，以及整个合成图像。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043ED"></a> 
+            <h2><a name="GUID-D84C622B-847D-4404-ACB6-712B226435C5"></a>限制
+            </h2> <a name="GUID-85E0A844-ED81-46FB-90DB-C53DF3B86F9C"></a><dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-24B2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C65"></a>每通道位数</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-12E0"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754997"></a>Photoshop 支持每通道 1 位、8 位和 16 位的图像（分别为 1 位 RGB 图像、24 位 RGB 图像和 48 位 RGB 图像）。<span class="charspan-msgph">3ds Max</span> 支持每通道 8 位或 16 位的 PSD 图像。（实际上，每通道 1 位的图像非常少。）虽然 Photoshop 可以加载每通道 16 位的图像，但是层始终都是每通道 8 位。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-24B1"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C64"></a>模式</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-12DF"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754998"></a> <span class="charspan-msgph">3ds Max</span> 支持以下列模式保存的 <em class="mild">.psd</em> 文件： 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190043EE"></a><ul>
+                        <li>RGB </li>
+                        <li>灰度 </li>
+                     </ul> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C63"></a> <span class="charspan-msgph">3ds Max</span> 不支持下列 Photoshop 模式： 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190043EF"></a><ul>
+                        <li>索引色 </li>
+                        <li>位图 </li>
+                        <li>双色 </li>
+                        <li>CMYK 颜色 </li>
+                        <li>Lab 颜色 </li>
+                        <li>多通道 </li>
+                     </ul> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-24B0"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C62"></a>非图像层</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-12DE"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754999"></a>不支持不是图像层的层（例如文本层）。在 Photoshop 中，可以“光栅”处理非图像层，以使其成为图像。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-24AF"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C61"></a>合成选项</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-12DD"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875499A"></a>不支持要求 Photoshop 处理的图像层之间的合成选项。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2ACF"></a> 
+            <h2><a name="GUID-EC3A8596-77D8-4454-9CD3-E38FAC625067"></a>界面
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1C5C"></a>将 PSD 文件作为位图打开时，将显示用于选择如何使用图像的对话框。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190043F3"></a><div class="figure-anchor"><img src="../images/GUID-A1FFE2EA-AA23-45BC-9475-3E0E9D8415EF-low.png"><p class="figure-title">塌陷层将显示整个图像。</p>
+            </div>  <a name="GUID-68C4C5C1-0558-4977-A5D4-B7220E6C420C"></a><div class="dl_section"><a name="GUID-9FF4A32D-932B-40BD-ABF0-E2653590C116"></a><a name="UL_5B23BF06F5494C80A785EEFD2A554255"></a><ul>
+                  <li><em class="strong">塌陷层</em>（默认设置。）使用整个合成图像来显示位图。保存 PSD 文件时，必须生成此合成图（参阅 Photoshop 帮助）。 
+                     <div><a name="WS1A9193826455F5FF-316FD70E123DECE8002-4F86"></a><div class="note-note"><span class="label label-target-language">注意:</span>合成图像仅用于显示位图图像；<span class="charspan-msgph">3ds Max</span> 单独在内存中维护 PSD 文件中的所有层。可以在 <span class="charspan-msgph">3ds Max</span> 中使用<span class="char_link"><a href="GUID-F5518487-A253-44F0-A8D9-9CB537A8F392.htm">视口画布</a></span>编辑各个层并添加新层。 
+                        </div>
+                     </div> 
+                  </li>
+                  <li><em class="strong">单个层</em>使用图像的单个层。选择此选项之后，将出现显示层列表的对话框，其中包含每层的缩略图和层的名称。单击层即可将其选中，然后单击“确定”。 <a name="WS1A9193826455F5FFBA679E112A6A190043F4"></a><div class="figure-anchor"><img src="../images/GUID-ED9F3613-27D8-40A9-B74F-5081630973E1-low.png"><p></p>
+                        <p class="figure-title">单个层显示从中选择层的列表。</p>
+                     </div>  
+                     <p><a name="GUID-33ED8DA6-A13A-41DF-98DC-1ED290D1AC05"></a><em class="strong">全帧</em>如果启用此选项，则将整个层用作位图。如果禁用此选项，则只使用由图像数据占用的那部分层。默认设置为启用。 
+                     </p> 
+                  </li>
+               </ul>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-2E682FD0-5475-4494-A63B-F31B75B99A7C">
+      <meta name="description" content="Interactive 明暗器网络使用“混合”以允许 XYZ 的各个分量采用任意 RGB 分量的值。">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="expert">
+      <meta name="topic-subtype" content="using">
+      <title>使用组件混合提供不同的顶点颜色通道</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-2E682FD0-5475-4494-A63B-F31B75B99A7C"></a><div class="head">
+            <h1>使用组件混合提供不同的顶点颜色通道</h1>
+         </div>
+         <p class="blurb">Interactive 明暗器网络使用“混合”以允许 XYZ 的各个分量采用任意 RGB 分量的值。 
+            
+         </p>
+         <p><a name="GUID-C2DDE1FF-E5A8-47E6-A86A-D2FD8C6C5CAE"></a>默认情况下，RGB 值对应于 XYZ 值：X 与 R 匹配，Y 与 G 匹配，Z 与 B 匹配。但是，您可以指定 float3“混合”字符串 <em class="strong">xxx</em> 或 <em class="strong">rrr</em>，即红色通道用于 float3 的所有三个浮点值。您还可以指定 <em class="strong">rgg</em> 或 <em class="strong">xyy</em>，其中红色通道用于第一个浮点值，绿色通道用于第二个和第三个值。 
+            
+         </p>
+         <p><a name="GUID-CEDE6B50-E3C4-4BF8-9D86-0EFCB3F24ABA"></a>通过自定义“标准基础”节点的不同通道输入（如“基础颜色”或“不透明度”），可以创建不同的明暗器效果。 
+            
+         </p><a name="OL_20E12A36D43A45918CD7E58B0796E937"></a><p class="list-intro"><a name="GUID-10ED6496-F47E-4304-846A-D9EC35B328C8"></a> 设置分量混合值：
+         </p>
+         <ol type="1" start="1">
+            <li>在 Interactive 明暗器的 ShaderFX 编辑器中，单击您希望在“标准基础”节点上调整的属性；例如，“基础颜色”。 
+               	 <a name="FIG_655F3D209C774828B40D0C9D16F8732D"></a><div class="figure-anchor"><img src="../images/GUID-39B9F0AC-9B7A-41F0-9F75-E7F6BDC9463E-low.png"></div>  
+               <div><a name="GUID-A411F13B-045E-495C-AB3B-969031BE3928"></a><div class="note-note"><span class="label label-target-language">注意:</span>与 ShaderFX 节点不同，针对 Interactive 明暗器节点显示的属性可能会根据您单击的节点属性发生变化。此外，它们还可能会根据哪个节点为该属性提供输入而发生变化。 
+                     	 
+                  </div>
+               </div> 
+            </li>
+            <li>在“属性”面板中，输入“分量混合”字符串，该字符串指定要输入到此属性的通道。 
+               	 <a name="FIG_EBCF3F9CF35D44639CE7E23341779FCC"></a><div class="figure-anchor"><img src="../images/GUID-C6D6329E-8168-462A-8369-1F62C42D2D3A-low.png"></div>  
+               <p><a name="GUID-9813709F-720C-4C80-AF87-7C2BA3F4C0FB"></a>如果“分量混合”字段为空，将使用默认值（即，rgb 用于 xyz）。 
+                  	 
+               </p> <a name="FIG_A1B083C066E24D208104CC3DD4C0A77C"></a><div class="figure-anchor"><img src="../images/GUID-29A0FCF2-4197-4240-B955-497745494CF8-low.png"></div>  
+            </li>
+         </ol>
+         <p><a name="GUID-CA4B8D07-0814-4676-B050-EFD6658829BD"></a> <em class="strong">左：默认值：rgb = xyz</em> 
+         </p>
+         <p><a name="GUID-54D56F94-0C75-43FB-A610-E2897EFF432A"></a> <em class="strong">右：分量混合 = rrr</em> 
+         </p><a name="OL_91A02E0F771244E1BEDC778122A6A3AD"></a><p class="list-intro"><a name="GUID-C586B875-332D-41B5-A6F1-1FB4C4F0FF2A"></a>示例：将顶点颜色绿色通道连接到环境光阻挡：
+         </p>
+         <p><a name="GUID-D63E2585-8784-47D0-80EA-CEF6BD74F418"></a>对于此示例，恐龙的腹部和尾部已绘制为绿色。 
+            <a name="FIG_78877EC9B70D439693E27D60F0280505"></a><div class="figure-anchor"><img src="../images/GUID-F708917C-BBE3-4868-A635-1CE4331C96C7-low.png"></div>  
+         </p>
+         <ol type="1" start="1">
+            <li>在图形中添加一个“输入”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“材质变量”节点。将其“类型”更改为“Vector3”，将其名称更改为“颜色”<em class="strong"></em>，并将其关联到“标准基础”节点的“基础颜色”输入。 
+               
+               <p><a name="GUID-FEE9082A-F54C-42AB-AAE6-25C9C7B8925A"></a>颜色贴图将提供模型的基础颜色。 
+                  
+               </p> 
+            </li>
+            <li>在材质编辑器上，将“颜色”指定为较暗的值。 
+               <a name="FIG_7B04415F1D744021A81A6FE7C713C9DA"></a><div class="figure-anchor"><img src="../images/GUID-AFEE4A8E-894E-4364-9344-D6A41F5D6A98-low.png"></div>  
+            </li>
+            <li>将“顶点颜色”节点的“RGBA”输出连接到“标准基础”节点的“环境光阻挡”输入。 
+               
+               <p><a name="GUID-BB4AC4F6-7757-4BCD-A501-0DEF80662E22"></a>float3 输出将自动转化为浮点，并且默认情况下会使用 R 通道。 
+                  
+               </p> 
+            </li>
+            <li>在“标准基础”节点上，单击“环境光阻挡”属性。在“属性”面板中的“分量混合”属性中输入 <em class="strong">g</em>。 
+               <a name="FIG_D0FC231DE8A34249813EE3D0602A6B56"></a><div class="figure-anchor"><img src="../images/GUID-00CA8E6E-F26F-4CC5-AE90-EBE03200890F-low.png"></div>  
+               <p><a name="GUID-BFB04753-E541-4665-ADFD-8A8AC0973269"></a>环境光遮挡值现在显示在模型中具有绿色顶点的部分中。 
+                  
+               </p> <a name="FIG_294D035851A24E74B5CD00004F4A4873"></a><div class="figure-anchor"><img src="../images/GUID-22B16E6B-7168-4453-91B2-945A5750960B-low.png"></div>  <a name="FIG_38C8C167DD3D4354B9069923F054AECD"></a><div class="figure-anchor"><img src="../images/GUID-6A814B2B-EA8D-44A6-9617-FE7E8FAFCA29-low.png"><p></p>
+                  <p class="figure-title">“环境光阻挡”的“顶点颜色”控件的图形</p>
+               </div>  
+               <div><a name="GUID-B1CAE33B-7A12-4832-908A-B2D4BE9A29D7"></a><div class="note-note"><span class="label label-target-language">注意:</span>现在，您可以使用“顶点颜色”节点的 r 和 b 通道来控制其他输入；例如，r 代表“金属”，B 代表“粗糙度”。 
+                     
+                  </div>
+               </div> 
+            </li>
+         </ol>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

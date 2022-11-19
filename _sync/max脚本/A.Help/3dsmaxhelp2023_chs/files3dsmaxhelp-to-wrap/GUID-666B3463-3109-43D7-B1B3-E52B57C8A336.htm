@@ -1,0 +1,111 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-666B3463-3109-43D7-B1B3-E52B57C8A336">
+      <meta name="description" content="默认情况下，粒子从“粒子流”图标中出生或发射。本主题中的术语发射器 指此图标。使用“位置”图标操作符来控制发射器上粒子的初始置换。可以设置发射器从其曲面、体积、边、顶点或中心发射粒子。而且，如果对发射器设置动画，则可以将发射器的运动赋予它发射的粒子。">
+      <meta name="indexterm" content="位置操作符: 位置图标">
+      <meta name="indexterm" content="粒子: 定位">
+      <meta name="indexterm" content="粒子流操作符: 位置图标">
+      <meta name="topic-type" content="concept">
+      <title>位置图标操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-666B3463-3109-43D7-B1B3-E52B57C8A336"></a><div class="head">
+            <h1>位置图标操作符</h1>
+         </div>
+         <p class="blurb">默认情况下，粒子从“粒子流”图标中出生或<em class="mild">发射</em>。本主题中的术语<em class="mild">发射器</em> 指此图标。使用“位置”图标操作符来控制发射器上粒子的初始置换。可以设置发射器从其曲面、体积、边、顶点或中心发射粒子。而且，如果对发射器设置动画，则可以将发射器的运动赋予它发射的粒子。 
+         </p>
+         <div class="bodyReference"><a name="GUID-99F9DC4A-F6CE-4294-98EF-67DC26374163"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-0E3606D3-C94D-49D3-B7E9-F89FA582AF43">“粒子视图” <img src="../images/ac.menuaro.gif">  在某个事件中单击“位置”，或将“位置”操作符添加到粒子系统中，然后选择它。</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63B6"></a>另外，也可以使用<span class="char_link"><a href="GUID-A357FF76-D5E2-4E8F-A36C-370D296267E4.htm">位置对象</a></span>，以便从任意其他对象上发射粒子。 
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-63B5"></a> 
+               <h2><a name="GUID-88DDABEC-8613-47CC-A6B7-440BB69EBC3E"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900423DC"></a><div class="figure-anchor"><img src="../images/GUID-22CA15B7-4C63-429E-87AD-19D193CD2BC0-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63B4"></a>该用户界面出现在“粒子视图”对话框右侧的“参数”面板中。 
+               </p> <a name="GUID-8B858DA2-F858-4FA1-8F28-3505020C630B"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64F9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63B3"></a>锁定发射器</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6600"></a> 启用时，所有粒子都保持在发射器上的其最初位置。实际上，它们是“粘结”在发射器上。禁用时，每个粒子的出生位置由发射器的当前位置确定。默认设置为禁用状态。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64F8"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63B2"></a>继承发射器移动</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65FF"></a> 启用时，“粒子流”会将每个粒子的运动速率和运动方向设置为粒子出生时发射器的速率和方向。禁用时，发射器的移动不会影响粒子的移动。只有“锁定发射器”处于禁用状态时才可以使用该选项。默认设置为禁用状态。 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FD3"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果事件中随后出现“速度”操作符，它会覆盖“继承发射器移动”所赋予的所有运动。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64F7"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63B1"></a>倍增</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65FE"></a> 确定粒子继承发射器运动的程度，以百分比为单位。只有“继承发射器移动”处于启用状态时才能使用该选项。默认设置为 100。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63B0"></a>要使粒子以发射器一半的速度移动，请将“倍增”设置为 50。要使它们以相同的速度移动，则使用默认的设置 100。要使粒子以发射器两倍的速度移动，则将“倍增”设置为 200。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-14490333-AB18-4C1C-8008-16DBF12A1178"></a><p class="title"><a name="GUID-286BADE2-7E6B-467E-8B0C-D481344284C7"></a>“位置”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63AF"></a>使用“位置”下拉列表可以指定粒子出现在发射器上的位置。通过变化<span class="char_link"><a href="GUID-89DA4474-E8F4-496F-9339-305D8C8E241E.htm#WSF742DAB0410631331C0DB195112A1CEB6FD-7FB8">图标类型</a></span>、“位置”设置和发射的方向，可以创建各种发射行为。默认设置为“体积”。 
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A1900423DE"></a><ul>
+                     <li> <em class="strong">轴</em>从图标的中心发射粒子。 
+                     </li>
+                     <li> <em class="strong">顶点</em>对于“长方体”和“矩形”图标类型，从图标的四角发射粒子。对于“球体”图标类型，从定义球体的三个圆圈的六个交叉点发射粒子。对于“圆形”图标类型，从中心发射粒子。 
+                     </li>
+                     <li> <em class="strong">边</em>从沿图标边的随机点发射粒子。 
+                     </li>
+                     <li> <em class="strong">曲面</em>从图标曲面上的随机点发射粒子。 
+                     </li>
+                     <li> <em class="strong">体积</em>从图标体积内部的随机点发射粒子。 
+                     </li>
+                  </ul>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64F6"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63AE"></a>仅特殊点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65FD"></a> 在指定的“位置”类型将发射限制为特定数量的点（请参见下面的“总计”）。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63AD"></a>发射点仍然是随机的，可通过更改“唯一性”设置来改变。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64F5"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63AC"></a>总计</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65FC"></a> 设置发射点的数量。只有“仅特殊点”启用时才能使用该选项。默认设置是 10。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64F4"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63AB"></a>子帧采样</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65FB"></a> 启用时，操作符以 Tick 为基础（每一秒钟的 1/4800）而不是以帧为基础获取发射器图标的动画。这使得粒子位置能够更加精确地跟随发射器图标的动画。默认设置为禁用状态。 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-1CE1BD0A-F167-4FD7-A5A0-3726424FCD92"></a><p class="title"><a name="GUID-3B10C74B-3AD4-4425-AAE2-231F4EFF807A"></a>“唯一性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63AA"></a>“唯一性”设置可以改变发射点的随机选择。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64F3"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63A9"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65FA"></a> 指定随机化值。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-64F2"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63A8"></a>新增特性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-65F9"></a> 使用随机化公式计算新种子。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-9D61922D-9155-4DB6-A259-1B800C49CBC6">
+      <meta name="description" content="“晶格”修改器将图形的线段或边转化为圆柱形结构，并在顶点上产生可选的关节多面体。使用它可基于网格拓扑创建可渲染的几何体结构，或作为获得线框渲染效果的另一种方法。">
+      <meta name="indexterm" content="“晶格”修改器">
+      <meta name="indexterm" content="修改器: 晶格">
+      <meta name="indexterm" content="对象空间修改器: 晶格">
+      <meta name="contextid" content="LATTICE.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS-LATTICE">
+      <meta name="topic-type" content="concept">
+      <title>晶格修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-9D61922D-9155-4DB6-A259-1B800C49CBC6"></a><div class="head">
+            <h1>晶格修改器</h1>
+         </div>
+         <p class="blurb">“晶格”修改器将图形的线段或边转化为圆柱形结构，并在顶点上产生可选的关节多面体。使用它可基于网格拓扑创建可渲染的几何体结构，或作为获得线框渲染效果的另一种方法。 </p>
+         <div class="bodyReference"><a name="UL_C2328753B88D40DEA8CC0E24B0A98A4E"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-74BFB225-787C-45FF-AD1B-F7EABA9B4B69">选择对象或图形。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “晶格”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-21241CA8-AD1E-49A1-9946-5B7DEBB0CC32">默认菜单：选择对象或图形。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “参数化变形器” <img src="../images/ac.menuaro.gif"> “晶格”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-8A104F45-C61F-4E89-9953-53EA67664971">Alt 菜单：选择对象或图形。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “几何体(参数化)” <img src="../images/ac.menuaro.gif"> “晶格”</span> 
+               </li>
+            </ul><a name="WS1A9193826455F5FFBA679E112A6A1900438E6"></a><div class="figure-anchor"><img src="../images/GUID-2B5D9C0D-6D4A-4F55-BAE9-A053866FF594-low.png"></div>
+            <p><a name="GUID-ADB176F6-7B2C-46B6-86F6-9E2B069CB7CA"></a> <em class="strong">顶部：仅有节点</em> 
+            </p>
+            <p><a name="GUID-AE34C7A8-A6A1-4AE0-8950-533DA24BD635"></a> <em class="strong">中间：仅有支柱</em> 
+            </p>
+            <p><a name="GUID-E39E36F1-9FF9-4280-8C11-73A260FC35FC"></a> <em class="strong">底部：两者（节点和支柱）</em> 
+            </p>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9B0"></a><div class="note-note"><span class="label label-target-language">注意:</span>此修改器可作用于整个对象或堆栈中选中的子对象。 
+               </div>
+            </div>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9B1"></a><div class="note-tip"><span class="label label-target-language">提示</span>可以使用“晶格”修改器合并<span class="char_link"><a href="GUID-AE42BEFF-2E64-4E7A-B14E-432795894A1F.htm">散布复合对象</a></span>，并摆放要作为关节的任意对象，而不是提供一个多面体。要完成此操作，请创建网格分布对象和源对象（例如，长方体）。使用“散布”将长方体散布到分布对象的顶点上。（确保使用的是“复制”选项而不是“实例”选项。）在“分布显示”参数中，隐藏分布对象。选择要用作分布对象的原始对象，对其应用“晶格”并禁用关节。将会有两个重合的对象：一个提供晶格支柱，另一个定位长方体。
+                  
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2974"></a> 
+               <h2><a name="GUID-DDECD911-FC32-4398-B02B-602690EF467B"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900438E7"></a><div class="figure-anchor"><img src="../images/GUID-13BC66C7-2F2D-4B06-A827-FDAA710D8DD2-low.png"></div>  <a name="GUID-1F648A07-DD97-42A2-9551-6F4BF99601C3"></a><div class="dl_section"><a name="GUID-96DAD450-A6F5-498F-96AB-CD8BD60FDA62"></a><p class="title"><a name="GUID-A09B7D9C-91A0-4EEF-B8D3-1750B2CCB69B"></a>“几何体”组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FD1"></a>指定是否使用整个对象或选中的子对象，并显示它们的结构和关节这两个组件。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E2902"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FD0"></a>应用于整个对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-494B"></a> 将“晶格”应用到对象的所有边或线段上。禁用时，仅将“晶格”应用到传送到堆栈中的选中子对象。默认设置为启用。 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9B2"></a><div class="note-note"><span class="label label-target-language">注意:</span>当禁用“应用于整个对象”时，未选中对象正常渲染。例如，可以将长方体转化为可编辑网格，选择一个多边形，然后在禁用“应用于整个对象”时应用晶格，这将布渲染面，然而构成面的边和顶点将转化为结构与关节并保持面正常渲染。然而，如果选中包围多边形的四条边并禁用“忽略隐藏边”，这将把结构和关节添加到对象中，而对象所有的面正常渲染。如果启用“支柱”组
+                                 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“忽略隐藏边”，将渲染多边形的一个面，而不渲染其他面。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl><a name="UL_B20E6CB4D0AF4F52BD47A1EEB8A1588F"></a><ul>
+                     <li><em class="strong">仅来自顶点的节点</em>仅显示原始网格的顶点生成的节点（多面体）。 
+                     </li>
+                     <li><em class="strong">仅来自边的支柱</em>仅显示原始网格的线段生成的支柱（圆柱体）。 
+                     </li>
+                     <li><em class="strong">二者</em>显示支柱和节点。 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-E98C91AE-67A3-457B-9B9F-6B9E35D49FC3"></a><p class="title"><a name="GUID-C71084B1-82AB-457B-B3CC-AC72815B24B5"></a>“结构”组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FCC"></a>提供影响几何体结构的控件。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E2906"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FCB"></a>半径</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4947"></a> 指定结构半径。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E2907"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FCA"></a>分段</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4946"></a> 指定沿结构的分段数目。当需要使用后续修改器将结构或变形或扭曲时，增加此值。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E2908"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FC9"></a>边数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4945"></a> 指定结构周界的边数目。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E2909"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FC8"></a>材质 ID</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4944"></a> 指定用于结构的材质 ID。使结构和关节具有不同的材质 ID，这会很容易的将它们指定给不同的材质。结构默认 ID ＃1。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E290A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FC7"></a>忽略隐藏边</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4943"></a> 仅生成可视边的结构。禁用时，将生成所有边的结构，包括不可见边。默认设置为启用。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E290B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FC6"></a>末端封口</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4942"></a> 将末端封口应用于结构。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E290C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FC5"></a>平滑</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4941"></a> 将平滑应用于结构。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-896F7FA4-09C8-4BC6-A056-BC34F507CEFB"></a><p class="title"><a name="GUID-A2558E34-6301-4EBD-A6AB-EF806A69014F"></a>“关节”组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FC4"></a>提供影响关节几何体的控件。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E290D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FC3"></a>基点面类型</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4940"></a> 指定用于关节的多面体类型。 <a name="UL_5AAA13177AA246EF962E1A82538F3251"></a><ul>
+                              <li><em class="strong">四面体</em>使用四面体。 
+                              </li>
+                              <li><em class="strong">八面体</em>使用八面体。 
+                              </li>
+                              <li><em class="strong">二十面体</em>使用二十面体。 
+                              </li>
+                           </ul>
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E2911"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FBF"></a>半径</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-493C"></a> 设置关节的半径。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E2912"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FBE"></a>分段</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-493B"></a> 指定关节中的分段数目。分段越多，关节形状越像球形。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E2913"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FBD"></a>材质 ID</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-493A"></a> 指定用于结构的材质 ID。默认设置为 ID ＃2。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E2914"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FBC"></a>平滑</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4939"></a> 将平滑应用于关节。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-BD007024-78D0-4E81-B4D4-38128831EC51"></a><p class="title"><a name="GUID-C40264A5-4B58-4D6D-BCCE-371FDEDB33FB"></a>贴图坐标组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3FBB"></a>确定指定给对象的贴图类型。 
+                  </p><a name="UL_F7E5CEAFB0474025949C5B983064A03E"></a><ul>
+                     <li><em class="strong">无</em>不指定贴图。 
+                     </li>
+                     <li><em class="strong">重用现有坐标</em>使用当前指定给对象的贴图。这可能是由“生成贴图坐标”、在创建参数中或前一个指定贴图修改器指定的贴图。使用此选项时，每个关节将继承它所包围顶点的贴图。 
+                     </li>
+                     <li><em class="strong">新建</em>使用专用于“晶格”修改器的贴图。将圆柱形贴图应用于每个结构，球形贴图应用于每个关节。 
+                     </li>
+                  </ul>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

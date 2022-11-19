@@ -1,0 +1,431 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-0ABE24E1-E11C-475D-A403-19A5E4119F09">
+      <meta name="description" content="该卷展栏为默认扫描线渲染器设置参数。">
+      <meta name="indexterm" content="“默认扫描线”卷展栏">
+      <meta name="indexterm" content="图版匹配">
+      <meta name="indexterm" content="抗锯齿: 过滤器">
+      <meta name="indexterm" content="背景: 和抗锯齿">
+      <meta name="indexterm" content="扫描线渲染器">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="using">
+      <title>“默认扫描线渲染器”卷展栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-0ABE24E1-E11C-475D-A403-19A5E4119F09"></a><div class="head">
+            <h1>“默认扫描线渲染器”卷展栏</h1>
+         </div>
+         <p class="blurb">该卷展栏为默认扫描线渲染器设置参数。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_C5C6FC56F3AC477CB902A928F5039296"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-D2DC088F-AE2B-47D3-89FD-B094CEE1F82C">主工具栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-D7B21710-141B-4E81-BB93-6175D09E68D0-low.png">（渲染设置） <img src="../images/ac.menuaro.gif"> “渲染设置”对话框  <img src="../images/ac.menuaro.gif"> “指定渲染器”卷展栏  <img src="../images/ac.menuaro.gif">  选择“默认扫描线渲染器”作为产品级渲染器。 <img src="../images/ac.menuaro.gif"> “渲染器”面板  <img src="../images/ac.menuaro.gif"> “默认扫描线渲染器”卷展栏</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-2FEA7F94-28E9-478A-9739-3E5769597062">“渲染”菜单  <img src="../images/ac.menuaro.gif"> “渲染设置” <img src="../images/ac.menuaro.gif"> “渲染设置”对话框  <img src="../images/ac.menuaro.gif"> “指定渲染器”卷展栏  <img src="../images/ac.menuaro.gif"> &gt;选择“默认扫描线渲染器”作为产品级渲染器。 <img src="../images/ac.menuaro.gif"> “渲染器”面板  <img src="../images/ac.menuaro.gif"> “默认扫描线渲染器”卷展栏</span> 
+               </li>
+            </ul>
+            <div><a name="WS1A9193826455F5FF662FFB11407B58D52-70BF"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果场景中包含动画位图（如 AVI 文件），其中包括材质、投影灯、环境等，则每帧都将重新加载一个动画文件。如果场景使用多个动画，或如果动画本身就是大文件，则重新加载会降低渲染性能。要提高性能，请改用图像序列（每个动画帧位于单独的图像文件中）。
+                  
+                  
+               </div>
+            </div><a name="WS1A9193826455F5FFBA679E112A6A19004295A"></a><div class="figure-anchor"><img src="../images/GUID-3BA20250-779E-497F-9C0F-979B345727E6-low.png"></div><a name="GUID-A874BE77-6BAB-4A09-AB12-0FB4D2BB5145"></a><div class="dl_section"><a name="GUID-7AF0FA24-84A8-46CC-ADA7-8CAA274FD4FA"></a><p class="title"><a name="GUID-A8A61AB0-3CBF-4202-AB26-983DD558474D"></a>“选项”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AE2"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5287"></a>贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BFC"></a> 禁用该选项可忽略所有贴图信息，从而加速测试渲染。自动影响反射和环境贴图，同时也影响材质贴图。默认设置为启用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AE1"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5286"></a>自动反射/折射和镜像</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BFB"></a> 忽略自动反射/折射贴图以加速测试渲染。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AE0"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5285"></a>阴影</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BFA"></a> 禁用该选项后，不渲染投射阴影。这可以加速测试渲染。默认设置为启用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7ADF"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5284"></a>强制线框</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BF9"></a> 像线框一样设置为渲染场景中所有曲面。可以选择线框厚度（以像素为单位）。默认设置为 1。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7ADE"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5283"></a>启用 SSE</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BF8"></a> 启用该选项后，渲染使用“流 SIMD 扩展”（SSE）。（SIMD 代表“单指令、多数据”。）取决于系统的 CPU，SSE 可以缩短渲染时间。默认设置为禁用。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-E1835F5E-4806-4633-8FE8-395958C53F88"></a><p class="title"><a name="GUID-265A5A32-91EC-48A2-97EF-5808745F0FA6"></a>“抗锯齿”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7ADD"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5282"></a>抗锯齿</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BF7"></a> 抗锯齿可以平滑渲染时产生的对角线和弯曲线条的锯齿状边。只有在渲染测试图像并且速度比图像质量更重要时才禁用该选项。 
+                        
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5281"></a>禁用“抗锯齿”将使“强制线框”设置无效（请参见上文）。即使启用“强制线框”，几何体也将根据指定的材质进行渲染。 
+                           
+                        </p> 
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5280"></a>通过禁用“抗锯齿”还可禁用渲染元素。如果需要渲染元素，请确保使“抗锯齿”处于启用状态。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7ADC"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-527F"></a>过滤器下拉列表</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BF6"></a> 可用于选择高质量的基于表的过滤器，将其应用到渲染上。过滤是抗锯齿的最后一步操作。它们在子像素层级起作用，并允许您根据所选择的过滤器来清晰或柔化最终输出。在该组的这些控件下面，3ds Max 会在一个方框内显示过滤器的简要说明以及如何将过滤器应用于图像。
+                        
+                        
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-70BD"></a><div class="note-tip"><span class="label label-target-language">提示</span>“渲染区域”和“渲染选定项”只在使用区域过滤器渲染时才产生可靠的结果。 
+                              
+                           </div>
+                        </div> 
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-527E"></a>下表介绍了可用的抗锯齿过滤器。 
+                           
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A190042963"></a><div class="table-ruled">
+                           <table cellpadding="0" cellspacing="0" class="ruled">
+                              <colgroup>
+                                 <col width="20.89115453601435%">
+                                 <col width="79.10884546398566%">
+                              </colgroup>
+                              <tr class="ruled-heading">
+                                 <th class="table-heading">名称 
+                                    		  
+                                 </th>
+                                 <th class="table-heading">说明 
+                                    		  
+                                 </th>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">区域 
+                                    		  
+                                 </td>
+                                 <td class="table-body">使用可变大小的区域过滤器来计算抗锯齿。 
+                                    			 <a name="WS1A9193826455F5FFBA679E112C9EF5A71-527D"></a><p class="table-body">这是原始 3ds Max 过滤器。 
+                                       			 
+                                    </p> 
+                                 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">Blackman 
+                                    		  
+                                 </td>
+                                 <td class="table-body">清晰但没有边缘增强效果的 25 像素过滤器。 
+                                    		  
+                                 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">混合 
+                                    		  
+                                 </td>
+                                 <td class="table-body">在清晰区域和高斯柔化过滤器之间混合。 
+                                    		  
+                                 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">Catmull-Rom 
+                                    		  
+                                 </td>
+                                 <td class="table-body">具有轻微边缘增强效果的 25 像素重组过滤器。 
+                                    		  
+                                 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">Cook 变量 
+                                    		  
+                                 </td>
+                                 <td class="table-body">一种通用过滤器。1 到 2.5 之间的值将使图像清晰；更高的值将使图像模糊。 
+                                    		  
+                                 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">立方体 
+                                    		  
+                                 </td>
+                                 <td class="table-body">基于立方体样条线的 25 像素模糊过滤器。 
+                                    		  
+                                 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">Mitchell-Netravali 
+                                    		  
+                                 </td>
+                                 <td class="table-body">两个参数的过滤器；在模糊、圆环化和各向异性之间交替使用。如果圆环化的值设置为大于 0.5，则将影响图像的 alpha 通道。 
+                                    		  
+                                 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">图版匹配/MAX R2 
+                                    		  
+                                 </td>
+                                 <td class="table-body"> <a name="WS1A9193826455F5FFBA679E112C9EF5A71-527C"></a><p class="table-body">使用 3ds Max 2 的方法（无贴图过滤），将摄影机和屏幕贴图或无光/阴影元素与未过滤的背景图像相匹配。 
+                                       			 
+                                    </p> <a name="WS1A9193826455F5FFBA679E112C9EF5A71-527B"></a><p class="table-body">有关详细信息，请参见主题“图版匹配过滤”。 
+                                       			 
+                                    </p> 
+                                 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">四方形 
+                                    		  
+                                 </td>
+                                 <td class="table-body">基于四方形样条线的 9 像素模糊过滤器。 
+                                    		  
+                                 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">清晰四方形 
+                                    		  
+                                 </td>
+                                 <td class="table-body">来自 Nelson Max 的清晰 9 像素重组过滤器。 
+                                    		  
+                                 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">柔化 
+                                    		  
+                                 </td>
+                                 <td class="table-body">可调整高斯柔化过滤器，用于适度模糊。 
+                                    		  
+                                 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">视频 
+                                    		  
+                                 </td>
+                                 <td class="table-body">针对 NTSC 和 PAL 视频应用程序进行了优化的 25 像素模糊过滤器。 
+                                    		  
+                                 </td>
+                              </tr>
+                           </table>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7ADB"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-527A"></a>过滤贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BF5"></a> 启用或禁用对贴图材质的过滤。默认设置为启用。 
+                        
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-70BC"></a><div class="note-tip"><span class="label label-target-language">提示</span>请保持启用“过滤贴图”选项，除非在进行测试渲染并想加速渲染速度和节省内存时。 
+                              
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7ADA"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5279"></a>过滤器大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BF4"></a> 可以增加或减小应用到图像中的模糊量。此选项仅供某些过滤器选项使用。 
+                        
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5278"></a>将“过滤器大小”设置为 1.0 可以有效地禁用过滤器。 
+                           
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-70BB"></a><div class="note-note"><span class="label label-target-language">注意:</span>某些过滤器在“过滤器大小”控件下方显示其他由过滤器指定的参数。 
+                              
+                           </div>
+                        </div> 
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5277"></a>当渲染单独元素时，可以逐个元素显式启用或禁用活动的过滤器。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-1885664D-0A47-48A7-87AC-206A433F410D"></a><p class="title"><a name="GUID-48B83EAF-A0E6-4C7D-BEDD-C2E7DD981B41"></a>“全局超级采样”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AD9"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5276"></a>禁用所有采样器</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BF3"></a> 禁用所有超级采样。默认设置为禁用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AD8"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5275"></a>启用全局超级采样器</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BF2"></a> 启用该选项后，对所有的材质应用相同的超级采样器。禁用该选项后，将材质设置为使用全局设置，该全局设置由“渲染”对话框中的设置控制。除了“禁用所有采样器”控件，“渲染”对话框的“全局超级采样”组中的所有其他控件都将无效。默认设置为启用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AD7"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5274"></a>超级采样贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BF1"></a> 启用或禁用对贴图材质的超级采样。默认设置为启用。 
+                        
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-70B9"></a><div class="note-tip"><span class="label label-target-language">提示</span>请保持启用“超级采样贴图”选项，除非在进行测试渲染并想加速渲染速度和节省内存时。 
+                              
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AD6"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5273"></a>采样器下拉列表</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BF0"></a> 选择应用何种超级采样方法。默认设置为“Max 2.5 星”。 
+                        
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5272"></a>用于超级采样方法的选项与出现在“材质编辑器”的“超级采样”卷展栏中的选项相同。某些方法提供扩展的选项，通过这些选项可以更好的控制超级采样的质量和渲染过程中所获得的采样数。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-AD170BA1-1EFA-40F1-B128-929740DB0F9C"></a><p class="title"><a name="GUID-392F5AE6-5659-4AF4-A8B7-6DB9F173179F"></a>“对象运动模糊”组
+               </p>
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5271"></a>通过为对象设置“属性”对话框的“运动模糊”组中的“对象”，确定对哪个对象应用对象运动模糊。对象运动模糊通过为每个帧创建对象的多个“时间片”图像来模糊对象。它考虑摄影机的移动。对象运动模糊应用在扫描线渲染过程中。 
+                  
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AD5"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5270"></a>应用</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BEF"></a> 为整个场景全局启用或禁用对象运动模糊。任何设置“对象运动模糊”属性的对象都将用运动模糊进行渲染。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AD4"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-526F"></a>持续时间</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BEE"></a> 确定“虚拟快门”打开的时间。设置为 1.0 时，虚拟快门在一帧和下一帧之间的整个持续时间保持打开。较长的值产生更为夸张的效果。 
+                        <a name="WS1A9193826455F5FFBA679E112A6A190042966"></a><div class="figure-anchor"><img src="../images/GUID-2BF66A20-D3D6-4C54-9A59-0BDE69E8A921-low.png"><p class="figure-title">更改持续时间的效果。</p>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AD3"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-526E"></a>采样</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BED"></a> 确定采样的“持续时间细分”副本数。最大值设置为 32。 
+                        
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-526D"></a>当采样小于持续时间时，在持续时间中随机采样（这也就是运动模糊看起来可能有一点颗粒化的原因）。例如，如果“持续时间细分”值为 12 而“采样”值为 8，那么就可能在每帧的 12 个副本中随机采样出 8 个。 
+                           
+                        </p> 
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-526C"></a>当采样等于持续时间时，就不存在随机性（如果两个数都为最大值 32，则将获得密集效果，对于指定对象，通常这将花费渲染所需时间的 3 到 4 倍）。 
+                           
+                        </p> 
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-526B"></a>如果希望获得平滑模糊效果，请使用 32/32 的最大设置。如果希望减少渲染时间，则 12/12 的值将提供比 16/12 更平滑的结果。 
+                           
+                        </p> 
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-526A"></a>因为采样发生在持续时间中，所以持续时间值必须总是小于或等于采样值。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AD2"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5269"></a>持续时间细分</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BEC"></a> 确定在持续时间内渲染的每个对象副本的数量。 
+                        <a name="WS1A9193826455F5FFBA679E112A6A190042967"></a><div class="figure-anchor"><img src="../images/GUID-962656B1-5F89-4526-BF08-400CCB0DCC19-low.png"></div>  
+                        <p><a name="GUID-FB8EA82C-5DEB-4A0E-A462-8D8A044171E5"></a> <em class="strong">左：采样值与细分值相同。</em> 
+                        </p> 
+                        <p><a name="GUID-CF698015-DAC1-4641-B053-FB31BCAEBC7F"></a> <em class="strong">右：采样值小于细分值。</em> 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-68128987-7C12-4DD8-864D-C5015A3F9030"></a><p class="title"><a name="GUID-42E37817-7AC5-4052-80CA-E9E996699061"></a>“图像运动模糊”组
+               </p>
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5268"></a>通过为对象设置“属性”对话框的“运动模糊”组中的“图像”，确定对哪个对象应用图像运动模糊。图像运动模糊通过创建拖影效果而不是多个图像来模糊对象。它考虑摄影机的移动。图像运动模糊是在扫描线渲染完成之后应用的。 
+                  
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190042969"></a><div class="figure-anchor"><img src="../images/GUID-D46AB2D9-8E86-4023-B7C3-64FB02A05F10-low.png"><p class="figure-title">右边的硬币应用了“图像运动模糊”</p>
+               </div>
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5267"></a> 不能将图像运动模糊应用在更改其拓扑的对象上。 
+                  
+               </p>
+               <div><a name="WS1A9193826455F5FF662FFB11407B58D52-70B8"></a><div class="note-tip"><span class="label label-target-language">提示</span>当模糊的对象发生重叠时，有时模糊就不能产生正确的效果，并且在渲染中会存在间距。因为图像运动模糊是在渲染<em class="mild">之后</em> 应用的，因此它没有考虑对象重叠。要解决这个问题，可以分别渲染每个模糊的对象到不同的层，然后用“Video Post”中的“Alpha 合成器”将两个层合成。 
+                     
+                  </div>
+               </div>
+               <div><a name="WS1A9193826455F5FF662FFB11407B58D52-70B7"></a><div class="note-note"><span class="label label-target-language">注意:</span>图像运动模糊对设置动画的 NURBS 对象无效，因此它们的细分（曲面近似）随着时间而改变。子对象独立于顶级 NURBS 模型设置动画时，发生这种情况。在下列任何情况下，图像运动模糊也无效： 
+                     <a name="WS1A9193826455F5FFBA679E112A6A19004296A"></a><ul>
+                        <li>使用优化的任何对象。 
+                           	 
+                        </li>
+                        <li>任何使用动画分段的基本体。 
+                           	 
+                        </li>
+                        <li>平滑度值（迭代次数）不为 1 的任何类型的“网格平滑”。 
+                           	 
+                        </li>
+                        <li>启用“保持凸面”的多边形上的网格平滑。 
+                           	 
+                        </li>
+                        <li>使用“置换材质”的任何对象。 
+                           	 
+                        </li>
+                     </ul> 
+                  </div>
+               </div>
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5266"></a>通常来说，如果对象更改了其拓扑，则使用场景或对象运动模糊而不用图像运动模糊。 
+                  
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AD1"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5265"></a>应用</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BEB"></a> 为整个场景全局启用或禁用图像运动模糊。任何设置了图像运动模糊属性的对象都用运动模糊进行渲染。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7AD0"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5264"></a>持续时间</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BEA"></a> 指定“虚拟快门”打开的时间。设置为 1.0 时，虚拟快门在一帧和下一帧之间的整个持续时间保持打开。值越大，运动模糊效果越明显。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7ACF"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5263"></a>应用于环境贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BE9"></a> 设置该选项后，图像运动模糊既可以应用于环境贴图也可以应用于场景中的对象。当摄影机环游时效果非常显著。 
+                        
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5262"></a>环境贴图应当使用“环境”进行贴图：球形、圆柱形或收缩包裹。图像运动模糊不能与屏幕贴图环境一起使用。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7ACE"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5261"></a>透明度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BE8"></a> 启用该选项后，图像运动模糊对重叠的透明对象起作用。在透明对象上应用图像运动模糊会增加渲染时间。默认设置为禁用。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-461FDEA9-A20F-42B8-86B5-B76811DBBD23"></a><p class="title"><a name="GUID-C7F9885D-A3FC-410C-9BFB-5A0BFDB29965"></a>“自动反射/折射贴图”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7ACD"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-5260"></a>渲染迭代次数</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BE7"></a> 设置对象间在非平面自动反射贴图上的反射次数。虽然增加该值有时可以改善图像质量，但是这样做也将增加反射的渲染时间。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-97242D2A-FC79-4D24-972A-8A986FCBAE28"></a><p class="title"><a name="GUID-5ED2692F-D380-47DB-AE60-3631EB7C3647"></a>“颜色范围限制”组
+               </p>
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-525F"></a>通过切换“钳制”或“缩放”来处理超出范围（0 到 1）的颜色分量（RGB），“颜色范围限制”允许您处理亮度过高的问题。通常，反射高光会导致颜色分量高于范围，而使用负凸轮的过滤器将导致颜色分量低于范围。选择两种选项之一来控制渲染器如何处理超出范围的颜色分量：
+                  
+                  
+               </p><a name="WS1A9193826455F5FFBA679E112A6A19004296D"></a><ul>
+                  <li> <em class="strong">钳制</em> 要保持所有颜色分量均在“钳制”范围内，则需要将任何大于 1 的颜色值更改为 1，而将任何小于 0 的颜色更改为 0。任何介于 0 和 1 之间的值不做任何更改。使用“钳制”时，因为在处理过程中色调信息会丢失，所以非常亮的颜色渲染为白色。 
+                     
+                  </li>
+                  <li> <em class="strong">缩放</em> 要保持所有颜色分量均在“缩放”范围内，则需要通过缩放所有三个颜色分量来保留非常亮的颜色的色调，这样最大分量的值就会为 1。注意，这样将更改高光的外观。 
+                     
+                  </li>
+               </ul>
+            </div>
+            <div class="dl_section"><a name="GUID-DBCCA641-48F1-4B0A-A367-00386040B7DE"></a><p class="title"><a name="GUID-960DE8F1-7A0C-4D4C-AC37-4F718AB672E7"></a>“内存管理”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7ACC"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-525E"></a>节省内存</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFFF2D4B611EAAE7970A-7BE6"></a> 启用该选项后，渲染使用更少的内存但会增加一点内存时间。可以节约 15% 到 25% 的内存。而时间大约增加 4%。默认设置为禁用。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-97BC995B-D697-488E-B4FC-4AE8B07537DC.htm">“超级采样”卷展栏</a></li>
+                     <li class="topiclist-litem"><a href="GUID-22748E7B-6C68-4437-922D-AF2309855C8A.htm">对象运动模糊</a></li>
+                     <li class="topiclist-litem"><a href="GUID-CDD7A087-F914-4B53-8DFC-1E406F8DC881.htm">图像运动模糊</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

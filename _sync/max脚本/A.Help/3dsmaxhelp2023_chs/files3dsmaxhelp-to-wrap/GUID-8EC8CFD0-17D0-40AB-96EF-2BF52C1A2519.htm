@@ -1,0 +1,116 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-8EC8CFD0-17D0-40AB-96EF-2BF52C1A2519">
+      <meta name="description" content="重新定位 Biped 时应使用何种方法取决于制作 Biped 的动画时所用的工具。">
+      <meta name="topic-type" content="concept">
+      <title>重新定位 Biped</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-8EC8CFD0-17D0-40AB-96EF-2BF52C1A2519"></a><div class="head">
+            <h1>重新定位 Biped</h1>
+         </div>
+         <p class="blurb">重新定位 Biped 时应使用何种方法取决于制作 Biped 的动画时所用的工具。 </p>
+         <div class="bodyReference"><a name="WS1A9193826455F5FFBA679E112A6A1900456FF"></a><ul>
+               <li>如果 Biped 使用自由形式或足迹动画，请使用“移动所有”模式。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF1613E"></a>这也是一种移动未设置动画的 Biped 的最简便方法。 
+                  </p> 
+               </li>
+               <li>如果 Biped 使用自由形式动画<em class="mild">和</em> IK 附件（即，存在 IK 混合值大于零的关键点），则必须使用虚拟对象。 
+               </li>
+               <li>如果使用运动流设置 Biped 动画，请使用“开始位置”微调器。 </li>
+            </ul>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-46B9"></a> 
+               <h2><a name="GUID-3A37569F-3101-475F-B2D7-9C5ACE12FB82"></a>过程
+               </h2> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6F1"></a><div class="note-note"><span class="label label-target-language">注意:</span>本主题的步骤假设您已经选择 Biped，并转到“运动”面板。 
+                  </div>
+               </div> <a name="WSF742DAB041063133728B9B2112A1CE7292-7F62"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045700"></a>要重新定位自由形式的动画（不用 IK 附件）或足迹动画，请执行下列操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>在“Biped”卷展栏上，启用 <img src="../images/GUID-51159E1A-C6A6-452B-8CC9-EB64A28DDCBF-low.png">（“移动所有模式”）。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF1613F"></a>此时，将会选择并以超常的大小显示 Biped 的重心。在主工具栏上，<img src="../images/GUID-5D7D7630-6D16-400D-AE6F-87F13C97DEA2-low.png">“选择并移动”已启用。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16140"></a>“移动所有”模式是一种选择 Biped 重心并重新定位 Biped 的简便方法。如果 Biped 的自由形式动画没用 IK 附件或没有足迹动画，则在未设置 Biped 动画时使用此选项。 
+                     </p> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6F2"></a><div class="note-note"><span class="label label-target-language">注意:</span>使用足迹动画移动 Biped 的另外一种方法是，选择所有足迹，而不选择其重心。 
+                        </div>
+                     </div> 
+                  </li>
+                  <li> <img src="../images/GUID-5D7D7630-6D16-400D-AE6F-87F13C97DEA2-low.png"> 移动 Biped。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16141"></a>使用“移动所有”对话框上的“塌陷”按钮可将该对话框上的位置和旋转值重置为零，但是不更改 Biped 的位置。 
+                     </p> 
+                  </li>
+                  <li>禁用 <img src="../images/GUID-9A22F764-E58A-459E-83E6-01036EFDDBD4-low.png">（“移动所有模式”）。 
+                  </li>
+               </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7F61"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045701"></a>要重新定位肢体附加到“对象空间”对象（IK 附件）的 Biped，请执行下列操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建虚拟对象，然后将其置于 Biped 重心附近。 </li>
+                  <li>在主工具栏中，使用 <img src="../images/GUID-2FD1B2A7-98E2-4EC0-9CAA-D6641253DF99-low.png">（“选择并链接”）将“对象空间”对象和 Biped 的质心同时链接到虚拟对象。 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6F3"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>确保在同一帧中链接。 
+                        </div>
+                     </div> 
+                  </li>
+                  <li> <img src="../images/GUID-5D7D7630-6D16-400D-AE6F-87F13C97DEA2-low.png"> 移动虚拟对象，以便重新定位 Biped。 
+                  </li>
+               </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7F60"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045702"></a>要重新定位肢体附加到世界空间（IK 附件）的 Biped，请执行下列操作：
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16142"></a>肢体在世界空间的 Biped 每个肢体的 IK 混合值为 1.0，但不包含指定的对象空间对象。例如，如果将 Biped 的双脚设置为踩踏，则使膝盖在降低重心时弯曲，或将做俯卧运动的 Biped 双手设置为触地，则通常不用指定对象空间对象。 
+               </p>
+               <ol type="1" start="1">
+                  <li>在 Biped 重心附近创建虚拟对象。 </li>
+                  <li>在主工具栏中，使用 <img src="../images/GUID-2FD1B2A7-98E2-4EC0-9CAA-D6641253DF99-low.png">（“选择并链接”）将 Biped 的质心和具有踩踏关键点的 Biped 部位同时链接到虚拟对象。 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6F4"></a><div class="note-tip"><span class="label label-target-language">提示</span>出于安全考虑，可以双击上肢，并将所有肢体链接到虚拟对象。 
+                        </div>
+                     </div> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6F5"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>确保在同一帧中创建所有链接。 
+                        </div>
+                     </div> 
+                  </li>
+                  <li> <img src="../images/GUID-5D7D7630-6D16-400D-AE6F-87F13C97DEA2-low.png"> 移动虚拟对象，以便重新定位 Biped。 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6F6"></a><div class="note-note"><span class="label label-target-language">注意:</span>根据动画，在某些附加对象的关键点处，您可能需要将 IK 混合值设置回 <span class="charspan-emphasis"> <em class="strong">0.0</em> </span>。否则，肢体可能会固定于某个姿势。 
+                        </div>
+                     </div> 
+                  </li>
+               </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7F5F"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045703"></a>要使用运动流脚本重新定位生成动画的 Biped，请执行下列操作：
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16143"></a>默认情况下，运动流脚本开头的 Biped 位置是该脚本中第一个 BIP 或 STP 文件指定的位置。 
+               </p>
+               <ol type="1" start="1">
+                  <li>启用 <img src="../images/GUID-1809228C-7301-4A0E-A6F9-A87CDDC0DBF4-low.png">（“运动流模式”）。 
+                  </li>
+                  <li>在“运动流”卷展栏中，使用“开始位置 X”、“开始位置 Y”和“开始位置 Z”更改 Biped 的 XYZ 位置。 </li>
+                  <li>禁用 <img src="../images/GUID-F1CE8451-F8D5-4B8D-9740-87589CA1F107-low.png">（“运动流模式”）。 
+                  </li>
+               </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7F5E"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045704"></a>要使用层重新定位具有自由形式动画的 Biped，请执行下列操作：
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16144"></a>如果在重新定位自由形式的 Biped 时使用层和“自动关键点”，则可以执行一些编辑操作，如下所述。 
+               </p>
+               <ol type="1" start="1">
+                  <li>在“层”卷展栏上，单击<img src="../images/GUID-B8DFFB6C-7203-40A1-944A-78E7CEC9E539-low.png">（“创建层”）。 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6F7"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果 Biped 使用足迹动画，则无法使用 <img src="../images/GUID-51159E1A-C6A6-452B-8CC9-EB64A28DDCBF-low.png">（“移动所有模式”）按钮。 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>启用 <img src="../images/GUID-859D11E8-44CA-4A08-A696-F5A17CA856E0-low.png">。 
+                  </li>
+                  <li>按前面的<span class="char_link"><a href="GUID-8EC8CFD0-17D0-40AB-96EF-2BF52C1A2519.htm#WS1A9193826455F5FFBA679E112A6A190045700">重新定位自由形式动画（不用 IK 附件）或足迹动画</a></span>步骤所述重新定位 Biped。 
+                  </li>
+                  <li>禁用 <img src="../images/GUID-48CE32A3-32F5-433A-B89D-C6F12E6A7C44-low.png">。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16145"></a>此时，可以借助下列工具编辑动画： 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190045705"></a><ul>
+                        <li>下层显示的是 Biped 的原始位置，如同的红色简笔人物画。 </li>
+                        <li>单击“层”卷展栏中的 <img src="../images/GUID-46FD6DD0-4C64-48DD-9429-DC686A1AA2C5-low.png">（“捕捉和设置关键点”）时，会将 Biped 捕捉到其在上一层中的位置，然后设置一个位置关键点。此时，在设置关键点的帧处，可以在 Biped 新位置和前一位置之间混合动画。 
+                        </li>
+                     </ul> 
+                  </li>
+               </ol> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

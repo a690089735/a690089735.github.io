@@ -1,0 +1,118 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-32F4BBB6-F14E-4992-9C0E-EA2968FE1F5B">
+      <meta name="description" content="Civil View 树对象是使用专用参数化树对象插件创建的。">
+      <meta name="indexterm" content="Civil View: 对象库: 树">
+      <meta name="topic-type" content="concept">
+      <title>树库</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-32F4BBB6-F14E-4992-9C0E-EA2968FE1F5B"></a><div class="head">
+            <h1>树库</h1>
+         </div>
+         <p class="blurb">Civil View 树对象是使用专用参数化树对象插件创建的。 </p>
+         <p><a name="GUID-D848BFA9-4501-402A-9469-1A2C33032AC7"></a>Civil View 中的树对象是通过将两个<span class="char_link"><a href="GUID-D8BD1CBD-90B3-485A-A70C-F5919D245015.htm">位图</a></span>投影到平坦矩形平面上来创建的。第一个位图（即漫反射贴图）向树对象提供自然颜色。第二个位图是<span class="char_link"><a href="GUID-DA60809C-7486-47BC-818B-61716CD3AE1E.htm">不透明贴图</a></span>，定义矩形平面的哪些部分可以看到以及哪些区域是透明的。在白色区域中，可以隐约显示漫反射贴图。在黑色区域中，对象显示为透明。 
+         </p><a name="FIG_9B01BB3081A642B89C5E739E154A30F3"></a><div class="figure-anchor"><img src="../images/GUID-F617B0A6-8BE5-4AAC-9B2F-CC0E2F355AF0-low.png"></div>
+         <p><a name="GUID-E5FCE322-3EE1-4848-922D-BA4E0A51DBB6"></a> <em class="strong">左：漫反射贴图</em> 
+         </p>
+         <p><a name="GUID-FB004649-A604-44D7-9F2B-F84C6EEB3B8C"></a> <em class="strong">右：不透明贴图</em> 
+         </p>
+         <p><a name="GUID-919C5E51-3A8F-48CF-A742-53D624783C61"></a>使用此类型的树对象可以避免使用复杂的网格来表示树对象，并且可以大量缩短渲染时间并提高视口性能，尤其当大量的树放置在 3ds Max 场景中时。 
+         </p>
+         <p><a name="GUID-E5262FEC-9D45-4D26-B933-88D196457AF8"></a>Civil View 将 <span class="char_link"><a href="GUID-88BBADB5-E12E-423A-81F8-6FC54F0E5D8A.htm">CivilViewTrees 材质</a></span>应用于所有树对象。 
+         </p>
+         <p><a name="GUID-6ECAF46A-C6CA-4FD2-993E-DE2F90786481"></a>树对象的对象<span class="char_link"><a href="GUID-8B278D6D-2267-4D69-9EF8-1E682A15A200.htm">预览</a></span>直接来自漫反射位图。 
+         </p>
+         <div class="section"><a name="GUID-5A9D8837-7D35-4088-9245-F2BE947D500E"></a> 
+            <h2><a name="GUID-9930EC2C-7122-437B-A810-A543C81BE6ED"></a>对象 INI 文件结构
+            </h2> <a name="TABLE_2B99D9F48F8540C594E5DE489E983B1C"></a><div class="table-ruled">
+               <table cellpadding="0" cellspacing="0" class="ruled">
+                  <colgroup>
+                     <col>
+                  </colgroup>
+                  <tr class="ruled-odd-row">
+                     <td class="table-body"> <a name="GUID-DE9A803B-75D4-409E-A029-08AD1E3952E4"></a><p class="table-body">树对象 INI 文件 </p> 
+                     </td>
+                  </tr>
+                  <tr class="ruled-even-row">
+                     <td class="table-body"> <a name="GUID-2FBE580A-48AD-480E-A272-7DB7D24301FC"></a><p class="table-body">[参数] </p> <a name="GUID-20BFCBDA-5056-43CA-8FA9-899D98149AC1"></a><p class="table-body">宽度= </p> <a name="GUID-57525C40-8364-4383-8071-7C5EE96F7B36"></a><p class="table-body">高度= </p> <a name="GUID-79CFED9F-C4D6-4D61-8C6D-390C76A9802C"></a><p class="table-body">&nbsp; </p> <a name="GUID-11A41BCD-A6F7-4A4C-9E6C-DC29E394D63C"></a><p class="table-body">[贴图] </p> <a name="GUID-E8057B49-11D0-49EE-A5F5-E5C9CF694EA1"></a><p class="table-body">漫反射= </p> <a name="GUID-E7042279-97BA-4EE9-BBC8-13FDCB0B846A"></a><p class="table-body">不透明度= </p> <a name="GUID-BB7963B2-A8F2-4C85-A4C4-F584F60A6803"></a><p class="table-body">&nbsp; </p> <a name="GUID-75FD1074-E0B8-48C1-A7C5-66F6A4DAADC2"></a><p class="table-body">[树默认值] </p> <a name="GUID-7159969D-9FF9-490D-A95A-4C2F964F1408"></a><p class="table-body">样式= </p> <a name="GUID-2041F4A2-E9D7-4E06-9A52-B7E6FF127C17"></a><p class="table-body">&nbsp; </p> <a name="GUID-4CE1ACF8-79D1-4DCE-A3E1-3713E2FC199B"></a><p class="table-body">[组] </p> <a name="GUID-36D4C5A9-AFC8-4040-83B0-B2E75E85176F"></a><p class="table-body">名称= </p> <a name="GUID-C714A695-9356-48AF-8388-8869FEAF00EB"></a><p class="table-body">&nbsp; </p> 
+                     </td>
+                  </tr>
+               </table>
+            </div> <a name="GUID-5D18181E-165D-46F7-A469-9E0E9A5FE9CB"></a><div class="dl_section"><a name="GUID-9F1E5DA8-4AB0-4E78-A0EB-2CD4F47031E8"></a><p class="title"><a name="GUID-3333608A-5045-4045-83A3-F4CA9641AC7F"></a>[参数]
+               </p>
+               <dl>
+                  <dt><a name="GUID-3088F4F5-59E9-4F84-A2B1-E9DDE2A1C775"></a><span class="term"><a name="GUID-BFAE1A31-F0CB-4CAF-9BB0-BE177411F212"></a>宽度/高度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-44A6B97F-1B5F-4CA6-ABA2-68A5562DC3EB"></a> 
+                        <p><a name="GUID-B477FBD5-49AC-4AFE-900E-34501D5819F1"></a>设置树矩形的宽度和高度。这两个尺寸必须为正值。 
+                        </p> 
+                        <p><a name="GUID-97DDF921-8C97-4882-8098-97BBA6C31AF5"></a>除了此基本宽度和高度，Civil View 还将随机化因子应用于树对象，以便在一组树中实现树大小的变化。这可以提高真实感。您可以在<span class="char_link"><a href="GUID-E1D894D5-95A8-4210-9B5A-DA6684A0B7BE.htm">“Civil View 首选项”面板</a></span>上设置百分比变化因子。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-08D403F7-A454-48C6-BD9F-4C44729B7E84"></a><p class="title"><a name="GUID-A799E460-1DFF-43C8-A06F-E11C7A862504"></a>[贴图]
+               </p>
+               <dl>
+                  <dt><a name="GUID-0C15AE57-DA3C-4257-8D11-A162AA239616"></a><span class="term"><a name="GUID-A3F09D77-8019-4FFF-B75D-79C64B5F09DD"></a>漫反射</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-8CD3517E-63E6-409C-89E7-CBE96EFC4267"></a>命名定义树的颜色和外观的位图。该位图文件必须存在于当前任意 Civil View 资源工具包内的 <em class="mild"> <span class="filePath">/matlibs/treemaps</span> </em> 文件夹中。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-CBF2227E-52DF-4384-8F7F-ABD554FC86B2"></a><span class="term"><a name="GUID-21735D3A-11E9-43E7-BB37-080F29D7C7FD"></a>不透明度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-C8326D81-591F-4459-884E-16983FB57B7F"></a> 
+                        <p><a name="GUID-13BAA34C-3FB8-4DCD-B16D-00B640540F69"></a>命名在渲染时定义生成的树的形状的位图（通常是黑白或灰度）。该贴图应该始终显示与漫反射贴图相同的树。位图的黑色区域将渲染为对象的透明部分。该位图文件必须与漫反射贴图位于相同的 <em class="mild"> <span class="filePath">/matlibs/treemaps</span> </em> 文件夹中。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-A04CEB33-ACC2-4B9D-B15F-2965CDE19D08"></a><p class="title"><a name="GUID-C3801DB0-772D-4634-84E6-5F4E8870ACEA"></a>[树默认值]
+               </p>
+               <dl>
+                  <dt><a name="GUID-00781BA6-17DC-446C-BB0A-DA52FFB7D504"></a><span class="term"><a name="GUID-FFA13A58-A756-486D-AF2F-822A44297157"></a>样式</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-2C8DD340-97CF-4819-972D-1DCA8B70FB9D"></a> 
+                        <p><a name="GUID-F3C8CBAC-69FD-4C1E-8CBF-5BC179988F8D"></a>树对象的类型。此设置应为“1”或“2”（无需引号）： 
+                        </p> <a name="UL_AE21967818B44F7793B8867E5EFEC1F1"></a><ul>
+                           <li>1：标准 Civil View 树对象，如上所述。 </li>
+                           <li>2：3ds Max <span class="char_link"><a href="GUID-7FD701DB-3009-4E1E-9ABE-5A322B613D23.htm">植物对象</a></span>。 
+                              <p><a name="GUID-AB4FE760-AB3A-4A9D-9FA5-39156F7F7F5B"></a>植物对象使用复杂的几何体，因此如果场景中存在许多树，建议不要使用植物对象。 
+                              </p> 
+                              <p><a name="GUID-AB9A706B-84C4-4704-9E91-6B09173ADC41"></a>当选项 2 处于活动状态时，Civil View 会忽略宽度/高度和漫反射/不透明度参数。 
+                              </p> 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-B0A5396A-7EBD-4B90-93A7-C471F92458CE"></a><p class="title"><a name="GUID-27476C70-B461-479F-AF5B-A903217854B0"></a>[组]
+               </p>
+               <dl>
+                  <dt><a name="GUID-E6AF745F-106F-43CA-A9ED-097DA443F19B"></a><span class="term"><a name="GUID-4F706675-CD3C-496E-9A36-79BB6E39218F"></a>名称</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-1A0543F5-1257-4C60-A3E9-697D190F59CA"></a>应该在其中列出该对象的类别子组的名称。如果未指定名称，则对象将以未分组的状态列出。 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="section"><a name="GUID-2A447525-73FE-45B5-98EC-A6A87C3410E7"></a> 
+            <h2><a name="GUID-92B971F6-0EC8-4F0B-AF0B-8277E9AD4A1B"></a>将自定义树添加到库
+            </h2> 
+            <p><a name="GUID-D8C1D464-B1CA-4098-954C-CE2C4ED34CBC"></a>创建漫反射和不透明度位图，然后将其添加到当前任意 Civil View 资源工具包中的 <em class="mild"> <span class="filePath">/matlibs/treemaps</span> </em> 文件夹中。然后以上述格式创建一个关联 INI 文件，并将其放置在相同资源工具包的 <em class="mild"> <span class="filePath">/objlibs/trees</span> </em> 文件夹中。多个 INI 文件可以参考相同的位图。&nbsp; 
+            </p> 
+            <p><a name="GUID-65F5A553-2193-4DC7-9798-9910B2D2A533"></a>另请参见 <span class="char_link"><a href="GUID-F8CCF537-1A83-47FC-B0D5-8A55720DE30F.htm">Civil View 对象库概述</a></span>中有关对象库自定义的常规说明。 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

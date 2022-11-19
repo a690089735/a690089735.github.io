@@ -1,0 +1,1 @@
+macroScript Set_default_tangent_type_to_flat category:"My_Macors" toolTip:"06.Set default tangent type to flat" (::MyCustomFn 6)

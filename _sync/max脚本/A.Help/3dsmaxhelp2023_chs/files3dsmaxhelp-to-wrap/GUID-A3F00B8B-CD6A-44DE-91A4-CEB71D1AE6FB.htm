@@ -1,0 +1,78 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-A3F00B8B-CD6A-44DE-91A4-CEB71D1AE6FB">
+      <meta name="description" content="本部分中的主题介绍如何使用 HTR（层次平移旋转）和 TRC 格式的运动捕捉文件。">
+      <meta name="indexterm" content="HTR 文件（层次平移-旋转）">
+      <meta name="indexterm" content="文件类型: HTR（层次平移-旋转）">
+      <meta name="indexterm" content="TRC 文件（Motion Analysis Corporation 运动捕捉）">
+      <meta name="indexterm" content="文件类型: TRC（Motion Analysis Corporation 运动捕捉）">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>运动分析文件 (HTR/HTR2, TRC)</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-A3F00B8B-CD6A-44DE-91A4-CEB71D1AE6FB"></a><div class="head">
+            <h1> 运动分析文件 (HTR/HTR2, TRC)</h1>
+         </div>
+         <p class="blurb">本部分中的主题介绍如何使用 HTR（层次平移旋转）和 TRC 格式的运动捕捉文件。 </p>
+         <div class="section"><a name="WS1A9193826455F5FF11D4ED1B128F2317A08350D"></a> 
+            <p><a name="WS1A9193826455F5FF11D4ED1B128F2317A08350E"></a>HTR 格式是 BVH 格式的替代格式，因为 HTR 在数据类型和排序上更具有灵活性。它还具有完整的基础姿势规范，它由表示旋转和平移的起始点组成。存储的数据按部分分组；读取第一部分的所有运动，然后下一部分的运动，依此类推。 
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EAE"></a>导入时，<span class="charspan-msgph">3ds Max</span> 从传入的数据构建 FK 层次装备。得到的骨骼链接到以 HTR 文件命名的虚拟对象。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF11D4ED1B128F2317A08350B"></a>您可以直接将 HTR 文件导入到 CAT 角色动画插件。 
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EB1"></a>HTR 格式包含四个部分：抬头、分段名称和层次、基本姿势，以及运动数据部分。 
+            </p> 
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E45B"></a><div class="note-note"><span class="label label-target-language">注意:</span>所有部分的标题都显示在方括号 ([]) 之间。 
+               </div>
+            </div> 
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E45C"></a><div class="note-note"><span class="label label-target-language">注意:</span>在 HTR 文件中的注释由散列标记 (#) 指出。 
+               </div>
+            </div> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EB0"></a>标题部分包含全局参数信息： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190042AF"></a><ul>
+               <li>文件类型 </li>
+               <li>数据类型 </li>
+               <li>文件版本 </li>
+               <li>分段数 </li>
+               <li>帧数 </li>
+               <li>数据帧速率 </li>
+               <li>Euler 旋转顺序 </li>
+               <li>校准单位 </li>
+               <li>旋转单位 </li>
+               <li>重力的公用轴 </li>
+               <li>骨骼长度轴 </li>
+               <li>比例因子 </li>
+            </ul> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1EAF"></a>HTR2 与 HTR 非常相似，只是运动部分中的数据组织不同，HTR2 可以更好地适合流数据输入（主要样品排序用于演示运动信息）。 
+            </p> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-6791DBAB-3D8A-45ED-952B-AE6DAAC4FC46.htm">将 HTR 运动文件与 Character Studio 一起使用</a></li>
+                  <li class="topiclist-litem"><a href="GUID-0BE922A4-AB53-4389-B83F-53FB4F1C6186.htm">“导入 HTR”对话框</a><p>运动分析 HTR（层次平移-旋转）文件格式是运动捕捉文件格式，可以导入到 3ds Max 中。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-D6868BC3-6746-4908-BCEF-7EEE7BF31DFA.htm"> “导入 TRC”对话框</a><p>Motion Analysis Corporation 提供的 TRC 运动捕捉文件格式代表跟踪输出的 raw 格式（在 ASCII 中）。它包含标题部分和运动部分。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-F62A83A4-BAA8-4087-B9FC-3625D08709C0.htm">“导出 HTR”对话框</a><p>运动分析 HTR（层次平移-旋转）文件格式是用于 CAT 动画插件的运动捕捉格式。它为数据类型和排序提供灵活性。它还具有完整的基础姿势规范，它由表示旋转和平移的起始点组成。 </p>
+                  </li>
+               </ul>
+            </div></span><div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-F77B03E5-268C-4DBF-B3B5-D1713336549A.htm">character studio 文件格式</a></li>
+                     <li class="topiclist-litem"><a href="GUID-EA1D6D09-A2CD-4204-8093-A7AE5EC5E333.htm">CAT (Character Animation Toolkit)</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

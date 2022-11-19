@@ -1,0 +1,33 @@
+($.transform * (inverse $.parent.transform)) = T --求出相对于父物体的transform
+T * $.parent.transform --现在应该在的全局transform
+
+--查阅骨骼着色代码,找出按层级排序的方案
+--获取时排列好层级,顺序就是正好的,按顺序记录和使用即可.
+
+
+
+--skin的操作
+addmodifier $ (skin())
+
+skinmod = $.modifiers[1]
+
+skinops.addbone skinmod $point003 3--物体,放到的序号
+
+skinOps.SetVertexWeights skinmod 1 3 1.0 --修改器,顶点,哪根骨骼(可以列表),多少权重(浮点,可以列表)
+
+
+
+--新的镜像方块骨骼
+--1.创建一条线,0,0,0
+--2.转为poly(或者创建box删除所有点)
+--3.判断原物体,bipcat则直接附加,几何体则实例化后附加
+--4.全局坐标缩放x-1
+--5.加法线修改器,反转法线
+--6.删除现物体所有点,附加
+
+
+重影将列表框变为多选列表框,采用确定唯一集合
+复制粘贴帧,确定唯一集合来仅设置关键帧.
+
+关于飘带脚本和其他变换控制的问题:
+如果超出范围类型为loop(或者某些其他循环),会导致只能处理第一和第二帧.

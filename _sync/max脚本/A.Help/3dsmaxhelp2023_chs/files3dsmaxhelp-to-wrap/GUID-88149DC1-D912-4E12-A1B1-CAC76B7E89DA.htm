@@ -1,0 +1,510 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-88149DC1-D912-4E12-A1B1-CAC76B7E89DA">
+      <meta name="indexterm" content="转换: 支持">
+      <meta name="indexterm" content="转换: 摄影机支持">
+      <meta name="indexterm" content="摄影机: 转换支持">
+      <meta name="indexterm" content="摄影机: 支持（导出）">
+      <meta name="indexterm" content="自定义摄影机导出">
+      <meta name="indexterm" content="摄影机: 自定义摄影机导出">
+      <meta name="indexterm" content="导出: 自定义摄影机">
+      <meta name="indexterm" content="摄影机: 支持（导入）">
+      <meta name="indexterm" content="自定义摄影机导入">
+      <meta name="indexterm" content="摄影机: 自定义摄影机导入">
+      <meta name="indexterm" content="导入: 自定义摄影机">
+      <meta name="indexterm" content="转换: 灯光支持">
+      <meta name="indexterm" content="灯光: 转换支持">
+      <meta name="topic-type" content="concept">
+      <title>转换支持</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-88149DC1-D912-4E12-A1B1-CAC76B7E89DA"></a><div class="head">
+            <h1>转换支持</h1>
+         </div>
+         <p><a name="WS1A9193826455F5FF6026605B1181237E9466F6C"></a> 以下部分将介绍 <span class="charspan-msgph">3ds Max FBX plug-in</span>如何转换 3ds Max 对象及其属性。 
+            	 
+         </p>
+         <p><a name="WS1A9193826455F5FF-72A156FC122CE7955E0-79D3"></a>有关该版本的转换支持的详细报告，请参见 <a href="https://knowledge.autodesk.com/support/maya/learn-explore/caas/simplecontent/content/fbx-compatibility-charts.html?st=fbx%20compatibility" target="_blank">FBX 兼容性图</a>。FBX 兼容性图说明了从 Autodesk 3ds Max 导出并导入 Autodesk Maya、Autodesk Mudbox 或 Autodesk MotionBuilder 时，提供什么支持以及支持级别。 
+            	 
+         </p>
+         <div class="section"><a name="SECTION_787CB1424443491BAB7B3526CA18EAD4"></a> 
+            <h2><a name="GUID-7F998E86-751A-4B80-9589-6A4B99CECB9A"></a>摄影机支持
+            </h2> 
+            <p><a name="WS73099CC142F487551051018113CCCDB767-4AF6"></a> 下表显示 3ds Max 和 FBX 文件格式处理摄影机的方式。 
+               		
+            </p> <a name="GUID-F13E41A9-7A34-4C4F-B2CB-B33844A76C13"></a><dl>
+               <dt><a name="GUID-37444320-A1F5-4839-9912-B1E58E04FB00"></a><span class="term"><a name="GUID-397A88CA-324B-4623-AF09-C665234D0317"></a>摄影机导出</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-02323285-0496-42F3-BE34-8D873015B5F6"></a>下表列出了 3ds Max 摄影机，以及 FBX 文件格式在导出时处理它们的方式。 
+                     		<a name="WS73099CC142F487551051018113CCCDB767-4AF4"></a><div class="table-ruled">
+                        <table cellpadding="0" cellspacing="0" class="ruled">
+                           <colgroup>
+                              <col width="50%">
+                              <col width="50%">
+                           </colgroup>
+                           <tr class="ruled-heading">
+                              <th class="table-heading">在 3ds Max 中 
+                                 				  
+                              </th>
+                              <th class="table-heading">在 FBX 中的变化 
+                                 				  
+                              </th>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">自由摄影机 
+                                 				  
+                              </td>
+                              <td class="table-body">无兴趣点的摄影机。 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">目标摄影机 
+                                 				  
+                              </td>
+                              <td class="table-body">有兴趣点的摄影机。 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">滚动角度动画 
+                                 				  
+                              </td>
+                              <td class="table-body">滚动 FCurve。该插件会在导出到 FBX 时反转角度值以保持方向一致。 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">正交摄影机 
+                                 				  
+                              </td>
+                              <td class="table-body">在 3ds Max 中应用到自由或目标摄影机的正交设置会保留在 FBX 中。 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">视野通道 
+                                 				  
+                              </td>
+                              <td class="table-body">视野 FCurve。尽管焦点长度值发生了变化，但视图保持不变。 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">与宽度相关的视野 
+                                 				  
+                              </td>
+                              <td class="table-body">水平光圈。 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">与高度相关的视野 
+                                 				  
+                              </td>
+                              <td class="table-body">垂直光圈。 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">近平面和远平面 
+                                 				  
+                              </td>
+                              <td class="table-body">剪切处于活动状态下的近端值和远端值。由于在 MotionBuilder 中无法对近端值和远端值设置动画，则 MotionBuilder 会使用当前的时间值估算最终的近端值和远端值。 
+                                 				  
+                              </td>
+                           </tr>
+                        </table>
+                     </div> 
+                     <div><a name="WS1A9193826455F5FF1DBC298511635BEA875-92A"></a><div class="note-note"><span class="label label-target-language">注意:</span> “上方向向量”动画是在“滚动 FCurve”上绘制的。如果未动画，插件会始终将其导出为 (0,1,0)。摄影机缩放不受支持。也不支持环境平面。 
+                           		
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+               <dt><a name="GUID-CD2661A6-DCCE-41CC-AA09-795C77B4977F"></a><span class="term"><a name="GUID-A1397C0A-CD9B-41BE-A8BF-5FBBB7B841CE"></a>渲染设置</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-AC08AF06-C950-4FB5-8531-5C7A57458C2A"></a><span class="charspan-msgph">3ds Max FBX plug-in</span>导出摄影机时，导出器会根据“渲染设置”对话框中的当前设置为所有摄影机设置“渲染输出尺寸”和“像素纵横比”。如果不存在用户创建的摄影机，则不会导出“渲染输出大小”和“像素纵横比”的值。 
+                  </div>
+               </dd>
+               <dt><a name="GUID-75F7DA0C-69DD-4D5B-9862-B2B45184C366"></a><span class="term"><a name="GUID-A5E8EFCB-0AAF-4517-9F74-9DAEFDF0D4D6"></a>摄影机导入</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-9D1DCB9F-5B59-4BE2-BBAD-A5840F2974DA"></a>下表列出了 3ds Max 在导入时处理 MotionBuilder 摄影机的方式： 
+                     		<a name="WS73099CC142F487551051018113CCCDB767-4AF2"></a><div class="table-ruled">
+                        <table cellpadding="0" cellspacing="0" class="ruled">
+                           <colgroup>
+                              <col width="50%">
+                              <col width="50%">
+                           </colgroup>
+                           <tr class="ruled-heading">
+                              <th class="table-heading">在 FBX 中 
+                                 				  
+                              </th>
+                              <th class="table-heading">在 3ds Max 中的变化 
+                                 				  
+                              </th>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">自由摄影机 
+                                 				  
+                              </td>
+                              <td class="table-body">自由摄影机。 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">摄影机（具有关注的目标/兴趣点） 
+                                 				  
+                              </td>
+                              <td class="table-body">目标摄影机。 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">正交摄影机 
+                                 				  
+                              </td>
+                              <td class="table-body">具有正交设置的摄影机。 
+                                 				  
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </dd>
+               <dt><a name="GUID-E736F9FE-2278-4149-99FC-6B556EA2BA42"></a><span class="term"><a name="GUID-F360B1EC-F40E-439A-A3AD-EF36377666E9"></a>自定义摄影机导入</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-C2B481E8-C44A-4A59-B1C1-A7AA0D4A4D55"></a><span class="charspan-msgph">3ds Max FBX plug-in</span>导入 Maya 和 3ds Max 摄影机时，应用于场景的“渲染输出尺寸”和“像素纵横比”由 FBX 文件中的当前摄影机设置。即，其他摄影机的“渲染输出大小”和“像素纵横比”会被忽略。如果当前摄影机不是用户创建的摄影机，则不会导入“渲染输出大小”和“像素纵横比”的值。
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF1F92379812724681E691FEC"></a> 
+            <h2><a name="GUID-57CBDC1C-9974-4283-B279-C9D815A7530C"></a>灯光支持
+            </h2> 
+            <p><a name="WS73099CC142F487551051018113CCCDB767-4AFD"></a> 下表列出了 3ds Max 灯光以及插件将这些灯光导出为 FBX 并重新导入 3ds Max 时的处理方式： 
+               		
+            </p> <a name="GUID-089721F0-F662-4623-B6A6-E8E90650F303"></a><dl>
+               <dt><a name="GUID-D3FBE723-EA29-4C90-AC92-82BCFBDDBD6C"></a><span class="term"><a name="GUID-F44A81E7-371C-4224-8AD3-CDF2375CC9DB"></a>标准灯光</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-6D8AC324-8AC0-490E-BF99-86A82B9F970F"></a> <a name="WS73099CC142F487551051018113CCCDB767-4AFB"></a><div class="table-ruled">
+                        <table cellpadding="0" cellspacing="0" class="ruled">
+                           <colgroup>
+                              <col width="50%">
+                              <col width="50%">
+                           </colgroup>
+                           <tr class="ruled-heading">
+                              <th class="table-heading">在 3ds Max 中 
+                                 				  
+                              </th>
+                              <th class="table-heading">导回到 <em class="mild">3ds Max</em> 中时： 
+                                 				  
+                              </th>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">泛光灯 
+                                 				  
+                              </td>
+                              <td class="table-body">泛光灯 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">自由平行光 
+                                 				  
+                              </td>
+                              <td class="table-body">自由平行光 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">目标平行光 
+                                 				  
+                              </td>
+                              <td class="table-body">自由平行光 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">自由聚光灯 
+                                 				  
+                              </td>
+                              <td class="table-body">自由聚光灯 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">目标聚光灯 
+                                 				  
+                              </td>
+                              <td class="table-body">目标聚光灯 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">天光 
+                                 				  
+                              </td>
+                              <td class="table-body">泛光灯 
+                                 				  
+                              </td>
+                           </tr>
+                        </table>
+                     </div> 
+                     <div><a name="WS73099CC142F48755-381799D411F6FB5AF15-7DEB"></a><div class="note-note"><span class="label label-target-language">注意:</span> 在非 Revit 到 3ds Max 的工作流中，<span class="charspan-msgph">3ds Max FBX plug-in</span>不支持天光（和它们的目标）。相反，插件会将它们转换为 Null 对象。此插件还会将光度学灯光转换为标准灯光（在此过程中它们会丢失所有光度学方面的值）。 
+                           		
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-44986826-F82F-4EF5-A994-7C3A037D8219"></a><span class="term"><a name="GUID-7A9BC627-8A51-40F8-94C3-316B7CC2DAE9"></a>光度学灯光</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-F9336305-5574-4BAA-BB32-2553C6E5D67F"></a> <a name="WS73099CC142F487551051018113CCCDB767-4AF7"></a><div class="table-ruled">
+                        <table cellpadding="0" cellspacing="0" class="ruled">
+                           <colgroup>
+                              <col width="50%">
+                              <col width="50%">
+                           </colgroup>
+                           <tr class="ruled-heading">
+                              <th class="table-heading">在 3ds Max 中 
+                                 				  
+                              </th>
+                              <th class="table-heading">导回到 <em class="mild">3ds Max</em> 中时： 
+                                 				  
+                              </th>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">目标灯光 
+                                 				  
+                              </td>
+                              <td class="table-body">泛光灯。目标导出为 Null。 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">自由灯光 
+                                 				  
+                              </td>
+                              <td class="table-body">泛光灯 
+                                 				  
+                              </td>
+                           </tr>
+                        </table>
+                     </div> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="section"><a name="SECTION_7D96F1A0EFA64C77B1AD7CD75F569676"></a> 
+            <h2><a name="GUID-D5E2392C-0BC9-4212-A169-C7826788F206"></a>自定义属性
+            </h2>本部分列出了自定义属性及其在 <span class="charspan-msgph">3ds Max FBX plug-in</span>中的受支持状态。 <a name="GUID-F9D9E9A3-650E-4296-866F-019CB5F55FF1"></a><dl>
+               <dt><a name="GUID-82671FD4-DF24-41FA-9355-C4E12C0D7B91"></a><span class="term"><a name="GUID-C020A339-AE8A-4078-841A-45708C21A2A2"></a>自定义属性</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-7CC41663-8353-4E1C-B8E3-5260286AD5D8"></a>下表列出了 3ds Max 的自定义属性，并说明了在导出为 FBX 文件格式时是否支持这些属性： 
+                     		<a name="WS73099CC142F48755-1257E12111BF108800E-5870"></a><div class="table-ruled">
+                        <table cellpadding="0" cellspacing="0" class="ruled">
+                           <colgroup>
+                              <col width="50%">
+                              <col width="50%">
+                           </colgroup>
+                           <tr class="ruled-heading">
+                              <th class="table-heading">属性 
+                                 				  
+                              </th>
+                              <th class="table-heading">支持 (英文) 
+                                 				  
+                              </th>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">角度微调器 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">角度滑块 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">“阵列”下拉列表 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">“阵列”组合框 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">“阵列”列表框 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">“布尔”复选框 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">“布尔”复选按钮 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">RGB 颜色拾取器 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">浮点数微调器 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">浮点数滑块 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">fRGBA 颜色拾取器 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">整数微调器 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">整数滑块 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">“材质”按钮 
+                                 				  
+                              </td>
+                              <td class="table-body">不支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">“节点拾取”按钮 
+                                 				  
+                              </td>
+                              <td class="table-body">不支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">百分比微调器 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">百分比滑块 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">字符串 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">“纹理贴图”按钮 
+                                 				  
+                              </td>
+                              <td class="table-body">不支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">世界单位微调器 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">世界单位滑块 
+                                 				  
+                              </td>
+                              <td class="table-body">受支持 
+                                 				  
+                              </td>
+                           </tr>
+                        </table>
+                     </div>
+                  </div>
+               </dd>
+               <dt><a name="GUID-42C756D3-5096-4D87-805F-C1F4213EF4D1"></a><span class="term"><a name="GUID-8142F854-1B3C-4074-8693-B9C6C05C0841"></a>用户定义的属性</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-07750534-F893-49C2-ACDC-ED0959D80597"></a>FBX 文件格式支持 3ds Max 用户定义的属性。这些属性在 FBX 文件中存储为自定义属性，并标记为 UDP3DSMAX。 
+                  </div>
+               </dd>
+            </dl> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-96407B99-0FC6-440E-AA40-7756C745B146.htm">摄影机支持</a></li>
+                  <li class="topiclist-litem"><a href="GUID-12B43AEC-F307-4D2D-9BA6-EFA1F92D4F81.htm">灯光支持</a></li>
+                  <li class="topiclist-litem"><a href="GUID-21B34883-49AC-46BF-80A6-38D26AFC6C19.htm">自定义属性</a></li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

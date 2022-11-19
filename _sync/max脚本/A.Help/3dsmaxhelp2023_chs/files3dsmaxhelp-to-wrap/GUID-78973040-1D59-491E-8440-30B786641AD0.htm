@@ -1,0 +1,137 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-78973040-1D59-491E-8440-30B786641AD0">
+      <meta name="description" content="标准材质类型为表面建模提供了非常直观的方式。在现实世界中，表面的外观取决于它如何反射光线。在 3ds Max 中，标准材质可模拟表面的反射属性。如果不使用贴图，标准材质会为对象提供单一统一的颜色。">
+      <meta name="indexterm" content="材质类型: 标准">
+      <meta name="indexterm" content="标准材质">
+      <meta name="topic-type" content="topic">
+      <title>标准材质</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-78973040-1D59-491E-8440-30B786641AD0"></a><div class="head">
+            <h1>标准材质</h1>
+         </div>
+         <p class="blurb">标准材质类型为表面建模提供了非常直观的方式。在现实世界中，表面的外观取决于它如何反射光线。在 <span class="charspan-msgph">3ds Max</span> 中，标准材质可模拟表面的反射属性。如果不使用贴图，标准材质会为对象提供单一统一的颜色。 
+            
+         </p><a name="UL_2D08F0D2CF3247E5B69704F07F40B925"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-7B3810A3-1733-4E99-A081-1E6F2E717C90"> 材质/贴图浏览器  <img src="../images/ac.menuaro.gif">  材质  <img src="../images/ac.menuaro.gif">  扫描线  <img src="../images/ac.menuaro.gif">  标准</span> 
+            </li>
+         </ul>
+         <div><a name="GUID-DE45A232-919D-4C95-80FA-91C37CB4FA01"></a><div class="note-note"><span class="label label-target-language">注意:</span>仅当活动渲染器支持时，该材质才会显示在“材质/贴图浏览器”中。 
+               		
+            </div>
+         </div><a name="WS1A9193826455F5FFBA679E112A6A19004-939"></a><div class="figure-anchor"><img src="../images/GUID-ED86796B-3D37-47C9-B685-0218FC9D2E4B-low.png"><p class="figure-title">用标准材质渲染的踏板车</p>
+         </div>
+         <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C40"></a>  本主题介绍“标准”材质的控件，不包括贴图的用法。 
+            	 
+         </p>
+         <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B36"></a><div class="note-tip"><span class="label label-target-language">提示</span>“标准”材质在编辑其参数的同时支持改进反馈的基于硬件的视口显示。有关详细信息，请参见“材质的视口显示”。 
+               	 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004-936"></a> 
+            <h2><a name="GUID-BBB014B9-E245-473D-9BDA-45B1E664A21D"></a>标准颜色组件
+            </h2> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C3F"></a>“单一”颜色的表面通常反射许多颜色。标准材质通常使用四色模型来模拟这种情况。（这可能发生变化，具体情况取决于您使用哪一个明暗器。）这四种颜色称为材质的颜色分量。 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-935"></a><ul>
+               <li> 当曲面由环境光单独提供照明（曲面处于阴影中）时，将出现环境光颜色。 
+                  		  
+               </li>
+               <li>如果光直接照射曲面（曲面照明“充足”），将出现漫反射颜色。 
+                  			 
+                  <p><a name="WS73099CC142F48755F2FC9DF120970276F7-1B02"></a>此分量之所以称为“漫反射”是因为照射的光沿各个方向进行反射。另一方面，高光是光源的反射结果。 
+                     			 
+                  </p> 
+               </li>
+               <li>高光颜色以高光出现。发光曲面（查看角度等于入射角）通常具有反射高光。 
+                  			 
+                  <p><a name="WS73099CC142F48755F2FC9DF120970276F7-1B01"></a>如果入射角相对于观察者或摄影机来说较高（即光线与曲面接近平行），曲面也可能出现掠射高光。掠射高光是金属表面所具有的特征。 
+                     			 
+                  </p> 
+                  <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B35"></a><div class="note-note"><span class="label label-target-language">注意:</span>一些明暗器会产生高光颜色，而不是让您选择高光。 
+                        			 
+                     </div>
+                  </div> 
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-7F62"></a>某些表面会完全反射光，或接近完全反射。这些表面反射它们的环境光以及照射在其上的光源。要为此类曲面建模，需要指定反射贴图或使用光线跟踪。 
+                     			 
+                  </p> 
+               </li>
+               <li> 过滤颜色是光线通过对象所透射的颜色。 
+                  			 
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C3D"></a>除非材质的不透明性小于 100%，否则过滤色组件不可见。 
+                     			 
+                  </p> 
+                  <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B34"></a><div class="note-note"><span class="label label-target-language">注意:</span>光线跟踪材质使用不同的六色模型来模拟表面。其中一些组件类似于“标准材质”中的组件，但在光线跟踪中它们的行为方式不同。 
+                        			 
+                     </div>
+                  </div> 
+               </li>
+            </ul> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7F61"></a>三种颜色分量在它们区域的边缘混合。在环境颜色和漫反射颜色之间，混合颜色由明暗器计算。在漫反射颜色与高光颜色之间，可通过使用标准材质的高光控件来设置混合量。 
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C3C"></a>当我们提及对象的颜色时，通常指的是漫反射颜色。环境光颜色的选择取决于灯光的种类。对于适度的室内灯光，环境光颜色可能是较暗的漫反射颜色，但是对于明亮的室内灯光和日光，其可能是主（主要）光源的补充。高光颜色应该与主要光源的颜色相同，或者是高值、低饱和度的漫反射颜色。
+               
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C3B"></a>有关如何选择颜色组件的更多提示，请参见“选择逼真的颜色”。 
+               		
+            </p> 
+            <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B33"></a><div class="note-warning"><span class="label label-target-language">警告:</span> 更改材质的明暗处理类型时，会丢失新明暗器不支持的任何参数的设置（包括贴图指定）。如果要使用相同的常规参数对材质的不同明暗器进行实验，则在更改材质的明暗处理类型之前，应创建材质副本。采用这种方式时，如果新明暗器不能提供所需的效果，则仍然可以使用原始材质。
+                  
+                  		
+               </div>
+            </div> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004-934"></a> 
+            <h2><a name="GUID-712B3BAC-D56C-40A0-AD33-B7A726BBA667"></a>其它标准材质组件
+            </h2> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C3A"></a>标准材质的高光颜色以高光出现。可以控制该高光的尺寸和形状。磨光的表面的高光面积小、强度大。无光表面的高光面积大，但微弱，或者根本没有高光。 
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C39"></a>标准材质也有让对象显示为透明的控件，还有让对象自发光，以便它显示光晕的控件。 
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C38"></a>如同材质的颜色组件一样，<em class="mild">组件</em> 也指控制高光、透明度、自发光等设置的参数。 
+               		
+            </p> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-18853F17-D16A-406A-B866-12535C9272B1.htm">选择逼真的颜色</a><p>只有选择的颜色和其他属性看起来如同真实世界中的对象时，材质才能给场景增加更大的真实感。本主题提供了选择标准材质颜色的一些一般原则。只要可能，应该随时观察正在建模的对象颜色，尤其在不同的灯光环境下。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-62990DBE-928E-401C-BDF3-DF725B6332E2.htm">“明暗器基本参数”卷展栏</a><p>“明暗器基本参数”卷展栏可用于选择要用于<span class="char_link"><a href="GUID-78973040-1D59-491E-8440-30B786641AD0.htm">标准材质</a></span>的明暗器类型。某些附加的控件影响材质的显示方式。 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-76C000A1-C412-4C85-93A9-E78655B93BDA.htm">“基本参数”卷展栏（标准材质）</a><p>“标准”材质的“基本参数”卷展栏包含一些控件，用来设置材质的颜色、反光度、透明度等设置，并指定用于材质各种组件的<span class="char_link"><a href="GUID-3392E6CC-17BD-40B5-88B2-31CEFBA5324B.htm">贴图</a></span>。 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-419BF292-875F-4D48-AD1B-43EEB40F4A3B.htm">“扩展参数”卷展栏（标准材质）</a><p>“扩展参数”卷展栏对于“标准”材质的所有明暗处理类型都是相同的，但 Strauss 和半透明明暗器则例外，如下所述。它具有与透明度和反射相关的控件，还有“线框”模式的选项。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏（标准”和“光线跟踪”材质）</a><p>材质的“贴图”卷展栏用于访问并为材质的各个组件指定<span class="char_link"><a href="GUID-3392E6CC-17BD-40B5-88B2-31CEFBA5324B.htm">贴图</a></span>。它还方便您设置每个贴图的“数量”值（相对强度）。 
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-3392E6CC-17BD-40B5-88B2-31CEFBA5324B.htm">贴图</a></li>
+                     <li class="topiclist-litem"><a href="GUID-9B3ADD46-CAF1-467D-8C62-059BA321735C.htm">活动视图中的材质和贴图节点</a></li>
+                     <li class="topiclist-litem"><a href="GUID-18853F17-D16A-406A-B866-12535C9272B1.htm">选择逼真的颜色</a></li>
+                     <li class="topiclist-litem"><a href="GUID-06832470-021B-47A4-B912-E347156B74A6.htm">光线跟踪材质</a></li>
+                     <li class="topiclist-litem"><a href="GUID-C65DE825-BAB0-4CDA-82E2-CCE1EAFAFAC5.htm">反射贴图</a></li>
+                     <li class="topiclist-litem"><a href="GUID-2AD138C0-5CAC-4825-8855-5535CAE0D4F4.htm">明暗处理类型</a></li>
+                     <li class="topiclist-litem"><a href="GUID-6E2C9316-7F49-4CAB-BC51-236607F06613.htm">要选择材质类型，请执行以下操作：</a></li>
+                     <li class="topiclist-litem"><a href="GUID-39E321E5-962B-49C2-BD05-B1FA3F48BA26.htm"> 材质的视口显示</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

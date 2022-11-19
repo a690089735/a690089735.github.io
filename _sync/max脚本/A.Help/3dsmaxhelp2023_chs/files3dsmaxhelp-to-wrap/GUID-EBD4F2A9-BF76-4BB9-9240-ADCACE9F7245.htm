@@ -1,0 +1,84 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-EBD4F2A9-BF76-4BB9-9240-ADCACE9F7245">
+      <meta name="description" content="本主题列出了使用 Civil View 时可能遇到的常见问题的解决方案。">
+      <meta name="indexterm" content="Civil View: 疑难解答">
+      <meta name="topic-type" content="concept">
+      <title>疑难解答</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-EBD4F2A9-BF76-4BB9-9240-ADCACE9F7245"></a><div class="head">
+            <h1>疑难解答</h1>
+         </div>
+         <p class="blurb">本主题列出了使用 Civil View 时可能遇到的常见问题的解决方案。 </p><a name="TABLE_66D46D851CC74654BAAF7D6A44F1748A"></a><div class="table-ruled">
+            <table cellpadding="0" cellspacing="0" class="ruled">
+               <colgroup>
+                  <col>
+                  <col>
+               </colgroup>
+               <tr class="ruled-odd-row">
+                  <td class="table-body"> <a name="GUID-6FCEF414-0680-45D3-8430-5C5B55DA3B7C"></a><p class="table-body">视口性能很差。 </p> 
+                  </td>
+                  <td class="table-body"> <a name="GUID-189D6C85-7485-42DB-9DDE-D1B23994A8DC"></a><p class="table-body">当场景包含具有复杂网格的对象（如车辆）时，请尽可能在线框模式下工作，并使用<span class="char_link"><a href="GUID-4F9C1D31-E5EB-4641-94C9-5C1988178AC4.htm">边界框显示</a></span>。 
+                     </p> <a name="GUID-4C9C4790-5C4D-480C-8199-FB366EB7074E"></a><p class="table-body">大量使用曲面跟踪时，请考虑<span class="char_link"><a href="GUID-ACC9A05E-2B0D-44D1-875E-1ECCE6E27920.htm">烘焙动画</a></span>至一系列简单的 XYZ 点，从而移除放置的对象与其各自的父图形和曲面之间的“高资源消耗”关系。 
+                     </p> 
+                  </td>
+               </tr>
+               <tr class="ruled-even-row">
+                  <td class="table-body"> <a name="GUID-C7528A94-76B1-4457-8A7F-805AEEFA86DA"></a><p class="table-body">我无法加载对象放置样式。 </p> 
+                  </td>
+                  <td class="table-body"> <a name="GUID-FBCBCDAC-DB19-437B-B17D-9C0A357A9B4B"></a><p class="table-body">检查以确保没有对系统中已不存在的对象 INI 文件的引用。 </p> 
+                  </td>
+               </tr>
+               <tr class="ruled-odd-row">
+                  <td class="table-body"> <a name="GUID-DE970F02-8508-4B71-8797-019160D494DD"></a><p class="table-body">Civil View 浏览器或 3ds Max 视口无法刷新。 </p> 
+                  </td>
+                  <td class="table-body"> <a name="GUID-EFBAC10F-3E6D-42BA-8A1F-24AFAB751475"></a><p class="table-body">右键单击 Civil View 浏览器面板上半部分中的任何一项，然后选择“刷新”。此时将刷新并重置活动视口和 Civil View 浏览器面板。 </p> 
+                  </td>
+               </tr>
+               <tr class="ruled-even-row">
+                  <td class="table-body"> <a name="GUID-270D7864-0174-4517-BD51-FA364EAC6F6D"></a><p class="table-body">DXF 文件导入时间较长。 </p> 
+                  </td>
+                  <td class="table-body"> <a name="GUID-84573DDE-5A45-4021-8C32-014BCE9AA490"></a><p class="table-body">某些应用程序（如 MX）会创建非常大的 DXF 文件。 </p> <a name="GUID-414613D9-2D7C-4E68-94F8-BD20C8226F12"></a><p class="table-body">请尝试将 MX 生成的 DXF 文件导入到“普通”3ds Max 中，然后立即将其重新导出为 DXF。您会发现，尽管结果文件的内容与原始文件相同，但大小不足原来的一半，从而只需较短的时间即可导入到 3ds Max/Civil View 中。 </p> <a name="GUID-B0FBC536-3B3E-46D9-B641-FED4DED9F693"></a><p class="table-body">为获得更好的结果，请不要一起使用 DXF 文件，改为使用 GENIO 或 LandXML 文件。 </p> 
+                  </td>
+               </tr>
+               <tr class="ruled-odd-row">
+                  <td class="table-body"> <a name="GUID-6BD4D90A-CF8A-4AD2-950E-175097F4ED17"></a><p class="table-body">在驶过动画中，出现摄影机抖动和车辆摆动的情况。 </p> 
+                  </td>
+                  <td class="table-body"> <a name="GUID-337A7C4B-96C8-4A49-8D81-228D443BD32E"></a><p class="table-body">以下两个问题中的任何一个都可能会导致这种情况： </p> <a name="UL_968616D24B934AB9929B6AD39B196293"></a><ul>
+                        <li> 由于舍入错误，大型世界坐标系导致摄影机和车辆横向移动。 
+                           <p><a name="GUID-1088B097-BCED-47EC-BA75-3568535B2C9E"></a>确保指定全局移动值，从而使您的模型位于<em class="mild"></em>局部坐标系中，其中原点尽可能地靠近 3ds Max 原点。 
+                           </p> 
+                        </li>
+                        <li> 父图形包含大量的点，从而导致较近接近度的点在已设置动画的对象中生成方向角更改。这种情况在 MX 模型中更为常见。 
+                           <p><a name="GUID-FA229949-E0B0-4649-A732-5AABF1F0B868"></a>尽可能减少父图形中的点数。执行此操作最简单的方法是对父图形应用<span class="char_link"><a href="GUID-B6267DE5-CAD8-4F78-A9A2-A801A791C16C.htm">“规格化样条线”修改器</a></span>。 
+                           </p> 
+                        </li>
+                     </ul> 
+                  </td>
+               </tr>
+               <tr class="ruled-even-row">
+                  <td class="table-body"> <a name="GUID-FE0E7CD1-2195-42C7-B6EF-F743BDCF2A77"></a><p class="table-body">在视口中，标志图版位图显示在标志对象的两面。 </p> 
+                  </td>
+                  <td class="table-body"> <a name="GUID-D34928D3-2492-4F00-92FD-35FF45571763"></a><p class="table-body">Civil View 在参数化标志上使用双面材质，以使标志位图仅出现在标志图版的正面。 </p> <a name="GUID-56B95076-486F-4163-92CC-DC56DE00A794"></a><p class="table-body">3ds Max 视口不完全支持双面材质显示，但在渲染场景时，标志将正确显示。 </p> 
+                  </td>
+               </tr>
+               <tr class="ruled-odd-row">
+                  <td class="table-body"> <a name="GUID-670E2518-F988-4384-B3D4-562DBF1F71AC"></a><p class="table-body">在对象放置样式编辑器中创建的对象以错误的比例生成。 </p> <a name="GUID-41961AB6-4B31-4D73-96D4-58BC6875C5E3"></a><p class="table-body">... 或者 ... </p> <a name="GUID-FA40FF7F-1C8E-4E9D-B51B-C262EF3E6039"></a><p class="table-body">在对象放置样式编辑器中创建的对象在视口中不可见，即使 Civil View 浏览器面板指示这些对象实际存在也是如此。 </p> 
+                  </td>
+                  <td class="table-body"> <a name="GUID-27DAE37B-B601-45AE-840E-6BFA699DEB64"></a><p class="table-body">这是因为在 3ds Max 中选择了错误的系统单位设置。例如，如果要以米为单位工作，将 3ds Max <span class="char_link"><a href="GUID-22D2D2B9-9A82-47FA-88DD-67B1A91E2337.htm">系统单位</a></span>设置为米至关重要。（默认系统单位设置为英寸。） 
+                     </p> 
+                     <div><a name="WS73099CC142F487551051018113CCCDB767-90F"></a><div class="note-warning"><span class="label label-target-language">警告:</span> 导入或创建几何体<em class="mild">之前</em>更改系统单位值。不要在现有场景中更改系统单位。 
+                        </div>
+                     </div> 
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

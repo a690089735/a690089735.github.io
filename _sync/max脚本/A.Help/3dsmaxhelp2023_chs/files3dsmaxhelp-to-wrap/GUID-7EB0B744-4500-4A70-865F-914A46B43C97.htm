@@ -1,0 +1,109 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-7EB0B744-4500-4A70-865F-914A46B43C97">
+      <meta name="description" content="使用这些工具可以单独管理外部参照实体。">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="using">
+      <title>“外部参照实体”工具栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-7EB0B744-4500-4A70-865F-914A46B43C97"></a><div class="head">
+            <h1>“外部参照实体”工具栏</h1>
+         </div>
+         <p class="blurb"> 使用这些工具可以单独管理外部参照实体。 
+            
+         </p>
+         <div class="bodyReference"><a name="FIG_42CDA1ECE7444D7195CB6F13D2330FEB"></a><div class="figure-anchor"><img src="../images/GUID-1A6C75A9-DF90-4F77-A1DC-82FDB35E3E35-low.png"></div><a name="GUID-73DB4992-FAC8-47D1-A155-8EB291CEAFD6"></a><dl><a name="GUID-32A699F3-723E-4E6F-A702-066BBA52A493"></a><dt><span class="term"><a name="GUID-5F580F9C-41E5-4E08-9828-54CDDE263D24"></a><img src="../images/GUID-D71ED9C8-0FA3-4008-B9D2-93D960A47503-low.png"> 添加对象 
+                     	 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-ADFA41D2-1E75-4452-B799-1136BA7DCF74"></a>单击它可将其他实体添加到高亮显示的外部参照记录中。只有当高亮显示的外部参照记录中包含未外部参照的对象时，该按钮才可用。出现“外部参照合并”对话框，列出所有可用对象。高亮显示要外部参照的对象，然后单击“确定”。 
+                     		
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E383"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果源文件中的新对象与主文件记录中的已有对象存在某种关系，请在“添加对象”之后更新记录以刷新关系。例如，如果在主场景中引用了汽车，并且随后将汽车约束到源场景中的新路径，则通过“添加对象”添加路径时不会将主汽车放到该路径上。要这样做，更新记录。
+                           
+                           		
+                        </div>
+                     </div> 
+                  </div>
+               </dd><a name="GUID-BBFC116B-8169-40AD-B702-9C18357243DC"></a><dt><span class="term"><a name="GUID-90BD7CAD-2FCC-44EA-A7AB-F8ABE1E5FC81"></a><img src="../images/GUID-E2D245A1-38F4-4C8D-A978-7E88A022613A-low.png"> 删除外部参照实体 
+                     	 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-E25DF042-E6BB-4B02-AE09-7ECBD38FFAB3"></a> 单击它可删除高亮显示的外部参照实体。将出现一条警告提示您确定此操作。所有高亮显示的实体将从场景中删除。可以删除外部参照对象、控制器或材质。 
+                     		
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E384"></a><div class="note-note"><span class="label label-target-language">注意:</span>删除外部参照控制器相当于将它们合并到主场景。因此，该节点必须随时具有变换控制器，以便在场景中定位。删除外部参照材质相当于将它们合并到主场景。此操作可能会影响主场景中使用外部参照材质的所有对象，并且可能会产生难以预料的影响。 
+                           		
+                        </div>
+                     </div> 
+                  </div>
+               </dd><a name="GUID-9A2DB399-26D4-4CE8-9003-8EE6899C0BFD"></a><dt><span class="term"><a name="GUID-3911F1C0-0416-4834-9D90-1F66B1571E58"></a><img src="../images/GUID-5A0E688A-1145-44CC-9BAA-509E5757F5AA-low.png"> 合并到场景中 
+                     	 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-E724BB39-832E-4BFE-A963-38D45222654A"></a> 将外部参照实体列表中的当前选择合并到主场景（当前场景）中。使用此按钮将外部参照对象、控制器或材质更改为当前场景固有的对象、控制器或材质。源场景中的外部实体与主场景之间的连接断开，当源场景更改时，您合并的对象、控制器或材质将不再更新。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-263C"></a> <span class="charspan-msgph">3ds Max</span> 提示您确认合并。 
+                        		
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-263B"></a>由于一个合并的外部参照对象成为场景的一部分，而不再是外部参照对象，所以此对象的名称将从列表中移除。 
+                        		
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-263A"></a>当对象还是外部参照对象时，加入任何带有附加堆栈的条目，将使合并的外部参照对象加载原始对象的完整修改器堆栈。因此，可以使用“合并”来更新原始对象，这些原始对象作为外部参照对象进行更改。如果执行此操作，使用“作为外部参照转换选择的对象”将“改进的”的原始对象存储到文件中，随后将合并回原始源中。
+                        
+                        		
+                     </p> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E385"></a><div class="note-note"><span class="label label-target-language">注意:</span>也可以合并到嵌套外部参照实体的主场景中。合并后，将移除所有外部参照的嵌套层级，并将最低层级源场景中的场景实体合并到主场景中。对于外部参照对象，合并所有应用于嵌套源文件的修改器，并在主场景中显示。 
+                           		
+                        </div>
+                     </div> 
+                  </div>
+               </dd><a name="GUID-C545DB7B-7060-4A76-88A3-7B46CC466E14"></a><dt><span class="term"><a name="GUID-7B40A3B7-1934-467E-90B4-27292312A8CA"></a> <img src="../images/GUID-0F2C01BB-7C28-4A81-B1FA-AC66318083A0-low.png"> 列出对象 
+                     	 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-BA548F63-A208-4CBE-A3C6-CF97640FD65A"></a>启用时，将在“外部参照实体”列表中列出当前外部参照记录的外部参照对象。 
+                     	 
+                  </div>
+               </dd><a name="GUID-298C6C60-EE47-44BD-B037-50C54950AE2F"></a><dt><span class="term"><a name="GUID-F7B20DCF-488A-4A3E-B323-11B79FE6BE7A"></a> <img src="../images/GUID-0C03456C-C092-4E16-919D-90F192310AE7-low.png"> 列出材质 
+                     	 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-2AFA9039-A4CD-42BF-BE6C-36F629987A33"></a> 启用时，将在“外部参照实体”列表中列出当前外部参照记录的外部参照材质。 
+                     	 
+                  </div>
+               </dd><a name="GUID-C014AFD8-FE5B-48CB-8355-8BA3D26A5C26"></a><dt><span class="term"><a name="GUID-FFE830FB-D9B5-4A6D-8671-65E70AFD7C09"></a> <img src="../images/GUID-A4123F93-680E-46D2-8FCB-6420F6F10214-low.png"> 列表控制器 
+                     	 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-A39F247E-6F4D-4563-915A-7D45ACA23968"></a> 启用时，将在“外部参照实体”列表中列出当前外部参照记录的外部参照控制器。 
+                     		
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E386"></a><div class="note-note"><span class="label label-target-language">注意:</span>可以启用“列表”按钮的任意组合来显示某些类型的实体并隐藏其他实体。 
+                           		
+                        </div>
+                     </div> 
+                  </div>
+               </dd><a name="GUID-E1384875-0C5D-47EF-8767-D8FA4DF43913"></a><dt><span class="term"><a name="GUID-A5F17215-A3D8-43BF-AEF5-EFAB14012DAE"></a> <img src="../images/GUID-9DBA8385-8AF2-4345-A6C6-3266A88F375A-low.png"> 选择 
+                     	 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-4EA324CB-ECAE-4CE7-80AF-018842AAD1D0"></a> 在场景中选择当前在外部参照实体列表中已高亮显示的外部参照实体。要添加高亮显示的实体到选择中，按住 <span class="keyboardEntry">Ctrl</span> 的同时单击“选择”。要从选择中移除高亮显示的实体，按住 <span class="keyboardEntry">Alt</span> 的同时单击“选择”。 
+                     	 
+                  </div>
+               </dd><a name="GUID-C641B60D-C38E-4F9B-8A64-CB084C238500"></a><dt><span class="term"><a name="GUID-517253E7-33B9-467A-ABC9-28F8B4FEC645"></a> <img src="../images/GUID-15571C39-8286-42BD-8CD1-2CEAF33DB4BC-low.png"> 按名称选择 
+                     	 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-8CF29704-89C4-4D4C-90B3-CCB81981FB91"></a> 打开“选择对象”对话框，其中列出了所有对象并高亮显示了外部参照实体列表中已选定的外部参照对象，以及场景中已选定的任意对象。如果外部参照实体列表中高亮显示了外部参照控制器或材质，则“选择对象”对话框将高亮显示该外部参照控制器或材质所属的对象。
+                     
+                     	 
+                  </div>
+               </dd><a name="GUID-13A28556-159F-4B8A-B199-7FF9163A374D"></a><dt><span class="term"><a name="GUID-55FEA866-8A4C-4A42-9619-C5374C4CA86B"></a><img src="../images/GUID-0444ADCC-DD47-47F9-93EB-293EE0DC4B5B-low.png"> 高亮显示选定对象的外部参照记录 
+                     	 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-F203B6B6-A906-4BD8-978F-CDDA2DBB39A2"></a> 在场景中选择外部参照对象时，它们属于的外部参照记录会高亮显示在外部参照记录列表中，并且外部参照对象及其外部参照实体会高亮显示在外部参照实体列表中。 
+                     	 
+                  </div>
+               </dd>
+            </dl>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

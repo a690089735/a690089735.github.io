@@ -1,0 +1,96 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C65DE825-BAB0-4CDA-82E2-CCE1EAFAFAC5">
+      <meta name="description" content="您可以使用位图文件或程序贴图控制对象曲面的反射率。">
+      <meta name="indexterm" content="作为材质组件贴图: 反射">
+      <meta name="indexterm" content="反射贴图">
+      <meta name="topic-type" content="topic">
+      <title>反射贴图</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C65DE825-BAB0-4CDA-82E2-CCE1EAFAFAC5"></a><div class="head">
+            <h1>反射贴图</h1>
+         </div>
+         <p class="blurb">您可以使用位图文件或<span class="char_link"><a href="GUID-783C7A59-F829-41DA-A2A2-E967E516172D.htm">程序贴图</a></span>控制对象曲面的反射率。 
+         </p><a name="UL_F2B827EA3A7643FF93167A350757FE9D"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-AA6C2E4A-3580-4B68-84D6-E77FDBD509D6"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “标准”材质  <img src="../images/ac.menuaro.gif"> “贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “反射”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-B0A3A09E-10CD-4DA6-A30B-27E0E37D611F"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “光线跟踪”材质  <img src="../images/ac.menuaro.gif"> “贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “反射”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-26AFF7A4-3E0D-41E4-9CCA-A76DE9A7D1D5"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “Arch &amp; Design”材质  <img src="../images/ac.menuaro.gif"> “通用贴图”卷展栏  <img src="../images/ac.menuaro.gif"> “主要贴图”组  <img src="../images/ac.menuaro.gif"> “反射颜色”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-3A26D1B2-D09C-42BB-AE4B-D63EB2693234"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif">  含有反射组件的其他材质</span> 
+            </li>
+         </ul><a name="WS73099CC142F487554E67820D1283FBC0BF32740"></a><div class="figure-anchor"><img src="../images/GUID-DA4F58D8-FD98-4DCE-8915-FEC3A811FB73-low.png"><p class="figure-title">使用反射贴图</p>
+         </div>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32741"></a> 可以使用三种反射贴图：基本、自动和<span class="char_link"><a href="GUID-B6282DC2-8E18-4FE5-BEE1-819CFA154015.htm">平面镜</a></span>。 
+         </p><a name="WS73099CC142F487554E67820D1283FBC0BF32742"></a><ul>
+            <li>基本反射贴图能创建铬合金、玻璃或金属的效果，方法是在几何体上使用贴图，使得图像看起来好像表面反射的一样。 </li>
+            <li>自动反射贴图不使用贴图坐标，它从对象的中心向外看，将“看到”的东西映射到表面上。 
+               <p><a name="WS73099CC142F487554E67820D1283FBC0BF32745"></a>另一种生成自动反射的方法是，指定<span class="char_link"><a href="GUID-4D919F24-F0BB-47F0-9C2D-28D393C1A1DE.htm">光线跟踪贴图</a></span>作为反射贴图。 
+               </p> 
+            </li>
+            <li>平面镜贴图应用于一系列共面的面，将面对它的对象反射，与实际镜子一模一样。 </li>
+         </ul>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32748"></a>实际场景中，反射贴图的最常规用法是在不反射的表面上加一点反射。默认情况下，反射贴图的强度是 100%，与其他贴图一样。然而，对很多种表面，降低强度会产生最真实的效果。例如，一个磨光的桌面，主要会显出木纹；反射是次要的。 
+         </p>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32747"></a>反射贴图不需要<span class="char_link"><a href="GUID-245C4F26-7D3B-40E4-B815-531E3DF49967.htm">贴图坐标</a></span>，因为它们锁定于世界坐标系，而不是几何坐标系。因为贴图不随着对象移动，而是随着视图的更改而移动，与实际的反射一样，这就创建出了反射效果。 
+         </p>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF32749"></a>如果在<span class="char_link"><a href="GUID-76C000A1-C412-4C85-93A9-E78655B93BDA.htm">“基本参数”卷展栏</a></span>中，增加“光泽度”和“高光级别”值，反射贴图看起来就会更逼真。<span class="char_link"><a href="GUID-3CEBFC6A-7A8F-4E78-9CF2-F78BA9CFCDC3.htm">漫反射</a></span>和<span class="char_link"><a href="GUID-FE816049-4624-46CD-BAFC-F59931A92F06.htm">环境光</a></span>颜色值也能影响它们。颜色越深，镜像效果越强。 
+         </p>
+         <p><a name="WS73099CC142F487554E67820D1283FBC0BF3274A"></a>即使在“数量”微调器为 100 时，反射贴图也会被环境光、漫反射和<span class="char_link"><a href="GUID-90065A74-C223-474C-8D85-7596D70E5004.htm">高光</a></span>颜色染色。 
+         </p>
+         <div><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867D9"></a><div class="note-note"><span class="label label-target-language">注意:</span>在使用<span class="char_link"><a href="GUID-0F60A8A2-16CF-4629-8A3F-D6958E1B545B.htm">金属明暗器</a></span>的“标准”或“光线跟踪”材质中，该漫反射颜色将染色反射贴图。特别是，反射贴图的颜色是与漫反射颜色（如果存在漫反射贴图，包括漫反射贴图）相乘起来的。漫反射颜色值（以 <span class="char_link"><a href="GUID-551B1692-907A-4E25-9D8E-04F0368753F9.htm">HSV 描述</a></span>）控制着反射贴图的强度。如果漫反射颜色值是 255，那么反射是最强的；如果值为 0，那么贴图不可见。如果材质使用非金属明暗器，高光颜色将仅与反射贴图相乘。高光颜色值（以 <span class="char_link"><a href="GUID-551B1692-907A-4E25-9D8E-04F0368753F9.htm">HSV</a></span> 描述）影响着反射强度。如果高光颜色值是 255，则反射最强；如果值为 0，则贴图不可见。 
+            </div>
+         </div>
+         <div class="section"><a name="WS73099CC142F487554E67820D1283FBC0BF3274D"></a> 
+            <h2><a name="GUID-8D337E3C-62D7-40DA-A9FE-28ECB361A8B6"></a>过程
+            </h2> <a name="WS73099CC142F487554E67820D1283FBC0BF3274E"></a><p class="list-intro"><a name="WS73099CC142F487554E67820D1283FBC0BF3274F"></a>要创建自动反射，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>单击标签为“反射”的贴图按钮。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867DA"></a><span class="charspan-msgph">3ds Max</span> 打开“<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>”。 
+                  </p> 
+               </li>
+               <li>选择“贴图”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“标准”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> <span class="char_link"><a href="GUID-D3621A9C-931C-4D24-8D32-60C2494F5F9E.htm">“反射/折射”</a></span>，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867DC"></a>或者，您可以使用 <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <span class="char_link"><a href="GUID-7B51EF9F-E660-4C10-886C-6F6ADE9E8F56.htm">Slate 材质编辑器</a></span>将<span class="char_link"><a href="GUID-9BF3A6D1-6665-4EC8-89BD-187FF34BA588.htm">反射/折射贴图节点关联</a></span>到“反射”组件。 
+                  </p> 
+               </li>
+               <li>在父级材质的贴图卷展栏中，调整“数量”可控制材质的反射程度。为 100% 时，材质完全反射。 </li>
+            </ol> <a name="WS73099CC142F487554E67820D1283FBC0BF32753"></a><p class="list-intro"><a name="WS73099CC142F487554E67820D1283FBC0BF32754"></a>要将位图指定为反射贴图，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>单击标签为“反射”的贴图按钮。 </li>
+               <li> <span class="charspan-msgph">3ds Max</span> 打开“<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>”。 
+               </li>
+               <li>选择“贴图”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“标准”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> <span class="char_link"><a href="GUID-A1654CD2-2A7C-42A6-816D-28F7A849F96F.htm">“位图”</a></span>，然后单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867E0"></a>或者，您可以使用 <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <span class="char_link"><a href="GUID-7B51EF9F-E660-4C10-886C-6F6ADE9E8F56.htm">Slate 材质编辑器</a></span>将<span class="char_link"><a href="GUID-9BF3A6D1-6665-4EC8-89BD-187FF34BA588.htm">位图节点关联</a></span>到“反射”组件。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD4867E1"></a><span class="charspan-msgph">3ds Max</span> 将打开一个文件对话框。 
+                  </p> 
+               </li>
+               <li>使用该文件对话框来选择位图文件。 </li>
+               <li>在父级材质的贴图卷展栏中，调整“数量”可控制材质的反射程度。为 100% 时，材质完全反射。 </li>
+            </ol> 
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-78973040-1D59-491E-8440-30B786641AD0.htm">标准材质</a></li>
+                     <li class="topiclist-litem"><a href="GUID-3392E6CC-17BD-40B5-88B2-31CEFBA5324B.htm">贴图</a></li>
+                     <li class="topiclist-litem"><a href="GUID-9B3ADD46-CAF1-467D-8C62-059BA321735C.htm">活动视图中的材质和贴图节点</a></li>
+                     <li class="topiclist-litem"><a href="GUID-18853F17-D16A-406A-B866-12535C9272B1.htm">选择逼真的颜色</a></li>
+                     <li class="topiclist-litem"><a href="GUID-06832470-021B-47A4-B912-E347156B74A6.htm">光线跟踪材质</a></li>
+                     <li class="topiclist-litem"><a href="GUID-2AD138C0-5CAC-4825-8855-5535CAE0D4F4.htm">明暗处理类型</a></li>
+                     <li class="topiclist-litem"><a href="GUID-6E2C9316-7F49-4CAB-BC51-236607F06613.htm">要选择材质类型，请执行以下操作：</a></li>
+                     <li class="topiclist-litem"><a href="GUID-39E321E5-962B-49C2-BD05-B1FA3F48BA26.htm"> 材质的视口显示</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

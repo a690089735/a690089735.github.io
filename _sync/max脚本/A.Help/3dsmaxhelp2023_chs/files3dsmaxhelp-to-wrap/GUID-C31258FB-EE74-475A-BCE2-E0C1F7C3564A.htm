@@ -1,0 +1,124 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C31258FB-EE74-475A-BCE2-E0C1F7C3564A">
+      <meta name="description" content="使用“mParticles 切换”操作符，通过将包含此操作符的事件定义为与动力学（粒子运动由 MassFX 模拟引擎驱动）相反的运动学（粒子运动由标准“粒子流”操作驱动）来调整纯模拟动画。">
+      <meta name="indexterm" content="粒子流操作符: mParticles 切换">
+      <meta name="indexterm" content="“mParticles 切换”操作符">
+      <meta name="topic-type" content="concept">
+      <title>“mParticles 切换”操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C31258FB-EE74-475A-BCE2-E0C1F7C3564A"></a><div class="head">
+            <h1>“mParticles 切换”操作符</h1>
+         </div>
+         <p class="blurb">使用“mParticles 切换”操作符，通过将包含此操作符的事件定义为与<em class="mild"></em>动力学（粒子运动由 MassFX 模拟引擎驱动）相反的<em class="mild"></em>运动学（粒子运动由标准“粒子流”操作驱动）来调整纯模拟动画。 
+         </p>
+         <div class="bodyReference"><a name="GUID-5060C1C7-86C8-40D2-99BB-00C800CF6826"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-D9AF6C48-4E52-442D-94D3-CEC64E9087C1">粒子视图  <img src="../images/ac.menuaro.gif">  添加或选择“mP 切换”。</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-639024C7-5C7C-4337-A99C-39B490A85B8B"></a> 还可以排除事件中粒子的全局重力，并通过使用标准（非 mParticles）“粒子流”操作符调整位置/速度/旋转/自旋。使用“匹配”选项，您可以在模拟中调整粒子属性。调整存在某些限制，例如，因为粒子之间相互碰撞时无法匹配粒子位置（重叠限制）。
+               
+            </p>
+            <div><a name="GUID-BBE5F20F-CAC5-402B-844D-EC67DAE29879"></a><div class="note-tip"><span class="label label-target-language">提示</span>通常，将所有 mParticles 操作符放置在事件中的“mParticles 世界”操作符上方，因此在模拟循环开始之前，操作符定义的 MassFX 属性对模拟引擎来说是已知的。 
+               </div>
+            </div>
+            <div class="section"><a name="AA1007201"></a> 
+               <h2><a name="GUID-5B4E7DA5-8183-4393-9067-B107A2DFB0FA"></a>界面
+               </h2> <a name="FIG_FB142B48D10C40BBB08EC44840F8581F"></a><div class="figure-anchor"><img src="../images/GUID-48940353-DAD1-4317-8437-6B3C1E272B33-low.png"></div>  
+            </div><a name="GUID-DF2A43B1-4BD7-4642-AFE3-CDEE7C3F5BCE"></a><div class="dl_section"><a name="GUID-6BD9FE82-B69F-4938-9FF8-034AC23BDF73"></a><p class="title"><a name="GUID-60EF93B4-C346-4430-A10D-8CE8866B9B5C"></a>“匹配位置或速度”组
+               </p>
+               <p><a name="GUID-C16F8D6D-7D3A-448C-934D-8B71D25557B8"></a> 使用这些设置可调整粒子的模拟位置或速度。MassFX 引擎可计算事件中粒子的模拟运动，但如果启用了“位置”或“速度”，如常规（非 mParticles）操作符所定义的位置或速度粒子属性会影响模拟。 
+               </p>
+               <dl>
+                  <dt><a name="GUID-39004ED9-1CFA-4689-8676-03B7B9C13A45"></a><span class="term"><a name="GUID-58035E2B-1565-4A00-AF35-C3E585A451E8"></a>位置/速度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-852017A2-E845-4BF8-BB3F-FB6A57B09D55"></a>单个“mParticles 切换”操作符可允许事件中的非 mParticles 操作影响粒子位置或速度，但不会同时影响两者。选择其中之一，然后根据需要调整剩余组控件。只能启用其中之一；若要禁用，请单击“活动”复选框。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-76B0AE5E-B6B8-4FC2-B863-4543C0B91A4C"></a><span class="term"><a name="GUID-DEAB4BD2-04FD-4FB9-935F-F0E34F948949"></a>位置</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-1B52FC17-708D-40CE-A705-02D16DC91C20"></a>如位置类型操作符所定义的粒子位置用于计算要应用于粒子的所需力，从而使粒子能够到达指定位置。随后该力将应用于 MassFX 引擎中的粒子。这样，可通过物理模拟方法实现所需的粒子放置。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-5092B7D8-E54C-4DC2-B8D4-6FB6D6AA5056"></a><span class="term"><a name="GUID-5C3A5FF5-717A-4641-9C3C-ED8F0BD08E8D"></a>速度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-17D3DBBF-AC27-4BC7-8841-22298991A455"></a>如速度类型操作符定义的粒子速度用于计算要应用于粒子的所需力，从而使粒子能够实现所需的速度。随后该力将应用于 MassFX 引擎中的粒子。这样，可通过物理模拟方法实现所需的粒子速度。 
+                     </div>
+                  </dd>
+               </dl>
+               <div><a name="GUID-9CA0B031-17E8-45C3-9D4C-C87F79DBF0CB"></a><div class="note-tip"><span class="label label-target-language">提示</span>若要使“mParticles 切换”位置/速度匹配生效，请将“mParticles 切换”操作符放置在事件中的“mParticles 世界”操作符上方。另外，将定义要匹配的粒子属性的位置类型或速度类型的操作符放置在“mParticles 切换”操作符上方。这样，会首先计算所需的位置/速度，然后“mParticles
+                     切换”将计算要应用于粒子的所需力并将信息中继到“mParticles 世界”操作符。 
+                     <p><a name="GUID-11732028-0BDA-4320-9E1C-E96025AD4843"></a> 此外，由于“mParticles 力”和“mParticles 切换”操作符会使用应用于粒子的力来模拟运动，这样会干扰位置/速度匹配，因此通常避免在同一事件中使用“mParticles 力”操作符。 
+                     </p> 
+                  </div>
+               </div><a name="GUID-00E12CEF-7590-41E5-B287-7E43F8F4A192"></a><dl>
+                  <dt><a name="GUID-D0982B9B-00D7-4ADB-9FD2-A7B42C249F64"></a><span class="term"><a name="GUID-2A81970E-9601-4AA7-9534-858A54486C0F"></a>[持续时间]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-92AECC72-C067-4B12-83C4-73F87FFDED0F"></a>选择“位置”/“速度”选项应在整个事件过程中，还是在指定的帧范围内，或是在明确的间隔期间生效。使用“按间隔”或“可设置动画”时，也可设置“同步方式”选项以确定如何应用帧范围。 <a name="UL_DDAD3C4568394FE288E65D3144C263A2"></a><ul>
+                           <li><em class="strong">按间隔</em>位置/速度匹配仅在指定的帧范围内发生。 
+                           </li>
+                           <li><em class="strong">事件</em>位置/速度匹配在整个事件（包含“mParticles 切换”操作符）过程中发生。 
+                           </li>
+                           <li><em class="strong">可设置动画</em>选择此选项后，“活动”按钮变为可用。可以使用标准关键帧方法对“活动”按钮的切换设置动画，以指定“位置”或“速度”切换控件处于活动状态时的多个帧范围。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-A03C7D29-B1A8-4E45-AD01-F17703550924"></a><span class="term"><a name="GUID-053FCDE2-8B38-4177-82E5-BFC48A23D781"></a>同步方式</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-353E60D1-9AE9-470C-912D-55A29E291F8E"></a>当使用“按间隔”或“可设置动画”选项时，请使用“同步方式”选择要在其中应用阻尼因子动画的时间帧：“绝对时间”，“事件持续时间”或“粒子年龄”。有关详细信息，请参见<span class="char_link"><a href="GUID-D4593D7B-86FA-40C6-A500-7855C9DDBA94.htm#GUID-9BCB8F53-6DBB-4447-B9CD-B4C7A329ABFC">“动画偏移关键点”组</a></span>。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-8D0BEEC7-4B87-4A97-A0B7-8F0AAF7A551C"></a><span class="term"><a name="GUID-875442A8-ADC9-40D1-946C-B133633D000D"></a>速度限制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-953563A1-B4D6-4BA1-9FD0-19248628D1DA"></a>当使用“位置”选项时，可以指定允许的最大粒子速度，而“mParticles 切换”会尝试通过模拟实现声明的位置。启用“速度限制”并使用数值字段来设置最大速度。
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-CBF63C9C-F721-4CB2-9D26-0C33510D3DFA"></a><p class="title"><a name="GUID-A36412AB-6439-4EDD-9E04-A56B22E37D05"></a>“匹配旋转或自旋”组
+               </p>
+               <p><a name="GUID-F742289F-2213-4919-B504-248E8F4C985D"></a> 使用这些设置调整粒子的模拟旋转或自旋速率。MassFX 引擎可计算事件中粒子的模拟运动，但如果“旋转”或“自旋”处于启用状态，则操作符将计算要应用于粒子的扭矩力，以匹配事件中“mParticles 切换”操作符上方的旋转/自旋类型操作符的效果。这些控件与“匹配位置或速度”组中的控件起相同作用；有关除“自旋限制”外的所有控件的详细信息，请参见上一部分。
+                  
+               </p>
+               <dl>
+                  <dt><a name="GUID-B579BB2B-0575-432D-8978-E4B4DD02A7A1"></a><span class="term"><a name="GUID-F1D94004-F560-460F-91C6-82634AC9FB31"></a>自旋限制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-2151D760-2951-41E2-9E83-1C26C67C8242"></a>当使用“旋转”选项时，指定允许的最大粒子自旋（以每秒度数为单位），而“MassFX 切换”会尝试通过模拟实现声明的旋转。
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-1A592087-97E1-4D93-AD3F-03DDFFDE9E9C"></a><p class="title"><a name="GUID-13C4434D-5FBA-4BBD-9F02-31FA1D8890A3"></a>“应用反重力”组
+               </p>
+               <p><a name="GUID-D62CE90A-6ACB-453D-A0E6-84EC92EF1BF3"></a> 如果“mParticles 世界”操作符启用了“应用重力”选项，则可以启用“应用反重力”暂时减轻粒子的重力效果。“重力减轻”的计时由该组中的时间参数定义，类似于“匹配位置或速度”组中的计时设置（请参见上文）。 
+               </p>
+               <p><a name="GUID-1C2DB2EF-B8AC-4765-99C1-B57981948827"></a>有关显示“应用反重力”选项效果的视频，请参见<span class="char_link"><a href="GUID-AF5C05D2-73FF-4C9F-B384-8515227E6179.htm#SECTION_C2E83799782D4A93AF160AE9D34212A0">应用反重力</a></span>。 
+               </p>
+            </div>
+            <div class="dl_section"><a name="GUID-4865E1C2-5B09-4A12-B659-D24C7D2618CF"></a><p class="title"><a name="GUID-2C5C2E38-47C9-471C-9CB3-6E9073D16136"></a>“关闭模拟”组
+               </p>
+               <p><a name="GUID-365847C1-AFC3-4FA3-8321-011579C0837F"></a> 您可以使用该选项将粒子模拟暂时从<em class="mild"></em>动力学转换为<em class="mild"></em>运动学。动力学粒子的动画和移动由 MassFX 模拟确定，而运动学粒子的动画由标准“粒子流”操作符驱动。但是，运动学粒子会影响动力学粒子，因为在模拟中运动学粒子的图形和运动可对以下做出解释：运动学粒子会与动力学粒子碰撞，因此影响其模拟运动。 
+               </p>
+               <p><a name="GUID-3C772003-3334-4743-8206-1841CE5E009A"></a>MassFX 引擎不会控制运动学粒子的运动，因此这些粒子的图形可以重叠。如果粒子在一个事件中为运动学粒子，而在下一个事件中为动力学粒子，这样会产生潜在问题。当粒子移动至下一事件时，“图形”操作符会创建“运动爆炸”，因为 MassFX 引擎必须解决当粒子为运动学粒子时所发生的碰撞图形重叠。
+                  
+               </p>
+               <p><a name="GUID-1138B871-3C18-43DD-AEA8-DEA1BE447A92"></a> “关闭模拟”计时可由组中的计时参数控制，类似于“匹配位置或速度”组中的计时设置（请参见上文）。 
+               </p>
+               <p><a name="GUID-505DF0B4-28ED-4644-9EC4-614421A09CBB"></a>有关显示“关闭模拟”选项效果的视频，请参见<span class="char_link"><a href="GUID-AF5C05D2-73FF-4C9F-B384-8515227E6179.htm#SECTION_7D19D047FC65426788C1D95FC9A979B0">关闭模拟</a></span>。 
+               </p>
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-AF5C05D2-73FF-4C9F-B384-8515227E6179.htm">mP 切换操作符视频</a></li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C02B4CB1-38BD-407E-99F2-3A80F97DAD92">
+      <meta name="description" content="“曲面近似”卷展栏上的控件与NURBS 曲面对象的曲面近似控件相同，但是有两个附加的按钮：“选定集”和“重置”。">
+      <meta name="indexterm" content="NURBS: “曲面近似”卷展栏">
+      <meta name="indexterm" content="NURBS 曲面: “曲面近似”卷展栏">
+      <meta name="topic-type" content="concept">
+      <title>“曲面近似”卷展栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C02B4CB1-38BD-407E-99F2-3A80F97DAD92"></a><div class="head">
+            <h1>“曲面近似”卷展栏</h1>
+         </div>
+         <p class="blurb">“曲面近似”卷展栏上的控件与<span class="char_link"><a href="GUID-A66E61B1-8B69-4A61-A7AF-40C8927DA00E.htm">NURBS</a></span> 曲面对象的<span class="char_link"><a href="GUID-FD120DDE-E8BE-4DB9-A2CA-62069059B4FF.htm">曲面近似</a></span>控件相同，但是有两个附加的按钮：“选定集”和“重置”。 
+         </p><a name="UL_CE2A460E33844AF3A8C45EF31994F066"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-AD55C436-D897-4AC5-98E9-644155BD7C3C"> <img src="../images/GUID-26D492F7-3E48-4209-AB7B-FEC655C6DA3D-low.png">“实用程序”面板  <img src="../images/ac.menuaro.gif"> “实用程序”卷展栏  <img src="../images/ac.menuaro.gif"> “更多”按钮  <img src="../images/ac.menuaro.gif"> “实用程序”对话框  <img src="../images/ac.menuaro.gif"> “曲面近似” <img src="../images/ac.menuaro.gif"> “曲面近似”卷展栏</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-6817"></a> 
+            <h2><a name="GUID-44B6B950-9E4A-41F8-A341-C7DEB2AA0BA0"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004214A"></a><div class="figure-anchor"><img src="../images/GUID-A5346C58-0CC0-4196-81FA-E758BFD90FF5-low.png"></div>  <a name="GUID-AC9371E2-68DE-48D4-A20F-391E8FC53504"></a><div class="dl_section"><a name="GUID-9881353D-0A08-4712-87E7-641F460CED58"></a><p class="title"><a name="GUID-622A21E5-D933-441D-BBB8-0AC892E7BA6B"></a>“等参线”组
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6816"></a>该组中的控件影响 NURBS 曲面在视口中的显示。 
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D42B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6815"></a>U 向线和 V 向线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-600D"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532E3"></a>是视口中用于近似 NURBS 曲面的线条树，分别沿着曲面的局部 U 向维度 和 V 向维度。减少这些值会加快曲面的显示速度，但是却能够降低显示的精确性。增加这些值会提高精确性，但是却以时间为代价。将其中一个值设置为 0 将只以相应的维度显示对象的边。
+                           
+                        </p> 
+                     </div>
+                  </dd>
+               </dl><a name="UL_DC36DADF93B2477CAD6E70783D6313DC"></a><ul>
+                  <li><em class="strong">仅等参线</em>选中此选项后，所有视口将显示曲面的<span class="char_link"><a href="GUID-6F98D589-D3CD-462F-B3F3-29B4350E4D8D.htm">等参线</a></span>表示。等参线与轮廓线相似。该线条显示 NURBS 曲面具有恒定 U 值和/或 V 值的位置。与线框网格表示相比，等参线表示不显得拥挤，而且更加直观。 
+                  </li>
+                  <li><em class="strong">等参线和网格</em>（默认设置。）选中此选项后，线框视口将显示曲面的等参线表示，而着色视口将显示着色曲面。 
+                  </li>
+                  <li><em class="strong">仅网格</em>选中此选项后，线框视口将曲面显示为线框网格，而明暗处理的视口将显示明暗处理的曲面。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6811"></a>在线框视口中，使用此选项可以查看用于视口的曲面近似。 
+                     </p> 
+                  </li>
+               </ul><a name="WS1A9193826455F5FFBA679E112A6A19004214C"></a><div class="figure-anchor"><img src="../images/GUID-E7CB8BA0-74B5-4B77-B477-50C27CA4659D-low.png"><p class="figure-title">NURBS 茶壶的等参线和网格显示</p>
+               </div>
+            </div>
+            <div class="dl_section"><a name="GUID-C58B1398-85E9-468C-A29B-C7BC828A8ECF"></a><a name="UL_FDFF0DC9869644798429439CD89E69FA"></a><ul>
+                  <li><em class="strong">视口</em>选中该选项后，该工具会影响 NURBS 对象中的曲面在视口中的交互式显示方式（包括明暗处理的视口），并且还会影响预览渲染器显示这些曲面的方式。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-680F"></a>另外，对 NURBS 对象应用网格修改器（如“网格选择”）时，也会使用“视口”曲面设置。因为该修改器会影响场景的几何体，所以，这一点是很重要的。 
+                     </p> 
+                  </li>
+                  <li><em class="strong">渲染器</em>选中该选项后，工具会影响渲染器显示 NURBS 对象中曲面的方式。 
+                  </li>
+               </ul>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D431"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-680D"></a> 基础曲面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6007"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532E9"></a>启用此选项之后，设置将影响选择集中的整个曲面。默认设置为启用。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D432"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-680C"></a> 曲面边</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6006"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532EA"></a>启用该选项后，设置影响由修剪曲线定义的曲面边的细分。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D433"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-680B"></a> 置换曲面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6005"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532EB"></a>只有在选中“渲染器”时才启用。启用后，可以为已应用<span class="char_link"><a href="GUID-14B36287-F9FB-4D92-98D3-A95D100DA296.htm">置换贴图</a></span>或<span class="char_link"><a href="GUID-12F0E0BA-3FCA-4C8F-8C9B-C77C8FB4A45C.htm">置换修改器</a></span>的曲面设置第三个独立的近似设置。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-1A79E021-CF15-492A-8DAF-361DF24B9B23"></a><p class="title"><a name="GUID-E445645E-4947-4C15-AD5D-13E0F4BE889C"></a>“加载细分预设”组
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-680A"></a>用于选择低、中或高质量层级的预设曲面近似值。选择预设值时，使用的值将会显示在“细分方法”组框中。 
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6809"></a>预设值保存在 <em class="mild">3dsmax.ini</em> 文件中。通过使用以下组框“保存细分预设”中的按钮，可以自定义预设值。 
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D434"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6807"></a>低</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6004"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532EC"></a>选择低质量（相对）层级的曲面近似。默认值如下： 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6806"></a> <em class="strong">视口，基本曲面：</em> 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6805"></a>方法=空间和曲率 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6804"></a>边=50.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6803"></a>距离=50.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6802"></a>角度=50.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6801"></a>合并=0.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6800"></a>“高级参数”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 最小值=0，最大值=3 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67FF"></a> <em class="strong">渲染器，基本曲面：</em> 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67FE"></a>方法=空间和曲率 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67FD"></a>边=20.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67FC"></a>距离=20.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67FB"></a>角度=15.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67FA"></a>合并=0.01 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67F9"></a>“高级参数”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 最小值=0，最大值=3 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67F8"></a> <em class="strong">渲染器，置换曲面：</em> 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67F7"></a>方法=空间和曲率 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67F6"></a>边=20.0 距离=20.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67F5"></a>角度=10.0 合并=（不可用） 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67F4"></a>“高级参数”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 最小值=0，最大值=2 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D435"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-67F3"></a>中</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6003"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532ED"></a>（视口和渲染的默认值。）选择中等质量层级的曲面近似。默认值如下： 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67F2"></a> <em class="strong">视口，基本曲面：</em> 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67F1"></a>方法=空间和曲率 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67F0"></a>边=20.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67EF"></a>距离=20.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67EE"></a>角度=15.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67ED"></a>合并=0.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67EC"></a>“高级参数”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 最小值=0，最大值=3 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67EB"></a> <em class="strong">渲染器，基本曲面：</em> 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67EA"></a>方法=空间和曲率 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67E9"></a>边=10.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67E8"></a>距离=15.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67E7"></a>角度=10.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67E6"></a>合并=0.01 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67E5"></a>“高级参数”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 最小值=0，最大值=4 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67E4"></a> <em class="strong">渲染器，置换曲面：</em> 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67E3"></a>方法=空间和曲率 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67E2"></a>边=10.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67E1"></a>距离=10.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67E0"></a>角度=4.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67DF"></a>合并=（不可用） 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67DE"></a>“高级参数”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 最小值=0，最大值=3 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D436"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-67DD"></a>高</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6002"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532EE"></a>选择高质量层级的曲面近似。默认值如下： 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67DC"></a> <em class="strong">视口，基本曲面：</em> 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67DB"></a>方法=空间和曲率 边=5.0 距离=15.0 角度=10.0 合并=0.0 高级参数 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 最小值=0，最大值=3 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67DA"></a>渲染器，基本曲面： 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67D9"></a>方法=空间和曲率 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67D8"></a>边=5.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67D7"></a>距离=5.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67D6"></a>角度=3.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67D5"></a>合并=0.01 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67D4"></a>“高级参数”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 最小值=0，最大值=4 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67D3"></a> <em class="strong">渲染器，置换曲面：</em> 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67D2"></a>方法=空间和曲率 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67D1"></a>边=5.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67D0"></a>距离=5.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67CF"></a>角度=2.0 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67CE"></a>合并=（不可用） 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67CD"></a>“高级参数”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> 最小值=0，最大值=4 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-2E700DB2-2074-4A3D-AA9E-2948DAC8DF3E"></a><p class="title"><a name="GUID-F8E49A51-DA69-4FB1-B116-82186B6AB447"></a>“保存细分预设”组
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67CC"></a>单击一个按钮可将当前“细分方法”设置保存为新的“低”、“中”或“高”预设。这些值保存在 <em class="mild">3dsmax.ini</em> 文件中。 
+               </p>
+               <div><a name="WS73099CC142F487551FACE55114134B88B1-7244"></a><div class="note-note"><span class="label label-target-language">注意:</span>“基础曲面”和“置换曲面”近似T具有单独的“低”、“中”或“高”预设。在使用此组框中的按钮保存自定义预设之前，检查是否启用“基础曲面”或“置换曲面”。 
+                  </div>
+               </div>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67CA"></a>自定义的预设值将覆盖默认预设值。要恢复默认值，可以重新输入上述默认预设值，然后使用相应的按钮进行保存。通过 <em class="mild">3dsmax.ini</em> 文件，以删除自定义预设值，也可以恢复默认值。 
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67C8"></a>自定义预设值时，按钮名称和曲面近似质量之间没有必需的关联。<span class="charspan-msgph">3ds Max</span> 不能分辨细分的“优质”程度，例如，您可以采用“低”预设保存非常高质量的曲面近似。 
+               </p>
+            </div>
+            <div class="dl_section"><a name="GUID-1210BE7D-05D7-4FF5-9F54-3BD3F99E3581"></a><p class="title"><a name="GUID-DFA2A02E-A4C7-43CF-88EF-69A340F44294"></a>“细分方法”组
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67C7"></a>如果已经选择“视口”，该组框中的控件会影响 NURBS 曲面在视口中的显示；如果已经选择“渲染器”，这些控件还会影响渲染器显示曲面的方式。您可以在五种算法中进行选择。采用其他方法对 NURBS 曲面进行细化时，每种算法都可以计算该曲面的近似值。
+                  
+               </p>
+               <div><a name="WS73099CC142F487551FACE55114134B88B1-7243"></a><div class="note-note"><span class="label label-target-language">注意:</span>选择“视口”时，还必须选择“仅网格”才能看到线框视口中“网格参数”设置的效果。 
+                  </div>
+               </div>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67C6"></a>总而言之，如果选定的预设值可以提供理想的结果，则不必进一步调整该卷展栏中的控件。如果使用其他预设值出现问题，请进行调整。 
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67C5"></a> <em class="strong">提示</em> 
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190042150"></a><ul>
+                  <li>视口细化：细化方法创建网格，因此，如果您使用“网格选择”修改 NURBS 对象，则选择能够提供所需效果的方法。如果过多使用修改器，“空间”或“参数”可能会因常规细化而优于“曲率”。与曲率有关的细化可能会使某些修改器出现问题。 </li>
+                  <li>渲染器细化：“空间”和“曲率”通常会获得最精确的渲染结果。渲染动画曲面时，“曲率”可能是最为高效的选择方法。 </li>
+               </ul><a name="UL_C9755014B11A4258A38CA75E00951CED"></a><ul>
+                  <li><em class="strong">规则</em>根据 U 向步数 V 向步数在整个曲面内生成固定的细化。增加这些参数时，可以提高准确性，但会降低速度，反之亦然。但是，一般而言，这是一种计算 NURBS 曲面近似值最快速最不准确的方法。使用“规则”方法时，如果 U 向步数或 V 向步数的值非常低，通常不会得到理想的结果。模型的复杂性将会随
+                     U 向步数和 V 向步数的增加而缓慢增加。 
+                  </li>
+                  <li><em class="strong">参数化</em>根据 U 向步数 V 向步数生成自适应细化。使用“参数化”方法时，如果 U 向步数和 V 向步数的值不高，通常可以得到理想的结果。模型的复杂性将会随 U 向步数和 V 向步数的增加而快速增加。因此，从“规则”切换时要格外注意，因为“规则”一般需要较高的
+                     U 和 V 值。对于“参数化”，较低的 U 和 V 值通常就能满足要求。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67C2"></a>例如，如果将茶壶转换成 NURBS，并将 U 和 V 向步数设置为 15，则“规则”方法会生成 4470 个面，而“参数化”方法会生成 204960 个面。 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190042151"></a><div class="figure-anchor"><img src="../images/GUID-D1A4BAF7-8182-4459-A8DE-18E445CBEA67-low.png"><p></p>
+                        <p class="figure-title">NURBS 茶壶的参数网格</p>
+                     </div>  
+                  </li>
+                  <li><em class="strong">空间</em>生成由三角形面组成的统一细化。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67C0"></a>“边”参数可以在细化时指定三角形的最大长度。该值是对象边界框的百分比。减小该值时，将会提高准确性，但会延长渲染时间。 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190042152"></a><div class="figure-anchor"><img src="../images/GUID-C59D4CE2-5B71-4053-9752-CC4C47973C0A-low.png"><p></p>
+                        <p class="figure-title">NURBS 茶壶的“空间”网格</p>
+                     </div>  
+                  </li>
+                  <li><em class="strong">曲率</em>根据曲面的曲率生成可变的细化。如果使曲面更加弯曲，则细化的纹理将更加精致。动态更改曲面曲率时，将会更改曲率的细化。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67BE"></a>“距离”参数可以指定近似值偏离实际 NURBS 曲面的远近程度。距离是每个曲面边界框的对角线的百分比。对象中的每个曲面基于其大小细化，独立于其他曲面，并且缩放曲面并不能更改其细化。减小该值时，将会提高准确性，但会延长渲染时间。如果将“距离”设定为
+                        0.0，<span class="charspan-msgph">3ds Max</span> 将会忽略此参数，并使用“角度”控制准确性。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67BD"></a>“角度”参数可以在计算近似值时指定各面之间的最大角度。减小该值时，将会提高准确性，但会延长渲染时间。如果将“角度”设定为 0.0，<span class="charspan-msgph">3ds Max</span> 将会忽略此参数，并使用“距离”控制精度。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67BC"></a>如果“距离”和“角度”都为 0.0，该曲面将会退化，因此，它可以变成平面。 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190042153"></a><div class="figure-anchor"><img src="../images/GUID-625744FA-90BA-4405-B155-6738ED758B76-low.png"><p></p>
+                        <p class="figure-title">NURBS 茶壶的“曲率”网格</p>
+                     </div>  
+                  </li>
+                  <li><em class="strong">空间和曲率</em>（默认设置。）通过所有三个值使空间（边长）方法和曲率（距离和角度）方法完美结合。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67BA"></a>“边”参数可以在细化时指定三角形的最大长度。该值是对象边界框的百分比。减小该值时，将会提高准确性，但会延长渲染时间。如果将“边”设置为 0.0，则效果与“曲率”方法等同。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67B9"></a>“距离”参数可以指定近似值偏离实际 NURBS 曲面的远近程度。距离是每个曲面边界框的对角线的百分比。对象中的每个曲面基于其大小细化，独立于其他曲面，并且缩放曲面并不能更改其细化。减小该值时，将会提高准确性，但会延长渲染时间。如果将“距离”设定为
+                        0.0，<span class="charspan-msgph">3ds Max</span> 将会忽略此参数，并使用“边”和“角度”值控制准确性。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67B8"></a>“角度”参数可以在计算近似值时指定各面之间的最大角度。减小该值时，将会提高准确性，但会延长渲染时间。如果将“角度”设定为 0.0，<span class="charspan-msgph">3ds Max</span> 将会忽略此参数，并使用“边”和“距离”值控制准确性。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67B7"></a>如果“距离”、“角度”和“边”都为 0.0，该曲面将会退化，因此，它可以变成平面。 
+                     </p> 
+                  </li>
+               </ul>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D43C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-67B6"></a>依赖于视图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FFC"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532F4"></a>（仅限“渲染器”）<em class="strong"></em>启用时，要在计算细化期间考虑对象到摄影机的距离。从而可以通过对渲染场景距离范围内的对象不生成纹理细密的细化来缩短渲染时间。只有渲染摄影机或透视视口时，才能使用依赖于视图的效果。该效果不适用于正交视图。激活“视口”时，将会禁用该控件。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67B5"></a>对于“空间”、“曲率”和“空间和曲率”方法，如果启用“依赖于视图”，则“距离”和“边”值将用于指定像素而不是 <span class="charspan-msgph">3ds Max</span> 的默认单位。 
+                        </p> 
+                        <div><a name="WS73099CC142F487551FACE55114134B88B1-7242"></a><div class="note-note"><span class="label label-target-language">注意:</span>启用“依赖于视图”时，细化将会快速达到最大的细分界限。此时，可能需要将该值增加为 7（允许的最大值）。请参见“高级参数”的说明，如下所述。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D43D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-67B4"></a>合并</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FFB"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532F5"></a>控制对边处于连接或近乎连接状态的曲面子对象的细化。如果输入到需要网格的修改器（如“网格选择”），以及如果是为产品级渲染细化 NURBS 曲面，则在默认情况下，<span class="charspan-msgph">3ds Max</span> 会根据沿边的面数调整相邻曲面的细分，以使其相互匹配。“合并”参数可以控制上述操作方式。如果“合并”值为零，相邻面将保持不变。增加“合并”值会增加 <span class="charspan-msgph">3ds Max</span> 用于计算应如何匹配边的距离，从而在渲染时确保曲面之间没有间距。默认值为 0.01。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67B3"></a>在大多数情况下，不必调整“合并”。如果渲染时显示近乎相邻的面间的间距，将会增加“合并”值，以便将其消除。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-67B2"></a>从技术上讲，“合并”值是对象边界框对角线的 0.1%。换而言之，如果“合并”值为 1.0（在大多数情况下高于所需的值），将会是对角线长度的 0.1%。因为“合并”值基于对象的维数，所以，可以缩放 NURBS 模型，而不会影响“合并”设置。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D43E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-67B1"></a>高级参数</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FFA"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532F6"></a>单击时，可以显示<span class="char_link"><a href="GUID-E4EE64A0-A4FE-48B3-B0FD-30FC96103716.htm">“高级曲面近似”对话框</a></span>。该对话框中的参数可以应用于“空间”、“曲率”和“空间和曲率”近似方法。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D43F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-67B0"></a>清除曲面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FF9"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532F7"></a>启用该选项之后，在此工具中选择的设置将覆盖选定 NURBS 模型中的所有子对象特定曲面近似设置。如果禁用，该工具会影响顶级 NURBS 模型，但是单个曲面子对象的局部设置不受影响。默认设置为禁用状态。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D440"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-67AE"></a>设置选定对象</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FF8"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532F8"></a>将工具中活动的曲面近似值应用到所有选定的 NURBS 对象。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D441"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-67AD"></a>重置</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FF7"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532F9"></a>将工具中的值重置为 NURBS 曲面的默认设置。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5C468918-9ACC-40D7-A3A6-32BCEEEF1C10">
+      <meta name="description" content="使用 SAT 格式将 BREP（边界表示）对象导入 3ds Max，同时保留其实体几何体格式。此类对象通常来自诸如 Autodesk Revit 和 Autodesk Inventor 等程序，称为“实体对象”。">
+      <meta name="indexterm" content="SAT 文件（标准 ACIS 文本）: 导入">
+      <meta name="indexterm" content="文件类型: SAT（标准 ACIS 文本）: 导入">
+      <meta name="indexterm" content="导入: SAT 文件">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>“SAT 导入”对话框</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5C468918-9ACC-40D7-A3A6-32BCEEEF1C10"></a><div class="head">
+            <h1>“SAT 导入”对话框</h1>
+         </div>
+         <p class="blurb">使用 SAT 格式将 BREP（边界表示）对象导入 <span class="charspan-msgph">3ds Max</span>，同时保留其实体几何体格式。此类对象通常来自诸如 Autodesk Revit 和 Autodesk Inventor 等程序，称为“实体对象”。 
+         </p>
+         <div class="bodyReference"><a name="UL_1DB8A4BFDB2B489DBFD94260C0D360DE"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-2FC343B9-C985-4B10-8A5D-E6A52150D6C0">“文件”菜单  <img src="../images/ac.menuaro.gif"> “导入” <img src="../images/ac.menuaro.gif"> “选择要导入的文件”对话框  <img src="../images/ac.menuaro.gif"> “文件类型” <img src="../images/ac.menuaro.gif"> “ACIS SAT (*.SAT)”</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-1318B381-170F-4F47-B8AE-452A3FEDF81E"></a></p>
+            <p><a name="GUID-C1F93D84-7FCD-4ED9-9543-E36EB8DFE1E4"></a>您也可以将原有 <span class="charspan-msgph">3ds Max</span> 对象转换为“实体对象”，并可以应用诸如“弯曲”和“扭曲”之类的修改器，并使用“布尔”操作和其他操作操纵它们。当以 SAT 格式导出实体对象时，将保留 BREP 格式。 
+            </p>
+            <div><a name="WS73099CC142F48755-385A98B012180D20F19-4B49"></a><div class="note-note"><span class="label label-target-language">注意:</span>SAT 文件的大小可能非常大。如果导入 SAT 文件时遇到问题，请在导入前将显示设置为单个线框视口并将“视口实体网格质量”设置为“粗糙”。同样，要导入大于 100MB 的 SAT 文件，强烈建议使用 64 位版本的 <span class="charspan-msgph">3ds Max</span>。 
+               </div>
+            </div>
+            <div><a name="WS73099CC142F48755-385A98B0121D1BB015F-4AEA"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果您打算使用修改器使实体对象变形，请先将“视口显示设置”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“最大边长度 %”值设置为 <em class="strong">2.0</em> 或 <em class="strong">3.0</em>，然后在实体对象和变形修改器之间应用“网格选择”修改器。这允许在变形时做出更快更准确的视口响应。确保在导出为 SAT 之前显示或删除“网格选择”。 
+               </div>
+            </div>
+            <div class="section"><a name="WS73099CC142F48755F2FC9DF120970276F73D21"></a> <a name="WS73099CC142F48755F2FC9DF120970276F73D20"></a><div class="figure-anchor"><img src="../images/GUID-D77E4595-0BD0-44CF-9600-6EAEA99C706F-low.png"></div>  <a name="GUID-72C27F59-6F5C-41D3-B17D-7F6E90D20A29"></a><div class="dl_section"><a name="GUID-67B9C178-34F4-414E-99C3-F9AC50D4E56F"></a><p class="title"><a name="GUID-4DD5BC98-805A-42AD-9B4B-B939958B555E"></a>“导入选项”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF-3859B43C1215F53D0F3-75D3"></a>选择导入器对传入对象的处理方式： 
+                  </p><a name="WS1A9193826455F5FF-3859B43C1215F53D0F3-75D2"></a><ul>
+                     <li> <em class="strong">“标准 - 无焊接”</em>这是默认设置。分别导入对象，并且不将这些对象焊接在一起。通常，此选项最适合带实体的 SAT 文件。 
+                     </li>
+                     <li> <em class="strong">单一实体 - 无焊接</em>创建单个实体对象，但不会尝试将曲面焊接在一起。 
+                     </li>
+                     <li> <em class="strong">“单一实体 - 焊接修剪曲面”</em>创建与曲面焊接在一起的单个实体对象。如果导入的文件由希望连接在一起以消除接缝或间隙的单个实体（由原始模型中的多个曲面表示）组成，则使用此选项。 
+                     </li>
+                     <li> <em class="strong">每个修剪曲面存在于分离的实体</em>导入的修剪曲面被视为分离的实体对象。不执行任何焊接。 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-C3B420A4-24A8-426D-A5AE-5AE49D93AFEF"></a><p class="title"><a name="GUID-CBC4FE8A-71CE-42BB-85E1-5FA2FDE8327B"></a>“视口实体网格质量”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF-3859B43C1215F53D0F3-75CA"></a>用于表示视口中实体对象的多边形数目。“粗糙”选项使用的多边形相对较少，而其他选项则可创建更加密集和精确的网格。因此“精细”选项可能要花更长时间进行导入。 
+                  </p>
+               </div>
+               <div class="dl_section"><a name="GUID-362B3697-AD34-41B4-B18E-9C4C4F273C3A"></a><p class="title"><a name="GUID-5BE1F76E-D64F-40A2-8483-A2C664CAF91B"></a>“3D 修剪公差”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF-3859B43C1215F53D0F3-75C6"></a>创建和焊接对象时修剪区域中允许的变化限度。公差越大（越紧），修剪的精确度便越高。 
+                  </p>
+                  <p><a name="WS73099CC142F48755-385A98B012180D20F19-3C14"></a>利用此设置可以将导入计算调整为适合导入数据不精确的情况下的计数。如果存在误差，如缺少形成的面或形成的面有缺陷，则导入之后，请尝试不同的“公差”设置以查看是否有助于改变结果。 
+                  </p>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-3859B43C1215F53D0F3-75C5"></a><span class="term"><a name="WS1A9193826455F5FF-3859B43C1215F53D0F3-75C4"></a>自动面翻转</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-3859B43C1215F53D0F3-75C3"></a> 自动修正指向内部的曲面法线。此功能尝试统一导入曲面上的法线。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-385A98B012180D20F19-3C13"></a><span class="term"><a name="WS73099CC142F48755-385A98B012180D20F19-3C12"></a>将 SAT Y 轴转换为 Z 轴</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-385A98B012180D20F19-3C11"></a> 转换在使用 Y 轴作为上方向向量的系统中创建的模型的局部坐标系，方法是旋转模型以使 Z 轴作为上方向向量，在 <span class="charspan-msgph">3ds Max</span> 中就是这样。这应该对 Inventor 文件完成。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-3859B43C1215F53D0F3-75C1"></a><span class="term"><a name="WS1A9193826455F5FF-3859B43C1215F53D0F3-75C0"></a>选择要导入附加的 SAT 文件</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-3859B43C1215F53D0F3-75BF"></a> 允许您使用当前设置同时导入多个文件。其他文件应全部位于同一目录下。 
+                        <p><a name="WS73099CC142F48755-385A98B012180D20F19-3C0F"></a>使用单击此按钮时打开的文件对话框以导航至该目录，然后使用标准 <span class="keyboardEntry">Shift</span>+ 单击或 <span class="keyboardEntry">Ctrl</span>+ 单击方法选择任意数目的文件以进行导入。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-93B409C7-A983-4CB7-9535-A819FA7B6936.htm">对实体对象使用修改器</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5F05AAED-9E35-4124-BF0C-EEC5AFA09190">
+      <meta name="description" content="CATIA® 是 Dassault Systèmes 开发的一种计算机辅助设计软件。 您可以将 CATIA V5 文件导入到 3ds Max 中。">
+      <meta name="indexterm" content="CATIA V5 文件">
+      <meta name="indexterm" content="CATPRODUCT 文件 (CATIA V5)">
+      <meta name="indexterm" content="CATPART 文件 (CATIA V5)">
+      <meta name="indexterm" content="文件类型: CATIA V5">
+      <meta name="indexterm" content="文件类型: CATPRODUCT (CATIA V5)">
+      <meta name="indexterm" content="文件类型: CATPART (CATIA V5)">
+      <meta name="contextid" content="IDH_ATF_IMPORTER_CATIAV5">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>CATIA V5 (CATPRODUCT, CATPART) 文件</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5F05AAED-9E35-4124-BF0C-EEC5AFA09190"></a><div class="head">
+            <h1>CATIA V5 (CATPRODUCT, CATPART) 文件</h1>
+         </div>
+         <p class="blurb"> CATIA<sup>®</sup> 是 Dassault Systèmes 开发的一种计算机辅助设计软件。 您可以将 CATIA V5 文件导入到 3ds Max 中。 
+            
+         </p><a name="UL_2609EBFAA88746F2A9A13BE2C8EFCBB0"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-51CFFC16-B3D7-46AB-A3BB-2B78ED767CEA">“文件”菜单  <img src="../images/ac.menuaro.gif"> “导入” <img src="../images/ac.menuaro.gif"> “选择要导入的文件”对话框  <img src="../images/ac.menuaro.gif"> “文件类型”下拉列表  <img src="../images/ac.menuaro.gif">  选择“Catia V5 (*catpart、*.catproduct)”。</span> 
+            </li>
+            <li>键盘：<span class="MenuCascade">Alt+F  <img src="../images/ac.menuaro.gif">  I  <img src="../images/ac.menuaro.gif">  I  <img src="../images/ac.menuaro.gif">  从“文件类型”字段选择“Catia V5 (*.catpart、*.catproduct、*.cgr)” <img src="../images/ac.menuaro.gif">  导航到您的文件  <img src="../images/ac.menuaro.gif">  单击“打开”</span> 
+            </li>
+         </ul>
+         <p><a name="GUID-8F1AF9A3-6343-4A2A-AB32-0A733316DE0D"></a> 
+         </p>
+         <p><a name="GUID-6172BA3F-ABBF-4D8D-914E-84E10C75E504"></a><span class="charspan-msgph">3ds Max</span> 不导出 CATIA V5 格式。 
+            
+         </p>
+         <div><a name="GUID-A8965B25-33B2-4B40-82C4-AAB4A2497490"></a><div class="note-note"><span class="label label-target-language">注意:</span>3ds Max 中支持 R6 到 V5-6R2016 版本。 
+               
+            </div>
+         </div>
+         <div class="section"><a name="SECTION_C2327A0A4DFB454FBF3E90C71B86D6D1"></a> 
+            <h2><a name="GUID-E02ECED5-1717-4164-A081-A5165A0E9301"></a>界面
+            </h2><img src="../images/GUID-A20D7C55-EA3F-4108-8893-221FE805CD9B-low.png"> 
+            <dl><a name="GUID-AE0D94A1-C78F-4F2D-BA3C-40B22F2B0F7C"></a><dt><span class="term">转换为网格 
+                     		</span></dt>
+               <dd>
+                  <div class="definition">启用时，导入的几何体将转换为 3ds Max 可编辑网格对象。禁用时，导入的几何体将转换为实体对象格式。默认设置为启用。 
+                     		
+                  </div>
+               </dd><a name="GUID-E3CDB8DA-80ED-4904-B9B8-6FF7AD4E96CE"></a><dt><span class="term">网格分辨率 
+                     		</span></dt>
+               <dd>
+                  <div class="definition">设置当对象作为可编辑网格对象导入时的对象分辨率。较高的值会产生比较精细的对象，这可能占用大量时间和存储空间。较低的值会产生比较粗略的对象。范围从 –10 到 10。默认值为 0。 
+                     		
+                  </div>
+               </dd><a name="GUID-340ED6BE-42D0-4304-8C8B-4A0093E02A09"></a><dt><span class="term">上方向轴 
+                     		</span></dt>
+               <dd>
+                  <div class="definition">不同应用程序使用不同轴作为上方向轴。为要导入的文件选择相应的轴。默认设置为 Z - 上。 
+                     		
+                  </div>
+               </dd><a name="GUID-03AB940F-78D5-432A-82E9-3ADB166D5EF5"></a><dt><span class="term">层次模式 
+                     		</span></dt>
+               <dd>
+                  <div class="definition">对导入的对象进行分组。要保留分组，您可以使用 3ds Max 组或层。 根据原始场景的组织，该组或层是嵌套结构。默认设置为“使用组”。
+                     		  <a name="UL_9D895488AF8140B4B90A39561593FB8E"></a><ul>
+                        <li><em class="strong">使用组</em>：根据对象在导入的文件中所处的组，将它们放置在 3ds Max 组中。 
+                           			 
+                        </li>
+                        <li><em class="strong">使用层</em>：根据对象在导入的文件中所处的层，将它们放置在 3ds Max 中。 
+                           			 
+                        </li>
+                        <li><em class="strong">展平</em>：不对对象进行分组，而是作为独立的 3ds Max 对象导入它们。 
+                           			 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd>
+            </dl> 
+            <div class="section"><a name="SECTION_8494E407035047A391403C91025E2867"></a> 
+               <h3><a name="GUID-8ACE78BC-3177-40F8-B2E6-C6FE82D1A43D"></a>服务组
+               </h3> 
+               <dl><a name="GUID-A204F4CE-0E3A-43DD-81CE-07654C26036D"></a><dt><span class="term">保留虚拟节点 
+                        		  </span></dt>
+                  <dd>
+                     <div class="definition">将所导入文件中的虚拟对象转换为 3ds Max 虚拟对象。默认设置为禁用状态。 
+                        		  
+                     </div>
+                  </dd><a name="GUID-3844BA75-A2F9-4AB9-82D7-A68F79B4F8A0"></a><dt><span class="term">Import Cameras 
+                        		  </span></dt>
+                  <dd>
+                     <div class="definition">导入相机。 
+                        		  
+                     </div>
+                  </dd><a name="GUID-A0023EC9-808A-48E6-8F64-5A885297F580"></a><dt><span class="term">导入纹理 
+                        		  </span></dt>
+                  <dd>
+                     <div class="definition">导入的纹理将保存在项目的纹理文件夹中。 
+                        		  
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

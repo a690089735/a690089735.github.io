@@ -1,0 +1,87 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-30C5CA50-B8BE-4863-9CF3-178918423211">
+      <meta name="description" content="利用本主题中的提示，将有助于您尽可能出色完成工作，并尽可能快地显示和移动。">
+      <meta name="indexterm" content="VRML97">
+      <meta name="indexterm" content="提示: VRML97">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>VRML97 提示</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-30C5CA50-B8BE-4863-9CF3-178918423211"></a><div class="head">
+            <h1>VRML97 提示</h1>
+         </div>
+         <p class="blurb">利用本主题中的提示，将有助于您尽可能出色完成工作，并尽可能快地显示和移动。 </p>
+         <div class="bodyReference">
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004332"></a> 
+               <h2><a name="GUID-59340CAC-12AC-48F5-9625-CDFA44982A5F"></a>几何体
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DE0"></a> <em class="strong">使用小纹理贴图，并有节制地使用它们。为了获得较高的性能，应减少对象的多边形数量。</em>对大多数计算机而言，一个完整的场景最多拥有 5000 至 10000个多边形是可管理的。<span class="char_link"><a href="GUID-2FF8148C-ADA3-4988-A967-606807CCBDF7.htm">细节级别</a></span>辅助对象用于管理场景中对象的多边形数量。在将对象导出到 VRML97 之前，也可以使用 <span class="charspan-msgph">3ds Max</span> 的优化修改器对其进行简化。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DDF"></a> <em class="strong">尽可能使用基本体。</em>例如，只包含一个球体的场景导出到 VRML97 文件，文件大小约为 400 字节，但是如果应用了编辑网格修改器并移动球体上的一个顶点，则 VRML97 文件大小约为 7,400 字节。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DDE"></a> <em class="strong">使用“显示统计数据”跟踪场景中的面数。</em>从标准的 HTML 页面调用 VRML97 <em class="mild">.wrl</em> 文件，然后使用嵌入命令将查看者约束到屏幕上的有限窗口中。这样不仅可以增加必须在每一帧上渲染的像素数量，而且可以使 VRML97 环境的响应速度更快。许多用户使用高分辨率（800x600 或更高），以使渲染和导航时像素的数量变大，而视频显示速度将降低。当浏览器尝试保持其实时渲染时，帧数可能下降，而导航场景将成为“块状”。使用嵌入命令可以避免出现这个问题，如
+                  &lt;embed SRC=myworld.wrl WIDTH=300 HEIGHT=200&gt; 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DDC"></a> <em class="strong">隐藏 <span class="charspan-msgph">3ds Max</span> 中某对象上的面，然后导出该对象。</em>隐藏的面显示为对象中的孔洞。当 VRML97 插件导出隐藏的对象时，并不导出隐藏的面。您知道的隐藏面在场景中永远不会出现，如位于曲面上的对象背面或对象底面。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DDB"></a> <em class="strong">使用实例可以减少拥有相同几何体的对象的文件大小。</em> 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DDA"></a> <em class="strong">使用镜像变换时，随后应立即使用“重置变换”工具。</em>您也可以立即使用“法线修改器”，然后再使用“统一法线”。VRML97 不允许镜像变换（负值缩放）。“重置变换”工具修改实际网格对象中的数据以创建镜像效果。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DD9"></a> <em class="strong">当为 vrml97 建模时，不要更改单位。</em>要以米为单位进行建模，应保持单位设置为默认值，并且将一个世界单位作为一米。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004333"></a> 
+               <h2><a name="GUID-9C2845B2-08C1-4E99-8D42-47FC1D07EECD"></a>动画
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DD8"></a> <em class="strong">当您使用变换动画和坐标插值动画时，要注意文件过大的情况。</em>VRML97 插件导出变换动画（移动、旋转和缩放）和坐标插值动画。例如，您可以设置修改器的动画，如锥化和弯曲，也可以设置更改参数的动画，如增大或减小球体半径。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DD7"></a> <em class="strong">将使用“继承链接”功能的场景导出到 vrml97 时，子对象始终继承其父对象的变换。</em>反向运动学可以正确导出到 VRML97，但是继承链接功能例外，该功能决定子对象是否继承父对象的变换。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DD6"></a> <em class="strong">应始终使用 TCB 控制器用于进行 vrbl 动画。</em>这些控制器提供了精确的控制，并且可以生成尽可能最小的文件。其他种类的控制器（如默认 Bezier 控制器）也可以创建不需要执行的大型 VRML97 文件。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DD5"></a> <em class="strong">确保您的动画永远不会随时间的推移而更改面或顶点数。</em>VRML97 不能随时间推移添加或删除面或顶点。坐标插补器只支持网格变形，而不会更改顶点数或面数。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DD4"></a> <em class="strong">若要触发未位于 <span class="charspan-msgph">3ds Max</span> 链接层顶级对象上的动画，请使用“时间感应器”辅助对象。</em>如果直接从“触动感应器”或“范围感应器”触发动画，而不使用“时间感应器”，则只能设置顶级对象的动画。通过“时间感应器”设置动画没有此限制。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DD3"></a> 如果设置基本体参数（如球体半径）的动画，并且需要使用坐标插补器导出的动画，则<em class="strong">禁用“导出”对话框中的“生成基本体”切换</em>。这只适用于长方体、球体、圆柱体和圆锥体基本体。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004334"></a> 
+               <h2><a name="GUID-029BEB6C-BDFE-4A5B-91D0-458BA966166F"></a>材质
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DD2"></a>您可以只导出标准和多维/子对象材质，也可只导出下列材质的组件： 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A19004335"></a><ul>
+                  <li>漫反射、环境光和高光颜色 </li>
+                  <li>一个纹理位图，其必须在“漫反射”通道中 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DD1"></a>为贴图使用 JPEG 或 PNG 格式，因为这些格式可以由兼容的 VRML97 浏览器识别，而且通常可以创建最小的文件。（一些旧的浏览器可以识别 GIF 格式而不能识别 PNG。）多维/子对象材质导出颜色和纹理。如果对象具有带有纹理的多维/子对象材质，则其在
+                        VRML97 中作为单独的对象导出，因为 VRML97 不支持每个对象上有多个纹理贴图。纹理贴图不仅会降低浏览器的速度，而且会延长下载时间。使用时应谨慎。 
+                     </p> 
+                  </li>
+                  <li>反光度（不是反光强度） </li>
+                  <li>不透明度 </li>
+                  <li>线框 </li>
+               </ul> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DD0"></a>确保所有大平面曲面具有足够多的顶点，从场景中所有合适的有利位置上都可以看到一些顶点。一些浏览器不能显示对象上的纹理，对象上的所有顶点都在当前视口的外部。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DCF"></a> <em class="strong">如果在场景中拥有几个灯光，则减少场景中所有灯光上的默认倍增值</em>。灯光可以使场景过于饱和，并使所有几何体褪为白色。应始终至少将一个摄影机和一个灯光添加到要导出到 VRML97 的场景中。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004336"></a> 
+               <h2><a name="GUID-C9625D30-EA3B-4B3B-B9C5-23CDF7615B6F"></a>辅助对象
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-1DCE"></a> <em class="strong">将 VRML 辅助对象插入到顶视口的场景中。</em>可以将 VRML 辅助对象插入到任何视图中，但是如果将其插入到顶视口中，则它们将在前视口中显示正确的方向。 
+               </p> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

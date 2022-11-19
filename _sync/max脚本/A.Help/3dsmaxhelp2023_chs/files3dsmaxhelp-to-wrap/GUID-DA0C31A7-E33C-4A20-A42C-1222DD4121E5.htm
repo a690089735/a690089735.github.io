@@ -1,0 +1,137 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-DA0C31A7-E33C-4A20-A42C-1222DD4121E5">
+      <meta name="description" content="本节将介绍创建和建模对象所采用的技术。">
+      <meta name="indexterm" content="修改: 对象（基本）">
+      <meta name="indexterm" content="创建: 对象（基本）">
+      <meta name="indexterm" content="对象">
+      <meta name="indexterm" content="基本体: 塌陷">
+      <meta name="indexterm" content="塌陷: 基本体">
+      <meta name="topic-type" content="topic">
+      <title>创建和修改对象的基础知识</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-DA0C31A7-E33C-4A20-A42C-1222DD4121E5"></a><div class="head">
+            <h1>创建和修改对象的基础知识</h1>
+         </div>
+         <p class="blurb">本节将介绍创建和建模对象所采用的技术。 
+            
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-51DC"></a><span class="char_link"><a href="GUID-6C4B9CF9-DCD6-42A6-A10C-F0E9C6A728AA.htm">“创建”面板</a></span>包含创建新对象的控件，这是构建场景的第一步。尽管对象类型各不相同，但是对于多数对象而言创建过程是一致的。您通常使用鼠标以交互方式创建对象；也可以使用替代方法。有关详细信息，请参见<span class="char_link"><a href="GUID-46FD7C8B-7710-4B61-9A14-C8F385D255B0.htm">创建对象</a></span>。 
+            	 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-51DA"></a><span class="char_link"><a href="GUID-022DD0C5-CDC2-4118-94EB-68C3CACA7C34.htm">“修改”面板</a></span>提供完成建模过程的控件。您可以重新修改任意对象，修改范围包括从对象的创建参数到内部几何体等方方面面。使用对象空间和世界空间修改器可以将大量效果应用到场景中的对象。该修改器堆栈允许编辑修改器序列。 
+            	 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-51D9"></a>在 <span class="charspan-msgph">3ds Max</span> 中，通过以下操作，您可以将基本<span class="char_link"><a href="GUID-2381D655-3DA8-4793-9850-2EDE003A82D3.htm">参数</a></span>对象建模为更复杂的对象： 
+            	 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190041269"></a><ul>
+            <li>更改<span class="char_link"><a href="GUID-2381D655-3DA8-4793-9850-2EDE003A82D3.htm">参数</a></span> 
+            </li>
+            <li>应用修改器 
+               		
+            </li>
+            <li>直接操纵子对象几何体 
+               		
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004126A"></a> 
+            <h2><a name="GUID-34F08079-13A2-44C1-958F-D50433BED8ED"></a>更改参数
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-51CD"></a>与物理对象不同，在固定的图形和尺寸条件下，可以改变对象和图形的创建参数来显著改变拓扑。此处是一些可进行更改的例子： 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A19004126B"></a><ul>
+               <li>通过减少边数并禁用“平滑”选项，可以将圆锥体变为四棱柱体。 
+                  		  
+               </li>
+               <li>将圆形对象当作派来进行切片。 
+                  		  
+               </li>
+               <li>对几乎所有的创建参数都设置动画，并在播放动画时交互式更改其设置。 
+                  		  
+               </li>
+               <li>以任意指定宽度渲染样条线。 
+                  		  
+               </li>
+               <li>破坏、分离并拆分墙线段。 
+                  		  
+               </li>
+               <li>改变梯级竖板数而不影响楼梯的整体升起。 
+                  		  
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004126C"></a> 
+            <h2><a name="GUID-A2A0DF75-7A5F-48E3-B75F-26958A0A2381"></a>将基本体塌陷为基本几何体
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-51CC"></a>在不需要访问几何基本体或图形的创建参数时，可以将其塌陷为一种基本几何体类型。例如，可以将任意标准基本体转换为<span class="char_link"><a href="GUID-3CBF3773-3CDC-4ED7-8C34-D0EAF9CD9F66.htm">可编辑网格</a></span>，<span class="char_link"><a href="GUID-D05DF785-F905-453E-BF64-DB4D59A9F200.htm">可编辑多边形</a></span>，<span class="char_link"><a href="GUID-FA026666-5696-4B8C-8827-200FEC8288EF.htm">可编辑面片</a></span>，<span class="char_link"><a href="GUID-C99618D4-8AB8-4476-A313-4D4519B0DDCF.htm">NURBS</a></span> 对象，并且可以将样条线图形转化为可编辑网格、<span class="char_link"><a href="GUID-60F20068-36AE-4CB8-9FE1-EEE1516AEF86.htm">可编辑样条线</a></span>或 NURBS 对象。塌陷对象的最简单方法是先将其选中，然后右键单击并从四元菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“变换”区域中选择“转换为”选项。此操作允许对对象使用显式编辑方法，比如变换顶点。也可以使用“修改”面板来塌陷基本体。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004126D"></a> 
+            <h2><a name="GUID-E452893D-B511-4AD1-BABA-60350170C8E9"></a>贴图坐标
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-51CB"></a>大多数几何体对象都有一个用于生成贴图坐标的选项。如果要对对象应用贴图材质，那么这些对象需要这些贴图坐标。贴图材质包括很大范围的渲染效果，从 2D 位图到反射和折射。请参见<span class="char_link"><a href="GUID-8D4509A6-0C08-4E7F-A459-BE60959E57DE.htm">贴图坐标</a></span>和<span class="char_link"><a href="GUID-89290E5B-D53B-4F48-8EE8-D9FB2E54AC4B.htm">使用贴图示例</a></span>。如果贴图坐标已应用于对象，则启用此功能对应的复选框。 
+               		
+            </p> 
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-6038613E-A57C-466B-975F-874E2CCBF839"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-4BC9EEAC-3B33-4D71-926B-DE843FC23C8A.htm">使用修改面板
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-911C535D-9003-4925-A064-52835C581DAA.htm">使用修改器堆栈
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-548051DF-8B78-4F76-AED7-996B9B076F08.htm">编辑堆栈
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-86AF500F-4A42-46E6-9409-0184E9DBA238.htm">在子对象层级进行工作
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-B587E47C-BA3A-4031-AC17-C13B400C238A.htm">在子对象层级使用堆栈
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-11DD6547-6143-4793-82D0-D22960CA7E37.htm">修改多个对象
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-B6B1F918-41CB-4DC9-A98A-92212324201D.htm">实例化修改器的工作方式
+                        		  </a></span></li>
+               <li><span class="char_link"><a href="GUID-D0820931-3584-49CF-945B-A10BCF9C0814.htm">变换、修改器和对象数据流
+                        		  </a></span></li>
+            </ul>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-86F256C7-EC0B-4731-A2FB-B6FF85991929.htm">使用“创建”面板</a><p>“创建”面板提供用于创建对象和调整其参数的控件。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-2B2647E7-4874-4E33-AC5A-B4684BD5E77A.htm">标识基本构建块</a><p>在“创建”面板上，几何体和图形类别提供了“构建块”来组合或修改更复杂的对象。这些是预备使用的<span class="char_link"><a href="GUID-2381D655-3DA8-4793-9850-2EDE003A82D3.htm">参数</a></span>对象。调整这些值并启用或禁用一些按钮，可以从此处的列表中创建很多“新的”构建块。 
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-46FD7C8B-7710-4B61-9A14-C8F385D255B0.htm">创建对象：标准基本体或扩展基本体</a><p>以下图像中显示的用于在“创建”面板上创建任何类型对象的步骤有一些变化。关于具体示例，请参见任何对象主题中的“步骤”部分。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-809C4903-7BE5-47BF-A752-754F9BCA8FE2.htm">为对象指定颜色</a><p> 3ds Max 是<span class="char_link"><a href="GUID-46E5468B-F5D5-488B-8019-DCE2BF2C60CB.htm">真彩色</a></span>程序。当在 3ds Max 中拾取颜色时，可以指定 24 位的颜色数据，这样可以提供超过 16 万色的范围。 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-FF29D920-7338-4614-8A72-B5C94D47889B.htm">调整法线和平滑</a><p>通常，调整法线和平滑可以为渲染准备对象。<span class="char_link"><a href="GUID-41B1C829-4551-4274-8F8C-D860C0810DAE.htm">法线</a></span>是定义面或顶点指向方向的单位矢量。平滑组 定义了是否使用边缘清晰或平滑的曲面渲染曲面。
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-4780A4ED-D22E-401E-BE1E-15B95578637D.htm">建立对象模型</a></li>
+                     <li class="topiclist-litem"><a href="GUID-FAC648D5-F56D-4044-A9A3-0795926C9397.htm">选择对象</a></li>
+                     <li class="topiclist-litem"><a href="GUID-6FDBC6E7-7C0E-45E3-B892-1AA7BA38C371.htm">移动、旋转和缩放对象</a></li>
+                     <li class="topiclist-litem"><a href="GUID-A4F35602-029C-4F6E-A361-9CEA6B05965D.htm">精度和绘制辅助对象</a></li>
+                     <li class="topiclist-litem"><a href="GUID-79998C44-22AA-4485-9608-51630079E5A7.htm">修改器</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

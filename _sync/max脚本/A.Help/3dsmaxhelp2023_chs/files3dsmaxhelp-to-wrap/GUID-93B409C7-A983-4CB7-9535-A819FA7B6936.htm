@@ -1,0 +1,72 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-93B409C7-A983-4CB7-9535-A819FA7B6936">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>对实体对象使用修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-93B409C7-A983-4CB7-9535-A819FA7B6936"></a><div class="head">
+            <h1>对实体对象使用修改器</h1>
+         </div>
+         <p><a name="WS1A9193826455F5FF-E569A012180CE58915024"></a>SAT 功能集中最有用的工作流之一是导入实体几何体，使用 <span class="charspan-msgph">3ds Max</span> 修改器使其变形，然后导出 SAT 文件（仍为 ACIS 实体格式）。 
+         </p><a name="WS1A9193826455F5FF-E569A012180CE58915022"></a><ol type="1" start="1">
+            <li>以 SAT 格式从诸如 Autodesk Inventor 或 Revit 之类的实体建模程序中导出几何体。另外，可以直接将 Inventor IAM 和 IPT 文件作为实体对象导入。您还可以从许多其他应用程序导入实体对象。 </li>
+            <li>将 SAT、IAM 或 IPT 文件导入 <span class="charspan-msgph">3ds Max</span>。 <a name="UL_C5678185E1E042B7B4FC69DAF5B6D416"></a><ul>
+                  <li>对于 SAT 文件，在“导入”对话框中将“视口实体网格质量”设置为“粗糙”。 </li>
+                  <li>对于 IAM 或 IPT 文件，作为躯干对象导入，然后在“视口显示设置”卷展栏上选择粗糙设置。 </li>
+                  <li>对于生成实体对象的其他文件格式，导入没有可自定义的设置。 </li>
+               </ul> 
+               <div><a name="WS1A9193826455F5FF-E569A012180CE58915027"></a><div class="note-tip"><span class="label label-target-language">提示</span>为了在处理大型文件（超过 100 MB）时获得最佳性能，请使用大内存系统（8 GB 或更大）并在导入前将显示设置为单视口。 
+                  </div>
+               </div> 
+               <p><a name="WS1A9193826455F5FF-E569A012180CE58915028"></a>结果是一个或多个实体对象，这是在 <span class="charspan-msgph">3ds Max</span> 中实体几何体使用的格式。 
+               </p> 
+            </li>
+            <li>选择要变形的每个实体对象，并在“修改”面板上将其“视口显示设置”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">最大边长度 %值设置为 <em class="strong">2.0</em> 或 <em class="strong">3.0</em>。 
+               <div><a name="WS73099CC142F48755-385A98B0121D1BB015F-4B02"></a><div class="note-tip"><span class="label label-target-language">提示</span>您可以通过选择多个对象并使用“实体实用程序”工具来同时调整这些对象的视口显示设置。 
+                  </div>
+               </div> 
+               <p><a name="WS73099CC142F48755-385A98B0121D1BB015F-4B01"></a>该设置提供了充足的多边形用于平面变形。 
+               </p> 
+            </li>
+            <li>对实体对象应用网格选择修改器，然后应用如弯曲或扭曲之类的变形修改器。 
+               <p><a name="WS1A9193826455F5FF-E569A012180CE5891502A"></a>网格选择修改器暂时将实体对象转换为网格格式，以使其可以更轻松地变形。 
+               </p> 
+            </li>
+            <li>调整变形修改器设置以获得所需的结果。如果您愿意，可以应用其他变形修改器并对其做出相应调整。 
+               <p><a name="WS1A9193826455F5FF-E569A012180CE5891502C"></a>以下“实体对象格式支持的修改器”页面上提供了受支持的修改器列表。 
+               </p> 
+            </li>
+            <li>或者，使用本节描述的其他 SAT 工具修改实体对象。例如，您可以将原有 <span class="charspan-msgph">3ds Max</span> 基本体转换为实体对象并将其与您的几何体合并在一起，也可以使用诸如并集、交集和差集等布尔运算。 
+            </li>
+            <li>获得所需的结果之后，请删除或关闭网格选择修改器。 
+               <div><a name="WS1A9193826455F5FF-E569A012180CE5891502F"></a><div class="note-note"><span class="label label-target-language">注意:</span>禁用网格选择之后可能会有延迟，而软件将修改器效果直接应用于实体几何体。 
+                  </div>
+               </div> 
+            </li>
+            <li>现在，您可以使用变形对象进行渲染，或以 SAT 文件的形式将其导出至实体建模程序。 </li>
+         </ol><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-FB3E2821-CECF-410C-A58D-BC8695915C39.htm">实体对象格式支持的修改器</a><p>以下是实体对象格式支持的 3ds Max 修改器列表。 </p>
+                  </li>
+               </ul>
+            </div></span><div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-5C468918-9ACC-40D7-A3A6-32BCEEEF1C10.htm">“SAT 导入”对话框</a></li>
+                     <li class="topiclist-litem"><a href="GUID-31FB2A11-506D-40B8-B3CA-F199F0A03831.htm"> “Autodesk Inventor 文件导入”对话框</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

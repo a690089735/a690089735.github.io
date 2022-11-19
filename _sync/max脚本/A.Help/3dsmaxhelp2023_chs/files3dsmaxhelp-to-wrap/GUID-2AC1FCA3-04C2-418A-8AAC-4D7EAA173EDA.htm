@@ -1,0 +1,126 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-2AC1FCA3-04C2-418A-8AAC-4D7EAA173EDA">
+      <meta name="description" content="使用这些设置可以将其他对象转变为骨骼并控制骨骼的刚性及对齐方式。">
+      <meta name="indexterm" content="骨骼工具: 对象属性">
+      <meta name="indexterm" content="骨骼: 拉伸因素">
+      <meta name="contextid" content="IDH_DIALOG_OBJECT_BONES">
+      <meta name="topic-type" content="concept">
+      <title>骨骼工具：对象属性参考</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-2AC1FCA3-04C2-418A-8AAC-4D7EAA173EDA"></a><div class="head">
+            <h1> 骨骼工具：对象属性参考</h1>
+         </div>
+         <p class="blurb">使用这些设置可以将其他对象转变为骨骼并控制骨骼的刚性及对齐方式。 </p>
+         <div class="bodyReference"><a name="UL_701F9A00835C4CF6AC25EC663AA29026"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-B5265389-E9B0-49E3-A9A4-0D89E0D47A06">默认菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “骨骼工具” <img src="../images/ac.menuaro.gif"> “骨骼工具”对话框  <img src="../images/ac.menuaro.gif"> “对象属性”卷展栏</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-56D97B5A-60DA-4B60-9A62-5CC577013357">Alt 菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “创建(动画设置)” <img src="../images/ac.menuaro.gif"> “骨骼工具” <img src="../images/ac.menuaro.gif"> “骨骼工具”对话框  <img src="../images/ac.menuaro.gif"> “对象属性”卷展栏</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-46F7"></a> 
+               <h2><a name="GUID-CCDE0008-1F1E-4923-8A07-47ACDBD7C78E"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900419A6"></a><div class="figure-anchor"><img src="../images/GUID-6A78EF3E-E9E8-4E05-BACC-1F6825F9D85F-low.png"></div>  <a name="GUID-E0D33354-D511-4D11-8FF8-4DAB4BA7C326"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7F54"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-46F6"></a>启用骨骼</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7D91"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753EDB"></a>启用此选项后，选定骨骼或对象将作为骨骼进行操作。禁用该选项后，对象会停止骨骼的行为：不会自动对齐或拉伸，且其余控件处于禁用状态。对于骨骼对象，默认设置为启用，而对于其他种类的对象，默认设置为禁用。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6108"></a><div class="note-note"><span class="label label-target-language">注意:</span>启用“启用骨骼”选项并不会使对象立即对齐或拉伸。然而，子对象未来的变换会造成旋转和拉伸。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7F53"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-46F5"></a>冻结长度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7D90"></a> 启用此选项后，骨骼将保持其长度。如果禁用此选项，骨骼长度将基于其子级骨骼的平移。默认设置为启用。 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6107"></a><div class="note-warning"><span class="label label-target-language">警告:</span>除非变换应用了“冻结长度”的对象的<em class="mild">子</em> 对象，否则启用“冻结长度”不会产生任何可见效果。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7F52"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-46F4"></a>自动对齐</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7D8F"></a> 如果禁用此选项，骨骼的轴点将不能与其子对象对齐，因此子级骨骼的平移不会转换为父级骨骼的旋转。而是允许子骨骼移离其父骨骼的 X 轴。默认设置为启用。 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6106"></a><div class="note-note"><span class="label label-target-language">注意:</span>更改“自动对齐”状态不会立即对骨骼产生视觉效果。在移动骨骼时，其将影响进一步的行为。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7F51"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-46F3"></a>校正负拉伸</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7D8E"></a> 启用该选项后，造成负比例因子的骨骼拉伸将更正为正数。默认设置为启用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7F50"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-46F2"></a>重新对齐</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7D8D"></a> 使骨骼的 X 轴对齐，并指向子骨骼（或多个子骨骼的平均轴）。 
+                        <p><a name="GUID-043F345D-5D87-49DC-8DAC-E95E4A491AEA"></a>通常将保持这种对齐方式，并且不需要使用此选项。然而，通过禁用“自动对齐”并移动子骨骼，骨骼可能不对齐。使用“重新对齐”可将骨骼再次与其子骨骼对齐。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7F4F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-46F1"></a>重置拉伸</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7D8C"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753EE0"></a>如果子骨骼移离骨骼，则拉伸该骨骼，以到达其子骨骼对象。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7F4E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-46F0"></a>重置缩放</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7D8B"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753EE1"></a>在每个轴上，将内部计算缩放的拉伸骨骼重置为 100%。由于对象均是链接和缩放形式的，因此使用此选项可以避免异常行为。此选项对于骨骼没有可见效果。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900419A7"></a> 
+                  <h3><a name="GUID-A4CB4492-AF56-49B0-A1EE-2D0DE7D57B8A"></a>拉伸因子信息
+                  </h3> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-46EF"></a>在“校正负拉伸”选项下边的文本显示提供有关所选骨骼的信息和三个轴各自的拉伸因子信息。如果选择的骨骼数目超过一个，则“拉伸因子”文本将显示为<em class="mild">未定义</em>。 
+                  </p> 
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6105"></a><div class="note-note"><span class="label label-target-language">注意:</span>“拉伸因子”文本只有在<span class="char_link"><a href="GUID-D7849466-3C9C-4098-87C1-F84ACEA70F64.htm">“骨骼编辑模式”</a></span>下更新。 
+                     </div>
+                  </div> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900419A9"></a> 
+                  <h3><a name="GUID-09C6CC03-5531-4F83-B984-1A2B66AD44C9"></a>“拉伸和轴”选项
+                  </h3> <a name="GUID-ECD7C9F1-816C-45B5-9437-616C1A77BE82"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7F4D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-46EE"></a>拉伸</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7D8A"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753EE2"></a>决定在变换子骨骼并禁用“冻结长度”时发生的拉伸种类。默认设置为“比例”。 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A1900419AA"></a><ul>
+                              <li> <em class="strong">无</em> 不发生拉伸。 
+                              </li>
+                              <li> <em class="strong">缩放</em> 用于骨骼缩放。将沿着一个轴发生拉伸。 
+                              </li>
+                              <li> <em class="strong">挤压</em> 用于骨骼挤压。挤压越短，骨骼就越宽，挤压越长，骨骼就越窄。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7F4C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-46ED"></a>轴</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7D89"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753EE3"></a>决定用于拉伸的轴。 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A1900419AB"></a><ul>
+                              <li> <em class="strong">X/Y/Z</em> 选择用于缩放或挤压的轴。 
+                              </li>
+                              <li> <em class="strong">翻转</em> 沿着选定轴翻转拉伸。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

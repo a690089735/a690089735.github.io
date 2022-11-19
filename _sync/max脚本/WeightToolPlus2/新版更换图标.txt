@@ -1,0 +1,34 @@
+SendMessage(
+  HWND   hWnd,
+  UINT   Msg,
+  WPARAM wParam,
+  LPARAM lParam
+)
+
+windows.sendMessage <int HWND> <int message> <int messageParameter1> <int messageParameter2>
+
+w参数
+要设置的图标类型。此参数可以是以下值之一。
+价值		意义
+ICON_BIG 1	设置窗口的大图标。(任务栏,ALT+Tab等等地方)
+ICON_SMALL 0	设置窗口的小图标。(仅窗口标题)
+l参数
+新的大图标或小图标的句柄。如果此参数为NULL ，则删除wParam指示的图标。
+
+应用
+WM_SETICON = 0x0080
+ICON_SMALL = 1
+Handle = System.Drawing.Icon.Handle (Icon(Stream)StringToImage里有base转为流的功能,给他改成StringToIconPtr)
+windows.sendMessage <int HWND> WM_SETICON ICON_SMALL <int messageParameter2>
+
+
+WM_GETICON = 0x007F
+
+w参数
+正在检索的图标类型。此参数可以是以下值之一。
+价值		意义
+ICON_BIG 1	检索窗口的大图标。
+ICON_SMALL 0	检索窗口的小图标。
+ICON_SMALL2 2	检索应用程序提供的小图标。如果应用程序没有提供，系统将使用系统为该窗口生成的图标。
+l参数
+正在检索的图标的 DPI。这可用于根据图标大小提供不同的图标。

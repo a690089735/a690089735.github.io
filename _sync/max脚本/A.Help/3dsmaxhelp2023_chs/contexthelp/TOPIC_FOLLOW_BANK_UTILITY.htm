@@ -1,0 +1,40 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="topic-type" content="redirect">
+      <meta name="robots" content="noindex">
+      <title>跟随/倾斜工具</title>
+   </head>
+   <body><script language="javascript">
+                        (function() {
+
+                            function isFromLocalFilesystem() {
+                                switch(window.location.protocol) {
+                                    case 'http:':
+                                    case 'https:':
+                                        //remote file over http or https
+                                        return false;
+                                        break;
+                                    case 'file:':
+                                        //local file
+                                        return true;
+                                        break;
+                                    default:
+                                        //some other protocol
+                                        return false;
+                                }
+                            }
+
+                            var search = window.location.search,
+                                indexUrl = '../index.html' + search + '#!/url=./files3dsmaxarchive/GUID-6FC7AFDA-1EF3-4672-A5B4-27E7E4D41ED9.htm',
+                                topicUrl = '../files3dsmaxarchive/GUID-6FC7AFDA-1EF3-4672-A5B4-27E7E4D41ED9.htm' + search;
+
+                            if (isFromLocalFilesystem()) {
+                                location.replace(indexUrl);
+                            } else {
+                                location.replace(topicUrl);
+                            }
+
+                        })();
+                    </script></body>
+</html>

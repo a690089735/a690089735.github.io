@@ -1,0 +1,107 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C99618D4-8AB8-4476-A313-4D4519B0DDCF">
+      <meta name="description" content="NURBS 曲线和曲面不存在于传统绘图世界中。它们是使用计算机特别为 3D 建模而创建的。曲线和曲面表示 3D 建模空间中的轮廓或形状。它们是在数学上构造出来的。">
+      <meta name="indexterm" content="NURBS: 定义">
+      <meta name="indexterm" content="NURBS: 概念">
+      <meta name="topic-type" content="concept">
+      <title>NURBS 概念</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C99618D4-8AB8-4476-A313-4D4519B0DDCF"></a><div class="head">
+            <h1>NURBS 概念</h1>
+         </div>
+         <p class="blurb">NURBS 曲线和曲面不存在于传统绘图世界中。它们是使用计算机特别为 3D 建模而创建的。曲线和曲面表示 3D 建模空间中的轮廓或形状。它们是在数学上构造出来的。 </p>
+         <p><a name="WS73099CC142F48755602CAF04118F18E7A07-628B"></a>NURBS 数学比较复杂，本节只简单介绍了一些 NURBS 概念，可以帮助您理解正在创建的内容，以及 NURBS 产生这样行为的原因。有关 NURBS 建模中数学和算法的全面描述，请参见 Les Piegl 和 Wayne Tiller 所著的
+            <em class="mild">The NURBS Book</em>（纽约：施普林格，第二版 1997）。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DD7"></a> 
+            <h2><a name="GUID-55079F9B-0DEC-4EC8-9C1D-44AC85DCBD2F"></a>定义和参数空间
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FDE"></a>术语 NURBS 表示<em class="mild">非均匀有理数 B-样条线</em>。特别的： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041DD8"></a><ul>
+               <li> <em class="mild">非均匀</em> 表示控制顶点的范围可以改变。这在建模不规则曲面时比较有用。 
+               </li>
+               <li> <em class="mild">有理数</em> 意味着用以表示曲线或曲面的方程式是用两个多项式的比值来表示的，而不是一个单个的总多项式。有理数方程式给一些重要的曲线和曲面提供了更好的模型，特别是圆锥截面、圆锥、球体等等。 
+               </li>
+               <li><em class="mild">B-样条线</em>（对于<em class="mild">基础样条线</em>）是一种在三个或更多点之间进行插补的构建曲线的方法。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FDD"></a>图形曲线，诸如“线”工具和其他“图形”工具是 Bezier 曲线，它是 B-样条线的一种特例。 
+                  </p> 
+               </li>
+            </ul> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FDC"></a>NURBS 的非均匀属性产生了重要一点。因为它们是在数学上生成的，NURBS 对象除了用以显示的 3D 几何体空间之外，还有<span class="char_link"><a href="GUID-8FCECAD7-28F8-49BB-A12A-33B2B673662A.htm">参数空间</a></span>。特别是，一个叫做<span class="char_link"><a href="GUID-B288E0A8-2854-468C-9F9E-1ED8D7071C5F.htm">结</a></span>的阵列指定了曲线或曲面上每个控制顶点（CV）的影响范围。结在 3D 空间中是不可见的，并且不可以直接地对它们进行操纵，但有时它们的行为会影响 NURBS 对象可见的外观。本主题提到了这些情况。参数空间对曲线来说是一维的，它在拓扑上仅有一个单个的
+               U 维，尽管它们在几何体上存在于 3D 空间中。曲面在参数空间中有两个维度，即 U 和 V。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FDB"></a>NURBS 曲线和曲面有个重要的属性，就是在标准几何体仿射变换或透视投影下不会发生改变。CV 可以对对象进行局部控制：移动 CV 或更改它的权重不会影响相邻 CV 之外的对象的任何部位。（使用<span class="char_link"><a href="GUID-1F84C561-C3EB-4F91-9C74-B02F3020220B.htm">软选择</a></span>控件可以覆盖此属性。）同样，连接包围曲面的 CV 的控制晶格也有此属性。此属性名为<span class="char_link"><a href="GUID-E2A2EA42-9E75-432A-BBFE-A4D070C33267.htm">凸面外壳</a></span>属性。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DD9"></a> 
+            <h2><a name="GUID-300466D2-D6CF-4774-889A-2B2E09F97A54"></a>度数和连续性
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FDA"></a>所有曲线都有<span class="char_link"><a href="GUID-0D8D3481-B10D-412A-8D54-61DDFDD03A86.htm">度数</a></span>。曲线的次数是用于表示它的方程式中最高的指数。线性方程式的次数为 1；二次方程式的次数为 2。通常，NURBS 曲线由三次方程式表示，并且次数为 3。次数可以更高，但通常没有必要。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FD9"></a>曲线还有<span class="char_link"><a href="GUID-92766A80-DDD3-4271-AE98-8C5AEDBC9C2D.htm">连续性</a></span>。连续的曲线是未断裂的。有不同<span class="char_link"><a href="GUID-FBA35B1C-27AE-4406-9FD5-D25FACAF870B.htm">级别的连续性</a></span>。带有尖角的曲线具有 C<sup> <span class="charspan-emphasis">0</span> </sup> 连续性：也就是说，该曲线是连续的，在尖角处没有派生曲线。没有类似的尖角、但曲率不断变化的曲线拥有 C<sup> <span class="charspan-emphasis">1</span> </sup> 连续性。它的派生曲线也是连续的，但其次级派生曲线却并非如此。具有不间断、恒定曲率的曲线拥有 C<sup> <span class="charspan-emphasis"> 2</span> </sup> 连续性。它的初级和次级派生曲线都是连续的。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041DDA"></a><div class="figure-anchor"><img src="../images/GUID-E7AD4F70-6B87-451B-919D-F23DBE334248-low.png"></div>  
+            <p><a name="GUID-3430BDDF-A920-46CC-AF75-5525D3689B3C"></a> <em class="strong">曲线连续性的级别：</em> 
+            </p> 
+            <p><a name="GUID-AB3DDF7D-F4E5-42F3-AD2F-179DF8E12B35"></a> <em class="strong">左：C<sup> 0</sup>，角位于顶部</em> 
+            </p> 
+            <p><a name="GUID-4FC612C4-5E0E-49F4-B5D1-7B25C356DF5C"></a> <em class="strong">中：C<sup> 1</sup>，在顶部，一个半圆形连接具有较小半径的半圆形</em> 
+            </p> 
+            <p><a name="GUID-E4EABD43-2CC2-4DE0-B154-B4A9DFA12AEF"></a> <em class="strong">右：C<sup> 2</sup>，差别很小，只是右侧不是半圆形，并且与左侧混合</em> 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FD8"></a>曲线的连续性级别还可以更高，但对于计算建模来说已经足够。通常，肉眼分辨不出连续性为 C<sup> 2</sup> 的曲线和连续性级别更高的曲线。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FD7"></a>连续性和度数是相关的。次数为 3 的方程式能成一条连续性为 C<sup> <span class="charspan-emphasis"> 2</span> </sup> 的曲线。这就是为什么 NURBS 建模中通常不需要更高度数曲线的原因。更高度数的曲线在数字上也较不稳定，因此不建议使用此类曲线。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FD6"></a>NURBS 曲线的不同分段可以有不同的连续性级别。特别是，将 CV 放置到相同的位置或使它们非常的接近，就可以降低连续性的级别。两个重合的 CV 增加了曲率。重合 CV 会在曲线中创建尖角。这个 NURBS 曲线的属性名为<span class="char_link"><a href="GUID-19ECEE88-EAF5-4B47-AF4D-E50C79D4FD77.htm">多样性</a></span>。实际上，另外的一个或两个 CV 将它们的影响合并在了曲线的邻接处。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041DDB"></a><div class="figure-anchor"><img src="../images/GUID-4C6C90F6-45E5-45AD-96A1-71D2363748D0-low.png"><p class="figure-title">在左边的顶点上有三个 CV，在右边的顶点上有两个 CV。</p>
+            </div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FD5"></a>将一个 CV 移离另外一个，就再次提高了曲线的连续性级别。在熔合 CV 时也会应用多样性。熔合的 CV 在曲线上创建了更尖锐的曲率或尖角。如果取消熔合 CV 并将一个 CV 移近另一个 CV，该效果就会消失。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FD4"></a>度数、连续性和多样性可以应用到 NURBS 曲面，也可以应用到 NURBS 曲线。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DDC"></a> 
+            <h2><a name="GUID-AB189F15-0C30-40E6-89CB-0FC715460496"></a>细化曲线和曲面
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FD3"></a> <em class="mild">细化</em> NURBS 曲线意味着添加更多的 CV。细化可以更好的控制曲线的形状。在细化 NURBS 曲线时，<span class="charspan-msgph">3ds Max</span> 会保留原始曲率。也就是说，曲线的形状并没有改变，只不过邻近的 CV <em class="mild">移离</em> 了添加的 CV。这是由于多样性的关系：如果不移动邻近的 CV，增加的 CV 将会使曲线变得尖锐。要避免产生这种效果，首先要细化曲线，然后通过变换新近添加的 CV 或调整它们的权重来更改该曲线。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041DDD"></a><div class="figure-anchor"><img src="../images/GUID-BD9631E9-2DF5-46B3-BC83-A411AB1590F5-low.png"><p class="figure-title">细化 NURBS 曲线。</p>
+            </div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FD2"></a>NURBS 曲面实际上有着与 NURBS 曲线相同的属性，只不过从一维参数空间扩展到了二维参数空间。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DDE"></a> 
+            <h2><a name="GUID-211B27F1-61DB-4A55-87B2-F76787363BB5"></a>重新参数化 CV 曲线和曲面
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FD1"></a>在细化 NURBS 曲线或曲面时，最好对它进行重新参数化。重新参数化将会调整参数空间，以在视口中编辑曲线或曲面时，使它们有好的表现。有两种方法可以重新参数化： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041DDF"></a><ul>
+               <li>弦长 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FD0"></a>弦长重新参数化可以根据每个曲线分段长度的平方根设置参数空间中结的空间。 
+                  </p> 
+               </li>
+               <li>统一 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FCF"></a>使用统一重新参数化均匀隔开各个结。均匀结向量的优点在于，曲线或曲面只有在编辑时才能进行局部更改。 
+                  </p> 
+               </li>
+            </ul> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FCE"></a>CV 曲线和曲面子对象在编辑曲线或曲面时可以选择自动重新参数化。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DE0"></a> 
+            <h2><a name="GUID-B5AB7B6E-C988-4E45-8267-EFFA6ABAA4BB"></a>点曲线和曲面概念
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FCD"></a>可以使用点曲线和点曲面，也可以使用 CV 曲线和 CV 曲面。控制这些对象的点被约束在曲线或曲面<em class="mild">上</em>。它没有控制晶格，也没有权重控制。这是一个可以方便使用的更简单的界面。同时，基于点的对象可以用以基于从属（约束）点来构建曲线，然后使用这些曲线来构建从属曲面。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FCC"></a>可以将点曲线和点曲面看作 CV 曲线和 CV 曲面的界面，它们是完全定义的 NURBS 对象。曲线或曲面的基本表示仍使用 CV 来构建。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FCB"></a>也可以将点曲线或点曲面看作依赖于它的点。可以使用“转化曲线”按钮来将点曲线或点曲面转化成 CV 形式，反之亦然。 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

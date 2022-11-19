@@ -1,0 +1,62 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-8F154028-2349-47BB-934F-C51D038CAF48">
+      <meta name="contextid" content="CHARACTERANIMATION">
+      <meta name="topic-type" content="concept">
+      <title>角色动画</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-8F154028-2349-47BB-934F-C51D038CAF48"></a><div class="head">
+            <h1>角色动画</h1>
+         </div>
+         <div class="bodyReference">
+            <p><a name="WS1A9193826455F5FF3913A1A412260CA5929-761C"></a> <span class="charspan-msgph">3ds Max</span> 包含两套完整的对各个角色设置动画的独立子系统（即 <span class="charspan-msgph">CAT</span> 和 character studio），以及一个独立的群组模拟填充系统。<span class="charspan-msgph">CAT</span> 和 character studio 均提供可高度自定义的内置、现成角色绑定，可采用 <span class="char_link"><a href="">Physique</a></span> 或<span class="char_link"><a href="GUID-9596F6EF-3569-44F2-8D6C-6EB58C30BEDD.htm">蒙皮</a></span>修改器对角色绑定应用蒙皮，两套系统均与诸多运动捕捉文件格式兼容。每套系统都具有其独到之处，且功能强大，但两者之间也存在明显区别。 
+               
+            </p><a name="FIG_9E4658480FF340D790D0ADBA4D8ECC0F"></a><div class="figure-anchor"><img src="../images/GUID-E8E02B5C-37A3-46F5-AF0F-5929D7FAFC68-low.png"><p class="figure-title">美工人员：Roberto Ziche</p>
+            </div>
+            <p><a name="WS73099CC142F487551FEA285E1221E4F9FF8-665F"></a>确定哪套系统最适合您目前正在开展的特定项目的最佳方法是学习两套系统，并根据您的体验做出决策。但是，如果您迫于时间压力，请阅读以下快速比较，并浏览两套系统的帮助。 
+               
+            </p><a name="WS73099CC142F487551FEA285E1221E4F9FF8-665E"></a><ul>
+               <li> <em class="strong">CAT (Character Animation Toolkit)</em> 
+                  <p><a name="GUID-58DD4125-0E25-4E66-9818-064432A6BF77"></a>CAT 虽然非常复杂，但在某些方面比 character studio 角色动画系统更简单。使用 CAT，可以更轻松地装备和制作多腿角色和非类人角色的动画，它也可以很逼真地制作类人角色的动画。CAT 的内置装备包括许多多肢生物，例如，具有 4
+                     条腿和一对翅膀的龙、蜘蛛和具有 18 条腿的蜈蚣。通过使用基于图形的 CATMotion 编辑器，可以沿着路径轻松设置这些生物的动画，而不会产生脚步滑动效果。CATMotion 最适合通过调整躯干部位（如骨盆）的参数来实时修改循环运动；这些参数包括“扭曲”、“滚动”、“上下倾斜”、“抬起”和“推力”。
+                     
+                     	 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF3913A1A412260CA5929-761B"></a>另一个强大而使用简单的 <span class="charspan-msgph">CAT</span> 功能是分层系统，此分层系统可在 CATMotion（适用于个别躯干部位循环）和整个装备层级使用，并在这两个层级设置关键帧权重。后一种情况支持对层进行颜色编码，因此，您很容易看到在任意给定时间参与运动的层。<span class="charspan-msgph">CAT</span> 还支持混合 FK 和 IK，以进行自定义控制。 
+                     	 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF3913A1A412260CA5929-7C53"></a>最后，<span class="charspan-msgph">CAT</span> 提供肌肉和肌肉股对象，以模拟角色肌肉组织。 
+                     	 
+                  </p> 
+               </li>
+               <li> <em class="strong">character studio</em> 
+                  <p><a name="GUID-F4A41AF3-7DCB-4FBA-816E-72DA90BB4A23"></a>Character Studio 包括丰富的角色动画工具集，可用于多腿角色，但主要用于两足动物装备；因此其基本装备对象的名称为：Biped。同时，character studio 也包括用于为角色绑定应用蒙皮的 Physique 修改器部件。Physique
+                     可用于除 Biped 以外的装备对象，并提供用户可定义的刚性和变形蒙皮分段等功能。第三个 character studio 组件为群组，用于对具有回避行为、随机运动行为和曲面跟随行为的大型角色组设置程序动画。 
+                     	 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF3913A1A412260CA5929-7C52"></a>Biped 是最先进、功能最强大的 character studio 组件。其功能包括创建程序足迹（行走）、自由形式动画、一个名为“工作台”的专用动画编辑器，以及一个名为运动混合器的非线性动画功能（也可用于一般动画）。此外，运动流功能还提供随机脚本生成、程序过渡等功能。
+                     
+                     	 
+                  </p> 
+               </li>
+            </ul>
+            <div class="section"><a name="SECTION_7185043037C7445DB04AC4F75F7EB8B4"></a> 
+               <h2><a name="GUID-2622EEA7-5F83-414D-9474-E6685C76D7B4"></a>填充
+               </h2> 
+               <p><a name="GUID-21375369-2CD6-4E30-9B0B-A9BCC1325E5B"></a>填充角色动画功能非常适合制作包含许多人的场景。 
+                  
+               </p> <a name="FIG_BFDA8EF23D764D3EBF3804B8800F1CAD"></a><div class="figure-anchor"><img src="../images/GUID-EAC201A4-6A01-412A-B43F-B4F501B79504-low.png"></div>  
+               <p><a name="GUID-D8B4AE89-990C-4B23-AF75-61B2D50F9713"></a>填充系统包含一些工具，可快速对沿路线（例如路径和人行道）移动以及在特定区域闲逛（包括静坐和站立）的人设置动画。这样，您便可以通过控制角色的外观、动作、交互、速度、分辨率等设置来调整群组外观。您可以通过传统的手动编辑，使用保存的纹理和烘焙的动画进一步自定义填充群组的外观和动画。
+                  
+                  
+               </p> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

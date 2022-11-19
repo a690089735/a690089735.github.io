@@ -1,0 +1,58 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-17BC12A7-2218-4313-9FC3-F0B7F62DAC3F">
+      <meta name="description" content="使用 MAXScript 变量 pop.turnopt，可以调整行人相交时的转向方式。">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="customizing">
+      <title>行人转向选项</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-17BC12A7-2218-4313-9FC3-F0B7F62DAC3F"></a><div class="head">
+            <h1>行人转向选项</h1>
+         </div>
+         <p class="blurb">使用 MAXScript 变量 <span class="code">pop.turnopt</span>，可以调整行人相交时的转向方式。 
+         </p>
+         <div class="bodyReference">
+            <p><a name="GUID-F2462CCA-C4C8-4079-85AC-96197A38EA40"></a>在“MAXScript 迷你侦听器”或“MAXScript 侦听器”窗口中，可以设置 <span class="code">pop.turnopt</span> 的值。 
+            </p>
+            <div><a name="GUID-16AD3A3C-006F-49BA-9D44-E3E57A3A97AE"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>对 <span class="code">pop.turnopt</span> 值所做的更改仅对当前的 <span class="charspan-msgph">3ds Max</span> 会话有效。此值不会与 MAX 场景文件一起保存。 
+               </div>
+            </div>
+            <p><a name="GUID-1699771C-1B3F-4B5F-83E6-14B129B80933"></a> 以下为 <span class="code">pop.turnopt</span> 的可能设置： 
+            </p><a name="GUID-FD2A168F-FA9D-41A9-848F-9ADD3E9542A3"></a><dl><a name="GUID-AA906CE9-74CD-457E-B9A6-532A4F8AE5FD"></a><dt><span class="term"><a name="GUID-D27A58C7-B433-432D-BDF7-FFD90E19C192"></a> <span class="code">pop.turnopt=#maxspeed</span> </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-E4810F66-9F3E-44CE-AF12-8E312B48EE34"></a>如果需要加快速度以避开其他人，行人会选择这种转向从而以最快的速度通过相交处。 
+                     <p><a name="GUID-BF5D000C-68EA-4BEE-BAEC-5FBC7D937708"></a>该设置可以让行人快速通过相交处，从而有助于避免交通堵塞。 
+                     </p> 
+                  </div>
+               </dd><a name="GUID-2E2A0719-DAD3-464A-B75B-DA1EA97CBB49"></a><dt><span class="term"><a name="GUID-2E4ABA9E-465C-450C-BD78-7B44A70E12CD"></a> <span class="code">pop.turnopt=#maxdistribution</span> </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-E0736DE5-3D42-4680-95DF-74E497AACC35"></a> 行人选择这种转向，可以提供尚未被长时间占用的引出车道。这将在整个引出流中均匀分布行人。 
+                  </div>
+               </dd><a name="GUID-0AE73058-2764-414E-92BD-578CC458F35D"></a><dt><span class="term"><a name="GUID-1F01620F-DFDC-4DE4-84D6-688F972AE5E1"></a> <span class="code">pop.turnopt=#mindistance</span> </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-38EB7213-67C1-496B-8796-FD49DE9A2949"></a> 行人选择这种转向，需要他们移动最短的距离。 
+                  </div>
+               </dd><a name="GUID-DFEDBC5C-EAB8-409F-99B1-CBC0BD90ED3F"></a><dt><span class="term"><a name="GUID-D09CE930-61A8-48A9-A7D2-629C35D0BF37"></a> <span class="code">pop.turnopt=#hybrid</span> </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-9BEA286A-F33C-4154-8647-08D6B8FE50AC"></a>（默认设置。）行人基于以上所有设置的组合选择转向。 
+                  </div>
+               </dd>
+            </dl>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-C8019A8A-207F-48A0-985E-18D47FAD8F36.htm"> MAXScript 侦听器</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

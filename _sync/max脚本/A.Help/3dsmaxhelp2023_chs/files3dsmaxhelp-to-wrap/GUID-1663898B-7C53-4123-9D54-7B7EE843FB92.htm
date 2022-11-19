@@ -1,0 +1,297 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-1663898B-7C53-4123-9D54-7B7EE843FB92">
+      <meta name="description" content="布料修改器是布料系统的核心，应用于布料模拟组成部分的场景中的所有对象。该修改器用于定义布料对象和冲突对象、指定属性和执行模拟。其他控件包括创建约束、交互拖动布料和清除模拟组件。">
+      <meta name="indexterm" content="修改器: 布料">
+      <meta name="indexterm" content="布料修改器">
+      <meta name="indexterm" content="对象空间修改器: 布料">
+      <meta name="indexterm" content="布料修改器: 纺织品行为">
+      <meta name="indexterm" content="约束: 和布料">
+      <meta name="indexterm" content="布料修改器: 撕裂">
+      <meta name="indexterm" content="撕裂布料">
+      <meta name="contextid" content="CLOTHMOD.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS-CLOTHMOD">
+      <meta name="topic-type" content="concept">
+      <title>布料修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-1663898B-7C53-4123-9D54-7B7EE843FB92"></a><div class="head">
+            <h1>布料修改器</h1>
+         </div>
+         <p class="blurb">布料修改器是布料系统的核心，应用于布料模拟组成部分的场景中的所有对象。该修改器用于定义布料对象和冲突对象、指定属性和执行模拟。其他控件包括创建约束、交互拖动布料和清除模拟组件。 </p>
+         <div class="bodyReference"><a name="UL_FA8A4C28ACD6450382B985EAD740723F"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-4D372357-6293-4506-B461-FF9EC300C62C"> 选择对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “布料”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-FAB3CD11-87B4-41D2-A387-BE849624719A"> 选择对象。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “布料” <img src="../images/ac.menuaro.gif"> “布料”</span> 
+               </li>
+            </ul><a name="WS1A9193826455F5FFBA679E112A6A1900436BA"></a><div class="figure-anchor"><img src="../images/GUID-34FE9778-6DF7-4C2E-BAD6-13804D24C5B0-low.png"></div>
+            <p><a name="GUID-AB298400-4768-4DEA-87BE-0F6DAE8EF15C"></a> <em class="strong">左：尚未应用布料修改器</em> 
+            </p>
+            <p><a name="GUID-51D8E685-6994-4F6E-8356-D0A4CCEA95C3"></a> <em class="strong">右：已应用布料修改器并进行模拟</em> 
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900436BB"></a> 
+               <h2><a name="GUID-4D034306-5B45-4053-ADBC-CEAB25326A13"></a>基本概念
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4452"></a>在布料模拟中，需要让布料知道哪些对象将成为模拟的一部分，而哪些对象不是模拟的一部分。在完成上述操作之后，要定义制作的对象。此外还可以指定布料材质，以及什么是固体冲突对象。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4451"></a>由于布料是修改器，因此其实例将指定给每个要包括在布料模拟中的对象。这其中包括所有布料对象和冲突对象。注意分别带有单独布料修改器应用程序的布料对象彼此将不会交互。我们可以采用多种方式将对象包括在模拟中： 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900436BC"></a><ul>
+                  <li>一次性选择所有对象，然后对其应用布料修改器。 </li>
+                  <li>对一个或多个对象应用布料，然后使用“添加对象”按钮来添加对象，该按钮位于“对象”卷展栏和<span class="char_link"><a href="GUID-0067DEB6-968E-4CD8-B019-C0E638CFA151.htm">“对象属性”对话框（布料）</a></span>上。 
+                  </li>
+               </ul> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900436BD"></a> 
+                  <h3><a name="GUID-6C5723FC-5E66-48EA-9F2F-498CD5B31A7E"></a>测量单位
+                  </h3> 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E944"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>只有当您在应用布料修改器后更改系统单位时，以下信息才是必要的。如果您在应用布料之前更改系统单位，则修改器会自动调整厘米/单位设置。 
+                     </div>
+                  </div> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4450"></a>在进行布料模拟时考虑尺寸大小非常重要。一面大幅的旗帜和手帕的行为不同。如果关闭了比例，那么模拟也将关闭。由于布料处理的是真实世界中的物理，所以它在真实世界单位中工作。这意味着布料需要知道 <span class="charspan-msgph">3ds Max</span> 中的单位与现实世界中的单位之间的关系。 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-444F"></a>例如，假定创建的平面为 10 x 10 的 <span class="charspan-msgph">3ds Max</span> 单位。如果希望此平面的行为与 10 英寸 x 10 英寸手帕的行为类似，则需要告知布料 1 个 <span class="charspan-msgph">3ds Max</span> 单位=1 英寸。如果希望此平面的行为与 10 英尺 x 10 英尺床单类似，则需要告知布料 1 个 <span class="charspan-msgph">3ds Max</span> 单位=1 英尺。 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-444E"></a>除此部分开头所述情形之外，布料将忽略 <span class="charspan-msgph">3ds Max</span> 系统单位设置（“自定义”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“单位设置”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“系统单位设置”下）。布料具有其自带的单位设置，该设置是由“模拟参数”卷展栏中的<span class="char_link"><a href="GUID-52F1A597-3471-49E3-8898-EA292544709B.htm#WSF742DAB04106313366400BF6112A1CEA097-7F99">厘米/单位参数</a></span>确定的。通过该参数可以告知布料1 个 <span class="charspan-msgph">3ds Max</span> 单位等同于多少厘米 (cm)。由于 1 英寸等于 2.54 厘米，因此默认设置 2.54 意味着 1 个 <span class="charspan-msgph">3ds Max</span> 单位等同于 1 英寸。 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-444D"></a>通过以下步骤可以确定此处使用的设置。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A1900436BF"></a><ol type="1" start="1">
+                     <li>使用测量工具或卷尺辅助对象以 <span class="charspan-msgph">3ds Max</span> 单位测量布料（或角色）的尺寸（此数字称为 x）。 
+                     </li>
+                     <li>确定您希望该对象在现实世界中的大小，然后将该数字转化为以厘米为单位的数字。如果您掌握的尺寸以英寸为单位，则只需乘以 2.54（称此数字为 y）。 </li>
+                     <li>厘米/单位 = y/x </li>
+                  </ol> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-444C"></a>以下是一个快速参考示例：您将文件 <em class="mild">man.obj</em> 导入到 <span class="charspan-msgph">3ds Max</span> 中，并希望为其穿上一件衬衫。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A1900436C0"></a><ol type="1" start="1">
+                     <li>通过测量工具，您发现此人身高为 170 个 <span class="charspan-msgph">3ds Max</span> 单位。因此 y=170。 
+                     </li>
+                     <li>确定该角色身高 6 英尺。 <a name="WS1A9193826455F5FFBA679E112A6A1900436C1"></a><ul>
+                           <li>6 英尺=72 英寸。 </li>
+                           <li>且 72 英寸=72x2.54=182.88cm。所以 x=182.88 </li>
+                        </ul> 
+                     </li>
+                     <li>现在的值即可确保衬衫行为的正确。Cm/unit=y/x=170/182.88=0.929。由于在此并不需要很高的精度，您还可将微调器的值圆整为 1.0。 </li>
+                  </ol> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900436C3"></a> 
+                  <h3><a name="GUID-0264E34A-9A8F-4D1C-975F-7D64F9C465E3"></a>织物行为
+                  </h3> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-444B"></a>布料提供多种不同的方式来设置织物行为。您可以令布料的行为类似于皮革、丝绸、粗麻布和任意介于其间的材料。 
+                  </p> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900436C6"></a> 
+                  <h3><a name="GUID-9833B12C-69DE-4AFE-8171-B75C7C1F1096"></a>模拟
+                  </h3> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-444A"></a>在设定所有参数之后，我们已经准备就绪，可以开始模拟了。一般情况下，将先执行本地模拟来令织物和角色相匹配。在织物就位之后，可以多次模拟。 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4449"></a>在布料中运行模拟非常轻松。您可以对模拟做出多种更改和编辑，将其作为一个不断完善的过程，而非一蹴而就的场景。 
+                  </p> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900436C7"></a> 
+                  <h3><a name="GUID-D55C7375-705A-457F-BEF4-F781E94772F0"></a>约束
+                  </h3> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4448"></a>您可采用多种方式约束织物来在模拟期间创建不同的织物效果。布料可以约束布料具有额外的拖拽效果，就仿佛其在空气中飘荡，或者还可以令其受到场景中空间扭曲的影响。将一部分织物链接到动画对象或附加到曲面是其他常见约束。例如，创建裤子时要将裤子的顶部约束到角色的腰部；或者需要将窗帘约束到拉杆上。约束条件非常重要，同时也是布料的强大部分。布料可以创建多组约束顶点，以获取最大的灵活性。此外还可以将衣服的众多不同组成部分约束到不同节点曲面或其他布料对象。
+                     
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4447"></a>布料中的约束可在修改器的<span class="char_link"><a href="GUID-ECB0A8D3-8015-4AFA-B976-5FE8303E50AB.htm">“组”子对象层级</a></span>创建。在此处，可以看到布料和冲突等所有选定对象的顶点。随后您可以选择这些对象并将其置于组中。在定义组之后，可将选择集附加或“约束”到另一对象，或令其受到外力的影响。 
+                  </p> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-4B78"></a> 
+                  <h3><a name="GUID-0A25E1CB-CA85-4340-BE00-70A2A1AAE0CF"></a>撕裂布料
+                  </h3> 
+                  <p><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-4B77"></a>布料可以撕裂。有关如何执行此操作的示例，请参见<span class="char_link"><a href="GUID-1663898B-7C53-4123-9D54-7B7EE843FB92.htm#WS1A9193826455F5FF-5F02F21611D6C557ADA-4B75">此步骤</a></span>。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-480F"></a>在模拟过程中，布料在以下几种情况下会撕裂： 
+                  </p> <a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-480E"></a><ul>
+                     <li>布料在力的作用下受到拉扯，导致其撕裂。 
+                        <p><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-480C"></a>“强度”或“撕裂阈值”值（此二者相同）可用来设置撕裂布料的难易程度。 
+                        </p> 
+                     </li>
+                     <li>布料与设置为“剪切布料”的冲突对象相冲突。请参见<span class="char_link"><a href="GUID-A4692D86-F486-4348-9892-1E37B69F6F1E.htm">碰撞属性</a></span>。 
+                     </li>
+                  </ul> 
+                  <p><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-480A"></a>运行模拟之前，必须指定布料将撕裂的位置。为此，有以下几种不同方法可供选择： 
+                  </p> <a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-4809"></a><ul>
+                     <li>在布料或 Garment Maker 中，将接合口设置为可撕裂。 
+                        <p><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-4807"></a>请参见<span class="char_link"><a href="GUID-14B22619-1F27-494A-B496-F00CC032595D.htm">接缝子对象层级（布料）</a></span>、<span class="char_link"><a href="GUID-1374A57E-1D5B-4326-A1F3-A5A8ED0B7780.htm">曲线子对象层级 (Garment Maker)</a></span> 和<span class="char_link"><a href="GUID-B820951A-68B9-4B02-850C-1A7D0E04662D.htm">接缝子对象层级 (Garment Maker)</a></span>。 
+                        </p> 
+                     </li>
+                     <li>在布料修改器中，使用“组”子对象层级选择将撕裂的顶点，然后单击“制造撕裂”创建撕裂。 
+                        <p><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-4805"></a>请参见<span class="char_link"><a href="GUID-FF3EC329-A154-418A-B613-F3D39F3A8364.htm">组卷展栏（布料）</a></span>。 
+                        </p> 
+                     </li>
+                     <li>在布料修改器中，选择将撕开的两个布料元素，然后在“组”子对象层级通过选择顶点将其边结合起来，再单击“焊接”。 
+                        <p><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-4803"></a>请参见<span class="char_link"><a href="GUID-FF3EC329-A154-418A-B613-F3D39F3A8364.htm">组卷展栏（布料）</a></span>。 
+                        </p> 
+                     </li>
+                  </ul> 
+                  <div class="section"><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-48C4"></a> 
+                     <h4><a name="GUID-A7521CD6-958C-4F4D-A8FE-B352B9DEF39F"></a>撕裂布料和点缓存修改器
+                     </h4> 
+                     <p><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-4802"></a>如果使用<span class="char_link"><a href="GUID-BBD466E2-DC18-467C-958F-B06E2C575EA3.htm">“点缓存”修改器</a></span>优化布料动画，则有可能在发生撕裂之前不能正确平滑撕裂。要修复此问题，可以将<span class="char_link"><a href="GUID-BDBF3EA8-7EC3-4949-A140-E9A2339EA0AE.htm">“焊接”修改器</a></span>添加至堆栈。将“焊接”放置于“点缓存”修改器上方。<em class="mild"></em> 
+                     </p> 
+                  </div> 
+               </div> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-29A6"></a> 
+               <h2><a name="GUID-41CE5746-9CFE-4507-B8C6-523726D36CED"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900436C9"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900436CA"></a>示例：要使用“保持形状”选项，请执行以下操作：
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4446"></a>如果布料对象以您想在模拟过程中保留的 3D 图形开始，则可以使用“保持形状”选项和设置保留此图形或甚至反转它。此简单步骤提供如何使用“保持形状”的示例。 
+               </p>
+               <ol type="1" start="1">
+                  <li>在“顶”视口或“透视”视口中，创建“平面”基本体对象，该对象约为 90 x 90 单位并且为 20 段 x 20 段。 </li>
+                  <li>应用弯曲修改器，将“角度”设置为 <em class="strong">250.0</em>，将“弯曲轴”设置为 X。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4445"></a>这将生成初始管状图形。 
+                     </p> 
+                  </li>
+                  <li>  复制弯曲平面两次，以便在一行中具有三个平面。重命名平面，如下所示： <a name="WS1A9193826455F5FFBA679E112A6A1900436CB"></a><ul>
+                        <li> <em class="strong">未保持图形</em> 
+                        </li>
+                        <li> <em class="strong">保持形状</em> 
+                        </li>
+                        <li> <em class="strong">反转图形</em> 
+                        </li>
+                     </ul> <a name="WS1A9193826455F5FFBA679E112A6A1900436CE"></a><div class="figure-anchor"><img src="../images/GUID-D8E41E51-4C4B-4D73-9858-E4B16C6A96D4-low.png"></div>  
+                  </li>
+                  <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择所有三个平面并应用布料修改器。 
+                  </li>
+                  <li>在“模拟参数”卷展栏上，禁用“重力”并将厘米/单位设置为 <em class="strong">0.5</em>。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4444"></a>禁用“重力”使布料对象在模拟期间不会滑落，使它们处于视图中，并降低平面相对大的尺寸的厘米/单位设置补偿。 
+                     </p> 
+                  </li>
+                  <li>在“对象”卷展栏上，单击“对象属性”。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4443"></a>这会打开“对象属性”对话框。 
+                     </p> 
+                  </li>
+                  <li>在“模拟对象”列表中，高亮显示所有三个平面（通过拖动），然后在“布料属性”组中选择“布料”。同时，将“U 弯曲”设置为 <em class="strong">500.0</em>。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4442"></a>这也会将“V 弯曲”自动设置为 500.0。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4441"></a>通过使用高的弯曲值允许更快速地进行模拟。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4440"></a>下一步，分别为每个对象设置不同的“保持形状”属性。 
+                     </p> 
+                  </li>
+                  <li>高亮显示列表中的<em class="mild">反转图形</em>对象并将“弯曲 %”值设置为 <em class="strong">–100.0</em>。 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E945"></a><div class="note-note"><span class="label label-target-language">注意:</span>默认值是 100.0。 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>单击“确定”退出该对话框。 </li>
+                  <li>选择<em class="mild">不保持形状</em>对象，并确保禁用“对象”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“已选的对象操纵器”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“使用目标状态”。 
+                  </li>
+                  <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择<em class="mild">反转图形</em>和<em class="mild">保持形状</em>对象，但不要选择<em class="mild">不保持形状</em>，然后启用“使用目标状态”。 
+                  </li>
+                  <li>在“对象”卷展栏，单击“模拟本地”。 <a name="WS1A9193826455F5FFBA679E112A6A1900436CF"></a><div class="figure-anchor"><img src="../images/GUID-A75781AD-3A01-45D2-8966-F06643E477DD-low.png"></div>  
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-443F"></a>几秒钟之后，<em class="mild">不保持形状</em>对象开始变得平缓，<em class="mild">保持形状</em>对象保持不变，而<em class="mild">反转图形</em>对象实际上反转了其图形，从而有效地创建了负的弯曲角度。 
+                     </p> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E946"></a><div class="note-tip"><span class="label label-target-language">提示</span>也可以使用带有“抓取状态”的“目标状态”进行维持，或使用前面的布料模拟或形状更改修改器反转创建的图形。 
+                        </div>
+                     </div> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-4B76"></a><p class="list-intro"><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-4B75"></a>示例：要撕裂一块布料，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>在“顶”视口中，<img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png"> <img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png"> 创建一个平面。使其每一边为大约 <em class="strong">150</em> 单位。将其“长度分段”和“宽度分段”均设置为 <em class="strong">7</em>。 
+                  </li>
+                  <li>同时在“顶”视口中创建两个 <img src="../images/GUID-9A23D2B8-9CE2-40BE-98B6-651DBC94F4F7-low.png"> 虚拟对象：在平面每侧各创建一个对象。 <a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-48C2"></a><div class="figure-anchor"><img src="../images/GUID-8C8D7E09-FE44-49AA-BD5C-B1983E1493CE-low.png"><p></p>
+                        <p class="figure-title">该平面两侧为两个虚拟对象</p>
+                     </div>  
+                  </li>
+                  <li>启用 <img src="../images/GUID-859D11E8-44CA-4A08-A696-F5A17CA856E0-low.png">。转到第 100 帧，然后设置每个虚拟对象的动画，以使其沿其 X 轴移动至距离该平面约 <em class="strong">300</em> 个单位：向左移动左侧虚拟对象，向右移动右侧虚拟对象。 
+                  </li>
+                  <li>禁用 <img src="../images/GUID-48CE32A3-32F5-433A-B89D-C6F12E6A7C44-low.png">。 
+                  </li>
+                  <li><img src="../images/GUID-053B5CEA-6C73-4C16-86BF-922183E4D628-low.png"> 返回第 0 帧。 
+                  </li>
+                  <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择平面。转到 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板，将布料修改器应用于平面。 
+                  </li>
+                  <li>在“对象”卷展栏上，单击“对象属性”。<span class="charspan-msgph">3ds Max</span> 将打开布料的“对象属性”对话框。在对象列表中，单击 <em class="mild">Plane01</em> 将其高亮显示，选择布料单选按钮以使 <em class="mild">Plane01</em> 如同布料一样，然后单击“确定”（保持所有默认“布料属性”设置）。 
+                  </li>
+                  <li>在“修改器”堆栈中，转至“组”子对象层级。 <a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-48BB"></a><div class="figure-anchor"><img src="../images/GUID-AAC097B8-2E0C-4BA8-A7A4-14C8AA17ADD4-low.png"></div>  
+                  </li>
+                  <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 沿平面左侧选择顶点，然后在“组”卷展栏上单击“生成组”。单击“确定”以接受默认名称 <em class="mild">Group01</em>。保持在“组”列表中高亮显示 <em class="mild">Group01</em>，单击“节点”，然后在视口中单击左侧虚拟对象以将其指定至该组。 
+                  </li>
+                  <li>对右侧列顶点和右侧虚拟对象重复步骤 9。 </li>
+                  <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择中间两列平面顶点，然后在“组”卷展栏上单击“制造撕裂”。单击“确定”接受默认名称。 <a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-48B7"></a><div class="figure-anchor"><img src="../images/GUID-AE37A0B0-E6E0-4986-BB32-8979FBA0B5AC-low.png"><p></p>
+                        <p class="figure-title">选择要在布料中创建撕裂的中心顶点</p>
+                     </div>  
+                     <p><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-48B6"></a><span class="charspan-msgph">3ds Max</span> 将创建新的“焊接”约束，该约束包括布料平面中心的顶点。 
+                     </p> <a name="WS73099CC142F487551A80AE1B11DF600637E-4B3C"></a><div class="figure-anchor"><img src="../images/GUID-03FAE0D6-B68B-4583-9748-29A8B1362C13-low.png"><p></p>
+                        <p class="figure-title">单击“制造撕裂”之后</p>
+                     </div>  
+                  </li>
+                  <li>在修改器堆栈中，单击“布料”以返回到顶级。 <a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-4800"></a><div class="figure-anchor"><img src="../images/GUID-1F8253AE-1D64-4575-AE60-F0C84AED803B-low.png"></div>  
+                  </li>
+                  <li>在“对象”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“模拟”组中，单击“模拟”。 
+                     <p><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-48B3"></a><span class="charspan-msgph">3ds Max</span> 将设置虚拟对象拉扯布料的动画。布料随之沿设置撕裂的顶点撕裂。 
+                     </p> <a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-48B2"></a><div class="figure-anchor"><img src="../images/GUID-FDE2CC4F-D308-4BC4-B3AC-991C6D080A38-low.png"><img src="../images/GUID-E54004C8-77EE-4FBC-98CB-789721776745-low.png"><img src="../images/GUID-D6C12F70-3464-4831-80AB-E23E692DAE40-low.png"><p></p>
+                        <p class="figure-title">布料随着其边缘被拉开而在中心开裂</p>
+                     </div>    
+                     <p><a name="WS1A9193826455F5FF-5F02F21611D6C557ADA-48B1"></a>根据虚拟对象位置的不同，您在示例中所见到的撕裂可能与这些图中所示的有所不同。 
+                     </p> 
+                  </li>
+               </ol> <a name="WSF742DAB04106313366400BF6112A1CEA097-7FA6"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900436D0"></a>要使用联网的渲染处理场运行布料模拟，请执行以下操作：
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-443E"></a>复杂布料模拟不仅需要大量计算，而且要花费很长的时间。布料包含使其易于在联网计算机上（渲染处理场的一部分）运行模拟的命令，从而可以释放计算机的空间，以用于场景的其他部分。 
+               </p>
+               <ol type="1" start="1">
+                  <li>设置模拟。 </li>
+                  <li>对于模拟过程中的每个布料对象，<img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 都要选中该对象，然后在“选定对象”卷展栏上，单击“设置”，并指定缓存的路径和文件名。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-443D"></a>为了获得最佳效果，应指定映射的驱动器，并启用“强制 UNC 路径”。从而可以使用通用命名约定指定该路径，以便网络中的所有计算机都可以找到它。此外，将所有缓存文件保留在相同的目录中也是一种不错的方法。 
+                     </p> 
+                  </li>
+                  <li>在“模拟参数”卷展栏上，关闭“随渲染模拟”。 </li>
+                  <li><img src="../images/GUID-95B9A962-E099-41F0-A77C-483A8C26CF5F-low.png"> 保存此场景文件。 
+                  </li>
+                  <li>打开 <img src="../images/GUID-D7B21710-141B-4E81-BB93-6175D09E68D0-low.png">“渲染设置”对话框。 
+                  </li>
+                  <li>从“渲染设置”对话框 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“目标”下拉列表中，选择“提交到网络渲染”。 <a name="FIG_0CD40331B35F4149A1D59F4C9478011D"></a><div class="figure-anchor"><img src="../images/GUID-8866D286-75E5-48B2-B7D1-0E6ED2BEDD87-low.png"></div>  
+                  </li>
+                  <li><span class="charspan-msgph">3ds Max</span> 将打开“网络作业分配”对话框。将该作业提交到单个服务器上。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-443C"></a>与渲染不一样，网络布料模拟不能在多台服务器计算机之间拆分。 
+                     </p> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E947"></a><div class="note-note"><span class="label label-target-language">注意:</span>您无需渲染整个动画即可触发缓存的创建；单帧就足够了。 
+                        </div>
+                     </div> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-443B"></a>只要服务器计算机启动渲染，它就开始计算模拟并将结果保存到磁盘。通过单击“加载”按钮，您可以在任意位置从缓存文件加载最新状态的模拟，以检查其进度。 
+                     </p> 
+                  </li>
+               </ol> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-BA9BAB13-C43D-4EBD-B10E-97254DB061E9"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-0067DEB6-968E-4CD8-B019-C0E638CFA151.htm">“对象属性”对话框 (布料) </a></span></li>
+               <li><span class="char_link"><a href="GUID-91EB1429-BC7A-49A4-B305-65CE8E824FF9.htm">布料和 Garment Maker 修改器 </a></span></li>
+               <li><span class="char_link"><a href="GUID-3C9D7D8B-FEEF-4F35-8F90-65C32605C1CA.htm">布料和 Garment 概述 </a></span></li>
+               <li><span class="char_link"><a href="GUID-A83EFE96-DB1E-4C50-93D9-CBA62538E6D3.htm">Garment Maker 修改器 </a></span></li>
+            </ul>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-F6B90AEA-5BFE-4DB7-83CB-2FB6CC4AD390.htm">“对象”卷展栏 (布料)</a><p>在应用布料修改器之后，“对象”卷展栏是“命令”面板上可以看到的第一个卷展栏。其中包括了创建布料模拟和调整织物属性的大部分控件。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-0B1672D8-5EFE-4A6D-A202-83049032E39B.htm">选定“对象”卷展栏 (布料)</a><p>“选定的对象”卷展栏用于控制模拟缓存、使用纹理贴图或插补来控制并模拟布料属性（可选），以及指定弯曲贴图。此卷展栏只在模拟过程中选中单个对象时显示。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-52F1A597-3471-49E3-8898-EA292544709B.htm">“模拟参数”卷展栏 (布料)</a><p>“模拟参数”卷展栏设置用于指定重力、起始帧和缝合弹簧选项等常规模拟属性。这些设置在全局范围内应用于模拟，即应用于模拟中的所有对象。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-ECB0A8D3-8015-4AFA-B976-5FE8303E50AB.htm">“组”子对象层级 (布料)</a><p>“组”可用于选择成组顶点，并将其约束到曲面、冲突对象或其他布料对象。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-9AD948E7-5BB8-469E-A1B3-A8C54473E31C.htm">“面板”子对象层级 (布料)</a><p>在“面板”子对象层级上，您可以随时选择一个面板（布料部分），并更改其布料属性。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-14B22619-1F27-494A-B496-F00CC032595D.htm">“接合口”子对象层级 (布料)</a><p>“接合口”子对象卷展栏用于定义接合口属性。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-A6C04861-C7DA-4774-857B-0BABB38E95AE.htm">“面”子对象层级 (布料)</a><p>“面”子对象卷展栏启用布料对象的交互拖放，就像这些对象在本地模拟一样。此子对象层级用于以交互性更好的方式在场景中定位布料。 </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

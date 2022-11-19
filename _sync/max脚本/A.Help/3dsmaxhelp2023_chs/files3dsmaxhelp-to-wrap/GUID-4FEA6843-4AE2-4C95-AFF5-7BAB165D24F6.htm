@@ -1,0 +1,48 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-4FEA6843-4AE2-4C95-AFF5-7BAB165D24F6">
+      <meta name="description" content="在您 Shift+克隆曲面或曲线子对象时，将打开“克隆选项”对话框，可以从中选择使克隆成为相关复制、独立复制或变换对象的选项。">
+      <meta name="indexterm" content="NURBS: 子对象克隆选项对话框">
+      <meta name="topic-type" content="concept">
+      <title>“子对象克隆选项”对话框 (NURBS)</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-4FEA6843-4AE2-4C95-AFF5-7BAB165D24F6"></a><div class="head">
+            <h1>“子对象克隆选项”对话框 (NURBS)</h1>
+         </div>
+         <p class="blurb">在您 <span class="char_link"><a href="GUID-03F84C88-6EEC-42A4-BCB9-C487243E7B99.htm">Shift+克隆</a></span>曲面或曲线子对象时，将打开“克隆选项”对话框，可以从中选择使克隆成为相关复制、独立复制或变换对象的选项。 
+         </p><a name="UL_393F8F2B4CC74ADCA7CDA910DD23E84A"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-31D350A3-2E8A-437D-97D7-7EED207C47DF"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif">  选择 NURBS 曲面或曲线子对象。 <img src="../images/ac.menuaro.gif">  Shift+克隆。 <img src="../images/ac.menuaro.gif"> “克隆选项”对话框</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-6885"></a> 
+            <h2><a name="GUID-044649F0-7D06-46E8-A91C-1218F3886DE0"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190042126"></a><div class="figure-anchor"><img src="../images/GUID-4C88AFDD-69AD-4849-9777-A26B3BB419A1-low.png"></div>  <a name="GUID-6313F98F-6DE2-4FA5-8B7F-EE092CB644F5"></a><div class="dl_section"><a name="GUID-E09FF311-7BAC-4583-AC59-2E233A8F4DFF"></a><a name="UL_1E4763518D954E39B1F5EB82F57FB600"></a><ul>
+                  <li><em class="strong">相关复制</em>克隆对象与原始对象类型相同。如果原始对象是从属对象，则克隆包含父对象的副本。例如，当克隆“混合”曲面时，该克隆将保持“混合”曲面和其两个与之一起复制的父曲面。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6883"></a>由于复制所有相关的子对象，则“相关复制”可能非常耗费时间。 
+                     </p> 
+                  </li>
+                  <li><em class="strong">独立复制</em>克隆对象是独立的 CV 曲线或 CV 曲面。该对象与原始对象图形相同，但其相关从属关系未被复制。采用此克隆方法既可以节省时间也可以减少内存，但可能会丢失相关属性。例如，当克隆“混合”曲面时，该克隆是独立的 CV 曲面。 
+                  </li>
+                  <li><em class="strong">复制为变换对象</em>“克隆”实际上是变换曲线或变换曲面，它基于原始对象并仍然从属于该对象。这样可以基于旋转和缩放以及平移来创建变换曲线和曲面。 
+                  </li>
+               </ul>
+            </div>
+            <dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D40D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6880"></a>包含相关父对象</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-602B"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87532C5"></a>（只适用于“独立复制”或“复制为变换对象”。）告知该系统是否包含从属对象的父对象。例如，如果在克隆混合曲面时“包含父对象”处于启用状态，则两个父曲面也可以克隆为独立的 CV 曲面。如果“包含相关父对象”处于禁用状态，只有一条曲线或一个曲面可以被克隆。当“包含相关父对象”处于启用状态时，将降低克隆速度，但是比“相关复制”速度要快。
+                        
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

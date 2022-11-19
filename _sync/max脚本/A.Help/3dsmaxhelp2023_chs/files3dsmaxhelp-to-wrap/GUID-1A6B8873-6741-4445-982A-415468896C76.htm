@@ -1,0 +1,200 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-1A6B8873-6741-4445-982A-415468896C76">
+      <meta name="description" content="此对话框提供将一种曲面转化为另一种曲面或调整曲面参数的通用方法。">
+      <meta name="indexterm" content="NURBS: 转化曲面对话框">
+      <meta name="contextid" content="IDH_NURBS_CONVERTSURFACE">
+      <meta name="topic-type" content="concept">
+      <title>“转化曲面”对话框 (NURBS)</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-1A6B8873-6741-4445-982A-415468896C76"></a><div class="head">
+            <h1> “转化曲面”对话框 (NURBS)</h1>
+         </div>
+         <p class="blurb">此对话框提供将一种曲面转化为另一种曲面或调整曲面参数的通用方法。 </p><a name="UL_027F97EA37E644FBB2FF0163E61F92B5"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-22FC9C34-F262-480B-9981-5BD0A92B9379"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif">  选择 NURBS 曲面子对象。 <img src="../images/ac.menuaro.gif"> “曲线公用”卷展栏  <img src="../images/ac.menuaro.gif"> “转化曲面”按钮</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-694C"></a> 
+            <h2><a name="GUID-B4F574C9-9AF9-4AA8-9A22-5245C15D98DD"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900420F9"></a><div class="figure-anchor"><img src="../images/GUID-6C4D3492-0B1D-4CBF-BA01-9DAD48E656E8-low.png"></div>  
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900420FA"></a> 
+               <h3><a name="GUID-EB76F08D-FD9B-45C4-9D2B-3184CCE6B581"></a>“放样”选项卡
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-694B"></a>如果曲面不是放样，此选项卡将其转化为所指示的放样类型。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-694A"></a>该控件相当于<span class="char_link"><a href="GUID-9F502F01-ACBD-4C84-8ACF-52BD6DF1C3BB.htm">“创建放样”对话框</a></span>的控件。 
+               </p> <a name="GUID-9B35723D-03C9-42FA-BC6A-5C8F2D1129B0"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3A6"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6949"></a>从 U 向等参线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6092"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875325E"></a>沿曲面 U 维使用曲线来构建 U 向放样。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3A7"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6948"></a>从 V 向等参线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6091"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875325F"></a>沿曲面 V 维使用曲线来构建 V 向放样。如果该表面已是 U 向放样，设置此项以更改放样维度。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3A8"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6947"></a>从 U 向和 V 向等参线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6090"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753260"></a>使用 U 维度 和 V 维度来构建 UV 向放样。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3A9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6946"></a>U 向曲线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-608F"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753261"></a>在 U 向中设置曲线数。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3AA"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6945"></a>V 向曲线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-608E"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753262"></a>在 V 向中设置曲线数。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3AB"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6944"></a>使用点曲线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-608D"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753263"></a>启用此选项后，从点曲线而不是从默认的 CV 曲线构建放样。默认设置为禁用状态。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3AC"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6943"></a>每段附加点</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-608C"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753264"></a>此控件仅用于 UV 向放样（从 U 向和 V 向等参线）。用于在每个段中增加点数。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3AD"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6942"></a>熔合点</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-608B"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753265"></a>此控件仅用于 UV 向放样（从 U 向和 V 向等参线）。启用此选项后，在编辑曲面时，曲线相交上的相交熔合点可确保 U 向和 V 向曲线继续相交，并确保该曲面与其父曲线保持重叠。由相交曲线构建的 UV 向放样行为比较确定。默认设置为启用。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900420FB"></a> 
+               <h3><a name="GUID-78484344-7F4B-4786-B325-294E89C94E18"></a>“拟合点”选项卡
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6941"></a>如果曲面不是一个点曲面，则此选项卡将其转化为点曲面。 
+               </p> <a name="GUID-A75C820A-4B2C-4B24-AD3E-41E6E7C03AF1"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3AE"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6940"></a>在 U 向</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-608A"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753266"></a>设置点数行（位于曲面的 U 轴上）。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3AF"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-693F"></a>在 V 向</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6089"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753267"></a>设置点数列（位于曲面的 V 轴上）。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3B0"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-693E"></a>公差</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6088"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753268"></a>选中此选项后，<span class="charspan-msgph">3ds Max</span> 会计算点数。此选项按照精确性重建曲面。“公差”值越低，重建的精确性越高。增加“公差”值将使采用更少的点重建曲面成为可能。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900420FC"></a> 
+               <h3><a name="GUID-0C012292-2B4F-4575-B8C3-A4987F7AD00E"></a>“CV 曲面”选项卡
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-693D"></a>如果曲面不是一个 CV 曲面，此选项卡将其转化为 CV 曲面。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-693C"></a>这是默认的选项卡。 
+               </p> <a name="GUID-FE9B61F7-8B2E-45A2-B8FC-17D264090B31"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3B1"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-693B"></a>数量</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6087"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753269"></a>选中此选项后，微调器设置 CV 曲面中的 CV 数量。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3B2"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-693A"></a>在 U 向</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6086"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875326A"></a>设置 CV 行数（位于曲面的 U 轴上）。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3B3"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6939"></a>在 V 向</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6085"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875326B"></a>设置 CV 列数（位于曲面的 V 轴上）。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3B4"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6938"></a>公差</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6084"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875326C"></a>选中此选项后，<span class="charspan-msgph">3ds Max</span> 会计算 CV 数。此选项按照精确性重建曲面。“公差”值越低，重建的精确性越高。增加“公差”值将使采用更少的 CV 重建曲面成为可能。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-1F0B3E70-5242-4255-9706-D4A3D16FE4E8"></a><p class="title"><a name="GUID-2B8076AF-A81E-4DE4-AC4A-77AE79A3E030"></a>“重新参数化”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6937"></a>使用这些控件可以重新参数化 CV 曲面，并启用自动重新参数化。 
+                  </p><a name="UL_E336BB9A6A77423AA351758F144C24F1"></a><ul>
+                     <li><em class="strong">弦长</em>选择弦长算法进行重新参数化。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6935"></a>弦长重新参数化可以根据每个分段长度的平方根设置结（位于<span class="char_link"><a href="GUID-8FCECAD7-28F8-49BB-A12A-33B2B673662A.htm">参数空间</a></span>）的空间。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6934"></a>弦长重新参数化通常是最理想的选择。 
+                        </p> 
+                     </li>
+                     <li><em class="strong">均匀</em>均匀隔开各个结。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6932"></a>均匀结点向量的优点在于当编辑曲面时只局部更改该曲面。使用弦长重新参数化时，如果移动任意 CV 可能会更改整个曲面。 
+                        </p> 
+                     </li>
+                  </ul>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3B7"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6931"></a>保持参数化</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6081"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875326F"></a>启用后，在编辑曲面时，该曲面将采用当前活动的重新参数化方法自动重新参数化。禁用此选项后，不会发生重新参数化，除非使用对话框专门对其进行请求。默认设置为启用。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900420FD"></a> <a name="GUID-FFA54871-C83C-47DA-A039-428BF661F866"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3B8"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6930"></a>预览</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6080"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753270"></a>启用此选项后，将在视口中显示转化预览效果。禁用此切换可以加速转化，特别是对于放样。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3B9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-692F"></a>删除初始曲线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-607F"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753271"></a>此选项只在曲面已是 U 向放样或 UV 向放样时才可用。启用此选项后，当单击“确定”时，“转化曲面”将删除原始放样曲线。禁用此选项后，原始曲线位置保持不变。默认设置为禁用状态。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

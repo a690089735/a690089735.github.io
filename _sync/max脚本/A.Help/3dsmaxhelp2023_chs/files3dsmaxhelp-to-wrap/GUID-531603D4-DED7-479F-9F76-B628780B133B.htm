@@ -1,0 +1,133 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-531603D4-DED7-479F-9F76-B628780B133B">
+      <meta name="description" content="MCG 3 DOF 旋转弹簧控制器是允许对象在限定范围内按所有三个轴绕“父”对象旋转的物理刚体约束。该对象仍有可能超出这些限制，但超过后，将应用转动弹簧力将对象推回限制范围内。">
+      <meta name="topic-type" content="concept">
+      <title>MCG 3 DOF 旋转弹簧控制器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-531603D4-DED7-479F-9F76-B628780B133B"></a><div class="head">
+            <h1>MCG 3 DOF 旋转弹簧控制器</h1>
+         </div>
+         <p class="blurb">MCG 3 DOF 旋转弹簧控制器是允许对象在限定范围内按所有三个轴绕“父”对象旋转的物理刚体约束。该对象仍有可能超出这些限制，但超过后，将应用转动弹簧力将对象推回限制范围内。 
+            
+         </p>
+         <p><a name="GUID-C7AE0501-27A5-4A45-9010-2E50574C336A"></a>对象可能超出旋转限制的原因有多个。例如： 
+            	 <a name="UL_E3C0FDF2A77C4072A953DEC572D808E9"></a><ul>
+               <li>对象的初始旋转可能会超出限制。 
+                  		
+               </li>
+               <li>因重力产生的加速度可能太强。 
+                  		
+               </li>
+               <li>如果父对象设置为动画，则有可能会立即加速或减速。 
+                  		
+               </li>
+            </ul> 
+         </p>
+         <p><a name="GUID-21D255C8-B41D-426C-8880-98CB3B825129"></a> 此控制器使用的模拟将根据上一帧的缓存更新每个帧。如果跳转到后一帧，则会自动计算居间帧。如果跳回到前一帧，则从第一帧重新计算模拟。为获得最佳结果，请确保<span class="char_link"><a href="GUID-9473CAF3-AF73-4127-A98C-58ACEF01ACAC.htm">“时间配置”</a></span>对话框中的<span class="MenuCascade">“实时”</span>已禁用。 
+            	 
+         </p><a name="UL_69DD5A98A92B414AADECD11839D497FB"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-13AC77C1-9F8F-4F35-BFE2-97C102A004D9">“动画”菜单  <img src="../images/ac.menuaro.gif"> “MCG 控制器” <img src="../images/ac.menuaro.gif"> “3 DOF 旋转弹簧控制器”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-694661B2-A699-469C-A1C1-7C8635B80176">“指定控制器”（对象变换轨迹） <img src="../images/ac.menuaro.gif"> MCG_rotationalSpring3DOFTransform</span> 
+            </li>
+         </ul><a name="OL_5CE7C2F8C2104B4FA9F86F02DB73A4EE"></a><ol type="1" start="1">
+            <li>创建“父”对象，并将其移动到要受约束对象围绕其旋转的位置。如果要对受约束对象应用惯性力，则可为父对象设置动画。 
+               		
+            </li>
+            <li>创建“外壳”对象，然后将其移动并旋转到要受约束对象相对于父对象所处的初始姿势。仅考虑它在第一帧中的世界变换。 
+               		
+            </li>
+            <li>选择要约束的对象。 
+               		
+            </li>
+            <li>选择<span class="MenuCascade" id="GUID-B4E6E2DB-F514-47A8-B01C-BDEF4A9F2B99">“动画”菜单  <img src="../images/ac.menuaro.gif"> “MCG 控制器” <img src="../images/ac.menuaro.gif"> “3 DOF 旋转弹簧控制器”</span>。 
+               		
+            </li>
+            <li>单击父对象。 
+               		
+            </li>
+            <li>单击外壳。 
+               		
+            </li>
+            <li>设置目标限制以及所需的任何其他设置。 
+               		
+            </li>
+            <li>播放或跳转到后一帧。 
+               		
+            </li>
+         </ol>
+         <p><a name="GUID-9145AECF-6F3B-4C1C-9D26-A134B00CC029"></a>如果更改值或者移动父对象或外壳对象，则可能需要单击<span class="MenuCascade" id="GUID-3B18E0CD-82D3-461A-AEA6-A6B8EF866635">“重置模拟”</span>。这将清除缓存并根据需要重新模拟至多达当前帧。 
+            	 
+         </p>
+         <p><a name="GUID-C7B48AFB-EE4C-440A-AC8D-94AA56431ABA"></a>请注意，当力超出极限时，模拟可能会不精确。在这些情况下，可以使用 MAXScript 将隐藏的 StepsPerFrame 属性设置为大于 1 的值来提高精度，不过这会延长计算时间。 
+            	 
+         </p>
+         <div class="section"><a name="SECTION_E4255A5CDEDA470E879D790A545A1A4D"></a> 
+            <h2><a name="GUID-FA767200-C829-4264-A596-CCD1CC488EC4"></a>界面
+            </h2> 
+         </div><a name="GUID-042EA6B5-D923-419A-8F73-C6D6093798F9"></a><dl><a name="GUID-5DFF18E8-0569-4211-BE64-769A6ED3BA9E"></a><dt><span class="term"><a name="GUID-E3AEE876-B097-4322-A859-49FF2D2217F7"></a> <span class="MenuCascade" id="GUID-21E1AC9E-EABB-4A04-B2C7-E8598201DEAE">对象参考</span> </span></dt>
+            <dd>
+               <div class="definition"><a name="GUID-ACB8E31A-0441-4C65-909B-33D523837204"></a> <a name="GUID-63F6E712-2C13-43FA-9766-B82AE3D7E66F"></a><dl><a name="GUID-7E6F5549-150B-4AA4-98A9-BD3DAA80E8A5"></a><dt><span class="term"><a name="GUID-7AC8D586-3C2C-40F3-8518-341D9BABC1A6"></a> <span class="MenuCascade" id="GUID-D75AD2A0-0967-4661-9016-40349FBAE117">父对象</span> </span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-D0B2DFE6-6766-435F-A11D-2CA1255D4A07"></a>单击以选择要绕其旋转的对象。 
+                           				  
+                        </div>
+                     </dd><a name="GUID-1F956DE3-9397-4DF4-8351-A56FAD73EC12"></a><dt><span class="term"><a name="GUID-AE1B5F4D-A809-4A55-B341-FE80F7272188"></a> <span class="MenuCascade" id="GUID-019D7104-3B16-4DEE-AB89-14270F8DB52D">外壳</span> </span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-9DC2D240-7D9C-4DC3-A791-BD27C68DAC7A"></a>单击以选择对象，用于定义受约束对象在第一帧的变换情况。 
+                           				  
+                        </div>
+                     </dd><a name="GUID-E16141C0-3B83-439C-AFB9-BED764BA5A2A"></a><dt><span class="term"><a name="GUID-A28BA4D7-5D74-44FF-B905-F5A204A34166"></a> <span class="MenuCascade" id="GUID-2FCCEE50-6C93-49AD-9739-6B19A437714F">取消激活弹簧</span> </span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-74569622-2C14-4089-84C6-5E3CBB0BB71B"></a>启用和禁用控制器。 
+                           				  
+                        </div>
+                     </dd>
+                  </dl> 
+               </div>
+            </dd><a name="GUID-08E48FD0-4AF5-4FEB-9903-E951E4EA2EC4"></a><dt><span class="term"><a name="GUID-51FE3B64-A010-488A-BBC2-C7925C54DA84"></a> <span class="MenuCascade" id="GUID-A83CC554-4841-48B4-8F55-EA16536CAFC3">物理属性</span> </span></dt>
+            <dd>
+               <div class="definition"><a name="GUID-DC72240C-39C4-4449-989C-69E979D266DF"></a> <a name="GUID-264A2B5D-6C14-476A-9803-DF8BBAC50A05"></a><dl><a name="GUID-5C51FDAB-73C5-4584-AABA-B5BAA94A3B30"></a><dt><span class="term"><a name="GUID-181E4F07-30FF-4253-82DA-3C90ACE831FE"></a> <span class="MenuCascade" id="GUID-DC45CBFD-F5D2-4F48-ACB3-00E995EDDDE0">质量</span> </span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-D8F772A9-22D4-4378-B51B-7CDF16FFCE19"></a>对象的质量。 
+                           				  
+                        </div>
+                     </dd><a name="GUID-CF5B2AC2-3FB8-4743-8082-941320030ABB"></a><dt><span class="term"><a name="GUID-B78972A7-BF18-4A58-B7F5-4DC1FC51FE3B"></a> <span class="MenuCascade" id="GUID-F7FA6682-1782-4C87-A254-EE746438FDF3">重力</span> </span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-F9070A26-4C26-4D6E-A7FB-2D7D25D97F0E"></a>世界坐标系 Z 轴中的恒定加速度。 
+                           				  
+                        </div>
+                     </dd><a name="GUID-4F015E20-CE07-40E2-AC1A-791EF54AB307"></a><dt><span class="term"><a name="GUID-D14BA96D-C00E-4708-8389-5E63A1A206C8"></a> <span class="MenuCascade" id="GUID-5D29AC33-55E7-414A-BD72-B534621527EC">阻尼</span> </span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-26D3D747-9F08-4088-A5EB-8DF2F2409930"></a>逐步降低速度的因子。 
+                           				  
+                        </div>
+                     </dd><a name="GUID-ED568ED9-F6E3-4758-A42C-663DCBDFBD20"></a><dt><span class="term"><a name="GUID-2DF2F625-7F78-4E91-BF7B-5848A3BAD4DD"></a> <span class="MenuCascade" id="GUID-FC9491CF-3EA7-4B99-B345-A7B3A9F0D52A">反弹</span> </span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-DA846E5B-B261-4B60-A8B7-5CDCC5C95691"></a>恢复系数，即交互之后保留的动能比例。通常，值应介于 0.0 和 1.0 之间。值大于 1.0 会导致能量增加，不会进行物理校正，但可能会产生有趣的效果。 
+                           				  
+                        </div>
+                     </dd><a name="GUID-4F70DC57-DDAE-46D3-90B8-43A145B8F404"></a><dt><span class="term"><a name="GUID-2D0D463A-B12A-4321-A30C-5B327C9861B4"></a> <span class="MenuCascade" id="GUID-A8FBD5CA-482E-4502-B835-3D9ECB513E62">刚度</span> </span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-DAE4F609-72AB-4FF5-91DA-E83AC95E18C1"></a>在对象超出限制时旋转弹簧应用的弹簧常量。 
+                           				  
+                        </div>
+                     </dd>
+                  </dl> 
+               </div>
+            </dd><a name="GUID-2C8BA316-0C19-4A79-B1E5-BFD72607697F"></a><dt><span class="term"><a name="GUID-71421AD3-F53F-4BC6-91CB-618A797FBA02"></a> <span class="MenuCascade" id="GUID-497896C9-21CC-4C6E-B4CE-34E7FE1E8841">轴限制</span> </span></dt>
+            <dd>
+               <div class="definition"><a name="GUID-1755C0DC-0949-4EBF-B4D4-E641FA80B50C"></a>对象每个局部轴的旋转上限和下限（度），超出限制则应用弹簧力。激活<span class="MenuCascade" id="GUID-9D4640EF-3D81-460E-A331-4A3F9C7962DA">“使用轴限制”</span>以将所有轴的范围设置为 0。 
+                  		  
+               </div>
+            </dd>
+         </dl>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

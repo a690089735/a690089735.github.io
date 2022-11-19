@@ -1,0 +1,72 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-F452D328-84E8-4C70-963D-340D3D718461">
+      <meta name="description" content="“缩放 XYZ”控制器为对象变换的每个缩放轴使用独立的浮点控制器。使用三个单独的缩放轨迹，可单独为每个轴创建缩放关键点，更改单个轴的插值设置或指定轴上的控制器。例如，应用“缩放 XYZ”控制器后，可对轴应用“噪波”或“波形”控制器，以便单独设置该轴的动画。">
+      <meta name="indexterm" content="动画菜单: 约束">
+      <meta name="indexterm" content="控制器: 缩放 XYZ">
+      <meta name="indexterm" content="缩放: 缩放 XYZ 控制器">
+      <meta name="indexterm" content="XYZ 控制器">
+      <meta name="topic-type" content="concept">
+      <title>缩放 XYZ 控制器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-F452D328-84E8-4C70-963D-340D3D718461"></a><div class="head">
+            <h1>缩放 XYZ 控制器</h1>
+         </div>
+         <p class="blurb">“缩放 XYZ”控制器为对象变换的每个缩放轴使用独立的浮点控制器。使用三个单独的缩放轨迹，可单独为每个轴创建缩放关键点，更改单个轴的插值设置或指定轴上的控制器。例如，应用“缩放 XYZ”控制器后，可对轴应用“噪波”或“波形”控制器，以便单独设置该轴的动画。
+            
+         </p><a name="UL_A5332E4B686549B388202B8DF5CB1206"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-0DC5F74C-51CB-40A2-8C5B-4ADCE83D37C5">指定控制器（缩放轨迹） <img src="../images/ac.menuaro.gif">  缩放 XYZ</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A190044B54"></a><div class="figure-anchor"><img src="../images/GUID-80CE405C-93E2-4E18-9916-4FB94CD77C5C-low.png"></div>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4180"></a>在默认情况下，“缩放 XYZ”控制器指定三个关键点（每个轴一个）。可以使用<span class="char_link"><a href="GUID-71DEAF46-80B6-47D8-8F58-F103CECEE1F5.htm">“自定义用户界面”对话框</a></span>提供的操作创建<span class="char_link"><a href="GUID-B089801B-5D24-4250-977D-7350089E6C6C.htm">显式轴关键点</a></span>。 
+         </p>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E527"></a><div class="note-tip"><span class="label label-target-language">提示</span>打开“轨迹视图”可查看和编辑三个缩放轨迹。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-417F"></a> 
+            <h2><a name="GUID-4325FF3C-26C6-4187-982E-B478293B793A"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044B59"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044B5A"></a>示例：要为对象指定“缩放 XYZ”控制器，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在“顶”视口中，创建一个球体。 </li>
+               <li>右键单击球体，然后从四元菜单中选择“曲线编辑器”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-417E"></a>随即会打开“轨迹视图 - 曲线编辑器”，该球体是层次中的第一个项。 
+                  </p> 
+               </li>
+               <li>在“轨迹视图”层次中，单击“缩放”轨迹。 </li>
+               <li>从“轨迹视图编辑”菜单中，选择“控制器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“指定”，然后从“指定控制器”对话框中选择“缩放 XYZ”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-417D"></a>“轨迹视图”层次窗口中会显示三条轨迹，可用于在单独轴上控制对象的缩放。 
+                  </p> 
+               </li>
+               <li>在“轨迹视图”层次中，单击“Z 缩放”轨迹，单击“编辑”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“控制器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“指定”，然后从对话框中选择“噪波浮点”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-417C"></a>会自动显示“噪波控制器”对话框。 
+                  </p> 
+               </li>
+               <li>单击 <img src="../images/GUID-5B32F2AB-610D-42BB-8C54-81463BE72359-low.png">（播放动画）。该球体在 Z 轴上改变大小，这由“噪波”控制器控制。 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-417B"></a> 
+            <h2><a name="GUID-66D9C971-9012-42D4-8DDF-1EF19DCAD6FC"></a>界面
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-417A"></a>将“缩放 XYZ”控制器应用于对象后，“缩放 XYZ”参数出现在“运动”面板上的卷展栏中。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190044B5B"></a><div class="figure-anchor"><img src="../images/GUID-16676B5D-F148-4CB2-AC2A-3EFF6F40B19B-low.png"></div>  <a name="GUID-DAA6665D-B636-40F0-87AE-89046ACFE08E"></a><dl>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7816"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4179"></a>缩放轴</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-59FC"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87527A4"></a>使用“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“关键点信息”卷展栏上的控件，选择轴以编辑关键点。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4178"></a>为了编辑缩放动画，必须已存在一个或多个关键点。要创建关键点，请启用“自动关键点”并缩放对象，或者在“PRS 参数”卷展栏上的“创建关键点”组中单击“缩放”。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

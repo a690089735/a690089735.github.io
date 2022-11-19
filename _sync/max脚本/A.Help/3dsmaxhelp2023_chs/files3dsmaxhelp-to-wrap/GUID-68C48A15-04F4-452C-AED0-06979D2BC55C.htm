@@ -1,0 +1,365 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-68C48A15-04F4-452C-AED0-06979D2BC55C">
+      <meta name="description" content="此面板包含使用多边形网格或缓存的低分辨率模拟来导向液体模拟的对象。">
+      <meta name="indexterm" content="最大流体: 导向系统">
+      <meta name="indexterm" content="导向系统: 流体">
+      <meta name="indexterm" content="导向">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="expert">
+      <meta name="topic-subtype" content="using">
+      <title>导向系统</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-68C48A15-04F4-452C-AED0-06979D2BC55C"></a><div class="head">
+            <h1>导向系统</h1>
+         </div>
+         <p class="blurb">此面板包含使用多边形网格或缓存的低分辨率模拟来导向液体模拟的对象。 
+            
+         </p><a name="UL_BBD7F4526C50406CA0E8E37C6122E8A5"></a><ul>
+            <li><span class="MenuCascade">“创建”面板  <img src="../images/ac.menuaro.gif"> “几何体” <img src="../images/ac.menuaro.gif"> “流体” <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “模拟视图” <img src="../images/ac.menuaro.gif"> “解算器参数”面板  <img src="../images/ac.menuaro.gif"> “导向系统”</span> 
+            </li>
+         </ul>
+         <p> 使用导向，可以执行详细的高分辨率模拟（仅限于曲面顶层），减少所需的内存量和计算时间。创建湖泊和海洋等大型流体的模拟时，导向非常有用。 
+            	 
+         </p>
+         <div class="section"><a name="SECTION_31553136139A4E289DC0D517D5377ADE"></a> 
+            <h2><a name="GUID-F157ADB9-72FE-402B-9602-4CBD6BDD0E84"></a>“导向系统”卷展栏
+            </h2> <a name="FIG_37B08576716344008E84D8AABCB80E0B"></a><div class="figure-anchor"><img src="../images/GUID-9D40F93D-96AE-40CC-AC59-7AC3F774D28C-low.png"></div> 
+            <dl><a name="GUID-A5019739-A778-4FD9-A0D9-192E774057A8"></a><dt><span class="term">启用 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition">启用导向系统。 
+                     			 
+                  </div>
+               </dd>
+            </dl> 
+            <div class="section"><a name="SECTION_D24543F901174442A94254CBAB704DAA"></a> 
+               <h3><a name="GUID-DB4DFCF7-9444-472B-B7D8-AE50F0F0B02B"></a>“导向参数”组
+               </h3> 
+               <dl><a name="GUID-C09084F6-B928-47F0-A8C7-D1E1556D0416"></a><dt><span class="term">从高分辨率液体计算导向 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 计算将高分辨率液体考虑在内的最终导向图形。这样碰撞对象就可以落到液体中且渗透相当深，而无需增大“最小模拟深度”（它影响在整个模拟中所需的粒子数和体素数）。如果遇到问题（例如，如果在某些情况下模拟未保持其形状），则可以尝试禁用此选项。也可以禁用此选项以加快计算，但是如果模拟非常易溅，则这可能会导致主液体曲面上的孔洞。
+                        
+                        				
+                     </div>
+                  </dd><a name="GUID-64017649-269C-4D29-A915-87FE018D8FF3"></a><dt><span class="term">导向体素大小 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置用于体素化导向图形的“主体素大小”的比例因子。 
+                        				
+                     </div>
+                  </dd><a name="GUID-113A20C8-21F2-456E-B57A-40E49356D41A"></a><dt><span class="term">最小模拟深度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置在顶部液体曲面下方进行模拟的深度（以场景单位表示）。您可能需要根据已建模场景的比例对其进行更改。 
+                        				
+                     </div>
+                  </dd><a name="GUID-B50BEB79-E009-4723-BB3F-5ED19F8BCDB3"></a><dt><span class="term">曲面层 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置导向曲面顶部的模拟层的高度（以场景单位表示）。这对于曲面飞溅很有用。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_D1E8712343364AA99FB8673FB6F720B8"></a> 
+               <h3><a name="GUID-8C38A232-D411-45E1-BFD9-A7A7A59F7E9F"></a>“粒子重生成种子”组
+               </h3> 
+               <dl><a name="GUID-EE230319-2F71-46F9-A697-4712B8C8B937"></a><dt><span class="term">粒子密度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 控制气穴中每个体素要添加的粒子数。 
+                        				
+                     </div>
+                  </dd><a name="GUID-B1C77F52-B8AE-4552-A744-1439DA621CB4"></a><dt><span class="term">导向重叠 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> “主体素大小”的倍数，用于确定在导向图形和液体图形中重生成种子的深度。 
+                        				
+                     </div>
+                  </dd><a name="GUID-14909D43-D072-4505-87C0-E293A124989F"></a><dt><span class="term">液体重叠 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> “主体素大小”的倍数，用于确定在导向图形和液体图形中重生成种子的深度。 
+                        				
+                     </div>
+                  </dd><a name="GUID-41BF0B09-358F-4F83-9FEA-B519FDC8DCDD"></a><dt><span class="term">界面距离 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置与空气-液体边界的最小距离（以场景单位表示），如果低于该距离，则不为粒子重生成种子。这可防止曲面上的噪波。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="section"><a name="SECTION_0434BE6D82F04F5CB591773BE8CA1FC3"></a> 
+            <h2><a name="GUID-5F7790F0-C91B-41F0-BC1C-30F5F55101D3"></a>“导向网格参数”卷展栏
+            </h2> <a name="FIG_A9CFE0942C3D404794290462F025723B"></a><div class="figure-anchor"><img src="../images/GUID-054ED4AB-63A6-4654-A682-E579E52DEDEF-low.png"></div> 
+            <p>仅当在顶部或左侧窗格（具体取决于“模拟视图”布局是垂直还是水平）中选择现有导向网格时，才会显示此卷展栏。 
+               		
+            </p> 
+            <div class="section"><a name="SECTION_F1F888ECDCC842CEB2A67984C000B2F4"></a> 
+               <h3><a name="GUID-C186846F-0F32-4E98-993F-BCE7010E3795"></a>“转化”组
+               </h3> 
+               <dl><a name="GUID-F198B9AA-675A-4FBE-A593-E3D341D4621B"></a><dt><span class="term">体素比例 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置“主体素大小”的比例因子，用于最初体素化共享此属性的网格。 
+                        				
+                     </div>
+                  </dd><a name="GUID-F2675792-8F65-41F7-9F93-0F88139681F5"></a><dt><span class="term">速度比例 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 控制在每个世界 X、Y 和 Z 轴中发射时，流体从发射器的已设置动画的变换和变形中继承的速度的比例。 
+                        				
+                     </div>
+                  </dd><a name="GUID-7F0DFA87-7DBD-42DB-BB51-9E81A8E684C0"></a><dt><span class="term">启用其他速度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 为来自其他源的任何现有速度（例如从发射器的动画继承的速度）添加额外的速度。 
+                        				
+                     </div>
+                  </dd><a name="GUID-C51160A6-8ED5-460A-8E94-32D3A3F93E8E"></a><dt><span class="term">其他速度倍增 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置用于在所有轴上均匀缩放“其他速度”的倍增。 
+                        				
+                     </div>
+                  </dd><a name="GUID-70CFB0A0-87F1-4374-B24A-55AE506C3ABE"></a><dt><span class="term">其他速度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置要在世界坐标中添加的基本速度。 
+                        				
+                     </div>
+                  </dd><a name="GUID-B180A746-CB50-466B-A3E5-545CB98E780E"></a><dt><span class="term">创建辅助对象 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">在场景中创建箭头辅助对象。箭头方向将调整其他速度的方向。 
+                        				
+                     </div>
+                  </dd><a name="GUID-BC388805-4195-4216-BE55-E5BBAF16BAB6"></a><dt><span class="term">链接到对象 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">如果在创建其他速度辅助对象之前启用，会自动将辅助对象链接到场景对象。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_E613F421B65F4600ADD900B7C4EA76E0"></a> 
+               <h3><a name="GUID-AB4DDCC7-318C-4584-9949-909FE60D3EA5"></a>“边界控件”组
+               </h3> 
+               <dl><a name="GUID-4C48EC23-2B4D-4D5E-A134-E30B78B8783C"></a><dt><span class="term">启用边界 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">启用边界控件以限制发生模拟的区域。 
+                        				  
+                        <div><a name="GUID-F8209926-851F-488F-B4E8-D2AD1784139D"></a><div class="note-tip"><span class="label label-target-language">提示</span>处理导向模拟时，可以使用边界预览模拟的较小区域，以便在进行调整时节省计算时间。 
+                              				  
+                           </div>
+                        </div> 
+                     </div>
+                  </dd><a name="GUID-476DDDAB-DA5A-4F96-A87B-0BBD7FA3E2BC"></a><dt><span class="term">创建辅助对象 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">在场景中创建体积辅助对象。边界的有效类型为“长方体”和“球体”。 
+                        				
+                     </div>
+                  </dd><a name="GUID-FB948C0D-A80B-47AC-A37B-772A2C6A5EC7"></a><dt><span class="term">无 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">拾取已添加到场景中的体积辅助对象。此按钮将随当前选定的辅助对象名称而更新。 
+                        				
+                     </div>
+                  </dd><a name="GUID-1B6229E3-F2C0-4F85-BF22-2E127ED68781"></a><dt><span class="term">反转 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">反转边界的区域。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="section"><a name="SECTION_862653FE80F44786A925F4D851615F94"></a> 
+            <h2><a name="GUID-4B7B13D5-115C-4CA6-B981-836AEC1859D8"></a>“导向发射器参数”卷展栏
+            </h2> <a name="FIG_00BB35E8A96B41258C5E36BC11F012C2"></a><div class="figure-anchor"><img src="../images/GUID-E24A34B7-0303-4EF2-B07A-E7AAA2388F71-low.png"></div> 
+            <p>仅当在顶部或左侧窗格（具体取决于“模拟视图”布局是垂直还是水平）中选择现有导向发射器时，才会显示此卷展栏。 
+               		
+            </p> 
+            <dl><a name="GUID-EE58748D-2ED4-447C-977A-125485840016"></a><dt><span class="term">启用 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> 启用关联发射器中的液体发射。 
+                     			 
+                  </div>
+               </dd><a name="GUID-644E078E-2279-4B1B-B68D-B22E7C464A87"></a><dt><span class="term">连续区域发射 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> 使用更多粒子重新填充变空的体素。模拟喷嘴和喷口等液体源时启用；模拟一池或一滴液体时禁用。 
+                     			 
+                  </div>
+               </dd>
+            </dl> 
+            <div class="section"><a name="SECTION_DB3CBDEF707D49AFAD32C77755D836E9"></a> 
+               <h3><a name="GUID-E109D6A3-B7F9-4F29-B70F-BBFB57131C25"></a>“转化”组
+               </h3> 
+               <dl><a name="GUID-AFF17989-7A9B-4A01-8B41-236AEE0D35A1"></a><dt><span class="term">模式 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 控制发射器如何体素化，即“实体”、“壳”、“实体(坚固)”。 
+                        				  <a name="UL_81D2C5C822464CFFA32273B0AC3EB5AB"></a><ul>
+                           <li><em class="strong">“实体”</em>创建包括内部网格的实体体积。网格应为流形且防水。 
+                              					 
+                           </li>
+                           <li><em class="strong">“壳”</em>创建网格曲面周围的薄壳。在该模式下，“厚度”通常应为 1.0 或更大。 
+                              					 
+                           </li>
+                           <li><em class="strong">“实体(坚固)”</em>是“实体”的一种替代方法，通常可以为具有精细细节、通向空腔的开口或不防水曲面的体积提供更好的结果。但是，此设置不会处理全封闭区域内的流体。 
+                              					 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd><a name="GUID-870BD58F-459E-4F46-8575-FC228C185D30"></a><dt><span class="term">粗化内部 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 转化模式为“实体(坚固)”时，通过对体积内的体素执行其他粗化操作来节约内存，对于自交网格尤其如此。 
+                        				
+                     </div>
+                  </dd><a name="GUID-04D01A81-A4F6-44FF-B26A-4DF77CC633CF"></a><dt><span class="term">曲面偏移 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 转化模式为“实体(坚固)”时，设置用于闭合（先扩张再腐蚀）实体体素的距离（以体素宽度表示）。内部最小值为 1.0，因此，只有值较大时才会产生影响。请注意，较高的值会形成瑕疵。 
+                        				
+                     </div>
+                  </dd><a name="GUID-B0036210-33E1-4B52-9BD0-25A6220AED86"></a><dt><span class="term">厚度单位 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置厚度是以体素还是世界空间为单位。设置为“体素”时，有效厚度取决于模拟的“主体素大小”。 
+                        				
+                     </div>
+                  </dd><a name="GUID-E828B5B8-419A-4BD4-8BFE-95A8297A43BE"></a><dt><span class="term">厚度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置网格的加厚量。对于已经非常厚的实体形状，可以为精确的边界使用 0.0 甚至负值，使其沿曲面法线收缩。对于更薄的体积和壳，应使用较大的值来防止出现孔。 
+                        				
+                     </div>
+                  </dd><a name="GUID-A16977FA-7895-4D8B-A6D9-9BE7ADF8796D"></a><dt><span class="term">体素比例 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置“主体素大小”的比例因子，用于最初体素化共享此属性的网格。 
+                        				
+                     </div>
+                  </dd><a name="GUID-4DAC7085-FF63-4D0D-9B76-D842FCB3FA82"></a><dt><span class="term">速度比例 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 控制在每个世界 X、Y 和 Z 轴中发射时，流体从发射器的已设置动画的变换和变形中继承的速度的比例。 
+                        				
+                     </div>
+                  </dd><a name="GUID-C148658D-1437-4110-95BD-416D811007A0"></a><dt><span class="term">启用其他速度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 为来自其他源的任何现有速度（例如从发射器的动画继承的速度）添加额外的速度。 
+                        				
+                     </div>
+                  </dd><a name="GUID-B868A456-BC0A-4718-B4EE-E6BB7D765F12"></a><dt><span class="term">倍增 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置用于在所有轴上均匀缩放“其他速度”的倍增。 
+                        				
+                     </div>
+                  </dd><a name="GUID-3883EE5E-3685-4260-BD37-58B22C1AA52A"></a><dt><span class="term">其他速度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置要在世界坐标中添加的基本速度。 
+                        				
+                     </div>
+                  </dd><a name="GUID-B277E1EE-7EE6-4E06-9AAE-461493A77873"></a><dt><span class="term">创建辅助对象 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">在场景中创建箭头辅助对象。箭头方向将调整其他速度的方向。 
+                        				
+                     </div>
+                  </dd><a name="GUID-6655E1EE-BD9C-4B7C-9C96-C773AA2F885C"></a><dt><span class="term">链接到对象 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">如果在创建其他速度辅助对象之前启用，会自动将辅助对象链接到场景对象。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_5B4693B4734F4E1589925FDE446D09F2"></a> 
+               <h3><a name="GUID-FEDC3FA9-6F82-418F-9212-5C39BE9EFCEF"></a>“发射”组
+               </h3> 
+               <dl><a name="GUID-B8966F5B-6CBC-431F-A894-9AA4A4BF5019"></a><dt><span class="term">消亡年龄 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置粒子在删除前可以超出其发射区域的时间长度（以秒为单位）。 
+                        				
+                     </div>
+                  </dd><a name="GUID-17CDDC55-7E79-4B1E-8B53-F09AA4F92C29"></a><dt><span class="term">与导向混合 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置导向输入速度的混合权重。这有助于在模拟和导向之间实现平滑变换。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_637B4DD20A894348B129846FC9D761CD"></a> 
+               <h3><a name="GUID-5A752431-E145-4971-AC54-9DA659CD9AAB"></a>“物理属性”组
+               </h3> 
+               <dl><a name="GUID-24C468FB-BF2F-428F-83B1-74F4346896AD"></a><dt><span class="term">密度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置流体的物理密度。例如，水的密度比油高。 
+                        				
+                     </div>
+                  </dd><a name="GUID-4326FA08-D368-4872-9A73-8F6704DA4708"></a><dt><span class="term">膨胀速率 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 展开或收拢发射器内的液体。正值会将粒子从所有方向推出发射器，而负值则会将粒子拉入发射器。值为 0.0 则既不推出也不拉入。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_9E688589364B470B8EAA7076F179A92B"></a> 
+               <h3><a name="GUID-8B06C505-6FD0-49F9-BCFC-64F7C0061FDE"></a>“粘滞”组
+               </h3> 
+               <dl><a name="GUID-4B2CF15C-5932-4275-B649-DCE8B1889CBB"></a><dt><span class="term">强度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置此发射器中的流体黏着到附近碰撞对象的量。 
+                        				
+                     </div>
+                  </dd><a name="GUID-A5A844C8-F13C-4DA5-B193-EE25E6345B2C"></a><dt><span class="term">带宽 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置此发射器中的流体需要与碰撞对象多接近，才能产生粘滞（以世界空间单位表示）。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-9C44469D-A235-4654-A659-AFC803930262.htm">箭头辅助对象</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

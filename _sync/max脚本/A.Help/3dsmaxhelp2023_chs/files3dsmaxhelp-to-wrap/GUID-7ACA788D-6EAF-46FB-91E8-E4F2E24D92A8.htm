@@ -1,0 +1,85 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-7ACA788D-6EAF-46FB-91E8-E4F2E24D92A8">
+      <meta name="description" content="显示在“影片”窗口中的跟踪器 Gizmo 含有两个封闭框，一对位于中心的十字线以及一个跟踪器编号。">
+      <meta name="indexterm" content="摄影机跟踪器: 影片窗口">
+      <meta name="indexterm" content="影片窗口（摄影机跟踪器）">
+      <meta name="indexterm" content="跟踪器 Gizmo">
+      <meta name="indexterm" content="Gizmo: 跟踪器">
+      <meta name="topic-type" content="concept">
+      <title>摄影机跟踪器：影片窗口</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-7ACA788D-6EAF-46FB-91E8-E4F2E24D92A8"></a><div class="head">
+            <h1>摄影机跟踪器：影片窗口</h1>
+         </div>
+         <p class="blurb">显示在“影片”窗口中的跟踪器 Gizmo 含有两个封闭框，一对位于中心的十字线以及一个跟踪器编号。 </p>
+         <div class="bodyReference">
+            <p><a name="WS73099CC142F48755602CAF04118F18E7A07-54F6"></a>内部框环绕着会被跟踪的特征点，该内部框称为<em class="mild">特征点边界框</em>。外部框定义逐帧搜索，该外部框称为<em class="mild">运动搜索边界框</em>。应当将中心的十字线放置在特征点上，并尽量靠近相应于其场景点对象位置的点。这是用于图像特征点和场景“点”坐标间摄影机运动匹配相关的中心坐标。 
+            </p><a name="WS1A9193826455F5FFBA679E112A6A1900453F0"></a><div class="figure-anchor"><img src="../images/GUID-96564121-37B1-4408-96AA-063723451AF8-low.png"></div>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3450"></a>应当使得特征点边界框足够大，以便包含足够多的特征点以及某些周围图像，这样可以给关键点提供含有几个像素的对比背景。 
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-344F"></a>运动搜索边界定义了逐帧搜索关键点的区域。该边界框与特征点框一起移动，因此该区域在每一帧上都相应于当前关键点。这对正确估计该区域十分重要。如果该区域过大，那么匹配过程会非常慢，而且在搜索区域中会有更大机会含有其他关键点这使得搜索变得不明确；如果该区域过小，那么会发生跟踪错误。浏览会实时播放设备例如视频平台上跟踪的影片，或者预先估计特征点移动时，这非常有用。如果在创建轨迹前将“最大移动/帧”微调器设置为最大移动时，其运动搜索边界框会设置为适应这一移动。也可以在“影片”窗口中随时调整该框。
+               
+            </p>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E60E"></a><div class="note-note"><span class="label label-target-language">注意:</span>可以在影片中为不同的帧范围更改搜索边界框，因此可以优化搜索能力。请参见<span class="char_link"><a href="GUID-20A738D2-FD55-40CF-AB35-C94D29D94B7D.htm">关键帧和位置数据</a></span>。 
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900453F1"></a> 
+               <h2><a name="GUID-10FEE025-4DED-49EE-9C82-39E1412B4065"></a>使用“影片”窗口
+               </h2> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-344E"></a>显示被跟踪影片的当前帧以及该帧的任何活动跟踪器 Gizmo。可以使用“影片”卷展栏中的“显示影片”复选框打开和关闭窗口，或者使用标准窗口标题栏控件最小化窗口。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-344D"></a>首次打开影片时，<span class="charspan-msgph">3ds Max</span> 缩放窗口大小使其适应于屏幕，而且如果图像过大也会自动将其缩小。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-344C"></a>通过拖动边或角可以重新设置窗口大小。可以使用跟踪器 Gizmo 控件放大缩小窗口。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900453F2"></a> 
+               <h2><a name="GUID-7A50B6A6-9B4D-4429-B5CE-ACA6A16D474D"></a>使用跟踪器 Gizmo
+               </h2> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-344B"></a>有几种在“影片”窗口中使用 Gizmo 的方法。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900453F3"></a><ul>
+                  <li> <em class="strong">选择：</em>您需要选择一个要使用的 Gizmo。通过在“影片”窗口中其边框内的任何地方单击，或者通过在“运动跟踪器“卷展栏的跟踪器列表框中选择其条目来实现。选中的 Gizmo 在其边界框的每个角上显示位置控制柄。也可以通过在键盘上输入其编号来选择 Gizmo。选中的
+                     Gizmo 在“影片”窗口中有单击选择优先权。如果多个 Gizmo 重叠，那么就很难选择并调整这些 Gizmo。可以首先在“运动跟踪器”卷展栏列表中将其选中；当在“影片”窗口中单击它时，该 Gizmo 会保持选中状态以便进行调整。 
+                  </li>
+                  <li> <em class="strong">缩放：</em>通过按下 <span class="keyboardEntry">I</span> 和 <span class="keyboardEntry">O</span> 键可以放大和缩小选中的 Gizmo，以分别放大和缩小。每次按下 <span class="keyboardEntry">I</span> 或 <span class="keyboardEntry">O</span>，窗口都会放大或缩小两因子并将选中的 Gizmo 位于窗口中心。无论是否选中 Gizmo，按下 <span class="keyboardEntry">R</span> 键都会将缩放因子重置为 100%。“影片”窗口必须是活动窗口才会使任何键盘命令生效。可以通过单击使其成为活动窗口。 
+                  </li>
+                  <li> <em class="strong">切换：</em>通过按下 <span class="keyboardEntry">Tab</span> 键可以在连续编号的 Gizmo 间移动。如果正在搜索的 Gizmo 在视图之外，因为被放大，所以图像会在窗口中重新定位，这会将最新选择的 Gizmo 带入视图。在放大时切换提供了在 Gizmo 中跳跃以检查其较佳位置的快速方式。 
+                  </li>
+                  <li> <em class="strong">定位：</em>通过在其边界框内的任何位置拖动可以重新定位 Gizmo，这使您不用单击八个框角上的控制柄中的任一个就可以实现重新定位。可以按下键盘上的一个箭头键来以一个增量的形式稍微移动 Gizmo。Gizmo 移动的最小增量取决于缩放因子和子像素跟踪级别。增量是当前窗口中一个屏幕像素或选中的子像素增量这两者中的较小值。所以，如果缩小两倍并且子像素增量是一个像素的
+                     1/16，那么根据缩放，微移增量就是四个图像像素。但是，如果放大五倍，那么根据子像素层级，微移增量就是一个图像像素的 1/16。 
+                  </li>
+                  <li> <em class="strong">边界：</em>通过在选中 Gizmo 上按下并拖动想要调整的框的控制柄，可以调整边界框。拖动内部特征点边界框的控制柄来对称的调整对角，这样可以保持 Gizmo 中心固定。 
+                  </li>
+               </ul> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-344A"></a>通常设置跟踪器 Gizmo 时，应当首先创建它们并在缩小的视图中将其粗略放置，然后放大其中之一，微调其位置和边界，然后切换到下一个 Gizmo 并重复这些操作。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900453F4"></a> 
+               <h2><a name="GUID-6B4C217D-9575-4202-A7B9-5DB7083B08A6"></a>“影片”窗口键盘快捷键
+               </h2> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3449"></a>可以在“影片”窗口中使用下列键盘快捷键： 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900453F5"></a><ul>
+                  <li> <em class="strong"> <span class="keyboardEntry">I</span>，<span class="keyboardEntry">i</span>：</em>放大选定的 Gizmo。 
+                  </li>
+                  <li> <em class="strong"> <span class="keyboardEntry">O</span>，<span class="keyboardEntry">o</span>：</em>缩小选定的 Gizmo。 
+                  </li>
+                  <li> <em class="strong"> <span class="keyboardEntry">R</span>，<span class="keyboardEntry">r</span>：</em>将缩放级别重置为 100%。 
+                  </li>
+                  <li> <span class="keyboardEntry">Tab</span>：选择下一个编号的 Gizmo，在最后一个之后循环回第一个 Gizmo。 
+                  </li>
+                  <li> <em class="strong">[digit]：</em>选择编号的 Gizmo，只对第 1 个到第 10 个 Gizmo 有效（“0”表示 10）。 
+                  </li>
+                  <li> <em class="strong">箭头键：</em>向箭头方向微移 Gizmo。 
+                  </li>
+               </ul> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

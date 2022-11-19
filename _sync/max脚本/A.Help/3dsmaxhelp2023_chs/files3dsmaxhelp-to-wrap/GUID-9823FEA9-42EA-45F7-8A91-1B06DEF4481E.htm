@@ -1,0 +1,51 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-9823FEA9-42EA-45F7-8A91-1B06DEF4481E">
+      <meta name="topic-type" content="concept">
+      <title>将 ShaderFX 节点添加到材质编辑器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-9823FEA9-42EA-45F7-8A91-1B06DEF4481E"></a><div class="head">
+            <h1>将 ShaderFX 节点添加到材质编辑器</h1>
+         </div>
+         <p><a name="GUID-F33158E8-7991-4D84-889F-FC71E521A8AA"></a>您可以向材质编辑器的“参数”卷展栏添加一些 ShaderFX 节点。这样，即可调整属性值，而无需打开 ShaderFX 编辑器。 
+         </p>
+         <p><a name="GUID-EFCAF449-2F55-4356-8212-2819842DE4B5"></a>打开 ShaderFX 编辑器后，请选择节点，然后在“属性”面板中单击“显示为材质输入”。关闭 ShaderFX 编辑器后，节点的属性将显示在“参数”卷展栏上。现在可以调整该属性，并查看其在视口中的实时更新。 
+         </p><a name="FIG_EDCB648F35FA46088CDE77ADA588657A"></a><div class="figure-anchor"><img src="../images/GUID-7F30D45B-4633-4D22-8FB2-F7436FAF308B-low.png"><p class="figure-title">1. 选择节点。</p>
+         </div><a name="FIG_DC7666B8DE1540A98351DD3DECAFC851"></a><div class="figure-anchor"><img src="../images/GUID-AE2A0343-8B62-4962-B358-433DC67F6955-low.png"><p class="figure-title">2. 打开“显示为材质输入”。</p>
+         </div><a name="FIG_645AEFA627EB4D1888995CF97447A725"></a><div class="figure-anchor"><img src="../images/GUID-1A032C3B-3655-4135-B391-29AF6E4D7262-low.png"><p class="figure-title">3. 该属性现在可在“DirectX 明暗器”材质的“材质编辑器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“参数”卷展栏上显示。
+            </p>
+         </div>
+         <div style="margin-top: 9pt;"><a name="GUID-473A61D4-EA0D-429B-AC53-13DF4D1C35F2"></a><div class="note-important"><span class="label label-target-language">重要信息:</span> 节点显示在“参数”卷展栏上后，材质编辑器中的此设置将替代 ShaderFX 编辑器中的设置。因此，ShaderFX 中的值和预览可能与当前设置不同步。 
+            </div>
+         </div>
+         <p><a name="GUID-08771932-0BD5-4777-8CF0-2147BFCEDC91"></a>如果禁用“显示为材质输入”，材质编辑器中设置的值将恢复为其在 ShaderFX 中的原始值。 
+         </p>
+         <div class="section"><a name="SECTION_FADEF317E820482CAA7F82B0B1D9D80F"></a> 
+            <h2><a name="GUID-0E9B4225-2216-47A9-AC97-C6C05C7A3D6C"></a>设置微调器范围
+            </h2> 
+            <p><a name="GUID-C4F318D5-FE14-428C-8C9F-482097F1A84D"></a>添加“浮点”节点并打开“显示为材质输入”使值在材质编辑器中显示时，该范围默认情况下为 0.0 至 99.0。 
+            </p> 
+            <p><a name="GUID-F7C2A9FF-0003-4917-BE5A-90D6D89FBC84"></a>如果要更改此范围，可以执行以下操作： <a name="OL_58413C95F71D4C00B61E3F28B9F96AC4"></a><ol type="1" start="1">
+                  <li>单击鼠标右键并选择“工具”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“切换高级模式”以启用高级模式。 
+                  </li>
+                  <li>创建值 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“浮点”节点。 
+                     <p><a name="GUID-D6285AF8-DA47-4631-AD37-C495621A15F8"></a>如果已经创建了“浮点”节点，取消选择它，然后再次选择以查看“属性”面板上的高级模式选项。 
+                     </p> 
+                  </li>
+                  <li>在“属性”面板上，使用“UI 滑块最小值”和“UI 滑块最大值”可以更改将在材质编辑器中显示的范围。 <a name="FIG_446A65F9CB864D80AC14FA9EF3208E2A"></a><div class="figure-anchor"><img src="../images/GUID-A50B47C9-81C7-4CFE-B783-84CCA773E8C0-low.png"><p></p>
+                        <p class="figure-title">“浮点”节点的高级模式滑块设置</p>
+                     </div>  
+                     <p><a name="GUID-DCDBDFC0-F13D-4652-BE9C-DFAC1BD1B072"></a>此方法也适用于整型节点和其他数字类型的值节点。 
+                     </p> 
+                  </li>
+               </ol> 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

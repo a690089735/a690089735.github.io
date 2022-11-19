@@ -1,0 +1,98 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-6B594DCD-E8B1-4803-B9F4-9C1C85EBE704">
+      <meta name="description" content="“图标”子操作符仅适用于“数据图标”操作符和“数据图标测试”。它可以确定与操作符/测试关联的图标的属性，以用于操作符/测试中的计算。">
+      <meta name="topic-type" content="concept">
+      <title>“图标”子操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-6B594DCD-E8B1-4803-B9F4-9C1C85EBE704"></a><div class="head">
+            <h1>“图标”子操作符</h1>
+         </div>
+         <p class="blurb">“图标”子操作符仅适用于“数据图标”操作符和“数据图标测试”。它可以确定与操作符/测试关联的图标的属性，以用于操作符/测试中的计算。 </p>
+         <div class="bodyReference"><a name="GUID-F027CD40-92A7-46C6-AE31-08A981D391C7"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-DEC15250-E2DD-4031-A1EB-D6200DA0CA49">“粒子视图” <img src="../images/ac.menuaro.gif"> “数据图标/数据图标测试” <img src="../images/ac.menuaro.gif">  单击“编辑数据流”。 <img src="../images/ac.menuaro.gif">  添加或选择“图标”。</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-8529C11C-DD9A-4F95-BE00-D1AD94EACCFB"></a>当向粒子系统添加“数据图标”操作符或“数据图标测试”时，“粒子流”将创建一个图标，并将其置于在世界原点。您可以通过操作符/测试的卷展栏控制“粒子视图”中该图标的物理属性。您可以根据图标的特定属性以及“图标”子操作符，在操作符/测试内执行计算。例如，您可以使用该“图标”子操作符来测量粒子和图标之间的距离，或只需确定图标的速度或角速度。
+               
+            </p>
+            <div class="section"><a name="AB1008139"></a> 
+               <h2><a name="GUID-234BE098-9982-4ADC-BB7B-6C11F3FA7E86"></a>界面
+               </h2> <a name="FIG_6C106574F13841E6A6E7820787D0E441"></a><div class="figure-anchor"><img src="../images/GUID-E68E57F8-8AB3-4328-A1C1-7164B21CC010-low.png"></div>  <a name="GUID-A7656B8F-DC30-4FD7-813B-05B5A991D7B0"></a><dl>
+                  <dt><a name="GUID-C1456492-08E0-41FC-B902-58692AA951C2"></a><span class="term"><a name="GUID-09E7ED98-F8C9-4704-83C4-5EB8F39EA4B4"></a>输出类型</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-B7329449-BF84-4D61-996F-8FD4150A99E2"></a>指示子操作符输出的数据类型。这是由“图标属性”选项决定的。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-8E4C423C-AF28-45B9-B1BA-332CC20223DB"></a><span class="term"><a name="GUID-66357696-4A4F-4314-8017-3E8E94AA62D4"></a>图标属性</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-CAEAB413-46E1-4BD1-89D9-8E2B8BCD6347"></a>从下拉列表中选择图标的属性类型。列表框下将直接显示选定属性的简要描述。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-5DB662C1-8091-466C-A3BF-0C9D1703A02C"></a><span class="term"><a name="GUID-A4E82EC2-34D4-4565-9E97-975ED48621D1"></a>静态图标</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-7315FC17-1955-461E-833F-767D188C330F"></a>图标不移动、旋转或缩放时启用，即其变换矩阵是恒定的。这样会加快对象计算。
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-28B7005A-3EC8-439C-96C1-3FFF6E1D35E5"></a><p class="title"><a name="GUID-06286F50-8116-4D12-9CCA-ABC969AFBE65"></a>“子帧采样”组
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-C2E1AF8C-CAC9-4146-84D9-1B9C1EEE7D5C"></a><span class="term"><a name="GUID-A2C526CE-B84C-433C-AEA3-D27F94659964"></a>放置</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-36C0E2AC-1B78-45E5-A4A6-512E7C551824"></a>默认情况下，此选项处于禁用状态，并且图标的变换矩阵具有一个帧的精度。启用时，将以子帧为基础查询变换矩阵，从而提高精度，但会降低计算速度。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-0B2EF981-F3B3-4458-ACE2-40FA4FCA5682"></a><span class="term"><a name="GUID-2C115A11-30A8-406C-8EC7-CE909AECC172"></a>几何体</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-06BD1742-1310-41B1-BA6B-5DB4B62D88E8"></a>默认情况下，此选项处于禁用状态，因而导致在当前帧内将图标的图形视为静态。启用时，将以子帧为基础查询图标的几何体/图形，从而提高精度，但会降低计算速度。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-0EDBBDE4-58BD-4675-98AA-490868EB2084"></a><p class="title"><a name="GUID-08AFA0F1-A1C4-444B-A68D-351EC2A5C9A9"></a>“数据关联”组
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-9D25A923-995B-47DC-936C-978B01814C96"></a><span class="term"><a name="GUID-1E3C15BF-EBA2-405E-B186-A060F60641F7"></a>T1 作为图标计时</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-0A3560D0-93BD-4A3B-870A-22D281AB1792"></a>向“数据视图”中的子操作符添加·T1 输入连接器；可将输出“时间”数据类型的任意其他子操作符与此关联。 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-A3718F70-050D-4572-95CD-D3BC8CFDB6A5"></a><span class="term"><a name="GUID-D9FAEE73-79AB-4246-A11C-B06E7AED8EAE"></a>V2 作为粒子位置/局部坐标</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-EEA9EB8F-46FD-492B-B9BC-ECD53E746944"></a>向“数据视图”中的子操作符添加 V2 输入连接器；可将输出“向量”数据类型的任意其他子操作符与此关联。“V2 作为粒子位置”选项仅适用于需要知道粒子位置的属性类型，如“与图标的距离”。对于需要知道局部坐标的属性类型，例如“点法线”，该选项会标记为“V2
+                           作为局部坐标”且处于启用状态但不可用，无法将其禁用。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-EAC7ADF6-AB04-4E66-8EB9-1A7A18B0753A"></a><span class="term"><a name="GUID-B62261D6-D892-4CE9-90A4-2459C88B84A2"></a>V3 作为粒子速度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-AFB7DF45-1F3C-4D47-835E-1218C2CD1C45"></a>向“数据视图”中的子操作符添加 V3 输入连接器；可将输出“向量”数据类型的任意其他子操作符与此关联。此选项仅适用于“碰撞点”属性。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+            <div class="section"><a name="AB1008263"></a> 
+               <h2><a name="GUID-E132E799-02CA-4B5F-BC28-4FA2C91692F0"></a>“唯一性”组
+               </h2> <a name="GUID-D91AEE95-8481-4AB3-80F6-C1D38B077808"></a><dl>
+                  <dt><a name="GUID-62C9356F-19F8-4A42-AF20-E330CC086B1C"></a><span class="term"><a name="GUID-75DC5187-56B4-4C84-A76C-70CB919E1C60"></a>种子</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-55F6B287-3164-4F2D-B4DB-BDD86B2BC312"></a>用于设置某种随机种子，以与其他随机播种的功能区分行为。通过输入值或单击“新建”，更改“种子”值以改变随机行为。仅适用于“随机曲面点”和“随机体积点”图标属性。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-640F2AB6-E1C0-49A3-9337-A4BFA0D5754F"></a><span class="term"><a name="GUID-DCCF1227-546E-43C6-8FC0-AAEAD1A68FD2"></a>E4</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-A07A4952-C35D-41D9-A9A6-F386B5C8ABFB"></a>启用时，可以通过<span class="char_link"><a href="GUID-291B5691-D4C7-4E85-A1FA-F6690107CAA8.htm">“参数”子操作符</a></span>露出“种子”参数并允许用户选择。启用 E4，添加将“类型”设置为“唯一性种子”的“参数”子操作符，将其与“图标”子操作符上的 E4 输入关联，然后使用<span class="char_link"><a href="GUID-B5AE412C-C09A-4436-9268-5953A4607738.htm">露出参数</a></span>使设置在“粒子视图”界面中可用。
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

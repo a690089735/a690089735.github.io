@@ -1,0 +1,58 @@
+<!-- saved from url=(0024)http://docs.autodesk.com -->
+<html>
+   <head>
+<link href="../../../style/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../../../scripts/prettify.js"></script><script src="../../../scripts/lib/jquery-1.11.1.min.js" type="text/javascript"></script><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Style-Type" content="text/css" /><meta name="generator" content="pandoc" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><script type="text/javascript" src="../../../scripts/utils/adsk.redirect.js"></script>
+      <title>Hello World source code for Python API 1.0</title>
+   </head>
+   <body height="100%"><div class="body_content" id="body-content"><style type="text/css">code{white-space: pre;}</style><script>$(document).ready(function() { yepnope.injectJs("./scripts/multireflink.js"); });</script><script>$(document).ready(function () { prettyPrint(); } );</script><script></script><script></script><div id="reflinkdiv"></div>
+      <div>
+         <div class="head">
+            <h1>Hello World source code for Python API 1.0</h1>
+         </div>
+
+<div class='section'><a id="hello-world-source-code-for-python-api-1.0"></a></div>
+<div class="codeBlock"><pre class="prettyprint lang-python">import sys
+import maya.OpenMaya as OpenMaya
+import maya.OpenMayaMPx as OpenMayaMPx
+
+# command
+class Py1HelloWorldCmd(OpenMayaMPx.MPxCommand):
+    kPluginCmdName = &quot;py1HelloWorld&quot;
+
+    def __init__(self):
+        OpenMayaMPx.MPxCommand.__init__(self)
+
+    @staticmethod
+    def cmdCreator():
+        return OpenMayaMPx.asMPxPtr( Py1HelloWorldCmd() )
+
+        def doIt(self,argList):
+            print (&quot;Hello World!&quot;)
+
+# Initialize the script plug-in
+def initializePlugin(plugin):
+    pluginFn = OpenMayaMPx.MFnPlugin(plugin)
+    try:
+        pluginFn.registerCommand(
+        Py1HelloWorldCmd.kPluginCmdName, Py1HelloWorldCmd.cmdCreator
+    )
+    except:
+        sys.stderr.write(
+            &quot;Failed to register command: %s\n&quot; % Py1HelloWorldCmd.kPluginCmdName
+    )
+    raise
+
+# Uninitialize the script plug-in
+def uninitializePlugin(plugin):
+    pluginFn = OpenMayaMPx.MFnPlugin(plugin)
+    try:
+        pluginFn.deregisterCommand(Py1HelloWorldCmd.kPluginCmdName)
+    except:
+        sys.stderr.write(
+            &quot;Failed to unregister command: %s\n&quot; % Py1HelloWorldCmd.kPluginCmdName
+        )
+    raise
+</pre></div>      <div class="footer-block"><a href="../html/ac.cmtdialog.htm" class="comments-anchor" target="_blank"><span class="comments-link">Please send us your comment about this page</span></a></div></div>
+   </div></body>
+</html>

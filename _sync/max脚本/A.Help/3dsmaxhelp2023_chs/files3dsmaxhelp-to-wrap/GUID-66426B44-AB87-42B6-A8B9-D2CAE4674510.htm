@@ -1,0 +1,77 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-66426B44-AB87-42B6-A8B9-D2CAE4674510">
+      <meta name="description" content="“对称”选项将保留对象围绕指定平面的对称状态。">
+      <meta name="indexterm" content="ProOptimizer 修改器: 对称选项">
+      <meta name="topic-type" content="concept">
+      <title>“对称选项”卷展栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-66426B44-AB87-42B6-A8B9-D2CAE4674510"></a><div class="head">
+            <h1>“对称选项”卷展栏</h1>
+         </div>
+         <p class="blurb">“对称”选项将保留对象围绕指定平面的对称状态。 </p>
+         <div class="bodyReference"><a name="UL_861C7665EBE3442D959798C76BD86DE7"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-1F3B75E9-A8D4-4A9D-878E-01138C802309">创建或导入一个对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “ProOptimizer”修改器  <img src="../images/ac.menuaro.gif"> “对称选项”卷展栏</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF68908C3E11A1FA06A23-23C2"></a>“对称”选项中的某选项处于启用状态时，ProOptimizer 将查找对称的边缘对。当找到一个对称对时，将在该平面的两侧应用相同的优化。 
+            </p>
+            <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-E33"></a>如果对象确实对称，这些选项将取得最佳效果；例如，如果对象原先是通过镜像创建的。如果 ProOptimizer 无法检测到围绕指定平面的对称，将按正常方式优化对象。 
+            </p>
+            <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-E32"></a>位于平面本身上的点将被冻结（不优化），因为根据定义它们是对称的。 
+            </p>
+            <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-E31"></a>某些 <span class="charspan-msgph">3ds Max</span> 对象看起来是对称的，但实际上不对称；例如，由车削修改器创建的旋转曲面。在此情况下，尽管整个几何体是对称的，但所有边缘在旋转方向上具有相同的方向，因此，当由平面分为两半时，相对边缘面将处于相反方向。在此情况下，ProOptimizer 无法检测到对称，并将按通常方法优化。
+               
+            </p>
+            <div><a name="WS73099CC142F48755-63C0748611A1FA08F71-24B7"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>在此卷展栏上的控件是<em class="mild">非交互式的</em>。如果更改设置，则“优化级别”卷展栏上的“状态”窗口将显示“优化无效”，且必须再次单击“计算”，才能观察更改选项值的结果。 
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF68908C3E11A1FA06A23-23C1"></a> 
+               <h2><a name="GUID-8AC230DD-C0F0-450A-A48E-D5A016FC71EA"></a>界面
+               </h2> <a name="WS73099CC142F48755-63C0748611A1FA08F71-2504"></a><div class="figure-anchor"><img src="../images/GUID-94DADBDA-DB9F-4356-8AC8-2817B7FE186C-low.png"></div>  <a name="GUID-9840DA28-2E10-42CB-BEE1-3ACE8D6E8AAF"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7A0F"></a><span class="term"><a name="WS73099CC142F48755-63C0748611A1FA08F71-2503"></a>无对称</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7C6F"></a> 
+                        <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-2502"></a>（默认设置。）ProOptimizer 不会尝试进行对称优化。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7A0E"></a><span class="term"><a name="WS73099CC142F48755-63C0748611A1FA08F71-2501"></a>XY 对称</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7C6E"></a> 
+                        <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-2500"></a>ProOptimizer 尝试进行围绕 XY 平面对称的优化。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7A0D"></a><span class="term"><a name="WS73099CC142F48755-63C0748611A1FA08F71-24FF"></a>YZ 对称</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7C6D"></a> 
+                        <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-E30"></a>ProOptimizer 尝试进行围绕 YZ 平面对称的优化。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7A0C"></a><span class="term"><a name="WS73099CC142F48755-63C0748611A1FA08F71-24FD"></a>XZ 对称</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7C6C"></a> 
+                        <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-E2F"></a>ProOptimizer 尝试进行围绕 XZ 平面对称的优化。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7A0B"></a><span class="term"><a name="WS73099CC142F48755-63C0748611A1FA08F71-24FB"></a>公差</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7C6B"></a> 
+                        <p><a name="WS73099CC142F48755-63C0748611A1FA08F71-24FA"></a>指定用于检测对称边缘的公差值。在某些模型中，对称边缘的位置可能不精确；例如，舍入误差可能已导致位置值出现细小的差异。增加“公差”值可纠正此问题。默认值为 0.0。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

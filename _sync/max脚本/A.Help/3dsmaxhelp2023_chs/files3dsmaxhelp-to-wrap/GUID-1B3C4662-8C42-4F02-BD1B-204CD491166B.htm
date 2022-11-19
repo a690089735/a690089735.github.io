@@ -1,0 +1,364 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-1B3C4662-8C42-4F02-BD1B-204CD491166B">
+      <meta name="description" content="“蒙皮包裹”修改器允许一个或多个对象变形另一个对象。虽然“蒙皮包裹”非常灵活，可满足不同需要，但它主要用于使用低分辨率对象设置高分辨率对象（如角色网格）的动画。">
+      <meta name="indexterm" content="蒙皮修改器: 蒙皮包裹修改器">
+      <meta name="indexterm" content="修改器: 蒙皮包裹">
+      <meta name="indexterm" content="蒙皮包裹修改器">
+      <meta name="contextid" content="SKIN_WRAPMOD.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS-SKIN_WRAPMOD">
+      <meta name="topic-type" content="concept">
+      <title>蒙皮包裹修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-1B3C4662-8C42-4F02-BD1B-204CD491166B"></a><div class="head">
+            <h1>蒙皮包裹修改器</h1>
+         </div>
+         <p class="blurb">“蒙皮包裹”修改器允许一个或多个对象变形另一个对象。虽然“蒙皮包裹”非常灵活，可满足不同需要，但它主要用于使用低分辨率对象设置高分辨率对象（如角色网格）的动画。 </p>
+         <div class="bodyReference"><a name="UL_9BE744E4503C45698E968BBB18660233"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-023AFF9F-FB5B-4C99-AF41-42F7D20F64E5">进行选择。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “蒙皮包裹”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-B8B661B7-9F96-46B5-A220-DA4F428FC096">进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “动画” <img src="../images/ac.menuaro.gif"> “蒙皮包裹”</span> 
+               </li>
+            </ul>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B86"></a>进行变形的低分辨率对象称为<em class="mild">控制对象</em>，而它所影响的高分辨率对象（即带有“蒙皮包裹”修改器的对象）为<em class="mild">基础对象</em>。基础对象可以是任何类型的可变形对象。另外，在本主题中，<em class="mild">控制顶点</em>是指控制对象上的顶点，而<em class="mild">点</em>是指基础对象上的顶点。 
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B85"></a>使用“蒙皮包裹”，可在设置动画后修改高分辨率对象的结构和拓扑。动画保持完整，因为它实际上包含在控制对象中。 
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B84"></a>在大多数情况下，在使用“蒙皮包裹”时，控制对象放在所修改的基础对象旁，然后被使用修改器的“添加”功能绑定到后者。在默认情况下，移动控制对象中的顶点会影响基础对象中的相邻顶点。而其他选项允许控制对象中的面影响基础对象中的最近点（“与基础对象混合”）。相反，控制对象中的点会影响基础对象中的面（“面变形”）。
+               
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B83"></a>“蒙皮包裹”提供大量控件，从中可为每个控制顶点设置不同强度值及其影响体积的形状。也可以将“蒙皮包裹”效果转换为对适合用于游戏引擎的高分辨率模型应用的“蒙皮”修改器。利用可使用多个控制对象设置动画的功能，技术指导可将复杂角色网格的不同部分的动画设置分配给多名设计人员。
+               
+            </p>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA0D"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果使用已应用非均匀缩放的控制对象，其顶点将具有非球形影响体积，这会导致不可预测的结果。在这种情况下，在将控制对象应用到修改器之前，应用<span class="char_link"><a href="GUID-B98414B9-4F28-45F4-A1F4-9DA994548ED9.htm">重置变换</a></span>，然后塌陷堆栈。 
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2930"></a> 
+               <h2><a name="GUID-9AACD2C8-CCEF-4DC6-8198-44F3ED9E9ABC"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043B1F"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043B20"></a>要使用“蒙皮包裹”（基本方法），请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建一个高分辨率基础对象以及一个或多个低分辨率控制对象，后者将使基础对象变形。一般，每个控制对象应具有与它将变形的基础对象部分相似的整体形状，并且应放在基础对象部分附近。 </li>
+                  <li>对高分辨率基础对象应用“蒙皮包裹”。修改器将动画或模型从控制对象传输到基础对象。 </li>
+                  <li>在“蒙皮包裹”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“参数”卷展栏上，使用“添加”指定控制对象。 
+                  </li>
+                  <li>选择变形引擎：“顶点”或“面”。 </li>
+                  <li>根据需要选择全局参数。这些参数包括“变形引擎”、“衰减”、“距离影响”和“面限制”，会影响所有控制顶点。 </li>
+                  <li>要设置包括强度和影响距离在内的局部参数，请访问“蒙皮包裹”的“控制顶点”子对象层级。选择一个或多个控制顶点，然后根据需要更改设置。 </li>
+                  <li>使用修改器和/或子对象变换来编辑或设置控制对象的动画；高分辨率（基础）对象会相应地变形。 </li>
+                  <li>根据需要，重复步骤 5、6 和 7。另外，偶尔需要通过单击“重置”按钮来重置修改器。执行该操作始终可返回动画中的未变形点（或称“蒙皮姿势”）；一般是第 0 帧。 </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-292F"></a> 
+               <h2><a name="GUID-4E11F1BC-763F-44CA-B632-9F3E61F362D4"></a>界面
+               </h2> 
+               <div class="section"><a name="WSF742DAB04106313366400BF6112A1CEA097-7EF2"></a> 
+                  <h3><a name="GUID-1351FE1D-4961-407D-85E5-FF02AC3EC7FF"></a>蒙皮包裹修改器堆栈
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043B21"></a><div class="figure-anchor"><img src="../images/GUID-A64E019E-83CF-46F6-9B45-BFBDC7B063F1-low.png"></div>  <a name="GUID-8A6122E5-6764-4B97-A54F-AB165C710DF5"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6036"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B81"></a>控制顶点子对象层级</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F06"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CEB"></a>在“控制顶点”子对象层级，可以查看和选择控制对象上的顶点，然后为任何选定顶点设置<span class="char_link"><a href="GUID-1B3C4662-8C42-4F02-BD1B-204CD491166B.htm#GUID-8487F7E5-6206-4529-9EC3-A98C3CF5D2E5">局部参数</a></span>。在默认情况下，每个选定顶点被说明其影响体积的<span class="char_link"><a href="GUID-1B3C4662-8C42-4F02-BD1B-204CD491166B.htm#WSF742DAB04106313366400BF6112A1CEA097-7EEF">循环</a></span>围绕。此子对象层级还在基础对象的受影响点上使用颜色编码，显示每个选定顶点对影响体积中的点的相对影响。颜色范围从表示最强影响的橙色到表示最弱影响的蓝色。红色顶点是位于其影响范围内，但不受其影响的顶点。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B80"></a>在默认情况下，控制顶点在此层级显示为橙色的小方块。为避免这一点，请禁用“显示参数”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“显示控制顶点”。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043B22"></a> 
+                  <h3><a name="GUID-36B264ED-124B-42BA-BEC9-5F4463DF935F"></a>“参数”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043B23"></a><div class="figure-anchor"><img src="../images/GUID-67D1824E-3D5B-4FCD-A90C-24610D8DDEA0-low.png"></div>  <a name="GUID-08AA8581-CF37-403E-9839-7F3989EE551F"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6035"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B7F"></a>[控制对象列表]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F05"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CEC"></a>列出将所修改对象变形的对象。使用“添加”和移除功能可编辑列表内容。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6034"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B7E"></a>添加</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F04"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CED"></a>向列表中添加控制对象。单击“添加”，然后依次单击每个控制对象。要停止添加，在视口中单击右键或者再次单击“加入”。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B7D"></a>  可以将可转换为三角形网格的任何对象作为控制对象，例如网格、面片或 NURBS 对象。不过，避免使用更改拓扑的对象，例如具有自适应细分的变形 NURBS 对象。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6033"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B7C"></a>移除</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F03"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CEE"></a>移除列表中的控制对象。单击列表中的对象，然后单击“去除”。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6032"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B7B"></a>变形引擎</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F02"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CEF"></a>确定执行变形的引擎。默认设置为“顶点变形”。 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A190043B24"></a><ul>
+                              <li>“顶点变形”引擎是一个权重引擎，它使用顶点接近度执行变形。也就是说，控制对象中的每个顶点影响高分辨率（基础）网格中的相邻点。 </li>
+                              <li>使用“面变形”引擎，每个控制顶点被绑定到基础对象中的最接近面。面变形可以使用衰减，也可以通过将“衰减”设置为可能的最低值 0.001 来作为刚体变形。 </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6031"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B7A"></a>衰减</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F01"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CF0"></a>确定控制顶点影响基础对象中的相邻点的范围。这是全局设置。默认值为 1.0。范围为 0.001 至 10.0。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B79"></a>值越高，会将相邻点拉得距离控制顶点越近。在“面变形”模式下，将“衰减”设置为最低值 0.001 会引起刚体变形，所以不存在衰减；控制顶点影响或不影响基础对象面。为获得最佳效果，请使用 1.0 到 2.0 之间的“衰减”值；或在“面变形”下，使用
+                              0.001 的“衰减”值以使用刚体模式 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6030"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B78"></a>距离影响</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F00"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CF1"></a>以系统单位数确定控制对象中的控制顶点的影响距离。这是一个全局设置，仅在“顶点变形”模式下可用。默认值为 1.2。范围为 0.001 至 10.0。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B77"></a>“距离影响”是一个乘数。它查看接触每个控制顶点的每条边的长度。对于每个顶点，它会计算所有长度的平均值，然后将结果乘以“距离影响”的值。这样，仅接触小面的顶点会影响小区域，反之亦然。影响值越高，变形越平滑，每个顶点具有的单独控制越少。为获得最佳效果，将此值保持在
+                              1.0 到 2.0 之间。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-602F"></a><span class="term"><a name="WSF742DAB04106313366400BF6112A1CEA097-7EF1"></a>面限制</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EFF"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CF2"></a>确定控制对象中的控制对象面或控制顶点的影响范围。这是一个全局设置，仅在“顶点变形”模式下可用。默认值为 3。范围为 0 至 30.0。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B76"></a>  超出此限制，控制顶点不能影响基础对象中的点，即使它们位于“距离影响”半径内。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B75"></a>“面限制”用于防止控制对象影响跨越网格中的间距；例如，角色网格中的手指之间。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-602E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B74"></a>与基础网格混合</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EFE"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CF3"></a>使修改器在每个受影响点到控制对象中的最接近面的距离上进行基础变形。启用此选项会使“混合距离”设置可用。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-602D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B73"></a>混合距离</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EFD"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CF4"></a>确定控制对象中的面和基础对象中的顶点之间的距离以使变形生效。仅在启用“与基础网格混合”时可用。默认值为5.0。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B72"></a>提高此设置可有效加强变形效果，并使影响基础对象的控制区域变宽。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+                  <div class="dl_section"><a name="GUID-8487F7E5-6206-4529-9EC3-A98C3CF5D2E5"></a><p class="title"><a name="GUID-76A2C757-5848-418E-8B09-73191D58DFE4"></a>[局部参数]
+                     </p>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B71"></a>局部参数仅在“控制顶点”子对象层级（请参见<span class="char_link"><a href="GUID-1B3C4662-8C42-4F02-BD1B-204CD491166B.htm#WSF742DAB04106313366400BF6112A1CEA097-7EF2">蒙皮包裹修改器堆栈</a></span>）可用，并且仅影响选定点。如果选择单个点，数值字段会反映其当前参数值。如果选择多个点，<span class="charspan-msgph">3ds Max</span> 仅显示所有选定点的那些公共值；具有不同值的参数为空白。选择多个点时，更改一个值会将所有选定点设置为该值。 
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-602C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B70"></a>局部影响力度</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EFC"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CF5"></a>确定控制对象顶点影响其影响范围内的基础对象点的强度和方向。正值会朝顶点拉动点；负值会推开这些点。默认值为 1.0。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-602B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B6F"></a>局部缩放倍增器</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EFB"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CF6"></a>均匀缩放每个选定控制对象顶点的影响体积。默认值为 1.0。 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B6E"></a>使用缩放设置可增加或减少选定控制顶点可影响的基础对象的区域。 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-602A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B6D"></a>局部 X/Y/Z</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EFA"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CF7"></a>沿所指示的轴缩放每个选定控制对象顶点的影响体积。默认值为 1.0。 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B6C"></a>更改这些参数可生成非球体的影响体积。 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6029"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B6B"></a>重置</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EF9"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CF8"></a>将所有控制对象顶点的局部值设置为 1.0，并重采样网格。它使用当前的修改器设置，重新计算控制顶点对基础对象的影响。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B6A"></a>如果改变了参数，但未看到变形出现任何变化，请使用“重置”。例如，在更改“阈值”的值后始终使用“重置”。或者，如果希望控制对象影响基础对象的不同部分，请移动前者，然后使用“重置”以使修改器考虑两者之间的位置关系变化。在更改基础对象或控制对象的拓扑后，也可能需要进行重置。
+                              
+                           </p> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA0E"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>在动画中无生效变形的位置使用“重置”，一般为第 0 帧。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6028"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B69"></a>阈值</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EF8"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CF9"></a>以系统单位数确定 <span class="charspan-msgph">3ds Max</span> 用于查找与控制顶点最接近的面的距离。控制对象表面与基础对象表面偏移的距离越大，“阈值”的值就需要越高。默认值为5.0。 
+                           </p> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA0F"></a><div class="note-note"><span class="label label-target-language">注意:</span>仅在添加基础网格或单击“重置”时才重新计算阈值。 
+                              </div>
+                           </div> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA10"></a><div class="note-warning"><span class="label label-target-language">警告:</span>提高此设置时应谨慎。高值会导致大量计算时间，特别是对于复杂基础对象。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6027"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B68"></a>权重所有点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EF7"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CFA"></a>强制所有基础对象点具有权重。每个权重通过以下三个因数的组合进行计算：控制顶点比例、控制顶点强度和基本对象点位置。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B67"></a>在默认情况下，并非所有基础对象点都一定受控制对象影响。启用“权重所有顶点”会使一个或多个控制顶点可影响所有点。如果存在大量未指定的基础对象点，会需要很长的计算时间。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6026"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B66"></a>转换到蒙皮</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EF6"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CFB"></a>对在“蒙皮包裹”修改器中复制动画的基础对象应用新的<span class="char_link"><a href="GUID-9596F6EF-3569-44F2-8D6C-6EB58C30BEDD.htm">蒙皮修改器</a></span>。要使用此功能，需要已对每个控制对象应用“蒙皮”修改器。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B65"></a>基本上，“转换为蒙皮”以智能方式将动画从蒙皮的低分辨率控制对象“烘焙”到高分辨率基础对象。它创建的“蒙皮”修改器包含原始“蒙皮”修改器中的所有骨骼指定，但已基于“蒙皮包裹”修改器创建的基础对象权重全面重构建了权重设置。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B64"></a>此功能用于游戏引擎识别“蒙皮”修改器设置，但不识别“蒙皮包裹”修改器时的游戏开发设置。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043B26"></a> 
+                  <h3><a name="GUID-06EBB9AD-61B9-4443-8876-76F311EF62FE"></a>“高级参数”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043B27"></a><div class="figure-anchor"><img src="../images/GUID-DFF5E438-F908-437D-8F38-22FF60CEE22C-low.png"></div>  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B63"></a>使用“蒙皮包裹”中的“镜像”工具，通过在与 X、Y 或 Z 轴对齐的平面上镜像控制对象一侧控制顶点的局部设置（“强度”和“缩放”），可将这些设置应用于控制对象的另一侧。此功能用于设置角色网格。 
+                  </p> 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA11"></a><div class="note-note"><span class="label label-target-language">注意:</span>“镜像”仅从控制顶点复制“蒙皮包裹”的设置；它不复制动画数据。所以，在对角色模型使用“蒙皮包裹”时，首先设置控制对象一侧的控制顶点的局部设置、选择要复制的顶点、镜像它们，然后设置控制对象的动画。 
+                     </div>
+                  </div> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B62"></a>使用“烘焙/检索控制顶点”功能，可将控制顶点设置保存到基础对象中，然后检索它们。这用于在设计同一项目的设计人员中共享数据。 
+                  </p> <a name="GUID-4CB0554D-21E4-45C4-B565-9FF6BA9B1D5F"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6025"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B61"></a>显示镜像数据</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EF5"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CFC"></a>启用镜像平面 gizmo 的显示，会显示一个小圆圈，其中显示每个选定控制顶点的投影位置。使用“镜像偏移”控件（请参见下文）移动该 Gizmo 和投影位置。 
+                           </p> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA12"></a><div class="note-note"><span class="label label-target-language">注意:</span>要使镜像数据可见，“蒙皮包裹”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“控制顶点”子对象层级必须处于活动状态。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6024"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B60"></a>镜像平面</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EF4"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CFD"></a>选择 X、Y 或 Z 轴以进行镜像。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6023"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B5F"></a>镜像偏移</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EF3"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CFE"></a>移动镜像平面以及所有镜像顶点。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6022"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B5E"></a>镜像阈值</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EF2"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751CFF"></a>以系统单位数设置“蒙皮包裹”用于查找靠近投影顶点的控制顶点的距离。如果镜像平面两侧的顶点位置不同，请提高此值。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6021"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B5D"></a>镜像选定的</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EF1"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751D00"></a>从每个选定控制顶点，将局部设置复制到镜像平面另一侧上其投影位置的阈值距离内的所有控制顶点。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6020"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B5C"></a>烘焙控制顶点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EF0"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751D01"></a>在控制对象上存储“局部强度/缩放”和全局“衰减”、“距离影响”和“面限制”设置，以便今后使用“检索控制顶点”进行检索。 
+                           </p> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA13"></a><div class="note-note"><span class="label label-target-language">注意:</span>此数据是静态的；任何基本对象拓扑变化都会使其无效。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-601F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B5B"></a>检索控制顶点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EEF"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751D02"></a>获取使用“烘焙控制顶点”存储在控制对象上的任何控制顶点数据，并将它们复制到修改器中。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043B28"></a> 
+                  <h3><a name="GUID-D1373660-AE98-4F1A-9B7C-968AB324C6AA"></a>“显示参数”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043B29"></a><div class="figure-anchor"><img src="../images/GUID-8E201FF3-C854-4D1B-AEBB-14B177154291-low.png"></div>  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B5A"></a>这些设置确定 <span class="charspan-msgph">3ds Max</span> 是否在“蒙皮包裹”修改器中显示不同元素。 
+                  </p> <a name="GUID-B67027DA-2D4A-4D64-9966-706B78FD27E5"></a><dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-601E"></a><span class="term"><a name="WSF742DAB04106313366400BF6112A1CEA097-7EEF"></a>显示循环</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EEE"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751D03"></a>将选定控制顶点的影响体积显示为红色循环。默认设置为启用。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-601D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B59"></a>显示轴</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EED"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751D04"></a>显示选定控制顶点的轴三轴架。默认设置为启用。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-601C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B58"></a>显示面限制</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EEC"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751D05"></a>显示选定的一个或多个控制顶点可影响的所有基础对象点。这是<span class="char_link"><a href="GUID-1B3C4662-8C42-4F02-BD1B-204CD491166B.htm#WSF742DAB04106313366400BF6112A1CEA097-7EF1">面限制设置</a></span>的可视显现。默认设置为启用。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-601B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B57"></a>显示未指定点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EEB"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751D06"></a>在系统未为其找到最接近面的每个基础对象点周围绘制一个红色圆圈；并在已具有最接近面，但尚未由任何控制顶点设置权重的每个点周围绘制一个红色方框。默认设置为禁用状态。 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A190043B2A"></a><div class="figure-anchor"><img src="../images/GUID-A6171E27-B8FA-4BDD-BDC7-745C5FA382A8-low.png"><p class="figure-title">未指定的点：带圆圈的点（底部）没有最接近面，而带红色方框（中间）的点具有最接近的面，但尚未由控制顶点设置权重。</p>
+                           </div>  
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B56"></a>这是重要的调试工具，因为永远不会为未指定最接近面的任何顶点设置权重。为此，需要提高“阈值”的值，然后单击“重置”，或者启用“权重所有点”。可增加靠近该点的控制顶点的“本地缩放”，以修复尚未设置其对控制顶点的权重的任何点。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-601A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3B55"></a>显示控制顶点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7EEA"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751D07"></a>切换所有控制顶点的显示。默认设置为启用。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-546ECC39-FA9E-4F92-9A6E-A37B18E967B9"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-24A81BFD-F298-4FF5-B4B9-8E08F20A001E.htm">蒙皮包裹面片修改器 </a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B645FB9D-3F41-486A-BC21-94304719C31C">
+      <meta name="description" content="使用“删除”操作符可将粒子从粒子系统中移除。默认情况下，粒子“永远”（即动画的持续时间）保持活动状态。使用“删除”操作符可以为粒子提供一个有限的寿命。当粒子完成在动画中的动作后，这将有助于将其删除。">
+      <meta name="indexterm" content="删除: 粒子">
+      <meta name="indexterm" content="粒子: 限制生命周期">
+      <meta name="indexterm" content="粒子: 和年龄">
+      <meta name="indexterm" content="删除: 操作符（粒子流）">
+      <meta name="indexterm" content="粒子流操作符: 删除">
+      <meta name="topic-type" content="concept">
+      <title>删除操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B645FB9D-3F41-486A-BC21-94304719C31C"></a><div class="head">
+            <h1>删除操作符</h1>
+         </div>
+         <p class="blurb">使用“删除”操作符可将粒子从粒子系统中移除。默认情况下，粒子“永远”（即动画的持续时间）保持活动状态。使用“删除”操作符可以为粒子提供一个有限的寿命。当粒子完成在动画中的动作后，这将有助于将其删除。 </p>
+         <div class="bodyReference"><a name="GUID-648725BF-F261-400E-941F-C33732D35362"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-9095BBD3-FE3C-4E88-94FC-543E9C0B21F1">粒子视图  <img src="../images/ac.menuaro.gif">  在某个事件中单击“删除”，或将“删除”操作符添加到粒子系统中，然后选择它。</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63C5"></a>“删除”操作符在使用“粒子年龄”贴图时也是必需的，“删除”操作符在并入“材质动态”操作符后，可根据粒子年龄将不同材质应用于粒子。因为贴图基于粒子寿命的百分比工作，所以需要使用“删除”操作符来定义粒子的最大年龄。有关使用方法的示例，请参见<span class="char_link"><a href="GUID-8A5EF550-CF8A-4467-B73A-AED6414CD256.htm">材质动态操作符</a></span>。 
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-63C4"></a> 
+               <h2><a name="GUID-683E2DA9-3C2E-45CB-9877-F6A8A4435111"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900423D5"></a><div class="figure-anchor"><img src="../images/GUID-B024BC25-E5F2-4577-84C4-981A57FA41B7-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63C3"></a>用户界面出现在“粒子视图”对话框右侧的“参数”面板中。 
+               </p> <a name="GUID-F90F48E4-9EC8-45FC-8028-74C7C24EDE10"></a><div class="dl_section"><a name="GUID-ACB98236-9EE0-4E3D-AE2E-4726F14BF454"></a><p class="title"><a name="GUID-9637A09F-E39D-4F33-BFB4-E2E5644A8A9B"></a>移除组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63C2"></a>选择是否要删除所有粒子、选定粒子或超过特定年龄的粒子。 
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63C1"></a>通过使用“按粒子年龄”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“变化”设置，“唯一性”设置可启用随机最大粒子年龄。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6525"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63C0"></a>所有粒子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-662C"></a> 立即删除事件中的所有粒子。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6524"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63BF"></a>仅选定粒子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-662B"></a> 立即删除事件中在“粒子”子对象层级下选定的粒子。请参见<span class="char_link"><a href="GUID-89DA4474-E8F4-496F-9339-305D8C8E241E.htm#WSF742DAB0410631331C0DB195112A1CEB6FD-7FB6">“选择”卷展栏</a></span>。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6523"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63BE"></a>按粒子年龄</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-662A"></a> 删除事件中已存在了特定时间长度的粒子，并且可选设置随机变化。选择此项将使“寿命”和“变化”设置可用。 <a name="WS1A9193826455F5FF3913A1A412260CA5929-5D06"></a><ul>
+                              <li> <em class="strong">寿命</em>允许粒子存在的帧数。此周期后，粒子将被删除。默认值为 60。 
+                              </li>
+                              <li> <em class="strong">变化</em>“寿命”可以变化的最大数量。要获取每个粒子的实际寿命，将此值乘以 -1.0 和 1.0 之间的任意一个数，然后与“寿命”相加。默认设置是 10。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-87D2FAD4-9D62-48DD-967D-BD2389AD883B"></a><p class="title"><a name="GUID-12053499-59AA-4A45-AFD3-BCE236308BD6"></a>“唯一性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-63BB"></a>通过使用“按粒子年龄”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“变化”设置，“唯一性”设置可启用随机最大粒子年龄。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6520"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63BA"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6627"></a> 指定随机化值。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-651F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-63B9"></a>新增特性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6626"></a> 使用随机化公式计算新种子。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

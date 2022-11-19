@@ -1,0 +1,108 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-1DED6F38-8F4B-4E3D-86F3-3A727AC85888">
+      <meta name="description" content="程序贴图的展平贴图方法将平面贴图应用于落入指定角度阈值中的连续纹理多边形组。可避免贴图簇的重叠，但是仍会导致纹理扭曲。使用“展平贴图”对话框可以控制簇进行贴图和定义的方式。">
+      <meta name="indexterm" content="UVW 展开: 展平贴图对话框">
+      <meta name="indexterm" content="贴图: 展平（UVW 展开）">
+      <meta name="indexterm" content="展平贴图对话框（UVW 展开）">
+      <meta name="contextid" content="IDH_UNWRAP_FLATTENMAP">
+      <meta name="topic-type" content="concept">
+      <title>“展平贴图”对话框</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-1DED6F38-8F4B-4E3D-86F3-3A727AC85888"></a><div class="head">
+            <h1>“展平贴图”对话框</h1>
+         </div>
+         <p class="blurb">程序贴图的展平贴图方法将平面贴图应用于落入指定角度阈值中的连续纹理多边形组。可避免贴图簇的重叠，但是仍会导致纹理扭曲。使用“展平贴图”对话框可以控制簇进行贴图和定义的方式。 </p>
+         <div class="bodyReference"><a name="UL_A7E02892CC8346B1BED069F30C6736F7"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-098BBF71-72EF-4768-8C6C-E70F6367F2BE">“UVW 展开修改器” <img src="../images/ac.menuaro.gif"> “编辑 UV”卷展栏  <img src="../images/ac.menuaro.gif"> “打开 UV 编辑器”按钮  <img src="../images/ac.menuaro.gif"> “编辑 UVW”对话框  <img src="../images/ac.menuaro.gif"> “多边形”子对象层级  <img src="../images/ac.menuaro.gif"> “贴图”菜单  <img src="../images/ac.menuaro.gif"> “展平贴图”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-66B58AB0-1FB6-4293-894B-7509D1C6F7A6">“UVW 展开修改器” <img src="../images/ac.menuaro.gif"> “编辑 UV”卷展栏  <img src="../images/ac.menuaro.gif"> “打开 UV 编辑器”按钮  <img src="../images/ac.menuaro.gif"> “编辑 UVW”对话框  <img src="../images/ac.menuaro.gif"> “多边形”子对象层级  <img src="../images/ac.menuaro.gif"> “炸开”卷展栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-214E4302-C287-45F0-876C-28D1E9256CD8-low.png">“展平设置”按钮（在“展平: 自定义”弹出按钮上）</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-28FF"></a> 
+               <h2><a name="GUID-D9AAAA76-0444-4455-8D4B-BAC9A02DBEBB"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043CF3"></a><div class="figure-anchor"><img src="../images/GUID-F5513627-07B6-4FDD-9BD2-C0AB72ADA34F-low.png"></div>  <a name="GUID-A42505A7-A101-49E9-9BFF-CE9F7E9F4853"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C5C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-385A"></a>面角度阈值</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4469"></a> 在群集中面之间可以存在的最大角度。根据“展平贴图”聚集要进行贴图的面时，使用此参数来确定将哪些纹理多边形组合到群集中。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3858"></a>该数越大，产生的群集也越大，纹理多边形比例源于几何体对等，因此将引入更大的扭曲。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C5B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3857"></a>间距 </span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4468"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B1F"></a>群集之间的间距。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3856"></a>该设置越高，簇之间的缝隙看起来更大。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C5A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3855"></a>规格化簇</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-445E"></a> 启用此选项时，最终布局将缩小为 1.0 个平方单位，以在标准编辑器贴图区域内大小适合。禁用此选项时，群集的最终大小将在对象空间中，并且可能比在编辑器贴图区域中大得多。为了获得最佳结果，请启用此选项。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C59"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3854"></a>旋转群集</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4466"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B21"></a>启用此选项时，“UVW 展开”旋转群集，以使其边界框的大小最小。例如，旋转 45 度的矩形边界框比旋转 90 度的矩形边界框占据更多的区域。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C58"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3853"></a>填充孔洞</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4465"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B22"></a>启用此选项时，较小的群集将放置在较大群集之间的空间中，以最佳利用可用的贴图空间。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C57"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3852"></a>按材质 ID</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4464"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B23"></a>启用此选项之后，确保平缓之后簇不包含多个材质 ID。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C56"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3851"></a>确定</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4463"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B24"></a>接受设置，关闭对话框，并按指定执行贴图。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C55"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3850"></a>取消</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4462"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B25"></a>取消所有的更改，然后关闭对话框。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C54"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-384F"></a>设为默认值</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4461"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B26"></a>使当前设置作为当前会话的默认值。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-DDEB2556-E53E-4BB3-AA9E-AB11B8791C1A"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-387A7C1A-B346-462A-A7B9-B881267EE49E.htm">“法线贴图”对话框 </a></span></li>
+               <li><span class="char_link"><a href="GUID-F26DC276-6FFC-4059-B92E-0439A3A50CD8.htm">“展开贴图”对话框 </a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

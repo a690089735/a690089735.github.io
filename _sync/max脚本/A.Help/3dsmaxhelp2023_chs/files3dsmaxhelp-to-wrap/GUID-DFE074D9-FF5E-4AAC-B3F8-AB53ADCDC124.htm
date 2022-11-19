@@ -1,0 +1,30 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-DFE074D9-FF5E-4AAC-B3F8-AB53ADCDC124">
+      <meta name="indexterm" content="MotionBuilder: 缩放问题">
+      <meta name="indexterm" content="Maya: 缩放问题">
+      <meta name="topic-type" content="concept">
+      <title>MotionBuilder 和 Maya 缩放</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-DFE074D9-FF5E-4AAC-B3F8-AB53ADCDC124"></a><div class="head">
+            <h1>MotionBuilder 和 Maya 缩放</h1>
+         </div>
+         <p><a name="WS73099CC142F48755141942F8122CDB42A51-7EEE"></a> 与 3ds Max 使用英寸作为基本系统单位有所不同，MotionBuilder 和 Maya 都使用厘米。为解决这个矛盾，系统通常会提示 3ds Max 用户将显示单位转换为厘米，同时保持默认的系统单位设置（英寸）不变。这样会在其他软件应用程序之间转换文件时引发问题。
+            
+         </p>
+         <p><a name="WS73099CC142F48755141942F8122CDB42A51-7EEC"></a>例如，如果在将显示单位设置为一个度量值（如厘米），将系统单位设置为另一个度量值的情况下导出 3ds Max 对象，则 FBX 导出器只会识别 3ds Max 系统单位，即使系统单位与显示单位不同也是如此。 
+         </p>
+         <p><a name="WS73099CC142F48755141942F8122CDB42A51-7EEB"></a>如果您将 FBX 文件保存在 MotionBuilder 中并将其重新导入 3ds Max，则此问题将会变得更加复杂。FBX 导入器计算的是 3ds Max 系统单位，但在您将 FBX 文件保存到 MotionBuilder 中后，该单位会转换为厘米。FBX
+            导入器会相应地转换传入的 FBX 文件，以与 3ds Max 系统单位匹配。这将会缩放对象（即使你不需要缩放），因为显示单位始终为厘米。 
+         </p>
+         <p><a name="WS73099CC142F48755141942F8122CDB42A51-7EEA"></a>如果您要在 3ds Max 和 MotionBuilder 之间交换 FBX 文件，请将系统单位设置更改为厘米，以使单位匹配。如果您要在 3ds Max 和 Maya 之间交换 FBX 文件，请相应更改 3ds Max 系统单位设置，以与 Maya
+            工作单位匹配。 
+         </p>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

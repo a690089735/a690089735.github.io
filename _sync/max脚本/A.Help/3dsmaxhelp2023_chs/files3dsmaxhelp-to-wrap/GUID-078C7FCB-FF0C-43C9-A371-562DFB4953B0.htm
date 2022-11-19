@@ -1,0 +1,193 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-078C7FCB-FF0C-43C9-A371-562DFB4953B0">
+      <meta name="description" content="“放置绘制”操作符使用“粒子绘制”辅助对象获取从其生成粒子的粒子种子。“放置绘制”设置粒子位置、旋转和贴图。">
+      <meta name="indexterm" content="操作符（粒子流）: 放置绘制">
+      <meta name="topic-type" content="concept">
+      <title>“放置绘制”操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-078C7FCB-FF0C-43C9-A371-562DFB4953B0"></a><div class="head">
+            <h1>“放置绘制”操作符</h1>
+         </div>
+         <p class="blurb">“放置绘制”操作符使用<span class="char_link"><a href="GUID-D4EE9CC0-F52F-43BD-B37A-04901A2B8B70.htm">“粒子绘制”辅助对象</a></span>获取从其生成粒子的粒子种子。“放置绘制”设置粒子位置、旋转和贴图。 
+         </p>
+         <div class="bodyReference"><a name="GUID-FB738DD8-887F-4EDA-B917-220940F5129D"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-BEDA2BBA-2DDD-4B11-B784-92B9FEB858FD">“粒子视图” <img src="../images/ac.menuaro.gif">  单击某个事件中的“放置绘制”，或者向粒子系统中添加一个“放置绘制”操作符，然后单击它。</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2779"></a>有关绘制粒子的详细信息，请参见<span class="char_link"><a href="GUID-2A18532C-D102-469F-9403-71480033E1F0.htm">粒子绘制</a></span>。 
+            </p>
+            <div class="section"><a name="WS73099CC142F48755-4607E7CC11B1CFFF571D22"></a> 
+               <h2><a name="GUID-B98E0A5C-30C3-4D93-9073-5BB1ED4CEDEF"></a>使用“放置绘制”
+               </h2> 
+               <p><a name="WS73099CC142F48755-4607E7CC11B1CFFF571D23"></a>“放置绘制”和“出生绘制”都允许在使用“粒子绘制”辅助对象绘制时放置粒子。“出生绘制”将“出生”操作符功能与受限制的放置选项组合在一起。如果希望使用“出生绘制”中未提供的出生选项，则可以使用其他“出生”操作符并在事件中该操作符的后面直接放置“放置绘制”。
+                  
+               </p> 
+               <p><a name="WS73099CC142F48755-4607E7CC11B1CFFF571D24"></a>另一种使用“放置绘制”的情况是希望绘制应由“查找目标”操作符将粒子发送至的粒子位置。在该情况下，事件应为如下事件： 
+               </p> <a name="WS73099CC142F48755-4607E7CC11B1CFFF571D25"></a><ul>
+                  <li>出生（任何） </li>
+                  <li>放置绘制 </li>
+                  <li>“脚本”操作符（将粒子位置复制到脚本向量） </li>
+                  <li>位置操作符（任何） </li>
+                  <li>查找目标（设置为使用脚本向量） </li>
+               </ul> 
+               <p><a name="WS73099CC142F48755-4607E7CC11B1CFFF571D2B"></a>这样粒子将定向到由绘制的粒子种子定义的位置。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2778"></a> 
+               <h2><a name="GUID-C8BCCC95-36BF-4BF3-8DC9-45E7FC2D46E4"></a>界面
+               </h2> <a name="WS1A9193826455F5FF5CF1D02511B1D000978-2777"></a><div class="figure-anchor"><img src="../images/GUID-38992942-5053-4756-83D9-5EF987BE976F-low.png"></div>  <a name="GUID-17439670-12B0-4E2C-88C9-EB8CD2CBCFE7"></a><div class="dl_section"><a name="GUID-FC785174-2EFE-46C2-842E-17E12142A425"></a><p class="title"><a name="GUID-20D1C7C8-281E-4BE7-97A8-4293DDCF2463"></a>“粒子绘制辅助对象”组
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-C3DE0CF8-0ED2-482E-8671-73CC01A5A0C6"></a><span class="term"><a name="GUID-68863AAC-05A4-4902-ABAC-FE85CF84067E"></a>[按钮]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-5582167A-93A1-42ED-9CE6-0E66B845C1F4"></a> 单击此按钮可指定<span class="char_link"><a href="GUID-D4EE9CC0-F52F-43BD-B37A-04901A2B8B70.htm">“粒子绘制”辅助对象</a></span>作为粒子种子的参考对象。
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6381"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2774"></a>粒子总数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6488"></a> “粒子绘制”辅助对象中的总粒子数。粒子种子与当前事件中粒子的对应方式取决于粒子流源对象的“数量倍增”和选项“服从数量倍增”。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6380"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2772"></a>笔划总数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6487"></a> “粒子绘制”辅助对象中的总笔划数。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-CCE40369-5BFD-41E5-A00F-2BE0BC2723FE"></a><p class="title"><a name="GUID-C0CF4CAF-317C-4C41-8C8C-6CCFDF9130AE"></a>“数据更新”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-276F"></a>可用于选择操作符如何控制位置和旋转： 
+                  </p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-276E"></a><ul>
+                     <li><em class="strong">一次</em>当粒子进入事件时，为每个粒子设置一次位置和旋转。 
+                     </li>
+                     <li><em class="strong">连续</em>在事件中始终设置粒子位置和旋转。 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-AE7FB8E2-94D4-4F8D-BA6D-3FC757F8A872"></a><p class="title"><a name="GUID-10214AE4-E193-46A6-9DA7-0515E07F575C"></a>“获得绘制数据”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-276A"></a>“放置绘制”操作符通过这些控件来确定要从“粒子绘制”辅助对象获取哪些数据，如何解释这些数据，以及如何将其用于粒子控制。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-637E"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2769"></a>绘制位置到</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6485"></a> 启用时，“粒子流”使用“粒子绘制”辅助对象中的位置数据控制粒子位置或速度。选择以下两选项之一： <a name="WS1A9193826455F5FF5CF1D02511B1D000978-2767"></a><ul>
+                              <li><em class="strong">位置</em>将粒子种子的位置数据转换为粒子位置。如果将“数据更新”设置为“连续”，则将控制粒子速度以确保将粒子锁定到粒子种子位置。这与“位置图标”操作符中的“锁定发射器”选项类似。 
+                              </li>
+                              <li><em class="strong">脚本向量</em>将粒子种子的位置数据转换为粒子脚本向量通道（就像由“Script”操作符和“Find Target”试使用时那样）。如果将“数据更新”设置为“连续”，则将在粒子处于事件中时不断地更新脚本向量通道。 
+                                 <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2764"></a>在最一般的情况下，Find Target 测试使用“脚本向量”数据将粒子对准由脚本向量定义的目标。但是，Find Target 仅在粒子到达目标之前控制粒子。要克服这一点并使粒子保持在目标上，可以使用以下选项。 
+                                 </p> 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-637D"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2763"></a>如果关闭则捕捉</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6484"></a> 仅适用于“脚本向量”选项。如果粒子接近由“绘制位置”值（写入“脚本向量”通道）定义的目标点，则操作符将开始直接控制粒子位置，就像使用“位置”选项那样。利用这种方法，您可以使用 Find Target 测试将粒子指向绘制种子的位置，然后切换回直接控制粒子位置（类似于“锁定发射器”操作）。请记住，操作符会继续将数据写入脚本向量通道，即使在捕捉之后也是如此。
+                           
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-637C"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2761"></a>捕捉距离</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6483"></a> 以 <span class="charspan-msgph">3ds Max</span> 单位定义距离，用于控制从粒子移向目标直到捕捉到目标所移动的距离，如“如果关闭则捕捉”描述中所定义。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-637B"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-275F"></a>旋转</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6482"></a> 启用时，“粒子流”将使用“粒子绘制”辅助对象中的旋转数据控制粒子的旋转或自旋。 <a name="WS1A9193826455F5FF5CF1D02511B1D000978-275D"></a><ul>
+                              <li><em class="strong">混合旋转</em>当将“数据更新”设置为“连续”，将“绘制位置到”设置为“脚本向量”并启用“旋转”时可用。在此情况下，粒子向由“粒子绘制”辅助对象定义的位置移动。启用时，操作符将在粒子接近其目标位置时修改粒子旋转以允许当前粒子旋转和“粒子绘制”进行的旋转平稳混合。
+                                 
+                              </li>
+                              <li><em class="strong">近端距离/远端距离</em>启用“混合旋转”时可用。“远端距离”值指示在混合旋转过程开始时从目标点到当前粒子位置的距离。“近端距离”值指示在混合旋转过程应当结束时的距离，即粒子最终采用粒子绘制辅助对象定义的旋转值。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-637A"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-275A"></a>贴图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6481"></a> 启用时，会将来自粒子绘制辅助对象的贴图数据用于粒子贴图。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6379"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2758"></a>材质 ID</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6480"></a> 启用时，会为每个粒子都定义一个材质 ID。该材质 ID 被“粒子绘制”操作符定义为绘制对象距离粒子种子最接近面上的子材质索引。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6378"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2756"></a>选择</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-647F"></a> 启用时，使用粒子绘制辅助对象选择来设置粒子的选择质量。在粒子流源子对象层级上进行的任何选择都会被来自辅助对象的选择所覆盖。由于辅助对象中的选择可以在两个不同的子对象级别上完成，因此必须选择以下选择级别：粒子或笔划。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-6E55C058-B46B-4378-950B-657113B4B399"></a><p class="title"><a name="GUID-22435A29-8447-48B7-AAF1-160796D07746"></a>“索引顺序”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2753"></a>这些控件将事件中的粒子数量和计时与粒子绘制辅助对象中的粒子种子相关联。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6377"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2752"></a>类型</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-647E"></a> 指示操作符用于从粒子绘制辅助对象中选择要转化为粒子的粒子种子的方法。可选择的行为类型如下： <a name="WS1A9193826455F5FF5CF1D02511B1D000978-2750"></a><ul>
+                              <li><em class="strong">随机</em>随机选择要转化为粒子的粒子种子，而不需要考虑笔划计时。如果粒子数目超过粒子种子数目并且“如果计数溢出则停止”处于禁用状态，则所有粒子种子在每次“放置绘制”时都通过种子循环。 
+                              </li>
+                              <li><em class="strong">绘制计时</em>使用粒子绘制辅助对象中粒子 笔划的计时来定义发射顺序。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6376"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-274D"></a>如果计数溢出则停止</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-647D"></a> 如果事件中的粒子数目达到粒子绘制辅助对象中的粒子种子数目，则会导致“放置绘制”停止创建粒子。禁用该选项后，“放置绘制”会通过粒子种子循环所需的次数以创建所需数量的粒子。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6375"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-274B"></a>服从数量倍增</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-647C"></a> 使用来自粒子流源对象的“数量倍增”参数来调整事件中的粒子和辅助对象中的粒子种子之间的对应关系。例如，如果“数量倍增”设置为 50%，则仅使用粒子绘制辅助对象中一半的粒子种子。如果“数量倍增”大于 100%，则一些或全部粒子种子将会用于生成多个粒子。
+                           
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6374"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2749"></a>分隔流索引</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-647B"></a> 它会使来自不同事件的粒子被视为与粒子种子对应关系有关的分隔流。启用时，粒子可将其对应关系保留到其原始种子。禁用时，进入事件的粒子可与来自种子的整个池的任何种子相关联。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-3AEBFF61-4374-4EDB-8215-0BAA0566D84E"></a><p class="title"><a name="GUID-51E093EC-DA6A-4185-86A2-08E6397CED9E"></a>“唯一性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2746"></a>如果选定“随机”作为“索引顺序”组中的“类型”，则这些参数会随机初始化粒子序列。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6373"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2745"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-647A"></a> 指定随机化值。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6372"></a><span class="term"><a name="WS1A9193826455F5FF5CF1D02511B1D000978-2743"></a>新增特性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6479"></a> 生成新的随机化值。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-CEB33DE7-9908-4F7E-B5E9-311E909FB34C"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-A4A1EE50-59DF-4A5E-8C57-7A3453A63D3A.htm">“出生绘制”操作符</a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

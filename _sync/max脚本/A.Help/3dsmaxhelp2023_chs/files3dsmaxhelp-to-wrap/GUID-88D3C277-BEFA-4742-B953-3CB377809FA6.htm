@@ -1,0 +1,100 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-88D3C277-BEFA-4742-B953-3CB377809FA6">
+      <meta name="description" content="环境光阻挡 (AO) 是胶片业率先采用的一种方法，它通过使用明暗器来模拟全局照明的真实面貌；此明暗器用来计算区域被阻挡的程度或阻止区域接收入射光的程度。">
+      <meta name="indexterm" content="Autodesk 材质: 环境光阻挡控件">
+      <meta name="topic-type" content="concept">
+      <title>环境光阻挡</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-88D3C277-BEFA-4742-B953-3CB377809FA6"></a><div class="head">
+            <h1>环境光阻挡</h1>
+         </div>
+         <p class="blurb">环境光阻挡 (AO) 是胶片业率先采用的一种方法，它通过使用明暗器来模拟全局照明的真实面貌；此明暗器用来计算区域被阻挡的程度或阻止区域接收入射光的程度。 
+            
+         </p><a name="UL_D2351E7BCC7D412280CBAB1E1908710D"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-A16AF10F-E62C-4544-A9DC-7B8231EA308F">“材质/贴图浏览器” <img src="../images/ac.menuaro.gif">  选择 Autodesk 材质  <img src="../images/ac.menuaro.gif"> “环境光阻挡”卷展栏</span> 
+            </li>
+         </ul>
+         <div><a name="GUID-91F1D6AC-73D9-49FB-A522-8477661B4039"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果活动的渲染器不支持 Autodesk 材质，则不会在浏览器中显示这些材质。并不是所有的 Autodesk 材质都支持环境光阻挡。 
+               		
+            </div>
+         </div>
+         <p><a name="GUID-0EBA162A-5916-469D-8F4B-C8750A36836E"></a> 只使用 AO 明暗器就可以产生灰度输出（在光不能到达的区域中为黑色，在光可以到达的区域中为亮色）。 
+            	 
+         </p>
+         <p><a name="GUID-8225EA0C-8A5F-436E-BC5A-C9C9E2DBA994"></a> 下面的图像说明了 AO 的主要效果：光被其他曲面阻止的黑暗的小裂缝和区域，以及暴露在环境中的明亮区域。 
+            	 
+         </p><a name="FIG_184EBE78AE214F338E3C2790483B7743"></a><div class="figure-anchor"><img src="../images/GUID-2F0841BC-C1BF-446D-8ACD-1A8853911AC8-low.png"><p class="figure-title">应用于场景中的 AO 示例：</p>
+         </div>
+         <p><a name="GUID-6C534E0E-5621-411D-8613-D5ECD0F53E71"></a> AO 的一个重要方面就是用户可以了解阻挡几何体的距离。 
+            	 
+         </p><a name="FIG_B1F927634F8F4F178B71B11AB2D530DD"></a><div class="figure-anchor"><img src="../images/GUID-FAD92CDC-D948-4074-AC02-D64A41924C80-low.png"><p class="figure-title">在较短的半径内进行查看的 AO：</p>
+         </div>
+         <p><a name="GUID-03E26466-2BCA-4D42-9EB6-CA02375E1766"></a> 使用半径创建局部化的 AO 效果：只考虑将给定半径内的曲面作为遮光板。这也将加块渲染的速度。实际的结果是 AO 提供了完美的“接触阴影”效果并使小裂缝可见。 
+            	 
+         </p>
+         <p><a name="GUID-179BDEB9-7DEA-472C-A0EC-E06572DC712C"></a>下图描绘的是一个几乎完全由间接光照明的直升机模型。注意：为什么左图中的直升机感觉没有“着陆”，以及为什么着陆橇下边的阴影太过模糊。右图使用 AO 来“冲压出”细节和接触阴影。 
+            	 
+         </p><a name="FIG_59966B5CFBFF41EBA1B770A70A0667E8"></a><div class="figure-anchor"><img src="../images/GUID-990486C0-7829-4EC9-B803-A2ACF552B69E-low.png"></div>
+         <p><a name="GUID-E6AFDD11-7C22-4C3B-A35A-73A826C0DD84"></a> <em class="strong">左：不使用 AO</em> 
+         </p>
+         <p><a name="GUID-989CCA74-3B26-46A5-8BE7-B27BBF0A8B64"></a> <em class="strong">右：使用 AO</em> 
+         </p>
+         <div class="section"><a name="SECTION_245153446E0F47FD91097543C90FB1E4"></a> 
+            <h2><a name="GUID-DF0E8E4F-E9ED-426F-BE56-71337B312358"></a>界面
+            </h2> 
+            <div><a name="GUID-B264E75F-9729-45D3-82F7-A35014F29C81"></a><div class="note-note"><span class="label label-target-language">注意:</span>并不是所有的 Autodesk 材质都支持环境光阻挡。 
+                  		
+               </div>
+            </div> <a name="FIG_0FBD1D57CA994A98BE060079D73FCF3E"></a><div class="figure-anchor"><img src="../images/GUID-698E0232-581D-48BE-A37F-AF75E5999DFC-low.png"></div>  
+            <p><a name="GUID-2AC7E768-6870-4293-8C6E-C7FF819FF282"></a>有四种用于环境光阻挡的控件： 
+               		
+            </p> <a name="GUID-2DEA2E4E-201B-4C10-8D16-3B271794658F"></a><dl>
+               <dt><a name="GUID-5E164479-4B17-4FA3-805A-DB9AFFED2F7C"></a><span class="term"><a name="GUID-E5A88EAB-BED9-45CE-B2C0-C5E93DC69B0F"></a>启用</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-E44E2700-ACAA-410E-A9F9-978349F01B45"></a>启用后，将同时启用环境光阻挡 (AO) 并使其余组控件可用。默认设置为禁用。
+                  </div>
+               </dd>
+               <dt><a name="GUID-AD03149C-31B5-4701-ADDA-19B8B3562487"></a><span class="term"><a name="GUID-746F9D55-15A3-4417-8E76-C92772C02D64"></a>采样</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-3DACB8C6-CBA6-4972-B11A-3D3AAF5B916E"></a>用于创建 AO 的所发出的采样（光线）的数量。该值越高得到的效果就越平滑，但渲染速度却较慢；相反，该值越低则渲染速度越快，但看起来颗粒性更强。范围在 16 至 64 之间的值可以涵盖大多数情况。范围：2 至 256。默认设置为 16。
+                  </div>
+               </dd>
+               <dt><a name="GUID-A8DFB82E-050A-43F7-9A18-266F57365DB1"></a><span class="term"><a name="GUID-CEDF186A-2669-4D4B-86B0-9C20E639321F"></a>最大距离</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-B5A3332E-746A-43DB-B93A-CBA2704F49EB"></a> 定义了渲染器在此范围内寻找阻挡对象的半径。较小的值会将 AO 效果限制为很小的裂缝，但是渲染速度会更快。值越大覆盖的范围也越大，但是渲染的速度会更慢。默认设置为 4.0。 
+                     		
+                     <p><a name="GUID-D7AA450F-EDBA-4619-B5B4-959CCD952152"></a>以下插图展示了两个不同距离的原始 AO 效果： 
+                        		
+                     </p> <a name="FIG_95A9042CF4EE497B849FDD4735C039BD"></a><div class="figure-anchor"><img src="../images/GUID-9265638C-939C-4E95-BBB4-AE8B80446367-low.png"></div>  
+                     <p><a name="GUID-BCAD3157-8632-4D2D-A514-AF3DE22522A5"></a> <em class="strong">左：较大的“最大距离”值</em> 
+                     </p> 
+                     <p><a name="GUID-C19F7CAD-7BC1-466C-BA86-4C022B02E2F9"></a> <em class="strong">右：较小的“最大距离”值</em> 
+                     </p> 
+                     <div><a name="GUID-619DCEA0-3495-4C7A-AF68-0ED5A7FD0E67"></a><div class="note-tip"><span class="label label-target-language">提示</span>要指定无限半径，请将距离设置为 0.0。 
+                           		
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+               <dt><a name="GUID-35860551-AE55-4864-AE80-4D6592117065"></a><span class="term"><a name="GUID-15D3D864-BF36-4890-BF16-A291478D579C"></a> 使用其他材质的颜色</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-32C424EB-064E-43B7-8D79-332E7CA9E409"></a>启用此选项之后，从周围的材质派生出 AO 颜色，以获得更精确的总体效果（也称为<em class="mild">映色</em>）。例如，发光材质反射出比黑色材质较亮的颜色。默认设置为禁用。 
+                     		<a name="FIG_2A732EDEADA64A20BA0020EAC6DF21A2"></a><div class="figure-anchor"><img src="../images/GUID-D88B810D-DA07-416F-9F31-A93C495D05EA-low.png"><p class="figure-title">“使用其他材质的颜色”处于禁用状态。</p>
+                     </div>  <a name="FIG_BD95D31A5AFC4696AA6BD911E17CA758"></a><div class="figure-anchor"><img src="../images/GUID-9DB8B20D-F1A3-4E1A-A316-FA56EE177EB8-low.png"><p class="figure-title">“使用其他材质的颜色”处于启用状态。</p>
+                     </div>  
+                     <p><a name="GUID-4AA80FD6-E8A1-4E03-952B-71AB9600D004"></a>如果您找到使用 AO 创建角落里较周围颜色更暗淡的“尘土”效果或自发光对象周围出现黑边的方法，启用“使用其他材质的颜色”可获得更精确的效果。 
+                        		
+                     </p>
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

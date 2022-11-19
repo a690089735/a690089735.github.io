@@ -1,0 +1,49 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-7F2A583F-367B-469C-87C5-33DC26488688">
+      <meta name="indexterm" content="AdskSignTool">
+      <meta name="topic-type" content="concept">
+      <title>验证签名的脚本</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-7F2A583F-367B-469C-87C5-33DC26488688"></a><div class="head">
+            <h1>验证签名的脚本</h1>
+         </div>
+         <p>签名的文本文件包含以块注释形式放于脚本末尾的证书信息，您可以使用任何文本编辑器查看。要验证证书，您可以使用位于 3ds Max 安装目录中的 <span class="filePath">AdskSignTool.exe</span> 可执行文件。<span class="code">-verify</span> 命令用于验证证书是否有效且未被吊销，以及文件自签名后是否未被更改。使用此工具验证脚本的数字签名的语法如下： 
+            	 
+         </p>
+         <div class="codeBlock"><pre>AdskSignTool.exe -verify -marker "--" &lt;maxscript_file&gt;</pre></div>
+         <p>其中，“marker”参数是传入文件中使用的注释标记所必需的。对于 MAXScript 文件，这是“--”；对于资源文件，这是“;”。 
+            	 
+         </p>
+         <p>例如，要验证笔刷预设 Macroscript，请使用以下命令： 
+            	 
+         </p>
+         <div class="codeBlock"><pre>&gt; .\AdskSignTool.exe -verify -marker "--" .\MacroScripts\Macro_BrushPresets.mcr
+The file '.\MacroScripts\Macro_BrushPresets.mcr' has a valid digital signature
+ Certificate information
+        Subject : Autodesk, Inc.
+        Issuer : Symantec Class 3 SHA256 Code Signing CA - G2
+        Serial Number : 0e5d2be5a71b96c37a63e65954814418
+        Expiration : Saturday, August 4, 2018 6:59:59 PM
+</pre></div>
+         <p>要对目录树中的所有 MAXScript 文件运行验证，下面是建议的批处理文件： 
+            	 
+         </p>
+         <div class="codeBlock"><pre>rem Script tool to verify in batch the validity of digital signature of maxscript files
+
+@echo off
+for /r %%A IN (*.ms *.mxs *.mcr) DO (      
+   @"AdskSignTool.exe" -verify -marker "--" "%%A"
+   )
+   
+for /r %%A IN (*.ms.res *.mxs.res *.mcr.res) DO (      
+   @"AdskSignTool.exe" -verify -marker ";" "%%A"
+   )</pre></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

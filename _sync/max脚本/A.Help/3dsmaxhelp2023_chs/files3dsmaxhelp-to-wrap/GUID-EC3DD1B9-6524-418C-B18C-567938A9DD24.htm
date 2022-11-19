@@ -1,0 +1,74 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-EC3DD1B9-6524-418C-B18C-567938A9DD24">
+      <meta name="description" content="ProBoolean、ProCutter 和四边形网格化修改器可以使用四边形网格算法重设平面曲面的网格。将该能力与“网格平滑”、“涡轮平滑”和“可编辑多边形”中的细分曲面工具结合使用可以产生动态效果。">
+      <meta name="indexterm" content="四边形网格化">
+      <meta name="topic-type" content="concept">
+      <title>四边形网格和平滑</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-EC3DD1B9-6524-418C-B18C-567938A9DD24"></a><div class="head">
+            <h1>四边形网格和平滑</h1>
+         </div>
+         <p class="blurb">ProBoolean、ProCutter 和<span class="char_link"><a href="GUID-86C91698-9BAC-4A62-82DC-288E2815375B.htm">四边形网格化修改器</a></span>可以使用四边形网格算法重设平面曲面的网格。将该能力与“网格平滑”、“涡轮平滑”和“可编辑多边形”中的细分曲面工具结合使用可以产生动态效果。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47D7"></a>确实需要一定的专业知识才能知道什么是可能的，以及如何使用四边形镶嵌获得最佳效果。该主题给出了如何使用四边形网格的基础知识，并且包含它的作用以及它如何发挥作用的提示和技巧。 
+         </p>
+         <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6115"></a><div class="note-tip"><span class="label label-target-language">提示</span>要对网格对象应用四边形细分，而不对它执行布尔操作，只需应用<span class="char_link"><a href="GUID-86C91698-9BAC-4A62-82DC-288E2815375B.htm">四边形网格化修改器</a></span>。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004191C"></a> 
+            <h2><a name="GUID-C40963A1-074E-459E-82F8-23D5D47FE1EA"></a>四边形网格基础知识
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004191D"></a><div class="figure-anchor"><img src="../images/GUID-24E856B2-3317-48F7-A949-B9507ACB909A-low.png"><p class="figure-title">包含几个基本体的对象的 ProBoolean</p>
+            </div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47D6"></a>要设为四边形网格，请应用“四边形网格化修改器”，或者选择 ProBoolean 或 ProCutter 对象，转到“修改”面板，并按照下面显示的方式展开“高级选项”面板。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A19004191E"></a><div class="figure-anchor"><img src="../images/GUID-8B534D9B-9FA9-45A5-8399-EAAC39D0A5D7-low.png"></div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47D5"></a>要获得类似于下图所示的效果，请启用“设为四边形”复选框： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A19004191F"></a><div class="figure-anchor"><img src="../images/GUID-F3F94DCC-7651-4AB7-B50A-8F377E7E5F5C-low.png"><p class="figure-title">效果为“四边形大小 %”为 3.0 的四边形网格</p>
+            </div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47D4"></a>要改变单个四边形的大小，请调整“四边形大小 %”参数。通常情况下，1％ 与 4％ 之间的一个值就可以获得需要的效果。四边形大小越小，在平滑网格时，所得到的曲面之间的圆角或混合就会越小。默认的“四边形大小”值为 3.0%。2.0% 的“四边形大小”值将产生以下效果：
+               
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041920"></a><div class="figure-anchor"><img src="../images/GUID-9418BF78-D2BF-4513-9AF4-4720C267D236-low.png"><p class="figure-title">“四边形大小 %”为 2.0 的四边形网格</p>
+            </div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47D3"></a>如果您了解自己已经拥有所需的效果，并且不打算返回去更改四边形大小或原始基本体，则可以将对象转换为“可编辑多边形”格式，并通过“细分曲面”设置应用平滑。但如果不是这种情况，并且您打算做进一步的调整，请使用<span class="char_link"><a href="GUID-D204B817-8B87-42FF-B152-0E360D0035A2.htm">网格平滑</a></span>或<span class="char_link"><a href="GUID-EA8FF838-B197-4565-9A85-71CE93DA4F68.htm">涡轮平滑</a></span>修改器保留 ProBoolean 对象的历史记录。下图显示了将“细分量”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“迭代次数”为 1 应用于“四边形大小 %”设置为 3.0 的 ProBoolean 对象的“网格平滑”修改器的效果。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041921"></a><div class="figure-anchor"><img src="../images/GUID-A6191EA7-E99D-4A7A-8BE7-5DCCE5D22F60-low.png"><p class="figure-title">具有 NURMS 和“迭代次数”为 1 的“网格平滑”修改器</p>
+            </div> <a name="WS1A9193826455F5FFBA679E112A6A190041922"></a><div class="figure-anchor"><img src="../images/GUID-3FBAFEFA-67BA-41FC-90F2-6639CD911B78-low.png"><p class="figure-title">应用了“网格平滑”修改器后的渲染图像</p>
+            </div>   
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041923"></a> 
+            <h2><a name="GUID-FE4DBA68-946C-4E2A-80FF-F9857492B38D"></a>四边形网格提示和技巧
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47D2"></a>有时，四边形网格的效果可能会在平滑模型中产生意外效果。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47D1"></a> <em class="strong">问题 #1</em>：圆柱体上的条纹或其他曲面上的凹凸度 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47D0"></a> <em class="strong">解决方案</em>：增加圆柱体周围或其他曲面上的细分数。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041924"></a><div class="figure-anchor"><img src="../images/GUID-E920753C-AFCD-4086-AC3D-31E521A51330-low.png"><p class="figure-title">四边形大小 % 为 2.0 时的条纹和凹凸度</p>
+            </div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47CF"></a>要解决上述问题，可将两个圆柱体上的边数从 18 改为 30，并将圆环上的分段数从 24 改为 36。下图显示改进后的结果： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041925"></a><div class="figure-anchor"><img src="../images/GUID-98EA7CE9-F355-4431-9318-F24E4310BBC0-low.png"><p class="figure-title">提高基本体的分辨率解决该问题。</p>
+            </div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47CE"></a> <em class="strong">问题 #2</em>：由与来自原始网格的可见边的冲突造成的沿边界的三角形 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47CD"></a> <em class="strong">解决方案</em>：确保“高级选项”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“移除平面上的边”设置为“全部移除”，或不用在共面的面上细分的情况下创建原始基本体。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041926"></a><div class="figure-anchor"><img src="../images/GUID-8C148E43-8DA3-430B-9E9C-3A94F6EB41A0-low.png"><p class="figure-title">未从原始长方体中移除共面的边</p>
+            </div> <a name="WS1A9193826455F5FFBA679E112A6A190041927"></a><div class="figure-anchor"><img src="../images/GUID-0D4ED241-B901-4DDF-BBC7-E0E5F0B78096-low.png"><p class="figure-title">渲染后，形状怪异的几何体是由于出现了共面的边引起的。</p>
+            </div> <a name="WS1A9193826455F5FFBA679E112A6A190041928"></a><div class="figure-anchor"><img src="../images/GUID-5A3CCE0E-8A5A-42D3-B379-ED44DD2308A8-low.png"><p class="figure-title">移除了所有共面的边的四边形网格</p>
+            </div>    
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47CC"></a> <em class="strong">问题 #3</em>：原始基本体网格对齐不好会导致出现不希望的效果。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47CB"></a> <em class="strong">解决方案</em>：将原始基本体旋转或移动到位，以使网格质量最高。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-47CA"></a>下图显示了从长方体中减去三个相同大小的球体的效果。正确对齐左侧球体，以便沿着两个边界都有出色的四边形。这将在平滑时产生不错的效果。提升中间球体，这样在边界附近就会有一个很细的四边形条带。这会沿该边产生很小的平滑效果，您可以在渲染图像中看到这一情况。右侧球体发生旋转，从而使对齐效果不好，并且在球体上出现许多三角形，在长方体平面上出现小的四边形。您可以在渲染的图像中看到不希望的效果。
+               
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041929"></a><div class="figure-anchor"><img src="../images/GUID-9F113A94-D3EC-4D39-BDEC-B37E493DB1FA-low.png"><p class="figure-title">进行不同的旋转和平移时三个球体产生的四边形</p>
+            </div> <a name="WS1A9193826455F5FFBA679E112A6A19004192A"></a><div class="figure-anchor"><img src="../images/GUID-E09FF5D2-C334-4462-97E1-97E0770B1946-low.png"><p class="figure-title">平滑的三球体渲染图像的示例</p>
+            </div>   
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

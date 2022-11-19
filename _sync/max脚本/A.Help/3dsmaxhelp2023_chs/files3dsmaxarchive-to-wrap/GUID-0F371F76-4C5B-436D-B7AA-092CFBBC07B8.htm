@@ -1,0 +1,128 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-0F371F76-4C5B-436D-B7AA-092CFBBC07B8">
+      <meta name="description" content="墙排斥行为使用一个或多个网格对象来排除代理。受到墙壁排除力影响时，代理将会转向，直至其离开栅格。将对象置于矩形封闭的空间中（如建筑物的房间内）是很有好处的。">
+      <meta name="indexterm" content="群组卷展栏: 墙排斥行为">
+      <meta name="indexterm" content="群组动画: 墙排斥行为">
+      <meta name="indexterm" content="群组行为: 墙排斥">
+      <meta name="contextid" content="TOPIC_WALL_REPEL_BEHAVIOR">
+      <meta name="topic-type" content="concept">
+      <title>墙排斥行为</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-0F371F76-4C5B-436D-B7AA-092CFBBC07B8"></a><div class="head">
+            <h1>墙排斥行为</h1>
+         </div>
+         <p class="blurb">墙排斥行为使用一个或多个网格对象来排除代理。受到墙壁排除力影响时，代理将会转向，直至其离开栅格。将对象置于矩形封闭的空间中（如建筑物的房间内）是很有好处的。 </p><a name="GUID-D7A4DA38-8DB7-42E1-8A55-9A9B5F68A33A"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-ADE75108-80A4-4213-9B29-20ACB4936509"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-9A23D2B8-9CE2-40BE-98B6-651DBC94F4F7-low.png">（辅助对象） <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “群组” <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “行为”组  <img src="../images/ac.menuaro.gif">  单击“新建”按钮。 <img src="../images/ac.menuaro.gif"> “选择行为类型”对话框  <img src="../images/ac.menuaro.gif"> “墙排斥行为”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-9E6A0737-3F57-41BD-B607-7018A2773F38">选择群组对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “行为”组  <img src="../images/ac.menuaro.gif">  单击“新建”按钮。 <img src="../images/ac.menuaro.gif"> “选择行为类型”对话框  <img src="../images/ac.menuaro.gif"> “墙排斥行为”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-4E128D63-AEA8-4427-AF85-1A20C2A6A1C7">选择群组对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “行为”组  <img src="../images/ac.menuaro.gif">  从下拉列表中选择“墙排斥”。</span> 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CCD"></a>您可以从一边或两边设置要排除的栅格，并且可以选择指定最大排除距离。您还可以设置要操作的行为，似乎栅格沿着其平面在无限地伸展。 
+         </p>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E840"></a><div class="note-note"><span class="label label-target-language">注意:</span>墙排斥行为只是在与墙相反的方向上对代理施加外力；并不能保证代理不会穿过墙壁。如果代理穿过墙壁，则调整像“内部和外部距离”这样的设置，具体而言尝试减小“衰减”。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4628"></a> 
+            <h2><a name="GUID-FB8CBCC3-2839-4FA7-9FEF-1B1B8C698D8B"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045FAA"></a><div class="figure-anchor"><img src="../images/GUID-50114F7A-BB0F-4DCB-BD55-6E7EB8B26CF4-low.png"></div> <a name="GUID-7EF229E4-A57D-44F4-B6C2-6C84FEAAFE8C"></a><dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A1F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CCE"></a>要排斥的栅格</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AD0"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87538DF"></a>通过单击此按钮再选择栅格可设置排斥栅格（“源”）。随后，栅格的名称出现在该按钮中。在选择栅格之前，按钮标签显示为“无”。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CCF"></a>如果选择了多个源栅格（请参见下一项），则标签“多个”就会出现在此按钮上。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-F4C88729-8849-40A1-82D4-D9145579A2FB"></a><span class="term"><a name="GUID-8A889212-6D5F-41F9-80D1-8FEBA6357F48"></a><img src="../images/GUID-E5CE408A-1FB1-4208-AE86-3B5497C9BE96-low.png"> 多个选择</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-9B3A91B3-93D0-4E21-B488-DD89B7A2535A"></a>单击可显示“选择对象”对话框，可以在其中选择多个排斥栅格。
+                  </div>
+               </dd>
+            </dl>
+            <div class="dl_section"><a name="GUID-842A8C7D-BD16-4DD7-8E20-59C6379E9259"></a><p class="title"><a name="GUID-15FBCE72-D404-4626-8A8F-C0E711C18BF0"></a>方法组
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CD0"></a>确定受行为影响的代理方向是按角度方法计算还是按力量方法计算。 
+               </p><a name="UL_36992A91404F42F09DD36D8538DD6F5E"></a><ul>
+                  <li><em class="strong">角度</em>根据代理当前方向和其需要采取的方向之间的角度，将力应用到代理上，以便其直接从源离开。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CD2"></a>当代理直接向源移动时，力量最大，需要转向。当代理从源直接离开时，力量很小，几乎为零。 
+                     </p> 
+                  </li>
+                  <li><em class="strong">力</em>（默认设置。）总是直接施加一个远离源的力。力的大小恒定。 
+                  </li>
+               </ul>
+            </div>
+            <div class="dl_section"><a name="GUID-E1A095B1-EC48-4E15-B66B-E913EE0B8BBC"></a><p class="title"><a name="GUID-14A53F95-A1F0-4C1E-8465-2B9E48BA4EB3"></a>“方向”组
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CD4"></a>确定栅格排除是来自于其正坐标轴、负坐标轴还是双轴。 
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CD5"></a>为了确定正坐标轴，请选择栅格，然后将参考坐标系统设置为“本地”（默认系统为“视图”）。观察视口出现在边缘上的栅格。轴伸出的边为正轴，反向为负轴。 
+               </p>
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E841"></a><div class="note-tip"><span class="label label-target-language">提示</span>为了便于设置，当从栅格构建“房间”时，请确保它们均指向内部（或外部）。 
+                  </div>
+               </div><a name="UL_32ACFAA9671F4A8491F7539C6C8AC821"></a><ul>
+                  <li><em class="strong">正轴</em>栅格只从正轴排斥。 
+                  </li>
+                  <li><em class="strong">负轴</em>栅格只从负轴排斥。 
+                  </li>
+                  <li><em class="strong">双轴</em>栅格从双侧排斥。 
+                  </li>
+               </ul>
+            </div>
+            <div class="dl_section"><a name="GUID-D4DC2BC7-0EEB-418C-937B-56F6C8B2A17D"></a><p class="title"><a name="GUID-98A1165D-4442-4C65-A73A-111D2C8206A3"></a>“距离”组
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CD9"></a>仅当代理和目标之间的距离在指定的范围内时，才能使用距离设置来激活“墙排斥行为”。此行为的相对强度从外半径的 0％ 到内半径的 100％ 递增。 
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A19"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CDA"></a>使用距离</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1ACA"></a> 当启用时，该行为只适用于与外部距离值相比更接近目标的代理上。默认设置为启用。 
+                        <p><a name="GUID-C6A37484-4102-4823-A768-FC0E5024A977"></a><em class="strong">内距离</em> 距以完全强度应用力的目标的距离。默认值为 0.0。 
+                        </p> 
+                        <p><a name="GUID-9F0F245C-2DB9-4CAC-B044-F734DC77D517"></a><em class="strong">外距离</em> 距开始应用力的目标的距离。默认值为 10.0。 
+                        </p> 
+                        <p><a name="GUID-AD8AC32C-D2B8-4DCB-8755-C23B273A11F9"></a><em class="strong">衰减</em>内距离和外距离之间排斥力减小的比率。默认值为 2.0。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16CDE"></a>值为 1.0 表示线性衰减。值越高就会造成强度随着距离的变化更快衰减到 0，因此聚焦效果更接近内部距离。较低的值会减小下降比率，衰减设置为 0.0 表示外部距离和内部距离的强度相同。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A15"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CDF"></a>显示距离</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AC6"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87538E9"></a>表示栅格从视口的目标栅格偏移时，内部和外部的距离设置。内部距离栅格为淡蓝，而外部距离栅格为蓝白相间。默认设置为启用。 
+                        </p> 
+                        <p><a name="GUID-9ED7DA63-9C15-4B60-B386-85C9162BB397"></a><em class="strong">栅格间距</em> 改变用于绘制内距离/外距离栅格的栅格线的间距。值越低，间隔越近。默认值为 500。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A13"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CE1"></a>结束力于栅格边缘</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AC4"></a> 启用时，只能从栅格对象发出力量。禁用时，可以想象力量从无限栅格发出，这个栅格是通过在各个方向上扩展网格平面而创建的。 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A12"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16CE2"></a>[墙排斥力色样]</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1AC3"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87538EC"></a>显示用来在解决方案中绘制墙壁排除力的颜色。单击此框可选择不同的颜色。默认设置是紫色。 
+                     </p> 
+                     <p><a name="GUID-77CE7D15-EFB0-4476-AE73-CED83341FCA2"></a><em class="strong">显示力</em>激活时，力在模拟解决方案中以线框矩形的方式绘制在视口中。默认设置为启用。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,35 @@
+一种基于ole技术的三维场景检测方法 https://patents.google.com/patent/CN106875490A/zh 
+https://patentimages.storage.googleapis.com/6c/87/ac/2793e0fca92610/CN106875490A.pdf
+
+逆向工程 Max 文件格式 https://neiltech.wordpress.com/2013/04/07/reverse-engineering-the-max-file-format/
+
+从 .max 文件中获取信息 http://3dcenter.ru/forum/index.php?showtopic=115080
+
+3ds Max 文件格式（第 2 部分：第一个内部结构；DllDirectory、ClassDirectory3） https://blog.kaetemi.be/2012/08/19/3ds-max-file-format-part-2/
+
+[谷歌快照]MAX 文件资产元数据流访问 http://webcache.googleusercontent.com/search?q=cache:d-Y27owBbRwJ:forums.cgsociety.org/t/max-file-asset-metadata-stream-access/1710050%3Fpage%3D2+&cd=7&hl=zh-CN&ct=clnk&gl=hk
+
+获取max缩略图问题 https://forums.cgsociety.org/t/getting-max-thumbnail-issue/1583936
+
+https://area.autodesk.com/blogs/the-3ds-max-blog/reading_and_modifying_asset_file_paths_in_the_3ds_max_file/
+
+
+https://docs.microsoft.com/zh-cn/windows/win32/stg/structured-storage-reference?redirectedfrom=MSDN
+
+https://area.autodesk.com/tutorials/writing-and-reading-3ds-max-scene-sidecar-data-in-python/ --用python读写max场景的边角料数据
+
+https://github.com/conceptfarm/ArchiveMaxFile/blob/master --python使用olefile归档max文件
+
+https://olefile.readthedocs.io/en/latest/ --olefile文档
+https://www.decalage.info/olefile#Features --olefile下载
+openMCDF --纯C#无依赖库
+
+分析复合文档
+
+https://docs.microsoft.com/en-us/windows/win32/com/ole-and-data-transfer --OLE 和数据传输
+
+分析工具
+010Editor  Office Visualization Tool(offVis)
+
+权威图书
+inside OLE

@@ -1,0 +1,290 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-E585C814-DC0E-4126-9636-9DCA841DAC20">
+      <meta name="description" content="使用“图形标记”操作符将每个粒子替换为切自粒子几何体并带有图像贴图的矩形或长方体。可以对此图像设置动画，而且此动画能够与粒子事件同步。">
+      <meta name="indexterm" content="粒子流操作符: 图形标记">
+      <meta name="indexterm" content="粒子: 留下标记">
+      <meta name="indexterm" content="图形操作符（粒子流）: 图形标记">
+      <meta name="indexterm" content="标记接触对象（粒子流）">
+      <meta name="topic-type" content="concept">
+      <title>图形标记操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-E585C814-DC0E-4126-9636-9DCA841DAC20"></a><div class="head">
+            <h1>图形标记操作符</h1>
+         </div>
+         <p class="blurb">使用“图形标记”操作符将每个粒子替换为切自粒子几何体并带有图像贴图的矩形或长方体。可以对此图像设置动画，而且此动画能够与粒子事件同步。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_9AD05A85D7A9493DB1B1DC0382961E00"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-8C8DDF34-74EE-42C0-99FA-C631BB1AF5A8">粒子视图  <img src="../images/ac.menuaro.gif">  在某个事件中单击“图形标记”或将“图形标记”操作符添加到粒子系统中并选择它。</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61F9"></a>“图形标记”的典型应用是在粒子冲击场景中的对象后留下标记。例如，当鱼雷击中小艇并且爆炸时，就可以使用“图形标记”在小艇表面留下烧焦的标记。 
+               
+            </p>
+            <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FB3"></a><div class="note-tip"><span class="label label-target-language">提示</span>默认情况下，不论粒子是什么图形，“图形标记”留下的标记始终为矩形。要留下不同图形的标记，请选择“图形”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“矩形”选项，使用同一事件中带有透明区域的<span class="char_link"><a href="GUID-649BCBB7-FC88-40A2-8554-47928A197A02.htm">材质</a></span>来定义标记的轮廓。例如，在材质的“不透明度”通道中应用“遮罩”贴图，在贴图的“遮罩”通道中应用包含 Alpha 通道的位图。在“位图参数”卷展栏中，将“单通道输出”设置为 Alpha。 
+                  
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-61F4"></a> 
+               <h2><a name="GUID-0C87A9ED-7730-4BEA-A79E-887DDE735E5D"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004247B"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004247C"></a>示例：使用“图形标记”：
+               </p>
+               <ol type="1" start="1">
+                  <li>确定哪一个对象将获得标记，这将是<em class="mild">接触对象</em>。将导向器应用至此对象。 
+                     	 
+                  </li>
+                  <li>使用导致粒子与接触对象导向器相撞击的事件来设置粒子系统。 
+                     	 
+                  </li>
+                  <li>在此事件的末尾，添加<span class="char_link"><a href="GUID-AE30FF63-B0E9-412D-8FAC-ACBC3E50AD7E.htm">“碰撞”测试</a></span>。 
+                     	 
+                  </li>
+                  <li>在“碰撞”测试中，从步骤 1 指定导向器。 
+                     	 
+                  </li>
+                  <li>使用“图形标记”操作符创建新事件，并且将“碰撞”测试关联至此事件。 
+                     	 
+                  </li>
+                  <li>在“图形标记”操作符 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“接触对象”组中，指定步骤 1 中的对象。根据需要更改其他“图形标记”设置。 
+                     		
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61F3"></a>现在粒子撞击接触对象时会消失，并且在对象上留下标记。 
+                        		
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61F2"></a>如果想让粒子留下标记后反弹而不是消失，则使用<span class="char_link"><a href="GUID-23F1A72A-6BA8-4B98-8DF4-33024D65517F.htm">碰撞繁殖测试</a></span>，并且禁用其“删除父粒子”复选框。繁殖的粒子变为标记，而最初的粒子仍然留在第一个事件中。 
+                        		
+                     </p> 
+                  </li>
+                  <li>还可以选择添加“材质”操作符来定义标记的曲面特性。 
+                     	 
+                  </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-61F1"></a> 
+               <h2><a name="GUID-8437C80A-343A-4191-965A-C23C68DD720E"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004247D"></a><div class="figure-anchor"><img src="../images/GUID-032668DD-6F62-4EBE-8B7E-A7F96AC3890B-low.png"></div>  <a name="GUID-91D82497-FAB9-4170-9761-01C010A20AC4"></a><div class="dl_section"><a name="GUID-FDB26B25-45F1-4FF3-B18A-7C222390979A"></a><p class="title"><a name="GUID-2FBF1FAE-A1B7-426D-8B24-BC43C3BE86A3"></a>“接触对象”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61F0"></a>使用此控件可以定义要留下标记的对象。 
+                     
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-644A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61EF"></a>[按钮]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6551"></a> 单击此按钮，然后选择场景中要用作接触对象的对象。置于有效对象上时，鼠标光标变为交叉图形。 
+                           
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61EE"></a>选取接触对象后，其名称会出现在按钮上。 
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6449"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61ED"></a>对齐到曲面动画</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6550"></a> 启用时，由于接触对象的顶点动画，“图形标记”会考虑曲面变化。如果“<span class="char_link"><a href="GUID-E585C814-DC0E-4126-9636-9DCA841DAC20.htm#GUID-B611D026-6D36-4A4F-B57A-E1D2556B23DF">图形</a></span>”设置为“矩形”，随后标记更改其方向和位置，呈现出粘附在接触对象表面的状态。如果“图形”设置为“长方体相交”，随后标记会和接触对象的图形一起更改图形。禁用时，则只考虑接触对象的变换。默认设置为禁用状态。 
+                           
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61EC"></a>仅当接触点有大量的顶点动画时，才启用此项，例如使用动画的水表面时。 
+                              
+                           </p> 
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FB1"></a><div class="note-warning"><span class="label label-target-language">警告:</span> 此选项需要有大量的 CPU 和内存资源。 
+                                 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-17C67458-E862-438F-9B22-B6C38FE74F12"></a><p class="title"><a name="GUID-F1CECB11-22E6-4E7F-B427-13B7C66BE9A7"></a>“方向”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6448"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61EB"></a>对齐到</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-654F"></a> 取决于“<span class="char_link"><a href="GUID-E585C814-DC0E-4126-9636-9DCA841DAC20.htm#GUID-B611D026-6D36-4A4F-B57A-E1D2556B23DF">图形</a></span>”的设置，“图形标记”会在接触几何体上创建矩形或长方体裁切。“方向”设置会指定图形的朝向。在标记的局部坐标系中，X 轴为长度，Y 轴为宽度，对于长方体裁切，Z 为高度。Z 轴与接触点上的对象表面垂直。 
+                           
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61EA"></a>对齐选项如下所示： 
+                              
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A190042480"></a><ul>
+                              <li><em class="strong">速度</em>“长度”方向平行于接触平面上的粒子速度向量投影。 
+                                 	 
+                              </li>
+                              <li><em class="strong">粒子 X/Y/Z</em>随着粒子朝接触对象移动，“长度”方向分别平行于粒子局部坐标轴 X Y 或 Z 的投影。 
+                                 	 
+                              </li>
+                              <li><em class="strong">随机</em>使用接触平面中的随机长度方向。 
+                                 	 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6447"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61E9"></a>散度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-654E"></a> 在长度方向的朝向上应用随机变化范围（以度为单位）。不能和“随机”选项共同使用。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-0DD43623-B6E7-4915-9FD2-0A3CDD1F737C"></a><p class="title"><a name="GUID-62F52ABB-A9F4-4C0A-A4AF-B1F6CE419D39"></a>“大小”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61E8"></a>使用这些设置可以指定用于标记大小设置，以及大小参数设置的坐标系。此组中的数值设置不能设置动画。 
+                     
+                  </p><a name="UL_CA39303B4BDC4BAD8FC6F7E1A9A79F87"></a><ul>
+                     <li><em class="strong">在世界空间中</em>按系统单位，使用世界坐标系设置标记的绝对大小。 
+                        		
+                        <p><a name="GUID-AE12E381-B660-452E-8ACA-5BA96AC46B13"></a><em class="strong">宽度/长度</em>使用“在世界空间中”选项，按系统单位设置粒子尺寸。范围从 0 到 1000000000。默认设置为 1.0。 
+                           		
+                        </p> 
+                     </li>
+                     <li><em class="strong">在局部空间中</em>在局部空间中设置相对于现有粒子大小的标记大小。“粒子流”使用现有图形的尺寸来确定“朝向矩形”的大小。 
+                        		
+                        <p><a name="GUID-AE3FAF43-0D34-4FA7-AD33-08B2E9B59369"></a><em class="strong">继承 %</em>设置标记大小的百分比，相对于现有的粒子大小。范围从 0 到 100。默认设置为 100.0。 
+                           		
+                        </p> 
+                     </li>
+                  </ul>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6442"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61E3"></a>变化 %</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6549"></a> 设置粒子大小可以变化的百分比。默认设置是 0.0。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6441"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61E2"></a>碰撞角度扭曲</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6548"></a> 启用时，按照粒子的接近角度增加标记的“长度”值。如果粒子以较小的角度靠近接触几何体，这会有效地拉伸标记图形。仅当“对齐到”设置为“速度”时，才可以使用。默认设置为禁用状态。 
+                           
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61E1"></a>例如，一滴墨水垂直地碰撞曲面，它就会产生一个圆形标记，但如果以较小的角度碰撞曲面时，产生的图形则为椭圆形。 
+                              
+                           </p> 
+                           <p><a name="GUID-E1ACCF0A-46B6-4602-9076-F710B145B9DF"></a><em class="strong">最大扭曲 %</em>设置“粒子流”可以拉伸标记的最大百分比。仅当启用“碰撞角度扭曲”时才能使用该选项。默认值为 1000。 
+                              
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61DF"></a>接近角非常小时，拉伸因子会变得很高。例如，数值 500% 说明拉伸因子不能超过 5。 
+                              
+                           </p>
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-B611D026-6D36-4A4F-B57A-E1D2556B23DF"></a><p class="title"><a name="GUID-46FD7D49-A05B-4C99-9C01-572EEB69A2EE"></a>“图形”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61DE"></a>这些设置可以指定创建标记的对象为矩形或者长方体。 
+                     
+                  </p><a name="UL_A7A3C22E7DBA438599DCFBE68EFE5119"></a><ul>
+                     <li><em class="strong">矩形</em>（默认设置。）标记图形是个两面的矩形。 
+                        		
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61DC"></a>使用带有“图形标记”的材质时，始终要选择此选项。 
+                           		
+                        </p> 
+                     </li>
+                     <li><em class="strong">长方体交集</em>使用此选项，“粒子流”会为每个留有标记的粒子创建长方体，利用接触对象和长方体之间的布尔交集派生出标记图形。 
+                        		
+                        <p><a name="GUID-A858740E-B093-4AF8-8287-B66E97F92CAE"></a><em class="strong">长方体高度</em>设置用于“长方体交集”方法的长方体的高度。只能和“长方体相交”一起使用。默认设置为 10.0。 
+                           		
+                        </p> 
+                        <p><a name="GUID-835665C3-0BEF-4D13-9FF7-F4C571197E2D"></a><em class="strong">允许多个元素</em>启用时，粒子将为包含多个元素的接触对象的所有部分留下标记。禁用时，粒子只为它碰撞的第一个元素创建标记。只能和“长方体相交”一起使用。默认设置为禁用状态。 
+                           		
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A190042482"></a><div class="figure-anchor"><img src="../images/GUID-E3806429-C920-44B1-A221-4DAEC3AB5CD8-low.png"></div>  
+                        <p><a name="GUID-FFC3E26D-1D4E-4FB2-9907-21700F84149F"></a> <em class="strong">粒子落在包含两个元素的圆柱体上：</em> 
+                        </p> 
+                        <p><a name="GUID-D47C43D2-BE25-4FD7-BC01-69DF3AB14C05"></a> <em class="strong">左：“允许多个元素”已禁用</em> 
+                        </p> 
+                        <p><a name="GUID-4D37D65A-1EA3-4A79-8D0C-BFC033E9B31E"></a> <em class="strong">右：“允许多个元素”已启用</em> 
+                        </p> 
+                        <p><a name="GUID-56E1DA66-27FA-4DBB-8673-0FEC520F93CA"></a><em class="strong">持续更新</em>启用时，按照粒子当前的位置和接触曲面，会在每一帧上重新计算标记的图形。此选项会消耗大量的 CPU 时间。只能和“长方体相交”一起使用。 
+                           		
+                        </p> 
+                     </li>
+                  </ul>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-643A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61D7"></a>生成贴图坐标</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6541"></a> 使用贴图材质时可以正确使用图形标记。默认设置为启用。 
+                           
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61D6"></a>如果使用的不是贴图的材质，通过禁用此项可以节约内存。 
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6439"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61D5"></a>轴偏移 %</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6540"></a> 参考碰撞粒子的轴，沿着图形标记的长度尺寸移动图形标记的位置。默认值为 0.0。范围为 –50.0 至 50.0。 
+                        
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61D4"></a>默认情况下，标记长度尺寸的中心要与粒子轴撞击接触对象的点相一致。利用此设置可以沿着其长度将标记位置偏移到任何地方。 
+                           
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FB0"></a><div class="note-note"><span class="label label-target-language">注意:</span>宽度尺寸和“长方体相交”高度尺寸总是集中在粒子轴和接触对象曲面相交部分。 
+                              
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6438"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61D3"></a>曲面偏移</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-653F"></a> 指定接触对象曲面上部图形标记的距离。默认值为 0.001。 
+                        
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61D2"></a>标记要比接触几何体稍高，以便达到标记聚光灯重叠在接触几何体上的视觉效果。此参数不能设置动画。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6437"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61D1"></a>偏移变化</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-653E"></a> 指定在粒子间实际曲面偏移的随机变化的最大范围。默认设置是 0.0。 
+                        
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61D0"></a>调整此数值有助于通过重叠标记以减少渲染缺陷。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6436"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61CF"></a>顶点抖动</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-653D"></a> 指定标记（使用“长方体相交”方法创建）顶点位置的随机变化的最大范围。只能和“长方体相交”方法一起使用。默认设置是 0.0。 
+                        
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61CE"></a>调整此数值有助于通过重叠标记以减少渲染缺陷。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-CD7EA41B-3269-4A2F-B67C-58D59F6EA687"></a><p class="title"><a name="GUID-19079619-B00B-4ADA-AAFC-B3C26E476E0D"></a>“唯一性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61CD"></a>“唯一性”设置能够更改大小/宽度随机变化。 
+                     
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6435"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61CC"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-653C"></a> 指定随机化值。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6434"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61CB"></a>新增特性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-653B"></a> 使用随机化公式计算新种子。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-6CBC109E-19E6-4D81-AADE-80C97FADD216"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-74D532DF-2F7A-46E0-BA4B-2FC5CC975BC6.htm">图形操作符
+                        		</a></span></li>
+               <li><span class="char_link"><a href="GUID-B2DFC985-CD43-45DC-9CAC-F3052497B452.htm">“图形实例”操作符
+                        		</a></span></li>
+               <li><span class="char_link"><a href="GUID-ED7A1417-1BFC-4ED6-88C7-2C0725A50FDD.htm">图形朝向操作符
+                        		</a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

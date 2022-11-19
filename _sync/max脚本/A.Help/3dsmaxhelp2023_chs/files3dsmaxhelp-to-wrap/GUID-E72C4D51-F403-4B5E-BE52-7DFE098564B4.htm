@@ -1,0 +1,125 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-E72C4D51-F403-4B5E-BE52-7DFE098564B4">
+      <meta name="indexterm" content="安全">
+      <meta name="topic-type" content="concept">
+      <title>3ds Max 安全功能</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-E72C4D51-F403-4B5E-BE52-7DFE098564B4"></a><div class="head">
+            <h1>3ds Max 安全功能</h1>
+         </div>
+         <p> 本主题列出了 3ds Max 中与安全相关的功能以及引入这些功能的版本。 
+            	 
+         </p><a name="TABLE_E865B4B387CA44E9B1418224C9E8871F"></a><div class="table-not-ruled">
+            <table cellpadding="0" cellspacing="0" class="not-ruled">
+               <colgroup>
+                  <col>
+                  <col>
+               </colgroup>
+               <tr class="not-ruled-heading">
+                  <th class="table-heading">3ds Max 版本 
+                     				
+                  </th>
+                  <th class="table-heading">功能 
+                     				
+                  </th>
+               </tr>
+               <tr class="not-ruled-odd-row">
+                  <td class="table-body">2022.3 
+                     				
+                  </td>
+                  <td class="table-body"> 
+                     <p class="table-body"><em class="strong">受保护的文件位置</em> 
+                     </p> 
+                     <p class="table-body">现在，当<span class="char_link"><a href="GUID-7D0E9C58-0BA2-4D17-822E-A3962D68A2F1.htm">安全场景脚本执行</a></span>处于启用状态时，多个文件系统位置受到保护。请参见<span class="char_link"><a href="GUID-1DA88B14-D7B6-4EA9-A678-4D8061467D64.htm#SECTION_24108332D5D942229D73A2A37402A67B">受保护的文件位置</a></span>。 
+                        				  
+                     </p> 
+                     <p class="table-body"><em class="strong">启动脚本和隐藏目录</em> 
+                     </p> 
+                     <p class="table-body"> 在先前版本中，如果目录树中有任何目录处于隐藏状态，则不会加载位于该树中的启动脚本。这意味着 3ds Max 安装目录或其上级目录不能设置为隐藏。现在，您可以将 3ds Max 安装目录或其上级目录设置为隐藏，这些目录中包含的启动脚本可以加载。
+                        
+                        				  
+                     </p> 
+                     <p class="table-body"><em class="strong">SSSE 阻止脚本化自定义属性</em> 
+                     </p> 
+                     <p class="table-body"> 
+                        					 现在，<span class="char_link"><a href="GUID-7D0E9C58-0BA2-4D17-822E-A3962D68A2F1.htm">安全场景脚本执行</a></span>阻止脚本化自定义属性中包含的任何不安全命令，无论是在加载场景时执行还是从 MAXScript 侦听器或编辑器执行。
+                        				  
+                     </p> 
+                  </td>
+               </tr>
+               <tr class="not-ruled-even-row">
+                  <td class="table-body">2022.2 
+                     				
+                  </td>
+                  <td class="table-body"> 
+                     <p class="table-body"><em class="strong">安全设置管理：</em> 
+                     </p> 
+                     <p class="table-body">某些与“安全场景脚本执行”相关的安全设置可由系统管理员管理。请参见<span class="char_link"><a href="GUID-16432B3A-85BB-4542-9B0A-35D846401862.htm#SECTION_FC4DBE448D32450C99E9C79D840553D7">系统管理员的安全设置</a></span>。 
+                        				  
+                     </p> 
+                  </td>
+               </tr>
+               <tr class="not-ruled-odd-row">
+                  <td class="table-body">2022.1 
+                     				
+                  </td>
+                  <td class="table-body"> 
+                     <p class="table-body"><em class="strong">脚本种植缓解：</em> 
+                     </p> 
+                     <p class="table-body">3ds Max 用于查找未指定完整路径的脚本或文件的位置将减少为几个受控目录。这适用于可以采用简单脚本名称的任何 MAXScript 函数（如 <span class="code">fileIn()</span>），以及如何搜索 <span class="filePath">startup.ms</span> 启动脚本。 
+                        				  
+                     </p> 
+                     <p class="table-body">有关此行为的详细信息，请参见 MAXScript 帮助中的“文件访问函数搜索行为”主题。 
+                        				  
+                     </p> 
+                     <p class="table-body"><em class="strong">MAXScript 安全执行：</em> 
+                     </p> 
+                     <p class="table-body">新的 <span class="code">safeExecute()</span>、<span class="code">safeReadValue()</span> 和 <span class="code">safeReadExpr()</span> 函数始终执行任意代码段，就好像已启用<span class="char_link"><a href="GUID-7D0E9C58-0BA2-4D17-822E-A3962D68A2F1.htm">安全场景脚本执行</a></span>一样。 
+                        				  
+                     </p> 
+                  </td>
+               </tr>
+               <tr class="not-ruled-even-row">
+                  <td class="table-body">2022 
+                     				
+                  </td>
+                  <td class="table-body"> 
+                     <p class="table-body"><em class="strong">安全场景脚本执行：</em> 
+                     </p> 
+                     <p class="table-body"><span class="char_link"><a href="GUID-7D0E9C58-0BA2-4D17-822E-A3962D68A2F1.htm">安全场景脚本执行</a></span>功能会阻止执行不安全的命令。 
+                        				  
+                     </p> 
+                     <p class="table-body"><em class="strong">更新通知：</em> 
+                     </p> 
+                     <p class="table-body">现在，如果 Autodesk App Store 中有新版本可用，则当您启动 3ds Max 时，3ds Max <span class="char_link"><a href="GUID-C8FEC566-7747-4C35-A7DE-6B8233C9ACB0.htm">安全工具</a></span>功能会通知您。 
+                        				  
+                     </p> 
+                     <p class="table-body"><em class="strong">脚本日志记录：</em> 
+                     </p> 
+                     <p class="table-body">3ds Max 加载的所有脚本都记录在系统日志中，以供审核。 
+                        				  
+                     </p> 
+                  </td>
+               </tr>
+               <tr class="not-ruled-odd-row">
+                  <td class="table-body">2021.3 
+                     				
+                  </td>
+                  <td class="table-body"><em class="strong">脚本文件加载：</em> 
+                     <p class="table-body">不再加载隐藏脚本和系统脚本。 
+                        				  
+                     </p> 
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <p> </p>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

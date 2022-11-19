@@ -1,0 +1,65 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-F47A56FC-AC40-4762-BC9A-274FDCEC2505">
+      <meta name="description" content="使用“图形控制”来向粒子指定图形。它比“图形实例”操作符更灵活，因为它允许直接控制每个粒子的图形参数。“图形控制”子操作符可以看到所有的图形和修改器参数。唯一的限制是，您最多只能有九个输入值（时间以及最多八个控制器值），且材质不得通过子操作符进行设置（例如，通过材质继承）。">
+      <meta name="topic-type" content="concept">
+      <title>“图形控制”子操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-F47A56FC-AC40-4762-BC9A-274FDCEC2505"></a><div class="head">
+            <h1>“图形控制”子操作符</h1>
+         </div>
+         <p class="blurb">使用“图形控制”来向粒子指定图形。它比“图形实例”操作符更灵活，因为它允许直接控制每个粒子的图形参数。“图形控制”子操作符可以看到所有的图形和修改器参数。唯一的限制是，您最多只能有九个输入值（时间以及最多八个控制器值），且材质不得通过子操作符进行设置（例如，通过<span class="char_link"><a href="GUID-D3AC022F-B6F6-4C99-A2AE-06D35AF3F0A6.htm">材质继承</a></span>）。 
+         </p>
+         <div class="bodyReference"><a name="UL_DBD8B220E6BC48AA94774094B555A8B5"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-D8922E83-150B-4E5D-AAC9-BE29BE45813E">“粒子视图” <img src="../images/ac.menuaro.gif"> “数据图标/操作符/图标测试/测试” <img src="../images/ac.menuaro.gif">  单击“编辑数据流”。 <img src="../images/ac.menuaro.gif">  添加或选择“图形控制”。</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="AB1015384"></a> 
+               <h2><a name="GUID-D799A5CE-A179-4DAA-80D8-14B67E3F04F6"></a>界面
+               </h2> <a name="FIG_0C85D46E6D204B61BAE339BDADC3CBD5"></a><div class="figure-anchor"><img src="../images/GUID-C200DF41-150B-414D-94AB-905FD39DFF4F-low.png"></div>  <a name="GUID-62451A39-544F-4F40-B081-BF5AB19EC14F"></a><dl>
+                  <dt><a name="GUID-9F57FD53-94AB-4A10-A4FC-DFF9361DF145"></a><span class="term"><a name="GUID-3C18790F-8278-44A6-B9F5-1E77B7CBFE79"></a>粒子几何体对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-51194F08-0BB0-4351-AEBC-2730011EE5E0"></a> 单击选择一个几何体对象作为粒子实例图形使用。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-0DAD6276-9311-45D2-AA88-29B8CE984D4A"></a><span class="term"><a name="GUID-01DD9CD6-FE01-451F-987A-493117321D3C"></a>已设置动画的图形</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-6EFD3347-C50D-434B-AD9D-281D2E296866"></a> 启用时，子操作符的时间类型输入将可用。您可以关联时间数据，且粒子图形由几何动画和时间（为特定粒子定义）进行定义。仅当对参考几何体设置动画后，此选项方适用。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-83630E69-F228-45F7-BF80-15A35D3053CA"></a><span class="term"><a name="GUID-FEA960F9-46FF-47C3-ADD6-D7637754FE02"></a>获取贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-EC730315-A328-4AB2-B3AD-22F0CD096742"></a> 类似于“图形实例”操作符中具有相同名称的参数。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-5996C0A8-1859-48CA-96C3-5D0486CF5E9E"></a><span class="term"><a name="GUID-615702E2-5FD9-4DDE-BE2D-27869D51A366"></a>参数控制器</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-02B061A8-0092-4670-AE7B-F716A3C18686"></a> 图形参数控制器（最多八个）的列表。每个控制器都列有其数据类型和名称，并针对将数据通道关联到的子操作符创建单独的输入。从“粒子几何体对象”中派生出可用的控制器。 
+                        <p><a name="GUID-51D66689-067E-4DB5-A315-07A9A2A0DD95"></a> 使用“添加”按钮可添加控制器，一次添加一个，使用“删除”按钮可从列表中删除高亮显示的控制器。若要重命名控制器，高亮显示该控制器，在“重命名”旁边的文本字段中输入新名称，然后单击“重命名”。数据类型将保留在列表中。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-2CCFD2F8-ADCD-4FAB-95F4-E2F1020A1CA6"></a><span class="term"><a name="GUID-B5CB7613-B9AB-4DEF-9CD9-CB6E04EEF2C4"></a>离散优化</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-7193F01B-BF29-43D4-8705-2D773851DC78"></a> 禁用时，逐个评估每个粒子的图形。换言之，如果有 N 个粒子，参考几何体会使用不同的参数评估 N 次，如果粒子数量很多，评估可能会很慢。但是，如果某些参数仅可以处理有限数量的值，且这些值的数量明显少于粒子的数量，则最好启用此选项。启用时，由于对与输入相关联的值进行初步分析，以找到与不同的粒子相匹配的输入值，所以会出现一个小惩罚。另一方面，由于用于评估参考几何体的调用较少：对于与输入相关联的值，仅使用一个调用，因此速度可以更快。
+                        
+                        <p><a name="GUID-14B73D9A-21D6-4E62-A362-51DCA5133B30"></a> 为了帮助加快在大型粒子系统中使用“图形控制”自定义操作符和测试的操作，请使用“图形控制”及其数据输入流之间的<span class="char_link"><a href="GUID-587A5221-B58D-4C9C-AA05-10FF00015F75.htm">“离散化器”子操作符</a></span>。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-9156ACF7-EF8B-4148-9568-763F7B93D730"></a><span class="term"><a name="GUID-CB520437-BA62-45C7-8472-FCAFBAD0D4C7"></a>优先级和执行顺序</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-78E28EE6-8709-4039-A234-3EE2269BCB46"></a> “图形控制”是一种输出类型的子操作符，因此，它具有参数的“优先级和执行顺序”组。有关详细信息，请参见<span class="char_link"><a href="GUID-F46E863E-BF7C-4F29-BAD2-F91B0080DC80.htm">优先级和执行顺序</a></span>。 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

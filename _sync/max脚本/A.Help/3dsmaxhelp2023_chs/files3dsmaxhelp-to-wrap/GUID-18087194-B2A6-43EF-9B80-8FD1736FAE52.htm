@@ -1,0 +1,144 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-18087194-B2A6-43EF-9B80-8FD1736FAE52">
+      <meta name="description" content="PBR（高光反射/光泽）材质是一种基于物理的渲染材质，可提供灯光与曲面交互方式的精确表示。">
+      <meta name="indexterm" content="PBR: 高光反射/光泽">
+      <meta name="indexterm" content="基于物理的渲染">
+      <meta name="indexterm" content="PBR: 光泽">
+      <meta name="topic-type" content="concept">
+      <title>PBR 材质（高光反射/光泽）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-18087194-B2A6-43EF-9B80-8FD1736FAE52"></a><div class="head">
+            <h1>PBR 材质（高光反射/光泽）</h1>
+         </div>
+         <p class="blurb"> PBR（高光反射/光泽）材质是一种基于物理的渲染材质，可提供灯光与曲面交互方式的精确表示。 
+            
+         </p><a name="UL_AC4637C185334BE384F1FC2FE386FE8E"></a><ul>
+            <li><span class="MenuCascade">“材质编辑器” <img src="../images/ac.menuaro.gif"> “常规” <img src="../images/ac.menuaro.gif"> “PBR 材质(高光反射/光泽)”</span> 
+            </li>
+         </ul>
+         <div><a name="WS73099CC142F487555CDED44512850E8015A-7F88"></a><div class="note-note"><span class="label label-target-language">注意:</span>仅当活动渲染器支持时，该材质才会显示在“材质/贴图浏览器”中。 
+               		
+            </div>
+         </div><a name="FIG_80A36C6659A94D5EAEB78561D70AA3CA"></a><div class="figure-anchor"><img src="../images/GUID-3CD092C0-DD4B-4121-9202-9BCB5AF654E0-low.png"></div>
+         <div class="section"><a name="SECTION_F05F2BE5955F47989298EAA409D0F623"></a> 
+            <h2><a name="GUID-82FE4BC4-B979-4947-99ED-99B4F96AD653"></a>界面
+            </h2> <a name="FIG_53D2359760D144D18434127ED6682E76"></a><div class="figure-anchor"><img src="../images/GUID-40291718-EAE0-48AE-825A-600D2FD9522E-low.png"></div> 
+            <div class="section"><a name="SECTION_3A1A6F8048B44501AE86AC3F051012CB"></a> 
+               <h3><a name="GUID-B8AFE87A-403A-4F6F-9E35-155906CEB152"></a>“材质参数”组
+               </h3> 
+               <dl><a name="GUID-E4F302DC-83ED-4AD6-9EFA-D7C322D69819"></a><dt><span class="term">基础/反照率 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">单击色样可拾取曲面的基础颜色。这是漫反射颜色。 
+                        				  
+                        <p>单击相应按钮以指定基础/反照率贴图，或者使用 Windows 资源管理器直接将贴图拖放到其上。 
+                           				  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-A4700C41-65C1-406C-990A-EF1811E93D38"></a><dt><span class="term">高光反射 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置朝向用户的曲面点的高光反射（反射）颜色（从技术上讲，为 F0 反射率）。对于非金属对象，此项应该在 0.02-0.04 左右，但对于金属对象，此项应为金属的颜色（且基础颜色应为黑色）。 
+                        				  
+                        <p>单击相应按钮以指定高光反射贴图，或者使用 Windows 资源管理器直接将贴图拖放到其上。 
+                           				  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-51D0F308-64E7-4A1A-845A-FEE491BAA46A"></a><dt><span class="term">光泽度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置曲面的光泽度，其中 1.0 表示完全平滑，0.0 表示完全粗糙（纯漫反射）。请注意，可以使用下面的“曲面平滑度定义为”选项将此项切换为显示“粗糙度”。 
+                        				  
+                        <p>单击相应按钮以指定光泽度贴图，或者使用 Windows 资源管理器直接将贴图拖放到其上。 
+                           				  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-2F82B95C-4BF8-489A-AE18-ADB6344C45A8"></a><dt><span class="term">阻光贴图(AO) 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">单击以选择定义环境光阻挡的贴图（如果需要）。 
+                        				  
+                        <p>单击相应按钮以指定阻光贴图，或者使用 Windows 资源管理器直接将贴图拖放到其上。 
+                           				  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-4F50FC73-2C19-4EDA-980A-BC39BE24CF02"></a><dt><span class="term">法线 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置法线贴图。如果在此处连接位图，则不需要包含“法线凹凸”贴图。使用 Windows 资源管理器，还可以直接将贴图拖放到其上。 
+                        				
+                     </div>
+                  </dd><a name="GUID-EDB2B2F3-7332-4811-95F5-A8A4C7C4F617"></a><dt><span class="term">发射 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">单击色样可为发射（自发光）贴图拾取颜色。 
+                        				  
+                        <p>单击相应按钮以指定发射贴图，或者使用 Windows 资源管理器直接将贴图拖放到其上。 
+                           				  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-BE3C5D47-3D09-42CF-BC2E-3A291E1BBA50"></a><dt><span class="term">置换 
+                        				  
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置置换效果，修改曲面以将置换贴图的细节作为实际（生成的）几何体。数值设置是用于调整效果强度的倍增值。默认值为 1。 
+                        				  
+                        <p>单击相应按钮以指定置换贴图，或者使用 Windows 资源管理器直接将贴图拖放到其上。
+                           				  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-6AAA46D6-3BE4-44D4-81CA-04907CBC96CB"></a><dt><span class="term">不透明贴图 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">单击以选择定义不透明和透明区域的贴图，其中 1.0 表示不透明，0.0 表示透明。使用 Windows 资源管理器，还可以直接将贴图拖放到其上。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_F48449FA3C3E41DA9A866646D49E9526"></a> 
+               <h3><a name="GUID-37D79FB8-E1D1-41CE-840C-26B70354FF04"></a>“设置”组
+               </h3> 
+               <dl><a name="GUID-7AC15250-204E-4EBD-A2DC-737E60910D07"></a><dt><span class="term">曲面平滑度定义为 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">切换用于计算 PBR 贴图的方法。 
+                        				
+                     </div>
+                  </dd><a name="GUID-CBE90569-AC1B-4246-8960-01EE60E9EDB2"></a><dt><span class="term">AO 影响漫反射 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">启用环境光阻挡以影响对象的颜色。 
+                        				
+                     </div>
+                  </dd><a name="GUID-C43AE022-95EB-4AE1-8861-A00015A95A4B"></a><dt><span class="term">AO 影响反射 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">启用环境光阻挡以影响反射。 
+                        				
+                     </div>
+                  </dd><a name="GUID-109D8CFD-0BB0-4BF7-A239-4E935F4A4721"></a><dt><span class="term">法线翻转红色 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">翻转贴图的 X 轴。此设置用于实现与来自其他源的贴图的兼容性。翻转以匹配所用法线贴图的样式。 
+                        				
+                     </div>
+                  </dd><a name="GUID-493037C2-E3F8-43AC-93EE-A8A2DD79D057"></a><dt><span class="term">法线翻转绿色 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">翻转贴图的 Y 轴。此设置用于实现与来自其他源的贴图的兼容性。翻转以匹配所用法线贴图的样式。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

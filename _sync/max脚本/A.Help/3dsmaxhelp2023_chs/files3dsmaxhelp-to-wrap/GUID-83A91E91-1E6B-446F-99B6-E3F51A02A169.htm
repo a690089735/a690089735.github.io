@@ -1,0 +1,55 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-83A91E91-1E6B-446F-99B6-E3F51A02A169">
+      <meta name="description" content="在“运动流图形”中，引用的 BIP 文件的位置保存在 MFE 文件中。如果找不到 BIP 文件，则 3ds Max 会查找通过“配置用户路径” “文件 I/O”指定的“Animations”目录。">
+      <meta name="indexterm" content="运动流: 文件路径">
+      <meta name="topic-type" content="concept">
+      <title>为运动流文件设置路径</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-83A91E91-1E6B-446F-99B6-E3F51A02A169"></a><div class="head">
+            <h1>为运动流文件设置路径</h1>
+         </div>
+         <p class="blurb">在“运动流图形”中，引用的 BIP 文件的位置保存在 MFE 文件中。如果找不到 BIP 文件，则 <span class="charspan-msgph">3ds Max</span> 会查找通过“配置用户路径”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> <span class="char_link"><a href="GUID-F2DBB8F1-1868-4A41-AD2A-4FC86F702472.htm">“文件 I/O”</a></span>指定的“Animations”目录。 
+         </p>
+         <div class="bodyReference">
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16523"></a>如果在“Animations”目录中没有找到 BIP 文件，则 <span class="charspan-msgph">3ds Max</span> 会在与当前加载 MAX 文件的相同目录中查找该文件。如果仍然未找到，则 <span class="charspan-msgph">3ds Max</span> 将引用文件的本地路径附加到当前 MAX 文件的路径中。将该文件保存回发现它的相同位置。 
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16524"></a>如果在当前位置不能找到引用的 BIP 文件，有两个办法可以解决这一问题。 
+            </p><a name="WS1A9193826455F5FFBA679E112A6A190045A55"></a><ul>
+               <li>在“重置未找到的运动流文件”对话框中，将 <span class="charspan-msgph">3ds Max</span> 指引到缺失 BIP 文件所驻留的文件夹中。 <a name="WS1A9193826455F5FFBA679E112A6A190045A56"></a><div class="figure-anchor"><img src="../images/GUID-751DCA33-FE30-4330-A341-FC2C02A728C4-low.png"></div>  
+               </li>
+               <li>找到缺失的 BIP 文件并将其移到指定的“运动流”文件夹中。 </li>
+            </ul>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E77B"></a><div class="note-note"><span class="label label-target-language">注意:</span>当您找到 BIP 时，可以启用“添加目录到 .INI 文件”选项，该目录会自动添加到您的 <em class="mild">biped.ini</em> 文件中。由于 <em class="mild">biped.ini</em> 文件支持多个搜索路径，新的目录作为另一 <span class="charspan-emphasis"> <em class="mild">MoFloDir=</em> </span> 行进行添加。<span class="charspan-msgph">3ds Max</span> 将按照目录的显示顺序进行查找并使用找到的第一个文件实例。进行网络渲染时，文件名必须是 UNC 兼容的。 
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4681"></a> 
+               <h2><a name="GUID-EB4007BC-1F6B-4DC3-B2B3-1D8C37A1726A"></a>过程
+               </h2> <a name="WSF742DAB041063133728B9B2112A1CE7292-7EE4"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045A57"></a>要从另外的系统加载“运动流”场景，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>打开在另一个不同系统中创建的“运动流”场景。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16526"></a>如果不能找到引用的 BIP 文件，会显示“重置未找到运动流文件”对话框。 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190045A58"></a><div class="figure-anchor"><img src="../images/GUID-8423CCB3-E0DF-4E2B-85E1-F9346E65E8AE-low.png"></div>  
+                  </li>
+                  <li>如果本地驱动器上有任意引用的 BIP 文件，导航到它们所驻留的文件夹并选择该 BIP 文件。 </li>
+                  <li>打开“向 .ini 文件添加目录”选项，并单击“打开”。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16527"></a>打开“将目录添加到 .INI 文件”选项将自动添加另外的 <em class="mild">MoFlowDir=</em> 行到 <em class="mild">biped.ini</em> 文件中。 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190045A59"></a><div class="figure-anchor"><img src="../images/GUID-55121BF5-5CEC-488A-9E88-9ABFF3AA363F-low.png"></div>  
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E77C"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果在当前会话过程中想搜索引用的 BIP 文件，但是不想向 <em class="mild">biped.ini</em> 文件添加目录，则启用“添加待搜索的目录”。 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>正确设置所有引用的 BIP 文件的路径之后，单击 <img src="../images/GUID-5B32F2AB-610D-42BB-8C54-81463BE72359-low.png">（播放动画）。 
+                  </li>
+               </ol> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-CF348181-6708-4CAF-B9C9-8B4CA5EEF55F">
+      <meta name="description" content="针对在 3ds Max 中使用 OSL，有两个基本的工作流：一个适用于使用 OSL 类别中预先创建的贴图，另一个适用于使用 OSL 贴图本身。">
+      <meta name="indexterm" content="新功能">
+      <meta name="indexterm" content="如何使用 OSL">
+      <meta name="topic-type" content="concept">
+      <meta name="cmdname" content=". . . .,“编辑”,“编译明暗器”,“保存 OSL 文件”">
+      <meta name="keywords" content=". . . ., “编辑”, “编译明暗器”, “保存 OSL 文件”">
+      <meta name="keyword" content=". . . .">
+      <meta name="keyword" content="“编辑”">
+      <meta name="keyword" content="“编译明暗器”">
+      <meta name="keyword" content="“保存 OSL 文件”">
+      <title>OSL 工作流</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-CF348181-6708-4CAF-B9C9-8B4CA5EEF55F"></a><div class="head">
+            <h1>OSL 工作流</h1>
+         </div>
+         <p class="blurb">针对在 3ds Max 中使用 OSL，有两个基本的工作流：一个适用于使用 OSL 类别中预先创建的贴图，另一个适用于使用 OSL 贴图本身。 
+            
+         </p>
+         <div class="section"><a name="SECTION_36B79534D2AD45CB9D011D1304414F66"></a> 
+            <h2><a name="GUID-3B512DF6-05E3-4D3F-B04B-23EB764EE2A3"></a>使用 OSL 类别中的贴图
+            </h2> <a name="UL_BAAD1F295ED749E9A1EB35C037D43133"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-4F8B17B4-7583-45EE-B940-83D7459952E5">材质编辑器  <img src="../images/ac.menuaro.gif">  材质/贴图浏览器  <img src="../images/ac.menuaro.gif">  贴图  <img src="../images/ac.menuaro.gif">  OSL</span> 
+               </li>
+            </ul> 
+            <p><img src="../images/GUID-9595B456-7D6B-4C68-832D-4F2519A41D0C-low.png"> 
+            </p> 
+            <p> 使用 OSL 类别中的贴图这一工作流非常简单。实际上，这与其他 3ds Max 贴图没有任何区别。 
+               		<a name="OL_E5CFD45809B3497D9CBDE2315F5A8A0C"></a><ol type="1" start="1">
+                  <li>打开“Slate 材质编辑器”。 
+                     		  
+                  </li>
+                  <li>在“材质/贴图浏览器”中，展开 OSL 类别。 
+                     		  
+                  </li>
+                  <li>选择一个贴图，然后将其拖放到“Slate 材质编辑器”中。 
+                     		  
+                  </li>
+                  <li>根据需要编辑贴图参数。 
+                     		  
+                  </li>
+                  <li>在受支持的渲染器中渲染或使用 ActiveShade。 
+                     		  
+                  </li>
+               </ol> 
+            </p> 
+            <p>在 OSL 类别中找到的所有 OSL 贴图均来自 3ds Max 插件文件夹。其中包括大约 100 个 OSL 明暗器；但是，您也可以添加更多。 
+               		  
+               <div><a name="GUID-B863922E-B718-49DF-8576-10BD25013AD7"></a><div class="note-note"><span class="label label-target-language">注意:</span>在此工作流中，所有明暗器代码均托管在插件文件夹的文件中，通常它们的行为与任何其他插件类似。如果在相应文件夹中放置了更新的版本，渲染时将使用新版本。 
+                     		  
+                  </div>
+               </div> 
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_58F7230746DF4D1180FD182E09506C05"></a> 
+            <h2><a name="GUID-11CCCA15-A0C1-4C7E-A4D3-869D1038D5AA"></a>使用 OSL 贴图
+            </h2> <a name="UL_0D11491ED7FF40DE946E1B2D7BA95F23"></a><ul>
+               <li> <span class="MenuCascade">材质编辑器  <img src="../images/ac.menuaro.gif">  材质/贴图浏览器  <img src="../images/ac.menuaro.gif">  贴图  <img src="../images/ac.menuaro.gif">  常规  <img src="../images/ac.menuaro.gif">  OSL 贴图</span> 
+               </li>
+            </ul> 
+            <p><img src="../images/GUID-1269A954-5A5D-49F4-95DF-2822EAFAFCF7-low.png"> 
+            </p> 
+            <p>OSL 贴图是未填充的空贴图，具有编辑功能。与其他贴图一样，只需将其拖放到“Slate 材质编辑器”中。但是，此贴图的有趣之处在于编辑参数。 
+               		
+            </p> 
+            <p>您可以选择 <span class="keyword">. . . .</span> 按钮以从磁盘加载插件文件夹层次中可能不存在的 OSL 明暗器，它们可能位于各个位置。OSL 贴图动态变形为新参数、根据需要繁殖附加输入和输出，并根据加载的 OSL 文件开始渲染。 
+               		
+            </p> 
+            <p>在此工作流中，OSL 代码会实际加载到 OSL 贴图中。仅在加载时使用文件，从此，代码在 OSL 贴图内以字符串参数形式存在。 
+               		
+            </p> 
+            <p>单击<span class="keyword">“编辑”</span>以打开 OSL 源编辑器。它是一个简单、可停靠的语法着色文本编辑器，可以在其中<em class="strong">实时</em>编辑 OSL 代码。按下<span class="keyword">“编译明暗器”</span>或使用快捷键 F7，将明暗器更新为最新代码，即使正在 ActiveShade 模式下进行渲染。 
+               		
+            </p> 
+            <p>这会将 OSL 贴图转变为完整的明暗器开发环境。您能够以交互方式处理代码，因为可以同时打开多个编辑器。 
+               		
+            </p> 
+            <p>可以使用<span class="keyword">“保存 OSL 文件”</span>或快捷键 Ctrl+S 保存编辑后的文件。但是，由于代码位于 OSL 贴图内，因此也可以将其存储在场景中，或者拖放到材质库。与任何文件均不存在外部从属关系；它是完全独立的。跨世界发送到渲染场的场景将永远不会丢失明暗器 - 它们位于场景本身中。
+               
+               		
+            </p> 
+            <p>如果在其中一个 Plugins/OSL 文件夹中保存 OSL 文件，明暗器将自动显示在“材质/贴图浏览器”中。 
+               		
+            </p> 
+            <p> 
+               <div><a name="GUID-62FFEFEF-9315-48C1-B583-A8B84E76377E"></a><div class="note-tip"><span class="label label-target-language">提示</span>OSL 源编辑器会高亮显示匹配的括号以便于使用，而且可以通过按住 Ctrl 键并滚动鼠标滚轮来缩放字体大小。 
+                     		  
+                  </div>
+               </div> 
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_B89B08DA48F34791B7DE9E334F47453E"></a> 
+            <h2><a name="GUID-70255658-BFB7-4F0A-8A3E-0A1E507C92D9"></a>OSL 类别贴图与 OSL 贴图相同
+            </h2> 
+            <p> 运行贴图浏览器中预加载明暗器的 OSL 贴图与“常规”部分中存在的 OSL 贴图完全相同。实际上，从 OSL 部分拖入对象的唯一不同之处是：OSL 贴图默认以链接模式打开，其文件预加载到相应 OSL 文件中。 
+               		
+            </p> 
+            <p><img src="../images/GUID-4BD58F78-BCB4-41F1-807C-BC189377DA47-low.png"> 
+            </p> 
+            <p> 链图标状态指示“链接”模式。 
+               		
+            </p> 
+            <p> 启用此模式时，将从磁盘、通过文件按钮指定的文件读取明暗器。 
+               		
+            </p> 
+            <p> 禁用此模式时，在 OSL 贴图本身内嵌入式存储明暗器代码。 
+               		
+            </p> 
+            <p> 最重要的是，可以切换。 
+               		
+            </p> 
+            <p> 如果要更改其中一个预加载明暗器的纵横比 - 完全可以实现！只需取消链接，并根据自己的意愿对其进行编辑。您只能编辑场景中存在的副本，而无法编辑磁盘上的原始文件。仍处于链接状态的所有其他明暗器将保留类似插件的行为。处于取消链接状态的明暗器将允许在
+               OSL 贴图内进行本地编辑。 
+               		
+            </p> 
+            <p> 如果尝试重新链接已修改的贴图，将还原为文件中的版本，且将放弃所做的编辑。 
+               		
+            </p> 
+            <p> 从而可以非常轻松地进行简单的一次性修改，甚至是简单的实验。可以尝试进行一些修改操作，如果将其破坏，只需重新链接，它便会返回到原来状态。 
+               		
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

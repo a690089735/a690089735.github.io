@@ -1,0 +1,208 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-61E64E94-42ED-42D7-BE4B-63C2E27A4F32">
+      <meta name="description" content="此卷展栏允许您在根部和梢部设置头发数量和密度、长度、厚度以及其他各种综合参数。">
+      <meta name="indexterm" content="“Hair 和 Fur”修改器: “常规参数”卷展栏">
+      <meta name="topic-type" content="concept">
+      <title>“常规参数”卷展栏（Hair 和 Fur）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-61E64E94-42ED-42D7-BE4B-63C2E27A4F32"></a><div class="head">
+            <h1>“常规参数”卷展栏（Hair 和 Fur）</h1>
+         </div>
+         <p class="blurb">此卷展栏允许您在根部和梢部设置头发数量和密度、长度、厚度以及其他各种综合参数。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_C87D9C0A392841ED8B7FCFB8AC248BF9"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-D5B2D23C-24EE-4A20-9440-B0AEEE97EF6F"> 选择一个应用了“Hair 和 Fur”修改器的对象。 <img src="../images/ac.menuaro.gif"> “修改”面板  <img src="../images/ac.menuaro.gif"> “常规参数”卷展栏</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="SECTION_8F502F8AA53F434C98247F8B7B03B7EA"></a> 
+               <h2><a name="GUID-5F581907-C0F1-408E-9E53-F2EEDE1DA8D9"></a>贴图按钮
+               </h2> 
+               <p><a name="GUID-3C343A3F-4F6E-4BCD-9C69-E031B9E6E9F1"></a>您可以将贴图应用于“常规参数”卷展栏上的多个参数：“密度”、“比例”、“剪切长度”、“随机比例”、“根厚度”、“梢厚度”和“置换”。 
+                  
+               </p> 
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2B94"></a>要指定贴图，请单击控件右侧的贴图按钮，然后使用“材质/贴图浏览器”选择贴图。 
+                  
+               </p> 
+               <p><a name="GUID-0FCD8278-4040-4BE7-A56F-7A07F5DC08AB"></a>您还可以从“材质编辑器”示例窗中拖放贴图。如果“Slate 材质编辑器”处于打开状态，则可以从贴图节点的输出套接字拖动，然后放置到该按钮上。也可以从“材质编辑器”中的贴图按钮或 <span class="charspan-msgph">3ds Max</span> 界面中的其他任意位置进行拖放。将贴图放置到贴图按钮上时，将出现一个对话框，询问您希望该贴图成为源贴图的副本（独立）还是实例。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-29C2"></a> 
+               <h2><a name="GUID-CCEBC24E-6730-4732-8A3E-173805842803"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043594"></a><div class="figure-anchor"><img src="../images/GUID-1D0EBF67-55D4-4240-8149-7212AC2B7A9C-low.png"></div>  <a name="GUID-63AAA128-E835-4893-A190-002932C07B1F"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861DA2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-45D0"></a> 头发数量</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-42CE"></a> 由 Hair 生成的头发总数。在某些情况下，这是一个近似值，但是实际的数量通常和指定数量非常接近。默认设置为 10000。范围为 0 至 10000000（千万）。 
+                        
+                        <div><a name="GUID-116F5D1B-2D30-48C8-8005-0412D24C2A84"></a><div class="note-note"><span class="label label-target-language">注意:</span>在 3ds Max 2013 之前，“头发数量”的默认值为 15,000。 
+                              
+                           </div>
+                        </div> <a name="WS1A9193826455F5FFBA679E112A6A190043595"></a><div class="figure-anchor"><img src="../images/GUID-A00F3790-1843-4A60-BB37-0AE889FBAD76-low.png"></div>  
+                        <p><a name="GUID-E571DB02-BCC5-40DB-802E-46BD271D49E0"></a> <em class="strong">顶部：头发数量为 1000</em> 
+                        </p> 
+                        <p><a name="GUID-E1EA4010-5170-43AA-8727-8F3C171E3B17"></a> <em class="strong">底部：头发数量为 9000</em> 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45CF"></a>默认情况下，Hair 会将曲面面积上的密度正常化，较大的多边形接受的毛发数量比较小多边形更多。如果采用更改多边形大小比率的方式编辑生长对象，可使用“重置剩余”来自动调整头发的分布。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861DA3"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-45CE"></a>头发段</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-42CD"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875224C"></a>每根毛发的段数。默认设置为 5。范围为 1 至 150。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45CD"></a>该值等同于样条线段数，段数越多，卷发看起来就越自然，但是生成的网格对象就越大。对于非常直的直发，可将头发段设置为 1。 
+                           
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A190043596"></a><div class="figure-anchor"><img src="../images/GUID-296FA36C-3AC0-4A0E-9D52-ACBED30E0176-low.png"></div>  
+                        <p><a name="GUID-10A50E71-FE65-408C-8D9C-5C7FFEFF7759"></a> <em class="strong">左：头发段为 5</em> 
+                        </p> 
+                        <p><a name="GUID-A5444E53-2839-45D1-B1BB-6B265770250C"></a> <em class="strong">右：头发段为 60</em> 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861DA4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-45CC"></a>头发过程数</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-42CC"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875224D"></a>设置透明度。默认设置为 1。范围为 1 至 20。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45CB"></a>Hair 的缓冲渲染采用了一种全新的方式来处理头发透明度。取代了解析实际毛发透明度的是，毛发采用不同的随机种子渲染多次（如不透明的毛发）。这些缓冲随后混合在一起。增加毛发通透数值，毛发的透明度（或纤细性）也会增加。此外，增加该值也将增加渲染毛发的实际数量，尽管额外的透明度所产生的外观密度或填充数似乎相同。渲染时间也会线性增加。
+                           
+                           
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A190043597"></a><div class="figure-anchor"><img src="../images/GUID-4E37821D-1784-4C5C-9626-393E6A2E5B37-low.png"></div>  
+                        <p><a name="GUID-19AC5340-FC83-4554-A5D7-3A1DC6ED3BEC"></a> <em class="strong">顶部：头发过程数为 1</em> 
+                        </p> 
+                        <p><a name="GUID-DDA2FAB6-670D-4540-966C-82F539B46FB4"></a> <em class="strong">底部：头发过程数为 4</em> 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861DA5"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-45CA"></a>密度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-42CB"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875224E"></a>该数值设定整体头发密度，即其充当头发数量值的一个百分比乘数因子。默认设置为 100.0。范围为 0.0 至 100.0。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45C9"></a>此属性也可通过微调器右侧的贴图按钮进行贴图。可使用贴图添加纹理贴图，来控制头发数量。灰色值为 50% 的贴图区域将会使在该区域生长的头发的数量减少 50%。要更改整体头发数量，可使用“头发数量”参数（如上所述）。 
+                           
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A190043598"></a><div class="figure-anchor"><img src="../images/GUID-7949E961-A0FF-4F84-937B-50C4A216F5EA-low.png"></div>  
+                        <p><a name="GUID-B13DF16A-0609-4288-A533-DA5B64D950CD"></a> <em class="strong">顶部：密度为 100.0 + 贴图</em> 
+                        </p> 
+                        <p><a name="GUID-017F854C-D832-4F4A-89EC-7C5D79DD72FE"></a> <em class="strong">底部：用于控制密度的位图</em> 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E922"></a><div class="note-tip"><span class="label label-target-language">提示</span>为了获取最佳效能，可使用“头发数量”值来设置头发的实际数量，将密度保持为 100.0，并使用贴图来创建不均匀的头发分布。简单降低密度值而不指定贴图将导致头发在创建之后被废弃，从而无谓地增加了渲染时间。 
+                              
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861DA6"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-45C8"></a>比例</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-42CA"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875224F"></a>设置头发的整体缩放比例。默认设置为 100.0。范围为 0.0 至 100.0。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45C7"></a>采用默认值 100.0 时，毛发为全尺寸。降低此值毛发将会变短。要令头发更大，可使用<span class="char_link"><a href="GUID-E7442225-7A7F-46AF-B4CC-D326F6755E16.htm">设计设置工具</a></span>。默认设置为 100.0。范围为 0.0 至 100.0。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45C6"></a>此属性也可经由微调器右侧的贴图按钮贴图。可使用贴图添加纹理贴图，来控制头发长度。灰色值为 50% 的贴图区域将该区域的毛发生长量剪切为原始长度的 50%，不改变形状。 
+                           
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A190043599"></a><div class="figure-anchor"><img src="../images/GUID-3E2EB3F5-310D-4678-AF91-EC6647F1C097-low.png"><p class="figure-title">比例值范围为 0.0 (左) 至 100.0 (右)，使用线性渐近贴图</p>
+                        </div>  
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E923"></a><div class="note-note"><span class="label label-target-language">注意:</span>头发的默认大小取决于应用修改器的对象的大小。对象越大，初始尺寸越大。 
+                              
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861DA7"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-45C5"></a>剪切长度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-42C9"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752250"></a>该数值将整体头发长度设置为比例值的百分比乘数因子。默认设置为 100.0。范围为 0.0 至 100.0。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45C4"></a>此属性也可经由微调器右侧的贴图按钮贴图。可使用贴图添加纹理贴图，来控制头发长度。灰色值为 50% 的贴图区域将该区域的毛发生长量剪切为原始长度的 50%，不改变形状。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45C3"></a>此参数的计算量比密度贴图更高，其原因在于每个曲线都在瞬时重新参数化，此参数不应和密度贴图相混淆。其对于生长毛发的动画效果也尤为实用（例如创建狼人的角色）。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861DA8"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-45C2"></a>随机比例</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-42C8"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752251"></a>将随机比例引入到渲染的头发中。默认设置为 40.0。范围为 0.0 至 100.0。 
+                           
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004359A"></a><div class="figure-anchor"><img src="../images/GUID-E55F8558-B40D-4D76-89A4-F7056C534449-low.png"><p class="figure-title">随机比例值范围为 0.0（左）至 100.0（右），使用线性渐近贴图</p>
+                        </div>  
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45C1"></a>采用默认值 40.0 时，40％ 的毛发将以随机变量缩小。在 0.0 处，没有引入随机缩放。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861DA9"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-45C0"></a>根厚度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-42C7"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752252"></a>控制发根的厚度。对于实例化的毛发，该值将整体厚度控制为原始对象尺寸在对象控件的 X 和 Y 轴的乘数因子。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45BF"></a>该设置影响原生毛发和实例化毛发。采用实例化毛发，根厚度控制毛发的整体厚度，而不仅限于根。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861DAA"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-45BE"></a>梢厚度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-42C6"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752253"></a>控制发梢的厚度。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45BD"></a>该设置只影响原生毛发，不影响实例化毛发。要创建锥化的实例化头发，可对 Hair 中实例化的对象建模时应用锥化。 
+                           
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004359B"></a><div class="figure-anchor"><img src="../images/GUID-21CF0A4B-2E36-44A8-A642-2F42384A7380-low.png"></div>  
+                        <p><a name="GUID-CC3AF2A6-14C5-419F-936D-40FE03717F58"></a> <em class="strong">顶部：根厚度=10.0，梢厚度=0.0</em> 
+                        </p> 
+                        <p><a name="GUID-A83F121C-C52B-4ACB-ADCD-BDC44654FEBE"></a> <em class="strong">底部：梢厚度=10.0，根厚度=0.0</em> 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45BC"></a>如果头发的宽度小于一个像素，则头发呈半透明状态。另一方面，将“根厚度”和“梢厚度”设置为较小值（接近或小于 1.0）可能是获得半透明头发的一个不错的方法。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861DAB"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-45BB"></a>位移</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-42C5"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752254"></a>头发从根到生长对象曲面的位移。默认设置为 0.0。范围为 –999999.0 至 999999.0。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45BA"></a>当渲染具有高的多边形数量的对象时，除了使用低多边形代理对象生长头发外，调整“位移”有助于使头发看上去就像从高的多边形对象生长一样，而不是浮动在上面。 
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-45B9"></a>此设置的另一个用途是模拟落到生长对象上或离开生长对象的头发的动画。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861DAC"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-45B8"></a>插值</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-42C4"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752255"></a>启用之后，头发生长是插入到导向头发之间，且曲面将根据“常规参数”设置完全植入头发。禁用之后，Hair 只在生长对象的每个三角面上生成一根头发，受“头发数量”设置的限制。默认设置为启用。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

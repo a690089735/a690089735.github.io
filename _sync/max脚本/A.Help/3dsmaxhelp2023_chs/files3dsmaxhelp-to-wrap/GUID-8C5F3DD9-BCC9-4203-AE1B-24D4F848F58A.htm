@@ -1,0 +1,437 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A">
+      <meta name="description" content="“复制/粘贴”卷展栏上的控件允许复制 Biped 某个部位的姿势、姿态或轨迹信息，然后将它们粘贴到 Biped 的另一部位，或从一个 Biped 复制粘贴到另一个 Biped。">
+      <meta name="indexterm" content="Biped: 复制和粘贴">
+      <meta name="indexterm" content="Biped 卷展栏: 复制/粘贴">
+      <meta name="indexterm" content="Biped: 复制集合">
+      <meta name="indexterm" content="Biped: 姿势模式">
+      <meta name="indexterm" content="Biped: 姿势模式">
+      <meta name="indexterm" content="Biped: 轨迹模式">
+      <meta name="topic-type" content="concept">
+      <title>“复制/粘贴”卷展栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A"></a><div class="head">
+            <h1>“复制/粘贴”卷展栏</h1>
+         </div>
+         <p class="blurb">“复制/粘贴”卷展栏上的控件允许复制 Biped 某个部位的姿势、姿态或轨迹信息，然后将它们粘贴到 Biped 的另一部位，或从一个 Biped 复制粘贴到另一个 Biped。 </p>
+         <div class="bodyReference"><a name="UL_7B6A11B9397B4FDE87757B3CBB2A366B"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-3140BE94-4856-49E8-81AA-FEAC24B2B1F5">创建或选择 Biped。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板  <img src="../images/ac.menuaro.gif"> “复制/粘贴”卷展栏</span> 
+               </li>
+            </ul>
+            <div><a name="WS73099CC142F48755-1AD2A282127C1ADF590-7EBB"></a><div class="note-note"><span class="label label-target-language">注意:</span>在“混合器模式”、“运动流模式”或“足迹模式”下不可用。 
+               </div>
+            </div>
+            <p><a name="WS73099CC142F487552A50A53111913E7C26F-77DC"></a> 可以复制三类信息： 
+            </p><a name="WS1A9193826455F5FFBA679E112A6A190045843"></a><ul>
+               <li> <em class="strong">姿势</em> Biped 选定对象的位置。 
+               </li>
+               <li> <em class="strong">姿势</em>整个 Biped 的位置。 
+               </li>
+               <li> <em class="strong">轨迹</em>来自选中 Biped 对象的动画。 
+               </li>
+            </ul>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E741"></a><div class="note-note"><span class="label label-target-language">注意:</span>复制的信息将存储在当前复制集合中（参见下列内容）。 
+               </div>
+            </div>
+            <div class="section"><a name="WSF742DAB041063133728B9B2112A1CE7292-7F34"></a> 
+               <h2><a name="GUID-2CD57033-8B80-4743-98EC-64CE856B0FA5"></a>复制集合
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF162AE"></a>复制集合用于通过将复制的姿势、姿态和轨迹信息组合在一起，使这些信息的管理更加轻松。从而可以当复制的动画数据在一个会话中的文件之间进行传输时改进其组织方式。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190045844"></a><ul>
+                  <li>可以在列表中显示姿势、姿势或轨迹的更小集。 </li>
+                  <li>可以将多个 <span class="char_link"><a href="GUID-F77B03E5-268C-4DBF-B3B5-D1713336549A.htm#WS73099CC142F4875514C01AC112A7ACEF16EA8">CPY 文件</a></span>加载到一个场景中。 
+                  </li>
+                  <li>您既可以将加载的集附加到现有集中，也可以完全替换它。 </li>
+               </ul> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E742"></a><div class="note-note"><span class="label label-target-language">注意:</span>在复制 Biped 姿势、姿态或轨迹之前必须先创建一个复制集合。 
+                  </div>
+               </div> 
+            </div>
+            <div class="section"><a name="WSF742DAB041063133728B9B2112A1CE7292-7F33"></a> 
+               <h2><a name="GUID-9557CC8C-40A3-4687-AB32-F161243D966B"></a>复制/粘贴缓冲区
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF162AF"></a>在 character studio 中，可以针对以下三个模式之一保存多个复制/粘贴缓冲区：“姿态”、“姿势”和“轨迹”。它们在“复制的姿势”/“复制的姿态”/“复制的轨迹”下拉列表中是可用的；“粘贴”按钮使用的活动缓冲区的名称可以在列表顶部看到。缩略图视图是已保存活动缓冲区的预览。
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF162B0"></a>缓冲区连同 MAX 场景文件一同保存，且即使重新设置后，在 <span class="charspan-msgph">3ds Max</span> 会话中仍然可用。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF162B1"></a>缓冲区的默认名称取决于您所在的模式。在姿态和姿势模式中，缓冲区的名称包含选定躯干部位的缩写名称，并后跟序列号。例如，<em class="mild">RArmRFing1</em> 是 Biped 右胳膊和手指的“姿势”或轨迹的第一个缓冲区。在“姿势”模式中，缓冲区名称通常由“Pose”加上一个后续数字组成。例如，<em class="mild">Pose03</em>。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF162B2"></a>要使用定制名称来命名缓冲区并激活它，那么突出显示在缓冲区列表顶部的名称字段，然后输入新名称。 
+               </p> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E743"></a><div class="note-tip"><span class="label label-target-language">提示</span>复制包含 COM 数据的姿势或姿态时，将激活<span class="char_link"><a href="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A.htm#GUID-14ADA0FB-5F39-459D-8DE6-C75C085D2DA4">粘贴选项</a></span>。 
+                  </div>
+               </div> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045845"></a> 
+               <h2><a name="GUID-1B92C698-8150-44BD-B176-AC0A3B3B7455"></a>复制和粘贴相反
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF162B4"></a>对每一模式，有两个粘贴选项：粘贴和粘贴相反。它们用于不同情况下： 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190045846"></a><ul>
+                  <li> <em class="strong">粘贴</em>在“姿态”和“姿势”模式中，从一个 Biped 中复制位置到另一 Biped 中使用“粘贴”，或在动画中的其它不同帧上恢复 Biped 位置时使用。在“轨迹”模式中，粘贴主要用于复制一个 Biped 的运动到另一个不同 Biped 中。 
+                  </li>
+                  <li> <em class="strong">粘贴相反</em>在“姿势”模式中，“粘贴相反”用于使一个肢体呈现其它肢体的姿势，可在同一帧和不同帧上使用。在“姿势”模式中，“粘贴相反”翻转 Biped 的姿势或应用翻转姿势到不同的 Biped 中。在“轨迹”模式中，“粘贴相反”可以使 Biped 肢体对称移动，或将复制的相反运动应用到不同的
+                     Biped 中。 
+                  </li>
+               </ul> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E744"></a><div class="note-tip"><span class="label label-target-language">提示</span>在粘贴姿势或轨迹到不同 Biped 后，通常需要重新调整其位置。使用“移动所有”模式可以很容易的完成此工作。 
+                  </div>
+               </div> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E745"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果复制的姿势、姿态或轨迹包含子动画，则只要存在相同的子动画，它们就可以粘贴到另一个姿势、姿态或轨迹。否则，将忽略它们。 
+                  </div>
+               </div> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-46A3"></a> 
+               <h2><a name="GUID-559C0781-ABDA-4A80-8A0B-806D25D5E3B3"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045847"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045848"></a>示例：要在单个会话的文件之间加载多个集合，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建 Biped 并为其 <img src="../images/GUID-A8B96744-FA1A-4CAF-BBF2-3FC02F502C35-low.png"> 加载一些动画。 
+                  </li>
+                  <li> 在“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“复制/粘贴”卷展栏上，单击 <img src="../images/GUID-9F0282D2-544B-4E7C-9DF7-85E20C0962E2-low.png">（“创建集合”）并将集合命名为 <em class="strong">Upper</em>。 <a name="WS1A9193826455F5FFBA679E112A6A190045849"></a><div class="figure-anchor"><img src="../images/GUID-D47002CB-78BB-4299-8CAA-D577DA94990E-low.png"></div>  
+                  </li>
+                  <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择 Biped 脊椎以上的所有链接，确保处于<span class="char_link"><a href="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A.htm#GUID-65DBF004-97CC-4AB9-967A-0841E81B0FD6">“姿态”模式</a></span>后，单击 <img src="../images/GUID-C90893AC-0694-41F1-A4F6-10A0A3FA086F-low.png">（“复制姿态”）。对于动画的每 10 个帧重复该步骤。 <a name="WS1A9193826455F5FFBA679E112A6A19004584A"></a><div class="figure-anchor"><img src="../images/GUID-E641FB1A-485A-4075-B214-484E9121F7AE-low.png"></div>  
+                  </li>
+                  <li> <img src="../images/GUID-9F0282D2-544B-4E7C-9DF7-85E20C0962E2-low.png"> 创建一个新的集合，并将其命名为 <em class="strong">Lower</em>。 
+                  </li>
+                  <li>转至第 0 帧。<img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择 Biped 骨盆以下的所有链接，并且每 10 个帧 <img src="../images/GUID-C90893AC-0694-41F1-A4F6-10A0A3FA086F-low.png"> 复制一个姿态。 
+                  </li>
+                  <li>从“复制集合”下拉列表中选择 <em class="mild">Upper</em> 集合，并 <img src="../images/GUID-58181066-FF2F-477C-9C97-480089FC63AC-low.png"> 保存该集合。然后选择 <em class="mild">Lower</em> 集合，也对其进行 <img src="../images/GUID-58181066-FF2F-477C-9C97-480089FC63AC-low.png"> 保存。 
+                  </li>
+                  <li> <img src="../images/GUID-95B9A962-E099-41F0-A77C-483A8C26CF5F-low.png"> 保存您的场景，然后重置 <span class="charspan-msgph">3ds Max</span>（“文件”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“重置”）。 
+                  </li>
+                  <li>创建新的 Biped 并 <img src="../images/GUID-A8B96744-FA1A-4CAF-BBF2-3FC02F502C35-low.png"> 加载 <em class="mild">Upper</em> 集合。 
+                  </li>
+                  <li>对于每 10 个帧，选择 <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> Biped 的上半身，并从“复制的姿态”下拉列表中 <img src="../images/GUID-ECA6F805-A3E4-4708-B785-015C5EBE51EF-low.png"> 粘贴对应的姿态。<img src="../images/GUID-88BA9A75-BB96-430C-9B06-A5BAD3A87E19-low.png"> 为每个粘贴的姿态设置一个关键点。 <a name="WS1A9193826455F5FFBA679E112A6A19004584B"></a><div class="figure-anchor"><img src="../images/GUID-29C49AE3-B3AB-4D17-B9A1-91BF92E9F74E-low.png"></div>  
+                  </li>
+                  <li> <img src="../images/GUID-A8B96744-FA1A-4CAF-BBF2-3FC02F502C35-low.png"> 加载 <em class="mild">Lower</em> 集合，并在选中 Biped 下半身的情况下重复最后一步，为每个姿态 <img src="../images/GUID-88BA9A75-BB96-430C-9B06-A5BAD3A87E19-low.png"> 设置一个关键点。 
+                  </li>
+                  <li> <img src="../images/GUID-3F1C0626-290C-481E-93CD-0B139D9C8CDC-low.png"> 删除 <em class="mild">Lower</em> 集合。 
+                  </li>
+                  <li>在“复制/粘贴”卷展栏上，单击 <img src="../images/GUID-45140FAC-0F8D-481B-9227-20FAE421F5F3-low.png">（“Max 加载首选项”），然后确保对话框中的两个选项均已启用。关闭该对话框，并 <img src="../images/GUID-A8B96744-FA1A-4CAF-BBF2-3FC02F502C35-low.png"> 加载保存的 <span class="charspan-msgph">3ds Max</span> 文件。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF162B5"></a>请注意，“复制集合”下拉列表此时包含三个集合：两个 <em class="mild">Upper</em> 集合（一个来自当前文件，一个来自传入的文件）及一个 <em class="mild">Lower</em> 集合（来自传入的文件）。 
+                     </p> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A19004584C"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004584D"></a>要捕获不同的快照，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>在“复制的姿态”组的缩略图快照下，单击 <img src="../images/GUID-2D219C57-7B58-4066-BC5F-D3490E3A0C7B-low.png">（“从视口中捕捉快照”）。 
+                  </li>
+                  <li> <img src="../images/GUID-F33ADC01-F4E0-4974-8B09-7D0DCC1A0E91-low.png"> 环绕当前视口至不同的用户视图，并 <img src="../images/GUID-C90893AC-0694-41F1-A4F6-10A0A3FA086F-low.png"> 复制一种 Biped 姿态。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF162B6"></a>请注意，您的快照与视口角度匹配。 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A19004584E"></a><div class="figure-anchor"><img src="../images/GUID-F7D95782-C022-40E9-9D3B-3734A466D2DB-low.png"></div>  
+                  </li>
+                  <li>单击 <img src="../images/GUID-D34EC2E2-E97E-4244-9D65-F82B822A4629-low.png">（“自动捕捉快照”），并再次 <img src="../images/GUID-C90893AC-0694-41F1-A4F6-10A0A3FA086F-low.png"> 复制姿态。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF162B7"></a>请注意，从正面视图中显示您的快照。 
+                     </p> 
+                  </li>
+                  <li>单击 <img src="../images/GUID-055F2F91-8DF9-42E2-81B5-A36B1DD0C2A5-low.png">（“无快照”），并 <img src="../images/GUID-C90893AC-0694-41F1-A4F6-10A0A3FA086F-low.png"> 复制另一个姿态。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF162B8"></a>此时捕捉结果已替换为灰色占位符。 
+                     </p> 
+                  </li>
+               </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7F32"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004584F"></a>示例：要在粘贴姿势时保持复制的 COM 数据，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建一个 Biped，然后 <img src="../images/GUID-9F0282D2-544B-4E7C-9DF7-85E20C0962E2-low.png"> 创建一个新集合。将该集合命名为 <em class="strong">Poses</em>。 
+                  </li>
+                  <li>确保处于“姿势”模式，然后在第 0 帧单击 <img src="../images/GUID-0170AC1C-2640-4A6B-9FBA-B8E2CE73244E-low.png">（“复制姿势”）。然后转到第 30 帧。 
+                  </li>
+                  <li>使用<span class="char_link"><a href="GUID-E73981D1-A6A8-4084-B128-2E56436CDC27.htm">“轨迹选择”卷展栏</a></span>中的工具，将 Biped 移离其当前位置，然后在所有三个轴上进行旋转。 <a name="WS1A9193826455F5FFBA679E112A6A190045850"></a><div class="figure-anchor"><img src="../images/GUID-EA37E3E0-3A50-483A-B598-3F88245C59D7-low.png"><p></p>
+                        <p class="figure-title">位置和方向偏移的 Biped</p>
+                     </div>  
+                  </li>
+                  <li>在<span class="char_link"><a href="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A.htm#GUID-14ADA0FB-5F39-459D-8DE6-C75C085D2DA4">“粘贴选项”组</a></span>中，启用 <img src="../images/GUID-82748F18-ECBB-45EE-9923-1597AD6C4D8B-low.png"> <img src="../images/GUID-E7C5FBAE-F90B-47EB-86EA-03E3E9C4AFEA-low.png"> <img src="../images/GUID-C8AD3EEB-DEEB-452C-B646-7472D84048DB-low.png"> 所有三个“粘贴”按钮。 
+                  </li>
+                  <li>单击 <img src="../images/GUID-A2A806D2-81D8-4F61-A4CB-B1026C2FC7C5-low.png">（“粘贴姿势”）。Biped 将重设回其原始位置和方向，以便维护其复制的 COM 数据。<img src="../images/GUID-8A52C09C-4B1B-4074-A22E-1F815F11273C-low.png"> 撤消该步骤。 
+                  </li>
+                  <li> 禁用 <img src="../images/GUID-2D933CEB-A285-4D2E-8BFF-4E4B89F056C6-low.png">（“粘贴旋转”），但保持启用另外两个按钮。 
+                  </li>
+                  <li>单击 <img src="../images/GUID-A2A806D2-81D8-4F61-A4CB-B1026C2FC7C5-low.png">（“粘贴姿势”）。Biped 将重设回其原始位置，但是保持旋转。这是由于粘贴时未保持复制的 COM 方向。<img src="../images/GUID-8A52C09C-4B1B-4074-A22E-1F815F11273C-low.png"> 撤消该步骤。 
+                  </li>
+                  <li>禁用 <img src="../images/GUID-5C3726B9-3DEB-4D1B-9735-E0E651375A0F-low.png">（“粘贴水平”）和 <img src="../images/GUID-C8AD3EEB-DEEB-452C-B646-7472D84048DB-low.png">（“粘贴垂直”），但再次启用 <img src="../images/GUID-ADB1639F-42B0-4E97-ADAB-4DF8028B5EE0-low.png">（“粘贴旋转”）。单击 <img src="../images/GUID-A2A806D2-81D8-4F61-A4CB-B1026C2FC7C5-low.png">（“粘贴姿势”）。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF162B9"></a>此时，将保持 Biped 的位置，但是不保持其方向。 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190045851"></a><div class="figure-anchor"><img src="../images/GUID-F83FE629-0D74-479B-A669-677ED57F7AE0-low.png"><p></p>
+                        <p class="figure-title">“粘贴旋转”是唯一启用的按钮</p>
+                     </div>  
+                  </li>
+               </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7F31"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045852"></a>示例：要使用“由速度”来保持 COM 偏移，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建一个 Biped。然后，在<span class="char_link"><a href="GUID-E73981D1-A6A8-4084-B128-2E56436CDC27.htm">“轨迹选择”卷展栏</a></span>上，启用 <img src="../images/GUID-82748F18-ECBB-45EE-9923-1597AD6C4D8B-low.png">（“躯干水平”）。 
+                  </li>
+                  <li>在第 0 帧 <img src="../images/GUID-88BA9A75-BB96-430C-9B06-A5BAD3A87E19-low.png"> 设置一个关键点。然后，确保处于“姿势”模式，<img src="../images/GUID-0170AC1C-2640-4A6B-9FBA-B8E2CE73244E-low.png"> 复制 Biped 的姿势。 
+                  </li>
+                  <li>转到第 10 帧，并在 Y 轴上 <img src="../images/GUID-5D7D7630-6D16-400D-AE6F-87F13C97DEA2-low.png"> 移动躯干 COM 50 个单位。<img src="../images/GUID-88BA9A75-BB96-430C-9B06-A5BAD3A87E19-low.png"> 设置一个新关键点。 
+                  </li>
+                  <li>在<span class="char_link"><a href="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A.htm#GUID-14ADA0FB-5F39-459D-8DE6-C75C085D2DA4">“粘贴选项”组</a></span>中，启用 <img src="../images/GUID-82748F18-ECBB-45EE-9923-1597AD6C4D8B-low.png">（“粘贴水平”），但保持禁用“由速度”。 
+                  </li>
+                  <li>转到第 30 帧，并 <img src="../images/GUID-0170AC1C-2640-4A6B-9FBA-B8E2CE73244E-low.png"> 粘贴 Biped 的姿势。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF162BA"></a>Biped 跳转到场景的中心。<img src="../images/GUID-8A52C09C-4B1B-4074-A22E-1F815F11273C-low.png"> 撤消该步骤。 
+                     </p> 
+                  </li>
+                  <li>在“粘贴选项”组中，启用“由速度”。然后，再次 <img src="../images/GUID-0170AC1C-2640-4A6B-9FBA-B8E2CE73244E-low.png"> 尝试粘贴姿势。请注意，Biped 的 COM 位置现在在 Y 轴上又偏移 50 个单位。 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A190045853"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045854"></a>示例：要在粘贴姿态时设置 TCB/IK 值，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建一个 Biped，然后 <img src="../images/GUID-9F0282D2-544B-4E7C-9DF7-85E20C0962E2-low.png"> 创建一个新集合。将其命名为 <em class="strong">Hands</em>。 
+                  </li>
+                  <li>选择 <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> Biped 的右手，然后在<span class="char_link"><a href="GUID-24693B38-20BD-435D-9816-BE5BDA528506.htm">“关键点信息”卷展栏</a></span>上 <img src="../images/GUID-88BA9A75-BB96-430C-9B06-A5BAD3A87E19-low.png"> 设置一个关键点。 
+                  </li>
+                  <li>在“TCB”组中，将“缓入”设置为 <em class="strong">10</em>，“缓出”设置为 <em class="strong">50</em>，三个 TCB 值全部设置为 <em class="strong">5</em>。 
+                  </li>
+                  <li>在“IK”组中，将“IK 混合”设置为 <em class="strong">0.5</em>。选择“对象 [对象空间]”选项。然后 <img src="../images/GUID-88BA9A75-BB96-430C-9B06-A5BAD3A87E19-low.png"> 设置另一个关键点。 <a name="WS1A9193826455F5FFBA679E112A6A190045855"></a><div class="figure-anchor"><img src="../images/GUID-62F6AE26-6AD2-4681-9762-F8ADD34C1D00-low.png"></div>  
+                  </li>
+                  <li>在“复制/粘贴”卷展栏上，确保处于“姿态”模式，然后单击 <img src="../images/GUID-C90893AC-0694-41F1-A4F6-10A0A3FA086F-low.png">（复制姿态）。 
+                  </li>
+                  <li>在原始 Biped 旁边创建一个新的 Biped。在其右手旁边创建一个长方体。 <a name="WS1A9193826455F5FFBA679E112A6A190045856"></a><div class="figure-anchor"><img src="../images/GUID-B3A79A0F-1B2E-42CE-AE4D-ECACCFC636E2-low.png"><p></p>
+                        <p class="figure-title">原始 Biped（左侧）和带有长方体的新 Biped（右侧）</p>
+                     </div>  
+                  </li>
+                  <li>在“IK”组中，通过单击 <img src="../images/GUID-93DE8013-8A74-462D-A68F-175E2E7DBD66-low.png">（“选择 IK 对象”），然后在视口中单击长方体，将 Biped 的手约束到该长方体。确保已选中“躯干 [躯干空间]”选项。 
+                  </li>
+                  <li>在<span class="char_link"><a href="GUID-D272C970-1472-40B4-8343-47DBF64DE308.htm">“关键帧工具”卷展栏</a></span>上，禁用“单独 FK 轨迹”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“手臂”。然后启用 <img src="../images/GUID-859D11E8-44CA-4A08-A696-F5A17CA856E0-low.png">。 
+                  </li>
+                  <li>在<span class="char_link"><a href="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A.htm#GUID-14ADA0FB-5F39-459D-8DE6-C75C085D2DA4">“粘贴选项”组</a></span>中，将“自动关键点 TCB/IK 值”设置为“默认值”。 <a name="WS1A9193826455F5FFBA679E112A6A190045857"></a><div class="figure-anchor"><img src="../images/GUID-54CA51F0-883D-4B71-ADF0-6EB72D6FD9D1-low.png"></div>  
+                  </li>
+                  <li>单击 <img src="../images/GUID-ECA6F805-A3E4-4708-B785-015C5EBE51EF-low.png">（“粘贴姿态”）。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF162BB"></a>手采用复制的姿态，并且关键点的 TCB 和 IK 值都设置为默认值。同时将设置整个手臂的关键点。 
+                     </p> 
+                  </li>
+                  <li>转到第 30 帧并启用“单独 FK 轨迹”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“手臂”。 
+                  </li>
+                  <li>将“自动关键点 TCB / IK 值”设置为“复制”，然后 <img src="../images/GUID-ECA6F805-A3E4-4708-B785-015C5EBE51EF-low.png"> 粘贴姿态。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF162BC"></a>复制的值信息将传输到这个新的关键点。关键点值中“缓入/缓出”现在为 10 和 50，TCB 为 5，“IK 混合”为 0.5。长方体仍为“IK 对象”，“对象空间”仍保持选中状态。还要注意，手是唯一设置关键点的肢体。 
+                     </p> 
+                  </li>
+                  <li>转到第 15 帧，将“自动关键点 TCB / IK 值”设置为“插补”，并再次 <img src="../images/GUID-ECA6F805-A3E4-4708-B785-015C5EBE51EF-low.png"> 粘贴姿态。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF162BD"></a>这个新关键点提高了基于前面和后面关键点的值，将“缓入”/“缓出”设置为 5 和 25，“TCB”设置为 15，“IK 混合”设置为 0.25。此外，从上一关键点选择“躯干空间”。 
+                     </p> 
+                  </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-46A2"></a> 
+               <h2><a name="GUID-BAC2CB30-CC3F-4F42-8065-ED1B3C3286DA"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045858"></a><div class="figure-anchor"><img src="../images/GUID-3308A6C3-E9D7-4F57-8AFB-BE8D8F92D9EB-low.png"></div>  <a name="GUID-A5E2E99F-D068-4034-A8E3-6C04865FD800"></a><dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E8A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162BE"></a> <img src="../images/GUID-9F0282D2-544B-4E7C-9DF7-85E20C0962E2-low.png"> 创建集合</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C2A"></a> 清除当前集合名称以及与之关联的姿势、姿态和轨迹。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E8B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162BF"></a> <img src="../images/GUID-A8B96744-FA1A-4CAF-BBF2-3FC02F502C35-low.png"> 加载集合</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C2B"></a> 加载 CPY 文件，并在“复制集合”下拉列表的顶部显示其集合名称，并使其处于活动状态。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E8C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162C0"></a> <img src="../images/GUID-58181066-FF2F-477C-9C97-480089FC63AC-low.png"> 保存集合</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C2C"></a> 保存存储在 CPA 文件的当前会话活动集合中的所有姿态、姿势和轨迹。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E8D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162C1"></a> <img src="../images/GUID-3F1C0626-290C-481E-93CD-0B139D9C8CDC-low.png"> 删除集合</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C2D"></a> 从场景中删除当前集合。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E8E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162C2"></a> <img src="../images/GUID-69F7D609-5AD3-4DA8-A542-6F45066F4A4A-low.png"> 删除所有集合</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C2E"></a> 从场景中删除所有集合。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E8F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162C3"></a> <img src="../images/GUID-45140FAC-0F8D-481B-9227-20FAE421F5F3-low.png"> Max 加载首选项</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C2F"></a> 显示一个对话框，其中包含打开场景文件时可采取操作的选项。 <a name="WS1A9193826455F5FFBA679E112A6A190045859"></a><div class="figure-anchor"><img src="../images/GUID-1BF09500-7B31-43F2-895B-740F5F07D7C6-low.png"></div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E90"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162C4"></a>保留现有收藏</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C30"></a> 启用后，将 Biped 设置为加载时覆盖现有“复制/粘贴缓冲区”。默认设置为禁用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E91"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162C5"></a>加载收藏</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C31"></a> 启用后，将 Biped 设置为从传入文件加载“复制/粘贴”缓冲区，以附加当前缓冲区。默认设置为启用。 <a name="WS1A9193826455F5FFBA679E112A6A19004585A"></a><div class="figure-anchor"><img src="../images/GUID-A6812664-5DC9-4DC3-961A-DA39A3819BC5-low.png"></div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E92"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162C6"></a>姿势、姿态和轨迹</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C32"></a> 选择其中一个按钮来选择要进行复制和粘贴的信息种类。复制/粘贴按钮更改为表明当前模式。默认设置为“姿势”。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E93"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162C7"></a>“复制/粘贴”按钮</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C33"></a> 这些按钮根据当前模式而变化，如<span class="char_link"><a href="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A.htm#GUID-65DBF004-97CC-4AB9-967A-0841E81B0FD6">姿势</a></span>、<span class="char_link"><a href="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A.htm#GUID-C24926DD-7BFE-4F8E-85C7-126F2AF0FD88">姿态</a></span>和<span class="char_link"><a href="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A.htm#GUID-A3542147-9B7C-40D6-A3DD-7276B1A1720A">轨迹</a></span>中所述。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E94"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162C8"></a> <img src="../images/GUID-3F1C0626-290C-481E-93CD-0B139D9C8CDC-low.png"> 删除选定项</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C34"></a> 删除选定的姿态、姿势或轨迹缓冲区。选定的缓冲区是活动的，它的名称通常显示在“复制的姿势”/“复制的姿态”/“复制的轨迹”列表中。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E95"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162C9"></a> <img src="../images/GUID-69F7D609-5AD3-4DA8-A542-6F45066F4A4A-low.png"> 全部删除</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C35"></a> 删除“复制的姿态/姿势/轨迹”列表中的所有缓冲区。 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-65DBF004-97CC-4AB9-967A-0841E81B0FD6"></a><p class="title"><a name="GUID-03D620A5-969B-4D88-B97B-E0A912603123"></a>姿势模式按钮
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A19004585B"></a><div class="figure-anchor"><img src="../images/GUID-D0EDEE9A-71FA-4876-B08C-329520D7CF51-low.png"></div>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E96"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162CA"></a> <img src="../images/GUID-C90893AC-0694-41F1-A4F6-10A0A3FA086F-low.png"> 复制姿态</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C36"></a> 复制选定 Biped 对象姿势并降其保存在一个新的姿势缓冲区中。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E97"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162CB"></a> <img src="../images/GUID-ECA6F805-A3E4-4708-B785-015C5EBE51EF-low.png"> 粘贴姿态</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C37"></a> 将活动缓冲区中的姿势粘贴到 Biped。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E98"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162CC"></a> <img src="../images/GUID-48A96FEE-15B3-4352-B7E1-D405369B3BE5-low.png"> 向对面粘贴姿态</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C38"></a> 将活动缓冲区中的姿势粘贴到 Biped 相反的一侧中。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-C24926DD-7BFE-4F8E-85C7-126F2AF0FD88"></a><p class="title"><a name="GUID-2CEC8D0C-5BDA-4CF7-8F5C-5ED406B8F359"></a>姿势模式按钮
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A19004585C"></a><div class="figure-anchor"><img src="../images/GUID-A58AB2BC-3D81-4346-9D2A-6768432BB854-low.png"></div>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E99"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162CD"></a> <img src="../images/GUID-0170AC1C-2640-4A6B-9FBA-B8E2CE73244E-low.png"> 复制姿势</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C39"></a> 复制整个 Biped 的当前姿势并将其保存在新的姿势缓冲区中。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E9A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162CE"></a> <img src="../images/GUID-A2A806D2-81D8-4F61-A4CB-B1026C2FC7C5-low.png"> 粘贴姿势</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C3A"></a> 将活动缓冲区中的姿势粘贴到 Biped 中。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E9B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162CF"></a> <img src="../images/GUID-20F2D7D3-89FA-4219-81AF-2887019FDF4F-low.png"> 向对面粘贴姿势</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C3B"></a> 将活动缓冲区中的相反姿势粘贴到 Biped 中。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-A3542147-9B7C-40D6-A3DD-7276B1A1720A"></a><p class="title"><a name="GUID-D8847B63-BA3C-4347-84FE-E876639B5CC9"></a>轨迹模式按钮
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A19004585D"></a><div class="figure-anchor"><img src="../images/GUID-787EEFA7-301F-4B9D-BAAC-E26D661C38D5-low.png"></div>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E9C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162D0"></a> <img src="../images/GUID-932EB33F-53A2-41B8-B3D3-0583C3BA16B8-low.png"> 复制轨迹</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C3C"></a> 复制选定 Biped 对象的轨迹并创建一个新的轨迹缓冲区。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E9D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162D1"></a> <img src="../images/GUID-4F189C58-1522-4F59-8613-B082944F7336-low.png"> 粘贴轨迹</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C3D"></a> 将活动缓冲区中的一个或多个轨迹粘贴到 Biped 中。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E9E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162D2"></a> <img src="../images/GUID-E2093E75-95EC-4DFB-9788-AE4964B5FBF8-low.png"> 向对面粘贴轨迹</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C3E"></a> 将活动缓冲区中的一个或多个轨迹粘贴到 Biped 相反的一侧中。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-A2514D89-2DEF-4F1E-8D05-ADD765C515FB"></a><p class="title"><a name="GUID-319C4BAA-3E1C-4AA6-9E02-056C375E74CB"></a>“复制的姿态”/“复制的姿势”/“复制的轨迹”组
+                  </p>
+                  <p><a name="WS73099CC142F48755-1AD2A282127C1ADF590-7EBA"></a>此组的标题指示活动模式（请参见上文）。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1E9F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162D3"></a>“复制的姿势”/“复制的姿态”/“复制的轨迹”列表</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C3F"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA875356D"></a>对每一模式，列出所复制的缓冲区。活动缓冲区是即将要使用粘贴按钮粘贴的缓冲区。要激活缓冲区，从下拉列表中选中它。要更改缓冲区名称并激活它，突出显示其名称并输入新名称。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1EA0"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162D4"></a>缩略图缓冲区视图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C40"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA875356E"></a>对于“姿势”和“轨迹”模式，显示在活动复制缓冲区中 Biped 部位的图解视图。对于“姿势”模式，显示一个整体 Biped 的图解视图。它可以帮助预览粘贴活动缓冲区后的效果。 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A19004585F"></a><div class="figure-anchor"><img src="../images/GUID-0DD90122-4D85-411B-AA0A-44C9E0F01501-low.png"><p class="figure-title">缩略图显示一个复制的左手臂姿势</p>
+                           </div> <a name="WS1A9193826455F5FFBA679E112A6A190045860"></a><div class="figure-anchor"><img src="../images/GUID-4A255AE8-BCEC-4E9F-8599-BE43D183BDEC-low.png"><p class="figure-title">缩略图显示一个复制的姿势</p>
+                           </div>   <a name="WS1A9193826455F5FFBA679E112A6A190045861"></a><div class="figure-anchor"><img src="../images/GUID-77C06581-7802-4DDE-B1F0-61E949E748D8-low.png"></div>  
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1EA1"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162D5"></a> <img src="../images/GUID-2D219C57-7B58-4066-BC5F-D3490E3A0C7B-low.png"> 从视口中捕捉快照</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C41"></a> 选中后，将创建整个 Biped 活动 2D 或 3D 视口的快照。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1EA2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162D6"></a> <img src="../images/GUID-D34EC2E2-E97E-4244-9D65-F82B822A4629-low.png"> 自动捕捉快照</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C42"></a> （默认设置。）选中后，将创建独立身体部位的前视图快照。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1EA3"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162D7"></a> <img src="../images/GUID-055F2F91-8DF9-42E2-81B5-A36B1DD0C2A5-low.png"> 无快照</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C43"></a> 选中后，将使用灰色画布替换快照。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1EA4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162D8"></a> <img src="../images/GUID-EF03D3F0-FE74-4FB0-8CE2-93F7BF7BAC6E-low.png"> 显示/隐藏快照</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C44"></a> 切换快照视图的显示。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-14ADA0FB-5F39-459D-8DE6-C75C085D2DA4"></a><p class="title"><a name="GUID-3E02072D-CDCD-4CC9-B2D1-6EFE1B8A0273"></a>“粘贴选项”组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF162D9"></a>在选中 COM 的情况下复制姿态、姿势或轨迹会复制所有三个 <span class="char_link"><a href="GUID-39A75805-BD60-4912-925B-01279F75FF20.htm#WS1A9193826455F5FFBA679E112A6A190045727">COM 轨迹</a></span>。在粘贴复制的数据时，您可以选择要粘贴的 COM 轨迹。 
+                  </p>
+                  <div><a name="WS73099CC142F48755-6377FFD2127D87DB08E-7FB5"></a><div class="note-note"><span class="label label-target-language">注意:</span>仅可以在“姿态”模式下对复制的 COM 数据应用粘贴选项。 
+                     </div>
+                  </div>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1EA5"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162DA"></a> <img src="../images/GUID-82748F18-ECBB-45EE-9923-1597AD6C4D8B-low.png"> <img src="../images/GUID-E7C5FBAE-F90B-47EB-86EA-03E3E9C4AFEA-low.png"> <img src="../images/GUID-C8AD3EEB-DEEB-452C-B646-7472D84048DB-low.png">“粘贴水平”/“粘贴垂直”/“粘贴旋转”按钮</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C45"></a> 启用时，相应的 COM 数据将在执行粘贴操作时应用。您可以使用这些选项的任意组合。 
+                           <p><a name="WS73099CC142F48755-6377FFD2127D87DB08E-7FB4"></a>选择粘贴 COM 数据会保持复制到当前数据轨迹的 COM 的世界空间位置和方向。否则，将在粘贴复制的数据轨迹时保持 COM 的当前位置和方向。请参见<span class="char_link"><a href="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A.htm#WS1A9193826455F5FFBA679E112A6A19004584F">示例：要在粘贴姿势时保持复制的 COM 数据，请执行以下操作：</a></span> 
+                           </p> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E746"></a><div class="note-tip"><span class="label label-target-language">提示</span>该选择可以视为粘贴绝对或相对 COM 动画。前者将使用复制的动画覆盖当前数据，而后者将保持当前数据，忽略所有复制的信息。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1EA6"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162DB"></a>按速度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C46"></a> 启用后，将基于通过场景的上一个 COM 轨迹决定活动 COM 轨迹的值。只有在“水平/垂直/旋转粘贴”按钮处于活动状态时才启用该选项。请参见<span class="char_link"><a href="GUID-8C5F3DD9-BCC9-4203-AE1B-24D4F848F58A.htm#WS1A9193826455F5FFBA679E112A6A190045852">示例：要使用“由速度”来保持 COM 偏移，请执行以下操作：</a></span> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E747"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果以前没有用于收集速度数据的轨迹，则 COM 结果将视为绝对。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1EA7"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF162DC"></a>自动关键点 TCB/IK 值</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443C47"></a> 只有在<span class="char_link"><a href="GUID-81590519-B1AC-4E8E-A8F4-4113AC324800.htm">自动关键点模式</a></span>下处于活动状态。 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E748"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果复制的 Biped 的一部分链接到 IK 对象，则该对象不可使用复制/粘贴过程进行传输。然而，将保持连接到上一个 IK 关键点，以及它们的“躯干”或“对象”选项。如果复制的姿势或姿态包含 IK 对象，则数据将烘焙到 Biped 的链接，同时关键点保持在“对象”空间中。
+                                 
+                              </div>
+                           </div> 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E749"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果粘贴的 Biped 的一部分链接到 IK 对象，则即使遵循新的姿势或姿态，也会保持该对象。也就是或，如果传入姿势需要对 Biped 肢体和 IK 对象之间的现有链接进行更改，则将保持链接，并进行相应调整。 
+                              </div>
+                           </div> <a name="WS1A9193826455F5FFBA679E112A6A190045862"></a><ul>
+                              <li> <em class="strong">默认</em>（在<span class="char_link"><a href="GUID-24693B38-20BD-435D-9816-BE5BDA528506.htm">“关键点信息”卷展栏</a></span>中）将 TCB 缓入和缓出设为 0，将张力、连续性和偏移设为 25。这些设置与复制的内容或粘贴的位置无关。将保持任何已经设置的 IK 关键点值。否则，将在前面和后面的关键点之间的时间内获得位置的值。 
+                              </li>
+                              <li> <em class="strong">复制</em>将 TCB/IK 值设置为与复制的数据值相匹配。如果复制的姿势或姿态不在关键点上，则 TCB/IK 值将基于从前面的关键点到后面的关键点之间的插值。 
+                              </li>
+                              <li> <em class="strong">插补</em>将 TCB 值设置为进行粘贴的动画的插值。如果正在粘贴现有关键点，则将保持其 TCB 值。沿着相同的行，在粘贴时还将保持现有 IK 值。如果不存在关键点，将在前面和后面的关键点之间的时间内，从位置设置 IK 值。 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

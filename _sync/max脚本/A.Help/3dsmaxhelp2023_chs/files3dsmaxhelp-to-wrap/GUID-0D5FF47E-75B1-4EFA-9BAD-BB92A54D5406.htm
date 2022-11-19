@@ -1,0 +1,85 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-0D5FF47E-75B1-4EFA-9BAD-BB92A54D5406">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="expert">
+      <meta name="topic-subtype" content="using">
+      <title>示例：控制 Adobe 后期效果渲染</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-0D5FF47E-75B1-4EFA-9BAD-BB92A54D5406"></a><div class="head">
+            <h1>示例：控制 Adobe 后期效果渲染</h1>
+         </div>
+         <p><a name="WS1A9193826455F5FF1DBC298511635BEA87515D5"></a>控制“后期效果”渲染的概念类似于创建对象的成批导出。要有效控制“后期效果”，需要使用任务列表。例如，假设需要渲染名为 <em class="mild">aetest.aep</em> 的“后期效果”文件的第 0 帧到第 250 帧。此文件包含一个组件 (Comp1)。在渲染处理场中，有 10 台服务器可用于渲染。所以，制表符分隔文件中定义的任务列表包含三列：第一列用作任务名 <em class="strong">–taskname 1</em>，第二列称为 <em class="strong">%tp2</em>，而第三列是 <em class="strong">%tp3</em>。后两个参数被传递作为 <em class="mild">aerender.exe</em> 的开始帧和结束帧参数。 
+         </p>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49BD"></a> <em class="strong">cmdjob –jobname“after effects test”–manager managername –taskfile c:\aejobs\tasklist.txt –taskname 1 c:\ae6.5\aerender.exe
+               –project c:\aejobs\aetest.aep –comp“comp1”–s %tp2 –e %tp3</em> 
+         </p>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49BC"></a> <em class="strong">tasklist.txt 文件：</em> 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190042EAA"></a><div class="table-ruled">
+            <table cellpadding="0" cellspacing="0" class="ruled">
+               <colgroup>
+                  <col width="33.33333333333333%">
+                  <col width="33.33333333333333%">
+                  <col width="33.33333333333333%">
+               </colgroup>
+               <tr class="ruled-odd-row">
+                  <td class="table-body">frames 0-24 </td>
+                  <td class="table-body">0 </td>
+                  <td class="table-body">24 </td>
+               </tr>
+               <tr class="ruled-even-row">
+                  <td class="table-body">frames 25-49 </td>
+                  <td class="table-body">25 </td>
+                  <td class="table-body">49 </td>
+               </tr>
+               <tr class="ruled-odd-row">
+                  <td class="table-body">frames 50-74 </td>
+                  <td class="table-body">50 </td>
+                  <td class="table-body">74 </td>
+               </tr>
+               <tr class="ruled-even-row">
+                  <td class="table-body">frames 75-99 </td>
+                  <td class="table-body">75 </td>
+                  <td class="table-body">99 </td>
+               </tr>
+               <tr class="ruled-odd-row">
+                  <td class="table-body">frames 100-124 </td>
+                  <td class="table-body">100 </td>
+                  <td class="table-body">124 </td>
+               </tr>
+               <tr class="ruled-even-row">
+                  <td class="table-body">frames 125-149 </td>
+                  <td class="table-body">125 </td>
+                  <td class="table-body">149 </td>
+               </tr>
+               <tr class="ruled-odd-row">
+                  <td class="table-body">frames 150-174 </td>
+                  <td class="table-body">150 </td>
+                  <td class="table-body">174 </td>
+               </tr>
+               <tr class="ruled-even-row">
+                  <td class="table-body">frames 175-199 </td>
+                  <td class="table-body">175 </td>
+                  <td class="table-body">199 </td>
+               </tr>
+               <tr class="ruled-odd-row">
+                  <td class="table-body">frames 200-224 </td>
+                  <td class="table-body">200 </td>
+                  <td class="table-body">224 </td>
+               </tr>
+               <tr class="ruled-even-row">
+                  <td class="table-body">frames 225-250 </td>
+                  <td class="table-body">225 </td>
+                  <td class="table-body">250 </td>
+               </tr>
+            </table>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

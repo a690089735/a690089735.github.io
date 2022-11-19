@@ -1,0 +1,214 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B321C3DC-29BF-4A81-BB9B-1B42561C222F">
+      <meta name="indexterm" content="模拟视图: 液体参数">
+      <meta name="indexterm" content="流体参数: 液体参数">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="expert">
+      <meta name="topic-subtype" content="using">
+      <title>液体参数</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B321C3DC-29BF-4A81-BB9B-1B42561C222F"></a><div class="head">
+            <h1>液体参数</h1>
+         </div><a name="UL_BBD7F4526C50406CA0E8E37C6122E8A5"></a><ul>
+            <li><span class="MenuCascade">“创建”面板  <img src="../images/ac.menuaro.gif"> “几何体” <img src="../images/ac.menuaro.gif"> “流体” <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “模拟视图” <img src="../images/ac.menuaro.gif"> “解算器参数”面板  <img src="../images/ac.menuaro.gif"> “液体参数”</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="SECTION_5825E655493B410081E2F5DE9CA47778"></a> 
+            <h2><a name="GUID-90ED13C7-34FC-4086-9C2D-1BF85F41D178"></a>“液体参数”卷展栏
+            </h2> <a name="FIG_4C4DCCBFBEB2419D859458B2104E25BB"></a><div class="figure-anchor"><img src="../images/GUID-647BDB72-DD7B-4F09-BB70-8720CDE84A35-low.png"></div> 
+            <div class="section"><a name="SECTION_46626A04580E44F8A9AA7DA23168333F"></a> 
+               <h3><a name="GUID-97002648-6487-47F9-B6C6-D42EDB15986B"></a>“预设”组
+               </h3> 
+               <dl><a name="GUID-C2ACF686-DAFC-4988-80E5-7BA9E1F1DB7B"></a><dt><span class="term">预设 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 加载、保存和删除预设液体参数。列表包括以下预设：啤酒、血液、焦糖、奶油、蜂蜜、番茄酱、乳胶漆、枫糖浆、水银、牛奶、机油、橄榄油、橙汁、油灰、硅树脂、牙膏、传输流体和水。 
+                        				  
+                        <p>单击 <img src="../images/GUID-54FA48F6-393C-4034-AF8D-C0E308F0595A-low.png"> 可加载下拉列表中当前选定的预设。单击 <img src="../images/GUID-021CBA05-DCB9-460E-962B-CD397CC30E28-low.png"> 可采用新的预设名称保存当前设置，单击 <img src="../images/GUID-2F3F1FE5-036C-444E-8425-B6D19CA965AC-low.png"> 可删除选定的预设。 
+                           				  
+                        </p> 
+                        <div><a name="GUID-89AF1C71-D539-4CF0-8C18-9B9231A4B44C"></a><div class="note-note"><span class="label label-target-language">注意:</span>不能删除提供的任何预设。 
+                              				  
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_F13E49A9E62B4D78ADB0B184CE4E17D9"></a> 
+               <h3><a name="GUID-B129CE15-ED7A-4166-B3C7-410FAE466414"></a>“水滴”组
+               </h3> 
+               <p>水滴是模拟中与液体主体分离的粒子。水滴有几种用途： 
+                  		  
+               </p> <a name="UL_B4D85237C8AC49ADA1031A0FA130C118"></a><ul>
+                  <li>断开飞溅和成片的流体，以获得更像喷射的效果。 
+                     			 
+                  </li>
+                  <li>降低与主液体实体分离的粒子导致的内存使用量和计算时间。水滴需要更简单的计算（涉及弹道运动而不是液体动力学）。 
+                     			 
+                  </li>
+                  <li>更正液体曲面中由于粒子过早地重新加入主体而导致的凹凸和凹痕等问题。 
+                     			 
+                  </li>
+               </ul> 
+               <dl><a name="GUID-118B7B8F-2F55-48E3-957F-00D7DB5239AB"></a><dt><span class="term">阈值 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置粒子转化为水滴时的阈值。值越小，创建的水滴越多，因而会更快地分解图纸和卷须。要防止产生水滴，请将阈值设置为 1.0 或更大值。 
+                        				
+                     </div>
+                  </dd><a name="GUID-34C871E2-1B3C-4375-A4BA-5E6E72DC8E11"></a><dt><span class="term">并回深度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置在重新加入液体并参与流体动力学计算之前水滴必须达到的液体曲面深度（以体素宽度为单位）。此设置可以减少液体曲面中由于粒子过早地重新加入主体而导致的凹凸和凹痕。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_0BC8718714D8442DA2113F4889C1056B"></a> 
+               <h3><a name="GUID-E4DCA712-3A12-4911-B59E-A507916F237E"></a>“粒子分布”组
+               </h3> 
+               <p>此组控制曲面上和液体内部的每体素粒子数，以及曲面层的深度。通常，粒子数越多，细节就越多，内存需求也就越高且计算越慢。通常，内部体素需要的粒子数比曲面处少，因为要对曲面进行渲染或网格化。 
+                  		  
+               </p> 
+               <dl><a name="GUID-988220A9-959F-4224-9609-1B40D7DE6D4A"></a><dt><span class="term">曲面带宽 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置液体曲面的宽度，以体素为单位。 
+                        				
+                     </div>
+                  </dd><a name="GUID-50A5A6D5-7EBF-4329-B44E-8066CE124D5B"></a><dt><span class="term">内部粒子密度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置液体整个内部体积中的粒子密度。 
+                        				
+                     </div>
+                  </dd><a name="GUID-F28CE940-AED6-4A1C-90A7-F84814B2B377"></a><dt><span class="term">曲面粒子密度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置液体曲面上的粒子密度。您可以使用此值生成密度较大的粒子分布，同时在液体曲面上显示更多细节，而对细节没有要求的内部无需提供额外粒子。请勿使用小于 1.0 的值。 
+                        				  
+                        <div><a name="GUID-92EE9646-5075-4313-B414-3D55849EC637"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果遇到过量的体积，特别是在非常易溅的模拟中，请将“内部粒子密度”和“曲面粒子密度”都设置为 1.0。 
+                              				  
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_F8FFEFE6FC2C4665A1710770659435E3"></a> 
+               <h3><a name="GUID-734845DC-A53B-4EA7-AB56-8F81221B4715"></a>“漩涡”组
+               </h3> 
+               <dl><a name="GUID-68E8DE39-2622-4440-8C6E-39FE5283B816"></a><dt><span class="term">启用 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">启用漩涡通道的计算。这是体素中旋转幅值的累积。漩涡可用于模拟涡流。 
+                        				
+                     </div>
+                  </dd><a name="GUID-ABBF56E0-EA1A-497A-9B78-D7A34407631F"></a><dt><span class="term">衰退 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置从每一帧累积漩涡中减去的值。 
+                        				
+                     </div>
+                  </dd><a name="GUID-2AA0BAED-7FBC-4162-8E5C-21388CA089DA"></a><dt><span class="term">倍增 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置当前帧卷曲幅值在与累积漩涡相加之前的倍增。 
+                        				
+                     </div>
+                  </dd><a name="GUID-6550276E-C64D-4D8C-B7A2-40A25153B64D"></a><dt><span class="term">最大值 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置总漩涡的钳制值。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_FFF3380606A6418294E54791F9A3B0EA"></a> 
+               <h3><a name="GUID-19895FE6-5D7A-49E1-8A61-E9304D7EFF2A"></a>“曲面张力”组
+               </h3> 
+               <dl><a name="GUID-CB44874E-1513-4B36-96DA-613605D5B95C"></a><dt><span class="term">启用 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">启用曲面张力。 
+                        				
+                     </div>
+                  </dd><a name="GUID-054BBCF7-5E77-455C-8D06-F7B4D68CEB91"></a><dt><span class="term">曲面张力 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 增加液体粒子之间的吸引力，这会增强成束效果。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_94DA66EF3F8648C6B92783EC3A622F9E"></a> 
+               <h3><a name="GUID-56041F49-CFA6-4406-9E9D-A6F8D23F210F"></a>“粘度”组
+               </h3> 
+               <dl><a name="GUID-E28F743F-C05B-412A-B8A4-3CFE650C8EEC"></a><dt><span class="term">粘度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 控制流体的厚度。例如，水的粘度低（约 0.001），而蜂蜜的粘度高。使用值为 0.0 的水可以避免不必要的计算。 
+                        				
+                     </div>
+                  </dd><a name="GUID-D3402FB5-3941-4E26-9E3F-E23BF4ECC0A2"></a><dt><span class="term">比例 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 将模拟的速度与邻近区域的平均值混合，从而平滑和抑制液体流。这在物理上是不正确的，但与使用“粘度”设置相比，可以用于以很少的计算成本来模拟粘度。在模拟期间，大于 2.0 的值可能会产生无法预测的结果。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_1821DDF6776D4EA99ABC1BF841B428B7"></a> 
+               <h3><a name="GUID-259E85C0-FA82-456B-A515-3EAD229F72D8"></a>“腐蚀”组
+               </h3> 
+               <p> 以下选项控制流体边界收缩回到粒子位置的接近程度，这有助于解决静止、有轻微涟漪或有剧烈湍流的流体实体上不希望得到的效果。值小于 0.0 或大于 1.0 时将不会产生任何效果。
+                  		  
+               </p> 
+               <dl><a name="GUID-46307415-B4E9-4CAB-97DF-39056A0B5435"></a><dt><span class="term">因子 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 控制流体曲面的腐蚀量。0.0 值为无腐蚀，1.0 将腐蚀整个粒子半径。 
+                        				  
+                        <p>较低的值（0.0 到 0.2）有助于贴附模拟中的曲面，例如水面平静的池塘。较高的值（0.7 到 0.9）有助于优化波浪和船尾迹的外观，并避免偏离正道的粒子在整个流体曲面中“漫游”。 
+                           				  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-FAD5ABF1-7A66-47D7-B0D4-A9BD14A93667"></a><dt><span class="term">接近实体的因子 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 确定流体曲面是否基于碰撞对象曲面的法线，在接近碰撞对象的区域中腐蚀。请注意，无论该曲面在何处腐蚀，它始终以完整因子数量腐蚀。 
+                        				  <a name="OL_0C77E6C5E1B44C4DA4F0DDA9C1EB3240"></a><p class="list-intro">“接近实体的因子”设置将影响腐蚀情况，如下所示：</p>
+                        <ol type="1" start="1">
+                           <li>设为 0.0 时，碰撞对象附近不发生腐蚀。 
+                              					 
+                           </li>
+                           <li>设为 0.5 时，仅曲面法线向下倾斜的碰撞对象附近的流体曲面会腐蚀。这有助于缓解液体粘滞到碰撞对象底面的问题，同时仍允许碰撞对象顶部存在法线向上倾斜的细流。 
+                              					 
+                           </li>
+                           <li>设为 1.0 时，流体曲面各处均腐蚀。 
+                              						
+                              <p> 可以根据需要在 0.0 到 1.0 之间更改此值以微调行为。较低的值通常用于改进会穿过碰撞对象的浅水流的外观，并缓解碰撞对象壁附近存在的排斥、成束或攀爬等问题。而较高的值用于避免阻尼飞溅。
+                                 						
+                              </p> 
+                           </li>
+                        </ol> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

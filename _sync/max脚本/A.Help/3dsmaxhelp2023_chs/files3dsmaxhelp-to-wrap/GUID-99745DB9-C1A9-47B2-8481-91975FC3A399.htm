@@ -1,0 +1,182 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-99745DB9-C1A9-47B2-8481-91975FC3A399">
+      <meta name="description" content="在设置关键点动画模式中，您可以使用“设置关键点”按钮和“关键点过滤器”的组合为选定对象的各个轨迹创建关键点。与“自动关键点”模式不同，利用“设置关键点”模式可以控制设置关键点的对象以及时间。它可以设置角色的姿势（或变换任何对象），如果满意的话，可以使用该姿势创建关键点。如果移动到另一个时间点而没有设置关键点，那么该姿势将被放弃。也可以对对象参数使用“设置关键点”模式。">
+      <meta name="indexterm" content="设置关键点: 动画模式">
+      <meta name="indexterm" content="工作流程: 设置关键点">
+      <meta name="indexterm" content="过滤器: 关键点">
+      <meta name="indexterm" content="关键点过滤器: 设置关键点模式">
+      <meta name="indexterm" content="选择: 列表">
+      <meta name="topic-type" content="concept">
+      <meta name="keywords" content="K, S">
+      <meta name="keyword" content="K">
+      <meta name="keyword" content="S">
+      <title>设置关键点动画模式</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-99745DB9-C1A9-47B2-8481-91975FC3A399"></a><div class="head">
+            <h1>设置关键点动画模式</h1>
+         </div>
+         <div class="abstract"> 
+            <p><a name="GUID-95A6F0A8-99A5-4621-8BDE-40BFA4721A2A"></a> <img src="../images/GUID-6B643FFE-C203-4EAA-9B80-7371F1312F0A-low.png"> 
+            </p> 
+            <p class="blurb">在设置关键点动画模式中，您可以使用“设置关键点”按钮和“关键点过滤器”的组合为选定对象的各个轨迹创建关键点。与“自动关键点”模式不同，利用“设置关键点”模式可以控制设置关键点的对象以及时间。它可以设置角色的姿势（或变换任何对象），如果满意的话，可以使用该姿势创建关键点。如果移动到另一个时间点而没有设置关键点，那么该姿势将被放弃。也可以对对象参数使用“设置关键点”模式。
+               
+            </p> 
+         </div><a name="UL_842C2BAC146D4FE293F2F065FECEFB42"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-68F4EE9F-2F9E-4D17-B56C-F94A27459F71">键盘  <img src="../images/ac.menuaro.gif"> <span class="keyword">K</span> （<span class="charspan-msgph">3ds Max</span> 模式）</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-31E8BCE7-2EE8-4E7B-B8F3-54C60586A120">键盘  <img src="../images/ac.menuaro.gif"> <span class="keyword">S</span> （Maya 模式）</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CD0"></a>可以尝试不同的值，当找到满意的值后，使用该值创建关键点。将这些参数与“曲线编辑器”中可设置关键点轨迹合并，只根据对象参数创建所需要的关键点。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004427F"></a> 
+            <h2><a name="GUID-FF709174-692D-4995-A404-50D6BC04CEAC"></a>设置关键点工作流程
+            </h2> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CCF"></a>要使用“设置关键点”模式设置动画，首先必须启用“设置关键点模式”。然后可以选择要设置动画的对象，并使用“关键点过滤器”按钮设置要作为关键帧的轨迹。也可以使用“轨迹视图编辑”窗口中的“显示可设置关键点”图标设置某一轨迹关键点是否可编辑。执行完所有此设置工作后，可以通过单击“设置关键点”按钮（具有关键点图标的大按钮）或使用键盘快捷键
+               (<span class="keyboardEntry">K</span>) 来创建关键点。在时间上向前移动，然后更改角色或对象（变换或更改参数）并单击“设置关键点”以使用这些更改来创建关键点。 
+            </p> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CCE"></a>如果没有单击“设置关键点”按钮并且移动到其他帧，那么更改的对象将会丢失，就像从未做过更改一样。这与“自动关键点”模式在行为上有着根本的区别，“自动关键点”模式下需要使用撤消才能丢失所做的更改。使用鼠标右键拖动时间滑块，以将姿势或变换移动到其他时间点上。
+               
+            </p> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CCD"></a>为了实现更快的工作流程，可以通过进入“自定义”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“自定义用户接口”，并且在主 UI 组中指定组合键，为“关键点过滤器”和“显示可设置关键点”工具定义键盘快捷键。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-77E6"></a> 
+            <h2><a name="GUID-198916AF-9282-42D6-BE44-2ACC4CEBE8C5"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044281"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044282"></a>要使用“设置关键点”模式设置动画，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>启用 <img src="../images/GUID-858AB0B2-8804-4DFB-A414-EE2F648184D8-low.png">。 
+               </li>
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选中要设置关键帧的对象，右键单击，然后选择“曲线编辑器”。 
+               </li>
+               <li>在“轨迹视图”菜单栏上，打开“视图”菜单，选择“可设置关键点图标”命令，以切换可接收动画关键点的控制器窗口中每个动画轨迹旁边的交互式符号。您可以使用这些图标定义“设置关键点”可影响的轨迹。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CCC"></a><img src="../images/GUID-E097952E-394E-452D-8819-641AD6DAAF5B-low.png"> 红色的关键点表示该轨迹将被设置为关键点。单击某个关键点可切换其可设置关键点状态。 
+                  </p> 
+               </li>
+               <li>   单击 <img src="../images/GUID-6BD46F75-749D-4DC6-A037-8F3975345FEA-low.png">，然后启用要设置关键帧的轨迹。默认情况下，启用“位置”、“旋转”、“缩放”和“IK 参数”。对于此例，禁用“旋转”和“缩放”。 
+               </li>
+               <li>转到要设置关键点时所在的帧。 </li>
+               <li>移动对象。 </li>
+               <li>单击 <img src="../images/GUID-E3E16E43-4572-4F1C-B9FE-1438CC006205-low.png">（设置关键点）。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CCB"></a>“设置关键点”按钮以红色闪烁，说明 <span class="charspan-msgph">3ds Max</span> 已经设置关键点，轨迹栏中显示了一个关键点。 
+                  </p> <a name="WS73099CC142F487553BD5B66812435C29801-5E9B"></a><div class="figure-anchor"><img src="../images/GUID-6B643FFE-C203-4EAA-9B80-7371F1312F0A-low.png"></div> 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CCA"></a>重复这一过程，移动时间滑块并设置关键点。 
+                  </p> 
+               </li>
+            </ol> <a name="WSF742DAB0410631336FBBDDBE112A1CEC601-7FAE"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044283"></a>要使用“设置关键点”模式为所有参数设置关键帧，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>启用 <img src="../images/GUID-858AB0B2-8804-4DFB-A414-EE2F648184D8-low.png">。 
+               </li>
+               <li>在视口中，选择要添加关键帧的对象。 </li>
+               <li>单击 <img src="../images/GUID-6BD46F75-749D-4DC6-A037-8F3975345FEA-low.png">，然后启用“设置所有关键点”。 
+               </li>
+               <li>将时间滑块移动到要设置关键点的帧 </li>
+               <li>单击 <img src="../images/GUID-E3E16E43-4572-4F1C-B9FE-1438CC006205-low.png">（设置关键点）。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CC9"></a><span class="charspan-msgph">3ds Max</span> 会将关键点添加到所有可设置关键点的参数。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190044284"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044285"></a>要在时间上移动姿势或位置而不需要更新，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>启用 <img src="../images/GUID-858AB0B2-8804-4DFB-A414-EE2F648184D8-low.png">。 
+               </li>
+               <li>移动到特定的帧（比如说第 20 帧）。 </li>
+               <li>设置角色的姿势或将对象安放好。 </li>
+               <li>将光标移动到时间滑块上，然后使用鼠标右键拖动。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CC8"></a>时间滑块移动，但位置不发生变化。保持姿势或位置并传输到新的时间点上。 
+                  </p> 
+               </li>
+               <li>在相应的帧上，通过单击 <img src="../images/GUID-E3E16E43-4572-4F1C-B9FE-1438CC006205-low.png">（设置关键点）设置姿势或位置关键点。 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-77E5"></a> 
+            <h2><a name="GUID-7AE2CA31-B614-4609-BA39-BDBFD3B18604"></a>界面
+            </h2> <a name="GUID-B91B7B5A-DE93-4209-8AF5-4E4CD67F83FF"></a><dl>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E2278"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CC7"></a> <img src="../images/GUID-858AB0B2-8804-4DFB-A414-EE2F648184D8-low.png"> 切换“设置关键点”模式</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-8EE"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753426"></a>启用或禁用“设置关键点”模式。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E2279"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CC6"></a> <img src="../images/GUID-E3E16E43-4572-4F1C-B9FE-1438CC006205-low.png"> 设置关键点</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-8ED"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753427"></a>单击此按钮以在选择集的每个轨迹上设置关键点。它检查轨迹是否可设置关键点，并检查“关键点过滤器”是否可以设置轨迹的关键点。如果这两个条件都满足，则设置关键点。“设置关键点”也可以在“自动关键点”模式和“布局”模式（当“自动关键点”和“设置关键点”都未启用时）下设置关键点。
+                        
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E227B"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CC4"></a> <img src="../images/GUID-1261F398-AF3D-4EF9-A417-57AF4DB154DD-low.png"> 选择列表</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-8EB"></a>  
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753429"></a>使用“设置关键点”动画模式时，可快速访问<span class="char_link"><a href="GUID-93B01505-5474-43D6-8B83-810BA0157A9B.htm">命名选择集</a></span>和<span class="char_link"><a href="GUID-6AE29C19-6D20-4451-AFCF-ECACA234C88B.htm">轨迹集</a></span>。使用此可在不同的选择集和轨迹集之间快速切换。 
+                     </p> 
+                     <div><a name="WS73099CC142F487551051018113CCCDB767-60D"></a><div class="note-note"><span class="label label-target-language">注意:</span>从列表中选择选择集时，不会选择视口中的对象。要完成此任务，请使用<span class="char_link"><a href="GUID-93B01505-5474-43D6-8B83-810BA0157A9B.htm">命名选择集</a></span>功能。 
+                        </div>
+                     </div> 
+                     <div><a name="WS73099CC142F487551051018113CCCDB767-60C"></a><div class="note-note"><span class="label label-target-language">注意:</span>选择集显示在括号之间（例如：{Biped Arms}），而轨迹集显示在方括号之间（例如：[Throw Baseball]）。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E227A"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CC5"></a> <img src="../images/GUID-6BD46F75-749D-4DC6-A037-8F3975345FEA-low.png"> 关键点过滤器</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-8EC"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753428"></a>打开“设置关键点过滤器”对话框（参见以下内容），在其中可以指定使用“设置关键点”时创建关键点所在的轨迹。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E227C"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CC3"></a>“设置关键点过滤器”对话框</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-8EA"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875342A"></a>启用要设置关键点的轨迹。默认轨迹为“位置”、“旋转”、“缩放”和“IK 参数”。 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190044287"></a><div class="figure-anchor"><img src="../images/GUID-51C8022B-4E2A-4C41-9204-87BEC8261D32-low.png"></div>  
+                     <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-CC2"></a>可用选项如下显示： 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190044289"></a><ul>
+                        <li> <em class="strong">全部</em>可以在所有轨迹上快速放置关键点。启用“全部”后，其他切换都无效。在“全部”过滤器处于启用状态下单击“设置关键点”将导致关键点放置在所有可设置关键点轨迹上。 
+                        </li>
+                        <li> <em class="strong">位置</em>可以创建位置关键点。 
+                        </li>
+                        <li> <em class="strong">旋转</em>可以创建旋转关键点。 
+                        </li>
+                        <li> <em class="strong">缩放</em>可以创建缩放关键点。 
+                        </li>
+                        <li> <em class="strong">IK 参数</em>可以设置反向运动学参数关键帧。 
+                        </li>
+                        <li> <em class="strong">对象参数</em>可以设置对象参数关键帧。 
+                        </li>
+                        <li> <em class="strong">自定义属性</em>可以设置自定义属性关键帧。 
+                        </li>
+                        <li> <em class="strong">修改器</em>可以设置修改器关键帧。 
+                           <div><a name="WS73099CC142F487552C60378B128744DA99A14B1"></a><div class="note-tip"><span class="label label-target-language">提示</span>启用“修改器”时也启用“对象参数”，那么可以设置 gizmo 关键帧。 
+                              </div>
+                           </div> 
+                        </li>
+                        <li> <em class="strong">材质</em>可以设置材质属性关键帧。 
+                        </li>
+                        <li> <em class="strong">其他</em>可以使用“设置关键点”技术设置其他未归入上列类别的参数关键帧。这些设置包括辅助对象属性以及跟踪目标摄像机和灯光的注视控制器等。 
+                        </li>
+                     </ul> 
+                     <div><a name="WS73099CC142F487551051018113CCCDB767-60B"></a><div class="note-warning"><span class="label label-target-language">警告:</span>如果启用“对象参数”，那么对象的所有对象参数都将接收关键点，除非在轨迹视图“编辑”菜单的“控制器”子菜单中使用“可设置关键点”禁用轨迹。对“材质”选项这些说明同样适用。 
+                        </div>
+                     </div> 
+                     <div><a name="WS73099CC142F487551051018113CCCDB767-60A"></a><div class="note-tip"><span class="label label-target-language">提示</span>也可以通过按住 <span class="keyboardEntry">Shift</span> 键并右键单击微调器在微调器设置上设置关键点。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D6E67D0A-2466-4915-A9CA-8AE89F03B487">
+      <meta name="description" content="您可以使用“自动关键点”按钮设置 Shift+克隆动画。然而，存在一些限制。">
+      <meta name="indexterm" content="设置动画: shift+旋转">
+      <meta name="indexterm" content="设置动画: shift+缩放">
+      <meta name="indexterm" content="设置动画: shift+缩放">
+      <meta name="indexterm" content="Shift+克隆: 设置动画">
+      <meta name="topic-type" content="concept">
+      <title>设置 Shift+旋转和 Shift+缩放动画</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D6E67D0A-2466-4915-A9CA-8AE89F03B487"></a><div class="head">
+            <h1>设置 Shift+旋转和 Shift+缩放动画</h1>
+         </div>
+         <p class="blurb">您可以使用<span class="char_link"><a href="GUID-81590519-B1AC-4E8E-A8F4-4113AC324800.htm">“自动关键点”按钮</a></span>设置 Shift+克隆动画。然而，存在一些限制。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2DF"></a>当“自动关键点”按钮处于启用状态时，变换中心默认为局部轴，且工具栏上的<span class="char_link"><a href="GUID-57814FDB-4D6B-469D-9D46-84380E12C8C3.htm">“使用中心”弹出按钮</a></span>不可用。如果选择了其他中心之一和激活的“自动关键点”，则该中心返回局部轴。这意味着不能使用 Shift+旋转和 Shift+缩放直接围绕非局部轴中心设置动画。例如，不能采用此方法围绕公共的中心以弧形或圆形来创建克隆。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A54"></a> 
+            <h2><a name="GUID-CF7FDAF9-D0B0-4BED-A442-EBB120FA618F"></a>使用非局部中心
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2DE"></a>要使用从克隆对象分隔的中心，请执行以下操作之一： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041A55"></a><ul>
+               <li>使用虚拟对象。 </li>
+               <li>偏移局部轴。 </li>
+               <li>更改默认动画中心。 </li>
+            </ul> 
+            <div class="section"><a name="WSF742DAB041063133-696430F0112A1CE75ED-7FF6"></a> 
+               <h3><a name="GUID-F76094E6-BB09-42C4-81F9-4148AD3F9C00"></a>将虚拟对象用做中心
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2DD"></a>在本步骤中，将虚拟对象的三轴架用作旋转或缩放的中心。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190041A56"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041A57"></a>要将虚拟对象用做中心，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>在旋转或缩放的中心内创建<span class="char_link"><a href="GUID-C7198B54-5420-4ADF-896F-132539484850.htm">虚拟对象</a></span>。 
+                  </li>
+                  <li> <img src="../images/GUID-2FD1B2A7-98E2-4EC0-9CAA-D6641253DF99-low.png"> 将要克隆的对象链接到虚拟对象，这将成为父对象。 
+                  </li>
+                  <li>选择虚拟和对象，然后使用 Shift+旋转或 Shift+缩放变换这些对象。 <a name="WS1A9193826455F5FFBA679E112A6A190041A58"></a><ul>
+                        <li>对于 Shift+旋转，虚拟中心将成为轴。 </li>
+                        <li>对于 Shift+缩放，虚拟和选定对象将朝向虚拟中心一起缩放。 </li>
+                     </ul> 
+                  </li>
+               </ol> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2DC"></a>有关在层次中使用虚拟对象的详细信息，请参见<span class="char_link"><a href="GUID-53C76D79-6173-4F7D-A9E5-0DD0640F8761.htm">使用虚拟对象</a></span>。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133-696430F0112A1CE75ED-7FF5"></a> 
+               <h3><a name="GUID-229296DE-18A5-4EFA-B25A-1C1DCB653674"></a>偏移局部轴
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2DB"></a>在本步骤中，将对象的轴移至旋转或缩放的中心。此操作与使用虚拟对象的操作非常相似。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190041A5A"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041A5B"></a>要偏移局部轴，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>选择要移动其轴的对象。 </li>
+                  <li>在 <img src="../images/GUID-FF012ED2-9008-4A7C-932C-DD6D854CCF12-low.png">“层次”命令面板上，选择“轴”，然后启用“仅影响轴”。 
+                  </li>
+                  <li>将原始对象的局部轴移至场景中的其他位置。 </li>
+                  <li>在“层次”面板中，再次单击“仅影响轴”以将其禁用。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2DA"></a>现在 Shift+旋转或 Shift+缩放围绕偏移中心设置动画。这将使用局部中心的默认设置。 
+                     </p> 
+                  </li>
+               </ol> 
+               <div><a name="WS73099CC142F487551051018113CCCDB767-96B"></a><div class="note-note"><span class="label label-target-language">注意:</span>移动局部轴可以负面影响链接和反向运动学。如果可能，考虑更改默认轴而不是移动局部轴。 
+                  </div>
+               </div> <a name="WSF742DAB041063133-696430F0112A1CE75ED-7FF4"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041A5C"></a>要在设置动画时更改默认轴，请执行以下操作：
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2D9"></a>在本步骤中，设置 <span class="charspan-msgph">3ds Max</span> 以允许围绕“使用中心”弹出按钮上的任意中心设置变换的动画。 
+               </p>
+               <ol type="1" start="1">
+                  <li>选择“自定义”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“首选项”，然后单击“首选项”对话框的“动画”选项卡。 
+                  </li>
+                  <li>在“动画”组中，禁用“动画期间使用局部坐标中心”。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2D8"></a>这将更改默认设置，并且使所有变换中心选项在设置动画时可用。现在，可以围绕选择对象或变换坐标中心以及局部轴设置动画。 
+                     </p> 
+                     <div><a name="WS73099CC142F487551051018113CCCDB767-96A"></a><div class="note-note"><span class="label label-target-language">注意:</span>更改默认设置将在旋转和变换时设置视口中看到的旋转动画，这可能不是您想要的效果。 
+                        </div>
+                     </div> 
+                  </li>
+               </ol> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

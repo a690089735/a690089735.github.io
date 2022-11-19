@@ -1,0 +1,43 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-E905CCE9-935A-4865-B242-0ADA4CB6B469">
+      <meta name="description" content="一个凸起角度由角度值和名称组成。默认情况下，每个链接都有一个凸起，默认名称为链接名称加上“Bulge 0”。默认凸起角度的初始角度值为第一次将 Physique 附加到骨骼时链接与其子链接之间的角度。">
+      <meta name="indexterm" content="Physique: 凸起角度">
+      <meta name="topic-type" content="concept">
+      <title>设置凸起角度</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-E905CCE9-935A-4865-B242-0ADA4CB6B469"></a><div class="head">
+            <h1>设置凸起角度</h1>
+         </div>
+         <p class="blurb">一个凸起角度由角度值和名称组成。默认情况下，每个链接都有一个凸起，默认名称为链接名称加上“Bulge 0”。默认凸起角度的初始角度值为第一次将 Physique 附加到骨骼时链接与其子链接之间的角度。</p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16740"></a>凸起是很有作用的，因为当关节移动的时候，凸起跟着伸展或收缩。初始凸起角度定义了蒙皮可以变形为的形状；这通常如同默认的肌肉组织。没有定义其它凸起角度的情况下，不管姿势如何，蒙皮看起来总是同第一个凸起角度相似。额外的凸起角度提供了网格可以变形为的其它形状。
+            
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16741"></a>在伸缩二头肌的简单例子中，一个凸起角度定义了肌肉松弛的位置而另一个则定义了肌肉处于伸展姿势的凸起角度。两个角度都是外露的以便可以给默认角色添加定义。对于二头肌，一个肌肉发达的角色即使在松弛姿势时，肌肉也可能还有某些形状。这样可以更改基线而不影响原有网格。实际上可以使用
+            Physique 凸起横截面来塑造角色模型。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16742"></a>影响链接的所有凸起角度之间的插值决定了给定链接的横截面变形。这既包括了链接的父关节角度又包括了子关节角度。每个凸起角度的作用由以下因素决定：
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190045C64"></a><ul>
+            <li>影响（凸起角度离当前关节角度旋转有多远）</li>
+            <li>强度（基于角度影响的减弱）</li>
+            <li>权重（凸起角度的相对强度） </li>
+         </ul>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16743"></a>请记住：凸起角度可以为任意的旋转设置，并不只局限于单轴旋转枢的关节。 
+         </p>
+         <div class="see-also">
+            <h4>请参见</h4>
+            <div class="related-links">
+               <ul>
+                  <li> <span class="char_link"><a href="GUID-BB605251-6A11-44C9-918B-D9AFDC266F90.htm">凸出子对象</a></span> 
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

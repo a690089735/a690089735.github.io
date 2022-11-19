@@ -1,0 +1,345 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-419BF292-875F-4D48-AD1B-43EEB40F4A3B">
+      <meta name="description" content="“扩展参数”卷展栏对于“标准”材质的所有明暗处理类型都是相同的，但 Strauss 和半透明明暗器则例外，如下所述。它具有与透明度和反射相关的控件，还有“线框”模式的选项。">
+      <meta name="indexterm" content="标准材质: 扩展参数">
+      <meta name="indexterm" content="标准材质: 折射率 (IOR)">
+      <meta name="indexterm" content="标准材质: 折射">
+      <meta name="topic-type" content="concept">
+      <title>“扩展参数”卷展栏（标准材质）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-419BF292-875F-4D48-AD1B-43EEB40F4A3B"></a><div class="head">
+            <h1>“扩展参数”卷展栏（标准材质）</h1>
+         </div>
+         <p class="blurb">“扩展参数”卷展栏对于“标准”材质的所有明暗处理类型都是相同的，但 Strauss 和半透明明暗器则例外，如下所述。它具有与透明度和反射相关的控件，还有“线框”模式的选项。 </p><a name="UL_5A5FE850EE2947C890C9F9EAE04D3FFF"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-7E38AD10-C7CC-412A-B453-4991CC39D8DA"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “标准材质” <img src="../images/ac.menuaro.gif"> “扩展参数”卷展栏</span> 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C11"></a>本主题包含一些常用物理材质的折射率表。这可以用于创建具有真实透明度的“标准”材质。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004-911"></a> 
+            <h2><a name="GUID-6027065D-B019-48D1-88B6-61E9E6F3A827"></a>增加的不透明度和 Alpha 通道
+            </h2> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C10"></a>默认情况下，增加的不透明度并不会生成 alpha 值。也就是说，alpha 值为零，表示不透明。从而可以在渲染时提供正确的背景效果，但是如果要使用 <span class="char_link"><a href="">video post</a></span> 或其他合成程序将对象合成增加的不透明度，则可能要拥有带有透明度的增加的不透明度渲染器。为此，请向 <em class="mild">3dsmax.ini</em> 文件的 [渲染器] 部分添加以下行，然后重新启动 <span class="charspan-msgph">3ds Max</span>： 
+            </p> 
+            <div class="codeBlock"><pre>AlphaOutOnAdditive=1</pre></div> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C0E"></a>要还原为渲染增加的不透明度的默认方法，在 <em class="mild">3dsmax.ini</em> 文件中，将 AlphaOutOnAdditive 改回 0（零），然后重新启动 <span class="charspan-msgph">3ds Max</span>。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2A87"></a> 
+            <h2><a name="GUID-FB60906A-0FD1-4FED-B44A-946DAB6353C8"></a>界面
+            </h2> <a name="GUID-6E571607-1AB3-43D4-B882-14BB90D26D43"></a><div class="dl_section"><a name="GUID-EA8E32F3-BF58-465F-B0DC-4A4723595A23"></a><p class="title"><a name="GUID-AB7F4F86-21A8-4ECE-A637-C3DD8A01FCED"></a>“高级透明”组（大多数明暗器）
+               </p>
+               <p><a name="WS1A9193826455F5FFF0124D0128744E2E7D32D1"></a>对于“半透明明暗器”，“高级透明”组为空。 
+               </p><a name="WS1A9193826455F5FF73C538A911AF8B6901A-6507"></a><div class="figure-anchor"><img src="../images/GUID-179050E9-5A58-4F9A-B4DC-19B3AC82F0A3-low.png"></div>
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C0D"></a> 这些控件影响透明材质的<span class="char_link"><a href="GUID-7864B064-B345-46FF-B03E-6490EAEBD13F.htm">不透明度衰减</a></span>。 
+               </p>
+               <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7B30"></a><div class="note-note"><span class="label label-target-language">注意:</span>对于<span class="char_link"><a href="GUID-67CD32E8-A0D5-4A14-8179-FB11D3E3DD28.htm">半透明明暗器</a></span>，这些控件不会出现。它们被“基本参数”卷展栏上的<span class="char_link"><a href="GUID-B8011F77-73AC-4BB8-BA73-5094465A7152.htm">“半透明度”控件</a></span>所代替。 
+                  </div>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CB7"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7C0C"></a>衰减</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16AF"></a> 选择在内部还是在外部进行衰减，以及衰减的程度。 <a name="WS1A9193826455F5FFBA679E112A6A19004-90E"></a><ul>
+                           <li> <em class="strong">内</em>向着对象的内部增加不透明度，就像在玻璃瓶中一样。 
+                           </li>
+                           <li> <em class="strong">外</em>向着对象的外部增加不透明度，就像在烟雾云中一样。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CB6"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7C0B"></a>数量</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16B0"></a> 指定最外或最内的不透明度的数量。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CB5"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7C0A"></a>类型</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16B1"></a> 这些控件选择如何应用不透明度。 <a name="WS1A9193826455F5FFBA679E112A6A19004-90D"></a><ul>
+                           <li> <span class="char_link"><a href="GUID-BDF72F46-F204-4C00-B92C-91017B86B3E3.htm">过滤器</a></span>计算与透明曲面后面的颜色相乘的过滤色。过滤或透射颜色是通过透明或半透明材质（如玻璃）透射的颜色。单击色样可更改过滤颜色。 
+                              <p><a name="WS1A9193826455F5FFF0124D0128744E2E7D32D2"></a>单击贴图按钮可指定<span class="char_link"><a href="GUID-3A448CA5-9351-430C-94F2-608FED248D32.htm">过滤颜色贴图</a></span>。该按钮是一个快捷方式：还可以在<span class="char_link"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏</a></span>中指定“过滤颜色”贴图。 
+                              </p> 
+                              <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C09"></a>您可以将过滤颜色与体积照明一起使用，以创建像彩色灯光穿过脏玻璃窗口这样的效果。透明对象投射的<span class="char_link"><a href="GUID-3F8591C4-E863-4FD1-9B98-61D94A271ECB.htm">光线跟踪阴影</a></span>将使用过滤颜色进行染色。 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-90C"></a><div class="figure-anchor"><img src="../images/GUID-C37343D5-7A6A-481A-A92A-04CF45ACC5CB-low.png"><p></p>
+                                 <p class="figure-title">阴影色随着红色过滤色而改变。</p>
+                              </div>  
+                           </li>
+                           <li> <span class="char_link"><a href="GUID-59A7329E-C57C-454F-8344-556A6D8C67C5.htm">相减</a></span>从透明曲面后面的颜色中减除。 
+                           </li>
+                           <li> <span class="char_link"><a href="GUID-3B084627-2DA2-428F-9062-196EF576C951.htm">相加</a></span>增加到透明曲面后面的颜色中。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CB4"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7C08"></a>折射率</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16B2"></a> 设置折射贴图和光线跟踪所使用的折射率 (IOR)。IOR 用来控制材质对透射灯光的折射程度。左侧 1.0 是空气的折射率，这表示透明对象后的对象不会产生扭曲。折射率为 1.5，后面的对象就会发生严重扭曲，就像玻璃球一样。对于略低于 1.0 的
+                        IOR，对象沿其边缘反射，如从水面下看到的气泡。默认值为 1.5。 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C07"></a>常见的折射率为（假设摄影机在空气或真空中）： 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-90B"></a><div class="table-ruled">
+                           <table cellpadding="0" cellspacing="0" class="ruled">
+                              <colgroup>
+                                 <col width="50%">
+                                 <col width="50%">
+                              </colgroup>
+                              <tr class="ruled-heading">
+                                 <th class="table-heading">材质 </th>
+                                 <th class="table-heading">IOR 值 </th>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">真空 </td>
+                                 <td class="table-body">1.0（精确） </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">空气 </td>
+                                 <td class="table-body">1.0003 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">水 </td>
+                                 <td class="table-body">1.333 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">玻璃 </td>
+                                 <td class="table-body">1.5（清晰的玻璃）到 1.7 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">钻石 </td>
+                                 <td class="table-body">2.418 </td>
+                              </tr>
+                           </table>
+                        </div> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C06"></a>在物理世界中，IOR 为灯光穿过透明材质与观察者用眼睛或摄影机观看时所在介质的相对速度。通常这与对象的密度有关；IOR 越大，对象的密度越大。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C05"></a>还可以使用贴图来控制折射率。IOR 贴图始终在 1.0（空气的 IOR）和 IOR 参数中的设置之间进行插补。例如，如果折射率设置为 3.55 并且使用黑白“噪波”来控制折射率，那么在对象上渲染的折射率值将会设置在 1.0 到 3.55 之间；该对象看起来就会比空气来的稠密。另一方面，如果
+                           IOR 设置为 0.5，则同一贴图的值将在 0.5 到 1.0 之间渲染，这种情况就像摄影机位于水下，而对象的密度小于水一样。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C04"></a>以下是各种材质的 IOR 值： 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-90A"></a><div class="table-ruled">
+                           <table cellpadding="0" cellspacing="0" class="ruled">
+                              <colgroup>
+                                 <col width="50%">
+                                 <col width="50%">
+                              </colgroup>
+                              <tr class="ruled-heading">
+                                 <th class="table-heading">材质 </th>
+                                 <th class="table-heading">IOR 值 </th>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">液态二氧化碳 </td>
+                                 <td class="table-body">1.200 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">冰 </td>
+                                 <td class="table-body">1.309 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">丙酮 </td>
+                                 <td class="table-body">1.360 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">普通酒精 </td>
+                                 <td class="table-body">1.360 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">糖水 (30%) </td>
+                                 <td class="table-body">1.380 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">酒精 </td>
+                                 <td class="table-body">1.329 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">Flourite </td>
+                                 <td class="table-body">1.434 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">熔凝石英 </td>
+                                 <td class="table-body">1.460 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">Calspar2 </td>
+                                 <td class="table-body">1.486 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">糖水 (80%) </td>
+                                 <td class="table-body">1.490 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">玻璃，锌冠 </td>
+                                 <td class="table-body">1.517 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">玻璃，冠 </td>
+                                 <td class="table-body">1.520 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">氯化钠 </td>
+                                 <td class="table-body">1.530 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">氯化钠（食盐）1 </td>
+                                 <td class="table-body">1.544 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">聚苯乙烯 </td>
+                                 <td class="table-body">1.550 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">石英 2 </td>
+                                 <td class="table-body">1.553 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">绿宝石 </td>
+                                 <td class="table-body">1.570 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">轻火石玻璃 </td>
+                                 <td class="table-body">1.575 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">青金石 </td>
+                                 <td class="table-body">1.610 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">黄玉 </td>
+                                 <td class="table-body">1.610 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">二硫化碳 </td>
+                                 <td class="table-body">1.630 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">石英 1 </td>
+                                 <td class="table-body">1.644 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">氯化钠（食盐）2 </td>
+                                 <td class="table-body">1.644 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">重火石玻璃 </td>
+                                 <td class="table-body">1.650 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">二碘甲烷 </td>
+                                 <td class="table-body">1.740 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">红宝石 </td>
+                                 <td class="table-body">1.770 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">兰宝石 </td>
+                                 <td class="table-body">1.770 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">重火石玻璃 </td>
+                                 <td class="table-body">1.890 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">水晶 </td>
+                                 <td class="table-body">2.000 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">氧化铬 </td>
+                                 <td class="table-body">2.705 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">氧化铜 </td>
+                                 <td class="table-body">2.705 </td>
+                              </tr>
+                              <tr class="ruled-even-row">
+                                 <td class="table-body">非结晶硒 </td>
+                                 <td class="table-body">2.920 </td>
+                              </tr>
+                              <tr class="ruled-odd-row">
+                                 <td class="table-body">碘晶 </td>
+                                 <td class="table-body">3.340 </td>
+                              </tr>
+                           </table>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-333635FD-A419-4BA3-AF80-0CD9C4341A47"></a><p class="title"><a name="GUID-D28FA160-2B99-47D2-A43A-A9D2C5F89380"></a>“高级透明”组（Strauss 明暗器）
+               </p><a name="WS1A9193826455F5FFF0124D0128744E2E7D32D4"></a><div class="figure-anchor"><img src="../images/GUID-19D96021-A3EF-41A4-84C5-EF1F7E429093-low.png"></div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FFF0124D0128744E2E7D32D5"></a><span class="term"><a name="WS1A9193826455F5FFF0124D0128744E2E7D32D6"></a> 折射过滤</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFF0124D0128744E2E7D32D7"></a> 单击色样可选择“折射过滤”颜色。过滤或透射颜色是通过透明或半透明材质（如玻璃）透射的颜色。 
+                        <p><a name="WS1A9193826455F5FFF0124D0128744E2E7D32D9"></a>单击贴图按钮可指定<span class="char_link"><a href="GUID-3A448CA5-9351-430C-94F2-608FED248D32.htm">过滤颜色贴图</a></span>。该按钮是一个快捷方式：还可以在<span class="char_link"><a href="GUID-9F6BBCA6-9253-409B-AEC3-14FA7E5FF7C4.htm">“贴图”卷展栏</a></span>中指定“过滤颜色”贴图。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FFF0124D0128744E2E7D32DA"></a>您可以将过滤颜色与体积照明一起使用，以创建像彩色灯光穿过脏玻璃窗口这样的效果。透明对象投射的<span class="char_link"><a href="GUID-3F8591C4-E863-4FD1-9B98-61D94A271ECB.htm">光线跟踪阴影</a></span>将使用过滤颜色进行染色。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FFF0124D0128744E2E7D32DB"></a><span class="term"><a name="WS1A9193826455F5FFF0124D0128744E2E7D32DC"></a>折射率</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FFF0124D0128744E2E7D32DD"></a> 设置折射贴图和光线跟踪所使用的折射率 (IOR)。IOR 用来控制材质对透射灯光的折射程度。左侧 1.0 是空气的折射率，这表示透明对象后的对象不会产生扭曲。折射率为 1.5，后面的对象就会发生严重扭曲，就像玻璃球一样。对于略低于 1.0 的
+                        IOR，对象沿其边缘反射，如从水面下看到的气泡。默认值为 1.5。 
+                        <p><a name="WS1A9193826455F5FFF0124D0128744E2E7D32DF"></a>有关具有代表性的 IOR 值，请参见上一部分。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-C5395334-5759-4577-8D97-7C67039D6BA3"></a><p class="title"><a name="GUID-40DE2D3E-0F24-4477-813F-FEA4F9A51E37"></a>“线框”组
+               </p><a name="WS1A9193826455F5FF73C538A911AF8B6901A-6506"></a><div class="figure-anchor"><img src="../images/GUID-65A0402C-1D8A-47AB-9573-B131BEFCD777-low.png"></div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CB3"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7C03"></a> 大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16B3"></a> 设置<span class="char_link"><a href="GUID-E7D5074C-E45F-4CC5-B22F-80F77F63F6E6.htm">线框模式</a></span>中线框的大小。可以按像素或当前单位进行设置。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CB2"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7C02"></a>按</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16B4"></a> 选择度量线框的方式。 <a name="WS1A9193826455F5FFBA679E112A6A19004-908"></a><ul>
+                           <li> <em class="strong">像素</em>（默认设置。）用像素度量线框。对于像素选项来说，不管线框的几何尺寸多大，以及对象的位置近还是远，线框都总是有相同的外观厚度。 
+                           </li>
+                           <li> <em class="strong">单位</em>用 <span class="charspan-msgph">3ds Max</span> 单位测量连线。根据单位，线框在远处变得较细，在近距离范围内较粗，如同在几何体中经过建模一样。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-72BAA2C6-CDED-4EDB-B975-387B7E5BB43F"></a><p class="title"><a name="GUID-97079CB6-630F-467D-8378-BA9D3AA94067"></a>“反射暗淡”组
+               </p>
+               <p><a name="WS1A9193826455F5FFF0124D0128744E2E7D32E0"></a>对于 Strauss 明暗器，不会显示“反射暗淡”组。 
+               </p><a name="WS1A9193826455F5FF73C538A911AF8B6901A-6505"></a><div class="figure-anchor"><img src="../images/GUID-5E75DFC9-304C-47B6-86F0-5CBB6BD88012-low.png"></div>
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-7C01"></a> 这些控件使阴影中的反射贴图显得暗淡。 
+               </p><a name="WS1A9193826455F5FFBA679E112A6A19004-906"></a><div class="figure-anchor"><img src="../images/GUID-BBFEC9D3-1987-4BFA-80E3-87C917659685-low.png"></div>
+               <p><a name="GUID-E9742AFE-476D-41C2-8A8D-6EDBB437F0F9"></a> <em class="strong">反射暗淡</em> 
+               </p>
+               <p><a name="GUID-3D8A9149-EB77-459C-98FB-873E4B5495DF"></a> <em class="strong">上：无</em> 
+               </p>
+               <p><a name="GUID-9C2426AD-D54F-4E13-9ECF-9C9A75D61AA0"></a> <em class="strong">下：0.0（100% 暗淡）</em> 
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CB1"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7C00"></a> 应用</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16B5"></a> 启用以使用反射暗淡。禁用该选项后，反射贴图材质就不会因为直接灯光的存在或不存在而受到影响。默认设置为禁用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CB0"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7BFF"></a>暗淡级别</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16B6"></a> 阴影中的暗淡量。该值为 0.0 时，反射贴图在阴影中为全黑。该值为 0.5 时，反射贴图为半暗淡。该值为 1.0 时，反射贴图没有经过暗淡处理，材质看起来好像禁用“应用”一样。默认值为 0.0。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-CAF"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7BFE"></a>反射级别</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D16B7"></a> 影响<em class="mild">不在</em> 阴影中的反射的强度。“反射级别”值与反射明亮区域的照明级别相乘，用以补偿暗淡。在大多数情况下，默认值为 3.0 会使明亮区域的反射保持在与禁用反射暗淡时相同的级别上。 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

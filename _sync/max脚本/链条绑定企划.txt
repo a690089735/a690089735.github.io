@@ -1,0 +1,129 @@
+--1.在头部为整体添加一个虚拟体控制器
+--2.确定生成后的样条线是平滑点
+
+--介绍
+--选中物体创建样条线
+--修改样条线的端点和起点
+--修改参数
+--点击创建
+--支持变换到零(TransformToZero)
+
+--**初始化
+slidertime = 0f
+
+--**设置IK链名称
+Chain_Name = "spIKchain"
+
+--**选中模型
+--计算模型长度
+bb = nodeGetBoundingBox $ $.transform
+size = bb[2]-bb[1]
+maxA = 1
+for i = 2 to 3 do if size[i] > size[maxA] do maxA = i
+--点击自动创建一根样条线
+l = line()
+l.name = (Chain_Name + "_Spl")
+addnewSpline l
+addKnot l 1 #corner #line [20,10,0]
+addKnot l 1 #corner #line [-20,11,0]
+updateShape l
+
+--**获取样条线长度
+sl = getSegLengths l 1
+sl = sl[sl.count]
+
+--**设置点数量
+sv = 3 --点的数量,最少为2
+--计算分段长度
+slp = sl / (sv - 1)
+
+--**给样条线分段
+addModifier l (Normalize_Spl Length:slp)
+
+--**创建虚拟体
+sm = Spline_IK_Control linktypes:2
+addModifier l sm
+sm.createHelper (sm.getKnotCount())
+sm.helpersize = slp * 0.5
+--sm.helper_list 设定名字
+
+--**创建一个样条线ik
+$'IK Chain001'.transform.controller.pickShape = $SplineChain_Nameode002
+$'IK Chain001'.startJoint = $Bone001
+$'IK Chain001'.endJoint = $BoneEND
+
+
+--**设置骨骼数量
+bn = 10 --骨骼数量
+
+--**创建标记点
+pl = sl / (bn * sl) * 100 --分段百分比
+knotList = #()
+for i = 1 to (bn + 1) do
+(
+	newknot = Point name:(uniqueName (Chain_Name + "_knot_")) size:(sl / bn)
+	newknot.pos.controller = position_list ()
+	newknot.pos.controller.Position_XYZ.controller = Path_Constraint ()
+	deleteKeys newknot.pos.controller.Path_Constraint.controller.percent.keys #allKeys
+	newknot.pos.controller.Path_Constraint.appendTarget l 50.0
+	newknot.pos.controller.Path_Constraint.controller.percent = (pl * (i - 1))
+	newknot.pos.controller.Path_Constraint.controller.follow = true
+	newknot.pos.controller.Available.controller = Position_XYZ ()
+	newknot.pos.controller.Active = 2
+	newknot.rotation.controller = rotation_list ()--用来绕过冻结变换的报错
+	newknot.rotation.controller.Available.controller = Euler_XYZ ()--用来绕过冻结变换的报错
+	newknot.rotation.controller.Active = 2--用来绕过冻结变换的报错
+	append knotList newknot
+)
+
+--创建骨骼
+for i = 1 to bn do newbone = BoneSys.createBone list_point[i] list_point[i+1] (list_point[i]+(list_point[i+1]))
+
+
+欢迎使用 MAXScript。
+
+selection[1].dir = selection[2].transform.pos - selection[1].transform.pos
+[-38.6304,-8.82045,23.2058]
+[-46.2673,36.3054,11.155]
+[-51.6567,-30.5838,11.155]
+-- 未知属性:“transform”位于 undefined
+[-43.0541,-23.1855,0]
+selection[2].pos
+[-66.2425,32.1306,0]
+selection[2].transform.pos
+[-27.3428,9.04004,0]
+selection[1].dir.controller
+-- 未知属性:“controller”位于 [-0.84126,-0.192084,0.505356]
+-- 未知属性:“value”位于 [-0.84126,-0.192084,0.505356]
+showproperties selection[1].dir.
+-- 没有与以下项对应的“"showProperties"”函数 [-0.84126,-0.192084,0.505356]
+Controller:Position_XYZ
+-- 未知属性:“controller”位于 [-0.84126,-0.192084,0.505356]
+direction
+undefined
+undefined
+distance $[1] $[2]
+45.9197
+distance()
+when transform $Point007 changes do $Box001.dir =$Point007.transform.pos - $Box001.transform.pos
+<ChangeHandler:0x0000a4a0>
+$.transform
+(matrix3 [1,0,0] [0,1,0] [-0.486078,0.245461,0.838736] [1,0,0])
+(matrix3 [1,0,0] [0,1,0] [-0.486078,0.245461,0.838736] [1,0,0])
+$.transform=(matrix3 [1,0,0] [0,1,0] [-0.486078,0.245461,0.838736] [1,0,0])
+(matrix3 [1,0,0] [0,1,0] [-0.486078,0.245461,0.838736] [1,0,0])
+(matrix3 [0,1,0] [2,0,0] [0,0,1] [1,0,0])
+(matrix3 [0,1,0] [2,0,0] [0,0,1] [1,0,0])
+(matrix3 [1,0,0] [0,1,0] [0,0,1] [1,0,0])
+(matrix3 [1,0,0] [0,1,0] [0,0,1] [1,0,0])
+(matrix3 [1,0,0] [0,1,0] [0,0,1] [1,0,0])
+ = (matrix3 [0,1,0] [1,0,0] [0,0,1] [1,0,0])
+(matrix3 [0,1,0] [1,0,0] [0,0,1] [1,0,0])
+(matrix3 [0,1,0] [1,0,0] [0,0,1] [1,0,0])
+(matrix3 [0,1,0] [1,0,0] [0,0,1] [1,0,0])
+(matrix3 [0,1,0] [1,0,0] [0,0,1] [0,0,0])
+(matrix3 [0,0,0] [0,1,0] [0,0,1] [0,0,0])
+(matrix3 [1,0,0] [0,1,0] [0,0,1] [0,0,0])
+(matrix3 [1,0,0] [0,1,0] [0,0,1] [0,0,0])
+
+输出...研究一下大佬的绳子脚本

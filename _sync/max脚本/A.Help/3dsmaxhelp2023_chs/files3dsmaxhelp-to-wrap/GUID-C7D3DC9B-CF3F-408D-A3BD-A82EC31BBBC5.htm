@@ -1,0 +1,146 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C7D3DC9B-CF3F-408D-A3BD-A82EC31BBBC5">
+      <meta name="indexterm" content="高级选项: 截面（导入）">
+      <meta name="indexterm" content="高级选项: 单位（导入）">
+      <meta name="indexterm" content="高级选项: 比例因子（导入）">
+      <meta name="indexterm" content="自动单位转换: 导出">
+      <meta name="indexterm" content="单位: 自动转换（导出）">
+      <meta name="indexterm" content="高级选项: 文件单位转化（导入）">
+      <meta name="indexterm" content="文件单位转化: 示例">
+      <meta name="indexterm" content="示例: 文件单位转换">
+      <meta name="indexterm" content="文件单位转化: 示例">
+      <meta name="indexterm" content="示例: 文件单位转换">
+      <meta name="indexterm" content="高级选项: UI（导入）">
+      <meta name="indexterm" content="UI: 显示/隐藏警告管理器（导入）">
+      <meta name="indexterm" content="警告: 显示/隐藏">
+      <meta name="indexterm" content="警告: 错误和警告之间的区别（导入）">
+      <meta name="indexterm" content="错误: 错误和警告之间的区别（导入）">
+      <meta name="indexterm" content="生成日志数据: 导入">
+      <meta name="indexterm" content="警告和错误: 生成日志数据（导入）">
+      <meta name="indexterm" content="日志文件: 导入位置">
+      <meta name="indexterm" content="生成日志数据: 原因（导入）">
+      <meta name="topic-type" content="concept">
+      <title>高级选项</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C7D3DC9B-CF3F-408D-A3BD-A82EC31BBBC5"></a><div class="head">
+            <h1>高级选项</h1>
+         </div><a name="WS73099CC142F487553B93539F117A2602BD5-41E3"></a><div class="figure-anchor"><img src="../images/GUID-BA70BEF4-932C-41D2-A30B-462BCD2D6CB3-low.png"><p class="figure-title">“高级选项”卷展栏</p>
+         </div>
+         <p><a name="WS1A9193826455F5FF-523E3B0B115CE278E626D52"></a> 使用“高级选项”卷展栏可以自定义常规设置和导入进程。 
+         </p>
+         <div class="section"><a name="SECTION_F638D0A084454C7FBA390A85B4291221"></a> 
+            <h2><a name="GUID-8CBE1DC4-2A9A-43D4-A695-8B1656A85CE0"></a>单位
+            </h2> 
+            <p><a name="WS1A9193826455F5FF-6D855556117C4584E54-201C"></a> 通过“单位”选项，您可以查看插件所用的转换因子（缩放值），还可以修改转换单位。 
+            </p> <a name="GUID-D31F927C-F541-451B-A4CE-4670937476E2"></a><dl>
+               <dt><a name="GUID-B26B72A1-E893-492B-B8A0-D9EADDCD339C"></a><span class="term"><a name="GUID-D5FF5C72-CB27-40E6-B8ED-D8B87CA44C90"></a>比例因子</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-6CB42C65-9848-4E09-B8D3-C05CB353A18B"></a> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117C4584E54-2018"></a> 显示插件应用于整个传入场景的转换值或“比例因子”。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117C4584E54-2017"></a>本插件将用于主应用程序中的单位与用于导入文件中的单位进行对比，以便确定“比例因子”值。然后插件会建议匹配主应用程序中系统单位的单位转换。显示的“比例因子”是计算的结果。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117C4584E54-2016"></a>始终启用此选项，但如果文件单位与系统单位匹配，插件便无需应用比例转化。该插件不会应用转换。在这种情况下，显示的比例因子为 1.0。当单位匹配时，您可以提高导入速度并改进导入性能，尤其在从 Revit 导入 3ds Max 的工作流中。 
+                     </p> 
+                     <div><a name="WS73099CC142F487553B93539F117C42D99523E0"></a><div class="note-note"><span class="label label-target-language">注意:</span> 如果更改“文件单位转化为”选项，则可以修改应用于传入数据的“比例因子”值。 
+                        </div>
+                     </div> 有关不正确或不需要的缩放问题的信息，请参见<span class="char_link"><a href="GUID-7ECD378E-5A3F-4722-B32B-8A0EB581824A.htm">在 3ds Max 中，场景的缩放比例为什么发生了变化？</a></span>。 
+                  </div>
+               </dd>
+               <dt><a name="GUID-9FA3B137-1E76-46C3-B547-0F8D996663AE"></a><span class="term"><a name="GUID-3BD6CDE4-A077-4D1D-B1CD-DDD31F4E2309"></a>自动</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-9F74C1D9-1DCC-440B-8A9F-B0C481E40B64"></a> 
+                     <p><a name="WS1A9193826455F5FF-3D980B8612487088DED-7AD1"></a> 如果希望 <span class="charspan-msgph">3ds Max FBX plug-in</span>自动识别、设置并转化传入文件的单位以与主机应用程序的单位匹配，请激活“自动”选项。 
+                     </p> 
+                     <p><a name="WS73099CC142F487557BFAA8DA122EC01152F-F51"></a>激活“自动”选项后，“文件单位转化为”选项将禁用，虽然该选项会显示已解析的单位和比例因子。禁用“自动”选项后即可访问“文件单位转化为”菜单。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117C4584E54-201A"></a>如果激活了“自动”选项且文件单位与系统单位匹配，则无需进行比例转换且插件不会应用任何转换。在这种情况下，显示的比例因子为 1.0。 
+                     </p> 
+                     <div><a name="WS1A9193826455F5FF1DBC298511635BEA875-940"></a><div class="note-note"><span class="label label-target-language">注意:</span> 这种转换仅影响传入数据。而不会更改 3ds Max 中的设置。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-E35F3E39-CACC-4467-B85C-AE0800AA206C"></a><span class="term"><a name="GUID-DAC08D71-218C-43FA-9231-C169783348CA"></a>文件单位转化为：</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-CEAD7A0F-98B5-4677-A94A-1FDB9CC1317A"></a> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117C4584E54-2014"></a> 如果禁用了“自动”选项，则可以自己选择使用“文件单位转化为”菜单转换文件时使用的单位。使用此菜单可指定要将文件转换为的单位。直接修改此设置会影响应用于传入数据的“比例因子”值。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5597"></a>插件通过查看 3ds Max 中“系统单位设置”对话框中的“系统单位比例”来确定默认单位。有关不正确或不需要的缩放问题的信息，请参见<span class="char_link"><a href="GUID-7ECD378E-5A3F-4722-B32B-8A0EB581824A.htm">在 3ds Max 中，场景的缩放比例为什么发生了变化？</a></span>。 
+                     </p> 
+                     <div><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-5596"></a><div class="note-note"><span class="label label-target-language">注意:</span> 
+                           <p><a name="GUID-4CF2EC1E-F411-4C14-BFC8-C1CDA981E154"></a>要查看默认单位，请在从“自定义”菜单中选择“单位设置”之后，在出现的“单位设置”对话框中单击“系统单位设置”。 
+                           </p> 
+                        </div>
+                     </div> <a name="WS1A9193826455F5FF-6D855556117C4584E54-2012"></a><div class="figure-anchor"><img src="../images/GUID-30B94128-49A2-49C9-8283-9B1132ED63BE-low.png"><p class="figure-title">“系统单位设置”选项</p>
+                     </div> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117C4584E54-2011"></a>显示的“比例因子”使用此单位设置进行计算。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117C4584E54-2010"></a>该操作的自动功能可确保“插件”响应“单位”的变化，并在默认情况下应用恰当的比例。 
+                     </p> 
+                     <div><a name="WS1A9193826455F5FF-6D855556117C4584E54-200F"></a><div class="note-note"><span class="label label-target-language">注意:</span> 请确认 3ds Max 场景所用的系统单位，以便控制插件是否需要缩放场景。有关 3ds Max 中系统单位设置的信息，请参见<span class="char_link"><a href="GUID-7ECD378E-5A3F-4722-B32B-8A0EB581824A.htm">在 3ds Max 中，场景的缩放比例为什么发生了变化？</a></span>。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+            </dl>
+            <div class="dl_section"><a name="GUID-FDFF4E67-B80C-4DD7-B028-F9B9A9CFDA1B"></a><p><a name="GUID-F43D5C47-63C6-4521-AB3E-CDD6E1612C48"></a><em class="strong">示例：</em>如果导入的文件与您的 3ds Max 场景的系统单位使用相同的单位设置，则单位匹配且显示的“比例因子”为“1.0”。未应用任何比例转化。 <a name="WS1A9193826455F5FF-6D855556117C4584E54-200C"></a><div class="figure-anchor"><img src="../images/GUID-CEA4BC49-89BB-4A8E-8F3A-784063640707-low.png"><p class="figure-title">“单位”卷展栏</p>
+                  </div>如果单位不匹配并且您的 3ds Max 场景为空，和/或未考虑更改系统单位，则需在开始导入前将 3ds Max 的“系统单位”更改为与用于传入文件的“文件单位”相匹配的单位。结果是单位匹配，“比例因子”为“1.0”，并且不应用任何比例转化。 如果单位不匹配并且您的 3ds Max 场景为空，和/或未考虑更改系统单位，则需在开始导入前将 3ds Max 的“系统单位”更改为与用于传入文件的“文件单位”相匹配的单位。结果是单位匹配，“比例因子”为“1.0”，并且不应用任何比例转化。例如，如果将厘米单位的文件导入设置为英寸单位的
+                  3ds Max 场景，并且结果比例因子为 0.3937008，则传入数据的比例会缩小到适合场景单位系统的比例。 
+                  <div><a name="WS1A9193826455F5FF-6507591011913E8F4B8-49BB"></a><div class="note-note"><span class="label label-target-language">注意:</span> 如果比例因子为 1.0，则不会应用缩放。如果比例因子大于 1.0，则传入数据将按比例放大。如果比例因子小于 1.0，则传入数据的比例会缩小。 
+                     </div>
+                  </div> <a name="WS1A9193826455F5FF-6D855556117C4584E54-2009"></a><div class="figure-anchor"><img src="../images/GUID-F111EE21-73BE-4BE5-AB06-26EAAB66947E-low.png"><p class="figure-title">比例因子 1.0</p>
+                  </div> 在上例中，如果您不想更改 3ds Max 场景的系统单位，并且不希望插件缩放传入数据，则还可以选择：更改“文件单位转化为”选项以匹配“文件单位”。即使文件与 3ds Max 系统单位之间的单位不匹配，这也会导致“比例因子”为“1.0”，并且不应用缩放。
+                  
+                  <div style="margin-top: 9pt;"><a name="WS73099CC142F48755-97C6FFF11EAFAB0E40EA"></a><div class="note-note"><span class="label label-target-language">注意:</span> 3ds Max 系统单位和显示单位在<span class="char_link"><a href="GUID-C3389EE9-18A9-47EC-8222-EA94BD665FF8.htm">故障诊断</a></span>部分中进行了深入讨论，请参见<span class="char_link"><a href="GUID-7ECD378E-5A3F-4722-B32B-8A0EB581824A.htm">在 3ds Max 中，场景的缩放比例为什么发生了变化？</a></span> 
+                     </div>
+                  </div> <a name="WS1A9193826455F5FF-6D855556117C4584E54-2007"></a><div class="figure-anchor"><img src="../images/GUID-BEEDFF81-3C35-4286-924B-7E1C27C34482-low.png"><p class="figure-title">系统单位显示为英寸</p>
+                  </div> 
+               </p>
+            </div> 
+         </div>
+         <div class="section"><a name="SECTION_19B03D1895A44173834A66E86020CEC0"></a> 
+            <h2><a name="GUID-DA9D8B84-4128-4846-BBC7-B3076A9B28FE"></a>UI
+            </h2> 
+            <p><a name="WS1A9193826455F5FF-6D855556117E9F816D232AF"></a> 这些选项用于设置 UI 的显示选项。这样可以显示或隐藏“警告管理器”和 FBX UI 窗口。 
+            </p> 
+            <p><a name="WS73099CC142F487553B93539F117EA10CE8F49CB"></a>可以自定义这些显示选项，将它们保存为新的预设，然后共享这些预设文件。详细信息请参见<span class="char_link"><a href="GUID-AE794918-3077-4203-A926-DB0A4C164788.htm#SECTION_258C901E83584EC6858A78E9AD437164">编辑/保存预设</a></span>部分。 
+            </p> <a name="GUID-7A42B4CE-3E02-4704-97C2-9D683F8DADE2"></a><dl>
+               <dt><a name="GUID-CCAD13D2-C6A9-472A-943C-DB880583398F"></a><span class="term"><a name="GUID-64F6CC98-CFB6-4D3F-81C1-E1739A5C2F9E"></a>显示/隐藏警告管理器</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-AE9D0112-9533-48E4-BD13-B9CC84B93A89"></a> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117C4584E54-2000"></a> 通过该选项，您可以禁用在导入过程中显示的“警告和错误”对话框。默认情况下，“警告管理器”处于激活状态。 
+                     </p> 
+                     <div class="section"><a name="GUID-9F767AD6-4A4E-470F-A7A2-3BC3E2F84C00"></a><h4><a name="GUID-234DC230-0E14-438F-B3F6-6D1FEDFE5358"></a>错误与警告之间的区别
+                        </h4> 在导入过程中出现转化和潜在问题时，“3ds Max FBX 插件”会向您发出错误和警告消息。如果在转换过程中出现意外情况，插件会报告错误。发生此错误是因为插件遇到了未知行为而且转换将生成意外结果。当该插件必须将源数据转换为目标应用程序可以读取的格式时，将报告警告。此警告并非指示出现了问题，而是提供一份应用到传入数据的转换的报告。
+                        
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-D84FB0A6-79E6-45CD-864A-74DC9B8F3A1A"></a><span class="term"><a name="GUID-73E3A394-DC61-4587-948D-6D88817C6461"></a>生成日志数据</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-08C90D40-2659-4A16-9F0F-3F6ADCFCD70D"></a> 
+                     <p><a name="WS1A9193826455F5FF-792EF2E611F6FB4710D-6D56"></a> 如果不希望警告和错误信息写入日志，请取消激活“生成日志数据”选项。不过，如果您确实取消激活此选项，则 FBX 导出器/导入器不会将日志数据（如错误和警告）写入生成的日志文件。但是，文件名和时间标记仍会记录到日志中。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-792EF2E611F6FB4710D-6D54"></a> <span class="charspan-msgph">3ds Max FBX plug-in</span>将包含 FBX 预设的日志文件存储在 C:\My Documents\3dsmax\FBX\Logs 中。 
+                     </p> 
+                     <div class="section"><a name="GUID-34EB30DF-8088-4277-AD05-C0AA0A00ACB4"></a><h4><a name="GUID-5CE0FA74-1086-4A7A-823C-64E81A4E84DC"></a>执行此操作的原因
+                        </h4> 有时，一些批处理导入/导出操作会创建非常大的警告/错误文件，在这种情况下最好禁用该选项。通常，建议使“生成日志数据”选项处于启用状态（默认设置），因为这可帮助您确定有关文件转化的问题。日志文件在跟踪导入时出现的错误和警告方面发挥着重要作用。如果要导入一系列文件（如在自动导入或批处理导入中），则建议您不要取消激活此选项，否则您将无法在导入期间收到任何关于文件相关问题的反馈。缺少信息反馈会使确定出现问题的文件这一工作变得困难，进而增加诊断问题的难度。
+                        
+                        <div><a name="WS1A9193826455F5FF-792EF2E611F6FB4710D-6D4E"></a><div class="note-tip"><span class="label label-target-language">提示</span>由于日志数据将被附加到同一个日志文件中，因此不久之后此文件将变得非常大。在执行几次导出操作之后或处理批处理导出或导入之前，最好将日志文件删除。 
+                           </div>
+                        </div> 
+                     </div> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

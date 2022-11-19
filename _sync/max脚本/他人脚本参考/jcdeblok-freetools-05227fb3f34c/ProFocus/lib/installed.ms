@@ -1,0 +1,1 @@
+messageBox "Succesfully Installed!\n\nYou can find a macro in the 'jdbgraphics' category. Enjoy!"

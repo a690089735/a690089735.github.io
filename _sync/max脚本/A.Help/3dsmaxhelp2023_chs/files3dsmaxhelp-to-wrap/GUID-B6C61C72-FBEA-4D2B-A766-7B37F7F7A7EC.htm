@@ -1,0 +1,116 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B6C61C72-FBEA-4D2B-A766-7B37F7F7A7EC">
+      <meta name="description" content="实体对象是按程序定义的，因此必须转换为可供渲染的网格对象。这些控件确定了软件执行此转换的方式。默认方法为生成一个根据视图进行渲染的新网格。另外，渲染可以使用视口网格设置生成的视口网格。大多数情况下，默认设置完全可以完成渲染网格的创建操作。">
+      <meta name="indexterm" content="躯干对象: 渲染近似设置">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>“渲染近似”卷展栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B6C61C72-FBEA-4D2B-A766-7B37F7F7A7EC"></a><div class="head">
+            <h1>“渲染近似”卷展栏</h1>
+         </div>
+         <p class="blurb">实体对象是按程序定义的，因此必须转换为可供渲染的网格对象。这些控件确定了软件执行此转换的方式。默认方法为生成一个根据视图进行渲染的新网格。另外，渲染可以使用视口网格设置生成的视口网格。大多数情况下，默认设置完全可以完成渲染网格的创建操作。 </p>
+         <div class="bodyReference"><a name="UL_3D382ECD54D9423D83F2E63E39D91EED"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-57696D4E-0989-4A93-8D6D-3E7B6D1DFEBD">选择一个实体对象或连接实体，或者实体切割器对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “渲染近似”卷展栏</span> 
+               </li>
+            </ul>
+            <div><a name="WS1A9193826455F5FF-E569A0121D1945C08-1BCD"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果不使用视口网格选项，您可以通过以下方法来查看渲染网格，首先为对象指定某种材质，然后，在该材质的“明暗器基本参数”卷展栏上，暂时打开“线框”选项并渲染该图像。 
+               </div>
+            </div>
+            <div><a name="WS73099CC142F48755-385A98B012180D20F19-38B1"></a><div class="note-tip"><span class="label label-target-language">提示</span>若要一次更改多个实体对象的“渲染近似”设置，请选择这些实体对象，然后使用“实体工具”命令。 
+               </div>
+            </div>
+            <div class="section"><a name="WS73099CC142F48755F2FC9DF120970276F73D13"></a> <a name="WS73099CC142F48755F2FC9DF120970276F73D12"></a><div class="figure-anchor"><img src="../images/GUID-CB344CA0-336A-48E5-8F07-E318E7263BE0-low.png"></div>  <a name="GUID-FBDB0E7E-D73B-40D0-AFD2-333DDC217860"></a><dl>
+                  <dt><a name="WS73099CC142F48755-385A98B012180D20F19-38B0"></a><span class="term"><a name="WS73099CC142F48755-385A98B012180D20F19-38AF"></a>使用视口网格</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-385A98B012180D20F19-38AE"></a> 如果启用，渲染将使用视口中显示的网格，与通过视口显示设置创建的网格相同。此选项生效后，此卷展栏上的其余设置将失效。 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-EFC32027-D34D-4789-9F8F-6119CC227E61"></a><p class="title"><a name="GUID-D347F0BA-BB22-4E1F-B8BC-A37D8A53A4C5"></a>“渲染网格生成”组
+                  </p>
+                  <p><a name="WS73099CC142F48755-385A98B012180D20F19-38A9"></a>用于生成渲染网格的方法： 
+                  </p><a name="WS73099CC142F48755-385A98B012180D20F19-3809"></a><ul>
+                     <li> <em class="strong">视图依赖近似</em>根据视图中对象的显示大小调整网格质量。屏幕上包含 10 个像素的球体的渲染网格所拥有的多边形少于包含 100 个像素的球体所拥有的多边形。该视图保持相同的显示精度。 
+                        <p><a name="WS73099CC142F48755-385A98B012180D20F19-3807"></a>使用这种方法，“面弦”、“边弦”和“最大边”值（参见下文）根据像素数进行定义。例如，如果希望与精确曲面的最大偏差为半个像素，则应在选中“视图依赖近似”的情况下将“面弦”设置为 0.5。此选项也可称为智能网格生成，因为它重新生成了网格以使显示质量保持不变。
+                           
+                        </p> 
+                     </li>
+                     <li> <em class="strong">大小依赖近似</em>每次生成同样数目的多边形。渲染网格中多边形的数量取决于对象的实际大小而不是它在视图中的显示大小。 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-309FD8A4-BCDC-4CB9-904F-72FCFEEA09D6"></a><p class="title"><a name="GUID-21D224E9-5B73-4089-AB25-D58F5E2A67F6"></a>“渲染网格质量预设”组
+                  </p>
+                  <p><a name="WS73099CC142F48755-385A98B012180D20F19-3805"></a>选择一个自动确定其余“渲染近似”设置的总体设置。默认选择“产品级”，大多数时候可提供无多边形人工品痕迹的高渲染质量。有时您可能必须进行进一步调整。 
+                  </p><a name="WS73099CC142F48755-385A98B012180D20F19-3804"></a><ul>
+                     <li> <em class="strong">草图级</em>最低质量网格生成；生成最少的多边形。 
+                     </li>
+                     <li> <em class="strong">优良</em>中等质量网格生成。 
+                     </li>
+                     <li> <em class="strong">产品级</em>最高质量网格生成；生成最多数量的多边形。 
+                     </li>
+                  </ul>
+               </div>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-385A98B012180D20F19-38A4"></a><span class="term"><a name="WS73099CC142F48755-385A98B012180D20F19-38A3"></a>面近似角度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-385A98B012180D20F19-38A2"></a> 每对多边形面的最大角度。这对面之间角度大于该值的面将被细分为多个多边形。减小该值将增加网格分辨率。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-385A98B012180D20F19-3800"></a><span class="term"><a name="WS73099CC142F48755-385A98B012180D20F19-37FF"></a>边近似角度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-385A98B012180D20F19-37FE"></a> 与“面近似角度”类似，但定义了一条多边形边的最大角度。默认值 0.0 会禁用此设置。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-385A98B012180D20F19-37FC"></a><span class="term"><a name="WS73099CC142F48755-385A98B012180D20F19-37FB"></a>面弦 %/像素</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-385A98B012180D20F19-37FA"></a> 弦高定义为网格和实际精确几何体之间的最大绝对误差。 
+                        <p><a name="WS1A9193826455F5FF-E569A0121D1945C08-354A"></a>使用“大小依赖近似”选项时，此百分比基于对象的大小，使用“视图依赖近似”时，此百分比基于屏幕上的像素数。调整“面弦”值是增加网格质量而不会获得过多多边形的首选方法。&nbsp; 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-385A98B012180D20F19-37F8"></a><span class="term"><a name="WS73099CC142F48755-385A98B012180D20F19-37F7"></a>边弦 %/像素</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-385A98B012180D20F19-37F6"></a> 与“面弦”类似，但定义了网格和实际边几何体之间的最大绝对错误。默认值 0.0 会禁用此设置。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-385A98B012180D20F19-37F4"></a><span class="term"><a name="WS73099CC142F48755-385A98B012180D20F19-37F3"></a>最大边 %/像素</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-385A98B012180D20F19-37F2"></a> 设置任意网格边的最大长度。使用“大小依赖近似”选项时，单位为对象大小的百分比，使用“视图依赖近似”时，单位为像素数。若要避免超出网格分辨率，请勿使值低于大小的 2% 或低于 10 个像素。
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-626E3EF5-0FC8-467B-91FD-520741C16FDC"></a><p class="title"><a name="GUID-C2C1BFA5-5317-4123-990F-F3F2D53065DE"></a>其他“选项”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-385A98B012180D20F19-37F0"></a><span class="term"><a name="WS73099CC142F48755-385A98B012180D20F19-37EF"></a>焊接并使网格平滑</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-385A98B012180D20F19-37EE"></a> 如果启用，将使网格变得平滑，去除小边和多边形。转换为可编辑网格或可编辑多边形格式时使用此选项。 
+                           <div><a name="WS1A9193826455F5FF-E569A0121D1945C08-1BCC"></a><div class="note-tip"><span class="label label-target-language">提示</span>对于应在平滑组之间显示网格的边的“卡通”类型明暗器，此选项非常有用。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-385A98B012180D20F19-37EC"></a><span class="term"><a name="WS73099CC142F48755-385A98B012180D20F19-37EB"></a>保存渲染网格</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-385A98B012180D20F19-37EA"></a> 如果启用，将在磁盘文件中存储渲染网格以便重新打开模型时可以更快地进行渲染。然而，更改近似设置可能导致软件重新创建渲染网格。 
+                           <p><a name="WS1A9193826455F5FF-E569A012180CE5891-1E42"></a>渲染网格创建速度较快，因此除非您正在渲染具有许多帧的动画并且希望加快处理速度，否则可能不需要使用此选项。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

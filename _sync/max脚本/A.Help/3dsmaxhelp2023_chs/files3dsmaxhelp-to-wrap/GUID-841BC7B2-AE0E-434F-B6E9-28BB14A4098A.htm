@@ -1,0 +1,250 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-841BC7B2-AE0E-434F-B6E9-28BB14A4098A">
+      <meta name="description" content="使用“运动流图”对话框中的工具可以将剪辑添加到图形、计算优化的变换、设置随机脚本变换值、移动和删除剪辑以及显示剪辑的从属关系。在“运动流图”对话框中剪辑和变换显示作为图标。">
+      <meta name="indexterm" content="运动流: 图对话框">
+      <meta name="contextid" content="TOPIC_MOTION_FLOW_GRAPH_DIALOG">
+      <meta name="topic-type" content="concept">
+      <title>运动流图对话框</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-841BC7B2-AE0E-434F-B6E9-28BB14A4098A"></a><div class="head">
+            <h1>运动流图对话框</h1>
+         </div>
+         <div class="abstract"> 
+            <p><a name="GUID-60F78E1E-74B7-469F-A0FE-46D668AE68B4"></a> <img src="../images/GUID-2C783BF0-91D6-4DE5-8C4D-B3359806B739-low.png"> 
+            </p> 
+            <p class="blurb">使用“运动流图”对话框中的工具可以将剪辑添加到图形、计算优化的变换、设置随机脚本变换值、移动和删除剪辑以及显示剪辑的从属关系。在“运动流图”对话框中剪辑和变换显示作为图标。 </p> 
+         </div>
+         <div class="bodyReference"><a name="UL_B0F45C7D82AB47A2ABAD1F9604FB0A2B"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-D65A5875-D1D4-4FEF-812F-E2765D4D375C"> 选择 Biped。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板  <img src="../images/ac.menuaro.gif"> “Biped”卷展栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-1809228C-7301-4A0E-A6F9-A87CDDC0DBF4-low.png">（运动流模式） <img src="../images/ac.menuaro.gif"> “运动流”卷展栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-2C783BF0-91D6-4DE5-8C4D-B3359806B739-low.png">（显示图形） <img src="../images/ac.menuaro.gif"> “运动流图”对话框</span> 
+               </li>
+            </ul>
+            <p><a name="WS73099CC142F487552A50A53111913E7C26F-77CF"></a>单击“运动”面板上<span class="char_link"><a href="GUID-0CC8D6B5-43D0-4C51-B2FD-C0B19EB4D5A8.htm">“运动流”卷展栏</a></span>中的“显示图形”时，将会显示“运动流图”。 
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF1654C"></a>在“运动流”模式下，第一步是在“运动流图”中添加剪辑，以供在脚本中使用。剪辑代表所有或部分 BIP 文件。脚本表示经过“运动流图”中剪辑的不同路径。当前脚本中的第一个剪辑以红色显示。变换以两个剪辑之间的箭头显示，红色箭头表示经过活动脚本的路径。黑色变换箭头表示已卸载的脚本。循环回相同剪辑的变换代表的是一个循环。
+               
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF1654D"></a>如果 Biped 正使用共享的运动流，那么图形窗口的标题就会显示“*共享*运动流图”，其后跟随了共享运动流的名称。使用“共享运动流”，可以通过一个共享的运动流控制多个 Biped。 
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF1654E"></a>默认情况下，最小运动损失用于计算变换。优化的变换使用了一种最小化脚步滑动的算法。优化的变换虽然延长了计算时间，但是能够产生非常高的质量效果。 
+            </p>
+            <div><a name="GUID-AB728CED-ED1E-4679-A83F-2BAABC9A6C36"></a><div class="note-note"><span class="label label-target-language">注意:</span>如何在“运动流图”窗口中进行缩放和平移取决于处于活动状态的<span class="char_link"><a href="GUID-9DF0E9DB-F68E-448D-BB9E-C75CA85B6E70.htm">交互模式</a></span>（3ds Max 或 Maya）。 
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045A77"></a> 
+               <h2><a name="GUID-7B365044-CC57-4260-BE77-2F70C616A266"></a>一个或多个 Biped 的随机脚本
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF1654F"></a>通过使用“运动流”卷展栏“脚本”组中的“创建随机运动”命令来创建随机脚本。随机脚本是在运动流图中随机穿越剪辑所创建的。要使用“创建随机运动”，每个 Biped 必须是在同一个共享运动流中。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16550"></a>要使用共享运动流为多个 Biped 创建随机脚本，第一步就是单击“运动流”卷展栏上的“共享运动流”，然后添加共享一个共享运动流的 Biped。在“运动流图”上，将添加剪辑，并在所有剪辑之间创建变换。然后“创建随机运动”就用来计算所有 Biped
+                  的随机运动。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16551"></a>剪辑和变换被赋予百分比，character studio 利用该百分比生成随机脚本。剪辑和变换的百分比在“剪辑”对话框和“变换编辑器”对话框中设置。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16552"></a>您可以加载许多剪辑并使用“创建所有变换”来创建剪辑之间的所有可能变换。然后可以使用“优化选定的变换”来创建优化的变换。一旦变换被创建，就可以使用优化的变换快速创建脚本或生成 Biped 群体的随机运动。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16553"></a>MFE 文件存储指向剪辑、过渡、参数和脚本的指针。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16554"></a>要为图形添加剪辑，请参见<span class="char_link"><a href="GUID-D7F34432-F9EB-4BC6-A1CE-198E9B204DB6.htm">在运动流图中放置运动</a></span>；要创建随机脚本和变换，请参见<span class="char_link"><a href="GUID-36715372-197C-4175-92B2-AAE37D4E67A3.htm">创建随机运动</a></span>。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-467F"></a> 
+               <h2><a name="GUID-CB4A880B-BC77-444F-9E1E-FFFED5983399"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045A78"></a><div class="figure-anchor"><img src="../images/GUID-45440DE3-92A0-4C91-B229-3B4B68DC9C7B-low.png"></div>  <a name="GUID-1E767D0D-E91B-4BAA-BA7A-B6222F3B3EAD"></a><dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F7D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16555"></a> <img src="../images/GUID-C1F236E0-6331-43EB-8F0B-231BF8454DFB-low.png"> 创建剪辑</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D19"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753644"></a>在对话框窗口中选择并单击此选项可创建剪辑。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16556"></a>该剪辑是空的。右键单击剪辑，使用“选择剪辑”工具来显示<span class="char_link"><a href="GUID-A9CA19B1-FD43-44F3-9628-5A0EEC0DA760.htm">“剪辑属性”对话框</a></span>；然后选择 BIP 文件并在“剪辑属性”对话框中设置其持续时间。在这里也可以设置“随机开始概率”。在生成随机运动流而选择多个剪辑作为可能的开始剪辑时，会用到“随机开始概率”。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E781"></a><div class="note-note"><span class="label label-target-language">注意:</span>为变换设置剪辑持续时间并不是很关键，<span class="char_link"><a href="GUID-1EAB4EED-3700-412A-ADD4-247D252C8702.htm">变换编辑器</a></span>允许在剪辑的任意帧上启动和停止变换。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F7E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16557"></a> <img src="../images/GUID-82D2D3CA-0A22-415D-84AF-A961F1649904-low.png"> 创建多个剪辑</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D1A"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753645"></a>加载多个运动文件。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16558"></a>显示打开文件对话框。选择多个文件并单击“确定”；多个文件便加载到“运动流图”窗口中。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F7F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16559"></a>将最低起脚高度设置为 Z=0（仅限 BIP 文件）</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D1B"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753646"></a>将最低起脚高度设置为 Z=0。这是“加载文件”对话框中的一个选项。默认设置为启用。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF1655A"></a>在 Biped 中，运动剪辑的高度可以保持不变。如果您想保持运动剪辑在根据不同尺寸的角色调整运动时的高度不变，此选项很重要。例如，如果角色正在跳过石头，而您想保持角色的 Z 位置不变，应关闭此选项。如果必须混合开始和结束不在同一高度的运动流运动（如角色登上自行车、骑自行车和从自行车下来这三个剪辑），请将此选项保持关闭。
+                           
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF1655B"></a>但是，关闭此选项可导致在运动流变换期间，运动中出现跳跃。在“运动流”模式下打开此选项可获得平滑的变换效果。如果具有自适应功能，请设置高度，以便帧 0 的最低起脚点高度为 Z=0。这会使剪辑与 Z 轴对齐，从而产生平滑的变换效果。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F80"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF1655C"></a> <img src="../images/GUID-FA806E2E-67F7-4B0B-AE0F-D9EE6EDE2A7E-low.png"> 创建过渡自 -&gt; 到</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D1C"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753647"></a>在两个剪辑之间创建过渡。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF1655D"></a>在“运动流图形”对话框中按住鼠标左键将一个剪辑拖动到另一个剪辑上。单击单个剪辑然后释放鼠标以创建循环变换。利用此功能来创建随机脚本是必要的。可以创建不包含在脚本内的变换。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F81"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF1655E"></a> <img src="../images/GUID-056CDE19-6897-4CF9-98A8-48FBBFB6FB06-low.png"> 创建过渡到 -&gt; 自</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D1D"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753648"></a>在两个剪辑之间创建过渡。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF1655F"></a>在“运动流图”对话框中按住鼠标左键拖动另一个剪辑到某个剪辑上。单击单个剪辑然后释放鼠标以创建循环变换。利用此功能来创建随机脚本是必要的。可以创建不包含在脚本内的变换。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F82"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16560"></a> <img src="../images/GUID-54C347D9-DCEC-4A3E-99FC-5A2C33F54EB1-low.png"> 创建所有过渡</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D1E"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753649"></a>创建每个剪辑之间的过渡，包括循环过渡。选中所有需要变换的剪辑，然后单击“创建所有变换”。该变换不是优化的。用“优化选定的变换”对它进行优化。优化变换虽然耗费时间，但是能够生成高质量。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F83"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16561"></a> <img src="../images/GUID-1F79C310-63C9-4BA5-AEC4-1767239E5743-low.png"> 删除剪辑/过渡</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D1F"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875364A"></a>删除剪辑或过渡。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16562"></a>如果一个脚本依赖于剪辑，对话框就会显示警告；在对话框上单击“确定”就会删除剪辑和依赖于它的脚本。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16563"></a>如果从共享运动流中删除了选定的脚本和变换，那么所有共享该运动流的 Biped 脚本都会被删除，该运动流依赖于被删除的那些剪辑和变换。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F84"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16564"></a> <img src="../images/GUID-036C2909-9EF9-475E-891A-47BBEC74B725-low.png"> 选择剪辑/过渡</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D20"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875364B"></a>选择运动剪辑或过渡。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16565"></a>右键单击剪辑以显示<span class="char_link"><a href="GUID-A9CA19B1-FD43-44F3-9628-5A0EEC0DA760.htm">“剪辑属性”对话框</a></span>。右键单击变换以显示<span class="char_link"><a href="GUID-1EAB4EED-3700-412A-ADD4-247D252C8702.htm">“变换编辑器”对话框</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F85"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16566"></a> <img src="../images/GUID-0F0BC7A1-CAED-431B-AD9E-AB23738B9C8E-low.png"> 移动剪辑</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D21"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875364C"></a>在运动流图中移动剪辑。这并不影响动画。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F86"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16567"></a> <img src="../images/GUID-1EC14D43-00F3-4568-B7CE-4F9AA47B7D7A-low.png"> 平移</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D22"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875364D"></a>平移剪辑的布局。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F87"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16568"></a> <img src="../images/GUID-C933C0C4-D88E-40FE-9868-928922F79FB5-low.png"> 缩放</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D23"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875364E"></a>调整“运动流”窗口的视图放大量。向上拖动可提高放大量。向下拖动可减小放大量。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F88"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16569"></a> <img src="../images/GUID-ACC22474-75F5-464A-8F88-670B4378E88B-low.png"> 缩放区域</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D24"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875364F"></a>单击“缩放区域”模式可拖动矩形区域，并放大该区域以适合“运动流图”窗口。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F89"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF1656A"></a> <img src="../images/GUID-BBABEDFE-4D87-457E-A647-A07447B5C567-low.png"> 适应窗口</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D25"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753650"></a>重新调整内容的大小，以适合“运动流图”窗口的大小。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F8A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF1656B"></a> <img src="../images/GUID-7EA1A918-584B-4CFB-91AB-F9D152D7B83A-low.png"> 保存剪辑文件</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D26"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753651"></a>允许您设置可以存储选定剪辑文件的路径。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F8B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF1656C"></a> <img src="../images/GUID-CF860AAC-3A3C-42F7-B7DF-48F6B965F326-low.png"> 剪辑模式</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D27"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753652"></a>用于为选定的剪辑编辑 Biped 足迹和肢体。使用“关键帧”卷展栏上的“设置关键点”来设置 Biped 肢体关键点。在“剪辑模式”下，剪辑会在“运动流图”窗口中变绿。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F8C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF1656D"></a> <img src="../images/GUID-72954678-5C26-4C64-881A-DC1550429D2F-low.png"> 显示脚本从属对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D28"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753653"></a>显示使用选定剪辑的脚本。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF1656E"></a>如果在共享的运动流图上按“显示脚本从属对象”按钮，那么就会检查所有共享该运动流的 Biped，看它们的脚本是否依赖于选中的剪辑和变换。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F8D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF1656F"></a> <img src="../images/GUID-2AFFC2E5-5FF7-4586-A7DC-C7F7A92D6D83-low.png"> 选择随机开始剪辑</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D29"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753654"></a>在“运动流图”窗口中启动该选项并选择剪辑。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16570"></a>使用 <span class="keyboardEntry">Ctrl</span> 并单击以添加剪辑。选定的节点被“脚本”组中的“创建随机运动”所使用，以从某个选定的剪辑开始（基于百分比）。如果选中三个默认权重为 100 的剪辑，那么每个剪辑都有相等的机会成为开始剪辑。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F8E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16571"></a> <img src="../images/GUID-5C3DD48C-6D97-4729-9F8C-A977AD2A03CF-low.png"> 显示随机百分比</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D2A"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753655"></a>在“运动流图”窗口中显示剪辑和过渡百分比。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16572"></a>随机开始剪辑以紫色显示，并且显示了它们开始某个随机脚本的概率。随机开始剪辑也会显示选择每个变换的概率（0 - 100）。“脚本”组中的“创建随机运动”使用剪辑和变换百分比来生成随机脚本。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F8F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16573"></a> <img src="../images/GUID-260E6678-AD15-4AE3-99C9-DD01FAC5D6FD-low.png"> 优化选定的过渡</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D2B"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753656"></a>选择一个或多个过渡，然后单击“优化选定的过渡”可对它们进行优化。显示<span class="char_link"><a href="GUID-0E1F30CF-A253-41A6-A175-05B10958C43E.htm">“变换优化”对话框</a></span>以设置变换的位置。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16574"></a>优化的变换要耗费时间来行计算。当使用此功能时会显示一个进度条。最小化脚步滑动是优化变换的计算方法。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F90"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16575"></a> <img src="../images/GUID-D029A805-468A-4761-9E2B-E949A895264F-low.png"> 显示最佳的过渡成本</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D2C"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753657"></a>在“运动流图”窗口中显示成本。成本的数值越低，过渡的效果就越好。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F91"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16576"></a> <img src="../images/GUID-7A2DA938-641A-495A-B216-6F6FE6437FAC-low.png"> 检查所有过渡</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D2D"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753658"></a>检查图形看是否存在重叠的过渡以及对于剪辑而言长度过长的过渡。如果存在任何问题会向您发出通知，或是告诉您未发现问题。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1F92"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16577"></a> <img src="../images/GUID-6780020A-B1C4-4009-9B0F-6DCE276A39C0-low.png"> 自动剪辑名称</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443D2E"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753659"></a>根据运动文件的名称命名剪辑。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16578"></a>关闭以自行命名剪辑。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

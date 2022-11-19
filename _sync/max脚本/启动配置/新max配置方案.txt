@@ -1,0 +1,54 @@
+﻿0.安装
+1.安装BonesPro,放置BonesPro脚本
+2.破解
+3.检查BonesPro
+4.关闭破解后打开的max
+
+5.放置启动配置
+6.以管理员模式启动max
+安装杀毒
+7.添加工作脚本按钮
+8.设置右键菜单中的骨骼工具 IK 约束 
+6.设置另存为快捷键ctrl+shift+s,设置另存对象快捷键alt+ctrl+s(默认是保存增量),设置创建关键点为i
+ 增量保存是shift+alt+s 设置另存副本为ctrl+shift+alt+s
+9.设置各启动配置快捷键
+
+10.设置修改器面板 MyModf
+bonespro skin
+skinwrap polyselect
+editMesh editPoly
+editSpline splinerelax
+normalizespline editnormal
+cloth mcloth
+clothgentor linkxform
+symmetry mirror
+
+bonespro skin
+skinwrap editnormal
+editMesh editpoly
+cloth mcloth
+symmetry mirror
+
+bonespro skin
+skinwrap editnormal
+editMesh editpoly
+
+11.添加右键菜单(alt动画菜单,左上角变换的下面,注意这个菜单是倒置的)
+bonetool
+动画-约束
+动画-ik
+倒置
+(
+动画-ik
+动画-约束
+bonetool
+)
+
+12.新建工作文件夹
+12.设置撤销次数 256
+13.设置备份文件30 5
+当前语言 chinese
+安装容灾脚本或启动配置脚本
+添加实用加载器 filein @"F:\我的坚果云\max脚本\工作脚本(抗数据移动)\function\实用加载器.ms"
+
+end.重启max

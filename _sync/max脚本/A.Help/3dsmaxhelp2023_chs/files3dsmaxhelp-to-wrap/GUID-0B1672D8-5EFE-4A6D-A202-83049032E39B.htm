@@ -1,0 +1,176 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-0B1672D8-5EFE-4A6D-A202-83049032E39B">
+      <meta name="description" content="“选定的对象”卷展栏用于控制模拟缓存、使用纹理贴图或插补来控制并模拟布料属性（可选），以及指定弯曲贴图。此卷展栏只在模拟过程中选中单个对象时显示。">
+      <meta name="indexterm" content="布料修改器: 选定对象卷展栏">
+      <meta name="topic-type" content="concept">
+      <title>选定“对象”卷展栏 (布料)</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-0B1672D8-5EFE-4A6D-A202-83049032E39B"></a><div class="head">
+            <h1>选定“对象”卷展栏 (布料)</h1>
+         </div>
+         <p class="blurb">“选定的对象”卷展栏用于控制模拟缓存、使用纹理贴图或插补来控制并模拟布料属性（可选），以及指定弯曲贴图。此卷展栏只在模拟过程中选中单个对象时显示。 </p>
+         <div class="bodyReference"><a name="UL_B0746C0E82C645C7B28A61C41D5141C3"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-BC9270FB-DA7C-45C0-8B1F-2479177D3454">选择对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “布料” <img src="../images/ac.menuaro.gif"> “选定对象”卷展栏</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WS73099CC142F487557F3ACA8D11D5F2B5BAB-7609"></a> 
+               <h2><a name="GUID-920E3C6F-AF79-432B-A6F3-849618FBCA73"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900436DF"></a><div class="figure-anchor"><img src="../images/GUID-DF170D57-32C4-4AC3-AFBC-9FAD229C96FD-low.png"></div>  <a name="GUID-ED7083FC-2F80-4645-8E1D-1ACA102F977E"></a><div class="dl_section"><a name="GUID-543DD85B-FE63-45FA-8C3F-B873DFEA3ABA"></a><p class="title"><a name="GUID-BE8885D7-5A77-4773-BBF8-0003F09CE6C8"></a>“缓存”组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-441E"></a>这些设置用于网络模拟。启用<span class="char_link"><a href="GUID-52F1A597-3471-49E3-8898-EA292544709B.htm#WSF742DAB04106313366400BF6112A1CEA097-7F96">随渲染模拟</a></span>进行渲染时，布料可以在联网的计算机上运行模拟，从而使您的本地计算机可用于其他工作。有关步骤，请参见<span class="char_link"><a href="GUID-1663898B-7C53-4123-9D54-7B7EE843FB92.htm#WS1A9193826455F5FFBA679E112A6A1900436D0">使用联网的渲染处理场运行布料模拟</a></span>。 
+                  </p><a name="WS73099CC142F487557F3ACA8D11D5F2B5BAB-713E"></a><div class="figure-anchor"><img src="../images/GUID-7E862B81-361D-4924-9691-41F88947DC95-low.png"></div>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26E7"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-441D"></a> [文本字段]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AF5"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FA5"></a>显示缓存文件的当前路径和文件名。您可以编辑该字段，但是路径必须存在；如有必要将创建该文件。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-441C"></a>对于任何您没有为其指定文件名的布料对象，布料将基于对象名称创建一个文件名。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26E8"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-441B"></a>强制 UNC 路径</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AF4"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FA6"></a>如果文本字段路径是指向映射的驱动器，则将该路径转换为 <span class="char_link"><a href="GUID-65B76EDE-2219-417F-9BB5-368074115909.htm">UNC 格式</a></span>。从而使该路径易于访问网络上的任何计算机。要将当前模拟中所有布料对象的缓存路径都转换为 UNC 格式，请单击“全部”按钮。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26E9"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-441A"></a>覆盖现有</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AF3"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FA7"></a>启用时，布料可以覆盖现有缓存文件。要对当前模拟中的所有布料对象启用覆盖，请单击“全部”按钮。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26EA"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-4419"></a>设置</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AF2"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FA8"></a>用于指定所选对象缓存文件的路径和文件名。单击“设置”，导航到目录，输入文件名，然后单击“保存”。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26EB"></a><span class="term"><a name="WSF742DAB04106313366400BF6112A1CEA097-7F9C"></a>加载</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AF1"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FA9"></a>将指定的文件加载到所选对象的缓存中。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26EC"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-4418"></a>导入</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AF0"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FAA"></a>打开一个文件对话框，以加载一个缓存文件，而不是指定的文件。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26ED"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-4417"></a>加载所有</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AEF"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FAB"></a>加载模拟中每个布料对象的指定缓存文件。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26EE"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-4416"></a>保存</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AEE"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FAC"></a>使用指定的文件名和路径保存当前缓存（如果有的话）。如果未指定文件，布料会基于对象名称创建一个文件。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26EF"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-4415"></a>导出</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AED"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FAD"></a>打开一个文件对话框，以将缓存保存到一个文件，而不是指定的文件。可以采用默认 CFX 格式或 PointCache2 格式进行保存。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26F0"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-4414"></a>附加缓存</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AEC"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FAE"></a>要以 PointCache2 格式创建第二个缓存，应启用“附加缓存”，然后单击“设置”以指定路径和文件名。在使用“随渲染模拟”进行渲染时也会创建该文件。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-4977AA52-44BE-4458-9962-94ECDC95AC9A"></a><p class="title"><a name="GUID-D4A11EA7-65EA-47D1-80FC-F7B9868D3986"></a>“属性指定”组
+                  </p><a name="WS73099CC142F487557F3ACA8D11D5F2B5BAB-713D"></a><div class="figure-anchor"><img src="../images/GUID-EF64201E-6071-4F44-AD60-C2A65B8FD42C-low.png"></div>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26F1"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-4413"></a> 插入</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AEB"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FAF"></a>在<span class="char_link"><a href="GUID-0067DEB6-968E-4CD8-B019-C0E638CFA151.htm">“对象属性”对话框</a></span>中的两个不同设置（由右上角的“属性 1”和“属性 2”单选按钮确定）之间插入。使用此滑块可以在这两个属性之间设置动画，调整衣服使用的织物设置类型。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26F2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-4412"></a>纹理贴图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AEA"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FB0"></a>设置纹理贴图，对布料对象应用“属性 1”和“属性 2”设置。在此窗口中可以添加灰度纹理贴图，在“对象属性”对话框中设置的两个属性之间混合。黑色将代表属性 1，而白色将代表属性 2。任何灰度值都将在这两个属性之间混合。您可以将纹理贴图拖到此按钮之上。
+                              
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A1900436E0"></a><div class="figure-anchor"><img src="../images/GUID-70BAFEA9-E6F6-4445-B162-9FBA5ED4AEA9-low.png"><p class="figure-title">布料对象的属性 1 为粗麻布材质，属性 2 为丝绸，其属性由方格程序贴图控制</p>
+                           </div>  
+                           <p><a name="GUID-BA575585-4B48-464A-BC54-1932D36B8C4E"></a>（默认情况下，贴图按钮标为“无”。）单击以从<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>中指定位图或贴图。选择完位图或贴图后，该按钮会显示贴图的名称。 
+                           </p> 
+                           <p><a name="GUID-0FCD8278-4040-4BE7-A56F-7A07F5DC08AB"></a>您还可以从“材质编辑器”<span class="char_link"><a href="GUID-4CAB4668-21C1-409A-9426-C874D18B9455.htm">示例窗</a></span>中拖放贴图。如果“<span class="char_link"><a href="GUID-7B51EF9F-E660-4C10-886C-6F6ADE9E8F56.htm">Slate 材质编辑器</a></span>”处于打开状态，则可以从贴图节点的输出套接字拖动，然后放置到该按钮上。也可以从“材质编辑器”中的贴图按钮或 <span class="charspan-msgph">3ds Max</span> 界面中的其他任意位置进行拖放。将贴图放置到置换贴图按钮时，将出现一个对话框，询问您希望该贴图成为源贴图的副本（独立）还是实例。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2B92"></a>要调整置换贴图的参数（例如，要指定位图或更改坐标设置），请将“贴图”按钮拖到“材质编辑器”中，并确保将其作为实例进行放置。在“精简材质编辑器”中，将贴图置于未使用的示例窗上。在“Slate 材质编辑器”中，将其置于<span class="char_link"><a href="GUID-77AB42B0-B11F-48BD-8FD7-BBFDF31CD623.htm">活动视图</a></span>上。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26F3"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-4411"></a>贴图通道</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AE9"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FB1"></a>用于指定纹理贴图所要使用的贴图通道，或选择要用于取而代之的顶点颜色。在与 <span class="charspan-msgph">3ds Max</span> 中的新绘制工具结合使用时，顶点颜色特别有用。您可以直接在对象上绘制顶点颜色，并将绘制的区域用于材质分配。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-4B8CDEEC-9CED-44C9-BB1E-62E7727F1E81"></a><p class="title"><a name="GUID-EA8BBA5E-527D-40C6-BEAF-49C43996F7E2"></a>“弯曲贴图”组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4410"></a>“弯曲贴图”选项用于使用纹理贴图、贴图通道或顶点颜色来调整目标弯曲角度。此项的价值在于您可以绘制布料的变形或使用一些种类的噪波贴图来添加布料的不规则性。 
+                  </p><a name="WS73099CC142F487557F3ACA8D11D5F2B5BAB-713C"></a><div class="figure-anchor"><img src="../images/GUID-053387D5-4DC0-4C67-8D70-818086E0130B-low.png"></div><a name="GUID-1259B77A-135C-40B8-9CDA-3333921B4ADF"></a><dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26F4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-440F"></a> 弯曲贴图</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AE8"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FB2"></a>切换“弯曲贴图”选项的使用。 
+                           </p> 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-440E"></a>使用数值设置调整的强度。在大部分情况下，该值应该小于 1.0。范围为 0.0 至 100.0。默认值为 0.5. 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E26F5"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-440D"></a>[贴图类型]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4AE7"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751FB3"></a>选择“弯曲”贴图的贴图类型： 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A1900436E1"></a><ul>
+                              <li> <em class="strong">顶点颜色</em>使用顶点颜色通道来进行调整。 
+                              </li>
+                              <li> <em class="strong">贴图通道</em>使用贴图通道，而不是顶点颜色来进行调整。使用微调器来设置通道。 
+                              </li>
+                              <li> <em class="strong">纹理贴图</em>使用纹理贴图来进行调整。 
+                                 <p><a name="GUID-28171476-EA34-4EFB-BA7B-C0CFB55587A4"></a>（默认情况下，贴图按钮标为“无”。）单击以从<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">材质/贴图浏览器</a></span>中指定位图或贴图。选择完位图或贴图后，该按钮会显示贴图的名称。 
+                                 </p> 
+                                 <p><a name="GUID-39808726-2657-4B53-8473-FE5FD9205406"></a>您还可以从“材质编辑器”<span class="char_link"><a href="GUID-4CAB4668-21C1-409A-9426-C874D18B9455.htm">示例窗</a></span>中拖放贴图。如果“<span class="char_link"><a href="GUID-7B51EF9F-E660-4C10-886C-6F6ADE9E8F56.htm">Slate 材质编辑器</a></span>”处于打开状态，则可以从贴图节点的输出套接字拖动，然后放置到该按钮上。也可以从“材质编辑器”中的贴图按钮或 <span class="charspan-msgph">3ds Max</span> 界面中的其他任意位置进行拖放。将贴图放置到置换贴图按钮时，将出现一个对话框，询问您希望该贴图成为源贴图的副本（独立）还是实例。 
+                                 </p> 
+                                 <p><a name="GUID-DC5B90CD-36F0-4366-B88C-BC1AF66D8BFA"></a>要调整置换贴图的参数（例如，要指定位图或更改坐标设置），请将“贴图”按钮拖到“材质编辑器”中，并确保将其作为实例进行放置。在“精简材质编辑器”中，将贴图置于未使用的示例窗上。在“Slate 材质编辑器”中，将其置于<span class="char_link"><a href="GUID-77AB42B0-B11F-48BD-8FD7-BBFDF31CD623.htm">活动视图</a></span>上。 
+                                 </p> 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-3A3B197F-8953-46A6-ACD8-0F46F3015E25">
+      <meta name="description" content="“粒子流碰撞图形”是世界空间修改器 (WSM)，它可以使标准网格对象作为粒子导向器参与 MassFX 模拟。用法很简单：将修改器应用于应使粒子偏转的所有对象，然后将修改的对象作为导向器添加到“mParticles 碰撞”测试中。">
+      <meta name="topic-type" content="concept">
+      <title>“粒子流碰撞图形 (WSM)”修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-3A3B197F-8953-46A6-ACD8-0F46F3015E25"></a><div class="head">
+            <h1>“粒子流碰撞图形 (WSM)”修改器</h1>
+         </div>
+         <p class="blurb">“粒子流碰撞图形”是世界空间修改器 (WSM)，它可以使标准网格对象作为粒子导向器参与 MassFX 模拟。用法很简单：将修改器应用于应使粒子偏转的所有对象，然后将修改的对象作为导向器添加到<span class="char_link"><a href="GUID-1F58D18B-1FD5-411D-B973-8B0CF38E9EF2.htm">“mParticles 碰撞”测试</a></span>中。 
+         </p>
+         <div class="bodyReference"><a name="UL_C1FB323FD4454DE8967B6CA8FD549495"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-0C20D81E-8C8B-47A4-AA19-AC3C8B23DBE9">选择一个或多个对象  <img src="../images/ac.menuaro.gif"> “修改”面板 <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “世界空间修改器”部分  <img src="../images/ac.menuaro.gif">  单击“粒子流碰撞图形(WSM)”。</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-73497B5C-6217-4840-A32C-CD34AED69B92"></a> 此外，可以使用“mParticles 粘合”将粒子绑定到导向器。但是，同样地，导向器必须在与“mParticles 粘合”测试相同的事件中由“mParticles 碰撞”测试指定。 
+            </p>
+            <div><a name="GUID-A36BB1B0-8F34-4BC5-90BF-FE19B454868F"></a><div class="note-note"><span class="label label-target-language">注意:</span>“粒子流碰撞图形”使用基本体对象以及采用可编辑多边形和可编辑网格格式的对象。但是，它在内部使用可编辑网格格式，以便充分利用其功能，并将其与可编辑网格对象一起使用。尤其是，您可以使用可编辑网格功能来隐藏边，以控制“已设置动画的曲面”选项创建多边形基本体的方式。
+                  
+               </div>
+            </div>
+            <div><a name="GUID-19B03C78-1B3B-4522-86A8-39C95A909042"></a><div class="note-note"><span class="label label-target-language">注意:</span>应用此修改器的对象可以在模拟中与粒子交互，但对象之间不会相互交互。如果希望不同网格对象在模拟中彼此交互，请将其设置为使用<span class="char_link"><a href="GUID-5724EF7F-DFBD-418E-9A99-6D45FF81DB08.htm">“出生组”操作符</a></span>充当粒子。 
+               </div>
+            </div>
+            <div class="section"><a name="AA1008156"></a> 
+               <h2><a name="GUID-DDCD0568-3DA8-4641-9C10-D659A0A66402"></a>界面
+               </h2> <a name="FIG_C8DCA4D54AED4C3A9714EB431BB9E1CF"></a><div class="figure-anchor"><img src="../images/GUID-6432AB87-6E8B-49AD-873E-32498DA40BD1-low.png"></div>  
+               <p><a name="GUID-DFA773BE-5570-4724-BA7C-4E81DBE1E1D9"></a></p> <a name="GUID-443A2268-3072-42A6-9F71-D32B3986EEE9"></a><dl>
+                  <dt><a name="GUID-86291CFA-E128-48B0-82FF-981F0ED686C4"></a><span class="term"><a name="GUID-04D1ABCF-EA39-44AF-A229-BDB7F4ADCBC5"></a>激活</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-962AD561-AD6C-4827-9B51-BFE9B330C851"></a> 单击以修复该导向器网格的参数，并使其可用于模拟。激活将保持启用状态，直到您再次单击该按钮将其禁用。禁用该选项可更改“碰撞图形”测试以及碰撞网格对象和它应用的任何其他修改器的参数。禁用时，对象不可用于 MassFX 模拟。 
+                        <div><a name="GUID-9F968B4D-9B98-4F40-9A8B-9C672191F94E"></a><div class="note-note"><span class="label label-target-language">注意:</span>将“图形”（请参见下文）设置为“已设置动画的曲面”选项后，只有当启用三个主要“碰撞基本体位置”选项（“顶点”、“边”和“面”）中的一个或多个时，“激活”选项才可用。有关详细信息，请参见下文中的“碰撞基本体位置”组。 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-4F20CF61-7538-48B2-8E95-BFFF6F32EA88"></a><span class="term"><a name="GUID-1531D76B-29F7-4110-BFCE-6748C8151C75"></a>图形</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-836068F4-D51D-4A03-98E7-A77AE9349616"></a>选择 mParticles 用于碰撞的图形。此图形会自动应用到对象，并且当启用“可视化碰撞图形”时可见。选项如下：“已设置动画的曲面”、“长方体”、“胶囊”、“凸面外壳”、“几何体”、“平面”和“球体”。 
+                        <p><a name="GUID-62EDFBED-9FC0-461E-AA60-D3007F521940"></a> 对于其图形在动画过程中发生变化的对象，请使用“已设置动画的曲面”选项；例如，使用“噪波”修改器设置动画的平面。默认情况下，当您选择此选项时，视口和渲染输出中仅显示已激活用于碰撞的子对象。有关详细信息，请参见下文中的“碰撞基本体位置”组。 
+                        </p> 
+                        <div><a name="GUID-4BC37199-F520-4CE2-8A09-5F2CDD906C4C"></a><div class="note-note"><span class="label label-target-language">注意:</span>“凸面外壳”图形最多可以包含 255 个面。如果尝试将其与凸面外壳包含超过 255 个面的对象一起使用，例如默认的“球体”基本体，将显示一条消息，通知您该软件无法创建凸面网格几何体。如果发生这种情况，请简化网格图形或使用不同的“图形”设置。 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+               </dl> <a name="GUID-094B6D7E-FFED-494F-AF17-9BDD4E765D4C"></a><dl>
+                  <dt><a name="GUID-E5E3B6A2-4C2C-46B3-84B6-2BC62D507485"></a><span class="term"><a name="GUID-65911E97-3B32-4661-BC5F-6174DCE2BED4"></a>平滑曲面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-45605E1C-B0A6-4DA7-8970-08F03ED2493F"></a> 定义将碰撞图形用于模拟的方式。禁用时，模拟引擎将认为该图形具有“锐化”的边。启用时，图形将被视为近似平滑图形。因此，撞击它的粒子可以在具有类球体属性的曲面上滚动。 
+                        <div><a name="GUID-54207782-373F-4483-840A-6EA56F849476"></a><div class="note-note"><span class="label label-target-language">注意:</span>“平滑曲面”仅当动态球体在由三角形组成的导向器上滚动时适用。因此，通常仅在以下情况下使用“平滑曲面”选项：<span class="char_link"><a href="GUID-2193B625-E0E0-4908-B566-6214952086E2.htm">mParticles 图形</a></span> <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“碰撞为”设置为“球体”，“粒子流碰撞图形”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“图形”设置为“凸面外壳”或“几何体”。在上述条件下，使用“平滑曲面”可使模拟更稳定。否则，请保持禁用状态。 
+                           </div>
+                        </div> 
+                        <p><a name="GUID-F4221302-6464-4A42-8D22-1E0F18074C53"></a>有关显示“平滑曲面”选项效果的视频，请参见<span class="char_link"><a href="GUID-E1068BE9-3F15-4350-A85F-EE418163DABC.htm">“粒子流碰撞图形 (WSM)”修改器视频</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-7852C81F-8C9D-4DC8-AACA-D8D95AB9B5F4"></a><p class="title"><a name="GUID-8D20D426-BFB4-4F08-8BBF-236D113FA455"></a>“反弹和摩擦力”组
+                  </p>
+                  <div><a name="GUID-43C0EACE-46D1-4F5E-A26E-50850A39C93C"></a><div class="note-note"><span class="label label-target-language">注意:</span>这些设置将决定在模拟中导向器如何与粒子交互（在孤立时无意义）。为了确定交互的实际值，该软件采用交互元素的属性平均值。 
+                     </div>
+                  </div><a name="GUID-09AB0660-674F-4E26-86D2-2FE39AE43A93"></a><dl>
+                     <dt><a name="GUID-79A1D1DC-39D1-45AD-B60E-187D9ACD2B94"></a><span class="term"><a name="GUID-89E2A221-A652-4AD0-B43D-DF6FC96EFA05"></a>恢复系数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-8CE5B7F8-7D63-4068-9C60-C5227B54A341"></a>每个粒子在碰撞后保留的能量。通常这会产生反弹效果。将其设置为最大值 1.0 可能会导致满足“牛顿第三定律”：每一个作用力都有一个大小相等、方向相反的反作用力。 
+                           <p><a name="GUID-A625DD3D-3BDE-4066-9B64-87FB3997D28C"></a>当“恢复系数”接近 1.0 时，反弹效果会很明显，但结果是碰撞期间消耗的能量并不多，且动力学解决方案可能缺乏稳定性。如果碰撞对象比较少，并且它们也未捆绑在一起时，则使用接近于 1.0 的值会有一定风险。 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-AF1A6E5D-1814-4691-AD9D-376FFCD3B6F3"></a><span class="term"><a name="GUID-54B5E9AA-A81A-462A-983B-78A60E6BFF3A"></a>静摩擦力</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-AC2E9943-20AC-4C56-B83B-6939A1CBC298"></a> 阻碍两个静止曲面（粒子和碰撞图形）之间运动的力。 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-BC4D3B1A-BB80-4290-B586-7034E6A8523A"></a><span class="term"><a name="GUID-7B577EB2-4E92-4A45-98DA-65F1F58D23E4"></a>动摩擦力</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-7517EE06-C479-4FE3-914C-98FB3EC5B78C"></a> 阻碍两个移动曲面（粒子和碰撞图形）之间运动的力。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-CD86E001-1FE0-43F5-9032-8CE7F9ADB4CB"></a><p class="title"><a name="GUID-A061D893-A85B-4865-9D21-79986BE3E0E4"></a>“已设置动画的曲面”组
+                  </p>
+                  <p><a name="GUID-4AA7EAD8-D7BF-4E4A-80E3-B324761E7FF9"></a>仅当“图形”设置为“已设置动画的曲面”时，以下设置才可用。 
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-DEB26A38-2B5A-4980-B954-A0ED023BEC7B"></a><span class="term"><a name="GUID-51E3F994-7CBB-4782-9ECF-5DE819C94AC7"></a>厚度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-50AB784D-CA0A-4A09-AA00-A80610479EB4"></a> 碰撞基本体（在“碰撞基本体位置”中设定的子对象；请参见下文）在垂直于几何体曲面的方向上的长度。对于球体碰撞基本体和胶囊，为其直径；对于长方体/凸面外壳，为其厚度。 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-6D33B9B9-64C6-4F7C-B5E9-2786F4082995"></a><span class="term"><a name="GUID-AC8DF6BE-2059-47C3-A6C7-EC3DC2ADEA20"></a>法线偏移</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-124CF84E-4CD7-4A34-87FF-B6D11B4365B9"></a> 在垂直于几何体曲面的方向上移动碰撞基本体。碰撞基本体应该有一定的厚度，才能作为碰撞图形正常工作。由于碰撞基本体的厚度可以偏移视觉碰撞曲面，因此可以通过向内移动基本体，使用负的偏移值弥补该偏移。 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-73838ED1-0A88-4999-80F7-495CE488ABBA"></a><span class="term"><a name="GUID-198BF785-5350-41FE-A06F-8A8ED9FD5E1F"></a>侧面重叠</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-2026D158-5AC5-4D89-8A9F-5B73F7E27C8D"></a> 仅当“碰撞基本体位置”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“面”处于启用状态时可用。该参数定义了“装甲板”基本体在侧面延伸的距离。它允许您在“装甲板”中创建侧面重叠，从而避免粒子穿过已设置动画的碰撞曲面的可能。 
+                           <div><a name="GUID-7C7CB07A-6062-4734-BB5A-328680D89091"></a><div class="note-note"><span class="label label-target-language">注意:</span>由于 MassFX 碰撞基本体是使用曲面多边形创建的，侧面重叠和厚度参数之间存在限制/关联：“厚度”值应至少是“侧面重叠”值的两倍。软件将自动完成这个动作：如果增加“侧面重叠”值，它会检查“厚度”值是否足够大，否则将增加“厚度”值。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-BFA47DF3-EAD0-4A29-83B8-4AB2D15C8BD4"></a><p class="title"><a name="GUID-11CE1128-48D6-46CB-B27D-9800B9161846"></a>“碰撞基本体位置”组
+                  </p>
+                  <p><a name="GUID-7EBD8648-6142-4287-A481-281B34945C57"></a>由于软件在模拟中无法使用任意已设置动画的曲面（例如使用“弯曲”修改器设置动画的细分长方体）作为导向器，通过为一组基础碰撞图形（球体、胶囊和凸面外壳）设置动画，将“图形”设定为“已设置动画的曲面”将启用已设置动画的曲面的近似化。修改器将基于已设置动画的对象的子对象位置，将这些图形自动放置到适当的位置。
+                     
+                  </p>
+                  <div><a name="GUID-197EEC31-B79A-4AFF-B58D-97DF0990FEFD"></a><div class="note-tip"><span class="label label-target-language">提示</span>使用碰撞基本体将改变已设置动画的曲面的外观，但可以通过禁用卷展栏底部的可视化碰撞图形使其不可见（通常用于渲染目的）。 
+                     </div>
+                  </div>
+                  <p><a name="GUID-4C8CC527-8FF5-499A-8A50-AF920D637A43"></a> 使用以下切换可指定软件应使用哪种基础碰撞图形作为已设置动画的碰撞曲面的基础。要调整其大小和相对位置，请使用“厚度”、“法线偏移”、“侧面重叠”设置（请参见上文）。您可以使用以下选项的任意组合： 
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-E55EBEC4-E976-4E4A-835F-D8A14CFEFB9B"></a><span class="term"><a name="GUID-AA1BBCAE-370A-4784-9737-F53739C76A0C"></a>顶点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-E55A46A1-CB31-464A-8A72-45F493B61758"></a>在已设置动画的对象上将球体基本体放置在每个顶点位置。当粒子撞击这些球体中的任意一个时，将检测到碰撞。 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-022D8FE6-D6AC-4D28-92F3-38C60CE3BD3F"></a><span class="term"><a name="GUID-D48A6FD2-B0F3-4205-B4CB-9D18CC841C96"></a>边</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-EC50A07A-C07E-4F4B-AF88-1297EE5335A4"></a>在已设置动画的对象上将胶囊基本体放置在每个边位置。当粒子撞击这些胶囊中的任意一个时，将检测到碰撞。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-02BA82A2-550A-4B56-9EDB-7EF5F2B50525"></a><span class="term"><a name="GUID-497153C9-5ED0-4FDD-953F-48E6110D88C3"></a>多边形</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-8245040D-90EC-45F2-BC2E-E15822A83917"></a> 在已设置动画的对象上将凸面外壳基本体放置在每个多边形位置。当粒子撞击这些外壳中的任意一个时，将检测到碰撞。 
+                           <p><a name="GUID-AABF44BE-8976-4415-A249-083F45523463"></a> 您可以通过隐藏和取消隐藏曲面边以调整多边形配置。请考虑包括的文件 <em class="mild"> <span class="filePath">PFlowCollisionShapeMod02.max</span> </em> 中的示例。碰撞的几何体是一个侧面弯曲的圆柱体。如果在堆栈中禁用“粒子流碰撞图形”和“弯曲”修改器，您可以检查圆柱几何体的视觉效果：一些侧边不可见（注意：仅在使用可编辑网格对象时适用，而在使用可编辑多边形时不适用）。 
+                           </p> 
+                           <p><a name="GUID-20AB36FF-AAC4-4E25-B4FC-59EBA7C2383C"></a> 因此，应用“粒子流碰撞图形”修改器仅创建 18 个碰撞基本体：每个基本体用于几何体的一个多边形，即使该多边形是曲面的也是如此。因此，在几何体曲面上调整可见的边成为控制为“已设置动画的曲面”类型创建的碰撞基本体的图形和数量的一种方式。 
+                           </p>
+                        </div>
+                     </dd>
+                  </dl><a name="GUID-9CDDEF1D-2ACB-4201-A5D3-6A99B807D4BA"></a><dl>
+                     <dt><a name="GUID-47D08469-22AA-4E91-9F08-F0A151605595"></a><span class="term"><a name="GUID-BD335FE3-AA21-4A5E-956C-4802B85F2BA4"></a>仅选定对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-67CB3A17-5960-42EE-99D3-6CD960F6479B"></a>启用时，仅将碰撞基本体放置在选定的子对象的位置。 
+                           <p><a name="GUID-3DA4817F-CDEC-4910-B897-70C636908691"></a> 例如，若要仅在对象的一侧出现碰撞多边形，请将基础对象转换为可编辑网格或可编辑多边形（或应用相应的修改器），转至多边形子对象层级，然后选择粒子应与其发生碰撞的面。然后，在“粒子流碰撞图形”修改器级别，将“图形”设置为“已设置动画的曲面”，然后在“碰撞基本体位置”组中，启用“多边形”和“仅选定对象”。
+                              
+                           </p> 
+                           <div><a name="GUID-379C8608-C914-4676-AC9B-72EAC65BB8F4"></a><div class="note-note"><span class="label label-target-language">注意:</span>尽管可以在可编辑网格对象中选择“面”子对象，粒子流碰撞图形可在多边形层级工作，因此，如果您选择了多边形的一个面，例如在圆柱体末端，修改器将为整个多边形创建一个基本体。 
+                              </div>
+                           </div>
+                        </div>
+                     </dd>
+                  </dl>
+               </div> <a name="GUID-5D660898-147D-4CDD-88CA-9E1E817D5405"></a><dl>
+                  <dt><a name="GUID-57B08004-CF99-421D-9204-4FF02FE152B2"></a><span class="term"><a name="GUID-AC178C98-1787-4903-8E89-26CE623C9B28"></a>碰撞基本体大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-25143663-B11C-4A22-B549-6D70C5223B73"></a>确定已设置动画的曲面的几何体和动画属性如何定义胶囊和面（凸面外壳）基本体的大小。仅当“边”和/或“面”在“碰撞基本体位置”组中启用时可用。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-043491AD-3E6E-4ECA-BCF9-FDA6A31534E5"></a><span class="term"><a name="GUID-77588696-4FCE-4BCE-B762-757B54708DEF"></a>通过当前帧拟合</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-E3661A88-B9D6-42B4-88BA-940A3EEB42CE"></a>当您单击“激活”按钮时，在当前帧中，胶囊和多边形（凸面外壳）基本体的大小由边的长度和多边形的大小决定。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-7CAA294B-66B4-4182-B583-2B7BE2708665"></a><span class="term"><a name="GUID-9926003C-F7B0-400D-93C9-D9C06E559EE3"></a>通过最小化拟合</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-6EAD104C-20DC-4AC4-A02E-FC289E32DC1E"></a>启用时，并且修改器处于非活动状态（即“激活”按钮处于禁用状态）时，您可以在网格上修改和播放动画。由于基本体取决于网格图形，基本体将在考虑到当前修改和动画情况下进行调整以尽可能大，同时仍匹配内部边和面。 
+                        <p><a name="GUID-F905EA0A-E3EE-4564-B716-CE1A975CA2CF"></a>实际上，当您播放动画时，修改器将为所有边和面收集最小值。然后这些最小值将用于构造基本体。这样，在动画的任何帧中，基本体将拟合其基础（边或面）。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-9A2AD80F-BA11-4455-8E0A-44328D029D2A"></a><span class="term"><a name="GUID-0F6158FD-FC46-4A03-88DC-A0FD699CF67D"></a>碰撞基本体</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-9EA35396-5D87-48CA-B5A0-AA7E7FB69370"></a>显示碰撞基本体的数量。该值越大，模拟将越复杂（并且可能越慢）。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-F3E6AB7F-6EBA-476B-8E89-7C99B78A9076"></a><span class="term"><a name="GUID-411621DE-A72D-4C47-93C9-E74ECEF035E4"></a>可视化碰撞图形</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-15583A62-8A3C-466A-B1BD-998F2507CA25"></a>启用时，将以几何体形式显示生成的碰撞基本体。禁用时，将显示原始几何体网格。 
+                        <p><a name="GUID-578BB377-9EEC-45B8-A63D-BE393E1DBECE"></a> 启用状态对于验证修改器所创建的碰撞图形的类型将非常有用，但对于渲染，通常要将此选项设置为禁用状态。 
+                        </p>
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-E1068BE9-3F15-4350-A85F-EE418163DABC.htm">粒子流碰撞图形(WSM) 修改器视频</a></li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

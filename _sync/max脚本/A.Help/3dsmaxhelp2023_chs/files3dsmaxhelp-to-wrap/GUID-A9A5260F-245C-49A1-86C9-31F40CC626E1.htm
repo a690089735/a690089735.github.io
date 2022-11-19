@@ -1,0 +1,121 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-A9A5260F-245C-49A1-86C9-31F40CC626E1">
+      <meta name="description" content="“显示”操作符允许您指定粒子在视口中的显示方式。">
+      <meta name="indexterm" content="粒子: 在视口中显示">
+      <meta name="indexterm" content="粒子: 视口显示">
+      <meta name="indexterm" content="视口显示, 粒子">
+      <meta name="indexterm" content="显示: 显示操作符（粒子流）">
+      <meta name="indexterm" content="粒子流操作符: 显示">
+      <meta name="topic-type" content="concept">
+      <title>显示操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-A9A5260F-245C-49A1-86C9-31F40CC626E1"></a><div class="head">
+            <h1>显示操作符</h1>
+         </div>
+         <p class="blurb">“显示”操作符允许您指定粒子在视口中的显示方式。 </p>
+         <div class="bodyReference"><a name="GUID-4797EF0B-31FD-4A5A-9DEF-F27494709FB7"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-B38C8FC3-D6C1-475B-B8FC-73C1894F2E45">粒子视图  <img src="../images/ac.menuaro.gif">  在某个事件中单击“显示”，或将“显示”操作符添加到粒子系统中，然后选择它。</span> 
+               </li>
+            </ul>
+            <p><a name="WS73099CC142F487552A50A53111913E7C26F-7E8B"></a>默认显示模式是“十字叉”，这种模式最简单，因此显示也最快。这对于使用大量粒子的动画是很有用的。在复杂性上与之相反的是“几何体”选项，它让 <span class="charspan-msgph">3ds Max</span> 以实际形状描述粒子。另外，“显示”操作符还提供多种的简单图形，这些图形在测试动画时能提供快速的反馈，同时也能便于在不同的事件中的粒子之间进行区分。它也允许您设置可见粒子的百分比。 
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6124"></a>默认情况下，“粒子流”在您添加到系统中的每个局部事件中自动插入新的“显示”操作符。您也可以选择“粒子视图”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“选项”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“默认显示”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“全局”。启用该选项后，“粒子流”会在新的全局事件中自动插入“显示”操作符，但不会添加到新的局部事件中。 
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6123"></a>任何不包含“显示”操作符的局部事件中的粒子不会在视口中出现，除非关联的全局事件包含“显示”操作符（即全局“显示”操作符）。如果粒子同时受到多个“显示”操作符（例如，全局和局部操作符）影响，<span class="charspan-msgph">3ds Max</span> 会在同一时间生成所有视口的粒子显示。 
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-6121"></a> 
+               <h2><a name="GUID-C305BC28-3389-46A4-8234-08B96C82D674"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900424C6"></a><div class="figure-anchor"><img src="../images/GUID-CD6521BE-ECDC-43E8-A8D3-6FF150B58A72-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6120"></a>该用户界面出现在“粒子视图”对话框右侧的“参数”面板中。 
+               </p> <a name="GUID-F19C9DF8-909F-415B-84F8-097AEB431241"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63E3"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-611F"></a>类型</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64EA"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752CAC"></a>选择粒子在视口中的显示方式。二维的粒子标记仅描述位置。“几何体”显示粒子在三维中的实际渲染方式；“线”显示运动的速度和方向；“边界框”反映比例和方向。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-611E"></a>在下表中，每个选项的描述之前有一个括号，其中的数字代表每个粒子图像所用的维数： 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A1900424C7"></a><ul>
+                           <li><em class="strong">无</em>粒子不显示在视口中。 
+                           </li>
+                           <li><em class="strong">圆点</em> (0D) 每个粒子显示为单个像素。 
+                           </li>
+                           <li><em class="strong">十字叉</em> (2D) 每个粒子显示为 + 号。 
+                           </li>
+                           <li><em class="strong">圆圈</em> (2D) 每个粒子显示为一个小圆圈。 
+                           </li>
+                           <li><em class="strong">线</em> (1D) 每个粒子显示为一条线，其厚度为一个像素。线的长度指示粒子速度，其方向反映运动方向。当尝试使用“速度”操作符时，使用该选项能获得快速、准确的反馈。 
+                              <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FA3"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果将“线”显示类型用于 OpenGL 显示驱动程序，移动缓慢的粒子在视口中可能显示不正常。在这种情况下，要查看所有粒子，请在同一事件中添加第二个“显示”操作符并将其“类型”设置为“圆点”。 
+                                 </div>
+                              </div> 
+                           </li>
+                           <li><em class="strong">边界框</em> (3D) 每个粒子显示为边界框。使用该选项虽然会牺牲少许计算速度，但能获得最终动画的出色图像。 
+                           </li>
+                           <li><em class="strong">几何体</em> (3D) 每个粒子显示为其实际几何体形。使用该选项虽然会牺牲最多的计算速度，但能获得最终动画的最佳图像。 
+                           </li>
+                           <li><em class="strong">菱形</em> (2D) 每个粒子显示为菱形。 
+                           </li>
+                           <li><em class="strong">长方形</em> (2D) 每个粒子显示为一个小长方形。 
+                           </li>
+                           <li><em class="strong">星号</em> (2D) 每个粒子显示为星号（*）。 
+                           </li>
+                           <li><em class="strong">三角形</em> (2D) 每个粒子显示为一个小三角形。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63E2"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-611D"></a>可见 %</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64E9"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752CAD"></a>指定在视口中可见粒子的百分比。该选项通过减少可见粒子的数量来加快视口重画的速度。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63E1"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-611C"></a>显示粒子 ID</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64E8"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752CAE"></a>启用该项后，在视口中就可以看到每个粒子的唯一索引编号。粒子是按它们的产生顺序编号的，第一个产生的粒子编号为 1，依此类推。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63E0"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-611B"></a>[色样]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64E7"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752CAF"></a>显示粒子和粒子 ID 的颜色，这些粒子是使用除“几何体”之外的选项来显示的。“粒子流”为每一个添加到系统中的“显示”操作符随机选择不同的颜色。与“类型”选项的作用相同，使用不同颜色有助于在不同事件中的粒子之间进行区分。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-611A"></a>要更改颜色，请单击色样并使用“颜色选择器”对话框来选择新颜色。您还可以在事件中单击“显示”操作符上的圆形小色样来更改颜色，无需打开“操作符”卷展栏。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6119"></a>如果系统有全局“显示”操作符（即包含在粒子流源事件中），并且您在视口中选择了系统的“源”图标，就可以从“修改”面板上的色样中更改全局“显示”操作符的颜色。然而，在“粒子视图”中更改全局“显示”操作符的颜色不会更改“修改”面板上的样例的颜色。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FA2"></a><div class="note-note"><span class="label label-target-language">注意:</span>选定了“粒子流源”图标后，除了那些显示为几何体的粒子之外，其所有非选定的粒子在视口中都显示为白色。要查看所有指定的粒子颜色，请取消选择粒子系统。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-63DF"></a><span class="term"><a name="WSF742DAB0410631331C0DB195112A1CEB6FD-7F8A"></a>选定</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-64E6"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752CB0"></a>选择<span class="char_link"><a href="GUID-89DA4474-E8F4-496F-9339-305D8C8E241E.htm#WSF742DAB0410631331C0DB195112A1CEB6FD-7FB6">选定粒子</a></span>在视口中的显示方式。其选项与“类型”的选项相同，请参见上述说明。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-91D030A6-AED4-4F07-B21F-48EEAA6B00C9"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-194DDF64-70E0-4F33-8597-7F2D10DDAB16.htm">渲染操作符</a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

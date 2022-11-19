@@ -1,0 +1,58 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-F50D4659-EBB3-4F57-BFDB-94B407B2784D">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>将 CAT 角色发送到 Maya 或 MotionBuilder (HumanIK)</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-F50D4659-EBB3-4F57-BFDB-94B407B2784D"></a><div class="head">
+            <h1>将 CAT 角色发送到 Maya 或 MotionBuilder (HumanIK)</h1>
+         </div>
+         <p><a name="GUID-3C7D377B-1553-451F-BCD1-4E7E1467D2FD"></a>发送到 Maya 或 MotionBuilder 可将 3ds Max CAT 两足动物角色转换为 Maya 或 MotionBuilder 兼容的 HumanIK 角色。此兼容性可让您将角色结构/定义和动画从 3ds Max 传递到 Maya
+            或 MotionBuilder 中 HumanIK 骨架上的 FK 表示。可以将在 Maya 或 MotionBuilder 中所做的任何更改或创建的任何新动画发送回 3ds Max 中的原始 CAT 角色。然后，您可以继续在 3ds Max
+            场景的上下文中设置动画。 
+         </p>
+         <div class="section"><a name="SECTION_82EE40FFD8DA49A5A44E88ECDF3EEC70"></a> 
+            <h2><a name="GUID-842F93F3-3FE5-477B-A43D-1BBB8AD61270"></a>要将 CAT 角色发送到 Maya 或 MotionBuilder，请执行下列操作：
+            </h2> <a name="OL_9914B43D274647F9971B074D96CC352E"></a><ol type="1" start="1">
+               <li> 在 <span class="charspan-msgph">3ds Max</span> 中，创建 CAT 两足动物，并将其放置为 T 形站姿。 
+                  <div><a name="GUID-77984CDE-F1E1-46F4-9397-E0041F9F1EDC"></a><div class="note-note"><span class="label label-target-language">注意:</span>必须放置为 T 形站姿，以确保在将 CAT 角色传递到 HumanIK 后，它会具有有效的骨架定义。 
+                     </div>
+                  </div> 
+               </li>
+               <li>选择脊椎骨骼，然后转到 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板。 
+               </li>
+               <li>如果需要，将“脊椎控制”更改为“关键帧”。显示警告对话框时，单击“是”。 </li>
+               <li>针对颈部骨骼重复步骤 2 和 3。 </li>
+               <li>选择 CAT 角色，并将其发送到 Maya 或 MotionBuilder：“文件”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“发送到”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“发送到 Maya”/“发送到 MotionBuilder”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“以新场景发送”。 
+                  <p><a name="GUID-8BDFDB3C-1136-4367-9BB3-F3F8891D8392"></a>只选择角色的一个元素会将整个角色发送到 Maya 或 MotionBuilder。 
+                  </p> 
+                  <div><a name="GUID-3D5B24B0-758B-4683-B04A-0C71A3F381D8"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果 CAT 角色不是有效的两足动物，它将被发送到 Maya 或 MotionBuilder，而不具有骨架定义。如果 CAT 角色是带有额外肢体的两足动物，结构的两足部分将转换为 HumanIK (HIK)，而剩余的肢体将转换为简单的关节。 
+                     </div>
+                  </div> 
+               </li>
+               <li>Maya 或 MotionBuilder 会将 CAT 角色加载为 HIK 角色。 
+                  <p><a name="GUID-A7322229-299F-41EA-8183-10174052543C"></a>角色使用有效的骨架定义进行加载，并且在 3ds Max 中创建的任何动画均会烘焙到角色的 HumanIK 骨架或简单关节。现在，您可以在 Maya 或 MotionBuilder 中设置此 HumanIK 角色的动画。 
+                  </p> 
+               </li>
+               <li>若要激活 HumanIK 控制装备，请打开“角色控制”窗口（“窗口”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“动画编辑器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“HumanIK”），然后从“源”下拉列表中选择“控制装备”。 
+                  <p><a name="GUID-8593264A-13B8-4CA0-9C6A-A26F1A15E5E8"></a>若要将动画从另一个 HumanIK 角色重定位到 CAT 角色，请从“源”下拉列表中选择其他 HumanIK 角色。 
+                  </p> 
+               </li>
+            </ol> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-DC03A556-3353-44F5-8B04-58A26F40A4EB.htm">在“CAT 角色”上更新动画</a></li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

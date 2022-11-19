@@ -1,0 +1,116 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-BD1BAA6F-57CE-4622-BE53-AA49EC37FCCF">
+      <meta name="description" content="除了“工作台”和“曲线编辑器”中的四元数曲线之外，您还可以使用 Euler 曲线来控制 Biped 的位置和方向。使用 Euler XYZ 控制器是创建 Biped 动画的一种有效方法，因为可以使用 bezier 切线来更改 XYZ 曲线的插值（四元数曲线没有切线）。要了解 Euler XYZ 和 TCB 旋转控制器两者之间有何不同，请参见 Euler XYZ 旋转控制器。">
+      <meta name="indexterm" content="Euler/切线">
+      <meta name="indexterm" content="四元数/TCB">
+      <meta name="indexterm" content="轴顺序">
+      <meta name="indexterm" content="四元数旋转">
+      <meta name="indexterm" content="Euler 旋转">
+      <meta name="topic-type" content="concept">
+      <title>在 Biped 动画中使用 Euler 曲线</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-BD1BAA6F-57CE-4622-BE53-AA49EC37FCCF"></a><div class="head">
+            <h1>在 Biped 动画中使用 Euler 曲线</h1>
+         </div>
+         <p class="blurb">除了“工作台”和“曲线编辑器”中的四元数曲线之外，您还可以使用 Euler 曲线来控制 Biped 的位置和方向。使用 Euler XYZ 控制器是创建 Biped 动画的一种有效方法，因为可以使用 bezier 切线来更改 XYZ 曲线的插值（四元数曲线没有切线）。要了解
+            Euler XYZ 和 TCB 旋转控制器两者之间有何不同，请参见 <span class="char_link"><a href="GUID-76A80A5B-9440-45A0-AD82-BE5F379C4504.htm">Euler XYZ 旋转控制器</a></span>。 
+         </p>
+         <div class="bodyReference">
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16E6"></a>可以使用<span class="char_link"><a href="GUID-09F0985E-4BF1-4A6D-BB24-9E9C0CB19911.htm">“四元数/Euler”卷展栏</a></span>在 Euler XYZ 和 TCB 旋转控制器之间进行切换。<span class="char_link"><a href="GUID-D3937B87-C8E4-40AC-B4BC-8422A0F66DD8.htm">“曲线编辑器”</a></span>根据选择的控制器显示动画曲线。每条曲线都以以下选项之一开始标记： 
+            </p><a name="WS1A9193826455F5FFBA679E112A6A1900456A2"></a><ul>
+               <li>“……的四元数旋转” </li>
+               <li>“……的切线 Euler 旋转” </li>
+               <li>“……的 TCB Euler 旋转” </li>
+            </ul>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16E7"></a>在 Euler 中可以创建大部分 Biped 部位的动画，如：重心、骨盆、脊椎、头部、颈部、臂部、腿部和尾部。然而，对手指和脚趾的处理是不同的，所有前面的基础链接都作为四元数控制，而任意后续链接都作为 TCB/Euler 控制。手指和脚趾没有切线。
+               
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16E8"></a>只有一个自由度（DOF）的 Biped 肢体，例如前臂和小腿，仅由一条 TCB/Euler 曲线控制。 
+            </p><a name="WS1A9193826455F5FFBA679E112A6A1900456A3"></a><div class="figure-anchor"><img src="../images/GUID-AA4C3518-E4C2-4702-8566-DAC98E40FE96-low.png"><p class="figure-title">切线 Euler 旋转曲线</p>
+            </div>
+            <div style="margin-top: 9pt;"><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6DF"></a><div class="note-note"><span class="label label-target-language">注意:</span>Euler 控制器不支持道具。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16E9"></a>Biped（包括其重心）的旋转曲线无论是否由 Euler 或四元数控制，它们总是设置在局部父空间中。 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16EA"></a>Euler 旋转轨迹的 XYZ 功能曲线是锁定在一起的。这意味着在一个轴上创建一个新的关键点将自动在所有轴上创建关键点。而且，在时间轴上移动一个关键点将带动所有的三个轴。 
+                  </p> 
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900456A4"></a> 
+               <h2><a name="GUID-9F2ABC7A-4C4B-433E-85D1-9270DD91005D"></a>显示位置曲线
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900456A5"></a><div class="figure-anchor"><img src="../images/GUID-ABCDB4CA-40DE-4800-85B0-900F3D54FC1F-low.png"></div>  
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16EB"></a>Bezier 位置曲线仅适用于 Biped 的手部、足部和重心（COM）。手部和足部的位置设置在世界空间中，而重心位置设置在本地空间中。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16EC"></a>下面阐述 FK/IK 关键点混合： 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900456A6"></a><ul>
+                  <li>实线表示 IK 区间。 </li>
+                  <li>线间距表示 FK 区间。 </li>
+                  <li>垂直虚线表示轴点变化。 </li>
+               </ul> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6E0"></a><div class="note-note"><span class="label label-target-language">注意:</span>设置为<span class="char_link"><a href="GUID-F85AA7B6-5462-47AF-80B0-1C4F2D5A47BB.htm">连接到上一个 IK 关键点</a></span>的关键点值被锁定直到下一个没有连接的关键点。 
+                  </div>
+               </div> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6E1"></a><div class="note-tip"><span class="label label-target-language">提示</span>“工作台”与“曲线编辑器”同步，因此从<span class="char_link"><a href="GUID-D3937B87-C8E4-40AC-B4BC-8422A0F66DD8.htm">“工作台工具栏”</a></span>中更改曲线显示也将更新“曲线编辑器”中的显示，并激活了<span class="char_link"><a href="GUID-D3F43BE4-C3CA-4B0F-A418-589CD1CBDCCA.htm">“Biped”工具栏</a></span>中对应的工具。 
+                  </div>
+               </div> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900456A7"></a> 
+               <h2><a name="GUID-63A8F585-B49E-4B5C-9592-1C9C70761ED0"></a>四元数和 Euler 之间的曲线转换
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900456A8"></a><div class="figure-anchor"><img src="../images/GUID-7BF47121-9D9F-49EA-8800-D46DEC9B58A3-low.png"></div>  
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16ED"></a>当动画从一种控制器转换到另一种控制器时，将尽可能地保留其完整性。这意味着除关键点插值结果会有不同之外，关键帧的姿势被保留了。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16EE"></a>如果将四元数旋转曲线转换为 Euler，得到的切线关键点被设为“平滑”。另一方面，如果从 Euler 旋转曲线转换为四元数，那么 bezier 切线插值将尽可能地得到保留。然而，如果插值超出了 TCB 能够匹配的范围，那么将减小插值使其在四元数的限制范围内。
+                  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900456A9"></a><div class="figure-anchor"><img src="../images/GUID-1DA7D15B-F7AD-43CC-950F-09C2AC1C08F6-low.png"><p class="figure-title">Euler 旋转曲线上的极端切线</p>
+               </div>  
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900456AA"></a> 
+               <h2><a name="GUID-5C84B5EF-00E3-41A4-9A9D-AFE4AF425EFC"></a>“层”、运动混合器和“运动流”使用 Euler 动画
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16EF"></a>Euler 切线和四元数 TCB 数据都保存在每一个关键帧中。因此，即便要使用 Euler XYZ 控制器，也可以使用四元数/TCB 控制值（位于 <span class="char_link"><a href="GUID-24693B38-20BD-435D-9816-BE5BDA528506.htm">“关键点信息”卷展栏</a></span>上）来更改曲线的剖面。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16F0"></a>如果对 Euler 控制的 Biped 部位添加新层，那么该层被转换为四元数，直到它与原始层折叠。折叠时，曲线更改回 Euler，遵循上面提到的转换规则。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16F1"></a>当包含 Euler 动画的剪辑送入运动混合器时，Euler 切线在混合过程中得到保留。然而，如果在<span class="char_link"><a href="GUID-D33E0BA6-D19E-4240-A638-17005ECA0673.htm">合成</a></span>中将它们混合，那么得到的动画将变为四元数。 
+               </p> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6E2"></a><div class="note-tip"><span class="label label-target-language">提示</span>创建合成时，可以在<span class="char_link"><a href="GUID-378E7B9E-581A-4FB0-ADAE-4DD2B9DC4140.htm">“混合器首选项”对话框</a></span>中启用“每帧一个关键帧”选项来保留 Euler 切线。 
+                  </div>
+               </div> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16F2"></a>运动流使用的规则同运动混合器。如果送入“运动流”的剪辑含有 Euler 动画，那么它们的切线得以保留。然而，创建统一运动将得到四元数动画。 
+               </p> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6E3"></a><div class="note-tip"><span class="label label-target-language">提示</span>创建统一运动时如果启用“统一选项”对话框中的“每帧一个关键帧”选项，则可以保留 Euler 切线（在<span class="char_link"><a href="GUID-0C3D2B6F-106D-4D26-9CA9-E42285B06917.htm">“运动流脚本”组</a></span>中单击“创建统一运动”）。 <a name="WS1A9193826455F5FFBA679E112A6A1900456AB"></a><div class="figure-anchor"><img src="../images/GUID-8411A8D1-5DBA-457D-B7EB-EA1A2B154EE1-low.png"><p class="figure-title">启用“每帧一个关键帧”选项来保留 Euler 切线。</p>
+                     </div>  
+                  </div>
+               </div> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900456AC"></a> 
+               <h2><a name="GUID-E1EA9498-1C42-44C4-AD7B-6E5366D84898"></a>在 Euler 和四元数曲线间复制和粘贴数据
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16F3"></a>当复制一个轨迹并将其粘贴到另一条轨迹上时，其类型（Euler 或四元数）将同时粘贴上去。有时这会使动画由四元数变为 Euler，反之亦然。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16F4"></a>复制了姿态或姿势的 Euler 切线永远不会被复制。如果将一条 Euler 轨迹复制并粘贴到其他启用了“自动关键点”的任意类型的轨迹上，那么当前的 TCB 或切线值将被忽略并设为默认值（这取决于粘贴到的轨迹类型）。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16F5"></a>按照同样的规则，将姿势或姿态粘贴到启用了“自动关键点”的 Euler 轨迹上时，复制轨迹的 TCB 值也不会传输到 Euler 轨迹上。如果粘贴轨迹前创建了新的关键点，那么得到的切线值将设为默认值。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900456AD"></a><div class="figure-anchor"><img src="../images/GUID-54CA51F0-883D-4B71-ADF0-6EB72D6FD9D1-low.png"></div>  
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900456AE"></a> 
+               <h2><a name="GUID-CFBB45B2-DE22-447B-8052-41C75E998BEF"></a>加载和保存具有 Euler 曲线的 Biped 资源
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16F6"></a>将一个外部 Biped 资源文件（BIP）加载到一个 Biped 上时，它们可能含有不同的动画控制器（例如，一个 Euler 资源加载到了一个四元数 Biped 上）。发生这种情况时，Biped 动画将发生转换，以匹配从 Biped 资源文件中加载的控制器。
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16F7"></a>保存 Biped 资源文件时，Euler 切线和四元数 TCB 控制值都会被保存。 
+               </p> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6E4"></a><div class="note-note"><span class="label label-target-language">注意:</span>虽然这并不会影响整体性能，但可能会稍微影响 Biped 资源文件的大小。 
+                  </div>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

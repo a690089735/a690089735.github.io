@@ -1,0 +1,130 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5737871A-607D-4BEA-8F38-797FB810337D">
+      <meta name="description" content="“出生流”操作符的工作方式与原始粒子流系统中附带的“出生”操作符的工作方式大致相同，具有设置粒子的出生位置（在操作符图标上）和速度的附加能力。它具有这些附加属性，以便能够防止新粒子与现有粒子碰撞，从而为 MassFX 模拟创建最佳条件。">
+      <meta name="topic-type" content="concept">
+      <title>“出生流”操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5737871A-607D-4BEA-8F38-797FB810337D"></a><div class="head">
+            <h1>“出生流”操作符</h1>
+         </div>
+         <p class="blurb">“出生流”操作符的工作方式与原始粒子流系统中附带的“出生”操作符的工作方式大致相同，具有设置粒子的出生位置（在操作符图标上）和速度的附加能力。它具有这些附加属性，以便能够防止新粒子与现有粒子碰撞，从而为 MassFX 模拟创建最佳条件。 </p>
+         <div class="bodyReference"><a name="GUID-EA9A4ACA-4810-4DC6-9E65-8224BE05C11B"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-77EA7380-7E4A-4DAB-8B5B-04B5D739A707">“粒子视图” <img src="../images/ac.menuaro.gif">  添加或选择“出生流”。</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-4B8ECB30-EF02-4239-86E4-461F46DBF8D8"></a> 为了加快测试粒子重叠的速度，操作符将不考虑粒子图形或方向。通过与现有粒子的最短距离（分离）来定义重叠条件。如果操作符确定新粒子将与现有粒子重叠，则可以延迟新粒子的出生。 
+            </p>
+            <p><a name="GUID-B7562575-4E9F-43F4-9C68-3F2EEFB75005"></a>若要使用“出生流”，请将其添加到事件中，或替换粒子系统中的现有出生操作符。添加“出生流”操作符时，将在世界原点 (0,0,0) 创建“出生流”辅助对象。将此图标放置在希望粒子出生的位置。 
+            </p>
+            <p><a name="GUID-948EF865-35D9-4104-9E8C-29BE7D77513C"></a>为了达到最佳效果，如果事件中包含位置类型的操作符，请将其删除。此外，由于该操作符具有内置速度设置，因此事件中不需要速度类型的操作符，除非您希望覆盖“出生流”操作符赋予的速度。 
+            </p>
+            <p><a name="GUID-130D9394-992F-46A4-B19A-435E7DC77DDF"></a>请参见<span class="char_link"><a href="GUID-28D6886A-240B-4BC1-B861-307F0FD47134.htm">出生栅格</a></span>和<span class="char_link"><a href="GUID-5724EF7F-DFBD-418E-9A99-6D45FF81DB08.htm">出生组</a></span>。 
+            </p>
+            <div class="section"><a name="AA1004498"></a> 
+               <h2><a name="GUID-6D658EBC-1D58-4430-B591-6FA410DA484A"></a>界面
+               </h2> <a name="FIG_29669A48347248CBAAD7A52750E3C2AB"></a><div class="figure-anchor"><img src="../images/GUID-B9A51813-EA14-4AF5-A3BA-BC421B2C843C-low.png"></div>  <a name="GUID-76602B8C-455B-47A8-A281-07FDEDE91489"></a><dl>
+                  <dt><a name="GUID-8424C3CD-8B21-428F-9DEE-2FB6F26FD123"></a><span class="term"><a name="GUID-3775B30C-B416-4C71-8A54-233BABFE307A"></a>发射开始</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-8009F3ED-6A81-48E4-B02B-2C33D3475813"></a>操作符开始发射粒子的帧编号。默认设置为 0。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-BAC3F5A7-3AEE-4824-AB6F-9963E4802F39"></a><span class="term"><a name="GUID-93169102-4023-4FB0-B0C0-7B8163912E1C"></a>发射停止</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-060F5199-C792-437E-B682-3E87351E743F"></a>操作符停止发射粒子的帧编号。默认设置为 30。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-6F9AF00B-32D1-4BCF-899B-5E40084B2097"></a><span class="term"><a name="GUID-5959309E-58A8-4387-9296-E6EAA00FEC77"></a>速率</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-1EB4AFED-832B-40CF-9B0C-DC371E4959B3"></a>已发射的粒子数。从“发射开始”帧开始到“发射停止”帧结束，操作符每秒钟将发射此数量的粒子。默认设置为 60.0。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-C4C5C536-827A-4E35-A834-2DA54A17E7C9"></a><span class="term"><a name="GUID-FBE191AE-F5F2-4E5F-80E4-5E0E7BC910CD"></a>总计</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-2B2A4064-0486-45DF-9C7D-3543FD518186"></a>操作符发射的粒子的计算总数。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-70BC2AB3-F553-496B-AAC8-181F5153554F"></a><span class="term"><a name="GUID-2B605217-5118-4736-9DDE-49B341B6B0AB"></a>分离</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-856FDE25-4834-4850-B440-BA7B7E81415D"></a>新粒子和现有粒子之间的最短距离。默认设置为 1.0。 
+                        <div><a name="GUID-AD605556-3CDD-42E3-94DA-B8987ED10E1B"></a><div class="note-tip"><span class="label label-target-language">提示</span>为了达到最佳效果，请保持“分离”值小于“粒子流源图标”组中“宽度”或“长度”值中的较小值的一半。 
+                           </div>
+                        </div> <a name="FIG_18F395F5A0DA4F6D9A73865C438E352B"></a><div class="figure-anchor"><img src="../images/GUID-1B36607F-995D-44EA-9782-CDC279DE81B6-low.png"></div> 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-208C54F4-6C13-4A3B-9EF6-E38BD16DD7B9"></a><span class="term"><a name="GUID-E470A1C7-B0AF-4376-98EC-2C8C27FCBA6D"></a>如果重叠延迟出生</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-F22AF049-7DDB-4764-AFB2-F11F26C93B9B"></a>启用时，如果图标曲面上没有足够的空间用于生成新粒子，则在提供“分离”值的情况下，延迟创建新粒子，从而有效地减慢出生速率。禁用并出现空间冲突时，出生流仅不再生成新粒子，直到有足够的空间为止。 
+                        <p><a name="GUID-DD1A5537-B132-4D69-B8BE-80F3DBE8AF97"></a>启用时，生成的粒子总数将与“总计”字段中显示的数值相同，但是一些粒子可能会在“发射停止”参数指示的帧后生成。禁用时，将在“发射停止”帧之前生成所有粒子，但是生成的粒子总数可能会与“总计”字段中的值有所不同。 
+                        </p> 
+                        <p><a name="GUID-53071235-EE28-44FC-BD3E-6992F219A7D0"></a>有关显示“如果重叠延迟出生”选项效果的视频，请参见<span class="char_link"><a href="GUID-072AB77A-65D9-4673-BA59-D944B3118F29.htm#SECTION_B9833FEFFA004980B0FBC300B056D758">如果重叠延迟出生</a></span>。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-8F3FA1B0-FEA7-4648-81E8-C49CC5682D3F"></a><span class="term"><a name="GUID-C0B136D6-ECE6-4AEF-A048-7B4C3955D2C0"></a>速度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-75EA6A3F-F909-446B-94AF-B4196361B376"></a>操作符发射粒子的速度。默认设置为 300.0。 
+                        <p><a name="GUID-798AE044-1527-4839-9C87-25EFFC0BA123"></a>在使用该设置的情况下，无需在出生事件中使用单独的“速度”操作符，但是如果要覆盖出生流速度值，可以在事件中使用后续“速度”操作符。但是，请注意，该速度是出生流用于计算/预见在当前帧期间内图标曲面上可容纳的粒子数的重要因素。操作符在“垂直”（图标箭头的方向）维度中分布新粒子的位置，以使其更好地适应图标的横截面。如果速度值太小，操作符可用于操作的空间很少，则很可能不会生成新粒子。如果速度值太大，操作符往往会生成比空间实际允许数目更多的粒子。因此，速度值应当与任何后续速度类型操作符的速度值相同。
+                           
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-6CEE067A-F3A3-48CD-9FFF-7B660C6A520A"></a><span class="term"><a name="GUID-9593B9C8-A1AB-408E-89DE-2B0C21BE1A48"></a>继承图标移动</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-9B77ED29-E8E4-4476-B398-044F945B848F"></a>启用时，软件会将每个粒子的运动速率和运动方向设置为粒子出生时图标的速率和方向。禁用时，图标的移动不会影响粒子的移动。默认设置为禁用。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-48D854DD-EAB5-497F-8E8F-6A9EB84C5882"></a><span class="term"><a name="GUID-3783BEC6-03D2-48E3-8255-8BE744DD87BD"></a>倍增</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-84276C70-08E0-4969-A5F6-DD4E1487D81F"></a>确定粒子继承图标运动的程度，以百分比为单位。仅当“继承图标移动”处于启用状态时可用。默认设置为 100。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-2D2E22D0-4838-4CD7-B92D-C6C54F77BF67"></a><span class="term"><a name="GUID-1507CBB5-A779-4A32-A08C-816B457A980D"></a>粒子流源图标</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-04002B8E-CB43-46B4-89AA-B8AA1DF2B467"></a>将粒子流源图标图形设置为矩形或椭圆，然后设置长度和宽度（以世界单位表示）。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-0B8DA93B-3582-442E-BC05-F03CA56E2E5F"></a><span class="term"><a name="GUID-22865DE8-114A-492C-A507-FE66B39B9051"></a>协调颜色</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-777351A6-4526-490A-992C-2E03C34C457B"></a>启用时，粒子流源图标的颜色将与事件中的“显示”操作符颜色相同。
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-46C6F0F1-7E54-46D2-966C-EC723D257931"></a><p class="title"><a name="GUID-45159742-AA24-472D-8C0F-4038EE9031B9"></a>“唯一性”组
+                  </p>
+                  <p><a name="GUID-466914B5-5BDE-420C-A0D0-06B3070853F4"></a>“唯一性”设置确定在图标曲面上随机放置新粒子。如果新位置不满足分离条件，粒子流将拒绝该位置并尝试其他位置。 
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-705737E2-EF69-47BB-97AA-832534418F1C"></a><span class="term"><a name="GUID-157FFB48-3934-4FD1-BD60-14BE6A4BB570"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-5CAFD478-6564-4EBA-9ABB-7E7332BAE51D"></a> 更改生成的随机数序列。
+                        </div>
+                     </dd>
+                  </dl><a name="GUID-FF422E3C-6537-4655-92A2-B008C09D8158"></a><dl>
+                     <dt><a name="GUID-31D42C00-73D2-4CA9-8312-15E8C132B1FD"></a><span class="term"><a name="GUID-A9249AE8-767A-45D7-8F8C-DD193B5612A1"></a>新增特性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-6ED9924D-7946-4D7B-A54A-51F2FE65AD6A"></a>使用随机化公式计算新种子。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-155A6E81-C7B0-4A85-81E2-3CF7418A19B1"></a><span class="term"><a name="GUID-E879B385-0B92-4A41-8D6F-573B804D8CF0"></a>最大尝试次数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-9C6C4D1B-4305-4729-8C97-09CBAD1459CC"></a>尝试生成粒子位置的最大次数，直至被视为无法生成新位置。该值越大，可以创建的流越紧固，但需要额外计算。默认设置为 100。
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-072AB77A-65D9-4673-BA59-D944B3118F29.htm">出生流操作符视频</a></li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

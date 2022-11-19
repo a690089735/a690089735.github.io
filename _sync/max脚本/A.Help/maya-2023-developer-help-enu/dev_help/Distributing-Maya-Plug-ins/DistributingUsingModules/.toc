@@ -1,0 +1,5 @@
+CreatingAModulePackage
+Maya-module-paths-folders-and
+Shared-Libraries
+SampleModuleFile
+InstallingModules

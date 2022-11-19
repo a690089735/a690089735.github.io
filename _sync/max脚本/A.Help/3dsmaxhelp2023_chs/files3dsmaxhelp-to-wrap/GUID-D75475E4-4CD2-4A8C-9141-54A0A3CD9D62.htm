@@ -1,0 +1,394 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D75475E4-4CD2-4A8C-9141-54A0A3CD9D62">
+      <meta name="description" content="“体积光”根据灯光与大气（雾、烟雾等）的相互作用提供灯光效果。">
+      <meta name="indexterm" content="体积光环境效果">
+      <meta name="indexterm" content="环境效果: 体积光">
+      <meta name="indexterm" content="阈值: 噪波">
+      <meta name="indexterm" content="噪波: 噪波阈值">
+      <meta name="indexterm" content="大气和效果: 大气效果">
+      <meta name="topic-type" content="concept">
+      <title>体积光环境效果</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D75475E4-4CD2-4A8C-9141-54A0A3CD9D62"></a><div class="head">
+            <h1>体积光环境效果</h1>
+         </div>
+         <p class="blurb">“体积光”根据灯光与大气（雾、烟雾等）的相互作用提供灯光效果。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_7CCBC555B6B34FA5B53145FDE8B7B264"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-F82C4C63-209E-477A-9DA4-06DDB2424FB9">默认菜单：“渲染”菜单  <img src="../images/ac.menuaro.gif"> “环境” <img src="../images/ac.menuaro.gif"> “环境和效果”对话框  <img src="../images/ac.menuaro.gif"> “环境”面板  <img src="../images/ac.menuaro.gif"> “大气”卷展栏  <img src="../images/ac.menuaro.gif"> “添加” <img src="../images/ac.menuaro.gif"> “体积光”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-78B8E846-7EAF-445F-B50B-8C0FDE7F7222">Alt 菜单：“渲染”菜单  <img src="../images/ac.menuaro.gif"> “环境和效果” <img src="../images/ac.menuaro.gif"> “环境和曝光设置” <img src="../images/ac.menuaro.gif"> “环境和效果”对话框  <img src="../images/ac.menuaro.gif"> “环境”面板  <img src="../images/ac.menuaro.gif"> “大气”卷展栏  <img src="../images/ac.menuaro.gif"> “添加” <img src="../images/ac.menuaro.gif"> “体积光”</span> 
+               </li>
+            </ul><a name="WS1A9193826455F5FFBA679E112A6A19004E68"></a><div class="figure-anchor"><img src="../images/GUID-E54A1BC5-4B37-4F2F-B4F0-4E521EA11BA9-low.png"><p class="figure-title">在包含阴影和噪波的复杂环境中使用的体积光。</p>
+            </div>
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AE8"></a> 此插件提供泛光灯的径向光晕、聚光灯的锥形光晕和平行光的平行雾光束等效果。如果使用阴影贴图作为阴影生成器，则体积光中的对象可以在聚光灯的锥形中投射阴影。 
+               
+            </p><a name="WS1A9193826455F5FFBA679E112A6A19004E6E"></a><div class="figure-anchor"><img src="../images/GUID-CF35AD11-FD2C-4CF7-863F-AA0961D0940E-low.png"><p class="figure-title">右图提供了可以清晰看到灯光锥形的简单示例。</p>
+            </div>
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AE7"></a> 只有摄影机视图和透视视图中会渲染体积光效果。正交视图或用户视图不会渲染体积光效果。 
+               
+            </p>
+            <div><a name="GUID-EB0B7E1B-3F4D-4C02-BEAE-43CBF5F26755"></a><div class="note-note"><span class="label label-target-language">注意:</span>当光度学灯光成为一个投影，其光束不以标准灯光的方式与体积照明效果（如体积雾和体积光）交互。 
+                  
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-5811"></a> 
+               <h2><a name="GUID-1554BCB8-7D45-41FE-B26E-F322D18E44B4"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004E6F"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004E70"></a>要使用体积光，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建包含灯光的场景。 
+                     	 
+                  </li>
+                  <li>创建场景的摄影机视图或透视视图。 
+                     		
+                     <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6D04"></a><div class="note-tip"><span class="label label-target-language">提示</span>避免使观察轴与聚光灯的锥形平行。这样往往只会创建一个褪色的场景，并且可能包含渲染缺陷。 
+                           		
+                        </div>
+                     </div> 
+                  </li>
+                  <li>选择“渲染”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“环境”。 
+                     	 
+                  </li>
+                  <li>在“环境”面板的“大气”下，单击“添加”。 
+                     		
+                     <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AE5"></a>“添加大气效果”对话框将显示。 
+                        		
+                     </p> 
+                  </li>
+                  <li>选择“体积光”，然后单击“确定”。 
+                     	 
+                  </li>
+                  <li>单击“拾取灯光”，然后在视口中选择某个灯光，将该灯光添加到体积光列表中。 
+                     		
+                     <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AE4"></a>也可以使用“拾取对象”对话框从列表中选择多个灯光。单击“拾取灯光”，然后按 <span class="keyboardEntry">H</span> 打开该对话框。 
+                        		
+                     </p> 
+                  </li>
+                  <li>设置体积光的参数。 
+                     	 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A19004E71"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004E72"></a>要将灯光添加到列表中，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>单击“拾取灯光”。 
+                     	 
+                  </li>
+                  <li>在视口中单击该灯光。 
+                     	 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A19004E73"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004E74"></a>要将灯光从列表中移除，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>打开体积光的列表。 
+                     	 
+                  </li>
+                  <li>选择要从中移除体积光效果的灯光。 
+                     	 
+                  </li>
+                  <li>单击“移除灯光”。 
+                     	 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A19004E75"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004E76"></a>要通过“修改”面板为灯光指定体积光，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>打开灯光的“修改”面板。 
+                     	 
+                  </li>
+                  <li>打开“大气和效果”卷展栏。 
+                     	 
+                  </li>
+                  <li>单击“添加”。 
+                     	 
+                  </li>
+                  <li>从“添加大气或效果”对话框中选择“体积光”，然后单击“确定”。 
+                     	 
+                  </li>
+                  <li>从“大气和效果”列表中高亮显示“体积光”，然后单击“设置”调整体积光的参数。 
+                     		
+                     <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6D03"></a><div class="note-note"><span class="label label-target-language">注意:</span>“体积光”不支持负的倍增值。 
+                           		
+                        </div>
+                     </div> 
+                  </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-5810"></a> 
+               <h2><a name="GUID-A703D373-C5CC-49CD-8431-5495AC74B11D"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004E77"></a><div class="figure-anchor"><img src="../images/GUID-E748206C-7733-4E0C-8BD7-64A637DCB72A-low.png"></div>  <a name="GUID-82639D2B-C61D-4951-8F3D-B0E19FB60D02"></a><div class="dl_section"><a name="GUID-321494C5-7D8F-4489-B57F-E16F76DC467E"></a><p class="title"><a name="GUID-D4771544-D54E-43C1-8A56-36B0B371915F"></a>“灯光”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B58"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AE2"></a>拾取灯光</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D4B"></a> 在任意视口中单击要为体积光启用的灯光。 
+                           
+                           <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AE1"></a>可以拾取多个灯光。单击“拾取灯光”，然后按 <span class="keyboardEntry">H</span>。这将打开“拾取对象”对话框，用于从列表中选择多个灯光。 
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B59"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AE0"></a>移除灯光</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D4A"></a> 将灯光从列表中移除。 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-258D4469-8F20-41AB-A6B5-106BA7F852AC"></a><span class="term"><a name="GUID-BF4BAE28-9C83-4CA1-AD6D-E0AA99B1BDB2"></a>[灯光下拉列表]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-79B84A9B-FE88-4973-B967-868CE604BB32"></a>显示已拾取的灯光。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-60A4308E-13AF-4491-8296-66F605B41B6E"></a><p class="title"><a name="GUID-DC97FBA2-88E6-4428-BA48-54CD1D591DE4"></a>“体积”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B5A"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ADF"></a>雾颜色</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D49"></a> 设置组成体积光的雾的颜色。单击色样，然后在<span class="char_link"><a href="GUID-73A38CF6-FE78-443F-BB42-CC8C60449585.htm">颜色选择器</a></span>中选择所需的颜色。 
+                           
+                           <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ADE"></a>通过在启用“自动关键点”按钮的情况下更改非零帧的雾颜色，可以设置颜色效果动画。 
+                              
+                           </p> 
+                           <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ADD"></a>与其他雾效果不同，此雾颜色与灯光的颜色组合使用。最佳的效果可能是使用白雾，然后使用彩色灯光着色。 
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B5B"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ADC"></a>衰减颜色</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D48"></a> 体积光随距离而衰减。体积光经过灯光的近距衰减距离和远距衰减距离，从“雾颜色”渐变到“衰减颜色”。单击色样将显示颜色选择器，这样可以更改衰减颜色。 
+                           
+                           <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ADB"></a>“衰减颜色”与“雾颜色”相互作用。例如，如果雾颜色是红色，衰减颜色是绿色，在渲染时，雾将衰减为紫色。通常，衰减颜色应很暗，中黑色是一个比较好的选择。 
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B5C"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ADA"></a>使用衰减颜色</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D47"></a> 激活衰减颜色。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B5D"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AD9"></a>指数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D46"></a> 随距离按指数增大密度。禁用时，密度随距离线性增大。只有希望渲染体积雾中的透明对象时，才应激活此复选框。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B5E"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AD8"></a>密度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D45"></a> 设置雾的密度。雾越密，从体积雾反射的灯光就越多。密度为 2% 到 6% 可能会获得最具真实感的雾体积。 
+                           <a name="WS1A9193826455F5FFBA679E112A6A19004E7A"></a><div class="figure-anchor"><img src="../images/GUID-1BA999AE-688D-42BF-9C72-3C5DC115AA42-low.png"></div>  
+                           <p><a name="GUID-9F1C3EB4-E370-4054-9155-FF35AD7F7CFE"></a> <em class="strong">左：原始场景</em> 
+                           </p> 
+                           <p><a name="GUID-D4AB09D7-74F0-4D20-BAD7-CDD2BC88BAA3"></a> <em class="strong">右：增加密度</em> 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B5F"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AD7"></a>最大亮度 %</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D44"></a> 表示可以达到的最大光晕效果（默认设置为 90%）。如果减小此值，可以限制光晕的亮度，以便使光晕不会随距离灯光越来越远而越来越浓，而出现“一片全白”。 
+                           
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6D02"></a><div class="note-note"><span class="label label-target-language">注意:</span>注意：如果场景的体积光内包含透明对象，请将“最大亮度”设置为 100%。 
+                                 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B60"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AD6"></a>最小亮度 %</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D43"></a> 与环境光设置类似。如果“最小亮度 %”大于 0，光体积外面的区域也会发光。注意：这意味着开放空间的区域（在该区域，光线可以永远传播）将与雾颜色相同（就像普通的雾一样）。 
+                           
+                           <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AD5"></a>如果雾后面没有对象，若“最小亮度 %”大于 0（无论实际值是多少），场景将总是像雾颜色一样明亮。这是因为雾进入无穷远，利用无穷远进行计算。如果要使用的“最小亮度 %”的值大于 0，则应确保通过几何体封闭场景。 
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B61"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AD4"></a>衰减倍增[衰减倍增]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D42"></a> 调整衰减颜色的效果。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B62"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AD3"></a>过滤阴影</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D41"></a> 用于通过提高采样率（以增加渲染时间为代价）获得更高质量的体积光渲染。其中包括以下选项： 
+                           <a name="UL_74E26B85C954403BAE5AD731AE35C03F"></a><ul>
+                              <li><em class="strong">低</em>不过滤图像缓冲区，而是直接采样。此选项适合 8 位图像、<span class="char_link"><a href="GUID-4AA3608D-BCC2-420E-B096-7A2B25E19B63.htm">AVI</a></span> 文件等。 
+                                 	 
+                              </li>
+                              <li><em class="strong">中</em>对相邻的像素采样并求均值。对于出现条带类型缺陷的情况，这可以使质量得到非常明显的改进。速度比“低”要慢。 
+                                 	 
+                              </li>
+                              <li><em class="strong">高</em>对相邻的像素和对角像素采样，并为每个像素指定不同的权重。这种方法速度最慢，提供的质量要比“中”好一些。 
+                                 	 
+                              </li>
+                              <li><em class="strong">使用灯光采样范围</em>根据灯光的阴影参数中的“采样范围”值，使体积光中投射的阴影变模糊。因为增大“采样范围”的值会使灯光投射的阴影变模糊，这样使雾中的阴影与投射的阴影更加匹配，有助于避免雾阴影中出现锯齿。 
+                                 		
+                                 <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6D01"></a><div class="note-tip"><span class="label label-target-language">提示</span>对于“使用灯光采样范围”选项，灯光的“采样范围”值越大，渲染速度越慢。不过，对于此选项，如果使用较低的“采样体积 %”设置（例如 4），通常可以获得很好的结果，较低的设置可以缩短渲染时间。 
+                                       		
+                                    </div>
+                                 </div> 
+                              </li>
+                           </ul>
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B67"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ACE"></a>采样体积 %</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D3C"></a> 控制体积的采样率。范围为 1 到 10,000（其中 1 是最低质量，10,000 是最高质量）。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B68"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ACD"></a>自动</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D3B"></a> 自动控制“采样体积 %”参数，禁用微调器（默认设置）。预设的采样率如下： 
+                           
+                           <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ACC"></a>“低”为 8；“中”为 25；“高”为 50 
+                              
+                           </p> 
+                           <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ACB"></a>因为该参数最大可以设置为 100，所以，仍有设置得高一些的余地。增大“采样体积 %”参数肯定会减慢速度，但是有时，您可能需要增大该参数（为了获得非常高的采样质量）。 
+                              
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A19004E7B"></a><div class="figure-anchor"><img src="../images/GUID-2F886706-88B7-4C79-B97B-978DADEC523E-low.png"></div>  
+                           <p><a name="GUID-7FBE8166-1466-4EC1-B988-C51958DFCD8A"></a> <em class="strong">左：原始场景</em> 
+                           </p> 
+                           <p><a name="GUID-9FF21EFD-7166-4389-9448-3AA7D9296189"></a> <em class="strong">右：通过增大采样体积提高质量</em> 
+                           </p>
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-AEF0BBA0-42F7-41C2-8D24-A9D608BAD89B"></a><p class="title"><a name="GUID-D0DD7B26-8B7D-42CF-96C6-F746AEF63B01"></a>“衰减”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ACA"></a>此组中的控件取决于单个灯光的“起始范围”和“结束范围”<span class="char_link"><a href="GUID-DCAA85A2-F058-4920-BBFE-DB742FE665A0.htm">衰减</a></span>参数的设置。 
+                     
+                  </p>
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6D00"></a><div class="note-note"><span class="label label-target-language">注意:</span>以某些角度渲染体积光可能会出现锯齿问题。要消除锯齿问题，请在应用体积光的灯光对象中激活“近距衰减”和“远距衰减”设置。 
+                        
+                     </div>
+                  </div>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B69"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AC9"></a>开始 %</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D3A"></a> 设置灯光效果的开始衰减，与实际灯光参数的衰减相对。默认设置为 100%，意味着在“开始范围”点开始衰减。如果减小此参数，灯光将以实际“开始范围”值（即更接近灯光本身的值）的减小的百分比开始衰减。 
+                           
+                           <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AC8"></a>由于通常需要的是平滑衰减，因此，可以将此值保持为 0。这样，无论灯光的实际“开始范围”是多少，始终会获得没有聚光区的平滑光晕。 
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B6A"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AC7"></a>结束 %</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D39"></a> 设置照明效果的结束衰减，与实际灯光参数的衰减相对。通过设置此值低于 100%，可以获得光晕衰减的灯光，此灯光投射的光比实际发光的范围要远得多。默认值为 100。 
+                           <a name="WS1A9193826455F5FFBA679E112A6A19004E7D"></a><div class="figure-anchor"><img src="../images/GUID-E270F39D-BDC1-446C-BD7E-77BED530C02A-low.png"></div>  
+                           <p><a name="GUID-343F15AD-6567-4A51-8D9B-6665AF58EC6A"></a> <em class="strong">左：原始场景</em> 
+                           </p> 
+                           <p><a name="GUID-2ED81969-A90A-489A-9C4E-58C1D1E98D5E"></a> <em class="strong">右：衰减限制灯光范围。</em> 
+                           </p>
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-BEE5A438-D788-435F-ADAF-73C9A70E49AE"></a><p class="title"><a name="GUID-08F2CC73-87A0-40F1-ABA1-907C475DD3E8"></a>“噪波”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B6B"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AC6"></a>启用噪波</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D38"></a> 启用和禁用噪波。启用噪波时，渲染时间会稍有增加。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B6C"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AC5"></a>数量</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D37"></a> 应用于雾的噪波的百分比。如果数量为 0，则没有噪波。如果数量为 1，雾将变为纯噪波。 
+                           <a name="WS1A9193826455F5FFBA679E112A6A19004E7F"></a><div class="figure-anchor"><img src="../images/GUID-A01CEDB2-6816-485E-883B-D464F0404600-low.png"></div>  
+                           <p><a name="GUID-018BD6A8-34F7-472E-991E-7B53C82FBDE4"></a> <em class="strong">左：原始场景</em> 
+                           </p> 
+                           <p><a name="GUID-B8F571E2-FF6F-48EE-AAF0-2B6CA85CC367"></a> <em class="strong">右：添加了噪波</em> 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B6D"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AC4"></a>链接到灯光</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D36"></a> 将噪波效果链接到其灯光对象，而不是世界坐标。 
+                           
+                           <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AC3"></a>通常，您会希望噪波看起来像大气中的雾或尘埃，随着灯光的移动，噪波应该保持世界坐标。不过，对于某些特殊效果，可能需要将噪波链接到灯光的坐标上。在这种情况下，启用“链接到灯光”。 
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B6E"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AC2"></a>类型</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D35"></a> 从三种噪波类型中选择要应用的一种类型。 
+                           <a name="WS1A9193826455F5FFBA679E112A6A19004E80"></a><ul>
+                              <li> <em class="strong">规则</em>标准的噪波图案。 
+                                 	 
+                              </li>
+                              <li> <em class="strong">分形</em>迭代分形噪波图案。 
+                                 	 
+                              </li>
+                              <li> <em class="strong">湍流</em>迭代湍流图案。 
+                                 	 
+                              </li>
+                           </ul> 
+                           <p><a name="GUID-158ED3BD-8AE4-4CB0-8949-7535FCE36CCE"></a><em class="strong">反转</em>反转噪波效果。浓雾将变为半透明的雾，反之亦然。 
+                              
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B70"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AC0"></a>噪波阈值</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D33"></a> 限制噪波效果。如果噪波值高于“低”阈值并低于“高”阈值，动态范围会拉伸到填满。这样，在阈值转换时会补偿较小的不连续（第一级而不是 0 级），因此，会减少可能产生的<span class="char_link"><a href="GUID-BA56C252-4608-43F1-A10B-03F8BF36C834.htm">锯齿</a></span>。 
+                           <a name="WS1A9193826455F5FFBA679E112A6A19004E81"></a><ul>
+                              <li> <em class="strong">高</em>设置高阈值。范围从 0 到 1.0。 
+                                 	 
+                              </li>
+                              <li> <em class="strong">低</em>设置低阈值。范围从 0 到 1.0。 
+                                 	 
+                              </li>
+                           </ul> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B71"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ABF"></a>均匀性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D32"></a> 作用类似高通过滤器：值越小，体积越透明，包含分散的烟雾泡。如果在 -0.3 左右，图像开始看起来像灰斑。因为此参数越小，雾越薄，所以，可能需要增大密度，否则，体积雾将开始消失。范围从 -1 到 1 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B72"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ABE"></a>级别</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D31"></a> 设置噪波迭代应用的次数。此参数可设置动画。只有“分形”或“湍流”噪波才启用。范围为 1 至 6，包括小数值。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B73"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ABD"></a>大小</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D30"></a> 确定烟卷或雾卷的大小。值越小，卷越小。 
+                           <a name="WS1A9193826455F5FFBA679E112A6A19004E82"></a><div class="figure-anchor"><img src="../images/GUID-C5A0942B-D5D0-4356-8AC6-8B76006095DA-low.png"></div>  
+                           <p><a name="GUID-1B3C9156-412A-4857-88BF-592281783630"></a> <em class="strong">左：带噪波的体积光</em> 
+                           </p> 
+                           <p><a name="GUID-029CF6EA-A0BA-431E-9957-0D1A93895762"></a> <em class="strong">右：降低了大小值</em> 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B74"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2ABC"></a>相位</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D2F"></a> 控制风的种子。如果“风力强度”的设置也大于 0，雾体积会根据风向产生动画。如果没有“风力强度”，雾将在原处涡流。因为相位有动画轨迹，所以可以使用“功能曲线”编辑器准确定义希望风如何“吹”。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B75"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AB9"></a>风力强度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D2E"></a> 控制烟雾远离风向（相对于相位）的速度。如上所述，如果相位没有设置动画，无论风力强度有多大，烟雾都不会移动。通过使相位随着大的风力强度慢慢变化，雾的移动速度将大于其涡流速度。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C79E97FC3B76"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-2AB6"></a>风力来源</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-7D2D"></a> 定义风来自于哪个方向。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

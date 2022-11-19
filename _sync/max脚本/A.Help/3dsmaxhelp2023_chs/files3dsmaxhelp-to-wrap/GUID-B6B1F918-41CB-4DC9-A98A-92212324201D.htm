@@ -1,0 +1,102 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B6B1F918-41CB-4DC9-A98A-92212324201D">
+      <meta name="description" content="将修改器应用于多个对象或将修改器从一个对象复制到另一个对象时，将给每一单独对象在堆栈上加载同一修改器。这些是实例化的修改器：它们完全相同，更改任一对象的实例将会更改所有其他实例。">
+      <meta name="indexterm" content="实例化修改器">
+      <meta name="indexterm" content="修改器: 实例化">
+      <meta name="indexterm" content="使唯一: 实例化修改器">
+      <meta name="topic-type" content="topic">
+      <title>使用实例化修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B6B1F918-41CB-4DC9-A98A-92212324201D"></a><div class="head">
+            <h1>使用实例化修改器</h1>
+         </div>
+         <p class="blurb">将修改器应用于多个对象或将修改器从一个对象复制到另一个对象时，将给每一单独对象在堆栈上加载同一修改器。这些是<em class="mild">实例化</em>的修改器：它们完全相同，更改任一对象的实例将会更改所有其他实例。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4684"></a>实例化修改器的名称在堆栈将以<em class="mild">斜体</em>显示。 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A1900434F9"></a><div class="figure-anchor"><img src="../images/GUID-B5A275FE-B4B4-47D2-A187-3E96ED567758-low.png"><p class="figure-title">对象共享一个实例化修改器</p>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900434FA"></a> 
+            <h2><a name="GUID-CEFFEACE-9B97-49CB-9B60-8CE9C002C1D2"></a>识别实例化修改器
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4683"></a>可以快速的删除共享同一修改器的对象轨迹。它是“视图”菜单中一个将对象设置为高亮的选项。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A1900434FB"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900434FC"></a>识别共享实例化修改器的对象：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择带有实例化修改器的对象。在其堆栈中选中实例化修改器。 
+               </li>
+               <li>选择“视图”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“显示从属关系”。其他带有相同修改器实例的对象会以易于区分的颜色显示（默认颜色为紫色）。 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900434FD"></a> 
+            <h2><a name="GUID-F178C8F5-7531-4E80-9158-0B8AB4D49B36"></a>调整实例化修改器
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4682"></a>可通过单个实例更改整个对象集合。这是实例化修改器的主要优点。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A1900434FE"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900434FF"></a>调整实例化修改器：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择共享同一实例化修改器对象集中的任一对象。 
+               </li>
+               <li>在其堆栈中选中实例化修改器。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4681"></a>这将使单个对象高亮并显示整个选择集的正确 gizmos。现在调整此修改器将影响整个集合。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A190043500"></a><div class="figure-anchor"><img src="../images/GUID-8AEEB8B5-3ED6-4157-8104-D9F03524DBF7-low.png"><p></p>
+                     <p class="figure-title">更改一个对象的实例化修改器参数，将更改共享此修改器的所有对象。</p>
+                  </div>  
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043501"></a> 
+            <h2><a name="GUID-5ED342A3-AB83-4C32-AF08-CEF99D86ADD9"></a>使实例化修改器唯一
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4680"></a>在工作的某些点上，可能需要将一个修改器实例转换为仅影响单个对象的局部副本。要完成此操作，请单击“修改”面板中的“使唯一”。此按钮出现在修改器堆栈显示下面。（当在堆栈显示中右键单击实例化修改器名称时，“使唯一”可作为一个弹出菜单选项来使用。） 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190043502"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043503"></a>使一个实例化修改器唯一：
+            </p>
+            <ol type="1" start="1">
+               <li>选择带有实例化修改器的对象。 </li>
+               <li>在其堆栈中选中实例化修改器。 </li>
+               <li>在修改器堆栈显示区域下，单击 <img src="../images/GUID-A25EFF63-D638-4D37-A427-D886EB5C54F7-low.png">（“使唯一”）。此时，修改器名称不再以斜体文字列出，并且如果设置了“显示从属关系”，高亮条目将从其他对象中消失。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-467F"></a>此时，这个修改器将从实例化修改器集合中分离出来。调整这个修改器将不影响其他对象。它们的参数和 gizmo 保持原始数值不变，保持实例化设置不变直到调整它们， 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190043504"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043505"></a>使多个修改器实例唯一：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择共享同一实例化修改器的两个或多个对象。此时，堆栈将显示对象的共同部分。 
+               </li>
+               <li>在堆栈中选中实例化修改器。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-467E"></a>在堆栈中可能有多个实例化修改器。单击要使每一选中对象都唯一的修改器。 
+                  </p> 
+               </li>
+               <li>单击 <img src="../images/GUID-A25EFF63-D638-4D37-A427-D886EB5C54F7-low.png">（“使唯一”）。 
+               </li>
+               <li>单击右键，然后从菜单中选择“使唯一”。此时，修改器名称不在以斜体列出，并且如果设置了“显示从属对象”，高亮条目将从其他对象中消失。 </li>
+               <li>单击“确定”使这两个对象互相独立。单击“否”，这两个对象将继续共享同一实例化修改器，但与原始组中的实例分离。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-467D"></a>这将不再显示此修改器的参数，因为对象不在共享这个修改器。对于每一对象，此时，这个修改器将从实例化修改器集合中分离出来。 
+                  </p> 
+               </li>
+            </ol> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-467C"></a>作为单个对象，其参数和 gizmo 在现在的唯一修改器中保持不变。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190043506"></a><ul>
+               <li>为获得唯一修改器，单独地选择对象。 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E90E"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果对象和修改器都是实例，可在单击“使唯一”前在堆栈中选中其中之一。 
+                     </div>
+                  </div> 
+               </li>
+            </ul> 
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-508764F8-3625-472A-A719-A08A0C083A62.htm">使唯一</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

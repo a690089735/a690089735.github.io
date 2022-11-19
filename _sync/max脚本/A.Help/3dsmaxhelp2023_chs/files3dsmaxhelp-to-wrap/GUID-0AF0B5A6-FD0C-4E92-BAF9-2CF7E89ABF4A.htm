@@ -1,0 +1,65 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-0AF0B5A6-FD0C-4E92-BAF9-2CF7E89ABF4A">
+      <meta name="description" content="“颜色 RGB”控制器将 R、G 和 B 组件拆分到三个单独轨迹中。可将此控制器用于颜色轨迹。在默认情况下，为每个轨迹指定一个“Bezier 浮点”控制器。“Bezier 浮点”控制器是一个参数控制器。">
+      <meta name="indexterm" content="颜色 RGB 控制器">
+      <meta name="indexterm" content="控制器: 颜色 RGB">
+      <meta name="indexterm" content="Point3 XYZ 控制器">
+      <meta name="indexterm" content="控制器: Point3 XYZ">
+      <meta name="indexterm" content="XYZ 控制器">
+      <meta name="topic-type" content="concept">
+      <title>颜色 RGB 控制器（Point3 XYZ 控制器）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-0AF0B5A6-FD0C-4E92-BAF9-2CF7E89ABF4A"></a><div class="head">
+            <h1>颜色 RGB 控制器（Point3 XYZ 控制器）</h1>
+         </div>
+         <p class="blurb">“颜色 RGB”控制器将 R、G 和 B 组件拆分到三个单独轨迹中。可将此控制器用于颜色轨迹。在默认情况下，为每个轨迹指定一个“Bezier 浮点”控制器。“Bezier 浮点”控制器是一个参数控制器。 </p><a name="UL_FD7C4D6E3C22487EA32CBE3784F5AE22"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-B10B8337-BC8D-422F-981F-1290F3E3A120">轨迹视图 <img src="../images/ac.menuaro.gif">  在“轨迹视图”层次中选择材质颜色轨迹（如“漫反射颜色”）。 <img src="../images/ac.menuaro.gif"> 指定控制器  <img src="../images/ac.menuaro.gif">  颜色 RGB</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A190044A34"></a><div class="figure-anchor"><img src="../images/GUID-D1EA13ED-9A96-4A86-BF99-333D8166F2B2-low.png"></div>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E4F6"></a><div class="note-note"><span class="label label-target-language">注意:</span>“颜色 RGB”和“Point3 XYZ”控制器的功能相同，只是它们的轨迹标签分别为 RGB 和 XYZ。可使用 Point3 XYZ 控制器获得“噪波强度”和 FFD 修改器等功能。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-43D6"></a> 
+            <h2><a name="GUID-B4FF4D94-DD87-4808-965B-640E9AD82AA0"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044A3A"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044A3B"></a>示例：要设置渲染的动画背景色的动画，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>打开“轨迹视图 - 曲线编辑器”。 </li>
+               <li>在“轨迹视图”层次中，展开“环境”轨迹，然后高亮显示“背景色”。 </li>
+               <li>在“轨迹视图”工具栏上，单击 <img src="../images/GUID-24FEF330-DFD8-4A0B-8B9D-E34591F0E73D-low.png">（添加关键点）。 
+               </li>
+               <li>沿虚线（值为 0）在帧 0、50 和 100 处添加三个关键点。 
+                  <p><a name="GUID-8895993E-A2E9-495B-8523-9301884253CF"></a>执行此操作的原因是，尽管为轨迹指定了默认控制器（“Bezier 颜色”），但其必须包含动画数据，您才能更改控制器。 
+                  </p> 
+               </li>
+               <li>在中间的关键点上单击鼠标右键，可打开“背景色”对话框。分别将 RGB 关键点的值更改为 <em class="strong">0</em>、<em class="strong">400</em> 和 <em class="strong">0</em>。 
+               </li>
+               <li>在“轨迹视图”中的“编辑”菜单上，选择“控制器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“指定”，然后选择“颜色 RGB”控制器。 
+               </li>
+               <li>展开“背景色”轨迹。 
+                  <p><a name="GUID-48322BCC-8B9A-4830-BE21-6BA6B70E8BCC"></a>现在，您拥有独立的 RGB 轨迹，而不是合并所有三个关键点的单个轨迹。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-43D5"></a>要查看背景色更改，将时间滑块移到正在调整的关键点之处，然后渲染场景。要以动画方式查看颜色更改，需要渲染动画。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-43D4"></a>虽然在值字段中设置大于 255 的值，但在实际中，最大颜色值为 255。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-43D3"></a> 
+            <h2><a name="GUID-F1FB17F8-A6D5-49DA-B152-D54E1B072316"></a>界面
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-43D2"></a>“Bezier 浮点”控制器属性。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190044A3C"></a><div class="figure-anchor"><img src="../images/GUID-EC2BB781-CD26-4DDD-A11E-8E77DCB3FE7D-low.png"></div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-43D1"></a>有关这些参数的说明，请参见 <span class="char_link"><a href="GUID-4E481765-765E-4BD6-918A-C7D72326752F.htm">Bezier 控制器</a></span>。 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

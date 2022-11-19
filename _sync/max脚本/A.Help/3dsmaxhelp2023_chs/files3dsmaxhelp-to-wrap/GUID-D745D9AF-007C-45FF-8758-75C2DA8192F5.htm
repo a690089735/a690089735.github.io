@@ -1,0 +1,49 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D745D9AF-007C-45FF-8758-75C2DA8192F5">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="expert">
+      <meta name="topic-subtype" content="using">
+      <title>示例：通过文本文件进行渲染</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D745D9AF-007C-45FF-8758-75C2DA8192F5"></a><div class="head">
+            <h1>示例：通过文本文件进行渲染</h1>
+         </div>
+         <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49E6"></a>命令行渲染能够设置一系列可迅速重用的常用开关，用于通过“开始”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“运行”渲染单个作业或渲染在 BAT 文件中指定的一组场景。您可以使用任何文本编辑器构建文本文件。 
+         </p>
+         <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6FC5"></a><div class="note-note"><span class="label label-target-language">注意:</span>TXT 文件可以只指定一个要渲染的场景。对于多个场景，应使用 BAT 文件。 
+            </div>
+         </div><a name="WS1A9193826455F5FFBA679E112A6A190042E86"></a><ol type="1" start="1">
+            <li>打开文本编辑器。 </li>
+            <li>输入命令的列表，如： 
+               <div class="codeBlock"><pre>-bitmapPath=\\mapServer\maps\myMaps
+-cam=myCamera
+-width=800
+-height=600
+-vfb=true
+-frames=all
+-force2Sided=true</pre></div> 
+            </li>
+            <li>输入所有开关之后，将文件另存为 TXT 文件，如 <em class="mild">myrender.txt</em>。 
+            </li>
+            <li>要渲染场景，请打开 Windows 的“开始”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“运行”对话框。 
+            </li>
+            <li>输入以下内容： 
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49E5"></a> <em class="strong">“c:\program files\autodesk\[program folder name]\3dsmaxcmd”@c:\myrender.txt -o=“c:\program files\autodesk\[program folder
+                     name]\renderoutput\myImage.tga”“c:\program files\autodesk\[program folder name]\scenes\myscene.max”</em> 
+               </p> 
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49E4"></a>然后单击“确定”。 
+               </p> 
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49E3"></a>将包含偏爱设置的 TXT 文件与指定输出文件格式和选择场景的命令行结合使用，可以为您提供极大的灵活性，每当进行渲染时不必编辑 TXT 文件即可将其重用。您可以创建几个 TXT 文件，这些文件带有用于场景发展不同阶段的设置，如 <em class="mild">testrender.txt</em> 或 <em class="mild">finalrender.txt</em>。 
+               </p> 
+            </li>
+         </ol>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-9678B048-40F5-49D0-8C39-78C78EE34DFB">
+      <meta name="description" content="可以通过提供程序配置文件 ATSProviders.xml 来分别配置资源追踪系统提供程序。">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="administering">
+      <title>过滤文件</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-9678B048-40F5-49D0-8C39-78C78EE34DFB"></a><div class="head">
+            <h1>过滤文件</h1>
+         </div>
+         <p class="blurb"> 可以通过提供程序配置文件 <em class="mild">ATSProviders.xml</em> 来分别配置资源追踪系统提供程序。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2257"></a><em class="mild">ATSProviders.xml</em> 位于 3ds Max 根文件夹的 <em class="mild">\plugcfg</em> 中。3ds Max 可以对该文件进行读操作，但不可以对它进行写操作。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2256"></a>主要的配置功能就是过滤。过滤器定义了 3ds Max 用于决定是否应将文件从提供程序的控制中进行排除的标准。如果文件从提供程序中排除，则该文件就不再发送到提供程序以进行状态检查或其他操作。在同一个管道内使用多个提供程序或 studio 仍为某种特定文件类型使用文件服务器时，该功能非常有用。
+            
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2255"></a>排除文件之后，其图标显示为灰色，而且其信息表示其已经被排除。也可以用“显示排除的文件”选项来切换对话框窗口中排除文件的显示。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2254"></a>3ds Max 附带一个示例过滤器文件 <em class="mild">\plugcfg\ATSProviders_Example.xml</em>，该文件位于 3ds Max 安装文件夹中。该文件包含注释，可以将其加载到文本编辑器中，以查看其工作方式并对其进行编辑。如果将 Autodesk 库用作提供程序，则可以将提供程序字段（在文件开头附近的&lt;提供程序&gt;部分中）重命名为 Autodesk
+            库，如下所示： 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2253"></a>更改： 
+         </p>
+         <div class="codeBlock"><pre>&lt;Name&gt;Sample Provider Name Example&lt;/Name&gt;</pre></div>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2252"></a>为： 
+         </p>
+         <div class="codeBlock"><pre>&lt;Name&gt;Autodesk Vault&lt;/Name&gt;</pre></div>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2251"></a>示例文件的其中一个作用是排除 FX 文件，如下图所示： 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A1900444"></a><div class="figure-anchor"><img src="../images/GUID-4BC4D140-C0C3-4FD7-B7A9-67D8BA287D1F-low.png"></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

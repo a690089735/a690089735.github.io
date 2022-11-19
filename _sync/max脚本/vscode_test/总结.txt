@@ -1,0 +1,37 @@
+安装MXSPyCOM
+
+1.放置MXSPyCOM.exe到某处,放置initialize_COM_server.ms到max的脚本启动目录.
+
+2.在vscode里配置task:终端->运行任务->添加任务->从模板新建任务->其他外部编辑器.然后把
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+       {
+          "label": "Execute Script in 3ds Max",
+          "type": "shell",
+          "command": "C:\\Program Files\\MXSPyCOM\\MXSPyCOM.exe",
+          "args": [
+             "-s",
+             "${file}"
+          ],
+          "presentation": {
+             "echo": false,
+             "reveal": "never",
+             "focus": false,
+             "panel": "dedicated"
+          },
+          "problemMatcher": [],
+       }
+    ]
+}
+这一段复制进去保存.
+
+3.把 "command": "C:\\Program Files\\MXSPyCOM\\MXSPyCOM.exe" 改成自己的文件路径,如果在文件夹里,可以写相对目录 "command": ".\\MXSPyCOM.exe"
+
+4.编辑任意的ms文件,终端->运行任务->Execute Script in 3DS Max.max监听器里会反馈.
+
+5.注意：如果您以管理员权限运行 3ds Max，您还必须以同样的权限运行 MXSPyCOM。否则会发生错误，MXSPyCOM 将无法正确运行。
+
+6.在 Max 2022 中，您需要确保在应用程序首选项中关闭安全脚本执行防护。

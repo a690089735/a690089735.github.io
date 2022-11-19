@@ -1,0 +1,54 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-2FC448F8-68FA-484A-B076-0F14A598201A">
+      <meta name="description" content="动画角色可以作为动力学和运动学刚体参与 MassFX 模拟。使用“动力学”选项，角色不仅可以影响模拟中的其他对象，也可以受其影响。使用“运动学”选项，角色可以影响模拟，但不受其影响。例如，动画角色可以击倒运动路径中遇到的障碍物，但是落到它上面的大型盒子却不会更改它在模拟中的行为。">
+      <meta name="indexterm" content="MassFX: 碎布玩偶概述">
+      <meta name="topic-type" content="concept">
+      <title>碎布玩偶</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-2FC448F8-68FA-484A-B076-0F14A598201A"></a><div class="head">
+            <h1>碎布玩偶</h1>
+         </div>
+         <p class="blurb">动画角色可以作为动力学和运动学刚体参与 MassFX 模拟。使用“动力学”选项，角色不仅可以影响模拟中的其他对象，也可以受其影响。使用“运动学”选项，角色可以影响模拟，但不受其影响。例如，动画角色可以击倒运动路径中遇到的障碍物，但是落到它上面的大型盒子却不会更改它在模拟中的行为。
+            
+         </p>
+         <div class="bodyReference">
+            <div class="section"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6A53"></a> <a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6A52"></a><div class="figure-anchor"><img src="../images/GUID-4D1EAABD-9880-4482-A1CB-6F91372A2A2B-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6A51"></a>MassFX 中的碎布玩偶基本上是为了便于创建和管理刚体。但是，它具有多个重要的便利功能。例如，当骨骼与蒙皮网格相关联时，碎布玩偶可以根据蒙皮顶点生成自定义刚体网格。 
+               </p> 
+            </div>
+            <div class="section"><a name="WSC85FF3233F59DD9D638EAD5212A68A47868-7FE2"></a> 
+               <h2><a name="GUID-55590018-860F-4A61-B4BE-E21E739C639F"></a>创建碎布玩偶
+               </h2> 
+               <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6A48"></a>要创建碎布玩偶，请选择一组链接的骨骼（包括 Biped 和骨骼链）中的任何骨骼，或参考骨骼的网格对象（应用了蒙皮修改器），并调用“创建运动学碎布玩偶”或“创建动力学碎布玩偶”命令（有关详细信息，请参见 <span class="char_link"><a href="GUID-DEA0214B-B371-45CD-B773-FDB18AFE6D3A.htm">MassFX 碎布玩偶</a></span>）。骨骼不一定是人体形状或甚至表示生物。 
+               </p> 
+               <p><a name="GUID-02C87AB5-4965-4042-9F8D-73D5BE52AC51"></a>创建碎布玩偶会产生多个结果： <a name="UL_AD57EE1F2CEB46ADA772ECC6BA2E0AD9"></a><ul>
+                     <li>将碎布玩偶辅助对象添加到场景中。使用此对象可为整个碎布玩偶设置参数，添加和删除骨骼和蒙皮网格等。 </li>
+                     <li>将 MassFX 刚体修改器应用到碎布玩偶中的每个骨骼。刚体类型设置为“动力学”还是“运动学”，具体取决于您创建的碎布玩偶类型。 </li>
+                     <li>在骨骼中每对连续骨骼之间添加 MassFX 约束辅助对象，并且将参数自动设置为碎布玩偶角色的合理起始点。 </li>
+                  </ul> 
+               </p> 
+               <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6A44"></a>“移除碎布玩偶”命令非常便于删除碎布玩偶辅助对象、应用到其骨骼的所有 MassFX 刚体修改器以及所有约束。 
+               </p> 
+            </div>
+            <div class="section"><a name="WSC85FF3233F59DD9D638EAD5212A68A47868-7FE0"></a> 
+               <h2><a name="GUID-3AEE8E6F-7D26-4517-AC9E-0F60301AA4F5"></a>调整碰撞图形和限制
+               </h2> 
+               <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6A3F"></a>可以通过选择骨骼并调整修改器设置来单独编辑由碎布玩偶创建的刚体，就像对任何其他刚体或约束进行编辑一样。您还可以使用碎布玩偶辅助对象界面的“骨骼属性”卷展栏，来对骨骼的公用选项进行批处理设置。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6A3E"></a>要对碎布玩偶中的一个或多个骨骼应用公用设置，请执行以下操作： 
+               </p> <a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6A3D"></a><ol type="1" start="1">
+                  <li>如果不希望将设置应用到整个碎布玩偶，请在“骨骼”组列表中高亮显示一个或多个骨骼。 </li>
+                  <li>在“骨骼属性”卷展栏上，设置所需的物理图形类型，并使用“源”设置来设置刚体是包裹在骨骼周围还是包裹在蒙皮网格周围。 </li>
+                  <li>要仅将更改应用到“骨骼”组列表中高亮显示的骨骼和组，请单击更新选定骨骼按钮；要将更改应用到碎布玩偶中的所有骨骼，请单击“碎布玩偶工具”卷展栏上的更新所有骨骼。 </li>
+               </ol> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

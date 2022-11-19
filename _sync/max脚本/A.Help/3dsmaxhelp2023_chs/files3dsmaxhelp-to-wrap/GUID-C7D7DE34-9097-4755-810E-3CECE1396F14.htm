@@ -1,0 +1,85 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C7D7DE34-9097-4755-810E-3CECE1396F14">
+      <meta name="description" content="即使设置一个小渲染处理场也需要大量的时间。第一步首先应该检查推荐的网络是否满足基本要求。还应该了解是否需要该软件来进行网络渲染。">
+      <meta name="indexterm" content="硬件要求">
+      <meta name="indexterm" content="管理器（网络渲染）">
+      <meta name="indexterm" content="软件要求">
+      <meta name="indexterm" content="网络渲染: server.exe">
+      <meta name="indexterm" content="网络渲染: monitor.exe">
+      <meta name="indexterm" content="要求: 对于网络渲染">
+      <meta name="indexterm" content="服务器设置和管理（网络渲染）">
+      <meta name="topic-type" content="concept">
+      <title>检查要求</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C7D7DE34-9097-4755-810E-3CECE1396F14"></a><div class="head">
+            <h1>检查要求</h1>
+         </div>
+         <p class="blurb">即使设置一个小渲染处理场也需要大量的时间。第一步首先应该检查推荐的网络是否满足基本要求。还应该了解是否需要该软件来进行网络渲染。 </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190042CEA"></a> 
+            <h2><a name="GUID-0480F880-17D2-429B-ABE9-113460E1BD91"></a>硬件要求
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190042CEB"></a><ul>
+               <li>网络上的一台计算机必须拥有经过设置和授权的 <span class="charspan-msgph">3ds Max</span>。该系统用于提交网络渲染作业。 
+               </li>
+               <li>一台计算机运行网络管理器来与渲染服务器进行通信。您可以针对此用途设置网络中的任意计算机。如果此计算机不作为 <span class="charspan-msgph">3ds Max</span> 工作站来运行，则不需要授权。 
+               </li>
+               <li>要安装 <span class="charspan-msgph">3ds Max</span>，至少需要在一台计算机上安装 DVD-ROM 驱动器，以通过网络进行访问。在<span class="char_link"><a href="GUID-3E438F84-34A9-4FA3-B556-232DFEF9E7B0.htm">设置渲染软件</a></span>一节介绍设置网络渲染软件的说明。 
+               </li>
+               <li>其他计算机运行作为渲染服务器。在这些计算机上不需要授权。 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CAD"></a>渲染服务器应该满足运行 <span class="charspan-msgph">3ds Max</span> 的最低要求。为了提高渲染性能，应使用具有更快处理区、额外内存和更多交换空间的计算机。虽然显示器对于进行设置有所帮助，但是渲染服务器在进行渲染时并不需要显示器。显示适配器和加速器对渲染性能没有影响。 
+                  </p> 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190042CEC"></a> 
+            <h2><a name="GUID-27DE148A-1C8E-4A7A-9E66-7E2407C506A1"></a>网络要求
+            </h2> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CAC"></a>有关操作系统的要求，请参见《Autodesk Backburner 安装指南》<em class="mild"></em>中的“系统要求”，网址为 <a href="http://www.autodesk.com/backburner-documentation-chs" target="_blank">www.autodesk.com/backburner-documentation-chs</a>。您必须通过连接到正确安装了 TCP/IP 协议的网络上。请参见 <span class="char_link"><a href="GUID-D676F544-5DEF-42CA-BAF3-EE4E3DA0DB76.htm">为网络渲染配置 TCP/IP</a></span> 的说明。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190042CED"></a> 
+            <h2><a name="GUID-EF9BFD29-CAD6-45BD-B52D-E9D595D0A40E"></a>软件要求
+            </h2> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CAB"></a>至少需要一个 <span class="charspan-msgph">3ds Max</span> 授权副本。使用这个副本，可以在多台计算机上设置 <span class="charspan-msgph">3ds Max</span>，以便进行网络渲染。后面的主题将介绍在每台计算机上自定义设置的细节。在设置过程中，将安装和注册在网络上进行渲染所需的程序。 
+            </p> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CAA"></a>可以使用四个独立的程序来完成网络渲染。以下说明标识这些程序，并介绍了用法概述。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190042CEE"></a><ul>
+               <li> <em class="strong"> <em class="mild">3dsmax.exe</em> </em> 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CA9"></a> <span class="charspan-msgph">3ds Max</span> 将用于启动作业分配。您可以通过“渲染设置”、“渲染到纹理”或“执行 Video Post”对话框来提交网络渲染作业。渲染服务器也可以使用该应用程序来渲染作业。 
+                  </p> 
+               </li>
+               <li> <em class="strong"> <em class="mild">manager.exe</em> </em> 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CA8"></a>运行该应用程序时，会将一台计算机设置为网络管理器。此外，还可以通过安装 <em class="mild">managersvc.exe</em> 将管理器作为一个服务来运行。请参阅<span class="char_link"><a href="GUID-1C1BD670-9AB7-486D-9311-96115CA5CCAD.htm">安装网络服务</a></span>。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CA7"></a>管理器程序管理在对作业进行网络渲染期间与渲染服务器的通信。可以在网络中的任何计算机上对其进行设置。然而，如果要提交大文件，并且将使用大量渲染服务器，那么带有大量磁盘空间的快速计算机是最佳的选择。在几乎所有的网络渲染方案中，整个网络上只能运行一个管理器。
+                     
+                  </p> 
+               </li>
+               <li> <em class="strong"> <em class="mild">server.exe</em> </em> 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CA6"></a>运行此应用程序时，将运行它的计算机设置为渲染服务器。此外，还可以通过安装 <em class="mild">serversvc.exe</em> 将服务器作为一个服务来运行。请参阅<span class="char_link"><a href="GUID-1C1BD670-9AB7-486D-9311-96115CA5CCAD.htm">安装网络服务</a></span>。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CA5"></a>服务器程序将其本地 IP 地址发送到管理器程序，然后注册该服务器，以便其可用于对作业分配进行网络渲染。当服务器从网络管理器接收到一个作业时，它会启动 <span class="charspan-msgph">3ds Max</span> 的本地副本来执行渲染。然后，服务器将完成的帧发送到目标目录，并开始渲染通过管理器发送到它的下一个帧。不在需要时，服务器将关闭 <em class="mild">3dsmax.exe</em><em class="mild"> 3dsviz.exe</em> 进程。 
+                  </p> 
+               </li>
+               <li> <em class="strong"> <em class="mild">monitor.exe</em> </em> 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CA4"></a>此独立程序称为“队列监视器”，可以提供用于监视和计划网络渲染的 Windows 界面。由于“队列监视器”是一个独立程序，因此随时可以从网络中的任意计算机来启动它。唯一的要求是要与运行管理器的计算机建立 TCP/IP 连接。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CA3"></a>您可以在每台渲染服务器上加载“队列监视器”，并将其用于本地监视渲染进度。还可以使用 Windows NT 远程访问来远程连接“队列监视器”。 
+                  </p> 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190042CEF"></a> 
+            <h2><a name="GUID-8C01F6BB-A76B-4180-A614-A0F5531A1FF2"></a>下一步
+            </h2> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4CA2"></a> <span class="char_link"><a href="GUID-2BA7055F-C1CB-41C8-8B31-A5281E5ED566.htm">设置网络渲染</a></span> 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

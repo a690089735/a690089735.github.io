@@ -1,0 +1,33 @@
+<map id="include/ufe/sceneItem.h" name="include/ufe/sceneItem.h">
+<area shape="rect" id="node2" href="$attribute_8h.html" title="include/ufe/attribute.h" alt="" coords="541,162,691,189"/>
+<area shape="rect" id="node3" href="$attributes_8h.html" title="include/ufe/attributes.h" alt="" coords="261,251,416,278"/>
+<area shape="rect" id="node4" href="$attributes_handler_8h.html" title="include/ufe/attributesHandler.h" alt="" coords="5,341,205,367"/>
+<area shape="rect" id="node6" href="$scene_item_utils_8h.html" title="include/ufe/sceneItemUtils.h" alt="" coords="229,341,416,367"/>
+<area shape="rect" id="node7" href="$undoable_command_8h.html" title="include/ufe/undoableCommand.h" alt="" coords="1089,80,1300,107"/>
+<area shape="rect" id="node10" href="$camera_8h.html" title="include/ufe/camera.h" alt="" coords="545,423,689,449"/>
+<area shape="rect" id="node11" href="$camera_handler_8h.html" title="include/ufe/cameraHandler.h" alt="" coords="523,497,712,524"/>
+<area shape="rect" id="node13" href="$transform3d_8h.html" title="include/ufe/transform3d.h" alt="" coords="1381,423,1552,449"/>
+<area shape="rect" id="node14" href="$transform3d_handler_8h.html" title="include/ufe/transform3dHandler.h" alt="" coords="1403,497,1619,524"/>
+<area shape="rect" id="node15" href="$hierarchy_8h.html" title="include/ufe/hierarchy.h" alt="" coords="765,162,920,189"/>
+<area shape="rect" id="node16" href="$hierarchy_handler_8h.html" title="include/ufe/hierarchyHandler.h" alt="" coords="743,251,943,278"/>
+<area shape="rect" id="node17" href="$context_ops_8h.html" title="include/ufe/contextOps.h" alt="" coords="1213,162,1379,189"/>
+<area shape="rect" id="node18" href="$context_ops_handler_8h.html" title="include/ufe/contextOpsHandler.h" alt="" coords="1191,251,1401,278"/>
+<area shape="rect" id="node19" href="$object3d_8h.html" title="include/ufe/object3d.h" alt="" coords="1505,162,1655,189"/>
+<area shape="rect" id="node20" href="$object3d_handler_8h.html" title="include/ufe/object3dHandler.h" alt="" coords="1647,251,1841,278"/>
+<area shape="rect" id="node21" href="$scene_item_ops_8h.html" title="include/ufe/sceneItemOps.h" alt="" coords="1782,162,1965,189"/>
+<area shape="rect" id="node22" href="$scene_item_ops_handler_8h.html" title="include/ufe/sceneItemOps\lHandler.h" alt="" coords="1866,244,2038,285"/>
+<area shape="rect" id="node23" href="$selection_undoable_commands_8h.html" title="include/ufe/selectionUndoable\lCommands.h" alt="" coords="944,155,1139,196"/>
+<area shape="rect" id="node24" href="$camera_notification_8h.html" title="include/ufe/cameraNotification.h" alt="" coords="1872,80,2080,107"/>
+<area shape="rect" id="node25" href="$selection_8h.html" title="include/ufe/selection.h" alt="" coords="2105,80,2255,107"/>
+<area shape="rect" id="node27" href="$path_mapping_handler_8h.html" title="include/ufe/pathMappingHandler.h" alt="" coords="2040,423,2259,449"/>
+<area shape="rect" id="node28" href="$ui_info_handler_8h.html" title="include/ufe/uiInfoHandler.h" alt="" coords="2096,497,2275,524"/>
+<area shape="rect" id="node29" href="$scene_8h.html" title="include/ufe/scene.h" alt="" coords="2382,80,2517,107"/>
+<area shape="rect" id="node30" href="$scene_notification_8h.html" title="include/ufe/sceneNotification.h" alt="" coords="2541,80,2739,107"/>
+<area shape="rect" id="node31" href="$selection_notification_8h.html" title="include/ufe/selectionNotification.h" alt="" coords="2763,80,2978,107"/>
+<area shape="rect" id="node32" href="$transform3d_notification_8h.html" title="include/ufe/transform3dNotification.h" alt="" coords="3003,80,3237,107"/>
+<area shape="rect" id="node5" href="$run_time_mgr_8h.html" title="include/ufe/runTimeMgr.h" alt="" coords="1425,572,1596,599"/>
+<area shape="rect" id="node8" href="$base_undoable_commands_8h.html" title="include/ufe/baseUndoable\lCommands.h" alt="" coords="981,244,1152,285"/>
+<area shape="rect" id="node9" href="$camera_undoable_commands_8h.html" title="include/ufe/cameraUndoable\lCommands.h" alt="" coords="579,333,765,375"/>
+<area shape="rect" id="node12" href="$transform3d_undoable_commands_8h.html" title="include/ufe/transform3dUndoable\lCommands.h" alt="" coords="1214,333,1429,375"/>
+<area shape="rect" id="node26" href="$observable_selection_8h.html" title="include/ufe/observableSelection.h" alt="" coords="2041,162,2255,189"/>
+</map>

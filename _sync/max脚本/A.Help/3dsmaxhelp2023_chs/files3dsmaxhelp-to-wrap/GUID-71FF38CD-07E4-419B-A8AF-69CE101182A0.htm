@@ -1,0 +1,52 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-71FF38CD-07E4-419B-A8AF-69CE101182A0">
+      <meta name="description" content="使您可以向渲染添加扭曲效果。">
+      <meta name="indexterm" content="物理摄影机: “镜头扭曲”卷展栏">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="using">
+      <title>“镜头扭曲”卷展栏（物理摄影机）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-71FF38CD-07E4-419B-A8AF-69CE101182A0"></a><div class="head">
+            <h1>“镜头扭曲”卷展栏（物理摄影机）</h1>
+         </div>
+         <p class="blurb"> 使您可以向渲染添加扭曲效果。 </p>
+         <div class="bodyReference"><a name="UL_EF152002C5744699B3FE5A38B04F3B65"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-D7A2E532-C961-44A4-8ADF-14AB28407BD2"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-309E15DB-B338-4EB1-9D0F-6B1A5676297F-low.png">（摄影机） <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “物理” <img src="../images/ac.menuaro.gif"> “镜头扭曲”卷展栏</span> 
+               </li>
+            </ul><a name="FIG_504209E891564F27BDC69A31340828EF"></a><div class="figure-anchor"><img src="../images/GUID-AA4B7E63-D4AC-46ED-BB0B-41A51513462E-low.png"></div><a name="GUID-CEF436DC-EE55-4366-9DDA-6AB0E3F06E70"></a><dl><a name="GUID-06866B5C-9E85-41A6-939C-BC4BA52B4956"></a><dt><span class="term"><a name="GUID-8C775406-7A74-4D8A-BF1F-4D9588F67F79"></a>“扭曲类型”组 </span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-B67E2770-4380-4867-9F46-34B62D9D8FEB"></a> <a name="UL_FFA15DB51FED47F0B21AD1750847BC09"></a><ul>
+                        <li><em class="strong">无</em>（默认设置。）不应用扭曲。 
+                        </li>
+                        <li> <em class="strong">立方</em>：不为零时，将扭曲图像。正值会产生枕形扭曲；负值会产生筒体扭曲。 
+                           <p><a name="GUID-6B40CB88-5CB2-4569-9777-0035D9D1F3F4"></a>在枕形扭曲中，到图像中心的距离越大，向中心扭曲的线越多。枕形扭曲还会装饰图像。 
+                           </p> 
+                           <p><a name="GUID-DA9ED602-E145-48F1-97A3-50830E245F22"></a>在筒体扭曲（典型的缩放镜头）中，到图像中心的距离越大，从其向外扭曲的线越多。 
+                           </p> <a name="FIG_8B5B607E77E94433818F6A0D4D46448E"></a><div class="figure-anchor"><img src="../images/GUID-E40326B3-4D56-462D-846C-A49FB3E63DDE-low.png"><p></p>
+                              <p class="figure-title">左：无扭曲；中间：立方扭曲 = 0.14；右：立方扭曲 = –0.14</p>
+                           </div>  
+                        </li>
+                        <li> <em class="strong">纹理</em>：基于纹理贴图扭曲图像。单击该按钮可打开“材质/贴图浏览器”，然后指定贴图。 
+                           <p><a name="GUID-C40C99E7-82B2-44B9-B729-992EFB0C40FD"></a>图像的红色分量沿 X 轴扭曲图像，绿色分量沿 Y 轴扭曲图像；蓝色分量将被忽略。 
+                           </p> <a name="FIG_F19BE8D860BF484682248776F5C23909"></a><div class="figure-anchor"><img src="../images/GUID-92B624DD-97AC-4D82-80F8-DE24243755AC-low.png"><p></p>
+                              <p class="figure-title">用于镜头扭曲的贴图（原始贴图为 OpenEXR 图像，1188 x 668 像素）</p>
+                           </div>  <a name="FIG_84689873611F4ACDBF8A77382223F431"></a><div class="figure-anchor"><img src="../images/GUID-8046590C-EB26-478B-BA26-6C6E239C8168-low.png"><p></p>
+                              <p class="figure-title">左图：无扭曲；右图：使用所示贴图的纹理扭曲</p>
+                           </div>  
+                        </li>
+                     </ul> 
+                  </div>
+               </dd>
+            </dl>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C420859B-D44E-469F-9A20-AFD731216EA1">
+      <meta name="description" content="在创建对象时，将自动生成法线。通常，使用这些默认发现可以正确渲染对象。然而，有时需要调整法线。">
+      <meta name="indexterm" content="查看: 法线（和更改）">
+      <meta name="indexterm" content="法线: 查看和更改">
+      <meta name="indexterm" content="法线: 统一">
+      <meta name="indexterm" content="统一法线">
+      <meta name="indexterm" content="法线: 翻转">
+      <meta name="indexterm" content="翻转法线">
+      <meta name="indexterm" content="法线">
+      <meta name="topic-type" content="concept">
+      <title>查看和更改法线</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C420859B-D44E-469F-9A20-AFD731216EA1"></a><div class="head">
+            <h1>查看和更改法线</h1>
+         </div>
+         <p class="blurb">在创建对象时，将自动生成<span class="char_link"><a href="GUID-41B1C829-4551-4274-8F8C-D860C0810DAE.htm">法线</a></span>。通常，使用这些默认发现可以正确渲染对象。然而，有时需要调整法线。 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A1900412DB"></a><div class="figure-anchor"><img src="../images/GUID-26942CDE-AD1F-44FA-901E-CC4C2BA8B23D-low.png"></div>
+         <p><a name="GUID-6A8CF690-07A4-4FE2-A871-F0529DF5C95A"></a> <em class="strong">左：显示为钉形的法线表示四棱锥上面的方向。</em> 
+         </p>
+         <p><a name="GUID-763C9E6E-BA0E-4CBF-888A-06BAE8360276"></a> <em class="strong">右：翻转法线可以使面在明暗处理视口和渲染中不可见（或可见）。</em> 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5147"></a>在以下对象中可能出现多余的法线： 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A1900412DC"></a><ul>
+            <li>从其他应用程序导入的网格。 </li>
+            <li>通过复杂操作生成的几何体（如布尔对象、车削对象或阁楼）。 </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5146"></a>法线用于定义将面或顶点的哪一面视为“外部”面。只有使用双面材质或在“渲染设置”对话框 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“公用”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> <span class="char_link"><a href="GUID-BCA258CE-B108-4B77-A62E-7014842E1157.htm">“公用参数”卷展栏</a></span>中启用“强制双面”选项，面或顶点的外部面才是进行渲染的面。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5145"></a>要查看或更改<em class="mild">面法线</em>，请执行下列操作之一： 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A1900412DD"></a><ul>
+            <li>应用<span class="char_link"><a href="GUID-DB31F6ED-D543-41F5-80B5-F4FDB6E606BB.htm">法线修改器</a></span>。如果“面”子对象选择处于活动状态，那么“法线”会应用于选定的面。如果没有选定面，那么“法线”会应用于整个对象。 
+            </li>
+            <li>应用<span class="char_link"><a href="GUID-1CF31D5B-A016-4C8A-93C2-2DB528C0FC4E.htm">编辑网格修改器</a></span>，可以启用“面”、“多边形”或“元素”子对象模式，然后使用“曲面属性”卷展栏上的功能来更改法线的指向。 
+            </li>
+            <li>将对象转化为<span class="char_link"><a href="GUID-3CBF3773-3CDC-4ED7-8C34-D0EAF9CD9F66.htm">可编辑曲面</a></span>，可以启用“面”、“多边形”或“元素”子对象模式，然后使用“曲面属性”卷展栏上的功能。 
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900412DE"></a> 
+            <h2><a name="GUID-E2BD105F-1E8C-4BF0-8C25-AA648936114E"></a>查看法线
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5144"></a>查看法线最简单的方法是在着色视口中观看对象。在这种情况下，看到的并不是法线箭头本身，而是它们在着色曲面上的效果。如果对象外观为内部外翻或拥有孔洞，则一些法线可能指向错误方向。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5143"></a>通过在可编辑网格对象或“编辑网格”修改器的“选择”卷展栏上启用“显示法线”，则可以显示选定面或顶点的法线矢量。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900412DF"></a> 
+            <h2><a name="GUID-5CCAF48D-9C61-4FB1-8892-8B04D746D4D5"></a>统一法线
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5142"></a>使用“统一法线”可使法线指向统一方向。如果对象拥有不统一的法线（一些指向外，一些指向内），则对象将显示为在表面具有孔洞。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5141"></a>“统一法线”位于“曲面属性”卷展栏和“法线”修改器上。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5140"></a>如果正在设置复杂对象创建的动画（如嵌套的“布尔”或阁楼），而且认为这样的操作可能导致不一致的法线，那么将<span class="char_link"><a href="GUID-DB31F6ED-D543-41F5-80B5-F4FDB6E606BB.htm">法线修改器</a></span>应用到结果上并启用“统一法线”。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900412E0"></a> 
+            <h2><a name="GUID-63C3D72D-205B-496E-8396-7E2777BF1F06"></a>翻转法线
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-513F"></a>使用“翻转法线”可以反转所有选定面的方向。翻转对象的法线可以使其内部外翻。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-513E"></a>“翻转法线”位于“曲面属性”卷展栏和“法线”修改器上。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-513D"></a><span class="char_link"><a href="GUID-9353AF31-45CC-48BA-8B94-2CC5E050F928.htm">“车削”修改器</a></span>有时会创建法线指向内部的对象。使用“车削”修改器“参数”卷展栏上的“翻转法线”复选框可调整法线。也可以使用“法线”修改器并同时启用“统一”和“翻转”来修正“内部外翻”的车削对象。 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

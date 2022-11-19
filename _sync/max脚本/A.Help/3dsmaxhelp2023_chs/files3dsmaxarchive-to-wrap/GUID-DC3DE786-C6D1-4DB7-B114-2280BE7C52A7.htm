@@ -1,0 +1,37 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-DC3DE786-C6D1-4DB7-B114-2280BE7C52A7">
+      <meta name="description" content="粒子运动模糊实际上是根据粒子速度改变粒子的不透明度和长度的结果。为了实现此效果，需要指定的材质与粒子系统中的设置相互协调。">
+      <meta name="indexterm" content="运动模糊">
+      <meta name="indexterm" content="模糊: 粒子运动模糊">
+      <meta name="indexterm" content="粒子: 粒子运动模糊">
+      <meta name="contextid" content="TOPIC_ACHIEVING_PARTICLE_MOTION_BLUR">
+      <meta name="topic-type" content="concept">
+      <title>实现粒子运动模糊</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-DC3DE786-C6D1-4DB7-B114-2280BE7C52A7"></a><div class="head">
+            <h1>实现粒子运动模糊</h1>
+         </div>
+         <p class="blurb">粒子运动模糊实际上是根据粒子速度改变粒子的不透明度和长度的结果。为了实现此效果，需要指定的材质与粒子系统中的设置相互协调。 </p>
+         <p><a name="WS73099CC142F487552A50A53111913E7C26F-7E87"></a>请按照以下说明操作： 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A1900425A2"></a><ul>
+            <li>在为粒子指定的材质中使用<span class="char_link"><a href="../files3dsmaxhelp/GUID-BCA7241E-F3FE-4F15-BC70-B9C6B8FBAD49.htm">粒子运动模糊贴图</a></span>。为了获得最佳结果，应指定为不透明贴图。 
+            </li>
+            <li>确保“粒子阵列”、“粒子云”以及“超级喷射”或“喷射”粒子系统支持“粒子运动模糊”贴图。 </li>
+            <li>选择“旋转和碰撞”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“自旋轴控制”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“运动方向/运动模糊”选项。 
+            </li>
+            <li>在同一个组中，将“拉伸”微调器设置为大于 0，根据粒子的“速度”设置将粒子拉伸为粒子长度的一定百分比。 </li>
+            <li>使用正确的粒子类型。“运动模糊”适用于除“圆片”和“面片状”以外的所有粒子类型。 
+               <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5F78"></a><div class="note-note"><span class="label label-target-language">注意:</span>使用多维/子对象材质的实例化对象无法对图像应用运动模糊效果。 
+                  </div>
+               </div> 
+            </li>
+         </ul>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

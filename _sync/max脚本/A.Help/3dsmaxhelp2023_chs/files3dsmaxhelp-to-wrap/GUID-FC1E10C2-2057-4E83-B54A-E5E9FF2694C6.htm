@@ -1,0 +1,97 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-FC1E10C2-2057-4E83-B54A-E5E9FF2694C6">
+      <meta name="description" content="本主题概述了一些有用的表达式技术。">
+      <meta name="indexterm" content="表达式控制器">
+      <meta name="topic-type" content="concept">
+      <title>表达式控制器技术</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-FC1E10C2-2057-4E83-B54A-E5E9FF2694C6"></a><div class="head">
+            <h1>表达式控制器技术</h1>
+         </div>
+         <p class="blurb">本主题概述了一些有用的表达式技术。 </p>
+         <div class="bodyReference">
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044A63"></a> 
+               <h2><a name="GUID-95CEE330-75D3-4431-B497-DEB3127E0A6C"></a>常用表达式
+               </h2> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4377"></a>本主题列出了一些在设置动画时可能比较有用的表达式。 
+               </p> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044A64"></a> 
+                  <h3><a name="GUID-2F7FDB7C-B89D-4B71-8121-678A7183B2B2"></a>圆形路径
+                  </h3> 
+                  <div class="codeBlock"><pre>[ Radius * cos(360*Time),
+Radius * sin(360*Time), 0 ]</pre></div> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4376"></a>其中 <em class="mild">Time</em> 是一个预定义的时间变量，如 NT 或 S。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4375"></a>如果使两个“半径”值不相等，将得到一个椭圆形路径。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4374"></a>如果指定了一个非零 Z 分量，该路径就不再是平面。 
+                  </p> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044A65"></a> 
+                  <h3><a name="GUID-B74E42DB-F0E3-40F9-A739-185C3413B3D9"></a>跟随另一个对象
+                  </h3> 
+                  <div class="codeBlock"><pre>[X, Y, Z] + Position</pre></div> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4373"></a>其中 <em class="mild">Position</em> 是第二个对象的“位置”控制器。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4372"></a>向量 [X, Y, Z] 可以是到第二个对象的偏移。（如果为 [0,0,0]，两个对象就处在相同的位置上。）它也可以是指定了其自身内某些运动的向量表达式。 
+                  </p> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044A66"></a> 
+                  <h3><a name="GUID-183A3108-E8A4-4AD7-99FF-A26D211D5DF2"></a>在两个对象之间保留一个对象
+                  </h3> 
+                  <div class="codeBlock"><pre>(Position1 + Position2) / 2</pre></div> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4371"></a>其中 <em class="mild">Position1</em> 和 <em class="mild">Position2</em> 是两个对象的“位置”控制器。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4370"></a>分数 2 约束了位于两个其他对象之间中途的对象。其他值将该对象约束到其他的位置。 
+                  </p> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044A67"></a> 
+                  <h3><a name="GUID-10AF3BB1-64B8-435C-A4B5-28B167DC5738"></a>在其他对象之间反弹
+                  </h3> 
+                  <div class="codeBlock"><pre>(1+sin(360*Time))/2 * (Pos1-Pos2) + Pos2</pre></div> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-436F"></a>其中 <em class="mild">Time</em> 是一个预定义的时间变量，诸如 NT 或 S；<em class="mild">Pos1</em> 和 <em class="mild">Pos2</em> 是两个其他对象的“位置”控制器。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-436E"></a>次表达式 (1+sin(360*Time))/2 是随着时间在 0 和 1 之间摆动的值。(Pos1-Pos2) 是两个其他对象之间的向量。将两者相乘，随后再把 Pos2 作为偏移加上，就将对象沿着这个向量进行了定位。 
+                  </p> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044A68"></a> 
+                  <h3><a name="GUID-27A5C010-6387-420C-8076-2B35845ECD3B"></a>基于摄影机距离更改对象的分段数
+                  </h3> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-436D"></a>此表达式基于摄影机的距离而改变圆柱体内的分段数。它指定给了圆柱体的“分段”创建参数。 
+                  </p> 
+                  <div class="codeBlock"><pre>if ( (length(Camera-Myself) &gt; 35),
+3 + (50*Height) / length(Camera-Myself),
+MaxSegs)</pre></div> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-436C"></a>其中 <em class="mild">Camera</em> 是摄影机的位置控制器；<em class="mild">Myself </em> 是圆柱体的位置控制器；<em class="mild">Height </em>(= 70) 是圆柱体的高度；<em class="mild">MaxSegs </em>(=100) 是分段的最大数目。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-436B"></a>当摄影机靠的越近，更多的分段使得圆柱体更为平滑；当摄影机比较远时，平滑就不那么重要，分段数也就越少而渲染就进行得更快。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-436A"></a>当第一个参数为真时，if() 函数就会返回它的第二个参数；否则，就返回它的第三个参数。在本例中，如果摄影机离圆柱体的距离超过了 35 单位，表达式就会计算分段数；如果摄影机距圆柱体 35 单位远或更近，分段数的值就是 MaxSegs 常量。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4369"></a>选定第二个参数中的值，这样随着距离朝着阈值 35 减小，分段数就会朝着 MaxSegs 增加。加法“3+”保证了圆柱体至少具有三个分段，即使除法的结果到了零（分段是一个整数）。 
+                  </p> 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E4FB"></a><div class="note-note"><span class="label label-target-language">注意:</span>对于表达式，摄影机或圆柱体或是这两者是否移动显得无关紧要。 
+                     </div>
+                  </div> 
+               </div> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-B2E1E2C5-BA9B-420A-82C8-66ADB7C0F55C"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-7EB3A412-679C-48AA-B543-C52A889F8529.htm">三角函数</a></span></li>
+               <li><span class="char_link"><a href="GUID-6A7CDE12-1F9B-4214-BC86-CD3FA5C05E1C.htm">向量</a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-A99AC248-B40A-457D-A32E-E591330918E9">
+      <meta name="topic-type" content="concept">
+      <title>在 ShaderFX 网络中使用 for 循环</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-A99AC248-B40A-457D-A32E-E591330918E9"></a><div class="head">
+            <h1>在 ShaderFX 网络中使用 for 循环</h1>
+         </div>
+         <div class="section"><a name="SECTION_358540D1274D458EBD1761EB81E96979"></a> 
+            <h2><a name="GUID-03EF62E1-250A-4917-B04D-E84F22DB642A"></a>使用自定义代码节点
+            </h2> 
+            <p><a name="GUID-675E5F51-261F-4CE1-A794-52CA68F4D783"></a> 可以通过不同方式创建 for 循环<em class="mild"></em>。您可以创建自定义代码节点。选择“工具”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“切换高级模式”进入高级模式，然后选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“各种”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“自定义代码”。在“特性”面板中，单击“编辑”按钮，以便在显示的“自定义代码编辑器”对话框中输入代码。使用与 DirectX 视口驱动程序兼容的函数。 
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_4E4CF3703C5E44CEB2A4FB24F92F52B5"></a> 
+            <h2><a name="GUID-ED940D74-262A-4644-8B93-91B4B0F46D3F"></a>使用“For 循环”节点
+            </h2> 
+            <p><a name="GUID-464627F4-77CD-4C70-963D-374FB88618E0"></a>要创建“For 循环”节点，您还必须启用高级模式。 
+            </p> 
+            <p><a name="GUID-70825D8E-4380-4CB8-853F-56DF7727875F"></a>以下示例说明了如何使用 for 循环<em class="mild"></em>对具有不同 UV 偏移的纹理采样三次。采样值相加，然后总和除以三，所得平均值应用到 <em class="mild">TraditionalGameSurfaceShader</em> 的“漫反射颜色”通道。 
+            </p> <a name="OL_E02F8C075D0043C2B7BB4FCEFF701696"></a><p class="list-intro"><a name="GUID-07DA2F48-37DC-46D3-8583-59B2C814FA63"></a>设置 for 循环：
+            </p>
+            <ol type="1" start="1">
+               <li>在 ShaderFX 工作区域中，单击鼠标右键并选择“工具”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“切换高级模式”以确保“高级”模式处于活动状态。 
+               </li>
+               <li>单击鼠标右键并选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“流动控制”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“For 循环”以创建 <em class="mild">ForOp</em> 节点。 <a name="FIG_3F036031DFC3421B887A94DCC5CA26AC"></a><div class="figure-anchor"><img src="../images/GUID-2349FF48-CDC9-44C3-8E60-44F0A14AE9BB-low.png"></div>  
+                  <div><a name="GUID-807AF718-E33F-499A-96E8-F7A61D0F789C"></a><div class="note-tip"><span class="label label-target-language">提示</span>方形端口表明端口可以接受多个输入。 
+                     </div>
+                  </div> 
+               </li>
+               <li>选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“值”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“整型”创建一个整数节点。在“属性”面板上，将其值设置为 <em class="strong">3</em>。将其连接到 for 循环节点的 B 属性。 <a name="UL_63CC9BAD7435436FA21DA7A935B46272"></a><ul>
+                     <li>A 属性表示循环的开头。 </li>
+                     <li>B 属性表示循环的结尾。 </li>
+                     <li>C 属性表示循环的间隔。 </li>
+                  </ul>
+                  <p><a name="GUID-78B59E39-636F-481C-AC99-10E1DC7BCBE4"></a>默认情况下，A 的值为 0，C 的值为 1。如果您在循环中使用这些默认值，则无需连接这些属性。 
+                  </p>
+                  <p><a name="GUID-571F5768-FB58-4B9B-82CA-4A161A874094"></a>在此示例中，我们设置了 <span class="code">i = 0, i &lt; 3, i++</span>；因此，我们不需要明确设置 A 和 C 值 
+                  </p> 
+               </li>
+               <li>选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“各种”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“字符串”来创建将用作枚举器的字符串。在“属性”面板中，从“默认选项”下拉列表选择 <em class="strong">i</em>（您必须向下滚动才能看到此选项）。将“字符串”节点的“输出”端口连接到“For 循环”节点的“枚举器”属性。 
+               </li>
+               <li>选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“值”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“float3”创建变量，以存储循环中计算的值。 
+                  <div><a name="GUID-69DF7BA7-7CF8-4BE1-8E48-97EF40140CA4"></a><div class="note-tip"><span class="label label-target-language">提示</span>使用 float3 或 float4 存储值。不要使用“颜色”节点。 
+                     </div>
+                  </div> 
+               </li>
+               <li>在“属性”面板上，将“float3”节点重命名为 <em class="strong">LoopResult</em>，并确认这三个值初始化为 1.0。 
+               </li>
+               <li>将 <em class="mild">LoopResult</em> 节点连接到“For 循环”节点的“变量”属性。因为这是一个只使用一个变量的简单循环，也可以将 <em class="mild">LoopResult</em> 连接到“For 循环”节点的“输出”属性。 <a name="FIG_D245DCC1766B4120A11F9493A89B11EE"></a><div class="figure-anchor"><img src="../images/GUID-368CBE22-5019-4A3F-8C83-9F44D960D862-low.png"></div>  
+               </li>
+            </ol> <a name="OL_0E6D5445C81040B9B48974211984ECFC"></a><p class="list-intro"><a name="GUID-422B8B35-82B2-4A79-BB97-938A14DA3FB0"></a>设置纹理采样：
+            </p>
+            <ol type="1" start="1">
+               <li>选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“纹理”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“纹理贴图”以创建“纹理贴图”节点。在“属性”面板中，使用“MyTexture/路径”控件为此节点指定纹理文件。 
+                  <p><a name="GUID-DBD9F6DB-51B2-4D82-A4AC-F1399949A1B9"></a>也可以在“属性”面板中，确保“采样器/U 坐标”和“采样器/V 坐标”属性设定为“WRAP”。 
+                  </p> 
+                  <p><a name="GUID-D831246B-5AD5-485F-9EE3-90320F57B0DD"></a>由于对该纹理进行采样偏移，采样可能会超出 0 到 1 的 UV 范围。将这些属性设置为“WRAP”可确保在 UV 范围超出 1.0 时从纹理开始之处对进行像素采样。 
+                  </p> 
+               </li>
+               <li>选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“值”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“数组”以创建“数组”节点。三组偏移值存储在此数组中。 
+               </li>
+               <li>选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“值”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“float2”三次，以创建三个 float2 节点来存储三组偏移值。使用“属性”面板来设置三个 float2 属性，如下所示： <a name="UL_3CDA85DB89574BBE999FF6B238DDEAF0"></a><ul>
+                     <li>名称：<em class="strong">Offset1</em>，X：<em class="strong">0.1</em>、Y：<em class="strong">0.3</em> 
+                     </li>
+                     <li>名称：<em class="strong">Offset2</em>，X：<em class="strong">0.2</em>、Y：<em class="strong">-0.4</em> 
+                     </li>
+                     <li>名称：<em class="strong">Offset3</em>，X：<em class="strong">0.3</em>、Y：<em class="strong">0.2</em> 
+                     </li>
+                  </ul> 
+               </li>
+               <li>将所有三个 float2 节点连接到“数组”节点的“值”属性。 </li>
+               <li>选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“输入公用”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“UV 集和硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“数学”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“添加”以创建“UV 集”节点和“添加”节点。 
+               </li>
+               <li>按如下所示连接节点： <a name="UL_214C2AAF7CE94A29A5320A42EF6C01B5"></a><ul>
+                     <li>将“数组”的“值”属性连接到“添加”的“值”属性。 </li>
+                     <li>将“UV 集”的“UV”属性连接到“添加”的另一个“值”属性。 </li>
+                     <li>将“添加”的“结果”属性连接到“纹理贴图”的“UV”属性。 </li>
+                     <li>将枚举器（“字符串”节点）的“输出”属性连接到“数组”的“索引”属性。这样可让 for 循环获得偏移值。 </li>
+                     <li>将“纹理贴图”的“颜色”属性连接到 for 循环的“计算”属性。这将设置 for 循环中的计算，在此示例中该计算将对纹理贴图采样三次。 <a name="FIG_1BAFBEDEF3A04306A4F429D8C7574A59"></a><div class="figure-anchor"><img src="../images/GUID-249B0B8F-50DD-4F5A-B3F9-A0B971F74F89-low.png"></div>  
+                     </li>
+                  </ul> 
+               </li>
+            </ol> <a name="OL_27E37C91D1F748268048660413729DC8"></a><p class="list-intro"><a name="GUID-EBEDEEA5-B642-49DB-BF28-EB521F58A3BE"></a>计算采样的平均结果：
+            </p>
+            <ol type="1" start="1">
+               <li>选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“各种”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“字符串”来创建“字符串”节点。在“属性”面板中，从“默认选项”下拉列表中选择 <em class="strong">+ =</em>。 
+               </li>
+               <li> 将新“字符串”节点的“输出”值连接到“For 循环”的“操作符”属性。 
+                  <p><a name="GUID-D7991E13-5E86-4000-92C0-49BDD0E6CD55"></a>For 循环将纹理采样的结果添加至“循环结果”变量。 
+                  </p> 
+               </li>
+               <li>选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“数学”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“拆分”将创建“拆分”节点。将 For 循环的“输出”属性连接到“拆分”的第一个“值”属性。 
+                  <p><a name="GUID-1E0F3CA8-2E23-4BB7-AD99-FD4C3064AEC1"></a>由于“循环结果”是三个采样值的和，必须将它除以三个才能获取其平均值。 
+                  </p> 
+               </li>
+               <li>选择“硬件明暗器节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“值”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“浮点”以创建“浮点”节点。在“属性”面板中，将其“值”设置为 <em class="strong">3.0</em>。将其“浮点”属性连接到“拆分”的其他“值”属性，以将采样结果的和除以三。 
+               </li>
+               <li>将“拆分”的“结果”属性的连接到 <em class="mild">TraditionalGamesSurfaceShader</em> 的“漫反射颜色”属性。 <a name="FIG_10D6B3B97C164F0BA06A30BCCCDA095E"></a><div class="figure-anchor"><img src="../images/GUID-59F1E9A5-249F-4C78-BBD7-88AD661FA688-low.png"></div>  
+               </li>
+            </ol> <a name="FIG_49B600F88B5D4418AFBDE4644A0DA08B"></a><div class="figure-anchor"><img src="../images/GUID-E843A7EC-184E-4EB8-A8AE-F20FDEAC6B2A-low.png"><p class="figure-title">迭代棋盘图案的结果（使用 Quicksilver 渲染器渲染）</p>
+            </div>  
+            <p><a name="GUID-A9CFCBC8-AB89-4C6F-BD99-E22F81F04476"></a>可以将 ShaderFX 材质导出到明暗器文件并检查明暗器代码，以查看刚创建的 For 循环<em class="mild"></em>： 
+            </p> 
+            <div class="codeBlock"><pre>float3 LoopResult = float3(1.0, 1.0, 1.0);	
+for(int i=0; i&lt;3; i+=1)	
+{		
+    float2 AddOp = (Array_bphdfiwhhj[i] + IN.map1.xy);		
+    float4 Sampler = chessboard_woodjpg.Sample(MMMLWWWSampler, AddOp);		
+    LoopResult += Sampler.xyz;
+}</pre></div> 
+            <p><a name="GUID-5DEEE35E-930F-4A3F-B1D2-EA77B6E42FAF"></a>有关导出到明暗器文件的详细信息，请参见<span class="char_link"><a href="GUID-B4328E92-C99C-4EC9-9751-8D74E12A57EC.htm">导出到 HLSL、CgFX 和 GLSL</a></span>。 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

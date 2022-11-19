@@ -1,0 +1,1703 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5D9D999B-A5D3-402F-B4E3-0B7433A31C1A">
+      <meta name="description" content="3ds Max 应用于众多不同的专业市场，包括电影、设计、可视化和游戏等领域。这些市场领域用户的工作流和性能要求截然不同。因此，不同的默认设置适用于不同类型的场景。">
+      <meta name="indexterm" content="currentdefaults.ini">
+      <meta name="indexterm" content="默认值: 特定市场">
+      <meta name="indexterm" content="特定市场默认值">
+      <meta name="topic-type" content="concept">
+      <title>特定市场默认值</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5D9D999B-A5D3-402F-B4E3-0B7433A31C1A"></a><div class="head">
+            <h1>特定市场默认值</h1>
+         </div>
+         <p class="blurb"> <span class="charspan-msgph">3ds Max</span> 应用于众多不同的专业市场，包括电影、设计、可视化和游戏等领域。这些市场领域用户的工作流和性能要求截然不同。因此，不同的默认设置适用于不同类型的场景。 
+            
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-57A0"></a>例如，典型动画场景具有微弱的灯光；<span class="char_link"><a href="GUID-01B7E9D5-C8F0-424C-8D1E-B086E5F5C35C.htm">阴影贴图</a></span>能够为生成阴影提供快速而精确的解决方案。另一方面，典型设计可视化场景可能包含数百个灯光，在此情况下，阴影贴图会造成内存问题。对于这类场景，<span class="char_link"><a href="GUID-3F8591C4-E863-4FD1-9B98-61D94A271ECB.htm">光线跟踪阴影</a></span>才是理想之选。 
+            	 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-579F"></a>为了针对这两种项目类型提供高效的工作环境，<span class="charspan-msgph">3ds Max</span> 提供了四组特定市场的默认设置，这些默认设置专门为一般动画场景和设计可视化项目而量身定制。这些设置分别位于 <em class="mild"> <span class="filePath">\defaults</span> </em> 目录中各自的子目录下，其位置取决于活动语言。例如，如果使用的是英文版本的 <span class="charspan-msgph">3ds Max</span>，您将会在 <em class="mild"> <span class="filePath">\en-US</span> </em> 文件夹内找到相关的 <em class="mild"> <span class="filePath">\defaults</span> </em> 目录。 
+            	 
+         </p>
+         <p><a name="GUID-E68A6CAA-7D7D-4389-A1DA-590DD676A59E"></a>每个子目录都包含一个 INI 文件 (<em class="mild"> <span class="filePath">currentdefaults.ini</span> </em>)、默认材质库 (<span class="filePath">medit.mat</span>) 和启动文件 (<em class="mild"> <span class="filePath">maxstart.max</span> </em>)，其中第一种文件包含全局参数默认值；第二种文件可在启动时填充材质编辑器；而第三种文件则是在启动 <span class="charspan-msgph">3ds Max</span> 或重置时打开的文件。您可以对这些文件中的任何一个文件进行编辑，也可以创建自己的设置；但是每个设置必须位于 <em class="mild"> <span class="filePath">\defaults</span> </em> 下单独的子目录中。此外，目录中的每个文件都应该有相同的名称（<em class="mild"> <span class="filePath">currentdefaults.ini</span> </em> <em class="mild"> <span class="filePath">、medit.mat</span> </em> 和 <em class="mild"> <span class="filePath">maxstart.max）。</span> </em>如果其中一个文件未出现在所创建的自定义默认目录中，<span class="charspan-msgph">3ds Max</span> 将使用此位置 <em class="mild">\defaults\max</em> 目录中的对应文件。 
+            	 
+         </p>
+         <div><a name="WS73099CC142F487551051018113CCCDB767-94F"></a><div class="note-note"><span class="label label-target-language">注意:</span>为了进行保护，这两个预设默认目录将拥有名为 <em class="mild"> <span class="filePath">\factorydefaults</span> </em> 的子目录，该子目录包含每组设置的原始文件。如果更改默认设置后，对效果并不满意，则可以使用这些文件。这些文件还非常适用于作为创建自己默认设置组的起点；将它们复制到新目录，然后进行编辑即可。强力建议您<em class="mild">不要编辑</em> <em class="mild"> <span class="filePath">\factorydefaults</span> </em> 目录中的文件。 
+               	 
+            </div>
+         </div>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-579D"></a>通过<span class="char_link"><a href="GUID-47896805-586F-4706-866C-F47E1498EDEE.htm">自定义 UI 与默认设置切换器</a></span>指定默认设置。 
+            	 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-579C"></a> 
+            <h2><a name="GUID-707070B5-0221-42E4-8914-233DEFD0B85B"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004F2A"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004F2B"></a>要更改当前的默认设置，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>选择“自定义”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“自定义 UI 与默认设置切换器”。 
+                  		  
+               </li>
+               <li>从<em class="mild">工具选项的初始设置</em> 列表中选择一个默认设置，然后单击“设置”。 
+                  		  
+               </li>
+               <li>重新启动 <span class="charspan-msgph">3ds Max</span> 即可加载新的默认参数。 
+                  		  
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-579B"></a> 
+            <h2><a name="GUID-C73F3DA9-CCB1-4301-BE74-85809E327980"></a>界面
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-579A"></a> 在默认目录中包括下面这些文件。如果当前的 <em class="mild"> <span class="filePath">\defaults</span> </em> 目录中缺少一个或多个上述文件，则 <span class="charspan-msgph">3ds Max</span> 将使用 <em class="mild"> <span class="filePath">\defaults\max</span> </em> 中的相应文件进行代替。 
+               		
+            </p> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004F2C"></a> 
+               <h3><a name="GUID-B8CDB9C3-0DF7-43B1-8C32-113F5C63C870"></a> <em class="mild">currentdefaults.ini</em> 
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5799"></a>下表描述了早默认 INI 文件中设置的所有部分。带有空格或无效值的任意参数都使用硬编码默认值。 
+                  		  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A19004F2D"></a><div class="table-ruled">
+                  <table cellpadding="0" cellspacing="0" class="ruled">
+                     <colgroup>
+                        <col width="32.425421530479895%">
+                        <col width="27.010376134889757%">
+                        <col width="13.521400778210118%">
+                        <col width="13.521400778210118%">
+                        <col width="13.521400778210118%">
+                     </colgroup>
+                     <tr class="ruled-heading">
+                        <th class="table-heading">默认描述 [ini 文件部分名称] 
+                           					 
+                        </th>
+                        <th class="table-heading">有效值 
+                           					 
+                        </th>
+                        <th class="table-heading">硬编码的默认值 
+                           					 
+                        </th>
+                        <th class="table-heading">MAX 默认值 
+                           					 
+                        </th>
+                        <th class="table-heading">DesignVIZ 默认值 
+                           					 
+                        </th>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">高级光线跟踪阴影</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5798"></a><p class="table-body">[10D0 20016D4E 58AB60F8] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">shadow_mode</em>（整数）：该模式用于抗锯齿阴影。 
+                           					 
+                        </td>
+                        <td class="table-body">&lt;= 0 = 简单 无抗锯齿 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5797"></a><p class="table-body">1 = 1 次抗锯齿 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5796"></a><p class="table-body">&gt;= 2 = 2 次抗锯齿 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">2 次抗锯齿 
+                           					 
+                        </td>
+                        <td class="table-body">2 次抗锯齿 
+                           					 
+                        </td>
+                        <td class="table-body">简单 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">ray_bias</em>（浮点）：阴影生成器可以解析的面之间的最小距离。 
+                           					 
+                        </td>
+                        <td class="table-body">&lt; 0 = 0 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5795"></a><p class="table-body">0 到 9999999.0 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5794"></a><p class="table-body">&gt; 9999999.0 = 9999999.0 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">0.25 
+                           					 
+                        </td>
+                        <td class="table-body">0.25 
+                           					 
+                        </td>
+                        <td class="table-body">0.25 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">twoSidedShadows</em>（整数）：此参数控制背面是否投射阴影。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 背面不投射阴影。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5793"></a><p class="table-body">其他任何值 = 背面投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">背面不投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">背面不投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">背面投射阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">shadow_transparent</em>（整数）：此参数控制透明面的阴影计算是否正确。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 透明面是不透明的 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5792"></a><p class="table-body">其他任何值 = 透明面是透明的。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">透明面是不透明的 
+                           					 
+                        </td>
+                        <td class="table-body">透明面是不透明的 
+                           					 
+                        </td>
+                        <td class="table-body">透明面是透明的 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">渲染环境</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5791"></a><p class="table-body">[1010 EE448B23 0] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">AdvancedLighting</em>（类 ID）：这是默认情况下指定的高级照明插件的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0 0 = 无高级照明 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5790"></a><p class="table-body">0x795c4168 0x669a1835 = 光能传递 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-578F"></a><p class="table-body">0x39ff19ec 0x772d5bff = 光跟踪器 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">无高级照明 
+                           					 
+                        </td>
+                        <td class="table-body">无高级照明 
+                           					 
+                        </td>
+                        <td class="table-body">光能传递 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">ExposureControl</em>（类 ID）：这是默认情况下指定的曝光控制的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0 0 = 曝光控制 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-578E"></a><p class="table-body">0x58b4684b 0x507f76e9 = 对数曝光控制 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-578D"></a><p class="table-body">0x786c6aaa 0x449349db = 自适应曝光控制 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-578C"></a><p class="table-body">0x55897318 0x34db21ac = 线行曝光控制 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-578B"></a><p class="table-body">0x575e3dff 0x60e13d9a = 伪彩色曝光控制 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">无曝光控制 
+                           					 
+                        </td>
+                        <td class="table-body">无曝光控制 
+                           					 
+                        </td>
+                        <td class="table-body">对数曝光控制 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">SimplifyAreaShadows</em>（整数）：简化区域/线性阴影的默认设置。 
+                           					 
+                        </td>
+                        <td class="table-body">0= 不简化阴影。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-578A"></a><p class="table-body">其他任何值 = 不简化阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不简化阴影 
+                           					 
+                        </td>
+                        <td class="table-body">不简化阴影 
+                           					 
+                        </td>
+                        <td class="table-body">不简化阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">场景</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5789"></a><p class="table-body">[100 2222 0] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">GlobalShadowGenerator</em>（类 ID）：这是在灯光中设置“使用全局阴影设置”时使用的默认阴影生成器的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0x100 0 = 阴影贴图 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5788"></a><p class="table-body">；光线跟踪阴影 = 0x200 0 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5787"></a><p class="table-body">0x1721305e 0x689452a1 = 区域阴影 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5786"></a><p class="table-body">0x20016d4e 0x58ab60f8 = 高级光线跟踪阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">阴影贴图 
+                           					 
+                        </td>
+                        <td class="table-body">阴影贴图 
+                           					 
+                        </td>
+                        <td class="table-body">高级光线跟踪阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">标准最大亮度</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5784"></a><p class="table-body">[30 1011 0] 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5783"></a><p class="table-body">泛光灯、目标聚光灯、自由聚光、目标平行光和自由平行光使用这些默认值。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">castShadows</em>（整数）：控制灯光是否投射阴影。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 不投射阴影 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5782"></a><p class="table-body">其他任何值 - 投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">不投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">投射阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">useGlobalShadowSettings</em>（整数）：控制场景的全局阴影生成器或灯光的阴影生成器是否用于阴影。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 使用灯光的阴影生成器。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5781"></a><p class="table-body">其他任何值 - 使用场景的全局阴影生成器。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                        <td class="table-body">使用场景的全局阴影生成器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">ShadowGenerator</em>（类 ID）：这是指定给灯光的默认阴影生成器的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0x100 0 = 阴影贴图 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5780"></a><p class="table-body">；光线跟踪阴影 = 0x200 0 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-577F"></a><p class="table-body">0x1721305e 0x689452a1 = 区域阴影 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-577E"></a><p class="table-body">0x20016d4e 0x58ab60f8 = 高级光线跟踪阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">阴影贴图 
+                           					 
+                        </td>
+                        <td class="table-body">阴影贴图 
+                           					 
+                        </td>
+                        <td class="table-body">高级光线跟踪阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">目标点灯光</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-577C"></a><p class="table-body">[30 658d4f97 72cd4259] 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-577B"></a><p class="table-body"> 自由点灯光、目标线性光、自由线性光、目标区域灯光和自由区域灯光使用 castShadows、useGlobalShadowSettings 和 ShadowGenerator 的这些默认值。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">castShadows</em>（整数）：控制灯光是否投射阴影。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 不投射阴影 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-577A"></a><p class="table-body">其他任何值 - 投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">不投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">投射阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">useGlobalShadowSettings</em>（整数）：控制场景的全局阴影生成器或灯光的阴影生成器是否用于阴影。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 使用灯光的阴影生成器。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5779"></a><p class="table-body">其他任何值 - 使用场景的全局阴影生成器。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                        <td class="table-body">使用场景的全局阴影生成器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">ShadowGenerator</em>（类 ID）：这是指定给灯光的默认阴影生成器的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0x100 0 = 阴影贴图 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5778"></a><p class="table-body">；光线跟踪阴影 = 0x200 0 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5777"></a><p class="table-body">0x1721305e 0x689452a1 = 区域阴影 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5776"></a><p class="table-body">0x20016d4e 0x58ab60f8 = 高级光线跟踪阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">阴影贴图 
+                           					 
+                        </td>
+                        <td class="table-body">阴影贴图 
+                           					 
+                        </td>
+                        <td class="table-body">高级光线跟踪阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">storeDirectIllumination</em>（整数）：决定光能传递解决方案是为灯光提供照明还是灯光直接照明。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 灯光直接照明 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5774"></a><p class="table-body">其他任何值 - 光能传递解决方案提供照明。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">自由点灯光</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5773"></a><p class="table-body">[30 32375fcc b025cf0] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">storeDirectIllumination</em>（整数）：决定光能传递解决方案是为灯光提供照明还是灯光直接照明。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 灯光直接照明 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5772"></a><p class="table-body">其他任何值 - 光能传递解决方案提供照明。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">目标线性灯光</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5771"></a><p class="table-body">[30 45076885 40791449] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">storeDirectIllumination</em>（整数）：决定光能传递解决方案是为灯光提供照明还是灯光直接照明。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 灯光直接照明 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5770"></a><p class="table-body">其他任何值 - 光能传递解决方案提供照明。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body">光能传递解决方案提供照明。 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">自由线性灯光</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-576F"></a><p class="table-body">[30 78207401 357f1d58] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">storeDirectIllumination</em>（整数）：决定光能传递解决方案是为灯光提供照明还是灯光直接照明。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 灯光直接照明 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-576E"></a><p class="table-body">其他任何值 - 光能传递解决方案提供照明。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body">光能传递解决方案提供照明。 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">目标区域灯光</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-576D"></a><p class="table-body">[30 71794f9d 70ae52f2] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">storeDirectIllumination</em>（整数）：决定光能传递解决方案是为灯光提供照明还是灯光直接照明。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 灯光直接照明 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-576C"></a><p class="table-body">其他任何值 - 光能传递解决方案提供照明。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body">光能传递解决方案提供照明。 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">自由区域灯光</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-576B"></a><p class="table-body">[30 36507d92 105a1a47] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">storeDirectIllumination</em>（整数）：决定光能传递解决方案是为灯光提供照明还是灯光直接照明。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 灯光直接照明 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-576A"></a><p class="table-body">其他任何值 - 光能传递解决方案提供照明。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body">灯光直接照明 
+                           					 
+                        </td>
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-5769"></a><p class="table-body">光能传递解决方案提供照明。 
+                              						
+                           </p> 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">IES 太阳光</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5768"></a><p class="table-body">[30 23fe7f4f 6cf2fe9] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">castShadows</em>（整数）：控制灯光是否投射阴影。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 不投射阴影 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5767"></a><p class="table-body">其他任何值 - 投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">不投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">投射阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">useGlobalShadowSettings</em>（整数）：控制场景的全局阴影生成器或灯光的阴影生成器是否用于阴影。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 使用灯光的阴影生成器。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5766"></a><p class="table-body">其他任何值 - 使用场景的全局阴影生成器。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                        <td class="table-body">使用场景的全局阴影生成器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">ShadowGenerator</em>（类 ID）：这是指定给灯光的默认阴影生成器的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0x100 0 = 阴影贴图 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5765"></a><p class="table-body">；光线跟踪阴影 = 0x200 0 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5764"></a><p class="table-body">0x1721305e 0x689452a1 = 区域阴影 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5763"></a><p class="table-body">0x20016d4e 0x58ab60f8 = 高级光线跟踪阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">阴影贴图 
+                           					 
+                        </td>
+                        <td class="table-body">阴影贴图 
+                           					 
+                        </td>
+                        <td class="table-body">高级光线跟踪阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">IES 天光</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5761"></a><p class="table-body">[30 4b241b11 64e8527d] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">castShadows</em>（整数）：控制灯光是否投射阴影。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 不投射阴影 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5760"></a><p class="table-body">其他任何值 - 投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">不投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">不投射阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">storeDirectIllumination</em>（整数）：决定光能传递解决方案是为灯光提供照明还是灯光直接照明。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 灯光直接照明 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-575F"></a><p class="table-body">其他任何值 - 光能传递解决方案提供照明。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">光能传递解决方案提供照明。 
+                           					 
+                        </td>
+                        <td class="table-body">光能传递解决方案提供照明。 
+                           					 
+                        </td>
+                        <td class="table-body">光能传递解决方案提供照明。 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong"> 天光</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-575E"></a><p class="table-body">[30 7bf61478 522e4705] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">castShadows</em>（整数）：控制灯光是否投射阴影。 
+                           					 
+                        </td>
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-575D"></a><p class="table-body">0 - 不投射阴影 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-575C"></a><p class="table-body">其他任何值 - 投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-575B"></a><p class="table-body">不投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-575A"></a><p class="table-body">不投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-5759"></a><p class="table-body">不投射阴影 
+                              						
+                           </p> 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-5758"></a><p class="table-body"> <em class="strong">storeDirectIllumination</em>（整数）：决定光能传递解决方案是为灯光提供照明还是灯光直接照明。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">0 - 灯光直接照明 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5757"></a><p class="table-body">其他任何值 - 光能传递解决方案提供照明。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">光能传递解决方案提供照明。 
+                           					 
+                        </td>
+                        <td class="table-body">光能传递解决方案提供照明。 
+                           					 
+                        </td>
+                        <td class="table-body">光能传递解决方案提供照明。 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">日光系统</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5756"></a><p class="table-body">[50 4a1e6deb 31c77d57] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">太阳</em>（类 id)：日光系统中默认太阳的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0 0 = 没有太阳 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5755"></a><p class="table-body">0x1013 0 = 标准太阳 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5754"></a><p class="table-body">0x23fe7f4f 0x06cf2fe9 = IES 太阳 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">标准太阳 
+                           					 
+                        </td>
+                        <td class="table-body">标准太阳 
+                           					 
+                        </td>
+                        <td class="table-body">IES 太阳 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">天空</em>（类 id)：日光系统中默认天空的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0 0 = 没有天空 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5753"></a><p class="table-body">0x7bf61478 0x522e4705 = 天光 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5752"></a><p class="table-body">0x4b241b11 0x64e8527d = IES 天空 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">天光 
+                           					 
+                        </td>
+                        <td class="table-body">天光 
+                           					 
+                        </td>
+                        <td class="table-body">IES 天空 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">SunShadowGenerator</em>（类 id)：指定给太阳的阴影生成器的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0x100 0 = 阴影贴图 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5751"></a><p class="table-body">；光线跟踪阴影 = 0x200 0 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5750"></a><p class="table-body">0x1721305e 0x689452a1 = 区域阴影 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-574F"></a><p class="table-body">0x20016d4e 0x58ab60f8 = 高级光线跟踪阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">如果默认阴影生成器在默认设置中缺失或无效，则阴影生成器默认为正在使用的太阳的阴影生成器。 
+                           					 
+                        </td>
+                        <td class="table-body">光线跟踪阴影 
+                           					 
+                        </td>
+                        <td class="table-body">高级光线跟踪阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">SunCastShadows</em>（整数）：决定太阳是否投射阴影。 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 不投射阴影 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-574D"></a><p class="table-body">其他任何值 - 投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">投射阴影 
+                           					 
+                        </td>
+                        <td class="table-body">投射阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">SunUseGlobalShadowSettings</em>（整数）：决定太阳是使用局部阴影生成器还是全局阴影生成器 
+                           					 
+                        </td>
+                        <td class="table-body">0 - 使用灯光的阴影生成器。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-574C"></a><p class="table-body">其他任何值 - 使用场景的全局阴影生成器。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">SunOvershoot</em>（整数）决定太阳的照明范围是否超过其指定区域。这种设置只适用于定义照明和阴影区域的太阳对象，例如标准太阳。该值不适用于 IES 太阳。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 太阳受限于其定义的区域 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-574B"></a><p class="table-body">1 = 太阳不受其定义区域的限制，但是只在指定的区域内投射阴影。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">太阳受限于其定义的区域 
+                           					 
+                        </td>
+                        <td class="table-body">太阳受限于其定义的区域 
+                           					 
+                        </td>
+                        <td class="table-body">太阳受限于其定义的区域 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">SunColor</em>（3 个浮点）：太阳光的颜色。 
+                           					 
+                        </td>
+                        <td class="table-body">0 0 0 = 黑色 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-574A"></a><p class="table-body">255 255 255 = 白色 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5749"></a><p class="table-body">小于 0 或大于 255 的值分别限制为 0 和 255。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">255 242.25 229.5 
+                           					 
+                        </td>
+                        <td class="table-body">255 242.25 229.5 
+                           					 
+                        </td>
+                        <td class="table-body">255 242.25 229.5 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">太阳光系统</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5748"></a><p class="table-body">[60 5897670e 61b5008d] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">SunShadowGenerator</em>（类 id)：指定给太阳的阴影生成器的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0x100 0 = 阴影贴图 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5747"></a><p class="table-body">；光线跟踪阴影 = 0x200 0 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5746"></a><p class="table-body">0x1721305e 0x689452a1 = 区域阴影 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5745"></a><p class="table-body">0x20016d4e 0x58ab60f8 = 高级光线跟踪阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">光线跟踪阴影 
+                           					 
+                        </td>
+                        <td class="table-body">光线跟踪阴影 
+                           					 
+                        </td>
+                        <td class="table-body">光线跟踪阴影 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">SunCastShadows</em>（整数）：决定太阳是否投射阴影。 
+                           					 
+                        </td>
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-5743"></a><p class="table-body">0 - 不投射阴影 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5742"></a><p class="table-body">其他任何值 - 投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-5741"></a><p class="table-body">投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-5740"></a><p class="table-body">投射阴影 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-573F"></a><p class="table-body">投射阴影 
+                              						
+                           </p> 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-573E"></a><p class="table-body"> <em class="strong">SunUseGlobalShadowSettings</em>（整数）：决定太阳是使用局部阴影生成器还是全局阴影生成器 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">0 - 使用灯光的阴影生成器。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-573D"></a><p class="table-body">其他任何值 - 使用场景的全局阴影生成器。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                        <td class="table-body">使用灯光的阴影生成器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">SunOvershoot</em>（整数）决定太阳的照明范围是否超过其指定区域。这种设置只适用于定义照明和阴影区域的太阳对象，例如标准太阳。此设置不适用于 IES 太阳。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 太阳受限于其定义的区域 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-573C"></a><p class="table-body">1 = 太阳不受其定义区域的限制，但是只在指定的区域内投射阴影。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">太阳受限于其定义的区域 
+                           					 
+                        </td>
+                        <td class="table-body">太阳受限于其定义的区域 
+                           					 
+                        </td>
+                        <td class="table-body">太阳受限于其定义的区域 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">SunColor</em>（3 个浮点）：太阳光的颜色。 
+                           					 
+                        </td>
+                        <td class="table-body">0 0 0 = 黑色 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-573B"></a><p class="table-body">255 255 255 = 白色 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-573A"></a><p class="table-body">小于 0 或大于 255 的值分别限制为 0 和 255。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">225 225 225 
+                           					 
+                        </td>
+                        <td class="table-body">225 225 225 
+                           					 
+                        </td>
+                        <td class="table-body">225 225 225 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">材质编辑器</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5739"></a><p class="table-body">[100 C80 0] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">materialType</em>（类 id)：材质编辑器用来填充未由 medit.mat 覆盖的窗口材质的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">2 0 = 标准材质 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5738"></a><p class="table-body">0x13d11bbe 0x691e3037 = 建筑材质 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5737"></a><p class="table-body">0x27190ff4 0x329b106e = 光线跟踪材质 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">标准材质 
+                           					 
+                        </td>
+                        <td class="table-body">标准材质 
+                           					 
+                        </td>
+                        <td class="table-body">建筑材质 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">RadiosityPerferences</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5736"></a><p class="table-body">[RadiosityPreferences] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">DisplayReflectanceInMEditor</em>（整数）：决定在材质编辑器中是否显示反射比和透射比。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5735"></a><p class="table-body">只有在第一次运行 MAX 时才使用该值。此后将在首选项对话框的“光能传递”选项卡中设置该值。 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5734"></a><p class="table-body">该值保留在 <em class="mild">3dsmax.ini</em> 中： 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5733"></a><p class="table-body">[RadiosityPreferences] DisplayReflectanceInMEditor=n 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">0 = 不显示反射比和透射比 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5732"></a><p class="table-body">其他任何值 = 显示反射比和透射比 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不显示反射比和透射比 
+                           					 
+                        </td>
+                        <td class="table-body">不显示反射比和透射比 
+                           					 
+                        </td>
+                        <td class="table-body">显示反射比和透射比 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">UpdateDataWhenRequiredOnStart</em>（整数）：决定光能传递引擎是否默认为在模型更改时更新解决方案。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5731"></a><p class="table-body">该值在当前默认值中的变化反映用户上一次在“首选项”对话框中选定的设置。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">0 = 不更新解决方案 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5730"></a><p class="table-body">其他任何值 = 更新解决方案 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不更新解决方案 
+                           					 
+                        </td>
+                        <td class="table-body">不更新解决方案 
+                           					 
+                        </td>
+                        <td class="table-body">更新解决方案 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">建筑材质</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-572F"></a><p class="table-body">[C00 13d11bbe 691e3037] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">采样器</em>（类 id）：建筑材质使用的默认采样器的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0x25773211 0 = R2.5 星形 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-572E"></a><p class="table-body">0x25773214 0 = Hammersley 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-572D"></a><p class="table-body">0x25773216 0 = 自适应 Halton 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-572C"></a><p class="table-body">0x25773217 0 = 自适应均匀 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">R2.5 星形 
+                           					 
+                        </td>
+                        <td class="table-body">R2.5 星形 
+                           					 
+                        </td>
+                        <td class="table-body">自适应 Halton 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">SamplerEnable</em>（整数）：决定是否启用采样器。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 不启用采样器 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-572B"></a><p class="table-body">其他任何值 = 启用采样器 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不启用采样器 
+                           					 
+                        </td>
+                        <td class="table-body">不启用采样器 
+                           					 
+                        </td>
+                        <td class="table-body">启用采样器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">光线跟踪材质</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-572A"></a><p class="table-body">[C00 27190ff4 329b106e] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">采样器</em>（类 id）：建筑材质使用的默认采样器的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0x25773211 0 = R2.5 星形 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5729"></a><p class="table-body">0x25773214 0 = Hammersley 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5728"></a><p class="table-body">0x25773216 0 = 自适应 Halton 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5727"></a><p class="table-body">0x25773217 0 = 自适应均匀 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">R2.5 星形 
+                           					 
+                        </td>
+                        <td class="table-body">R2.5 星形 
+                           					 
+                        </td>
+                        <td class="table-body">自适应 Halton 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">SamplerEnable</em>（整数）：决定是否启用采样器。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 不启用采样器 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5726"></a><p class="table-body">其他任何值 = 启用采样器 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不启用采样器 
+                           					 
+                        </td>
+                        <td class="table-body">不启用采样器 
+                           					 
+                        </td>
+                        <td class="table-body">启用采样器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">卡通材质</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5725"></a><p class="table-body">[C00 1a8169a 4d3960a5] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">采样器</em>（类 id）：建筑材质使用的默认采样器的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0x25773211 0 = R2.5 星形 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5724"></a><p class="table-body">0x25773214 0 = Hammersley 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5723"></a><p class="table-body">0x25773216 0 = 自适应 Halton 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5722"></a><p class="table-body">0x25773217 0 = 自适应均匀 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">R2.5 星形 
+                           					 
+                        </td>
+                        <td class="table-body">R2.5 星形 
+                           					 
+                        </td>
+                        <td class="table-body">自适应 Halton 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">SamplerEnable</em>（整数）：决定是否启用采样器。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 不启用采样器 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5721"></a><p class="table-body">其他任何值 = 启用采样器 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不启用采样器 
+                           					 
+                        </td>
+                        <td class="table-body">不启用采样器 
+                           					 
+                        </td>
+                        <td class="table-body">启用采样器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">samplerUseGlobal</em>（整数）：决定渲染器中的全局采样器是否用于此材质。 
+                           					 
+                        </td>
+                        <td class="table-body">0= 使用局部采样器。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5720"></a><p class="table-body">其他任何值 = 启用全局采样器。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">使用局部采样器 
+                           					 
+                        </td>
+                        <td class="table-body">使用全局采样器 
+                           					 
+                        </td>
+                        <td class="table-body">使用全局采样器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">标准材质</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-571F"></a><p class="table-body">[C00 2 0] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">采样器</em>（类 id）：建筑材质使用的默认采样器的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0x25773211 0 = R2.5 星形 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-571E"></a><p class="table-body">0x25773214 0 = Hammersley 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-571D"></a><p class="table-body">0x25773216 0 = 自适应 Halton 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-571C"></a><p class="table-body">0x25773217 0 = 自适应均匀 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">R2.5 星形 
+                           					 
+                        </td>
+                        <td class="table-body">R2.5 星形 
+                           					 
+                        </td>
+                        <td class="table-body">自适应 Halton 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">SamplerEnable</em>（整数）：决定是否启用采样器。 
+                           					 
+                        </td>
+                        <td class="table-body"> <a name="WS1A9193826455F5FF103859C11318F51BDD-571B"></a><p class="table-body">0 = 不启用采样器 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-571A"></a><p class="table-body">其他任何值 = 启用采样器 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不启用采样器 
+                           					 
+                        </td>
+                        <td class="table-body">不启用采样器 
+                           					 
+                        </td>
+                        <td class="table-body">启用采样器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">samplerUseGlobal</em>（整数）：决定渲染器中的全局采样器是否用于此材质。 
+                           					 
+                        </td>
+                        <td class="table-body">0= 使用局部采样器。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5719"></a><p class="table-body">其他任何值 = 启用全局采样器。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">使用局部采样器 
+                           					 
+                        </td>
+                        <td class="table-body">使用全局采样器 
+                           					 
+                        </td>
+                        <td class="table-body">使用全局采样器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">默认 MAX 扫描线渲染器</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5718"></a><p class="table-body">[F00 1 0] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">采样器</em>（类 id）：建筑材质使用的默认采样器的类 ID。 
+                           					 
+                        </td>
+                        <td class="table-body">0x25773211 0 = R2.5 星形 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5717"></a><p class="table-body">0x25773214 0 = Hammersley 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5716"></a><p class="table-body">0x25773216 0 = 自适应 Halton 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5715"></a><p class="table-body">0x25773217 0 = 自适应均匀 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">R2.5 星形 
+                           					 
+                        </td>
+                        <td class="table-body">R2.5 星形 
+                           					 
+                        </td>
+                        <td class="table-body">自适应 Halton 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">SamplerEnable</em>（整数）：决定是否启用采样器。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 不启用采样器 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5714"></a><p class="table-body">其他任何值 = 启用采样器 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不启用采样器 
+                           					 
+                        </td>
+                        <td class="table-body">不启用采样器 
+                           					 
+                        </td>
+                        <td class="table-body">启用采样器 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">反向运动学</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5713"></a><p class="table-body">[IK] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">HDIKSolvesLikeInteractiveIK</em>（整数）：决定历史依赖型 IK 解算器的解算方式是否类似于交互式 IK 解算器。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = HDIK 解算器的解算方式与交互式解算器不同 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5712"></a><p class="table-body">其他任何值 = HDIK 的解算方式与交互式解算器相同 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">HDIK 解算器的解算方式与交互式解算器不同 
+                           					 
+                        </td>
+                        <td class="table-body">HDIK 解算器的解算方式与交互式解算器不同 
+                           					 
+                        </td>
+                        <td class="table-body">HDIK 的解算方式与交互式解算器相同 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">I-drop</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5711"></a><p class="table-body">[DragAndDrop] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">AlwaysDownloadIDroppedFiles</em>（整数）：决定是否始终下载 I-dropped 文件。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 不始终下载 I-dropped 文件。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5710"></a><p class="table-body">其他如何值 = 始终下载 I-dropped 文件。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不始终下载 I-dropped 文件。 
+                           					 
+                        </td>
+                        <td class="table-body">不始终下载 I-dropped 文件。 
+                           					 
+                        </td>
+                        <td class="table-body">始终下载 I-dropped 文件。 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">实例管理器</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-570F"></a><p class="table-body">[InstanceMgr] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">AutoMtlPropagation</em>（整数）：决定实例管理器是否将材质指定传播到实例。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-570E"></a><p class="table-body">只有在第一次运行 <span class="charspan-msgph">3ds Max</span> 时才使用该默认值。其后，可以在“参考”对话框中对值进行调整。 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-570D"></a><p class="table-body">该值存储在 <em class="mild">3dsmax.ini</em> 中： 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-570C"></a><p class="table-body">[InstanceMgr] AutoMtlPropagation=n 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">0 = 不传播材质指定 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-570B"></a><p class="table-body">其他任何值 = 传播材质指定 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不传播材质指定 
+                           					 
+                        </td>
+                        <td class="table-body">不传播材质指定 
+                           					 
+                        </td>
+                        <td class="table-body">传播材质指定 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">按名称选择</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-570A"></a><p class="table-body">[SelectByName] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">DisplaySubtree</em>（整数）：决定“按名称选择”对话框或“按名称选择”浮动框是否显示名称列表中的子树。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5709"></a><p class="table-body">仅在第一次执行“从场景选择”对话框时使用此默认值。其后，下一次执行对话框时，将使用该对话框中所使用的最后一个值。 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5708"></a><p class="table-body">该值保留在 <em class="mild">3dsmax.ini</em> 中： 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-5707"></a><p class="table-body">[SelectByName] DisplaySubtree=n 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">0 = 不显示子树 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5706"></a><p class="table-body">其他任何值 = 显示子树 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">不显示子树 
+                           					 
+                        </td>
+                        <td class="table-body">不显示子树 
+                           					 
+                        </td>
+                        <td class="table-body">显示子树 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">层默认设置</em>[Layer] 
+                           					 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">NewLightsRenderableByLayer</em>（整数）：决定是否将新灯光对象的渲染节点属性设置为“按层”或“按对象”。默认值为 FALSE，并且只有在任何市场默认配置文件或 <em class="mild">3dsmax.ini</em> 中找不到该设置时才使用它。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5705"></a><p class="table-body">该值保留在 <em class="mild">3dsmax.ini</em> [Layer] NewLightsRenderableByLayer=n 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">0 = 将新灯光节点的渲染属性设置为“按对象”。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5704"></a><p class="table-body">其他任何值 = 将新灯光节点的渲染属性设置为“按层”。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">按对象 
+                           					 
+                        </td>
+                        <td class="table-body">按对象 
+                           					 
+                        </td>
+                        <td class="table-body">按层 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">LayerDefault</em>（整数）：决定是否将新对象的渲染属性设置为“按层”或“按对象”。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 将新节点的属性设置为“按对象”。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5703"></a><p class="table-body">其他任何值 = 将新节点的属性设置为“按层”。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">按对象 
+                           					 
+                        </td>
+                        <td class="table-body">按对象 
+                           					 
+                        </td>
+                        <td class="table-body">按层 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">视口默认值</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-5702"></a><p class="table-body">[Viewport] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">DefaultLighting</em>（整数）：决定视口在启动时及执行“文件”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“重置”之后是否使用默认照明。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 视口将不使用默认照明。 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5701"></a><p class="table-body">其他任何值 = 视口将使用默认照明。 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">无默认照明 
+                           					 
+                        </td>
+                        <td class="table-body">无默认照明 
+                           					 
+                        </td>
+                        <td class="table-body">默认照明 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">SingleDefaultLight</em>（整数）：决定视口在启动时及执行“文件”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“重置”之后是否使用默认照明的一个或两个灯光。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 使用两个灯光 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-5700"></a><p class="table-body">1 = 使用一个灯光 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">使用一个灯光 
+                           					 
+                        </td>
+                        <td class="table-body">使用一个灯光 
+                           					 
+                        </td>
+                        <td class="table-body">使用两个灯光 
+                           					 
+                        </td>
+                     </tr>
+                     <tr class="ruled-odd-row">
+                        <td class="table-body"> <em class="strong">变换工具默认值</em> <a name="WS1A9193826455F5FF103859C11318F51BDD-56FF"></a><p class="table-body">[TransformTool] 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                        <td class="table-body">&nbsp;</td>
+                     </tr>
+                     <tr class="ruled-even-row">
+                        <td class="table-body"> <em class="strong">ObjectCloneType</em>（整数）：决定在使用变换工具时按 <img src="../images/GUID-08667A50-F943-4CA7-AF8B-4BF2A40E3297-low.png"> 键的情况下所采取的默认操作。 
+                           					 
+                        </td>
+                        <td class="table-body">0 = 复制对象 
+                           						<a name="WS1A9193826455F5FF103859C11318F51BDD-56FE"></a><p class="table-body">1 = 实例对象 
+                              						
+                           </p> <a name="WS1A9193826455F5FF103859C11318F51BDD-56FD"></a><p class="table-body">2= 参考对象 
+                              						
+                           </p> 
+                        </td>
+                        <td class="table-body">复制对象 
+                           					 
+                        </td>
+                        <td class="table-body">复制对象 
+                           					 
+                        </td>
+                        <td class="table-body">实例对象 
+                           					 
+                        </td>
+                     </tr>
+                  </table>
+               </div> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004F2E"></a> 
+               <h3><a name="GUID-0B457A9A-F5DF-4A4D-A34A-2D3994C5635D"></a> <em class="mild">medit.mat</em> 
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-56FC"></a> <em class="mild"> <span class="filePath">medit.mat</span> </em> 是场景中的默认材质库。 
+                  		  
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004F2F"></a> 
+               <h3><a name="GUID-1B441C5A-6E33-45DB-9128-8C968CE247A7"></a> <em class="mild">maxstart.max</em> 
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-56FB"></a><em class="mild"> <span class="filePath">maxstart.max</span> </em> 文件在启动或重置 <span class="charspan-msgph">3ds Max</span> 时加载。 
+                  		  
+               </p> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

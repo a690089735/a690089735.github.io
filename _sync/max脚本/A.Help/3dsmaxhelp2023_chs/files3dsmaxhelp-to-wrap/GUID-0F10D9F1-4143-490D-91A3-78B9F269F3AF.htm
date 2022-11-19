@@ -1,0 +1,275 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-0F10D9F1-4143-490D-91A3-78B9F269F3AF">
+      <meta name="description" content="利用捕捉动画工具，可以将动画从 Max 中的任何层次或对象集合传输到 CATRig。其目的在于将动画数据从任何动画层次“捕捉”到 CATRig。虽然捕捉动画是导入过程的一部位，但也可以在运动捕获过程之外单独使用该工具。">
+      <meta name="indexterm" content="捕捉动画">
+      <meta name="indexterm" content="“层次”面板">
+      <meta name="contextid" content="CAT-CATCAPTUREANIMATION">
+      <meta name="topic-type" content="concept">
+      <title>捕捉动画</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-0F10D9F1-4143-490D-91A3-78B9F269F3AF"></a><div class="head">
+            <h1>捕捉动画</h1>
+         </div>
+         <p class="blurb">利用捕捉动画工具，可以将动画从 Max 中的任何层次或对象集合传输到 CATRig。其目的在于将动画数据从任何动画层次“捕捉”到 CATRig。虽然捕捉动画是导入过程的一部位，但也可以在运动捕获过程之外单独使用该工具。 </p>
+         <div class="bodyReference"><a name="UL_6BE82234E46D46DF88D7CCB0982D32D1"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-8A8C79A2-3F24-4F07-B377-5D586F765EAE">“导入 HTR/BVH 文件”运动捕捉文件。 <img src="../images/ac.menuaro.gif"> “导入”对话框  <img src="../images/ac.menuaro.gif">  单击“确定”。 <img src="../images/ac.menuaro.gif"> “捕捉动画”对话框</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-1A6C7E69-0449-4BC8-B307-00D2FCB52C0E">默认菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “CAT” <img src="../images/ac.menuaro.gif"> “捕捉动画” <img src="../images/ac.menuaro.gif"> “捕捉动画”对话框</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-93DCA0B7-7A21-465F-B833-5BED3DDBBF74">Alt 菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “CAT 角色” <img src="../images/ac.menuaro.gif"> “捕捉动画” <img src="../images/ac.menuaro.gif"> “捕捉动画”对话框</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31CE"></a>捕捉动画的主旨在于便于运动捕获数据的导入，但它也能处理任何动画层次。将运动数据导入到 <span class="charspan-msgph">3ds Max</span> 中后，下一步是使用捕捉动画实用程序将数据贴图到您的角色上。 
+            </p>
+            <div class="section"><a name="WS7AF5CAC11814013A5D13119D11FDE8C0E05-7FEB"></a> 
+               <h2><a name="GUID-F9630A52-19DE-4598-8231-B8612FA2A043"></a>自动贴图
+               </h2> 
+               <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31BB"></a>捕捉动画中的自动贴图功能为生成源层次和 CATRig 之间的贴图提供了捷径。该功能尝试在源层次中找到与您的骨骼中的骨骼有关的骨骼，并在它们之间建立贴图关系。 
+               </p> 
+               <p><a name="WS73099CC142F48755F2FC9DF120970276F7-5F92"></a>在 <span class="charspan-msgph">CAT</span> 中使用运动－捕捉－导入过程时，“自动贴图”功能会自动运行。然而，打开捕捉动画作为工具时，必须显式调用自动贴图功能。 
+               </p> 
+               <div><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-707B"></a><div class="note-note"><span class="label label-target-language">注意:</span> 如果源层次包含特殊的骨骼名称或者源骨骼层次存在对齐问题，自动贴图功能就会失败。 
+                     <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31B8"></a>此外，自动贴图功能还尝试依靠猜测来对齐源骨骼和 CATRig 骨骼。在某些情况下，为实现最佳贴图，有必要优化结果。 
+                     </p> 
+                  </div>
+               </div> 
+            </div>
+            <div class="section"><a name="WS7AF5CAC11814013A5D13119D11FDE8C0E05-7FE7"></a> 
+               <h2><a name="GUID-D329DF3F-178C-46DA-A52E-B23B294908BE"></a>编辑骨骼对齐
+               </h2> <a name="WS1A9193826455F5FF2566FFD511FDE75E656-31B2"></a><div class="figure-anchor"><img src="../images/GUID-102C0FFF-2EC4-434B-9F63-CCD1BF2AD817-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31B1"></a>许多情况下，需要编辑 CATRig 骨骼的对齐方式，以便正确地适合源骨骼。这样做的原因可能包括：CATBone 采用不同的向上轴作为从中捕捉动画的源骨骼，或者有些软件引入了骨骼旋转偏移。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31B0"></a>一旦开始贴图过程，就会发现 CATRig 层列表的底部添加了一个新层。此层使用能保留 <span class="charspan-msgph">3ds Max</span> 动画约束的特殊控制器。它还存储偏移，并且能够调整所传输运动的比例以适合更小的角色。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31AF"></a>只需选择并变换骨骼，就能编辑对齐方式。每个骨骼不继承其父对象的偏移。由于每个骨骼可单独进行编辑，所以这就简化了编辑骨骼对齐方式的过程。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31AE"></a>此编辑存储在已指定给该骨骼的控制器中。保存捕捉动画预设文件 (*.CAM) 时，也会存储所有偏移和贴图。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31AD"></a> 
+               <h2><a name="GUID-C6006295-1C33-43BE-B271-4C5E19602272"></a>贴图骨骼和层次面板锁定
+               </h2> 
+               <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31AC"></a>捕捉动画工具使用<span class="char_link"><a href="GUID-D6D4CD17-D56F-4C66-876D-FF983BBBFBB9.htm">“层次”面板 </a></span><img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“链接信息”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“骨骼层次”卷展栏上的设置，确定骨骼应采用何种方式贴图。如果对 CATBone 启用“动画模式”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“锁定局部位置”，则捕捉动画工具不会将该骨骼的位置限定于源骨骼的位置。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31AB"></a>同样，如果对 CATBone 启用“动画模式”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“锁定局部旋转”，则捕捉动画工具不会将该骨骼的旋转限定于源骨骼的旋转。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS7AF5CAC11814013A5D13119D11FDE8C0E05-7FE5"></a> 
+               <h2><a name="GUID-7D39F42B-97BB-498B-A140-EB0DC412F2DD"></a>故障排除
+               </h2> 
+               <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31A8"></a>有时，在使用捕捉动画传输动画数据的过程中，可能不会得到想要的结果。这可能是因为源数据不是人体形状骨骼，或者源数据不符合标准命名惯例，或者源骨骼中可能存在会导致自动贴图功能失效的旋转偏移。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31A7"></a>以下过程提供了一些有关解决贴图问题的建议： 
+               </p> <a name="WS1A9193826455F5FF7718A51C1204C8F42FA-5D0A"></a><ol type="1" start="1">
+                  <li>从转到 <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“层管理器”并删除由自动贴图创建的所有动画层开始。 
+                  </li>
+                  <li>使用动画捕捉及拖放法将源骨盆贴图到 CATRig 的骨盆。 </li>
+                  <li> <img src="../images/GUID-7E7B2E05-D918-4D42-BE95-946D1C126036-low.png"> 选择 CATRig 骨盆，并使用“局部”坐标系将其旋转到正确方向。 
+                  </li>
+                  <li>贴图另一个主要组件，如胸腔。为此，可以在选择 CATRig 胸腔后，使用右键菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“贴图骨骼”功能。 
+                  </li>
+                  <li>如果需要，再一次 <img src="../images/GUID-7E7B2E05-D918-4D42-BE95-946D1C126036-low.png"> 在局部轴上进行旋转以纠正方向。 
+                  </li>
+                  <li>对层次的其余部分重复步骤 4 和 5，先从主要组件（如头部）开始，然后顺着层次往下：肢体骨，接着是掌骨/踝骨。 
+                     <div><a name="WS1A9193826455F5FF7718A51C1204C8F42FA-5D03"></a><div class="note-tip"><span class="label label-target-language">提示</span>在某些情况下（特别是贴图腿骨时），在 FK 中执行手动贴图会比在 IK 中更成功。为此，选择骨骼，并在“运动”面板<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“肢体动画”卷展栏中，将 IK/FK 滑块拉到最右边，即值为 1.0。 
+                           <p><a name="WS1A9193826455F5FF7718A51C1204C8F42FA-5D02"></a>但在贴图 IK 目标（如脚部平台）时（顺便提一下，这通常会转到源层次的脚趾或脚），可能需要还原 IK 才能看见正确的方向。 
+                           </p> 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>一切看来正确无误后，用 CAM 文件保存贴图，以便需要时进行还原。 </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-70B2"></a> 
+               <h2><a name="GUID-858E03C2-2420-407F-9781-13C5AC1F48CE"></a>过程
+               </h2> <a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-70B1"></a><p class="list-intro"><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D32"></a>要在直接导入到 CATRig 的运动捕获数据中使用自动捕捉功能，请执行下列操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>通过直接将运动捕获数据<span class="char_link"><a href="GUID-98DBA4D3-C199-41C7-B776-EE5668E613B9.htm">导入</a></span>到 CATRig，访问“捕捉动画”对话框。 
+                     <p><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D31"></a></p> 
+                  </li>
+                  <li>在“捕捉动画”对话框中，展开“CATRig 贴图”卷展栏。 
+                     <p><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-70A7"></a>可以同时查看“源节点”列表和“目标 CATRig”列表中的层次。“捕捉节点”列表显示将由相应的 CATRig 骨骼捕捉动画的源节点，此列表通过自动贴图功能填充。在导入过程中自动执行自动贴图。 
+                     </p> 
+                  </li>
+                  <li>在“运动”面板上，检查“层管理器”卷展栏。 
+                     <p><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D2F"></a>它包含由自动贴图创建的贴图层。 
+                     </p> 
+                  </li>
+                  <li>单击“捕捉动画”。 
+                     <p><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-70A5"></a>源装备动画在播放的同时会传输到新（“塌陷”）动画层中的 CATRig，目前该新层也位于“层管理器”列表中。 
+                     </p> 
+                  </li>
+                  <li>单击“捕捉动画”对话框右上角中的“关闭”按钮 (X)。 
+                     <p><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-70A3"></a>如果启用“关闭时删除源”，则会出现一个小对话框，询问是否要删除源层次并移除贴图层。单击“是”执行这两个操作，单击“否”取消这两个操作。通常，单击“是”。 
+                     </p> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D2E"></a><p class="list-intro"><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D2D"></a>要在单独导入的运动捕获数据中使用动画捕捉功能，请执行下列操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>将 CATRig 添加到场景。 </li>
+                  <li>使用标准 <span class="charspan-msgph">3ds Max</span> 导入功能，将运动捕获数据（如 HTR 文件）导入到场景中。 
+                  </li>
+                  <li>找到导入的运动捕获层次的根节点；通常，这是最上方的父对象，在“从场景选择”对话框或“场景资源管理器”列表中可见。在 character studio Biped 中，它是 Bip001（默认名称）对象。在 HTR 文件中，它通常是虚拟辅助对象。
+                     
+                  </li>
+                  <li>从“动画”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“动画 - CAT”子菜单中，打开“捕捉动画”对话框作为工具。 
+                  </li>
+                  <li>在“捕捉动画”对话框中，单击“源对象”按钮，然后选择导入层次的根节点。 </li>
+                  <li>在“捕捉动画”对话框中，单击“目标装备”按钮，然后选择要向其传输动画的装备 CATParent。 </li>
+                  <li>在“捕捉动画”对话框中，展开“CATRig 贴图”卷展栏。 
+                     <p><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D25"></a>可以同时查看“源节点”列表和“目标 CATRig”列表中的层次。尚未完成任何贴图；因此，“捕捉节点”列表为空，而且“捕捉动画”按钮不可用。 
+                     </p> 
+                  </li>
+                  <li>单击“自动贴图”按钮。 
+                     <p><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D23"></a>在短暂停顿后，“捕捉节点”列表将显示其动画将由相应 CATRig 骨骼捕捉的源节点。 
+                     </p> 
+                  </li>
+                  <li>单击“捕捉动画”。 
+                     <p><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D21"></a>源装备动画在播放的同时会捕捉到新动画层中的 CATRig，目前该新层位于“层管理器”列表中。 
+                     </p> 
+                  </li>
+                  <li>单击“捕捉动画”对话框右上角的“关闭”按钮。 
+                     <p><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D1F"></a>如果启用“关闭时删除源”，则会出现一个小对话框，询问是否要删除源层次并移除贴图层。单击“是”执行这两个操作，单击“否”取消这两个操作。通常，单击“是”。 
+                     </p> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FF7718A51C1204C8F42FA-5D00"></a><p class="list-intro"><a name="WS1A9193826455F5FF7718A51C1204C8F42FA-5CFF"></a>对骨骼手动贴图：
+               </p>
+               <p><a name="WS1A9193826455F5FF7718A51C1204C8F42FA-5CFE"></a>如果自动贴图结果不符合您的贴图需求，则可以通过以下某种方式手动对骨骼贴图： 
+               </p>
+               <ul>
+                  <li>从“源节点”列表中，将要贴图的骨骼拖动到“目标 CATRig”列表中与之匹配的项目。例如，将源骨盆骨骼拖到 CATRig 骨盆骨骼处。 
+                     <p><a name="WS1A9193826455F5FF7718A51C1204C8F42FA-5CFC"></a>释放鼠标按钮后，源骨骼名称将出现在“捕捉节点”列表中，并且位于要贴图到的目标骨骼旁边。 
+                     </p> <a name="WS1A9193826455F5FF7718A51C1204C8F42FA-5CFB"></a><div class="figure-anchor"><img src="../images/GUID-B9DAD494-7A66-4CAB-9BC2-1909167E5D49-low.png"></div>  
+                  </li>
+                  <li>选择要贴图到的目标骨骼，右键单击，并从工具 2 象限中选择“贴图骨骼”。然后，单击要贴图的源骨骼。 
+                     <p><a name="GUID-197CFF6A-9A11-4070-AD06-D882EB7625FD"></a>仅当使用手动方法贴图了至少一个骨骼<em class="mild">后</em>，才会出现“贴图骨骼”四元菜单命令（参见前文）。 
+                     </p> <a name="WS1A9193826455F5FF7718A51C1204C8F42FA-5CF8"></a><div class="figure-anchor"><img src="../images/GUID-8922242C-33D9-4223-8D89-48A5243C5548-low.png"></div>  
+                  </li>
+               </ul> 
+            </div>
+            <div class="section"><a name="WS7AF5CAC11814013A5D13119D11FDE8C0E05-7FEC"></a> 
+               <h2><a name="GUID-4614A13E-3EDB-4C7F-9C6F-75981C414FD7"></a>界面
+               </h2> <a name="WS1A9193826455F5FF2566FFD511FDE75E656-31C8"></a><div class="figure-anchor"><img src="../images/GUID-1FED6ADF-1CF4-4D0C-A718-0E2427110404-low.png"></div>  <a name="GUID-2082D6AC-BEFF-43A3-B0EE-4D01585762FF"></a><dl>
+                  <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-709C"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-709B"></a>源对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-709A"></a> 
+                        <p><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7099"></a>单击以选择从中捕捉动画的层次。在运动捕获导入期间，这是从运动捕获数据创建的层次，并且对象是自动选定的。 
+                        </p> 
+                        <p><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7098"></a>当使用捕捉动画作为工具，而不是作为导入过程一部分时，按钮标签将由层次根节点的名称所取代。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7097"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7096"></a>目标装备</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7095"></a> 
+                        <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31C7"></a>单击以选择要向其贴图动画的 CATRig。当调用捕捉动画工具作为部分导入过程时，目标装备是指要捕捉到的装备，因此它是自动选定的。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7094"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7093"></a>关闭时删除源</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7092"></a> 
+                        <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31C5"></a> 启用该选项并退出捕捉动画时，会出现一个小对话框，询问是否要删除源层次并移除贴图层。单击“是”执行这两个操作，单击“否”取消这两个操作。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7091"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7090"></a>开始时间/结束时间</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-708F"></a> 
+                        <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31BF"></a> 捕捉的第一帧和最后一帧。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-708E"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-708D"></a>频率</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-708C"></a> 
+                        <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31BD"></a> 按所创建的关键点确定帧数。例如：1 表示每帧一个关键点；2 表示每隔一帧一个关键点。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-708B"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-708A"></a>自动贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7089"></a> 
+                        <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31C4"></a> 生成数据与 CATrig 之间的近似贴图。 
+                        </p> 
+                        <p><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7088"></a>当通过 <span class="charspan-msgph">CAT</span> 导入运动捕获数据时，自动贴图会自动完成。只有在以下情况下才需要单击此按钮：将捕捉动画用作工具，或者已更改或已清除贴图并希望还原自动贴图。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7087"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7086"></a>加载</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7085"></a> 
+                        <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31C1"></a> 单击以加载贴图排列，并保存在 CAM 文件中（参见下文“保存”）。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7084"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7083"></a>清除贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7082"></a> 
+                        <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31C3"></a> 移除当前贴图。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7081"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-7080"></a>保存</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-707F"></a> 
+                        <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31C0"></a>将当前贴图另存为 CAM 文件，以备后用。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31C2"></a>将贴图另存为 CAM 文件后，可以避免每次捕捉时重新配置该贴图。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-707E"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-707D"></a>捕捉动画</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-707C"></a> 
+                        <p><a name="WS1A9193826455F5FF2566FFD511FDE75E656-31BC"></a>在由“开始时间”值和“结束时间”值指定的帧范围内，创建关键帧。捕捉动画可以将实时贴图烘焙到 CATRig 上的关键帧。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D1E"></a>仅当“源节点”列表和“目标 CATRig”列表中的组件已相互映射后才可用。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+               <div class="section"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65D6"></a> 
+                  <h3><a name="GUID-F6EC098F-292F-4F27-AEC1-B77B122BE7A0"></a>“CATRig 贴图”卷展栏
+                  </h3> 
+                  <p><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65D5"></a>“CATRig 贴图”卷展栏由两个独立的滚动列表组成。 
+                  </p> 
+                  <p><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65CB"></a>若要手动映射装备组件，请将某个项目从“源节点”列表拖到“目标 CATRig”列表的相应项目（例如，骨盆对骨盆）。从此以后，源节点将出现在“捕捉节点”列表中，并且位于将其指定给的 CATRig 节点旁边。 
+                  </p> 
+                  <p><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65CA"></a>或者，软件会在通过 <span class="charspan-msgph">CAT</span> 导入运动捕获数据时，或使用 <span class="charspan-msgph">3ds Max</span> 导入功能导入运动捕获数据后自动执行贴图；请参见<span class="char_link"><a href="GUID-0F10D9F1-4143-490D-91A3-78B9F269F3AF.htm#WS73099CC142F48755-FD8AF8D1204C8F5D90-70B2">过程</a></span>以了解详细信息。 
+                  </p> <a name="GUID-1E5CB31E-158F-4705-81ED-30E50037001A"></a><dl>
+                     <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65D4"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65D3"></a>源节点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65D2"></a> 
+                           <p><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65D1"></a>列出从中捕捉动画的层次。通过单击“源对象”按钮填充此列表。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65D0"></a><span class="term"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65CF"></a>目标 CATRig</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65CE"></a> 
+                           <p><a name="WS73099CC142F48755-FD8AF8D1204C8F5D90-65CD"></a>列出要向其传输已捕捉动画的层次。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D1D"></a><span class="term"><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D1C"></a>捕捉节点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D1B"></a> 
+                           <p><a name="WS1A9193826455F5FF-414E5ED12075B5C5DC-7D1A"></a>显示其动画将传输到相应 CATRig 层次成员的“源节点”列表项（如果有）。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

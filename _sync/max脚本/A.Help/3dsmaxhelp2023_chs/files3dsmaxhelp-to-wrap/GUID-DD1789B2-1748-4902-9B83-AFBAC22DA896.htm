@@ -1,0 +1,84 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-DD1789B2-1748-4902-9B83-AFBAC22DA896">
+      <meta name="description" content="“服务器常规属性”对话框包含“网络渲染服务器”的配置设置。该对话框的默认设置适用于多数应用场合，但某些情况下可能需要调整这些设置，主要是自动检测失败时调整管理器或 IP 设置。“服务器属性”对话框中指定的信息包含在 backburner.xml 文件（该文件位于 \Network 子目录下）中。如果运行服务器但 backburner.xml 文件不存在或不包含与该服务器相关的信息，则将创建或更新 backburner.xml 文件。">
+      <meta name="indexterm" content="网络渲染: 服务器">
+      <meta name="indexterm" content="服务器设置和管理（网络渲染）">
+      <meta name="contextid" content="IDH_NET_SERVER_PROP">
+      <meta name="contextid" content="IDH_NET_JOB_ASSIGNMENT_SRV_PROP">
+      <meta name="topic-type" content="concept">
+      <title>“服务器常用属性”对话框</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-DD1789B2-1748-4902-9B83-AFBAC22DA896"></a><div class="head">
+            <h1> “服务器常用属性”对话框</h1>
+         </div>
+         <p class="blurb">“服务器常规属性”对话框包含“网络渲染服务器”的配置设置。该对话框的默认设置适用于多数应用场合，但某些情况下可能需要调整这些设置，主要是自动检测失败时调整管理器或 IP 设置。“服务器属性”对话框中指定的信息包含在 <em class="mild">backburner.xml</em> 文件（该文件位于 <em class="mild"> \Network</em> 子目录下）中。如果运行服务器但 <em class="mild">backburner.xml</em> 文件不存在或不包含与该服务器相关的信息，则将创建或更新 <em class="mild">backburner.xml</em> 文件。 
+         </p><a name="GUID-DBE6DC2B-B533-49CA-94C8-CB2EC5D81F48"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-6ADCF725-D331-4082-8914-77C3C2E0740D">Windows“开始”菜单  <img src="../images/ac.menuaro.gif"> “程序” <img src="../images/ac.menuaro.gif"> “Autodesk” <img src="../images/ac.menuaro.gif"> “Backburner” <img src="../images/ac.menuaro.gif"> “服务器” <img src="../images/ac.menuaro.gif"> “编辑”菜单  <img src="../images/ac.menuaro.gif"> “常规设置” <img src="../images/ac.menuaro.gif"> “常规属性”对话框</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-5D2C"></a> 
+            <h2><a name="GUID-E021534B-6A95-47E9-BEF6-7EAC235A5670"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190042DCC"></a><div class="figure-anchor"><img src="../images/GUID-389B3272-9A7C-48E1-881B-F6AB1356757D-low.png"></div>  <a name="GUID-6BD34098-8592-4303-BB0D-5D636F129728"></a><div class="dl_section"><a name="GUID-80DD251F-B841-4877-BCB1-35F2D3614966"></a><p class="title"><a name="GUID-C9249D4B-2283-413F-BE71-B5A7E901679B"></a>服务器名称或 IP 地址
+               </p>
+               <dl>
+                  <dt><a name="GUID-1AF659F6-6D4F-4FAC-9D1F-910A422ED629"></a><span class="term"><a name="GUID-1E127979-6FB3-4513-A866-57EE0B750EDF"></a>[文本字段]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-32E36C46-7AF3-43F5-8F58-BF797EB7C955"></a>显示服务器的名称或其 IP 地址。您可以编辑该字段。
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-F0F20F8B-7602-4AC4-90FA-D777CB87EF7A"></a><p class="title"><a name="GUID-AFAF1259-8461-4AF9-8F60-9C39B0BF21C2"></a>输入管理器名或 IP 地址
+               </p>
+               <dl>
+                  <dt><a name="GUID-465F693E-7B61-4594-9B83-8C0ECAE512C2"></a><span class="term"><a name="GUID-72683B1B-6262-4C9F-8E24-142D82CF8547"></a>自动搜索</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-264E2746-E931-445D-A045-97BAE97D8776"></a>启用此选项后，使用默认的子网掩码 255.255.255.0 启动服务器来搜索管理器。服务器将检测作为管理器的计算机。如果网络的子网掩码（位于“Windows TCP/IP 网络配置”对话框）设置为其他值而不是标准的 255.255.255.0，则服务器可能无法检测到管理器。
+                        
+                        <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4B1C"></a>如果是这种情况，请更改“服务器常规属性”对话框中的子网掩码设置以匹配系统设置。再次启动服务器，应该能检测到该管理器。如果在同一网络上运行多个管理器，则可能需要禁用“自动搜索”并指定服务器连接的管理器。否则，服务器将连接到其找到的第一个管理器。
+                           
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-F277530B-2C9C-46B8-9CC8-A61F9D5F09FE"></a><span class="term"><a name="GUID-8E6C2528-5FBB-4F62-B88F-489EF26E6425"></a>[文本字段]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-D3CD953D-A675-43E6-99CB-B9E032D05D31"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875154A"></a>启用“自动搜索”，指定用于搜索管理器的子网掩码。禁用“自动搜索”，指定要连接管理器的 IP 地址或 DNS 名称。如果在同一子网上运行多个管理器，则使用该管理器系统的名称或 IP 地址。使用该管理器系统的 IP 地址可避免由域名系统的错误实现所引起的任何问题或冲突。
+                           
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <dl>
+               <dt><a name="WS73099CC142F487557579AB9211CB86298F7-678E"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4B1F"></a>服务器端口</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7C5A"></a> 用于指定网络服务器使用的端口号。 
+                     <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4B1E"></a>这些设置指定 TCP/IP 使用的端口号。这些编号必须唯一，但每个服务器必须具有相同的编号。 
+                     </p> 
+                     <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6FDA"></a><div class="note-note"><span class="label label-target-language">注意:</span>端口号就像对拥有相同电话号码的不同用户进行扩展。它们表示服务器和管理器之间的两个信道。只有经专门训练的网络管理员才能更改这些设置。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487557579AB9211CB86298F7-678F"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-4B20"></a>管理器端口</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7C5B"></a> 用于指定网络管理器使用的端口号。 
+                  </div>
+               </dd>
+            </dl>
+            <div class="dl_section"><a name="GUID-6D6233D8-765E-4156-8258-D012C785C1B5"></a><p class="title"><a name="GUID-14D3B0DF-5977-47FA-B66F-6BB88F9A77E4"></a>“描述”组
+               </p>
+               <p><a name="GUID-48D4B790-58CF-4D78-81A7-079E695E9AA1"></a>该文本字段显示使用服务器的用户的相关信息。您可以编辑该字段。 
+               </p>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B4078578-6004-47FC-98DA-3B15946BDA4A">
+      <meta name="description" content="“粒子蒙皮器”修改器允许一个或多个“粒子流”粒子系统将修改后对象的几何体变形。">
+      <meta name="topic-type" content="concept">
+      <title>“粒子蒙皮器”修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B4078578-6004-47FC-98DA-3B15946BDA4A"></a><div class="head">
+            <h1>“粒子蒙皮器”修改器</h1>
+         </div>
+         <p class="blurb">“粒子蒙皮器”修改器允许一个或多个“粒子流”粒子系统将修改后对象的几何体变形。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_C9280D624D60419A87F20E87FE92713F"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-64D6A4E4-C03C-42A8-8999-67E31D300695">选择一个或多个对象  <img src="../images/ac.menuaro.gif"> “修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器”部分  <img src="../images/ac.menuaro.gif">  单击“粒子蒙皮器”。 <img src="../images/ac.menuaro.gif"> “参数”卷展栏</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-FB9FAEB8-5C35-4C04-B524-2A750C4EAB64"></a> 修改器的主要用途是将粒子运动和动画（作为整体粒子系统）传输到标准几何体对象。实际上，粒子作为对修改后的几何体蒙皮的骨骼。与常规骨骼一样，显著的粒子间移动会相当严重地干扰所控制的蒙皮。因此，对于受控制的粘性运动，请务必提前完成粒子动画。从这个意义上来说，粒子蒙皮器与<span class="char_link"><a href="GUID-B84099E0-E996-4F3C-BE02-D03942EAB8DF.htm">“mParticles 粘合”测试</a></span>有密切的关系，后者可以将粒子绑定在一起。 
+               
+            </p>
+            <p><a name="GUID-22A749E2-658D-4D00-997E-74A53754D362"></a> 因为“粒子蒙皮器”在某种程度上类似于<span class="char_link"><a href="GUID-1B3C4662-8C42-4F02-BD1B-204CD491166B.htm">“蒙皮包裹”修改器</a></span>，所以其术语大致是类似的：在“粒子流”粒子系统中扮演蒙皮骨骼角色的粒子被称为<em class="mild">控制粒子</em>。使用“粒子蒙皮器”修改的对象是<em class="mild">基础对象</em>；这可以是任何类型的可变形几何体。此外，术语<em class="mild">点</em>描述的是基础对象上的顶点。 
+               
+            </p>
+            <p><a name="GUID-A1117019-61F7-412C-A7EE-1B3F5AFBD81F"></a> “粒子蒙皮器”与“蒙皮包裹”类似的还有可以在定义蒙皮/骨骼关系后（即，在单击“激活蒙皮”按钮后）修改基础对象的结构和拓扑。 
+               
+            </p>
+            <p><a name="GUID-62760FE1-00E8-44B6-A59B-C213A73D6E41"></a> 在何时定义“蒙皮姿势”方面，“粒子蒙皮器”也非常灵活。当单击“激活蒙皮”时，此姿势在当前帧定义。不需要在第 0 帧处定义“蒙皮姿势”。相反，可以选择最适合定义“蒙皮姿势”的帧；在多数情况下，这是控制粒子接近蒙皮几何体时的一个帧，并且其影响可覆盖基础对象的整个曲面。
+               
+               
+            </p>
+            <p><a name="GUID-23E9DE86-9842-41C7-86EA-6C992BC4F16C"></a> 请参见： 
+               
+            </p>
+            <p><a name="GUID-CA3C55E3-2BF0-45F5-8798-941F5B24A0BC"></a> <span class="char_link"><a href="GUID-92A4D3B8-2302-4E2D-8846-2F454091AA0B.htm">“粒子蒙皮器”修改器：“数据关联参数”卷展栏</a></span> 
+            </p>
+            <p><a name="GUID-22EC81AA-F7DB-41ED-B0B9-52E34EFEEC17"></a> <span class="char_link"><a href="GUID-D87E228C-22D6-4A56-AB36-E7056610F660.htm">“粒子蒙皮器”修改器：“显示参数”卷展栏</a></span> 
+            </p>
+            <div class="section"><a name="AA1011840"></a> 
+               <h2><a name="GUID-44FD323B-C675-4070-9894-8D617E67F8AA"></a>界面
+               </h2> 
+               <div class="section"><a name="AA1011849"></a> 
+                  <h3><a name="GUID-48FA892A-0A1A-424F-9AA2-23AC23899C2D"></a> “粒子蒙皮器”修改器堆栈 
+                  </h3> <a name="FIG_312672D7E2D94DB4870BC9D646789E04"></a><div class="figure-anchor"><img src="../images/GUID-63A63D7D-070D-4E13-9E81-DE1F41E8A55F-low.png"></div>  <a name="GUID-90467014-7AA2-453E-9115-94C70ADF92F5"></a><dl>
+                     <dt><a name="GUID-7691762F-EABA-4D90-8B4D-FB1C1DFF3212"></a><span class="term"><a name="GUID-1E387A9D-0803-45DA-979F-7C2CEA5A109F"></a>“控制粒子”子对象层级</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-A8CE45E2-0DD4-4E08-BC3B-88A753210EC2"></a>当启用“激活蒙皮”后，可以查看和选择此级别的控制粒子。这主要是出于调试目的，因为您可以看到粒子的影响区域范围，以及不受控制的点。
+                        </div>
+                     </dd>
+                  </dl> 
+                  <p><a name="GUID-1FDE46DD-F587-41F7-BE80-C45BD7BE941D"></a> 与此级别相关的某些控件位于<span class="char_link"><a href="GUID-D87E228C-22D6-4A56-AB36-E7056610F660.htm">“显示参数”卷展栏</a></span>上。 
+                     	 
+                  </p> 
+               </div> 
+            </div>
+            <div class="section"><a name="AA1011889"></a> 
+               <h2><a name="GUID-9ECE13A8-2FD4-4BB4-8136-EBAA0E3E0AEF"></a> “参数”卷展栏
+               </h2> 
+               <div><a name="GUID-0D54012F-CE19-4F2D-8B92-B01A1C083108"></a><div class="note-note"><span class="label label-target-language">注意:</span>因为“参数”卷展栏的长度限制，所以用户界面图示分为两个不同的部分，分别显示上半部分和下半部分。若要跳转到下半部分（即，从“控制器限制”设置开始），请单击<span class="char_link"><a href="GUID-B4078578-6004-47FC-98DA-3B15946BDA4A.htm#AA1011999">此处</a></span>。 
+                     
+                  </div>
+               </div> <a name="FIG_5029079091924AEEBB3B3F576505642E"></a><div class="figure-anchor"><img src="../images/GUID-51013D06-E291-4516-8E32-FDCFE2CDEF8C-low.png"></div>  <a name="GUID-9560F74C-A0F4-41E0-AF17-03A4B51B88A4"></a><dl>
+                  <dt><a name="GUID-12701940-14A3-421E-BE0F-7A4ABED49109"></a><span class="term"><a name="GUID-24A0EB79-C045-4270-AF9F-E097BE482DCF"></a>激活蒙皮</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-FFDB940B-B802-4202-A38F-9C435A47CC6A"></a>单击以定义“蒙皮姿势”：基础对象的曲面几何体与控制粒子之间的关系。 
+                     </div>
+                  </dd>
+               </dl> 
+               <p><a name="GUID-EAD8B872-018A-49B1-A2F2-BB2AE8B0C419"></a> 确定将在哪一帧激活蒙皮非常重要，因为该关系将考虑控制粒子在当前帧的位置/方向/比例。该修改器将生成控制粒子的快照，以用作蒙皮的骨骼定义。 
+                  
+               </p> <a name="GUID-7D844A35-E71E-46D1-8ECB-D7AB134BE0BF"></a><dl>
+                  <dt><a name="GUID-A012FAE4-699B-46FD-A2D9-185E40BC6F15"></a><span class="term"><a name="GUID-11F5ED4D-A59D-453A-A16C-6937C3D63683"></a>?</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-D1B91DFF-BD92-4DC3-B167-3F0303183DF9"></a>显示主要的蒙皮相关统计信息： 
+                        <a name="UL_F996F20013B9454BAB2AD656184DECB9"></a><ul>
+                           <li><em class="strong">当前时间</em>当前帧 
+                              	 
+                           </li>
+                           <li><em class="strong">激活时间</em>在其上定义“蒙皮姿势”的帧。 
+                              	 
+                           </li>
+                           <li><em class="strong">控制粒子数</em>控制粒子的原始数量。 
+                              	 
+                           </li>
+                           <li><em class="strong">活动控制粒子</em>出现在当前帧场景中的控制粒子的数量和百分比。 
+                              	 
+                           </li>
+                           <li><em class="strong">未指定的点</em>当前不受粒子控制的网格点的数量。若要查看未指定的点（这些点均显示为小的红色方形轮廓），请转到修改器的“控制粒子”子对象层级，然后激活<span class="char_link"><a href="GUID-D87E228C-22D6-4A56-AB36-E7056610F660.htm">“显示参数”卷展栏</a></span>上的“显示未指定的点”。 
+                              	 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-5BF554AC-D72C-4822-826B-02E4EB2556F1"></a><p class="title"><a name="GUID-5E4B6732-EC3B-41FA-82B8-447CCBB4810D"></a>“计时”组
+                  </p>
+                  <p><a name="GUID-7C4FB777-B0D4-43C9-ABDF-29C0F24F9C20"></a>此组中的设置允许您设定在其中粒子将影响对象图形的帧范围。 
+                     
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-9F829983-7001-4378-9F81-5E7D17F12098"></a><span class="term"><a name="GUID-A4136AC3-1DA6-4015-9C23-123FE0C545E5"></a>在开始时间前隐藏</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-8A7D48FB-97CC-43A8-A0A1-620CBD74010E"></a>启用时，对象会在“开始时间”指定的帧之前完全隐藏。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-49C9E44D-DC07-4650-818E-AE8099D4533A"></a><span class="term"><a name="GUID-BFAE445B-8D20-48C1-B1B7-8BEAA5F7F0DD"></a>开始时间</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-E983E1DE-A8EF-44C8-9EF6-78E23252539B"></a>在此处粒子开始影响对象图形的绝对帧。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-4C8AD519-ED9E-41AC-856D-9AF6B5E3B873"></a><span class="term"><a name="GUID-832669D5-E774-45BB-9F48-506B1732E743"></a>结束时间</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-011427B2-B48B-4C60-B58C-9B988636BE8E"></a>启用时，可用于设置在其后粒子不再影响对象图形的绝对帧。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-3CFA443B-2110-4C55-93B1-50E4038F2EF1"></a><span class="term"><a name="GUID-02567901-8FDB-4728-AC65-A1A7A9816E38"></a>在结束时间后隐藏</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-43DE5E4F-77EF-4CEE-AE2D-3EB574D44049"></a>启用时，对象会在“结束时间”数值设置指定的帧之后完全隐藏。仅当启用“结束时间”时可用。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="GUID-916D7512-1F13-4D03-8BCD-958E927FE122"></a><span class="term"><a name="GUID-4BECDCA4-456E-4498-93B1-2193DA725914"></a>粒子流系统</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-FFA16A9B-103A-4A8C-9718-541D5D66761B"></a>显示“粒子流”系统，其中的粒子将影响对象图形。通过在视口中选择粒子流源图标，使用“添加”按钮来添加系统，或者使用“按列表”按钮从列表中添加粒子流源对象。若要移除系统，请在列表中将其高亮显示，然后单击“移除”。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-47EBC594-13EB-47C7-97F9-5B0864CF9740"></a><span class="term"><a name="GUID-B1E9E115-48B8-4CA4-B50D-5DF9FCE99279"></a>所有粒子流事件</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-4975A9BE-6642-4AB9-A066-A588734A66B6"></a>启用时，列出的粒子流系统（请参见上文）中的所有事件将加入修改器。禁用时，使用粒子流事件控件（请参见下文）指定哪些事件的粒子应影响对象外观。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-12206DC9-5BD8-4CEA-939E-51EC091536EB"></a><span class="term"><a name="GUID-BDCD7706-B6B4-4D1C-8A25-5F5054492A10"></a>粒子流事件</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-ADA02E6C-A7C9-4F3D-BB18-2C8A418607AF"></a>当“所有粒子流事件”处于禁用状态时，列表将显示其粒子将影响对象外观的事件。使用“按列表添加”按钮将事件添加到列表中，并通过高亮显示事件和单击“移除”来将其移除。 
+                        
+                        <div><a name="GUID-0D632099-9568-4A3C-8B4F-E01644704EB3"></a><div class="note-note"><span class="label label-target-language">注意:</span>即使在单击“激活蒙皮”按钮（即，在活动蒙皮状态）之后，您仍可以修改“粒子流”事件的子集。这样做时，仅当控制粒子出现在“粒子流”事件中时您才会降低对控制粒子的控制能力。 
+                              	 
+                              <p><a name="GUID-95DC16DC-3759-4F22-99AC-A7977620C117"></a> 例如，假设您在“所有粒子流事件”选项启用时，在第 100 帧处单击“激活蒙皮”，此时 50 个粒子处于活动状态。这样，您可以使用这 50 个粒子作为控制粒子。如果在您激活蒙皮后禁用了“所有粒子流事件”，然后添加了例如“事件 02”，则仅当控制粒子在“事件
+                                 02”中时修改器才会使用这些控制粒子进行蒙皮。 
+                                 	 
+                              </p> 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-0935F22D-0809-489B-A0EF-EFB8E82B1EEF"></a><span class="term"><a name="GUID-65261CA0-698F-44DD-87C3-633CA0EF9EB3"></a>衰减</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-97C5FCB9-04E9-4400-898F-B89BFCF7CF96"></a>确定控制粒子影响的变化速率。默认值为 1.0；范围为 0.001 至 10.0。 
+                        
+                        <p><a name="GUID-519593E6-C64A-4B0C-821A-F522CA2DB01E"></a> 为了获得最佳的结果（即，从粒子到粒子的平滑控制过渡），使用介于 1.0 到 2.0 之间的衰减值。使用小于 1.0 的值，从粒子到粒子的过渡更硬；控制往往具有主要粒子，非主要粒子的影响较少；使用较高的值，则控制会更多在粒子之间进行平均，因此过渡区域可能会停留在原位置。
+                           
+                           
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-0277B9AF-F757-455A-9AA6-11822CAF913A"></a><span class="term"><a name="GUID-BF2AF34D-55C3-4627-B62A-F57E7453B81A"></a>距离影响</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-77D1DACA-3E34-4D59-85C0-BA8E0110E5E9"></a>确定控制粒子影响的距离和配置。选择计算距离的方法： 
+                        <a name="UL_B9246CA9F88844BA977394313CE4860B"></a><ul>
+                           <li><em class="strong">绝对</em>数值指定影响距离（以世界单位表示）。 
+                              	 
+                           </li>
+                           <li><em class="strong">大小</em>控制粒子的影响距离是粒子图形最长尺寸的长度乘以“大小 %”因子。 
+                              	 
+                           </li>
+                           <li><em class="strong">绑定</em>控制粒子的影响距离是所有粒子绑定的平均长度乘以“绑定 %”因子。 
+                              	 
+                           </li>
+                        </ul> 
+                        <div><a name="GUID-2207AFA7-F568-4043-8191-5EFC257C4ED2"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果控制粒子在所有本地粒子轴的范围不同，则影响图形不再是球形的，而且将延伸以近似粒子图形。 
+                              
+                           </div>
+                        </div> 
+                        <p><a name="GUID-E87CAFE6-5729-4B72-A0FA-A94487700BF9"></a>有关显示“绝对”值效果的视频，请参见<span class="char_link"><a href="GUID-E17465ED-BBC6-46BF-9F4F-2A12AC30413C.htm#SECTION_ABD5D62E86FB4B07B990731B92A3BE22">距离影响</a></span>。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+            <div class="section"><a name="AA1011999"></a> 
+               <h2><a name="GUID-BBD05464-7E55-4AAC-AEF3-B1EF386DFE32"></a>“参数”卷展栏（续）
+               </h2> <a name="FIG_80E5CCAF0180419D8F5BAFC340E5B649"></a><div class="figure-anchor"><img src="../images/GUID-80D84624-718E-4E9B-9FCF-6BB839E950FF-low.png"></div>  <a name="GUID-5F4CEDD8-CD51-4B80-96D0-3F751EDABDF9"></a><dl>
+                  <dt><a name="GUID-551EC38A-68E4-4E25-8F72-3FFCDA1BD743"></a><span class="term"><a name="GUID-F94709C3-88CF-449A-B2A9-727D3606520D"></a>控制器限制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-60E56DB5-54C5-4D76-86B6-318EF1FA08EA"></a>可以控制点的控制粒子的最大数量。 
+                        
+                        <p><a name="GUID-05E69103-75BF-4D9C-99AC-72C3451CF351"></a>有关显示“控制器限制”值效果的视频，请参见<span class="char_link"><a href="GUID-E17465ED-BBC6-46BF-9F4F-2A12AC30413C.htm#SECTION_5E09A376329D40F393EBF0C9E556F8D7">控制器限制</a></span>。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-6E959C55-6A95-495E-8FE7-39BEEC7F0F1C"></a><span class="term"><a name="GUID-2F02C456-E3D7-47B2-A05D-DFD3C492C632"></a>通过内部包含控制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-A72A2A2B-8FAC-486B-89C3-47A7BD254886"></a>启用时，如果控制粒子位于一个点的外部（控制粒子可以从控制曲面的外部“注视”一个点），则粒子不会控制这个点。禁用时，仅距离起作用；粒子是否可以控制一个点由到这个点的接近度确定。 
+                        
+                        <p><a name="GUID-E2238A7E-6128-4B74-8BD6-BE7C1E712132"></a> 您可以使用此选项来限制对位于几何体内部的粒子的影响。这样，如果您的几何体包含多个不相邻的元素，并且将控制点放置在元素体积内部，则一个元素内部的控制粒子不能影响其他附近的元素。 
+                           
+                        </p>
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-5D602204-1041-4A80-9A56-820512A12AE0"></a><p class="title"><a name="GUID-DE28B201-B252-4874-9BDE-BFA459819FD4"></a>“接缝曲面分离”组
+                  </p>
+                  <p><a name="GUID-D4152F68-2090-42E7-8E1E-0C41A2545B9D"></a> 除了根据粒子运动修改几何体图形外，“粒子蒙皮器”可撕开曲面，从而修改拓扑（如果控制粒子彼此远离）。组中的参数定义触发接缝的时间和方式，以及修改器处理接缝拓扑的方式。 
+                     
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-FFF2DD04-42EC-4E5C-9995-157A8AB19BB6"></a><span class="term"><a name="GUID-4949377D-C12D-4957-87CB-691F63828139"></a>移除不受控制的项</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-703F80F0-A41B-4C48-AF43-83D33E13B1EB"></a>启用时，不与任何控制粒子关联的点以及它们的面将从曲面中移除。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-7F4A2D67-F77E-4409-BC84-C9F30C68DF1B"></a><span class="term"><a name="GUID-307AB2E0-A766-4B9E-9D90-859B99175A06"></a>类型</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-80664F46-0C6A-4CAC-B2DA-51EEADB0EEE2"></a>选择“粒子蒙皮器”撕裂修改对象的方法。如果“无”选项启用，则其余的控件不可用。 
+                           <a name="UL_D0A233E41C334F1EBAB32C40048076CE"></a><ul>
+                              <li><em class="strong">绑定断开</em>如果控制粒子具有由<span class="char_link"><a href="GUID-B84099E0-E996-4F3C-BE02-D03942EAB8DF.htm">“mParticles 粘合”测试</a></span>定义的绑定，则使用此选项；当粒子丢失其绑定时，曲面在控制粒子之间撕开。 
+                                 		
+                                 <p><a name="GUID-0943F717-36F4-4104-BAC8-1DF662631F3C"></a>只有将“mParticles 粘合”测试添加到“MassFX 粘合绑定”列表后，才可以将用于拆解曲面的绑定集限制为特定“mParticles 粘合”测试定义的绑定集（请参见下文）。 
+                                    		
+                                 </p> 
+                                 <div><a name="GUID-D1683982-F2F5-40F7-9283-60D8174C5CFB"></a><div class="note-note"><span class="label label-target-language">注意:</span> <span class="char_link"><a href="GUID-B2B8C721-457F-46C4-838A-400A47AA49AC.htm#GUID-A38E769C-BF6F-41D0-AE97-45D6EE0DEDC9">烘焙的模拟</a></span>不会保留绑定信息。因此，如果计划使用“绑定断开”选项撕裂曲面，则不能使用“运行烘焙的模拟”选项。相反，使用标准<span class="char_link"><a href="GUID-62DE88FC-D95C-4D9C-8923-FA6A6895B154.htm">“缓存”操作符</a></span>或<span class="char_link"><a href="GUID-ED7E8CFA-A640-4D21-8C85-78F3719823EB.htm">“缓存磁盘”操作符</a></span>。 
+                                       		
+                                    </div>
+                                 </div> 
+                              </li>
+                              <li><em class="strong">距离更改</em>如果控制粒子之间的距离发生很大变化，几何体曲面将被撕裂。 
+                                 		
+                                 <p><a name="GUID-4BC7ED6B-D9A4-476C-832B-909A29E7CFCF"></a>若要定义接缝效果所需的距离更改量，请使用“距离更改”组设置。可以指定相对更改（由“相对 %”参数定义）或绝对更改（通过“绝对”参数以世界单位定义）。 
+                                    		
+                                 </p> 
+                              </li>
+                              <li><em class="strong">无</em>不启动撕裂操作。 
+                                 	 
+                              </li>
+                              <li><em class="strong">偏移</em>如果控制粒子彼此之间更改了相对位置；换句话说，如果一个控制粒子更改了其在另一个控制粒子的相对坐标中的位置，则几何体曲面将撕裂。即使控制粒子之间的距离不发生更改，偏移条件也可能发生。例如，如果控制粒子在原位旋转，则其相对位置可能会更改从而触发撕裂效果。
+                                 
+                                 		
+                                 <p><a name="GUID-ECB756E8-D3CE-4A77-964C-D77DBE3B030E"></a>撕裂效果所需的偏移量由“偏移距离”组设置定义（这与“距离更改”组相同，具体情况取决于哪个选项被激活）。可以指定相对更改，即相对于粒子之间距离的相对偏移量（由“相对 %”参数定义）或绝对更改（通过“绝对”参数以世界单位定义）。 
+                                    		
+                                 </p> 
+                              </li>
+                           </ul> 
+                           <p><a name="GUID-2ED6FBE8-FCFD-40F4-B485-987EC3E2F75C"></a>有关显示“距离更改”值效果的视频，请参见<span class="char_link"><a href="GUID-E17465ED-BBC6-46BF-9F4F-2A12AC30413C.htm#SECTION_8A72C8CEA71E496DB8AE63CABA6F60F5">距离更改</a></span>。 
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="GUID-B33D8672-1F89-4217-BB30-8E4390EE6451"></a><span class="term"><a name="GUID-4879AA74-9104-4B9F-AEB1-A97D9F45617B"></a>边分割精度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-33E0F0DF-BB9E-4235-8F04-0FAF685453B5"></a>撕裂曲面是通过分割基础对象几何体中的某些边实现的。您可以使用此组中的参数控制所生成狭长面的分割和修剪精度。 
+                        
+                        <p><a name="GUID-79D7A7D0-9057-40FC-A9E6-42E36DA68BC9"></a>若要避免创建狭长面，您可以使用以下选项之一告诉软件拆分点应何时捕捉到最近的原始顶点： 
+                           <a name="UL_32708446013A46DE879778173456D264"></a><ul>
+                              <li><em class="strong">相对 % </em>以相对边长度定义捕捉决策。尽管结果可能会生成裂片面，但是 100% 可提供最佳精度。0% 表示所有分割点将捕捉到最近的原始顶点。 
+                                 	 
+                              </li>
+                              <li><em class="strong">绝对</em>根据分割面上最小的边长定义捕捉决策。如果一条边短于“绝对”值，分割顶点将捕捉到最近的原始顶点。 
+                                 	 
+                              </li>
+                           </ul> 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-E7895F96-73D7-421F-9193-C53828712BDC"></a><span class="term"><a name="GUID-69EB9716-99C2-4B09-82A5-183D2C060A37"></a>距离更改/偏移距离</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-76CE6AA9-99B1-4A07-AEF3-B818587BA5C3"></a>此选项（其名称取决于您将“接缝曲面分离”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“类型”设置为“距离更改”还是“偏移”）允许您指定撕裂操作开始时粒子的移动距离。有关详细信息，请参见“类型”下面的“距离更改”和“偏移”的定义。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-D62040E4-4A1A-423D-BF48-617D6BF7CF1B"></a><span class="term"><a name="GUID-39D7B67F-2A84-4030-9A03-0A986D49DC62"></a>MassFX 粘合绑定</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-FF047DE9-7954-463E-9CC8-055EA5678A12"></a>如果将“接缝曲面分离”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“类型”设置为“绑定断开”，则这些设置可用。 
+                        <a name="UL_1DB6C3277D3845D2B9B232F2E9FC18FB"></a><ul>
+                           <li><em class="strong">所有</em>当粒子的绑定断开时，使用所有可用的“mParticles 粘合”测试撕裂曲面。 
+                              	 
+                           </li>
+                           <li><em class="strong">选定</em>仅使用出现在列表中的“mParticles 粘合”测试。若要将测试添加到列表中，请单击“按列表添加”，高亮显示要添加到对话框列表中的测试，然后单击“选择”。若要将测试从列表中移除，请高亮显示测试的名称，然后单击“移除”。 
+                              	 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-6ED8DB18-9082-4284-AD4A-26D48C25AAC5"></a><span class="term"><a name="GUID-43A3B86D-F966-48CE-BEEF-0F38F4DFED59"></a>保持拓扑</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-C40BB98A-4FFC-4F0D-B5BF-D2C25CEC4C89"></a>启用时，可以为更改修改对象的拓扑设置一个时间限制。在渲染图像运动模糊时这非常重要；否则，可以安全地忽略该设置。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-F44847DD-0DAD-4F2C-932E-5801526EF889"></a><span class="term"><a name="GUID-17A01BC1-22A7-44CC-B041-A7FB1DF0B62D"></a>间隔滴答</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-3E78F7A0-7623-4265-AE5F-068927600A99"></a>拓扑保持其一致性的时间间隔（以<span class="char_link"><a href="GUID-0DECA63B-1C16-45EB-B565-BB66309A8C7C.htm">滴答</a></span>为单位）。默认值为 10；这通常可满足大多数渲染器的要求。例如，计算运动模糊时，默认的扫描线渲染器相隔四个滴答生成两个对象几何体的快照以定义整个几何体更改。
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-92A4D3B8-2302-4E2D-8846-2F454091AA0B.htm">粒子蒙皮器修改器:“数据关联参数”卷展栏</a><p>通过粒子流<span class="char_link"><a href="GUID-F08F7A56-31E4-409D-90F1-70DD95724348.htm">高级数据操纵</a></span>，可以使用“粒子蒙皮器”修改器建立更多层面的控制。利用在“数据”操作符中创建的数据通道，可以控制基础对象中点的可见性，并使用控制粒子来修改基础对象中的贴图通道。 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-D87E228C-22D6-4A56-AB36-E7056610F660.htm">“粒子蒙皮器”修改器:“显示参数”卷展栏</a><p>可以使用这些参数作为调试工具。它们不会影响动画。这些参数仅适用于“粒子蒙皮器”修改器的“控制粒子”子对象层级。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-E17465ED-BBC6-46BF-9F4F-2A12AC30413C.htm">粒子蒙皮器修改器视频</a></li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

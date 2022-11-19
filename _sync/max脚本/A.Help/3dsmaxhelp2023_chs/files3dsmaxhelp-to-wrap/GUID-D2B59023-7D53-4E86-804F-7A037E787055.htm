@@ -1,0 +1,169 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D2B59023-7D53-4E86-804F-7A037E787055">
+      <meta name="description" content="混合材质可以在曲面的单个面上将两种材质进行混合。混合具有可设置动画的“混合量”参数，该参数可以用来绘制材质变形功能曲线，以控制随时间混合两个材质的方式。">
+      <meta name="indexterm" content="混合: 混合材质">
+      <meta name="indexterm" content="材质类型: 混合">
+      <meta name="topic-type" content="topic">
+      <title>混合材质</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D2B59023-7D53-4E86-804F-7A037E787055"></a><div class="head">
+            <h1>混合材质</h1>
+         </div>
+         <p class="blurb">混合材质可以在曲面的单个面上将两种材质进行混合。混合具有可设置动画的“混合量”参数，该参数可以用来绘制材质<span class="char_link"><a href="GUID-977310BF-04F3-4226-B7AB-000AC67D0A35.htm">变形</a></span>功能曲线，以控制随时间混合两个材质的方式。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_2976483CC8494F019CBF23F61874EA5E"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-5097B785-E817-43B7-8D05-66C1CB1F3173">材质/贴图浏览器 <img src="../images/ac.menuaro.gif"> 材质 <img src="../images/ac.menuaro.gif"> 常规 <img src="../images/ac.menuaro.gif"> 混合</span> 
+               </li>
+            </ul>
+            <div><a name="WS73099CC142F487555CDED44512850E8015A-7F88"></a><div class="note-note"><span class="label label-target-language">注意:</span>仅当活动渲染器支持时，该材质才会显示在“材质/贴图浏览器”中。 
+                  
+               </div>
+            </div><a name="WS1A9193826455F5FFBA679E112A6A19004-659"></a><div class="figure-anchor"><img src="../images/GUID-9BE86BE3-C5A0-4706-9E62-2D2EF4E3B381-low.png"><p class="figure-title">混合材质可以组合砖和灰泥。</p>
+            </div>
+            <div style="margin-top: 9pt;"><a name="WS73099CC142F48755BE5C71114081FCAA9-7AB7"></a><div class="note-note"><span class="label label-target-language">注意:</span> 如果即使一个子材质都将它的明暗处理设置为“线框”（参见<span class="char_link"><a href="GUID-62990DBE-928E-401C-BDF3-DF725B6332E2.htm">“明暗器基本参数”卷展栏</a></span>），此时会显示<em class="mild">整个材质</em>，并渲染为线框材质。 
+                  
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2A3C"></a> 
+               <h2><a name="GUID-7AA61D28-231E-4CC8-A623-4C58C814380B"></a>过程
+               </h2> <a name="WS1A9193826455F5FF219F8B8B1249CF2CB82-3B09"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004-655"></a>要创建混合材质，请执行以下操作之一：
+               </p>
+               <ul>
+                  <li>在“板岩材质编辑器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“浏览器”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“材质”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“标准”组中，将“混合”材质拖动到活动视图中（或双击“混合”条目）。 
+                     	 
+                  </li>
+                  <li>在精简材质编辑器中，激活一个示例窗，单击“类型”按钮，接着在<span class="char_link"><a href="GUID-667716BE-A2C3-406A-8991-BA6533A11F02.htm">“材质/贴图浏览器”</a></span>中选择“混合”，然后单击“确定”。 
+                     		
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-777F"></a><span class="charspan-msgph">3ds Max</span> 将打开<span class="char_link"><a href="GUID-131156F0-B9D8-4BFD-ADBC-33FFAE276BEF.htm">“替换贴图”对话框</a></span>。此对话框询问您是要丢弃示例窗中的原始材质，还是将其保留为子材质。 
+                        		
+                     </p> 
+                  </li>
+               </ul> 
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-777E"></a>“混合”材质的控件与“混合”贴图的控件相似。 
+                  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-654"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004-653"></a>要指定组件材质，请执行以下操作之一：
+               </p>
+               <ul>
+                  <li>在“混合基本参数”卷展栏中，单击两个材质按钮中的一个。 
+                     		
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-777D"></a>将显示子材质的参数。默认情况下，子材质是带有“Blinn”明暗处理的“标准”材质。 
+                        		
+                     </p> 
+                  </li>
+                  <li>在“Slate 材质编辑器”中，默认子材质作为节点显示在活动视图中。可以双击这些节点查看和调整材质参数，也可以将“标准”材质节点替换为不同类型的节点。 
+                     	 
+                  </li>
+               </ul> <a name="WS1A9193826455F5FFBA679E112A6A19004-652"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004-651"></a>要控制混合参数，请执行以下操作：
+               </p>
+               <ul>
+                  <li>在“基本参数”卷展栏中，调整“混合量”的值。 
+                     		
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-777C"></a>也可以通过使用贴图来控制混合量。 
+                        		
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-650"></a><div class="figure-anchor"><img src="../images/GUID-4FC4AA51-D0A3-4C90-81AE-5F0A01D6CA38-low.png"><p></p>
+                        <p class="figure-title">用于显示灰泥下面砖的贴图</p>
+                     </div>  
+                  </li>
+               </ul> <a name="WS1A9193826455F5FFBA679E112A6A19004-64F"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004-64E"></a>要使用贴图控制混合量，请执行以下操作之一：
+               </p>
+               <ul>
+                  <li>在“基本参数”卷展栏中，单击“遮罩”旁边的贴图按钮。 
+                     		
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-777B"></a><span class="charspan-msgph">3ds Max</span> 打开浏览器，以便选择贴图类型。 
+                        		
+                     </p> 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-777A"></a>此混合贴图的像素强度控制混合。当强度接近 0 时，组件中的一种颜色或贴图可见；当接近最大强度时，另一个组件可见。 
+                        		
+                     </p> 
+                     <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7AB6"></a><div class="note-tip"><span class="label label-target-language">提示</span>使用“噪波”贴图来混合贴图可以创建具有自然外观的有效结果。 
+                           		  
+                           <p><a name="WS73099CC142F4875513F8D121131880AB2F-7779"></a>贴图指定给“遮罩”参数时，“混合量”设置不可用。如果禁用“使用曲线”，将按原样使用混合贴图。启用“使用曲线”时，可以使用混合曲线移动遮罩贴图的渐变坡度效果，使其中的某个材质显示得更多，或使另一个显示得更少。 
+                              		  
+                           </p> 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>在“板岩材质编辑器”中，将需要的贴图类型添加至活动视图中，然后将贴图节点关联至“混合”材质的“遮罩”组件。 
+                     	 
+                  </li>
+               </ul> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2A3B"></a> 
+               <h2><a name="GUID-16C1A93C-5E1A-403F-B792-5FB784A9A0C0"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004-64D"></a><div class="figure-anchor"><img src="../images/GUID-06BF5B10-8B04-46E2-9235-72CACCB07BF2-low.png"></div>  <a name="GUID-4B3A17AA-6B27-496F-AF04-6E496B45573F"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-B33"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7778"></a>材质 1/材质 2</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D170E"></a> 设置两个用以混合的材质。使用复选框来启用和禁用材质。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-B32"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7777"></a>交互式</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D170F"></a> 选择由交互式渲染器显示在视口中对象曲面上的两种材质或遮罩贴图。 
+                        
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7776"></a>如果一个材质启用<span class="char_link"><a href="GUID-39E321E5-962B-49C2-BD05-B1FA3F48BA26.htm">在视口中显示贴图</a></span>，该材质将优先于“交互式”设置。一次只能在视口中显示一个贴图。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-B31"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7775"></a>遮罩</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1710"></a> 单击以指定用作遮罩的贴图。两个材质之间的混合度取决于遮罩贴图的强度。遮罩的明亮（较白的）区域显示的主要为“材质 1”，而遮罩的黑暗（较黑的）区域显示的主要为“材质 2”。使用复选框来启用或禁用遮罩贴图。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-B30"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7774"></a>混合量</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1711"></a> 确定混合的比例（百分比）。0 表示只有“材质 1”在曲面上可见；100 表示只有“材质 2”可见。如果已指定遮罩贴图，并且已选中遮罩的复选框，则不可用。 
+                        
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7773"></a>可以为此参数设置动画。<span class="char_link"><a href="GUID-1E3E8008-C358-43C7-B2C0-FEC6A6E6FBAD.htm">创建材质预览</a></span>非常适用于测试效果。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-D5A55CA4-9F01-4955-9C2B-3A256BF71DFA"></a><p class="title"><a name="GUID-61B9BF9C-8B17-4D0C-81C8-88FD0573170A"></a>“混合曲线”组
+                  </p>
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-7772"></a>混合曲线影响进行混合的两种颜色之间的变换的渐变或尖锐程度。只有指定遮罩贴图后，才会影响混合。 
+                     
+                  </p>
+                  <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7AB5"></a><div class="note-tip"><span class="label label-target-language">提示</span>对于杂色效果，可以将噪波贴图用作遮罩来混合两个标准材质。 
+                        
+                     </div>
+                  </div>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-B2F"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7771"></a>使用曲线</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1712"></a> 确定“混合曲线”是否影响混合。只有指定并激活遮罩，该控件才可用。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-B2E"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7770"></a>转换区域</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1713"></a> 这些值调整“上限”和“下限”的级别。如果这两个值相同，那么两个材质会在一个确定的边上接合。较大的范围能产生从一个子材质到另一个子材质更为平缓的混合。混合曲线显示更改这些值的效果。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-4BA44033-A486-4BBA-8731-159DFD5836E4.htm">设置材质动画</a></li>
+                     <li class="topiclist-litem"><a href="GUID-77E38107-4F13-4646-B8FB-7A2D71B7FEF3.htm">热材质</a></li>
+                     <li class="topiclist-litem"><a href="GUID-4CE6DC34-D41A-4256-9FB5-67DE9E2493C4.htm">“噪波”卷展栏 (2D)</a></li>
+                     <li class="topiclist-litem"><a href="GUID-3D77DCAE-1812-4E87-B4DC-880846CBF2B4.htm">噪波贴图</a></li>
+                     <li class="topiclist-litem"><a href="GUID-4AA3608D-BCC2-420E-B096-7A2B25E19B63.htm">AVI 文件</a></li>
+                     <li class="topiclist-litem"><a href="GUID-CA63616D-9E87-42FC-8E84-D67E1990EE71.htm">IFL 文件</a></li>
+                     <li class="topiclist-litem"><a href="GUID-ACC80600-A3A5-4DBD-B0CC-7B0CA2C339A9.htm">MOV（QuickTime 电影）文件</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-2E6EA6FE-B177-4794-96C6-1F387859E4BD">
+      <meta name="description" content="“按元素分配材质”修改器使您可以向含有多个元素的对象应用不用的材质 ID，无论是随机分配还是按照公式分配都可以。设置动画时，对例如像晚上办公楼的窗口随机开启和关闭照明这样的应用，该效果十分有用。">
+      <meta name="indexterm" content="设置动画: 按元素分配材质 ID">
+      <meta name="indexterm" content="按元素分配材质修改器">
+      <meta name="indexterm" content="修改器: 按元素分配材质">
+      <meta name="indexterm" content="对象空间修改器: 按元素分配材质">
+      <meta name="contextid" content="MATERIAL_BY_ELEMENT.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS-MATERIAL_BY_ELEMENT">
+      <meta name="topic-type" content="concept">
+      <title>按元素分配材质修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-2E6EA6FE-B177-4794-96C6-1F387859E4BD"></a><div class="head">
+            <h1>按元素分配材质修改器</h1>
+         </div>
+         <p class="blurb">“按元素分配材质”修改器使您可以向含有多个元素的对象应用不用的材质 ID，无论是随机分配还是按照公式分配都可以。设置动画时，对例如像晚上办公楼的窗口随机开启和关闭照明这样的应用，该效果十分有用。 </p>
+         <div class="bodyReference"><a name="UL_53B1DCA206E04C468FE11CBFC04D94CD"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-A3A4CEF5-DC74-4714-84B0-A5F8A4EBB041">进行选择。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “按元素分配材质”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-130E3C40-CCCF-4F73-9DBE-169AA10BB51B">默认菜单：进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “曲面” <img src="../images/ac.menuaro.gif"> “按元素分配材质”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-CEA29117-146B-44F8-B2CD-54B34939BCB8">Alt 菜单：进行选择。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “UV、贴图和材质” <img src="../images/ac.menuaro.gif"> “按元素分配材质”</span> 
+               </li>
+            </ul><a name="WS1A9193826455F5FFBA679E112A6A19004390A"></a><div class="figure-anchor"><img src="../images/GUID-6B44031F-BF5D-422F-AAD3-F4D477A5BEA0-low.png"><p class="figure-title">多种材质随机应用到植物的叶子上</p>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-296C"></a> 
+               <h2><a name="GUID-884441E0-54AB-4B0B-8ACA-9C06720D5844"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004390B"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004390C"></a>示例：要在一组球体中随机指定颜色，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建六个球体。 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9B6"></a><div class="note-tip"><span class="label label-target-language">提示</span>一种方法是添加<span class="char_link"><a href="GUID-8C7ADB18-A4BF-4B44-826D-3929889939B4.htm">球体</a></span>基本体，然后启用“副本”选项，并在按下 <span class="keyboardEntry">Shift</span> 键的同时<span class="char_link"><a href="GUID-14658086-ACD6-480D-A31D-8075C0F40633.htm">移动</a></span>球体，然后在“副本数”字段中输入 <span class="charspan-emphasis"> <em class="strong">5</em> </span>。 
+                        </div>
+                     </div> 
+                  </li>
+                  <li>将球体与单独的可编辑网格对象合并。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F87"></a>右键单击选中球体，然后从四元菜单的“变换”（右下方）象限中选择“转换为:”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“转换为可编辑网格”。然后单击“修改”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“编辑几何体”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“附加列表”。在“附加列表”对话框中，单击“全部”，然后单击“附加”。 
+                     </p> 
+                  </li>
+                  <li>创建一个含有六种材质的<span class="char_link"><a href="GUID-D968CDD9-4C5D-489D-A311-ED7486FCD4AA.htm">“多维/子对象”材质</a></span>，然后为每个材质指定不同的颜色。<img src="../images/GUID-42F45144-BC1D-4F04-B1BE-1D75357E056E-low.png"> 将材质指定给含有多个球体的对象。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F86"></a>因为球体基本体默认指定了材质 ID 2，所以所有的球体现在都呈现在多维/子对象材质中指定给材质编号 2 的颜色。 
+                     </p> 
+                  </li>
+                  <li>将“按元素分配材质”修改器应用到对象上。 </li>
+                  <li>在“参数”卷展栏中，启用“随机分布”。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F85"></a>因为默认“ID 数”设置是 2，所以一些球体指定子材质编号 1，而剩下的指定编号 2。 
+                     </p> 
+                  </li>
+                  <li>使用微调器将“ID 数”设置增加到 3。同时更改“唯一性”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“种子”值。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F84"></a>现在前三种材质随机指定到了球体上，尽管使用了某些“种子”设置，但是可能只能看到两种不同的颜色。 
+                     </p> 
+                  </li>
+                  <li>继续增加“ID 数”设置直到可以看到“多维/子对象”材质中的全部六种颜色。指定是随机的，所以可能会花费一段时间。 </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-296B"></a> 
+               <h2><a name="GUID-D2BF40CE-2981-4811-9A0F-78209701D8F7"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004390D"></a><div class="figure-anchor"><img src="../images/GUID-33C8B986-0A6C-4947-929E-956F125FEF5B-low.png"></div>  <a name="GUID-48ADC5FF-D914-47C5-AEF3-BC748B659DB5"></a><div class="dl_section"><a name="GUID-8F4E13EB-29A5-4B01-84C5-6E11E430CAF5"></a><p class="title"><a name="GUID-61ACFD11-96B4-4C20-A564-E8BC24891530"></a>“按元素分配材质 ID”组
+                  </p>
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F83"></a>该组中有两种选择，既可以创建完全随机的材质 ID 分布，也可以根据设置的百分比在多达八种材质中划分指定。 
+                  </p><a name="UL_446DF62BBC16470E9B41B88B21CB47BD"></a><ul>
+                     <li><em class="strong">随机分布</em>将材质 ID 随机指定到对象中的不同元素。 <a name="WS1A9193826455F5FFF0124D0128930A2850-21A4"></a><ul>
+                           <li> <em class="strong">ID 数</em>使用“随机分布”选项时要指定的材质 ID 的最小数目。因为材质 ID 是随机指定的，所以将其设置为“多维/子对象”材质中的材质数目或更高也无法保证所有的材质都会用到。 
+                           </li>
+                        </ul> 
+                     </li>
+                     <li><em class="strong">列表频率</em>决定最多八种材质 ID 中每种材质 ID 的大致相对权重（百分比），如同通过 Mat'l ID #1-8 参数设置的那样。修改器指定每个材质 ID 直到总权重达到 100。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F7F"></a>例如，如果将“材质 ID 1”设置为 40，“材质 ID 2”设置为 35，而“材质 ID 3”设置为 60，则会将材质 ID 1 指定给大约 40% 元素，将材质 ID 2 指定给大约 35% 的元素，而将材质 ID 3 指定给大约 25%
+                           (100 − [40 + 35]) 的元素。其余的任何百分比（如在材质 ID 4-8 中设置的）都被忽略。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9B7"></a><div class="note-note"><span class="label label-target-language">注意:</span>这些百分比只是近似。对象含有的元素越多，指定的百分比越接近设置的百分比。 
+                           </div>
+                        </div> 
+                     </li>
+                  </ul>
+               </div>
+               <div class="dl_section"><a name="GUID-40313324-390E-431C-8388-4CAB81CB2CD7"></a><p class="title"><a name="GUID-643E4AA5-ED3C-4042-91E2-C2ED1CC0975F"></a>“唯一性”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7B44"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3F7E"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7DA6"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751E15"></a>设置材质 ID 指定的（伪）随机化种子值。不可以设置动画。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

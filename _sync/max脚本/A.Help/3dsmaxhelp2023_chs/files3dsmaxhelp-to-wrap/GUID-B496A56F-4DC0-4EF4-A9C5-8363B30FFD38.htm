@@ -1,0 +1,441 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B496A56F-4DC0-4EF4-A9C5-8363B30FFD38">
+      <meta name="description" content="“卡通”材质创建卡通效果。与其他大多数材质提供的三维真实效果不同，“卡通”提供带有“墨水”边界的平面明暗处理。">
+      <meta name="indexterm" content="明暗处理, 卡通">
+      <meta name="indexterm" content="卡通明暗器">
+      <meta name="indexterm" content="卡通明暗处理">
+      <meta name="indexterm" content="卡通材质">
+      <meta name="indexterm" content="材质类型: 卡通">
+      <meta name="topic-type" content="concept">
+      <title>卡通材质</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B496A56F-4DC0-4EF4-A9C5-8363B30FFD38"></a><div class="head">
+            <h1>卡通材质</h1>
+         </div>
+         <p class="blurb">“卡通”材质创建卡通效果。与其他大多数材质提供的三维真实效果不同，“卡通”提供带有“墨水”边界的平面明暗处理。 
+            
+         </p><a name="UL_F336307EEC8E40B0AE9C150E3B92C071"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-7703F3D0-C138-4020-864E-A254A8D8621A"> 材质/贴图浏览器  <img src="../images/ac.menuaro.gif">  材质  <img src="../images/ac.menuaro.gif">  常规  <img src="../images/ac.menuaro.gif">  卡通</span> 
+            </li>
+         </ul>
+         <div><a name="GUID-F5724467-6080-4BDE-AC33-C0E606B283FA"></a><div class="note-note"><span class="label label-target-language">注意:</span>仅当活动渲染器支持时，该材质才会显示在“材质/贴图浏览器”中。
+               		
+            </div>
+         </div><a name="WS1A9193826455F5FFBA679E112A6A19004-5E7"></a><div class="figure-anchor"><img src="../images/GUID-BBC74B54-4175-4E3E-84E7-62EA6761CA70-low.png"><p class="figure-title">用卡通渲染的蛇</p>
+         </div>
+         <p><a name="WS73099CC142F4875513F8D121131880AB2F-76D8"></a> 由于“卡通”是材质，因此可以创建将 3D 明暗处理对象与平面明暗处理卡通对象相结合的场景。 
+            	 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A19004-5E6"></a><div class="figure-anchor"><img src="../images/GUID-3608AD83-A849-48EC-99EE-624682021C9A-low.png"><p class="figure-title">将真实明暗处理与卡通明暗处理相结合的渲染。</p>
+         </div>
+         <p><a name="WS73099CC142F4875513F8D121131880AB2F-76D7"></a> 在“卡通”材质中，墨水和绘制是两个具有可自定义的设置的独立组件。 
+            	 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A19004-5E5"></a><div class="figure-anchor"><img src="../images/GUID-C3EFE06C-4AB5-473B-8DEB-1A44D8EBA554-low.png"></div>
+         <p><a name="GUID-25448B3B-D738-4B74-9411-D40B1D6534EE"></a> <em class="strong">左：仅绘制组件</em> 
+         </p>
+         <p><a name="GUID-47A648CA-E44A-4187-A910-F423FB00E423"></a> <em class="strong">右：仅墨水组件</em> 
+         </p>
+         <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7AA1"></a><div class="note-tip"><span class="label label-target-language">提示</span> “卡通”使用<span class="char_link"><a href="GUID-F0A61E06-1A1F-4A7A-9633-8975189CC0F0.htm">光线跟踪器设置</a></span>，因此调整光线跟踪加速可能对“卡通”的速度有影响。另外，在使用“卡通”时禁用抗锯齿可以加速材质，直到准备好创建最终渲染。（禁用“墨水”<span class="charspan-emphasis"> <em class="mild">确实</em> </span> 可加速“卡通”。) 
+               	 
+            </div>
+         </div>
+         <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7AA0"></a><div class="note-note"><span class="label label-target-language">注意:</span>运动模糊不适用于“卡通”。（通常，手工绘制的卡通不会出现运动模糊。） 
+               	 
+            </div>
+         </div>
+         <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A9F"></a><div class="note-note"><span class="label label-target-language">注意:</span>用“卡通”明暗处理的对象上不出现阴影，除非“绘制”级别的值大于或等于 4。 
+               	 
+            </div>
+         </div>
+         <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A9E"></a><div class="note-warning"><span class="label label-target-language">警告:</span>只有在摄影机视图或透视视图中进行渲染时，“卡通”才能生成正确效果。它在正交视图中不起作用。 
+               	 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004-5E4"></a> 
+            <h2><a name="GUID-60CD2FD4-1BA9-45F5-8443-1D3ADC749F63"></a>使用卡通
+            </h2> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-76D6"></a>“卡通”可以在多个对象上使用，但通常按如下操作可以获得最好的效果： 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5E3"></a><ol type="1" start="1">
+               <li>收集渲染为单个曲面模型的卡通的对象（例如，“可编辑网格”）。 
+                  		  
+               </li>
+               <li>为要分别明暗处理的模型的各个部分指定不同的<span class="char_link"><a href="GUID-D8EDE0E1-9694-4844-B58B-A8CB0EBD473B.htm">材质 ID 值</a></span>。 
+                  			 
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-76D5"></a>这通常在“元素”子对象层级进行（尽管也可以将不同的材质 ID 应用到各个面和多边形）。 
+                     			 
+                  </p> 
+               </li>
+               <li>创建<span class="char_link"><a href="GUID-D968CDD9-4C5D-489D-A311-ED7486FCD4AA.htm">多维/子对象材质</a></span>。在其中为模型中每个颜色创建子材质。为每个子材质创建“卡通”材质，然后使用各个子材质的“绘制”控件指定颜色和贴图。 
+                  			 
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-76D4"></a>如果必要，也可以调整“墨水”控件。 
+                     			 
+                  </p> 
+               </li>
+            </ol> 
+            <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A9D"></a><div class="note-tip"><span class="label label-target-language">提示</span> <span class="char_link"><a href="GUID-6430FB35-2232-4451-945A-C1EBD7080243.htm">动态明暗处理</a></span>适用于“卡通”材质，并且是预览材质效果的好方法。 
+                  		
+               </div>
+            </div> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004-5E2"></a> 
+            <h2><a name="GUID-D0A61F73-8728-4A4C-982D-F48EC9C6606F"></a>故障排除
+            </h2> 
+            <p><a name="WS73099CC142F4875513F8D121131880AB2F-76D3"></a>以下是常见问题和可能的解决方案： 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5E1"></a><ul>
+               <li>找不到内部墨水线。 
+                  			 
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-76D2"></a>“重叠”偏移可能太大。减少“重叠”偏移。如果“延伸重叠”处于启用状态，那么也可能是“延伸重叠”偏移太大。 
+                     			 
+                  </p> 
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-76D1"></a>另一个可能原因是存在自相交对象，或通过附加较小对象来构建对象时产生了相交面。在这种情况下，设置要使用“材质 ID”或“平滑组”墨水组件的对象。如果元素已具有不同的材质 ID，请尝试禁用“仅相邻面”。 
+                     			 
+                  </p> 
+               </li>
+               <li>对象的斜面部分看起来不整洁。 
+                  			 
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-76D0"></a>“重叠”或“延伸重叠”的偏移可能太小了。试着减少偏移。 
+                     			 
+                  </p> 
+               </li>
+               <li>互相穿越对象之间的墨水看起来不整洁。 
+                  			 
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-76CF"></a>找出不整洁的墨水组件，并调整其偏移控制。 
+                     			 
+                  </p> 
+               </li>
+               <li>启用“变量宽度”时，墨水线消失或太细。 
+                  			 
+                  <p><a name="WS73099CC142F4875513F8D121131880AB2F-76CE"></a>启用“限制”。也可以试着减少照明级别，查看其是否有效。或者，可尝试禁用“变量宽度”，然后为“墨水宽度”组件指定<span class="char_link"><a href="GUID-B3F75800-E884-467B-A4D1-C95702BFA15F.htm">衰减贴图</a></span>。 
+                     			 
+                  </p> 
+               </li>
+            </ul> 
+            <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A9C"></a><div class="note-tip"><span class="label label-target-language">提示</span>为了找出引发问题的墨水组件，可以试着为每个组件指定易区分（并且易读）的不同颜色，然后渲染图像。 
+                  		
+               </div>
+            </div> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2A2D"></a> 
+            <h2><a name="GUID-79916023-E061-4488-9073-4EFDBE02385B"></a>界面
+            </h2> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004-5E0"></a> 
+               <h3><a name="GUID-9F7E9533-B4D1-4686-BDE7-FE3E62F259F0"></a>“基本材质扩展”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A19004-5DF"></a><div class="figure-anchor"><img src="../images/GUID-CE1CD2E6-4095-4051-88DE-A9901359221D-low.png"></div>  <a name="GUID-DD76D52C-4EFE-4065-B42A-C1B0080966AC"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AF2"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76CD"></a>双面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D173E"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D22"></a>使材质成为 <span class="char_link"><a href="GUID-4EACDADD-2F96-4869-91EC-34983EBED732.htm">双面</a></span>。将材质应用到选定面的双面。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AF1"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76CC"></a>面贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D173F"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D23"></a>将材质应用到几何体的各面。如果材质使用贴图，则不需要<span class="char_link"><a href="GUID-245C4F26-7D3B-40E4-B815-531E3DF49967.htm">贴图坐标</a></span>。贴图会自动应用到对象的每一面。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AF0"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76CB"></a>面状</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1740"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D24"></a>就像表面是平面一样，渲染表面的每一面。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AEF"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76CA"></a>未绘制时雾化背景</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1741"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D25"></a>当“绘制”处于禁用状态（即“亮区”切换处于禁用状态）时，材质绘制区域的颜色与背景颜色相同。启用此切换时，绘制区域中的背景将受到摄影机与对象之间的雾的影响。默认设置为禁用状态。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AEE"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76C9"></a>不透明 alpha</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1742"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D26"></a>启用此选项后，即使“墨水”和“绘制”组件处于禁用状态，Alpha 通道也为不透明。默认设置为禁用状态。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AED"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76C8"></a>凹凸</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1743"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D27"></a>启用此选项后，会启用凹凸贴图。使用数字设置来控制用于指定<span class="char_link"><a href="GUID-2818B285-15A3-4E7F-8E0F-8C00B37D0FA8.htm">凹凸贴图</a></span>的凹凸量和贴图按钮。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AEC"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76C7"></a>位移</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1744"></a> 
+                        <p><a name="WS1A9193826455F5FF11D4ED1B128F2317A084840"></a>启用此选项后，会启用置换贴图。使用数字设置来控制用于指定<span class="char_link"><a href="GUID-14B36287-F9FB-4D92-98D3-A95D100DA296.htm">置换贴图</a></span>的置换量和贴图按钮。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004-5DC"></a> 
+               <h3><a name="GUID-5CE5A450-750A-4205-BF4B-B3F277BDD72E"></a>“绘制控制”卷展栏
+               </h3> 
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-76C6"></a>绘制是材质的主颜色，并且具有三个组件。本部分先介绍组件，然后再介绍常用控件。 
+                  		  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5DB"></a><div class="figure-anchor"><img src="../images/GUID-9DABA93C-39B0-4FA8-85B2-41F044EAE791-low.png"></div>  <a name="GUID-B50563ED-4606-4E65-B05F-C583E7F44D91"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AEB"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76C4"></a>亮区</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1745"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D29"></a>对象中亮区的填充颜色。默认设置为淡蓝色。 
+                           		  
+                        </p> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-76C3"></a>禁用此组件将使对象不可见，但墨水除外。默认设置为启用。 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5DA"></a><div class="figure-anchor"><img src="../images/GUID-8B63D70D-C7AD-4A5F-8958-9A55F751F38E-low.png"></div>  
+                        <p><a name="GUID-7F46342C-4DD8-4234-99FA-2D6F8B569346"></a> <em class="strong">左：有光的角色</em> 
+                        </p> 
+                        <p><a name="GUID-CA4D90B1-BA04-4A4E-8F2B-FEEB11AF97BD"></a> <em class="strong">右：禁用有光和高亮显示，以便仅渲染墨水</em> 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5D9"></a><ul>
+                           <li> <em class="strong">绘制级别</em>渲染颜色的明暗处理数，从淡到深。值越小，对象看起来越平坦。范围从 1 到 255。默认设置为 2。 
+                              				<a name="WS1A9193826455F5FFBA679E112A6A19004-5D8"></a><div class="figure-anchor"><img src="../images/GUID-9A30A80C-9418-40FD-A703-3648880CF0EC-low.png"><p></p>
+                                 <p class="figure-title">增加“层级”的值会增加在有光区域看到的基本颜色的明暗处理数。</p>
+                              </div>  
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AEA"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76C2"></a>暗区</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1746"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D2A"></a>第一个数字设置是显示在对象不亮面上的亮区颜色的百分比。默认设置为 70.0。 
+                           		  
+                        </p> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-76C1"></a>禁用此组件将显示色样，使用色样可以为明暗处理区域指定不同的颜色。默认设置为启用。 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5D7"></a><div class="figure-anchor"><img src="../images/GUID-DE47E409-EB5B-4F93-A35C-13E8151DE4B2-low.png"><p class="figure-title">增加明暗处理的值会增加明暗处理区域的饱和度。还可以使用“明暗处理”为明暗处理指定不同的颜色。</p>
+                        </div>  
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AE9"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76C0"></a>高光</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1747"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D2B"></a>反射高光的颜色。默认设置为白色。 
+                           		  
+                        </p> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-76BF"></a>禁用此组件后，将没有反射高光。默认设置为禁用状态。 
+                           		  
+                        </p> 
+                        <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A9A"></a><div class="note-tip"><span class="label label-target-language">提示</span>反射高光显示可能破坏 2D 效果。因此应谨慎使用此组件。 
+                              		  
+                           </div>
+                        </div> <a name="WS1A9193826455F5FFBA679E112A6A19004-5D6"></a><div class="figure-anchor"><img src="../images/GUID-964A7935-CDCD-4FC9-BAC3-46C888540AE4-low.png"></div>  
+                        <p><a name="GUID-FF40CC0B-FB57-4A10-B8EE-68DC48809F5E"></a> <em class="strong">左：无高光</em> 
+                        </p> 
+                        <p><a name="GUID-98415027-927E-41EA-B7DE-6269F5EF3A05"></a> <em class="strong">右：启用高光</em> 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5D5"></a><ul>
+                           <li> <em class="strong">光泽度</em>反射高光的大小。光泽度越大，高亮显示越小。默认设置为 50.0。 
+                              				<a name="WS1A9193826455F5FFBA679E112A6A19004-5D4"></a><div class="figure-anchor"><img src="../images/GUID-E3284B69-1FBB-4B2E-97BB-A11345BE6154-low.png"><p></p>
+                                 <p class="figure-title">增加光泽度会减少高亮显示的大小。</p>
+                              </div>  
+                           </li>
+                        </ul> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-76BE"></a> <em class="strong">颜色组件控件：</em> 
+                        </p> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-76BD"></a>这些是为每个绘制组件复制的控件。每个控件都有启用/禁用切换、主控件，并且右侧有一组贴图控件。 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5D3"></a><ul>
+                           <li> <em class="strong">复选框</em>卷展栏左侧的复选框可启用或禁用它所对应的特定组件。在明暗处理的情况下，它在百分数（亮色）或不同的明暗处理颜色之间切换。 
+                              			 
+                           </li>
+                           <li> <em class="strong">色样或微调器</em>每个组件的主控件。单击色样以显示<span class="char_link"><a href="GUID-73A38CF6-FE78-443F-BB42-CC8C60449585.htm">颜色选择器</a></span>，然后设置组件的颜色。在明暗处理的情况下，此控件也可以是百分比微调器。 
+                              			 
+                           </li>
+                        </ul> <a name="WS1A9193826455F5FFBA679E112A6A19004-5D2"></a><div class="figure-anchor"><img src="../images/GUID-2CF2EFC5-2731-427F-B83F-90AA776B77D9-low.png"></div>  <a name="WS1A9193826455F5FFBA679E112A6A19004-5D1"></a><ul>
+                           <li> <em class="strong">贴图微调器</em>主控件右侧的微调器为要使用的贴图百分比。如果值小于 100.0，贴图将与指定颜色相混合。默认设置为 100.0。 
+                              				<a name="WS1A9193826455F5FFBA679E112A6A19004-5D0"></a><div class="figure-anchor"><img src="../images/GUID-F3BD9501-848C-4761-B9B3-D6FE2A0D507A-low.png"></div>  
+                              <p><a name="GUID-1EE89E04-BD79-4787-823A-CF8DF4E033CC"></a> <em class="strong">对有光组件进行贴图：</em> 
+                              </p> 
+                              <p><a name="GUID-1B738BD9-BEF4-4D7D-9D8B-D2B8E4DFC09C"></a> <em class="strong">右后：原始的未贴图材质</em> 
+                              </p> 
+                              <p><a name="GUID-E5A94462-AF03-4D2C-9312-47C15F272524"></a> <em class="strong">左：应用了衰减贴图的有光组件</em> 
+                              </p> 
+                              <p><a name="GUID-41F3760B-B5F5-491C-8CA7-22672B729264"></a> <em class="strong">右前：应用了位图贴图的有光组件</em> 
+                              </p> 
+                           </li>
+                           <li> <em class="strong">“贴图”复选框</em>微调器和按钮之间的复选框可启用或禁用贴图。默认设置为禁用状态，直到指定了贴图后再启用它。 
+                              			 
+                           </li>
+                           <li> <em class="strong">贴图按钮</em> 单击按钮为此组件指定贴图。 
+                              				
+                              <p><a name="WS73099CC142F4875513F8D121131880AB2F-76BC"></a>指定并启用了贴图后，贴图会百分之百完全覆盖主颜色组件。百分比较小时，贴图将与颜色混合。 
+                                 				
+                              </p> 
+                           </li>
+                        </ul> 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-76BB"></a></p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004-5CF"></a> 
+               <h3><a name="GUID-0F0576DD-FDE6-4065-95DA-8C56AE9C1A16"></a>“墨水控制”卷展栏
+               </h3> 
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-76BA"></a>墨水是材质中的划线、轮廓。 
+                  		  
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5CE"></a><div class="figure-anchor"><img src="../images/GUID-1F95034F-E32D-4155-B9CF-666DC84989C8-low.png"></div>  
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-76B9"></a>除“墨水宽度”外，每个墨水组件都有启用/禁用切换和色样。单击色样以显示<span class="char_link"><a href="GUID-73A38CF6-FE78-443F-BB42-CC8C60449585.htm">颜色选择器</a></span>，并更改墨水组件的颜色。每个墨水组件（包括“墨水宽度”）还有一组贴图控件。 
+                  		  
+               </p> <a name="GUID-1671BE93-5F30-40E2-BC88-E8287463D151"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AE8"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76B8"></a>墨水</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1748"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D2C"></a>启用时，会对渲染施墨。禁用时则不出现墨水线。默认设置为启用。 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5CD"></a><div class="figure-anchor"><img src="../images/GUID-6EE73C46-7A09-4B06-AD0C-F022D9038616-low.png"></div>  
+                        <p><a name="GUID-4B06402D-7327-48DF-9BE2-CC740CB9FD7F"></a> <em class="strong">左：用墨水渲染</em> 
+                        </p> 
+                        <p><a name="GUID-5CDAAC86-5184-43E4-B955-BA0ABAF4808C"></a> <em class="strong">右：禁用墨水</em> 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AE7"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76B7"></a>墨水质量</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1749"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D2D"></a>影响笔刷的形状及其使用的示例数量。如果“质量”等于 1，笔刷为“+”形状，示例为 5 个像素的区域。如果“质量”等于 2，笔刷为八边形，示例为 9 x 15 个像素的区域。如果“质量”等于 3，笔刷近似为圆形，示例为 30 个像素的区域。范围从
+                           1 到 3。默认设置为 1。 
+                           		  
+                        </p> 
+                        <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A99"></a><div class="note-tip"><span class="label label-target-language">提示</span>对于大多数模型，增加“质量”值仅能产生微小的变化，且需要很长时间来渲染。因此仅当使用默认墨水“质量”使子对象的墨水在完成的渲染中显示很多缺陷时，才采用这种做法。（不要依赖 ActiveShade 预览，因为会出现锯齿。） 
+                              		  
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AE6"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76B6"></a>墨水宽度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D174A"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D2E"></a>以像素为单位的墨水宽度。在未启用“可变宽度”时，它是由微调器标记的“最小值”指定。启用“可变宽度”时，也将同时启用“最大”微调器，墨水宽度可以在最大值和最小值之间变化。默认设置：最小值为 2.0，最大值为 4.0。 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5CC"></a><div class="figure-anchor"><img src="../images/GUID-5B41C5FA-6716-45C6-9B6A-BC8B314D8714-low.png"></div>  
+                        <p><a name="GUID-A645A1A5-37C5-4F4B-87F0-23D8221E08AF"></a> <em class="strong">左：1 像素墨水宽度</em> 
+                        </p> 
+                        <p><a name="GUID-330581D6-9C29-4F27-98E7-019AB81A54D0"></a> <em class="strong">中：5 像素墨水宽度</em> 
+                        </p> 
+                        <p><a name="GUID-133E1E3C-2C74-46E6-BF30-968B785A3862"></a> <em class="strong">右：墨水宽度在 1 像素到 5 像素之间变化。</em> 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AE5"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76B5"></a>可变宽度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D174B"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D2F"></a>启用此选项后，墨水宽度可以在墨水宽度的最大值和最小值之间变化。启用了“可变宽度”的墨水比固定宽度的墨水看起来更加流线化。默认设置为禁用状态。 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5CB"></a><div class="figure-anchor"><img src="../images/GUID-D89F2C95-7B0D-4857-AD00-16407A024B9B-low.png"></div>  
+                        <p><a name="GUID-CA2AD3E7-FF67-4E81-98CA-0C40CE57EC2F"></a> <em class="strong">墨水厚度可以进行贴图。</em> 
+                        </p> 
+                        <p><a name="GUID-C451D20D-E21A-4E55-B962-DC8F28A41787"></a> <em class="strong">左：用渐变贴图进行贴图的厚度</em> 
+                        </p> 
+                        <p><a name="GUID-1112D372-12B2-48A3-BFEE-CD949595A51E"></a> <em class="strong">右：用噪波贴图进行贴图的厚度</em> 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AE4"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76B4"></a>钳制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D174C"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D30"></a>启用了“可变宽度”后，有时场景照明使一些墨水线变得很细，以至于几乎不可见。如果发生这种情况，应启用“限制”，它会强制墨水宽度始终保持在“最大”值和“最小”值之间，而不受照明的影响。默认设置为禁用状态。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AE3"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76B3"></a>轮廓</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D174D"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D31"></a>对象外边缘处（相对于背景）或其他对象前面的墨水。默认设置为启用。 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5CA"></a><div class="figure-anchor"><img src="../images/GUID-80443984-DF45-4982-85FE-4ABF260438F9-low.png"></div>  
+                        <p><a name="GUID-B148FBB3-E5A7-4A40-816E-799EDE0A463B"></a> <em class="strong">左：仅渲染轮廓</em> 
+                        </p> 
+                        <p><a name="GUID-1F100F62-78ED-4825-96EB-F63E5149AF24"></a> <em class="strong">右：仅渲染重叠和延伸重叠</em> 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5C9"></a><ul>
+                           <li> <em class="strong">相交偏移</em>使用选项来调整两对象相交时可能出现的缺陷。实际上，这会移动施墨的对象，使之靠近或远离渲染观察点，这样“卡通”就可以确定哪一个对象在前面。正值使对象远离观察点，负值则将对象拉近。默认设置为 0.0。 
+                              			 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AE2"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76B2"></a>重叠</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D174E"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D32"></a>当对象的某部分自身重叠时所使用的墨水。默认设置为启用。 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5C8"></a><ul>
+                           <li> <em class="strong">重叠偏移</em>使用此选项来调整跟踪重叠部分的墨水中可能出现的缺陷。表示重叠应在后面曲面前的多远处才能启用“重叠”墨水。正值使对象远离观察点，负值则将对象拉近。默认设置为 10.0。 
+                              			 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AE1"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76B1"></a>延伸重叠</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D174F"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D33"></a>与重叠相似，但将墨水应用到较远的曲面而不是较近的曲面。默认设置为禁用状态。 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5C7"></a><ul>
+                           <li> <em class="strong">延伸重叠偏移</em>使用此选项来调整跟踪延伸重叠部分的墨水中可能出现的缺陷。表示延伸重叠应在前面曲面后的多远处才能启用“延伸重叠”墨水。正值使对象远离观察点，负值则将对象拉近。默认设置为 0.0。 
+                              			 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-AE0"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76B0"></a>平滑组</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1750"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D34"></a><span class="char_link"><a href="GUID-1244162D-A063-486C-BD9B-168466F6488B.htm">平滑组</a></span>边界间绘制的墨水。换句话说，它对尚未进行平滑处理的对象的边界施墨。默认设置为启用。 
+                           		  
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-ADF"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76AF"></a>材质 ID</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1751"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D35"></a>不同<span class="char_link"><a href="GUID-D8EDE0E1-9694-4844-B58B-A8CB0EBD473B.htm">材质 ID 值</a></span>之间绘制的墨水。默认设置为启用。 
+                           		  
+                        </p> 
+                        <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A98"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果两个“卡通”材质在视口中重叠并且都启用了“材质 ID”，则在它们重叠处会得到两倍厚度的墨水线。要更正它，应禁用其中一个材质的“材质 ID”组件。 
+                              		  
+                           </div>
+                        </div> <a name="WS1A9193826455F5FFBA679E112A6A19004-5C6"></a><div class="figure-anchor"><img src="../images/GUID-391247B8-8C63-4137-9FA4-393CE83E92FB-low.png"><p class="figure-title">对子材质之间的边界施墨。</p>
+                        </div>  <a name="WS1A9193826455F5FFBA679E112A6A19004-5C5"></a><ul>
+                           <li> <em class="strong">仅相邻面</em>启用此选项后，对相邻面之间的材质 ID 边界施墨，但不对不同对象之间施墨。禁用此选项后，对两对象间的材质 ID 边界或其他不相邻面施墨。默认设置为启用。 
+                              			 
+                           </li>
+                           <li> <em class="strong">相交偏移</em>禁用“仅相邻面”时，使用此选项来调整具有不同材质 ID 的两对象之间的边界出现的缺陷。默认设置为 0.0。 
+                              			 
+                           </li>
+                        </ul> <a name="WS1A9193826455F5FFBA679E112A6A19004-5C4"></a><div class="figure-anchor"><img src="../images/GUID-2CF2EFC5-2731-427F-B83F-90AA776B77D9-low.png"></div>  
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C79DEA861-ADE"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-76AE"></a>贴图控件</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1752"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8754D36"></a>每个墨水组件都有贴图控件：“宽度”、“轮廓”、“重叠”、“延伸重叠”、“平滑组”和“材质 ID”。它们的工作方式与针对材质的绘制组件的工作方式相同，如上所述。 
+                           		  
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A19004-5C3"></a><div class="figure-anchor"><img src="../images/GUID-BE58A47B-929A-4C56-AF28-CF483F255AF8-low.png"><p class="figure-title">使用含有轮廓和重叠组件的贴图，以模拟在图纸上图形的外观。</p>
+                        </div>  
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

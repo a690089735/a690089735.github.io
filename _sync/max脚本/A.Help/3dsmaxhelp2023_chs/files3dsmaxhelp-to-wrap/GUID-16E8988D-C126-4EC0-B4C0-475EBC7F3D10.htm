@@ -1,0 +1,79 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-16E8988D-C126-4EC0-B4C0-475EBC7F3D10">
+      <meta name="topic-type" content="concept">
+      <title>使用“编辑多边形”设置动画</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-16E8988D-C126-4EC0-B4C0-475EBC7F3D10"></a><div class="head">
+            <h1>使用“编辑多边形”设置动画</h1>
+         </div>
+         <p class="blurb"> </p>
+         <p><a name="GUID-A33AD176-14D7-420F-8107-794C5F2B44DC"></a> 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A1900437B9"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900437BA"></a>要在子对象选择上设置“编辑多变形”操作的动画，请执行以下操作：
+         </p>
+         <ol type="1" start="1">
+            <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择对象。 
+            </li>
+            <li>应用“编辑多变形”修改器。 </li>
+            <li>转至第一帧，在该处设置关键点，然后启用 <img src="../images/GUID-859D11E8-44CA-4A08-A696-F5A17CA856E0-low.png">。 
+            </li>
+            <li>在<img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“编辑多边形模式”卷展栏上，选择“动画”。 
+            </li>
+            <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择子对象。 
+            </li>
+            <li>在选择上执行操作，例如变换或挤出。 </li>
+            <li>前进到下一个关键帧，继续更改当前操作和子对象选择的设置。 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-424F"></a>如果更改选择，现有动画将应用于新选择，并从前一个选择中丢失。如果更改操作，前一个动画的任何更改将冻结（即“烘焙”到模型中）到当前帧，只有新的关键帧被记录到当前“编辑多变形”修改器中。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-424E"></a>要使用不同操作设置不同子对象选择的动画，请使用“编辑多边形”修改器的多种应用。 
+               </p> 
+            </li>
+         </ol><a name="WSF742DAB04106313366400BF6112A1CEA097-7F5E"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900437BB"></a>要对已设置动画的子对象选择应用“编辑多边形”操作，请执行以下操作：
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-424D"></a>以下过程演示了带有“编辑多边形”效果的动画：可以在动画期间通过使用已有动画子对象选择来更改在对象上的应用位置。 
+         </p>
+         <ol type="1" start="1">
+            <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择对象。 
+            </li>
+            <li>创建动画子对象选择。完成此操作的一个方法是应用<span class="char_link"><a href="GUID-BB37C2FE-807B-4221-ACD4-7C9F58905BD9.htm">体积选择修改器</a></span>，然后使用动画纹理贴图设置 Gizmo 变换或者修改器效果的动画。 
+            </li>
+            <li>应用“编辑多变形”修改器。 </li>
+            <li>转到“编辑多边形”中的同一子对象层级，在“选择”卷展栏上，启用“使用堆栈选择”。 </li>
+            <li>拖动时间滑块。 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-424C"></a>动画选择显示在“编辑多边形”对象上。 
+               </p> 
+            </li>
+            <li>在 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“编辑多边形模式”卷展栏上，选择“动画”。 
+            </li>
+            <li>在子对象选择上执行操作，例如切角或挤出。不需要启用“自动关键点”或使用“设置关键点”。 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E969"></a><div class="note-note"><span class="label label-target-language">注意:</span>启用“使用堆栈选择”时，不能更改选择。 
+                  </div>
+               </div> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-424B"></a>现在，在 <img src="../images/GUID-5B32F2AB-610D-42BB-8C54-81463BE72359-low.png"> 播放动画时，“编辑多边形”效果随子对象选择的动画移动。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-424A"></a>如果决定程序性地设置不同功能的动画，请首先单击“编辑多边形模式”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“取消”。 
+               </p> 
+            </li>
+         </ol><a name="WS1A9193826455F5FFBA679E112A6A1900437BC"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900437BD"></a>示例：要对动画模型程序性地应用“编辑多边形”操作，请执行以下操作：
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4249"></a>“编辑多边形”用于将已设置动画的子对象操作放在现有动画顶部。尝试以下简单示例： 
+         </p>
+         <ol type="1" start="1">
+            <li>创建动画模型，如带有已设置动画的“弯曲”修改器的长方体。 </li>
+            <li>应用“编辑多边形”修改器，并在“编辑多边形模式”卷展栏上，选择“动画”。另外，还要启用 <img src="../images/GUID-859D11E8-44CA-4A08-A696-F5A17CA856E0-low.png">。 
+            </li>
+            <li>转至“多边形”子对象层级。 </li>
+            <li>转到第 20 帧并挤出多边形。 </li>
+            <li> <img src="../images/GUID-5B32F2AB-610D-42BB-8C54-81463BE72359-low.png">播放动画。 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4248"></a>挤出动画在现有动画“顶部”播放。使用“编辑网格”修改器不能实现此效果。 
+               </p> 
+            </li>
+         </ol>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

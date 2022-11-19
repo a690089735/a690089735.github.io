@@ -1,0 +1,254 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-4189F2D5-62CE-43E6-8DDB-BF5FB79EB557">
+      <meta name="description" content="水滴网格复合对象可以通过几何体或粒子创建一组球体，还可以将球体连接起来，就好像这些球体是由柔软的液态物质构成的一样。如果球体在离另外一个球体的一定范围内移动，它们就会连接在一起。如果这些球体相互移开，将会重新显示球体的形状。">
+      <meta name="indexterm" content="水滴网格复合对象">
+      <meta name="indexterm" content="变形球（水滴网格）">
+      <meta name="indexterm" content="复合对象: 水滴网格">
+      <meta name="contextid" content="BLOBMESH.OBJECTS_COMPOUNDS">
+      <meta name="contextid" content="OBJECTS COMPOUNDS-BLOBMESH">
+      <meta name="topic-type" content="concept">
+      <title>水滴网格复合对象</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-4189F2D5-62CE-43E6-8DDB-BF5FB79EB557"></a><div class="head">
+            <h1>水滴网格复合对象</h1>
+         </div>
+         <p class="blurb">水滴网格复合对象可以通过几何体或粒子创建一组球体，还可以将球体连接起来，就好像这些球体是由柔软的液态物质构成的一样。如果球体在离另外一个球体的一定范围内移动，它们就会连接在一起。如果这些球体相互移开，将会重新显示球体的形状。 </p><a name="UL_8B3D59B5C2C94B178B711C5EED02B87D"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-F152C403-AF16-424C-B78F-9A3034EAB31F"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">（几何体） <img src="../images/ac.menuaro.gif"> “复合对象” <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏 <img src="../images/ac.menuaro.gif"> “水滴网格”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-97F3DD6A-A021-4A27-81F8-7460458F0F83">默认菜单：“创建”菜单  <img src="../images/ac.menuaro.gif"> “复合” <img src="../images/ac.menuaro.gif"> “水滴网格”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-C709281E-0014-41D0-8357-9509BF8DBE0A">Alt 菜单：“对象”菜单  <img src="../images/ac.menuaro.gif"> “复合对象” <img src="../images/ac.menuaro.gif"> “水滴网格”</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A19004179D"></a><div class="figure-anchor"><img src="../images/GUID-8A718D3D-04EE-4A10-BBEA-D9A1FBE589C7-low.png"></div>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49D8"></a>在 3D 行业，采用这种方式操作的球体的一般术语是<span class="char_link"><a href="GUID-DD1BCBD1-634C-4CB4-A3B6-EE8AC261DFBA.htm">变形球</a></span>。水滴网格复合对象可以根据场景中的指定对象生成变形球。此后，这些变形球会形成一种网格效果，即<em class="mild">水滴网格</em>。在设置动画期间，如果要模拟移动和流动的厚重液体和柔软物质，理想的方法是使用水滴网格。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49D7"></a>使对象或粒子系统与水滴复合对象关联时，可以根据生成变形球时使用的对象分别放置这些变形球，并设置其大小： 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A19004179E"></a><ul>
+            <li>对于几何体和形状，变形球位于每个顶点。因此，其大小由原始水滴网格对象的大小来确定。为了使变形球的大小不尽相同，可以使用“软选择”。 </li>
+            <li>对于粒子，变形球位于每个粒子。因此，每个变形球的大小由基于的粒子的大小确定。 </li>
+            <li>对于辅助对象，变形球位于轴点。因此，其大小由原始水滴网格对象来确定。 </li>
+         </ul>
+         <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6132"></a><div class="note-note"><span class="label label-target-language">注意:</span>您可以对水滴网格对象应用<span class="char_link"><a href="GUID-13A32401-344E-45B2-B58A-E7E43A24AD3A.htm">运动模糊</a></span>，以便提高渲染中的运动效果。对于“粒子流”之外的粒子系统，请使用“图像”运动模糊。对于“粒子流”粒子系统和其他所有类型的对象，包括几何体、形状和辅助对象，请使用“对象”运动模糊。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-49D6"></a> 
+            <h2><a name="GUID-EF469C6E-7F93-4E5B-B97E-97D07A017576"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004179F"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900417A0"></a>要通过几何体或辅助对象创建水滴网格，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li>创建一个或多个几何体或辅助对象。如果场景需要动画，请根据需要设置对象的动画。 </li>
+               <li>单击“水滴网格”，然后在屏幕中的任意位置处单击，以创建初始变形球。 </li>
+               <li>转至“修改”面板。 </li>
+               <li>在“水滴对象”组中，单击“添加”。选择要用于创建变形球的对象。此时，变形球会显示在每个选定对象的每个顶点处或辅助对象的中心。 </li>
+               <li>在“参数”卷展栏中，根据需要设置“大小”参数，以便于连接变形球。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900417A1"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900417A2"></a>要使用软选择在几何体中创建水滴网格，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li>创建几何体对象，然后将其转化为“可编辑网格”或“可编辑多边形”。 </li>
+               <li>对该对象应用“网格选择”修改器，然后选择该对象中的某些顶点。 </li>
+               <li>在“软选择”卷展栏中启用“使用软选择”。根据需要，设置“衰减”值。 </li>
+               <li>对该对象应用“转化为网格”或“转化为多边形”修改器。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49D5"></a>此时，无论是否退出子对象模式，都将保留软选择，并将其向上传递到堆栈。 
+                  </p> 
+               </li>
+               <li>在 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板上，<img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">（几何体）处于激活状态时，从下拉列表中选择“复合对象”。在“对象类型”卷展栏中，启用“水滴网格”。单击视口中的任意位置，以创建初始变形球。 
+               </li>
+               <li>转至 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板。 
+               </li>
+               <li>在“水滴对象”组中，单击“添加”。选择可编辑网格或可编辑多边形对象。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49D4"></a>此时，变形球将会显示在选定对象的每个顶点处。 
+                  </p> 
+               </li>
+               <li>在“参数”卷展栏中，启用“使用软选择”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49D3"></a>变形球只能位于那些受软选择影响的顶点处。 
+                  </p> 
+               </li>
+               <li>设置“大小”和“最小值”“大小”参数设置变形球的大小。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900417A3"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900417A4"></a>要使用软选择在样条线上创建水滴网格，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li>创建样条线，并将其转化为“可编辑样条线”。 </li>
+               <li>在“渲染”卷展栏中, 启用“在渲染器中启用”和“在视口中启用”。 </li>
+               <li>应用“网格选择”修改器，然后选择用于软选择的相应顶点。 </li>
+               <li>在“软选择”卷展栏中启用“使用软选择”。根据需要，设置“衰减”值。 </li>
+               <li>对该对象应用“转化为网格”或“转化为多边形”修改器。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49D2"></a>此时，无论是否退出子对象模式，都将保留软选择，并将其向上传递到堆栈。 
+                  </p> 
+               </li>
+               <li>在 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板上，<img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">（几何体）处于激活状态时，从下拉列表中选择“复合对象”。在“对象类型”卷展栏中，启用“水滴网格”。单击视口中的任意位置，以创建初始变形球。 
+               </li>
+               <li>转至 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板。 
+               </li>
+               <li>在“水滴对象”组中，单击“添加”。选择“可编辑样条线”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49D1"></a>此时，变形球将会显示在选定对象的每个顶点处。 
+                  </p> 
+               </li>
+               <li>在“参数”卷展栏中，启用“使用软选择”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49D0"></a>变形球只能位于那些受软选择影响的顶点处。 
+                  </p> 
+               </li>
+               <li>设置“大小”和“最小值”“大小”参数设置变形球的大小。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A1900417A5"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900417A6"></a>要通过粒子系统创建水滴网格，请执行下列操作：
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49CF"></a>对粒子系统使用“水滴网格”时，将会在每个粒子的位置处创建一个变形球。该变形球的大小由粒子的大小确定。 
+            </p>
+            <ol type="1" start="1">
+               <li>创建<span class="char_link"><a href="GUID-63C04CEF-F150-4983-BDC2-034ACF0BCBBB.htm">粒子系统</a></span>，然后对其参数进行设置，以设置粒子的动画。 
+               </li>
+               <li>在 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板上，<img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">（几何体）处于激活状态时，从下拉列表中选择“复合对象”。在“对象类型”卷展栏中，启用“水滴网格”。单击视口中的任意位置，以创建初始变形球。 
+               </li>
+               <li>转至 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板。 
+               </li>
+               <li>在“水滴对象”组中，单击“添加”。选择粒子系统。此时，变形球将会显示在系统中的每个粒子处。 </li>
+               <li>如果已经向水滴网格中添加<span class="char_link"><a href="GUID-F4FD836C-5967-4DF4-9E2B-66A16292173D.htm">粒子流系统</a></span>，且只需为特定事件中的粒子创建变形球，请单击“粒子流参数”卷展栏中的“添加”，以便从显示的菜单中选择所需的事件。 
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6131"></a><div class="note-tip"><span class="label label-target-language">提示</span>需要防止渲染粒子时，如果不采用这种方法隐藏粒子，可能无法正常生成水滴网格。相反，禁用粒子系统在<span class="char_link"><a href="GUID-59F27B9D-889F-4917-A1C0-BB9B313555F1.htm#WSF742DAB04106313322C48997112A1CEA460-8000">“对象属性”对话框</a></span>中的“可渲染”选项。 
+                     </div>
+                  </div> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-49CE"></a> 
+            <h2><a name="GUID-EE42CB13-6407-4AA9-99B6-481257687E88"></a>界面
+            </h2> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900417A7"></a> 
+               <h3><a name="GUID-BC7A0BB0-6685-489F-8247-07D465624B4B"></a>“参数”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A1900417A8"></a><div class="figure-anchor"><img src="../images/GUID-86535427-7B5C-4210-B0CF-4B5BB1643319-low.png"></div>  <a name="GUID-9DF3F8AD-8B7C-4D7D-92E3-C46E7FFE2DD7"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F7E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49CD"></a>大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EC0"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DAD"></a>对象（而不是粒子）的每个变形球的半径。对于粒子，每个变形球的大小由粒子的大小确定。粒子的大小是根据粒子系统中的参数设置的。默认设置为 20。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6130"></a><div class="note-note"><span class="label label-target-language">注意:</span>变形球的大小显然受“张力”值影响。如果将“张力”设置为允许的最小值，每个变形球的半径可以精确地反映“大小”设置。如果“张力”值设置得较高，将会使曲面变松，还会使变形球缩小。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F7F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49CC"></a>张力</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EBF"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DAE"></a>用于确定曲面的松紧程度。该值越小，曲面就越松。这个值介于 0.01 到 1.0 之间。默认设置为 1.0。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F80"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49CB"></a>计算粗糙度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EBE"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DAF"></a>设置生成水滴网格的粗糙度或密度。禁用“相对粗糙度”（请参见以下内容）时，可以使用“渲染”和“视口”值设置水滴网格面的绝对高度和宽度，还可以使用较小的值创建更平滑、更为密集的网格。启用“相对粗糙度”时，水滴网格面的高度和宽度由变形球大小与该值的比来确定。在这种情况下，值越高，创建的网格就越密集。范围（二者）从
+                           0.001 到 1000.0。渲染默认设置为 3.0，视口默认设置为 6.0。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49CA"></a>这两个粗糙度设置的最小值都为 0.001，这允许在禁用“相对粗糙度”时使用高分辨率的变形球几何体。使用这样的低值也可能使冗长的计算延迟；如果发生这种情况，而且您想停止计算，请按 <span class="keyboardEntry">Esc</span>。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F81"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49C9"></a>相对粗糙度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EBD"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DB0"></a>确定如何使用粗糙度值。如果禁用该选项，则“渲染粗糙度”和“查看粗糙度”值是绝对值，其中，水滴网格中每个面的高度和宽度始终等于粗糙度值。这表示，水滴网格面将保留固定大小，即便变形球的大小发生更改，也是如此。如果启用该选项，每个水滴网格面的大小由变形球大小与粗糙度的比来确定。因此，随着变形球变大或变小，水滴网格面的大小会随之变化。默认设置为禁用。
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F82"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49C8"></a>大型数据优化</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EBC"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DB1"></a>该选项提供了计算和显示水滴网格的另外一种方法。只有存在大量变形球（如 2,000 或更多）时，这种方法才比默认的方法高效。只有使用粒子系统或生成大量变形球的其他对象时，才能使用该选项。默认设置为禁用。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F83"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49C7"></a>在视口内关闭</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EBB"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DB2"></a>禁止在视口中显示水滴网格。水滴网格将仍然显示在渲染中。默认设置为禁用。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F84"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49C6"></a>使用软选择</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EBA"></a> 如果已经对添加到水滴网格的几何体使用软选择，启用该选项时，可以使软选择应用于变形球的大小和位置。变形球位于选定顶点处，其大小由“大小”参数设置。对于位于几何体的“软选择”卷展栏中设置的衰减范围内的顶点，将会放置较小的变形球。对于衰减范围之外的顶点，不会放置任何变形球。只有该几何体的“顶点”子对象层级仍然处于激活状态，且该几何体的“软选择”卷展栏中的“使用软选择”处于启用状态时，该选项才能生效。如果对水滴网格或几何体禁用“使用软选择”，变形球将会位于该几何体的所有顶点处。默认设置为禁用。
+                        <a name="UL_0370AA5D2B3A493ABD3E4C175ED3963C"></a><ul>
+                           <li><em class="strong">最小大小</em>设定启用“使用软选择”时衰减区内变形球的最小大小。默认设置为 10.0。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-E5335F36-B8F2-4DC7-A27D-D0CE0F183C2F"></a><p class="title"><a name="GUID-4D5F604E-5E1C-4338-B628-7812E494C84E"></a>“水滴对象”组
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-31A20D33-F2FD-4C87-93D2-063BE27A8CE1"></a><span class="term"><a name="GUID-CEE32D30-D55C-4420-B0B2-08A4406D1655"></a>[对象列表]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-76C913BA-2C29-45B7-AED7-26DE557377F2"></a>列出场景中组成水滴网格模拟的对象。
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F86"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49C4"></a>拾取</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EB8"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DB5"></a>允许从屏幕中拾取对象或粒子系统以添加到水滴网格。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F87"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49C3"></a>添加</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EB7"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DB6"></a>显示选择对话框。您可以在其中选择要添加到水滴网格中的对象或粒子系统。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F88"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49C2"></a>移除</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EB6"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DB7"></a>从水滴网格中删除对象或粒子系统。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900417AA"></a> 
+               <h3><a name="GUID-C2776754-AE25-46CA-B1EE-7C7546D05F79"></a>“粒子流参数”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A1900417AB"></a><div class="figure-anchor"><img src="../images/GUID-466EED34-B555-4C99-83A1-3E6C64B96778-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49C1"></a>如果已经向水滴网格中添加“粒子流”系统，且只需在发生特定事件时生成变形球，便可使用该卷展栏。可以在该卷展栏中指定事件之前，必须向“参数”卷展栏中的水滴网格中添加“粒子流”系统。 
+               </p> <a name="GUID-182C4B8E-F971-49B8-B0A0-3ABBE4797659"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F89"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49C0"></a>所有粒子流事件</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EB5"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DB8"></a>启用时，所有“粒子流事件”将会生成变形球。禁用时，只有“粒子流事件”列表中指定的“粒子流事件”才能生成变形球。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-29668AC7-C091-4A07-9074-B78BECEFED5D"></a><p class="title"><a name="GUID-FB3C43D4-9466-4782-8BD2-640ED3018F18"></a>“粒子流事件”组
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-1D73EBF3-D27E-4AD0-B7DE-27F188B3A6C8"></a><span class="term"><a name="GUID-E15A5A71-A789-4B1B-B228-FBDFFB098196"></a>[粒子流事件列表]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-D94D27CE-A2A6-4E20-AE1D-EF2D70D30381"></a>列出组成水滴网格模拟的粒子流事件。
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F8A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49BF"></a>添加</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EB4"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DB9"></a>显示场景中的粒子流事件列表，以便可以拾取所需的事件，从而添加到“粒子流事件”列表中。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F8B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49BE"></a>移除</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EB3"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DBA"></a>从“粒子流事件”列表中删除选定的事件。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

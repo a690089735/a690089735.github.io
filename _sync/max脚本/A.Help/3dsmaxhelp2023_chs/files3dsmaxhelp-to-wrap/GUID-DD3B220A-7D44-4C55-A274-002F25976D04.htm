@@ -1,0 +1,333 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-DD3B220A-7D44-4C55-A274-002F25976D04">
+      <meta name="description" content="扫描曲面由曲线构建。一个双轨扫描曲面至少使用三条曲线。两条“轨道”曲线，定义了曲面的两边。另一条曲线定义了曲面的横截面。双轨扫描曲面类似于单轨扫描。额外的轨道使您可以更多的控制曲面的形状。">
+      <meta name="indexterm" content="NURBS 曲面: 双轨扫描">
+      <meta name="topic-type" content="concept">
+      <title>双轨扫描曲面</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-DD3B220A-7D44-4C55-A274-002F25976D04"></a><div class="head">
+            <h1>双轨扫描曲面</h1>
+         </div>
+         <div class="abstract"> 
+            <p><a name="GUID-A25E87CC-7B71-40F8-9EB5-ECCF4F708E63"></a> <img src="../images/GUID-B8CF987D-7489-42A3-8AEE-7CFC0243E39D-low.png"> 
+            </p> 
+            <p class="blurb">扫描曲面由曲线构建。一个双轨扫描曲面至少使用三条曲线。两条“轨道”曲线，定义了曲面的两边。另一条曲线定义了曲面的横截面。双轨扫描曲面类似于单轨扫描。额外的轨道使您可以更多的控制曲面的形状。 </p> 
+         </div><a name="UL_8A5AE2AD7A0A42628A88E8B1332A43E9"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-D87B1186-10C4-47F2-8582-A5A4D26F678C"> 选择 NURBS 对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “创建曲面”卷展栏  <img src="../images/ac.menuaro.gif"> “从属曲面”组框  <img src="../images/ac.menuaro.gif"> “双轨”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-C1D39DA9-6D5B-41BE-B9B4-17CD25F53A8F"> 选择 NURBS 对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif">  NURBS 工具箱  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-B8CF987D-7489-42A3-8AEE-7CFC0243E39D-low.png">（创建双轨扫描）</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A190042094"></a><div class="figure-anchor"><img src="../images/GUID-05519C27-96CF-46CE-9415-A693E44B5FC1-low.png"><p class="figure-title">用两条轨道创建的扫描曲面</p>
+         </div>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A36"></a>横截面曲线应当与两条轨道曲线都相交。如果横截曲面与轨道不相交，那么会得到不可预测的曲面。另外，两条轨道的初始点必须分别与第一条横截面曲线的两个端点相重叠。使用“NURBS 捕捉”来实现。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190042095"></a> 
+            <h2><a name="GUID-3404D63F-B877-4D81-9328-C52F4B46F9E4"></a>自动曲线附加
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A35"></a>创建双轨扫描时，可以选择并没有成为活动 NURBS 模型的子对象的曲线。可以在场景中选择其它曲线或<span class="char_link"><a href="GUID-6B094F12-B672-4E8B-8A03-0D6776B6C78B.htm">样条线对象</a></span>。当选中曲线后，该曲线会附加到当前对象上，就如同使用了<span class="char_link"><a href="GUID-7CE9DE0A-D7B9-4432-AC8A-72298B8DA9BD.htm">“附加”按钮</a></span>一样。 
+            </p> 
+            <div><a name="WS73099CC142F487551FACE55114134B88B1-7250"></a><div class="note-warning"><span class="label label-target-language">警告:</span>如果附着的曲线是另一个 NURBS 模型的子对象，整个模型都会附着到此模型上（即为，曲线的父 NURBS 对象）。 
+               </div>
+            </div> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A34"></a>当将鼠标移动到不是活动 NURBS 对象一部分的曲线上时，光标会更改形状以表示可以拾取曲线，但是曲线不会以蓝色高亮显示。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A33"></a> 
+            <h2><a name="GUID-81FDDADE-E1F3-4DA3-B8B5-231BA9B59425"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190042096"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190042097"></a>要创建双轨扫描，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>创建定义想要创建的曲面的曲线。 </li>
+               <li>在 NURBS 工具箱中，启用 <img src="../images/GUID-B8CF987D-7489-42A3-8AEE-7CFC0243E39D-low.png">（创建双轨扫描）。 
+               </li>
+               <li>单击一条曲线作为第一条轨道使用，然后单击另一条曲线作为第二条轨道使用。单击每个横截面曲线，然后右键单击以结束创建过程。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A32"></a>沿着由两条轨道定义的轮廓，扫描在横截面间平滑插补。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A31"></a>单击曲线时，其名称出现在“双轨扫描曲面”创建卷展栏的列表中。单击曲线的顺序会影响扫描曲面的形状。 
+                  </p> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190042098"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190042099"></a>示例：要使用自动附加来创建双轨扫描，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>转至 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板，创建三个独立的 CV 或点 NURBS 曲线。 
+               </li>
+               <li>转至 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板。在 NURBS 工具箱中，单击以启用 <img src="../images/GUID-B8CF987D-7489-42A3-8AEE-7CFC0243E39D-low.png">（创建双轨扫描）。 
+               </li>
+               <li>按适当顺序单击要扫描的曲线。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A30"></a><span class="charspan-msgph">3ds Max</span> 会创建扫描。不需要将曲线塌陷为 NURBS 曲面或将它们“附加”到已有的 NURBS 模型上。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A2F"></a>当将鼠标移动到不是活动 NURBS 对象一部分的曲线上时，光标会更改形状以表示可以拾取曲线，但是曲线不会以蓝色高亮显示。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A2E"></a> 
+            <h2><a name="GUID-629DCB56-DDB9-4D43-BAB5-F3CD6E63A47E"></a>界面
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A2D"></a>当选中双轨扫描子对象时，会出现一个含有双轨扫描参数的卷展栏。只有在选中<em class="mild">一个</em>双轨扫描子对象的情况下才会出现该卷展栏。不可能同时编辑多个双轨扫描，因此与其他 NURBS 子对象不同，选中多个双轨扫描子对象时该卷展栏不会出现。 
+            </p> 
+            <div><a name="WS73099CC142F487551FACE55114134B88B1-724F"></a><div class="note-tip"><span class="label label-target-language">提示</span>当编辑双轨扫描子对象时，关闭“曲面公用”卷展栏以更方便的查看“双轨扫描曲面”卷展栏。 
+               </div>
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004209A"></a> 
+               <h3><a name="GUID-5775D0A2-271D-4863-A6FE-9531BDE58DB7"></a>“双轨扫描曲面”卷展栏（创建时间）
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A19004209B"></a><div class="figure-anchor"><img src="../images/GUID-242EF08C-6CE8-42F7-9CE4-AD70D870FCC9-low.png"></div>  <a name="GUID-0FFCD415-44AB-4137-AEA4-5124637FFC79"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D33A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A2C"></a>轨道曲线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60FE"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531F2"></a>显示选择作为两条轨道的曲线的名称。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D33B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A2B"></a>截面曲线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60FD"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531F3"></a>该列表显示横截面曲线的名称，按照单击它们的顺序排列。通过单击列表中的名称可以选择曲线。视口以蓝色显示选中的曲线。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D33C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A2A"></a>箭头按钮</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60FC"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531F4"></a>使用这些按钮来更改列表中截面曲线的顺序。在列表中选中一条曲线，使用箭头来将选中对象上下移动。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-B076D860-3386-4522-B462-A106A1F50E1B"></a><p class="title"><a name="GUID-E91E9CE1-318F-4A5B-86BB-00E22EF7D88B"></a>“曲线属性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A29"></a>这些控件影响在“截面曲线”列表中选中的单一曲线，而不是影响通常扫描曲面的属性。只有在“截面曲线”列表中选中曲线后才可以使用该选项组。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D33D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A28"></a>反转</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60FB"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531F5"></a>在设置时，反转选中曲线的方向。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D33E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A27"></a>起始点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60FA"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531F6"></a>调整曲线起点的位置。这可以帮助消除曲面上不希望的扭曲或“弯曲”。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A26"></a>如果曲线不是闭合曲线该控件无效。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A25"></a>调整起始点时，在两者间会显示一条蓝色的虚线，该虚线表示两者的对齐。曲面不会显示，因此这不会降低调整速度。当松开鼠标按钮时，该曲面将重新出现。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D33F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A24"></a>插入</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60F9"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531F7"></a>（禁用。） 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D340"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A23"></a>移除</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60F8"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531F8"></a>移除列表中的曲线。选中列表中的曲线，然后单击移除。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D341"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A22"></a>优化</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60F7"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531F9"></a>（禁用。） 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D342"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A21"></a>替换</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60F6"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531FA"></a>（禁用。） 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D343"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A20"></a>平行扫描</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60F5"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531FB"></a>禁用该选项后，轨道曲线定义规则曲面，而且横截面根据其基础规则曲面描述放样。启用该选项后，每个横截面都与其最佳适应平面相关。该平面沿着轨道移动并与其平行。如果轨道是曲线，那么平面就可以旋转。如果轨道间的距离改变，那么这一部分就会缩放或拉伸。任何情况下，曲面都是沿着整个长度由多个部分混合形成的。默认设置为禁用状态。
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D344"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A1F"></a>扫描缩放</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60F4"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531FC"></a>禁用该选项后，平面大小只在穿越轨道的方向缩放。启用该选项后，平面在所有方向均匀缩放。默认设置为禁用状态。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D345"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A1E"></a>捕捉横截面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60F3"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531FD"></a>启用该选项后，平移并缩放横截面曲线这样它们会同时与两条轨道相交。第一个横截面平移到轨道的起始端，而最后一个平移到轨道的末端。中部的横截面平移到离横截面曲线末端最近的点与轨道相接触。默认设置为禁用状态。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A1D"></a>启用“捕捉横截面”后，扫描完全沿着轨道曲线进行。这使得构建双轨扫描曲面变得更容易。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D346"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A1C"></a>创建时显示</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60F2"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531FE"></a>启用该选项后，创建扫描曲面时就会显示该曲面。禁用该选项后，可以更快的创建扫描。默认设置为禁用状态。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D347"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A1B"></a>翻转法线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60F1"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87531FF"></a>反转扫描法线的方向。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004209D"></a> 
+               <h3><a name="GUID-222185B3-9CD6-4679-8BAE-866CDCAF56A0"></a>“双轨扫描曲面”卷展栏（修改时间）
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A19004209E"></a><div class="figure-anchor"><img src="../images/GUID-4A5BB3F6-C2E4-4A82-8A52-7D205D0C6862-low.png"></div>  <a name="GUID-815B4A8A-D9F0-45F3-B943-715B741EB0FC"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D348"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A1A"></a>轨道曲线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60F0"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753200"></a>显示选择作为两条轨道的曲线的名称。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D349"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A19"></a>替换轨道 1 和替换轨道 2</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60EF"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753201"></a>替换轨道曲线。单击这些按钮之一，然后在视口中单击曲线以作为新轨道使用。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D34A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A18"></a>截面曲线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60EE"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753202"></a>该列表显示横截面曲线的名称，按照单击它们的顺序排列。通过单击列表中的名称可以选择曲线。视口以蓝色显示选中的曲线。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D34B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A17"></a>箭头按钮</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60ED"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753203"></a>使用这些按钮来更改列表中截面曲线的顺序。在列表中选中一条曲线，使用箭头来将选中对象上下移动。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-92DABEE4-D572-4BE3-BBF0-60839858D768"></a><p class="title"><a name="GUID-0011B03D-2501-4701-9FDB-A73E05F940AD"></a>“曲线属性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A16"></a>这些控件影响在“截面曲线”列表中选中的单一曲线，而不是影响通常扫描曲面的属性。只有在“截面曲线”列表中选中曲线后才可以使用该选项组。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D34C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A15"></a>反转</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60EC"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753204"></a>在设置时，反转选中曲线的方向。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D34D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A14"></a>起始点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60EB"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753205"></a>调整曲线起点的位置。这可以帮助消除曲面上不希望的扭曲或“弯曲”。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A13"></a>如果曲线不是闭合曲线该控件无效。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A12"></a>调整起始点时，在两者间会显示一条蓝色的虚线，该虚线表示两者的对齐。曲面不会显示，因此这不会降低调整速度。当松开鼠标按钮时，该曲面将重新出现。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D34E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A11"></a>插入</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60EA"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753206"></a>向截面列表中添加曲线。单击以启用“插入”，然后单击曲线。此曲线插入于所选中曲线的<em class="mild">前面</em>。要在末尾插入一条曲线，首先在列表中高亮显示“----End----”标记。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D34F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A10"></a>移除</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60E9"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753207"></a>移除列表中的曲线。选中列表中的曲线，然后单击移除。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D350"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A0F"></a>优化</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60E8"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753208"></a>优化双轨扫描曲面。单击以启用“细化”，然后在曲面上单击一条等参曲线。（在曲面上拖动鼠标时，可用截面曲线会高亮显示。）单击的曲线会转化为 CV 曲线并插入到扫描和截面列表中。细化点曲线时，细化扫描会稍微更改曲面的曲率。一旦通过添加横截面曲线细化了曲面后，就可以使用“编辑曲线”来更改曲线。
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D351"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A0E"></a>替换</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60E7"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753209"></a>用于替换选中曲线。在列表中选择一条曲线，单击该按钮，然后选择新曲线。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D352"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A0D"></a>平行扫描</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60E6"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875320A"></a>禁用该选项后，轨道曲线定义规则曲面，而且横截面根据其基础规则曲面描述放样。启用该选项后，每个横截面都与其最佳适应平面相关。该平面沿着轨道移动并与其平行。如果轨道是曲线，那么平面就可以旋转。如果轨道间的距离改变，那么这一部分就会缩放或拉伸。任何情况下，曲面都是沿着整个长度由多个部分混合形成的。默认设置为禁用状态。
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D353"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A0C"></a>扫描缩放</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60E5"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875320B"></a>禁用该选项后，平面大小只在穿越轨道的方向缩放。启用该选项后，平面在所有方向均匀缩放。默认设置为禁用状态。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D354"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A0B"></a>捕捉横截面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60E4"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875320C"></a>启用该选项后，平移并缩放横截面曲线这样它们会同时与两条轨道相交。第一个横截面平移到轨道的起始端，而最后一个平移到轨道的末端。中部的横截面平移到离横截面曲线末端最近的点与轨道相接触。默认设置为禁用状态。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A0A"></a>启用“捕捉横截面”后，扫描完全沿着轨道曲线进行。这使得构建双轨扫描曲面变得更容易。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D355"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A09"></a>显示等参曲线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60E3"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875320D"></a>设置该选项后，单轨扫描的 V 轴等参曲线与用于构建的 U 轴曲线一起显示 扫描.此 V 轴曲线仅用于显示。不能使用它们进行曲面构造。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D356"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6A08"></a>编辑曲线</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-60E2"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875320E"></a>不用切换到其他子对象层级就可以编辑当前选中曲线。单击启用“编辑曲线”。会显示点或 CV 曲线，如果曲线是一个 CV 曲线还会显示控制晶格。现在可以进行变换，或者在点或曲线 CV 子对象等级将点或 CV 改为想要的结果。要结束对曲线的编辑，单击以禁用“编辑曲线”。
+                           
+                        </p> 
+                        <div><a name="WS73099CC142F487551FACE55114134B88B1-724E"></a><div class="note-tip"><span class="label label-target-language">提示</span>在双轨扫描中编辑曲线时，禁用扫描自身的显示可以更容易查看曲线并可以改善性能。使用 <span class="keyboardEntry">Ctrl+D</span>（当启用 <span class="char_link"><a href="GUID-C14C1D13-0E8E-4471-9671-077FDFB156C8.htm">键盘快捷键覆盖切换</a></span> 时）来切换相关子对象（包括扫描）的显示。 
+                              <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6A07"></a>如果通过增加曲线 CV 权重在扫描中编辑曲线，那么扫描曲面可能会偏离曲线。可以通过在曲面偏移的点上细化曲线来解决这一问题。 
+                              </p> 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

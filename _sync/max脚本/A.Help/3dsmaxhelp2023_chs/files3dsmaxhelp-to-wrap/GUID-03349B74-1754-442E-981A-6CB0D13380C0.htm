@@ -1,0 +1,114 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-03349B74-1754-442E-981A-6CB0D13380C0">
+      <meta name="description" content="“紧缩”对话框中包含用于在“编辑 UVW”对话框中以程序方式重新排列纹理群集的控制。">
+      <meta name="indexterm" content="UVW 展开: 紧缩对话框">
+      <meta name="indexterm" content="紧缩对话框（UVW 展开）">
+      <meta name="topic-type" content="concept">
+      <title>“紧缩”对话框</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-03349B74-1754-442E-981A-6CB0D13380C0"></a><div class="head">
+            <h1>“紧缩”对话框</h1>
+         </div>
+         <p class="blurb">“紧缩”对话框中包含用于在“编辑 UVW”对话框中以程序方式重新排列纹理群集的控制。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_517A36C3E68C4C79809C03B6385F8A1A"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-7A965CF9-6305-49F9-8BFD-789F5C2B725C">“UVW 展开修改器” <img src="../images/ac.menuaro.gif"> “编辑 UV”卷展栏  <img src="../images/ac.menuaro.gif"> “打开 UV 编辑器”按钮  <img src="../images/ac.menuaro.gif"> “编辑 UVW”对话框  <img src="../images/ac.menuaro.gif"> “工具”菜单  <img src="../images/ac.menuaro.gif"> “紧缩 UV”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-1102C3B3-CF3A-4890-A37A-C819FD82AB74">“UVW 展开修改器” <img src="../images/ac.menuaro.gif"> “编辑 UV”卷展栏  <img src="../images/ac.menuaro.gif"> “打开 UV 编辑器”按钮  <img src="../images/ac.menuaro.gif"> “编辑 UVW”对话框  <img src="../images/ac.menuaro.gif"> “排列元素”卷展栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-214E4302-C287-45F0-876C-28D1E9256CD8-low.png">“紧缩设置”按钮（在“紧缩: 自定义”弹出按钮上）</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-28FD"></a> 
+               <h2><a name="GUID-5BC7A051-DA65-438D-A5D0-CE25CB368BC4"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043CFB"></a><div class="figure-anchor"><img src="../images/GUID-63D1D8C4-6894-477F-B182-E1D4977EBA51-low.png"></div>  <a name="GUID-479E22CB-BC3F-44AD-809B-70FA3D36CD81"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C4B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-383F"></a>(下拉)</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4458"></a> 设置紧缩方法： 
+                        <a name="WS1A9193826455F5FFBA679E112A6A190043CFC"></a><ul>
+                           <li><em class="strong">展开 3D</em>（默认选项）：一种基于对群集布局边界矩形区域进行迭代最小化的紧缩方法。由于使用多线程，通常会生成可用算法的最佳结果，并且性能优于非凸面算法。 
+                              	 
+                           </li>
+                           <li><em class="strong">非凸面</em>：一种迭代方法，生成的紧缩排列通常比递归算法或线性算法更高效，但计算成本会略有增加。 
+                              	 
+                           </li>
+                           <li><em class="strong">递归紧缩</em>：有效紧缩群集，但比线性方法慢。 
+                              	 
+                           </li>
+                           <li> <em class="strong">线性紧缩</em>：使用线性方法布局群集。该方法很快但不是很有效，而且往往会保留未使用的 UV 空间。 
+                              	 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C4A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-383E"></a>填充 </span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4457"></a> 群集之间的间距。此值相对于 0.0 到 1.0 的 UV 空间。紧缩后，UV 群集之间的距离基于填充大小和定义的位图分辨率值。如果使用的分辨率较小，但填充量相同，则将尝试分开一些紧缩 UV 群集。 
+                        
+                        <p> </p> 
+                        <p>为获得最佳效果，请使用较小的值。大多数情况下，使用默认值会生成不错的效果。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C49"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-383C"></a>规格化群集</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4456"></a> 如果启用此选项，将缩放最终布局使其在标准纹理坐标空间（0.0 到 1.0）内适合，该标准纹理坐标空间在编辑器中以深蓝色的粗轮廓表示。如果禁用此选项，群集的最终大小将使用对象空间，因此会比编辑器贴图区域大。为获得最佳效果，请将此设置处于启用状态。
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C48"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-383B"></a>旋转群集</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4455"></a> 控制紧缩算法是否可以旋转群集以查找最佳紧缩解决方案。如果禁用此选项，UV 群集将保留其最初设置的旋转方向。 
+                        
+                        <div><a name="GUID-0B88A88A-C3B6-454A-A6D3-9E7BC3574765"></a><div class="note-note"><span class="label label-target-language">注意:</span>在某些情况下，即使“旋转群集”处于禁用状态，紧缩也可以将群集旋转 90 度。 
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C47"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-383A"></a>填充孔洞</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4454"></a> 如果启用此选项，则会将较小群集放置在较大群集之间的间距中，以充分利用可用的贴图空间。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-56577E75-EFFB-463E-A0F3-B5B4C2864C6B"></a><span class="term"><a name="GUID-874EDE63-1DB7-42CC-B8D2-4CD42EF23446"></a> 重缩放群集</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-8B025A8F-8E19-40C3-9284-990592DE1BA4"></a> 如果启用此选项，紧缩将缩放各个群集，以使纹理大小与 3D 几何体空间一致。或者，如果存在含有非默认的“重缩放优先级”值的<span class="char_link"><a href="GUID-9E98AEAC-F06F-4FAD-9091-DCD30AC9BB26.htm#SECTION_381174628B774004AFD90563592EDDBB">组</a></span>，则可以使用指定的缩放因子。 
+                        
+                        <div><a name="GUID-C3179084-7C4D-40F4-A1E9-078F1E3ACE3D"></a><div class="note-note"><span class="label label-target-language">注意:</span>“展开 3D”将始终重缩放群集。 
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><span class="term"> 紧缩分辨率</span></dt>
+                  <dd>
+                     <div class="definition">迭代次数：算法为找到最佳分辨率将使用的过程数。增加此值可能会获得更佳的紧缩解决方案，但需要更多时间。 
+                        
+                        <p> </p> 
+                        <p>贴图大小：尝试紧缩到的目标位图分辨率。此值与填充结合使用，以确定最终紧缩输出中 UV 群集的接近度。 
+                           
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C46"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3839"></a>确定</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4453"></a> 接受设置，关闭对话框，并按指定执行贴图。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7C45"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3838"></a>取消</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-4452"></a> 取消所有的更改，然后关闭对话框。 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

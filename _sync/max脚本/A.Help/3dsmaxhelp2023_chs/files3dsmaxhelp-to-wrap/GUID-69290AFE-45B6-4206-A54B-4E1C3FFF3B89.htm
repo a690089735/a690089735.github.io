@@ -1,0 +1,105 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-69290AFE-45B6-4206-A54B-4E1C3FFF3B89">
+      <meta name="description" content="指定渲染任务时忽略了某些条件的情况下，“批处理渲染警告”对话框会给出提示。">
+      <meta name="indexterm" content="批处理: 渲染">
+      <meta name="indexterm" content="渲染: 批处理">
+      <meta name="indexterm" content="批处理渲染: 摄影机">
+      <meta name="indexterm" content="批处理渲染: 场景状态">
+      <meta name="indexterm" content="批处理渲染: Backburner">
+      <meta name="indexterm" content="批处理渲染: 网络渲染">
+      <meta name="indexterm" content="Backburner: 网络渲染">
+      <meta name="indexterm" content="批处理渲染">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="expert">
+      <meta name="topic-subtype" content="using">
+      <title>“批处理渲染警告”对话框</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-69290AFE-45B6-4206-A54B-4E1C3FFF3B89"></a><div class="head">
+            <h1> “批处理渲染警告”对话框</h1>
+         </div>
+         <p class="blurb">指定渲染任务时忽略了某些条件的情况下，“批处理渲染警告”对话框会给出提示。 </p>
+         <div class="bodyReference"><a name="UL_4C5D5AE36CA64930B6654347929AF32D"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-0AEAFBC1-E5BF-4367-A2A8-A9C79A88A4CD">默认菜单：“渲染”菜单  <img src="../images/ac.menuaro.gif"> “批处理渲染” <img src="../images/ac.menuaro.gif">  单击“渲染”以渲染没有设置输出路径的任务。</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-2338363F-C616-437F-ACA9-04A09C1CB016">默认菜单：“渲染”菜单  <img src="../images/ac.menuaro.gif"> “批处理渲染” <img src="../images/ac.menuaro.gif">  单击“渲染”以渲染可覆盖之前保存的文件的任务。</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-B150E7C0-806F-4865-B577-E6EDE4B59199">Alt 菜单：“渲染”菜单  <img src="../images/ac.menuaro.gif"> “工具(渲染设置)” <img src="../images/ac.menuaro.gif"> “批处理渲染” <img src="../images/ac.menuaro.gif">  单击“渲染”以渲染没有设置输出路径的任务。</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-56CB8944-AE88-459D-8C3E-6D799F64CDCD">Alt 菜单：“渲染”菜单  <img src="../images/ac.menuaro.gif"> “工具(渲染设置)” <img src="../images/ac.menuaro.gif"> “批处理渲染” <img src="../images/ac.menuaro.gif">  单击“渲染”以渲染可覆盖之前保存的文件的任务。</span> 
+               </li>
+            </ul>
+            <p><a name="WS73099CC142F487552A50A53111913E7C26F-7062"></a>显示的对话框是上下文敏感的，意味着只有以下两个条件存在时才会发出警告： 
+            </p><a name="WS1A9193826455F5FFBA679E112A6A190042E71"></a><ul>
+               <li>当覆盖现有文件时，或如果没有指定输出路径和输出文件名称时，会发出警告。 </li>
+               <li>当已重命名指定的输出路径或该路径不存在时，会发出警告。 </li>
+            </ul>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190042E72"></a> 
+               <h2><a name="GUID-BBE2D92A-CC8A-486B-B383-81B114C444BA"></a>任务队列
+               </h2> 
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49FD"></a>“批处理渲染警告”对话框的两种格式包含显示在“批处理渲染”对话框中的“任务对列”列。主要区别在于复选框，使用该复选框可以指定渲染时使用哪一个摄影机。该“任务队列”只显示可能会覆盖保存文件的摄影机或没有为输出设置路径/文件名的摄影机，或者只显示无效的数据路径。
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190042E73"></a> 
+               <h2><a name="GUID-515568F1-227E-4DB7-87B7-B4D4952021DE"></a>缺少输出路径/文件名或文件覆盖
+               </h2> 
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49FC"></a>如果要渲染的一个或多个任务不包含输出路径/文件名，请单击“批处理渲染”对话框上的“渲染”按钮，则会出现该版本的“批处理渲染警告”对话框。如果所执行的操作将覆盖以前渲染的图像时，也会出现该对话框。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190042E74"></a><div class="figure-anchor"><img src="../images/GUID-A4DA6D1D-1374-4F98-BD4C-47E7D1FD5BCF-low.png"></div>  <a name="GUID-16F40FA8-AA9C-464D-BD21-17C90AA0A346"></a><dl>
+                  <dt><a name="WS73099CC142F487557579AB9211CB86298F7-670B"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49FB"></a>确定</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7BD7"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87515CD"></a>尽管某些任务没有输出路径/文件名或可能会覆盖一些文件，但是该选项还是允许继续执行批处理渲染任务。不会自动保存没有输出路径/文件名的任务，这些任务只会出现在“渲染帧窗口”。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F487557579AB9211CB86298F7-670A"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49FA"></a>取消</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7BD6"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87515CE"></a>取消批处理渲染。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190042E75"></a> 
+               <h2><a name="GUID-69E748C4-1A6A-4100-9EB1-23521972E26E"></a>输出路径无效
+               </h2> 
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49F9"></a>如果渲染到具有无效的输出路径的文件，则将出现该版本的“批处理渲染警告”对话框。例如，如果渲染客户的模型，并且已设置其自身的输出路径，则将出现该对话框。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190042E76"></a><div class="figure-anchor"><img src="../images/GUID-DEB50AE0-12D1-4427-9447-88559F5EF07C-low.png"></div>  <a name="GUID-3A8FC867-4EB4-4BA4-84F4-605958AA108C"></a><dl>
+                  <dt><a name="WS73099CC142F487557579AB9211CB86298F7-6709"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49F8"></a>更新路径</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7BD5"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87515CF"></a>用于浏览到新目录，并为“任务队列”中的所有条目重新指定输出路径。已指定的输出文件名保持不变。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6FC9"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果不希望为对话框中的所有摄影机指定相同的路径，则可以选择“取消”并为“批处理渲染”对话框中的每一个摄影机设置正确的路径。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F487557579AB9211CB86298F7-6708"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49F7"></a>继续</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7BD4"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87515D0"></a>用于继续执行某些批处理渲染任务，即使这些任务没有输出路径。不会自动保存没有输出路径的任务，这些任务只会出现在“渲染帧窗口”。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F487557579AB9211CB86298F7-6707"></a><span class="term"><a name="WS1A9193826455F5FFBA679E112C9EF5A71-49F6"></a>取消</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7BD3"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87515D1"></a>取消批处理渲染。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

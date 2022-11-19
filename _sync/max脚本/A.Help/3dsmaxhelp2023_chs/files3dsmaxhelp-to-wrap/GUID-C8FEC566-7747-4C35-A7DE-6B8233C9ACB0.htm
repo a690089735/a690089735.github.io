@@ -1,0 +1,250 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C8FEC566-7747-4C35-A7DE-6B8233C9ACB0">
+      <meta name="description" content="3ds Max 场景安全工具可以保护您的系统和场景文件不受已知会造成破坏的第三方脚本的影响。">
+      <meta name="indexterm" content="场景安全工具">
+      <meta name="indexterm" content="新功能">
+      <meta name="indexterm" content="病毒">
+      <meta name="indexterm" content="CRP">
+      <meta name="indexterm" content="ALC">
+      <meta name="indexterm" content="adsl">
+      <meta name="indexterm" content="病毒">
+      <meta name="indexterm" content="恶意脚本">
+      <meta name="indexterm" content="MSCPROP">
+      <meta name="contextid" content="IDH_SECURITY_TOOLS">
+      <meta name="topic-type" content="concept">
+      <title>场景安全工具 2.1.1</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C8FEC566-7747-4C35-A7DE-6B8233C9ACB0"></a><div class="head">
+            <h1>场景安全工具 2.1.1</h1>
+         </div>
+         <p class="blurb"><span class="charspan-msgph">3ds Max</span> 场景安全工具可以保护您的系统和场景文件不受已知会造成破坏的第三方脚本的影响。 
+            
+         </p><a name="UL_4E23985112BB4D2181FC5EA41C1C6990"></a><ul>
+            <li>在 <em class="strong">3ds Max 2022</em> 及更高版本中：<span class="MenuCascade">“首选项”菜单 <img src="../images/ac.menuaro.gif"> “安全”选项卡 <img src="../images/ac.menuaro.gif"> “恶意软件删除”</span> 
+            </li>
+            <li>在 <em class="strong">3ds Max 2015-2021</em> 中：<span class="MenuCascade">“自定义”菜单 <img src="../images/ac.menuaro.gif"> “场景安全工具”</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="SECTION_EC07C4F7ED77432F95CF13BE6A6D0AC0"></a> 
+            <h2><a name="GUID-F1D2CF9C-6310-4446-B880-BE1A6E041C11"></a>概述
+            </h2> 
+            <p><span class="charspan-msgph">3ds Max</span> 场景安全工具是 Autodesk 推荐的检测和删除已知第三方恶意脚本的方法，这些脚本标识为 <a href="https://knowledge.autodesk.com/zh-hans/support/3ds-max/troubleshooting/caas/sfdcarticles/sfdcarticles/CHS/Potential-issues-with-third-party-MAXScript-CRP-switching-to-different-viewport-scene-lights-disappear-or-seem-deleted.html">CRP/ADSL</a>、<a href="https://knowledge.autodesk.com/zh-hans/support/3ds-max/troubleshooting/caas/sfdcarticles/sfdcarticles/CHS/Scene-file-crashes-corrupts-scene-data-gives-Script-Controller-error-or-no-longer-uses-the-Undo-function.html">ALC</a>、<a href="https://knowledge.autodesk.com/zh-hans/support/3ds-max/troubleshooting/caas/sfdcarticles/sfdcarticles/CHS/Script-Controller-error-scene-file-crashes-or-corrupt-scene-data-due-to-third-party-MAXScript-ALC2-in-3ds-Max.html">ALC2</a>、<a href="https://knowledge.autodesk.com/zh-hans/support/3ds-max/learn-explore/caas/sfdcarticles/sfdcarticles/CHS/PhysXPluginMfx-MAXScript-based-malware-may-corrupt-3ds-Max-installation-and-files.html">PhysXPluginMfx</a>、<a href="https://knowledge.autodesk.com/zh-hans/support/3ds-max/troubleshooting/caas/sfdcarticles/sfdcarticles/CHS/MSCPROP-DLL-MAXScript-based-malware-may-corrupt-3ds-Max-installation-and-scene-files.html">MSCPROP</a> 及其变体。这些恶意脚本可能会损坏 3ds Max 环境和场景文件，导致数据丢失和不稳定，还有可能通过共享 <span class="charspan-msgph">3ds Max</span> 场景文件扩散到其他系统。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_6E31F9DB04A6425A84F941A19DA570BE"></a> 
+            <h2><a name="GUID-168734A0-8A81-448A-A4B6-C342F6935A99"></a>新增功能
+            </h2> 
+            <p>版本 2.1.1： 
+               		
+            </p> <a name="UL_FB8EB466D6F745AEBF199D9B7A4D455A"></a><ul>
+               <li> 
+                  <p>将“有更新时通知我”设置显示到 MAXScript： 
+                     			 
+                  </p> 
+                  <p> </p> 
+                  <div class="codeBlock"><pre>securityTools.GetDisplayUpdateNotification() -- Returns the current status of the "Notify me about updates" setting  
+securityTools.SetDisplayUpdateNotification bool -- Sets the "Notify me about updates" setting. Returns true if the setting was updated successfully, false otherwise</pre></div> 
+               </li>
+               <li> 
+                  <p>从 <em class="strong">3ds Max 2022.2 Update</em> 开始，系统管理员可以控制其网络上计算机的“启用保护”和“有更新时通知我”设置，这样可以防止用户对其进行更改。这些设置通过 <span class="code">[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\3dsMax\24.0\Variables\MALWAREREMOVAL]</span> 下的以下注册表项进行控制： 
+                     			 
+                  </p> <a name="TABLE_F0E7499BA1AC4FE097F2C99359BCF362"></a><div class="table-not-ruled">
+                     <table cellpadding="0" cellspacing="0" class="not-ruled">
+                        <colgroup>
+                           <col>
+                           <col>
+                           <col>
+                           <col>
+                        </colgroup>
+                        <tr class="not-ruled-heading">
+                           <th class="table-heading">设置 
+                              						
+                           </th>
+                           <th class="table-heading">注册表项 
+                              						
+                           </th>
+                           <th class="table-heading">类型 
+                              						
+                           </th>
+                           <th class="table-heading">值 
+                              						
+                           </th>
+                        </tr>
+                        <tr class="not-ruled-odd-row">
+                           <td class="table-body">启用保护 
+                              						
+                           </td>
+                           <td class="table-body">EnableMalwareRemoval 
+                              						
+                           </td>
+                           <td class="table-body">dword 
+                              						
+                           </td>
+                           <td class="table-body">1 为启用，0 为禁用 
+                              						
+                           </td>
+                        </tr>
+                        <tr class="not-ruled-even-row">
+                           <td class="table-body">有更新时通知我 
+                              						
+                           </td>
+                           <td class="table-body">DisplayUpdateNotification 
+                              						
+                           </td>
+                           <td class="table-body">dword 
+                              						
+                           </td>
+                           <td class="table-body">1 为启用，0 为禁用 
+                              						
+                           </td>
+                        </tr>
+                        <tr class="not-ruled-odd-row">
+                           <td class="table-body">系统管理员 
+                              						  
+                              <p class="table-body">注意：此设置不是必需的，但必须将其设置为“*CADAdmin”才能通过“首选项”UI 禁用设置。 
+                                 						  
+                              </p> 
+                              <p class="table-body">如果不是“*CADAdmin”或缺少该设置，则仅当 <span class="filePath">3dsmax.ini</span> 中不存在这些设置时，才使用它们。 
+                                 						  
+                              </p> 
+                           </td>
+                           <td class="table-body">所有者 
+                              						
+                           </td>
+                           <td class="table-body">字符串 
+                              						
+                           </td>
+                           <td class="table-body">*CADAdmin 
+                              						
+                           </td>
+                        </tr>
+                     </table>
+                  </div> 
+                  <p>当通过注册表项控制设置时，<span class="char_link"><a href="GUID-16432B3A-85BB-4542-9B0A-35D846401862.htm">“首选项”对话框</a></span>上会禁用该设置，并且会显示一个图标，指示该设置由系统管理员管理。 
+                     			 
+                  </p> 
+                  <p>此示例注册表项将打开所有恶意软件删除选项： 
+                     			 
+                  </p> 
+                  <div class="codeBlock"><pre>[HKEY_LOCAL_MACHINE\SOFTWARE\Autodesk\3dsMax\24.0\Variables\MALWAREREMOVAL]
+"EnableMalwareRemoval"=dword:00000001
+"DisplayUpdateNotification"=dword:00000001
+"Owner"="*CADAdmin"</pre></div> <a name="FIG_C524BAC12B3B4C39A6DC563400FA8BB2"></a><div class="figure-anchor"><img src="../images/GUID-16C45E19-55E2-41E8-8736-C81723BA820D-low.png"><p></p>
+                     <p class="figure-title">恶意软件删除被管理员锁定</p>
+                  </div> 
+               </li>
+            </ul> 
+            <p>版本 2.1.0： 
+               		
+            </p> <a name="UL_2F94A443AEAA4BD8B81832DC771802AC"></a><ul>
+               <li>实现了对检测和删除 MSCPROP 恶意脚本的支持。 
+                  		  
+               </li>
+            </ul> 
+            <p>版本 2.0.1： 
+               		
+            </p> <a name="UL_F9D0053E8A3A459CBF581E9BF19B4E25"></a><ul>
+               <li>修复了“有更新时通知我”<em class="strong"></em>选项会在实际已安装最新场景安全工具时通知用户有新更新的问题。 
+                  		  
+               </li>
+            </ul> 
+            <p>版本 2.0.0： 
+               		
+            </p> <a name="UL_B9400E4C885F43EF8FB4B7DF9235836D"></a><ul>
+               <li>该工具已重命名为“3ds Max 场景安全工具”（以前称为“3ds Max 安全工具”）。 
+                  		  
+               </li>
+               <li>当 Autodesk App Store 中提供了新版本的工具时，新的“有更新时通知我”<em class="strong"></em>选项会通知您。默认情况下，该选项处于启用状态。 
+                  		  
+               </li>
+               <li>该工具已使用 C++ 重新编写，以在保护用户不受场景和脚本文件中的第三方恶意脚本影响时提高灵活性和稳定性。 
+                  		  
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="SECTION_A6869C4C1A744643AA724304BA2778A4"></a> 
+            <h2><a name="GUID-CA68E877-2489-44D2-9746-9C1DF3CAE63E"></a>功能
+            </h2> <a name="UL_226684E9C1C5499098C33334F6240CC0"></a><ul>
+               <li> 以非破坏性方式从 <span class="charspan-msgph">3ds Max</span> 启动脚本中检测并移除下面列出的第三方恶意脚本。 
+                  		  
+               </li>
+               <li>从 <span class="charspan-msgph">3ds Max</span> 场景文件中检测并移除下面列出的第三方恶意脚本，而与这些脚本的加载方式（合并、外部参照、拖放、通过脚本化命令加载等）无关。 
+                  		  
+               </li>
+               <li> 帮助防止 <span class="charspan-msgph">3ds Max</span> 保存被下面列出的恶意脚本损坏的场景。 
+                  		  
+               </li>
+               <li> 在清理启动脚本和场景数据之前要求用户确认。 
+                  		  
+               </li>
+               <li> 以静默模式和非交互 <span class="charspan-msgph">3ds Max</span> 使用方案工作，例如命令行渲染和批处理脚本。 
+                  		  
+               </li>
+               <li> 将操作记录到系统日志 (Max.log) 和 MAXScript 侦听器。 
+                  		  
+               </li>
+               <li> 即使用户选择不清除启动脚本或场景文件，也允许他们继续使用 <span class="charspan-msgph">3ds Max</span>。 
+                  		  
+               </li>
+            </ul> 
+            <p> <em class="strong">“启用保护”选项：</em> 
+            </p> <a name="UL_B10D902E6E624BDA880BFF43D957C59B"></a><ul>
+               <li>请务必使场景安全工具保持启用状态，以使其检测并清除下面列出的第三方恶意脚本。 
+                  		  
+               </li>
+               <li> 在 <em class="strong">3ds Max 2022</em> 及更高版本中：请参见“首选项”对话框上<span class="char_link"><a href="GUID-16432B3A-85BB-4542-9B0A-35D846401862.htm">“安全”选项卡</a></span>中“恶意软件删除”组中的“启用保护”选项。 
+                  		  
+               </li>
+               <li>在 <em class="strong">3ds Max 2015-2021</em> 中：请参见场景安全工具首选项对话框中的“启用保护”选项，该对话框可通过<span class="MenuCascade">“自定义”菜单 <img src="../images/ac.menuaro.gif"> “场景安全工具”</span>菜单访问。 
+                  		  
+               </li>
+            </ul> 
+            <p><em class="strong">“有更新时通知我”选项：</em> 
+            </p> <a name="UL_03DE02F1E20E43B089A7A998C08B628F"></a><ul>
+               <li>必须启用“有更新时通知我”选项，以便当 <a href="https://apps.autodesk.com/3DSMAX/zh-CN/Detail/Index?id=7342616782204846316&amp;os=Win64&amp;appLang=zh-CN">Autodesk App Store</a> 中有场景安全工具更新时通知您。 
+                  			 <a name="UL_496317EA79B54DB29A161832CFFC7854"></a><ul>
+                     <li>在 <em class="strong">3ds Max 2022</em> 及更高版本中：请参见“首选项”对话框上<span class="char_link"><a href="GUID-16432B3A-85BB-4542-9B0A-35D846401862.htm">“安全”选项卡</a></span>中“恶意软件删除”组中的“有更新时通知我”选项。启用后，当有更新可用时，“安全消息”对话框中会显示通知，通知中包含一个指向 Autodesk App Store 的链接，您可以在 Autodesk App Store 中下载此更新。 
+                        				
+                     </li>
+                     <li>在 <em class="strong">3ds Max 2015-2021</em> 中：请参见场景安全工具首选项对话框中的“有更新时通知我”选项，该对话框可通过<span class="MenuCascade">“自定义”菜单 <img src="../images/ac.menuaro.gif"> “场景安全工具”</span>菜单访问。启用后，当场景安全工具有任何更新时，系统会通知您，并提供一个指向 Autodesk App Store 的链接，您可以在 Autodesk App Store 中下载此更新。 
+                        				
+                     </li>
+                  </ul> 
+               </li>
+            </ul> 
+            <p><em class="strong">支持的版本：</em> 
+            </p> 
+            <p>从 3ds Max 2015 SP1 及更高版本开始，所有的 3ds Max 版本（包括 3ds Max 教育版许可、3ds Max 独立版和 3ds Max 试用版）均受场景安全工具支持。 
+               		
+            </p> 
+            <div><a name="GUID-3AC66B9E-0BE9-43B3-902F-001951553E28"></a><div class="note-important"><span class="label label-target-language">重要信息:</span><span class="charspan-msgph">3ds Max</span> 场景安全工具仅用于帮助修复受影响的 <span class="charspan-msgph">3ds Max</span> 场景文件和 <span class="charspan-msgph">3ds Max</span> 环境。它们不是常规 Windows 防病毒或防恶意软件解决方案（例如，端点保护工具），因此不应视为此类工具。 Autodesk 建议所有用户在其计算机上运行可靠的防病毒或防恶意软件程序，并定期对程序及其病毒定义进行更新。 
+                  		
+               </div>
+            </div> 
+         </div>
+         <div class="section"><a name="SECTION_988E4533C555403381A5C8B1C4690308"></a> 
+            <h2><a name="GUID-B568F747-39CD-4FA2-A5D2-256ECD2F55DE"></a>支持文章
+            </h2> 
+            <p> </p> <a name="UL_036AEC8C1EB34116B16673C812CE0A50"></a><ul>
+               <li><a href="https://knowledge.autodesk.com/zh-hans/support/3ds-max/troubleshooting/caas/sfdcarticles/sfdcarticles/Potential-issues-with-third-party-MAXScript-CRP-switching-to-different-viewport-scene-lights-disappear-or-seem-deleted.html" target="_blank">关于 CRP 和 ADSL MAXScript 的支持文章</a> 
+               </li>
+               <li><a href="https://knowledge.autodesk.com/zh-hans/support/3ds-max/troubleshooting/caas/sfdcarticles/sfdcarticles/Scene-file-crashes-corrupts-scene-data-gives-Script-Controller-error-or-no-longer-uses-the-Undo-function.html?_ga=2.71094288.1412278607.1537188109-1107490122.1489686243" target="_blank">关于 ALC MAXScript 的支持文章</a> 
+               </li>
+               <li><a href="https://knowledge.autodesk.com/zh-hans/article/Script-Controller-error-scene-file-crashes-or-corrupt-scene-data-due-to-third-party-MAXScript-ALC2-in-3ds-Max" target="_blank">关于 ALC2 MAXScript 的支持文章</a> 
+               </li>
+               <li><a href="https://knowledge.autodesk.com/zh-hans/support/3ds-max/learn-explore/caas/sfdcarticles/sfdcarticles/PhysXPluginMfx-MAXScript-based-malware-may-corrupt-3ds-Max-installation-and-files.html" target="_blank">关于 PhysXPluginMfx MAXScript 的支持文章</a> 
+               </li>
+               <li><a href="https://knowledge.autodesk.com/zh-hans/support/3ds-max/troubleshooting/caas/sfdcarticles/sfdcarticles/CHS/MSCPROP-DLL-MAXScript-based-malware-may-corrupt-3ds-Max-installation-and-scene-files.html">关于 MSCPROP MAXScript 的支持文章</a> 
+               </li>
+            </ul> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

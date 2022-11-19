@@ -1,0 +1,141 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5B4C8EC2-2230-4F9F-B3C6-48D9E347E37D">
+      <meta name="contextid" content="IDH_GLTF_EXPORTER">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>导出为 glTF</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5B4C8EC2-2230-4F9F-B3C6-48D9E347E37D"></a><div class="head">
+            <h1> 导出为 glTF</h1>
+         </div>
+         <p> glTF (TM) 是一种用于在 Internet 上高效传输 3D 场景的规范。它非常适合导出 3D 内容，以便在非常看重交互性的 Web 应用程序、在线商店、浏览器游戏和其他现代网店中使用。 
+            	 
+         </p>
+         <p>要导出 .gltf 或 .glb 文件，请转到： 
+            	 
+         </p><a name="UL_C56AE897834246F095F022E9435525CE"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-F180F25F-F80F-45A6-8F8F-C7526D4BD2F0">“文件”菜单  <img src="../images/ac.menuaro.gif"> “导出” <img src="../images/ac.menuaro.gif"> “选择要导出的文件”对话框  <img src="../images/ac.menuaro.gif"> “另存为类型”下拉列表  <img src="../images/ac.menuaro.gif">  选择“GL 传输格式(*.glb、*.gltf)”</span> 
+            </li>
+         </ul>
+         <div><a name="NOTE_676B8BE3E8404E41A953D42B49B410E3"></a><div class="note-note"><span class="label label-target-language">注意:</span> <a name="UL_4CC7DEDF82AD4DABB6C6CC7F890A166A"></a><ul>
+                  <li> 尽管可以通过“文件”&gt;“导出”&gt;“导出...”<em class="strong"></em>找到 glTF 导出器，但仍建议使用“文件”&gt;“导出”&gt;“实时导出器...”<em class="strong"></em>，因为虽然经典的“导出”对话框仍会转到“实时导出器”对话框，但可能会生成一条关于两次覆盖现有文件的警告（在选择文件的经典导出功能时以及点击“实时导出器”对话框中的“导出”按钮时）。 
+                     		  
+                  </li>
+                  <li>当 <span class="char_link"><a href="GUID-7ABFB805-1D9F-417E-9C22-704BFDF160FA.htm">glTF 材质</a></span>应用于要导出的网格时，glTF 导出器会生成最佳结果。将 3ds Max 中的其他材质用于 glTF 导出器时，导出效率不如 <span class="char_link"><a href="GUID-7ABFB805-1D9F-417E-9C22-704BFDF160FA.htm">glTF 材质</a></span>的导出效率高。 
+                     		  
+                  </li>
+                  <li> glTF 导出器当前仅支持材质中纹理的贴图通道 1，网格中的 UV 通道 1。 
+                     		  
+                  </li>
+               </ul> 
+            </div>
+         </div><a name="FIG_1F4BB5E980C642C7AD983D1741FD0AFA"></a><div class="figure-anchor"><img src="../images/GUID-7AE3A403-7E0B-45D5-A6AD-053F64A11E89-low.png"></div><a name="GUID-EFD9E161-9B23-4093-A443-0F2C90B541BA"></a><div class="dl_section"><a name="GUID-D74CC0A0-1E7A-488B-97A5-ECDA446853D4"></a><p class="title"><a name="GUID-3927AADB-A4A9-4FD3-890A-10059F72D1C9"></a>实时导出器选项
+            </p>
+            <dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-26A2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-202C"></a>文件格式</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-14C9"></a> 默认为“GL 传输格式(.gltf/.glb)”也可以选择导出为 FBX 文件。 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-26A1"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-202B"></a>导出集</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-14C8"></a> 选择是导出场景中的所有对象、选择的对象还是对象集。
+                  </div>
+               </dd>
+            </dl>
+         </div><a name="DL-ADSK_01C087348BEE4109B5822EA633BC1381"></a><div class="dl_section"><a name="DL-SECTION_140B71B6660D4A7C9BDDED97CA0C3D14"></a><p class="title"><a name="DL-TITLE_6A6323004712463D8586EABF0CB0A671"></a>输出选项
+            </p>
+            <dl>
+               <dt><a name="DL-ENTRY_9479CDFB7A3E449E99641E81299A64B6"></a><span class="term"><a name="DL-TERM_82D7C578A7824578A87242F4A514937F"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="DL-DEFINITION_B645DC26277D42FC9A60F59EECF89545"></a> 
+                     <p><em class="strong">文件名</em> 
+                     </p> 包括要在导出时使用的 .glTF 或 .glb 文件的名称。 
+                  </div>
+               </dd>
+               <dt><a name="DL-ENTRY_57DA12A025D44384996F196D25002E9E"></a><span class="term"><a name="DL-TERM_10F4F576F73E47D599636CE40CE54B45"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="DL-DEFINITION_22309C5763A34C5C9098F72A2AC33E72"></a> 
+                     <p><em class="strong">路径</em> 
+                     </p> 在本地系统上设置目标路径。
+                  </div>
+               </dd>
+               <dt><a name="DL-ENTRY_6744773C02A34B0D8F61D396B25D0555"></a><span class="term"><a name="DL-TERM_4BE9FA6973BA4FC2ADAD3BC41806AA0F"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="DL-DEFINITION_A9694B8CE31D467BB8AD215E353FC2D2"></a> 
+                     <p><em class="strong">导出 glTF 二进制文件(.glb)</em> 
+                     </p>将所有数据合并导出成一个 glTF 二进制 (.glb) 格式文件。虽然导出为 .glb 非常有效，但此文件格式通常很难编辑。
+                  </div>
+               </dd>
+            </dl>
+         </div><a name="DL-ADSK_CF65FFC8B33344FF85BFC8B751EB4A78"></a><div class="dl_section"><a name="DL-SECTION_2F8B14E9912C4114B514FF4D388D0CFD"></a><p class="title"><a name="DL-TITLE_01605C839337417A9D30D76F5FC4EE75"></a>壳材质
+            </p>
+            <dl>
+               <dt><a name="DL-ENTRY_FD11E099AD664327A660D6605EAF33D8"></a><span class="term"><a name="DL-TERM_703D4C8683CB49579E3302BA79D1923B"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="DL-DEFINITION_AE5C584D22884E1D952567F460D51618"></a> 
+                     <p><em class="strong">导出</em> 
+                     </p>选择在应用了壳材质的对象上是要导出烘焙材质还是要导出原始材质。
+                  </div>
+               </dd>
+            </dl>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004207"></a> 
+            <h2><a name="GUID-76BF4588-2761-4DC1-9126-174FD6033284"></a>已知限制
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004208"></a><ul>
+               <li> 尽管 glTF 支持多个贴图通道，但导出器当前仅会导出贴图通道 1。 
+                  		  
+               </li>
+               <li> 不会导出动画、蒙皮或变形器数据。 
+                  		  
+               </li>
+               <li> 导出时，层次将展平。 
+                  		  
+               </li>
+               <li> 在网格中不会导出顶点颜色。 
+                  		  
+               </li>
+               <li> 导出器不支持嵌套的多个子对象和壳材质超过嵌套的第二级。 
+                  		  
+               </li>
+               <li> 位图纹理是 <span class="char_link"><a href="GUID-7ABFB805-1D9F-417E-9C22-704BFDF160FA.htm">glTF 材质</a></span>唯一支持的贴图输入 
+                  		  
+               </li>
+               <li> 名称相同但类型不同的位图无法正确导出（如果材质同时具有 red.png 和 red.jpg，则仅会导出一个位图）。 
+                  		  
+               </li>
+            </ul> 
+         </div>
+         <div><a name="NOTE_512455CA61B34181B8212D146DB138D4"></a><div class="note-note"><span class="label label-target-language">注意:</span> <a name="WS1A9193826455F5FFBA679E112A6A1900437A0"></a><ul>
+                  <li>glTF 导出器在导出场景时会保留材质和场景对象节点的名称。 
+                     		  
+                  </li>
+                  <li>导出时，如果材质和节点的名称重复，重复项将采用数字作为后缀。例如，“material_1、material_2、material_3”等。 
+                     		  
+                  </li>
+               </ul> 
+            </div>
+         </div>
+         <div class="section"><a name="SECTION_5E588E9F85DE4FF797527B07F3910A92"></a> 
+            <h2><a name="TITLE_EBC02943656D4842A39B6865C275E9A2"></a>示例下载 
+            </h2> 
+            <p>一个可下载的示例文件夹，其中包含在 3ds Max 中创建的场景，该场景使用 glTF 材质节点和属性为场景中存在的所有资源设置纹理。 
+               		
+            </p> 
+            <p>单击下面的链接下载示例文件夹（文件夹包含 3ds Max 场景和所有位图纹理）。 
+               		
+            </p> 
+            <p><a href="https://areadownloads.autodesk.com/wdm/3dsmax/patio_example.zip">露台示例场景</a> 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-7B9827F8-B912-4308-9D8E-9863F321F0D4">
+      <meta name="description" content="通过“限制”控制器可以为可用的控制器值指上限和下限，从而限制被控制的轨迹的可能值范围。例如，在角色装备中可以使用该控制器来限制手指关节处的旋转，这样手指就不会向后弯曲。基本上，一旦轨迹被限定、并且该限定启用之后，则轨迹的值将无法再超出限制。">
+      <meta name="indexterm" content="限制动画范围">
+      <meta name="indexterm" content="控制器: 限制">
+      <meta name="indexterm" content="浮动限制控制器">
+      <meta name="indexterm" content="限制控制器">
+      <meta name="contextid" content="ANIMATION TOOLS-TOGGLELIMITS">
+      <meta name="topic-type" content="concept">
+      <title>限制控制器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-7B9827F8-B912-4308-9D8E-9863F321F0D4"></a><div class="head">
+            <h1>限制控制器</h1>
+         </div>
+         <p class="blurb">通过“限制”控制器可以为可用的控制器值指上限和下限，从而限制被控制的轨迹的可能值范围。例如，在角色装备中可以使用该控制器来限制手指关节处的旋转，这样手指就不会向后弯曲。基本上，一旦轨迹被限定、并且该限定启用之后，则轨迹的值将无法再超出限制。 </p><a name="UL_70FA597F537E4AB59DB909F1148F89D4"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-8F7EF7B0-5697-41C8-8582-FE9EE97524ED">指定控制器  <img src="../images/ac.menuaro.gif">  浮动限制</span> 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F48755602CAF04118F18E7A07-55B5"></a>可以为大多数其他控制器类型应用一个“限制”控制器；被限制的控制器（即，原始控制器）将在“轨迹视图”层次中以“限制”控制器的子体形式出现。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4314"></a>通过“限制”控制器可以为可用的控制器值指上限和下限，从而限制被控制的轨迹的可能值范围。例如，在机械组合中可以使用该控制器限制某个零件的旋转，以使它旋转时不会超出其标准运动范围。基本上，一旦轨迹被限定、并且该限定启用之后，则轨迹的值将无法再超出限制。可以为其他任何类型的控制器指定一个限制控制器；被限制的控制器（即，原始控制器）将在“轨迹视图”层级中以“限制”控制器的子体形式出现。
+            
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4313"></a>因为“限制”控制器未改变原始控制器，因此您可以轻松地在原始动画和限制动画之间通过切换限制来进行来回切换。但是如果<span class="char_link"><a href="GUID-3B9B6F3E-D213-4E9B-8808-B949F1CE63C7.htm">塌陷</a></span>“限制”控制器，则结果只会得到限制动画，而原始动画将无法再使用。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4312"></a>使用“限制”控制器可以加快设置和创建动画的速度。因为它排除了在制作动画时所需要的表达式或脚本，这样可以改善减缓，以在层次和装备中设置自动化，创建各种效果，如避免冲突、FK 关节限制，等等。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4311"></a>例如，技术指导可能会希望为浮点值指定限制，这样动画师将调整并简化姿势设置、执行标准、或防止矛盾和错误的出现。技术指导可能将限制用于： 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190044ABC"></a><ul>
+            <li>灯光强度 </li>
+            <li>手指旋转 </li>
+            <li>滑动抽屉的位置范围 </li>
+            <li>摄影机“视野” </li>
+            <li>将面片分辨率限制到游戏引擎支持的范围 </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4310"></a>角色装备操纵者可以通过使用限制来创建复杂的关系或装备快捷键。示例： 
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190044ABD"></a><ul>
+            <li>将腕部扭曲骨骼关联到手部旋转，但要限制腕部扭曲旋转或手部旋转，以停止任何可能发生的反转不足。 </li>
+            <li>通过为其局部位置轨迹生成限制值以反应辅助对象距离临近辅助对象的角度或距离可以防止不自然地平移样条线 IK 辅助对象。 </li>
+            <li>反应禁用 IK 的时间，并匹配 FK 中的解算器的限制。 </li>
+            <li>为膝盖限制 IK 链旋转角度目标的位置，这样膝盖就永远都不会转到角色的后面。即，目标被链接到角色的根。 </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044ABE"></a> 
+            <h2><a name="GUID-3E4B112A-C437-4445-8503-7626786EC7EF"></a>使用情况
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-430F"></a>以下列表列举出具体使用限制控制器的例子： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190044ABF"></a><ul>
+               <li>在角色的手部选择所有手指骨骼的 Y 旋转轨迹，然后指定限制控制器。使用“设置关键点”模式来根据手指的最大运动范围设置其姿势，然后使用<span class="char_link"><a href="GUID-7B9827F8-B912-4308-9D8E-9863F321F0D4.htm#WSF742DAB041063133-128E6F4112A1CE6C39-7FC3">右键单击菜单 </a></span><img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“设置上限”/“设置下限”命令限制手指的运动。 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E50F"></a><div class="note-note"><span class="label label-target-language">注意:</span>“限制”包含在“通过其他类别设置关键点”中。 
+                     </div>
+                  </div> 
+               </li>
+               <li>为窗户开关对象的“X 轴旋转”轨迹指定“噪波控制器”以使其发出声音，但是对象与建筑在其运动范围的较低处相交。为轨迹指定“限制”控制器并设置“下限”值以防止相交。 </li>
+               <li>沿用前一个示例，假设风在第 100 帧将建筑物的百叶窗刮破。如果“噪波”控制器位于具有 Bezier 浮点的浮点列表中，则可以在第 100 帧将噪波的权重设为 0（此时风将建筑物的百叶窗刮破），动画制作者将在此点设置动画的关键点。无需在第 100
+                  帧后设置限制。您已在第 99 帧使用了“设置下限”。然后在帧 100，编辑“下限”值以将限制设置到较低值，这样就基本移除了限制。最后，设置关键帧以为其运动设置动画并越过帧 100。 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044AC0"></a> 
+            <h2><a name="GUID-3847A3F2-A5F6-4795-A6BE-DB2C9804CEBB"></a>“限制控制器”的限制
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-430E"></a>请注意“限制”控制器的以下限制： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190044AC1"></a><ul>
+               <li>“限制控制器”不能限制 IK 关节。所有 IK 解算器都使用各自的限制而不使用“限制控制器”。互交式 IK 使用当前的控制器，但它也有其自己的限制，因此同时使用“限制控制器”和互交式 IK 将会产生不可预测的结果。 </li>
+               <li>“限制”控制器仅支持“浮动”控制器，因此它仅在名称“浮动限制”下可用。 </li>
+               <li>上限值和下限值与限制控制器使用相同的单位或坐标。因此，举个例子，“X 位置”轨迹使用的是局部坐标而不是全局坐标。 </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-430D"></a> 
+            <h2><a name="GUID-CD02F5B8-BB76-49D5-ADC3-DFA4A1D43427"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044AC2"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044AC3"></a>示例：要使用限制控制器，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>从动画对象开始，然后打开“曲线编辑器”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-430C"></a>在此示例中，茶壶位置的动画位于 X 轴上的大约 -45 到 40 的范围之内，Y 轴上大约 -80 到 54 的范围之内。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A190044AC4"></a><div class="figure-anchor"><img src="../images/GUID-A47FE356-1156-4B9E-AED1-69AE05249DD1-low.png"></div>  
+               </li>
+               <li>为轨迹指定“浮点限制控制器”。在此示例中，我们将把它指定到“X 位置”轨迹。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-430B"></a>这样会打开“浮点限制控制器”对话框，您可以在其中设置限制和其他值，但是以互交的方式来操作可能会更简单，所以现在只需要关闭该对话框并接受默认设置。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-430A"></a>该轨迹仍将保持其原有名称（在此示例中为 X 位置），但是图标将会更改以说明它现在为“限制控制器”并且可以扩展（请参见下列步骤中的说明）。 
+                  </p> 
+               </li>
+               <li>扩展轨迹。 <a name="WS1A9193826455F5FFBA679E112A6A190044AC5"></a><div class="figure-anchor"><img src="../images/GUID-98EB4F22-6FB0-4D61-9B25-29E56B654697-low.png"></div>  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4309"></a>该层中包含一个称为“限制控制器”的子轨迹和一个称为“限制”的新的可扩展子分支。 
+                  </p> 
+               </li>
+               <li>单击“X 位置”轨迹和“限制控制器”轨迹，并对它们进行比较。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4308"></a>因为原始 X 轴运动在默认限制范围内生成，所以这两个轨迹是相同的。 
+                  </p> 
+               </li>
+               <li>将动画移动至您希望设置限制的 X 轴位置。在此示例中，该位置大约处于 -20，我们将在此处设置下限。 <a name="WS1A9193826455F5FFBA679E112A6A190044AC6"></a><div class="figure-anchor"><img src="../images/GUID-70B2533C-C860-4341-9645-3A1FC6BEACA9-low.png"></div>  
+               </li>
+               <li>高亮显示“X 位置”轨迹，然后单击鼠标右键并从右键单击菜单中选择“限制控制器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“设置下限”。 <a name="WS1A9193826455F5FFBA679E112A6A190044AC7"></a><div class="figure-anchor"><img src="../images/GUID-9960F141-8E2E-45CE-B7D8-40443CC915A1-low.png"></div>  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4307"></a>图形曲线现在被剪辑到下限以下。移动动画时，对象将不超出该位置。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A190044AC8"></a><div class="figure-anchor"><img src="../images/GUID-639387B3-C996-46EE-B6E1-396DD9989ADE-low.png"></div>  
+               </li>
+               <li>再次将动画移动至要设置限制上限的位置，右键单击“X 位置”轨迹，然后选择“限制控制器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“设置上限”。 <a name="WS1A9193826455F5FFBA679E112A6A190044AC9"></a><div class="figure-anchor"><img src="../images/GUID-4D1A7035-22CF-4594-BD62-DFF5DC85FD0A-low.png"></div>  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4306"></a>在本示例中，我们将它设为 13 附近。图形曲线现在被修剪为上限以上和下限以下。最终的运动同样将受到约束。 
+                  </p> 
+               </li>
+               <li>移动动画。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4305"></a>X 轴上的运动被限制在两端；对象最初的运动超出了限制，而现在则被限制在该范围之内。 
+                  </p> 
+               </li>
+               <li>再次比较两个轨迹。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4304"></a>“限制”控制器（X 位置）轨迹清晰地显示上限和下限剪切，同时“限制控制器”轨迹显示原始运动。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4303"></a>原始运动仍然作为“限制控制器”轨迹存在，可以通过切换“限制”控制器临时恢复它。 
+                  </p> 
+               </li>
+               <li>高亮显示“X 位置”轨迹，然后右键单击并选择“限制控制器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“切换限制”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4302"></a>现在，当您移动动画时，对象像以前一样移动。 
+                  </p> 
+               </li>
+               <li>再次选择“限制控制器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“切换限制”以恢复该限制 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4301"></a>您可以采用两种方式来复制“限制”控制器：仅限限制或将限制与运动相组合。首先仅复制限制。 
+                  </p> 
+               </li>
+               <li>高亮显示“Y 位置”轨迹，并注意其曲线与“X 位置”轨迹的不同之处。 </li>
+               <li>高亮显示“X 位置”轨迹，然后右键单击并选择“限制控制器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“仅复制限制”。 
+               </li>
+               <li>高亮显示“Y 位置”轨迹，然后右键单击并选择“限制控制器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“仅粘贴限制”。打开“粘贴”对话框之后，单击“确定”以确认作为副本的粘贴。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4300"></a>现在，也限制了“Y 位置”轨迹，使用与“X 位置”轨迹相同的范围，但保留了其原始基本运动。要对此进行验证，请将“Y 位置”轨迹与其子“限制”控制器轨迹作比较。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42FF"></a>接下来，将整个限制的“X 位置”轨迹复制到“Z 位置”轨迹，包括运动和限制。当前未对“Z 位置”轨迹设置动画。 
+                  </p> 
+               </li>
+               <li>高亮显示“X 位置”轨迹，然后右键单击并选择“复制”。 </li>
+               <li>高亮显示“Z 位置”轨迹，然后右键单击并选择“粘贴”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42FE"></a>将“X 位置和 Z 位置”轨迹和两个子“限制”控制器轨迹作比较。每个相应的曲线对都相同。运动好象是对象在撞击长方体的边缘内侧一样。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42FD"></a>最后，我们将介绍“平滑缓冲区”设置。默认情况下，只要限制曲线就会创建锐角，从而使运动突然变化。可以用“平滑缓冲区”参数平滑这些角，从而产生看起来比较自然的运动。 
+                  </p> 
+               </li>
+               <li>高亮显示“X 位置”轨迹，然后右键单击并选择“属性”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42FC"></a>这将重新打开“浮点限制控制器”对话框。 
+                  </p> 
+               </li>
+               <li>使用“上限”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“平滑缓冲区”微调器，尽可能增加“平滑缓冲区”值。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42FB"></a>随着该值的不断增加，图形上的上限角也变得越来越平滑。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A190044ACA"></a><div class="figure-anchor"><img src="../images/GUID-F1BB6027-89AA-433B-AB74-E628E487A81D-low.png"></div>  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42FA"></a>请注意，此值有一个上限，在这种情况下为 34.973。此限制是由对话框上其他三个设置的值决定的。 
+                  </p> 
+               </li>
+               <li>尝试增加“下限”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“平滑缓冲区”。不可能有最大的上限平滑值。 
+               </li>
+               <li>减少上限值，然后增加下限平滑值。 <a name="WS1A9193826455F5FFBA679E112A6A190044ACB"></a><div class="figure-anchor"><img src="../images/GUID-AB2C984A-9CF9-4009-8C81-1EAC1367304C-low.png"></div>  
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42F9"></a>现在可以采用上限和下限获得平滑效果。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-42F8"></a> 
+            <h2><a name="GUID-73B9E5D4-5FC6-4C9A-9B11-8C837F303736"></a>界面
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42F7"></a>“限制控制器”界面包含“浮动限制控制器”对话框和几个右键单击菜单项。 
+            </p> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044ACC"></a> 
+               <h3><a name="GUID-55FDBDA0-A2BC-4350-87DC-D98C8253662F"></a>“浮动限制控制器”对话框
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A190044ACD"></a><div class="figure-anchor"><img src="../images/GUID-DB9A778E-FB3C-4DCA-96E2-631B30AA00C1-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42F6"></a>在第一次指定“限制”控制器时，或右键单击高亮显示的“限制”控制器轨迹并选择“属性”时，打开“浮动限制控制器”对话框。 
+               </p> <a name="GUID-FBFBBC6F-1232-453D-B50C-16CE2C9CD98B"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7897"></a><span class="term"><a name="WSF742DAB041063133-128E6F4112A1CE6C39-7FC6"></a>启用
+                        <!--CPM-ContextId = 'Animation Tools-ToggleLimits'--><a name="GUID-600E3866-AA3F-4214-A997-4DF98C33B869"></a></span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A7D"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752727"></a>切换“限制”控制器。禁用此选项之后，限制轨迹的原始值还生效。启用此选项之后，由上限和下限值限制原始值。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E510"></a><div class="note-note"><span class="label label-target-language">注意:</span>可以通过“切换限制”命令同时在场景中启用和禁用所有“限制”控制器，该命令可以从 <span class="charspan-msgph">3ds Max</span>“动画”菜单中获得。如果一些“限制”控制器启用而另一些禁用，则“切换限制”会将其全部启用。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-34EB6029-EEBF-4424-B8D9-595137DB3D59"></a><p class="title"><a name="GUID-19A96C03-4237-4EA0-AA58-F73CF55F4491"></a>“上限”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7896"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-42F5"></a>启用</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A7C"></a> 切换由该控制器设置的上限。禁用此选项之后，将不会施加上限限制。默认设置为启用。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7895"></a><span class="term"><a name="WSF742DAB041063133-128E6F4112A1CE6C39-7FC5"></a>[上限值]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A7B"></a> “限制”控制器允许的最高值。剪切原始控制器中高于此值的所有值，也就是说将它们设置为此值，除非平滑生效。默认值为 1000.0。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42F4"></a>可以通过关键帧和其他标准方法对此值设置动画，并通过控制器的“限制”分支中的“上限”轨迹操纵“轨迹视图”中的此动画。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7894"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-42F3"></a>平滑缓冲区</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A7A"></a> 指定平滑值，以便剪切范围开始和结束处的剪切值逐渐增加或减少，而不是突然稳定。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42F2"></a>由“上限”和“下限”值确定最大的总平滑。（“上限”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“平滑缓冲区”值）+（“下限”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“平滑缓冲区”值）不能超出此总数。为了在剪切上限和下限获得最平滑的结果，将“平滑缓冲区”设置为最大数，然后将其缩小到该值的一半，并将其他“平滑缓冲区”设置为相同的量。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42F1"></a>可以通过关键帧和其他标准方法对“平滑缓冲区”值设置动画，并通过控制器的“限制”分支中的“上限平滑”轨迹操纵“轨迹视图”中的此动画。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-7810D511-9646-421F-B3E2-CBBA65440A5A"></a><p class="title"><a name="GUID-1F9AA32C-4682-497C-B47B-3A905A4DB658"></a>“下限”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7893"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-42F0"></a>启用</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A79"></a> 切换由该控制器设置的下限。禁用此选项之后，将不会施加下限限制。默认设置为启用。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7892"></a><span class="term"><a name="WSF742DAB041063133-128E6F4112A1CE6C39-7FC4"></a>[下限值]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A78"></a> “限制”控制器允许的最低值。剪切原始控制器中低于此值的所有值，也就是说将它们设置为此值，除非平滑生效。默认值为 -1000.0。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42EF"></a>可以通过关键帧和其他标准方法对此值设置动画，并通过控制器的“限制”分支中的“下限”轨迹操纵“轨迹视图”中的此动画。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7891"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-42EE"></a>平滑缓冲区</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A77"></a> 指定平滑值，以便剪切范围开始和结束处的剪切值逐渐增加或减少，而不是突然稳定。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42ED"></a>由“上限”和“下限”值确定最大的总平滑。（“上限”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“平滑缓冲区”值）+（“下限”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“平滑缓冲区”值）不能超出此总数。为了在剪切上限和下限获得最平滑的结果，将“平滑缓冲区”设置为最大数，然后将其缩小到该值的一半，并将其他“平滑缓冲区”设置为相同的量。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42EC"></a>可以通过关键帧和其他标准方法对“平滑缓冲区”值设置动画，并通过控制器的“限制”分支中的“下限平滑”轨迹操纵“轨迹视图”中的此动画。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133-128E6F4112A1CE6C39-7FC3"></a> 
+               <h3><a name="GUID-D65AD10E-1155-42C5-889E-28B2990645BD"></a>“限制控制器”右键单击菜单
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A190044AD0"></a><div class="figure-anchor"><img src="../images/GUID-1BA11D2C-A0AA-4674-A0B7-DEFD1A5A7A32-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42EB"></a>要访问“限制控制器”右键单击菜单，则高亮显示“轨迹视图”层次中的“限制控制器”轨迹，然后右键单击轨迹，并将光标移动到“控制器”区域 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“限制控制器”菜单项。 
+               </p> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E511"></a><div class="note-note"><span class="label label-target-language">注意:</span>使用“限制”控制器轨迹上的“仅复制限制”之后，可以通过调用“仅粘贴限制”将具有相同限制的新“限制”控制器应用于任何轨迹。 
+                  </div>
+               </div> <a name="GUID-089ADCF2-C5C6-4811-AC3C-09ED71E168B1"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7890"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-42EA"></a>切换限置</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A76"></a> 启用和禁用“限制”控制器。这与“浮动限制控制器”对话框上的<span class="char_link"><a href="GUID-7B9827F8-B912-4308-9D8E-9863F321F0D4.htm#WSF742DAB041063133-128E6F4112A1CE6C39-7FC6">“启用”复选框</a></span>相同。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-788F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-42E9"></a>设置上限</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A75"></a> 设置当前帧“上限”轨迹中的值/关键点，使它们等于限制轨迹当前帧的值。如果只有一个关键点，则该限制的值随时间保持恒定。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-788E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-42E8"></a>设置下限</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A74"></a> 设置当前帧“下限”轨迹中的值/关键点，使它们等于限制轨迹当前帧的值。如果只有一个关键点，则该限制的值随时间保持恒定。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-788D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-42E7"></a>移除限制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A73"></a> 删除“限制”控制器，恢复不带限制的原始控制器。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-788C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-42E6"></a>仅复制限制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A72"></a> 只复制该限制值，并忽略高亮显示的轨迹的限制控制器。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-788B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-42E5"></a>仅粘贴限制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5A71"></a> 只应用复制的限制值或具有复制值的“限制”控制器（如果其不存在），同时保留原始限制轨迹的值。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-42E4"></a>与粘贴复制的控制器轨迹一样，可以粘贴限制值，作为副本或复制限制控制器的实例，此时可以选择替换粘贴目标的所有实例。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-8410A50D-3FDA-4896-A206-03235FEEE133.htm">切换限制</a><p> 切换当前场景中的所有限制控制器。 </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

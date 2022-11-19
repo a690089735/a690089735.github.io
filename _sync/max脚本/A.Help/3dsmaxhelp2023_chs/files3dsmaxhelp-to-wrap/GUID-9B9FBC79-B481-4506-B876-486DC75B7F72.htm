@@ -1,0 +1,103 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-9B9FBC79-B481-4506-B876-486DC75B7F72">
+      <meta name="description" content="使用此对话框可以选择连接两个曲线的方式。">
+      <meta name="indexterm" content="NURBS: 连接曲线对话框">
+      <meta name="topic-type" content="concept">
+      <title>“连接曲线”对话框 (NURBS)</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-9B9FBC79-B481-4506-B876-486DC75B7F72"></a><div class="head">
+            <h1>“连接曲线”对话框 (NURBS)</h1>
+         </div>
+         <p class="blurb">使用此对话框可以选择连接两个曲线的方式。 </p><a name="UL_D964F65ED78F458683A3B6969628BFC2"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-57F7389F-614F-4DA7-A787-77255B3A81FF"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif">  选择 NURBS 曲线子对象。 <img src="../images/ac.menuaro.gif"> “曲线公用”卷展栏  <img src="../images/ac.menuaro.gif"> “连接”按钮  <img src="../images/ac.menuaro.gif">  连接视口中的两条曲线。</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-68E3"></a> 
+            <h2><a name="GUID-1815CA6E-94EC-4CFD-9C02-BA46098C30DB"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004210E"></a><div class="figure-anchor"><img src="../images/GUID-93394539-6CAF-4724-A962-CFDBAE574637-low.png"></div>  
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004210F"></a> 
+               <h3><a name="GUID-1B7E77BF-464D-4EB7-B917-364769904EF9"></a>ZIP 选项卡
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-68E2"></a>此选项卡用于选择压缩算法。压缩可连接两个原始曲线的 CV 晶格。压缩不仅能够更改原始曲线的形状，而且通常可以生成比连接更好的效果。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-68E1"></a>默认情况下，ZIP 选项卡处于活动状态。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-68E0"></a>如果两条曲线是未修剪的点曲线，则压缩的结果是点曲线。在其他所有情况下，结果都是 CV 曲线。 
+               </p> <a name="GUID-1ED44D33-A6DF-462F-B3E3-D6D470061E48"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3E0"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-68DF"></a>公差</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6058"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753298"></a>采用 <span class="charspan-msgph">3ds Max</span> 单位的距离。如果两条原始曲线的两端接近这个距离，则压缩将删除一个点或 CV，以避免在新压缩的曲线中创建重叠的点或 CV。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3E1"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-68DE"></a>张力 1</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6057"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753299"></a>（禁用。） 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3E2"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-68DD"></a>张力 2</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6056"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875329A"></a>（禁用。） 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190042110"></a> 
+               <h3><a name="GUID-25A05D52-A02B-4B71-837D-22F460C418E5"></a>“连接”选项卡
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-68DC"></a>此选项卡用于选择连接算法。连接首先在两条原始曲线之间创建一条混合曲线，然后使这三条曲线成为一个曲线。连接并不会更改两条原始曲线的形状。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-68DB"></a>如果两条曲线是点曲线，则结果是点曲线。如果一条或两条曲线是 CV 曲线，则结果是 CV 曲线。 
+               </p> <a name="GUID-1D81FADC-3CC3-4C25-A204-8C0BBFC92A72"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3E3"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-68DA"></a>公差</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6055"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875329B"></a>采用 <span class="charspan-msgph">3ds Max</span> 单位的距离。如果所连接曲线之间的间距大于该值，则通过首先创建混合曲线，然后连接三个部分来创建连接。如果间距小于该值，或如果曲线重叠，则 <span class="charspan-msgph">3ds Max</span> 不会创建混合。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-68D9"></a>首先创建一个混合，然后将三条曲线连接为一条曲线是比较好的技术。结果也与父曲线匹配。如果不采用混合步骤，则最终的曲线将偏移父曲线，这样才能保持平滑。（偏移量取决于两条输入曲线在连接时的切线距离多远。） 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-68D8"></a>如果间距太小，就会出现问题。在这种情况下，<span class="charspan-msgph">3ds Max</span> 将生成混合，但是由于没有足够的空间，因此最终的曲线将有一个圆环。为了避免出现这个圆环，公差应该大于间距距离。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-68D7"></a>如果将公差设置为 0.0，则 <span class="charspan-msgph">3ds Max</span> 将选择用于“公差”的值。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3E4"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-68D6"></a>张力 1</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6054"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875329C"></a>调整所拾取的第一条曲线一端上新曲线的张力。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3E5"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-68D5"></a>张力 2</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6053"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875329D"></a>调整所拾取的第一条曲线一端上新曲线的张力。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-68D4"></a></p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D3E6"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-68D3"></a>预览</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6052"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875329E"></a>启用此选项后，可以在视口中预览压缩或连接的效果。默认设置为启用。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

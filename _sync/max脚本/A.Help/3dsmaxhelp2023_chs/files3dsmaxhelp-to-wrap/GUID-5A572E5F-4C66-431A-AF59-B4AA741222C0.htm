@@ -1,0 +1,145 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5A572E5F-4C66-431A-AF59-B4AA741222C0">
+      <meta name="description" content="“一致”空间扭曲修改绑定对象的方法是按照空间扭曲图标所指示的方向推动其顶点，直至这些顶点碰到指定目标对象，或从原始位置移动到指定距离。">
+      <meta name="indexterm" content="几何/可变形空间扭曲: 一致">
+      <meta name="indexterm" content="一致: 空间扭曲">
+      <meta name="indexterm" content="空间扭曲: 一致">
+      <meta name="contextid" content="SPACECONFORM.OBJECTS_SPACE_WARPS">
+      <meta name="contextid" content="OBJECTS SPACE WARPS-SPACECONFORM">
+      <meta name="topic-type" content="concept">
+      <title>一致空间扭曲</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5A572E5F-4C66-431A-AF59-B4AA741222C0"></a><div class="head">
+            <h1>一致空间扭曲</h1>
+         </div>
+         <p class="blurb">“一致”空间扭曲修改绑定对象的方法是按照空间扭曲图标所指示的方向推动其顶点，直至这些顶点碰到指定目标对象，或从原始位置移动到指定距离。 </p>
+         <div class="bodyReference"><a name="UL_837512D62B0D4283ABB3BE9B738E89CD"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-889365D3-B6CF-4D23-B075-FAC7FB4D3CB1"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-08A5CE7E-9160-4297-B29A-88B3B570B996-low.png">（空间扭曲） <img src="../images/ac.menuaro.gif"> “几何/可变形” <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “一致”按钮</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-8E54CE29-0602-4F3D-9B0F-4250D7631E81">默认菜单：“创建”菜单  <img src="../images/ac.menuaro.gif"> “空间扭曲” <img src="../images/ac.menuaro.gif"> “几何/可变形” <img src="../images/ac.menuaro.gif"> “一致”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-C637CB1A-75BC-4C91-B696-AE4BE9772A9F">Alt 菜单：“对象”菜单  <img src="../images/ac.menuaro.gif"> “空间扭曲” <img src="../images/ac.menuaro.gif"> “一致”</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6581"></a>创建“一致”空间扭曲后，应在“一致”参数中指定目标对象，然后把“一致”和需要变形的对象绑定在一起。旋转“一致”图标可以指定移动方向（朝向目标对象）。变形物体的顶点会一直移动，直到碰到目标对象。 
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6580"></a><span class="char_link"><a href="GUID-5790F099-E538-4702-9831-EC06C0EA2819.htm">一致复合对象</a></span>也提供了使一个对象和另一个对象保持一致的其他方法。 
+            </p><a name="WS1A9193826455F5FFBA679E112A6A1900422B4"></a><div class="figure-anchor"><img src="../images/GUID-F6FED37C-A638-46E2-B157-537D4176E422-low.png"><p class="figure-title">一致视口图标（其下方有一个表面）</p>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-657F"></a> 
+               <h2><a name="GUID-63019BC8-9CA7-4541-A3E4-583941D697A1"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900422B5"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900422B6"></a>示例：使用“一致”空间扭曲：
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-657E"></a>首先制作两个对象。 
+               </p>
+               <ol type="1" start="1">
+                  <li>制作一个宽而平的、有大量长度和 宽度分段的长方体（或方形面片），从而创建地形。应用“噪波”修改器，然后调整其参数，创建一种崎岖不平的地形（不是多山性的，而是低矮且无规则的那种）。 </li>
+                  <li>创建一个矮而宽的圆柱体，其半径约为长方体区域的 1/8（像硬币）。您将设置圆柱体的动画，使之在地形表面的对角线上浮动。 </li>
+                  <li>将圆柱体中的“端面分段”设置为 <em class="strong">4</em>，然后把圆柱体放在在地形上方浮动的位置。 
+                  </li>
+                  <li>设置圆柱体的对象颜色，使之和地形的颜色形成对比。 </li>
+                  <li>从“顶”视口观察，将圆柱体移至地形一角的内部。打开“动画”，移至第 100 帧，然后把圆柱体移至相对的地形拐角。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-657D"></a>硬币/圆盘从地形的一个拐角移至另一个拐角。 
+                     </p> 
+                  </li>
+               </ol> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-657C"></a>地形将变成目标对象，而圆柱体则为变形对象。下一步是创建“一致”空间扭曲，然后将其和圆柱体绑定在一起。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900422B7"></a><ol type="1" start="1">
+                  <li>在“创建”面板上，选择“空间扭曲”，然后从下拉列表中选择“几何/可变形”。单击“一致”按钮。 </li>
+                  <li>在“顶”视口中，从地形的中央向外拖动，创建“一致”空间扭曲。 </li>
+                  <li>单击“拾取对象”按钮，然后单击地形长方体。 </li>
+                  <li>在“前”视口中，向上拖动空间扭曲，直至其位于圆柱体的上方。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-657B"></a>正如在“前”视口中所看到的，地形位于底部，圆柱体位于地形和空间扭曲之间，空间扭曲位于顶部。 
+                     </p> 
+                  </li>
+                  <li>把空间扭曲和圆柱体绑定在一起。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-657A"></a>圆柱体变成一个看似绘制在地形表面上的圆盘。 
+                     </p> 
+                  </li>
+                  <li>拖动时间滑块，可以看到圆柱体/圆盘沿着地形在长方体上横向移动。 </li>
+               </ol> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6579"></a>因为顶点几乎被推动到地形层级，所以两个对象的面可能会相交。在下列步骤中，您将通过调整目标表面和被推动的顶点之间的间隔距离来修正这一问题。之后，您将仅对圆柱体中的选定顶点产生影响。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900422B8"></a><ol type="1" start="1">
+                  <li>选择“一致”空间扭曲，然后打开“修改”面板。 </li>
+                  <li>将“间隔距离”设置为 <em class="strong">3</em>。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6578"></a>现在，您可以清楚地看到地形之上的圆盘表面。 
+                     </p> 
+                  </li>
+                  <li>将“间隔距离”设置为 <em class="strong">20</em>。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6577"></a>圆盘在地形之上 20 单位处浮动。下一步，更改受影响的顶点。 
+                     </p> 
+                  </li>
+                  <li>选择圆盘/圆柱体。 </li>
+                  <li>在修改器堆栈显示中，单击“圆柱体”项，使之以灰色高亮显示。 </li>
+                  <li>应用“网格选择”修改器。 </li>
+                  <li>在“顶点”子对象层级下，在“前”视口中，区域选择圆柱体的底端面顶点。 </li>
+                  <li>仍然是在子对象层级下，在堆栈显示中单击“一致绑定”项。 </li>
+                  <li>在视口中选择“一致”图标。 </li>
+                  <li>在“修改”面板中，打开“使用选定顶点”。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6576"></a>因为只选中了底端面顶点，圆柱体的剩余部分会复原。如果调整视角并播放动画，您将看到圆柱体的底面随地形变化，而圆柱体的剩余部分仍保持其外形。 
+                     </p> 
+                  </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-6575"></a> 
+               <h2><a name="GUID-A2AC8C5D-7568-4D82-ABCD-684DD1CE6BD0"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900422B9"></a><div class="figure-anchor"><img src="../images/GUID-0CDB052F-206D-49EA-9327-889CDB7A6B42-low.png"></div>  <a name="GUID-B71097AB-6A1F-4AC7-8ABE-6101ADC0A28F"></a><div class="dl_section"><a name="GUID-3CF21B79-1E77-4D97-9596-BACFF7446BA8"></a><p class="title"><a name="GUID-C6C7CC6A-73B4-4414-BE9D-9CDC461C2BDB"></a>“包裹到对象”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6574"></a>这些选项提供控件以选择目标对象。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65D2"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6573"></a>拾取对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-66D9"></a> 单击该按钮，然后在场景中选择一个对象。选定对象会变成障碍物，相对它推动绑定对象顶点。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65D1"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6572"></a>对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-66D8"></a> 显示所拾取对象的名称。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-7E0FE599-6691-48A9-86F6-5D23DFCEC44E"></a><p class="title"><a name="GUID-2C7EFA91-4F0C-4993-9073-3800A70D5119"></a>“移动顶点”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6571"></a>这些选项会影响顶点移动的方式。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65D0"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6570"></a>默认投影距离</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-66D7"></a> 绑定对象中的顶点在未与目标对象相交的情况下距离其原始位置的移动距离。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65CF"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-656F"></a>间隔距离</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-66D6"></a> 顶点和目标对象的表面之间所保持的距离。例如，如果将其设置为 5，就不会把顶点推动至离目标对象的表面小于 5 个单位的位置。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65CE"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-656E"></a>使用选定顶点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-66D5"></a> 打开该选项时，仅推动堆栈上子对象选择的顶点。关闭该选项时，就会忽略堆栈选择而推动对象中的所有顶点。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-22224D4C-062D-4FE6-8E34-F3DB1F4F49EC"></a><p class="title"><a name="GUID-58B6B96C-CFD4-4998-B898-667957AFF8B9"></a>“显示”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65CD"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-656D"></a>图标大小</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-66D4"></a> 指定图标的大小。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

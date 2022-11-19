@@ -1,0 +1,1 @@
+for s in shapes do updateshape s

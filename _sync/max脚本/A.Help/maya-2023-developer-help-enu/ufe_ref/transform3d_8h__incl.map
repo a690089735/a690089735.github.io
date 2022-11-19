@@ -1,0 +1,16 @@
+<map id="include/ufe/transform3d.h" name="include/ufe/transform3d.h">
+<area shape="rect" id="node2" href="$ufe_export_8h.html" title="Definition of macros for symbol visibility. " alt="" coords="1217,677,1359,704"/>
+<area shape="rect" id="node4" href="$scene_item_8h.html" title="sceneItem.h" alt="" coords="416,379,509,405"/>
+<area shape="rect" id="node13" href="$observer_8h.html" title="observer.h" alt="" coords="737,603,821,629"/>
+<area shape="rect" id="node14" href="$transform3d_undoable_commands_8h.html" title="transform3dUndoableCommands.h" alt="" coords="1067,80,1288,107"/>
+<area shape="rect" id="node21" href="$types_8h.html" title="types.h" alt="" coords="1500,80,1564,107"/>
+<area shape="rect" id="node3" href="$ufe_8h.html" title="../ufe.h" alt="" coords="979,752,1043,779"/>
+<area shape="rect" id="node5" href="$path_8h.html" title="path.h" alt="" coords="199,453,257,480"/>
+<area shape="rect" id="node6" href="$path_segment_8h.html" title="pathSegment.h" alt="" coords="161,528,269,555"/>
+<area shape="rect" id="node7" href="$rtid_8h.html" title="rtid.h" alt="" coords="41,603,93,629"/>
+<area shape="rect" id="node9" href="$path_component_8h.html" title="pathComponent.h" alt="" coords="387,603,509,629"/>
+<area shape="rect" id="node15" href="$base_undoable_commands_8h.html" title="baseUndoableCommands.h" alt="" coords="915,155,1093,181"/>
+<area shape="rect" id="node16" href="$undoable_command_8h.html" title="undoableCommand.h" alt="" coords="1026,304,1169,331"/>
+<area shape="rect" id="node19" href="$hierarchy_8h.html" title="hierarchy.h" alt="" coords="902,229,989,256"/>
+<area shape="rect" id="node20" href="$scene_item_list_8h.html" title="sceneItemList.h" alt="" coords="889,304,1002,331"/>
+</map>

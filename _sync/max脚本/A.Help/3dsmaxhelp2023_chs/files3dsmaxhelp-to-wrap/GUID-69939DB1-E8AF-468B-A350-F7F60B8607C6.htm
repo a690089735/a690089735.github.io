@@ -1,0 +1,117 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-69939DB1-E8AF-468B-A350-F7F60B8607C6">
+      <meta name="description" content="您可以使用三个关节优先级控件来改变计算 IK 解决方案的方式。">
+      <meta name="indexterm" content="优先级">
+      <meta name="indexterm" content="对象参数卷展栏: 优先级">
+      <meta name="indexterm" content="关节: 关节优先级">
+      <meta name="indexterm" content="HD 解算器">
+      <meta name="indexterm" content="HD IK 解算器">
+      <meta name="topic-type" content="concept">
+      <title>优先级（HD 解算器）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-69939DB1-E8AF-468B-A350-F7F60B8607C6"></a><div class="head">
+            <h1>优先级（HD 解算器）</h1>
+         </div>
+         <p class="blurb">您可以使用三个关节优先级控件来改变计算 IK 解决方案的方式。 </p><a name="UL_9FA72811600D4CECB19B9A2FDDA4D1CD"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-C690C570-23BF-44D8-8995-69DC5B8CD56C">使用已应用的 HD IK 解算器进行选择。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-FF012ED2-9008-4A7C-932C-DD6D854CCF12-low.png">“层次”面板  <img src="../images/ac.menuaro.gif"> “IK” <img src="../images/ac.menuaro.gif"> “对象参数”卷展栏  <img src="../images/ac.menuaro.gif"> “优先级”</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3C51"></a>默认关节的优先级为 0。这适用于大多数 IK 解决方案。其假设距离应用力量位置（末端效应器）最近的关节移动速度比远离力量的关节快。 
+         </p><a name="GUID-A575852C-F61D-47FA-8079-C4260C6F4033"></a><dl>
+            <dt><a name="WS73099CC142F48755-1257E12111BF108800E1D7B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C50"></a>子-&gt;父</span></dt>
+            <dd>
+               <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-58B6"></a> 
+                  <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752692"></a>值的计算方式如下：假设整个层次的根对象具有优先级值 0，而每个子对象的优先级值等于其距离根对象的深度的 10 倍。在从根对象开始的含 4 个对象的层次中，值应该为 0、10、20 和 30。 
+                  </p> 
+               </div>
+            </dd>
+            <dt><a name="WS73099CC142F48755-1257E12111BF108800E1D7C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C4F"></a>父-&gt;子</span></dt>
+            <dd>
+               <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-58B5"></a> 
+                  <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752693"></a>值的计算方式如下：假设整个层次的根对象具有优先级值 0，而每个子对象的优先级值等于其距离根对象的深度的 10 倍。在从根对象开始的含 4 个对象的层次中，值应该为 0、-10、-20 和 -30。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A190044EAA"></a><ul>
+                     <li>只要运动学链中的所有关节都拥有相同的优先级值，就使用默认关节优先级。对于运动学链中的所有对象指定值 100 与指定值 0 的效果完全一样。 </li>
+                     <li>由三个优先级值为 0、30 和 200 的对象构成的 IK 链在此对象的优先级值更改为 1、2 和 3 以后，仍具有相同的解决方案。 </li>
+                  </ul> 
+               </div>
+            </dd>
+         </dl>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C4E"></a> 
+            <h2><a name="GUID-17E53CE5-0F4E-4D25-A87C-615275F9CA9C"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044EAB"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044EAC"></a>要手动为对象指定优先级值，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 在 HD IK 链中选择一个对象。 
+               </li>
+               <li>在 <img src="../images/GUID-FF012ED2-9008-4A7C-932C-DD6D854CCF12-low.png">“层次”面板上，打开“对象参数”卷展栏。 
+               </li>
+               <li>在“优先级”字段输入一个值。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190044EAD"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044EAE"></a>要将“子-&gt;父”优先级指定给运动学链中的所有对象，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择 HD IK 链中的所有对象。 
+               </li>
+               <li>在 <img src="../images/GUID-FF012ED2-9008-4A7C-932C-DD6D854CCF12-low.png">“层次”面板上，打开“对象参数”卷展栏。 
+               </li>
+               <li>单击“子-&gt;父”。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190044EAF"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044EB0"></a>要将“父-&gt;子”优先级指定给运动学链中的所有对象，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择运动学链中的所有对象。 
+               </li>
+               <li>在 <img src="../images/GUID-FF012ED2-9008-4A7C-932C-DD6D854CCF12-low.png">“层次”面板上，打开“对象参数”卷展栏。 
+               </li>
+               <li>单击“父-&gt;子”。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190044EB1"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044EB2"></a>要重置默认关节优先级，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择运动学链中的所有对象。 
+               </li>
+               <li>在 <img src="../images/GUID-FF012ED2-9008-4A7C-932C-DD6D854CCF12-low.png">“层次”面板上，打开“对象参数”卷展栏。 
+               </li>
+               <li>将“优先级”字段中的值设置为 0。 </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C4D"></a> 
+            <h2><a name="GUID-00B414D7-A79F-4CC5-A24A-463DEAB0F197"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044EB3"></a><div class="figure-anchor"><img src="../images/GUID-959C0B2A-6817-4A37-9C12-9C2269CCC02E-low.png"></div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3C4C"></a>有三个设置优先级的控件： 
+            </p> <a name="GUID-F81990A4-F816-45FA-B196-FA5A91A1B850"></a><dl>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E1D7D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C4B"></a>优先级</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-58B4"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752694"></a>手动为 IK 链中的任何对象指定优先级值。高优先级值在低优先级值之前计算。将按照“子-&gt;父”顺序计算相等的优先级值。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E1D7E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C4A"></a>子-&gt;父</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-58B3"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752695"></a>自动设置关节优先级，以减少从子到父的值。这将导致应用力量位置（末端效应器）最近的关节移动速度比远离力量的关节快。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3C49"></a>几乎总是将“子对象-&gt;父对象”优先级指定给整个运动学链。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3C48"></a>“子-&gt;父”优先级的作用与默认优先级设置相似，但在需要返回并手动更改设置的情况下更灵活。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E1D7F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C47"></a>父-&gt;子</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-58B2"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752696"></a>自动设置关节优先级，以减少从父到子的值。这将导致应用力量位置（末端效应器）最近的关节移动速度比远离力量的关节慢。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3C46"></a>几乎总是将“子对象-&gt;父对象”优先级指定给整个运动学链。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

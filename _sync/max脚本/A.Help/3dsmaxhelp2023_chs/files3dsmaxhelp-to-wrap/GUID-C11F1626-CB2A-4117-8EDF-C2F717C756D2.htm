@@ -1,0 +1,71 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C11F1626-CB2A-4117-8EDF-C2F717C756D2">
+      <meta name="description" content="大多数情况下，当对两个或多个不同的 Autodesk 产品使用相同的数据时，最好使用文件链接管理器来连接绘图文件，这样做可以在应用程序之间保持“实时”链接。但是，如果愿意这么做，还可以使用“导入”命令立即绑定到绘图文件。">
+      <meta name="indexterm" content="DWG/DXF 导入选项对话框">
+      <meta name="indexterm" content="AutoCAD DWG/DXF 导入选项对话框">
+      <meta name="indexterm" content="DWG 文件（AutoCAD 图形）: 导入">
+      <meta name="indexterm" content="文件类型: DWG（AutoCAD 图形）: 导入">
+      <meta name="indexterm" content="AutoCAD: 导入 DWG 和 DXF 文件">
+      <meta name="indexterm" content="导入: DWG 和 DXF 文件">
+      <meta name="contextid" content="IDH_DWGIMP_OPTIONS">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="migrating">
+      <title>关于导入 AutoCAD 图形文件</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C11F1626-CB2A-4117-8EDF-C2F717C756D2"></a><div class="head">
+            <h1> 关于导入 AutoCAD 图形文件</h1>
+         </div>
+         <p class="blurb">大多数情况下，当对两个或多个不同的 Autodesk 产品使用相同的数据时，最好使用文件链接管理器来连接绘图文件，这样做可以在应用程序之间保持“实时”链接。但是，如果愿意这么做，还可以使用“导入”命令立即绑定到绘图文件。 </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2019"></a></p>
+         <p><a name="GUID-A6357ECD-8157-46EE-A79E-523C14EB6504"></a>导入绘图文件时，<span class="charspan-msgph">3ds Max</span> 将 AutoCAD、AutoCAD Architecture（以前称为 Architectural Desktop）或 Revit 对象的子集转换为相应的 <span class="charspan-msgph">3ds Max</span> 对象。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2018"></a>选择要导出的绘图文件后，将显示“AutoCAD DWG/DXF 导入选项”对话框。选择选项并导入之后，将出现可编辑的网格、可编辑的样条线和 PRS 控制器。每个嵌套块保持其父子层次，并将作为“块/样式父级”导入。另外，如果单个的图形对象同时创建网格和样条线几何体，将发现在场景中对象被称为“链接的几何体”。“块/样式父级”和“链接的几何体”对象出现在“修改”面板上的修改器堆栈中。
+            
+         </p>
+         <div><a name="GUID-90A61462-A095-4CB0-804B-FD6962DB7F6E"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果导入多个图形，导入器会将它们合并到一起。 
+            </div>
+         </div>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2017"></a>如果使用的是 AutoSurf 或 AutoCAD Designer，请使用 AutoCAD 命令 3DSOUT 将机械模型导出到 <span class="charspan-msgph">3ds Max</span> 中。您还可以爆炸机械模型，然后导入结果文件，但是有些数据不出现在 AutoCAD 绘图文件中。 
+         </p>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E420"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>AutoCAD 及其纵向应用程序，比如 AutoCAD 建筑（前身为 ADT）具有产品唯一的自定义对象。要在 <span class="charspan-msgph">3ds Max</span> 中查看它们，就需要相应的对象启用器 (OE)。通过对象启用器，可以在 AutoCAD 中访问、显示和操纵这些对象，也可以在包括 <span class="charspan-msgph">3ds Max</span> 在内的其他纵向应用程序中进行相应操作。有关可下载 OE 的列表，请参见 <a href="http://www.autodesk.com/autocad-object-enablers" target="_blank">Autodesk Web 站点</a>。 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-DE32919D-A856-4A54-B8DE-F2B6CDE2FDC6.htm">关于大型图形的注释</a><p> 在您导入非常大的几何体时，3ds Max 会显示一条警告。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-5139772D-1BFE-480B-B7A6-FF157F07A348.htm">关于 DWG 导入工具</a><p>可以选择使用当前 DWG 导入器，以便您可以更详细地进行控制；也可以选择使用旧版 DWG 导入器，以便在一些建模情况下提供某些非常有用的功能。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-5E7097D6-14FC-4E95-91A5-3E02B69AEA0E.htm">关于导入 AutoCAD 文件时的材质支持 </a><p>3ds Max 在从 Revit Architecture/Structure/MEP 2008 和更高版本导出为 ACIS 实体的 DWG 文件及在 AutoCAD Architecture 2008（以前称作 ADT）和更高版本中创建的实体基本体中支持每个对象应用多个材质。导入实体具有多维/子对象材质，在材质编辑器中可以查看和操纵这些材质。
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-B760F4E8-2647-4B1D-AEDF-416A7F704CC2.htm"> DWG/DXF 导入：“几何体”面板</a><p>当链接或重新加载 AutoCAD 图形时，“导入选项”对话框的“几何体”面板控制 3ds Max 如何导出 AutoCAD 基本体，并决定 3ds Max 是否使用场景材质定义。它还显示几何体平移以及在 DWG 或 DXF 文件中切换某些元素包含的选项。
+                        
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-9A175ABE-E871-4EE5-A2F4-FD0D84317989.htm"> DWG/DXF 导入：“层”面板</a><p>通过“导入选项”对话框的“层”面板可以选择从 DWG 或 DXF 文件导入的特定层。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-FFF2F4DD-6F28-412F-AAF3-26FE1D26B2FA.htm"> DWG/DXF 导入：“样条线渲染”面板</a><p>“导入选项”对话框的“样条线渲染”面板用于确定从 DWG 和 DXF 文件导入的样条线对象在视口中的显示方式以及 3ds Max 渲染器处理它们的方式。 </p>
+                  </li>
+               </ul>
+            </div></span><div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-4368286A-C078-4627-A3B3-C0D2B795A14A.htm">导入 DXF 文件</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

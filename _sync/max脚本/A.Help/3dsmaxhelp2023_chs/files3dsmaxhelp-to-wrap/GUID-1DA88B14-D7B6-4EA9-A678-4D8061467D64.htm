@@ -1,0 +1,907 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-1DA88B14-D7B6-4EA9-A678-4D8061467D64">
+      <meta name="indexterm" content="阻止的命令">
+      <meta name="indexterm" content="安全场景脚本执行">
+      <meta name="topic-type" content="concept">
+      <title>安全场景脚本执行阻止的命令</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-1DA88B14-D7B6-4EA9-A678-4D8061467D64"></a><div class="head">
+            <h1>安全场景脚本执行阻止的命令</h1>
+         </div>
+         <p> 本主题列出了“安全场景脚本执行”功能在嵌入式脚本中阻止的所有命令。 
+            	 
+         </p>
+         <div class="section"><a name="SECTION_55F26B5C9D0B4283A92BA574A020F23F"></a> 
+            <h2><a name="GUID-19E08756-76B2-4DA0-8FFA-354B89EF507B"></a>MAXScript 命令
+            </h2> 
+            <p>如果在“首选项设置”对话框的“安全场景执行”下选择<em class="strong">“阻止 MAXScript 系统命令”</em>选项，将阻止执行嵌入式脚本中的以下 MAXScript 命令： 
+               		
+            </p> <a name="UL_6DF397A934244DADAF0C6B1C816101FF"></a><ul>
+               <li><span class="code">cfgMgr.deleteKey</span> 
+               </li>
+               <li><span class="code">cfgMgr.deleteSection</span> 
+               </li>
+               <li><span class="code">cfgMgr.putFloat</span> 
+               </li>
+               <li><span class="code">cfgMgr.putFloatArray</span> 
+               </li>
+               <li><span class="code">cfgMgr.putInt</span> 
+               </li>
+               <li><span class="code">cfgMgr.putIntArray</span> 
+               </li>
+               <li><span class="code">cfgMgr.putString</span> 
+               </li>
+               <li><span class="code">createOLEObject</span> 
+               </li>
+               <li><span class="code">CustomFileStream.deleteStream</span> 
+               </li>
+               <li><span class="code">CustomFileStream.setStreamFlags</span> 
+               </li>
+               <li><span class="code">CustomFileStream.writeStream</span> 
+               </li>
+               <li> <span class="code">CustomFileStream.writeStreamArray</span> 
+               </li>
+               <li><span class="code">DOSCommand</span> 
+               </li>
+               <li><span class="code">dragAndDrop.globalEnableDragAndDrop</span> 
+               </li>
+               <li><span class="code">dragAndDrop.enableDragAndDrop</span> 
+               </li>
+               <li> <span class="code">dragAndDrop.dropPackage</span> 
+               </li>
+               <li> <span class="code">dragAndDrop.downloadPackage</span> 
+               </li>
+               <li> <span class="code">dragAndDrop.DownloadUrlToDisk</span> 
+               </li>
+               <li><span class="code">globalVars.remove</span> 
+               </li>
+               <li><span class="code">HiddenDOSCommand</span> 
+               </li>
+               <li><span class="code">internet.CheckConnection</span>（如果指定 <span class="code">url:</span>） 
+                  		  
+               </li>
+               <li><span class="code">LoadDllsFromDir</span> 
+               </li>
+               <li><span class="code">macros.load</span> 
+               </li>
+               <li> <span class="code">macros.new</span> 
+               </li>
+               <li><span class="code">registerOLEInterface</span> 
+               </li>
+               <li><span class="code">registry.createKey</span> 
+               </li>
+               <li><span class="code">registry.deleteSubKey</span> 
+               </li>
+               <li><span class="code">registry.deleteKey</span> 
+               </li>
+               <li><span class="code">registry.deleteValue</span> 
+               </li>
+               <li><span class="code">registry.flushKey</span> 
+               </li>
+               <li><span class="code">registry.setValue</span> 
+               </li>
+               <li><span class="code">releaseAllOLEObjects</span> 
+               </li>
+               <li><span class="code">releaseOLEObject</span> 
+               </li>
+               <li> <span class="code">SceneConverter.LoadConversionPreset</span> 
+               </li>
+               <li><span class="code">SetDir</span> 
+               </li>
+               <li><span class="code">ShellLaunch</span> 
+               </li>
+               <li> <span class="code">systemTools.setEnvVariable</span> 
+               </li>
+               <li> <span class="code">windows.postMessage</span> 
+               </li>
+               <li> <span class="code">windows.sendMessage</span> 
+               </li>
+            </ul> 
+            <div><a name="GUID-96CA5907-B813-4805-9A99-9DF8B27FC9FE"></a><div class="note-note"><span class="label label-target-language">注意:</span>从场景嵌入式脚本执行的脚本或脚本文件中调用时，也会阻止这些命令，例如从 <span class="code">execute()</span>、<span class="code">executeScriptFile()</span>、<span class="code">fileIn()</span>、<span class="code">readValue()</span> 或 <span class="code">readExpr()</span> 调用时。命令包含在脚本化自定义属性中时，也会阻止这些命令。 
+                  		
+               </div>
+            </div> 
+            <p> 如果场景嵌入式脚本中有包含 ActiveX 或 dotNet 控件的卷展栏的定义，则将阻止显示该卷展栏。 
+               		
+            </p> 
+            <p>阻止 <span class="code">macroscript</span> 定义关键字。 
+               		
+            </p> 
+            <p>在所有情况下，阻止以下文件方法： 
+               		
+            </p> <a name="UL_5375127FCD96457CBB24BFECB28717FE"></a><ul>
+               <li> <span class="code">deleteFile</span> - 阻止除了 3ds Max Temp 目录下的文件以外的所有文件 
+                  		  
+               </li>
+               <li> <span class="code">removeDir</span> - 阻止除了 3ds Max Temp 目录下的目录以外的所有目录 
+                  		  
+               </li>
+               <li> <span class="code">openEncryptedFile</span> 
+               </li>
+               <li><span class="code">encryptScript</span> 
+               </li>
+               <li><span class="code">encryptFile</span> 
+               </li>
+               <li><span class="code">setFileAttribute</span> 
+               </li>
+            </ul> 
+            <p>阻止以下仅面向内部的 <span class="code">systemTools</span> 函数： 
+               		
+            </p> <a name="UL_EF19D04F3A4043569B4C21BAC92F8135"></a><ul>
+               <li> <span class="code">systemTools.AllocateMemory</span> 
+               </li>
+               <li><span class="code">systemTools.ReleaseMemory</span> 
+               </li>
+               <li> <span class="code">systemTools.GenerateMiniDumpAndContinue</span> 
+               </li>
+               <li><span class="code">systemTools.SetMiniDumpContents</span> 
+               </li>
+               <li><span class="code">systemTools.PB2_AllNoRefSafePointersTestingDisabled</span> 
+               </li>
+               <li><span class="code">systemTools.PB2_AllNoRefSafePointersTestingDisable</span> 
+               </li>
+               <li> <span class="code">systemTools.SetBigMiniDumpContents</span> 
+               </li>
+            </ul> 
+            <p>从 <span class="code">getUserPropVal()</span> 计算的字符串被视为嵌入式脚本，如果包含阻止的命令，将阻止此类字符串。这与 <span class="code">getUserPropVal()</span> 是否位于嵌入式脚本中无关。 
+               		
+            </p> 
+            <div class="section"><a name="SECTION_9AB7F9F3FF96482D891117DE47E5B543"></a> 
+               <h3><a name="GUID-D9C83AF8-8217-4C2C-8EBE-AAFDA23F2813"></a>特定扩展名或文件阻止的函数
+               </h3> 
+               <p>阻止以下文件方法修改受保护的文件和具有受保护扩展名的文件： 
+                  		  
+               </p> <a name="UL_4C1DB13F02A343509D78991C4F8E4D98"></a><ul>
+                  <li> <span class="code">fopen</span>（始终允许只读打开模式 <span class="code">r</span>、<span class="code">rt</span> 和 <span class="code">rb</span>） 
+                     			 
+                  </li>
+                  <li> <span class="code">openFile</span>（始终允许只读打开模式 <span class="code">r</span>、<span class="code">rt</span> 和 <span class="code">rb</span>） 
+                     			 
+                  </li>
+                  <li><span class="code">createFile</span> 
+                  </li>
+                  <li><span class="code">openLog</span> 
+                  </li>
+                  <li> <span class="code">copyFile</span> 
+                  </li>
+                  <li> <span class="code">renameFile</span> 
+                  </li>
+                  <li> <span class="code">delIniSetting</span> 
+                  </li>
+                  <li> <span class="code">setINISettings</span> 
+                  </li>
+               </ul> 
+               <p>受保护的文件包括： 
+                  		  <a name="UL_9FC130715F7546D79E566CA9A13CD77F"></a><ul>
+                     <li><span class="filePath">3dsmax.ini</span> 
+                     </li>
+                     <li> <span class="filePath">PackageContents.xml</span> 
+                     </li>
+                     <li><span class="code">Plugin.ini</span> 
+                     </li>
+                     <li><span class="code">Plugin.UserSettings.ini</span> 
+                     </li>
+                     <li><span class="code">PhotometricLightTemplates.ini</span> 
+                     </li>
+                     <li><span class="code">PhysicalMaterialTemplates.ini</span> 
+                     </li>
+                     <li>通过命令行参数指定的自定义 <span class="code">3dsmax.ini</span> 和 <span class="code">plugin.ini</span> 文件 
+                        			 
+                     </li>
+                  </ul> 
+               </p> 
+               <p>受保护的扩展名包括：.bashrc、.bat、.bin、.bmf、.bmi、.bms、.cmd、.com、.cpl、.dla、.dlb、.dlc、.dle、.dlf、.dlh、.dli、.dlk、.dll、.dlm、.dln、.dlo、.dlr、.dls、.dlt、.dlu、.dlv、.dlx、.dly、.dlz、.exe、.flt、.gadget、.gup、.inf1、.ins、.inx、.isu、.job、.jse、.lnk、.mcr、.ms、.msc、.mse、.msi、.msp、.mst、.mxs、.mzp、.paf、.pif、.ps1、.py、.pyc、.pyd、.pyo、.pyw、.reg、.res、.rgs、.scr、.sct、.shb、.shs、.u3p、.vb、.vb3、.vbs、.vbscript、.ws、.wsf、.wsh。
+                  
+                  		  
+               </p> 
+               <div><a name="GUID-31DB0320-5E9D-4C04-B75B-93CF8D68F655"></a><div class="note-note"><span class="label label-target-language">注意:</span>3ds Max 先清理文件名并放弃操作系统忽略的字符，然后确定是否阻止文件。例如，放弃任何尾随句点，这样文件前缀“.ms...”被视为“.ms”。 
+                     		  
+                  </div>
+               </div> 
+               <p>特殊情况文件方法： 
+                  		  
+               </p> <a name="UL_E08DED671B5F40E3A2E8EA4C135833CD"></a><ul>
+                  <li><span class="code">fileIn</span> - 阻止除了 <span class="filePath">.ms</span>、<span class="filePath">.mse</span> 和 <span class="filePath">.mxs</span> 以外所有扩展名的文件 
+                     			 
+                  </li>
+                  <li><span class="code">executeScriptFile</span> - 阻止除了 <span class="filePath">.ms</span>、<span class="code">.mse</span> 和 <span class="code">.mxs</span> 以外所有扩展名的文件；如果未选中<em class="strong">“阻止 Python 脚本”</em>选项，也不阻止 <span class="code">.py</span> 和 <span class="code">.pyw</span> 扩展名的文件。 
+                     			 
+                  </li>
+               </ul> 
+            </div> 
+            <div class="section"><a name="SECTION_24108332D5D942229D73A2A37402A67B"></a> 
+               <h3><a name="GUID-80E48C09-D120-4FE1-8E06-F057D83C7AA1"></a>受保护的文件位置
+               </h3> 
+               <p>当“阻止 MAXScript 系统命令”<em class="strong"></em>处于启用状态时，任何可以写入文件系统的命令将被阻止访问以下位置（3ds Max 从中加载插件和脚本）： 
+                  		  
+               </p> <a name="UL_82B750BAF01D442FA15D12A9B2E52CA0"></a><ul>
+                  <li>3ds Max 安装目录 
+                     			 
+                  </li>
+                  <li>“User Tools”目录（通常为 <span class="filePath">C:\Users\&lt;用户&gt;\Autodesk\3ds Max &lt;年份&gt;\User Tools</span>） 
+                     			 
+                  </li>
+                  <li>由“配置用户和系统路径”<span class="MenuCascade"></span>对话框中的“附加脚本”<em class="strong"></em>、“附加启动脚本”<em class="strong"></em>和“附加宏”<em class="strong"></em>（在 MAXScript 中为 <span class="code">#userScripts</span>、<span class="code">#userStartupScripts</span> 和 <span class="code">#userMacros</span>）定义的用户脚本位置。 
+                     			 
+                  </li>
+                  <li>在 <span class="filePath">plugin.ini</span> 和 <span class="filePath">Plugin.usersettings.ini</span> 中定义、启动时使用 <span class="code">-p</span> 命令行选项传递到 3ds Max 或由 <span class="code">ADSK_APPLICATION_PLUGINS</span> 环境变量定义的插件相关目录位置 
+                     			 
+                  </li>
+                  <li><span class="filePath">ProgramData</span> 目录（通常为 <span class="filePath">C:\ProgramData</span>） 
+                     			 
+                  </li>
+                  <li><span class="filePath">%LOCALAPPDATA%\Autodesk\ApplicationPlugins\</span> 目录 
+                     			 
+                  </li>
+               </ul> 
+            </div> 
+         </div>
+         <div class="section"><a name="SECTION_F9D196CDA54740758CBC80C6593AC6F3"></a> 
+            <h2><a name="GUID-1822E384-9354-484C-874C-14CCCB8096A4"></a>Python 命令
+            </h2> 
+            <p>如果在“首选项设置”对话框的“安全场景执行”下选择<em class="strong">“阻止 Python 脚本”</em>选项，将阻止从嵌入式场景脚本调用的所有<em class="mild"></em> Python 命令。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_F2C6444F6D384290993FEA9C4F2AE490"></a> 
+            <h2><a name="GUID-8841CE3C-7FFC-4109-A52D-D249873ED565"></a>.NET 命令
+            </h2> 
+            <p>如果在“首选项设置”对话框的“安全场景执行”下选择<em class="strong">“阻止第三方 .NET 代码”</em>选项，将阻止从嵌入式场景脚本运行的所有 .NET Framework 类（包括 .NET 控件），随 3ds Max 插件提供或 3ds Max 使用的类除外。 
+               		
+            </p> 
+            <p>此外，还阻止 MAXScript 命令 <span class="code">dotNet.loadAssembly()</span>。 
+               		
+            </p> 
+            <p>下面列出允许的 .NET 类型，阻止除此以外的所有内容： 
+               		
+            </p> <a name="UL_33D3F3CF88824A7C82CF04980AB0AD1C"></a><ul>
+               <li><span class="code">Autodesk.Max.IILayer</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.AColor</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.AffineParts</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.AngAxis</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Animatable</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Axis</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.BaseObject</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.BezierShape</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.BitArray</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Box2</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Box3</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Class_ID</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Color</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Color64</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.HDRColor</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.INode</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.INodeTab</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Interval</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.IPoint2</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.IPoint3</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.MappingChannel</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Math</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Matrix3</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Matrix3+&lt;get_Columns&gt;d__6</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Matrix3+&lt;get_Columns&gt;d__8</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Matrix3+&lt;get_Rows&gt;d__6</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Matrix3+&lt;get_Rows&gt;d__8</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Matrix3+d__6</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Matrix3+d__8</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Mesh</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Mtl</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.MtlBase</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Object</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Point</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Point2</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Point3</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Point4</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Quat</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Ray</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Rect</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.ReferenceMaker</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.ReferenceTarget</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.ScaleValue</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.Texmap</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.MaxPlus.WStr</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.ActionItems.ExportSelectedToCompositorLink</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.CompositorLink.CompositorLinkSettingsController</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.CompositorLink.IntermediateScene</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.CompositorLink.IntermediateScene+Camera</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.CompositorLink.IntermediateScene+Key</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.CompositorLink.IntermediateScene+KeyCollection</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.CompositorLink.IntermediateScene+Null</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.CompositorLink.IntermediateScene+Vector3</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.CompositorLink.IntermediateScene+VideoSequence</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.CompositorLink.IntermediateScene+VideoSequenceGroup</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Configuration</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Configuration+GeneralOptions</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.EntityManager</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.Root</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.StateSets.Master</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.StateSets.Nodes.DynamicObjectCollection</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.StateSets.Nodes.LayerCollection</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.StateSets.Nodes.ObjectCollection</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.StateSets.Rendering.Parameter</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.StateSets.Rendering.RenderOptionsState</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.StateSets.Rendering.State</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.StateSets.Scripted</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.StateSets.SetupRenderOutputs</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.StateSets.StateSet</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.StateSets.Viewports.Viewport</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.Texmaps.Composite</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.Texmaps.Composite+BlendMode</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.Texmaps.Composite+LayerEntity</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Entities.View</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Plugin</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.StateSetsListControl</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Views.Schematic</span> 
+               </li>
+               <li><span class="code">Autodesk.Max.StateSets.Views.Tree</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.Controls.CheckBox</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.Controls.FilePicker</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.Controls.ListBox</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.Controls.RangeSelector</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.Controls.TextBox</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.NodeView+Node+NodeCollection</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.NodeView+NodeCollection</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.NodeView+SelectionCollection</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.Schematic+RollupNode</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.Schematic+SchematicNode</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.Schematic+ValueNode</span> 
+               </li>
+               <li><span class="code">Ephere.Gui.NodeViews.Tree+TreeNode</span> 
+               </li>
+               <li><span class="code">Microsoft.Xna.Framework.Matrix</span> 
+               </li>
+               <li><span class="code">Microsoft.Xna.Framework.Plane</span> 
+               </li>
+               <li><span class="code">Microsoft.Xna.Framework.Quaternion</span> 
+               </li>
+               <li><span class="code">Microsoft.Xna.Framework.Vector2</span> 
+               </li>
+               <li><span class="code">Microsoft.Xna.Framework.Vector3</span> 
+               </li>
+               <li><span class="code">Microsoft.Xna.Framework.Vector4</span> 
+               </li>
+               <li><span class="code">ProceduralContentActions.PCActionCreateCompoundFromMesh</span> 
+               </li>
+               <li><span class="code">ProceduralContentActions.PCGraphEditorBridge</span> 
+               </li>
+               <li><span class="code">System.Array</span> 
+               </li>
+               <li><span class="code">System.Boolean</span> 
+               </li>
+               <li><span class="code">System.Byte</span> 
+               </li>
+               <li><span class="code">System.Char</span> 
+               </li>
+               <li><span class="code">System.CharEnumerator</span> 
+               </li>
+               <li><span class="code">System.Collections.Generic.Dictionary`2</span> 
+               </li>
+               <li><span class="code">System.Collections.Generic.HashSet`1</span> 
+               </li>
+               <li><span class="code">System.Collections.Generic.ICollection`1</span> 
+               </li>
+               <li><span class="code">System.Collections.Generic.IEnumerable`1</span> 
+               </li>
+               <li><span class="code">System.Collections.Generic.IList`1</span> 
+               </li>
+               <li><span class="code">System.Collections.Generic.List`1</span> 
+               </li>
+               <li><span class="code">System.Collections.Hashtable</span> 
+               </li>
+               <li><span class="code">System.Collections.Hashtable+KeyCollection</span> 
+               </li>
+               <li><span class="code">System.Collections.Hashtable+ValueCollection</span> 
+               </li>
+               <li><span class="code">System.Collections.ICollection</span> 
+               </li>
+               <li><span class="code">System.Collections.IDictionary</span> 
+               </li>
+               <li><span class="code">System.Collections.Specialized.StringCollection</span> 
+               </li>
+               <li><span class="code">System.DateTime</span> 
+               </li>
+               <li><span class="code">System.DateTimeKind // enum</span> 
+               </li>
+               <li><span class="code">System.DayOfWeek // enum</span> 
+               </li>
+               <li> <span class="code">System.Decimal</span> 
+               </li>
+               <li><span class="code">System.Double</span> 
+               </li>
+               <li><span class="code">System.Drawing.Bitmap</span> 
+               </li>
+               <li><span class="code">System.Drawing.Color</span> 
+               </li>
+               <li><span class="code">System.Drawing.ContentAlignment // enum</span> 
+               </li>
+               <li><span class="code">System.Drawing.Drawing2D.CompositingMode</span> 
+               </li>
+               <li><span class="code">System.Drawing.Drawing2D.CompositingQuality</span> 
+               </li>
+               <li><span class="code">System.Drawing.Drawing2D.SmoothingMode</span> 
+               </li>
+               <li><span class="code">System.Drawing.Drawing2D.PixelOffsetMode</span> 
+               </li>
+               <li><span class="code">System.Drawing.Drawing2D.InterpolationMode</span> 
+               </li>
+               <li><span class="code">System.Drawing.Drawing2D.Matrix</span> 
+               </li>
+               <li><span class="code">System.Drawing.Font</span> 
+               </li>
+               <li><span class="code">System.Drawing.FontFamily</span> 
+               </li>
+               <li><span class="code">System.Drawing.FontStyle // enum</span> 
+               </li>
+               <li><span class="code">System.Drawing.Graphics</span> 
+               </li>
+               <li><span class="code">System.Drawing.GraphicsUnit // enum</span> 
+               </li>
+               <li><span class="code">System.Drawing.Icon</span> 
+               </li>
+               <li><span class="code">System.Drawing.Image</span> 
+               </li>
+               <li><span class="code">System.Drawing.Imaging.PixelFormat // enum</span> 
+               </li>
+               <li><span class="code">System.Drawing.KnownColor // enum</span> 
+               </li>
+               <li><span class="code">System.Drawing.Point</span> 
+               </li>
+               <li><span class="code">System.Drawing.PointF</span> 
+               </li>
+               <li><span class="code">System.Drawing.Rectangle</span> 
+               </li>
+               <li><span class="code">System.Drawing.RectangleF</span> 
+               </li>
+               <li><span class="code">System.Drawing.Region</span> 
+               </li>
+               <li><span class="code">System.Drawing.Size</span> 
+               </li>
+               <li><span class="code">System.Drawing.SizeF</span> 
+               </li>
+               <li><span class="code">System.Drawing.Text.TextRenderingHint</span> 
+               </li>
+               <li><span class="code">System.Environment+SpecialFolder // enum</span> 
+               </li>
+               <li><span class="code">System.Exception</span> 
+               </li>
+               <li><span class="code">System.Globalization.Calendar</span> 
+               </li>
+               <li><span class="code">System.Globalization.CalendarAlgorithmType // enum</span> 
+               </li>
+               <li><span class="code">System.Globalization.CalendarWeekRule // enum</span> 
+               </li>
+               <li><span class="code">System.Globalization.CompareInfo</span> 
+               </li>
+               <li><span class="code">System.Globalization.CompareOptions // enum</span> 
+               </li>
+               <li><span class="code">System.Globalization.CultureInfo</span> 
+               </li>
+               <li><span class="code">System.Globalization.CultureTypes // enum</span> 
+               </li>
+               <li><span class="code">System.Globalization.DateTimeFormatFlags</span> 
+               </li>
+               <li><span class="code">System.Globalization.DateTimeFormatInfo</span> 
+               </li>
+               <li><span class="code">System.Globalization.DateTimeStyles // enum</span> 
+               </li>
+               <li><span class="code">System.Globalization.DigitShapes // enum</span> 
+               </li>
+               <li><span class="code">System.Globalization.GregorianCalendar</span> 
+               </li>
+               <li><span class="code">System.Globalization.GregorianCalendarTypes // enum</span> 
+               </li>
+               <li><span class="code">System.Globalization.NumberFormatInfo</span> 
+               </li>
+               <li><span class="code">System.Globalization.NumberStyles // enum</span> 
+               </li>
+               <li><span class="code">System.Globalization.RegionInfo</span> 
+               </li>
+               <li><span class="code">System.Globalization.SortVersion</span> 
+               </li>
+               <li><span class="code">System.Globalization.TextInfo</span> 
+               </li>
+               <li><span class="code">System.Globalization.TimeSpanStyles // enum</span> 
+               </li>
+               <li><span class="code">System.Globalization.UnicodeCategory // enum</span> 
+               </li>
+               <li><span class="code">System.Guid</span> 
+               </li>
+               <li><span class="code">System.Int16</span> 
+               </li>
+               <li><span class="code">System.Int32</span> 
+               </li>
+               <li><span class="code">System.Int64</span> 
+               </li>
+               <li><span class="code">System.IntPtr</span> 
+               </li>
+               <li><span class="code"> System.MidpointRounding // enum</span> 
+               </li>
+               <li><span class="code">System.Object</span> 
+               </li>
+               <li><span class="code">System.Object[]</span> 
+               </li>
+               <li><span class="code">System.RuntimeType</span> 
+                  <div><a name="GUID-7B0AF626-F573-4020-8F97-8DF797A58667"></a><div class="note-note"><span class="label label-target-language">注意:</span><span class="code">System.RuntimeType</span> 实例只能针对允许列表中的其他类进行包裹。 
+                        			 
+                     </div>
+                  </div> 
+               </li>
+               <li><span class="code">System.SByte</span> 
+               </li>
+               <li><span class="code">System.Single</span> 
+               </li>
+               <li><span class="code">System.String</span> 
+               </li>
+               <li><span class="code">System.StringComparison // enum</span> 
+               </li>
+               <li><span class="code">System.StringSplitOptions // enum</span> 
+               </li>
+               <li><span class="code">System.Text.ASCIIEncoding</span> 
+               </li>
+               <li><span class="code">System.Text.DecoderExceptionFallback</span> 
+               </li>
+               <li><span class="code">System.Text.DecoderFallback</span> 
+               </li>
+               <li><span class="code">System.Text.DecoderReplacementFallback</span> 
+               </li>
+               <li><span class="code">System.Text.EncoderExceptionFallback</span> 
+               </li>
+               <li><span class="code">System.Text.EncoderFallback</span> 
+               </li>
+               <li><span class="code">System.Text.EncoderReplacementFallback</span> 
+               </li>
+               <li><span class="code">System.Text.Encoding</span> 
+               </li>
+               <li><span class="code">System.Text.EncodingInfo</span> 
+               </li>
+               <li><span class="code">System.Text.EncodingProvider</span> 
+               </li>
+               <li><span class="code">System.Text.InternalDecoderBestFitFallback</span> 
+               </li>
+               <li><span class="code">System.Text.InternalEncoderBestFitFallback</span> 
+               </li>
+               <li><span class="code">System.Text.NormalizationForm // enum</span> 
+               </li>
+               <li><span class="code">System.Text.RegularExpressions.Capture</span> 
+               </li>
+               <li><span class="code">System.Text.RegularExpressions.CaptureCollection</span> 
+               </li>
+               <li><span class="code">System.Text.RegularExpressions.Group</span> 
+               </li>
+               <li><span class="code">System.Text.RegularExpressions.GroupCollection</span> 
+               </li>
+               <li><span class="code">System.Text.RegularExpressions.Match</span> 
+               </li>
+               <li><span class="code">System.Text.RegularExpressions.MatchCollection</span> 
+               </li>
+               <li><span class="code">System.Text.RegularExpressions.MatchEvaluator</span> 
+               </li>
+               <li><span class="code">System.Text.RegularExpressions.Regex</span> 
+               </li>
+               <li><span class="code">System.Text.RegularExpressions.RegexCompilationInfo</span> 
+               </li>
+               <li><span class="code">System.Text.RegularExpressions.RegexOptions // enum</span> 
+               </li>
+               <li><span class="code">System.Text.SBCSCodePageEncoding</span> 
+               </li>
+               <li><span class="code">System.Text.StringBuilder</span> 
+               </li>
+               <li><span class="code">System.Text.UnicodeEncoding</span> 
+               </li>
+               <li><span class="code">System.Text.UTF32Encoding</span> 
+               </li>
+               <li><span class="code">System.Text.UTF7Encoding</span> 
+               </li>
+               <li><span class="code">System.Text.UTF7Encoding+DecoderUTF7Fallback</span> 
+               </li>
+               <li><span class="code">System.Text.UTF8Encoding</span> 
+               </li>
+               <li><span class="code">System.TimeSpan</span> 
+               </li>
+               <li><span class="code">System.Type</span> 
+               </li>
+               <li><span class="code">System.TypeCode // enum</span> 
+               </li>
+               <li><span class="code">System.UInt16</span> 
+               </li>
+               <li><span class="code">System.UInt32</span> 
+               </li>
+               <li><span class="code">System.UInt64</span> 
+               </li>
+               <li><span class="code"> System.Windows.Controls.ItemCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.AccessibleObject</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.AccessibleRole // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.AccessibleStates // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.AnchorStyles // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.AutoCompleteMode // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.AutoCompleteSource // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.AutoCompleteStringCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.AutoSizeMode // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.BorderStyle // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.BoundsSpecified // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.Button</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ButtonBase+ButtonBaseAccessibleObject</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.CharacterCasing // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ColorDepth // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ColumnHeader // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ColumnHeaderStyle // enum</span> 
+               </li>
+               <li><span class="code"> System.Windows.Forms.Control</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.Control+AxSourcingSite</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.Control+ControlAccessibleObject</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.Control+ControlCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.Control+ControlNativeWindow</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ControlBindingsCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.Cursor</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.DataSourceUpdateMode // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.DialogResult // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.DockStyle // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.DragDropEffects // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.FlatButtonAppearance</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.FlatStyle // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.FolderBrowserDialog</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.GetChildAtPointSkip // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.HorizontalAlignment // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.HScrollProperties</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ImageLayout // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ImageList</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ImageList+ImageCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ImeMode // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ItemActivation // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.Keys // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.Layout.DefaultLayout</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListView</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListView+CheckedIndexCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListView+CheckedListViewItemCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListView+ColumnHeaderCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListView+ListViewItemCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListView+SelectedIndexCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListView+SelectedListViewItemCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListViewAlignment // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListViewGroupCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListViewInsertionMark</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListViewItem</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListViewItem+ListViewSubItem</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ListViewItem+ListViewSubItemCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.MouseButtons // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.Padding</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ProgressBar</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ProgressBarStyle // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.RightToLeft // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ScrollableControl+DockPaddingEdges</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.ScrollBars // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.SortOrder // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TabAlignment // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TabAppearance // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TabControl</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TabControl+ControlCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TabControl+TabPageCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TabDrawMode // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TabPage</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TabPage+TabPageControlCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TabSizeMode // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TextBox</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TextImageRelation // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.Timer</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TreeNode</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TreeNodeCollection</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TreeView</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.TreeViewDrawMode // enum</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.View</span> 
+               </li>
+               <li><span class="code">System.Windows.Forms.VScrollProperties</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.ColorControllerPlugin</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.FloatControllerPlugin</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.FloatList</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.GeometryPluginInstance</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.INodeList</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.Main</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.Main+McgFileExtensions</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.MAXScriptFunctionPlugin</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.ModifierPluginInstance</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.Point3ControllerPlugin</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.Point4ControllerPlugin</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.PositionControllerPlugin</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.RotationControllerPlugin</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.ScaleControllerPlugin</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.Settings</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.ShapePluginInstance</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.TransformControllerPlugin</span> 
+               </li>
+               <li><span class="code">Viper3dsMaxBridge.UtilityPluginInstance</span> 
+               </li>
+               <li><span class="code">ViperEngine.ViperGraph</span> 
+               </li>
+            </ul> 
+            <p> </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

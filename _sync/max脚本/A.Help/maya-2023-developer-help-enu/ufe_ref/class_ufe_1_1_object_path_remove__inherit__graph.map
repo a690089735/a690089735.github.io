@@ -1,0 +1,5 @@
+<map id="Ufe::ObjectPathRemove" name="Ufe::ObjectPathRemove">
+<area shape="rect" id="node2" href="$class_ufe_1_1_object_path_change.html" title="Base class for object path change scene notifications. " alt="" coords="7,155,165,181"/>
+<area shape="rect" id="node3" href="$class_ufe_1_1_scene_changed.html" title="Base class for all scene notifications. " alt="" coords="18,80,154,107"/>
+<area shape="rect" id="node4" href="$class_ufe_1_1_notification.html" title="Base class for all notifications. " alt="" coords="28,5,144,32"/>
+</map>

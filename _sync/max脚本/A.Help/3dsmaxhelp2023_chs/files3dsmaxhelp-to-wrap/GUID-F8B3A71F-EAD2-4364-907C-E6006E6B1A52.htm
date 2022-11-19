@@ -1,0 +1,108 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-F8B3A71F-EAD2-4364-907C-E6006E6B1A52">
+      <meta name="description" content="薄壁折射模拟“缓进”，或偏移效果，如果查看通过一块玻璃的图像就会看到这种效果。对于为玻璃建模的对象（如窗口窗格形状的“框”），这种贴图的速度更快，所用内存更少，并且提供的视觉效果要优于“反射/折射”贴图。">
+      <meta name="indexterm" content="贴图: 薄壁折射">
+      <meta name="indexterm" content="薄壁折射贴图">
+      <meta name="indexterm" content="折射率">
+      <meta name="indexterm" content="折射率">
+      <meta name="topic-type" content="concept">
+      <title>薄壁折射贴图</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-F8B3A71F-EAD2-4364-907C-E6006E6B1A52"></a><div class="head">
+            <h1>薄壁折射贴图</h1>
+         </div>
+         <p class="blurb">薄壁折射模拟“缓进”，或偏移效果，如果查看通过一块玻璃的图像就会看到这种效果。对于为玻璃建模的对象（如窗口窗格形状的“框”），这种贴图的速度更快，所用内存更少，并且提供的视觉效果要优于“反射/折射”贴图。 </p><a name="UL_5C58A24E97A1422EA5A0DC9D9C0CFC89"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-D43918CE-68CE-4683-8210-07EA3CF78004"> <img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png"> 材质编辑器  <img src="../images/ac.menuaro.gif">  材质/贴图浏览器  <img src="../images/ac.menuaro.gif">  贴图  <img src="../images/ac.menuaro.gif">  标准  <img src="../images/ac.menuaro.gif">  薄壁折射</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A19004-36C"></a><div class="figure-anchor"><img src="../images/GUID-4A67316E-7B6C-4580-B466-08FAF3F73F93-low.png"><p class="figure-title">薄壁折射</p>
+         </div>
+         <div style="margin-top: 9pt;"><a name="WS73099CC142F48755BE5C71114081FCAA9-7A60"></a><div class="note-tip"><span class="label label-target-language">提示</span> 在 100% 折射和不透明时，看不到任何漫反射颜色或贴图，几乎也没有折射材质的视觉效果。这种效果是不可见的。在父级材质的“贴图”卷展栏中，将“折射量”设置为 50%，在“基本参数”卷展栏中，将“不透明度”设置为大于 0 的值。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-29EC"></a> 
+            <h2><a name="GUID-25D50E22-969D-47D1-9DBB-51887AB74FEC"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004-366"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004-365"></a>要将薄壁折射贴图指定给材质，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在材质的“贴图”卷展栏上，对“折射”单击“贴图”按钮。 </li>
+               <li>在“材质/贴图浏览器”中，选择“薄壁折射”。 
+                  <p><a name="WS1A9193826455F5FFF0124D0128B22E5A78-53A7"></a>或者，使用“Slate 材质编辑器”将“薄壁折射”贴图关联到材质的“折射”组件。 
+                  </p> 
+               </li>
+               <li>调整贴图的参数。 </li>
+               <li>在父级材质中，将“折射贴图量”设置为 50%。 </li>
+               <li>将材质指定给对象。 </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-29EB"></a> 
+            <h2><a name="GUID-1BAEA83A-88E3-413E-8E83-C3F111EB2773"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004-364"></a><div class="figure-anchor"><img src="../images/GUID-7DFDFDCB-FBC3-4169-A42E-6ECF03EFCE63-low.png"></div>  <a name="GUID-12EA50F6-0CA1-429B-BB9C-EA810C1730C7"></a><div class="dl_section"><a name="GUID-49880059-E765-4615-BB9E-06C712B65AF4"></a><p class="title"><a name="GUID-18414AA1-CAD6-48DE-8827-2D8289513800"></a>“模糊”组
+               </p>
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-729F"></a>这些控件用于抗锯齿。 
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7997"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-729E"></a>应用模糊</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1993"></a> 打开过滤，对贴图进行模糊处理。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7996"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-729D"></a>模糊</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1994"></a> 根据生成的贴图与对象的距离，影响贴图的锐度或模糊程度。贴图距离越远，模糊就越大。模糊主要是用于消除<span class="char_link"><a href="GUID-BA56C252-4608-43F1-A10B-03F8BF36C834.htm">锯齿</a></span>。对于所有贴图使用少量模糊设置，以避免在一定距离像素细节减少时出现闪烁或锯齿，这不失为一种好方法。默认值为 1.0。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-CC3ABB5B-7BA6-420F-8AF2-1400261F95BC"></a><p class="title"><a name="GUID-74B72713-81E2-4EFC-9064-6714E19AF98F"></a>“渲染”组
+               </p>
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-729C"></a>以下控件影响折射在动画中的行为方式。 
+               </p><a name="UL_930C6CD0610948809DF5A26B30BED9ED"></a><ul>
+                  <li><em class="strong">仅第一帧</em>告知渲染器仅在第一帧上创建折射图像。 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-729A"></a>这是最快的选项。如果摄影机或折射对象不移动，可以使用此选项。 
+                     </p> 
+                  </li>
+                  <li><em class="strong">每 N 帧</em>通知渲染器根据微调器设置的<span class="char_link"><a href="GUID-92B75FD6-C112-44D6-AB89-DB50D11AE0DE.htm">帧速率</a></span>重新生成折射图像。 
+                     <p><a name="WS73099CC142F4875513F8D121131880AB2F-7298"></a>每一个单独的帧都提供最准确的结果，只是渲染所需的时间最长。 
+                     </p> 
+                  </li>
+               </ul>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7993"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7297"></a>使用环境贴图</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1997"></a> 处于禁用状态时，在渲染期间折射会忽略环境贴图。如果在场景中出现折射，并且您正在根据平面屏幕环境贴图进行对位，则将其关闭很有用。空间中其它环境贴图类型的行为方式不同，屏幕环境贴图在 3D 空间中不存在，也不会正确渲染。默认设置为启用。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-8B9A41BD-4177-4CFD-BBBA-DBC6769858DC"></a><p class="title"><a name="GUID-A15415E4-35C3-4952-835D-FA9BDB66776C"></a>“折射”组
+               </p>
+               <p><a name="WS73099CC142F4875513F8D121131880AB2F-7296"></a>以下控件是“薄壁反射”效果的特定控件： 
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7992"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7295"></a>厚度偏移</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1998"></a> 影响折射偏移的大小或缓进效果。值为 0 时，没有偏移，在渲染的场景中看不到该对象。值为 10.0 时，偏移的效果最强。范围在 0.0 到 10.0 之间；默认值为 0.5。 
+                        <div><a name="WS73099CC142F48755BE5C71114081FCAA9-7A5F"></a><div class="note-note"><span class="label label-target-language">注意:</span>父级材质中的“扩展参数”卷展栏中的 IOR（折射率）微调器也会影响偏移效果。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7991"></a><span class="term"><a name="WS73099CC142F4875513F8D121131880AB2F-7294"></a>凹凸贴图效果</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D1999"></a> 由于存在凹凸贴图，影响折射的数量级。此参数会乘以父级材质中的当前凹凸贴图量。减小此值会降低二次折射的效果；增大此值会提高二次折射的效果。如果没有指定凹凸贴图，此值没有效果。默认值为 1.0。 
+                        <p><a name="WS73099CC142F4875513F8D121131880AB2F-7293"></a>如果玻璃表面不均匀，则会有二次折射。如果这类材质也有凹凸贴图，则薄壁折射会生成二次折射。算法在缩放二次折射时进行推测，这可能导致折射的效果过于明显。如果出现这种情况，可将此值降到小于 1 来缩小这种效果。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

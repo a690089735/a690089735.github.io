@@ -1,0 +1,76 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-9F79F01E-6A81-4103-B415-B5E88BD279A3">
+      <meta name="description" content="如果首先在网格中应用了蒙皮修改器，则使用骨骼结构的当前姿势作为蒙皮姿势。骨骼结构在第 0 帧的后续动画将引起蒙皮姿势的改变。蒙皮姿势命令允许您在应用蒙皮修改器之前或之后更改和设置蒙皮姿势。">
+      <meta name="indexterm" content="角色集合: 蒙皮姿势">
+      <meta name="indexterm" content="蒙皮姿势命令">
+      <meta name="indexterm" content="设为蒙皮姿势">
+      <meta name="indexterm" content="采用蒙皮姿势">
+      <meta name="indexterm" content="蒙皮姿势模式">
+      <meta name="contextid" content="CHARACTERS-SKINPOSEMODE">
+      <meta name="contextid" content="CHARACTERS-SETSKINPOSE">
+      <meta name="contextid" content="CHARACTERS-ASSUMESKINPOSE">
+      <meta name="topic-type" content="concept">
+      <title>蒙皮姿势命令</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-9F79F01E-6A81-4103-B415-B5E88BD279A3"></a><div class="head">
+            <h1>蒙皮姿势命令</h1>
+         </div>
+         <p class="blurb">如果首先在网格中应用了蒙皮修改器，则使用骨骼结构的当前姿势作为蒙皮姿势。骨骼结构在第 0 帧的后续动画将引起蒙皮姿势的改变。蒙皮姿势命令允许您在应用蒙皮修改器之前或之后更改和设置蒙皮姿势。 </p><a name="GUID-0CF92AA4-5487-4BD0-BF6B-12634DCBCE33"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-FC4A6266-98B4-41CC-85D3-1A8DDB32BAEC">默认菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “设为蒙皮姿势”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-FCF72B62-F078-4B7B-8A8F-DC36FAF1AFAD">默认菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “采用蒙皮姿势”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-A3F785C9-66EA-4984-AF0A-9A4E65A6EAF6">默认菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “蒙皮姿势模式”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-6AC58ED0-97C0-4B7E-A44A-30AFDBA70A2E">Alt 菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “姿势” <img src="../images/ac.menuaro.gif"> “设为蒙皮姿势”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-9531BBB7-51F2-4284-BC29-7637ABBEB856">Alt 菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “姿势” <img src="../images/ac.menuaro.gif"> “采用蒙皮姿势”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-ECE9E490-6B43-4481-82DE-66A06FDFC7B5">Alt 菜单：“动画”菜单  <img src="../images/ac.menuaro.gif"> “姿势” <img src="../images/ac.menuaro.gif"> “蒙皮姿势模式”</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7D41"></a><em class="mild">蒙皮姿势</em> 储对象的特定位置、旋转和比例。其预期用途是为蒙皮修改器存储角色集合的姿势。然而，任何对象都可以使用蒙皮姿势来存储其当前变换以备将来检索。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7D40"></a>这些命令作用于任何对象，不管结构是否是角色集合的一部分，也不管骨骼是否已经由蒙皮修改器指定给网格。 
+         </p><a name="GUID-E37E143D-60B5-49E7-84CF-52EFD2D71F63"></a><dl>
+            <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-765B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7D3F"></a> 设为蒙皮姿势</span></dt>
+            <dd>
+               <div class="definition"><a name="WS1A9193826455F5FF-4855151011E3B702B9570B0"></a>  
+                  <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752A42"></a>将选定对象的当前位置、旋转和比例作为蒙皮姿势进行存储。如果将选定对象指定给蒙皮修改器作为骨骼，则封套和顶点权重会自动重新计算用于处理新的姿势。 
+                  </p> 
+               </div>
+            </dd>
+            <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-765A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7D3E"></a> 采用蒙皮姿势</span></dt>
+            <dd>
+               <div class="definition"><a name="WS1A9193826455F5FF-4855151011E3B702B9570B1"></a>  
+                  <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752A43"></a>使选定对象采用已存储的蒙皮姿势。这项功能在动画阶段很有用。例如，如果你已经设置了角色在不同关键帧的动画，并想让角色动画设置回到它在第 50 帧的蒙皮姿势，则您可以在第 50 帧打开“自动关键点”并单击“采用蒙皮姿势”。 
+                  </p> 
+               </div>
+            </dd>
+            <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7659"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7D3D"></a> 蒙皮姿势模式</span></dt>
+            <dd>
+               <div class="definition"><a name="WS1A9193826455F5FF-4855151011E3B702B9570B2"></a>  
+                  <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752A44"></a>将角色摆成蒙皮姿势并允许精细调整蒙皮姿势。当“蒙皮姿势模式”处于打开状态时，针对对象所做的更改只会影响蒙皮姿势而不会影响动画。关闭“蒙皮姿势模式”后，该结构会返回到当前帧的姿势。 
+                  </p> 
+               </div>
+            </dd>
+         </dl>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-6A20B663-D548-4F78-854C-CE2B1B29A6BF"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-E76663B7-0019-4126-ACC5-FCB379414DDC.htm">动画四元菜单 </a></span></li>
+               <li><span class="char_link"><a href="GUID-96C4CC13-0135-4CBB-90D4-EC13153EE44E.htm">角色集合</a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

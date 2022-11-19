@@ -1,0 +1,10 @@
+Maya-Python-Plug-in-Learning
+PythonAPI1VsPythonAPI2
+Maya-Python-API-1-0
+Maya-Python-API-2-0
+PluginEntryPoints
+Command-Plug-in-Basics
+Dependency-Graph-Plug-in-Basics
+PythonOutsideMayaSession
+Working-with-PySide-in-Maya
+Writing-Workspace-controls

@@ -1,0 +1,87 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-824500F5-AA63-4F5C-8E7F-E9B09FDA3D63">
+      <meta name="indexterm" content="烘焙光贴图">
+      <meta name="indexterm" content="光: 烘焙">
+      <meta name="indexterm" content="烘焙: arnold">
+      <meta name="indexterm" content="光贴图: arnold">
+      <meta name="topic-type" content="topic">
+      <title>使用 Arnold 烘焙光贴图</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-824500F5-AA63-4F5C-8E7F-E9B09FDA3D63"></a><div class="head">
+            <h1>使用 Arnold 烘焙光贴图</h1>
+         </div>
+         <p class="blurb"> </p>
+         <div class="section"><a name="SECTION_BB4F26FE6D514CD59B50C1B658012EA4"></a> 
+            <h2><a name="GUID-1AECE9B4-37FD-4202-994D-CFCC5421EDFC"></a>操作步骤
+            </h2> <a name="OL_1FDA55D51C814A90A66986EBD054420C"></a><p class="list-intro">要使用 Arnold 烘焙光贴图，请执行以下操作：</p>
+            <ol type="1" start="1">
+               <li>开始执行此过程之前，请确保场景渲染的外观与您的期望完全相同。在 Arnold 中未正确渲染的任何视觉效果均会影响最终贴图。 
+                  		  
+               </li>
+               <li> 每当烘焙光贴图时，请务必先创建非重叠 UV。这可确保不会覆盖灯光信息，因为某些面在 UV 空间中重叠。 
+                  			 
+                  <p>大多数光贴图使用“贴图通道 2”。尽管此设置不属于强制要求，但它是视频游戏开发人员的常见做法。 
+                     			 
+                  </p> 
+               </li>
+               <li>为场景选择物理材质。这是一种功能齐全的材质，适用于使用 Arnold 进行渲染。 
+                  		  
+               </li>
+               <li>选择要用于烘焙光贴图的对象。 
+                  		  
+               </li>
+               <li> 选择<span class="MenuCascade">菜单栏  <img src="../images/ac.menuaro.gif"> “渲染” <img src="../images/ac.menuaro.gif"> “烘焙到纹理”</span>以打开“烘焙到纹理”对话框。 
+                  		  
+               </li>
+               <li>如果可用贴图已隐藏，请单击“显示贴图”以在窗口的左侧窗格中显示它们。 
+                  		  
+               </li>
+               <li>单击“将贴图添加到选定对象”按钮，然后选择颜色公用贴图和照明贴图。 
+                  			 
+                  <p>照明贴图与颜色分离，且仅包含灯光。 
+                     			 
+                  </p> 
+               </li>
+               <li> 编辑贴图设置：按 <span class="keyboardEntry">Ctrl+A</span> 以选择列表中的所有贴图，选择“UV 通道 2”，将“图像大小”设置为所需大小（例如，1024），并将“文件类型”设置为“位图(.BMP)”。 
+                  		  
+               </li>
+               <li> 将“输出到”目标设置为“创建新材质”。 
+                  		  
+               </li>
+               <li>将贴图指定给材质的材质输入：在“材质/贴图浏览器”中，选择“标准(旧版)”，将照明设置为“自发光”，并将颜色公用贴图连接到漫反射输入。 
+                  		  
+               </li>
+               <li>选择一个输出文件夹作为烘焙光贴图的目标。 
+                  		  
+               </li>
+               <li>单击“烘焙”。 
+                  			 
+                  <p>完成灯光烘焙操作可能需要一些时间。为了获得更好的性能，可以根据所需的最终质量调整 Arnold 中的设置。 
+                     			 
+                  </p> 
+               </li>
+               <li>要查看标准材质的最终结果，请确保将视口设置为“高质量”。 
+                  		  
+               </li>
+               <li>打开“材质编辑器”以查看结果。请注意壳材质的创建方式，保留原始物理材质并创建连接到烘焙贴图的标准（旧版）材质。 
+                  		  
+               </li>
+            </ol> 
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-A7CC32F5-40BE-4DE5-A364-05E7986D4BA5.htm"> UV 编辑器</a></li>
+                     <li class="topiclist-litem"><a href="GUID-78705B35-7DAF-408F-BB6F-7E69D3A384F2.htm">材质编辑器</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

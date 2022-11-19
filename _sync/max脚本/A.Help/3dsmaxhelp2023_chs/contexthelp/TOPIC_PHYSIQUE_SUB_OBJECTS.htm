@@ -1,0 +1,40 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="topic-type" content="redirect">
+      <meta name="robots" content="noindex">
+      <title>Physique 子对象</title>
+   </head>
+   <body><script language="javascript">
+                        (function() {
+
+                            function isFromLocalFilesystem() {
+                                switch(window.location.protocol) {
+                                    case 'http:':
+                                    case 'https:':
+                                        //remote file over http or https
+                                        return false;
+                                        break;
+                                    case 'file:':
+                                        //local file
+                                        return true;
+                                        break;
+                                    default:
+                                        //some other protocol
+                                        return false;
+                                }
+                            }
+
+                            var search = window.location.search,
+                                indexUrl = '../index.html' + search + '#!/url=./files3dsmaxarchive/GUID-98C8E727-6BA4-4E1C-997F-19DB361015BF.htm',
+                                topicUrl = '../files3dsmaxarchive/GUID-98C8E727-6BA4-4E1C-997F-19DB361015BF.htm' + search;
+
+                            if (isFromLocalFilesystem()) {
+                                location.replace(indexUrl);
+                            } else {
+                                location.replace(topicUrl);
+                            }
+
+                        })();
+                    </script></body>
+</html>

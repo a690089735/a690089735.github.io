@@ -1,0 +1,93 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-2C44B7E2-C9A6-45B4-8BAF-62D629783C5A">
+      <meta name="description" content="通过“分割量”测试，可以将特定数目的粒子发送给下一个事件，将所有剩余的粒子保留在当前事件中。可以按照特定数目或百分比或按照每 N 个粒子分割粒子流。对于特定数目的粒子，每个事件分割一次，但是可以通过设置百分比和“间隔”值的动画，随时间改变分割粒子的数量。">
+      <meta name="indexterm" content="拆分粒子流">
+      <meta name="indexterm" content="拆分测试（粒子流）: 拆分数量">
+      <meta name="indexterm" content="粒子流测试: 拆分数量">
+      <meta name="indexterm" content="测试（粒子流）: 拆分数量">
+      <meta name="topic-type" content="concept">
+      <title>分割量测试</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-2C44B7E2-C9A6-45B4-8BAF-62D629783C5A"></a><div class="head">
+            <h1>分割量测试</h1>
+         </div>
+         <p class="blurb">通过“分割量”测试，可以将特定数目的粒子发送给下一个事件，将所有剩余的粒子保留在当前事件中。可以按照特定数目或百分比或按照每 N 个粒子分割粒子流。对于特定数目的粒子，每个事件分割一次，但是可以通过设置百分比和“间隔”值的动画，随时间改变分割粒子的数量。
+            
+         </p>
+         <div class="bodyReference"><a name="GUID-18EA4CDE-830C-4E76-9550-8F2A20419F63"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-5150B524-BB06-4C3B-974A-5AA9951EED6C">“粒子视图” <img src="../images/ac.menuaro.gif">  单击某个事件中的“分割量”，或将“分割量”添加到粒子系统中，然后选择它。</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-5FA3"></a> 
+               <h2><a name="GUID-66FA9416-1C27-4AE5-B96E-258F2B5130FF"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190042577"></a><div class="figure-anchor"><img src="../images/GUID-A5D1C10B-E2F2-4958-96CA-AE61D1FB2976-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5FA2"></a>该用户界面出现在“粒子视图”对话框右侧的“参数”面板中。 
+               </p> <a name="GUID-ECD279A4-8C41-4C18-8372-343F7ECCA664"></a><div class="dl_section"><a name="GUID-F3C95929-5960-4573-AE79-18685A8387E6"></a><p class="title"><a name="GUID-272FD305-1109-4A0A-AB5F-90DBD2F6A21F"></a>“为以下项测试真值”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5FA1"></a>可以选择如何分割粒子系统。 
+                  </p><a name="UL_B59E336366DB408AB2BBB1A237058E1B"></a><ul>
+                     <li><em class="strong">粒子比例</em>（默认设置。）按“比率”值指定的百分比分割粒子系统。如果“比率”大于 0.0，是否分割特定粒子取决于随机化因子；使用“唯一性种子”值可以进行更改。 
+                        <p><a name="GUID-7DA484C7-E711-41C9-A26D-B46D4924657D"></a><em class="strong">比率</em> 指定将测试为 True 的粒子的百分比。可设置动画。默认设置为 50.0%。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5F9E"></a>仅适用于“粒子比例”选项。 
+                        </p> 
+                     </li>
+                     <li><em class="strong">每 N 个粒子</em> 分割定期的粒子采样。 
+                        <p><a name="GUID-DCA3323D-0284-4F30-972A-79303C341FF8"></a><em class="strong">N</em> 指定分割粒子的频率。可设置动画。默认设置为 3。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5F9B"></a>例如，如果输入 <em class="strong">8</em>，则每 8 个粒子分割一次。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5F9A"></a>仅适用于“每 N 个粒子”选项。 
+                        </p> 
+                     </li>
+                     <li> <em class="strong">前 N 个粒子</em> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752D4C"></a>从第一个进入事件的粒子开始分割指定为 N 值（下面）的粒子数，保留其他粒子。 
+                        </p> 
+                     </li>
+                     <li> <em class="strong">前 N 个粒子后所有粒子</em> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752D4D"></a>从 N 参数（下面）指定的 N 个粒子后的第一个粒子开始分割所有粒子。从第一个进入事件的粒子开始到第 N 个粒子的所有粒子保留在该事件中。 
+                        </p> 
+                        <p><a name="GUID-739D62F6-768E-4762-BA81-5203148524DF"></a><em class="strong">N</em> 对于“前 N 个粒子”，指定要分割的粒子数，对于“前 N 个粒子后所有粒子”，指定要保留在该事件中的粒子数。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5F96"></a>仅适用于“前 N 个粒子”或“前 N 个粒子后的所有粒子”选项。 
+                        </p> 
+                     </li>
+                  </ul>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-62C7"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5F95"></a>每发射源</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-63CE"></a> 启用时，“粒子流”为每个发射源分别应用“前 N 个粒子”和“前 N 个粒子后的所有粒子”选项的 N 值。 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5F94"></a>对于聚集到单个“分割量”测试中的多个粒子流源，应使用此选项。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-D4AEB569-5706-4BA8-BCBC-4826AB0F9FFD"></a><p class="title"><a name="GUID-23F6FDBF-3A15-4188-9D9E-7C8B20C9C4CD"></a>“唯一性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5F93"></a>“唯一性”设置可以使“粒子比例”选项设置的粒子保留随机化。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-62C6"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5F92"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-63CD"></a> 指定随机化值。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-62C5"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-5F91"></a>新增特性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-63CC"></a> 使用随机化公式计算新种子。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

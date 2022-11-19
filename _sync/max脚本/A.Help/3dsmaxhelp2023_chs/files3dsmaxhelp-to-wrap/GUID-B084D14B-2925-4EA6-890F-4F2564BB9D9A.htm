@@ -1,0 +1,111 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B084D14B-2925-4EA6-890F-4F2564BB9D9A">
+      <meta name="description" content="使用“连线参数”可以链接视口中的任意两个对象参数，这样，调整一个参数就会自动更改另一个参数。这样您可以在指定的对象参数之间设置单向和双向连接，或者用包含所需参数的虚拟对象控制任意数量的对象。通过关联参数可以直接设置自定义约束而不必去“轨迹视图”中指定控制器。">
+      <meta name="indexterm" content="连线参数">
+      <meta name="indexterm" content="连线参数">
+      <meta name="indexterm" content="动画菜单: 连线参数">
+      <meta name="indexterm" content="参数: 关联">
+      <meta name="indexterm" content="参数关联">
+      <meta name="indexterm" content="链接: 可设置动画的参数">
+      <meta name="contextid" content="PARAMETER WIRE-PARAMWIRE">
+      <meta name="topic-type" content="concept">
+      <title>连线参数</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B084D14B-2925-4EA6-890F-4F2564BB9D9A"></a><div class="head">
+            <h1>连线参数</h1>
+         </div>
+         <p class="blurb">使用“连线参数”可以链接视口中的任意两个对象参数，这样，调整一个参数就会自动更改另一个参数。这样您可以在指定的对象参数之间设置单向和双向连接，或者用包含所需参数的虚拟对象控制任意数量的对象。通过关联参数可以直接设置自定义约束而不必去“轨迹视图”中指定控制器。
+            
+            
+         </p><a name="GUID-EC67F1FD-106C-45A5-AF55-ED8880573D7D"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-AEB3124D-D3B6-4BDF-AE6C-CD4F7025E141">选择对象。 <img src="../images/ac.menuaro.gif"> 右键单击四元菜单  <img src="../images/ac.menuaro.gif"> “变换”（右下角）四元菜单  <img src="../images/ac.menuaro.gif"> “连线参数”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-5E05F0CB-1A68-4561-A81B-C4408E5687F6">默认菜单：选择对象。 <img src="../images/ac.menuaro.gif"> “动画”菜单  <img src="../images/ac.menuaro.gif"> “连线参数” <img src="../images/ac.menuaro.gif"> “连线参数”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-C0D4C74D-81C6-41C1-982E-B130550F35D2">Alt 菜单：选择对象。 <img src="../images/ac.menuaro.gif"> “动画”菜单  <img src="../images/ac.menuaro.gif"> “关系/IK” <img src="../images/ac.menuaro.gif"> “连线参数”</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3F8C"></a>从“动画”菜单和<span class="char_link"><a href="GUID-3A803F43-6F87-40FB-97CA-33844078AF9A.htm">四元菜单</a></span>中可访问参数关联。连线参数命令只有在选定单个模式时才可用。选择“连线参数”命令将显示有层次的弹出菜单，该菜单的级别和项目对应于可设置动画的轨迹，而这些轨迹对于“轨迹视图”中的对象是可见的 
+            
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3F8B"></a>当选择参数后，从选定对象到鼠标光标中画出一条类似于在<span class="char_link"><a href="GUID-D5446135-7734-4F9A-A1A1-3564FB89147B.htm">选择并链接模式</a></span>中显示的那样的虚线。无论何时光标在有效的目标对象上面时，它都会从箭头变为十字形状。可以随时右键单击以取消参数关联。 
+            
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3F8A"></a>当显示虚线时，您可以单击目标节点，或单击视口中的空白区域以自定义两个关联参数之间的关系。如果单击空白区域，则<span class="char_link"><a href="GUID-FF7FE175-2BE8-4504-88E4-12276BFDF30A.htm">“参数关联”对话框</a></span>会在“树视图”左侧打开显示第一个参数并在树右侧打开整个场景。单击目标节点（可以和源节点相同）显示目标对象的层次弹出菜单，可以选择目标参数。选择第二个参数之后，将打开“参数关联”对话框。 
+            
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3F89"></a>您可以连线参数之间的单向和双向连接。对于单向连线，一个参数由另一个参数有效地驱动，并且它的值随着控制参数的改变而改变，具体取决于用户定义的传递表达式。必要时，可以使用 <span class="charspan-msgph">3ds Max</span> 中的所有动画工具对控制参数设置动画或者进行调整。这包括将它变成另一个参数关联设置中的被控制参数，因此可以潜在地设置一连串被控制参数。 
+            
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3F88"></a>对于双向关联，<span class="charspan-msgph">3ds Max</span> 将相应种类的“关联”控制器指定给每一个参数，并且由于它们是交叉链接的，对一个参数的更改会引起另一个参数的关联更改。 
+            
+         </p>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E53F"></a><div class="note-note"><span class="label label-target-language">注意:</span>应该在场景中连线参数之前建立所有的对象层次。如果更改有连线参数的对象的层次，在新的参数上也会发生更改，这可能是您的连线参数中所不希望引入的结果。 
+               
+            </div>
+         </div>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E540"></a><div class="note-tip"><span class="label label-target-language">提示</span>使用<span class="char_link"><a href="GUID-311205D0-8B74-4E09-AC8A-CD980841E78D.htm">使用图解视图</a></span>查看场景中所有的关联参数关系。也可以使用“图解视图”连线参数。 
+               
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-3F86"></a> 
+            <h2><a name="GUID-FD3A8B7B-B128-4FE7-A7AF-BC7BA2219843"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044C3F"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044C40"></a>要附着连线参数，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择要使用的第一个对象。 
+                  	 
+               </li>
+               <li>选择“动画”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“连线参数”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“连线参数”，或者右键单击对象并选择“连线参数”。 
+                  		
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3F85"></a>弹出菜单显示可以链接的参数。 
+                     		
+                  </p> 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E541"></a><div class="note-note"><span class="label label-target-language">注意:</span>“连线参数”仅能对可以设置动画的参数使用。显示的菜单选项依赖于选定的对象，而且和“轨迹视图”中选定对象的选项一样。 
+                        		
+                     </div>
+                  </div> 
+               </li>
+               <li>在显示的菜单中选择想要链接到另一个对象的参数。 
+                  		
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3F84"></a>此时将出现一条虚线。 
+                     		
+                  </p> 
+               </li>
+               <li>将光标移到您想要使用的第二个对象。光标在有效的目标对象上面时，它会从箭头变为十字叉。单击以选择目标对象。 
+                  		
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3F83"></a>弹出菜单显示可以链接到的参数。 
+                     		
+                  </p> 
+               </li>
+               <li>在显示的菜单中选择想要链接的参数。 
+                  		
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3F82"></a>此时将打开<span class="char_link"><a href="GUID-FF7FE175-2BE8-4504-88E4-12276BFDF30A.htm">“参数关联”对话框</a></span>，其中您选定的两个参数高亮显示（亮显为蓝色或黄色，具体取决于颜色方案）。 
+                     		
+                  </p> 
+               </li>
+               <li>如果愿意，更改在对话框中高亮显示的参数，然后单击两个面板之间的方向按钮来确定控制方向：单向或双向（对任一对象的选定参数的更改会影响其他对象）。 
+                  	 
+               </li>
+               <li>单击“连接”以完成关联。 
+                  	 
+               </li>
+            </ol> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-FF7FE175-2BE8-4504-88E4-12276BFDF30A.htm"> “参数关联”对话框</a><p>“参数关联”对话框允许对<span class="char_link"><a href="GUID-B084D14B-2925-4EA6-890F-4F2564BB9D9A.htm">连线参数</a></span>的关系进行定义。在此对话框中，可以创建对象参数间新的双向的控制关系，编辑已存在的关系，并创建或编辑定义参数关系的表达式。 
+                        
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

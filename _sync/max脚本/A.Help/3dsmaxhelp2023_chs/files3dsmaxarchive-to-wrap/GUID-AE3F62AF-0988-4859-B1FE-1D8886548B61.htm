@@ -1,0 +1,302 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-AE3F62AF-0988-4859-B1FE-1D8886548B61">
+      <meta name="description" content="当使用认知控制器时，这些设置控制了 character studio 如何影响状态的变换。更多详细信息，请参阅设置并使用认知控制器。">
+      <meta name="indexterm" content="群组: 状态变换对话框">
+      <meta name="indexterm" content="群组: 认知控制器状态变换对话框">
+      <meta name="contextid" content="TOPIC_STATE_TRANSITION_DIALOG_PROC1">
+      <meta name="contextid" content="TOPIC_STATE_TRANSITION_DIALOG_PROC2">
+      <meta name="contextid" content="TOPIC_STATE_TRANSITION_DIALOG_PROC3">
+      <meta name="contextid" content="TOPIC_STATE_TRANSITION_DIALOG_PROC4">
+      <meta name="contextid" content="TOPIC_STATE_TRANSITION_DIALOG_PROC5">
+      <meta name="contextid" content="TOPIC_STATE_TRANSITION_DIALOG_PROC6">
+      <meta name="topic-type" content="concept">
+      <title>“状态变换”对话框</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-AE3F62AF-0988-4859-B1FE-1D8886548B61"></a><div class="head">
+            <h1>“状态变换”对话框</h1>
+         </div>
+         <p class="blurb">当使用<span class="char_link"><a href="GUID-435DDD88-C220-48BB-ACAF-764EF09AC349.htm">认知控制器</a></span>时，这些设置控制了 character studio 如何影响状态的变换。更多详细信息，请参阅<span class="char_link"><a href="GUID-448891C9-CE10-4356-931A-51A8ACB3257D.htm#WSF742DAB041063133728B9B2112A1CE7292-7E38">设置并使用认知控制器</a></span>。 
+         </p><a name="GUID-AD14779A-D681-4915-9C97-430FDD610994"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-F715128C-D75B-4CE9-96D0-187AED5C5E8D"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> （辅助对象） <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “群组” <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-3015B9FB-1B62-4864-860C-1DC395CF1EB6-low.png">（认知控制器） <img src="../images/ac.menuaro.gif"> “认知控制器编辑器” <img src="../images/ac.menuaro.gif">  右键单击过渡线。</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-C0BD93E8-3B88-47FE-BF07-A2DC35D86C3F">选择群组对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-3015B9FB-1B62-4864-860C-1DC395CF1EB6-low.png">（认知控制器） <img src="../images/ac.menuaro.gif"> “认知控制器编辑器” <img src="../images/ac.menuaro.gif">  右键单击过渡线。</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045F59"></a> 
+            <h2><a name="GUID-079580D7-F2BC-4D6F-BB16-C544432899D4"></a>变换脚本
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BBF"></a>变换的最主要原素是 MAXScript 条件脚本。这是一个与控制器相关的脚本，该脚本每帧执行一次，它能测试任何比例或场景的纵横比以决定是否需要变换，测试结果成功（为真或 1）或失败（为假或 0）决定了变换是否进行。 
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BC0"></a>character studio 在每个指定代理的每帧上执行一次脚本，这样可以设置对象和效果的动画，而且代理仍旧可以精确地做出反应。 
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BC1"></a>变换使用的所有脚本都使用下列结构： 
+            </p> 
+            <div class="codeBlock"><pre>fn [FunctionName] del t = (
+[MAXScript code]
+if [MAXScript conditional]
+then 1
+else 0 )</pre></div> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BC2"></a>开放部分含有“fn”（函数）接下来是函数名，这些函数名也必须出现在状态变换对话框中，然后是输入参数“del t”，最后是“= (”。接下来可以是任何 MAXScript 代码，也可以什么都不包含。 
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BC3"></a>闭合部分含有必需的 MAXScript 条件，然后是“then 1 else 0”。这意味着：如果条件结果为真，那么返回 1（也就是说发生了变换），或者如果条件结果为假，那么返回 0（也就是说没发生变换）。可以反转数字 1 和 0 的顺序（“then
+               0 else 1”），这样条件为真就不发生变换，反之亦然。最后，函数必须以括号结束：“)”。 
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BC4"></a>下面是一些可以在认知控制器中使用的脚本例子，并附有简要说明。可以在您自己的场景中修改并使用这些例子。 
+            </p> 
+            <div class="section"><a name="WSF742DAB041063133728B9B2112A1CE7292-7E0E"></a> 
+               <!--CPM-ContextId = 'TOPIC_STATE_TRANSITION_DIALOG_PROC1'--><a name="GUID-E6A88860-BCA7-47B8-A371-08172B7BE0D2"></a> 
+               <h3><a name="GUID-17D3DDEF-44AB-474D-B890-ED9F764A1372"></a>测试粒子系统参数
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BC5"></a>该示例脚本测试由粒子系统 Spray01 发射的粒子数目，并且当粒子数目为 100 时返回正数。 
+               </p> 
+               <div class="codeBlock"><pre>fn TestParticles del t = (
+if (particleCount $Spray01) == 100
+then 1  else 0 )</pre></div> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133728B9B2112A1CE7292-7E0D"></a> 
+               <!--CPM-ContextId = 'TOPIC_STATE_TRANSITION_DIALOG_PROC2'--><a name="GUID-F4FC18C9-7EBD-46D8-9FD0-6E32B347BFC2"></a> 
+               <h3><a name="GUID-F489E832-8D55-42E8-B81A-B18BE4099EE5"></a>测试对象位置
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BC6"></a>该示例脚本测试名为 Sphere03 的对象位置，并且当位置在范围（X&gt;=150，Y&gt;=0，Z&gt;=70）中时返回正数。 
+               </p> 
+               <div class="codeBlock"><pre>fn PositionCheck del t = (
+if ($sphere03.pos.x &gt;= 150  and $sphere03.pos.y &gt;=0  and $sphere03.pos.z &gt;=70)
+then 1  else 0 )</pre></div> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133728B9B2112A1CE7292-7E0C"></a> 
+               <!--CPM-ContextId = 'TOPIC_STATE_TRANSITION_DIALOG_PROC3'--><a name="GUID-67963567-085E-49C3-8885-AC332E821C94"></a> 
+               <h3><a name="GUID-16C7B0C3-7BBF-4897-8318-6FA115AF32DF"></a>测试大气效果属性
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BC7"></a>该示例脚本测试雾效果的密度参数，并且当参数值为 50 时返回正数。 
+               </p> 
+               <div class="codeBlock"><pre>fn TestAtmos del t = (
+atmos_fog = getAtmospheric 1
+print atmos_fog.density -- to:debug
+if (atmos_fog.density == 50)
+then 1 else 0 )</pre></div> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BC8"></a>请注意第二行，该行将雾的大气效果赋值给名为“atmos_fog”的变量。只有在使用大气效果时才需要这样；对大多数对象而言，只需要简单的在对象名前加上一个“$”，就像前面两个示例中演示的那样。getAtmospheric 命令后的“1”表示大气在“渲染效果”对话框
+                  <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“效果”列表中的位置。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BC9"></a>如果执行了此赋值操作，就可以通过在 MAXScript 监听器中输入下述命令来获得大气属性的列表： 
+               </p> 
+               <div class="codeBlock"><pre>ShowProperties atmos_fog</pre></div> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BCA"></a>同样，示例脚本中的第三行对认知控制器来说也不是必需的；它只是出于调试目的在监听器窗口中输出测试结果。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133728B9B2112A1CE7292-7E0B"></a> 
+               <!--CPM-ContextId = 'TOPIC_STATE_TRANSITION_DIALOG_PROC4'--><a name="GUID-F7420A95-BE82-422F-9257-E525DDDD7323"></a> 
+               <h3><a name="GUID-AEABF8B8-00E3-4440-B5F7-C8CAE736FF78"></a>测试两个对象间的距离
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BCB"></a>该示例脚本使用 MAXScript 的距离函数来获得某个代理和另一个场景对象间的距离，并且当结果小于 30 时返回正数。 
+               </p> 
+               <div class="codeBlock"><pre>fn TestDist del t = (
+get_dist=distance $sphere01.pos $delegate02.simpos
+print (get_dist)
+if get_dist &lt; 30
+then 1 else 0 )</pre></div> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BCC"></a>如同上一个示例一样，该示例使用了一个变量；这里使用变量的目的只是为了使脚本看起来更简单。在第二行中，使用距离函数来获取球体和代理间的距离，并将结果赋值给变量“get_dist”。如果想测试所有使用认知控制器的代理而不仅仅是特定的一个，可以通过用“del.simpos”替代“$delegate02.simpos”来实现。
+                  
+               </p> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E830"></a><div class="note-note"><span class="label label-target-language">注意:</span>特殊属性“simpos”用于确定代理在模拟过程中的位置。这是必要的，因为在模拟过程中使用标准属性“[node].pos”会导致 MAXScrip 不可使用计算所得的新代理位置。若要在模拟解决方案（例如旋转）过程中获得其它计算所得的变换数据，请使用“simTransform”属性，该属性在
+                     MAXScript 帮助中有具体描述。 
+                  </div>
+               </div> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BCD"></a>在脚本的第三行，出于调试的目的将计算所得距离输出到监听器窗口。该行对模拟来说不是必需的，而且可以将其删除。最后，值与常数 30 相比较，如果值小于 30 那么脚本返回 1，表明需要进行变换。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BCE"></a>可以基于该脚本来创建认知控制器，使得控制器使用多个查找行为/状态来在任意的对象值间沿特定路径移动代理。一旦代理在指定对象的给定距离中，那么就会发生变换并使代理移动到下一个查找状态，这样就可以移向下一对象。因为在每一帧中都对变换进行测试，所以可以按照自己的意愿随意移动目标对象，这样就如同实现了动态动画效果。
+                  
+               </p> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133728B9B2112A1CE7292-7E0A"></a> 
+               <!--CPM-ContextId = 'TOPIC_STATE_TRANSITION_DIALOG_PROC5'--><a name="GUID-AF3DF809-C823-439F-BA0C-2D7C09E61CB6"></a> 
+               <h3><a name="GUID-1A66AD88-5D42-4668-97A2-0DEA983C7C07"></a>测试修改器参数
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BCF"></a>该示例脚本检测应用于圆柱体的弯曲修改器的角度参数，并且当角度在 70 到 -70 度之间（包括 70 和 -70 度）时返回真。 
+               </p> 
+               <div class="codeBlock"><pre>fn TestBend del t = (
+if ($cylinder01.bend.angle &lt;= 70 and $cylinder01.bend.angle &gt;=
+-70) then 1
+else 0 )</pre></div> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BD0"></a>请注意在第二行中语句在文本外使用了圆括号是因为脚本同时测试两个条件：角度是否小于等于 70 度，和角度是否大于等于 -70 度。因为在这两个测试条件间使用了“and”，所以只有当两者同时为真时脚本返回为真。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133728B9B2112A1CE7292-7E09"></a> 
+               <!--CPM-ContextId = 'TOPIC_STATE_TRANSITION_DIALOG_PROC6'--><a name="GUID-D34EC53C-B395-497B-B82E-47F65FD52EEA"></a> 
+               <h3><a name="GUID-3C1348DF-D19D-4E6D-9D6B-556B06D00471"></a>测试其它代理的行为
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BD1"></a>可能想在变换脚本中决定哪些行为正在影响某个特定的脚本。群组提供了一种基于 MAXScript 的方法来实现这一目的。甚至可以检查某个特定的代理是否被指定为行为的一个目标。例如在一个鸡尾酒聚会场景上，如果 Harry 正在寻找 Sally 那么
+                  Betty 就会回避 Harry。但是如果 Harry 正在回避 Sally 那么 Betty 将会寻找 Harry。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BD2"></a>以下示例脚本中使用的场景条件比上一段的示例更为复杂。下面是大致的情况。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BD3"></a>使用墙排斥行为将六个代理限制在由四个栅格定义的“房间”中。在模拟过程中代理 1、2、3 和 5 简单的随机漫步。但是代理 4 使用认知控制器（CC1），该控制器让代理开始漫步，并且如果代理的三个任意对之一中的成员间的距离小于 50 单位，那么就切换到三种回避行为之一。每种避免行为都将由三个代理组成的不同组作为目标，其中两个包括代理
+                  2。代理 6 被指定为第二个认知控制器 (cc2)，该控制器使用下面的脚本来通知它，如果代理 4 正在避免代理 2，则切换到避免行为。该脚本的核心是函数 <em class="mild">transfunc4</em> 中的下面行： 
+               </p> 
+               <div class="codeBlock"><pre>(isDelAvoid =  isDelegateAvoiding the_current_behavior.name "$Delegate04" "$Delegate02" </pre></div> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BD4"></a>加载该文件，按 <span class="keyboardEntry">F11</span> 打开监听器窗口，然后求解。当发现代理 4 在回避代理 2 时监听器窗口显示一条消息。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BD5"></a>通过在上面的行中替换代理的名称，或是在 <em class="mild">transfunc4</em> 的列表中替换回避行为的名称，并通过添加或删除必要的行，可以如同在自己的模拟中一样，使用该脚本来检查一个代理是否正在避免另一个。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BD6"></a>该示例脚本说明了第二个要点：认知控制器变换脚本可以含有多个函数。群组首先执行在“状态变换”对话框 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“变换条件”字段中指定的功能，该功能将调用脚本中的一个或多个其他功能，这些功能当然还可以调用功能。在该示例中，<em class="mild">transfunc4 </em> 调用第一个函数 <em class="mild">isDelegateAvoiding</em>，并传递其三个参数。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BD7"></a>最后，脚本包含特定的函数 <em class="mild">getBehaviorType</em>，该函数将输入行为与已知行为列表相比较，如果存在匹配的话则返回已知行为。在该示例中，<em class="mild">transfunc4</em> 通过当前影响 Delegate04 的行为列表，使用 <em class="mild">getBehaviorType</em> 测试其中的每一个行为，并且如果一个回避行为已经在起作用，那么就继续检查 Delegate02 是否是该回避行为的一个障碍。与测试特定行为相比，尤其是当场景包含许多同类型的行为或经常编辑行为设置时，该函数可以更高效更灵活的使用。通过在 <em class="mild">transfunc4</em> 中删除下面一行开始部分的注释标志（双连字符），可以查看返回的行为。 
+               </p> 
+               <div class="codeBlock"><pre></pre></div> 
+               <div class="codeBlock"><pre>  -- format "Return Behavior: %\n" return_behavior 
+
+fn isDelegateAvoiding theCurrentBehavior theCogDelegate theAvoidingDelegate = (
+
+  the_return = 0   
+  counter = 1 
+  for the_assignments in $Crowd01.assignments do  
+  ( 
+    if the_return == 1 then exit
+
+    if the_assignments.delegate != undefined then  
+    ( 
+      if theCogDelegate == "$"+the_assignments.delegate.name then  
+      ( 
+        if the_assignments.cogcontrol != undefined then  
+        ( 
+          for the_cogcontrol_state in the_assignments.cogcontrol.states do 
+          ( 
+            if the_return == 1 then exit 
+
+            for the_cogcontrol_state_behavior in the_cogcontrol_state.behaviors do  
+            (  
+              if the_return == 1 then exit
+
+              if the_cogcontrol_state_behavior.name == theCurrentBehavior then 
+              ( 
+                for the_obstacle in the_cogcontrol_state_behavior.obstacles do 
+                ( 
+                  if the_return == 1 then exit  
+
+                  if "$"+the_obstacle.name == theAvoidingDelegate then  
+                  ( 
+                    --format "Set it true here !\n"  
+                     the_return = 1 
+                  ) 
+                ) 
+              ) 
+            ) 
+          ) 
+        ) 
+      ) 
+    ) 
+    counter = counter + 1
+  ) 
+  the_return
+)
+
+fn getBehaviorType val = (
+  if not iskindof val MAXRefTarg do return undefined  
+
+  theBehaviors = #( Speed_Vary_Behavior ,Orientation_Behavior ,Scripted_Behavior , 
+    Wander_Behavior ,Surface_Arrive_Behavior ,Path_Follow_Behavior , 
+    Seek_Behavior ,Avoid_Behavior ,Wall_Seek_Behavior , 
+    Space_Warp_Behavior,Wall_Repel_Behavior,Surface_Follow_Behavior , 
+    Repel_Behavior ) 
+
+  val_classID = val.classid 
+  for behav in theBehaviors do  
+  ( 
+    local behav_classid = behav.classid
+    if val_classID[1] == behav_classid[1] and val_classID[2] == behav_classid[2] do  
+    ( 
+      return behav  
+    ) 
+  )  
+  undefined
+)
+
+fn transFunc4 del t = (
+  another_the_return = 0 
+  counter = 1
+
+  for the_current_behavior in $Delegate04.behaviors do
+  (
+    if another_the_return == 1 then exit
+
+    return_behavior = getBehaviorType the_current_behavior 
+    --format "Return Behavior: %\n" return_behavior 
+    if return_behavior == Avoid_Behavior then
+    ( 
+      isDelAvoid =  isDelegateAvoiding the_current_behavior.name "$Delegate04" "$Delegate02"  
+
+      if isDelAvoid == 1 then
+      ( 
+        format "$Delegate04 found to be Avoiding $Delegate02\n" 
+        format "              Starting Transition in frame %:\n" t another_the_return = 1 
+      ) 
+    )
+    counter = counter + 1
+  ) 
+  another_the_return
+)</pre></div> 
+            </div> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4633"></a> 
+            <h2><a name="GUID-665796F0-F896-4057-91E9-39051FDAEB59"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045F5A"></a><div class="figure-anchor"><img src="../images/GUID-5A15A66D-C56C-401E-A5C2-48176CE96B60-low.png"></div> <a name="GUID-3220DC09-6104-409B-96B0-D9AEFFFB4788"></a><dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AA1"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BD8"></a>优先级</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B52"></a> 设置变换的优先顺序。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BD9"></a>当一个以上的变换测试为真时，character studio 使用“优先级”设置来决定发生哪一个变换。首先执行优先级设置最小的变换。因此，例如，优先级设置为 0 的变换比优先级设置为 1 的变换更先执行，以此类推。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-AA0"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BDA"></a>持续时间</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B51"></a> character studio 用来影响两个状态间变换的帧数。 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A9F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BDB"></a>缓入</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B50"></a> 以何种速率开始变换。默认设置为 0.5。范围从 0 到 1.0。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BDC"></a>值越低变换越急促，值越高变换越平滑。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A9E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BDD"></a>缓出</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B4F"></a> 以何种速率结束变换。默认设置为 0.5。范围从 0 到 1.0。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BDE"></a>值越低变换越急促，值越高变换越平滑。 
+                     </p> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E833"></a><div class="note-note"><span class="label label-target-language">注意:</span>“缓入”或“缓出”值的总和必须小于或等于 1.0。character studio 不允许设置可能使总和超过 1.0 的任一参数的值。当一个参数值等于 1.0 减去其他参数值时，如果还想增加该参数的值，就需要先减小其他参数值。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+            </dl>
+            <div class="dl_section"><a name="GUID-8302758C-1C00-4D5A-998D-FB1F02ADAC4F"></a><p class="title"><a name="GUID-AEDDC090-A1EE-44C0-A9A4-8389CDFC1C0E"></a>“变换条件”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A9D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BDF"></a>[函数名称字段]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B4E"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753861"></a>指定何时/如何发生变换的 MAXScript 函数的名称。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16BE0"></a>该名称必须也出现在脚本中主函数的开始部分，在“fn”之后。脚本可以包含能由主函数调用或相互调用的其他函数。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-A9C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16BE1"></a>编辑 MAXScript</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1B4D"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753862"></a>打开一个编辑器窗口来编辑、保存和加载变换的 MAXScript 脚本。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

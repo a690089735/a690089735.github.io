@@ -1,0 +1,319 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D98A5D87-EFF1-45DD-8132-69B86FB8454E">
+      <meta name="description" content="Substance 界面由一些卷展栏组成，双击贴图节点时，这些卷展栏将出现在材质编辑器中。另外，大多数 Substance 贴图都包含一些输出，用于连接到不同的材质贴图输入。">
+      <meta name="topic-type" content="concept">
+      <title>Substance 界面</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D98A5D87-EFF1-45DD-8132-69B86FB8454E"></a><div class="head">
+            <h1>Substance 界面</h1>
+         </div>
+         <p class="blurb">Substance 界面由一些卷展栏组成，双击贴图节点时，这些卷展栏将出现在材质编辑器中。另外，大多数 Substance 贴图都包含一些输出，用于连接到不同的材质贴图输入。 </p><a name="UL_EF09BB8E712449B6AF19BCBA84A3D803"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-AEF33F8D-8EA2-4B97-8F6C-57BDE65F70AE"><img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif">  添加或选择 Substance 贴图。</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7F1D"></a> 
+            <h2><a name="GUID-B4BA21F4-1C45-4CB4-9906-629073FB9FCA"></a>Substance 和置换
+            </h2> 
+         </div>
+         <p><a name="WS1A9193826455F5FF-2248B67F12850E5FD48-7BA2"></a>Substance 贴图的独特之处是它们提供三种不同的置换输出：“凹凸”提供高频率的详细置换；“置换”提供具有更广置换的低频率输出；“高度”将二者组合到一个输出中。例如，对于沙丘贴图，“置换”将是沙丘，而“凹凸”将是沙粒。 
+         </p>
+         <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7AEC"></a>借助此功能，您可以根据需要，使用输出来最大程度地减少内存使用和渲染时间。您可以使用“置换”输出来置换网格，而将“凹凸”（或“法线”）输出作为凹凸贴图。或者，如果允许随意使用内存，您只需将“高度”输出作为置换贴图。 
+         </p>
+         <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7AEB"></a>当单独使用“凹凸”和“置换”输出时，请使用 Substance 贴图“参数”卷展栏上提供的“安全平衡”设置来指定二者之间的平衡。可用“安全平衡”值的范围为 0.0 到 32.0，32.0 是默认值。较高的“安全平衡”值适用于“凹凸”输出，较低的值适用于“置换”输出。
+            
+         </p>
+         <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7AEA"></a>在下图中，使用带有两个不同“安全平衡”设置的 <em class="mild">Desert_Sand_01</em> Substance 的不同输出对平面基本体进行置换。第一行分别显示“凹凸”、“置换”和“高度”输出，其中“安全平衡”设置为 18.0，这是一个相当高的值。第二行分别显示“凹凸”、“置换”和“高度”输出的置换，其中“安全平衡”设置为 2.0，接近值范围的下限。
+            
+         </p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7AE9"></a><div class="figure-anchor"><img src="../images/GUID-ED4F9F18-BFA6-4A20-96A9-07AC53A8AAA7-low.png"></div>
+         <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7AE8"></a> <em class="strong">1. “凹凸”输出，“安全平衡”为 18.0</em> 
+         </p>
+         <p><a name="GUID-2382C292-F2B0-4FDD-BFE6-0009F2ECBB3A"></a> <em class="strong">2. “置换”输出，“安全平衡”为 18.0</em> 
+         </p>
+         <p><a name="GUID-97B1B1C0-E2B9-4E37-B236-DA64F3A84A4A"></a> <em class="strong">3. “高度”输出，“安全平衡”为 18.0</em> 
+         </p>
+         <p><a name="GUID-C922CD63-C1EB-405E-8039-C7DA5596C289"></a> <em class="strong">4. “凹凸”输出，“安全平衡”为 2.0</em> 
+         </p>
+         <p><a name="GUID-9463D412-9EE5-4F11-AE28-8818B8DE31BB"></a> <em class="strong">5. “置换”输出，“安全平衡”为 2.0</em> 
+         </p>
+         <p><a name="GUID-7CA933EF-69D1-4B4A-84B2-6C1F5ED702F0"></a> <em class="strong">6. “高度”输出，“安全平衡”为 2.0</em> 
+         </p>
+         <p><a name="GUID-28537E93-AF4F-4D78-AAA1-895114B3188B"></a> 请注意，两个“高度”置换（3 和 6）是相同的；“安全平衡”对于“高度”输出无影响。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A09"></a> 
+            <h2><a name="GUID-C3C82BA6-16B8-40D9-A994-533857C7AB8A"></a>界面
+            </h2> 
+            <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7AE7"></a>使用 Substance 贴图的最佳方法是使用 Slate 材质编辑器。在这里，可以将各种贴图输出连接到材质贴图输入，然后双击贴图节点即可访问其参数。有关具体步骤，请参见 <span class="char_link"><a href="GUID-CE7ACC5E-49A8-4635-AE91-86A814CAFFE0.htm#WS1A9193826455F5FF-2248B67F12850E5FD48-7BA4">Substance 贴图</a></span>。 
+            </p> 
+            <div class="section"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-788B"></a> 
+               <h3><a name="GUID-DD1325BD-91A7-4EE7-8407-3D5F3251EEF7"></a>Substance 贴图输出
+               </h3> <a name="WS73099CC142F4875525E8C7E5129B19AABD9-788A"></a><div class="figure-anchor"><img src="../images/GUID-023D20AE-84CB-4D68-8400-FD7D12E9B965-low.png"><p class="figure-title">显示多个输出的 Substance 贴图节点</p>
+               </div>  
+               <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7889"></a>与 <span class="charspan-msgph">3ds Max</span> 中的大多数其他贴图不同，Substance 贴图通常有多个输出。这意味着可以将一个 Substance 中的不同输出连接到材质中的不同输入，结果因您的连接而异。 
+               </p> 
+               <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7888"></a>如果通过将新的 Substance 从“材质/贴图浏览器”直接拖动到材质上的输入连接器（使用 Slate 材质编辑器）来将该 Substance 应用于材质，然后使用“程序包浏览器”卷展栏上的按钮指定 Substance 文件，则 <span class="charspan-msgph">3ds Max</span> 默认为贴图的“漫反射”输出。您可以更改此输出，直接方法是在贴图节点上的另一个输出连接器和<span class="char_link"><a href="GUID-CDB5CF14-CBC9-482D-A56B-04A7FCF12884.htm">贴图输出选择器</a></span>节点之间进行拖动，间接方法是更改贴图输出选择器的“通道名称”设置。 
+               </p> 
+               <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-787C"></a>可用 Substance 贴图输出如下（并非所有 Substance 都具有所有这些输出）： 
+               </p> <a name="GUID-CA12821F-DF66-4947-86F1-1B15FCCF49D1"></a><dl>
+                  <dt><a name="WS73099CC142F4875525E8C7E5129B19AABD9-787B"></a><span class="term"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-787A"></a>Diffuse（漫反射）</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7879"></a> 
+                        <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7878"></a>贴图提供的总体着色。通常连接到材质的“漫反射”贴图。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7877"></a><span class="term"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7876"></a>Specular（高光反射）</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7875"></a> 
+                        <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7874"></a>基于灯光和查看者角度以及贴图内容的实际高光反射组件，与实际对象曲面无关。通常连接到材质的“高光级别”贴图。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7C93"></a>下图将应用于平面基本体的煤 Substance 描述为使用标准材质的漫反射贴图，如透视视口中所示：<em class="mild"></em> 
+                        </p> <a name="WS1A9193826455F5FF-29A01C2129CC3210CE-73A6"></a><ul>
+                           <li>第一个图像显示具有默认场景照明的贴图。可见反射高光直接从漫反射贴图中发出，不发生任何变化。 </li>
+                           <li>在第二个图像中，头上方放置一个泛光灯，反射高光由材质指定；它演示了在平面上方使用点光源的标准结果，与漫反射贴图图像内容无关。 </li>
+                           <li>第三个图像使用相同的照明和材质光泽度值 (48)，但是反射高光来自 Substance 贴图的应用于材质高光级别贴图的高光反射输出。在这里，反射高光是真实的，煤像是 3D 对象而不是 2D 图像。移动光源或视角会导致高光移动到其他煤。 </li>
+                        </ul> <a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7C92"></a><div class="figure-anchor"><img src="../images/GUID-ACEF8CC9-EF09-465C-8455-EC6EDD446B0B-low.png"></div>  
+                        <p><a name="GUID-571656DC-AF06-4505-98B6-A02680E68026"></a> <em class="strong">左：漫反射贴图的高光反射</em> 
+                        </p> 
+                        <p><a name="GUID-3E2EC57C-38AD-46D9-8EA7-F18E50C93C4E"></a> <em class="strong">中：材质的高光反射</em> 
+                        </p> 
+                        <p><a name="GUID-B2567298-1167-410F-BAD5-6AE7A09E755A"></a> <em class="strong">右：Substance 贴图的高光反射</em> 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7873"></a><span class="term"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7872"></a>法线（Normal）</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7871"></a> 
+                        <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7870"></a>法线凹凸贴图，该贴图以高度精确的方式使用全光谱着色模拟高频率曲面置换。通常通过<span class="char_link"><a href="GUID-BFFFC7F4-8B39-435C-9015-A38245A3250B.htm">“法线凹凸”贴图</a></span>连接到材质的凹凸贴图。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F4875525E8C7E5129B19AABD9-786F"></a><span class="term"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-786E"></a>Bump（凹凸）</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-786D"></a> 
+                        <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-786C"></a>标准凹凸贴图，它使用灰度图像模拟高频率曲面置换。通常直接连接到材质的凹凸贴图或置换贴图。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7C91"></a>有关详细信息，请参见 <span class="char_link"><a href="GUID-D98A5D87-EFF1-45DD-8132-69B86FB8454E.htm#WS1A9193826455F5FF-29A01C2129CC3210CE-7F1D">Substance 和置换</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F4875525E8C7E5129B19AABD9-786B"></a><span class="term"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-786A"></a>Displacement（位移）</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7869"></a> 
+                        <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7C90"></a>标准置换贴图，它使用灰度图像模拟低频率曲面置换。通常直接连接到材质的置换贴图。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7C8F"></a>有关详细信息，请参见 <span class="char_link"><a href="GUID-D98A5D87-EFF1-45DD-8132-69B86FB8454E.htm#WS1A9193826455F5FF-29A01C2129CC3210CE-7F1D">Substance 和置换</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7867"></a><span class="term"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7866"></a>Height（高度）</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7865"></a> 
+                        <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7864"></a>将“凹凸”和“置换”数据组合到一个输出中。通常直接连接到材质的置换贴图。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7C8E"></a>有关详细信息，请参见 <span class="char_link"><a href="GUID-D98A5D87-EFF1-45DD-8132-69B86FB8454E.htm#WS1A9193826455F5FF-29A01C2129CC3210CE-7F1D">Substance 和置换</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F4875525E8C7E5129B19AABD9-785B"></a><span class="term"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-785A"></a>Opacity（不透明度） </span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7859"></a>  
+                        <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7858"></a>此选项处于活动状态时，使贴图中的“背景”区域变为透明。通常应用于材质的不透明度贴图。仅可用于适当的 Substance，包括栅栏和秋天树叶。<em class="mild"></em><em class="mild"></em> 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7C8D"></a>例如，通过将“不透明度”输出应用于材质的不透明度贴图，您可以使用自定义内容（来自具有不同纹理贴图的基础对象）替换背景。 
+                        </p> <a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7C8C"></a><div class="figure-anchor"><img src="../images/GUID-05DBECC3-632E-492C-8AC3-4E81C5B019EE-low.png"></div>  
+                        <p><a name="GUID-A361084B-F2DC-4C33-84D8-CB9DA3F817DF"></a> <em class="strong">左：具有默认背景的秋天树叶；仅适用于“漫反射”输出</em> 
+                        </p> 
+                        <p><a name="GUID-C4174B44-31B5-4294-8293-F70603CAB8B8"></a> <em class="strong">右：秋天树叶将“不透明度”输出应用于材质的不透明度贴图输入，将显示基本 Substance 贴图（草坪）</em> 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7863"></a><span class="term"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7862"></a>Emissive（放射） </span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7861"></a>  
+                        <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7860"></a>材质的“发光”组件，通常应用于材质的自发光贴图。仅可用于包含发光元素的 Substance，例如火山岩石和煤。<em class="mild"></em><em class="mild"></em> 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7211"></a>有关示例，请参见前面的“高光反射”。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F4875525E8C7E5129B19AABD9-785F"></a><span class="term"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-785E"></a>Glossiness（光泽度） </span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875525E8C7E5129B19AABD9-785D"></a>  
+                        <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-785C"></a>Substance 贴图定义的反射高光的范围。通常应用于材质的光泽度贴图。仅可用于适当的 Substance，包括火山岩石和 Marble_02。<span class="charspan-emphasis"></span><em class="mild"></em> 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_B4CB8DB90C474263B0A139F85A4C698F"></a> 
+               <h3><a name="GUID-C759B067-E868-4F1C-BE7C-13A82ED23BEE"></a>“全局 Substance 设置”卷展栏
+               </h3> <a name="FIG_1C116692062F43998A9B209B1EDED361"></a><div class="figure-anchor"><img src="../images/GUID-9BE203C7-43BC-48AE-A4E0-8CBFA263F85C-low.png"></div>  
+               <p><a name="GUID-104393CC-DB0C-4472-892C-638D01F0F2B7"></a>全局设置包括用于渲染 Substance 贴图和纹理大小的引擎（软件子系统）。 
+               </p> <a name="GUID-682DCD24-367C-40E5-8E3B-8522E4A31A96"></a><dl>
+                  <dt><a name="GUID-FBF2324F-4913-40A2-B9BE-779A2B4F4F75"></a><span class="term"><a name="GUID-D02B5073-D66D-4416-82C3-03437FC2507A"></a>引擎</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-806D41CA-5F69-4AD7-9868-794DF23EB09A"></a>视口中用于 Substance 纹理的当前渲染引擎。从下拉列表中选择引擎；选项有“硬件渲染”和“软件渲染”。如果您的计算机支持硬件渲染，更改 Substance 参数（如“随机种子”）时会获得更快的响应。 
+                        <div><a name="GUID-C57592AB-B84A-4912-A58F-A5247B37E0F8"></a><div class="note-note"><span class="label label-target-language">注意:</span>此选项不受“在视口中显示软件贴图”/“在视口中显示硬件贴图”的“材质编辑器”设置的影响。 
+                           </div>
+                        </div> 
+                        <p><a name="GUID-677FD405-AFF8-4873-AF79-128249174653"></a>更改“引擎”设置时，系统会提示您重新启动 <span class="charspan-msgph">3ds Max</span>。此后，该引擎将对所有 Substance 纹理一直保持有效，直到您下次更改引擎并重新启动软件。 
+                        </p>
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-898B6FB4-04FC-4E6E-923D-A2BFDC735304"></a><p class="title"><a name="GUID-1C787EB7-B730-4745-9C57-3574308FF107"></a>“全局纹理设置”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF1012258B129B19ADD01-79F3"></a><span class="term"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79F2"></a>宽度/高度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79F1"></a> 
+                           <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79F0"></a>场景中所有 Substance 纹理的基本输出分辨率，受每个单独纹理的“<span class="char_link"><a href="GUID-D98A5D87-EFF1-45DD-8132-69B86FB8454E.htm#WS1A9193826455F5FF1012258B129B19ADD01-79F5">纹理大小</a></span>”（本地）设置的更改的影响。更改任何 Substance 的全局设置也会更改场景中所有其他 Substance 的设置。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-CF13D06C-48F2-4127-92C1-8B849F75130E"></a><span class="term"><a name="GUID-E46442CD-2C54-4399-8B38-BE03B38C4CC8"></a>预览分辨率</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-ADF540E5-B555-4B76-99D4-F4B200CDA5DF"></a> 为仅在“材质编辑器”和视口中渲染 Substance 贴图，对该贴图应用的倍增。此倍增不会应用于最终渲染输出。 
+                           <p><a name="GUID-793DC351-B967-4273-BE40-40D9EC88A34D"></a>为了在编辑场景和材质时更快地获得反馈，请使用一个较低的值。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A08"></a> 
+               <h3><a name="GUID-8C52985A-BB86-4D24-87F1-49A201AE3E6C"></a> “Substance 程序包浏览器”卷展栏
+               </h3> <a name="WS73099CC142F4875525E8C7E5129B19AABD9-7887"></a><div class="figure-anchor"><img src="../images/GUID-CE14D3A6-DEC0-491F-849E-EC9CCF4C54B6-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A07"></a>Substance 文件有时称作“程序包”，因为它可以包含多个纹理定义。使用这些设置可以打开和重新加载 Substance 文件，当文件包含多个定义时，可以选择要使用的定义。 
+               </p> <a name="GUID-AF53BD3A-565C-493F-BD24-8A87A916F085"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A06"></a><span class="term"><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A05"></a>加载 Substance</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A04"></a> 
+                        <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A03"></a>打开“查找 Substance 文件”浏览器对话框。使用该对话框可以打开 Substance 文件。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7210"></a>有关所有 Substance 贴图以及采样图像的列表，请参见 <span class="char_link"><a href="GUID-A3BF9358-2A40-4EFD-933D-1DECEFE94F37.htm">Substance 采样</a></span>。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A02"></a>打开文件后，其文件名和活动 Substance 的名称将出现在此按钮上。另外，如果将鼠标光标放在该按钮上，将打开一个显示文件路径的工具提示。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-73A2"></a><div class="note-note"><span class="label label-target-language">注意:</span>打开新的 Substance 文件会重置 Substance 贴图的“参数”面板，但是不会更改其他卷展栏设置。例如，如果您更改纹理大小或平铺数量，在加载其他 Substance 时将保留这些更改。 
+                           </div>
+                        </div> 
+                        <div><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-720F"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果特定 Substance 输出连接到材质输出，然后您在同一贴图中打开没有该输出的其他 Substance 文件，则以前的连接将断开。但是，该连接中的“贴图输出选择器”贴图仍连接到材质输入。 
+                              <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-720E"></a>这种情况的例外是：您将单一输出 Substance（如“Space”或“Noise”贴图之一）加载到有多个输出连接到一个材质的贴图。<em class="mild"></em><em class="mild"></em>在这种情况下，单一输出连接到以前连接的所有材质输入。 
+                              </p> 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A01"></a><span class="term"><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A00"></a>重新加载</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79FF"></a> 
+                        <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79FE"></a>再次从 Substance 定义文件加载 Substance。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF1012258B129B19ADD01-79FD"></a><div class="note-note"><span class="label label-target-language">注意:</span>重新加载 Substance 不会更改参数值。要将 Substance 重置为其默认值，请用“单击以浏览”按钮重新打开文件。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF1012258B129B19ADD01-79FC"></a><span class="term"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79FB"></a>包括 Substance 图形</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79FA"></a> 
+                        <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79F9"></a>使用此下拉列表可以从包含多个定义的程序包中选择要使用的 Substance 定义。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF1012258B129B19ADD01-79F8"></a><div class="note-note"><span class="label label-target-language">注意:</span>此版本的 Substance 中没有包含多个图形的程序包。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-413441C2-1F73-48FD-A2EC-05240B210A60"></a><span class="term"><a name="GUID-45C88F60-92DC-4DA3-B4CB-05F91035CE8B"></a>从市场获取 Substance</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-A4F6CA87-C815-4D54-85CE-4EE20FA9358F"></a>在默认浏览器中打开 Allegorithmic 网站。浏览网站以查找有用的产品和附加模块。
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79F5"></a> 
+               <h3><a name="GUID-4F605426-B5DD-47B6-9175-BFE376A3FC36"></a>“纹理大小”卷展栏
+               </h3> <a name="WS73099CC142F4875525E8C7E5129B19AABD9-7885"></a><div class="figure-anchor"><img src="../images/GUID-67D95EFD-E2FD-4877-822F-613FBFA23BA9-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79F4"></a>这些设置仅影响当前纹理的输出分辨率。您可以基于<span class="char_link"><a href="GUID-D98A5D87-EFF1-45DD-8132-69B86FB8454E.htm#WS1A9193826455F5FF1012258B129B19ADD01-79F2">全局大小</a></span>（相对）来设置当前纹理的分辨率，或者独立于全局大小设置分辨率。使用此卷展栏可选择一个选项，并设置当前单个 Substance 的尺寸。较高的“纹理大小”设置产生外观较好的纹理，但是渲染花费的时间较长。 
+               </p> <a name="GUID-52F3708B-E433-4626-A35C-2DEEE3FAC194"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF1012258B129B19ADD01-79EE"></a><span class="term"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79ED"></a>锁定纵横比</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79EC"></a> 
+                        <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79EB"></a>当启用时，此卷展栏上只有“宽度”设置是可用的；更改“宽度”设置也会更改“高度”值以保持当前的纵横比。 
+                        </p> 
+                        <div><a name="GUID-6A8520C7-FE15-4D6B-B37D-6547BDBA7D4C"></a><div class="note-note"><span class="label label-target-language">注意:</span>此开关不影响全局大小；可以通过选择不同的“全局纹理宽度”和“全局纹理高度”设置来更改纵横比。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF1012258B129B19ADD01-79E4"></a><span class="term"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79E3"></a>相对/绝对</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79E2"></a> 
+                        <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79E1"></a>当选择“相对”时，“宽度”和“高度”设置作为全局尺寸的倍增。例如，如果“全局纹理宽度”和“全局纹理高度”都设置为“512”并将“相对高度”和“相对宽度”都设置为“x2”，则该纹理的渲染输出分辨率为 1024 x 1024。这样，您可以在全局级别设置基线分辨率，然后再对每个单独的
+                           Substance 贴图设置“相对”倍增来更改此基线分辨率。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79E0"></a>当选择“绝对”时，“宽度”和“高度”设置确定输出分辨率，与全局设置无关。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79DF"></a>对于任一选项，从下拉列表中选择“宽度”和“高度”设置。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF1012258B129B19ADD01-79E8"></a><span class="term"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79E7"></a>当前纹理分辨率</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79E6"></a> 
+                        <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79E5"></a>此只读字段根据从全局和局部“纹理大小”设置的计算，显示实际输出分辨率。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79F7"></a> 
+               <h3><a name="GUID-946A7391-C89B-4FED-AD8B-CB5AA242CB13"></a> “信息”卷展栏
+               </h3> <a name="WS73099CC142F4875525E8C7E5129B19AABD9-7886"></a><div class="figure-anchor"><img src="../images/GUID-F94725EF-F97C-45FC-9F37-32B75168E497-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79F6"></a>该只读卷展栏显示 Substance 软件的当前版本、分辨率设置和当前程序包的说明（如果作者提供该说明）。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79D5"></a> 
+               <h3><a name="GUID-CCDB4E93-6844-4828-9686-EEE7157780F5"></a> “坐标”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79D4"></a>这是 <span class="charspan-msgph">3ds Max</span> 中用于 2D 纹理的标准“坐标”卷展栏；有关详细信息，请参见<span class="char_link"><a href="GUID-8AE3643F-BDB4-498B-B220-92646FC8A562.htm">“坐标”卷展栏 (2D)</a></span>。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79D2"></a> 
+               <h3><a name="GUID-55E60E21-D4E0-4B8A-8510-5223C9CE086C"></a> “噪波”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-79D1"></a>这是 <span class="charspan-msgph">3ds Max</span> 中用于 2D 纹理的标准“噪波”卷展栏；有关详细信息，请参见<span class="char_link"><a href="GUID-4CE6DC34-D41A-4256-9FB5-67DE9E2493C4.htm">“噪波”卷展栏 (2D)</a></span>。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FF1012258B129B19ADD01-79CF"></a> 
+               <h3><a name="GUID-4CF8B623-3C29-4345-9611-C3CF7D78F43B"></a>[纹理]“参数”卷展栏
+               </h3> <a name="WS73099CC142F4875525E8C7E5129B19AABD9-7884"></a><div class="figure-anchor"><img src="../images/GUID-3B8263CF-EBD4-49D3-8A24-4B075A692461-low.png"></div>  
+               <p><a name="WS73099CC142F4875525E8C7E5129B19AABD9-7883"></a>每个 Substance 纹理都有自己的参数集，其中一些参数对于大多数纹理是公用的，如“随机种子”。大多数参数在工具提示中提供了名称和简短说明，如上图所示。除非另有指定，否则大多数参数的可用值范围为 0.0 到 1.0。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-7AE6"></a>此卷展栏中需要特别注意的是“安全平衡”设置，该设置可用于置换网格的所有 Substance 贴图。通过“安全平衡”，可以调整“凹凸”和“置换”输出之间的权重。有关详细信息，请参见 <span class="char_link"><a href="GUID-D98A5D87-EFF1-45DD-8132-69B86FB8454E.htm#WS1A9193826455F5FF-29A01C2129CC3210CE-7F1D">Substance 和置换</a></span>。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF-29A01C2129CC3210CE-73A1"></a>另一个重要的设置是上述的“随机种子”参数，该设置也是大多数 Substance 的公用设置。更改该值会完全更改纹理的细节，同时保持相同的总体外观不变。通过使用不同的“随机种子”值，可以在生成材质的自然变化的同时，将相同的纹理应用到场景的不同部分。
+                  
+               </p> <a name="WS1A9193826455F5FF-29A01C2129CC3210CE-720D"></a><div class="figure-anchor"><img src="../images/GUID-C6B75A92-15CD-4C16-ADD5-0D829AB8DD08-low.png"></div>  
+               <p><a name="GUID-43EAF4BA-7AE4-44B6-A55A-CC6D6749CF8C"></a> <em class="strong">左：随机种子 = 0 的 Old_Painted_Planks 纹理</em> 
+               </p> 
+               <p><a name="GUID-3604835E-C405-4E35-B704-C82732475007"></a> <em class="strong">右：随机种子 = 1 的 Old_Painted_Planks 纹理</em> 
+               </p> 
+            </div> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-CDB5CF14-CBC9-482D-A56B-04A7FCF12884.htm">“贴图输出选择器”贴图</a><p>“贴图输出选择器”贴图是多输出贴图（如 Substance）和它连接到的材质之间的必需中介。它的主要功能是告诉材质将使用哪个贴图输出。 </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

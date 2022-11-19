@@ -1,0 +1,1308 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-CB9141FC-2D52-4EDA-8F78-2351AB53B31B">
+      <meta name="description" content="OSL 类别的明暗器（贴图）中包含多个常规明暗器以及一些子类别。">
+      <meta name="indexterm" content="OSL: 贴图">
+      <meta name="indexterm" content="OSL: 明暗器">
+      <meta name="indexterm" content="OSL: 类别">
+      <meta name="topic-type" content="concept">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="using">
+      <title>安装 OSL 明暗器（贴图）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-CB9141FC-2D52-4EDA-8F78-2351AB53B31B"></a><div class="head">
+            <h1>安装 OSL 明暗器（贴图）</h1>
+         </div>
+         <p class="blurb">OSL 类别的明暗器（贴图）中包含多个常规明暗器以及一些子类别。 
+            
+         </p>
+         <p> 
+            <div><a name="GUID-DAF93624-05F9-4C3B-A634-6F2E6192B425"></a><div class="note-tip"><span class="label label-target-language">提示</span>浏览 OSL 明暗器时，请记住，您可以在界面顶部找到简短说明。 
+                  		
+               </div>
+            </div> 
+         </p>
+         <p> 
+            <p class="table-title">常规 OSL 明暗器</p><a name="TABLE_45028FCACD854EAEAF784DFE94517FDA"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="28.57142857142857%">
+                     <col width="71.42857142857143%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">Shader name 
+                        		  
+                     </th>
+                     <th class="table-heading">说明 
+                        		  
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">4 点渐变 
+                        		  
+                     </td>
+                     <td class="table-body">基于 4 个位置（如左上、右下等）生成渐变。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">高级木材 
+                        		  
+                     </td>
+                     <td class="table-body">将<span class="char_link"><a href="GUID-08A43355-BF9E-4F95-A24D-1549F9476F57.htm">高级木材</a></span>贴图作为 OSL 明暗器实现。视口中的表示与渲染匹配。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Bitmap Lookup 
+                        		  
+                     </td>
+                     <td class="table-body">通过 OpenImageIO 在 UV 坐标中查找位图。对查找和加载 UDIM 非常有用，能够在视口中查看所有纹理。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">位图随机平铺 
+                        		  
+                     </td>
+                     <td class="table-body">从 UV 坐标查找位图并修改每个重复项，以便平铺不太明显。该明暗器有一种模式，可以正确变换法线贴图。它输出修改后的 UV，使其能够连接到其他位图查找明暗器，以便您可以应用相同的随机度。此外，它还输出“随机索引”本身以驱动下游的同步修改。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Color Correction 
+                        		  
+                     </td>
+                     <td class="table-body">多阶段颜色校正，包括通道重映射、色调范围限制和三色调颜色染色。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Curves (color) 
+                        		  
+                     </td>
+                     <td class="table-body">使用任意曲线变换输入，可用于渐变或用作颜色校正工具。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Curves (float) 
+                        		  
+                     </td>
+                     <td class="table-body">将传入的浮点值变换为曲线定义的传出值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Lift/Gamma/Gain 
+                        		  
+                     </td>
+                     <td class="table-body">简单的提升/Gamma/增益颜色修改器。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Noise 
+                        		  
+                     </td>
+                     <td class="table-body">生成高级噪波。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Noise (3D) 
+                        		  
+                     </td>
+                     <td class="table-body">在 3D 中生成更高级的噪波，适用于颜色、向量或各个分量输出。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Noise (Gabor) 
+                        		  
+                     </td>
+                     <td class="table-body">生成 Gabor 噪波，并显示其特定选项。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Randomized Bitmaps 
+                        		  
+                     </td>
+                     <td class="table-body">随机地将一组位图放置在其他内容之上（并进行 Alpha 混合）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Simple Gradient 
+                        		  
+                     </td>
+                     <td class="table-body">使用六个输入生成渐变。如果需要，可以编辑代码以添加更多输入。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Tri-tone 
+                        		  
+                     </td>
+                     <td class="table-body">颜色使用高光/中间调/阴影校正输入颜色。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Tweak/Levels 
+                        		  
+                     </td>
+                     <td class="table-body">调整颜色。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">UberBitmap 
+                        		  
+                     </td>
+                     <td class="table-body">通过 OpenImageIO 加载位图。在单片版本中包含 UVW 通道和变换。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">UberNoise 
+                        		  
+                     </td>
+                     <td class="table-body">添加复杂类型的噪波，例如 Perlin、分形、单元、fBm 和 Worley。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">线框 
+                        		  
+                     </td>
+                     <td class="table-body">使用相对于渲染像素的固定宽度创建线框，在 UV 空间中每 1x1 单位方形构成一个正方形。 
+                        			 
+                        <div><a name="GUID-CC73CB25-5F51-43F7-96E7-63F2D3199116"></a><div class="note-tip"><span class="label label-target-language">提示</span>与 UVW 贴图一起使用，并设置为“面贴图”以获得经典线框外观。 
+                              			 
+                           </div>
+                        </div> 
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+            <p class="table-title">合成 OSL 明暗器</p><a name="TABLE_D4E0F01FAA1A419982E318842B8B783B"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="28.57142857142857%">
+                     <col width="71.42857142857143%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">Shader name 
+                        		  
+                     </th>
+                     <th class="table-heading">说明 
+                        		  
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Color Key	 
+                        		  
+                     </td>
+                     <td class="table-body">简单的颜色关键点明暗器，适用于粗糙的绿色/蓝色屏幕关键点。可以在 UV 空间中进行简单的边截止，并在需要时应用垃圾遮罩。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Composite 
+                        		  
+                     </td>
+                     <td class="table-body">Alpha 合成，即在一种颜色之上合成另一种颜色。 
+                        		  
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+            <p class="table-title">环境 OSL 明暗器</p><a name="TABLE_8CC42D0725854DDA8CD0AFD7791CE3E4"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="28.57142857142857%">
+                     <col width="71.42857142857143%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">Shader name 
+                        		  
+                     </th>
+                     <th class="table-heading">说明 
+                        		  
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Environment/Background Switcher 
+                        		  
+                     </td>
+                     <td class="table-body"> 将一个贴图用作背景，将另一个贴图用作环境贴图，以提供环境反射。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">HDRI Environment 
+                        		  
+                     </td>
+                     <td class="table-body">控制视口和最终渲染中环境的定位和最终外观。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">HDRI Lights 
+                        		  
+                     </td>
+                     <td class="table-body">放置真实世界光源的 HDR 照片，这些光源可动态更新场景。 
+                        		  
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+            <p class="table-title">数学 OSL 明暗器</p><a name="TABLE_F349672FC4294C479CBEFC87636D94AE"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="19.516728624535315%">
+                     <col width="27.509293680297393%">
+                     <col width="52.973977695167285%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">子类型 
+                        		  
+                     </th>
+                     <th class="table-heading">Shader name 
+                        		  
+                     </th>
+                     <th class="table-heading">说明 
+                        		  
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body" rowspan="16">颜色 
+                        		  
+                     </td>
+                     <td class="table-body">Add (color) 
+                        		  
+                     </td>
+                     <td class="table-body">将两种颜色相加，并可选择进行缩放。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Clamp (color) 
+                        		  
+                     </td>
+                     <td class="table-body">钳制颜色。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Color Space 
+                        		  
+                     </td>
+                     <td class="table-body">转换 RGB/HSV/YIQ/XYZ/xyY。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Components (color) 
+                        		  
+                     </td>
+                     <td class="table-body">用于合并或拆分分量的实用程序。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Divide (color) 
+                        		  
+                     </td>
+                     <td class="table-body">将两种颜色相除。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Interpolate (color) 
+                        		  
+                     </td>
+                     <td class="table-body">基于第三种颜色对两种颜色进行插值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Invert (color) 
+                        		  
+                     </td>
+                     <td class="table-body">反转（补充）颜色编号（1-输入）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Max (color) 
+                        		  
+                     </td>
+                     <td class="table-body">返回两种颜色的最大值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Min (color) 
+                        		  
+                     </td>
+                     <td class="table-body">返回两种颜色的最小值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">混合（颜色） 
+                        		  
+                     </td>
+                     <td class="table-body">基于浮点混合两种颜色。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">多重混合（颜色） 
+                        		  
+                     </td>
+                     <td class="table-body">混合由单个“混合”输入驱动的多对颜色输入。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Multiply (color) 
+                        		  
+                     </td>
+                     <td class="table-body">将两种颜色相乘。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Random by Index (color) 
+                        		  
+                     </td>
+                     <td class="table-body">根据输入的整数索引，返回随机颜色。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">比例（颜色） 
+                        		  
+                     </td>
+                     <td class="table-body">将颜色乘以浮点。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">SmoothStep (color) 
+                        		  
+                     </td>
+                     <td class="table-body">两个边界之间的平滑步长函数。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Subtract (color) 
+                        		  
+                     </td>
+                     <td class="table-body">减去两种颜色，并可选择进行缩放。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body" rowspan="31">浮动 
+                        		  
+                     </td>
+                     <td class="table-body">Abs 
+                        		  
+                     </td>
+                     <td class="table-body">浮点数的绝对值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">ACos 
+                        		  
+                     </td>
+                     <td class="table-body">浮点数的反余弦（以弧度为单位）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">添加 
+                        		  
+                     </td>
+                     <td class="table-body">将两个浮点数相加 (A+B)。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">角度 
+                        		  
+                     </td>
+                     <td class="table-body">2D 向量的角度（以弧度为单位）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">ASin 
+                        		  
+                     </td>
+                     <td class="table-body">浮点数的反正弦（以弧度为单位）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">ATan 
+                        		  
+                     </td>
+                     <td class="table-body">浮点数的反正切（以弧度为单位）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Clamp 
+                        		  
+                     </td>
+                     <td class="table-body">钳制浮点。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Complement 
+                        		  
+                     </td>
+                     <td class="table-body">补充浮点数（1-输入）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Cos 
+                        		  
+                     </td>
+                     <td class="table-body">角度的余弦值（以弧度为单位）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Degrees to Radians 
+                        		  
+                     </td>
+                     <td class="table-body">将度数转换为弧度。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">	Divide 
+                        		  
+                     </td>
+                     <td class="table-body">将两个浮点数相除 (A/B)。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Exp 
+                        		  
+                     </td>
+                     <td class="table-body">计算 e<sup>x</sup>。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Float to Int 
+                        		  
+                     </td>
+                     <td class="table-body">将浮点数转换为整数。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Interpolate 
+                        		  
+                     </td>
+                     <td class="table-body">基于第三个浮点数对两个浮点数进行插值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">对数 
+                        		  
+                     </td>
+                     <td class="table-body">计算 log<sub>e</sub>x。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">LogX 
+                        		  
+                     </td>
+                     <td class="table-body">计算 log<sub>base</sub>x。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Maximum 
+                        		  
+                     </td>
+                     <td class="table-body">返回两个浮点数的最大值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Minimum 
+                        		  
+                     </td>
+                     <td class="table-body">返回两个浮点数的最小值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Modulo 
+                        		  
+                     </td>
+                     <td class="table-body">在两个浮点数之间求模（除法的余数）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Multiply 
+                        		  
+                     </td>
+                     <td class="table-body">将两个浮点数相乘 (A*B)。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Negate 
+                        		  
+                     </td>
+                     <td class="table-body">对浮点数求反（-输入）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Power 
+                        		  
+                     </td>
+                     <td class="table-body">求解一个浮点数为底、另一个浮点数为指数的幂 (A<sup>B</sup>)。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Radians to Degrees 
+                        		  
+                     </td>
+                     <td class="table-body">将弧度转换为度数。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Random by Index 
+                        		  
+                     </td>
+                     <td class="table-body">根据输入的整数索引，返回随机浮点数。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Range/Remapper 
+                        		  
+                     </td>
+                     <td class="table-body">将一个范围的浮点数映射到另一个范围的浮点数。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Reciprocal 
+                        		  
+                     </td>
+                     <td class="table-body">浮点数的倒数（1.0/输入）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Sin 
+                        		  
+                     </td>
+                     <td class="table-body">角度的正弦值（以弧度为单位）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">SmoothStep 
+                        		  
+                     </td>
+                     <td class="table-body">两个边界之间的平滑步长函数。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Square Root 
+                        		  
+                     </td>
+                     <td class="table-body">计算平方根。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Subtract 
+                        		  
+                     </td>
+                     <td class="table-body">减去两个浮点数。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Tan 
+                        		  
+                     </td>
+                     <td class="table-body">角度的正切值（以弧度为单位）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body" rowspan="16">向量 
+                        		  
+                     </td>
+                     <td class="table-body">添加矢量 
+                        		  
+                     </td>
+                     <td class="table-body">将两个向量相加，并可选择进行缩放。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Components (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">用于合并或拆分向量分量的实用程序。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Cross Product (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">两个向量之间的叉积。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Distance (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">两点之间的距离。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Divide (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">将两个向量相除。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Dot Product (vector)	 
+                        		  
+                     </td>
+                     <td class="table-body">两个向量之间的点积。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Invert (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">反转向量。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Length (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">向量的长度。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Max (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">返回两个向量的最大值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Min (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">返回两个向量的最小值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">混合（向量） 
+                        		  
+                     </td>
+                     <td class="table-body">基于浮点混合两个向量。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Multiply (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">将两个向量相乘。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Normalize (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">规格化向量。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Random by Index (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">根据输入的整数索引，返回随机向量。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">比例（向量） 
+                        		  
+                     </td>
+                     <td class="table-body">将向量乘以浮点。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Subtract (vector) 
+                        		  
+                     </td>
+                     <td class="table-body">减去两个向量，并可选择进行缩放。 
+                        		  
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+            <p class="table-title">投影 OSL 明暗器</p><a name="TABLE_46D31E44717B459BAFEAF36D78E6FB84"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="28.57142857142857%">
+                     <col width="71.42857142857143%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">Shader name 
+                        		  
+                     </th>
+                     <th class="table-heading">说明 
+                        		  
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">照相机投影 
+                        		  
+                     </td>
+                     <td class="table-body">从摄影机投影。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Object Projection 
+                        		  
+                     </td>
+                     <td class="table-body">在选定对象的空间中投影纹理。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Spherical Projection 
+                        		  
+                     </td>
+                     <td class="table-body">在选定对象的空间中以球形方式投影纹理。 
+                        		  
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+            <p class="table-title">场景属性 OSL 明暗器</p><a name="TABLE_11099B5548C64A70A231E1AFC8CCDFEE"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="28.57142857142857%">
+                     <col width="71.42857142857143%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">Shader name 
+                        		  
+                     </th>
+                     <th class="table-heading">说明 
+                        		  
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Frame Number 
+                        		  
+                     </td>
+                     <td class="table-body">返回当前帧编号。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Material ID 
+                        		  
+                     </td>
+                     <td class="table-body">以颜色或数字形式返回材质 ID（或表示粒子的粒子 ID）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Named Attribute 
+                        		  
+                     </td>
+                     <td class="table-body">返回任何命名属性，以及用户定义的基于对象的属性。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Node Handle 
+                        		  
+                     </td>
+                     <td class="table-body">以数字形式返回节点控制柄。适用于驱动基于对象的随机化器。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Node Name/Hash 
+                        		  
+                     </td>
+                     <td class="table-body">返回节点名称或其哈希值以供随机化使用。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">法线 
+                        		  
+                     </td>
+                     <td class="table-body">返回指定坐标空间中的法线。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">ObjectID 
+                        		  
+                     </td>
+                     <td class="table-body">以颜色或数字形式返回在“对象属性”对话框中设置的对象 ID。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Particle Age 
+                        		  
+                     </td>
+                     <td class="table-body">返回规格化粒子年龄。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Time (seconds) 
+                        		  
+                     </td>
+                     <td class="table-body">返回当前时间（以秒为单位）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Wire Color 
+                        		  
+                     </td>
+                     <td class="table-body">返回线框颜色。 
+                        		  
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+            <p class="table-title">切换器 OSL 明暗器</p><a name="TABLE_1AC088EE9AF14536B5B75EEE56EE4ABA"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="28.57142857142857%">
+                     <col width="71.42857142857143%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">Shader name 
+                        		  
+                     </th>
+                     <th class="table-heading">说明 
+                        		  
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">第 1 个（共 N 个）（颜色） 
+                        		  
+                     </td>
+                     <td class="table-body">拾取众多输入之一。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">1/N（文件名） 
+                        		  
+                     </td>
+                     <td class="table-body">拾取众多输入之一。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">1/N（浮点） 
+                        		  
+                     </td>
+                     <td class="table-body">拾取众多输入之一。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Compare 
+                        		  
+                     </td>
+                     <td class="table-body">返回不同的颜色/浮点数，具体取决于两个值彼此之间是小于、等于还是大于的关系。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Greater Than 
+                        		  
+                     </td>
+                     <td class="table-body">对于大于或不大于的值，返回两种不同的颜色。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Random Index by Number/Color 
+                        		  
+                     </td>
+                     <td class="table-body">根据输入的数字或颜色，返回随机索引。 
+                        		  
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+            <p class="table-title">纹理 OSL 明暗器</p><a name="TABLE_20006DAF894A4F7EBB2776FC6AB340EA"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="28.57142857142857%">
+                     <col width="71.42857142857143%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">Shader name 
+                        		  
+                     </th>
+                     <th class="table-heading">说明 
+                        		  
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Candy 
+                        		  
+                     </td>
+                     <td class="table-body">使用随机颜色和可旋转凹凸输出创建随机圆。适用于随机点或糖果粉末。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Checker 
+                        		  
+                     </td>
+                     <td class="table-body">创建简单的棋盘。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Digits 
+                        		  
+                     </td>
+                     <td class="table-body">模拟 7 段数字显示。适用于在 SME 中调试和显示数字。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Halftone Dots 
+                        		  
+                     </td>
+                     <td class="table-body">半色调点可以很好地与卡通明暗器配合使用。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Mandelbrot 
+                        		  
+                     </td>
+                     <td class="table-body">生成 4D mandelbrot/julia 集。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Rivets 
+                        		  
+                     </td>
+                     <td class="table-body">沿 1x1 正方形的 UV 空间边缘添加铆钉。可以弯曲正方形以使其不均匀。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Simple Tiles 
+                        		  
+                     </td>
+                     <td class="table-body">生成各种类型的平铺。“平铺偏移”可修改布局的基本参数，并可以生成不同的效果。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Threads 
+                        		  
+                     </td>
+                     <td class="table-body">在螺栓上生成螺纹。以凹凸或置换的形式应用于圆柱体。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Toon Width 
+                        		  
+                     </td>
+                     <td class="table-body">卡通边宽度基于在转换为屏幕空间时曲面法线与给定方向的接近程度。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Weave 
+                        		  
+                     </td>
+                     <td class="table-body">生成简单的螺纹状编织。适用于从布料到碳纤维等各种对象。 
+                        		  
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+            <p class="table-title">实用程序 OSL 明暗器</p><a name="TABLE_DE9BB7DC1329438C976B87FDA6CC41DC"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="28.57142857142857%">
+                     <col width="71.42857142857143%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">Shader name 
+                        		  
+                     </th>
+                     <th class="table-heading">说明 
+                        		  
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Blackbody 
+                        		  
+                     </td>
+                     <td class="table-body">在两个开尔文温度之间调整颜色。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">Falloff 
+                        		  
+                     </td>
+                     <td class="table-body">根据面法线的角度衰减，生成从白色到黑色的值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">PBR 混合器 
+                        		  
+                     </td>
+                     <td class="table-body">混合两组 PBR 材质的所有参数。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">高光反射/光泽到物理 
+                        		  
+                     </td>
+                     <td class="table-body">从高光反射/光泽 PBR 明暗器输入高光反射和光泽度贴图。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Waveform (animated) 
+                        		  
+                     </td>
+                     <td class="table-body">生成各种动画波形。输出波是波形的原始值，以及两种颜色之间的解释。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">WaveLength 
+                        		  
+                     </td>
+                     <td class="table-body">在灯光的两个波长之间调整颜色。 
+                        		  
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+            <p class="table-title">UVW OSL 明暗器</p><a name="TABLE_1C75535CA36E4A2B9A03DD94B2D1EAA6"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="28.57142857142857%">
+                     <col width="71.42857142857143%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">Shader name 
+                        		  
+                     </th>
+                     <th class="table-heading">说明 
+                        		  
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Named Coord Space 
+                        		  
+                     </td>
+                     <td class="table-body">转换到命名的坐标系。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">UVW Channel 
+                        		  
+                     </td>
+                     <td class="table-body">从 3ds Max 贴图通道返回 UVW 坐标。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">UVW Environment 
+                        		  
+                     </td>
+                     <td class="table-body">环境贴图。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">UVW MatCap 
+                        		  
+                     </td>
+                     <td class="table-body">生成 MatCap UV 坐标。连接到包含 MatCap 材质球体图像的位图查找。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">UVW Object Space 
+                        		  
+                     </td>
+                     <td class="table-body">返回对象空间坐标。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">UVW Row Offset 
+                        		  
+                     </td>
+                     <td class="table-body">在 U 方向上偏移 UVW 坐标的每一行。允许您创建堆叠砖等效果。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">UVW Transform 
+                        		  
+                     </td>
+                     <td class="table-body">对 UVW 坐标进行缩放、平铺和旋转。 
+                        		  
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+            <p class="table-title">值 OSL 明暗器</p><a name="TABLE_B8FBAA9DF16E4FED95D15A15E909836D"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col width="28.57142857142857%">
+                     <col width="71.42857142857143%">
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">Shader name 
+                        		  
+                     </th>
+                     <th class="table-heading">说明 
+                        		  
+                     </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">颜色 
+                        		  
+                     </td>
+                     <td class="table-body">返回一个颜色值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">File Name 
+                        		  
+                     </td>
+                     <td class="table-body">返回一个文件名。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">浮动 
+                        		  
+                     </td>
+                     <td class="table-body">返回一个浮点值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">整数 
+                        		  
+                     </td>
+                     <td class="table-body">返回一个整数值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">Numbered File Name 
+                        		  
+                     </td>
+                     <td class="table-body">将 4 位数字附加到文件名（用于图像序列）。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">字符串 
+                        		  
+                     </td>
+                     <td class="table-body">返回一个字符串值。 
+                        		  
+                     </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">向量值 
+                        		  
+                     </td>
+                     <td class="table-body">返回一个向量值。 
+                        		  
+                     </td>
+                  </tr>
+               </table>
+            </div> 
+         </p>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

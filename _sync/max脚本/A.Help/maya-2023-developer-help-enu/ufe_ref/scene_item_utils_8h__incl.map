@@ -1,0 +1,17 @@
+<map id="include/ufe/sceneItemUtils.h" name="include/ufe/sceneItemUtils.h">
+<area shape="rect" id="node2" href="$scene_item_8h.html" title="sceneItem.h" alt="" coords="1220,304,1313,331"/>
+<area shape="rect" id="node13" href="$attributes_8h.html" title="attributes.h" alt="" coords="1017,80,1103,107"/>
+<area shape="rect" id="node3" href="$path_8h.html" title="path.h" alt="" coords="1421,379,1480,405"/>
+<area shape="rect" id="node4" href="$path_segment_8h.html" title="pathSegment.h" alt="" coords="1409,453,1517,480"/>
+<area shape="rect" id="node5" href="$rtid_8h.html" title="rtid.h" alt="" coords="1459,528,1511,555"/>
+<area shape="rect" id="node8" href="$path_component_8h.html" title="pathComponent.h" alt="" coords="1211,528,1333,555"/>
+<area shape="rect" id="node6" href="$ufe_8h.html" title="ufe.h" alt="" coords="975,677,1025,704"/>
+<area shape="rect" id="node9" href="$ufe_export_8h.html" title="Definition of macros for symbol visibility. " alt="" coords="455,603,598,629"/>
+<area shape="rect" id="node14" href="$attribute_8h.html" title="attribute.h" alt="" coords="590,155,671,181"/>
+<area shape="rect" id="node15" href="$observer_8h.html" title="observer.h" alt="" coords="615,453,699,480"/>
+<area shape="rect" id="node23" href="$attributes_notification_8h.html" title="attributesNotification.h" alt="" coords="985,304,1135,331"/>
+<area shape="rect" id="node16" href="$types_8h.html" title="types.h" alt="" coords="175,229,239,256"/>
+<area shape="rect" id="node19" href="$undoable_command_8h.html" title="undoableCommand.h" alt="" coords="518,229,661,256"/>
+<area shape="rect" id="node22" href="$value_8h.html" title="value.h" alt="" coords="716,528,780,555"/>
+<area shape="rect" id="node24" href="$notification_8h.html" title="notification.h" alt="" coords="838,379,933,405"/>
+</map>

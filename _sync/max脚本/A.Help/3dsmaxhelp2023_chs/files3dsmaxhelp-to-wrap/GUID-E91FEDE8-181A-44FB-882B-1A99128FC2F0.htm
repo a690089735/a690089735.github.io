@@ -1,0 +1,136 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-E91FEDE8-181A-44FB-882B-1A99128FC2F0">
+      <meta name="description" content="用于构造包含多条样条线的扫描对象的父图形。">
+      <meta name="topic-type" content="concept">
+      <title>“构建新父图形”对话框</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-E91FEDE8-181A-44FB-882B-1A99128FC2F0"></a><div class="head">
+            <h1>“构建新父图形”对话框</h1>
+         </div>
+         <p class="blurb">用于构造包含多条样条线的扫描对象的父图形。 
+            
+         </p><a name="UL_0E6E7E8B8A894BC080CC9F2436DA06C8"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-7DE4327C-A05E-4336-A3C1-2A27743FB845">“Civil View”菜单  <img src="../images/ac.menuaro.gif"> “扫描对象样式编辑器” <img src="../images/ac.menuaro.gif"> “扫描对象样式(SOS)编辑器”对话框  <img src="../images/ac.menuaro.gif">  单击“创建多样条线父图形” <img src="../images/ac.menuaro.gif"> “构建新父图形”对话框</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-3820343D-5D6A-4851-8473-23B4D222DF0E">Civil View 浏览器  <img src="../images/ac.menuaro.gif">  上部面板  <img src="../images/ac.menuaro.gif"> “Civil View 对象”分支  <img src="../images/ac.menuaro.gif"> “其他对象”分支  <img src="../images/ac.menuaro.gif">  右键单击“扫描对象”条目。 <img src="../images/ac.menuaro.gif">  弹出菜单  <img src="../images/ac.menuaro.gif"> “创建扫描对象” <img src="../images/ac.menuaro.gif"> “扫描对象样式(SOS)编辑器”对话框  <img src="../images/ac.menuaro.gif">  单击“创建多样条线父图形” <img src="../images/ac.menuaro.gif"> “构建新父图形”对话框</span> 
+            </li>
+         </ul>
+         <p><a name="GUID-19A2DBEE-12AD-44BD-9F15-6DCA33AEC7A2"></a>使用此对话框可手动构造多样条线父图形或从现有父图形的一小部分中选择父图形。 
+            	 
+         </p><a name="UL_9772A096D1BB4CD08C4C5B8051209744"></a><ul>
+            <li>对于包括跨度曲面的扫描对象，对象的每一面都应由单个图形对象中的其中一条样条线表示。 
+               		  
+               <p><a name="GUID-A07D6B82-7F48-4222-8F9C-96CE8C381781"></a>例如，桥面的合适父图形对象要包含两条样条线：一条用于左侧车道边的路径，一条用于右侧车道边的路径。可以使用此对话框来构造这些包含多条样条线的图形。 
+                  		  
+               </p> 
+            </li>
+            <li> 
+               <p><a name="GUID-7A7455AA-ED8F-4534-975E-658451729F21"></a>也可以使用此对话框来选择现有图形对象的一小部分以接收扫描对象几何体。 
+                  		  
+               </p> 
+            </li>
+         </ul>
+         <div><a name="GUID-30277DCD-596A-4516-942E-E1A26D4BF981"></a><div class="note-tip"><span class="label label-target-language">提示</span>请在 Civil Design 应用程序中创建父图形，而不要在 3ds Max 中创建。这样，在发生设计更改时，扫描对象可以与单个导入的设计要素线有一对一的关系。然后，每当原始设计要素线更改时，可以使用 Civil View“更新”功能来刷新扫描对象几何体。
+               
+               	 
+            </div>
+         </div>
+         <div class="section"><a name="SECTION_7A10530BA9384872979231FC912C5BEB"></a> 
+            <h2><a name="GUID-3D8AF40A-5BE6-425A-9B3F-2BE379B8D4EA"></a>界面
+            </h2> <a name="FIG_7EA4CC19DEE54F8EA44FC11C84B61D8E"></a><div class="figure-anchor"><img src="../images/GUID-7F7E0E60-6A7F-4F08-A2D9-630EE24C54ED-low.png"></div>  <a name="GUID-87BC4078-BD34-4EC6-8AD8-0EE4B6DAC603"></a><dl>
+               <dt><a name="GUID-E044728D-29E6-4211-913D-60FBF307D6AE"></a><span class="term"><a name="GUID-6AD1E8F8-1AA1-4CEC-B3BD-E296C5962E4A"></a>源图形列表</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-2FC47239-8158-4A28-82F1-BFBBB2CA5C22"></a>显示已选择的图形，以及与这些图形相关的信息。
+                  </div>
+               </dd>
+               <dt><a name="GUID-AEB6FA27-6103-4A05-A4F7-FBBFCDC42254"></a><span class="term"><a name="GUID-E0EEC9E2-66DA-4A7A-8937-122D8D455638"></a>添加</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-77E8FCAC-A08F-40B8-B6BA-949EF0D33D6F"></a> 单击可启用此按钮，然后在视口中单击以选择要添加到列表中的图形。 
+                     		
+                     <p><a name="GUID-4994E02A-A41B-4224-B417-E5C31B7B51BB"></a>在“添加”处于活动状态时，可以按 <span class="keyboardEntry">H</span> 键来打开“按名称选择”对话框，从中您可以按名称拾取新样条线。 
+                        		
+                     </p> 
+                     <div><a name="GUID-48BA02C7-F5C6-4462-9334-2D6C61784307"></a><div class="note-tip"><span class="label label-target-language">提示</span>在单击图形前请确保“添加”处于活动状态。否则，您只会选择图形，而不会将其添加到“源图形列表”中。 
+                           		
+                        </div>
+                     </div> 
+                     <p><a name="GUID-7A4C364F-56F1-42A0-B5E1-09E467E7B851"></a>拾取多个图形的惯例是首先拾取最左侧的图形，然后依次拾取到右侧。 
+                        		
+                     </p> 
+                     <p><a name="GUID-39C9C050-FB05-4FF9-8687-C46EAD416945"></a>添加第一个源图形后，“起点桩号”和“终点桩号”微调器将激活，视口中将显示两个<span class="char_link"><a href="GUID-95B344A7-816C-450F-B6C3-BB1D18581702.htm">动态标记对象</a></span>，指示此图形上的选定起始和终点位置。 
+                        		
+                     </p> 
+                     <div><a name="GUID-6D869A0B-110C-4DEE-A74E-C1664773D7FF"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果选定图形对象已包含多条样条线，则在创建新父图形时只会考虑第一条样条线。 
+                           		
+                        </div>
+                     </div>
+                  </div>
+               </dd>
+               <dt><a name="GUID-CF136F5A-B13A-4AD9-9507-2AC803CE0AFC"></a><span class="term"><a name="GUID-C558D72B-CFB9-41DB-B2D6-E176FBA25068"></a>移除</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-CBDD9676-D6F5-4B4E-A8C7-49E0C7C53FBD"></a>单击可移除“源图形列表”中高亮显示的图形。
+                  </div>
+               </dd>
+               <dt><a name="GUID-E9F7DCB2-DCB2-4F55-8C3A-28D89A0C06EC"></a><span class="term"><a name="GUID-4529E627-BF0E-46BF-8DBE-AA3F2890218E"></a>使用独立的桩号?</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-07589E5D-C1BD-428A-AAF4-62658379683E"></a> 
+                     <p><a name="GUID-4AA77AE4-00A0-4FA9-887D-FD9A83904917"></a>会使用“源图形列表”中从第一个图形对象投影的法线选择源图形的多个部分。启用此选项后，可以为列表中的每个图形指定独立的桩号。默认设置为禁用状态。 
+                        		
+                     </p> 
+                     <p><a name="GUID-ECC6493C-0CAC-480F-98CC-7A4A6F769D0F"></a>如果需要构造不对称桥面，启用“使用独立的桩号”非常有用：将此设置与扫描对象“倾斜”参数结合使用。 
+                        		
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-BD64868E-C1F4-463B-9618-8E33F4BA76D0"></a><span class="term"><a name="GUID-9FD7089F-0A09-4339-97BB-844292006086"></a>起点桩号</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-93704CE1-CDC0-4B32-BD18-F728AD8D80AB"></a> 
+                     <p><a name="GUID-6B47F7EF-0E62-4FA9-9626-8DA496F18328"></a>设定<span class="char_link"><a href="GUID-95B344A7-816C-450F-B6C3-BB1D18581702.htm">动态标记对象</a></span>的起点位置，可以让列表中第一个源图形的一小部分包含在新的父图形对象中。 
+                        		
+                     </p> 
+                     <p><a name="GUID-94E16D14-4307-4611-A2C1-8B353F21F20C"></a>当“使用独立的桩号”处于禁用状态时，此微调器中显示的值是指“源图形列表”中第一个图形上的链测长度。此图形称为<em class="mild">主源图形</em>。 
+                        		
+                     </p> <a name="UL_2381CF6E47DB46348A2AA168EC3FC8A9"></a><ul>
+                        <li><em class="strong">“&gt;”按钮</em>单击可通过单击视口中的点交互设定“起点桩号”。 
+                           			 
+                           <p><a name="GUID-9C070104-D5CD-4ACE-91ED-DBA8B23802AD"></a>此方法与 3ds Max <span class="char_link"><a href="GUID-5D55B7A4-6BE4-4A6E-8706-F457E6E305F5.htm">捕捉工具</a></span>结合使用非常有效。 
+                              			 
+                           </p> 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-2B4683D0-9B1F-4B27-A364-10504D4F8BAA"></a><span class="term"><a name="GUID-D0C4C430-DEA9-4B52-965C-55B27EC821AE"></a>终点桩号</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-9083FA84-69E5-462E-BAF5-8B7E73D4A829"></a> 
+                     <p><a name="GUID-7B21F63F-824B-4E7A-9F82-6ECFAD60BA1A"></a>设定<span class="char_link"><a href="GUID-95B344A7-816C-450F-B6C3-BB1D18581702.htm">动态标记对象</a></span>的终点位置，可以让列表中第一个源图形的一小部分包含在新的父图形对象中。 
+                        		
+                     </p> 
+                     <p><a name="GUID-8F874350-F032-4F7C-9152-A74CB29FDC28"></a>当“使用独立的桩号”处于禁用状态时，此微调器中显示的值是指“源图形列表”中第一个图形上的链测长度。此图形称为<em class="mild">主源图形</em>。 
+                        		
+                     </p> <a name="UL_AB6BB8B368A2464AB7DE6D70FFD72B95"></a><ul>
+                        <li><em class="strong">“&gt;”按钮</em>单击可通过单击视口中的点交互设定“终点桩号”。 
+                           			 
+                           <p><a name="GUID-0B92F06E-3E92-4AB5-ABFF-907716AEC318"></a>此方法与 3ds Max <span class="char_link"><a href="GUID-5D55B7A4-6BE4-4A6E-8706-F457E6E305F5.htm">捕捉工具</a></span>结合使用非常有效。 
+                              			 
+                           </p> 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-104A455C-314F-4B28-A3D6-CB7F6B149E07"></a><span class="term"><a name="GUID-4555132A-7006-48F9-85D2-87E4653559C6"></a>新的父图形名</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-FF576C18-7A93-438D-9736-30720CB0CBF6"></a>设定单击“确定”后创建的新父图形对象的名称。
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

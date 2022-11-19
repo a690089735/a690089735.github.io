@@ -1,0 +1,275 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-8678E984-2377-4B1D-A1A3-FCC460DCE518">
+      <meta name="description" content="用户缓存将计算的流体模拟按帧存储为磁盘上的文件。该模拟然后读取每个帧的缓存文件，而不是重新计算模拟。“缓存”面板可用于配置参数。">
+      <meta name="indexterm" content="流体: 缓存面板">
+      <meta name="indexterm" content="缓存面板: 流体">
+      <meta name="indexterm" content="新功能">
+      <meta name="indexterm" content="流体: 缓存设置">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="expert">
+      <meta name="topic-subtype" content="using">
+      <title>“缓存”面板</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-8678E984-2377-4B1D-A1A3-FCC460DCE518"></a><div class="head">
+            <h1>“缓存”面板</h1>
+         </div>
+         <p class="blurb">用户缓存将计算的流体模拟按帧存储为磁盘上的文件。该模拟然后读取每个帧的缓存文件，而不是重新计算模拟。“缓存”面板可用于配置参数。 
+            
+         </p><a name="UL_BBD7F4526C50406CA0E8E37C6122E8A5"></a><ul>
+            <li><span class="MenuCascade">“创建”面板  <img src="../images/ac.menuaro.gif"> “几何体” <img src="../images/ac.menuaro.gif"> “流体” <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “模拟视图” <img src="../images/ac.menuaro.gif"> “缓存”面板</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="SECTION_F6044B90D5034579BA800915170D5A44"></a> 
+            <h2><a name="GUID-7591DED6-62AA-4320-BA6C-AFE7D8B1F9BE"></a>“缓存设置”卷展栏
+            </h2> <a name="FIG_0F9F7825CE2E4AD3B45F8D6F4381189B"></a><div class="figure-anchor"><img src="../images/GUID-47676344-3F2E-494D-8474-E94CE9109F03-low.png"></div> 
+            <div class="section"><a name="SECTION_881887F510574280AFD7997286C04BCE"></a> 
+               <h3><a name="GUID-33D65647-ACB5-4F24-89FB-4F65B0BC68C9"></a>“缓存目录设置”组
+               </h3> 
+               <dl><a name="GUID-A9EC8453-C7D4-473E-BBDE-B3831B6BD8DF"></a><dt><span class="term">解算器路径覆盖 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 每次解算时覆盖用于存储模拟缓存文件的文件路径，并允许直接指定路径。此设置将忽略标记系统。 
+                        				
+                     </div>
+                  </dd><a name="GUID-7507C1C3-5842-4415-97E5-9B98A77121E7"></a><dt><span class="term">使用项目文件夹 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置项目文件夹作为模拟的根目录。 
+                        				  
+                        <div><a name="GUID-18F7A39A-4B49-48D3-925E-5AF7635B6C96"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果多个用户正在处理模拟，则可以设置路径以便每个用户都有权访问。 
+                              				  
+                           </div>
+                        </div> 
+                     </div>
+                  </dd><a name="GUID-A1512ED9-BF69-463A-A9F5-0F1E43C53921"></a><dt><span class="term">根模拟目录 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">指定用于存储根模拟的目录。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_A2EFD83C46D54C298C6A1F03BB856CD9"></a> 
+               <h3><a name="GUID-282FA825-ED12-4ED9-957C-482905C35193"></a>“缓存输出文件图案”组
+               </h3> 
+               <dl><a name="GUID-1E4B31C8-B193-48FD-9C5D-CCF7914EDA0B"></a><dt><span class="term">“文件模式”字段 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">定义一种使用一系列标记对输出缓存文件进行命名的模式。 
+                        				
+                     </div>
+                  </dd><a name="GUID-BCCC0724-BC1B-4B31-8E7F-209B6A3B62E5"></a><dt><span class="term">标记... 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 显示受支持标记的列表以添加到“缓存输出文件图案”字段的末尾。支持的标记为： 
+                        				  <a name="UL_7445FC9111B340608A0ADF274470BCAF"></a><ul>
+                           <li>项目名称 
+                              					 
+                           </li>
+                           <li>对象名称 
+                              					 
+                           </li>
+                           <li>解算器名称 
+                              					 
+                           </li>
+                           <li>帧范围 
+                              					 
+                           </li>
+                           <li>场景名称 
+                              					 
+                           </li>
+                           <li>帧速率 
+                              					 
+                           </li>
+                        </ul> 
+                        <p>在模式字符串中的任意位置单击，然后选择要添加到此处的标记。右键单击该字段可以访问各种选项，例如“剪切”、“复制”、“粘贴”以及“撤消”和“重做”。 
+                           				  
+                        </p> 
+                     </div>
+                  </dd><a name="GUID-96C956C3-013D-4D5A-9BEB-36D0D5F36470"></a><dt><span class="term">最终路径 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">显示源自选定标记的最终路径。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_90898ECDCD114258BD7BD60B70B1EDF7"></a> 
+               <h3><a name="GUID-1861B398-8A6D-4BB1-8282-2D946474EF88"></a>“其他导出选项”组
+               </h3> 
+               <dl><a name="GUID-3C3EFF2E-CF9A-45E9-A2F8-7D33F964139F"></a><dt><span class="term">导出 PRT 文件 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">导出包含 3D 建模信息和全局格式的通道数据的 PRT 文件。启用此选项后，模拟液体和泡沫组件将生成 PRT 文件并将其分别放置在名为 Liquid_PRT 和 Foam_PRT 的文件夹中的同一缓存输出路径中。 
+                        				  
+                        <p>默认情况下，PRT 文件包含位置、速度、密度和漩涡通道信息。存在用于 PRT 导出的可编辑 .ini 文件选项，在 3dsmax.ini 的 [流体] 下列出了这些文件选项。 
+                           				  
+                        </p> <a name="UL_834059FF1AAA47E7B8AAC4884D483571"></a><p class="list-intro">文件选项包括：</p>
+                        <ul>
+                           <li><span class="keyboardEntry">PRTFileVersion=1</span> (.prt 版本 1 文件) 
+                              					 
+                           </li>
+                           <li><span class="keyboardEntry">PRTFileVersion=2</span> (.prt 版本 1.1 文件) (默认) 
+                              					 
+                           </li>
+                           <li> 设置密度通道的导出。默认值为 1（是）： 
+                              						<a name="UL_66CADA52952246E4BF559395DB53851D"></a><ul>
+                                 <li><span class="keyboardEntry">PRTDensity=0 </span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTDensity=1</span> 
+                                 </li>
+                              </ul> 
+                           </li>
+                           <li> 以下开关确定是否将各个通道从流体模拟导出到 PRT 文件（<span class="keyboardEntry">1</span>=是，<span class="keyboardEntry">0</span>=否）： 
+                              						<a name="UL_445A580BD5824C619BE45C7471E4B4E7"></a><ul>
+                                 <li><span class="keyboardEntry">PRTPosition</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTDensity</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTVelocity</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTVorticity</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTID</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTAge</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTAirDistance</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTChurn</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTCurvature</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTDroplet</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTExpansionRate</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTStictionStrength</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTStictionBandwidth</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTUV</span> 
+                                 </li>
+                              </ul> 
+                           </li>
+                           <li>以下开关为流体通道名称指定用户定义的覆盖。某些第三方软件需要 .PRT 文件中存储的通道的特定名称；这些选项允许您指定给定通道的名称（例如，<span class="keyboardEntry">PRTVelocityName=Speed</span>）：
+                              						<a name="UL_8BC2415EB83246F6A05B1FDDA0A29FD3"></a><ul>
+                                 <li><span class="keyboardEntry">PRTPositionName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTDensityName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTVelocityName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTVorticityName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTIDName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTAgeName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTAirDistanceName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTChurnName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTCurvatureName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTDropletName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTExpansionRateName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTStictionStrengthName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTStictionBandwidthName</span> 
+                                 </li>
+                                 <li><span class="keyboardEntry">PRTUVName</span> 
+                                 </li>
+                              </ul> 
+                           </li>
+                           <li>指定流体粒子 ID 值的数据格式：
+                              						<a name="UL_BD77E1C020BC4005AB27B19231FFCA79"></a><ul>
+                                 <li> <span class="keyboardEntry">PRTIDFormat=xxx</span> 
+                                 </li>
+                              </ul> 
+                              <p><span class="keyboardEntry">xxx</span> 的允许值：<span class="keyboardEntry">32</span>（32 位无符号）、<span class="keyboardEntry">64</span>（64 位无符号）、<span class="keyboardEntry">32S</span>（32 位有符号）和 <span class="keyboardEntry">64S</span>（64 位有符号）
+                                 						
+                              </p> 
+                           </li>
+                           <li> 指定流体粒子 UV 数据的数据格式： 
+                              						<a name="UL_24E30CD3EB944AE297494C4571E444E2"></a><ul>
+                                 <li><span class="keyboardEntry">PRTUVFormat=x</span> 
+                                 </li>
+                              </ul> 
+                              <p><span class="keyboardEntry">x</span> 的允许值：<span class="keyboardEntry">2</span>（两个分量 (UV)）或 <span class="keyboardEntry">3</span>（三个分量 (UVW)）
+                                 						
+                              </p> 
+                           </li>
+                           <li> 
+                              <p> 设置模拟过程中的软锁定时间滑块功能选项：
+                                 						
+                              </p> <a name="UL_D94D7BBF4218412781410E58790890D3"></a><ul>
+                                 <li><span class="keyboardEntry">SoftTimeLock=0</span>（禁用）
+                                    						  
+                                 </li>
+                                 <li><span class="keyboardEntry">SoftTimeLock=1</span>（启用）
+                                    						  
+                                 </li>
+                              </ul> 
+                           </li>
+                           <li>设置“对时间更改禁用软锁定”功能的选项： 
+                              						<a name="UL_D8FB5EFDABF44FE0AC377078EE66DFD7"></a><ul>
+                                 <li> <span class="keyboardEntry">SoftTimeLockChangeDisable=0</span>（禁用）
+                                    						  
+                                 </li>
+                                 <li> <span class="keyboardEntry">SoftTimeLockChangeDisable=1</span>（启用）
+                                    						  
+                                 </li>
+                              </ul> 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_30876AD75356494DA83EB867529F4A4D"></a> 
+               <h3><a name="GUID-177CC4AA-C235-4356-9BF1-F40CC11A3290"></a>“显示缓存信息”组
+               </h3> 
+               <dl><a name="GUID-BC37212E-DB14-4FDD-A410-F2600268E438"></a><dt><span class="term">当前显示缓存使用情况 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">展示用来显示模拟的当前缓存使用情况。 
+                        				
+                     </div>
+                  </dd><a name="GUID-B4D39CB1-FA66-4AEC-8862-F1DD6657EBE8"></a><dt><span class="term">清除缓存 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 从内存中清除视口缓存。 
+                        				
+                     </div>
+                  </dd><a name="GUID-C153F770-7F4B-4A8D-A335-23CAFAF0964B"></a><dt><span class="term">显示缓存限制(GB) 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 启用时，设置分配给模拟的视口缓存的内存量。禁用时，每次缓存一帧。 处理需要大量内存的重型模拟时，更改“显示缓存限制”设置会尤其有用。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-3235B0E8-E1D4-4C99-BDDE-6E2118891CA6.htm">管理系统区域</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

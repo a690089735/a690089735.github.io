@@ -1,0 +1,11 @@
+<map id="include/ufe/scene.h" name="include/ufe/scene.h">
+<area shape="rect" id="node2" href="$ufe_export_8h.html" title="Definition of macros for symbol visibility. " alt="" coords="46,379,189,405"/>
+<area shape="rect" id="node4" href="$scene_item_8h.html" title="sceneItem.h" alt="" coords="381,80,475,107"/>
+<area shape="rect" id="node13" href="$subject_8h.html" title="subject.h" alt="" coords="116,229,191,256"/>
+<area shape="rect" id="node3" href="$ufe_8h.html" title="../ufe.h" alt="" coords="375,453,439,480"/>
+<area shape="rect" id="node5" href="$path_8h.html" title="path.h" alt="" coords="501,155,560,181"/>
+<area shape="rect" id="node6" href="$path_segment_8h.html" title="pathSegment.h" alt="" coords="477,229,585,256"/>
+<area shape="rect" id="node7" href="$rtid_8h.html" title="rtid.h" alt="" coords="717,304,769,331"/>
+<area shape="rect" id="node9" href="$path_component_8h.html" title="pathComponent.h" alt="" coords="367,304,489,331"/>
+<area shape="rect" id="node14" href="$observer_8h.html" title="observer.h" alt="" coords="43,304,127,331"/>
+</map>

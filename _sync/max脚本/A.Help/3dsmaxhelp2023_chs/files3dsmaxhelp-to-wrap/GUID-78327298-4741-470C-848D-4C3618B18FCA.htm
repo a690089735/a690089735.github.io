@@ -1,0 +1,707 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-78327298-4741-470C-848D-4C3618B18FCA">
+      <meta name="description" content="通过将贴图坐标应用于对象，“UVW 贴图”修改器控制在对象曲面上如何显示贴图材质和程序材质。贴图坐标指定如何将位图投影到对象上。UVW 坐标系与 XYZ 坐标系相似。位图的 U 和 V 轴对应于 X 和 Y 轴。对应于 Z 轴的 W 轴一般仅用于程序贴图。可在“材质编辑器”中将位图坐标系切换到 VW 或 WU，在这些情况下，位图被旋转和投影，以使其与该曲面垂直。">
+      <meta name="indexterm" content="修改器: UVW 贴图">
+      <meta name="indexterm" content="UVW: 贴图修改器">
+      <meta name="indexterm" content="对象空间修改器: UVW 贴图">
+      <meta name="indexterm" content="XYZ 到 UVW 选项（UVW 贴图修改器）">
+      <meta name="contextid" content="UVWMAP.MODIFIERS">
+      <meta name="contextid" content="MODIFIERS-UVWMAP">
+      <meta name="contextid" content="M_UVW_BOX_MAPPING">
+      <meta name="contextid" content="M_UVW_PLANAR_MAPPING">
+      <meta name="contextid" content="M_UVW_SPHERICAL_MAPPING">
+      <meta name="contextid" content="M_UVW_CYLINDRICAL_MAPPING">
+      <meta name="contextid" content="M_UVW_FACE_MAPPING">
+      <meta name="topic-type" content="concept">
+      <title>UVW 贴图修改器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-78327298-4741-470C-848D-4C3618B18FCA"></a><div class="head">
+            <h1>UVW 贴图修改器</h1>
+         </div>
+         <p class="blurb">通过将贴图坐标应用于对象，“UVW 贴图”修改器控制在对象曲面上如何显示贴图材质和程序材质。贴图坐标指定如何将位图投影到对象上。UVW 坐标系与 XYZ 坐标系相似。位图的 U 和 V 轴对应于 X 和 Y 轴。对应于 Z 轴的 W 轴一般仅用于程序贴图。可在“材质编辑器”中将位图坐标系切换到
+            VW 或 WU，在这些情况下，位图被旋转和投影，以使其与该曲面垂直。 
+            
+         </p>
+         <div class="bodyReference"><a name="UL_3DE07FB2CC1149A6B95EBAB0FA9D9FB8"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-AB5F072F-D540-4C2D-863F-91583AFE2631">选择对象。 <img src="../images/ac.menuaro.gif"> “修改”面板  <img src="../images/ac.menuaro.gif"> “修改器列表” <img src="../images/ac.menuaro.gif"> “对象空间修改器” <img src="../images/ac.menuaro.gif"> “UVW 贴图”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-3D800592-6D70-4291-9B53-4858C2D8247F">默认菜单：选择对象。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “UV 坐标” <img src="../images/ac.menuaro.gif"> “UVW 贴图”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-20E72776-9CD2-47B6-B812-1D0DA6FE3941">Alt 菜单：选择对象。 <img src="../images/ac.menuaro.gif"> “修改器”菜单  <img src="../images/ac.menuaro.gif"> “UV、贴图和材质” <img src="../images/ac.menuaro.gif"> “UVW 贴图”</span> 
+               </li>
+            </ul>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-379A"></a> <span class="char_link"><a href="GUID-78327298-4741-470C-848D-4C3618B18FCA.htm#WSF742DAB04106313366400BF6112A1CEA097-7EA4">步骤</a></span> <span class="char_link"><a href="GUID-78327298-4741-470C-848D-4C3618B18FCA.htm#WSF742DAB04106313366400BF6112A1CEA097-7EA3">界面</a></span> 
+            </p><a name="WS1A9193826455F5FFBA679E112A6A190043D49"></a><div class="figure-anchor"><img src="../images/GUID-3B43291A-A478-480B-9ADB-8A562F0CA9FA-low.png"></div><a name="WS1A9193826455F5FFBA679E112A6A190043D4A"></a><div class="figure-anchor"><img src="../images/GUID-72B6CCCD-30B1-447B-B51D-D2379265ACD3-low.png"><p class="figure-title">贴图球体和长方体。</p>
+            </div>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3798"></a>默认情况下，基本体对象（如球体和长方体）与放样对象和 NURBS 曲面一样，具有贴图坐标。扫描、导入或手动构造的多边形或面片模型不具有贴图坐标系，直到应用了“UVW 贴图”修改器。 
+               
+            </p>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA77"></a><div class="note-note"><span class="label label-target-language">注意:</span>从 Autodesk Architectural Desktop 和 Autodesk Revit 导入或链接绘图仍保持由这些产品指定给对象的贴图坐标。 
+                  
+               </div>
+            </div>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3797"></a>如果对具有内置贴图坐标的对象应用“UVW 贴图”修改器，那么如果使用“UVW 贴图”修改器中的<span class="char_link"><a href="GUID-C4D98019-3568-4EC3-AF70-A38C0F975D51.htm">贴图通道</a></span> 1，所应用的坐标优先。在默认情况下，在创建基本体过程中可用的“生成贴图坐标”选项使用贴图通道 1。 
+               
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3795"></a>使用“UVW 贴图”修改器可执行以下操作： 
+               
+            </p><a name="WS1A9193826455F5FFBA679E112A6A190043D4F"></a><ul>
+               <li>对指定贴图通道上的对象应用七种贴图坐标之一。贴图通道 1 上的漫反射贴图和贴图通道 2 上的凹凸贴图可具有不同的贴图坐标，并可以使用修改器堆栈中的两个“UVW 贴图”修改器单独控制。 
+                  
+               </li>
+               <li>将七种贴图坐标中一种应用于对象。 
+                  
+               </li>
+               <li>变换贴图 Gizmo 以调整贴图置换。具有内置贴图坐标的对象缺少 Gizmo。 
+                  
+               </li>
+               <li>对不具有贴图坐标的对象（例如，导入的网格）应用贴图坐标。 
+                  
+               </li>
+               <li>在子对象层级应用贴图。 
+                  
+               </li>
+            </ul>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043D50"></a> 
+               <h2><a name="GUID-04BFAFE0-DEFF-455D-987D-3A1D9A8107F6"></a>贴图通道
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3794"></a>通过将显式贴图通道指定给位图，可为使用多个位图的材质中的每个位图控制贴图坐标的类型和贴图 Gizmo 的置换。在“材质编辑器”中，为每个贴图指定不同的通道编号，然后将多个“UVW 贴图”修改器添加到对象的修改器堆栈，每个“UVW 贴图”修改器设置为不同贴图通道。要为特定位图更改贴图类型或
+                  Gizmo 的置换，请在修改器堆栈中选择“UVW 贴图”修改器之一并更改参数。可在“编辑修改器堆栈”中更改“UVW 贴图”修改器的名称，以使修改器与位图相关。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043D51"></a> 
+               <h2><a name="GUID-4DDDD5B0-6733-4F5D-BCA7-EA9459CD758D"></a>变换 UVW 贴图 Gizmo
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043D52"></a><div class="figure-anchor"><img src="../images/GUID-E4A57A8C-D3EA-4C09-84E4-902A78895478-low.png"></div>  <a name="WS1A9193826455F5FFBA679E112A6A190043D53"></a><div class="figure-anchor"><img src="../images/GUID-2A27903C-116C-4651-8313-F9E765687A3A-low.png"><p class="figure-title">通过移动 Gizmo 更改贴图的位置。</p>
+               </div>  
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3793"></a>“UVW 贴图”Gizmo 将贴图坐标投影到对象上。可定位、旋转或缩放 Gizmo 以调整对象上的贴图坐标；还可以设置 Gizmo 的动画。如果选择新的贴图类型，Gizmo 变换仍然生效。如果缩放球形贴图 Gizmo，并切换到平面贴图，那么还会缩放平面贴图
+                  Gizmo。 
+                  
+               </p> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043D54"></a> 
+                  <h3><a name="GUID-97189B3E-D476-40B3-82AF-9E0052EE9AEF"></a>不同贴图类型的 Gizmo 显示
+                  </h3> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3792"></a>对于平面、球形、圆柱形和收缩包裹贴图，一条黄色短线指示贴图顶部。Gizmo 的绿色边指示贴图右侧。在球形或圆柱形贴图上，绿色边是左右边的接合处。必须在修改器显示层次中选择 Gizmo，才能显示 Gizmo。 
+                     	 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A190043D55"></a><div class="figure-anchor"><img src="../images/GUID-F5BD0129-61F4-499F-82F0-231E02D3C7C3-low.png"></div>  
+                  <p><a name="GUID-EE9FD02E-6F19-4E83-AE4E-CA1729105D46"></a> <em class="strong">不同投影类型的 Gizmo</em> 
+                  </p> 
+                  <p><a name="GUID-D573FE52-2071-4A2F-A997-4AAC420CD9E1"></a> <em class="strong">从左到右：平面、柱形、长方体和球形</em> 
+                  </p> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043D56"></a> 
+                  <h3><a name="GUID-5642421B-FC3F-453E-890B-96EFF991F08B"></a>变换 UVW 贴图 Gizmo 的效果
+                  </h3> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3791"></a>移动 Gizmo 会更改投影中心并影响所有类型的贴图。旋转 Gizmo 会更改贴图方向，影响所有类型的贴图。均匀缩放不影响球形或收缩包裹贴图。非均匀缩放影响所有类型的贴图。 
+                     	 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3790"></a>如果缩放的 Gizmo 小于几何体，会创建平铺效果，除非缩放对所使用的贴图类型不生效。基于 Gizmo 大小的平铺是对“材质编辑器坐标”卷展栏中设置的贴图平铺值或“UVW 贴图”修改器中的平铺控件的补充。 
+                     	 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A190043D58"></a><div class="figure-anchor"><img src="../images/GUID-6F96936D-7987-45C7-9C61-EAF5965FFD4D-low.png"><p class="figure-title">Gizmo 的大小影响如何对对象应用贴图。</p>
+                  </div>  
+               </div> 
+               <div class="section"><a name="WSF742DAB04106313366400BF6112A1CEA097-7EA5"></a> 
+                  <h3><a name="GUID-287251CC-1A8F-4587-90AC-46E074FAC02C"></a>UVW 贴图操纵器
+                  </h3> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-378F"></a>“UVW 贴图”修改器包含图形操纵器，帮助调整贴图尺寸和平铺。要使用这些操纵器，请启用 <img src="../images/GUID-FB7448B2-D8BD-4DCF-BACD-8D66F04834CC-low.png">（<span class="char_link"><a href="GUID-603061A3-D8A6-4F13-B3C7-C4330BD69C65.htm">“选择并操纵”</a></span>）。操纵器在修改器堆栈中的主 UVW 贴图级别和“UVW 贴图”修改器 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> Gizmo 级别可用。 
+                     	 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-378E"></a>操纵器在 Gizmo 的两侧显示为边；通常显示为绿色。如果贴图类型和 Gizmo 是 3D 的，在 Gizmo 顶部还会显示一个绿色立方体。在操纵器上移动鼠标时，操纵器通常会变为红色，以表明拖动或单击它将产生相应效果。另外，会显示工具提示，其中显示对象名、参数和它的值。
+                     
+                     	 
+                  </p> 
+                  <p><a name="GUID-934B7884-30FD-48E3-975D-9076C7AC4E54"></a>没有针对这些贴图类型的操纵器： 
+                     	 
+                  </p> <a name="UL_A80D544485C24D96A30681DB905A5664"></a><ul>
+                     <li>收缩包裹 
+                        		
+                     </li>
+                     <li>面 
+                        		
+                     </li>
+                     <li>XYZ 到 UVW 
+                        		
+                     </li>
+                  </ul> 
+                  <div><a name="GUID-A68E72B6-DF16-4C0B-A0E8-33533CB8C892"></a><div class="note-note"><span class="label label-target-language">注意:</span>当启用“真实世界贴图大小”时，仅显示针对“平面”和“长方体”贴图类型的 Gizmo 操纵器。 
+                        	 
+                     </div>
+                  </div> <a name="FIG_9E654038173F40E3A32AFD97ECB4BD05"></a><div class="figure-anchor"><img src="../images/GUID-725A86F2-5E6D-44BA-A4AD-8DFA6217B1FB-low.png"><p class="figure-title">调整“长方体”贴图的边操纵器</p>
+                  </div> <a name="FIG_CDC8DB9AD1EF4A9E9790E97A5DB119B0"></a><div class="figure-anchor"><img src="../images/GUID-646071C7-3F69-46B6-9048-E94E9F568C74-low.png"><p class="figure-title">调整“长方体”贴图的高度操纵器</p>
+                  </div>   
+                  <p><a name="GUID-D0B5BF38-637E-40A4-A097-CE2850228745"></a>如果使用操纵器来调整高度，Gizmo 仍在“长度/宽度”平面中居中显示，以使高度调整可以缩放贴图。 
+                     	 
+                  </p> 
+               </div> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043D59"></a> 
+               <h2><a name="GUID-1B73F7B4-E9DC-45CD-B3FB-CA51829DD5C5"></a>平铺控件
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-378A"></a>如果希望贴图重复，请使用“UVW 平铺”控件。平铺的贴图用于墙砖或地面瓷砖。不需要创建一个大贴图，可在没有可见缝的大区域表面上平铺无缝贴图，从而实现大贴图的效果。 
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3789"></a>“UVW 贴图”修改器中的平铺仅影响使用此修改器的对象。在“材质编辑器”中平铺贴图会影响使用该材质的所有对象上的平铺。 
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3788"></a>材质和“UVW 贴图”平铺被相乘。例如，如果“材质编辑器”中的贴图在一个轴上的的平铺值为 2，而“UVW 贴图”修改器在相同轴上的平铺值为 3，那么得到的平铺值为 6。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043D5A"></a> 
+               <h2><a name="GUID-2BE88567-8A84-45EE-AA77-17C8D67F2B40"></a>具有贴图坐标的对象
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3787"></a>如果渲染不具有贴图坐标或“UVW 贴图”修改器的对象，并且该对象使用具有 2D 位图或者使用显式贴图通道的 3D 程序贴图，会显示<span class="char_link"><a href="GUID-AD61CDA4-70DB-4B7D-8904-45AE61C0AA1E.htm">缺少贴图坐标</a></span>警告。该警告列出对象名称以及缺少坐标的 UVW 通道或“顶点颜色”通道。例如：(UVW 2)：Torus01。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043D5B"></a> 
+               <h2><a name="GUID-537C4EEE-B64D-4CF2-B550-B6F24CF88147"></a>贴图选择集或分组对象
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3785"></a>可对对象选择应用一个“UVW 贴图”修改器。一个大贴图 Gizmo 将覆盖整个选择，除非应用“UVW 贴图”修改器前在修改器中启用“使用轴点”选项。如果使用了“使用轴点”选项，则将覆盖每个对象连同其自身的贴图 Gizmo。 
+                  
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3784"></a>如果在“层次”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“轴”面板中移动了选择中任意对象的轴点，并且将“使用轴点”选项与“UVW 贴图”修改器一起使用，那么贴图 Gizmo 的中心将移至轴点而不是对象中心，并且很难按照需要的方式定位贴图。 
+                  
+               </p> 
+            </div>
+            <div class="section"><a name="WSF742DAB04106313366400BF6112A1CEA097-7EA4"></a> 
+               <h2><a name="GUID-20953929-F855-473D-A5BD-626BF572A267"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043D5F"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043D60"></a>要应用“UVW 贴图”修改器，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>将贴图材质指定给对象。 
+                     	 
+                  </li>
+                  <li>在“修改”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“修改器列表”中，选择“UVW 贴图”。 
+                     	 
+                  </li>
+                  <li>调整贴图参数。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-377D"></a>默认情况下，“UVW 贴图”修改器在贴图通道 1 上使用平面贴图。您可以更改贴图类型和贴图通道以满足您的需求。共有七种贴图坐标、九十九个贴图通道、平铺控件和控件可用于在“UVW 贴图”修改器中调整贴图 Gizmo 的大小和方向。 
+                        		
+                     </p> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA7C"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果“UVW 贴图”修改器应用于多个对象，“UVW 贴图”Gizmo 将由选择定义，且得到的贴图将应用于所有对象。 
+                           		
+                        </div>
+                     </div> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A190043D61"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043D62"></a>要在相同对象中使用多个 UVW 通道，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>将贴图通道 1 指定给对象。可在任意基本体的“参数”卷展栏中启用“生成贴图坐标”，或使用选择的通道 1 指定“UVW 贴图”修改器，从而完成此操作。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-377C"></a>在默认情况下，“生成贴图坐标”使用贴图通道 1。 
+                        		
+                     </p> 
+                  </li>
+                  <li>指定“UVW 贴图”修改器（如果使用第一个修改器指定通道 1，则使用第二个修改器）。为此修改器选择通道 2。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-377B"></a>现在，两个坐标通道都指定给几何体。下一步是指定使用两个通道的贴图材质。 
+                        		
+                     </p> 
+                  </li>
+                  <li>创建具有两个贴图的材质。可使用合成贴图、具有两个贴图的混合材质，或者将一个贴图指定给“漫反射”而另一个贴图指定给“凹凸”来完成此操作。查看效果的最简单方法可能是合成两个贴图，其中第二个贴图包含 Alpha 通道。 
+                     	 
+                  </li>
+                  <li>转到贴图层级之一，然后在“贴图”列表中选择“显式贴图通道 2”。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-377A"></a>在默认情况下，已为另一个贴图指定通道 1。 
+                        		
+                     </p> 
+                  </li>
+                  <li>将贴图材质指定给对象。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3779"></a>可使用“材质编辑器”中的“在视口中显示贴图”控件，切换在视口中查看各个贴图。如果已指定两个“UVW 贴图”修改器，可以不改变通道 1 的贴图就调整通道 2 的贴图。渲染场景以查看效果。 
+                        		
+                     </p> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A190043D63"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043D64"></a>示例：要使用“XYZ 到 UVW”选项，请执行以下操作：
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3778"></a>“XYZ 到 UVW”选项用于创建 3D 程序纹理，和“细胞”一样，跟随对象的动画曲面。如果对象被拉伸，3D 程序纹理也被拉伸。 
+                  
+               </p>
+               <ol type="1" start="1">
+                  <li>在“顶”视口中，创建一个长方体。 
+                     
+                  </li>
+                  <li> 创建具有“细胞”漫反射贴图的材质。 
+                     
+                  </li>
+                  <li>在“材质编辑器”中，在“细胞”贴图的“坐标”卷展栏上，打开“源”下拉列表，然后选择“显式贴图通道”。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3777"></a>在“坐标”卷展栏上，“贴图通道”参数已激活，其值为 1。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>将材质指定给长方体。 
+                     
+                  </li>
+                  <li>在“修改”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“修改器列表”中，选择“UVW 贴图”。 
+                     
+                  </li>
+                  <li>在“UVW 贴图”修改器上，启用“XYZ 到 UVW”。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3776"></a>在默认情况下，“贴图通道”的值为 1。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>渲染“前”视口。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3775"></a>一般，细胞模式在长方体表面上渲染。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>在对象上单击右键，然后从四元菜单的“变换”象限（右下角）选择“转换为:”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“转换为可编辑网格”。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3774"></a>该长方体被转换为可编辑网格。 
+                        	 
+                     </p> 
+                  </li>
+                  <li> 在“修改”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“选择”卷展栏中，单击“顶点”以启用它。 
+                     
+                  </li>
+                  <li>在“前”视口中，选择长方体的顶部顶点，然后将它们上移。 
+                     
+                  </li>
+                  <li>再次渲染“前”视口。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3773"></a>细胞模式随长方体拉伸。使用“XYZ 到 UVW”选项启用此效果。为查看区别，将在“材质编辑器”中的“坐标”卷展栏中更改“源”选项。 
+                        	 
+                     </p> 
+                  </li>
+                  <li>在“材质编辑器”中，找到漫反射的“细胞”材质。 
+                     
+                  </li>
+                  <li>在“细胞”漫反射贴图的“坐标”卷展栏上，打开“源”下拉列表并选择“对象 XYZ”。 
+                     
+                  </li>
+                  <li>渲染“前”视口。 
+                     	 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3772"></a>细胞模式不再拉伸。 
+                        	 
+                     </p> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A190043D65"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043D66"></a>要变换“UVW 贴图”Gizmo，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>在“修改”面板上，在堆栈显示区域选择“UVW 贴图”修改器。 
+                     	 
+                  </li>
+                  <li>在堆栈显示中,选择“Gizmo”子对象层级。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3771"></a>Gizmo 更改为黄色，带有一个绿色边。 
+                        		
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3770"></a>绿色边指示纹理右侧边。 
+                        		
+                     </p> 
+                  </li>
+                  <li>在视口中移动、缩放或旋转 Gizmo，或使用“UVW 贴图”修改器中的“长度”和“宽度”控件。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-376F"></a>变换贴图 Gizmo 会移动位图，从而可在对象表面上定向和移动贴图。 
+                        		
+                     </p> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A190043D67"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043D68"></a>要使用操纵器控制宽度和长度，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>在“修改”面板上，在堆栈显示区域选择“UVW 贴图”修改器。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-376E"></a>也可以转到修改器的 Gizmo 层级。 
+                        		
+                     </p> 
+                  </li>
+                  <li>在主工具栏上，单击以启用“选择并操纵”。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-376D"></a>绿色边沿“UVW 贴图”修改器的 Gizmo 的两侧显示。当鼠标移动到边上时，边将变为红色。 
+                        		
+                     </p> 
+                  </li>
+                  <li>拖动 Gizmo 的一个边以调整宽度或长度。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-376C"></a>工具提示中显示新的宽度或长度值。 
+                        		
+                     </p> 
+                  </li>
+               </ol> <a name="WS1A9193826455F5FFBA679E112A6A190043D69"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043D6A"></a>要使用操纵器控制垂直比例，请执行下列操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>在“修改”面板上，在堆栈显示区域选择“UVW 贴图”修改器。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-376B"></a>也可以转到修改器的 Gizmo 层级。 
+                        		
+                     </p> 
+                  </li>
+                  <li>在主工具栏上，单击以启用“选择并操纵”。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-376A"></a></p> 
+                     <p><a name="GUID-7AAE76DB-72F5-4B0D-973B-A2AA4AF667C6"></a>对于 3D 贴图类型，将在“UVW 贴图”修改器的 Gizmo 顶部显示一个绿色立方体。当鼠标移动到立方体上时，立方体将变为红色。 
+                        		
+                     </p> 
+                  </li>
+                  <li>拖动立方体可以调整 Gizmo 的高度。 
+                     		
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3769"></a>工具提示在垂直尺寸中显示了新的平铺值。 
+                        		
+                     </p> 
+                  </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WSF742DAB04106313366400BF6112A1CEA097-7EA3"></a> 
+               <h2><a name="GUID-EB009F84-0936-4566-BCBB-FCEC05CDE0A1"></a>界面
+               </h2> 
+               <div class="section"><a name="SECTION_C65A03B1F6E944E2AB50A62BB74ECC19"></a> 
+                  <h3><a name="GUID-F1B0729F-46B9-439B-9593-C7414A4C0263"></a>修改器堆栈
+                  </h3> <a name="GUID-C1AF0F98-11F5-459C-9DC8-8EAE2A7C6C1A"></a><dl>
+                     <dt><a name="GUID-F515D736-193F-4635-ACBF-3C8EC54E0040"></a><span class="term"><a name="GUID-D7FF85A1-3F11-4929-8FE1-06251437D93E"></a>Gizmo 子对象层级</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-1929E1EB-56D6-4BB4-A090-860C61510685"></a>启用 Gizmo 变换。在此子对象层级，可以在视口中移动、缩放和旋转 Gizmo 以定位贴图。 
+                           	 
+                           <div><a name="WS1A9193826455F5FFF0124D0128D193D50A757F"></a><div class="note-tip"><span class="label label-target-language">提示</span>要在变换 Gizmo 时查看贴图在对象曲面上移动，请启用一个“<span class="char_link"><a href="GUID-39E321E5-962B-49C2-BD05-B1FA3F48BA26.htm">在视口中显示贴图</a></span>”选项。 
+                                 	 
+                              </div>
+                           </div>
+                        </div>
+                     </dd>
+                  </dl> 
+               </div> 
+               <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043D6D"></a> 
+                  <h3><a name="GUID-A9BBC4E2-3D5B-4BB1-97B3-B900C3877B1B"></a>“参数”卷展栏
+                  </h3> <a name="WS1A9193826455F5FFBA679E112A6A190043D6E"></a><div class="figure-anchor"><img src="../images/GUID-7A6B0C15-417C-46EB-AD43-A3044BB3B6F1-low.png"></div>  <a name="GUID-2D19546F-0565-4FB9-A32D-F5590197D57B"></a><div class="dl_section"><a name="GUID-7383651E-5E69-4DDF-974C-AE1BE887DAF0"></a><p class="title"><a name="GUID-2285CE16-116C-4449-96DE-753CF0E0718C"></a>“贴图”组
+                     </p>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3765"></a>确定所使用的贴图坐标的类型。通过贴图在几何上投影到对象上的方式以及投影与对象表面交互的方式，来区分不同种类的贴图。 
+                        	 
+                     </p>
+                     <div><a name="WS1A9193826455F5FFF0124D0128D193D50A7580"></a><div class="note-note"><span class="label label-target-language">注意:</span>当“真实世界贴图大小”处于启用状态时，仅可使用“平面”、“柱形”、“球形”和“长方体”贴图类型。同样，如果其他选项（“收缩包裹”、“面”或“XYZ 到 UVW”）之一处于活动状态，则“真实世界贴图大小”不可用。 
+                           	 
+                        </div>
+                     </div>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BDB"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3764"></a>平面</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43E8"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B92"></a>从对象上的一个平面投影贴图，在某种程度上类似于投影幻灯片。 
+                                 	 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3763"></a>在需要贴图对象的一侧时，会使用平面投影。它还用于倾斜地在多个侧面贴图，以及用于贴图对称对象的两个侧面。 
+                                 	 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A190043D72"></a><div class="figure-anchor"><img src="../images/GUID-5E031079-7FCA-4FED-B05F-5F5A79A0247F-low.png"><p class="figure-title">平面贴图投影</p>
+                              </div>  
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BDA"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3762"></a>柱形</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43E7"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B93"></a>从圆柱体投影贴图，使用它包裹对象。位图接合处的缝是可见的，除非使用无缝贴图。圆柱形投影用于基本形状为圆柱形的对象。 
+                                 	 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A190043D74"></a><div class="figure-anchor"><img src="../images/GUID-5CEF2BF6-62A1-433D-92D7-D77876EDBA5F-low.png"><p class="figure-title">圆柱形贴图投影</p>
+                              </div>  
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BD9"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3761"></a>封口</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43E6"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B94"></a>对圆柱体封口应用平面贴图坐标。 
+                                 	 
+                              </p> 
+                              <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA7F"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果对象几何体的两端与侧面没有成正确角度，“封口”投影扩散到对象的侧面上。 
+                                    	 
+                                 </div>
+                              </div> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BD8"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3760"></a>球形</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43E5"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B95"></a>通过从球体投影贴图来包围对象。在球体顶部和底部，位图边与球体两极交汇处会看到缝和贴图奇点。球形投影用于基本形状为球形的对象。 
+                                 	 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A190043D75"></a><div class="figure-anchor"><img src="../images/GUID-F2013F67-2A66-4C24-BAAB-CD869B108734-low.png"><p class="figure-title">球形贴图投影</p>
+                              </div>  
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BD7"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-375F"></a>收缩包裹</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43E4"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B96"></a>使用球形贴图，但是它会截去贴图的各个角，然后在一个单独极点将它们全部结合在一起，仅创建一个奇点。收缩包裹贴图用于隐藏贴图奇点。 
+                                 	 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A190043D76"></a><div class="figure-anchor"><img src="../images/GUID-552EA59B-DAC8-4BF9-B631-AC6B3E39CB57-low.png"><p class="figure-title">收缩包裹投影</p>
+                              </div>  
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BD6"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-375E"></a>长方体</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43E3"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B97"></a>从长方体的六个侧面投影贴图。每个侧面投影为一个平面贴图，且表面上的效果取决于曲面法线。从其法线几乎与其每个面的法线平行的最接近长方体的表面贴图每个面。 
+                                 	 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A190043D78"></a><div class="figure-anchor"><img src="../images/GUID-49DC639E-6542-40B8-80FD-512811A914D3-low.png"><p class="figure-title">长方体投影（显示在长方体和球体上）</p>
+                              </div>  
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BD5"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-375D"></a>面</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43E2"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B98"></a>对对象的每个面应用贴图副本。使用完整矩形贴图来贴图共享隐藏边的成对面。使用贴图的矩形部分贴图不带隐藏边的单个面。 
+                                 	 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A190043D79"></a><div class="figure-anchor"><img src="../images/GUID-4DE2F69D-603C-4DE1-8DC0-B1E22FDCFD8E-low.png"><p class="figure-title">面投影</p>
+                              </div>  
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BD4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-375C"></a>XYZ 到 UVW</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43E1"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B99"></a>将 3D 程序坐标贴图到 UVW 坐标。这会将程序纹理贴到表面。如果表面被拉伸，3D 程序贴图也被拉伸。对于包含动画拓扑的对象，请结合程序纹理（如，<span class="char_link"><a href="GUID-044B5EE6-7648-444D-8150-F2D9D538089D.htm">细胞</a></span>）使用此选项。 
+                                 	 
+                              </p> 
+                              <p><a name="WS1A9193826455F5FFF0124D0128D193D50A7581"></a>有关如何使用此选项的详细信息，请参见<span class="char_link"><a href="GUID-78327298-4741-470C-848D-4C3618B18FCA.htm#WS1A9193826455F5FFBA679E112A6A190043D63">示例：要使用“XYZ 到 UVW”选项，请执行以下操作：</a></span>。 
+                                 	 
+                              </p> 
+                              <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA80"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果在“材质编辑器”的“坐标”卷展栏中，将贴图的“源”设置为“显式贴图通道”。在材质和“UVW 贴图”修改器中使用相同贴图通道。 
+                                    	 
+                                 </div>
+                              </div> <a name="WS1A9193826455F5FFBA679E112A6A190043D7A"></a><div class="figure-anchor"><img src="../images/GUID-1E8EC3B9-82CF-44FB-8800-8EC012823B26-low.png"></div>  
+                              <p><a name="GUID-ED89340B-1AB2-4D1C-82A3-51D8EC9E573D"></a> <em class="strong">已复制具有 3D 程序纹理的球体且副本被拉伸。</em> 
+                              </p> 
+                              <p><a name="GUID-B2B7E3DD-69FC-45CC-8C87-FA9C38AD26E8"></a> <em class="strong">右：在对象上使用“XYZ 到 UVW”会贴上 3D 程序纹理并使其随曲面拉伸。</em> 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BD3"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-375B"></a>长度、宽度、高度</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43E0"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B9A"></a>指定“UVW 贴图”gizmo 的尺寸。在应用修改器时，贴图图标的默认缩放由对象的最大尺寸定义。可以在 Gizmo 层级设置投影的动画。请注意有关这些微调器的下列事项： 
+                                 	 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A190043D7B"></a><ul>
+                                 <li>尺寸基于 Gizmo 的边界框。 
+                                    		  
+                                    <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-375A"></a>“高度”尺寸对于平面 gizmo 不适用：它没有深度。同样，“圆柱形”、“球形”和“收缩包裹”贴图的尺寸都显示它们的边界框而不是它们的半径。对于“面”贴图没有可用的尺寸：几何体上的每个面都包含完整的贴图。 
+                                       		  
+                                    </p> 
+                                 </li>
+                                 <li>当加载在 Autodesk VIZ 或更早版本的 3ds Max 中创建的文件时，这三个尺寸根据贴图类型和尺寸设置为 1 或 2（这样可保持与先前版本文件的兼容性，在先前版本的文件中，Gizmo 的刻度不是统一的，以便可以调整它们的尺寸。） 
+                                    		  
+                                    <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3759"></a>实际上，尺寸成为缩放因数而不是测量值。通过单击“拟合”或“重置”按钮可重置尺寸的值，这会丢失原来的非均匀缩放。 
+                                       		  
+                                    </p> 
+                                 </li>
+                              </ul> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BD2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3758"></a>U 平铺、V 平铺、W 平铺</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43DF"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B9B"></a>用于指定 UVW 贴图的尺寸以便平铺图像。这些是浮点值；可设置动画以便随时间移动贴图的平铺。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BD1"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3757"></a>翻转</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43DE"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B9C"></a>绕给定轴反转图像。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BD0"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3756"></a>真实世界贴图大小</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43DD"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751B9D"></a>启用后，对应用于对象上的纹理贴图材质使用<span class="char_link"><a href="GUID-27F58B25-C61E-4658-AB1E-7A6C20B23D1F.htm">真实世界贴图</a></span>。缩放值由位于应用材质的<span class="char_link"><a href="GUID-8AE3643F-BDB4-498B-B220-92646FC8A562.htm">“坐标”卷展栏</a></span>中的“使用真实世界比例”设置控制。（应同时禁用或启用“真实世界贴图大小”和“使用真实世界比例”。）默认设置为禁用状态。 
+                                 	 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3755"></a>启用时，“长度”、“宽度”、“高度”和“平铺”微调器不可用。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-70852392-6693-402F-8A85-3CDD7D3DD8D2"></a><p class="title"><a name="GUID-3AAFA0FA-6314-4FB5-B385-DDC5A283978F"></a>“通道”组
+                     </p>
+                     <p><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E8E"></a>每个对象最多可拥有 99 个 UVW 贴图坐标通道；每个修改器各有一个。默认贴图通道（通过对象的<span class="char_link"><a href="GUID-DD7DD872-F491-46B9-B781-94A49659E2D2.htm">创建参数</a></span>中的“生成贴图坐标”切换）始终为通道 1。“UVW 贴图”修改器可为任何通道指定坐标。这样，在同一个面上可同时存在多组坐标。 
+                        	 
+                     </p>
+                     <div><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E8F"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>“UVW 贴图”修改器一次仅用于一个贴图通道。当更改通道时，<span class="charspan-msgph">3ds Max</span> 会将当前编辑操作复制到新的通道，但不向您显示提示信息。要在不同的通道中应用不同的 UVW 贴图，请使用多个修改器（<span class="char_link"><a href="GUID-EA10E59F-DE7F-497E-B399-6CF213A02C8D.htm">UVW 展开</a></span>或“UVW 贴图”）。 
+                           		
+                           <p><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E90"></a> 如果在该通道中有来自另一个修改器的编辑操作，这些编辑操作可能会被覆盖。要确保保留您的编辑操作，请在更改通道前将其保存，如有必要再重新加载已保存的编辑操作。 
+                              		
+                           </p> 
+                        </div>
+                     </div>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E91"></a><span class="term"><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E92"></a>贴图通道</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E93"></a> 
+                              <p><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E94"></a>设置贴图通道。“UVW 贴图”修改器默认为通道 1，因此贴图以默认方式工作，除非显式更改为其他通道。默认值为 1。范围为 1 至 99 
+                                 	 
+                              </p> 
+                              <p><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E95"></a>如果指定一个不同的通道，请确保应当使用该贴图通道的对象材质中的所有贴图也都设置为该通道。 
+                                 	 
+                              </p> 
+                              <p><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E96"></a>在修改器堆栈中可使用多个“UVW 贴图”修改器，每个修改器控制材质中不同贴图的贴图坐标。 
+                                 	 
+                              </p> 
+                              <p><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E97"></a>可在 <span class="charspan-msgph">3ds Max</span> 中的多处位置使用“贴图通道”设置，如下所示： 
+                                 	 
+                              </p> <a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E98"></a><ul>
+                                 <li> <em class="strong">生成贴图坐标</em>大多数对象的创建参数中提供此复选框，在启用时会指定贴图通道 1。 
+                                    		
+                                 </li>
+                                 <li> <em class="strong">“UVW 贴图”、“UVW 变换”和“UVW 展开”修改器</em>这些修改器用于设置贴图通道 1 到 99，从而指定修改器将使用的 UVW 坐标。修改器堆栈可同时为任何面传递这些通道。 
+                                    		
+                                 </li>
+                                 <li> <em class="strong">材质编辑器通道指定</em>可以在“材质编辑器”的贴图层级，在“坐标”卷展栏中指定贴图要使用的通道。“显式贴图通道”选项必须处于活动状态。 
+                                    		
+                                 </li>
+                                 <li> <em class="strong">NURBS 曲面对象和子对象</em>用于指定曲面使用的贴图通道。 
+                                    		
+                                 </li>
+                              </ul> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E9D"></a><span class="term"><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E9E"></a>顶点颜色通道</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14E9F"></a> 
+                              <p><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD14EA0"></a>通过选择此选项，可将通道定义为顶点颜色通道。另外，确保将坐标卷展栏中的任何材质贴图匹配为“顶点颜色”，或者使用<span class="char_link"><a href="GUID-C0137D57-C170-4533-B20F-700BF01BFDFF.htm">指定顶点颜色工具</a></span>。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-D7468864-8CB5-45BA-9EF1-425539239C02"></a><p class="title"><a name="GUID-72DB119D-CB07-42AC-BD43-75799473B470"></a>“对齐”组
+                     </p>
+                     <dl>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BCB"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-374D"></a>X/Y/Z</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43D8"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751BA2"></a>选择其中之一，可翻转贴图 gizmo 的对齐。每项指定 Gizmo 的哪个轴与对象的局部 Z 轴对齐。 
+                                 	 
+                              </p> 
+                              <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA81"></a><div class="note-note"><span class="label label-target-language">注意:</span>这些选项与“U/V/W 平铺”微调器旁的“翻转”复选框不同。“对齐”选项按钮实际上翻转 Gizmo 的方向，而“翻转”复选框翻转指定贴图的方向。 
+                                    	 
+                                 </div>
+                              </div> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BCA"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-374C"></a>操纵</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43D7"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751BA3"></a>启用时，gizmo 出现在能让您改变视口中的参数的对象上。当启用“真实世界贴图大小”时，仅可对“平面与长方体”类型贴图使用操纵。有关详细信息，请参见 <span class="char_link"><a href="GUID-78327298-4741-470C-848D-4C3618B18FCA.htm#WSF742DAB04106313366400BF6112A1CEA097-7EA5">UVW 贴图操纵器</a></span>。 
+                                 	 
+                              </p> <a name="WS1A9193826455F5FFBA679E112A6A190043D7E"></a><div class="figure-anchor"><img src="../images/GUID-06FD0346-8D75-46D2-A6A4-21DFB494D23A-low.png"></div>  
+                              <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA83"></a><div class="note-tip"><span class="label label-target-language">提示</span>启用捕捉来精确调整贴图。 
+                                    	 
+                                 </div>
+                              </div> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BC9"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-374B"></a>适配</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43D6"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751BA4"></a>将 gizmo 适配到对象的范围并使其居中，以使其锁定到对象的范围。在启用“真实世界贴图大小”时不可用。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BC8"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-374A"></a>中心</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43D5"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751BA5"></a>移动 gizmo，使其中心与对象的中心一致。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BC7"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3749"></a>位图适配</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43D4"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751BA6"></a>显示标准的位图文件浏览器，使您可以拾取图像。在启用“真实世界贴图大小”时不可用。 
+                                 	 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3748"></a>对于平面贴图，贴图图标被设置为图像的纵横比。对于圆柱形贴图，高度（而不是 Gizmo 的半径）被缩放以匹配位图。为获得最佳效果，首先使用“拟合”按钮以匹配对象和 Gizmo 的半径，然后使用“位图拟合”。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BC6"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3747"></a>法线对齐</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43D3"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751BA7"></a>单击并在要应用修改器的对象曲面上拖动。Gizmo 的原点放在鼠标在曲面所指向的点；Gizmo 的 XY 平面与该面对齐。Gizmo 的 X 轴位于对象的 XY 平面上。 
+                                 	 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3746"></a>“法线对齐”考虑了平滑组并使用插补法线，这基于面平滑。因此，可将贴图图标定向至曲面的任何部分，而不是令其捕捉到面法线。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BC5"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3745"></a>视图对齐</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43D2"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751BA8"></a>将贴图 gizmo 重定向为面向活动视口。图标大小不变。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BC4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3744"></a>区域适配</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43D1"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751BA9"></a>激活一个模式，从中可在视口中拖动以定义贴图 Gizmo 的区域。不影响 Gizmo 的方向。在启用“真实世界贴图大小”时不可用。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BC3"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3743"></a>重置</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43D0"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751BAA"></a>删除控制 gizmo 的当前控制器，并插入使用“拟合”功能初始化的新控制器。所有 Gizmo 动画都将丢失。就像所有对齐选项一样，可通过单击“撤消”来重置操作。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                        <dt><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-7BC2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3742"></a>获取</span></dt>
+                        <dd>
+                           <div class="definition"><a name="WS73099CC142F487551A80AE1B11DF600637E-43CF"></a> 
+                              <p><a name="WS1A9193826455F5FF1DBC298511635BEA8751BAB"></a>在拾取对象以从中获得 UVW 时，从其他对象有效复制 UVW 坐标，一个对话框会提示您选择是以绝对方式还是相对方式完成获得。 
+                                 	 
+                              </p> 
+                              <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3741"></a>如果选择“绝对”，获得的贴图 Gizmo 会恰好放在所拾取的贴图 Gizmo 的顶部。如果选择“相对”，获得的贴图 Gizmo 放在选定对象上方。 
+                                 	 
+                              </p> 
+                           </div>
+                        </dd>
+                     </dl>
+                  </div>
+                  <div class="dl_section"><a name="GUID-58EC2EC4-4B6C-4491-9CFD-232D10CE7638"></a><p class="title"><a name="GUID-43744788-9D6D-4906-9FD7-92C596A677C5"></a>“显示”组
+                     </p><a name="WS1A9193826455F5FFBA679E112A6A190043D7F"></a><div class="figure-anchor"><img src="../images/GUID-C3ABBAC3-33FB-4E19-AD0F-88AB677C2317-low.png"></div>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3740"></a> 此设置确定贴图不连续性（也称为结合口）是否以及如何显示在视口中。仅在 Gizmo 子对象层级处于活动状态时显示结合口。 
+                        	 
+                     </p>
+                     <div><a name="WS1A9193826455F5FFF0124D0128D193D50A7582"></a><div class="note-tip"><span class="label label-target-language">提示</span>默认接缝颜色为绿色；要更改颜色，请转到“自定义”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“自定义用户界面”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“颜色”选项卡，然后从“元素”下拉列表中选择“UVW 贴图”。 
+                           	 
+                        </div>
+                     </div>
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-373F"></a>这些选项包括： 
+                        	 
+                     </p><a name="WS1A9193826455F5FFBA679E112A6A190043D80"></a><ul>
+                        <li> <em class="strong">不显示结合口</em>视口中不显示贴图边界。这是默认选择。 
+                           		
+                        </li>
+                        <li> <em class="strong">显示薄的结合口</em>使用相对细的线条，在视口中显示对象曲面上的贴图边界。放大或缩小视图时，线条的粗细保持不变。 
+                           		
+                        </li>
+                        <li> <em class="strong">显示厚的结合口</em>使用相对粗的线条，在视口中显示对象曲面上的贴图边界。在放大视图时，线条变粗；而在缩小视图时，线条变细。 
+                           		
+                        </li>
+                     </ul>
+                  </div> 
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-0A442B2E-2BC4-4E0A-8B54-F760B28EEC97">
+      <meta name="description" content="“反向运动学”卷展栏基于对选定层次应用的 IK 解算器显示不同控件。使用“动画”菜单对层次应用 IK 解算器。">
+      <meta name="indexterm" content="IK 卷展栏: 反向运动学">
+      <meta name="indexterm" content="反向运动学: 卷展栏">
+      <meta name="indexterm" content="应用式 IK">
+      <meta name="indexterm" content="卷展栏: 反向运动学">
+      <meta name="topic-type" content="concept">
+      <title>“反向运动学”卷展栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-0A442B2E-2BC4-4E0A-8B54-F760B28EEC97"></a><div class="head">
+            <h1>“反向运动学”卷展栏</h1>
+         </div>
+         <p class="blurb">“反向运动学”卷展栏基于对选定层次应用的 IK 解算器显示不同控件。使用“动画”菜单对层次应用 IK 解算器。 </p><a name="UL_B84975ABE3EF4D5EBE82D905EDFC1173"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-D3A7158F-AAFC-46B7-BF01-3E247CE3DA54">进行选择。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-FF012ED2-9008-4A7C-932C-DD6D854CCF12-low.png">“层次”面板  <img src="../images/ac.menuaro.gif"> “IK” <img src="../images/ac.menuaro.gif"> “反向运动学”卷展栏</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3C28"></a>当 HD IK 解算器应用于 IK 链时，“反向运动学”卷展栏中显示下文介绍的控件。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3C27"></a>“反向运动学”卷展栏中提供用于交互式和应用式 IK 的控件，以及用于 HD 解算器（与历史有关）的控件。使用“应用 IK”计算 IK 解决方案，并为 IK 链（IK 链必须包含下列对象）中的所有对象生成变换关键点（移动、旋转）。在默认情况下，在每个帧创建关键点。
+            
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190044ED7"></a><ul>
+            <li>应用 IK 需要将 IK 结构的一个或多个部分绑定在一起，以按照对象来设置动画。绑定在一起之后，选择运动学链中的任何对象，然后单击“应用 IK”按钮。 </li>
+            <li>当您需要运动学链中的对象与其他对象的运动完全匹配时，“应用 IK”动画方法最有效。相关的示例是应始终显示为与下列对象连接的机械连接。 </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C26"></a> 
+            <h2><a name="GUID-CD7E5CDA-CF19-4232-AB08-2016EB484349"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044ED8"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044ED9"></a>要使用交互式 IK，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>构建对象层次。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3C25"></a>如果要使用骨骼，请确保在创建骨骼时尚未启用“指定给子对象”。 
+                  </p> 
+               </li>
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择链的末端。 
+               </li>
+               <li>转至 <img src="../images/GUID-FF012ED2-9008-4A7C-932C-DD6D854CCF12-low.png">“层次”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“IK”按钮。 
+               </li>
+               <li>向上滚动到“反向运动学”卷展栏 </li>
+               <li>单击“交互式 IK”。 </li>
+               <li>向前移动时间滑块，然后移动链的末端。 </li>
+               <li>在使用前进运动学时，禁用“交互式 IK”。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190044EDA"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044EDB"></a>要使用应用式 IK，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>将 HD 解算器添加到层次中。 </li>
+               <li>将 IK 结构中的对象绑定到下列对象。 </li>
+               <li>设置下列对象的动画。 </li>
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 在 IK 结构中选择任何对象。 
+               </li>
+               <li>在 <img src="../images/GUID-FF012ED2-9008-4A7C-932C-DD6D854CCF12-low.png">“层次”面板上，单击“IK”并展开“反向运动学”卷展栏。 
+               </li>
+               <li>单击“应用 IK”。 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E573"></a><div class="note-tip"><span class="label label-target-language">提示</span>确保“开始帧”和“结束帧”与动画长度匹配。 
+                     </div>
+                  </div> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C24"></a> 
+            <h2><a name="GUID-CD9C7CB7-7030-42A6-AB06-461E44718C4C"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044EDC"></a><div class="figure-anchor"><img src="../images/GUID-84720917-7318-48DF-A870-2F1E79ADA882-low.png"></div>  <a name="GUID-ADC8FFF1-B212-4DBE-9A96-52C0630B9D90"></a><dl>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E1D88"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C23"></a>交互式 IK</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-58A9"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA875269F"></a> 允许对层次进行 IK 操纵，而无需应用 IK 解算器或使用下列对象。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E1D89"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C22"></a>应用 IK</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-58A8"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526A0"></a>为动画的每一帧计算 IK 解决方案，并为 IK 链中的每个对象创建变换关键点。提示行上出现栏图形，指示计算的进度。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E1D8A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C21"></a>仅应用于关键点</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-58A7"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526A1"></a>为末端效应器的现有关键帧解算 IK 解决方案。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E1D8B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C20"></a>更新视口</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-58A6"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526A2"></a>在视口中按帧查看应用 IK 帧的进度。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E1D8C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C1F"></a>清除关键点</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-58A5"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526A3"></a>在应用 IK 之前，从选定 IK 链中删除所有移动和旋转关键点。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E1D8D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3C1E"></a>开始/结束</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-58A4"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526A4"></a>设置帧的范围以计算应用的 IK 解决方案。“应用 IK”的默认设置计算活动时间段中每个帧的 IK 解决方案。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-A0B43BC0-5D11-4852-A83A-5B380B5526EB">
+      <meta name="description" content="character studio 中的群组系统使用两个不同的辅助对象：群组和代理。构建群组模拟的第一步是创建这些辅助对象。群组辅助对象是设置和解算群组模拟的命令中心，而代理为群组中的每个动画对象提供替代对象。使用群组辅助对象控件来制作代理的动画，然后将对象链接到代理以创建完成的动画。">
+      <meta name="indexterm" content="群组: 辅助对象, 创建">
+      <meta name="contextid" content="TOPIC_CREATING_CROWD_HELPERS">
+      <meta name="contextid" content="TOPIC_CREATING_CROWD_HELPERS_PROC1">
+      <meta name="contextid" content="TOPIC_CREATING_CROWD_HELPERS_PROC2">
+      <meta name="contextid" content="TOPIC_CREATING_CROWD_HELPERS_PROC3">
+      <meta name="topic-type" content="concept">
+      <title>创建群组辅助对象</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-A0B43BC0-5D11-4852-A83A-5B380B5526EB"></a><div class="head">
+            <h1>创建群组辅助对象</h1>
+         </div>
+         <p class="blurb">character studio 中的群组系统使用两个不同的辅助对象：群组和代理。构建群组模拟的第一步是创建这些辅助对象。群组辅助对象是设置和解算群组模拟的命令中心，而代理为群组中的每个动画对象提供替代对象。使用群组辅助对象控件来制作代理的动画，然后将对象链接到代理以创建完成的动画。
+            
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045E88"></a> 
+            <h2><a name="GUID-2A2E990A-09B0-4C11-8D0D-DDFC0962E554"></a>群组辅助对象
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF1698B"></a>群组辅助对象在视口中显示为蓝色的四面体。群组辅助对象的位置和大小并不影响模拟。对于最简单的工作流程，可以创建相对较大的辅助对象，并将其放置于易于选中的位置。每个场景很少需要一个以上的群组辅助对象。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190045E89"></a><div class="figure-anchor"><img src="../images/GUID-533CCDA2-8416-49B7-A505-B27DBE34F8ED-low.png"></div> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF1698C"></a>创建代理之后，使用群组辅助对象可以克隆代理并分布该克隆体、添加行为、对代理应用行为、将代理链接到动画对象等等。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045E8A"></a> 
+            <h2><a name="GUID-17A5D3A9-11D7-499E-95E0-76A3118CCF9D"></a>代理辅助对象
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045E8B"></a><div class="figure-anchor"><img src="../images/GUID-0EAD183F-E852-4FA7-B27D-8EA29F049881-low.png"></div> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF1698D"></a>character studio 中的群组系统将代理辅助对象用作群组模拟和受影响的对象之间的中间体。代理是非渲染的四棱锥形状的对象。当群组系统使代理到处移动时，代理顶点指向的方向为群组系统所使用的“向前”。 
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF1698E"></a>每个对象使用一个代理以被群组系统制作成动画。可以逐个添加代理，或使用任何标准的 <span class="charspan-msgph">3ds Max</span> 克隆对象方法，包括按住 <span class="keyboardEntry">Shift</span> 键进行克隆以及阵列功能。然而，群组对象提供了一个方便的<span class="char_link"><a href="GUID-6F7884E2-9110-4259-B1D9-9BDD87B9D4D6.htm">散布对象</a></span>功能，该功能有方向和缩放的选项，以在表面上或体积内克隆代理并分布克隆体。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-464A"></a> 
+            <h2><a name="GUID-72F18B5D-7827-49FE-993F-50E985E895AD"></a>过程
+            </h2> <a name="WSF742DAB041063133728B9B2112A1CE7292-7E55"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045E8C"></a>
+               <!--CPM-ContextId = 'TOPIC_CREATING_CROWD_HELPERS_PROC1'--><a name="GUID-18E1C03C-34B1-4099-88F0-EF964B9B6195"></a>要创建群组辅助对象，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板上，单击 <img src="../images/GUID-9A23D2B8-9CE2-40BE-98B6-651DBC94F4F7-low.png">（辅助对象）。 
+               </li>
+               <li>单击“群组”，并将辅助对象拖拽到方便的大小。 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E7FA"></a><div class="note-tip"><span class="label label-target-language">提示</span>使群组辅助对象足够大，这样就可以在两个或多个视口中轻易地进行选择。辅助对象的大小不会以任何方式影响到群组模拟。 
+                     </div>
+                  </div> 
+               </li>
+            </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7E54"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045E8D"></a>
+               <!--CPM-ContextId = 'TOPIC_CREATING_CROWD_HELPERS_PROC2'--><a name="GUID-3B525AA1-90C9-455D-9DC4-40A3B3FBDEAE"></a>要创建代理辅助对象，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板上，单击 <img src="../images/GUID-9A23D2B8-9CE2-40BE-98B6-651DBC94F4F7-low.png">（辅助对象）。 
+               </li>
+               <li>单击“代理”。在视口中执行拖动操作，以查看代理的位置及其大小。 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E7FB"></a><div class="note-tip"><span class="label label-target-language">提示</span>代理在您创建它的视口中始终指向“向上”。因此如果希望它指向“向前”，即指向世界坐标系中 Y 轴的正方向，则应该在“顶”视口中创建它。 
+                     </div>
+                  </div> 
+               </li>
+            </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7E53"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045E8E"></a>
+               <!--CPM-ContextId = 'TOPIC_CREATING_CROWD_HELPERS_PROC3'--><a name="GUID-3C8E305A-7247-4ADA-BCDF-66BC61C3371E"></a>要克隆散布代理，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>创建群组辅助对象和代理辅助对象。 </li>
+               <li>决定如何分布代理的克隆体，并创建一个用来定义如何定位克隆体的对象：栅格对象、基本长方体或球体、图形或任何用作表面的对象。作为备选，可以选择将克隆体发布到没有使用发布对象的圆形区域。 </li>
+               <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择群组对象，并转到 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板。 
+               </li>
+               <li>单击 <img src="../images/GUID-006EAF2B-82D6-4C50-9B9E-ACD146F43BB8-low.png">（散布对象）以打开<span class="char_link"><a href="GUID-6F7884E2-9110-4259-B1D9-9BDD87B9D4D6.htm">“散布对象”对话框</a></span>。 
+               </li>
+               <li>在“克隆”选项卡上，设置要创建的克隆体数并选择要克隆的对象。 </li>
+               <li>单击“生成克隆体”。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16991"></a>这样就在相同位置生成了指定数目的克隆体。要变换位置、方向和/或大小，继续如下步骤。 
+                  </p> 
+               </li>
+               <li>在“位置”选项卡 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“放置相对于对象”组中，选择分布选项。单击“无”按钮，然后选择之前创建的分布对象。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16992"></a>此外，若要将代理分布到圆形区域，请选择“放置于区域”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“在放射区域内”，并设置中心和半径。 
+                  </p> 
+               </li>
+               <li>单击“生成位置”。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16993"></a>这样就发布了克隆体。 
+                  </p> 
+               </li>
+               <li>在“旋转”选项卡上，选择克隆对象的哪些局部轴朝前和朝上。可选择的，可以指定克隆体方向的源和目标对象，也可以指定计算方向随机偏离的限制。 </li>
+               <li>单击“生成方向”。 </li>
+               <li>在“缩放”选项卡上，为每个轴指定平均、偏离，也可以有选择性地指定“相同”设置和随机种子。 </li>
+               <li>单击“生成比例”。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16994"></a>此时基本上已经完成了。然而，要为克隆体创建一系列随机位置、方向和/或大小，就继续以下两个步骤并在必要的时候进行重复。 
+                  </p> 
+               </li>
+               <li>在“所有操作”上，打开“位置”、“旋转”和/或“缩放”。要变换随机位置、旋转和/或比例，打开对应的“增大种子”复选框。 </li>
+               <li>单击“散布”按钮。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16995"></a>在克隆、位置、旋转和缩放选项卡上分别设置它们各自的选项而不单击“生成”按钮，然后使用“所有操作”选项卡以同时应用任何或所有的散布操作，就可以将这些功能结合起来。同样，也可以使用“所有操作”选项卡 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">选择要变换的对象来指定要散布的任何对象，而不仅仅是克隆。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="see-also">
+            <h4>请参见</h4>
+            <div class="related-links">
+               <ul>
+                  <li> <span class="char_link"><a href="GUID-09B7C789-F4DC-4F60-9E77-DC8A48EAB7F9.htm">代理辅助对象</a></span> 
+                  </li>
+                  <li> <span class="char_link"><a href="GUID-164ED404-D6B9-4B4B-A6CD-CE4F1B67EA04.htm">群组辅助对象</a></span> 
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

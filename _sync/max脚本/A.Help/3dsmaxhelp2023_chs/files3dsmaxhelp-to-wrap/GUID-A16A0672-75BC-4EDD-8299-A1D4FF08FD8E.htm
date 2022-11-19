@@ -1,0 +1,141 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-A16A0672-75BC-4EDD-8299-A1D4FF08FD8E">
+      <meta name="description" content="“材质静态”操作符用于为粒子提供整个事件期间保持恒定的材质 ID。它还允许您根据材质 ID 将材质指定给每个粒子。该操作符可以将相同的材质 ID 指定给所有粒子，或者以循环或随机的方式将不同的 ID 指定给连续的粒子。后一功能的最常见用法是使用“多维/子对象”材质，用于对每个粒子应用不同的材质。">
+      <meta name="indexterm" content="粒子: 和材质">
+      <meta name="indexterm" content="材质操作符: 静态">
+      <meta name="indexterm" content="操作符: 材质静态">
+      <meta name="topic-type" content="concept">
+      <title>材质静态操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-A16A0672-75BC-4EDD-8299-A1D4FF08FD8E"></a><div class="head">
+            <h1> 材质静态操作符</h1>
+         </div>
+         <p class="blurb">“材质静态”操作符用于为粒子提供整个事件期间保持恒定的材质 ID。它还允许您根据材质 ID 将材质指定给每个粒子。该操作符可以将相同的材质 ID 指定给所有粒子，或者以循环或随机的方式将不同的 ID 指定给连续的粒子。后一功能的最常见用法是使用“多维/子对象”材质，用于对每个粒子应用不同的材质。
+            
+         </p>
+         <div class="bodyReference"><a name="GUID-F7CEFAF1-5937-4C89-B38F-9D5AB763C8F4"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-58651F3A-1424-4252-A57C-C60F334B0DCF">粒子视图  <img src="../images/ac.menuaro.gif">  在某个事件中单击“材质静态”，或将“材质静态”操作符添加到粒子系统中，然后选择它。</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-61C1"></a> 
+               <h2><a name="GUID-0A241CAD-B124-4771-A2AC-2990FE64E86E"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004248A"></a><div class="figure-anchor"><img src="../images/GUID-C4CA5269-C832-4104-8951-133DEC845247-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61C0"></a>该用户界面出现在“粒子视图”对话框右侧的“参数”面板中。 
+               </p> <a name="GUID-F4C5723A-2D06-4B08-BD9B-DF0EAABD1432"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6420"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61BF"></a>指定材质</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6527"></a> 启用时，该操作符将一个材质指定给多个粒子。默认设置为启用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-641F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61BE"></a>[按钮]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6526"></a> 使用此按钮可将材质指定给操作符。单击此按钮，然后使用“材质/贴图浏览器”选择材质。或者，将材质从“材质编辑器”示例窗或节点输出套接字（Slate 材质编辑器）拖至该按钮。将材质指定给操作符后，其名称将出现在此按钮上。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-641E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61BD"></a>指定材质 ID</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6525"></a> 启用时，该操作符会为每个粒子定义一个材质 ID 数目。默认设置为禁用状态。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-641D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61BC"></a>在视口中显示</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6524"></a> 启用时，在视口中材质会显示为应用于粒子上。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-84AF2766-3B2D-4B08-9EE2-3B6CAD6C18D7"></a><span class="term"><a name="GUID-7AF40A56-CD8E-4863-9BDD-B066B980A1FF"></a> 子材质 ID 偏移</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-CA0F89C8-ECB6-4066-A49C-95D8C64C9D56"></a>将<span class="char_link"><a href="GUID-D3AC022F-B6F6-4C99-A2AE-06D35AF3F0A6.htm">材质继承</a></span>与多维/子对象材质一起使用时，“材质静态”操作符会将此值添加到“材质 ID”值以创建子材质 ID。粒子流将使用此 ID 根据材质中的子材质 ID 确定继承材质中的哪些子材质，然后将这些子材质应用于其事件中的粒子。
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-574440E8-4878-4A40-9623-0E41C01440C6"></a><p class="title"><a name="GUID-77FAC9D5-A99C-4618-BC4B-DE9370706CC1"></a>[指定方法]
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61BB"></a>“材质静态”操作符提供了为粒子指定材质 ID 的三种不同方法： 
+                  </p><a name="UL_92A0A800F81941ECA3D1D3F467844A33"></a><ul>
+                     <li><em class="strong">材质 ID</em> 为所有粒子指定相同的材质 ID。使用此数值字段可以设置 ID 值。 
+                     </li>
+                     <li><em class="strong">循环</em> 按递增序列顺序为每个粒子指定一个范围从 1 到 N 的材质 ID，其中 N 为子材质数目。指定的第一个 ID 是 1，然后是 2，依次递增，直到 N 为止；然后再次从 1 开始，不断循环。 
+                     </li>
+                     <li><em class="strong">随机</em> 为每个粒子指定一个范围从 1 到 N 的随机材质 ID，其中 N 为子材质数目。 
+                     </li>
+                  </ul>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6419"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61B7"></a>子材质数目</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6520"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752C76"></a>使用“循环”或“随机”选项为粒子指定的最大 ID 数目。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61B6"></a>通常，将此值设置为与“多维/子对象”材质中的子材质数目相同。如果将其设置为较小的数值，该操作符将只能使用所设数目的子材质，从第一个子材质开始，依次累加。 
+                           </p> 
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FAF"></a><div class="note-note"><span class="label label-target-language">注意:</span>“粒子流”会自动将该值设置为材质中子材质的数目，此设置<em class="mild">仅进行一次</em>，即第一次将材质应用于该操作符时。材质本身中任何后续更改或将另一材质应用于该操作符，都不会更改或更新此设置。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-7594D049-D74F-4F9E-AE2F-69ADDB79CC4B"></a><p class="title"><a name="GUID-25716C29-D55F-4DF2-BE03-E735983431D6"></a>“速率”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61B5"></a>这些设置允许选择该操作符更改材质 ID 指定的依据，并指定更改的速率。 
+                  </p><a name="UL_CD7948B647EF41678ED2852E171980C0"></a><ul>
+                     <li><em class="strong">每秒</em> 设定指定的材质 ID 每秒递增的次数。如果此值与粒子进入事件的速率相同，则为每个粒子指定一个 ID。如果此值小于粒子进入事件的速率，则会为多个粒子提供相同的 ID，或者如果此值大于粒子进入事件的速率，则“粒子流”为每个粒子指定 ID 时每次增加的值大于
+                        1。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61B3"></a>例如，如果粒子进入事件的间隔为 1/60 秒，且“每秒”设为 30，则每对粒子将分配一个相同的 ID。或者，如果粒子进入事件的间隔为 1/15 秒，且“每秒”设为 30，那么每个粒子的 ID 将增量（或随机变化）两次。 
+                        </p> 
+                     </li>
+                     <li><em class="strong">每粒子</em> 设定在更改材质 ID 指定之前必须显示的粒子数量。例如，如果将“每粒子”设置为 3，则材质 ID 每三个粒子更改一次。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61B1"></a>如果将“每粒子”设置为小于 1.0 的数字，那么“粒子流”将更快速地浏览子材质列表，而不是每个 ID 浏览一个（或多个）粒子。也就是说，“粒子流”将此值拆分为 1.0，然后将所得结果与当前材质 ID 相加，以获取下一个材质 ID。例如，有八个子材质时，如果将“每粒子”设置为
+                           0.33，并使用“循环”选项，将得到以下 ID 系列：1, 4, 7, 2, 5, 8, 3, 6, 1, ...。通常，此选项仅与“循环”选项一起使用。 
+                        </p> 
+                     </li>
+                  </ul>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6416"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61B0"></a>循环</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-651D"></a> 启用时，如果已指定了最后一个 ID，“粒子流”将循环回第一个 ID 并继续循环。禁用此选项时，“粒子流”为所有后续粒子指定最后一个循环 ID。只能和“循环”指定方法一起使用。默认设置为启用。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61AF"></a>例如，假设要使进入事件的前八个粒子使用不同的材质，而所有后续粒子使用第九个材质。为此，应该创建一个具有九个子材质的“多维/子对象”材质，然后将其指定给“材质静态”操作符。启用“指定材质 ID”，选择“循环”指定方法，然后将“子材质数目”设置为
+                           9。对于“速率”，请使用“每粒子”的默认设置和 1.0。最后，禁用“循环”。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-3EE8C111-AF66-4B7A-BD56-54753D51356C"></a><p class="title"><a name="GUID-5E585AF0-0EDB-492B-AC18-349937FE79B1"></a>“唯一性”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-61AE"></a>同时使用“唯一性”设置和“随机”选项可改变指定 ID 的序列。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6415"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61AD"></a>种子</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-651C"></a> 指定随机化值。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6414"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-61AC"></a>新增特性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-651B"></a> 使用随机化公式计算新种子。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-C01CD1F2-C4AA-4A26-BEB0-1137DB26A6A4"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-649BCBB7-FC88-40A2-8554-47928A197A02.htm">粒子视图中的材质和贴图</a></span></li>
+               <li><span class="char_link"><a href="GUID-C8ACB661-2B42-48DC-985F-101B9FB51320.htm">材质频率操作符</a></span></li>
+               <li><span class="char_link"><a href="GUID-8A5EF550-CF8A-4467-B73A-AED6414CD256.htm">材质动态操作符</a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

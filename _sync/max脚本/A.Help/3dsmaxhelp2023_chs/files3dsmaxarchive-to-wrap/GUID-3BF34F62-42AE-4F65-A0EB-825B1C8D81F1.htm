@@ -1,0 +1,211 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-3BF34F62-42AE-4F65-A0EB-825B1C8D81F1">
+      <meta name="description" content="围绕障碍物生成的向量场允许群组成员回避场景中的障碍物。该字段由向量的三维数组组成，用于为障碍物周围的代理或其他对象指示方向。卷展栏中的设置帮助确定如何生成和显示向量，以及向量如何影响其他对象。">
+      <meta name="indexterm" content="群组卷展栏: 障碍参数（矢量场空间扭曲）">
+      <meta name="topic-type" content="concept">
+      <title>“障碍参数”卷展栏（向量场空间扭曲）</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-3BF34F62-42AE-4F65-A0EB-825B1C8D81F1"></a><div class="head">
+            <h1>“障碍参数”卷展栏（向量场空间扭曲）</h1>
+         </div>
+         <p class="blurb">围绕<span class="char_link"><a href="GUID-523C7F3C-8901-452F-9D9C-19C1222C92E6.htm">障碍物</a></span>生成的<em class="mild">向量场</em>允许<span class="char_link"><a href="GUID-164ED404-D6B9-4B4B-A6CD-CE4F1B67EA04.htm">群组</a></span>成员回避场景中的障碍物。该字段由向量的三维数组组成，用于为障碍物周围的代理或其他对象指示方向。卷展栏中的设置帮助确定如何生成和显示向量，以及向量如何影响其他对象。 
+         </p><a name="GUID-825FA1FD-4429-4BC1-BDE5-39B1F8B762E2"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-09252D63-C59D-492B-9573-B992066F7CC6"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-08A5CE7E-9160-4297-B29A-88B3B570B996-low.png">（空间扭曲） <img src="../images/ac.menuaro.gif"> “粒子和动力学” <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “向量场” <img src="../images/ac.menuaro.gif"> “障碍参数”卷展栏</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-BD5EF004-4E4B-4289-A05A-0A289C7EE038">选择向量场空间扭曲。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “障碍参数”卷展栏</span> 
+            </li>
+         </ul>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E84A"></a><div class="note-note"><span class="label label-target-language">注意:</span>只有使用群组对象将对象绑定到向量场，它们才是该向量场的力的作用对象。有关常规用法说明，请参阅<span class="char_link"><a href="GUID-6352C429-A05F-4B3C-87DA-1C289008AF3A.htm#WSF742DAB041063133728B9B2112A1CE7292-7E44">使用向量场空间扭曲</a></span>。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-461B"></a> 
+            <h2><a name="GUID-2F1967F5-6901-4971-8ACB-32F72DE30FB0"></a>界面
+            </h2> <a name="WS1A9193826455F5FF4E421D7D11BF108001D-9B6"></a><div class="figure-anchor"><img src="../images/GUID-A2CC80EB-2AEC-4C9B-9DDF-1F1AAA456BC4-low.png"></div> <a name="GUID-A9DCB5B7-2AF0-400E-AFFB-8EBDB1F4D8B3"></a><div class="dl_section"><a name="GUID-AED80118-AF90-4D54-B721-CEC91E2527AD"></a><p class="title"><a name="GUID-A6DB8CA1-0B0D-4393-836D-5A0E42B790EA"></a>“显示”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190045FED"></a><div class="figure-anchor"><img src="../images/GUID-9BB12A78-BA6D-49A4-BD7C-618846D55DC5-low.png"><p><a name="WS73099CC142F4875514C01AC112A7ACEF16D90"></a>此组中的复选框用于控制是否显示矢量场空间扭曲中的四个不同元素。 
+                  </p>
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E84B"></a><div class="note-note"><span class="label label-target-language">注意:</span>通过单击任何一个可见的元素（范围表示<span class="charspan-emphasis"> <em class="mild">除外</em> </span>），可在视口中选择一个向量场空间扭曲。如果已经关闭全部四种元素的显示，仍可通过单击空间扭曲的 Gizmo 选择它。当从“顶部”（创建该扭曲的正交视口）查看 Gizmo 时，它象一对成 X 形的十字双头箭头。 
+                     </div>
+                  </div>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9B5"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16D91"></a>显示晶格</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A69"></a> 显示向量场晶格，即黄色线框。默认设置为启用。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16D92"></a>向量会在向量场范围内的晶格交集处生成。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9B4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16D93"></a>显示范围</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A68"></a> 显示在生成向量的范围内障碍物的体积，显示为橄榄色线框。默认设置为启用。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16D94"></a>该范围开始的形状与大小和障碍物完全相同，但通常会使用“计算向量”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“范围”设置放大。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9B3"></a><span class="term"><a name="WSF742DAB041063133728B9B2112A1CE7292-7DEB"></a>显示向量场</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A67"></a> 显示向量，向量会显示为在范围体积中自晶格交集向外发散的蓝色线条。默认设置为禁用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9B2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16D95"></a>显示曲面采样</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A66"></a> 显示自障碍物表面的采样点发出的绿色短线。默认设置为禁用。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16D96"></a>只有在您<span class="char_link"><a href="GUID-3BF34F62-42AE-4F65-A0EB-825B1C8D81F1.htm#WSF742DAB041063133728B9B2112A1CE7292-7DE7">计算</a></span>了向量场后，上述元素才会显示。有关详细信息，请参阅<span class="char_link"><a href="GUID-3BF34F62-42AE-4F65-A0EB-825B1C8D81F1.htm#WSF742DAB041063133728B9B2112A1CE7292-7DE8">采样精度</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9B1"></a><span class="term"><a name="WSF742DAB041063133728B9B2112A1CE7292-7DEA"></a>向量缩放</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A65"></a> 缩放向量，以使它们更易被看到或更隐蔽。默认设置为 1.0。 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E84C"></a><div class="note-note"><span class="label label-target-language">注意:</span>此设置不影响向量的强度，只影响向量的可见性。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9B0"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16D97"></a>图标大小</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A64"></a> 调整向量场空间扭曲图标（即一对交叉双头箭头）的大小。增大该图标大小可更便于进行视口选择。默认设置为视口中原始绘制的图标大小。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-3572D042-D66C-405E-A62D-E304AF1B600B"></a><p class="title"><a name="GUID-9C110CCA-8A8F-4FE2-9D21-54DB1744B33E"></a>“力”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190045FEF"></a><div class="figure-anchor"><img src="../images/GUID-AC153AA8-3B00-4E90-B38F-66AA24F90557-low.png"></div>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16D98"></a>这些参数决定了向量场如何影响其体积内的对象。 
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16D99"></a>更改任何“力”组设置都不需要重新计算向量场。 
+               </p>
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E84D"></a><div class="note-note"><span class="label label-target-language">注意:</span>使用向量场并不保证代理或粒子仍与障碍物保持一定的距离。某些情况下可能需要为“强度”、“衰减”和/或“拉力”设置生成动画效果，以使代理仍在向量场内。 
+                  </div>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9AF"></a><span class="term"><a name="WSF742DAB041063133728B9B2112A1CE7292-7DE9"></a>强度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A63"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875394C"></a>设置向量对进入向量场的对象的运动的效果。如果在您调整强度时，<span class="char_link"><a href="GUID-3BF34F62-42AE-4F65-A0EB-825B1C8D81F1.htm#WSF742DAB041063133728B9B2112A1CE7292-7DEB">显示向量场</a></span>设置为开启，那么可以看到向量线条的长短在视口中实时更改。默认设置为 1.0。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E84E"></a><div class="note-note"><span class="label label-target-language">注意:</span>有时，在更改强度后，向量会变得过大或过小。这种情况下，可调整<span class="char_link"><a href="GUID-3BF34F62-42AE-4F65-A0EB-825B1C8D81F1.htm#WSF742DAB041063133728B9B2112A1CE7292-7DEA">向量缩放</a></span>参数，以便正确显示向量。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9AE"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16D9A"></a>衰减</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A62"></a> 确定向量强度随着与对象表面距离的变化而变化的比例。默认设置为 2.0。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16D9B"></a>值为 0 表示所有向量的大小相同。值大于 0 表示向量距离对象表面的距离越远，向量越小。值小于 0 表示向量距离对象表面越远，向量越大。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9AD"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16D9C"></a>平行/垂直</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A61"></a> 设置向量生成的力与向量场是平行还是垂直。默认设置为垂直。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16D9D"></a>由于向量与对象表面垂直，而您通常希望代理能并行通过对象表面，所以通常使用垂直方向的力。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9AC"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16D9E"></a>拉力</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A60"></a> 调整对象相对于向量场的位置。此设置只有在选择“垂直”时才可用。默认设置为 0.0。范围从 -1.0 到 1.0。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16D9F"></a>由于缺少子样本，垂直移向向量场的对象有时会有离开向量场的趋势。“拉力”参数可帮助将物体拉回。拉力值大于 0 表示拉力朝向向量场向量的源。值小于 0 表示将力朝着向量场的向量所指的方向拉。值为 0.0 表示力与向量场的向量完全垂直。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-12CB782A-6C0E-4EC0-A6A0-FF77AC8C3701"></a><p class="title"><a name="GUID-271D9EEC-CF28-49FE-BB88-CA2EB4CE9046"></a>“计算向量”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190045FF1"></a><div class="figure-anchor"><img src="../images/GUID-C68034EA-2E3B-4535-8F2E-797D6AE2A362-low.png"></div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9AB"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16DA0"></a>向量场对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A5F"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753950"></a>用于指定障碍物。单击此按钮，然后选择其周围要生成向量场的对象。之后，该对象的名称将出现在此按钮上（最初名称为“无”）。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E84F"></a><div class="note-note"><span class="label label-target-language">注意:</span>只能将基本几何体和未修改的可编辑网格对象当作障碍物。同时，障碍物应被完全保卫在向量场晶格中。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9AA"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16DA1"></a>范围</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A5E"></a> 决定其中生成向量的体积。默认设置为 1.0。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16DA2"></a>范围在视口中表示为橄榄色的线框，其初始大小和形状与障碍物的大小和形状完全相同。增大“范围”设置可将线框朝着障碍物曲面法线的方向扩大线框。 
+                        </p> 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16DA3"></a>在群组模拟中，“范围”轮廓是代理开始“看到”障碍物，并开始转向以回避它的位置。如果您的群组成员正在穿过障碍物，或者只是在转向之前与障碍物离得太近，那么可增大“范围”设置。同时也可尝试增大向量场晶格分辨率和/或采样精度设置。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9A9"></a><span class="term"><a name="WSF742DAB041063133728B9B2112A1CE7292-7DE8"></a>采样精度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A5D"></a> 充当在障碍物曲面上使用的有效采样率的倍增器，以计算向量场中的向量方向。默认设置为 1。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16DA4"></a>基本采样率由 <span class="charspan-msgph">3ds Max</span> 根据晶格大小和每个多边形的大小确定。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9A8"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16DA5"></a>使用翻转面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A5C"></a> 表示在计算向量场期间要使用翻转法线。默认设置为禁用。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16DA6"></a>默认情况下，向量生成的方向和障碍物的面法线的方向相同，所以假设这些面法线指向外侧，对象在群组模拟中沿着它的外表面移动。但是，如果希望对象仍在对象的内表面中，请打开“使用翻转面”。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E850"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果正在某个对象（如房间）内运行群组模拟，此时正从该对象内侧查看，您可能希望该对象的面朝里。这种情况下，使用“可编辑网格/编辑网格”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“曲面属性”来翻转法线，并且不要启用“使用翻转面”。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9A7"></a><span class="term"><a name="WSF742DAB041063133728B9B2112A1CE7292-7DE7"></a>计算</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A5B"></a> 计算向量场。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16DA7"></a>在更改任何参数（除“力”组中的参数）后，始终重新计算向量场。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-8A54487B-73AF-4855-89A9-9430DF7160AD"></a><p class="title"><a name="GUID-22970213-43DE-40D3-A2CA-B0B481DD3364"></a>“混合向量”组
+               </p><a name="WS1A9193826455F5FFBA679E112A6A190045FF3"></a><div class="figure-anchor"><img src="../images/GUID-C6AEF191-B98C-4A1C-A608-262F7F688FD2-low.png"></div>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16DA8"></a>使用“混合向量”参数可以减少相邻向量角度的突然变化。例如，如果有一个波形曲面，波形向量与曲面的距离很远，这可能会对模拟造成不利影响。使用“混合向量”可纠正这种情况。 
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9A6"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16DA9"></a>起始距离</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A5A"></a> 开始混合向量的位置与对象相距的距离。默认设置为 0.0。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9A5"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16DAA"></a>衰减</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A59"></a> 混合周围向量的衰减。默认设置为 2.0。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9A4"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16DAB"></a>混合分段 X</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A58"></a> 要在 X 轴上混合的相邻晶格点数。默认设置为 1。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9A3"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16DAC"></a>混合分段 Y</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A57"></a> 要在 Y 轴上混合的相邻晶格点数。默认设置为 1。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9A2"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16DAD"></a>混合分段 Z</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A56"></a> 要在 Z 轴上混合的相邻晶格点数。默认设置为 1。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D-9A1"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16DAE"></a>混合</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1A55"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875395A"></a>单击以实现混合。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

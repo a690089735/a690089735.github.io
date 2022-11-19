@@ -1,0 +1,170 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-430EC71F-0568-44A9-AAFC-5AC85F025B00">
+      <meta name="description" content="CV 曲线子对象类似于对象级 CV 曲线。主要差别在于您不能在子对象层级上给出 CV 曲线渲染的厚度。">
+      <meta name="indexterm" content="NURBS: CV 曲线子对象">
+      <meta name="topic-type" content="concept">
+      <title>CV 曲线子对象</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-430EC71F-0568-44A9-AAFC-5AC85F025B00"></a><div class="head">
+            <h1>CV 曲线子对象</h1>
+         </div>
+         <div class="abstract"> 
+            <p><a name="GUID-E2A5CF4F-B129-40FB-8AC6-5A8259F236DB"></a> <img src="../images/GUID-ABD469D5-46D6-4198-AB65-3AC3D808DF29-low.png"> 
+            </p> 
+            <p class="blurb">CV 曲线子对象类似于对象级 <span class="char_link"><a href="GUID-FC561769-06AA-446F-8B82-BF29B2EAAA3E.htm">CV 曲线</a></span>。主要差别在于您不能在子对象层级上给出 CV 曲线渲染的厚度。 
+            </p> 
+         </div><a name="UL_41BE1735C60B41148001A18824A04FE7"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-68DA34B7-1E7E-4F2D-952E-9CAA2A5BA9BB">选择 NURBS 对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “创建曲线”卷展栏 <img src="../images/ac.menuaro.gif"> “CV 曲线”按钮</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-3AE15EC2-3419-4C14-811D-C8AB854614A8">选择 NURBS 对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif">  NURBS 工具箱  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-ABD469D5-46D6-4198-AB65-3AC3D808DF29-low.png">（创建 CV 曲线）</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041F2B"></a> 
+            <h2><a name="GUID-04EB4E64-0B77-414C-917A-44231B5A454C"></a>绘制三维曲线
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CF6"></a>当创建 CV 曲线时，可以用三维形式绘制该曲线。为此，有两种方法可供选择： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041F2C"></a><ul>
+               <li>在所有视口中绘制：通过此切换可以使用任何视口来绘制曲线，以三维的进行绘制。 </li>
+               <li>使用 <span class="keyboardEntry">Ctrl</span> 键拖动 CV：当绘制曲线时，可以使用 <span class="keyboardEntry">Ctrl</span> 键在构造平面之外绘制 CV。 
+               </li>
+            </ul> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CF5"></a>使用 <span class="keyboardEntry">Ctrl</span> 键进一步移动鼠标将使最新的点离开构造平面。为此，有两种方法使用此键： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041F2D"></a><ul>
+               <li>单击并拖动。如果按住 <span class="keyboardEntry">Ctrl</span> 并按住鼠标按钮，则可以拖动以更改 CV 的高度。松开鼠标时设置 CV 的位置。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CF4"></a>采用此方法可能更直观。 
+                  </p> 
+               </li>
+               <li>依次单击。如果按住 <span class="keyboardEntry">Ctrl</span> + 单击，然后松开鼠标按钮，则在拖动鼠标时更改高度。再次单击鼠标来设置 CV 位置。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CF3"></a>采用此方法减少了重复应力造成的伤害。 
+                  </p> 
+               </li>
+            </ul> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CF2"></a>当偏移 CV 时，在构造平面的原始 CV 和偏移平面的实际 CV 上绘制一条红色虚线。可以将鼠标移动到非活动视口中，在这种情况下，<span class="charspan-msgph">3ds Max</span> 可以在非活动视口中使用 CV 的 Z 轴设定 CV 的高度。这可使设置的 CV 高度更具精确性。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CF1"></a> 当更改 CV 高度时，仍可使用<span class="char_link"><a href="GUID-427280CA-8CE8-4C6D-9AF6-8BBDC300BA61.htm">捕捉</a></span>。例如，如果启用 CV 捕捉，则通过将 CV 捕捉到非活动视口中其他 CV 来设置 CV 与其他 CV 相同的高度。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-6CF0"></a> 
+            <h2><a name="GUID-37D4C9CF-1875-436F-9CC6-2E0A6D65156D"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041F2E"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041F2F"></a>要创建 CV 曲线子对象，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在 NURBS 工具箱中，启用 <img src="../images/GUID-ABD469D5-46D6-4198-AB65-3AC3D808DF29-low.png">（CV 曲线）。 
+               </li>
+               <li>在视口中，单击并拖动可以创建第一 CV 以及第一曲线段。松开鼠标按钮可以添加第二 CV。通过单击每个后续的位置可以将新 CV 添加到曲线。右键单击则可结束曲线创建。 
+                  <div><a name="WS73099CC142F487551FACE55114134B88B1-7266"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果无需拖动通过单击即可开始创建曲线，则也可以创建曲线的第一 CV。但是，如果松开鼠标，则超过五个像素将背离最初按下鼠标的位置，这将创建其他的 CV。 
+                     </div>
+                  </div> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CEF"></a>当创建 CV 曲线时，可以按下 <span class="keyboardEntry">Backspace</span> 来移除创建的最后一个 CV，然后以相反顺序移除上一个 CV。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CEE"></a>如果“在所有视口中绘制”处于启用状态，则可以在任何视口中绘制、创建 3D 曲线。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CED"></a>要抬起构造平面之外的 CV，请按照“绘制三维曲线”的主题中早期描述的方法来使用<span class="keyboardEntry">绘制三维曲线</span>键。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CEC"></a>与样条线一样，如果单击曲线的初始 CV，就会显示<span class="char_link"><a href="GUID-ADAD0A1D-BEFD-4673-95A6-1F2E42552FDE.htm">“闭合曲线”对话框</a></span>。此对话框询问是否要闭合曲线。单击“否”可以使曲线保持打开状态，单击“是”可以闭合曲线。（也可以在曲线子对象层级上编辑曲线时将其闭合。）当在曲线子对象层级上显示闭合曲线时，初始 CV 显示为绿色圆，且绿色标记指示曲线的方向。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-6CEB"></a> 
+            <h2><a name="GUID-ABDA4602-B4EC-4C6F-9FE4-522AB94A840C"></a>界面
+            </h2> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041F30"></a> 
+               <h3><a name="GUID-EDDF8402-A175-48A5-B036-8041CD02155B"></a>“CV 曲线”卷展栏（创建时间）
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A190041F31"></a><div class="figure-anchor"><img src="../images/GUID-9D73ACEB-57EB-42ED-B6D8-73B1DB2C9095-low.png"></div>  <a name="GUID-9BDB839C-6EB4-4137-BA6D-C6FB33C00315"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D238"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6CEA"></a>在所有视口中绘制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6200"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87530F0"></a>可以在绘制曲线时在任何视口中使用。这是创建 3D 曲线的一种方法。禁用此此选项后，在开始绘制曲线的视口中完成绘制曲线。默认设置为启用。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CE9"></a>当“在所有视口中绘制”处于启用状态时，也可以使用任何视口中的<span class="char_link"><a href="GUID-427280CA-8CE8-4C6D-9AF6-8BBDC300BA61.htm">捕捉</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-C6CE3025-2C2A-4F69-96DA-1D5C3B39213B"></a><p class="title"><a name="GUID-6D4E2EC2-3879-49A8-AF1E-DCE101EA9CDB"></a>“自动重新参数化”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CE8"></a>使用此组中的单选按钮可指定自动重新参数化。这些控件与<span class="char_link"><a href="GUID-6BFE862D-8405-4710-A79D-CACA303637AA.htm">“重新参数化”对话框</a></span>中的控件类似。此外，除“无”之外的所有选项都可以指示 <span class="charspan-msgph">3ds Max</span> 对曲线进行自动重新参数化，即，无论何时通过移动 CV 和细化等操作进行编辑，都可以。 
+                  </p><a name="UL_E8EB9D869376403C9DC6F48510A5CF8E"></a><ul>
+                     <li><em class="strong">无</em>不会自动重新参数化。 
+                     </li>
+                     <li><em class="strong">弦长</em>选择弦长算法进行重新参数化。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CE5"></a>弦长重新参数化可以根据每个曲线分段长度的平方根设置结（位于<span class="char_link"><a href="GUID-8FCECAD7-28F8-49BB-A12A-33B2B673662A.htm">参数空间</a></span>）的空间。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CE4"></a>弦长重新参数化通常是最理想的选择。 
+                        </p> 
+                     </li>
+                     <li><em class="strong">一致</em>均匀隔开各个结。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CE2"></a>均匀结向量的优点在于，曲线或曲面只有在编辑时才能进行局部更改。如果使用另外两种形式的参数化，移动任何 CV 可以更改整个子对象。 
+                        </p> 
+                     </li>
+                  </ul>
+               </div> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041F33"></a> 
+               <h3><a name="GUID-95358981-B0B5-4CCC-8AB7-47BDD75BC166"></a>“CV 曲线”卷展栏（修改时间）
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A190041F34"></a><div class="figure-anchor"><img src="../images/GUID-6936B9A6-A163-4B92-933E-1EE18ACE64B1-low.png"></div>  <a name="GUID-98788F48-027D-467D-A30E-A47E4EFC96FE"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D23C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6CE1"></a>角度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-61FC"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87530F4"></a>设置曲线的角度。向次数值越大，连续性越大。角度值越低，曲线分段就越不连续。该角度既不能小于 1，也不能大于曲线中 CV 数所允许的数值。次数为 3 的曲线足以代表连续的曲线。这些曲线是稳定的，且外观理想。默认设置为 3。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CE0"></a>不建议将次数设置为大于 3 的数值，因为曲线度数越高，计算速度越慢，稳定性越差。之所以支持次数较高的曲线，主要是为了兼容使用其他曲面建模程序创建的模型。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6CDF"></a>CV 曲线中的 CV 数至少必须大于曲线的度数。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-6EB20B37-8EEB-4385-A51F-9B1F5A214FED"></a><p class="title"><a name="GUID-15C37162-E8A2-48AB-AB67-14B39BDAF159"></a>“自动重新参数化”组
+                  </p>
+                  <p><a name="GUID-06D282F0-3829-4BCD-BEEB-5F9F18DF1DF3"></a>使用此组中的单选按钮可指定自动重新参数化。这些控件与<span class="char_link"><a href="GUID-6BFE862D-8405-4710-A79D-CACA303637AA.htm">“重新参数化”对话框</a></span>中的控件类似。此外，除“无”之外的所有选项都可以指示 <span class="charspan-msgph">3ds Max</span> 对曲线进行自动重新参数化，即，无论何时通过移动 CV 和细化等操作进行编辑，都可以。 
+                  </p><a name="UL_0E1CCB6FE72C437D9EC9EB66025676AC"></a><ul>
+                     <li><em class="strong">无</em>不会自动重新参数化。 
+                     </li>
+                     <li><em class="strong">弦长</em>选择弦长算法进行重新参数化。 
+                        <p><a name="GUID-5F104489-00EF-4F91-A8F6-215834F435E8"></a>弦长重新参数化可以根据每个曲线分段长度的平方根设置结（位于<span class="char_link"><a href="GUID-8FCECAD7-28F8-49BB-A12A-33B2B673662A.htm">参数空间</a></span>）的空间。 
+                        </p> 
+                        <p><a name="GUID-E308BD2B-8B41-4837-9E53-0F6299348AD8"></a>弦长重新参数化通常是最理想的选择。 
+                        </p> 
+                     </li>
+                     <li><em class="strong">一致</em>均匀隔开各个结。 
+                        <p><a name="GUID-6CD93191-3107-409F-9F90-712BF1E85E79"></a>均匀结向量的优点在于，曲线或曲面只有在编辑时才能进行局部更改。如果使用另外两种形式的参数化，移动任何 CV 可以更改整个子对象。 
+                        </p> 
+                     </li>
+                  </ul>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D240"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6CD6"></a>关闭</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-61F8"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87530F8"></a>闭合曲线。如果已经使曲线闭合，将会禁用该选项。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D241"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6CD5"></a>重建</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-61F7"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87530F9"></a>显示<span class="char_link"><a href="GUID-C2A94FB6-B5B7-46B1-9D27-20EBD7ADC629.htm">“重建 CV 曲线”对话框</a></span>可以重建 CV 曲线。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D242"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-6CD4"></a>重新参数化</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-61F6"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA87530FA"></a>显示<span class="char_link"><a href="GUID-6BFE862D-8405-4710-A79D-CACA303637AA.htm">“重新参数化”对话框</a></span>可以重新参数化 CV。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-779BD0C7-6849-4599-A4C8-96DBE3086CF6">
+      <meta name="description" content="“几何体”子操作符提供对 3ds Max 场景中几何体和相关数据的访问。“输入”属于“对象”数据类型，通常来自“选择对象”子操作符的输出。">
+      <meta name="topic-type" content="concept">
+      <title>“几何体”子操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-779BD0C7-6849-4599-A4C8-96DBE3086CF6"></a><div class="head">
+            <h1>“几何体”子操作符</h1>
+         </div>
+         <p class="blurb">“几何体”子操作符提供对 <span class="charspan-msgph">3ds Max</span> 场景中几何体和相关数据的访问。“输入”属于“对象”数据类型，通常来自<span class="char_link"><a href="GUID-BDECE712-8441-4E15-B213-8DBAFE144268.htm">“选择对象”子操作符</a></span>的输出。 
+         </p>
+         <div class="bodyReference"><a name="GUID-30F4C880-258B-4F34-8582-B5F50B613121"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-580987FA-22AD-43F2-B520-992B51EC5F93">“粒子视图” <img src="../images/ac.menuaro.gif"> “数据图标/操作符/图标测试/测试” <img src="../images/ac.menuaro.gif">  单击“编辑数据流”。 <img src="../images/ac.menuaro.gif"> 添加或选择“几何体”。</span> 
+               </li>
+            </ul>
+            <div class="section"><a name="AB1007752"></a> 
+               <h2><a name="GUID-6365EC71-0FB0-41CA-86EF-6107371C7C49"></a>界面
+               </h2> <a name="FIG_4F1B4A2C72F54D50BFFA948DA2FFA506"></a><div class="figure-anchor"><img src="../images/GUID-2D027F36-89B3-44A9-993A-8AF97936C054-low.png"></div>  <a name="GUID-644F95CD-113F-4FA2-A5A4-1B7BA7E5A4D5"></a><dl>
+                  <dt><a name="GUID-0020C7BF-EDD4-479C-9424-909A3BFC34FE"></a><span class="term"><a name="GUID-930EEE2A-5331-4767-B73B-594D5E626D4E"></a>输出类型</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-361E4045-7AA2-4868-81E3-5529325A9221"></a>显示由“几何体”子操作符输出的数据的类型，这是由“对象属性”选项决定的。 
+                        <div><a name="GUID-7EBE54FA-2BED-433F-B19B-DD5082662592"></a><div class="note-note"><span class="label label-target-language">注意:</span>在<span class="char_link"><a href="GUID-4059B714-CF45-4D92-B962-9248F603B3D4.htm">数据类型</a></span>中讨论与此处的某些选项相关的此子操作符“对”和“复数”输出类型。 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-034E3336-DD1A-4CA4-BDEE-5A07B77648FF"></a><span class="term"><a name="GUID-84E771A1-E094-480A-885D-04662D28F39D"></a>对象属性</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-A224F194-DDE0-426C-B246-04E6EAC2A610"></a>从下拉列表中选择属性的类型。列表框下将直接显示活动属性的简要说明。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-A9B434AF-DC95-46FF-973C-0CAE9074803D"></a><span class="term"><a name="GUID-49A2FEE2-98E4-4EC6-B6E3-F29D23FC439D"></a>子材质</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-00964E20-C4BA-46CC-8555-51D3D20D7D4E"></a>启用可访问多维材质的特定成员，如“多维/子对象”。使用此数值字段可以指定子材质值。仅适用于以下对象属性：“点颜色”、“点颜色 3D”、“点颜色渐变”、“点颜色渐变 3D”、“点自发光”、“点不透明度”。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-D61AA045-07C1-4B0B-895D-E193A200C7A4"></a><span class="term"><a name="GUID-263CBEA7-3B19-432A-BCCD-95AABCF3CF09"></a>贴图通道</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-89F82048-A7A2-4BFA-8056-5693669C6878"></a>用于指定要访问的 UVW 贴图通道。仅适用于“点贴图”和“点贴图渐变”属性。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-B18ADEDD-6D84-4112-86F9-0F52CB0ECD5A"></a><span class="term"><a name="GUID-DF80312A-5764-4902-A378-52A493B376AE"></a>渐变增量</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-9418259C-FFC1-4D09-AD30-BC68801B59C1"></a>定义世界空间中的距离。此参数用于通过查询中心点邻近属性计算渐变的选项。此参数定义该邻近的大小。仅适用于“点颜色渐变”、“点颜色渐变 3D”和“点贴图渐变”属性。
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-BC01C99B-3055-46EC-AAFB-4C0E818974A5"></a><p class="title"><a name="GUID-9A910B15-E618-4BAD-81D3-A18B17AAC674"></a>“对象”组
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-9389C85D-F5BC-4EAE-97A7-7F72204B339D"></a><span class="term"><a name="GUID-7700C8D4-43DD-4AB7-BB3E-3ED13588E91C"></a>静态对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-E769D040-6CE8-4486-BAA3-1E75AF851EA4"></a> 
+                           <p><a name="GUID-4F665991-B930-4855-9E8D-E8A7C22B7F79"></a>参考对象不移动、旋转或缩放时启用；即其变换矩阵是恒定的。这样会加快对象计算。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-0B2B65D1-4D8B-4A8F-8694-1366EC38BAEA"></a><span class="term"><a name="GUID-BA762F0B-9889-4F2F-A16A-10257B1595F1"></a>已设置动画的曲面</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-A0F6E5F2-1FF5-4A5F-BC4D-784300FD64E1"></a> 
+                           <p><a name="GUID-5446FDED-73CA-4EF9-8D54-CBF2F662EF58"></a>通过修改器、对象参数或子对象动画设置参考对象曲面的动画时启用。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-E5B5BB5D-7AC9-40B0-AD2D-2001E35C2F8E"></a><span class="term"><a name="GUID-599707BA-60F2-411B-B7A3-5916586D2BA9"></a>几何体安全模式</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-C7E95F83-2684-45D0-8AAD-1220A13C4C22"></a> 
+                           <p><a name="GUID-B64B9A31-FE5D-40D2-93A9-C2F80D769508"></a>参考曲面是常规复合型的曲面（即每条边都生出一个或两个面）时启用该选项。这会加快用于几何体计算的二叉搜索树的构建。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-FB0EF5ED-26D4-47FF-88DC-51C970A14CED"></a><p class="title"><a name="GUID-F1CFBB05-FAAE-4C5F-89B0-C2778D0D69E4"></a>“子帧采样”组
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-8D9536C8-275C-44DD-975B-D5AC0D671C6D"></a><span class="term"><a name="GUID-11064B29-9352-4135-BCF2-FF8501E64B63"></a>放置</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-415785FE-44EA-404D-94FC-D12AAA4BC84D"></a>默认情况下，此选项处于禁用状态，并且对象的变换矩阵具有一个帧的精度。启用时，将以子帧为基础查询变换矩阵，从而提高精度，但会降低计算速度。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-F620B67D-ED05-4576-9A38-3129A24DCC3A"></a><span class="term"><a name="GUID-F7ADD6FE-6ED3-453F-95AB-424AC85E7601"></a>几何体</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-4CF1D456-E3CA-4D31-9396-DF698932198D"></a>默认情况下，此选项处于禁用状态，因而导致在当前帧内将对象的图形视为静态。启用时，将以子帧为基础查询对象的几何体/图形，从而提高精度，但会降低计算速度。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-6CC309A6-F67A-487C-89A0-5AB095511459"></a><p class="title"><a name="GUID-F7ED69CD-39E1-480C-B03F-F614B11AA54B"></a>“对以下项分隔索引”组
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-1220EAFC-00F2-48A5-B264-AFF47DBD708D"></a><span class="term"><a name="GUID-30B3884D-7627-4DFA-A8A4-5E4910427DEC"></a>组成员</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-55527105-6183-4C99-B7DE-88E639C3B2E4"></a>启用时，将组成员视为单独对象。禁用时，将整个组视为单个对象。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-C0718100-F169-4059-89AC-4B24AC35FDF3"></a><span class="term"><a name="GUID-277B976E-E0F0-4F8A-A03B-A8A0508A6611"></a>子对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-EF9A7BE3-5190-496F-8BED-CDBE25FECA6C"></a>启用时，将层次成员视为单独对象。禁用时，将整个层次视为单个对象。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-05C7F28E-17E8-436C-94D2-2E7BECE73B61"></a><p class="title"><a name="GUID-6ED54509-911E-40D1-96A2-9456D5F8EF4A"></a>“数据关联”组
+                  </p>
+                  <dl>
+                     <dt><a name="GUID-0885497E-5E27-4052-819D-4066D880E261"></a><span class="term"><a name="GUID-A5A3B136-201C-4585-8460-66B24A3F6306"></a>T2 作为对象计时</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-BEBD126A-481C-41E8-9F70-52D72A47C0F7"></a>向“数据视图”中的子操作符添加 T2 输入连接器；可将输出“时间”数据类型的任意其他子操作符与此关联。“时间”数据输入定义从参考对象获取几何体属性的精确计时。请记住，如果未对所有粒子进行输入计时同步，则“几何体”子操作符可能会明显增加工作负荷，因为它需要针对每个粒子确定唯一对象状态（由不同的计时定义）。适用于所有“对象属性”设置。
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-EC612BB7-DFF4-408F-BBDC-620575BDFE49"></a><span class="term"><a name="GUID-95CAB59E-EA65-4962-9026-EBA0130CE455"></a>I3 指定对象/指定对象/顶点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-ACE5E9FB-7623-42C9-9CA8-B63062A90934"></a>向“数据视图”中的子操作符添加 I3 输入连接器；可将输出“整数”数据类型的任意其他子操作符与此关联。禁用时，该属性将计算为考虑所有对象。例如，“最近点”表示离所有参考对象最近的点。启用时，将针对特定参考对象（提供的索引是<span class="char_link"><a href="GUID-BDECE712-8441-4E15-B213-8DBAFE144268.htm">“选择对象”子操作符</a></span>中参考对象列表中的索引）计算属性。 
+                           <p><a name="GUID-5045ED58-8358-40C1-A60A-B4EE2D620F0D"></a>仅适用于可用于指定特定对象的“对象属性”选项:“最近点”、“最近点距离”、“最近顶点”、“碰撞点”、“内部对象”、“对象面数/对象顶点数”、“对象大小”、“对象曲面”、“对象体积”、“点颜色 3D”和“点颜色渐变 3D”。 
+                           </p> 
+                           <p><a name="GUID-7B377ED2-1966-46CD-873B-AA75F71CE1AC"></a>使用“顶点...”属性（如“顶点照明”）时，该选项默认情况下处于启用状态，但不可禁用，并被命名为“I3 指定对象/顶点”，因为 I3 输入为这些属性定义用于从中获取属性的对象/顶点索引。对于“顶点...”属性，该输入是复合索引”（对象索引/顶点索引）；对于所有其他选项（默认状态处于禁用状态），它只是对象索引。
+                              
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-E8B40611-3D11-4E39-BA56-A9FC606D11D8"></a><span class="term"><a name="GUID-DDB8443F-E3E0-4A31-A640-D2F86F215F3C"></a>P4 作为局部坐标</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-C055DFCA-0C25-4E32-881B-73BD3B0DFD0D"></a>向“数据视图”中的子操作符添加 P4 输入连接器；可将输出<span class="char_link"><a href="GUID-4059B714-CF45-4D92-B962-9248F603B3D4.htm#AB1004628">“对”数据类型</a></span>的任意其他子操作符与此关联。 
+                           <p><a name="GUID-CCEE19BD-3A53-4517-8291-FDA9F5F2AE46"></a>“面区域”和“面选择”选项可用于计算对象的面区域或面的选择状态。尽管它看起来足够提供复合索引（对象索引 + 面索引）作为索引，但子操作符的这两个选项具有“对”类型输入。这是为了从将“对”作为输出的“最近点”选项简化关联。如果使用其他方法创建对象索引
+                              + 面索引，那么您可以使用转换子操作符创建“对”类型；只需使用零向量作为“对”类型的另一个分量。 
+                           </p>
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-37D2CB92-F68F-4746-A43C-E102FA6FB347"></a><span class="term"><a name="GUID-10772D1A-F478-43B5-955E-66A89D53461C"></a>V4 作为粒子位置</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-3D4148F6-E19A-4522-B9B8-B71817BB4D89"></a> 
+                           <p><a name="GUID-4F072388-9F5F-4E33-B3DE-001074F92570"></a>向“数据视图”中的子操作符添加 V4 输入连接器；可将输出“向量”数据类型的任意其他子操作符与此关联。通常，根据当前粒子位置计算几何体属性（例如“最近点”）。但是，该选项可用时，可以将“向量”数据通道定义为视为“粒子位置”（即视为用于计算几何体属性的位置）。
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-7420DE62-EE1E-4A01-B741-791A2B08156F"></a><span class="term"><a name="GUID-E74742BF-A9F1-44D8-A07B-08B531E68427"></a>V5 作为粒子速度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-47C6C2E8-D152-4F2F-A950-4CBBD7B91907"></a> 
+                           <p><a name="GUID-E87326EE-8E00-41CC-B027-19B244306778"></a>向“数据视图”中的子操作符添加 V5 输入连接器；可将输出“向量”数据类型的任意其他子操作符与此关联。此选项仅适用于“碰撞点”属性。根据当前粒子速度计算碰撞点。但是，如果要计算将来可能发生的碰撞（针对回避目的），您可能要将速度向量/值修改为假定的值；例如，提高速度值以预见将来可能发生的碰撞。要执行此操作，您可以通过使用“输入标准”和“函数”子操作符修改当前粒子速度，并将其与
+                              V5 输入关联。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="GUID-9EE89210-E4B8-4322-B11D-5CD94A6AF03E"></a><span class="term"><a name="GUID-628B66AA-E165-4452-B25C-4BFB88C03908"></a>R6 作为渐变增量</span></dt>
+                     <dd>
+                        <div class="definition"><a name="GUID-AB887D40-1C64-4B49-AC04-40A91C150615"></a> 
+                           <p><a name="GUID-73D014A6-F37E-46F3-A6A1-6CFB1A103225"></a>向“数据视图”中的子操作符添加 R6 输入连接器；可将输出“实数”数据类型的任意其他子操作符与此关联。仅适用于“…渐变”属性。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+            <div class="section"><a name="AB1008050"></a> 
+               <h2><a name="GUID-D6E04265-E544-496F-88C5-49AD39A32766"></a>“唯一性”组
+               </h2> <a name="GUID-EFDA5480-742F-4D1E-B668-0F3FE59AF4C6"></a><dl>
+                  <dt><a name="GUID-9C085B04-D465-4706-9651-30018EEEF89B"></a><span class="term"><a name="GUID-7E21C31A-E68F-44EF-A5ED-E3542B4F0534"></a>种子</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-F0658100-4196-4AFD-A9A1-71F785F51777"></a> 
+                        <p><a name="GUID-B8AF1FF1-7091-40CB-816C-2C07882251B3"></a>用于设置随机种子，以与其他随机播种的功能区分行为。通过输入值或单击“新建”，更改“种子”值以改变随机行为。仅适用于“随机曲面点”和“随机体积点”对象属性。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-31D07DDB-45F8-444A-90F6-BD4D074CFA70"></a><span class="term"><a name="GUID-8D05DE4A-735A-477E-9249-20F56438782E"></a>E7</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-996B55FD-9C8D-42F8-A6CC-E65A0BEC95FC"></a>启用时，可以通过<span class="char_link"><a href="GUID-291B5691-D4C7-4E85-A1FA-F6690107CAA8.htm">“参数”子操作符</a></span>露出“种子”参数并允许用户选择。启用 E7，添加将“类型”设置为“唯一性种子”的“参数”子操作符，并将其与“几何体”操作符上的 E7 输入关联，然后使用<span class="char_link"><a href="GUID-B5AE412C-C09A-4436-9268-5953A4607738.htm#GUID-CA25F283-C588-4A9C-B42D-FC72EFEE9746">露出参数</a></span>使设置在“粒子视图”界面上可用。
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

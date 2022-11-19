@@ -1,0 +1,129 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-B97BEEBB-EA07-45D7-A9F4-8BCC8858233A">
+      <meta name="description" content="“Physique 细节级别”卷展栏中的控件不仅可以优化视口，而且可以影响渲染的效果。此卷展栏主要用于解决问题。">
+      <meta name="indexterm" content="Physique: 细节级别卷展栏">
+      <meta name="contextid" content="TOPIC_PHYSIQUE_LEVEL_OF_DETAIL_ROLLOUT_PROCEDURE">
+      <meta name="topic-type" content="concept">
+      <title>“Physique 细节级别”卷展栏</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B97BEEBB-EA07-45D7-A9F4-8BCC8858233A"></a><div class="head">
+            <h1>“Physique 细节级别”卷展栏</h1>
+         </div>
+         <p class="blurb">“Physique 细节级别”卷展栏中的控件不仅可以优化视口，而且可以影响渲染的效果。此卷展栏主要用于解决问题。 </p><a name="GUID-70792CDE-A05B-4B3E-BE65-B456E99CE4A6"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-395BD17B-BABF-41E3-BAD5-53288DE817F1">选择已应用 Physique 修改器的对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “Physique 细节级别”卷展栏</span> 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F487552A50A53111913E7C26F-7770"></a>创建完凸出角度和腱部后，可以关闭其影响，以便准确地了解添加到蒙皮变形的对象。另外，此卷展栏还包含各种控件。这些控件与如何处理 Physique 下方的修改器堆栈中的更改有关。 
+         </p>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E7C0"></a><div class="note-tip"><span class="label label-target-language">提示</span>选择“可变形”，然后在编辑时打开其所有的参数；这样做便于您找到问题区域。选择“刚性”，可以最快的速度重画视口。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4666"></a> 
+            <h2><a name="GUID-6D25978B-48D3-45DC-8D51-623952972F30"></a>过程
+            </h2> <a name="WSF742DAB041063133728B9B2112A1CE7292-7E8B"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045CD5"></a>
+               <!--CPM-ContextId = 'TOPIC_PHYSIQUE_LEVEL_OF_DETAIL_ROLLOUT_PROCEDURE'--><a name="GUID-80BFD061-6B79-43C6-A1ED-F098B2F1A9A0"></a>要解决凸出和腱部问题，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择具有凸出或腱部的角色网格。 
+               </li>
+               <li>转到 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板。 
+               </li>
+               <li>在“蒙皮更新”组的“Physique 细节级别”卷展栏中，确保选中“可变形”。 </li>
+               <li>依次关闭和打开“凸出”。然后，再依次关闭和打开“腱部”。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF167A4"></a>在影响和不影响凸出和腱部的情况下，对模型进行检查。 
+                  </p> 
+               </li>
+               <li>使用“凸出编辑器”或子对象级别调整凸出和腱部的设置。 </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4665"></a> 
+            <h2><a name="GUID-966E8E57-38B7-4F32-8737-EF61F8EF0F95"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045CD6"></a><div class="figure-anchor"><img src="../images/GUID-C38F4A2D-F6F8-449C-9195-F154882744C4-low.png"></div> <a name="GUID-C0B98DB6-1090-490D-847F-E063C46BF2CE"></a><dl>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E302B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF167A5"></a>渲染器</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-186C"></a> 选中时，“蒙皮更新”组中的设置会影响渲染的图像。 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E302C"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF167A6"></a>视口</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-186B"></a> 选中时，“蒙皮更新”组中的设置会影响视口。 
+                  </div>
+               </dd>
+            </dl>
+            <div class="dl_section"><a name="GUID-9184806B-E5F5-46F2-BAE4-BC2C6B4B1566"></a><p class="title"><a name="GUID-1F7B59FD-6D88-473D-9C2B-ADF3AB17B48B"></a>“蒙皮更新”组
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E302D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF167A7"></a>可变形</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-186A"></a> 选中时，Physique 变形处于活动状态。使用“可变形”时，会生成最高质量的渲染效果。如果未选中“可变形”，则无法切换“可变形”。 <a name="WS1A9193826455F5FFBA679E112A6A190045CD8"></a><ul>
+                           <li> <em class="strong">关节交点</em>关闭以消除关节交点产生的影响。使用关节交点的影响，可以使模型自行重叠；例如，在肘部和膝盖关节处。默认设置为启用。 
+                           </li>
+                           <li> <em class="strong">凸出</em>关闭以消除凸出交点产生的全部影响。默认设置为启用。 
+                           </li>
+                           <li> <em class="strong">腱</em>关闭以消除腱部产生的全部影响。默认设置为启用。 
+                           </li>
+                           <li> <em class="strong">蒙皮滑动</em>关闭以消除蒙皮滑动产生的影响。默认设置为启用。 
+                           </li>
+                           <li> <em class="strong">链接混合</em>关闭以消除链接混合产生的影响。默认设置为启用。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E302E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF167A8"></a>刚性</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1869"></a> 选中时，会强制所有顶点使用“刚性”指定，而不是“可变形”指定。这是一种解决变形问题的简单方法。另外，借助此选项可以最快的速度重画视口。您可以选择此选项的同时，调整骨骼的动画。 <a name="WS1A9193826455F5FFBA679E112A6A190045CD9"></a><ul>
+                           <li> <em class="strong">链接混合</em>关闭以消除刚性链接混合产生的影响。如果未选中“刚性”，则无法切换此选项。默认设置为启用。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-819F7EFF-4EC6-4A1A-9CB5-7EC40B4DE92A"></a><p class="title"><a name="GUID-EE3E0C01-F8B4-442C-A17D-568C836E1A3E"></a>“堆栈更新”组
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF167A9"></a>此组中的控件可以处理对顶点数所做的更改。这些更改是由修改器堆栈的（非动画）更改而产生的。 
+               </p>
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF167AA"></a>如果顶点数发生更改，将会对顶点重新进行全局指定。此后，根据顶点的初始位置，使用“添加更改”添加更改。使用其它选项，可以在每个帧处重置初始位置，以重新贴图和重新指定。鉴于这个原因，打开“添加更改”或更改非动画堆栈时，应该始终在初始位置处完成此项操作（“体形”模式或
+                  0 帧）。 
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E302F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF167AB"></a>添加更改</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1868"></a> 添加堆栈中的更改，然后应用 Physique 变形。不能重新贴图或重新指定顶点。默认设置为启用。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF167AC"></a>一般而言，此选项可以为您提供所需的变形。使用此选项时，不会降低性能（来自 Physique）。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E3030"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF167AD"></a>局部重新映射</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1867"></a> 对变形顶点而言，此选项可以重置用于混合的 Physique 变形样条线的顶点位置和插补扭曲时所用的链接位置。对刚性顶点而言，此选项可以重置插补扭曲时所用的链接位置。默认设置为禁用状态。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF167AE"></a>如果顶点沿着样条线长度滑动，且要求其根据样条线位置弯曲和扭曲，但不想更改顶点权重，请打开此选项。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E3031"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF167AF"></a>全局重新分配</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1866"></a> 在混合全局移动的顶点时所用的样条线中重新设置权重并重置位置。此时，对于每帧中的所有移动点，其顶点链接指定、权重和样条线位置均已重置。（它相当于 Physique 2.2。）此选项的作用和重新初始化每帧一样。默认设置为禁用状态。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF167B0"></a>如果顶点移动到不同的封套，且需要将其重新指定给新封套，请使用此选项。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <dl>
+               <dt><a name="WS73099CC142F48755-1257E12111BF108800E3032"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF167B1"></a>隐藏附加的节点</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487551A80AE1B11E234B4DC9-1865"></a> 切换基本骨骼系统的显示。例如，使用此选项，可以隐藏和取消隐藏 Biped。 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

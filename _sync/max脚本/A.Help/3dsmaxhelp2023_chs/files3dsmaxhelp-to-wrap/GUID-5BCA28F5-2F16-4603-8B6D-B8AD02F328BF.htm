@@ -1,0 +1,224 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5BCA28F5-2F16-4603-8B6D-B8AD02F328BF">
+      <meta name="description" content="顶点是空间中的点：它们定义面的结构。当移动或编辑顶点时，它们形成的面也会受影响。顶点也可以独立存在；这些孤立顶点可以用来构建面，但在渲染时，它们是不可见的。">
+      <meta name="indexterm" content="可编辑网格: 顶点">
+      <meta name="indexterm" content="曲面: 曲面属性卷展栏（可编辑网格顶点）">
+      <meta name="indexterm" content="焊接: 目标焊接（可编辑网格顶点）">
+      <meta name="indexterm" content="目标焊接（可编辑网格顶点）">
+      <meta name="indexterm" content="顶点: 焊接">
+      <meta name="indexterm" content="焊接: 可编辑网格顶点（步骤）">
+      <meta name="indexterm" content="选择方式: 顶点颜色（可编辑网格）">
+      <meta name="topic-type" content="concept">
+      <title>可编辑网格（顶点）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5BCA28F5-2F16-4603-8B6D-B8AD02F328BF"></a><div class="head">
+            <h1>可编辑网格（顶点）</h1>
+         </div>
+         <div class="abstract"> 
+            <p><a name="GUID-71A10915-1123-4879-8418-0913EB420117"></a> <img src="../images/GUID-15D17D2C-9D76-485B-855C-2F239ED5C6B9-low.png"> 
+            </p> 
+            <p class="blurb">顶点是空间中的点：它们定义面的结构。当移动或编辑顶点时，它们形成的面也会受影响。顶点也可以独立存在；这些孤立顶点可以用来构建面，但在渲染时，它们是不可见的。 </p> 
+         </div><a name="UL_342534FD254243E58C5D6D24C21C2BB5"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-774ECCD5-EC55-4B88-BD11-19841A320ABE">选择可编辑网格对象。 <img src="../images/ac.menuaro.gif"> “修改”面板  <img src="../images/ac.menuaro.gif"> “选择”卷展栏  <img src="../images/ac.menuaro.gif"> “顶点”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-CE337ABB-23CC-40B4-AEA0-B9EEB0A5FA1B">选择可编辑网格对象。 <img src="../images/ac.menuaro.gif"> “修改”面板  <img src="../images/ac.menuaro.gif"> “修改器堆栈”显示  <img src="../images/ac.menuaro.gif">  展开“可编辑网格”。 <img src="../images/ac.menuaro.gif"> “顶点”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-7F7187BB-8FB2-4112-A171-DDE3BBCD3AC8">选择可编辑网格对象。 <img src="../images/ac.menuaro.gif"> 四元菜单  <img src="../images/ac.menuaro.gif"> “工具 1”象限  <img src="../images/ac.menuaro.gif"> “顶点”</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-733E"></a>在“可编辑网格（顶点）”子对象层级上，可以选择单个或者多个顶点，并使用标准方法移动它们。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-733C"></a> 
+            <h2><a name="GUID-7D4C0B43-FFFF-4687-979F-86D0FEA60BF1"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041BAB"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041BAC"></a>要焊接网格顶点，请执行下列操作：
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-733B"></a>您可以使用其中一种方法将几个顶点组合成一个，这种方法称为焊接。如果顶点彼此非常靠近，则使用焊接功能。您还可以使用焊接将很多顶点组合到它们的平均位置。 
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-733A"></a>或者，要将两个相距很远的顶点组合为一个顶点，其位于其中一个顶点的位置上，则使用目标焊接。 
+            </p>
+            <div><a name="WS73099CC142F487551FACE55114134B88B1-72F7"></a><div class="note-tip"><span class="label label-target-language">提示</span>通过多边形对象焊接顶点相当容易。请参见此步骤：<span class="char_link"><a href="GUID-047B00EC-D4E3-4D05-8FB7-220795D13874.htm#WS1A9193826455F5FFBA679E112A6A190041C97">焊接多边形顶点</a></span>。 
+               </div>
+            </div>
+            <ol type="1" start="1">
+               <li>要使用焊接，请执行以下操作： <a name="WS1A9193826455F5FF1DBC298511635BEA875620"></a><ol type="1" start="1">
+                     <li>如有必要，在“选择”卷展栏上启用“忽略背面”。这样可以确保只焊接您看到的顶点。 </li>
+                     <li>选择要焊接的顶点。 </li>
+                     <li>如果顶点离得很近，则转到“编辑几何体”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“焊接”组，并单击“选定”。如果该操作无效（收到“在焊接阈值内无顶点。”消息），则继续下一步。 
+                     </li>
+                     <li>增加“选定内容”按钮右侧的数值。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7339"></a>该阈值是要焊接的顶点之间的最小距离。 
+                        </p> 
+                     </li>
+                     <li>再次单击“选定内容”。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7338"></a>此时，会发生下述三种情况之一：没有、有一些或所有顶点被焊接。如果发生后者，则操作完成。如果发生其他两种情况之一，则继续进行下一步。 
+                        </p> 
+                     </li>
+                     <li>继续增加阈值并单击“选定内容”，直到所有顶点被焊接。 </li>
+                  </ol> 
+               </li>
+               <li>要使用目标焊接，请执行以下操作： <a name="WS1A9193826455F5FFBA679E112A6A190041BB3"></a><ol type="1" start="1">
+                     <li>如有必要，在“选择”卷展栏上启用“忽略背面”。这样可以确保只焊接您看到的顶点。 </li>
+                     <li>找到要焊接的两个顶点，确定结果顶点的最终位置。可以焊接任意两个顶点，但要得到最佳结果，两个顶点应该连续，也就是说，它们应该有一个边相连。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7337"></a>对于该示例，我们将调用顶点 A 和 B，得到的顶点将位于顶点 B 的位置。 
+                        </p> 
+                     </li>
+                     <li>单击“目标”按钮。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7336"></a>该按钮突出显示，表明您显示处于目标焊接模式。 
+                        </p> 
+                     </li>
+                     <li>将顶点 A 拖到顶点 B。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7335"></a>拖动时，鼠标光标显示为四头的 +- 形状的箭头。当光标在有资格的目标顶点上时，其将变为十字线。 
+                        </p> 
+                        <div><a name="WS73099CC142F487551FACE55114134B88B1-72F6"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果在拖向正确的方向时遇到问题，请打开<span class="char_link"><a href="GUID-9974EB8A-AE38-42AE-AC83-75DAA3F7D5E7.htm">“轴约束”工具栏</a></span>并单击 XY 按钮。 
+                           </div>
+                        </div> 
+                     </li>
+                     <li>释放鼠标按钮。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7334"></a>两个顶点都被焊接。得到的顶点仍然位于顶点 B 的位置，然后退出目标焊接模式。 
+                        </p> 
+                        <div><a name="WS73099CC142F487551FACE55114134B88B1-72F5"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果在结合两个顶点时遇到问题，则尝试使用“目标”按钮右侧的微调器增加像素值。 
+                           </div>
+                        </div> 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7333"></a>您可以保留在“目标焊接模式”中，并可以继续焊接顶点对。 
+                        </p> 
+                     </li>
+                     <li>在活动视口中右键单击或再次单击“目标”按钮以退出“目标”模式。 </li>
+                  </ol> 
+               </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041BB4"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041BB5"></a>要按颜色选择顶点，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在“曲面属性”卷展栏上，单击“现有色样”，然后在“颜色选择器”中指定想要的顶点颜色。 </li>
+               <li>在“RGB 范围”微调器中指定范围。这可以选择与指定颜色相近，但不完全匹配的顶点。 </li>
+               <li>单击“选择”按钮。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7332"></a>选中所有匹配此颜色或者在 RGB 范围内的顶点。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7331"></a>可以通过按住 <span class="keyboardEntry">Ctrl</span> 键并单击“选择”按钮来添加到此选择，还可以通过按住 <span class="keyboardEntry">Alt</span> 键从选择中删除。 
+                  </p> 
+                  <div><a name="WS73099CC142F487551FACE55114134B88B1-72F4"></a><div class="note-tip"><span class="label label-target-language">提示</span>首先选择想要匹配的顶点，然后拖动“编辑色样”的副本到“现有色样”，再单击“选择”按钮，就可以选择颜色相同的所有顶点。（如果想要完全匹配，请确保首先将“RGB 范围”微调器设置为 0。） 
+                     </div>
+                  </div> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-7330"></a> 
+            <h2><a name="GUID-DBCB9E82-2C41-4EF0-919B-7891DBAF5483"></a>界面
+            </h2> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041BB6"></a> 
+               <h3><a name="GUID-D7C5E210-BA64-4371-877C-78997E67180D"></a>“选择”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-732F"></a>有关“选择”卷展栏设置的信息，请参见<span class="char_link"><a href="GUID-6E8FC133-93D1-41ED-A7EA-43AFC2DD1B3F.htm">“选择”卷展栏（可编辑网格）</a></span>。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041BB7"></a> 
+               <h3><a name="GUID-A4952EFB-0F99-413B-AFA3-86F73A0DC14C"></a>“软选择”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-732E"></a>“软选择”控件影响子对象的“移动”、“旋转”和“缩放”功能操作。当这些处于启用状态时，<span class="charspan-msgph">3ds Max</span> 将样条线曲线变形应用到变换的选定子对象周围的未选择顶点。这提供一种类似磁场的效果，在变换周围产生影响的球体。 
+               </p> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-732D"></a>详细信息，请参见<span class="char_link"><a href="GUID-BEF2CC1E-40BE-45DD-A8E9-228EE4A1EE98.htm">“软选择”卷展栏</a></span>。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041BB8"></a> 
+               <h3><a name="GUID-E7FBABBC-C018-40F0-BAD6-B8A06C2A72B7"></a>“编辑几何体”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A190041BB9"></a><div class="figure-anchor"><img src="../images/GUID-37EE1412-AE67-426F-9D0D-74D357E3E7BB-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-732C"></a>有关这些控件的详细说明，请参见<span class="char_link"><a href="GUID-89D446C3-87F6-4A26-B168-2398E715F87A.htm">“编辑几何体”卷展栏（网格）</a></span>。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WSF742DAB041063133-48601C13112A1CEBBD0-7FE7"></a> 
+               <h3><a name="GUID-7B88A517-788F-4E55-8F34-50F0B2FE3B27"></a>“曲面属性”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A190041BBB"></a><div class="figure-anchor"><img src="../images/GUID-2F6C8F3F-8A1A-4997-A563-72E73E57AF30-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-732B"></a>这些控件用于设置顶点的权重和颜色。 
+               </p> <a name="GUID-1705F363-3712-4038-BFF5-8354229F5FA0"></a><dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E1BE9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-732A"></a>权重</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C36C2"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752EB5"></a>显示并可以更改 NURMS 操作的顶点权重（请参见<span class="char_link"><a href="GUID-D204B817-8B87-42FF-B152-0E360D0035A2.htm">“网格平滑”修改器</a></span>）。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-43D21045-1AB8-4EB1-8352-7FA3658D5AEA"></a><p class="title"><a name="GUID-752CE139-EBF0-4F0E-A879-7451045CB6C2"></a>“编辑顶点颜色”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7329"></a>使用这些控件，可以分配颜色、照明颜色（着色）和选定顶点的 alpha（透明）值。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1BEA"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7328"></a>颜色</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C36C3"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752EB6"></a>单击色样可更改选定顶点的颜色。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1BEB"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7327"></a>照明</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C36C4"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752EB7"></a>单击色样可以更改选定顶点的照明颜色。这可以更改顶点的照明而不用更改顶点的颜色。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1BEC"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7326"></a>Alpha</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C36C5"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752EB8"></a>用于向选定的顶点分配 alpha（透明）值。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7325"></a>微调器值是百分比值；0 是完全透明，100 是完全不透明。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-7C746A66-C036-4A94-8E5A-9AE8539479F7"></a><p class="title"><a name="GUID-A463F3BE-E973-48C0-8083-A6233CCCFF3A"></a>“顶点选择方式”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1BED"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7324"></a>颜色/照明</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C36C6"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752EB9"></a>这些“单选”按钮用于选择一种方式，按照顶点颜色值选择还是按照顶点照明值选择。设置所需的选项并单击“选择”。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1BEE"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7323"></a>色样</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C36C7"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752EBA"></a>显示当前要匹配的颜色。单击以打开“颜色选择器”，在其中可以指定不同的颜色。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1BEF"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7322"></a>选择</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C36C8"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752EBB"></a>选择的所有顶点应该满足如下条件：这些顶点的颜色值或者照明值要么匹配色样，要么在 RGB 微调器指定的范围内。要满足哪个条件取决于选择哪个单选按钮。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-1257E12111BF108800E1BF0"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-7321"></a>范围</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C36C9"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752EBC"></a>指定颜色匹配的范围。顶点颜色或者照明颜色中所有三个 RGB 值必须匹配“按顶点颜色选择”中“色样”指定的颜色，或者在一个范围之内，这个范围由显示颜色加上和减去“范围”值决定。默认值为 10。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-7320"></a>例如，如果已选择“颜色”并设置色样为中灰色 (R=G=B=128)，使用的默认“范围”值为 10，10，10，然后单击“选择”按钮选择将顶点的 RGB 颜色值设置在 118,118,118  到 138,138,138 之间。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div> 
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-5BE61B35-05B9-46DE-A873-56E1641D1AF9"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-3CBF3773-3CDC-4ED7-8C34-D0EAF9CD9F66.htm">可编辑网格曲面 </a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

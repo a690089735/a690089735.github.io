@@ -1,0 +1,59 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-72D79695-F0F0-44AB-A15A-1982E8AAE9E5">
+      <meta name="topic-type" content="concept">
+      <title>ShaderFX 纹理和 Gamma 校正</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-72D79695-F0F0-44AB-A15A-1982E8AAE9E5"></a><div class="head">
+            <h1>ShaderFX 纹理和 Gamma 校正</h1>
+         </div>
+         <p><a name="GUID-B4F21F3E-FD57-461E-95C1-55DF598CD5F0"></a> 默认情况下，ShaderFX 纹理节点不包含 <span class="char_link"><a href="GUID-556B3B1C-D62E-48F6-A633-DCF5172219B5.htm">Gamma 校正</a></span>。这不同于 <span class="charspan-msgph">3ds Max</span> 界面中其他位置的纹理处理。 
+         </p>
+         <p><a name="GUID-0F89F53D-D4D6-4A51-856A-A03F3F73BDE2"></a>原因是，对于游戏和实时的纹理，许多纹理不应进行<em class="mild"></em> Gamma 校正。特别是，法线贴图、置换贴图、密度贴图和环境光阻挡 (AO) 贴图在进行 Gamma 校正时无法正常工作。 
+         </p>
+         <p><a name="GUID-BC104837-E7B5-4B82-802E-12A1770B9A85"></a>对于提供 RGB 颜色的纹理，是否需要 Gamma 校正取决于目标。某些游戏引擎使用线性颜色空间；而有些则不使用。如果目标引擎是线性的，则 RGB 纹理应进行 Gamma 校正，但线性格式（例如 EXR 或 CIN）除外。要渲染的 RGB 纹理也应进行
+            Gamma 校正，线性或高动态格式除外。 
+         </p><a name="UL_B3537D630F49482D9E96E68EA184E4FC"></a><p class="list-intro"><a name="GUID-D78B2C7C-649A-4C8C-818D-FCC9B6D6C7CB"></a>要对 RGB 纹理进行 Gamma 校正，请执行以下操作之一： 
+         </p>
+         <ul>
+            <li>选择纹理节点，然后在“属性”面板中启用“ConvertToLinearSpace”。 <a name="FIG_ECFBCD033416476CA16E985E4148D9EC"></a><div class="figure-anchor"><img src="../images/GUID-9EFA72E6-F366-48C4-9F37-0FD5AEC1755A-low.png"></div>  
+               <p><a name="GUID-BC5916E8-EA77-408C-8862-C45067F3975B"></a>这相当使用 <span class="charspan-msgph">3ds Max</span> 方法启用 Gamma 校正。 
+               </p> 
+            </li>
+            <li>选择纹理节点，然后在“属性”面板中启用“MyTexture/显示为材质输入”。将“MyTexture/UI 顺序”更改为 <em class="strong">1</em>。 <a name="FIG_7427621E995647F9961AEE0E3BBA32BA"></a><div class="figure-anchor"><img src="../images/GUID-D2A6662A-0A40-4E67-9324-ECD0FEBCD3AC-low.png"></div>  
+               <p><a name="GUID-F43F5B58-7332-4190-8660-4CC5D1DBDED9"></a>纹理贴图现在显示在 ShaderFX 明暗器的“材质编辑器”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“参数”卷展栏上。您可以单击“贴图”按钮，然后使用<span class="char_link"><a href="GUID-6486449E-EB21-423E-A609-10D5CE1C1A21.htm">“选择位图图像文件”对话框</a></span>中的 Gamma 控件来更改 Gamma 设置。 
+               </p> <a name="FIG_05AD49EBDBCB43608590F9E04506F20F"></a><div class="figure-anchor"><img src="../images/GUID-4D4425F7-3624-45E4-9CF5-6F7FFE424600-low.png"></div>  
+            </li>
+         </ul>
+         <div><a name="GUID-D78CB6C1-D75A-44F1-826B-258CDEFCE97D"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>使用以下方法之一，但不能两者都使用。调整 Gamma 两次将会产生错误结果。 
+            </div>
+         </div>
+         <div class="section"><a name="SECTION_AC46DE8ED08A435F9EB163A1503ECB2A"></a> 
+            <h2><a name="GUID-0C5A4CB9-68F3-4113-9699-8C09F0F1B119"></a>使用“材质”节点进行 Gamma 校正<em class="mild"></em></h2> 
+            <p><a name="GUID-D2C8964F-8C46-47C0-BBE0-50FDB64D692C"></a>默认的“材质”节点<em class="mild"></em>具有 Gamma 套接字，该套接字为明暗器树全局设置 Gamma 校正。 
+            </p> <a name="OL_AA702F65775744E8B9A199285CE838B1"></a><p class="list-intro"><a name="GUID-B8C26A76-F5CD-440A-B870-F0C7511BE0A0"></a>要为明暗器树输出设置 Gamma 校正，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>单击鼠标右键，然后从菜单中选择“工具”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“切换高级模式”以确保高级模式处于打开状态。 
+               </li>
+               <li>再次单击鼠标右键并选择“图形节点”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“值”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“布尔值”。 
+               </li>
+               <li>将 <em class="mild">BoolValue</em> 节点的布尔套接字连接到“材质”<em class="mild"></em>节点的 Gamma 套接字。 
+                  <p><a name="GUID-26CF9F27-339E-4EEC-AD9A-C46D2A7CF4BA"></a>当 <em class="mild">BoolValue</em> 值处于启用状态 (true) 时，将对明暗器树进行 Gamma 校正。 
+                  </p> <a name="FIG_1D36BE994FE04C41A4E24A34A61A64C5"></a><div class="figure-anchor"><img src="../images/GUID-6D81E0A4-4508-4AE2-A001-E941AB5AC99B-low.png"></div>  
+               </li>
+            </ol>
+            <div><a name="GUID-A93948EE-4711-4676-A709-B56328755A91"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>如果对一个或多个纹理贴图<em class="mild"></em>节点启用 ConvertToLinearSpace，或通过 <span class="charspan-msgph">3ds Max</span> 文件对话框启用 Gamma 校正，则应在材质<em class="mild"></em>节点上启用 Gamma。 
+                  <p><a name="GUID-2A0CF765-E629-48E6-BC6E-732847258157"></a> 或者，除了对<em class="mild"></em>材质节点启用 Gamma 外，您也可以使用<span class="char_link"><a href="GUID-556B3B1C-D62E-48F6-A633-DCF5172219B5.htm#GUID-EECCF4C0-3D42-4AC7-9593-1A78401C594B">显示 Gamma 控件</a></span>以重新应用 Gamma 校正。 
+                  </p> 
+               </div>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

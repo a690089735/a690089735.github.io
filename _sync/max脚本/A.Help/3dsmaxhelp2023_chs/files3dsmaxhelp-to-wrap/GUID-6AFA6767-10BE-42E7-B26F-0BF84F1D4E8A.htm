@@ -1,0 +1,89 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-6AFA6767-10BE-42E7-B26F-0BF84F1D4E8A">
+      <meta name="indexterm" content="互操作性: 明暗器图形">
+      <meta name="indexterm" content="导入: Interactive 预设">
+      <meta name="indexterm" content="导出: Interactive 明暗器">
+      <meta name="indexterm" content="Interactive 预设">
+      <meta name="indexterm" content="Interactive 父材质">
+      <meta name="indexterm" content="互操作性: Interactive 材质">
+      <meta name="topic-type" content="concept">
+      <title>3ds Max 与 Max Interactive 之间的明暗器图形互操作性</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-6AFA6767-10BE-42E7-B26F-0BF84F1D4E8A"></a><div class="head">
+            <h1>3ds Max 与 Max Interactive 之间的明暗器图形互操作性</h1>
+         </div>
+         <div><a name="GUID-614155ED-6CEC-42D3-87F7-EE7FE289EEEF"></a><div class="note-note"><span class="label label-target-language">注意:</span>在 3ds Max 2018.4 Update 中，Stingray 基于物理的明暗器被重命名为 <em class="mild">Interactive</em>。 
+               	 
+            </div>
+         </div>
+         <div class="section"><a name="SECTION_323FD9EB76004049B4F0C289D69DC960"></a> 
+            <h2><a name="GUID-86EADB51-79D5-4162-9A80-0D2156F74DEF"></a>父材质和子材质
+            </h2> 
+            <p>创建明暗处理网络时，可以将图形另存为预设，然后在下次新建 Interactive 基于物理的明暗器 (PBS) 节点时重用此预设。这样可以避免重复创建相同的明暗器图形，重复创建会增加材质管理难度，还可能降低游戏性能。 
+               		
+            </p> 
+            <p>包含预设明暗器图形的材质称为父材质。 
+               		
+            </p> 
+            <p>您可以基于父材质创建子材质。子材质从父材质继承明暗器图形，因此也会继承材质属性。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_84097995D1C44423BFA7BB6AEF8F3997"></a> 
+            <h2><a name="GUID-8F35DB91-8F3A-48C6-936A-9EF1EDC80C13"></a>将 Interactive 明暗器导出到 3ds Max Interactive 并重用现有的父材质
+            </h2> 
+            <p>将 3ds Max 中的材质导出到 3ds Max Interactive 时，如果 Interactive 明暗器节点指向某个现有的 Interactive 资源（Interactive 项目文件夹中的某个材质），则 Max Interactive
+               不会创建新的预设材质。 
+               		
+            </p> 
+            <p>要指向此 Interactive 资源，请在 3ds Max 中 DirectX 材质的 Interactive 卷展栏中设置“预设材质”字段。 
+               		
+            </p> 
+            <p> <a name="OL_C0746DE1EC074843A6604A268A6427A2"></a><p class="list-intro">只有先执行以下操作，才能编辑此字段：</p>
+               <ol type="1" start="1">
+                  <li>在“DirectX 明暗器”卷展栏上，从列表中选择“Interactive”。 
+                     		  
+                  </li>
+                  <li>在 Interactive 卷展栏上，从“预设材质”列表中选择“自定义”或单击“使唯一”（创建自定义预设）。 
+                     		  
+                  </li>
+                  <li>在“DirectX 明暗器”卷展栏上，单击“打开 ShaderFX”，然后选择“标准基础”节点。 
+                     		  
+                  </li>
+               </ol> 
+            </p> 
+            <p>这样可以防止意外更改“父材质”路径。 
+               		
+            </p> 
+            <p>如果此字段为空，则明暗器图形将被视为父材质。将此明暗器导出到 3ds Max Interactive 后，将创建新的父材质。 
+               		
+            </p> 
+            <p>另一方面，如果提供路径和资源名称（例如：/content/materials/my_interactive_material），则在导出后，明暗器图形将指向位于以下路径的父图形：/content/materials/my_interactive_material。将其导入
+               3ds Max Interactive 中时，Max Interactive 不会重新创建父图形。但是，您必须确保 3ds Max 的 ShaderFX 编辑器中的图形与 Max Interactive 引擎中的父图形相同；即，路径中设置的图形。
+               
+               		
+            </p> 
+            <p>如果在此字段中输入路径或名称，但 Max Interactive 项目文件夹中不存在父材质，则将基于您构建的图形创建新的父材质。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_EE2EC3F02B6D44AFB92F4DBAED0083E6"></a> 
+            <h2><a name="GUID-270E51A3-A866-421E-B858-24D982DA2B77"></a>从 Max Interactive 导入材质并将其用作预设
+            </h2> 
+            <p>您还可以在 Max Interactive 中创建父图形，然后将其导入 ShaderFX 编辑器。要执行此操作，请选择“文件”&gt;“导入图形”，然后从文件类型下拉列表中选择 .material。 
+               		
+            </p> 
+            <p>要将此图形作为预设保存在 3ds Max 中，请选择“文件”&gt;“导出图形”，然后在 renderData\shaders（使其可用于当前项目）或 \Documents\3dsMax\ShaderFX\Scenes\StingrayPBS（使其全局可用）中将其保存为
+               .sfx。现在此图形将作为 Interactive 卷展栏中“预设材质”下拉列表下的预设。 
+               		
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

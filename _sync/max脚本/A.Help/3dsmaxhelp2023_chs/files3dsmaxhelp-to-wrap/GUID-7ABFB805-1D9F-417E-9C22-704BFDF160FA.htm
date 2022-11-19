@@ -1,0 +1,203 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-7ABFB805-1D9F-417E-9C22-704BFDF160FA">
+      <meta name="description" content="新的 glTF 材质使用明暗处理模型提供在资源发布到 glTF 后的准确外观表示。">
+      <meta name="indexterm" content="物理材质">
+      <meta name="indexterm" content="材质: 物理材质">
+      <meta name="indexterm" content="物理材质: 能量守恒">
+      <meta name="topic-type" content="concept">
+      <title>glTF 材质</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-7ABFB805-1D9F-417E-9C22-704BFDF160FA"></a><div class="head">
+            <h1> glTF 材质</h1>
+         </div>
+         <p class="blurb"> 新的 glTF 材质使用明暗处理模型提供在资源发布到 glTF 后的准确外观表示。 
+            
+         </p><a name="UL_AC4637C185334BE384F1FC2FE386FE8E"></a><ul>
+            <li><span class="MenuCascade">材质编辑器 <img src="../images/ac.menuaro.gif"> 常规 <img src="../images/ac.menuaro.gif"> glTF 材质</span> 
+            </li>
+         </ul>
+         <div><a name="WS73099CC142F487555CDED44512850E8015A-7F88"></a><div class="note-note"><span class="label label-target-language">注意:</span>仅当活动渲染器支持时，该材质才会显示在“材质/贴图浏览器”中。 
+               		
+            </div>
+         </div>
+         <p> glTF 材质是一种现代材质，其控件主要关注基于 glTF 的工作流。 
+            		
+            <div><a name="GUID-ED076A5D-6547-41C8-926F-AC869E6D5A58"></a><div class="note-note"><span class="label label-target-language">注意:</span> 在“位图纹理”中，如果“偏移”或“W 向角度”属性为非零或者“平铺”为无到 1，则使用 KHR_texture_transform 扩展导出平铺、偏移和 W 向角度属性。 
+                  		
+               </div>
+            </div> 
+         </p>
+         <div class="section"><a name="SECTION_4C44021E8C9D4E7498A5F2FC06FEF809"></a> 
+            <h2><a name="GUID-494EDF93-D86D-4611-89E8-1249629E812C"></a>界面
+            </h2> 
+            <p><img src="../images/GUID-46EA2D90-4DB3-4156-81DE-D36C2AFFEE2C-low.png"> 
+            </p> 
+         </div>
+         <div class="section"><a name="SECTION_3A1A6F8048B44501AE86AC3F051012CB"></a> 
+            <h2><a name="GUID-B8AFE87A-403A-4F6F-9E35-155906CEB152"></a>glTF 材质参数
+            </h2> 
+            <dl><a name="GUID-E4F302DC-83ED-4AD6-9EFA-D7C322D69819"></a><dt><span class="term">基础颜色贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> <a name="FIG_10544E94C230421BAA083D89EF8468C5"></a><div class="figure-anchor"><img src="../images/GUID-6C29C336-6D82-4E43-92EF-4567C6842319-low.png"><p class="figure-title">“金属度”为 0.0，“基础颜色”分别为黄色、灰色和红色</p>
+                     </div>对于非金属，添加到“基础颜色贴图参数”的贴图可视为漫反射颜色。对于金属，它是金属本身的颜色。 
+                     			 
+                  </div>
+               </dd><a name="GUID-A4700C41-65C1-406C-990A-EF1811E93D38"></a><dt><span class="term">Alpha 贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> <a name="FIG_0B8F14ECDF424E86A22AB32B975F948B"></a><div class="figure-anchor"><img src="../images/GUID-71235B76-FA1D-41A1-9CFB-785A33164BDA-low.png"></div>定义如何解释 Alpha 值。 
+                     				
+                     <div style="margin-top: 9pt;"><a name="GUID-5B0EACE1-596F-489B-9579-D422C7F45474"></a><div class="note-note"><span class="label label-target-language">注意:</span>与 3ds Max 中的其他材质不同，Alpha 源自 Alpha 输入贴图的 RGB 值，而不是位图的 Alpha 通道。 
+                           				
+                        </div>
+                     </div> 
+                  </div>
+               </dd><a name="GUID-51D0F308-64E7-4A1A-845A-FEE491BAA46A"></a><dt><span class="term">金属度贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> <a name="FIG_336667C953644530B9A1EF4B3B64D398"></a><div class="figure-anchor"><img src="../images/GUID-CADF0155-A950-4FA1-9939-F2CC6D748E24-low.png"><p class="figure-title">“金属度”分别为 0.0、0.5 和 1</p>
+                     </div>值的范围为 0.0（非金属）到 1.0（完全反射金属）。 
+                     			 
+                  </div>
+               </dd><a name="GUID-2F82B95C-4BF8-489A-AE18-ADB6344C45A8"></a><dt><span class="term">粗糙度贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition">应用后，粗糙度越高，材质越模糊，而粗糙度越低，材质越像镜面。 
+                     			 
+                  </div>
+               </dd><a name="GUID-4F50FC73-2C19-4EDA-980A-BC39BE24CF02"></a><dt><span class="term">法线贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> 切线空间法线贴图。 
+                     			 
+                  </div>
+               </dd><a name="DLENTRY_BD3DAE5A1853479E95708D24094CC17D"></a><dt><span class="term">阻光(AO) 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> <a name="FIG_7036C8A5C6DF439C8987C6BAFB0B2DFC"></a><div class="figure-anchor"><img src="../images/GUID-FC66A58F-9A7E-484D-BF08-19EDDC0C8E3A-low.png"></div>环境光阻挡是使漫反射颜色变暗的灰度贴图。
+                     			 
+                  </div>
+               </dd><a name="GUID-EDB2B2F3-7332-4811-95F5-A8A4C7C4F617"></a><dt><span class="term">发射贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> <a name="FIG_64821FC8B51F42229CA3E9D653E8D7EB"></a><div class="figure-anchor"><img src="../images/GUID-5F37E393-1D67-49EB-86AD-5267F512D07B-low.png"><p class="figure-title"> “发射”分别为黑色、红色和绿色</p>
+                     </div>此贴图控制材质（自发光）发射的光的颜色和强度。 
+                     			 
+                  </div>
+               </dd><a name="GUID-BE3C5D47-3D09-42CF-BC2E-3A291E1BBA50"></a><dt><span class="term">透明涂层贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> <a name="FIG_1EBD523467824EDCA4225E73DD141C33"></a><div class="figure-anchor"><img src="../images/GUID-F507349E-701F-4D9E-82FE-F74D28B8AB91-low.png"><p class="figure-title">“透明涂层”分别为 0.0、0.5 和 1</p>
+                     </div>此贴图定义可在材质顶部分层的透明涂层。 
+                     			 
+                  </div>
+               </dd><a name="GUID-6AAA46D6-3BE4-44D4-81CA-04907CBC96CB"></a><dt><span class="term">透明涂层粗糙度贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> <a name="FIG_AB63E2A129574176B23CDF368AEF5761"></a><div class="figure-anchor"><img src="../images/GUID-1D5C2CBC-7F15-4528-8B05-613C4432A2B8-low.png"><p class="figure-title">“透明涂层”为 1，“透明涂层粗糙度”分别为 0.0、0.5 和 1</p>
+                     </div>此贴图定义可在材质顶部分层的透明涂层粗糙度。 
+                     			 
+                  </div>
+               </dd><a name="DLENTRY_EF7C5A894FEE4AD3BF8F1010D73C0216"></a><dt><span class="term">透明涂层法线贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition">此贴图基于法线贴图的输入内容改变透明涂层的外观。 
+                     			 
+                  </div>
+               </dd><a name="DLENTRY_4C38C36CE76E4A5DA17C1186F0DF2A10"></a><dt><span class="term">光泽颜色贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> <a name="FIG_5CC680A690BB4DAC9F096D743B4A9F45"></a><div class="figure-anchor"><img src="../images/GUID-74E54645-BC8D-438E-8F63-9F47F75A3327-low.png"><p class="figure-title">“光泽粗糙度”为 0.1，“光泽颜色”分别为红色、绿色和蓝色</p>
+                     </div>此贴图控制材质的光泽组件的颜色。“光泽”可模拟天鹅绒状材质的后向散射。 
+                     			 
+                  </div>
+               </dd><a name="DLENTRY_9F6E3E76B2CE449C80022FA0B1B9F491"></a><dt><span class="term">光泽粗糙度贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> <a name="FIG_49E16EB8E04A44B4B942144BAE18029A"></a><div class="figure-anchor"><img src="../images/GUID-131B52C4-57E4-414E-A672-2A805782AD0D-low.png"><p class="figure-title"> “光泽颜色”为红色，“光泽粗糙度”分别为 0.0、0.5 和 1</p>
+                     </div>此贴图确定存在多少后向散射。粗糙度较小会导致轻擦角周围产生清晰的高光反射响应，粗糙度较大会导致轻擦角周围产生平滑的高光反射响应。 
+                     			 
+                  </div>
+               </dd><a name="DLENTRY_64F6858807464679B101CFCBE2C25538"></a><dt><span class="term">高光贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> <a name="FIG_BF09456B7F9740C99C1DE944FA166F7F"></a><div class="figure-anchor"><img src="../images/GUID-858D2601-386C-4190-8A7E-2B6C07612178-low.png"><p class="figure-title">“高光贴图”分别为 0.0、0.5 和 1</p>
+                     </div> 此贴图控制高光反射的强度。 
+                     			 
+                  </div>
+               </dd><a name="DLENTRY_798AD0C517B14674B809237B8B93C166"></a><dt><span class="term">高光颜色贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition">此贴图控制高光反射的颜色。 
+                     				<a name="FIG_49D7F2533307416AA2DF25E4B49A2BD1"></a><div class="figure-anchor"><img src="../images/GUID-A34B7EDB-7CF1-4E86-A1A4-3BDFAEC29AEF-low.png"><p class="figure-title">“高光颜色贴图”分别为黄色、绿色和红色</p>
+                     </div> 此贴图控制高光反射的颜色。 
+                     			 
+                  </div>
+               </dd><a name="DLENTRY_072B0A66A6DD4979AF6AE6F8E9D76001"></a><dt><span class="term">透射贴图 
+                     			 </span></dt>
+               <dd>
+                  <div class="definition"> <a name="FIG_BA1B40A69C8146AE834E16AD61A9E972"></a><div class="figure-anchor"><img src="../images/GUID-08EB41B5-4AD0-481F-8D45-3C72D99A53C9-low.png"></div> <a name="FIG_20A20F5739E3450EB6D864AA7389F999"></a><div class="figure-anchor"><img src="../images/GUID-6BCF0DFC-7D4C-4057-A496-0ED8777C1E36-low.png"><p class="figure-title">“粗糙度贴图”为 0.2，“透射贴图”分别为 0.0、0.5 和 1</p>
+                     </div> 此贴图调整曲面透射而不是视为漫反射的光量。值 1.0 表示完全透射穿过曲面的光。 “透射”选项卡下的“体积”属性确定材质是否被视为吸收体积和折射体积。“粗糙度贴图”定义透明度的清晰度，其中 0.0 是透明的（像窗玻璃），更高的值会看起来像毛玻璃。
+                     
+                     				
+                     <div style="margin-top: 9pt;"><a name="GUID-7D32F0F8-7F50-460F-89A3-1A866C79510B"></a><div class="note-note"><span class="label label-target-language">注意:</span>要预览透射属性，需要 ActiveShade。 
+                           				
+                        </div>
+                     </div> 
+                     <div><a name="GUID-13997231-55A8-473B-87DE-32FAE157E4B9"></a><div class="note-note"><span class="label label-target-language">注意:</span>精确预览需要以米作为场景单位且不得进行对象缩放。 
+                           				
+                        </div>
+                     </div> 
+                  </div>
+                  <div class="definition"> <a name="FIG_CFB24AAFC9B945E6847049B785446095"></a><div class="figure-anchor"><img src="../images/GUID-1F37828F-C1F7-49CE-88C9-ED0A88662219-low.png"><p class="figure-title">“粗糙度贴图”为 0.2，“透射贴图”为 1，“体积厚度”分别为 0.0、0.5、1</p>
+                     </div> 增加“体积厚度”可在光线通过材质并折射时创建较厚的层。 
+                     			 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004207"></a> 
+            <h2><a name="GUID-76BF4588-2761-4DC1-9126-174FD6033284"></a>已知限制
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004208"></a><ul>
+               <li> glTF 材质仅需要 RGB 输入（无 Alpha）。 
+                  		  
+               </li>
+               <li> 如果从 HSL（在 MAXScript 中是 color.value 或 color.v）的角度考虑，则自动打包的纹理会基于位图的“亮度”生成其数据。 
+                  		  
+               </li>
+               <li> 使用具有空材质窗口的多维/子对象材质可能会导致在导出的面上出现不正确的材质。 
+                  		  
+               </li>
+               <li> 打包的纹理必须共享相同的尺寸和纹理变换，否则将不会按预期显示结果。 
+                  		  
+               </li>
+               <li> 使用“撤消/重做”时，glTF 材质中某些 UI 元素的启用/禁用状态无法正确更新。在材质编辑器中更改当前材质，然后再重新选择该材质将修复该状态。 
+                  		  
+               </li>
+               <li> 尽管“无照明”预览将在活动的明暗处理中渲染发射/照明，但它不会在 glTF 查看器中照亮。 
+                  		  
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="SECTION_5E588E9F85DE4FF797527B07F3910A92"></a> 
+            <h2><a name="TITLE_EBC02943656D4842A39B6865C275E9A2"></a>示例下载 
+            </h2> 
+            <p>一个可下载的示例文件夹，其中包含在 3ds Max 中创建的场景，该场景使用 glTF 材质节点和属性为场景中存在的所有资源设置纹理。 
+               		
+            </p> 
+            <p>单击下面的链接下载示例文件夹（文件夹包含 3ds Max 场景和所有位图纹理）。 
+               		
+            </p> 
+            <p><a href="https://areadownloads.autodesk.com/wdm/3dsmax/patio_example.zip">露台示例场景</a> 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

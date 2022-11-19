@@ -1,0 +1,6 @@
+CmakeVersion
+Maya-Libraries
+LibraryMacros
+ThirdPartyLibs
+The-CMakeList-File
+Building-with-cmake

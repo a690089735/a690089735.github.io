@@ -1,0 +1,68 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-ACF9E31C-2D8C-44B2-BCEB-893FA80CC57A">
+      <meta name="description" content="通过随时间更改场景来创建动画。您可以对时间进行更精确的控制，其中包括：时间的测量和显示方式；活动时间段（您当前正在处理的动画的某个部分）的长度以及动画的每个渲染帧涉及的时间长度。">
+      <meta name="indexterm" content="控制: 时间">
+      <meta name="indexterm" content="时间: 控制">
+      <meta name="topic-type" content="concept">
+      <title>控制时间</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-ACF9E31C-2D8C-44B2-BCEB-893FA80CC57A"></a><div class="head">
+            <h1>控制时间</h1>
+         </div>
+         <p class="blurb">通过随时间更改场景来创建动画。您可以对时间进行更精确的控制，其中包括：时间的测量和显示方式；活动时间段（您当前正在处理的动画的某个部分）的长度以及动画的每个渲染帧涉及的时间长度。 </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-459D"></a>接下来的各个主题中的其他时间问题包括如何随着时间移动以及如何在视口中观看动画。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044928"></a> 
+            <h2><a name="GUID-B739C5A4-9DEA-44B0-9023-6C71A4EAEDD4"></a>选择时间显示格式
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-459C"></a>在启动 <span class="charspan-msgph">3ds Max</span> 时，默认时间显示以帧为单位，但您可以使用其他时间显示格式。例如，您可能希望以秒和分钟为单位显示时间。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-459B"></a>可以使用<span class="char_link"><a href="GUID-9473CAF3-AF73-4127-A98C-58ACEF01ACAC.htm">“时间配置”对话框</a></span> <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“时间显示”组设置来指定不同的时间显示格式。在更改时间显示格式时，不仅更改在 <span class="charspan-msgph">3ds Max</span> 的所有部分中显示时间的方式，还要更改用于访问时间的方法。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A19004492A"></a><div class="figure-anchor"><img src="../images/GUID-242FFBFD-0345-4049-BD31-116B3FB7B5C5-low.png"></div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-459A"></a>可使用下列时间显示格式： 
+            </p> <a name="GUID-CB29A68C-907B-4AEE-A389-920AA6116958"></a><dl>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-792B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4599"></a>帧</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B11"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526BE"></a>完全使用帧显示时间。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4598"></a>这是默认的显示模式。单个帧代表的时间长度取决于所选择的当前帧速率。例如，在 NTSC 视频中，每帧代表 1/30 秒。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-792A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4597"></a>SMPTE</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B10"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526BF"></a>使用电影电视工程师协会格式显示时间。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4596"></a>这是一种标准的时间显示格式，适用于大多数专业的动画制作。SMPTE 格式从左到右依次显示分钟、秒和帧，其间用冒号分隔开来。例如，2:16:14 表示 2 分钟、16 秒和 14 帧。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7929"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4595"></a>帧：TICK</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B0F"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526C0"></a>使用帧和 <span class="charspan-msgph">3ds Max</span> 内部时间增量（称为“标记”）显示时间。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4594"></a>每秒包含 4,800 tick，所以，您实际上可以访问最小为 1/4800 秒的时间间隔。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-4F542F6211C68D07B4A-7928"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4593"></a>分：秒：TICK</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-5B0E"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87526C1"></a>以分钟 (MM)、秒钟 (SS) 和 tick 显示时间，其间用冒号分隔。例如，02:16:2240 表示 2 分钟、16 秒和 2,240 tick。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

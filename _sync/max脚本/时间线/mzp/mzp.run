@@ -1,0 +1,5 @@
+name "Heavenly Pictures - Extended Timeline 1.0"
+version 1.0
+run "extendedtimeline_installer.mse"
+drop "extendedtimeline_installer.mse"
+clear temp

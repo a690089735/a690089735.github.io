@@ -1,0 +1,111 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-1B81BBAC-FD72-484A-8CA6-FA3C9509BB38">
+      <meta name="description" content="通过“对象锁定”，可以使用 2D 图像特征跟踪数据直接在 3ds Max 场景中为对象设置动画。当移动大致是平面运动时，在场景中使用 3D 对象代替移动特征点是有用的。">
+      <meta name="indexterm" content="摄影机跟踪器: 对象锁定卷展栏">
+      <meta name="topic-type" content="concept">
+      <title>摄影机跟踪器：“对象旋转”卷展栏</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-1B81BBAC-FD72-484A-8CA6-FA3C9509BB38"></a><div class="head">
+            <h1>摄影机跟踪器：“对象旋转”卷展栏</h1>
+         </div>
+         <p class="blurb">通过“对象锁定”，可以使用 2D 图像特征跟踪数据直接在 <span class="charspan-msgph">3ds Max</span> 场景中为对象设置动画。当移动大致是平面运动时，在场景中使用 3D 对象代替移动特征点是有用的。 
+         </p>
+         <div class="bodyReference"><a name="UL_ECB78A33D4C44DB5A199144D71EFFFE0"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-51A653F3-A68C-4463-9D97-26887505D5F9"> <img src="../images/GUID-26D492F7-3E48-4209-AB7B-FEC655C6DA3D-low.png">“实用程序”面板  <img src="../images/ac.menuaro.gif"> “实用程序”卷展栏  <img src="../images/ac.menuaro.gif"> “更多”按钮  <img src="../images/ac.menuaro.gif"> “实用程序”对话框  <img src="../images/ac.menuaro.gif"> “摄影机跟踪器” <img src="../images/ac.menuaro.gif"> “对象旋转”卷展栏</span> 
+               </li>
+            </ul>
+            <p><a name="WS73099CC142F48755602CAF04118F18E7A07-54F5"></a>在跟踪数据创建后，可以使用此功能做更多的事情，如在背景影片中使用特征点移动使 3D 对象移动同步。如果 3D 对象直接包含背景特征点，将会取代它们。例如，可以创建小丑耍球的视频并使用 3D 火球来代替此球，或者使用具有 3D 下鄂的同步头部运动来创建动物对话动画。
+               
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-33C8"></a> 
+               <h2><a name="GUID-CB7926F3-AFFB-45EC-B3B4-89DA9CB4F53E"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045418"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045419"></a>示例：要创建小丑耍弄的 3D 火球，请执行以下操作：
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-33C7"></a>假设具有一段小丑视频。否则寻找一个小丑并找到一个摄影机。 
+               </p>
+               <ol type="1" start="1">
+                  <li>加载一段小丑视频。 </li>
+                  <li>创建跟踪器 gizmo 并使之与所玩的球相关联。 </li>
+                  <li>使用“影片 Stepper”来跟踪 gizmo。 </li>
+                  <li>转到“对象旋转”并选择一个跟踪器。 </li>
+                  <li>在要锁定的对象下，使之与跟踪器相关联。在该案例中，使用火创建一个 3D 火球，或用一个动画贴图来产生火。 </li>
+                  <li>调整“锁定范围”，然后单击“锁定”按钮来移动对象使之跟随跟踪器。 </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-33C6"></a> 
+               <h2><a name="GUID-63EDED4B-7128-4257-9B6C-82944941B19A"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004541A"></a><div class="figure-anchor"><img src="../images/GUID-D1251BCA-ED07-4350-9AB2-B0B523B0002C-low.png"></div>  <a name="GUID-4CBE7888-26C9-45CC-90ED-6FF979B44A9C"></a><dl>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7502"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-33C5"></a>选择跟踪器</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-56DA"></a> 在“运动跟踪器”卷展栏中显示所有跟踪器作为设置项。使用此选项可选择跟踪器，并使用其特征移动来控制在 <span class="charspan-msgph">3ds Max</span> 中锁定的对象。这些特征点必须在要使用的帧上已被跟踪，使用“轨迹”和/或“影片 Stepper”卷展栏。注意，锁定的精度由匹配精度决定，所以强烈推荐子像素跟踪。
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7501"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-33C4"></a>Pin 的对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-56D9"></a> 用于选择 <span class="charspan-msgph">3ds Max</span> 场景中要锁定和设置动画的对象。默认情况下，与选定跟踪器相关的跟踪对象预加载到此按钮中。如果要锁定不同的对象，可以使用此拾取器。
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-953281EC-3A86-4CAD-AC72-DFC6C2DE7D45"></a><p class="title"><a name="GUID-E3242B16-05BA-45C4-B7BE-77A420AAA29F"></a>“Pin 范围”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-7500"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-33C3"></a>影片开始</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-56D8"></a> 使用跟踪特征点位置设置影片从哪一帧开始。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-74FF"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-33C2"></a>动画开始</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-56D7"></a> <span class="charspan-msgph">3ds Max</span> 动画中用于为锁定对象的移动设置关键帧的起始帧。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-74FE"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-33C1"></a>帧数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-56D6"></a> 要生成动画的帧数。这在已选跟踪器中必须拥有足够多的跟踪点来包含这些帧。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-74FD"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-33C0"></a>重置范围</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-56D5"></a> 将最大帧数和计数范围从当前影片和 <span class="charspan-msgph">3ds Max</span> 场景设置重新加载到上述微调器中。
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="GUID-AF0CA18C-4F9B-42C0-A5A6-70D50B868634"></a><span class="term"><a name="GUID-F42CD33F-6FBC-42E2-AD49-426F5AD745B5"></a>锁定空间</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-693283F4-7CC9-45AD-985A-41D624BF3932"></a>用来为要发生锁定的关键帧选择运动平面。 <a name="UL_2C89C3CFA417447CA5F66B4262DB98A9"></a><ul>
+                           <li><em class="strong">屏幕</em>在当前场景深度下，在屏幕平面中移动锁定对象并为其设置动画。这等同于在 <span class="charspan-msgph">3ds Max</span> 中沿着“屏幕”参考坐标系拖动对象。 
+                           </li>
+                           <li><em class="strong">栅格</em>在活动栅格的平面中移动锁定对象并为其设置动画。通过在所需空间构造栅格辅助对象并激活此栅格，为锁定设置任意移动的平面。如果未设置并激活栅格辅助对象，将在 <span class="charspan-msgph">3ds Max</span> 的主栅格中进行锁定。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-1C5FBE41-3A74-4E2B-8A43-781E79EC0123"></a><span class="term"><a name="GUID-C39EE2A7-B262-489E-B72B-F91958A7B8DB"></a>锁定模式</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-B0B371AC-4DD3-4CA4-AC2A-693B130BB08C"></a>在两个不同的锁定模式中选择其中之一：绝对和相对。 <a name="UL_8D086CA920F542D0AD9A12D2DBD513E5"></a><ul>
+                           <li><em class="strong">绝对</em>将锁定对象放置并移动到所跟踪特征的正上方。即使合并了栅格空间，对象仍在活动栅格平面中摆放和移动。 
+                           </li>
+                           <li><em class="strong">相对</em>将锁定对象保留在空间中的当前位置，然后移动它，以便其相对于跟踪特征的投影位置在整个锁定帧范围内保持相同。不希望在特征点上精确地摆放锁定时，这使设置样的对象动画成为可能，或在连续的帧范围内使用几个特征点来设置对象对象。（例如，在动物对话片断中，用计算机生成的下颚可以在一些帧中跟踪耳朵，在另一些帧中跟踪鼻子）。即使合并了栅格空间，对象并<em class="mild">不</em> 移动到栅格平面上，而是在栅格上保持其高度并与之平行移动。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-57AF30D311C6900F989-74F8"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-33B9"></a>Pin</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E22F62443-56D0"></a> 为执行实际锁定，移动对象使之跟随选择特征点并在锁定帧范围内的每一帧上放置一个关键帧。与跟踪器中的其他关键帧操作一样，您可以使用 <span class="charspan-msgph">3ds Max</span> 中的“撤消”功能来撤消锁定。这可用在“轨迹视图”中执行后续的关键帧减少操作。
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,36 @@
+How To Install or Update Poly Cloth v2.02 by Poly Design 3D:
+
+0- Make sure 3dsMax is not running.
+
+1- Copy the PolyCloth_for_3dsmax_20**.gup
+
+2- Paste to your plugins directory:  (if you already have v1 or v2 installed, replace it with the new one.)
+C:\Program Files\Autodesk\3ds Max 20**\Plugins
+
+3- Now Open 3dsMax, directly drag and drop the PolyCloth_V2_Plugin_by_PolyDesign.mse script to 3dsmax viewport.
+
+4- Now it is a macroscript installed to your 3dsmax, You can assign a keyboard shortcut, add it to a toolbar or you can use search feature of 3dsmax by pressing 'x' key and type PolyCloth brushes.
+
+How can i assign it to a keyboard shortcut? (for 3dsmax 2020 and higher use hotkey editor instead)
+1 Go to Customize > Customize User Interface
+2 Go to keyboard tab
+3 Choose category : PolyDesign
+4 Select PolyCloth brushes
+5 Click on Hotkey And Set and Keyboard Shortcut
+6 Close Customize user interface window.
+7 Press the keyboard shortcut that you set and you can enjoy the script.
+
+
+Poly Cloth v2.02 currently supports:
+
+3dsMax 2016
+3dsMax 2017
+3dsMax 2018
+3dsMax 2019
+3dsMax 2020
+3dsMax 2021
+3dsMax 2022
+
+If you like the plugin, please rate it in CGTrader,
+If you have any suggestions or feedback please let me know via cgtrader messages.
+Check out my other plugins at: https://www.cgtrader.com/batuhanozer52

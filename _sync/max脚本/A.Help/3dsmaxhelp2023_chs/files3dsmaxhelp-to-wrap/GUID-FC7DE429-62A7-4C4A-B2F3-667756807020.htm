@@ -1,0 +1,67 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-FC7DE429-62A7-4C4A-B2F3-667756807020">
+      <meta name="description" content="混合层通常非常简单，如同将层堆栈中层的“全局权重”值制作成动画。不过，有时您可能需要混合各个肢体或禁用某些元素（如腿），以便使用堆栈中的当前层下的其他层的动画。此过程称为羽化权重。例如，对上半身使用关键帧动画，而对腿使用 CATMotion。">
+      <meta name="indexterm" content="CAT: 在层间混合">
+      <meta name="indexterm" content="CAT: 羽化权重">
+      <meta name="topic-type" content="concept">
+      <title>混合层</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-FC7DE429-62A7-4C4A-B2F3-667756807020"></a><div class="head">
+            <h1>混合层</h1>
+         </div>
+         <p class="blurb">混合层通常非常简单，如同将<span class="char_link"><a href="GUID-26323F8D-3CC2-4918-A60D-C9D6C558584E.htm#WS73099CC142F487551FEA285E1221E4F9FF8-50A5">层堆栈</a></span>中层的<span class="char_link"><a href="GUID-26323F8D-3CC2-4918-A60D-C9D6C558584E.htm#WS73099CC142F48755F2FC9DF120970276F7-61B9">“全局权重”值</a></span>制作成动画。不过，有时您可能需要混合各个肢体或禁用某些元素（如腿），以便使用堆栈中的当前层下的其他层的动画。此过程称为<span class="char_link"><a href="GUID-021DE9C7-9E7C-4A1E-8021-9F70AE12C7A7.htm">羽化权重</a></span>。例如，对上半身使用关键帧动画，而对腿使用 CATMotion。 
+         </p>
+         <div class="bodyReference"><a name="UL_A9F392A8C1D34541AB75FFCF859F55A0"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-796EE64F-09BB-419A-8145-87ED8786D8DD">选择装备部位。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板  <img src="../images/ac.menuaro.gif"> “层管理器”卷展栏  <img src="../images/ac.menuaro.gif"> “全局权重”设置</span> 
+               </li>
+            </ul>
+            <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3ED4"></a>可使用“全局权重”设置和曲线编辑器管理全局权重。局部权重具有其自己的设置和曲线编辑器。 
+            </p>
+            <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3ED3"></a>“权重视图”存储在 CATParent 中。但是，您也可以直接访问全局权重和局部权重。 
+            </p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-2919"></a><p class="list-intro"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-2918"></a>要直接导航到“全局权重”曲线编辑器，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在 <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“层管理器”卷展栏上，单击 <img src="../images/GUID-540858C9-8DCA-4C68-8F4B-69DE32B33E66-low.png">（“曲线编辑器: 全局权重”）。 
+                  <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3ECF"></a>此时将打开“轨迹视图”以显示层堆栈中的层。现在，您可以查看和编辑控制选定层的层权重的曲线。 
+                  </p> <a name="WS73099CC142F48755-5C83E7B1120018DE8C0-2917"></a><div class="figure-anchor"><img src="../images/GUID-CC443CCF-8D5C-4FE7-82FD-3E54CB4B4711-low.png"></div>  
+               </li>
+            </ol><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3ECD"></a><p class="list-intro"><a name="WS1A9193826455F5FF2566FFD511FF6F8C7CA-5AE7"></a>要在绝对层上进行混合，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li>转到要混合的帧，然后在“层管理器”卷展栏上添加一个 <img src="../images/GUID-AAEFFD71-BE7B-4AF4-BB19-9791E6F83E54-low.png"> 绝对层。 
+                  <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-2916"></a>绝对层将覆盖现有动画层，并且装备将在创建该层所在的帧上保持不动。 
+                  </p> 
+               </li>
+               <li>您可以根据需要重命名该层。 </li>
+               <li>在“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“层管理器”卷展栏上，单击 <img src="../images/GUID-540858C9-8DCA-4C68-8F4B-69DE32B33E66-low.png">（“曲线编辑器: 全局权重”）。 
+                  <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-2914"></a>曲线编辑器随即打开“全局层权重”视图，并显示装备的现有层。下图演示了三个层：PreHit、Reactor 和 GetsUp。 
+                  </p> <a name="WS73099CC142F48755-5C83E7B1120018DE8C0-2913"></a><div class="figure-anchor"><img src="../images/GUID-6D733FE9-08AA-4068-8EFF-113805A6450C-low.png"></div>  
+               </li>
+               <li>使用 <img src="../images/GUID-24FEF330-DFD8-4A0B-8B9D-E34591F0E73D-low.png"> <span class="char_link"><a href="GUID-59B55B89-C2B3-4F57-A572-C483AE8FA0C2.htm">（插入关键点）</a></span>以在混合源帧创建关键点，并将权重设置为 <em class="strong">0.0</em>。 
+               </li>
+               <li>在混合目标帧插入另一个关键点，并将权重设置为 <em class="strong">1.0</em>。 
+                  <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EC7"></a>此时将混合层，并且角色将由该新层控制。 
+                  </p> <a name="WS73099CC142F48755-5C83E7B1120018DE8C0-2912"></a><div class="figure-anchor"><img src="../images/GUID-F8995BFE-3F16-46E9-A793-E9742E1EA563-low.png"></div>  
+               </li>
+            </ol><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EC5"></a><p class="list-intro"><a name="WS1A9193826455F5FF2566FFD511FF6F8C7CA-5AE6"></a>要直接导航到“局部权重”曲线编辑器，请执行下列操作：
+            </p>
+            <ol type="1" start="1">
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择要编辑局部权重的装备元素，然后在“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“层管理器”卷展栏上单击 <img src="../images/GUID-540858C9-8DCA-4C68-8F4B-69DE32B33E66-low.png">（“局部权重”曲线编辑器）。此时将打开“轨迹视图”以显示层堆栈中的层。现在，您可以查看和编辑控制高亮显示层中的选定对象的层权重的曲线。 
+               </li>
+            </ol>
+            <div class="section"><a name="WS7AF5CAC11814013A75AF40B111FDE8BF657-7FC6"></a> 
+               <h2><a name="GUID-1292EEEA-3AB3-411F-90EE-54175B978FF6"></a>请参见
+               </h2> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EC2"></a> <span class="char_link"><a href="GUID-021DE9C7-9E7C-4A1E-8021-9F70AE12C7A7.htm">羽化权重</a></span> 
+               </p> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

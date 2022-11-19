@@ -1,0 +1,147 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-CE7ACC5E-49A8-4635-AE91-86A814CAFFE0">
+      <meta name="description" content="应用为导出到游戏引擎而优化的 Substance 参数化纹理。">
+      <meta name="indexterm" content="贴图: Substance">
+      <meta name="indexterm" content="Substance 贴图">
+      <meta name="topic-type" content="concept">
+      <title>Substance 贴图</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-CE7ACC5E-49A8-4635-AE91-86A814CAFFE0"></a><div class="head">
+            <h1> Substance 贴图</h1>
+         </div>
+         <p class="blurb">应用为导出到游戏引擎而优化的 Substance 参数化纹理。 
+            
+         </p>
+         <p> 
+            <div><a name="GUID-8BB8E04C-8705-4426-9098-8BFD910A2A46"></a><div class="note-note"><span class="label label-target-language">注意:</span>自 3ds Max 2021 起，Substance 贴图现在必须作为组件安装。此外，我们建议尽可能使用 Substance2 贴图，因为它改进了体验并与最新功能和工作流（如“烘焙到纹理”）兼容。 
+                  		
+               </div>
+            </div> 
+         </p>
+         <p>可以使用这些与分辨率无关的动态 2D 纹理来实现种类繁多的材质，而只需很小的内存和磁盘空间占用量。借助 Unreal<sup> ® </sup> Engine 3 游戏引擎、Emergent Gamebryo<sup> ® </sup> 游戏引擎和 Unity 的集成，通过 Allegorithmic Substance Air 中间件产品导出。另外，可以利用<span class="char_link"><a href="GUID-76F1E8AE-9E8F-40A7-A948-471D17E09DA9.htm">“渲染到纹理”</a></span>将纹理转换为位图以便与某些渲染器一起使用。 
+            	 
+         </p><a name="GUID-9264FC1D-44AE-4DA5-B515-A831E5874E58"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-502C1C2A-BCFA-4ABF-B896-F7BD4F91B462"><img src="../images/GUID-D2BE83D3-DB0A-40EF-96FD-0D85D4A54DD5-low.png"> <img src="../images/GUID-49279336-6EAB-47AC-B365-148668F3E087-low.png">“材质编辑器” <img src="../images/ac.menuaro.gif"> “材质/贴图浏览器” <img src="../images/ac.menuaro.gif"> “贴图” <img src="../images/ac.menuaro.gif"> “常规” <img src="../images/ac.menuaro.gif"> “Substance”</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E46"></a>一些可动态编辑和可设置动画的参数示例有：砖墙的砖块分布、表面老化和砂浆厚度；秋天树叶纹理的颜色变化、密度和树叶类型；涂漆木材纹理的木板年龄和数量。另外，每种纹理具有随机设置，可将自然变化添加到您的场景中。 
+            	 
+         </p>
+         <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E45"></a>本主题的其余部分介绍了使用 Substance 功能的步骤；下列主题提供了纹理的渲染示例和有关软件界面的信息。 
+            	 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E42"></a> 
+            <h2><a name="GUID-FE4C38A7-BF60-4709-98BB-44A37514B505"></a>过程
+            </h2> <a name="WS1A9193826455F5FF1012258B129B19ADD01-7E41"></a><p class="list-intro"><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E40"></a>示例：在 Slate 材质编辑器中使用 Substance 贴图：
+            </p>
+            <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E3F"></a>建议在 <span class="char_link"><a href="GUID-7B51EF9F-E660-4C10-886C-6F6ADE9E8F56.htm">Slate 材质编辑器</a></span> (SME) 中而不要在精简材质编辑器中使用 Substance。不过，如果您要在精简材质编辑器中使用 Substance，本示例之后将介绍操作步骤。 
+               		
+            </p>
+            <ol type="1" start="1">
+               <li>打开 SME，从材质/贴图浏览器中的“材质”列表中，将材质拖动到活动视图中。对于本示例，使用标准材质。 
+                  		  <a name="WS73099CC142F48755-49D92FDB129CC323221-7B11"></a><div class="figure-anchor"><img src="../images/GUID-2FA32687-8FB9-4144-A6D4-D5AAECCF0F09-low.png"></div>  
+               </li>
+               <li>从材质/贴图浏览器中的“贴图”列表，将 Substance 贴图拖动到标准材质上的漫反射（或其他）输入插孔。 
+                  		  <a name="WS73099CC142F48755-49D92FDB129CC323221-7B10"></a><div class="figure-anchor"><img src="../images/GUID-A366B295-E8BD-4327-B810-60B5583822E8-low.png"></div>  
+               </li>
+               <li>在视图中双击 Substance 贴图节点。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E3B"></a>其参数出现在材质编辑器右侧的参数编辑器中。 
+                     		  
+                  </p> <a name="WS73099CC142F48755-49D92FDB129CC323221-7B0F"></a><div class="figure-anchor"><img src="../images/GUID-433038BE-60F7-472F-A631-F4C4185BC7DC-low.png"></div>  
+               </li>
+               <li>在第一个卷展栏“程序包浏览器”上，单击“单击以浏览”按钮。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E39"></a>将打开“查找 Substance 文件”对话框。默认情况下，它显示两个包含 Substance 文件的文件夹：“Noises”和“Textures”。 
+                     		  
+                  </p> 
+               </li>
+               <li>对于本示例，打开“纹理”文件夹，然后打开<span class="filePath">BrickWall_02</span> Substance 文件。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E37"></a>Substance 文件的文件扩展名为 <span class="filePath">.sbsar</span>。 
+                     		  
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E36"></a>打开 Substance 文件之后，<span class="charspan-msgph">3ds Max</span> 在 Substance 节点和材质节点之间自动插入<span class="char_link"><a href="GUID-CDB5CF14-CBC9-482D-A56B-04A7FCF12884.htm">贴图输出选择器</a></span>贴图节点。对于同时产生一些不同输出类型（或通道）的大多数 Substance 而言，此节点是必需的。（某些 Substance 仅产生一种输出类型；这些 Substance 不需要贴图输出选择器。）您可以使用贴图输出选择器更改连接到材质输入插孔的
+                     Substance 贴图输出类型，而不必重新连接两个节点。 
+                     		  
+                  </p> <a name="WS73099CC142F48755-49D92FDB129CC323221-7B0E"></a><div class="figure-anchor"><img src="../images/GUID-371534D3-A0D1-41F7-A96D-20C6BFA44343-low.png"></div>  
+                  <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E35"></a>由于 Substance 贴图产生不同类型的输出，您可以将同一贴图应用于不同的材质输入，像在下例中一样，下例将演示如何将 Substance 的法线输出用作凹凸贴图。 
+                     		  
+                  </p> 
+               </li>
+               <li>从材质/贴图浏览器中的“贴图”列表，将法线凹凸贴图拖动到材质上的“凹凸”输入插孔。 
+                  		  <a name="WS73099CC142F48755-49D92FDB129CC323221-7B0D"></a><div class="figure-anchor"><img src="../images/GUID-F10BD2DE-8AA6-4062-AF5F-BADBA5F076A1-low.png"></div>  
+               </li>
+               <li>在“法线凹凸贴图”节点上的“法线”输入插孔和 Substance 贴图上的“法线”输出插孔之间拖动。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E32"></a>连线后，<span class="charspan-msgph">3ds Max</span> 会再次在两个节点之间自动插入“贴图输出选择器”节点。 
+                     		  
+                  </p> <a name="WS73099CC142F48755-49D92FDB129CC323221-7B0C"></a><div class="figure-anchor"><img src="../images/GUID-82D47C94-1B4C-483F-BAED-596AE7598269-low.png"></div>  
+                  <p><a name="WS73099CC142F48755-49D92FDB129CC323221-7A20"></a>如果依次双击每个“贴图输出选择器”节点，可以看到第一个节点设置为“漫反射”通道，而第二个节点设置为“法线”通道。 
+                     		  
+                  </p> 
+               </li>
+               <li>将材质应用于对象，并渲染场景。调整参数和其他设置，然后重新渲染，看看更改如何影响贴图输出。 
+                  		
+               </li>
+            </ol> <a name="WS1A9193826455F5FF1012258B129B19ADD01-7E30"></a><p class="list-intro"><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E2F"></a>示例：在精简材质编辑器中使用 Substance 贴图：
+            </p>
+            <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7E2E"></a>为了方便使用，建议您在 Slate 材质编辑器 (SME) 中而不要在精简材质编辑器中指定 Substance 贴图。不过，如果您喜欢使用精简材质编辑器，请执行下列步骤： 
+               		
+            </p>
+            <ol type="1" start="1">
+               <li>根据需要，选择示例窗，然后更改材质。 
+                  		
+               </li>
+               <li>单击其中一个材质参数（例如“漫反射”）的贴图按钮，然后指定“贴图输出选择器”贴图。 
+                  		
+               </li>
+               <li>在“贴图输出选择器”贴图的“参数”卷展栏上，单击“源贴图”按钮，然后指定 Substance 贴图。 
+                  		
+               </li>
+               <li>在第一个卷展栏“程序包浏览器”上，单击“单击以浏览”按钮。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A0E"></a>将打开“查找 Substance 文件”对话框。默认情况下，它显示两个包含 Substance 文件的文件夹：“Noises”和“Textures”。 
+                     		  
+                  </p> 
+               </li>
+               <li>打开 Substance 文件，并根据需要设置参数。 
+                  		
+               </li>
+               <li>单击 <img src="../images/GUID-319F1582-ABC8-46BD-AF19-4215BB8EDAF1-low.png">（“转到父对象”）返回到“父对象贴图输出选择器”贴图，将“通道名称”设置为相应的输出通道，例如“漫反射”。 
+                  		  
+                  <div><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A0D"></a><div class="note-note"><span class="label label-target-language">注意:</span>由于大多数 Substance 的输出通道数不像大多数材质中可用贴图输入的数量那样多，因此，在某些情况下，您需要设法使用可用通道。例如，要将某 Substance 指定为“过滤颜色”贴图，请尝试使用该 Substance 的“漫反射”输出。 
+                        		  
+                     </div>
+                  </div> 
+               </li>
+               <li>右键单击“源贴图”按钮并选择“复制”。 
+                  		
+               </li>
+               <li>返回到材质级别，根据需要，将新的“贴图输出选择器”贴图指定为材质中的其他贴图。对于每个贴图，选择相应的“通道名称”设置，然后右键单击“源贴图”按钮并选择“粘贴(实例)”。 
+                  		  
+                  <p><a name="WS1A9193826455F5FF1012258B129B19ADD01-7A0A"></a>这可以确保更改任一 Substance 贴图中的设置可以同时更改所有贴图的设置。 
+                     		  
+                  </p> 
+               </li>
+            </ol> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-A3BF9358-2A40-4EFD-933D-1DECEFE94F37.htm">Substance 采样</a><p>为了供您参考，本主题提供了一个按字母排序的列表，该列表列出所有应用于立方体的、用包含的 Substance 和采样渲染的图像。在大多数情况下，使用的 Substance 贴图输出有“漫反射”（用于着色）、“高光反射”（用于设置高光级别）和“高度”（用于置换）。
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-D98A5D87-EFF1-45DD-8132-69B86FB8454E.htm">Substance 界面</a><p>Substance 界面由一些卷展栏组成，双击贴图节点时，这些卷展栏将出现在材质编辑器中。另外，大多数 Substance 贴图都包含一些输出，用于连接到不同的材质贴图输入。 </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

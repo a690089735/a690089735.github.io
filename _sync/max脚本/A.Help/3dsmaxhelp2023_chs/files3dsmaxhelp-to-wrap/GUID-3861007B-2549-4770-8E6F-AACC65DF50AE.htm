@@ -1,0 +1,161 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-3861007B-2549-4770-8E6F-AACC65DF50AE">
+      <meta name="contextid" content="MTOGGLEPOLYDBUILD">
+      <meta name="contextid" content="MTOGGLEPOLYDBORDER">
+      <meta name="contextid" content="MTOGGLEPOLYDOPTIMIZE">
+      <meta name="contextid" content="MPOLYDONGRID">
+      <meta name="contextid" content="MPOLYDONSURFACE">
+      <meta name="contextid" content="MPOLYDONSELECTION">
+      <meta name="contextid" content="MTOGGLEPICKSURFACEBUTTON">
+      <meta name="contextid" content="MLABELPOLYDOFFSET">
+      <meta name="contextid" content="MSPINNERPOLYDOFFSET">
+      <meta name="topic-type" content="concept">
+      <title>添加几何体和优化工具（“多边形绘制”面板）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-3861007B-2549-4770-8E6F-AACC65DF50AE"></a><div class="head">
+            <h1> 添加几何体和优化工具（“多边形绘制”面板） </h1>
+         </div>
+         <div class="bodyReference"><a name="GUID-BDA9CDA7-418D-4335-BA4A-FE8DE7632CBD"></a><dl>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-754C"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-754B"></a> <img src="../images/GUID-C5C50F52-CBB1-44B7-B4EC-7EAE37DAEDC0-low.png"> 步骤构建
+                     <!--CPM-ContextId = 'mTogglePolyDBuild'--><a name="GUID-C0748C3C-35E7-4083-8160-86CB5D049BAC"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C366D"></a> 
+                     <p><a name="WS73099CC142F487557579AB9211C98C460A4-763D"></a>使用“步骤构建”，可以一个顶点一个顶点及一个多边形一个多边形地构建和编辑曲面。用在对象层级及所有子对象层级。右键单击以退出工具。 
+                     </p> 
+                     <p><a name="WS73099CC142F487551A80AE1B11DF600637E-754A"></a>下面是此工具的不同功能，它们因所按键盘键的不同而不同： 
+                     </p> <a name="WS1A9193826455F5FF-4F6D1F1D11D24BE3E03-7092"></a><ul>
+                        <li> <em class="strong">法线</em>单击以将顶点放置在网格或曲面上。 
+                        </li>
+                        <li> <span class="keyboardEntry">Shift</span> 拖动独立顶点以使用四边形填充间隙。这样会始终从最近的四个顶点创建多边形。 
+                        </li>
+                        <li> <span class="keyboardEntry">Ctrl</span> 单击多边形以删除它。保留顶点，以便您无意间在错误的位置创建面时可以很容易地删除该面，并根据您的需要在距离顶点很近的位置再次绘制。 
+                        </li>
+                        <li><span class="keyboardEntry">Alt</span> 单击顶点以将其移除。 
+                        </li>
+                        <li><span class="keyboardEntry">Ctrl+Alt</span> 单击边以将其移除。 
+                        </li>
+                        <li> <span class="keyboardEntry">Ctrl+Shift</span> 单击以放置并选择顶点，或选择现有的顶点。每次放置和/或选择四个顶点时，“步骤构建”会自动创建一个多边形。在新选择中包含以前创建的多边形中的最后两个顶点，因此仅需单击两次即可创建下一个多边形。要清除选定内容，请释放键。 
+                        </li>
+                        <li> <span class="keyboardEntry">Shift+Alt</span> 在顶点上移动鼠标光标（不拖动）以选择顶点，然后单击以从选定顶点创建多边形。这对于创建非四边多边形非常有用。要清除选定内容，请释放键。 
+                        </li>
+                        <li> <span class="keyboardEntry">Ctrl+Shift+Alt</span> 拖动以在网格或曲面上移动顶点。在“顶点”子对象层级处，当将鼠标移到足够近的位置以开始拖动时会高亮显示顶点。 
+                        </li>
+                     </ul> 
+                     <div><a name="GUID-92D4D4C9-221D-473F-93AE-7C8795F109D2"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>在 <span class="keyboardEntry">Maya 模式</span>下，按住 <span class="char_link"><a href="GUID-9DF0E9DB-F68E-448D-BB9E-C75CA85B6E70.htm">Alt</a></span> 并单击不会按预期工作。在 Maya 模式下，按住 <span class="keyboardEntry">Alt</span> 并拖动可环绕视口（仅透视视图）。 
+                        </div>
+                     </div> 
+                     <div><a name="WS73099CC142F487551A80AE1B11DF600637E-7549"></a><div class="note-note"><span class="label label-target-language">注意:</span>当“步骤构建”处于活动状态时，<span class="char_link"><a href="GUID-62ED4A86-32CF-4416-AB27-D82E4FB0DB18.htm#WS73099CC142F48755-1257E12111BF108800E3854">顶点标记</a></span>将始终对选定对象可见。如果在“顶点”以外的层级未显示这些标记，请确保对象的<span class="char_link"><a href="GUID-D8D278F1-D5ED-4961-801A-A970C0CBCB87.htm#GUID-C6C5962F-1F7C-4FF9-B561-758E9565D1DA">显示属性</a></span>已设置为“按对象”。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-7548"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-7547"></a> <img src="../images/GUID-0D4C1DCC-7FBE-4A69-81E9-03619799BC55-low.png"> 扩展
+                     <!--CPM-ContextId = 'mTogglePolyDBorder'--><a name="GUID-0161AFEF-8F58-4B22-9B56-DA1BADB5986B"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C366E"></a> 
+                     <p><a name="WS73099CC142F487557579AB9211C98C460A4-7641"></a>使用“扩展”工具，您可以处理对象的开放边；那些位于曲面的边界上的开放边仅附有一个多边形。以下是“扩展”工具的其他功能： 
+                     </p> <a name="WS1A9193826455F5FF-4F6D1F1D11D24BE3E03-70A2"></a><ul>
+                        <li> <em class="strong">法线</em>拖动边界顶点以创建多边形。 
+                        </li>
+                        <li> <span class="keyboardEntry">Shift</span> 拖动边界边以创建多边形。 
+                        </li>
+                        <li> <span class="keyboardEntry">Ctrl+Shift</span> 拖动某个边以扩展该边所在的整个循环。 
+                        </li>
+                        <li> <span class="keyboardEntry">Ctrl+Alt</span> 在两个边之间拖动以创建多边形。 
+                        </li>
+                        <li> <span class="keyboardEntry">Ctrl</span> 单击以删除多边形及其相关顶点。 
+                        </li>
+                        <li> <span class="keyboardEntry">Ctrl+Shift+Alt</span> 拖动某个顶点以使其在栅格或曲面上移动。 
+                        </li>
+                     </ul> 
+                     <p><a name="WS73099CC142F487557579AB9211C98C460A4-7640"></a>您还可以使用“延伸”在屏幕空间中编辑对象，这样就可以移动和视图方向垂直的子对象了。无需更改活动坐标系即可使用此方法。 
+                     </p> <a name="WS1A9193826455F5FF-4F6D1F1D11D24BE3E03-709C"></a><ul>
+                        <li> <span class="keyboardEntry">Alt</span> 拖动某个边界顶点以在屏幕空间中创建多边形。 
+                        </li>
+                        <li> <span class="keyboardEntry">Alt</span> 拖动某个边界边以在屏幕空间中创建多边形。 
+                        </li>
+                     </ul> 
+                     <div><a name="GUID-C85DF4DF-0BCC-406C-AF04-18EF562B3FF1"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>在 <span class="char_link"><a href="GUID-9DF0E9DB-F68E-448D-BB9E-C75CA85B6E70.htm">Maya 模式</a></span>下，按住 <span class="keyboardEntry">Alt</span> 并拖动不会按预期工作。在 Maya 模式下，按住 <span class="keyboardEntry">Alt</span> 并拖动可环绕视口（仅透视视图）。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-7544"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-7543"></a> <img src="../images/GUID-EBE73785-4BC0-4223-9A0C-BB86C642C7C6-low.png"> 优化
+                     <!--CPM-ContextId = 'mTogglePolyDOptimize'--><a name="GUID-1ECAFAD4-41D8-43E7-8051-5AD0C93C6BCB"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C3670"></a> 
+                     <p><a name="WS1A9193826455F5FF-4F6D1F1D11D24BE3E03-707F"></a>通过略掉详细信息来快速优化网格。工具选项包括： 
+                     </p> <a name="WS1A9193826455F5FF-4F6D1F1D11D24BE3E03-707E"></a><ul>
+                        <li> <em class="strong">法线</em>单击边以折叠边，将两个顶点合二为一。 
+                        </li>
+                        <li> <span class="keyboardEntry">Shift</span> 从一个顶点拖动到下一个顶点以目标焊接这两个顶点，将第一个顶点与第二个顶点合并。如果继续拖动到其他顶点，则可以在单个笔划中焊接多个顶点。 
+                        </li>
+                        <li> <span class="keyboardEntry">Ctrl</span> 通过在顶点间拖动可使用边将它们连接起来。 
+                        </li>
+                        <li> <span class="keyboardEntry">Alt</span> 通过单击顶点移除顶点。 
+                        </li>
+                        <li> <span class="keyboardEntry">Shift+Ctrl</span> 通过单击循环中的的边移除边循环。 
+                        </li>
+                        <li> <span class="keyboardEntry">Shift+Alt</span> 通过单击环中的边移除边环。 
+                        </li>
+                        <li> <span class="keyboardEntry">Ctrl+Alt</span> 通过单击边移除边。 
+                        </li>
+                        <li> <span class="keyboardEntry">Shift+Ctrl+Alt</span> 通过拖动顶点移动顶点。 
+                        </li>
+                     </ul> 
+                     <div><a name="GUID-A326D2D7-2474-4E63-A87E-E64286BCB009"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>在 <span class="char_link"><a href="GUID-9DF0E9DB-F68E-448D-BB9E-C75CA85B6E70.htm">Maya 模式</a></span>下，按住 <span class="keyboardEntry">Alt</span> 并拖动不会按预期工作。在 Maya 模式下，按住 <span class="keyboardEntry">Alt</span> 并拖动可环绕视口（仅透视视图）。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-7542"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-7541"></a>绘制于:
+                     <!--CPM-ContextId = 'mPolyDonGrid'--><a name="GUID-5C088058-7210-4767-884F-A8142950B33A"></a>
+                     <!--CPM-ContextId = 'mPolyDonSurface'--><a name="GUID-7F35D62E-3BA0-4701-90BA-BDE4FBF0332B"></a>
+                     <!--CPM-ContextId = 'mPolyDonSelection'--><a name="GUID-90F3BBAB-57F5-4821-A454-D7377BDC5282"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C3671"></a> 
+                     <p><a name="WS73099CC142F487551A80AE1B11DF600637E-7540"></a>从下拉列表中，选择要在以下位置绘制的实体类型： 
+                     </p> <a name="WS73099CC142F487551A80AE1B11DF600637E-753F"></a><ul>
+                        <li> <img src="../images/GUID-30C9BF8B-62F0-462D-9DCD-834A9D48CE4F-low.png"> <em class="strong">栅格</em>“多边形绘制”在活动视口的栅格上创建几何体。 
+                           <p><a name="WS73099CC142F487557579AB9211C98C460A4-77E6"></a>此绘制模式专门用于正交视口，但也适用于透视视口。 
+                           </p> 
+                        </li>
+                        <li> <img src="../images/GUID-BE269181-FE0E-463A-9F82-C86356D1FE53-low.png"> <em class="strong">曲面</em>“多边形绘制”在指定的对象上创建几何体。 
+                           <p><a name="WS73099CC142F487557579AB9211C98C460A4-77E2"></a>单击“拾取”按钮，然后选择要在其上绘制的其他对象。然后，此按钮包含该对象的名称。使用任何“多边形绘制”工具（条带等）在该对象上绘制。要更改曲面，请再次单击此按钮，然后选择要在其上绘制的其他对象。 
+                           </p> 
+                        </li>
+                        <li> <img src="../images/GUID-3FE2F031-75F2-4D38-89D7-B2727558E3DB-low.png"> <em class="strong">选择</em>“多边形绘制”在选定对象上创建几何体。 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-753B"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-753A"></a>拾取
+                     <!--CPM-ContextId = 'mTogglePickSurfaceButton'--><a name="GUID-73292F2A-57BC-4F95-BD47-FCB4CD6DCB3D"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C3672"></a> 
+                     <p><a name="WS73099CC142F487557579AB9211C98C460A4-7643"></a>为“绘制于: 曲面”选项（见上文）指定要在其上绘制的对象。 
+                     </p> 
+                     <p><a name="WS73099CC142F487557579AB9211C98C460A4-7642"></a>将“绘制于”选项设置为“曲面”后，单击“拾取”按钮，然后单击要在其上绘制的对象。若要移除对象，请再次单击该按钮。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS73099CC142F487551A80AE1B11DF600637E-7517"></a><span class="term"><a name="WS73099CC142F487551A80AE1B11DF600637E-7516"></a>偏移
+                     <!--CPM-ContextId = 'mLabelPolyDOffSet'--><a name="GUID-E72DCCB5-2268-4F77-BA5D-19A85D8AA96B"></a>
+                     <!--CPM-ContextId = 'mSpinnerPolyDOffSet'--><a name="GUID-15FDDA89-DFEA-4A20-84C1-30037D95D9F2"></a></span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF211A40BE11DCC57291C367F"></a> 
+                     <p><a name="WS73099CC142F487551A80AE1B11DF600637E-7515"></a>“多边形绘制”用于在栅格上（或移动跨越栅格）或在对象曲面上（取决于“绘制于”设置）创建几何体的距离。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

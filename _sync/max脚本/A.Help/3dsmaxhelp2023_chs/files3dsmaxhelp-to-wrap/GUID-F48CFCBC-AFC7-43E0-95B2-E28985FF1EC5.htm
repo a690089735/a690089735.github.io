@@ -1,0 +1,57 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-F48CFCBC-AFC7-43E0-95B2-E28985FF1EC5">
+      <meta name="description" content="单位是连接 3ds Max 三维世界与物理世界的关键。从“单位设置”对话框中可以定义要使用的单位。">
+      <meta name="indexterm" content="使用: 单位">
+      <meta name="indexterm" content="单位: 使用">
+      <meta name="topic-type" content="concept">
+      <title>使用单位</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-F48CFCBC-AFC7-43E0-95B2-E28985FF1EC5"></a><div class="head">
+            <h1>使用单位</h1>
+         </div>
+         <p class="blurb">单位是连接 <span class="charspan-msgph">3ds Max</span> 三维世界与物理世界的关键。从<span class="char_link"><a href="GUID-69E92759-6CD9-4663-B993-635D081853D2.htm">“单位设置”对话框</a></span>中可以定义要使用的单位。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900431F6"></a> 
+            <h2><a name="GUID-341A0D61-93D9-4C9A-A23D-A7056F2CF153"></a>更改显示单位
+            </h2> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-777"></a>当更改显示单位时，<span class="charspan-msgph">3ds Max</span> 显示以您方便的新单位进行的测量。所有尺寸以新单位显示。实际上，您正在使用新的“测量棒”。在该过程中没有更改对象。就像在物理世界中一样，场景中的对象保持其绝对大小，而不考虑测量的方式。 
+            </p> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900431F7"></a> 
+               <h3><a name="GUID-EFC0DBFA-63CF-4DFA-914A-8377F91045CC"></a>输入条目
+               </h3> 
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-776"></a>当输入任何尺寸时，<span class="charspan-msgph">3ds Max</span> 总是假设输入的数以当前单位表示。也可以输入一系列数字：<span class="charspan-msgph">3ds Max</span> 然后将其总和转换为当前单位。此处是一些示例，假设当前单位为厘米。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900431F8"></a><ul>
+                  <li>当输入尺寸为 1’（1 US 英尺），它将转换为 30.48 厘米。 </li>
+                  <li>如果输入一系列数字，如 14 286 175（由空格分隔），则该序列总计为 475.0 厘米。 </li>
+                  <li>如果输入 1’ 1（1 US 英尺和 1 厘米），将其转换并且总和为 31.48 厘米。 </li>
+               </ul> 
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-775"></a>当使用美国标准作为显示单位比例时，可以选择英尺或英寸作为默认的输入条目。如果选择英尺并输入 12，则结果为 12’ 0"。但是，如果输入 1’ 2，则 <span class="charspan-msgph">3ds Max</span> 将第二个数字识别为英寸，产生的结果为 1’ 2"。 
+               </p> 
+               <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-774"></a>在任何单位系统中，可以输入分数。例如，假设您使用美国标准，将英尺作为默认单位： 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A1900431F9"></a><ul>
+                  <li>如果输入 18/3，则结果为 6’0"。 </li>
+                  <li>如果输入 18/3"，则结果为 0’6"。 </li>
+                  <li>可以在不同的系统中指定单位，并且在闲置状态时将其转换。例如，如果输入 18/3 厘米，则结果为 0'2.362"。 </li>
+               </ul> 
+            </div> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900431FA"></a> 
+            <h2><a name="GUID-DBE50B27-A6BC-4CD8-842B-D774B8CB9F94"></a>了解系统单位
+            </h2> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-773"></a> <span class="charspan-msgph">3ds Max</span> 以自己内在的系统单位记录所有测量。无论使用哪种显示单位，为了存储和计算将测量存储为绝对单位。定义默认的系统单位为 1.000 英寸。只要系统单位为 1 英寸，就可以自由共享模型并随时更改单位，而对于基本几何体无效。除了在很少的环境中，将永远不需要更改该默认比例。这意味着可以将创建的模型与场景中正确比例的任何标准单位合并。
+               
+            </p> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-772"></a>可以在“系统单位设置”对话框上更改系统单位设置，该对话框位于<span class="char_link"><a href="GUID-69E92759-6CD9-4663-B993-635D081853D2.htm">“单位设置”对话框</a></span>中。只有场景的尺寸很小（小于 1 英寸）或很大，才推荐更改系统单位。有关详细信息，请参见<span class="char_link"><a href="GUID-22D2D2B9-9A82-47FA-88DD-67B1A91E2337.htm">“系统单位设置”对话框</a></span>。 
+            </p> 
+            <p><a name="WS1A9193826455F5FFBA679E112C9EF5A71-771"></a>如果确实需要更改系统单位，在创建或导入几何体<em class="mild">前</em> 进行更改。不要在现有场景中更改系统单位。 
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

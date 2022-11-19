@@ -1,0 +1,48 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-A0DBA3D4-4712-4BF3-8DFF-260EB418CEBE">
+      <meta name="description" content="这些是关于设置 NURBS 模型动画的提示，以及以设置过动画的 NURBS 模型使用纹理的提示。">
+      <meta name="indexterm" content="纹理: 和 NURBS 模型">
+      <meta name="indexterm" content="动画: 提示 (NURBS)">
+      <meta name="indexterm" content="设置动画: NURBS 模型">
+      <meta name="indexterm" content="纹理: 和设置动画的 NURBS 模型">
+      <meta name="indexterm" content="NURBS: 动画提示">
+      <meta name="topic-type" content="concept">
+      <title>NURBS 动画、纹理和渲染</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-A0DBA3D4-4712-4BF3-8DFF-260EB418CEBE"></a><div class="head">
+            <h1>NURBS 动画、纹理和渲染</h1>
+         </div>
+         <p class="blurb">这些是关于设置 NURBS 模型动画的提示，以及以设置过动画的 NURBS 模型使用纹理的提示。</p><a name="WS1A9193826455F5FFBA679E112A6A190041E10"></a><ul>
+            <li>设置不断增大的曲面动画的一个简便方法是，将使用修剪的<span class="char_link"><a href="GUID-850FB307-1402-4C33-98A1-3FBD3090F086.htm">曲线点</a></span>放置在曲线上，然后设置该曲线点的 U 位置动画，接着再将该曲线作为<span class="char_link"><a href="GUID-CA0474F1-87AC-4820-B257-2CA8E262D0FB.htm">单轨扫描</a></span>的轨道使用。随着修剪的轨道变长，扫描曲面也变大。（必须在创建扫描曲面之前修剪。）
+            </li>
+            <li>如果在渲染图像中的曲面间观察到间距，那么在<span class="char_link"><a href="GUID-A66E61B1-8B69-4A61-A7AF-40C8927DA00E.htm">曲面近似</a></span>设置中为渲染器增加“合并”的值。
+            </li>
+            <li>如果在动画过程中纹理环绕着曲面滑动，那么这是因为使用了纹理曲面的默认“弦长”参数。选择曲面，然后在 <span class="char_link"><a href="GUID-1D0419E6-4AFA-4405-97B2-4A0B94B3902F.htm">“材质属性”卷展栏</a></span>中将该参数更改为“用户定义”。现在纹理会更好的粘贴在曲面上。
+            </li>
+            <li>不要使用<span class="char_link"><a href="GUID-78327298-4741-470C-848D-4C3618B18FCA.htm">“UVW 贴图”修改器</a></span>将纹理应用到设置过动画的 NURBS 曲面上。
+            </li>
+            <li>如果在动画中向一个曲面移动时该曲面看起来在闪烁或跳动，那么这是因为启用了“视图独立”细分（在<span class="char_link"><a href="GUID-A66E61B1-8B69-4A61-A7AF-40C8927DA00E.htm">“曲面近似”卷展栏</a></span>中），因此细分总是在改变。通常“视图独立”产生不可见的更改，但是如果有这样的闪烁或跳动，就禁用该选项。
+            </li>
+            <li>如果在动画中更改曲面时该曲面看起来在闪烁或跳跃，那么这是因为在曲面设置动画时细分被更改。将曲面近似（在“曲面近似”卷展栏中）更改为“规则”可以解决所有情况下的这一问题。参数细分也可以解决这一问题，这种方法对各种曲面都有效，除了 <span class="char_link"><a href="GUID-39CCD58A-4ED2-4339-8B70-89ADEA49B2E8.htm">U 向放样</a></span>和 <span class="char_link"><a href="GUID-46FB65D0-DF8B-4A6E-A546-CC52D6092485.htm">UV 放样</a></span>以外。
+            </li>
+            <li>如果“视图独立”设置看起来无效，那么将细分（在“曲面近似”卷展栏中）从“曲率”更改为“空间”。接着会在面数上有更加明显地改变。</li>
+            <li>要获取一个贴图来平滑地覆盖两个或更多曲面而不使用平铺，可以创建另一个曲面，使该曲面的形状刚好能够覆盖并大致上与原始曲面一致。将纹理应用到这个更大的曲面上。在<span class="char_link"><a href="GUID-1D0419E6-4AFA-4405-97B2-4A0B94B3902F.htm">“材质属性”卷展栏</a></span>中，将原始曲面的“纹理曲面”设置为“投射”，然后单击“拾取源曲面”并拾取较大的曲面。调整较大的曲面以微调贴图投射。在渲染前隐藏这一较大的曲面。
+            </li>
+            <li>要在曲面子对象上有不同的贴图，请使用不同的<span class="char_link"><a href="GUID-245C4F26-7D3B-40E4-B815-531E3DF49967.htm">贴图坐标</a></span>和多个<span class="char_link"><a href="GUID-C4D98019-3568-4EC3-AF70-A38C0F975D51.htm">贴图通道</a></span>。在<span class="char_link"><a href="GUID-1D0419E6-4AFA-4405-97B2-4A0B94B3902F.htm">“材质属性”卷展栏</a></span>上，更改“贴图通道”的值然后启用“生成贴图坐标”。（每个贴图通道都需要其自己的贴图坐标设置。）
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FAE"></a>可以直接设置 NURBS 曲面子对象贴图通道，而且不需要像其他对象那样应用“UVW 贴图”修改器。
+               </p>
+            </li>
+            <li>如果贴图并不按照预先设想的那样与曲面子对象对齐，那么在<span class="char_link"><a href="GUID-1D0419E6-4AFA-4405-97B2-4A0B94B3902F.htm">“材质属性”卷展栏</a></span>上选择“用户定义”作为“纹理曲面”，然后使用“编辑纹理点”或“编辑纹理曲面”对话框来移动纹理曲面的点。
+            </li>
+            <li>要调整贴图与曲面子对象边缘对齐的方式，请使用<span class="char_link"><a href="GUID-1D0419E6-4AFA-4405-97B2-4A0B94B3902F.htm">“材质属性”卷展栏</a></span>上的“纹理角点”设置。
+            </li>
+         </ul>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

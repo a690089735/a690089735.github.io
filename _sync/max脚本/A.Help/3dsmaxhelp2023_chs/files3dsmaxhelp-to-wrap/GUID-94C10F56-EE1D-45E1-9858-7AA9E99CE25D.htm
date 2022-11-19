@@ -1,0 +1,291 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-94C10F56-EE1D-45E1-9858-7AA9E99CE25D">
+      <meta name="indexterm" content="导出: 高级选项">
+      <meta name="indexterm" content="自动单位转换: 导出">
+      <meta name="indexterm" content="单位: 自动转换（导出）">
+      <meta name="indexterm" content="单位: 比例因子（导出）">
+      <meta name="indexterm" content="比例因子（导出）">
+      <meta name="indexterm" content="单位: 场景单位转化（导出）">
+      <meta name="indexterm" content="场景单位转化为: 导出">
+      <meta name="indexterm" content="比例转化: 示例">
+      <meta name="indexterm" content="场景单位转化为: 示例">
+      <meta name="indexterm" content="示例: 比例转化">
+      <meta name="indexterm" content="单位: 轴转化（导出）">
+      <meta name="indexterm" content="轴转化: 导出">
+      <meta name="indexterm" content="高级选项: UI（导出）">
+      <meta name="indexterm" content="UI: 导出">
+      <meta name="indexterm" content="显示/隐藏警告管理器">
+      <meta name="indexterm" content="UI: 显示/隐藏警告管理器（导出）">
+      <meta name="indexterm" content="错误: 错误与警告之间的区别">
+      <meta name="indexterm" content="警告: 错误与警告之间的区别（导出）">
+      <meta name="indexterm" content="生成日志数据: 导出">
+      <meta name="indexterm" content="警告和错误: 生成日志数据（导出）">
+      <meta name="indexterm" content="日志文件: 导出位置">
+      <meta name="indexterm" content="高级选项: FBX 文件格式（导出）">
+      <meta name="indexterm" content="FBX 文件格式: 导出">
+      <meta name="indexterm" content="FBX 文件类型: 导出">
+      <meta name="indexterm" content="生成日志数据: 原因（导出）">
+      <meta name="indexterm" content="FBX 文件版本: 导出">
+      <meta name="indexterm" content="FBX 文件版本: 更改时间">
+      <meta name="indexterm" content="Collada: 导出">
+      <meta name="indexterm" content="导出: Collada DAE">
+      <meta name="indexterm" content="DAE: 导出">
+      <meta name="indexterm" content="Collada: 三角算法（导出）">
+      <meta name="indexterm" content="Collada: 单一矩阵（导出）">
+      <meta name="indexterm" content="Collada: 帧速率（导出）">
+      <meta name="topic-type" content="concept">
+      <title>高级选项</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-94C10F56-EE1D-45E1-9858-7AA9E99CE25D"></a><div class="head">
+            <h1>高级选项</h1>
+         </div><a name="WS73099CC142F48755-1C09418211F25B18DC4-2BFB"></a><div class="figure-anchor"><img src="../images/GUID-6948FD41-7725-4C62-8CA0-D61D20F267B8-low.png"></div>
+         <p><a name="WS1A9193826455F5FF-6D855556117C4584E541F91"></a> “高级选项”卷展栏主要包含可用于修改默认插件行为的附加选项。在大多数情况下，无需修改这些选项即可成功完成导出。此部分还包含针对 Collada 文件类型的附加设置。 
+         </p>
+         <div class="section"><a name="SECTION_A4731FD764044698AB6543C44E81F4D4"></a> 
+            <h2><a name="GUID-8F8E1F50-308F-4751-8FBD-1D2DF4B30765"></a>单位
+            </h2> 
+            <p><a name="WS1A9193826455F5FF-3D980B8612487088DED-584E"></a>下面的卷展栏包含所导出文件的单位设置。 
+            </p> <a name="GUID-3B80D0AC-277E-4DEF-959C-8422BD7C4F7B"></a><dl>
+               <dt><a name="GUID-A24312AA-1A55-451E-A313-3687C9CECD89"></a><span class="term"><a name="GUID-7C4624F7-9FFD-4980-807A-4FD393B561C5"></a>自动</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-4250A1A9-D07A-4083-9CC6-7966605504D3"></a> 
+                     <p><a name="WS1A9193826455F5FF-3D980B8612487088DED-7ADC"></a> 如果希望 <span class="charspan-msgph">3ds Max FBX plug-in</span>自动识别并设置目标文件的单位以与主机应用程序的单位匹配，请激活“自动”选项。 
+                     </p> 
+                     <p><a name="WS73099CC142F487557BFAA8DA122EC01152F-F55"></a>激活“自动”后，“场景单位转化为”选项将禁用，虽然该选项会显示已解析的单位和比例因子。禁用“自动”选项后即可访问“场景单位转化为”选项。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-3D980B8612487088DED-7ADB"></a>如果“自动”处于活动状态，“文件单位”将匹配系统单位，此时插件不会引用任何转换。在这种情况下，显示的比例因子为 1.0。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-834ADDDE-02C1-4295-87E7-69B4DDBCB871"></a><span class="term"><a name="GUID-8D9E1C37-96E0-4754-97EC-B503F66FBE06"></a>比例因子</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-5972A887-E272-4617-9F2E-80C4B0E14210"></a> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117E9F816D232A4"></a> 显示导出期间插件应用到整个场景的转换值或比例因子。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117E9F816D232A6"></a>默认情况下，<span class="charspan-msgph">3ds Max FBX plug-in</span>会使用主机应用程序中设置的系统单位来确定导出 FBX 文件时所用的单位。这意味着默认导出“比例因子”始终为 1.0，并且在导出过程中插件不会应用单位比例转化。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117E9F816D232A7"></a>如果更改“场景单位转化为”选项，那么您可以修改 <span class="charspan-msgph">3ds Max FBX plug-in</span>导出场景所用的单位。如果更改“场景单位转化为”选项，可以修改应用于导出数据的“比例因子”值和单位。 
+                     </p> 
+                     <p><a name="WS73099CC142F48755-97C6FFF11EAFAB0E402B4"></a>有关不正确或不需要的缩放问题的信息，请参见<span class="char_link"><a href="GUID-7ECD378E-5A3F-4722-B32B-8A0EB581824A.htm">在 3ds Max 中，场景的缩放比例为什么发生了变化？</a></span>。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-BB8ECE4E-2B6E-41A8-B1F7-22A19989FA8E"></a><span class="term"><a name="GUID-496D72DA-B240-4A14-A234-460DBF9071F6"></a>场景单位转化为</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-8ADCED1D-1E86-4CF9-9F12-D5E74419BCB9"></a> 
+                     <p><a name="WS73099CC142F48755-1C09418211F25B18DC4-2BF8"></a> 使用该菜单，您可以指定用于转换导出场景的单位。直接修改该设置会影响应用于导出数据的“比例因子”值。 
+                     </p> 
+                     <p><a name="WS73099CC142F487553B93539F117EA10CE8F49CC"></a>插件通过查看 3ds Max 中“系统单位设置”对话框中的“系统单位比例”来确定默认单位。 
+                     </p> 
+                     <div><a name="WS73099CC142F487557579AB9211CB86298F7-5DE6"></a><div class="note-note"><span class="label label-target-language">注意:</span>若要查看默认单位，请在从 3ds Max“自定义”菜单选择“单位设置”时显示的“单位设置”对话框中单击“系统单位设置”。 
+                        </div>
+                     </div> <a name="WS73099CC142F48755-1C09418211F25B18DC4-2BF7"></a><div class="figure-anchor"><img src="../images/GUID-30B94128-49A2-49C9-8283-9B1132ED63BE-low.png"><p class="figure-title">3ds Max 的“自定义”菜单</p>
+                     </div> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117E9F816D232A9"></a>导出时，由于导出单位和系统单位相匹配，所以插件不会应用任何默认缩放比例。这将导致比例因子为“1.0”。 
+                     </p> 
+                     <p><a name="WS73099CC142F48755-97C6FFF11EAFAB0E402B5"></a>有关不正确或不需要的缩放问题的信息，请参见<span class="char_link"><a href="GUID-7ECD378E-5A3F-4722-B32B-8A0EB581824A.htm">在 3ds Max 中，场景的缩放比例为什么发生了变化？</a></span>。 
+                     </p> 
+                     <div class="section"><a name="GUID-33532112-F043-4798-BCF7-4D2B08364ADF"></a>如果导出的文件与 3ds Max 场景的系统单位具有相同的单位设置，则表示单位相匹配，所显示的比例因子将为“1.0”。不会执行任何比例转化。 <a name="WS73099CC142F48755-1C09418211F25B18DC4-2BF3"></a><div class="figure-anchor"><img src="../images/GUID-E0D8836A-DD9E-400D-880A-FCB90661A4ED-low.png"><p class="figure-title">单位匹配，比例因子为 1.0</p>
+                        </div> 
+                     </div> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="section"><a name="SECTION_E5E0337A1B9541AF89366A795988C392"></a> 
+            <h2><a name="GUID-A5B155D1-048C-4E70-B481-024788572C24"></a>轴转化
+            </h2> 
+            <p><a name="WS73099CC142F48755-1C09418211F25B18DC4-2BF2"></a> FBX 导出插件有两个“轴转化”选项，即“Y-向上”和“Z-向上”。 
+            </p> <a name="WS1A9193826455F5FF-6D855556117E9F816D232AB"></a><div class="figure-anchor"><img src="../images/GUID-7C00AC3B-C75B-4E2B-BFFD-8A1EC79B99E8-low.png"></div> 
+            <p><a name="WS73099CC142F48755-1257E12111BF108800E-580E"></a>使用 Autodesk Media &amp; Entertainment 预设时，<span class="charspan-msgph">3ds Max FBX plug-in</span>会使用 Y 向上轴导出。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF-6D855556117E9F816D232AD"></a>如果目标应用程序不支持 Y 向上世界坐标轴且无法转换场景的 Y 向上世界坐标轴，则可以使用 Z 向上轴将场景导出。 
+            </p> 
+            <div><a name="WS1A9193826455F5FF-6D855556117E9F816D232AE"></a><div class="note-note"><span class="label label-target-language">注意:</span>导出器仅会对导出场景的根元素应用轴转化。如果在导出时必须转换的根对象中存在动画，则需要对这些动画曲线重新采样以应用正确的轴转化。为了避免对这些动画曲线重新采样，请在导出到 FBX 之前，确保在场景中添加一个根节点（虚拟对象）作为动画对象的父对象。
+                  
+               </div>
+            </div> 
+         </div>
+         <div class="section"><a name="SECTION_3EF4AB147C6A45528F8562287FD35399"></a> 
+            <h2><a name="GUID-28CA0BFC-D59C-4B3C-BBC2-2F70A175B501"></a>UI
+            </h2> 
+            <p><a name="WS73099CC142F48755-1C09418211F25B18DC4-2BF1"></a> 可以使用这些选项设置 UI 的显示选项，如显示或隐藏警告管理器。 
+            </p> 
+            <p><a name="WS73099CC142F487553B93539F117EA10CE8F49CD"></a>可以自定义这些显示选项，将它们保存为新的预设，然后共享这些预设文件。详细信息请参见<span class="char_link"><a href="GUID-876CC7E3-A666-46D4-8452-BD0D36C2FB6B.htm#SECTION_FC303E5019604F2087045D5F9E6BB1E0">编辑/保存预设</a></span>部分。 
+            </p> <a name="GUID-0E7EAC62-640D-4952-8B01-37E67097AB06"></a><dl>
+               <dt><a name="GUID-0A4AEC3C-5036-429E-BF49-F7CDB75FECBB"></a><span class="term"><a name="GUID-E333EC88-1679-4320-9DFD-490760574E70"></a>显示/隐藏警告管理器</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-66B0C188-98CE-4C40-98A4-F1090D52801C"></a> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117C4584E541F99"></a> 通过该选项，您可以禁用在导出过程中显示的“警告和错误”对话框。默认情况下，“警告管理器”处于激活状态。 
+                     </p> 
+                     <div class="section"><a name="GUID-230BF1AB-6AE6-46D7-A2DA-162C4CFB4300"></a> 
+                        <h4><a name="GUID-6BA702C9-DC8C-4B16-BF39-DBB9C47D08B5"></a>错误与警告之间的区别
+                        </h4> “3ds Max FBX 插件”会利用错误和警告提醒您导出过程中所出现的转换和潜在问题。如果在转换过程中出现意外情况，插件会报告错误。当插件遭遇未知行为且转换将产生意外结果时，会出现错误。当该插件必须将源数据转换为目标应用程序可以读取的格式时，该插件会报告警告。该警告并不表示出现了问题，其显示的目的在于提供一个报告，表示该插件已经对传出数据应用转化。
+                        
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-3EA20B7E-261A-42EA-B412-CA342634D083"></a><span class="term"><a name="GUID-A5E7C4B7-8F9D-4196-A48C-C3E71F17036E"></a>生成日志数据</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-030E7851-5FD5-44A6-8210-B28C8A8B97FA"></a> 
+                     <p><a name="WS73099CC142F48755-19B9987911EC57BA220-6A2D"></a> 如果不希望警告和错误信息写入日志，请取消激活“生成日志数据”选项。不过，如果取消激活此选项，则 FBX 导出器/导入器会将文件名和时间标记记录到日志文件中，但不会包含错误和警告数据。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-792EF2E611F6FB4710D-7DBC"></a> <span class="charspan-msgph">3ds Max FBX plug-in</span>将日志文件存储在以下位置： 
+                     </p> <a name="UL_7904018F0D7046BD87E510C3A6C1848A"></a><ul>
+                        <li>C:\Documents and Settings\&lt;用户名&gt;\My Documents\3dsMax\FBX\Logs (Windows XP) </li>
+                        <li>C:\Users\&lt;用户名&gt;\Documents\3dsMax\FBX\Logs (Vista) </li>
+                        <li>C:\Users\&lt;用户名&gt;\My Documents\3dsMax\FBX\Logs (Windows 7) </li>
+                     </ul> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="section"><a name="SECTION_246E8CDB84264344B14732F77410A264"></a> 
+            <h2><a name="GUID-EACF4044-E571-4931-96FC-7A0C70F93610"></a>FBX 文件格式
+            </h2> 
+            <p><a name="WS73099CC142F4875535A241551166AC8792F1317"></a> 使用本部分可确定 FBX 文件的格式。 
+            </p> <a name="GUID-2C5D6598-3895-42AB-9A6A-5DC93A0D908B"></a><dl>
+               <dt><a name="GUID-9D6DAAD4-8E96-4775-91BB-C1378FA79F00"></a><span class="term"><a name="GUID-3F663B75-84BB-422A-8727-707656D495D7"></a>类型</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-454A0EDF-3DD4-4A41-A987-0D2E634A69D8"></a> 
+                     <p><a name="WS1A9193826455F5FF-6D855556117C4584E5421EC"></a> 使用以下两种类型之一保存 FBX 文件：二进制或 ASCII。二进制是 FBX 文件的常规格式，而 ASCII 文件提供了纯文本版的文件格式，使用这种格式可搜索文件以进行信息检索。 
+                     </p> 
+                     <div><a name="GUID-89878768-EE16-447B-A033-6ED4BA75FBAE"></a><div class="note-note"><span class="label label-target-language">注意:</span>您无法在 FBX for QuickTime 查看器中查看 ASCII FBX 文件。但是，可以将 FBX 文件另存为二进制文件。 
+                        </div>
+                     </div> <a name="WS73099CC142F48755-42D82BFB116E746D5A6-7F6C"></a><div class="table-ruled">
+                        <table cellpadding="0" cellspacing="0" class="ruled">
+                           <colgroup>
+                              <col width="50%">
+                              <col width="50%">
+                           </colgroup>
+                           <tr class="ruled-heading">
+                              <th class="table-heading">模式 </th>
+                              <th class="table-heading">功能 </th>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">二进制 </td>
+                              <td class="table-body">激活该选项将以标准格式保存 FBX 文件。 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">ASCII </td>
+                              <td class="table-body">激活该选项将以 ASCII 格式保存 FBX 文件。  
+                                 <div><a name="WS73099CC142F4875546792D6511E4BADA40D-4C0C"></a><div class="note-note"><span class="label label-target-language">注意:</span> 如果在 FBX 2010 版及更早版本中将文件导出为 ASCII 格式，则无法嵌入媒体。 
+                                    </div>
+                                 </div> 
+                              </td>
+                           </tr>
+                        </table>
+                     </div> 
+                     <div class="section"><a name="GUID-6AB48830-6891-41F6-9B14-D7221AE2D26B"></a> 
+                        <h4><a name="GUID-9FDE977C-F688-4FF0-8475-36AD77472CD2"></a>执行此操作的原因
+                        </h4> 有时，一些批处理导入/导出操作会创建非常大的警告/错误文件，在这种情况下最好禁用该选项。通常，建议使“生成日志数据”选项处于启用状态（默认设置），因为这可帮助您确定有关文件转化的问题。日志文件在跟踪导出时的错误和警告方面发挥着重要作用。如果要导出一系列文件（如在自动导出或批处理导出中），则建议您不要取消激活此选项，否则您将无法在导出期间收到任何关于文件相关问题的反馈。缺少信息反馈会使确定出现问题的文件这一工作变得困难，进而增加诊断问题的难度。
+                        
+                        <div><a name="WS1A9193826455F5FF-792EF2E611F6FB4710D-7DB8"></a><div class="note-tip"><span class="label label-target-language">提示</span>由于日志数据将被附加到同一个日志文件中，因此不久之后此文件将变得非常大。在执行几次导出操作之后或处理批处理导出或导入之前，最好将日志文件删除。 
+                           </div>
+                        </div> 
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="GUID-1163D45B-9766-4BE9-8E04-F791D8B1A19D"></a><span class="term"><a name="GUID-B4FEDF97-742D-4C02-A766-D2A67DF24CAF"></a>版本</span></dt>
+               <dd>
+                  <div class="definition"><a name="GUID-DCE46441-8FB8-4AF4-B9E8-405B154D0E72"></a> 
+                     <p><a name="WS73099CC142F487551051018113CCCDB767-4B78"></a> 展开“FBX 版本”菜单可以选择 FBX 版本。 
+                     </p> 
+                     <p><a name="WS73099CC142F487551051018113CCCDB767-4B5D"></a>下表列出了您可以从 FBX 导出器中选择的不同版本。 
+                     </p> <a name="WS73099CC142F487551051018113CCCDB767-4B5C"></a><div class="table-ruled">
+                        <table cellpadding="0" cellspacing="0" class="ruled">
+                           <colgroup>
+                              <col width="50%">
+                              <col width="50%">
+                           </colgroup>
+                           <tr class="ruled-heading">
+                              <th class="table-heading">版本 </th>
+                              <th class="table-heading">说明 </th>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">FBX 2015 </td>
+                              <td class="table-body">选择此 FBX 版本可以导出与 Autodesk 2015 应用程序及 2015 FBX 版插件兼容的文件。这是默认的 FBX 版本。 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">FBX 2014 </td>
+                              <td class="table-body">选择此 FBX 版本可以导出与 Autodesk 2014 应用程序及 FBX 2014 版插件兼容的文件。 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">FBX 2013 </td>
+                              <td class="table-body">选择此 FBX 版本可以导出与 Autodesk 2013 应用程序和 2013 FBX 插件兼容的文件。 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">FBX 2012 </td>
+                              <td class="table-body"> 选择此 FBX 版本可以导出与 Autodesk 2012 应用程序和 2012 FBX 插件兼容的文件。 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">FBX 2011 </td>
+                              <td class="table-body">选择此 FBX 版本可以导出与 Autodesk 2011 应用程序和 2011 FBX 插件兼容的文件。 </td>
+                           </tr>
+                           <tr class="ruled-even-row">
+                              <td class="table-body">FBX 2010 </td>
+                              <td class="table-body">选择此 FBX 版本可以导出与 Autodesk 2010 应用程序、FBX 2010 版插件和 MotionBuilder 2009 兼容的文件。 </td>
+                           </tr>
+                           <tr class="ruled-odd-row">
+                              <td class="table-body">FBX 2009 </td>
+                              <td class="table-body">选择此 FBX 版本可以导出与 Autodesk 2009 应用程序及 FBX 2009 版插件兼容的文件。 </td>
+                           </tr>
+                        </table>
+                     </div> 
+                     <div class="section"><a name="GUID-E5B3AA41-9E06-409A-975D-A6B5BDA08BA1"></a> 
+                        <h4><a name="GUID-C2B1803A-59C9-4E92-B2A7-C378F4F61B65"></a>适用情况
+                        </h4>如果在源和目标应用程序中使用的是最新版 FBX 插件，则无需更改该选项。只有在打算使用较早的插件版本导入文件时才需使用该选项。例如，如果要从 3ds Max 2015 导出，并导入到 3ds Max 2014 中，而且这两种应用程序都使用最新的
+                        FBX 2015 版本插件，则无需更改导出的 FBX 版本。使用 FBX 2015 版本的插件时文件是兼容的。 
+                     </div> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="section"><a name="SECTION_859BCAA87EB4489CA637ADF977CE0ACD"></a> 
+            <h2><a name="GUID-692D9D5D-128B-45AD-A075-66B794119CE8"></a>Collada
+            </h2> 
+            <p><a name="WS73099CC142F487552A50A53111913E7C26F-6D31"></a> 仅当从文件浏览器中选择 Collada (.DAE)文件后导出时，Collada 选项才会显示。 
+            </p> 
+            <div><a name="WS73099CC142F4875546792D6511E4BADA40D-4B82"></a><div class="note-note"><span class="label label-target-language">注意:</span>导出为 Collada 时无法嵌入纹理，即使“嵌入媒体”选项已激活也是如此。这是因为导出为 Collada 会生成 ASCII 格式的文件，在这种文件中不允许出现二进制信息，如纹理等。请参见<span class="char_link"><a href="GUID-FB993022-FD65-4ABD-8AF3-7F2CF613D71D.htm">嵌入媒体</a></span>。  
+               </div>
+            </div> <a name="TABLE_095688E6438C473BBF294A939602ECD1"></a><div class="table-not-ruled">
+               <table cellpadding="0" cellspacing="0" class="not-ruled">
+                  <colgroup>
+                     <col>
+                     <col>
+                  </colgroup>
+                  <tr class="not-ruled-heading">
+                     <th class="table-heading">选项 </th>
+                     <th class="table-heading">说明 </th>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">三角化 </td>
+                     <td class="table-body">使用此选项可自动细化导出的多边形几何体。 </td>
+                  </tr>
+                  <tr class="not-ruled-even-row">
+                     <td class="table-body">单一矩阵 </td>
+                     <td class="table-body">通过将所有动画矩阵烘焙为一个矩阵，此选项可确保对于每个节点/对象只存在一个动画矩阵。 </td>
+                  </tr>
+                  <tr class="not-ruled-odd-row">
+                     <td class="table-body">帧速率 </td>
+                     <td class="table-body">使用此字段可在导出时设置场景的帧速率。 </td>
+                  </tr>
+               </table>
+            </div> 
+            <div><a name="WS73099CC142F487553A80943A1216E09FB59-7EB1"></a><div class="note-note"><span class="label label-target-language">注意:</span> <span class="charspan-msgph">3ds Max FBX plug-in</span>现在支持线和线条节点。 
+               </div>
+            </div> 
+            <div><a name="WS1A9193826455F5FF-75C1F7C3124F51CCBD1-141D"></a><div class="note-note"><span class="label label-target-language">注意:</span> Collada 导入器中的“平滑组”选项不会从 FBX 文件中导入平滑组。相反，如果激活此选项，则该导入器会在导入过程中创建平滑组。如果此选项处于活动状态，则 Collada 导入器必须在导入时创建平滑组，因为 FBX Collada 导出器不会从
+                  3ds Max 中导出平滑组数据。如果禁用“平滑组”选项（默认设置），则该导入器不会生成平滑组。 
+               </div>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

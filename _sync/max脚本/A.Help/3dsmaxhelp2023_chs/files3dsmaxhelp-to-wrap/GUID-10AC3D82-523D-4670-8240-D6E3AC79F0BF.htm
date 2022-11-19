@@ -1,0 +1,67 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-10AC3D82-523D-4670-8240-D6E3AC79F0BF">
+      <meta name="description" content="动画约束是可以帮助您自动化动画过程的控制器的特殊类型。通过与另一个对象的绑定关系，您可以使用约束来控制对象的位置、旋转或缩放。">
+      <meta name="indexterm" content="动画: 约束">
+      <meta name="indexterm" content="动画菜单: 约束">
+      <meta name="indexterm" content="约束">
+      <meta name="topic-type" content="concept">
+      <title>动画约束</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-10AC3D82-523D-4670-8240-D6E3AC79F0BF"></a><div class="head">
+            <h1>动画约束</h1>
+         </div>
+         <p class="blurb">动画约束是可以帮助您自动化动画过程的控制器的特殊类型。通过与另一个对象的绑定关系，您可以使用约束来控制对象的位置、旋转或缩放。 </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4042"></a>约束需要一个设置动画的对象及至少一个目标对象。目标对受约束的对象施加了特定的动画限制。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4041"></a>例如，如果要迅速设置飞机沿着预定跑道起飞的动画，应该使用<span class="char_link"><a href="GUID-FC720C8E-0015-4D86-AC09-AD122EDC7929.htm">路径约束</a></span>来限制飞机向样条线路径的运动。
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4040"></a>您可以使用关键帧动画来切换一段时间内与其目标的约束绑定关系。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-403F"></a>约束的常见用法包括：
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190044BCB"></a><ul>
+            <li>在一段时间内将一个对象链接到另一个对象，如角色的手拾取一个棒球拍</li>
+            <li>将对象的位置或旋转链接到一个或多个对象</li>
+            <li>在两个或多个对象之间保持对象的位置</li>
+            <li>沿着一个路径或在多条路径之间约束对象</li>
+            <li>将对象约束到曲面</li>
+            <li>使对象指向另一个对象</li>
+            <li>保持对象与另一个对象的相对方向</li>
+         </ul>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E536"></a><div class="note-tip"><span class="label label-target-language">提示</span>您可以使用“图解视图”来查看场景中的所有约束关系。
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044BCD"></a> 
+            <h2><a name="GUID-F35F0A13-0D10-4DEA-866D-F732407A162E"></a>对骨骼使用约束
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-403D"></a>只要 IK 控制器不控制骨骼，约束就可以应用于骨骼。如果骨骼拥有指定的 IK 控制器，则您只能约束层次或链的根。
+            </p> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-EA0189A5-DFA6-45C7-B361-F14D4299A5A5.htm">附着约束</a><p>附着约束是一种位置约束，它将一个对象的位置附着到另一个对象的面上（目标对象不用必须是网格，但必须能够转化为网格）。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-9A7DA1AC-4DC2-4225-82E8-37F7FF2BAA14.htm">链接约束</a><p>链接约束可以使对象继承目标对象的位置、旋转度以及比例。实际上，这允许您设置层次关系的动画，这样场景中的不同对象便可以在整个动画中控制应用了“链接”约束的对象的运动了。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-74E8DBCD-060B-49CE-9DAA-701D513A8E1D.htm">注视约束</a><p>注视约束会控制对象的方向，使它一直注视另外一个或多个对象。它还会锁定对象的旋转，使对象的一个轴指向目标对象或目标位置的加权平均值。注视轴指向目标，而上方向节点轴定义了指向上方的轴。如果这两个轴重合，可能会产生翻转的行为。这与指定一个目标摄影机直接向上相似。
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-A39AD61C-D5B3-41BE-9F0C-ED554A5192D6.htm">方向约束</a><p>方向约束会使某个对象的方向沿着目标对象的方向或若干目标对象的平均方向。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-FC720C8E-0015-4D86-AC09-AD122EDC7929.htm">路径约束</a><p>使用路径约束可限制对象的移动：使其沿样条线移动，或在多个样条线之间以平均间距进行移动。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-01CBF3AF-6788-43CF-A4DC-3E458648EA52.htm">位置约束</a><p>通过“位置”约束可以根据目标对象的位置或若干对象的加权平均位置对某一对象进行定位。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-F2644AFC-426B-4583-8E0C-0F88CB15B3FF.htm">曲面约束</a><p>“曲面”约束能将对象限制在另一对象的表面上。其控件包括“U 向位置”和“V 向位置”设置以及对齐选项。 </p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

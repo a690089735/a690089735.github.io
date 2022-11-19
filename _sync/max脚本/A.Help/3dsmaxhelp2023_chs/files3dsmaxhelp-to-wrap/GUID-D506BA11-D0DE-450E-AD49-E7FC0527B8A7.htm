@@ -1,0 +1,62 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D506BA11-D0DE-450E-AD49-E7FC0527B8A7">
+      <meta name="description" content="活动时间段指定工作时间块。可以将它视为一个用于专门处理动画的特定部分的时间段。">
+      <meta name="indexterm" content="时间: 设置时间段">
+      <meta name="indexterm" content="活动时间段">
+      <meta name="indexterm" content="时间: 指定活动时间段">
+      <meta name="indexterm" content="时间: 重缩放活动时间段">
+      <meta name="topic-type" content="concept">
+      <title>设置时间段</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D506BA11-D0DE-450E-AD49-E7FC0527B8A7"></a><div class="head">
+            <h1>设置时间段</h1>
+         </div>
+         <p class="blurb">活动时间段指定工作时间块。可以将它视为一个用于专门处理动画的特定部分的时间段。 </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004492C"></a> 
+            <h2><a name="GUID-7BFFBF09-1546-49CA-8FCF-5ADE2A82AC9A"></a>指定活动时间段
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4590"></a>通过在<span class="char_link"><a href="GUID-9473CAF3-AF73-4127-A98C-58ACEF01ACAC.htm">“时间配置”对话框</a></span>中设置时间段的“开始时间”和“结束时间”可以指定活动时间段。
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-458F"></a>如果您不想影响已经创建的关键点，则可以更改活动时间段。例如，如果关键点散布在一个 1000 帧的范围内，则可以将活动时间段缩小为仅在帧 150-300 的范围内。
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-458E"></a>更改活动时间段具有以下效果：
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A19004492F"></a><ul>
+               <li>限制使用<span class="char_link"><a href="GUID-A612A8B5-5F68-4B8F-9A4C-4E60A746E1CB.htm">时间滑块</a></span>可以访问的时间范围。
+               </li>
+               <li>限制使用动画播放按钮时显示的时间范围。</li>
+            </ul> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-458D"></a>活动时间段的默认设置从 0 帧到 100 帧，但是您可以将其设置为任何范围。
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-458C"></a>还可以使用<span class="char_link"><a href="GUID-A55E4702-263E-4768-9964-5866698784DA.htm">轨迹栏</a></span>来增加活动时间段。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190044930"></a> 
+            <h2><a name="GUID-E23617D0-35EC-447C-847C-18DA3380B6FB"></a>重缩放活动时间段
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-458B"></a>使用<span class="char_link"><a href="GUID-9473CAF3-AF73-4127-A98C-58ACEF01ACAC.htm">“时间配置”对话框</a></span>中的“重缩放时间”按钮可以基于活动时间段更改整个动画。 
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-458A"></a>按照如下方法使用“重缩放时间”：
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190044932"></a><ul>
+               <li>缩放活动时间段中的所有动画，使其适合新的时间范围。</li>
+               <li>将整个动画移至新时间。</li>
+            </ul> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4589"></a>单击“重缩放时间”，然后在“重缩放时间”对话框中输入新的“开始时间”和“结束时间”的值。单击“确定”后，将移动并缩放活动时间段中的所有动画，以适合新的“开始时间”和“结束时间”设置。活动时间段以外的所有动画也相应移动，以匹配新活动时间段的边界。
+            </p> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4588"></a>例如，假设您的动画从第 0 帧到第 300 帧，活动时间段从第 100 帧开始并在第 200 帧结束。使用“重缩放时间”将新的“开始时间”设置为第 200 帧，并将新的“结束时间”设置为第 250 帧。单击“确定”会产生下面的结果：
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190044933"></a><ul>
+               <li>活动时间段中的动画向前移动 100 帧，并且长度缩小为 50 帧。新的活动时间段为从帧 200 至 250。</li>
+               <li>原始活动时间段之前的帧中的动画向前移动 100 帧，以连接到新的活动时间段的起始点。</li>
+               <li>原始活动时间段之后的 100 帧中的动画向前移动 50 帧，以连接到新的活动时间段的结束点。</li>
+            </ul> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4587"></a>还可以使用<span class="char_link"><a href="GUID-A55E4702-263E-4768-9964-5866698784DA.htm">轨迹栏</a></span>来重缩放活动时间段。
+            </p> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

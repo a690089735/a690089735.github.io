@@ -1,0 +1,226 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-B3D2A782-2001-4AFF-9A34-251C7BE3CB62">
+      <meta name="description" content="通过运动合成，Character Studio 可以从群组行为和运动流网络（制作 Biped 动画时，请参见 ）或剪辑控制器（处理非 Biped 生物时）的组合来衍生角色运动。在后一种情况下，使用“全局运动剪辑”和“驱动者运动剪辑”控制器，可以为以下生物群体制作动画，例如鸟类、蝴蝶、鱼群和昆虫。可以在“轨迹视图”中创建用作块控制器的剪辑控制器或直接在“全局剪辑控制器”卷展栏上使用“群组辅助控件”。">
+      <meta name="indexterm" content="群组: 非 Biped">
+      <meta name="contextid" content="TOPIC_NON_BIPED_CROWDS_PROC">
+      <meta name="topic-type" content="concept">
+      <title>非 Biped 群组</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B3D2A782-2001-4AFF-9A34-251C7BE3CB62"></a><div class="head">
+            <h1>非 Biped 群组</h1>
+         </div>
+         <p class="blurb">通过运动合成，Character Studio 可以从群组行为和运动流网络（制作 Biped 动画时，请参见<span class="char_link"><a href="GUID-F4B5E477-3B73-43CB-9793-FE336BA3B78F.htm">两足动物群组</a></span>）或剪辑控制器（处理非 Biped 生物时）的组合来衍生角色运动。在后一种情况下，使用“全局运动剪辑”和“驱动者运动剪辑”控制器，可以为以下生物群体制作动画，例如鸟类、蝴蝶、鱼群和昆虫。可以在“轨迹视图”中创建用作块控制器的剪辑控制器或直接在“全局剪辑控制器”卷展栏上使用“群组辅助控件”。
+            
+            
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045EE5"></a> 
+            <h2><a name="GUID-4CEB6CC6-D52C-483D-9C46-0C88B0885586"></a>动画的两种方法
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A2B"></a>可用循环动画而不是变换运动（例如，鸟拍翅膀）来使创建生物动画，或也可合并变换运动来生成生物动画（例如，鸟在拍翅膀时并向上移动）。原位置循环运动使创建的生物像鸟一样飞、像鱼一样在水中游，添加横向运动使创建的生物变成爬行生物类型动画，它的脚应该踩踏在地面上，并且不发生滑动。这取决于如何切换在“合成”对话框的“运动剪辑”标签中的选项。在这两种情况下，使用行为驱动的群组代理使链接在一起的生物运动起来。
+               
+               		
+            </p> 
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E815"></a><div class="note-note"><span class="label label-target-language">注意:</span>为制作运动合成模型的动画，将此修改器应用于模型，并设置动画参数。像弯曲、锥化、波形和变形这些修改器可以产生同运动合成一起使用的动画。不要使用子对象动画，例如“可编辑的网格”对象上的顶点动画 
+                  		
+               </div>
+            </div> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045EE6"></a> 
+            <h2><a name="GUID-01DCBF3F-FF9D-445F-A815-0CC25CA29514"></a>循环原位置动画
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A2C"></a>首先创建一个具有短循环的生物，例如，扇动翅膀、滑行、向左转和向右转。将该生物指定为<em class="mild">全局对象</em>或主块对象，运动剪辑将从此对象衍生出来。然后克隆此原始生物。这些克隆体放置并链接到代理中。创建状态并基于此状态选择要播放的剪辑。 
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A2D"></a>例如，如果一只鸟（代理）向上斜飞或正在加速飞行时，使用快速扇动翅膀剪辑，如果一只鸟（代理）从慢飞到停止时，则使用翅膀休息剪辑，等等。在合成过程中，character studio 根据代理的速度和方向来确定哪个状态应当处于活动状态。此活动状态决定哪一剪辑该应用到原始对象的克隆中。混合剪辑来创建动画。可用的状态是：速度、加速度、倾斜、上下倾斜速度、前后朝向速度或脚本
+               (MAXScript)。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045EE7"></a> 
+            <h2><a name="GUID-02581A1B-4A6D-4486-BC92-AB7651FFD05E"></a>采用横向运动的动画
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A2E"></a>对于要行走的多足生物，可以制作横向运动及腿部移动循环运动的动画。这样做可以保证生物在移动时它的脚不发生滑动。然后，character studio 使用这些横向运动信息来创建与实际运动完全相符的状态。然后，character studio 将这些实际运动剥离。当代理达到状态记录中的速度和方向时，将触发适当的运动剪辑。此技术使脚步滑动最小化。
+               
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A2F"></a>使用“群组”工具为代理创建初始运动。例如，使用查找或回避行为来使鸟运动。然后将复制带有循环动画的对象，并把此副本链接到代理，以创建完整的动画。代理控制路径，剪辑控制器控制循环动画。 
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A30"></a>您可以通过将控制器指定给“块控制”下的可用控制器，在“轨迹视图”中创建“驱动者运动剪辑”和“全局运动剪辑”。然而，使用“全局运动剪辑”卷展栏上的群组辅助控件来应用和使用剪辑控制器更为简单。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045EE8"></a> 
+            <h2><a name="GUID-7CBF7BD6-4DAF-42F1-A765-88724D6B2143"></a>全局运动剪辑
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A33"></a>“全局运动剪辑”保存要在多个“驱动者运动剪辑”之间共享的剪辑，这些剪辑在合成时指定给克隆对象。“全局运动剪辑”也包含在具有轨迹的对象集和与剪辑相关的状态上执行运动合成时的逻辑关系。运动合成的控件可在“合成”对话框中找到。 
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A34"></a>运动剪辑关键点的缩放和排序方式依赖于用户定制的状态。每个状态包含一个或多个剪辑，当状态是活动的时候，这些剪辑被播放。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045EE9"></a> 
+            <h2><a name="GUID-D424C397-76DA-485A-9A67-760F35AA41BB"></a>驱动者运动剪辑
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A35"></a>“驱动者运动剪辑”是包含<em class="mild">运动剪辑</em>或单独动画剪辑的控制器。运动剪辑按一定的顺序排列起来创建动画，它们之间具有轻微的重叠，并且自动的进行混合以此来平滑两个剪辑之间的变换。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4642"></a> 
+            <h2><a name="GUID-08565725-5D79-4FC8-AE05-0A9044B62685"></a>过程
+            </h2> <a name="WSF742DAB041063133728B9B2112A1CE7292-7E33"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045EEA"></a>
+               <!--CPM-ContextId = 'TOPIC_NON_BIPED_CROWDS_PROC'--><a name="GUID-9A075CAE-23B6-49A7-A4B8-389AF77E2983"></a>要对非 Biped 使用“运动合成”，请执行以下步骤：
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A36"></a>复制和合成剪辑涉及的所有工作都使用<span class="char_link"><a href="GUID-41F430E8-E6F0-4289-89A4-AE6A7F4A9BFD.htm">“合成”对话框</a></span>中的控件。此对话框具有三个标签：“运动剪辑”、“状态”和“合成”。 
+               		
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A37"></a>此步骤假定全局对象是静态的并具有循环动画。对于多足生物，可以在全局对象中创建横向运动动画，然后使用“合成”对话框去除这些横向运动。下面的方法用来使多足生物脚步滑动最小化。 
+               		
+            </p>
+            <ol type="1" start="1">
+               <li>创建对象动画。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A38"></a>在某一位置创建动画，例如一只鸟扇动翅膀。创建多种动画，例如：滑行（翅膀静止），慢慢扇动翅膀等等。为使这些对象变成动画，应用修改器并设置动画参数。 
+                     		  
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A39"></a>这将是全局对象，动画剪辑将从中衍生出来。 
+                     		  
+                  </p> 
+               </li>
+               <li>使用 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"> <img src="../images/GUID-9A23D2B8-9CE2-40BE-98B6-651DBC94F4F7-low.png">（辅助对象）<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“对象类型”卷展栏，添加一个群组对象和一个代理对象。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A3A"></a>在顶部视口或透视视口中创建对象。 
+                     		  
+                  </p> 
+               </li>
+               <li>使用群组对象 <img src="../images/GUID-006EAF2B-82D6-4C50-9B9E-ACD146F43BB8-low.png"> <span class="char_link"><a href="GUID-6F7884E2-9110-4259-B1D9-9BDD87B9D4D6.htm">（散布对象）</a></span>工具来克隆代理，或者选择分布这些克隆（也可以进行手工分布）。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A3B"></a>确保代理的数目同动画对象克隆体的数目一致。 
+                     		  
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A3C"></a>下一步，把对象和代理相关和链接起来。 
+                     		  
+                  </p> 
+               </li>
+               <li>在“设置”卷展栏上，单击 <img src="../images/GUID-B6AC8E3B-9120-4747-9CC1-51B9E05FC7E7-low.png">（对象/代理关联）。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A3D"></a>出现<span class="char_link"><a href="GUID-9F50F379-1327-4309-80CC-AB97E1CFAD92.htm">“对象/代理相关”对话框</a></span>。 
+                     		  
+                  </p> 
+               </li>
+               <li>添加对象和代理到它们各自的列中。 
+                  		
+               </li>
+               <li>单击“将对象与代理对齐”，然后单击“将对象链接到代理”，再单击“确定”退出此对话框。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A3E"></a>这些对象和代理对齐并被链接到代理中。 
+                     		  
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A3F"></a>下一步，创建具有行为动作的代理动画。有关使用行为的信息，请参见<span class="char_link"><a href="GUID-5CDDE2B2-DA06-4003-872D-5B181E58EEF1.htm">指定行为</a></span>。 
+                     		  
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A40"></a>模拟时，克隆对象跟随代理，并由行为来引导。然后，可以基于代理移动来产生运动合成。 
+                     		  
+                  </p> 
+               </li>
+               <li><img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择群组对象。在 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“全局剪辑控制器”卷展栏上，单击“新建”，并使用“选择”对话框在步骤 1 中选择全局对象。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A41"></a>这些对象显示在“全局剪辑控制器”卷展栏列表中。 
+                     		  
+                  </p> 
+               </li>
+               <li>在此列表中，单击对象，然后单击“编辑”按钮。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A42"></a>出现“合成”对话框。它的名称就是对象的名称。 
+                     		  
+                  </p> 
+               </li>
+               <li>在“运动剪辑”面板上，取消选中“来自全局对象”和“移除局部”组中的所有复选框。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A43"></a>仅当原始对象的横向运动与足迹相协调时使用这些选项。 
+                     		  
+                  </p> 
+               </li>
+               <li>在“运动剪辑”面板中，单击“新建”。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A44"></a>打开“运动剪辑参数”对话框，在此可以设置运动剪辑的名称、颜色和帧范围。 
+                     		  
+                  </p> 
+               </li>
+               <li>为运动剪辑选择一个描述性的名称和帧范围。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A45"></a>例如，帧 0 到帧 10 可能是滑行动画。 
+                     		  
+                  </p> 
+               </li>
+               <li>在“全局对象”动画中使用不同的帧范围来定义剪辑。给剪辑取一个描述性的名称。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A46"></a>下一步，定义状态，状态的参数确定了运动合成在什么时候使用各个剪辑。 
+                     		  
+                  </p> 
+               </li>
+               <li>单击“状态”选项卡，然后单击“新建状态”。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A47"></a>一个新状态便被添加到“合成状态”组顶部的下拉列表中。给此状态取一个描述性的名称。在许多情况下，状态可以使用和与之相关的运动剪辑相同的名称。 
+                     		  
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A48"></a>下一步，设定状态参数，参数表明了当相关对象用到运动剪辑时，代理应该如何运动。例如，仅在加速度小于 0 时，滑行运动才处于活动状态。 
+                     		  
+                  </p> 
+               </li>
+               <li>单击“编辑属性”并定义 character studio 激活剪辑的方式（基于速度、加速度等因素的任意组合）。单击每个相应的选项卡，选中其“使用…”复选框并设置参数。单击“退出”来退出此对话框。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A49"></a>当使用范围时，确保最小设置值低于最大设置值。例如，使用 -180 到 -10 的负数范围时，输入绝对值大的数 (-180) 作为最小设置值。 
+                     		  
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A4A"></a>应该已经拥有了几个运动剪辑。现在，需要把剪辑和状态相关连起来。例如，如果定义了一个加速度小于 0 的状态，可把它与“滑行”剪辑相关连起来。 
+                     		  
+                  </p> 
+               </li>
+               <li>在“运动剪辑”组中，单击“添加剪辑”，并在“选择运动剪辑”对话框中，突出显示一个剪辑并单击“确定”。 
+                  		
+               </li>
+               <li>对在运动合成中使用的每一状态重复步骤 14 和15。 
+                  		
+               </li>
+               <li>转到“合成”面板，单击“新建驱动者运动剪辑”，并添加所有的克隆对象。 
+                  		
+               </li>
+               <li>单击“自动全部混合”然后单击“全部合成”。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A4B"></a>进度条显示合成进度。当此合成完成后，“合成”对话框再次出现。现在可以单击“状态”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“编辑属性”来查看剪辑状态参数的范围和平均值。这在微调状态属性中是很有用的。 
+                     		  
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A4C"></a>单击“确定”来退出“合成”对话框。 
+                     		  
+                  </p> 
+               </li>
+               <li>单击 <img src="../images/GUID-5B32F2AB-610D-42BB-8C54-81463BE72359-low.png">（“播放动画”）。不必重新求解此模拟。 
+                  		  
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF16A4D"></a>对象跟随代理并使用剪辑形成动画，剪辑是根据代理运动和创建的状态来激活的。 
+                     		  
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="see-also">
+            <h4>请参见</h4>
+            <div class="related-links">
+               <ul>
+                  <li> <span class="char_link"><a href="GUID-41F430E8-E6F0-4289-89A4-AE6A7F4A9BFD.htm">“合成”对话框</a></span> 
+                  </li>
+                  <li> <span class="char_link"><a href="GUID-65D28F01-9BE8-4B0F-ADE0-E6C179557D0F.htm">“剪辑状态”对话框</a></span> 
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

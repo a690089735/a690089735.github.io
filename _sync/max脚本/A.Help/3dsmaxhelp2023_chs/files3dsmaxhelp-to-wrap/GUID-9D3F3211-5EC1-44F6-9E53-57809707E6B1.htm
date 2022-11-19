@@ -1,0 +1,122 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-9D3F3211-5EC1-44F6-9E53-57809707E6B1">
+      <meta name="description" content="使用运动场可影响液体和泡沫的速度。">
+      <meta name="indexterm" content="流体: 运动场">
+      <meta name="indexterm" content="如何: 将运动场添加到流体模拟">
+      <meta name="indexterm" content="新功能">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="expert">
+      <meta name="topic-subtype" content="using">
+      <title>使用运动场</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-9D3F3211-5EC1-44F6-9E53-57809707E6B1"></a><div class="head">
+            <h1>使用运动场</h1>
+         </div>
+         <p class="blurb"> 
+            	 使用运动场可影响液体和泡沫的速度。 
+            
+         </p><a name="OL_DA5A9E865B19472298B8814861A3026F"></a><p class="list-intro">将运动场添加到流体模拟：</p>
+         <ol type="1" start="1">
+            <li>从“创建”面板 &gt;“空间扭曲”，单击“运动场”并在视口中拖动。 
+               		  
+               <p>或者，您也可以使用菜单创建运动场对象： 
+                  		  <a name="UL_5AD026BD9B34433EBC2501B43B3423F7"></a><ul>
+                     <li><span class="MenuCascade">默认菜单：“动画”菜单 <img src="../images/ac.menuaro.gif"> “流体” <img src="../images/ac.menuaro.gif"> “运动场”</span> 
+                     </li>
+                     <li><span class="MenuCascade">Alt 菜单：“动画”菜单 <img src="../images/ac.menuaro.gif"> “流体” <img src="../images/ac.menuaro.gif"> “运动场”</span> 
+                     </li>
+                  </ul> 
+               </p> 
+            </li>
+            <li>选择要添加运动场的液体对象。 
+               		
+            </li>
+            <li>在“设置”卷展栏上，单击“模拟视图”以打开“模拟视图”窗口。 
+               		
+            </li>
+            <li>在“液体属性”&gt;“运动场”&gt;“添加运动场”下，单击“拾取”并选择运动场。 
+               		  
+               <p>运动场现在与流体模拟进行交互。要调整参数，请在场景中再次选择运动场对象，然后使用“修改”面板上的控件。 
+                  		  
+               </p> 
+               <div><a name="GUID-7D486981-A340-490A-AA4C-1E36C4966092"></a><div class="note-tip"><span class="label label-target-language">提示</span>要在流体模拟上可视化运动场的效果，请启用“修改”面板的“显示”卷展栏下的“速度栅格”。 
+                     		  
+                  </div>
+               </div> 
+            </li>
+         </ol><a name="OL_02FDECE30CD44583B562392062979B77"></a><p class="list-intro">将运动场控件应用于几何体：</p>
+         <ol type="1" start="1">
+            <li>将运动场添加到场景。 
+               		
+            </li>
+            <li>在“组控件”下，启用“几何体”。 
+               		
+            </li>
+            <li>拾取希望其继承运动场控件的对象。 
+               		
+            </li>
+            <li>将该对象作为碰撞对象添加到模拟。 
+               		
+            </li>
+            <li>将运动场添加到模拟。 
+               		  
+               <p>选定的碰撞对象现在继承所有的运动场控件，然后您可以进行修改以调整结果。 
+                  		  
+               </p> 
+            </li>
+         </ol>
+         <div class="section"><a name="SECTION_97CAD39CBCF548C8B4895543CFB3D3A1"></a> 
+            <h2><a name="GUID-7E485CE3-2631-4D77-B5B6-B6BF15EB3887"></a>常见技术
+            </h2> 
+            <p>可以启用和调整以下参数，以使用运动场创建这些常见的流体效果。 
+               		<a name="UL_0C3F95FDC03845EB96F78A1F37E4FE42"></a><p class="list-intro">阻尼</p>
+               <ul>
+                  <li> 要减慢模拟，只需在“运动场”属性的“组控件”区域中启用“阻力”选项即可。 
+                     		  
+                  </li>
+               </ul> <a name="UL_D91A945459B24B96847819020FE010B9"></a><p class="list-intro">风</p>
+               <ul>
+                  <li>将“方向”控件与“运动场”属性的“组控件”区域中的“阻力”选项结合使用，并根据需要启用“湍流”和“噪波”选项。 
+                     		  
+                  </li>
+               </ul> <a name="UL_54B0F982500247DD995D0254A7B7D122"></a><p class="list-intro">涡流</p>
+               <ul>
+                  <li>启用“湍流”和“噪波”以查看“湍流”和“噪波”卷展栏。在该处，调整“噪波幅值”以添加一些随机运动。在“速度”卷展栏中，启用“钳制速度”以保持流体涡流，其中“最大速度”设置为较高的值，“最小速度”使用从 0.0 增大的值设置动画。 
+                     		  
+                  </li>
+               </ul> <a name="UL_8943263C751141FDAB5678FF34238FBC"></a><p class="list-intro">漩涡</p>
+               <ul>
+                  <li>在场景中创建一个圆柱体。在“运动场”属性的“组控件”区域中，启用“几何体”以查看“几何体”卷展栏。单击“拾取”按钮，然后选择一个圆柱体。启用“衰减”。在“方向”卷展栏中，确保“方向幅值”为 0.0，并调整“绕轴”选项。如果速度变得太高，也可以增加阻力。
+                     
+                     		  
+                  </li>
+               </ul> <a name="UL_26F2A2379B484BCDA4D6235751DB636C"></a><p class="list-intro">波浪</p>
+               <ul>
+                  <li>要创建自发形成然后消散的波浪，请像对上面的涡流那样设置柱形运动场。将圆柱体旋转到一侧，使之与液体曲面的一部分相交，然后为其设置动画向前移动。可以添加一点方向以帮助流体向前移动以摆脱重力，并对“远离轴”使用负值以阻止液体飞离。 
+                     		  
+                  </li>
+               </ul> <a name="UL_F1AFBB91A2C344ABB4052BC29CA50B22"></a><p class="list-intro"> 断开瀑布</p>
+               <ul>
+                  <li>为了帮助将瀑布或类似流分解成水滴，请启用“阻力”并使用“最大深度”较低的“法向阻力”。对于喷射，将泡沫添加到模拟，并将单独的场直接应用于已启用“阻力”和“湍流”的泡沫。 
+                     		  
+                  </li>
+               </ul> 
+            </p> 
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-7F00E68A-FC6D-4AB9-B976-3BA9E76D7135.htm">“液体属性”面板</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

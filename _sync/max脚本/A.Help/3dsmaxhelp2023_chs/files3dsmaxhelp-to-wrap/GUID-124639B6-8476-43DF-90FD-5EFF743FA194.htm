@@ -1,0 +1,78 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-124639B6-8476-43DF-90FD-5EFF743FA194">
+      <meta name="description" content="当旋转对象生成各种效果时克隆这些对象，具体情况取决于设置变换的方式。">
+      <meta name="indexterm" content="克隆: Shift + 旋转">
+      <meta name="indexterm" content="Shift + 克隆">
+      <meta name="topic-type" content="concept">
+      <title>使用 Shift+ 旋转进行克隆</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-124639B6-8476-43DF-90FD-5EFF743FA194"></a><div class="head">
+            <h1>使用 Shift+ 旋转进行克隆</h1>
+         </div>
+         <p class="blurb">当旋转对象生成各种效果时克隆这些对象，具体情况取决于设置变换的方式。 </p><a name="WS1A9193826455F5FFBA679E112A6A190041A3B"></a><div class="figure-anchor"><img src="../images/GUID-ABBBDE37-2500-4898-8419-A13821CEA6B0-low.png"><p class="figure-title"> 使用“Shift+旋转”从不同的方向创建克隆。</p>
+         </div>
+         <div style="margin-top: 9pt;"><a name="GUID-31A36577-91C1-4979-B671-3F5B1497F9ED"></a><div class="note-note"><span class="label label-target-language">注意:</span> <span class="char_link"><a href="GUID-9DF0E9DB-F68E-448D-BB9E-C75CA85B6E70.htm">Maya 模式</a></span>处于活动状态时，不能通过按住 <span class="keyboardEntry">Shift</span> 键并拖动来克隆对象。在 Maya 模式下，请按住 <span class="keyboardEntry">Shift</span> 键并左键单击选择或取消选择对象。 
+            </div>
+         </div><a name="WS1A9193826455F5FFBA679E112A6A190041A3C"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041A3D"></a>若要使用“Shift+旋转”进行克隆，请执行以下操作：
+         </p>
+         <ol type="1" start="1">
+            <li>单击主工具栏上的 <img src="../images/GUID-56E4FCF8-3FF7-4E64-A306-80EDAD2D0812-low.png">（旋转）。 
+            </li>
+            <li>选择坐标系、变换中心和轴约束。 </li>
+            <li>选择要克隆的对象。 </li>
+            <li>按住 <span class="keyboardEntry">Shift</span> 键，然后拖动可旋转选择对象。 
+            </li>
+            <li>选择“克隆选项”对话框上要制作的副本数，然后选择使它们成为副本、实例还是参考。 </li>
+         </ol>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A3E"></a> 
+            <h2><a name="GUID-04FCA3FF-7081-441B-9B26-218B64EEECBC"></a>变换设置的效果 
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2F1"></a>您所在变换中心的位置将确定使用 <span class="keyboardEntry">Shift</span> + 旋转时 <span class="charspan-msgph">3ds Max</span> 定位克隆的方式。 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041A3F"></a><ul>
+               <li>对于所有设置，活动轴或视口坐标系的轴约束旋转的方向。 </li>
+               <li>每个克隆按相同的量从以前的克隆进行旋转，该量与从原始克隆旋转的第一个克隆的量相同。 </li>
+            </ul> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A40"></a> 
+               <h3><a name="GUID-967E739D-7A2E-48C0-B187-624CD3A979EC"></a>位于中心的局部轴
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2F0"></a>对象的默认轴点通常位于其中心或底部。当使用 <span class="keyboardEntry">Shift</span> + 旋转围绕对象的默认轴点进行旋转时，该克隆将均匀重叠，因为每个克隆以相同的量旋转。使用局部轴设置的多个对象也是如此，这是因为每个对象都使用其自身的局部中心。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2EF"></a>圆形对象（如球体或圆柱体）的克隆可以正确覆盖在原始克隆上。要查看这些克隆，可能需要将它们移离原始克隆。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2EE"></a>使用<span class="char_link"><a href="GUID-D25D4A6A-DA2A-4D54-AE23-B6505936C393.htm">角度捕捉</a></span>设置可以将圆均匀分割，可以从简单对象生成复杂的对称对象。例如，可以围绕一个轴克隆四面体，然后沿着其他轴克隆新设置以生成面状星形。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A41"></a> 
+               <h3><a name="GUID-C4F4FF8A-F563-473F-A407-FCF98129E489"></a>远处的局部轴
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2ED"></a>将局部轴与原始轴分隔时，克隆将创建像车轮一样的排列。中心靠近一端的克隆的长形状（如花瓣或刀片）可以创建花或螺旋浆。请参见<span class="char_link"><a href="GUID-6872F014-4785-43D9-A83B-C774507907B3.htm">“调整轴”卷展栏</a></span>。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2EC"></a>可以移动局部轴到对象的任何距离处，创建大的圆形阵列。因为直接设置动画限制在局部轴上，因此设置圆形阵列的动画很是关键技术。请参见<span class="char_link"><a href="GUID-D6E67D0A-2466-4915-A9CA-8AE89F03B487.htm">设置“Shift+旋转”和“Shift+缩放”动画</a></span> 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A42"></a> 
+               <h3><a name="GUID-9CDD2ABC-27E6-44CA-8F9A-AFBD6DECEB11"></a>选择中心
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2EB"></a>对于单个或多个对象，选择中心是围绕整个选择的<span class="char_link"><a href="GUID-4F9C1D31-E5EB-4641-94C9-5C1988178AC4.htm">边界框</a></span>的几何中心。克隆围绕此中心排列，从而形成像车轮一样的阵列。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2EA"></a>对于单个对象，此中心通常不同于其局部中心，但效果与基于局部轴的效果相似。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A43"></a> 
+               <h3><a name="GUID-3820AB03-E751-473F-B5B9-D9E4B5A66274"></a>坐标中心
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2E9"></a>使用坐标中心、<span class="keyboardEntry">Shift</span> + 旋转可以生成任意大小的圆形阵列。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2E8"></a>围绕主栅格、屏幕中心或选择的坐标系进行旋转。当采用此方法创建克隆时，不能直接设置该过程的动画。有关克服此限制的详细信息，请参见<span class="char_link"><a href="GUID-D6E67D0A-2466-4915-A9CA-8AE89F03B487.htm">设置“Shift+旋转”和“Shift+缩放”动画</a></span>。 
+               </p> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

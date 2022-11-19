@@ -1,0 +1,1 @@
+macroScript Set_default_tangent_type_to_step category:"My_Macors" toolTip:"05.Set default tangent type to step" (::MyCustomFn 5)

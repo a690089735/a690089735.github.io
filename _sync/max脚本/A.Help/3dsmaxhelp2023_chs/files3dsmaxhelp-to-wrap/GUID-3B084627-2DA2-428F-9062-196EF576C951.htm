@@ -1,0 +1,45 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-3B084627-2DA2-428F-9062-196EF576C951">
+      <meta name="indexterm" content="增加的不透明度（词汇表）">
+      <meta name="topic-type" content="concept">
+      <title>增加的不透明度</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-3B084627-2DA2-428F-9062-196EF576C951"></a><div class="head">
+            <h1>增加的不透明度</h1>
+         </div>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-30E0"></a>增加过程可以将两个值添加在一起，如两种颜色。在 <span class="charspan-msgph">3ds Max</span> 中添加颜色时，结果会比两种原始颜色都要亮。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004907"></a> 
+            <h2><a name="GUID-A2F53D11-827F-485D-92D9-4406494ECC1A"></a>增加的不透明度
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004908"></a><div class="figure-anchor"><img src="../images/GUID-55BC8279-6FA8-4CDC-B986-5E0A75089BBE-low.png"><p class="figure-title">在右侧的球体使用增加的不透明度。</p>
+            </div>  
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-30DF"></a>增加的不透明度通过将材质的颜色添加到背景颜色中，使材质后面的颜色变亮。增加的不透明度对于特殊效果非常有用，如光束或烟雾。您可以在<span class="char_link"><a href="GUID-419BF292-875F-4D48-AD1B-43EEB40F4A3B.htm">“扩展参数”卷展栏</a></span>上指定使用增加的不透明度。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004909"></a> 
+            <h2><a name="GUID-A34F0327-A057-4358-9DFC-78D44B4EDDC2"></a>增加的不透明度和 Alpha 通道
+            </h2> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-30DE"></a>默认情况下，增加的不透明度并不会生成 <span class="char_link"><a href="GUID-6B70BB6B-DE99-4ACD-A61B-B3F5D50ACDE3.htm">alpha 值</a></span>。也就是说，alpha 值为零，表示不透明。从而可以在渲染时提供正确的背景效果，但是如果要使用 video post 或合成程序将对象合成增加的不透明度，则可能要拥有带有透明度的增加的不透明度渲染器。为此，请向 <em class="mild">3dsmax.ini</em> 文件的 [渲染器] 部分添加以下行，然后重新启动 <span class="charspan-msgph">3ds Max</span>： 
+            </p> 
+            <div class="codeBlock"><pre>AlphaOutOnAdditive=1</pre></div> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-30DD"></a>要还原为渲染增加的不透明度的默认方法，在 <em class="mild">3dsmax.ini</em> 文件中，将 AlphaOutOnAdditive 改回 0（零），然后重新启动 <span class="charspan-msgph">3ds Max</span>。 
+            </p> 
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-97C28C56-D672-4A8A-BA0D-59581DF3CF9B"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-59A7329E-C57C-454F-8344-556A6D8C67C5.htm">相减不透明度 </a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

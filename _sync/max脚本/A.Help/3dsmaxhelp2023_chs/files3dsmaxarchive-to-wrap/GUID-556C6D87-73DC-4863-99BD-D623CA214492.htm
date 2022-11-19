@@ -1,0 +1,80 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-556C6D87-73DC-4863-99BD-D623CA214492">
+      <meta name="description" content="在给代理设置行为后，必须求解模拟来产生代理上的关键帧。通过选择群组对象并单击“求解”卷展栏中的“求解”来求解模拟。">
+      <meta name="indexterm" content="群组: 求解模拟">
+      <meta name="contextid" content="TOPIC_SOLVING_THE_SIMULATION_PROC1">
+      <meta name="contextid" content="TOPIC_SOLVING_THE_SIMULATION_PROC2">
+      <meta name="contextid" content="TOPIC_SOLVING_THE_SIMULATION_PROC3">
+      <meta name="topic-type" content="concept">
+      <title>求解模拟</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-556C6D87-73DC-4863-99BD-D623CA214492"></a><div class="head">
+            <h1>求解模拟</h1>
+         </div>
+         <p class="blurb">在给代理设置行为后，必须求解模拟来产生代理上的关键帧。通过选择群组对象并单击<span class="char_link"><a href="GUID-81FF9C75-702B-4FB7-B906-648046AE7A84.htm">“求解”卷展栏</a></span>中的“求解”来求解模拟。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF169C3"></a>要尽快生成模拟，<span class="charspan-msgph">3ds Max</span> 将在运行求解<em class="mild"></em>之后，保存代理关键点。因此，可能会在求解结束和返回控制之间发生暂停。在模拟过程中，将隐藏任何链接到代理的对象。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF169C4"></a>在模拟正确执行之前，可能需要多次求解模拟。在求解计算之后，查看动画，然后根据需要更正行为或代理参数，然后再次求解。 
+         </p>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF169C5"></a>可通过减少关键帧或降低屏幕更新的频率来加速求解计算。也可以一次一帧地查看求解方法，用来帮助查明故障区域。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4645"></a> 
+            <h2><a name="GUID-12B66021-71A0-47D6-9911-F42AE893DCB5"></a>过程
+            </h2> <a name="WSF742DAB041063133728B9B2112A1CE7292-7E3F"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045EB6"></a>
+               <!--CPM-ContextId = 'TOPIC_SOLVING_THE_SIMULATION_PROC1'--><a name="GUID-0F332BE5-DF93-4210-94EC-B65DF28E34D8"></a>要求解模拟，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>创建一个具有群组辅助对象、代理和行为的群组模拟。请参见<span class="char_link"><a href="GUID-5CDDE2B2-DA06-4003-872D-5B181E58EEF1.htm">指定行为</a></span>。 
+               </li>
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择群组辅助对象。 
+               </li>
+               <li>在 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板上的“解算”卷展栏中，设置“开始解算”和“结束解算”参数来设置解算的开始帧和结束帧。 
+               </li>
+               <li>单击“求解”。 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E807"></a><div class="note-tip"><span class="label label-target-language">提示</span><img src="../images/GUID-7F1B6CAB-1955-4A99-99BF-B48DEE6B08B5-low.png"> 要使用“求解”按钮的键盘快捷方式，打开“键盘快捷覆盖切换”，然后按下 <span class="keyboardEntry">S</span> 键来运行求解。 
+                     </div>
+                  </div> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF169C6"></a>在计算求解时，需要等待几分钟。屏幕底部的“进度条”显示求解处理的状态。 
+                  </p> 
+               </li>
+            </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7E3E"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045EB7"></a>
+               <!--CPM-ContextId = 'TOPIC_SOLVING_THE_SIMULATION_PROC2'--><a name="GUID-07B4D41A-B18F-41C1-89F0-1FE2D7CA3A3A"></a>要加速求解，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在“每隔 N 个关键点进行保存”中，设置“位置”和“旋转”参数为一较大数值，例如 <em class="strong">5</em>。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF169C7"></a>这使模拟每 5 帧设置一个代理关键帧而不是每帧设置一个关键点。 
+                  </p> 
+               </li>
+               <li>将“解算”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“在解算期间显示”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“频率”设置增加到较大数值，如 <em class="strong">100</em>。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF169C8"></a>这会导致每隔 100 帧使用新代理位置来更新显示。 
+                  </p> 
+               </li>
+            </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7E3D"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045EB8"></a>
+               <!--CPM-ContextId = 'TOPIC_SOLVING_THE_SIMULATION_PROC3'--><a name="GUID-79D990C6-5E46-4782-8B74-355CDD000D46"></a>要查找模拟中的错误，请执行以下操作：
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF169C9"></a>在群组模拟中，通常状况是：只有动画的一小部分具有唯一问题，此问题不出现在其它帧中。当动画效果与期望的不相符时，使用“分步求解”来分析模拟的这一小部分。 
+            </p>
+            <ol type="1" start="1">
+               <li>将时间滑块拖动到要开始一次解算一个帧的帧处。 </li>
+               <li>单击“求解”。 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF169CA"></a><img src="../images/GUID-7F1B6CAB-1955-4A99-99BF-B48DEE6B08B5-low.png"> 要使用“分步求解”按钮的键盘快捷方式，打开“键盘快捷覆盖切换”，然后按下 <span class="keyboardEntry">T</span> 键在步长模式下运行求解。 
+                  </p> 
+                  <p><a name="WS73099CC142F4875514C01AC112A7ACEF169CB"></a> 可在任意帧上开始求解。放大来检查异常行为代理的向量。 
+                  </p> 
+               </li>
+               <li>按下 <span class="keyboardEntry">spacebar</span> 键来一次一帧地求解模拟。 
+               </li>
+               <li>按 <span class="keyboardEntry">Esc</span> 键来退出“分步求解”模式。 
+               </li>
+            </ol> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C5EB44E2-5A3E-44DF-8B64-A0E00B8EDC71">
+      <meta name="description" content="该对话框从“蒙皮”修改器启动，并提供工具来选择顶点，然后为它们指定权重。您还可以在顶点之间拷贝、粘贴和混合权重。您选择的每个顶点都显示对话框列表中对其权重有贡献的对象。">
+      <meta name="indexterm" content="权重工具对话框（蒙皮修改器）">
+      <meta name="indexterm" content="蒙皮修改器: 权重工具对话框">
+      <meta name="topic-type" content="concept">
+      <title>权重工具对话框（蒙皮修改器）</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C5EB44E2-5A3E-44DF-8B64-A0E00B8EDC71"></a><div class="head">
+            <h1> 权重工具对话框（蒙皮修改器）</h1>
+         </div>
+         <div class="abstract"> 
+            <p><a name="GUID-25D5AC8A-771B-4573-BD80-00873FC0717F"></a> <img src="../images/GUID-42E68360-88DB-4DCF-8AD0-BE0BA0C1E7E9-low.png"> 
+            </p> 
+            <p class="blurb">该对话框从<span class="char_link"><a href="GUID-9596F6EF-3569-44F2-8D6C-6EB58C30BEDD.htm">“蒙皮”修改器</a></span>启动，并提供工具来选择顶点，然后为它们指定权重。您还可以在顶点之间拷贝、粘贴和混合权重。您选择的每个顶点都显示对话框列表中对其权重有贡献的对象。 
+            </p> 
+         </div>
+         <div class="bodyReference"><a name="UL_F9BA471D906C4D30BF20E04EB0F7C93E"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-A3FDE643-8978-4071-A02A-C637BF603658">选择向其应用“蒙皮”修改器的对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板  <img src="../images/ac.menuaro.gif"> “蒙皮”修改器  <img src="../images/ac.menuaro.gif"> “参数”卷展栏  <img src="../images/ac.menuaro.gif"> “权重属性”组  <img src="../images/ac.menuaro.gif"> “权重工具”按钮</span> 
+               </li>
+            </ul>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BF1"></a>为了使用这些工具，必须启用“参数”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“编辑封套”，必须启用“参数”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“选择”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“顶点”，而且必须至少选定一个顶点。 
+            </p>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9FC"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>该对话框上的控件根据活动骨骼调整顶点权重；也就是说，该对象高亮显示在“参数”卷展栏上的“骨骼”列表中。当您选择一个顶点然后改变其权重时，如果活动骨骼还未影响该顶点，则将该骨骼添加到影响该顶点的骨骼列表中。您可以在选择顶点后改变权重前，在“权重工具”对话框中高亮显示骨骼，从而保证骨骼指定不发生变化。
+                  
+               </div>
+            </div>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BF0"></a>此外，影响一个顶点的所有骨骼的总权重总是1.0，因此如果多个骨骼影响一个顶点，而且您改变了一个骨骼的权重值，则其他骨骼的权重值也会发生变化。 
+            </p>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2935"></a> 
+               <h2><a name="GUID-0D7D63FC-9ADE-464D-9F2B-13253FB2D973"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043AF3"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190043AF4"></a>示例：要设置并混合所选定顶点的权重，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>准备一个已经覆盖到骨骼链的圆柱体。 <a name="WS1A9193826455F5FFBA679E112A6A190043AF5"></a><div class="figure-anchor"><img src="../images/GUID-FBCE53D8-FD42-4B30-8748-DFD45A6358D3-low.png"></div>  
+                  </li>
+                  <li>在<img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png">“修改”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“参数”卷展栏上，启用“编辑封套”。 
+                  </li>
+                  <li>在“选择”组中，启用“顶点”。 </li>
+                  <li>在“权重属性”组中单击 <img src="../images/GUID-42E68360-88DB-4DCF-8AD0-BE0BA0C1E7E9-low.png">（“权重工具”）。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BEF"></a><span class="charspan-msgph">3ds Max</span> 将打开“权重工具”对话框。 
+                     </p> 
+                  </li>
+                  <li>选择几个顶点，然后单击 <img src="../images/GUID-3664A13B-8334-4F12-8AE6-7FD124AB2DBE-low.png">（.25 权重按钮）。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BEE"></a>对于活动骨骼，所选定顶点的权重值为 0.250 （在“参数”卷展栏列表中高亮显示）,把这些顶点涂成黄色。 
+                     </p> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9FD"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果有必要的话，将活动骨骼添加到影响每个选定顶点的骨骼列表中。 
+                        </div>
+                     </div> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9FE"></a><div class="note-note"><span class="label label-target-language">注意:</span>在<span class="char_link"><a href="GUID-9596F6EF-3569-44F2-8D6C-6EB58C30BEDD.htm">“封套属性”组</a></span>中，可能需要将顶点权重切换为 <img src="../images/GUID-F389DB7C-6D23-4BE7-8484-70B251E15989-low.png">（“相对”）。 
+                        </div>
+                     </div> <a name="WS1A9193826455F5FFBA679E112A6A190043AF6"></a><div class="figure-anchor"><img src="../images/GUID-070C45EF-4A02-49E6-A6F8-18E427E44938-low.png"></div>  
+                  </li>
+                  <li>重复单击 <img src="../images/GUID-125489E8-6215-490D-BDA2-5A7616461205-low.png">（在 .9 权重按钮正下方），直到顶点变为红色（也就是说权重为 1.0）。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BED"></a>增加顶点的权重，它们将逐渐改变颜色。 
+                     </p> 
+                  </li>
+                  <li>选择其他几个顶点，并为其指定权重 <img src="../images/GUID-3664A13B-8334-4F12-8AE6-7FD124AB2DBE-low.png"> (0.250)。 <a name="WS1A9193826455F5FFBA679E112A6A190043AF7"></a><div class="figure-anchor"><img src="../images/GUID-5BD837C1-79E2-4607-B390-47D834BA3688-low.png"><p></p>
+                        <p class="figure-title">左边顶点的权重为 1.0，右边顶点的权重为 0.25。</p>
+                     </div>  
+                  </li>
+                  <li>选择所有加权顶点并重复单击“混合”。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BEC"></a>每次单击“混合”时，每个顶点的权重都被调整为与其他选定的相临权重进行混合。这在所有选定顶点之间创建了一个平滑的权重变换。 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190043AF8"></a><div class="figure-anchor"><img src="../images/GUID-8763C454-2CF1-41BB-99EB-2BE92F973880-low.png"><p></p>
+                        <p class="figure-title">两个单独的颜色混合为一个平滑的渐变。</p>
+                     </div>  
+                  </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-2934"></a> 
+               <h2><a name="GUID-B3DECEED-E531-4451-AF49-1281276D5148"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190043AF9"></a><div class="figure-anchor"><img src="../images/GUID-DA1449A8-4813-4AC3-873B-D1E634AE4B5B-low.png"></div>  <a name="GUID-895AFA6A-0D47-4A9B-BB6A-3D1681228D30"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-607B"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BEB"></a>收缩</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F4B"></a> 从选定顶点中逐渐减去最外部的顶点，以修改当前的顶点选择。如果选择了一个对象中的所有顶点，则没有任何效果。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-607A"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BEA"></a>扩大</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F4A"></a> 逐渐添加所选定对象的相临顶点，以修改当前的顶点选择。必须从至少一个顶点开始，以能够扩充您的选择。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6079"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BE9"></a>环</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F49"></a> 扩展当前的顶点选择，以包括平行边中的所有顶点。 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E9FF"></a><div class="note-note"><span class="label label-target-language">注意:</span>必须选择至少两个顶点，以使用“环形”选择。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6078"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BE8"></a>循环</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F48"></a> 扩展当前的顶点选择，以包括连续边中的所有顶点。 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA00"></a><div class="note-note"><span class="label label-target-language">注意:</span>必须选择至少两个顶点，以使用“循环”选择。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6077"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BE7"></a> <img src="../images/GUID-E6A25377-243A-4477-A92C-7E02B20D25E0-low.png"> [特定的权重值]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F47"></a> 将活动骨骼 0 至 1 之间的绝对权重值指定给选定的顶点。 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA01"></a><div class="note-note"><span class="label label-target-language">注意:</span>点击其中一个按钮时，如果需要的话，活动骨骼将被添加到影响每个选定顶点的骨骼列表中。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6076"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BE6"></a>设置权重</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F46"></a> 设置基于字段值的绝对权重。默认设置为 0.5。 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA02"></a><div class="note-note"><span class="label label-target-language">注意:</span>微调器以 0.05 的步长递增字段值。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6075"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BE5"></a>+/-</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F45"></a> 将每个选定顶点的权重增加/减少 0.05。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6074"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BE4"></a>缩放权重</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F44"></a> 将每个选定顶点的权重值乘以字段值，从而得到一个相对的权重变化值。默认值是0.95。 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA03"></a><div class="note-note"><span class="label label-target-language">注意:</span>微调器以 0.05 的步长递增字段值。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6073"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BE3"></a>+/-</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F43"></a> 将每个选定顶点的权重增加/减少 0.05。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6072"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BE2"></a>复制</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F42"></a> 在复制缓冲区中存储当前的权重值。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6071"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BE1"></a>粘贴</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F41"></a> 从复制缓冲区中检索权重值，并将其指定给选定的顶点。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-6070"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BE0"></a>粘贴姿势</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F40"></a> 根据选定顶点和复制顶点之间的距离（取决于“粘贴姿势公差”值），将复制缓冲区中的当前权重值指定给选定的顶点（见下文）。 
+                        <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BDF"></a>当需要在共享一个公共骨骼的两个叠加蒙皮网格之间匹配权重时，这非常有用。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-606F"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BDE"></a>混合</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F3F"></a> 修改所选定的权重值，以平滑它们和其周围顶点之间的变换。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-606E"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BDD"></a>粘贴姿势公差</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F3E"></a> 确定粘贴姿势的半径影响。默认设置为 0.1。 
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-7C557CE4-6F70-45F5-96F4-508EC5E5DB35"></a><span class="term"><a name="GUID-EF3CE4CE-2EDB-4008-8454-E080B5A1CEE8"></a>[顶点信息]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-7CE9D19C-24F1-409C-BCD7-07E3D7C76670"></a> 在“粘贴姿势公差”字段的下面是文本显示，其内容是所复制和选定顶点的数量。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-606D"></a><span class="term"><a name="WS73099CC142F4875514C01AC112A7ACEF16-3BDB"></a>[顶点权重列表]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-4855151011E1D0EC60D-7F3D"></a> 显示组成选定顶点权重的骨骼封套以及与每个封套相关联的权重。通过高亮显示列表中的各块骨骼，可以选择当前视口中的各个封套。 
+                        <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0EA04"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果选择了多个顶点，则列表仅显示第一个选定顶点的权重。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

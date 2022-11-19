@@ -1,0 +1,28 @@
+1.在头部为整体添加一个虚拟体控制器
+2.确定生成后的样条线是平滑点
+
+DependsOn
+coordsys
+when transform $box01 changes do
+transform
+
+以下方法需要蒙皮修改器是修改面板中的显示修改器和修改面板处于活动状态。
+
+skinOps.addbone <Skin> <Bone_node> <Update_integer> 
+将骨骼添加到当前的系统。
+对于 Update_integer 、-1 强制完成更新和重画、 0 不会更新系统。
+这样您可以将大量的骨骼添加到系统，然后在末端，更新一次。
+
+
+sk = $.modifiers[1]
+sk.debugmode = true
+
+skinOps.setInnerRadius sk 2 2 7.13646
+skinOps.setInnerRadius sk 2 2 7.13646
+
+skinOps.setOuterRadius sk 1 1 90
+skinOps.setOuterRadius sk 1 2 90
+
+skinOps.SelectBone sk 1
+skinOps.copySelectedBone sk
+skinOps.pasteToAllBones sk

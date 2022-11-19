@@ -1,0 +1,127 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-204B41F0-690B-4DB6-9888-F3AC728FD202">
+      <meta name="description" content="当 character studio 基于足迹驱动技术计算垂直动力和重力时，角色不必始终受到这些严格的控制。您可能让角色飞翔，游泳或者做在现实世界中不可能的事情。对于这些情况，Biped 动画支持一套全面的自由形式动画控件，允许您充分发挥创造性，完全控制角色的姿势、移动和计时。">
+      <meta name="indexterm" content="Biped: 自由格式的动画">
+      <meta name="indexterm" content="动画: 选择和移动轨迹">
+      <meta name="indexterm" content="轨迹视图: 打开">
+      <meta name="indexterm" content="自由格式: 动画">
+      <meta name="indexterm" content="轨迹视图: Biped 对象的层次">
+      <meta name="indexterm" content="Biped 对象的层次（轨迹视图）">
+      <meta name="indexterm" content="展开动画轨迹">
+      <meta name="indexterm" content="折叠: 动画轨迹">
+      <meta name="indexterm" content="动画: 展开轨迹">
+      <meta name="indexterm" content="缩放选定对象选项（轨迹视图）">
+      <meta name="indexterm" content="转化: 为自由形式">
+      <meta name="topic-type" content="concept">
+      <meta name="keywords" content="Ctrl+Shift+N">
+      <meta name="keyword" content="Ctrl+Shift+N">
+      <title>自由形式动画</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-204B41F0-690B-4DB6-9888-F3AC728FD202"></a><div class="head">
+            <h1>自由形式动画</h1>
+         </div>
+         <p class="blurb">当 <em class="strong">character studio</em> 基于足迹驱动技术计算垂直动力和重力时，角色不必始终受到这些严格的控制。您可能让角色飞翔，游泳或者做在现实世界中不可能的事情。对于这些情况，Biped 动画支持一套全面的自由形式动画控件，允许您充分发挥创造性，完全控制角色的姿势、移动和计时。
+            
+         </p>
+         <div class="bodyReference"><a name="WS1A9193826455F5FFBA679E112A6A1900455F2"></a><div class="figure-anchor"><img src="../images/GUID-C8D41A87-3AFC-4DE3-8693-2DEAF0A25487-low.png"><p class="figure-title">Biped 游泳的自由形式动画</p>
+            </div>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF161D"></a> <em class="strong">character studio</em> 可以提供通过使用专门的自由形式模式制作角色动画的选择，或在足迹动画中创造自由形式期间。在自由形式模式下（没有足迹），如果您喜欢使用传统的关键帧方法，则可以精确地设计角色每个关节的姿势。通过设置踩踏关键点，手和脚可以被锁定在空间里。还可以为手和脚的轴点制作动画，以模拟滚动运动。可以将正向运动和反向运动动态混合，从而进行高水平的控制。
+               
+            </p>
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF161E"></a>为在足迹模式中使用自由形式的动画，需要使用“轨迹视图 - 摄影表”在足迹之间创建自由形式的周期。可以在现有足迹动画与自由形式动画之间相互转换。从而可以混合使用足迹和自由形式的方法。 
+            </p>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6B7"></a><div class="note-warning"><span class="label label-target-language">警告:</span>在足迹动画的开始或结束位置不能添加自由形式的周期。 
+               </div>
+            </div>
+            <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6B8"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果希望这样做，可以延长第一组足迹或最后一组足迹的计时，然后将足迹动画转换为自由形式的动画。 
+               </div>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A1900455FF"></a> 
+               <h2><a name="GUID-697271BC-AF84-4C5F-9F60-3D09EC43421F"></a>自由形式方法
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF161F"></a>自由形式的动画不包含足迹；相反，它依赖于 Biped 躯干对象和质心的变换。使用如游泳或跌倒等运动的自由形式，在这些运动中不需要足迹。如果您熟悉使用手动创建所有关键帧的方法来制作角色的动画效果，那么可能要专门要选择使用自由形式的方法。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF1620"></a>要启动自由形式的动画，请打开“自动关键点”，然后开始对 Biped 进行定位。也可以关闭“自动关键点”，而使用<span class="char_link"><a href="GUID-24693B38-20BD-435D-9816-BE5BDA528506.htm">“关键点信息”卷展栏</a></span>上的红色设置键按钮创建关键帧。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF1621"></a>也可以通过导入动态捕获数据并选择自由形式而非足迹的方式创建自由形式的动画。 
+               </p> 
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6B9"></a><div class="note-tip"><span class="label label-target-language">提示</span>通过结合足迹和自由形式动画充分利用这两种方法。您可以为足迹之间的任意悬空周期创建一个自由形式周期。自由形式周期以用户定义的样条线运动替代使用重力加速度值计算的弹道运动。 
+                  </div>
+               </div> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF1622"></a>如果使用动态捕获数据提取足迹，常常需要自由形式的间隔来适应数据中的下落或翻滚运动。“运动捕获转换参数”对话框中的“适应现有情况”允许将这两种方法结合使用。从运动捕获文件中提取足迹消除了脚部滑动，从而解决了动态捕获数据中的一个常见问题。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF1623"></a>请注意，向足迹动画添加自由形式周期时，并<em class="mild">不能</em>将一个足迹周期添加到自由形式动画中。如果希望将足迹动画添加到现有自由形式中，可以使用运动流编辑器来创建排列使用自由形式足迹的脚本。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190045600"></a> 
+               <h2><a name="GUID-47CA1E5D-2C7E-476D-91F7-F38871871015"></a>反向运动学 
+               </h2> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF1624"></a>足迹和自由形式的动画使用相同的<span class="char_link"><a href="GUID-173FE38D-B35D-4893-BBC1-171B25C62FAE.htm">反向运动</a></span>约束和扩展。这意味着在足迹动画中，现在可以编辑关键点，以改变足迹持续时间。通过定义，足迹为世界空间中 IK 约束的起始和结束序列，并且采用的 IK 混合值大于 0。删除和插入关键点或更改 IK 空间或 IK 混合可改变足迹的持续时间。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF1625"></a>为了更改弹道间隔长度（当 Biped 悬空时）而进行编辑时，<em class="strong">character studio</em> 可确保有一个垂直关键点出现在离地和触地的帧上。其计算正确的弹道运动，从而在没有关键点时，自动插入垂直关键点。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF1626"></a>您可以创建三种类型的 IK 关键点：<em class="mild">踩踏</em>、<em class="mild">滑动</em> 和<em class="mild">自由</em> 关键点。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190045601"></a><ul>
+                  <li> <em class="strong">踩踏关键点</em>的 IK 混合值为 1。它们连接到上一个 IK 关键点并且位于对象空间中，而非躯干空间中。踩踏关键点把手或脚锁定在地面或任何对象上。 
+                  </li>
+                  <li> <em class="strong">滑动关键点</em>具有移动 IK 约束。如果有一个<em class="mild">移动</em> 的 IK 约束出现在足迹间隔中，则将创建滑动足迹。在足迹动画中，这意味着脚可以放置在任何位置，即使存在足迹图标。可将足迹图标视为线框，而非脚的绝对位置。滑动关键点的 IK 混合值为 1，并且位于对象空间中，但是并没有连接到上一 IK 关键点。
+                     
+                  </li>
+                  <li> <em class="strong">自由关键点</em>的 IK 混合值为 0，并且位于躯干空间内。它们并未连接到上一 IK 关键点。自由关键点没有 IK 约束。 
+                  </li>
+               </ul> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF1627"></a>使用基于轴的系统实现 IK 约束。从而允许围绕选定的轴定位手和脚。例如，在行走运动中，可以在脚后跟上选择一个轴，并围绕该轴旋转脚。然后可以将轴转换到脚的球形部位。 
+               </p> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-46C8"></a> 
+               <h2><a name="GUID-17EAE765-8F0F-4724-BD00-57CD2CA47D25"></a>过程
+               </h2> <a name="WSF742DAB041063133728B9B2112A1CE7292-7FA9"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045602"></a>要创建完全自由形式的动画，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>创建 Biped。 </li>
+                  <li>将时间滑块拖动到任意给定帧，然后执行下列操作之一： <a name="WS1A9193826455F5FFBA679E112A6A190045603"></a><ul>
+                        <li>启用 <img src="../images/GUID-859D11E8-44CA-4A08-A696-F5A17CA856E0-low.png">，然后 <img src="../images/GUID-5D7D7630-6D16-400D-AE6F-87F13C97DEA2-low.png"> 移动或 <img src="../images/GUID-7E7B2E05-D918-4D42-BE95-946D1C126036-low.png"> 旋转任何 Biped 组件。此操作将设置该组件的关键点。 
+                        </li>
+                        <li>摆好 Biped 任一部位的姿势，然后在“关键点信息”卷展栏中，单击 <img src="../images/GUID-88BA9A75-BB96-430C-9B06-A5BAD3A87E19-low.png">（“设置关键点”）。 
+                        </li>
+                        <li>摆好手部和脚部的姿势，然后在“关键点信息”卷展栏中，单击 <img src="../images/GUID-6A49B583-BBA6-4E03-93DE-9D6992361C9A-low.png">（“设置踩踏关键点”）。这将创建使手和脚置入空间的关键点。 
+                           <p><a name="WS73099CC142F4875514C01AC112A7ACEF1628"></a>有关设置关键点的详细信息，请参见<span class="char_link"><a href="GUID-4AAD5905-A21A-4AC2-AB6C-6765D79F00F4.htm">设置脚和手的关键点</a></span>。 
+                           </p> 
+                        </li>
+                     </ul> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E6BA"></a><div class="note-note"><span class="label label-target-language">注意:</span><em class="strong">character studio</em> 在创建关键点时的行为不同于 <span class="charspan-msgph">3ds Max</span>。在后面的帧上创建第一组关键点时，0 帧处不会自动创建关键点。为此，在 0 帧处选择 Biped 的所有部位，然后单击“设置关键点”为所有部位创建固定关键点是非常有用的。 
+                        </div>
+                     </div> 
+                  </li>
+               </ol> <a name="WSF742DAB041063133728B9B2112A1CE7292-7FA8"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045606"></a>要从足迹动画创建自由形式动画，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>选择要将其足迹动画转换为自由形式动画的 Biped。 </li>
+                  <li>在 <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“Biped”卷展栏上，单击 <img src="../images/GUID-ACAF012E-CAFA-4275-83E7-522C2F2FCA23-low.png">（“转化”）。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF1629"></a>将显示“转化为自由形式”对话框。单击“确定”。 
+                     </p> 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF162A"></a>除非有恰当的理由，否则不要打开“每帧一个关键帧”。每个帧生成一个关键帧可以使得动画编辑变得更加复杂。仅在转换过程中丢失运动质量时使用此项。 
+                     </p> 
+                  </li>
+               </ol> 
+            </div>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-B2B188B6-3DA2-44FF-A92B-F1CDBFA95852.htm">创建自由形式的动画</a><p>本节中的主题论述为 Biped 创建自由形式的动画。</p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-2E0C6AED-F442-4381-88AC-DA85B2B40DC2.htm">自由形式和 IK</a><p>本部分中的主题论述如何使用自由形式动画和反向运动学 (IK) 技术。</p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-2F7714BF-68B0-4C56-ABCC-CA905EE3FB57.htm">编辑自由形式动画</a><p>本节中的主题论述为 Biped 编辑自由形式的动画。</p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

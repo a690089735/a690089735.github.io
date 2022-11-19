@@ -1,0 +1,17 @@
+<map id="include/ufe/cameraHandler.h" name="include/ufe/cameraHandler.h">
+<area shape="rect" id="node2" href="$camera_8h.html" title="camera.h" alt="" coords="714,80,790,107"/>
+<area shape="rect" id="node5" href="$scene_item_8h.html" title="sceneItem.h" alt="" coords="328,453,421,480"/>
+<area shape="rect" id="node3" href="$ufe_export_8h.html" title="Definition of macros for symbol visibility. " alt="" coords="1099,752,1242,779"/>
+<area shape="rect" id="node14" href="$observer_8h.html" title="observer.h" alt="" coords="873,677,957,704"/>
+<area shape="rect" id="node15" href="$camera_undoable_commands_8h.html" title="cameraUndoableCommands.h" alt="" coords="725,155,920,181"/>
+<area shape="rect" id="node22" href="$types_8h.html" title="types.h" alt="" coords="1387,155,1451,181"/>
+<area shape="rect" id="node4" href="$ufe_8h.html" title="../ufe.h" alt="" coords="963,827,1027,853"/>
+<area shape="rect" id="node6" href="$path_8h.html" title="path.h" alt="" coords="345,528,404,555"/>
+<area shape="rect" id="node7" href="$path_segment_8h.html" title="pathSegment.h" alt="" coords="321,603,429,629"/>
+<area shape="rect" id="node8" href="$rtid_8h.html" title="rtid.h" alt="" coords="41,677,93,704"/>
+<area shape="rect" id="node10" href="$path_component_8h.html" title="pathComponent.h" alt="" coords="421,677,544,704"/>
+<area shape="rect" id="node16" href="$base_undoable_commands_8h.html" title="baseUndoableCommands.h" alt="" coords="733,229,912,256"/>
+<area shape="rect" id="node17" href="$undoable_command_8h.html" title="undoableCommand.h" alt="" coords="909,379,1051,405"/>
+<area shape="rect" id="node20" href="$hierarchy_8h.html" title="hierarchy.h" alt="" coords="779,304,866,331"/>
+<area shape="rect" id="node21" href="$scene_item_list_8h.html" title="sceneItemList.h" alt="" coords="771,379,885,405"/>
+</map>

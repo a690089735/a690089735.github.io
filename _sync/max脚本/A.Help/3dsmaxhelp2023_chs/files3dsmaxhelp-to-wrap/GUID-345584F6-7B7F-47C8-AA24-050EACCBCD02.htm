@@ -1,0 +1,87 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-345584F6-7B7F-47C8-AA24-050EACCBCD02">
+      <meta name="description" content="线性阵列是沿着一个或多个轴的一系列克隆。线性阵列可以是任意对象，从一排树或车到一个楼梯、一列支柱式围栏或一段长链。任何场景所需要的重复对象或图形都可以看作线性阵列。">
+      <meta name="indexterm" content="创建: 线性阵列">
+      <meta name="indexterm" content="线性阵列（创建）">
+      <meta name="indexterm" content="阵列: 创建阵列">
+      <meta name="topic-type" content="concept">
+      <title>创建线性阵列</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-345584F6-7B7F-47C8-AA24-050EACCBCD02"></a><div class="head">
+            <h1>创建线性阵列</h1>
+         </div>
+         <p class="blurb">线性阵列是沿着一个或多个轴的一系列克隆。线性阵列可以是任意对象，从一排树或车到一个楼梯、一列支柱式围栏或一段长链。任何场景所需要的重复对象或图形都可以看作线性阵列。 </p><a name="WS1A9193826455F5FFBA679E112A6A190041A7F"></a><div class="figure-anchor"><img src="../images/GUID-7F10860E-C0D9-4B04-9748-01848D2BDF6A-low.png"><p class="figure-title">线性阵列的例子</p>
+         </div>
+         <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2AF"></a> 有关此处使用的界面术语的说明，请参见<span class="char_link"><a href="GUID-9D7F747F-3F31-41A9-B8AA-BA94F251B5C5.htm">阵列</a></span>。有关形成阵列的基本步骤，请参见<span class="char_link"><a href="GUID-9D7F747F-3F31-41A9-B8AA-BA94F251B5C5.htm#GUID-ECBCFA2A-35FB-41AF-9BA2-D963AF539DC8">此影片</a></span>。 
+         </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A80"></a> 
+            <h2><a name="GUID-E14E1C07-70A3-4471-B2FB-3D3D8E3EC0BC"></a>创建简单线性阵列
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2AE"></a>最简单的 2D 线性阵列是基于沿着单个轴移动单个对象实现的。这些是在“阵列”对话框中做出的基本选择。 
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2AD"></a>在“阵列变换”组中进行以下选择： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041A81"></a><ul>
+               <li>在知道对象之间的间距的位置使用<em class="mild">增量移动</em> 设置。 
+               </li>
+               <li>当知道阵列要占据的总体空间或体积时，使用<em class="mild">总计移动</em> 设置。 
+               </li>
+               <li>对于这两类阵列的任一种，输入一个轴的值。使另一种类型的阵列以其默认值变换。 </li>
+            </ul> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2AC"></a>在“阵列维度”组中进行以下选择： 
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190041A82"></a><ul>
+               <li>选择 1D。 </li>
+               <li>输入阵列中的对象数目的“数量”值。“阵列中的总数”字段会更新以显示当前在阵列中指定的对象总数。 </li>
+               <li>单击“确定”可沿着选定轴创建一个线性阵列，其中对象数目由“数量”指定。 </li>
+            </ul> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A83"></a> 
+               <h3><a name="GUID-7DF1C906-BF9D-4323-82C9-5152C9B997FB"></a>2D 和 3D 线性阵列
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2AB"></a>2D 和 3D 阵列与 1D 阵列具有相同的“阵列变换”组设置，移开附加维数的“增量行偏移”设置除外。 
+               </p> <a name="WS1A9193826455F5FFBA679E112A6A190041A84"></a><ul>
+                  <li>设置 2D 或 3D 并输入“数量”值。 
+                     <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2AA"></a>如果设置 3D，那么 2D 值也可用。“数量”值默认设置都为 1，这与 1D 具有同样的效果。将 2D 和 3D“数量”值设置为大于 1 可产生更复杂的阵列。 
+                     </p> 
+                  </li>
+                  <li>将 2D 和 3D 的至少一个“增量行偏移”设置设置为非零值。否则，在 1D 行和新克隆间将没有间隔。 </li>
+               </ul> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2A9"></a>可以实现多种线性阵列。体验一下沿着所有三个轴移动并在 2D 和 3D 中改变行偏移。 
+               </p> 
+            </div> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A85"></a> 
+            <h2><a name="GUID-2DC0833E-656E-4311-8BB5-C37372B4A5A2"></a>在线性阵列中使用旋转
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041A86"></a><div class="figure-anchor"><img src="../images/GUID-327D1EBB-1DF4-4225-8C22-6F71BDA0AF00-low.png"><p class="figure-title">带有关于其 Y 轴旋转元素的线性阵列</p>
+            </div>  
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2A8"></a>通过应用指定轴的“旋转”值，可以在线性阵列中旋转元素。向线性阵列中添加旋转时，变换中心的选择就变得很重要。 
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A87"></a> 
+            <h2><a name="GUID-5ACC5E7A-F84A-448A-B490-5BB03E0CE7B3"></a>在线性阵列中使用缩放
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041A88"></a><div class="figure-anchor"><img src="../images/GUID-749D9307-7707-4914-9CDB-33C225F11A37-low.png"><p class="figure-title">使用渐进缩放的线性阵列</p>
+            </div>  
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2A7"></a>应用比例因子后，<span class="charspan-msgph">3ds Max</span> 将从前一副本开始缩放每个副本。阵列中的对象逐步变小或变大，正如图例所示。 
+            </p> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A89"></a> 
+               <h3><a name="GUID-BBD8FF4F-2395-42E4-B6D2-B553C800D70C"></a>在嵌套阵列中缩放和移动
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2A6"></a>只使用“缩放”设置和对象的局部轴生成嵌套阵列，如俄罗斯玩偶，就像使用 <span class="keyboardEntry">Shift</span> + Scale 从局部轴缩放时所操作的一样。但是，使用“阵列”工具，还可以添加移动。这意味着可以创建逐渐变大或变小的副本并同时将它们形成阵列。 
+               </p> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041A8A"></a> 
+               <h3><a name="GUID-BC920016-DE54-482C-AEB0-35EA1D51C3BF"></a>使用均匀缩放
+               </h3> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2A5"></a>默认情况下，所有轴都可用于缩放。 
+               </p> 
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-2A4"></a>如果启用“均匀”，那么只有“缩放 X”字段处于活动状态；而 Y 和 Z 字段都不可用。X 值应用为阵列对象所有轴上的均匀缩放。 
+               </p> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

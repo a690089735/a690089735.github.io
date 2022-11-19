@@ -1,0 +1,48 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-17">
+      <meta name="topicid" content="GUID-2F434B1D-32E2-4B29-ABD5-5597EE196387">
+      <meta name="description" content="凸起用来模拟肌肉凸起。Physique 根据凸起角度和指定的横截面形状来创建凸出，而不是根据关键帧设置。">
+      <meta name="indexterm" content="Physique: 凸出, 创建">
+      <meta name="topic-type" content="concept">
+      <title>创建凸出</title><script language="javascript">var index = 'index.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-2F434B1D-32E2-4B29-ABD5-5597EE196387"></a><div class="head">
+            <h1>创建凸出</h1>
+         </div>
+         <p class="blurb">凸起用来模拟肌肉凸起。Physique 根据凸起角度和指定的横截面形状来创建凸出，而不是根据关键帧设置。</p>
+         <p><a name="WS73099CC142F487552A50A53111913E7C26F-7771"></a>可以通过下列方法来创建凸出：
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190045C5A"></a><ul>
+            <li>将角色的姿势重新调整到能使它达到最佳效果的位置。这在已加载的运动文件中将时间滑块移动到那个位置就可以实现。</li>
+            <li>在两个链接之间设置凸起角度：当前选中的链接和层次中它的子链接。凸起角度就是凸起会产生完全效果的关节的角度。当关节角度不同时，Physique 就会进行插值，这样当关节向该角度伸缩时凸起就会增长。关于详细信息，请参阅<span class="char_link"><a href="GUID-E905CCE9-935A-4865-B242-0ADA4CB6B469.htm">设置凸起角度</a></span>。
+               <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E7AC"></a><div class="note-note"><span class="label label-target-language">注意:</span>动画中任意给定帧的凸起结果是由所有连接凸起角度的插值效果决定的，基于每个凸起角度到当前关节角度的关系。凸起角度不是直接的而是相对于骨骼的行为与关键帧参数相关联。
+                  </div>
+               </div><a name="WS1A9193826455F5FFBA679E112A6A190045C5B"></a><div class="figure-anchor"><img src="../images/GUID-A1F28D4A-771A-479D-85EE-515FAC35925E-low.png"></div><a name="WS1A9193826455F5FFBA679E112A6A190045C5C"></a><div class="figure-anchor"><img src="../images/GUID-DF6E6F8D-6807-4E0E-AD30-25F4E76E6464-low.png"><p></p>
+                  <p class="figure-title">凸起形状在关节运动接近凸起角度的时候进行插值。</p>
+               </div>
+            </li>
+            <li>创建和塑造与凸起角度相关联的横截面。链接的横截面和它的轮廓是蒙皮形状的样条线控制。创建和塑造横截面，请参阅<span class="char_link"><a href="GUID-C35B8603-2967-4161-9903-D4EB01C997EB.htm#WSF742DAB041063133728B9B2112A1CE7292-7EA9">塑造凸起形状</a></span>。
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF1673C"></a>每个凸起角度会影响邻近的链接。因此，每个链接在父关节角度和子关节角度上包含了每个凸起的一组横截面。例如，前臂链接可以被与肘部和腕部关节相关联的凸起角度所变形。
+               </p>
+            </li>
+            <li>调整凸起参数，包括关节相交参数。凸起参数控制凸起的平滑度和强度，是在凸起的子对象级别上创建的。
+               <p><a name="WS73099CC142F4875514C01AC112A7ACEF1673D"></a>如果没有检测到蒙皮顶点的碰撞，关节相交参数控制当凸起互相重叠时蒙皮是如何工作的。关节相交参数在链接子对象的“Physique”卷展栏中。请参阅<span class="char_link"><a href="GUID-B489F120-9AF4-4406-AE59-09EFBAC01805.htm">重新初始化 Physique 设置</a></span>。
+               </p>
+            </li>
+         </ul>
+         <div class="see-also">
+            <h4>请参见</h4>
+            <div class="related-links">
+               <ul>
+                  <li> <span class="char_link"><a href="GUID-BB605251-6A11-44C9-918B-D9AFDC266F90.htm">凸出子对象</a></span> 
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

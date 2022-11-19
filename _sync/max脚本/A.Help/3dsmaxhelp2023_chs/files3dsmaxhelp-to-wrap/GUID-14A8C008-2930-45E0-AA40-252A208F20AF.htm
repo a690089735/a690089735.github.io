@@ -1,0 +1,133 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-14A8C008-2930-45E0-AA40-252A208F20AF">
+      <meta name="description" content="使用层变换 Gizmo 可在空间中变换动画。">
+      <meta name="indexterm" content="CAT: 层变换 Gizmo">
+      <meta name="topic-type" content="concept">
+      <title>层变换 Gizmo</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-14A8C008-2930-45E0-AA40-252A208F20AF"></a><div class="head">
+            <h1>层变换 Gizmo</h1>
+         </div>
+         <div class="abstract"> 
+            <p><a name="GUID-350A7A37-1475-4B6B-BC72-46486AC00A76"></a> <img src="../images/GUID-FA825306-2DEB-4D48-9D12-3D0637362228-low.png"> 
+            </p> 
+            <p class="blurb">使用层变换 Gizmo 可在空间中变换动画。 </p> 
+         </div>
+         <div class="bodyReference"><a name="UL_56F066B8909544CB83CA205B711EC541"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-D17A71A8-0A05-420E-8517-3DFF9C0D09D2">选择某个 CATRig 部位。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板  <img src="../images/ac.menuaro.gif"> “层管理器”卷展栏  <img src="../images/ac.menuaro.gif">  创建或高亮显示“绝对”动画层。 <img src="../images/ac.menuaro.gif">  单击“显示层变换 Gizmo”。 <img src="../images/ac.menuaro.gif">  选择变换 Gizmo。 <img src="../images/ac.menuaro.gif"> “层变换”卷展栏。</span> 
+               </li>
+            </ul><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EB5"></a><div class="figure-anchor"><img src="../images/GUID-6F62EE4A-5453-4269-8EE7-A9012CC4F782-low.png"></div>
+            <p><a name="GUID-CD57D3D1-0DCC-48E5-B6C6-19F4445B5B12"></a>移动和旋转变换 Gizmo 可更改动画剪辑的位置和方向。角色看起来似乎与变换 Gizmo 链接在一起，然而却并非如此。实际上，每个层都具有其自己的变换 Gizmo。变换 Gizmo 的主要用途是允许您通过在空间中移动和旋转动画来重用它们。 
+            </p>
+            <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EB3"></a>变换 Gizmo 的名称为“[当前动画层名称]Transform”。在重命名动画层之后，请通过切换“显示层变换 Gizmo”按钮来更新变换 Gizmo 的名称。 
+            </p>
+            <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EB2"></a>变换 Gizmo 只能用于绝对层，并且每个绝对层都可以具有其自己的变换 Gizmo。 
+            </p>
+            <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EB1"></a>当设置变换 Gizmo 动画时，变换 Gizmo 不支持指定自定义控制器，并且无法将其链接到其他对象。如果您希望设置变换 Gizmo 动画，建议您不要设置旋转动画，而仅应用基本动画。此方法不适用于常规动画。 
+            </p>
+            <div class="section"><a name="WS7AF5CAC11814013A75AF40B111FDE8BF657-7FC0"></a> 
+               <h2><a name="GUID-E5551C76-DDC4-4131-BDB9-9094BA04B482"></a>创建变换 Gizmo
+               </h2> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EB0"></a>创建变换 Gizmo 有三种不同方法： 
+               </p> <a name="WS73099CC142F48755-5C83E7B1120018DE8C0-2911"></a><ul>
+                  <li><em class="strong">位于骨盆下的变换 Gizmo：</em> <img src="../images/GUID-FA825306-2DEB-4D48-9D12-3D0637362228-low.png">单击“显示层变换 Gizmo”按钮。这会创建一个距离骨盆存在特定偏移的变换 Gizmo，此偏移由设置模式下的姿势定义。原点和骨盆之间的距离可定义此偏移。在动画模式下，即使往下移动骨盆也会始终遵循此偏移，因此，举例来说，创建的变换 Gizmo 可能会出现在脚部下方。
+                     
+                  </li>
+                  <li><em class="strong">位于某个骨骼位置的变换 Gizmo：</em>如果在按住 <span class="keyboardEntry">Ctrl</span> 键的同时单击“显示层变换 Gizmo”按钮，<span class="charspan-msgph">CAT</span> 将在选定骨骼的位置创建变换 Gizmo。 
+                     <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EAA"></a>例如，如果选择角色的脚部，按住 <span class="keyboardEntry">Ctrl</span> 键并单击变换 Gizmo 按钮，节点将准确显示在脚部位置。然后，您可以在再次按住 <span class="keyboardEntry">Ctrl</span> 键的同时高亮显示不同层，并为该层启用变换 Gizmo。此时，您可以使用 <span class="charspan-msgph">3ds Max</span> 中的“对齐”工具对齐两个层上的脚部位置。 
+                     </p> 
+                  </li>
+                  <li><em class="strong">位于原点的变换 Gizmo：</em>如果在按住 <span class="keyboardEntry">Alt</span> 键的同时单击“显示层变换 Gizmo”按钮，新节点将显示在世界原点 (0,0,0) 处。如果在稍后移动该节点，“坐标显示”（程序窗口底部附近的 X/Y/Z 字段）将显示已对层应用的变换程度。 
+                     <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-290D"></a> 例如，可加载行走循环循环，并使其正好前移 60 个单位，因为此数字即为循环长度。 
+                     </p> 
+                  </li>
+               </ul> 
+            </div>
+            <div class="section"><a name="WS7AF5CAC11814013A75AF40B111FDE8BF657-7FB9"></a> 
+               <h2><a name="GUID-EA6488D4-3CA2-47E9-9CDB-A160E0FE1B82"></a>步骤
+               </h2> 
+               <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3E9C"></a>使用层变换 Gizmo 可在视口中变换您的动画层。这包括均匀和非均匀地移动、旋转和缩放数据。层变换 Gizmo 对排列剪辑以便混合尤其有用。 
+               </p> <a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A30"></a><p class="list-intro"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A2F"></a>要使用层变换 Gizmo 变换您的动画层，请执行下列操作：
+               </p>
+               <ol type="1" start="1">
+                  <li>在“层管理器”列表中，选择要变换的层。 <a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A2E"></a><div class="figure-anchor"><img src="../images/GUID-FC8D2781-E48A-48AA-A680-85C6A4E31691-low.png"></div>  
+                  </li>
+                  <li>单击 <img src="../images/GUID-FA825306-2DEB-4D48-9D12-3D0637362228-low.png">（“显示层变换 Gizmo”）。 
+                     <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A2D"></a>Gizmo 随即显示在视口中的默认位置：即装备的脚部之间。 
+                     </p> <a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A2C"></a><div class="figure-anchor"><img src="../images/GUID-34C8E1B3-4228-4916-9905-760A5F2911F9-low.png"></div>  
+                     <div><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A2B"></a><div class="note-note"><span class="label label-target-language">注意:</span>创建变换 Gizmo 后不会自动选择此变换 Gizmo，但是，为了更好地显示，上图显示的变换 Gizmo 已处于选中状态。 
+                        </div>
+                     </div> 
+                  </li>
+                  <li><img src="../images/GUID-5D7D7630-6D16-400D-AE6F-87F13C97DEA2-low.png"> 选择变换 Gizmo 并移动它。 <a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A2A"></a><div class="figure-anchor"><img src="../images/GUID-37C55FB3-71A3-42CD-8DC9-24BA5C8A38D1-low.png"></div>  
+                     <p><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A29"></a>装备及其整个动画也将随之移动。 
+                     </p> <a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A28"></a><div class="figure-anchor"><img src="../images/GUID-DBD4ADD8-4CD9-44B8-A282-CA2E323831A3-low.png"></div>  
+                     <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3E96"></a>在 CATParent 上的选定层下，您将在曲线编辑器的“变换”分支下找到变换 Gizmo 的动画关键点。您也可以使用<span class="char_link"><a href="GUID-26323F8D-3CC2-4918-A60D-C9D6C558584E.htm#WS1A9193826455F5FF2566FFD511FF6F8C7CA-5B14">范围视图</a></span>功能快速访问这些关键点。 
+                     </p> <a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A27"></a><div class="figure-anchor"><img src="../images/GUID-C157E703-B3C6-4BAF-B5B2-66E0EB96BE6A-low.png"></div>  
+                  </li>
+               </ol> 
+            </div>
+            <div class="section"><a name="WS7AF5CAC11814013A75AF40B111FDE8BF657-7FBC"></a> 
+               <h2><a name="GUID-0BAE0CCA-A5B2-42A5-9A41-E596B24E51ED"></a>界面
+               </h2> 
+               <div><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A26"></a><div class="note-note"><span class="label label-target-language">注意:</span>只有在<span class="char_link"><a href="GUID-D6D4CD17-D56F-4C66-876D-FF983BBBFBB9.htm#WS7AF5CAC11814013A17BA0FBF11FDE8BF84B-7FD5">“骨骼层次”卷展栏</a></span>上启用了“应用变换”选项的骨骼才受变换 Gizmo 影响。 
+                  </div>
+               </div> <a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EA8"></a><div class="figure-anchor"><img src="../images/GUID-BF205236-AE3F-467B-A43F-D0CFCC997B73-low.png"></div>  <a name="GUID-D2BAE87E-72B7-497C-BB6C-40E1FFFFB400"></a><div class="dl_section"><a name="GUID-091713D7-669C-4C13-B30C-499C0162B2ED"></a><p class="title"><a name="GUID-C6DBDDFA-10B2-4DDC-B400-A097C189CA83"></a>“重影选项”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A25"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A24"></a>显示重影</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A23"></a> 在创建变换 Gizmo 之后，您可以使用它来显示特定层上的动画重影。如果要混合两个不同层，此功能尤其有用。重影可告诉您某个层上正在播放的动画（即使已禁用该层也是如此），或者您的角色是否正在使用另外某个层上的完全不同的动画。 <a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EA6"></a><div class="figure-anchor"><img src="../images/GUID-3ADB0F72-A613-4B6E-ADC1-A7B25778E22C-low.png"></div>  
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-FA75669A-5211-411E-8538-F5E7C7F7639A"></a><p class="title"><a name="GUID-8D1050BD-D9A1-4F89-A909-5787068D9D46"></a>“动画循环播放”组
+                  </p>
+                  <dl>
+                     <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A22"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A21"></a>开始时间</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A20"></a> 动画循环的起始帧。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A1E"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A1D"></a>结束时间</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A1C"></a> 动画循环的结束帧。
+                        </div>
+                     </dd>
+                     <dt><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A1A"></a><span class="term"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A19"></a>移除位移</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS73099CC142F48755-5C83E7B1120018DE8C0-1A18"></a> 如果启用此选项，将禁用此角色的整体位移。 
+                           <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3EA0"></a>此功能会移除装备的整体移动。变换 Gizmo 测量您的骨盆自“开始时间”中的指定时间起到“结束时间”中的指定时间为止所发生的移动，并计算您的装备在此时间范围内发生的整体移动。 
+                           </p> 
+                           <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3E9F"></a>然后，它会移除动画期间发生的此位移。此功能等效于 character studio Biped 中的原地模式。 
+                           </p> 
+                           <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3E9E"></a>对于手部动画，此功能可描述为原地行走。其工作方式是：动画根据指定的起始点和结束点以线性方式进行位移。其理念是：移除空间上的移动，以便在当前位置保留角色的动画设置。此工具主要面向为游戏资源创建行走循环的游戏动画设置人员。 
+                           </p> 
+                           <p><a name="WS73099CC142F48755-5C83E7B111FDE81A742-3E9D"></a> 例如，如果要创建行走循环，并且您需要在不发生任何整体位移的情况下将其导出到您的游戏引擎，使用此功能可移除角色的前进运动，而仅保留行走运动。当需要导出动画数据时，您可以切换此功能。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div> 
+            </div>
+         </div>
+         <div class="related-links">
+            <h4 class="related">
+               <p class="title"><a name="GUID-F605D23D-E049-4194-9E4E-22F03E127DF9"></a>相关信息
+               </p>
+            </h4>
+            <ul>
+               <li><span class="char_link"><a href="GUID-26323F8D-3CC2-4918-A60D-C9D6C558584E.htm">层管理器 (CAT) </a></span></li>
+               <li><span class="char_link"><a href="GUID-D6D4CD17-D56F-4C66-876D-FF983BBBFBB9.htm">CATRig 的“层次”面板 </a></span></li>
+            </ul>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

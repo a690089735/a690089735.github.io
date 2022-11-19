@@ -1,0 +1,242 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5F506D3B-BC0F-4605-8EE5-A294543C0C1F">
+      <meta name="description" content="在“首选项设置”对话框的“渲染”面板上，可以设置用于渲染的选项，如渲染场景中环境光的默认颜色。有很多选择可以重新指定用于产品级渲染和草图级渲染的渲染器。">
+      <meta name="indexterm" content="首选项: 渲染">
+      <meta name="indexterm" content="渲染: 首选项设置">
+      <meta name="indexterm" content="选项: 渲染">
+      <meta name="indexterm" content="抗锯齿: 与背景之间进行锯齿处理（渲染首选项）">
+      <meta name="indexterm" content="抗锯齿: 过滤背景（渲染首选项）">
+      <meta name="indexterm" content="G 缓冲区层（渲染首选项）">
+      <meta name="indexterm" content="多线程和渲染">
+      <meta name="indexterm" content="渲染: 在多处理器系统上">
+      <meta name="contextid" content="IDH_PREF_RENDERING_PAGE">
+      <meta name="contextid" content="IDH_PREF_VIDEO_COLOR">
+      <meta name="contextid" content="IDH_PREF_DITHERING">
+      <meta name="contextid" content="IDH_PREF_FIELD_ORDER">
+      <meta name="contextid" content="IDH_PREF_SUPER_BLACK">
+      <meta name="contextid" content="IDH_PREF_HOTSPOT_FALLOFF">
+      <meta name="contextid" content="IDH_PREF_DEF_PREVIEW">
+      <meta name="contextid" content="IDH_PREF_RENDERER">
+      <meta name="contextid" content="IDH_PREF_RENDER_TERMINATE">
+      <meta name="contextid" content="IDH_PREF_DRAFTRENDERER">
+      <meta name="topic-type" content="concept">
+      <title>渲染首选项</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5F506D3B-BC0F-4605-8EE5-A294543C0C1F"></a><div class="head">
+            <h1> 渲染首选项</h1>
+         </div>
+         <p class="blurb">在“首选项设置”对话框的“渲染”面板上，可以设置用于渲染的选项，如渲染场景中环境光的默认颜色。有很多选择可以重新指定用于产品级渲染和草图级渲染的渲染器。 </p><a name="UL_19814AE2093B4817B1FE98461F022361"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-BB30B6C8-5886-41FA-A211-99C415810E24">默认菜单：“自定义”菜单  <img src="../images/ac.menuaro.gif"> “首选项” <img src="../images/ac.menuaro.gif"> “首选项设置”对话框  <img src="../images/ac.menuaro.gif"> “渲染”选项卡</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-3699779E-A20F-4065-89F5-6708D8412A84">Alt 菜单：“自定义”菜单  <img src="../images/ac.menuaro.gif"> “自定义” <img src="../images/ac.menuaro.gif"> “首选项” <img src="../images/ac.menuaro.gif"> “首选项设置”对话框  <img src="../images/ac.menuaro.gif"> “渲染”选项卡</span> 
+            </li>
+         </ul>
+         <div><a name="WS1A9193826455F5FF-4F542F6211C79DEA861C1E"></a><div class="note-note"><span class="label label-target-language">注意:</span>位图页面设置始终处于活动状态，并且可进行自动管理。 
+            </div>
+         </div>
+         <div class="section"><a name="WSF742DAB041063133-5029F504112A1CE7DBD-7FD5"></a> 
+            <h2><a name="GUID-92554B34-0E68-4137-8927-E0C2EF5455AF"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900410E5"></a><div class="figure-anchor"><img src="../images/GUID-8F429D94-CC1C-4DE7-9151-C227CF7D2D26-low.png"></div>  <a name="GUID-4F016FE9-B3F7-4725-A8D9-80704C4BB4D5"></a><div class="dl_section"><a name="GUID-30400B0E-A436-4657-A8C8-771F8E955856"></a><p class="title"><a name="GUID-7F237F1B-02E8-4EB2-B182-B7C940669ACB"></a>“视频颜色检查”组
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-54E5"></a>一些像素颜色在安全 <span class="char_link"><a href="GUID-A35B5A04-D6A4-410E-B472-661934A40D01.htm">NTSC</a></span> 或 <span class="char_link"><a href="GUID-4367EC8C-195F-4988-AE3E-3347CF4C2247.htm">PAL</a></span> 阈值范围之外。您可以选择进行标记或修改，使其成为可接受的值。 
+               </p><a name="UL_8D46FCB380A047DDB541707CBF56A9CF"></a><ul>
+                  <li><em class="strong">以黑色标记</em>用黑色标记所有非法像素，以显示图像是非法的。此模式可以指导您如何设定正确的颜色，而不是只依靠“缩放”选项。“缩放”选项可以强制颜色值出现自然的不连续性。在某些情况下，这种不连续性将造成出现<span class="char_link"><a href="GUID-BA56C252-4608-43F1-A10B-03F8BF36C834.htm">锯齿</a></span>。 
+                  </li>
+                  <li><em class="strong">缩放亮度</em>对亮度进行缩放，以使颜色位于范围内，并保持饱和度。这样做通常会使非法区域比其本色更暗。 
+                  </li>
+                  <li><em class="strong">缩放饱和度</em>对色度进行缩放，以使颜色位于范围内，并保持饱和度。由于此选项可以保持像素的亮度级别与未缩放的像素完全相同，因此是两种缩放方法中更为实用的一种。 
+                  </li>
+               </ul>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E36F5"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54E1"></a>NTSC/PAL</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14DA"></a> 决定视频颜色检查的标准。请参见 <span class="char_link"><a href="GUID-A35B5A04-D6A4-410E-B472-661934A40D01.htm">NTSC（词汇表）</a></span>和 <span class="char_link"><a href="GUID-4367EC8C-195F-4988-AE3E-3347CF4C2247.htm">PAL（词汇表）</a></span>。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-F4D2DC83-2E52-4DC7-BE88-8C7668BEC5A4"></a><p class="title"><a name="GUID-00E7BF58-C513-4745-A890-BD8A6CB149BE"></a>“输出抖动”组
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-54E0"></a>设置所有文件类型的输出<span class="char_link"><a href="GUID-FCC0BEC9-7247-46B9-9ECA-503F76CC4111.htm">抖动</a></span>。 
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E36F6"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54DF"></a>真彩色</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14D9"></a> 切换任何真彩色输出设备的抖动。对于 24 位作品，启用真彩色。对于调色板颜色，禁用真彩色。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E36F7"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54DE"></a>调色板颜色</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14D8"></a> 启用或禁用任何 8 位调色板颜色设备的抖动。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-AD0BC04A-F504-4E9E-8D7F-9831D7C5B68E"></a><p class="title"><a name="GUID-FCC90902-DA6E-4E71-8E6F-D59EF9D15EAC"></a>“场顺序”组
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E36F8"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54DD"></a>奇数/偶数</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14D7"></a> 当在“渲染器设置”对话框上启用“渲染为场”时，选择渲染图像的场顺序。一些视频设备要求偶数场排在第一位，其他视频设备要求将奇数场排在第一位。确定视频设备的正确场顺序。如果设备的视频输出出现脉冲或抖动，则可能是由于不正确的<span class="char_link"><a href="GUID-59F11070-BAB4-4C47-82FC-08F04E3061AB.htm">场</a></span>顺序造成的，请尝试更改此参数，并重新渲染动画。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-2DD107F1-7EF2-41D8-986B-51E2B74AE4C0"></a><p class="title"><a name="GUID-FBE2266A-BA45-4CD2-9506-7E5771C993E7"></a>“超级黑”组
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E36F9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54DC"></a>阈值</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14D6"></a> 保持<span class="char_link"><a href="GUID-C30D1F6F-DC8C-4223-958B-3439E4B4A1CB.htm">超级黑</a></span>阈值超过主要用于照明关键点的某些级别。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-C9F5E091-151B-4266-9271-BF90B99F882D"></a><p class="title"><a name="GUID-481B658C-E11F-420F-A919-C7F27A2CC3FE"></a>“聚光区/衰减区”组
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E36FA"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54DB"></a>分隔角度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14D5"></a> 以微调器定义的角差（度数）锁定聚光灯<span class="char_link"><a href="GUID-22EC8278-A210-4FB7-843C-5EC20FE4DB0C.htm">聚光区</a></span>和<span class="char_link"><a href="GUID-22EC8278-A210-4FB7-843C-5EC20FE4DB0C.htm">衰减区</a></span>圆锥体。此选项可以约束聚光区角度，以便其与衰减区不同，从而造成锯齿缺陷。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-95C5A3BC-300C-4357-91F5-D2E2EC9B021F"></a><p class="title"><a name="GUID-0FE8A98D-01E2-4307-B3CD-2014A542FA67"></a>“默认环境灯光颜色”组
+               </p>
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-54D7"></a>单击色样可更改渲染的默认<span class="char_link"><a href="GUID-1E2F3E07-4FD7-4DC5-B44F-0E4F917EB97F.htm">环境光</a></span>颜色。此设置定义了场景中所渲染阴影最暗的颜色。 
+               </p>
+            </div>
+            <div class="dl_section"><a name="GUID-F00735DF-EC78-4EB1-98EF-527713E567E8"></a><p class="title"><a name="GUID-A0814257-762F-42D3-BEAC-AD0E65CD67EA"></a>“输出文件序列”组
+               </p>
+               <dl>
+                  <dt><a name="GUID-F92532B9-191E-4767-8919-D360E3F70323"></a><span class="term"><a name="GUID-915AA95E-AC90-4DF9-9D3F-673DCD6D93C5"></a>第 N 个序列编号</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-75756E61-A4F1-479B-8E04-DA53A4E23E24"></a>指定使用除 1 以外的帧步长值生成的输出帧文件是按顺序编号（启用）还是按其真正的帧编号排序（禁用）。 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-34605853-7D24-4391-B80C-437CE3838332"></a><p class="title"><a name="GUID-12501824-43EB-4644-8644-87F78DF13C2D"></a>“背景”组
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E36FB"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54DA"></a>不与背景之间进行抗锯齿处理</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14D4"></a> 确保渲染几何体的边缘不与背景之间进行抗锯齿处理。几何体的内部仍然需要抗锯齿处理。除非您要为游戏开发创建“精灵”或需要特殊的合成技术，否则禁用此控件，因为启用后将不渲染背景。在这些情况下，启用此选项有助于避免在几何体的轮廓上产生 alpha 抗锯齿。默认设置为禁用状态。
+                        
+                        <div><a name="WS73099CC142F487551051018113CCCDB767-928"></a><div class="note-note"><span class="label label-target-language">注意:</span>启用“不与背景之间进行抗锯齿处理”时，仅对黑色背景进行渲染。<em class="mild"></em> 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E36FC"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54D9"></a>过滤背景</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14D3"></a> 控制渲染器的抗锯齿过滤是否会对背景图像造成影响。有关过滤背景和抗锯齿的详细信息，请参见<span class="char_link"><a href="GUID-0ABE24E1-E11C-475D-A403-19A5E4119F09.htm">“默认扫描线渲染器”卷展栏</a></span>中的“图版匹配/MAX R2.5/VIZ R2 过滤器类型”。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E36FD"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54D8"></a>使用环境 Alpha</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14D2"></a> 在为渲染图像创建 alpha 时，控制渲染器是否使用环境贴图的 alpha 通道。禁用该选项，背景会显示为透明。启用该选项，结果图像的 Alpha 是场景和图像的 Alpha 的组合。 
+                        <div><a name="WS73099CC142F4875517F3D58115275FD1CB-5938"></a><div class="note-note"><span class="label label-target-language">注意:</span>在其他程序中（如 Photoshop）进行合成时，仅支持带有 Alpha 通道的背景图像或黑色背景。 
+                           </div>
+                        </div> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-4249D747-D87C-422D-8007-61505644C26D"></a><p class="title"><a name="GUID-1A5BC00C-2F8C-42C8-8229-43527AF0C94E"></a>“渲染终止警报”组
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E36FF"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54D5"></a>发出嘟嘟声</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14D0"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875400D"></a>渲染完成时发出嘟嘟声。您可以设置频率和持续时间。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E3700"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54D4"></a>播放声音</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14CF"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA875400E"></a>渲染完成时播放声音文件。 
+                        </p> 
+                        <p><a name="GUID-103CF8FE-8580-4F46-8439-B8C1D1C43B3C"></a><em class="strong">选择声音</em>打开“打开声音”浏览器对话框，使用该浏览器选择一个声音文件。可以使用“打开声音”对话框中的“播放”按钮测试声音文件。按 <img src="../images/GUID-2A9D6F33-E77A-4D09-9D6F-B574BDC24FC5-low.png"> 键可关闭声音。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-E8192816-D330-4C28-9301-476202549A08"></a><p class="title"><a name="GUID-E7273124-D941-4C6C-A3C9-FE8572F391F9"></a>“消息”组
+               </p>
+               <p><a name="WS1A9193826455F5FFF0124D0128D193D50A74DF"></a>该组中的选项也在<span class="char_link"><a href="GUID-0755E474-8D3F-43CF-BCD1-05373F3E41B4.htm">“渲染消息窗口”右键单击菜单</a></span>上提供（“出错时打开”首选项也在此窗口本身上提供）。在此处更改某一首选项后，会更改其在右键单击菜单上的状态，反之亦然。 
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E3759"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-543F"></a>出错时打开消息窗口</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-147A"></a> 只要渲染器检测到错误，就会生成错误消息。启用此选项时，将显示“消息”窗口，错误信息出现在窗口上。默认设置为启用。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E375A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-543E"></a>显示/记录信息消息</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1479"></a> 启用此选项之后，将在“消息”窗口中显示说明性消息。默认设置为禁用状态。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E375B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-543D"></a>显示/记录进度消息</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1478"></a> 启用该选项之后，则在“消息”窗口中显示进度消息。默认设置为禁用状态。 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E375C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-543C"></a>记录调试消息（到文件中）</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1477"></a> 启用该选项之后，如果已指定日志文件，则可以将调试消息写入日志文件。默认设置为禁用状态。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-543B"></a>在“消息”窗口中永远不会显示调试消息。渲染器会生成大量消息，这样使窗口难以显示全部消息。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E375D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-543A"></a>将消息写入文件</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-1476"></a> 启用此选项时，生成<span class="char_link"><a href="GUID-1FA8B531-DF85-42C1-B960-EC7A9C8D0F4E.htm">日志文件</a></span>。默认设置为禁用状态。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-5439"></a>除非启用“将消息写入文件”，否则其他日志文件选项不可用： 
+                        </p> <a name="WS1A9193826455F5FFBA679E112A6A190041148"></a><ul>
+                           <li> <em class="strong">追加到文件中</em>启用该选项之后，可将消息追加到现有文件中。禁用该选项之后（或如果找不到已命名的文件），则只有新消息才可以写入到文件中。默认设置为禁用状态。 
+                           </li>
+                           <li> <em class="strong">文件</em>单击可显示一个文件对话框，可以在此选择 <em class="mild">.log</em> 文件的名称和位置。 
+                           </li>
+                           <li> <em class="strong">文件名字段</em>指定 log 文件之后，此字段显示其名称和路径。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-FFB20A7F-8F95-4BE2-83DD-916802B6D52A"></a><p class="title"><a name="GUID-FAD8BC8E-47A0-4C86-9B72-AB1DF5842700"></a>“GBuffer 层”组
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E3702"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54D2"></a>最大数目</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14CD"></a> 限制在渲染期间存储在 G 缓冲区中的层数。默认值为 10。范围为 1 至 999。 
+                        <p><a name="WS1A9193826455F5FF103859C11318F51BDD-54D1"></a>内存要求可以对限制 G 缓冲区层的数量进行控制。用于合成的 RLA 和 RLF 图像格式可以存储很多 G 缓冲区，其中包含对象 Z 缓冲区信息、材质 ID、透明度等等。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-C6611DCE-9029-4AE4-AFB3-D2CD1BB19093"></a><p class="title"><a name="GUID-1BCE47F3-DC28-47A5-8CB5-7DBC37B925EB"></a>“多线程”组
+               </p>
+               <dl>
+                  <dt><a name="WS73099CC142F48755-1257E12111BF108800E3703"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-54D0"></a>启用</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS73099CC142F4875546792D6511E39D97277-14CC"></a> 使 <span class="charspan-msgph">3ds Max</span> 将渲染任务视为单独的线程处理。此选项适用于多处理器系统。计算机中的每个处理器处理不同的线程，从而不仅可以全面利用可用的处理功能，而且可以加快渲染到最高级别的速度。禁用此选项后，<span class="charspan-msgph">3ds Max</span> 将渲染任务视为单个处理任务，并且不会再进行细分。 
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

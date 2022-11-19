@@ -1,0 +1,111 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-F8BA7299-4F01-478C-9799-AF568489F68B">
+      <meta name="description" content="介绍 MassFX 界面中使用的一些术语。">
+      <meta name="indexterm" content="MassFX: 词汇表">
+      <meta name="topic-type" content="concept">
+      <title>MassFX 词汇表</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-F8BA7299-4F01-478C-9799-AF568489F68B"></a><div class="head">
+            <h1>MassFX 词汇表</h1>
+         </div>
+         <p class="blurb"> 介绍 MassFX 界面中使用的一些术语。 </p>
+         <div class="bodyReference"><a name="WSC85FF3233F59DD9D30D3DC1012A68A4745F-7FFA"></a><dl>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6286"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6285"></a>凹面</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6284"></a> 向内弯曲或凸出的网格。高尔夫球是凹面网格的一个示例，圆环也是。 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6282"></a>动力学和运动学刚体必须使用一个或多个凸面外壳（请参见<span class="char_link"><a href="GUID-2A6CADAE-BD3D-4A2F-AB95-82097439A044.htm#WS1A9193826455F5FF-6EFBC91312A619575B8-6714">凹面</a></span>）作为物理图形，而静态刚体可以使用凹面网格（请参见<span class="char_link"><a href="GUID-2A6CADAE-BD3D-4A2F-AB95-82097439A044.htm#SECTION_B59D7390CDD1440C814A32EFD9CBEECE">原始</a></span>）进行模拟。有关详细信息，请参见<span class="char_link"><a href="GUID-B0C87F87-6E4B-41C4-B0EB-94ACE223E9C9.htm#SECTION_A684AFC15E75429D9C36A08E71B41E5A">创建刚体</a></span>。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6281"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6280"></a>约束</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-627F"></a> 连接两个刚体的对象，用于控制其移动和/或旋转。有关详细信息，请参见<span class="char_link"><a href="GUID-DBA71AAA-3506-4BB2-87B8-77D7DF863096.htm">约束物理对象</a></span>和 <span class="char_link"><a href="GUID-A089EB2B-45A1-4A6B-8B06-221A75267881.htm">MassFX 约束辅助对象</a></span>。 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-627D"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-627C"></a>凸面</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-627B"></a> 从不向内弯曲或凸出的网格。球体和长方体是凸面网格的简单示例。动力学和运动学刚体必须使用一个或多个凸面外壳作为物理图形，而静态刚体可以使用凹面（原始）网格进行模拟。有关详细信息，请参见<span class="char_link"><a href="GUID-E8ED96F1-1F64-4EE3-944C-586B70CE0C54.htm">刚体概述</a></span>。 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6276"></a>默认情况下，MassFX 为您创建的每个刚体使用凸面物理图形，因为它可以用于所有刚体类型且大致类似于原始图形网格。 
+                     </p>
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6275"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6274"></a>动态</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6273"></a> 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6272"></a>动力学刚体与真实世界中的对象非常像。它们因重力而下落，可以撞击其他对象，也可以被其他对象推挤。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6271"></a>物理图形通过模拟来移动，且 <span class="charspan-msgph">3ds Max</span> 中的图形网格会相应地进行更新。不能将实际的凹面物理图形用于动力学对象，但通过凹面物理图形，可以使用多个凸面物理图形来自动模拟凹面图形。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6270"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-626F"></a>图形网格</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-626E"></a> 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-626D"></a>场景中对象的视觉表示。与物理图形相对。有关详细信息，请参见<span class="char_link"><a href="GUID-E8ED96F1-1F64-4EE3-944C-586B70CE0C54.htm#WSC85FF3233F59DD9D638EAD5212A68A47868-7FF5">物理图形与图形</a></span>。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-626C"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-626B"></a>初始变换</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-626A"></a> 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6269"></a>在模拟开始时，动力学刚体的位置和方向。有关详细信息，请参见<span class="char_link"><a href="GUID-FD410931-487A-4BB5-AD81-270D8A169FE3.htm#GUID-FB495FD4-E8FF-488A-85F7-5325C47A9D97">捕获变换</a></span>。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6268"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6267"></a>运动学</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6266"></a> 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6265"></a>运动学对象是由一系列动画移动的木偶。它们不会因重力而下落。它们可影响所遇到的任何动力学对象的运动，但不能被其他对象推挤。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6264"></a>运动学对象的图形网格受 <span class="charspan-msgph">3ds Max</span> 控制（无论是否设置动画），进而控制表示模拟中对象的物理图形的变换。您无法对运动学对象使用凹面物理图形，但通过“凹面”选项能够以凹面网格的形式使用多个物理图形。 
+                     </p> 
+                     <p><a name="GUID-0519F288-C967-4317-86C9-EFA0EE4BF651"></a>通过“直到帧”设置，可以在设置动画期间随时将运动学对象转换为动力学对象，这些设置位于“刚体属性”卷展栏和“MassFX 工具”对话框的“多对象编辑器”面板上。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-625F"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-625E"></a>物理图形</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-625D"></a> 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-625C"></a>MassFX 模拟中刚体或布料对象的未渲染物理表示。与其对应的图形网格相比，通常物理图形不太精细。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6257"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6256"></a>刚体</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6255"></a> 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6254"></a>在物理模拟中其形状和大小无法更改的对象。如果在场景中创建圆柱体刚体，它可以反弹和四处滑动，但无论对其施加多大的力都不会弯曲或折断。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-625B"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-625A"></a>碎布玩偶</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6259"></a> 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6258"></a>刚体和约束的集合，应用于角色装备的骨骼和关节。有关详细信息，请参见<span class="char_link"><a href="GUID-2FC448F8-68FA-484A-B076-0F14A598201A.htm">碎布玩偶</a></span>和 <span class="char_link"><a href="GUID-DEA0214B-B371-45CD-B773-FDB18AFE6D3A.htm">MassFX 碎布玩偶</a></span>。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6253"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6252"></a>睡眠</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6251"></a> 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-6250"></a>在此状态下刚体不会移动，除非被其他未处于睡眠状态的刚体所碰撞。这有助于在刚体“变为静止状态”时防止刚体随机缓慢移动，或者在开始模拟时应用，可以使刚体悬浮而不受重力影响。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-624F"></a><span class="term"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-624E"></a>静态</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-624D"></a> 
+                     <p><a name="WS1A9193826455F5FF-6EFBC91312A619575B8-624C"></a>静态刚体类型类似于运动学类型，不同之处在于无法为前者设置动画。动力学刚体可以撞击静态刚体并反弹，但静态刚体绝不会移动。静态刚体不但可以用于优化性能，而且也可以为静态刚体使用凹面网格。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

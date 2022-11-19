@@ -1,0 +1,105 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-CE7FE1D3-E8CA-4AEA-AB49-AC02924DE920">
+      <meta name="description" content="“显示脚本”操作符是用于显示与视口中每个粒子关联的数据的诊断工具。对于事件中操作符的每次引用，您可以显示粒子 ID、提供的标签和单个数据：浮点、整数或向量。显示的数据由位于事件中“显示脚本”之前的“脚本”操作符生成。">
+      <meta name="indexterm" content="粒子: 在视口中显示脚本数据">
+      <meta name="indexterm" content="视口显示, 粒子数据">
+      <meta name="indexterm" content="显示: 显示脚本操作符（粒子流）">
+      <meta name="indexterm" content="粒子流操作符: 显示脚本">
+      <meta name="topic-type" content="concept">
+      <title>显示脚本操作符</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-CE7FE1D3-E8CA-4AEA-AB49-AC02924DE920"></a><div class="head">
+            <h1>显示脚本操作符</h1>
+         </div>
+         <p class="blurb">“显示脚本”操作符是用于显示与视口中每个粒子关联的数据的诊断工具。对于事件中操作符的每次引用，您可以显示粒子 ID、提供的标签和单个数据：浮点、整数或向量。显示的数据由位于事件中“显示脚本”之前的<span class="char_link"><a href="GUID-B8E91618-A9E9-423D-8F1C-A83CFDAA5449.htm">“脚本”操作符</a></span>生成。 
+         </p>
+         <div class="bodyReference"><a name="GUID-F919D25A-7010-4A6D-99BF-CFE5EF9C2DCA"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-2C30C256-5470-4CF0-9AC2-792B982830D8">粒子视图  <img src="../images/ac.menuaro.gif">  在某个事件中单击“显示脚本”，或将“显示脚本”操作符添加到粒子系统中，然后选择它。</span> 
+               </li>
+            </ul>
+            <p><a name="GUID-0ED98A9C-95F2-4CED-A08A-5E6879283EEC"></a>如果需要为每个粒子显示多个不同的数据（例如，速度和与对象的距离），则可以在事件中多次使用操作符。您可以从粒子的三个维度上指定显示的数据的屏幕偏移。然后可以选择是否要显示所有粒子的数据还是某些粒子的数据。 
+            </p>
+            <div><a name="GUID-9D0F3690-352A-4469-BB0F-7DB9848D74EB"></a><div class="note-note"><span class="label label-target-language">注意:</span>“显示脚本”操作符不能替换“显示”操作符。在事件中同时使用“显示”操作符和此操作符。 
+               </div>
+            </div>
+            <div class="section"><a name="GUID-6893CA45-12EB-4B7F-BD2C-B79E67F8E054"></a> 
+               <h2><a name="GUID-DDAC0C91-585B-44DF-9D33-596DF5B3618A"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900424C6"></a><div class="figure-anchor"><img src="../images/GUID-4761F286-C806-4C08-90C1-DA803B368876-low.png"></div>  <a name="GUID-BC44B066-D5D4-48E1-9F6B-B5B33AABB3CF"></a><dl>
+                  <dt><a name="GUID-450A25C0-D55F-443D-89F4-733E1D043810"></a><span class="term"><a name="GUID-7F23092B-5940-468E-863F-5BF01C46BEC7"></a>显示粒子 ID</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-FDF12E52-D919-48FE-AF43-ADF33460C1B0"></a> 启用该项后，在视口中就可以看到每个粒子的唯一索引编号。粒子是按它们的产生顺序编号的，第一个产生的粒子编号为 1，依此类推。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-D8EC79A8-6D03-4B83-81D3-1E4AD61F5518"></a><span class="term"><a name="GUID-24D91865-5F1F-49F5-8783-85CD0C6FA006"></a>[色样]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-FEFC9461-460E-453F-938E-F2B2CCC83CF9"></a> 显示用于显示数据的颜色。软件为每个添加到系统的“显示脚本”操作符随机选择不同的颜色。若要更改颜色，请单击色样并使用“颜色选择器”对话框来选择新颜色。 
+                        <div><a name="GUID-CA9BE5D5-7337-4AC3-A5B5-C3F36404459F"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果发射器已选定，数据将显示为白色。 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-7181C818-3EA8-4B39-980E-18D62392EE87"></a><span class="term"><a name="GUID-069F108C-BE1C-4C72-A39E-EF0D7ED0FB1C"></a>添加前缀</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-ACB56627-D843-4BEA-A066-3BB955E85FA8"></a> 启用时，将显示视口中复选框右侧、数据左侧的编辑框中的文本。 
+                        <p><a name="GUID-AC37E56A-C3A4-428A-9797-3595A401D328"></a>若要指定前缀文字，请单击“添加前缀”右侧的框，并从键盘输入文字。不需要在文字后面附加空间；操作符会自动从数据偏移前缀。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-E91262AE-0684-4E9F-B179-587922B79F10"></a><span class="term"><a name="GUID-F89E1AB3-775F-48B0-90F9-ECB6C7961B49"></a>显示脚本数据</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-AB2E92CA-DA27-42E2-A274-4D73BCE73DF3"></a> 选择要显示在视口中的脚本数据的类型。可供选择的有：浮点、整数、向量 X、向量 Y、向量 Z 和向量。 
+                        <p><a name="GUID-F64E3307-F8F1-48D8-AF51-00FABD1349E4"></a>“显示脚本”操作符从事件中其上方的“脚本”操作符获取显示的数据。与“脚本”操作符关联的脚本应为适当的变量指定要显示的值。例如，如果“显示脚本”操作符的“显示脚本数据”设置为“浮点”，并且其上方的“脚本”操作符包含以下指定（请注意，这不是一个完整的脚本）：
+                           
+                        </p> 
+                        <div class="codeBlock"><pre><span class="codeLiteral">pCont.particleFloat = length(pCont.particleSpeed)*4800</span></pre></div> 
+                        <p><a name="GUID-58DFE26D-3106-46D2-B9E9-677F5CF59D0A"></a>然后“显示脚本”操作符将显示粒子速度（以每秒的单位数为单位）。如果包含相关指定的多个“脚本”操作符位于事件中的“显示脚本”操作符之前，则后者将显示其上方的最后一个脚本的最后指定的结果。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-F0B20ACD-9FFD-4F68-A691-8A3643D3A179"></a><span class="term"><a name="GUID-0A741D55-9F5E-461B-9C61-A6FC340BBD8D"></a>“屏幕偏移”组</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-09BC8E13-877A-49C8-8E1F-0C0F933FE0EF"></a> - 使用这些值可相对于粒子位置调整脚本数据的定位（以像素表示）。通过使用不同的偏移值和多个“脚本”和“显示脚本”操作符，您可以一次显示多个数据（位置、速度、比例等）。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-3B0F1D0D-0D84-4150-B938-BD48627CFD74"></a><span class="term"><a name="GUID-13420492-64BF-4F2F-8849-634BE2EBDB84"></a>显示 ID 和数据的位置</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-4BE8EC84-6046-49BA-B5D8-A843076C0B14"></a> 用于为数据显示过滤粒子。这些选项包括： <a name="UL_09546C61EB2F4147A2128E8FE4D20700"></a><ul>
+                           <li> <em class="strong">所有粒子</em>在视口中显示所有粒子的数据。 
+                           </li>
+                           <li> <em class="strong">仅选定粒子</em>仅显示选定粒子的数据。若要选择粒子，请使用“修改”面板 &gt;<span class="char_link"><a href="GUID-89DA4474-E8F4-496F-9339-305D8C8E241E.htm#WSF742DAB0410631331C0DB195112A1CEB6FD-7FB6">“选择”卷展栏</a></span>控件，并使用标准视口选择方法来拾取要查看其数据的粒子。 
+                           </li>
+                           <li> <em class="strong">仅选定组</em>仅显示已选定组的粒子的数据。使用“组选择操作符”按钮指定适用的操作符；这可以是<span class="char_link"><a href="GUID-9E156D76-ED5E-49C9-BAF2-C70945F7038F.htm">组选择</a></span>或<span class="char_link"><a href="GUID-5A502749-9841-4D8C-865F-0194750B79F0.htm">摄影机消隐</a></span>操作符。 
+                              <div><a name="GUID-D7065477-A605-48F9-A6EB-D30B959E00AB"></a><div class="note-tip"><span class="label label-target-language">提示</span>使用“摄影机消隐”操作符，可以仅显示对摄影机可见的粒子的数据。 
+                                 </div>
+                              </div> 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-5FD80881-8FE6-4B1C-AFCE-C3FB59946AC9"></a><span class="term"><a name="GUID-59B78F11-2388-409E-844D-0E03AD31C977"></a>组选择操作符</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-8E19CD0A-88D9-42D4-9D0C-F875B7BAB61C"></a> 针对“仅选定组”选项设置“组选择”操作符（请参见上文）。单击此按钮（默认情况下标为“无”），然后使用打开的对话框选择“组选择”或“摄影机消隐”操作符。随后，操作符的名称出现在该按钮上。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-93812AB0-B806-4639-A5F5-66CE7D55D9DA"></a><span class="term"><a name="GUID-EA85F657-4513-49C9-A9F4-B3476B1CB548"></a>精度</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-4FC475C2-FA7D-48CD-8695-4EDD2EC1CC94"></a> 设置浮点字段中显示的小数的位数。范围从 0 到 8（其中 0 表示没有小数位）。
+                     </div>
+                  </dd>
+               </dl>
+               <div class="dl_section"><a name="GUID-34D9A1B3-B964-4848-939D-6957C5D4C024"></a><p class="title"><a name="GUID-7B698F52-A2FB-495B-BA5C-AB21AE223192"></a>“优先级和执行顺序”组
+                  </p>
+                  <p><a name="GUID-F6527149-2E76-4DAB-9AFB-C858E5B6C384"></a>请参见<span class="char_link"><a href="GUID-F46E863E-BF7C-4F29-BAD2-F91B0080DC80.htm">优先级和执行顺序</a></span>。 
+                  </p>
+               </div> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

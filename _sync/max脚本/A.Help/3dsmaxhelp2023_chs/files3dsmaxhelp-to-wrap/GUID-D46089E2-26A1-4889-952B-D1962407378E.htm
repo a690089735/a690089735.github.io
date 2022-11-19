@@ -1,0 +1,166 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D46089E2-26A1-4889-952B-D1962407378E">
+      <meta name="description" content="自由形式变形 (FFD) 提供了一种通过调整晶格的控制点使对象发生变形的方法。控制点相对原始晶格源体积的偏移位置会引起受影响对象的扭曲。“FFD（长方体）”空间扭曲是一种类似于原始 FFD 修改器的长方体形状的晶格 FFD 对象。该 FFD 既可以作为一种对象修改器也可以作为一种空间扭曲。关于对象修改器版本的信息，请参见 FFD（长方体/圆柱体）修改器。">
+      <meta name="indexterm" content="几何/可变形空间扭曲: FFD（长方体）">
+      <meta name="indexterm" content="FFD（长方体）空间扭曲">
+      <meta name="indexterm" content="空间扭曲: FFD（长方体）">
+      <meta name="indexterm" content="FFD: FFD（长方体）空间扭曲">
+      <meta name="indexterm" content="自由形式变形 (FFD): 长方体">
+      <meta name="contextid" content="FFD_BOX.OBJECTS_SPACE_WARPS">
+      <meta name="contextid" content="OBJECTS SPACE WARPS-FFD_BOX">
+      <meta name="topic-type" content="concept">
+      <title>FFD（长方体）空间扭曲</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D46089E2-26A1-4889-952B-D1962407378E"></a><div class="head">
+            <h1>FFD（长方体）空间扭曲</h1>
+         </div>
+         <p class="blurb">自由形式变形 (FFD) 提供了一种通过调整晶格的控制点使对象发生变形的方法。控制点相对原始晶格源体积的偏移位置会引起受影响对象的扭曲。“FFD（长方体）”空间扭曲是一种类似于原始 FFD 修改器的长方体形状的晶格 FFD 对象。该 FFD 既可以作为一种对象修改器也可以作为一种空间扭曲。关于对象修改器版本的信息，请参见
+            <span class="char_link"><a href="GUID-94D1584C-C3FE-4C18-8138-A94AB3DDE088.htm">FFD（长方体/圆柱体）修改器</a></span>。 
+         </p>
+         <div class="bodyReference"><a name="UL_67BDAF74C3E340999CF73657CA100039"></a><ul>
+               <li> <span class="MenuCascade" id="GUID-15EB78A6-7248-47E0-8FB7-21BDA7A0C48F"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-08A5CE7E-9160-4297-B29A-88B3B570B996-low.png">（空间扭曲） <img src="../images/ac.menuaro.gif"> “几何/可变形” <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “FFD(长方体)”按钮</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-EF6F0B35-7554-49E0-8579-6A13AF913109">默认菜单：“创建”菜单  <img src="../images/ac.menuaro.gif"> “空间扭曲” <img src="../images/ac.menuaro.gif"> “几何/可变形” <img src="../images/ac.menuaro.gif"> “FFD(长方体)”</span> 
+               </li>
+               <li> <span class="MenuCascade" id="GUID-9226802E-72B8-4F3E-AA8D-C0F92FB28B94">Alt 菜单：“对象”菜单  <img src="../images/ac.menuaro.gif"> “空间扭曲” <img src="../images/ac.menuaro.gif"> “FFD(长方体)”</span> 
+               </li>
+            </ul>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-65EA"></a>FFD 空间扭曲作为单独对象的创建方法和标准基本体的创建方法类似：通过在视口中拖动鼠标。结果生成一个控制点晶格。FFD 修改器的源晶格和在堆栈中将其指定到的几何体相匹配。这可以是整个对象，也可以是面或顶点的子对象选择。 
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-65E9"></a>因为 FFD 空间扭曲是单独的对象，所以它们在创建参数中有自己的可调节尺寸参数。 
+            </p>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-65E8"></a>您可以为空间扭曲对象应用对象修改器。例如，对空间扭曲 FFD 使用“链接变换”修改器。 
+            </p><a name="WS1A9193826455F5FFBA679E112A6A19004227A"></a><div class="figure-anchor"><img src="../images/GUID-ED1EE62D-95EC-44E9-840F-897BABCE3B4D-low.png"></div><a name="WS1A9193826455F5FFBA679E112A6A19004227B"></a><div class="figure-anchor"><img src="../images/GUID-91B4570F-BF90-492A-A71D-F895E52B8F0B-low.png"><p class="figure-title">对象和被 FFD 晶格包围的对象</p>
+            </div><a name="WS1A9193826455F5FFBA679E112A6A19004227C"></a><div class="figure-anchor"><img src="../images/GUID-7F3FEB77-8D0A-48BE-84DE-7BED75C33095-low.png"></div><a name="WS1A9193826455F5FFBA679E112A6A19004227D"></a><div class="figure-anchor"><img src="../images/GUID-656125A3-4C97-443F-A624-671116638089-low.png"><p class="figure-title">移动晶格中的控制点使对象变形。</p>
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-65E7"></a> 
+               <h2><a name="GUID-31F0E43C-2FC2-482D-BF96-A2F91999C87F"></a>过程
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004227E"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004227F"></a>要使用“FFD（长方体）”空间扭曲，请执行以下操作：
+               </p>
+               <ol type="1" start="1">
+                  <li> 在 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板上，单击 <img src="../images/GUID-08A5CE7E-9160-4297-B29A-88B3B570B996-low.png">（空间扭曲）。从列表中选择“几何/可变形”，再在“对象类型”卷展栏上单击“FFD（长方体）”。 
+                  </li>
+                  <li>在视口中拖动以创建基础。释放鼠标按钮，然后移动鼠标以定义 FFD 晶格的高度。单击以完成晶格。 </li>
+                  <li> <img src="../images/GUID-B39DD8B3-8EAE-4A83-9501-16A2E9D3F9A5-low.png"> 将晶格和需要变形的对象绑定在一起。 
+                  </li>
+                  <li>确定晶格相对于对象的位置。 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-65E6"></a>如果要使晶格处于对象外面，打开“所有顶点”选项。要只影响晶格内部的顶点，选择“仅在体内”，从而定位晶格。 
+                     </p> 
+                  </li>
+                  <li>在所显示的 <img src="../images/GUID-00A9C3E8-5814-4255-A1E2-8DB5CFC5D439-low.png"> 修改器堆栈中，选择“控制点”作为 FFD（长方体）的子对象层级。 
+                  </li>
+                  <li>调整控制点。 
+                     <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FF2"></a><div class="note-note"><span class="label label-target-language">注意:</span>FFD 修改器的扭曲效果是以控制点距其在源体积中的原始位置的位置偏移为基础的。如果不移动控制点，就不会影响目标对象。使用 FFD 的空间扭曲形式时要注意这一点。 
+                        </div>
+                     </div> 
+                  </li>
+               </ol> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-65E5"></a>如果使用的是“变形”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“所有顶点”选项，一旦扭曲了对象，您可以设置“衰减”值，基于距离调整晶格影响对象的程度。如果为晶格设置了接近或远离目标对象的动画，该方法特别有效。当“衰减”设置为 0 时，无论距离远近，所有顶点都会受影响。 
+               </p> 
+               <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FF1"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果位于堆栈中 FFD 修改器的基本参数层级，“显示最终结果”按钮为关闭状态且弹簧被载入，与“编辑网格”修改器中的情况类似。 
+                  </div>
+               </div> 
+            </div>
+            <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-65E4"></a> 
+               <h2><a name="GUID-D5863A72-04AB-49E4-B1AC-1F8C4376E2E5"></a>界面
+               </h2> <a name="WS1A9193826455F5FFBA679E112A6A190042280"></a><div class="figure-anchor"><img src="../images/GUID-D4A00A44-6327-47E4-8EF1-34ECA8316F2E-low.png"></div>  
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-65E3"></a>该卷展栏用来设置晶格的大小和分辨率，以及显示和变形的方式。 
+               </p> <a name="GUID-DF54A278-DB95-41A4-9839-0A9DE329FCE5"></a><div class="dl_section"><a name="GUID-AEAC0271-2713-4924-8353-55E22E8B2913"></a><p class="title"><a name="GUID-A6F7FF53-AF6D-45EF-844E-15538AD4F83B"></a>“尺寸”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-65E2"></a>这些选项用来调整源体积的单位尺寸，并指定晶格中控制点的数目。请注意点尺寸显示在“堆栈”列表中修改器名称的旁边。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65FD"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-65E1"></a>长度、宽度、高度</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6704"></a> 这 3 个微调器用来显示和调节晶格的长度、宽度和高度。要创建空间扭曲，请用和创建标准长方基本体相同的方法拖动鼠标。请注意在 FFD 的对象修改器中没有这些微调器。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65FC"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-65E0"></a>[控制点显示]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6703"></a> 显示晶格中当前的控制点数目（例如：4x4x4）。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65FB"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-65DF"></a>设置点数</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6702"></a> 显示一个对话框，其中包含 3 个标为“长度”、“宽度”和“高度”的微调器以及“确定/取消”按钮。指定晶格中所需控制点数目，然后单击“确定”以进行更改。 
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-5FF0"></a><div class="note-note"><span class="label label-target-language">注意:</span>请在调整晶格控制点的位置之前更改尺寸。当使用该对话框更改控制点的数目时，您之前对控制点所做的任何调整都会丢失；不过，您可以撤消使用该对话框的操作。 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-CC9276D8-D24A-4686-80D8-C0A58CDA1F42"></a><p class="title"><a name="GUID-35425A22-2881-497A-9F5C-03A26A336F2B"></a>“显示”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-65DE"></a>这些选项会影响 FFD 在视口中的显示。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65FA"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-65DD"></a>晶格</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6701"></a> 打开该选项时，会绘制连接控制点的线条以形成栅格。虽然绘制这些额外的线条会使视口显得混乱，但它们可以使晶格形象化。 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65F9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-65DC"></a>源体积</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-6700"></a> 打开该选项时，控制点和晶格会以未修改的状态显示。当调整源体积以影响位于其内或其外的特定顶点时，该显示很有用。请参见本主题后面的“所有顶点”和“仅在体内”选项。 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-17874992-6A16-4374-BFF3-EA05D89806DD"></a><p class="title"><a name="GUID-63761CB8-C3FC-4A10-B208-4738822A4DAF"></a>“变形”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-65DB"></a>这些选项所提供的控件用来指定哪些顶点受 FFD 影响。 
+                  </p><a name="UL_5725524B64BB4CAB8191DA2B5B0F2665"></a><ul>
+                     <li><em class="strong">仅在体内</em>只有位于源体积内的顶点会变形。源体积外的顶点不受影响。 
+                     </li>
+                     <li><em class="strong">所有顶点</em>所有顶点都会变形，不管它们位于源体积的内部还是外部，具体取决于“衰减”微调器中的数值。体积外的变形是对体积内的变形的延续。远离源晶格的点的变形可能会很严重。 
+                        <p><a name="GUID-BBC397BB-ACC0-4890-8B0C-D2101F7A82B7"></a><em class="strong">衰减</em>该微调器仅在选择“所有顶点”时启用，它决定着 FFD 效果减为零时离晶格的距离。当该微调器设置为 0 时，它实际处于关闭状态，不存在衰减，也就是说，所有顶点无论到晶格的距离远近都会受到影响。“衰减”参数的单位是相对于晶格的大小指定的：衰减值 1
+                           表示那些到晶格的距离为晶格的宽度/长度/高度的点（具体情况取决于点位于晶格的哪一侧）所受的影响降为 0。 
+                        </p> 
+                     </li>
+                  </ul>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65F5"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-65D7"></a>张力/连续性</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-66FC"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752B07"></a>调整变形样条线的张力和连续性。虽然您无法看到 FFD 中的样条线，但晶格和控制点代表着控制样条线的结构。您在调整控制点时，会改变样条线（通过各个点）。样条线使对象的几何结构变形。通过改变样条线的张力和连续性，可以改变它们在对象上的效果。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-69287F6E-272F-4324-85BD-A40D7976C685"></a><p class="title"><a name="GUID-39A9E4E5-5258-4C94-AC23-EE76A92B596D"></a>“选择”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-65D6"></a>这些选项提供了选择控制点的其他方法。您可以切换 3 个按钮的任何组合状态来一次在 1 个、2 个或 3 个维度上选择。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65F4"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-65D5"></a>全部 X、全部 Y、全部 Z</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-66FB"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752B08"></a>当打开其中一个按钮并选择一个控制点时，沿着由该按钮指定的局部维度的所有控制点都会被选中。通过打开 2 个按钮，可以选择两个维度中的所有控制点。 
+                           </p> 
+                           <p><a name="WS1A9193826455F5FF103859C11318F51BDD-65D4"></a></p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF-7C11D46C11CB8605735-65F3"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-65D3"></a>关于</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-66FA"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8752B09"></a>显示版权和许可信息对话框。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div>
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

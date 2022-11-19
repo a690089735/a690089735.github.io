@@ -1,0 +1,153 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-B34D8553-411F-49CB-A6C8-B3F7D5A7A3B6">
+      <meta name="description" content="“MCG 射线到曲面位置和方向约束”命令应用这两种约束，以便根据从一个对象投影到一个或多个网格的射线交点设置另一个对象的位置和方向。与“MCG 射线到曲面变换约束”不同，它不影响缩放。">
+      <meta name="topic-type" content="concept">
+      <title>MCG 射线到曲面位置和方向约束</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-B34D8553-411F-49CB-A6C8-B3F7D5A7A3B6"></a><div class="head">
+            <h1>MCG 射线到曲面位置和方向约束</h1>
+         </div>
+         <p class="blurb">“MCG 射线到曲面位置和方向约束”命令应用这两种约束，以便根据从一个对象投影到一个或多个网格的射线交点设置另一个对象的位置和方向。与“MCG 射线到曲面变换约束”不同，它不影响缩放。 
+            
+         </p><a name="UL_69DD5A98A92B414AADECD11839D497FB"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-13AC77C1-9F8F-4F35-BFE2-97C102A004D9">“动画”菜单  <img src="../images/ac.menuaro.gif"> “MCG 控制器” <img src="../images/ac.menuaro.gif"> “MCG 射线到曲面位置约束”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-694661B2-A699-469C-A1C1-7C8635B80176">“指定控制器”（对象“位置”轨迹） <img src="../images/ac.menuaro.gif"> MCG_rayToSurfacePosition</span> 和 <span class="MenuCascade" id="GUID-80F2249C-8A5D-45B5-91E6-99E0EB28D183">“指定控制器”（对象“旋转”轨迹） <img src="../images/ac.menuaro.gif"> MCG_rayToSurfaceOrientation</span> 
+            </li>
+         </ul><a name="OL_042E03BBC71D4C0FBE51188793465334"></a><ol type="1" start="1">
+            <li>至少准备三个对象： 
+               		  <a name="UL_CE5E6C74DB3540018FAE96A09389DE01"></a><ul>
+                  <li>要约束的对象。 
+                     			 
+                  </li>
+                  <li>要约束到的网格。 
+                     			 
+                  </li>
+                  <li>要充当射线源的对象。 
+                     			 
+                  </li>
+               </ul> 
+            </li>
+            <li>选择要约束的对象。 
+               		
+            </li>
+            <li>选择<span class="MenuCascade" id="GUID-28E67809-43A8-4735-B8AE-723D01F0C7C3">“动画”菜单  <img src="../images/ac.menuaro.gif"> “MCG 控制器” <img src="../images/ac.menuaro.gif"> “MCG 射线到曲面位置约束”</span>。 
+               		
+            </li>
+            <li>单击曲面网格。 
+               		
+            </li>
+            <li>单击射线源对象。 
+               		
+            </li>
+            <li>如果需要，可以使用<span class="MenuCascade" id="GUID-3E0F2F78-AC33-4C1F-A6FC-0A83DC055564">“拾取曲面”</span>添加更多网格曲面。 
+               		
+            </li>
+         </ol>
+         <p><a name="GUID-37520919-5A54-4516-9E74-A618CAFA0DA9"></a> 或者，可以在<span class="MenuCascade" id="GUID-4A2C0803-D457-43C4-81A0-C539A2F3C1EF">“轨迹视图”</span>或<span class="MenuCascade" id="GUID-1EA968FC-0576-4D7E-9917-14BEAB60CCA4">“运动”</span>面板中对象的“位置”和“旋转”轨迹上使用<span class="MenuCascade" id="GUID-2D471002-F2FC-4CC2-AB79-4D0290B8D465">“指定控制器”</span>以手动指定 <span class="MenuCascade" id="GUID-9D127C4B-3E4D-4EF3-8638-E376CBCE4819">MCG_rayToSurfacePosition</span> 和 <span class="MenuCascade" id="GUID-863D79E4-B92C-48D7-8958-E240E5EBE698">MCG_rayToSurfaceOrientation</span>，然后使用<span class="MenuCascade" id="GUID-BD91CEDA-312D-49F4-B180-CEED3D1CAD2C">“拾取曲面”</span>和<span class="MenuCascade" id="GUID-25493768-46AB-45A0-9AAA-417BE244A87D">“射线投影对象”</span>按钮指定适当的对象。 
+            	 
+         </p>
+         <div class="section"><a name="SECTION_2EC103C045E04D918D900D19F3B035D7"></a> 
+            <h2><a name="GUID-A364EC48-257B-4B71-8A3F-9C3A6185A183"></a>界面
+            </h2> 
+            <div class="section"><a name="SECTION_5D55126B1FB0458F89BB5DDFEEB95455"></a> 
+               <h3><a name="GUID-41D49717-1529-4059-94AD-D9C2956DDB0C"></a>射线到曲面位置
+               </h3> 
+               <p><a name="GUID-45B80391-2518-4032-BC59-9EF12A0FDDB3"></a>请参见 <span class="char_link"><a href="GUID-8190DCC3-9A18-43AA-A416-A6D36917453B.htm">MCG 射线到曲面位置约束</a></span>。 
+                  		  
+               </p> 
+            </div> 
+            <div class="section"><a name="SECTION_3E45E313D6D44A1E8FD79EDC476D2289"></a> 
+               <h3><a name="GUID-846A5B18-F5CB-4D31-9E23-33F2F5FC218D"></a>射线到曲面方向
+               </h3> <a name="GUID-38EE8598-43C6-4515-8B34-06AEDE628076"></a><dl><a name="GUID-AFD32035-3013-4015-BB3E-E338FCF704E6"></a><dt><span class="term"><a name="GUID-C7B14399-6D59-49F0-865F-2D5EAC402EA4"></a>射线投影对象 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-B7D38F0F-EBDC-4649-8016-031F5757BFC6"></a> <a name="GUID-3C471CBE-8C4F-45DE-AE63-7A0AA36BC909"></a><dl><a name="GUID-79AD82EE-9A6B-4DD6-8FD9-329BA95DBEC9"></a><dt><span class="term"><a name="GUID-F78912A1-3373-4342-B7D6-2FEE75EAF338"></a> <span class="MenuCascade" id="GUID-9720E9D0-56E4-4485-88AB-7AD067C7C3CB">拾取曲面</span> </span></dt>
+                           <dd>
+                              <div class="definition"><a name="GUID-F627A72B-1B86-46F5-BA2C-C5B5CA571BD1"></a>单击以选择其他网格。 
+                                 						
+                              </div>
+                           </dd><a name="GUID-7CC2F4DA-1FB7-4E1A-B66E-81714F3E1072"></a><dt><span class="term"><a name="GUID-C72E9B41-CDA4-4C1C-B023-DA8815732DEB"></a>[曲面列表] 
+                                 						</span></dt>
+                           <dd>
+                              <div class="definition"><a name="GUID-F10D65C5-0F3E-43ED-8FD2-D3961DA29DD7"></a>列出网格。 
+                                 						
+                              </div>
+                           </dd><a name="GUID-3C17BC02-3FAB-4AF8-8802-127F29EE10EF"></a><dt><span class="term"><a name="GUID-3FBA1495-6CF8-46A4-87E3-21C8C340C151"></a> <span class="MenuCascade" id="GUID-EB5B0255-F684-4AC5-B601-8275F0090E51">删除选定项</span> </span></dt>
+                           <dd>
+                              <div class="definition"><a name="GUID-0FC1001E-26A1-4D65-BF6F-049DF17577D2"></a>在列表中选择对象，然后单击此按钮以移除该对象。 
+                                 						
+                              </div>
+                           </dd>
+                        </dl> 
+                     </div>
+                  </dd><a name="GUID-E9863535-BEE9-46A0-AFF7-4F10A22FC598"></a><dt><span class="term"><a name="GUID-800C3CEA-1C0D-48D1-959D-FDC66FBFD165"></a> <span class="MenuCascade" id="GUID-FBF99137-B0C5-47EA-9017-2E00F8885EF5">射线投影对象</span> </span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-4B4A3E57-53EF-4ECB-B383-A415F39C44B1"></a> <a name="GUID-0D71392F-0050-4458-8CC2-12839EE7DAE9"></a><dl><a name="GUID-BD62B91C-4CE2-49F7-86FD-6A6711A6CC00"></a><dt><span class="term"><a name="GUID-769A8B8C-82BF-41D5-B710-E54FB05607D2"></a> <span class="MenuCascade" id="GUID-0AFE553A-16BD-4AA5-9F79-A5E0C42E8C96">射线投影对象</span> </span></dt>
+                           <dd>
+                              <div class="definition"><a name="GUID-E72D9F04-E763-4249-96A5-1128CF6B40F6"></a>单击此按钮在场景中选择要充当射线源的对象。 
+                                 						
+                              </div>
+                           </dd><a name="GUID-21E2E6D2-C66A-4F6E-ABFE-CBEDFCCEC642"></a><dt><span class="term"><a name="GUID-3F379428-21A6-473F-BCD4-B381DEDE5638"></a> <span class="MenuCascade" id="GUID-05FD41E3-D026-4E1C-83C9-0A560011423A">指向曲面轴</span> </span></dt>
+                           <dd>
+                              <div class="definition"><a name="GUID-0CE46F97-6699-4DA7-ABDE-A7EC76E6CD35"></a>激活此选项后，射线从射线投影对象的中心投射到曲面中心。否则，射线沿着射线投影对象的局部轴之一投射。 
+                                 						
+                              </div>
+                           </dd>
+                        </dl> 
+                     </div>
+                  </dd><a name="GUID-0AABEBE1-2DED-4FC9-A69B-B8E8EAB2976B"></a><dt><span class="term"><a name="GUID-25C4B97D-CA04-4118-9CCD-A5381A212FB8"></a> <span class="MenuCascade" id="GUID-F0397A30-72B6-47C8-84C7-D9DD064E533D">射线轴</span> </span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-B004DD38-0C5D-43D6-A64C-6679660F6AD0"></a>禁用<span class="MenuCascade" id="GUID-361BCC1A-E9DA-42DA-955E-5212E38828E1">“指向曲面轴”</span>时，射线方向将从射线投影对象进行投射。 
+                        				
+                     </div>
+                  </dd><a name="GUID-CFAC1714-4969-4907-B58F-A6A9E7A910F4"></a><dt><span class="term"><a name="GUID-15E6AD2E-C536-45D6-809C-4A2E321306C8"></a> <span class="MenuCascade" id="GUID-D575ECAA-BEE0-4363-BAD6-6AB4BF76B01F">局部上方向轴</span> </span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-937FE6CA-91B7-484A-B37A-8F2E3F59038A"></a>指定对象要与曲面法线或射线对齐的局部轴。 
+                        				
+                     </div>
+                  </dd><a name="GUID-B940188F-102C-4BCB-BDFB-A11D8D529745"></a><dt><span class="term"><a name="GUID-51722970-892F-45B0-9505-64BBFA493356"></a> <span class="MenuCascade" id="GUID-D3CA7B03-CBC7-4281-AA4C-E5BF91A1DC42">局部正向</span> </span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-5D1A947F-99B7-4F98-8A4B-99E789317963"></a>指定对象要与世界坐标系正向轴或正向对象对齐的局部轴。 
+                        				
+                     </div>
+                  </dd><a name="GUID-9FE07BC1-E1F2-4B0E-B25D-35101406549E"></a><dt><span class="term"><a name="GUID-4C085872-AC3B-48C6-8ABF-105E846C91C3"></a> <span class="MenuCascade" id="GUID-A1A1AFFA-7712-4A5E-A62D-C5C956E78487">方向参数</span> </span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-FBABB880-5C41-42C7-947F-24D114CE7752"></a> <a name="GUID-01D5975A-51B4-4AD8-8A5B-0960133E22E9"></a><dl><a name="GUID-808CA1EE-0746-4155-BCD1-9A833C4DA4B4"></a><dt><span class="term"><a name="GUID-4CBB5A9B-BB9C-4812-BD15-52CCC17D9F86"></a> <span class="MenuCascade" id="GUID-2F0946BE-1B01-4B7B-9E1D-A6FC55735740">使用曲面法线</span> </span></dt>
+                           <dd>
+                              <div class="definition"><a name="GUID-CF74C0B9-D28A-400E-BB9C-598A6C528405"></a>将对象的局部上方向轴与射线交点处的网格曲面的法线对齐。禁用此选项时，对象与射线对齐。 
+                                 						
+                              </div>
+                           </dd><a name="GUID-FB1EA597-7790-46D9-9F66-54D502697299"></a><dt><span class="term"><a name="GUID-315F85E9-39FD-44DF-BB64-5D8694F241C8"></a>使用正向对象 
+                                 						</span></dt>
+                           <dd>
+                              <div class="definition"><a name="GUID-1EAC73D4-FA34-4F96-B62A-7CA49DC514C1"></a>对齐对象的局部正向轴，使其指向正向对象。禁用此选项或未定义正向对象时，对象与世界坐标系对齐。 
+                                 						
+                              </div>
+                           </dd><a name="GUID-C0CC3271-657D-4A98-9D1A-9A8FB1700F70"></a><dt><span class="term"><a name="GUID-131C0015-9F8B-4A66-A730-53FA7D4596B2"></a> <span class="MenuCascade" id="GUID-7A60A043-1E7B-4674-B9CD-3193235778B9">正向对象</span> </span></dt>
+                           <dd>
+                              <div class="definition"><a name="GUID-B5AF2844-E304-463F-85C3-9AE1E1AC8B52"></a>单击以选择受约束对象的局部正向轴所指向的对象。 
+                                 						
+                              </div>
+                           </dd>
+                        </dl> 
+                     </div>
+                  </dd><a name="GUID-644B4C6B-E0BC-4A89-904D-A0DC9597CA75"></a><dt><span class="term"><a name="GUID-BE686438-DB1D-461C-86AB-5210584C676D"></a>世界坐标系正向轴 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-F4B21ABF-3E89-45CE-8774-DDEBB29DF20C"></a>不使用正向对象时要与对象的局部正向轴对齐的世界轴。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

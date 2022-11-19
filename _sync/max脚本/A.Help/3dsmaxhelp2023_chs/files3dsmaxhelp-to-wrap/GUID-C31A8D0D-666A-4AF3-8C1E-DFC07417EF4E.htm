@@ -1,0 +1,93 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-C31A8D0D-666A-4AF3-8C1E-DFC07417EF4E">
+      <meta name="description" content="当您启动 3ds Max 时，几个辅助文件同时加载，并进行程序默认值和用户界面布局等设置。您甚至可以创建一个名为 maxstart.max 的场景，启动或重置 3ds Max 时将自动加载该场景。在某些情况下，当您更改设置和退出 3ds Max 时，3ds Max 会更新文件。">
+      <meta name="indexterm" content="默认值: 设置和更改">
+      <meta name="indexterm" content="启动屏幕">
+      <meta name="indexterm" content="打开屏幕">
+      <meta name="indexterm" content="初始屏幕">
+      <meta name="indexterm" content="自定义初始屏幕">
+      <meta name="indexterm" content="splash.bmp 文件">
+      <meta name="indexterm" content="启动文件">
+      <meta name="indexterm" content="plugin.ini 文件">
+      <meta name="indexterm" content="startup.ms 文件">
+      <meta name="indexterm" content="maxstart.cui 文件">
+      <meta name="indexterm" content="3dsmax.ini 文件">
+      <meta name="contextid" content="TOPIC_STARTUP_DEFAULTS">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="general">
+      <meta name="topic-subtype" content="using">
+      <title>启动文件和默认值</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-C31A8D0D-666A-4AF3-8C1E-DFC07417EF4E"></a><div class="head">
+            <h1>启动文件和默认值</h1>
+         </div>
+         <p class="blurb">当您启动 3ds Max 时，几个辅助文件同时加载，并进行程序默认值和用户界面布局等设置。您甚至可以创建一个名为 <em class="mild">maxstart.max</em> 的场景，启动或重置 3ds Max 时将自动加载该场景。在某些情况下，当您更改设置和退出 3ds Max 时，3ds Max 会更新文件。 
+            
+         </p>
+         <div class="bodyReference">
+            <div><a name="WS1A9193826455F5FF13D8321148F78DFD9-2689"></a><div class="note-note"><span class="label label-target-language">注意:</span> 3ds Max 附带有多个不同的市场特定默认值。基于您最常使用的文件类型，它们会在启动中设定不同的程序默认值。您可以加载 3ds Max 附带的预设默认值，也可以自己创建。 
+                  
+               </div>
+            </div>
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-584E"></a>通常，您不需要直接编辑辅助文件，但了解它们是有益的。3ds Max 所使用的辅助文件如下： 
+               
+            </p><a name="WS1A9193826455F5FFBA679E112A6A19004CE2"></a><ul>
+               <li> <em class="mild">3dsmax.ini：</em>该文件在您启动和退出 3ds Max 以及更改大多数的“首选项”设置时会更新。它包含与程序默认值有关的值，包括图形驱动程序、用于访问外部文件（例如，声音和图像）的目录、预设渲染大小、对话框位置、捕捉设置以及其他首选项和默认设置。如果您要编辑该文件，请确定首先复制一个副本，这样如果出了什么问题您还可以返回到初始设置。
+                  
+                  	 
+                  <div><a name="WS1A9193826455F5FF13D8321148F78DFD9-2687"></a><div class="note-note"><span class="label label-target-language">注意:</span>许多程序默认值目前是在 <em class="mild">currentdefaults.ini,</em> 中设置的，该文件位于 <em class="mild">\defaults</em> 目录中。 
+                        	 
+                     </div>
+                  </div> 
+               </li>
+               <li><em class="mild"> <span class="filePath">maxstart.max：</span> </em>启动场景条件由您选择的“启动”模板定义。如果启动模板不含 MAX 场景，并且存在 <em class="mild">maxstart.max</em> 文件，3ds Max 将使用 <em class="mild">maxstart.max</em> 作为启动场景。如果启动模板不含 MAX 场景，并且 <em class="mild">maxstart.max</em> 文件<em class="mild">不存在</em>，3ds Max 将打开一个空的场景。 
+                  	 
+                  <p><a name="GUID-E01B3D48-6EEB-44C0-80FD-FCEBF349F76B"></a>3ds Max 将在“配置项目路径”对话框 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“文件 I/O”面板中指定的 <em class="mild">MaxStart</em> 文件夹中查找 <em class="mild">maxstart.max</em>。 
+                     	 
+                  </p> 
+               </li>
+               <li> <em class="mild"> <span class="filePath">maxstart.cui：</span> </em>默认的自定义用户界面文件。您可以加载和保存 CUI 文件，并设置 3ds Max 来使用不同的默认 CUI 文件。 
+                  
+               </li>
+               <li> <em class="mild"> <span class="filePath"> C:\Users\&lt;用户名&gt;\AppData\Local\Autodesk\3dsMax\&lt;年份&gt; - 64bit\&lt;语言&gt;\Plugin.UserSettings.ini：</span> </em>此文件包含插件的目录路径。3ds Max INI 文件中保留有大多数其他路径，<em class="mild"> <span class="filePath">Plugin.UserSettings.ini</span> </em> 则作为单独的文件维护，因为第三方插件经常在安装时向列表中添加条目。 
+                  	 
+                  <div><a name="WS1A9193826455F5FF13D8321148F78DFD9-2683"></a><div class="note-note"><span class="label label-target-language">注意:</span>在 <em class="mild"> <span class="filePath">Plugin.UserSettings.ini</span> </em> 文件中嵌套其他路径就可以使用多个插件配置文件。这非常有用，因为它允许整个网络的用户共享同一个 <em class="mild"> <span class="filePath">Plugin.UserSettings.ini</span> </em> 文件，也使得网络管理员能更轻松地维护系统。 
+                        	 
+                     </div>
+                  </div> 
+               </li>
+               <li> <em class="mild"> <span class="filePath">startup.ms：</span> </em>它是在启动时自动执行的 MAXScript 文件。 
+                  
+               </li>
+            </ul>
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-C372E124-2B7E-41BB-94B0-5FF945D51095.htm">启动脚本</a><p>首次启动 3ds Max 时，MAXScript 将会搜索所有的启动脚本文件，然后自动加载和运行这些文件。 
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-AFC5FE94-8B39-4AB9-99DC-DF7AF309BF2A.htm">初始化文件</a><p>3ds Max 使用名称为 3dsmax.ini 的文件来存储会话之间的设置。在大多数情况下，不需要直接访问此文件。要找到该文件（如有必要），请使用 Windows 搜索功能。 </p>
+                  </li>
+               </ul>
+            </div></span><div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-5D9D999B-A5D3-402F-B4E3-0B7433A31C1A.htm">特定市场默认值</a></li>
+                     <li class="topiclist-litem"><a href="GUID-AFC5FE94-8B39-4AB9-99DC-DF7AF309BF2A.htm">初始化文件</a></li>
+                     <li class="topiclist-litem"><a href="GUID-B5FF2780-6D57-4FBB-A37A-60FFFC80CA7D.htm">启动模板</a></li>
+                     <li class="topiclist-litem"><a href="GUID-7C87C4BC-215B-4C51-AF06-B1CD3A88E702.htm">网络插件配置</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

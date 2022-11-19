@@ -1,0 +1,282 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5790F099-E538-4702-9831-EC06C0EA2819">
+      <meta name="description" content="一致对象是一种复合对象，通过将某个对象（称为“包裹器”）的顶点投影至另一个对象（称为“包裹对象”）的表面而创建。此功能还有一个空间扭曲版本，请参见一致空间扭曲。">
+      <meta name="indexterm" content="一致: 复合对象">
+      <meta name="indexterm" content="复合对象: 一致">
+      <meta name="indexterm" content="一致复合对象">
+      <meta name="contextid" content="CONFORM.OBJECTS_COMPOUNDS">
+      <meta name="contextid" content="CREATECONFORMACTION">
+      <meta name="contextid" content="OBJECTS COMPOUNDS-CONFORM">
+      <meta name="topic-type" content="concept">
+      <title>一致复合对象</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5790F099-E538-4702-9831-EC06C0EA2819"></a><div class="head">
+            <h1>一致复合对象</h1>
+         </div>
+         <p class="blurb">一致对象是一种复合对象，通过将某个对象（称为“包裹器”）的顶点投影至另一个对象（称为“包裹对象”）的表面而创建。此功能还有一个空间扭曲版本，请参见<span class="char_link"><a href="GUID-5A572E5F-4C66-431A-AF59-B4AA741222C0.htm">一致空间扭曲</a></span>。 
+         </p><a name="UL_752C14DFF19A4BB597B43D5E3010CB1E"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-0DA14C42-974B-4A7E-8DA7-90BCAA6AD178">选择对象。 <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板  <img src="../images/ac.menuaro.gif"> <img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">（几何体） <img src="../images/ac.menuaro.gif"> “复合对象” <img src="../images/ac.menuaro.gif"> “对象类型”卷展栏  <img src="../images/ac.menuaro.gif"> “一致”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-4F81515A-D4EE-48CE-A28F-4D50480A5488">默认菜单：选择对象。 <img src="../images/ac.menuaro.gif"> “创建”菜单  <img src="../images/ac.menuaro.gif"> “复合” <img src="../images/ac.menuaro.gif"> “一致”</span> 
+            </li>
+            <li> <span class="MenuCascade" id="GUID-BD5307CE-7713-40B4-B35E-18F9C6BFDE2A">Alt 菜单：选择对象。 <img src="../images/ac.menuaro.gif"> “对象”菜单  <img src="../images/ac.menuaro.gif"> “复合对象” <img src="../images/ac.menuaro.gif"> “一致”</span> 
+            </li>
+         </ul><a name="WS1A9193826455F5FFBA679E112A6A19004176A"></a><div class="figure-anchor"><img src="../images/GUID-1A4DA18C-B862-4F22-A6B2-72FFDD6D4A96-low.png"><p class="figure-title">一致对象适合于通往山表面的道路。</p>
+         </div>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4A12"></a>由于空间扭曲版本的使用要稍微简单一些，因而首先浏览其主题并完成示例，然后再回到本主题不失为一种好方法。本主题提供了更多的投影包裹器顶点的方法。 
+         </p>
+         <div><a name="WS1A9193826455F5FF662FFB11407B58D52-613D"></a><div class="note-note"><span class="label label-target-language">注意:</span>通过此工具，无论对象的顶点数目为多少，都可以在任何两个对象之间进行变形。有关详细信息，请参见<span class="char_link"><a href="GUID-5790F099-E538-4702-9831-EC06C0EA2819.htm#GUID-E4707F78-D445-496C-BD0A-FD5C470E35A0">“顶点投射方向”组</a></span>。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4A11"></a> 
+            <h2><a name="GUID-FB856ED4-070D-48AB-ABE9-F76BEDDE4038"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A19004176E"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A19004176F"></a>示例：要创建一致对象，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>定位两个对象，其中一个为“包裹器”，另一个为“包裹对象”。（在此例中，创建一个长方体作为包裹对象，然后创建一个将其完全包裹在内的大球体。该球体即包裹器。） </li>
+               <li>选择包裹器对象（球体），然后在 <img src="../images/GUID-98173E20-D8BF-4A71-A169-42981748A8A8-low.png">“创建”面板上，<img src="../images/GUID-549DD4DF-FDA0-480C-A31E-EC971D7D66D4-low.png">（几何体）处于激活状态时，从下拉列表中选择“复合对象”。在“对象类型”卷展栏中，启用“一致”。 
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-613C"></a><div class="note-note"><span class="label label-target-language">注意:</span>一致中所使用的两个对象必须是网格对象或可以转化为网格对象的对象。如果所选的包裹器对象无效，则“一致”按钮不可用。 
+                     </div>
+                  </div> 
+               </li>
+               <li>在“顶点投射方向”组中指定顶点投射的方法。（在此例中，使用“沿顶点法线”。） 
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-613B"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果要选择“使用活动视口”，则将激活方向为顶点投射方向的视口。例如，如果在主平面上包裹器位于包裹地形的上方，则将激活“顶”视口。 
+                     </div>
+                  </div> 
+               </li>
+               <li>选择“引用”、“复制”、“移动”或“实例化”，指定要对包裹对象执行的克隆类型。（在此例中，选择“实例化。） </li>
+               <li>单击“拾取包裹对象”，然后单击顶点要投射到其上的对象。（可以按 <span class="keyboardEntry">H</span> 键并使用<span class="char_link"><a href="GUID-0E53BB0B-8F4A-4C32-8968-6D5226ECE8FF.htm">“拾取对象”对话框</a></span>选择长方体。） 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4A10"></a>列表窗显示两个对象，通过将包裹器对象一致到包裹对象，从而创建复合对象。（在此例中，球体投影到长方体的形状上。） 
+                  </p> 
+               </li>
+               <li>使用各种参数和设置改变顶点投射方向，或调整投射的顶点。 </li>
+            </ol> <a name="WS1A9193826455F5FFBA679E112A6A190041770"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190041771"></a>要将道路投影到地形上，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>创建道路和地形对象。 
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-613A"></a><div class="note-tip"><span class="label label-target-language">提示</span>通过创建<span class="char_link"><a href="GUID-004BE4A2-F179-4343-BADA-55B55B1DF8D6.htm">面片栅格</a></span>并对其应用<span class="char_link"><a href="GUID-23D51A44-3163-41B4-9FF9-49C13047CED8.htm">“噪波”修改器</a></span>，可快速创建地形。对于道路，则可以通过沿曲线放样矩形来使用<span class="char_link"><a href="GUID-4CCA4890-83E8-41C6-9FFB-0A3959194CCA.htm">放样复合对象</a></span>。两个对象都必须具有足够的细节级别，才能平滑地一致。 
+                     </div>
+                  </div> 
+               </li>
+               <li>确定道路和地形的方向，以便在“顶”视口中笔直地向下查看它们。确定道路的位置，以使道路完全位于地形的上方（即在世界坐标系 Z 轴上更高）。 
+                  <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6139"></a><div class="note-note"><span class="label label-target-language">注意:</span>在“顶”视口中查看时，道路不应当超出地形的边界，才能正确地进行一致投射。 
+                     </div>
+                  </div> 
+               </li>
+               <li>选择道路对象。 </li>
+               <li>单击“一致”。 </li>
+               <li>在“拾取包裹对象”卷展栏中，确保选择了“实例化”选项。 </li>
+               <li>单击“拾取包裹对象”，然后单击地形。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4A0F"></a>将创建地形对象的实例，对象颜色与道路一样。 
+                  </p> 
+               </li>
+               <li>激活“顶”视口。在“参数”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“顶点投射方向”组中，选择“使用活动视口”，然后单击“重新计算投影”。 
+               </li>
+               <li>在“更新”组中，启用“隐藏包裹对象”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4A0E"></a>此操作将隐藏地形的实例，以便清楚地查看投射在其上的道路。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4A0D"></a>选择“参数”卷展栏 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“包裹器参数”组 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“间隔距离”值，设置道路沿世界 Z 轴距离地形的单位数量。 
+                  </p> 
+               </li>
+               <li>如有必要，调整“间隔距离”以提高或降低道路。 </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-4A0C"></a> 
+            <h2><a name="GUID-E060DF58-47BD-4593-B098-FD50D1461CE1"></a>界面
+            </h2> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041772"></a> 
+               <h3><a name="GUID-B4BB55BC-0F88-486A-A027-E4E031C98D20"></a>“拾取包裹对象”卷展栏
+               </h3> <a name="WS1A9193826455F5FFBA679E112A6A190041773"></a><div class="figure-anchor"><img src="../images/GUID-9AA5A05A-CE2B-43C5-AE9A-748A0A0EBAF5-low.png"></div>  <a name="GUID-EF702B3E-346F-4DB0-BA6B-FA8B9112E2DB"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F62"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4A0B"></a>对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EDC"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D91"></a>显示选定包裹对象的名称。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F63"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4A0A"></a>拾取包裹对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EDB"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D92"></a>单击此按钮，然后选择希望当前对象包裹的对象。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F64"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4A09"></a>参考/复制/移动/实例</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7EDA"></a> 
+                        <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D93"></a>此选项用于指定将包裹对象转换为一致对象的方式。它可以作为<span class="char_link"><a href="GUID-301406EA-BFC0-4141-94E4-55C97641A3CB.htm">引用</a></span>、副本、<span class="char_link"><a href="GUID-66FDAD95-1504-4639-B1A4-7D080E0C7FFA.htm">实例</a></span>或移动的对象（如果不保留原始对象）进行转换。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041774"></a> 
+               <h3><a name="GUID-EEEE84DF-9FD7-40BF-87D1-8A0A75051F0E"></a>“参数”卷展栏
+               </h3> 
+               <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4A08"></a>包含一致对象的所有参数。 
+               </p> <a name="GUID-B7B590F9-AC40-413C-9B11-CB9336BFB388"></a><div class="dl_section"><a name="GUID-968721EE-54A5-4A41-BCCB-3F4FE3500EEA"></a><p class="title"><a name="GUID-194DC8AB-D3A6-4120-974D-6F5B334FB0E7"></a>“对象”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A190041776"></a><div class="figure-anchor"><img src="../images/GUID-F5A5D580-5420-4561-A2D7-7FEFDE40FCF7-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4A07"></a>提供一个列表窗和两个编辑字段，以浏览一致对象和重命名其组件。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F65"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4A06"></a>[列表窗口]</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ED9"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D94"></a>列出包裹器和包裹对象。在窗中单击以选择对象，以便能在修改器堆栈中访问对象。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F66"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4A05"></a>包裹器名称</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ED8"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D95"></a>用于重命名一致复合对象中的包裹器对象。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F67"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4A04"></a>包裹对象名称</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ED7"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D96"></a>用于重命名包裹对象。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-E4707F78-D445-496C-BD0A-FD5C470E35A0"></a><p class="title"><a name="GUID-A3B4CEA5-ECBC-44FD-AF6F-9234133A08D0"></a>“顶点投射方向”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A190041777"></a><div class="figure-anchor"><img src="../images/GUID-0B6F0DE4-9C89-40E4-9A0C-F5CC65201086-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-4A03"></a>选择以下七个选项之一，以确定顶点的投射。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F68"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4A02"></a>使用活动视口</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ED6"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D97"></a>远离活动视口（向内）投射顶点。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F69"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4A01"></a>重新计算投影</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ED5"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D98"></a>重新计算活动视口的投射方向。由于方向最初是在拾取包裹对象时指定的，因此，如果要在指定后更改视口，可单击此按钮根据新的活动窗重新计算方向。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F6A"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-4A00"></a>使用任何对象的 Z 轴</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ED4"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D99"></a>使用场景中任何对象的局部 Z 轴作为方向。指定对象之后，可以通过旋转方向对象来改变顶点投射的方向。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F6B"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49FF"></a>拾取 Z 轴对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ED3"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D9A"></a>单击此按钮，然后单击要用于指示投射源方向的对象。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F6C"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49FE"></a>对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ED2"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D9B"></a>显示方向对象的名称。 
+                           </p> <a name="WS1A9193826455F5FFBA679E112A6A190041778"></a><ul>
+                              <li> <em class="strong">沿顶点法线</em> 沿顶点法线的相反方向向内投射包裹器对象的顶点。顶点法线是通过对该顶点连接的所有面的法线求平均值所产生的向量。如果包裹器对象将包裹对象包围在内，则包裹器将呈现包裹对象的形式。 
+                              </li>
+                              <li> <em class="strong">指向包裹器中心</em> 朝包裹器对象的边界中心投射顶点。 
+                              </li>
+                              <li> <em class="strong">指向包裹器轴</em> 朝包裹器对象的原始轴心投射顶点。 
+                              </li>
+                              <li> <em class="strong">指向包裹对象中心</em> 朝包裹对象的边界中心投射顶点。 
+                              </li>
+                              <li> <em class="strong">指向包裹对象轴</em> 朝包裹对象的轴心投射顶点。 
+                              </li>
+                           </ul> 
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6138"></a><div class="note-note"><span class="label label-target-language">注意:</span>“指向包裹器轴”和“指向包裹对象轴”选项根据创建一致对象之前对象原始轴点的位置进行操作。创建一致对象之后，新的复合对象只具有一个轴点。 
+                              </div>
+                           </div> 
+                           <div><a name="WS1A9193826455F5FF662FFB11407B58D52-6137"></a><div class="note-tip"><span class="label label-target-language">提示</span>可以通过在复合对象与之前生成的原始包裹器对象的副本之间进行变形来设置一致效果的动画。不过，要这样做首先必须在“更新”组启用“隐藏包裹对象”，以使原始对象和复合对象具有相同数量的顶点。通过采用此技术，可以在两个具有不同数量顶点的对象之间进行有效的变形。
+                                 
+                              </div>
+                           </div> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-4DC31A11-A4CE-4E02-B3AA-4B644654029B"></a><p class="title"><a name="GUID-B37F14BA-091B-44AB-AE7C-B9D4FD1E0876"></a>“包裹器参数”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A19004177A"></a><div class="figure-anchor"><img src="../images/GUID-C079407B-9CD1-4632-A931-D2BECC79DB05-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49FD"></a>提供用于确定顶点投射距离的控件。 
+                  </p>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F6D"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49FC"></a>默认投影距离</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ED1"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D9C"></a>包裹器对象中的顶点在未与包裹对象相交的情况下距离其原始位置的距离。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F6E"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49FB"></a>间隔距离</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ED0"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D9D"></a>包裹器对象的顶点与包裹对象表面之间保持的距离。例如，如果将其设置为 5，就不会把顶点推动至离包裹对象的表面小于 5 个单位的位置。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F6F"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49FA"></a>使用选定顶点</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ECF"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D9E"></a>如果启用，则仅推动选定的包裹器对象的顶点子对象。如果禁用，则忽略修改器堆栈选择而推动对象中的所有顶点。要访问包裹器对象的修改器堆栈，请在列表窗中选择包裹器对象，打开修改器堆栈并选择基础对象名称。此时，可以应用“网格选择”修改器，并选择要对之进行操作的顶点。
+                              
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-2CC744F6-99B0-4E9B-A57B-9C50883A48E9"></a><p class="title"><a name="GUID-F5580313-3F67-4C9D-8A54-D3238D579B22"></a>“更新”组
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A19004177C"></a><div class="figure-anchor"><img src="../images/GUID-041845F2-1D56-4BB9-9C53-F91B66B0D972-low.png"></div>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49F9"></a>此组中的项用于确定何时重新计算复合对象的投影。由于复杂的复合对象会降低性能，因此可以使用以下选项避免常量计算。 
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A19004177D"></a><ul>
+                     <li> <em class="strong">始终</em>对象将始终更新。 
+                     </li>
+                     <li> <em class="strong">渲染时</em>仅当渲染场景时才重新计算对象。 
+                     </li>
+                     <li> <em class="strong">手动</em>激活“更新”按钮，手动重新计算。 
+                     </li>
+                  </ul>
+                  <dl>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F70"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49F8"></a>更新</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ECE"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753D9F"></a>重新计算投影。 
+                           </p> 
+                        </div>
+                     </dd>
+                     <dt><a name="WS1A9193826455F5FF-6672057A11CD6AA81EC7F71"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-49F7"></a>隐藏包裹对象</span></dt>
+                     <dd>
+                        <div class="definition"><a name="WS1A9193826455F5FF6A6AC56911E1C5C8A4E-7ECD"></a> 
+                           <p><a name="WS1A9193826455F5FF1DBC298511635BEA8753DA0"></a>启用该选项将隐藏包裹对象。 
+                           </p> 
+                        </div>
+                     </dd>
+                  </dl>
+               </div>
+               <div class="dl_section"><a name="GUID-7CFECA20-D0E0-4133-BEC9-6E06072F93D6"></a><p class="title"><a name="GUID-257236DC-5266-4AA3-9C0F-263100E7C810"></a>“显示”组
+                  </p>
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-49F6"></a>确定是否显示图形操作对象。 
+                  </p><a name="WS1A9193826455F5FFBA679E112A6A19004177F"></a><div class="figure-anchor"><img src="../images/GUID-13A11C6D-1472-4F19-A8EE-14813E810634-low.png"></div><a name="WS1A9193826455F5FFBA679E112A6A190041780"></a><ul>
+                     <li> <em class="strong">结果</em>显示操作结果。 
+                     </li>
+                     <li> <em class="strong">操作对象</em>显示操作对象。 
+                     </li>
+                  </ul>
+               </div> 
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

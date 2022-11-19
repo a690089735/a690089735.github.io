@@ -1,0 +1,1 @@
+messageBox "Succesfully Installed!\n\nYou can toggle it on and off by using the trackbar's context menu -> filter -> modFilter"

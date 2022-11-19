@@ -1,0 +1,129 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-5A48FA01-DC89-4C0C-93F1-E721A74DBC0E">
+      <meta name="description" content="在流体中，泡沫遮罩将泡沫生成限制在遮罩网格的体积内部。">
+      <meta name="indexterm" content="流体">
+      <meta name="indexterm" content="模拟视图: 解算器参数面板: 泡沫遮罩对象">
+      <meta name="topic-type" content="topic">
+      <meta name="audience" content="user">
+      <meta name="experiencelevel" content="expert">
+      <meta name="topic-subtype" content="using">
+      <title>泡沫遮罩对象</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-5A48FA01-DC89-4C0C-93F1-E721A74DBC0E"></a><div class="head">
+            <h1>泡沫遮罩对象</h1>
+         </div>
+         <p class="blurb">在流体中，泡沫遮罩将泡沫生成限制在遮罩网格的体积内部。 
+            
+         </p><a name="UL_BBD7F4526C50406CA0E8E37C6122E8A5"></a><ul>
+            <li><span class="MenuCascade">“创建”面板  <img src="../images/ac.menuaro.gif"> “几何体” <img src="../images/ac.menuaro.gif"> “流体” <img src="../images/ac.menuaro.gif"> “设置”卷展栏  <img src="../images/ac.menuaro.gif"> “模拟视图” <img src="../images/ac.menuaro.gif"> “解算器参数”面板  <img src="../images/ac.menuaro.gif"> “泡沫遮罩对象” <img src="../images/ac.menuaro.gif"> “泡沫遮罩对象”</span> 
+            </li>
+         </ul>
+         <p>模拟中的所有泡沫遮罩均转化为体素。稍后，体素可用于确定区域是否位于对应的体积内。“转化”选项控制如何体素化关联的遮罩。对于泡沫遮罩，每个体素的基面宽度是“模拟参数”中“基础体素大小”设置与此面板中“体素比例”设置的乘积。 
+            	 
+         </p>
+         <div class="section"><a name="SECTION_8103E374F97B4652815EB619773E883C"></a> 
+            <h2><a name="GUID-3BEB6C2D-3449-44E0-8AC1-FC56B886C1D0"></a>“泡沫遮罩转化参数”卷展栏
+            </h2> <a name="FIG_677D5F9AD22E4E288BA8CF442A44E063"></a><div class="figure-anchor"><img src="../images/GUID-F8864A07-10F2-4803-A9A6-AD842FFD4306-low.png"></div> 
+            <div class="section"><a name="SECTION_3838F7C3E7FF4A5BB1A87C37288386C8"></a> 
+               <h3><a name="GUID-9FF52177-FA4D-40B6-B2EA-463E06048157"></a>“转化”组
+               </h3> 
+               <dl><a name="GUID-AFF17989-7A9B-4A01-8B41-236AEE0D35A1"></a><dt><span class="term">模式 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 控制对象如何体素化，即“实体”、“壳”或“实体(坚固)”。 
+                        				  <a name="UL_81D2C5C822464CFFA32273B0AC3EB5AB"></a><ul>
+                           <li>“实体”创建包括内部网格的实体体积。网格应为流形且防水。 
+                              					 
+                           </li>
+                           <li>“壳”创建网格曲面周围的薄壳。在该模式下，“厚度”通常应为 1.0 或更大。 
+                              					 
+                           </li>
+                           <li>“实体(坚固)”是“实体”的一种替代方法，通常可以为具有精细细节、通向空腔的开口或不防水曲面的体积提供更好的结果。但是，此设置不会处理全封闭区域内的流体。 
+                              					 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd><a name="GUID-43544250-E35D-46B8-82E4-6D33160D99C8"></a><dt><span class="term">粗化内部 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 转化模式为“实体(坚固)”时，通过对体积内的体素执行其他粗化操作来节约内存，对于自交网格尤其如此。 
+                        				
+                     </div>
+                  </dd><a name="GUID-A8F7E005-5270-40CB-996E-EA09DDB933BD"></a><dt><span class="term">曲面偏移 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 转化模式为“实体(坚固)”时，设置用于闭合（先扩张再腐蚀）实体体素的距离（以体素宽度表示）。内部最小值为 1.0，因此，只有值较大时才会产生影响。 
+                        				  
+                        <div><a name="GUID-C47B0C72-4E59-42F9-8E55-4B87EC5E342D"></a><div class="note-note"><span class="label label-target-language">注意:</span>较高的值可能会产生瑕疵。 
+                              				  
+                           </div>
+                        </div> 
+                     </div>
+                  </dd><a name="GUID-3E5DB2CE-8965-4C02-9D42-B5D43DD2B67B"></a><dt><span class="term">厚度单位 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">设置厚度是以体素还是世界空间为单位。设置为“体素”时，有效厚度取决于模拟的“基础体素大小”。 
+                        				
+                     </div>
+                  </dd><a name="GUID-66B7E7D1-18A3-416E-8F64-1185A68F459F"></a><dt><span class="term">厚度 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置网格的加厚量。对于已经非常厚的实体形状，可以为精确的边界使用 0.0 甚至负值，使其沿曲面法线收缩。对于更薄的体积和壳，应使用较大的值来防止出现孔。 
+                        				
+                     </div>
+                  </dd><a name="GUID-5E4E5CDC-4D02-4E81-A291-A619DF6AC24C"></a><dt><span class="term">体素比例 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition"> 设置基础体素大小的比例因子，最初用于体素化共享此属性的网格。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+            <div class="section"><a name="SECTION_E613F421B65F4600ADD900B7C4EA76E0"></a> 
+               <h3><a name="GUID-AB4DDCC7-318C-4584-9949-909FE60D3EA5"></a>“泡沫遮罩边界控件”组
+               </h3> 
+               <dl><a name="GUID-4C48EC23-2B4D-4D5E-A134-E30B78B8783C"></a><dt><span class="term">启用边界 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">启用边界控件以限制受泡沫遮罩影响的区域。 
+                        				
+                     </div>
+                  </dd><a name="GUID-476DDDAB-DA5A-4F96-A87B-0BBD7FA3E2BC"></a><dt><span class="term">创建辅助对象 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">在场景中创建体积辅助对象。边界的有效类型为“长方体”和“球体”。 
+                        				
+                     </div>
+                  </dd><a name="GUID-FB948C0D-A80B-47AC-A37B-772A2C6A5EC7"></a><dt><span class="term">无 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">拾取已添加到场景中的体积辅助对象。此按钮将随当前选定的辅助对象名称而更新。 
+                        				
+                     </div>
+                  </dd><a name="GUID-1B6229E3-F2C0-4F85-BF22-2E127ED68781"></a><dt><span class="term">反转 
+                        				</span></dt>
+                  <dd>
+                     <div class="definition">反转边界的区域。 
+                        				
+                     </div>
+                  </dd>
+               </dl> 
+            </div> 
+         </div>
+         <div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-223D704C-A1C0-494F-82AD-1A74CBFE422C.htm">体积辅助对象</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

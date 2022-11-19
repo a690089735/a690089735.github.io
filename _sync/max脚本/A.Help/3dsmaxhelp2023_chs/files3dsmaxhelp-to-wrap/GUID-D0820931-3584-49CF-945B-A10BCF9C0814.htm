@@ -1,0 +1,82 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D0820931-3584-49CF-945B-A10BCF9C0814">
+      <meta name="description" content="定义一个对象后，3ds Max 会对影响基础对象的改变进行计算并将结果显示在场景中。这些改变和计算它们的顺序被称为对象数据流。">
+      <meta name="indexterm" content="对象数据流">
+      <meta name="indexterm" content="修改器: 和变换">
+      <meta name="indexterm" content="变换: 和修改器">
+      <meta name="indexterm" content="驱动者对象">
+      <meta name="topic-type" content="concept">
+      <title>变换、修改器和对象数据流</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D0820931-3584-49CF-945B-A10BCF9C0814"></a><div class="head">
+            <h1>变换、修改器和对象数据流</h1>
+         </div>
+         <p class="blurb">定义一个对象后，<span class="charspan-msgph">3ds Max</span> 会对影响基础对象的改变进行计算并将结果显示在场景中。这些改变和计算它们的顺序被称为<em class="mild">对象数据流</em>。 
+            
+         </p><a name="WS1A9193826455F5FFBA679E112A6A190043473"></a><div class="figure-anchor"><img src="../images/GUID-B5F12347-80C9-4C83-AB71-86259202772A-low.png"><p class="figure-title">数据流图表</p>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043475"></a> 
+            <h2><a name="GUID-98401CA0-C2F1-4D50-A102-DB2A84C477B1"></a>驱动者对象
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-477C"></a> <em class="mild">驱动者对象</em>是指由一组创建参数以及轴点的原始位置和方向定义的对象。驱动者对象是不可见的。在视口中看到的始终是以下数据流的结果： 
+               		
+            </p> 
+            <div class="codeBlock"><pre>Driver Object
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt; Object Transforms
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt; Object Properties</pre></div> <a name="WS1A9193826455F5FFBA679E112A6A190043476"></a><div class="figure-anchor"><img src="../images/GUID-E5DB9065-A653-4567-BD77-F379D0F59150-low.png"><p class="figure-title">在“修改”面板和“轨迹视图”中的对象创建参数</p>
+            </div>  <a name="WS1A9193826455F5FFBA679E112A6A190043478"></a><div class="figure-anchor"><img src="../images/GUID-6AC463BE-D181-483B-96FF-F22AE2F05FFF-low.png"><p class="figure-title">具有不同创建参数的驱动者对象的示例。</p>
+            </div>  
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043479"></a> 
+            <h2><a name="GUID-D984CBCE-8776-4202-BA23-89911F74ADFA"></a>对象空间修改器
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-477B"></a><span class="char_link"><a href="GUID-B7A81C86-8FAF-4D03-B7D8-4FA5BEAC9CA0.htm">对象空间修改器</a></span>是在数据流中计算的下一组。每个修改器按着在修改器堆栈中的顺序进行计算。修改在对象的对象空间中进行并且结果称为修改后对象。 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A19004347A"></a><div class="figure-anchor"><img src="../images/GUID-A48F7916-78E7-45F9-A7ED-8AA3397B1EAF-low.png"><p class="figure-title">在“修改”面板和“轨迹视图”中的“对象”修改器</p>
+            </div>  <a name="WS1A9193826455F5FFBA679E112A6A19004347C"></a><div class="figure-anchor"><img src="../images/GUID-8D180F07-F840-4A6B-BE79-9019913C0D3B-low.png"><p class="figure-title">驱动者对象上的修改器效果。</p>
+            </div>  
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004347D"></a> 
+            <h2><a name="GUID-ACE42284-E79E-4A28-B1C3-8059AE8725E2"></a>对象变换
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-477A"></a>一旦对修改对象进行计算，它会变换到世界坐标系统内。横跨位置、旋转度和缩放的变化改变通过工具栏上的变换按钮应用。 
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4779"></a>计算所有修改器然后再计算合成变换的方法对使用 <span class="charspan-msgph">3ds Max</span> 的方式会有影响。变换的效果与变换的应用顺序无关。另一方面，应用修改器的顺序会影响几何体的结果。如果要应用一个在修改器堆栈中以指定顺序计算的变换，请使用<span class="char_link"><a href="GUID-44AA1775-4215-423B-9D78-7E74CD3D4423.htm">变换修改器</a></span>。 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A19004347E"></a><div class="figure-anchor"><img src="../images/GUID-FAB7866F-ED68-45E5-9B09-859639C4991E-low.png"><p class="figure-title">变换修改对象</p>
+            </div>  
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A19004347F"></a> 
+            <h2><a name="GUID-BFF44D72-D1F2-4C5B-9613-A3C0B842D2A8"></a>空间扭曲
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4778"></a> <span class="char_link"><a href="GUID-319D19A7-97B0-42BE-82CE-28AE7A8DF3F3.htm">空间扭曲</a></span>在变换之后进行计算。它们会将绑定到基于对象在世界空间的位置的空间扭曲的对象扭曲化。例如，<span class="char_link"><a href="GUID-01DD2859-71FD-4974-A73B-39F335AE616E.htm">波浪空间扭曲</a></span>使对象曲面以一组波浪进行波动。在对象或空间扭曲移动通过世界空间时，波浪移动横跨对象曲面。 
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4777"></a>象空间扭曲一样，<span class="char_link"><a href="GUID-C360C208-F869-4DC2-9284-72E086AE697F.htm">世界空间修改器</a></span>在变换之后进行计算。世界空间修改器就像绑定于单独对象上的空间扭曲一样。 
+               		
+            </p> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190043481"></a> 
+            <h2><a name="GUID-B63B7924-3C3D-4C3C-A5C4-4A4246CDC3E9"></a>对象属性
+            </h2> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4775"></a>对象属性在显示对象前最后进行计算。这些是指定于一些对象的值，比如在<span class="char_link"><a href="GUID-59F27B9D-889F-4917-A1C0-BB9B313555F1.htm#WSF742DAB04106313322C48997112A1CEA460-8000">“对象属性”对话框</a></span>中指定名称和设置的对象，例如聚光灯属性；还有一些应用于对象的材质。 
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4774"></a>这是数据流的末端，结果就是在场景中看到的命名的对象。 
+               		
+            </p> 
+            <p><a name="WS73099CC142F4875514C01AC112A7ACEF16-4773"></a>右键单击对象并选择“属性”可显示其“对象属性”对话框。 
+               		
+            </p> <a name="WS1A9193826455F5FFBA679E112A6A190043482"></a><div class="figure-anchor"><img src="../images/GUID-0AEF20E9-6D8E-4532-83F4-488876DD6DF7-low.png"><p class="figure-title">对象属性影响对象渲染输出的效果。</p>
+            </div>  
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

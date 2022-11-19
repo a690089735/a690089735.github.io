@@ -1,0 +1,97 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D7AB420B-F298-4AC5-A3D0-403D75AE1551">
+      <meta name="description" content="基于物理的渲染 (PBR) 是一种明暗处理方法，用于精确表示灯光与曲面的交互。">
+      <meta name="indexterm" content="基于物理的渲染: 材质">
+      <meta name="indexterm" content="PBR: 材质">
+      <meta name="topic-type" content="topic">
+      <title>PBR 材质</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D7AB420B-F298-4AC5-A3D0-403D75AE1551"></a><div class="head">
+            <h1>PBR 材质</h1>
+         </div>
+         <p class="blurb">基于物理的渲染 (PBR) 是一种明暗处理方法，用于精确表示灯光与曲面的交互。 
+            
+         </p><a name="FIG_8895185AFAD5457C9A00A61D35267E9F"></a><div class="figure-anchor"><img src="../images/GUID-E68DEFEB-CFBE-4BEA-800B-979112DD3BC1-low.png"><p class="figure-title">图片来源：Mads Drøschler</p>
+         </div>
+         <div class="section"><a name="SECTION_908E3EA1A5A44460B9067AB66E20D7C9"></a> 
+            <h2><a name="GUID-D8F22628-B1D8-43BE-88C5-EF8210C86621"></a>关于 PBR 材质
+            </h2> 
+            <p>许多实时引擎使用 PBR 来描述一组简化的明暗处理模型，其中这些模型完全由一小组纹理贴图驱动。尽管这些明暗处理模型已受物理材质支持，但 PBR 还包含许多其他不支持的功能。因此，创建了这些简化的脚本化材质，并为物理材质提供了前端 UI。 
+               		
+            </p> 
+            <p>实时引擎支持两个基本系列的 PBR 明暗处理模型：金属度/粗糙度（金属/粗糙）模型和高光反射/光泽度（高光反射/光泽）模型。 
+               		<a name="UL_F0446E3AF0504590BF038BDC4F623A7D"></a><p class="list-intro">金属/粗糙模型由以下各项组成：</p>
+               <ul>
+                  <li>称为“反照率”的基础颜色，用于定义所有类型反射的颜色 
+                     		  
+                  </li>
+                  <li>“金属度”参数使用白色高光反射层或金属（没有漫反射，反射采用基础颜色）定义反射是否为漫反射 
+                     		  
+                  </li>
+                  <li>称为“粗糙度”的参数，用于定义曲面是平滑（低值）还是粗糙（高值）。 
+                     		  
+                  </li>
+               </ul> <a name="UL_429002FED30F4F61A82C457C2E23E895"></a><p class="list-intro">高光反射/光泽模型由以下各项组成：</p>
+               <ul>
+                  <li>称为“反照率”的基础颜色，仅定义漫反射 
+                     		  
+                  </li>
+                  <li>称为“高光反射”的单独反射颜色，分别定义反射的颜色 
+                     		  
+                  </li>
+                  <li>称为“光泽度”的参数，用于定义曲面是平滑（高值）还是粗糙（低值）。 
+                     		  
+                  </li>
+               </ul> 
+            </p> 
+            <p>虽然可以更自由地选择颜色，但高光反射/光泽模型不能保证生成的曲面表现得具有物理真实性，因此可能需要用户干预。但是，金属/粗糙模型可极大程度地确保曲面材质表现得具有物理真实性。 
+               		
+            </p> 
+            <p>这些简化的材质不仅可以降低 UI 复杂性，还有助于将材质数据导出到实时引擎中。如果使用这些材质（选择与目标引擎所用模型匹配的材质）构建场景，则在 3ds Max 内执行的任何外观开发均将与在引擎中相同。 
+               		
+            </p> 
+            <p>PBR 的另一用例是利用 3ds Max 内实时引擎的材质（在视口中或进行最终渲染）。许多网站均提供可下载的 PBR 贴图，且可直接放入这些材质中。 
+               		
+            </p> 
+            <p>主要功能是，它们可自动处理在使用 PBR 贴图时所需的某些设置，包括在粗糙度、光泽度、金属度和法线贴图上设置线性 Gamma (1.0)。 
+               		
+            </p> 
+            <p>因此，所有贴图位置均可以接受从 Windows 资源管理器直接拖/放的位图文件<em class="strong"></em>。可以从 Web 下载许多免费的纹理贴图，您可以保存这些贴图，然后将其直接拖放到 PBR 材质参数下显示的相应贴图按钮上。 
+               		
+            </p> 
+            <p> 
+               <div><a name="GUID-437B1461-DF42-45B5-A4B0-CC9BC3907B1E"></a><div class="note-note"><span class="label label-target-language">注意:</span>可以导入 PBR 材质。 
+                     		  
+                  </div>
+               </div> 
+            </p> 
+            <p> </p> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-A16234A5-6500-4662-8B20-A5EC9FE1B255.htm">PBR 材质（金属/粗糙）</a><p> PBR 材质（金属/粗糙）是一种基于物理的渲染材质，可提供灯光与曲面交互方式的精确表示。 
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-18087194-B2A6-43EF-9B80-8FD1736FAE52.htm">PBR 材质（高光反射/光泽）</a><p> PBR（高光反射/光泽）材质是一种基于物理的渲染材质，可提供灯光与曲面交互方式的精确表示。 
+                        
+                     </p>
+                  </li>
+               </ul>
+            </div></span><div class="related-topics"><span class="noindex">
+               <div class="related-information">
+                  <h4 class="related">相关信息</h4>
+                  <ul>
+                     <li class="topiclist-litem"><a href="GUID-4AD18BCD-F6E0-4E99-9906-6829BC02C6B9.htm">“导入 PBR 材质”实用程序</a></li>
+                  </ul>
+               </div></span></div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

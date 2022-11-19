@@ -1,0 +1,122 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-3B9B6F3E-D213-4E9B-8808-B949F1CE63C7">
+      <meta name="description" content="使用塌陷控制器可以将程序动画轨迹转换为带有关键帧的轨迹。程序轨迹类型包括表达式、关联参数、噪波控制器，甚或类似于列表控制器的对象。">
+      <meta name="indexterm" content="控制器: 塌陷程序控制器">
+      <meta name="indexterm" content="转换: 程序动画到关键帧">
+      <meta name="indexterm" content="塌陷控制器工具（轨迹视图）">
+      <meta name="topic-type" content="concept">
+      <title>塌陷控制器</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-3B9B6F3E-D213-4E9B-8808-B949F1CE63C7"></a><div class="head">
+            <h1>塌陷控制器</h1>
+         </div>
+         <p class="blurb">使用塌陷控制器可以将程序动画轨迹转换为带有关键帧的轨迹。程序轨迹类型包括表达式、关联参数、噪波控制器，甚或类似于列表控制器的对象。 </p><a name="UL_0C7700EC2B7E495BA20628411D9DE65B"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-B5F8DE67-D8E2-4DD9-9EE2-9F4D48B4D50C">轨迹视图  <img src="../images/ac.menuaro.gif"> “编辑”菜单  <img src="../images/ac.menuaro.gif"> “控制器”子菜单  <img src="../images/ac.menuaro.gif"> “塌陷”</span> 
+            </li>
+         </ul>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3AF4"></a>也可以使用此工具将控制器轨迹转换为简单的关键帧轨迹。可以将旋转轨迹转换为 Euler 或 TCB，并将位置和缩放轨迹塌陷到 Bezier 或线性控制器。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3AF3"></a>可以塌陷整个轨迹，或通过设定“开始帧”和“结束帧”的值塌陷轨迹内某一范围的帧。使用“采样”参数可以定义将在关键点之间放置多少帧。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3AF2"></a>“塌陷控制器”可以一次折叠任意数目的选定轨迹。 
+         </p>
+         <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3AF1"></a>此功能与“塌陷”按钮类似，该按钮位于“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif"><span class="char_link"><a href="GUID-D3B1A9C1-BFD9-41C8-ADEE-D79F55EC4A18.htm">“轨迹”卷展栏</a></span>的“塌陷变换”组中。 
+         </p>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E585"></a><div class="note-warning"><span class="label label-target-language">警告:</span>如果使用具有“跟随”选项的“路径”约束，使用塌陷控制器来折叠位置和旋转轨迹将不能恰当的保持旋转，因为“路径”约束应用了另一个旋转。如果要使此类轨迹塌陷，请改为使用“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“轨迹”卷展栏的“塌陷变换”组中的“塌陷”。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-3AF0"></a> 
+            <h2><a name="GUID-62F70B12-B760-4667-853E-8F46130FA8BA"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044F9A"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190044F9B"></a>要折叠一个程序控制器轨迹，请执行如下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>在视口中，选择一个具有程序控制器的对象，然后右键单击并从四元菜单中选择曲线编辑器。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3AEF"></a>随即显示“轨迹视图 - 曲线编辑器”。 
+                  </p> 
+               </li>
+               <li>在“曲线编辑器”的“控制器”窗口中，单击要塌陷的轨迹。然后从“轨迹视图”菜单中选择“编辑”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“控制器”子菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“塌陷控制器”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3AEE"></a>将打开“塌陷控制器”对话框 
+                  </p> 
+               </li>
+               <li>更改“采样”值以指定关键点之间的帧数。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3AED"></a>默认值是 1.0，会每隔一帧创建一个关键点，这可能比要使用的数目多。那么，请尝试 5.0 或接近的值。 
+                  </p> 
+               </li>
+               <li>选择在塌陷后关键点要使用的控制器的类型。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3AEC"></a>将“位置”或“缩放”轨迹折叠为 Bezier 或线性控制器。将旋转轨迹转换为 Euler 或 TCB。 
+                  </p> 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E586"></a><div class="note-note"><span class="label label-target-language">注意:</span>TCB 控制器不显示功能曲线。 
+                     </div>
+                  </div> 
+               </li>
+               <li>单击“确定”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3AEB"></a>“关键点”窗口此时将显示折叠动画的曲线。在轨迹栏中显示关键点，和“轨迹视图 - 摄影表”相类似。 
+                  </p> 
+                  <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E587"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果要将控制器塌陷到加权列表控制器中，请启用“添加到新层”。原始控制器将以权重 0.0 存储在层中。使用此设置，它不具有任何效果，但可以在将来需要的时候使用。 
+                     </div>
+                  </div> 
+               </li>
+            </ol> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-3AEA"></a> 
+            <h2><a name="GUID-F78AE507-02AF-4A00-97A8-BE6AD9441209"></a>界面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190044F9C"></a><div class="figure-anchor"><img src="../images/GUID-BF71F198-9FC1-495C-AF76-EF57A4DB0AAE-low.png"></div>  <a name="GUID-0D287366-9C7D-49D1-9092-EA53ADEC137D"></a><dl>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D24A5"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3AE9"></a>开始帧</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487557109353211EEADCAF73-747B"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87524AC"></a>要塌陷动画范围的第一帧。默认设置为原始控制器活动范围的第一帧。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D24A6"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3AE8"></a>结束帧</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487557109353211EEADCAF73-747A"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87524AD"></a>要塌陷动画范围的最后一帧。默认设置为原始控制器活动范围的最后一帧。 
+                     </p> 
+                     <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E588"></a><div class="note-warning"><span class="label label-target-language">警告:</span>如果所选择的帧范围比原始范围小，这些范围内的动画将要折叠，除非“添加到新层”处于打开状态，否则其余的运动<em class="mild">将被抛弃</em>。 
+                        </div>
+                     </div> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D24A7"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3AE7"></a>采样</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487557109353211EEADCAF73-7479"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87524AE"></a>塌陷操作的间隔。此值确定两个关键点之间的帧数。默认设置为 1.0。 
+                     </p> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D24A8"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3AE6"></a>塌陷到</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487557109353211EEADCAF73-7478"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87524AF"></a>选择程序轨迹将要变为的控制器类型： 
+                     </p> <a name="WS1A9193826455F5FFBA679E112A6A190044F9D"></a><ul>
+                        <li> <em class="strong">Bezier 或 Euler 控制器</em> 会将 Bezier 控制器指定给位置、缩放和标量参数轨迹；将 Euler 控制器指定给旋转轨迹。 
+                        </li>
+                        <li> <em class="strong">线性或 TCB 控制器</em> 会将线性控制器指定给位置、缩放和标量参数轨迹；将 TCB 控制器指定给旋转轨迹。 
+                           <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E589"></a><div class="note-note"><span class="label label-target-language">注意:</span>TCB 控制器不显示功能曲线。 
+                              </div>
+                           </div> 
+                        </li>
+                     </ul> 
+                  </div>
+               </dd>
+               <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D24A9"></a><span class="term"><a name="WS1A9193826455F5FF103859C11318F51BDD-3AE5"></a>添加到新层</span></dt>
+               <dd>
+                  <div class="definition"><a name="WS73099CC142F487557109353211EEADCAF73-7477"></a> 
+                     <p><a name="WS1A9193826455F5FF1DBC298511635BEA87524B0"></a>启用此选项后，会将塌陷控制器作为新层添加到加权<span class="char_link"><a href="GUID-70D656D0-63E3-4A26-B31C-1915DE35BB28.htm">列表控制器</a></span>中。默认设置为禁用。 
+                     </p> 
+                     <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3AE4"></a>因为此选项使旧控制器在其他层上保持权重 0.0 不变，所以它很有用。这样便可在需要时轻松恢复原始动画。 
+                     </p> 
+                  </div>
+               </dd>
+            </dl> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

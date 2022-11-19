@@ -1,0 +1,258 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-F050AF74-D37A-4C42-90FF-39D1547A6E89">
+      <meta name="description" content="“视线检查器工具”可设置渲染效果，该效果在渲染场景时可显示分析视距信息。">
+      <meta name="indexterm" content="Civil View: 视线检查器工具">
+      <meta name="topic-type" content="concept">
+      <title>视线检查器工具</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-F050AF74-D37A-4C42-90FF-39D1547A6E89"></a><div class="head">
+            <h1>视线检查器工具</h1>
+         </div>
+         <p class="blurb">“视线检查器工具”可设置渲染效果，该效果在渲染场景时可显示分析视距信息。 </p><a name="UL_CCE702D11A3843D79C2DED58CF3D65B1"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-4154DAB9-5667-4D6A-AEAB-3D4D2047ACED">Civil View 浏览器  <img src="../images/ac.menuaro.gif">  上部面板（“Civil View 浏览器”卷展栏） <img src="../images/ac.menuaro.gif"> “工具”选项卡  <img src="../images/ac.menuaro.gif"> “渲染工具”分支  <img src="../images/ac.menuaro.gif">  右键单击“视线检查器工具”条目。 <img src="../images/ac.menuaro.gif"> “弹出”菜单  <img src="../images/ac.menuaro.gif"> “执行” <img src="../images/ac.menuaro.gif"> “视线检查器工具”</span> 
+            </li>
+         </ul>
+         <p><a name="GUID-231AAC16-254F-4FCD-9A50-BE4F4143A915"></a> “视线检查器”可设置公路上视线的简单目视检查。在动画的每个帧都渲染完后，通过追踪并分析从当前视点到一个或多个目标对象的位置和距离，可以实现此检查。报告的所有距离都使用<em class="mild"></em>直线距离计算。 
+         </p><a name="FIG_98795C45115A43FBA2E893A695B23D40"></a><div class="figure-anchor"><img src="../images/GUID-409B96C2-1186-497D-A0DC-C06C57006001-low.png"></div>
+         <p><a name="GUID-55976356-71FC-41CD-8A3B-DAA4293F7581"></a>该工具包含以下功能： 
+         </p><a name="UL_00F8763AD15944FE9226478DA49471D6"></a><ul>
+            <li> 目标对象可以是当前 3ds Max 场景中的一个或多个几何对象。 </li>
+            <li> 每个渲染帧都通过从指定目标对象搜索显示几何体的像素进行分析。然后，将收集这些目标像素以进行进一步分析。 </li>
+            <li> 将记录每个目标像素下到基本几何体的距离。接着，将存储这些距离中的最近距离、平均距离和最远距离。 </li>
+            <li> 收集了这些信息后，即可以在帧上叠合以下任意显示： <a name="UL_6670ECBEDDD44F76A0034388D5A8A611"></a><ul>
+                  <li> 目标对象范围周围的目标框。 </li>
+                  <li> 通过目标对象范围中心的十字线。 </li>
+                  <li> 帧顶部或底部的分析数据。 
+                     <p><a name="GUID-74F93326-2EEA-4639-97B5-D3DEA57E1C85"></a>此信息可包括一系列不同的参数，例如实际目标距离、摄影机位置、父图形名、摄影机名等。 
+                     </p> 
+                     <p><a name="GUID-B2AFE373-F7EA-489B-AB0D-84AB3A599B67"></a>此外，也可以显示与视距测试无关的信息，例如渲染帧的计算机名、渲染帧的用户名、3ds Max 文件的名称和路径以及渲染帧的日期和时间。 
+                     </p> 
+                  </li>
+                  <li> 水印，例如公司或项目徽标。 </li>
+               </ul> 
+            </li>
+         </ul>
+         <div class="section"><a name="SECTION_13BA73912F844E1F8B707A97F713721E"></a> 
+            <h2><a name="GUID-80EF7393-5DAC-4825-97B1-11B5691BA6EB"></a>视线分析数据文件
+            </h2> 
+            <p><a name="GUID-6335F04C-1B87-4EBA-BC7E-821AEDA4C1B4"></a>还可以将分析数据发送到文本文件，以使用 3ds Max 之外的工具进行进一步分析。该文件针对每个帧包含一行信息。数据项使用以下格式以分号分隔： 
+            </p> <a name="UL_4321E7894F7F45A5933B05311697B6EC"></a><ul>
+               <li> 字段 1：帧编号 </li>
+               <li> 字段 2：检测到目标对象的像素数 </li>
+               <li> 字段 3：到目标对象的近端距离 </li>
+               <li> 字段 4：到目标对象的远端距离 </li>
+               <li> 字段 5：到目标对象的中间距离 </li>
+               <li> 字段 6：检测到目标对象的像素百分比 </li>
+               <li> 字段 7：摄影机桩号 </li>
+               <li> 字段 8：摄影机相对于父图形的水平偏移 </li>
+               <li> 字段 9：摄影机相对于父图形的垂直偏移 </li>
+               <li> 字段 10：摄影机标高 </li>
+               <li> 字段 11：摄影机父图形名 </li>
+            </ul> 
+            <div><a name="GUID-754B5F39-9EC2-4086-8628-8F30EC907D46"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>摄影机数据仅<em class="mild"></em>适用于使用<span class="char_link"><a href="GUID-8B278D6D-2267-4D69-9EF8-1E682A15A200.htm">对象放置样式编辑器</a></span>放置的摄影机。 
+               </div>
+            </div> 
+            <p><a name="GUID-A0B5C25E-08DE-416D-8D55-C4D31C289823"></a>下面是输出文件的示例： 
+            </p> 
+            <div class="codeBlock"><pre>0;5309;-173.529922;-182.001648;-177.765778;1.728190;50.9163;6.93265;1.561;1.561;Line01
+2;5480;-170.633743;-178.974899;-174.804321;1.783854;53.8326;6.93265;1.561;1.561;Line01
+4;5641;-167.737015;-176.033371;-171.885193;1.836263;48.0;6.93265;1.561;1.561;Line01</pre></div> 
+         </div>
+         <div class="section"><a name="SECTION_6FA7708E076049A5AC22AF43A234DA62"></a> 
+            <h2><a name="GUID-14250B0B-B0B2-4099-87FA-AB386B462DAB"></a>界面
+            </h2> <a name="FIG_B0461774A8A54850ABE0BEFF5790F5A3"></a><div class="figure-anchor"><img src="../images/GUID-6C42E0DC-AF80-40EC-8071-68F470297045-low.png"></div>  <a name="GUID-F37A6596-B2B1-4E0A-B506-B4DCBF8C8D84"></a><div class="dl_section"><a name="GUID-89087D11-0D8A-4922-92F1-F89DB9D23FDD"></a><p class="title"><a name="GUID-A2EBF8CC-0B37-47A7-A54B-8D7ABF177725"></a>“视线检查器分析选项”组
+               </p>
+               <p><a name="GUID-2737B51E-0E3D-4ADA-960B-07F5BD2DC3E7"></a>对话框的此部分控制分析渲染帧以获得对象和距离信息的过程。 
+               </p>
+               <dl>
+                  <dt><a name="GUID-A4363851-1EE4-4991-A021-F4667925114B"></a><span class="term"><a name="GUID-592E8BB7-A9ED-4C35-B406-B195BB800C8C"></a>启用</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-FA20A11E-3B4D-4118-81FE-25E2CDFBF7EE"></a>启用此选项后，“视线检查器分析”渲染效果处于活动状态。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-BCB20787-05A6-4010-B931-D543286A0AA2"></a><span class="term"><a name="GUID-C9C999A5-AA91-4C5D-9075-58DB5FFB9CFB"></a>使用对象 ID</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-375C6550-CD70-489D-A4F7-A92972886DE4"></a>指定目标对象使用的对象 ID。默认值＝100。 
+                        <p><a name="GUID-652E3F77-0A23-4549-A78E-B540EBAA53C4"></a>在 3ds Max 中，被指定了非零对象 ID 的任何对象都会获得与该通道 ID 关联的渲染效果。在这种情况下，会对具有此 ID 的所有对象执行视距分析。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-A5A08BA6-CCBF-4BBB-B114-3599E58986BD"></a><span class="term"><a name="GUID-CC27427E-1C10-4B85-9B42-2D9910EF57D0"></a>添加对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-3CCD9EE0-D785-4E0C-A571-48ED4FE9AF95"></a>若要添加目标对象，请单击以启用，然后单击视口中的对象。Civil View 会将对象 ID 指定给此目标。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-9264FB36-FFB2-41F5-8876-DF52CF58B95B"></a><span class="term"><a name="GUID-135A9171-50B4-48B8-B55D-D769E29B47E0"></a>删除对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-88E88021-039E-48EE-B597-625FCE54BD1C"></a>若要删除目标对象，在列表中高亮显示该对象，然后单击此按钮。Civil View 会将该对象的 ID 设置为 0。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-4F25E189-9287-4CB2-B122-B740AFE57D2C"></a><span class="term"><a name="GUID-550DBCB0-18EC-46FE-AC57-BF40641610D1"></a>“目标对象”列表</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-1F7F3152-8019-48D5-934D-90375E4C9CE7"></a>列出已选择的目标。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-A3AFDA2B-2D1E-47F7-8907-F2F3F6DB3061"></a><span class="term"><a name="GUID-F7FB7B09-04B5-4B72-A9B2-E8B32B532066"></a>显示进度对话框？</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-2003E954-B720-4025-A07A-A845BEEB1A69"></a>启用此选项后，在分析帧时将显示一个进度对话框。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-D57E9509-7338-473F-ABD3-968532000B13"></a><span class="term"><a name="GUID-A37CA048-EB19-4231-8007-D747A92A8C0E"></a>绘制十字线？</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-98B38A34-E129-48EE-AFCD-27C8A76E454E"></a>启用此选项后，将在渲染帧上绘制十字线，以指示表示目标对象的像素组的中心。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-4EE141D4-3FCF-4305-A36A-B9BB8489C778"></a><span class="term"><a name="GUID-16605123-FE32-432B-938A-DDA4C0E3118A"></a>绘制目标对象轮廓？</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-24274791-FC93-450C-A69E-635586D8C701"></a>启用此选项后，将在表示目标对象的像素组周围的渲染帧上绘制一个框。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-582CAC81-14E7-435A-8865-A4B26F72F4FD"></a><span class="term"><a name="GUID-4A16ED7E-B7C3-4109-A299-D04758E2F942"></a>填充目标对象？</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-E61B5E91-6007-4404-90DD-437FF7E0CAD0"></a>启用此选项后，将在表示目标对象的像素组上绘制颜色。 <a name="UL_2EDD22B5052A4C5C82E48AC9F5135DD0"></a><ul>
+                           <li><em class="strong">填充量(%)</em>设置要应用于像素的填充百分比。 
+                           </li>
+                           <li><em class="strong">[填充颜色]</em>显示填充颜色。单击样例可显示颜色选择器以更改此颜色。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-2DB0AD1D-3982-457A-AAAF-B9C8BC60F142"></a><span class="term"><a name="GUID-CE325970-00E6-4C34-998D-9EE5073B1FBB"></a>将视线分析数据输出到文件</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-1B07169F-DCFD-4D28-A7ED-313D137E4C19"></a>启用此选项后，会将视线分析数据写入到文本文件中。 <a name="UL_671CB7B463F64BA99389B2E005B2C3BB"></a><ul>
+                           <li><em class="strong">[文件名]</em>显示文件的名称。 
+                           </li>
+                           <li><em class="strong">文件</em>单击可打开文件对话框以选择其他目标文件。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-65B6D7B1-FB80-46BA-8CB7-C07192691283"></a><p class="title"><a name="GUID-1207D0B3-F2CB-46AD-9714-2C4C8E278898"></a>“渲染帧输出选项”组
+               </p>
+               <p><a name="GUID-CD01A267-D75F-4EA8-82F5-CA0C1B85CBB3"></a>这些选项控制文本分析信息输出到渲染输出帧的方式。可以将文本添加到渲染帧的六个位置：左上、中上、右上、左下、中下和右下。可以自定义显示在任意这些位置的文本。 
+               </p>
+               <dl>
+                  <dt><a name="GUID-4E6BF610-1E81-4C5C-BE39-1F4F748EC808"></a><span class="term"><a name="GUID-16819A85-1ED5-4B4A-B4FF-57DA69220683"></a>启用</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-174AC5B1-8D99-41DF-9AF4-88742914DD6F"></a>启用此选项后，将在渲染帧的顶部和底部使用文本显示。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-69271100-DCBD-47EC-97FA-DBD3C745D7AA"></a><span class="term"><a name="GUID-CEA6E59D-A059-427D-B638-F7941D9E3DE3"></a>使用文本背景</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-9C209880-AC85-4F7B-92E8-8FB6352D34FD"></a>启用此选项后，将对文本显示黑色背景。 
+                        <p><a name="GUID-2D6C027D-8BF6-4623-B4F7-078F788CE5E3"></a>此选项可帮助使文本针对浅色渲染可见。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-353CB46B-0ECA-434E-AC7C-92D984AA7312"></a><span class="term"><a name="GUID-BE4BD6CE-4270-4B2B-8ED1-12C4887424DF"></a>Alpha 混合(无缩放)</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-90459945-849D-429B-ADD2-12B973EA6EE0"></a> 启用此选项后，渲染到帧的文本将与渲染图像的 Alpha 通道混合。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-B1312A4F-7F14-4974-B62D-54EF781C05DF"></a><span class="term"><a name="GUID-660F133C-6ABF-45CC-A148-63C02600DE1D"></a>文字靠上左对齐/文字靠上居中对齐/文字靠上右对齐，[等等]</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-F62AB5A1-1DCA-4DDA-8526-0B68029CF7DE"></a>对于这六个文本位置的任一位置，都可以选择将文本叠加到帧上。 
+                        <p><a name="GUID-8E1C8320-ED64-4F37-A9F2-30BB0BED51E0"></a>其中包括以下选项： 
+                        </p> <a name="UL_3AB385776F1C4788A13955F4806D2DAA"></a><ul>
+                           <li> <em class="strong">无</em>不显示文本 
+                           </li>
+                           <li> <em class="strong">对象近端距离</em>到目标对象的最近距离，从分析的像素集中导出 
+                           </li>
+                           <li> <em class="strong">对象中间距离</em>到目标对象的平均距离，从分析的像素集中导出 
+                           </li>
+                           <li> <em class="strong">对象最大距离</em>到目标对象的最远距离，从分析的像素集中导出 
+                           </li>
+                           <li> <em class="strong">当前帧(数字)</em>当前帧编号 
+                           </li>
+                           <li> <em class="strong">当前帧(SMPTE)</em>SMPTE 格式的当前帧编号 
+                              <p><a name="GUID-341AC1DF-BF45-4DA3-A00B-6215D21EA257"></a>SMPTE 时间码（读音为 /ˈsɪmtiː/）包含以二进制十进制 hour:minute:second:frame 格式编码的信息。 
+                              </p> 
+                           </li>
+                           <li> <em class="strong">当前帧(秒)</em>以秒表示的当前帧 
+                           </li>
+                           <li> <em class="strong">3ds Max Design 文件名</em>：当前 3ds Max 场景的文件名 
+                           </li>
+                           <li> <em class="strong">3ds Max Design 文件名和路径</em>：当前 3ds Max 场景的完整路径和文件名 
+                           </li>
+                           <li> <em class="strong">用户</em>当前用户的名称，从计算机的操作系统中导出 
+                           </li>
+                           <li> <em class="strong">计算机名</em>当前计算机的主机名，从计算机的操作系统中导出 
+                           </li>
+                           <li> <em class="strong">日期/时间帧已渲染</em>渲染帧的日期和时间 
+                           </li>
+                           <li> <em class="strong">摄影机名</em>基于其查看的摄影机的名称 
+                           </li>
+                           <li> <em class="strong">摄影机标高</em>基于其查看的摄影机的标高 
+                           </li>
+                           <li> <em class="strong">摄影机桩号</em>基于其查看的摄影机的当前桩号 
+                           </li>
+                           <li> <em class="strong">摄影机水平偏移</em>摄影机的当前水平偏移（相对于其父图形） 
+                           </li>
+                           <li> <em class="strong">摄影机垂直偏移</em>摄影机的当前垂直偏移（相对于其父图形） 
+                           </li>
+                           <li> <em class="strong">% 所需距离已实现</em>显示指定所需距离（请参见下文）已实现多少的刻度条 
+                           </li>
+                           <li> <em class="strong">自定义文本</em>指定的自定义文本字符串 
+                           </li>
+                           <li> <em class="strong">MAXScript 表达式</em>使用 MAXScript 表达式计算指定的文本。这可能会允许当前 3ds Max 场景中的任何其他值输出到帧中：例如目标对象桩号、摄影机和目标对象之间的路线距离、时间等等。 
+                              <p><a name="GUID-960BB5C9-6C5D-4B71-8CA7-70A78D00A190"></a>下面是一个 MAXScript 表达式，它可以将当前时间 (hh:mm) 输出到帧（如果需要，使用您自己日光系统的名称替换 <em class="mild">Daylight01</em>）： 
+                              </p> 
+                              <p><a name="GUID-0F913E6F-6330-4066-981F-56596DF4BD86"></a> <em class="strong">((int($Daylight01[3].object.value/3600.0)) as string) + ":" + ((formattedPrint (int(($Daylight01[3].object.value - int($Daylight01[3].object.value/3600.0)*3600.0)/60.0))
+                                    format:"02.2d") as string)</em> 
+                              </p> 
+                           </li>
+                        </ul> 
+                        <div><a name="GUID-B31E1518-7296-4538-BF83-12B396FBBA30"></a><div class="note-important"><span class="label label-target-language">重要信息:</span>摄影机选项仅适用于<em class="mild"></em>使用<span class="char_link"><a href="GUID-8B278D6D-2267-4D69-9EF8-1E682A15A200.htm">对象放置样式编辑器</a></span>放置的摄影机。 
+                           </div>
+                        </div>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-7E1D8F5E-3BFC-4307-BE91-731F4D0E51D8"></a><span class="term"><a name="GUID-4FF4D9BD-2FA7-4AF2-AB5A-8D82F206DBCD"></a>字体缩放</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-F2489832-BDE6-4C2C-903D-5B13A80071C2"></a>确定输出到帧的文本的比例。默认值为 1。值为 2 会将文本高度显示为默认高度的两倍。 
+                        <p><a name="GUID-1BA5707C-BE15-43CA-BCE5-65B90CA2DB4C"></a>在您渲染高分辨率图像时，此选项非常有用。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-34C01930-C0D8-4244-9C1D-75F09B92C888"></a><span class="term"><a name="GUID-D3B46ADD-B0EA-4198-87D2-FA4B134757CE"></a>数字填充</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-18D898CB-F58C-4DA0-88AD-8B7BE1B957C9"></a>设置用于帧编号的数字位数。例如，如果数字填充为 4，帧 1 将显示为“0001”，帧 250 将显示为“0250”；如果数字填充为 5，帧将显示为“00001”和“00250”。
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-C14099A4-72A3-4F5B-BDFC-72F1CC9CADE3"></a><span class="term"><a name="GUID-8FBCD80A-DEE1-48F9-BAED-ABFA11EC7D1C"></a>所需距离</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-86ED9314-8592-4132-AB66-BC83809F1B6E"></a>设置您希望实现的视距。 
+                        <p><a name="GUID-CCCE2B04-00C1-414A-8A8F-2F1BB2C69C30"></a>可以在渲染文本中显示此值，如上文所述。 
+                        </p>
+                     </div>
+                  </dd>
+                  <dt><a name="GUID-5E3899FE-59ED-4274-A24C-ECAF0EDA39C8"></a><span class="term"><a name="GUID-3410E56B-1CA4-40FB-A952-C9BC39C94462"></a>添加水印？</span></dt>
+                  <dd>
+                     <div class="definition"><a name="GUID-6EF78BF4-BE4F-4C57-8FF1-8129D1EB8FA2"></a>启用此选项后，将在每个帧上叠合一个水印图像。 <a name="UL_6BE9C7E8E0424F53BDDBC7BE76A95FE3"></a><ul>
+                           <li><em class="strong">[文件名]</em>显示水印文件的名称。 
+                           </li>
+                           <li><em class="strong">文件</em>单击可打开文件对话框以选择其他水印文件。 
+                           </li>
+                           <li><em class="strong">X 位置/Y 位置</em>设定水印相对于帧的左上角的 X 和 Y 偏移，以像素为单位表示。 
+                           </li>
+                           <li><em class="strong">不透明度(%)</em>设定水印的不透明度。 
+                           </li>
+                           <li><em class="strong">[混合类型下拉列表]</em>选择应用水印时要使用的混合类型。以下是标准合成选项：普通、Alpha、相加、相减、正片叠底、滤色、戳记、叠加和发光度。 
+                           </li>
+                        </ul>
+                     </div>
+                  </dd>
+               </dl>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

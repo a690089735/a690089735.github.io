@@ -1,0 +1,127 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-D4F00ED7-1736-4106-9992-11381F39FCF6">
+      <meta name="description" content="在“优化”面板上，选择要生成的优化级别，以及将处于启用状态的选项。">
+      <meta name="indexterm" content="批处理 ProOptimizer 工具: 优化级别">
+      <meta name="indexterm" content="批处理 ProOptimizer 工具: 选项">
+      <meta name="topic-type" content="concept">
+      <title>批处理优化：“优化”面板</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-D4F00ED7-1736-4106-9992-11381F39FCF6"></a><div class="head">
+            <h1>批处理优化：“优化”面板</h1>
+         </div>
+         <p class="blurb">在“优化”面板上，选择要生成的优化级别，以及将处于启用状态的选项。 </p><a name="UL_5F2BA9A200D14142960977B823F4A897"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-6ECEE80D-6CCD-4177-933B-AD84A27DD8BD"> <img src="../images/GUID-26D492F7-3E48-4209-AB7B-FEC655C6DA3D-low.png">“工具”面板  <img src="../images/ac.menuaro.gif"> “工具”卷展栏  <img src="../images/ac.menuaro.gif"> “更多”按钮  <img src="../images/ac.menuaro.gif"> “工具”对话框  <img src="../images/ac.menuaro.gif"> “批处理 ProOptimizer” <img src="../images/ac.menuaro.gif">  单击“批处理优化”。 <img src="../images/ac.menuaro.gif"> “批处理优化”对话框  <img src="../images/ac.menuaro.gif"> “优化”面板</span> 
+            </li>
+         </ul>
+         <p><a name="WS73099CC142F48755-42A8108711A530FF1D3-75F9"></a>这些设置类似于<span class="char_link"><a href="GUID-109C880F-181B-4067-91F0-B4EF79639FB3.htm">“ProOptimizer”修改器</a></span>中的设置。主要差别在于可以选择生成多个文件，且每个文件具有不同的优化级别。 
+         </p>
+         <div class="section"><a name="WS73099CC142F48755-42A8108711A530FF1D3-75F7"></a> 
+            <h2><a name="GUID-5363F9B0-F856-4407-ADBF-213226972336"></a>界面
+            </h2> <a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7ED7"></a><div class="figure-anchor"><img src="../images/GUID-CDD9C7B3-C6BB-4901-8F01-5F107C678C5A-low.png"></div>  <a name="GUID-9A16313C-8CE9-4B74-B339-8D6CB6717012"></a><div class="dl_section"><a name="GUID-2320703F-88C9-45CF-B94B-FE7007A4FAF6"></a><p class="title"><a name="GUID-30113642-15CD-4CAE-98C8-8DBA302824C5"></a>“优化级别”组
+               </p>
+               <p><a name="WS73099CC142F48755-42A8108711A530FF1D3-731C"></a>该组中的控件类似于修改器的“顶点 %”控件（请参见<span class="char_link"><a href="GUID-109C880F-181B-4067-91F0-B4EF79639FB3.htm">“ProOptimizer”修改器</a></span>），不过您可以使用这些控件在批处理过程中生成多个优化场景。 
+               </p><a name="GUID-9CC3D286-068A-45A3-BE3D-C348D0DFC565"></a><dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D462"></a><span class="term"><a name="WS73099CC142F48755-42A8108711A530FF1D3-731B"></a>预定义的顶点 %</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FD6"></a> 
+                        <p><a name="WS73099CC142F48755-42A8108711A530FF1D3-731A"></a>当“预定义的顶点 %”处于启用状态时，您可以使用自己输入的“顶点 %”值，生成最多 5 个优化文件。默认值设置是 25、50、65、75、90。 
+                        </p> 
+                        <p><a name="WS73099CC142F48755-42A8108711A530FF1D3-7319"></a>如果输入的值少于 5 个，ProOptimizer 只会生成与指定“顶点 %”值个数相同数量的优化文件。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D463"></a><span class="term"><a name="WS73099CC142F48755-42A8108711A530FF1D3-7318"></a>自动顶点 %</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FD5"></a> 
+                        <p><a name="WS73099CC142F48755-42A8108711A530FF1D3-7317"></a>当“自动顶点 %”处于启用状态时，ProOptimizer 将以固定“顶点 %”间隔生成多个优化文件。每个间隔均大于 0% 且小于 100%（0% 将根本不保留几何模型，100% 则与原始模型完全一样）。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-79B2"></a>所选择的数量为 ProOptimizer 生成的优化文件的数量。默认设置是 9。 
+                        </p> 
+                        <p><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-79B1"></a>例如，选择默认数量 9 时，优化文件将使用“顶点 %”值 10、20、30 至 90。如果将该数字更改为 3，则“顶点 %”值为 25、50、和 75。如果该数字为 50（太大，不切实际），将使用“顶点 %”值 2、4、6 至 98。 
+                        </p> 
+                     </div>
+                  </dd>
+               </dl>
+               <p><a name="WS73099CC142F48755-42A8108711A530FF1D3-7316"></a>要了解如何保存优化文件的选项，请参见<span class="char_link"><a href="GUID-112F6B00-B320-40C2-813F-FAA7BF32216C.htm">批处理优化：“优化文件”面板</a></span>。 
+               </p>
+            </div>
+            <div class="dl_section"><a name="GUID-97651C29-4680-48C6-8578-57C5381D663E"></a><p class="title"><a name="GUID-4CF1F7E0-AEF9-4405-BCCE-C965269563AF"></a>“优化选项”组
+               </p>
+               <dl>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D464"></a><span class="term"><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CB5"></a>压碎边界/保护边界/排除边界</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FD4"></a> 
+                        <p><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CB4"></a>请参见<span class="char_link"><a href="GUID-2B2C5BF0-6FB0-4601-9F0E-628D32C3AE0F.htm">“优化模式”组</a></span>。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D465"></a><span class="term"><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CB3"></a>优化隐藏对象</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FD3"></a> 
+                        <p><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CB2"></a>启用时，ProOptimizer 将优化隐藏对象及可见对象。禁用时，ProOptimizer 仅优化可见对象。默认设置为启用。 
+                        </p> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D466"></a><span class="term"><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CB1"></a>合并顶点</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FD2"></a> 
+                        <p><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CB0"></a>启用时，将在优化之前应用“合并顶点”工具。默认设置为禁用状态。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CAF"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果模型中有不应断开而断开的面，请使用此工具。 
+                           </div>
+                        </div> <a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CAE"></a><ul>
+                           <li> <em class="strong">阈值</em>“合并顶点”工具的“阈值”设置。请参见<span class="char_link"><a href="GUID-7D1248AB-537F-496E-AD0B-74A0ED887DF9.htm">“合并工具”组</a></span>。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+                  <dt><a name="WS1A9193826455F5FF4E421D7D11BF108001D467"></a><span class="term"><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CAA"></a>合并面</span></dt>
+                  <dd>
+                     <div class="definition"><a name="WS1A9193826455F5FF-5187222B11EEADCDC61-5FD1"></a> 
+                        <p><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CA9"></a>启用时，将在优化之前应用“合并面”工具。默认设置为禁用状态。 
+                        </p> 
+                        <div><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CA8"></a><div class="note-tip"><span class="label label-target-language">提示</span>如果模型中有细分为共面面的曲面，请使用此工具。 
+                           </div>
+                        </div> <a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CA7"></a><ul>
+                           <li> <em class="strong">阈值角度</em>“合并面”工具的“阈值角度”设置。请参见<span class="char_link"><a href="GUID-7D1248AB-537F-496E-AD0B-74A0ED887DF9.htm">“合并工具”组</a></span>。 
+                           </li>
+                        </ul> 
+                     </div>
+                  </dd>
+               </dl>
+            </div>
+            <div class="dl_section"><a name="GUID-943CC6C7-A8E2-4EA0-B1BA-C000DD69FDEB"></a><p class="title"><a name="GUID-9ADE49C2-00E9-4B6E-8DD1-C0635F6840A6"></a>“材质和 UV”组
+               </p>
+               <p><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CA2"></a>其选项与该修改器选项相同。请参见<span class="char_link"><a href="GUID-86DDCD03-C817-4DB6-8041-207D17C8CB59.htm">“材质和 UV”组</a></span>。 
+               </p>
+            </div>
+            <div class="dl_section"><a name="GUID-16E5AED8-BCC6-4D0F-99D1-3E86F81BA6E7"></a><p class="title"><a name="GUID-BE0E0FC1-98C8-4933-863E-C0B56AC71396"></a>“顶点颜色”组
+               </p>
+               <p><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7CA0"></a>其选项与该修改器选项相同。请参见<span class="char_link"><a href="GUID-E16D4B6B-55D3-4AEF-9722-61AD66BEC89F.htm">“顶点颜色”组</a></span>。 
+               </p>
+            </div>
+            <div class="dl_section"><a name="GUID-E7E24DA0-C698-4EED-BA91-6D48A73CC1EF"></a><p class="title"><a name="GUID-5A3C6BED-E95A-49D3-B761-D7E4BB1233DC"></a>“对称选项”组
+               </p>
+               <p><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7C9E"></a>其选项与该修改器选项相同。请参见<span class="char_link"><a href="GUID-66426B44-AB87-42B6-A8B9-D2CAE4674510.htm">“对称选项”卷展栏</a></span>。 
+               </p>
+            </div>
+            <div class="dl_section"><a name="GUID-241877F7-11FA-4884-BEFC-CFC9C2CF69EA"></a><p class="title"><a name="GUID-A9598B6D-5115-4401-BB6F-4D84CA897E72"></a>“法线”组
+               </p>
+               <p><a name="WS1A9193826455F5FF-6672057A11CE3B1F807-71CC"></a>其选项与该修改器选项相同。请参见<span class="char_link"><a href="GUID-6E0BFC39-6CC8-47AE-9FEB-DBBD63E1EB83.htm">“法线”组</a></span>。 
+               </p>
+            </div>
+            <div class="dl_section"><a name="GUID-965BCEE1-8E8A-4C94-83EA-2AEF25EF7D57"></a><p class="title"><a name="GUID-7A2F1C80-B006-4C41-A78D-E38432399812"></a>“高级选项”组
+               </p>
+               <p><a name="WS1A9193826455F5FF-4FDFBFFB11A5310C890-7C9C"></a>其选项与该修改器选项相同。请参见<span class="char_link"><a href="GUID-1C60B21C-3A3B-4EF9-AFAE-69C4383E4B3B.htm">“高级选项”卷展栏</a></span>。 
+               </p>
+            </div> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

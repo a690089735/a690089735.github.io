@@ -1,0 +1,57 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-AE6BE7A8-8443-4280-B718-7881DC388BE9">
+      <meta name="description" content="“考虑动画范围”可以对参数化的非关键点控制器轨迹进行约束，使之仅在该轨迹当前动画范围内处于活动状态。选择此选项可将轨迹的背景颜色改为灰色。">
+      <meta name="indexterm" content="考虑动画范围">
+      <meta name="topic-type" content="concept">
+      <title>考虑动画范围</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-AE6BE7A8-8443-4280-B718-7881DC388BE9"></a><div class="head">
+            <h1>考虑动画范围</h1>
+         </div>
+         <p class="blurb">“考虑动画范围”可以对参数化的非关键点控制器轨迹进行约束，使之仅在该轨迹当前动画范围内处于活动状态。选择此选项可将轨迹的背景颜色改为灰色。 </p><a name="UL_3065572A37AE4F0280838194886702BA"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-C5205893-D3FF-4A06-B6DB-42FF4086FCEB">轨迹视图  <img src="../images/ac.menuaro.gif">  选择一个控制器轨迹  <img src="../images/ac.menuaro.gif"> “控制器”菜单  <img src="../images/ac.menuaro.gif"> “控制器”子菜单  <img src="../images/ac.menuaro.gif"> “考虑动画范围”</span> 
+            </li>
+         </ul>
+         <div><a name="WS1A9193826455F5FFBA22E1113C6C30C0E5A1"></a><div class="note-note"><span class="label label-target-language">注意:</span>如果<span class="char_link"><a href="GUID-ED1ED651-2A60-439F-A32A-02E0D2E84105.htm">忽略动画范围</a></span>是默认设置（禁用<span class="char_link"><a href="GUID-43D3B2E7-938C-450D-BB14-15BF3C1B8C64.htm">动画首选项</a></span>中的“默认情况下覆盖参数化控制器范围”选项对其进行更改），较早场景中的控制器轨迹设置为此设置，以保持其原来的行为。 
+            </div>
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-396A"></a> 
+            <h2><a name="GUID-F8E0E09D-DEA6-4764-B49B-B46764F80EDA"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190045050"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A190045051"></a>示例：要设置控制器轨迹以考虑动画范围，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>创建一个球体。 </li>
+               <li>在 <img src="../images/GUID-EBCA3C24-9B3B-46F2-A058-71C6B3FFD2E6-low.png">“运动”面板 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“指定控制器”卷展栏上，高亮显示球体的“位置”轨迹。 
+               </li>
+               <li>单击 <img src="../images/GUID-B37F3828-8B20-4C02-BF02-B151E0CBBB68-low.png">（指定控制器），并从“指定控制器”对话框中选择“噪波位置”。 
+               </li>
+               <li> 此时 <span class="charspan-msgph">3ds Max</span> 将打开“噪波控制器”对话框。保持当前设置并关闭该对话框。 
+               </li>
+               <li> <img src="../images/GUID-AEA0DCE7-AEB5-4739-B941-449CC7232C3F-low.png"> 选择球体，然后右键单击它。从“四元菜单”上，选择“摄影表”。在“摄影表”编辑器中，确保 <img src="../images/GUID-A4BF0008-1F36-4FBF-9558-A9AC2B7363E2-low.png">（编辑范围）处于活动状态。 
+               </li>
+               <li>展开“控制器”窗口中的层次项目，直到找到球体的位置轨迹为止，然后单击该轨迹将其高亮显示。 </li>
+               <li>向右拖动轨迹的范围条，使其从第 10 帧开始。 <a name="WS1A9193826455F5FFBA679E112A6A190045052"></a><div class="figure-anchor"><img src="../images/GUID-A05879AD-8305-4B48-8EF1-E49762F80318-low.png"></div>  
+               </li>
+               <li><img src="../images/GUID-5B32F2AB-610D-42BB-8C54-81463BE72359-low.png"> 播放动画或拖动时间滑块。 
+                  <p><a name="GUID-81D50DC0-3A27-492B-A10B-4BD5109877BA"></a>整个时间范围内都出现动画，甚至在帧 0-9 期间（其中不存在位置轨迹范围）也是如此。这是因为“忽略动画范围”是默认设置。 
+                  </p> 
+               </li>
+               <li>在“轨迹视图编辑”菜单 <img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“控制器”子菜单上，选择“考虑动画范围”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3969"></a>轨迹的背景色将更改。 
+                  </p> 
+               </li>
+               <li> <img src="../images/GUID-5B32F2AB-610D-42BB-8C54-81463BE72359-low.png"> 播放动画。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3968"></a>因为“考虑动画范围”处于启用状态，所以球体只能在轨迹的动画范围内移动。 
+                  </p> 
+               </li>
+            </ol> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-466E0926-172C-4612-840A-F25F2FB9EB01">
+      <meta name="description" content="下面是使用 NURBS 创建模型的提示。">
+      <meta name="indexterm" content="NURBS: 创建模型">
+      <meta name="topic-type" content="concept">
+      <title>如何通过 NURBS 建模制作对象</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-466E0926-172C-4612-840A-F25F2FB9EB01"></a><div class="head">
+            <h1>如何通过 NURBS 建模制作对象</h1>
+         </div>
+         <p class="blurb">下面是使用 NURBS 创建模型的提示。 </p>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DE7"></a> 
+            <h2><a name="GUID-576F3F66-174C-4A08-BF8B-8BA054AD8A0D"></a>对象和子对象
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DE8"></a><ul>
+               <li>在 <span class="charspan-msgph">3ds Max</span> 中，NURBS 模型是单一的顶级 <span class="char_link"><a href="GUID-7F3EB6C9-AF07-4FFC-B570-3D1AB9852AA5.htm">NURBS 对象</a></span>，该对象可以包含各种子对象。通常，在顶级重建单个对象，然后立即转到“修改”面板，并添加子对象，方法是使用卷展栏或 <span class="char_link"><a href="GUID-BB2692CD-15DF-459E-8D2A-C0EF3385551D.htm">NURBS 创建工具箱</a></span>。 
+               </li>
+               <li>子对象可以是独立的，也可以是不独立的。<span class="char_link"><a href="GUID-70AB26E4-255F-4DAA-8374-E351C131D960.htm">独立的子对象</a></span>使用关系建模构建与其他几何体有关的 NURBS 几何体。但是，应该了解，模型的相关性越强，交互式操作的速度就越慢。 
+               </li>
+               <li>通常，点曲线和曲面比 CV 曲线和曲面创建速度慢。修剪是最慢的一种相关性操作，而纹理曲面是操作速度最慢的一种独立子对象。 </li>
+               <li>如果独立子对象在设置动画时未发生更改，可以在完成创建后使子对象独立来提高性能。 </li>
+               <li>要将修改器应用到选定的子对象，可以使用<span class="char_link"><a href="GUID-BCB5309F-F974-42E7-872E-243F227133F2.htm">曲面选择</a></span>。但是，执行上述操作之前，确保“相关堆栈”处于启用状态；此时，<span class="char_link"><a href="GUID-93976B21-A523-4534-8877-AE922D121EF9.htm">相关堆栈</a></span>位于 NURBS 模型的“常规”卷展栏中。否则，“曲面选择”修改器只能选择“曲面”和“曲面 CV”子对象层级。 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DE9"></a> 
+            <h2><a name="GUID-895FD81F-08C2-49C6-99A1-C756CD212382"></a>将其他对象转化为 NURBS
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DEA"></a><ul>
+               <li>请记住，可以将<span class="char_link"><a href="GUID-6B094F12-B672-4E8B-8A03-0D6776B6C78B.htm">样条线</a></span>塌陷到 NURBS 对象。样条线“形状”或 NURBS 曲线可能是 NURBS 模型一个理想的开始对象。 
+               </li>
+               <li>使用锐角的形状可以塌陷为多条 NURBS 曲线。首次将“形状”转化成<span class="char_link"><a href="GUID-60F20068-36AE-4CB8-9FE1-EEE1516AEF86.htm">可编辑样条线</a></span>之前，可以对此进行控制。修改可编辑的样条线，以便于所有的顶点都属于 Bezier 或平滑顶点。此后，将该样条线塌陷为 NURBS 曲线时，将会获得单条曲线。 
+               </li>
+               <li>如果需要单条 NURBS 曲线，则<em class="mild">不会</em>将顶点更改为 Bezier 角点顶点。这些顶点始终会转化成两个不同 NURBS 曲线之间的连接。 
+               </li>
+               <li>将<span class="char_link"><a href="GUID-66152BDE-BA64-423F-8472-C1F0EB409E16.htm">基本体</a></span>塌陷到 NURBS 对象中是开始构建 NURBS 模型的最快速的方法之一。塌陷该基本体之后，可以选择各种 CV，然后对其进行变换。可以转化为 NURBS 的其他对象是<span class="char_link"><a href="GUID-A4A18C5F-B971-4A78-B180-177278D69870.htm">棱柱</a></span>、<span class="char_link"><a href="GUID-1DC00259-987D-4FBE-9227-6037BE9A661C.htm">环形结</a></span>、<span class="char_link"><a href="GUID-4CCA4890-83E8-41C6-9FFB-0A3959194CCA.htm">放样</a></span>和<span class="char_link"><a href="GUID-004BE4A2-F179-4343-BADA-55B55B1DF8D6.htm">面片栅格</a></span>。 
+               </li>
+               <li>通过应用修改器，还可以更改 NURBS 曲面。修改器可以对曲面上的点或 CV 操作，但不能对曲面本身操作。应用修改器之后，请塌陷<span class="char_link"><a href="GUID-80209C3A-C2E4-4541-8738-D1E5ECE16E9C.htm">修改器堆栈</a></span>。此时，将会从堆栈中删除修改器，而不会更改修改点或 CV 的位置，从而生成更为简单更为便捷的模型。 
+               </li>
+               <li>创建 NURBS 曲面对象的另外一种方法是，对 NURBS 曲线应用<span class="char_link"><a href="GUID-9353AF31-45CC-48BA-8B94-2CC5E050F928.htm">“车削”</a></span>或<span class="char_link"><a href="GUID-36DF6364-2624-4CE1-8AC0-5CEED91CB393.htm">“挤出”</a></span>修改器。将修改器的“输出类型”设置为 NURBS，然后在调整完参数时执行塌陷操作。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FC3"></a>（还存在着 NURBS 车削和挤出曲面子对象类型。这些类型可以应用于曲线子对象。） 
+                  </p> 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DEB"></a> 
+            <h2><a name="GUID-D3193BE4-2453-4CCE-885C-9B5AB296B74C"></a>快捷键、捕捉和用户界面提示
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DEC"></a><ul>
+               <li>不要忘记启用<span class="char_link"><a href="GUID-C14C1D13-0E8E-4471-9671-077FDFB156C8.htm">插件键盘快捷键切换</a></span>。启用该选项时，可以使用所有的 NURBS 键盘快捷键。 
+               </li>
+               <li><span class="keyboardEntry">H</span> 是最有用的 NURBS 键盘快捷键之一，可以打开“子对象对象”对话框。这是<span class="char_link"><a href="GUID-71901B07-61A5-4C2E-BECF-BF3CBB3D5A36.htm">“选择浮动框”</a></span>的子集，在创建和选择子对象时可以使用。如果子对象挤在一起或难于看到，使用该快捷键是很方便的。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FC2"></a>另外一种快捷键方式是 <span class="keyboardEntry">CTRL+H</span>。使用该快捷键，也能显示“选择对象”对话框，但只能列出那些鼠标光标下面的 NURBS 子对象。 
+                  </p> 
+               </li>
+               <li><span class="char_link"><a href="GUID-F5B8D8DC-1B77-42F4-9C0F-7CCB320E0BA9.htm">“栅格和捕捉设置”对话框</a></span>（右键单击 3D 捕捉切换可以显示）中包含特殊的 NURBS 捕捉。使用 NURBS 捕捉时，请禁用“选项/轴约束”；否则，捕捉只适用于当前轴。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FC1"></a>另外，请记住，只有使视口处于活动状态时，捕捉才能在视口中起作用。选择捕捉设置时<em class="mild">不会</em> 启用捕捉。您还必须启用<span class="char_link"><a href="GUID-66F42B65-7EA5-4CF8-BBF1-46EBC0845C75.htm">“3D 捕捉切换”按钮</a></span>（位于状态栏中）。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FC0"></a>创建曲线以构建<span class="char_link"><a href="GUID-CA0474F1-87AC-4820-B257-2CA8E262D0FB.htm">单轨</a></span>和<span class="char_link"><a href="GUID-DD3B220A-7D44-4C55-A274-002F25976D04.htm">双轨迹</a></span>扫描曲面时，捕捉尤其有用。 
+                  </p> 
+               </li>
+               <li>请记住，如果没有离开视口，可以右键单击以显示<span class="char_link"><a href="GUID-3A803F43-6F87-40FB-97CA-33844078AF9A.htm">四元菜单</a></span>。该菜单包含各种快捷键，用于更改子对象层级、创建某些子对象和使用其他一些编辑命令。 
+               </li>
+               <li>使用 NURBS 时，“修改”面板中有很多卷展栏。最小化不需要的卷展栏。例如，如果不应用“修改器”，最小化“修改器”是很有用的；如果创建的是 U 向放样、UV 放样和单轨或双轨扫描曲面，最小化“曲面公用”卷展栏是很有用的。 </li>
+               <li>不要对视口进行设置，使其显示边面。边的显示速度比简单着色视口的显示速度慢几乎两倍。 </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DED"></a> 
+            <h2><a name="GUID-DC46E7D7-4AAA-4049-A2D2-D7D99E7205F7"></a>创建曲线
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DEE"></a><ul>
+               <li>绘制 CV 曲线时，单击三次，以便获得锐角转角。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FBF"></a>但是，请注意，多个 CV 会增加计算量，因而会降低模型的性能和稳定性。但是，如果要使用该曲线构建 U 向放样，这是最理想的方法。 
+                  </p> 
+               </li>
+               <li>此外，通过两个单独的 NURBS 曲线子对象的熔合，可以创建锐角转角。如果不是使用曲线构建曲面，则建议使用这种方法。 </li>
+               <li>创建曲线时，可以在切换“所有视口”时启用“绘制”，以便可以在 3D 中绘制曲线。在一个视口中开始绘制曲线，并转至其他视口，然后继续绘制。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FBE"></a>如果您的鼠标有鼠标中键，在创建曲线时，按住 <span class="keyboardEntry">Alt</span> 键和鼠标中键可以使用<span class="char_link"><a href="GUID-6DA741AB-9941-4957-903A-4B998C1C65E7.htm">“环绕”</a></span>更改视口的方向。 
+                  </p> 
+               </li>
+               <li>要沿着特定轴创建变换曲线，请启用相应的轴约束，然后按住 <span class="keyboardEntry">Shift</span> 并移动变换曲线的副本。 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DEF"></a> 
+            <h2><a name="GUID-1F37383A-710B-417F-B041-C67E566DEBF5"></a>曲线和方向
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DF0"></a><ul>
+               <li>NURBS 曲线在视口中显示了其方向。小圆指出了第一个顶点。如果曲线是闭合的，则加号 (+) 表示该曲线的方向。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FBD"></a>使用曲线构建<span class="char_link"><a href="GUID-42B4367F-3C10-454A-8C15-05AF450A3107.htm">混合曲面</a></span>、<span class="char_link"><a href="GUID-39CCD58A-4ED2-4339-8B70-89ADEA49B2E8.htm">U 向放样</a></span>和 <span class="char_link"><a href="GUID-46FB65D0-DF8B-4A6E-A546-CC52D6092485.htm">UV 放样</a></span>曲面以及<span class="char_link"><a href="GUID-CA0474F1-87AC-4820-B257-2CA8E262D0FB.htm">单轨</a></span>和<span class="char_link"><a href="GUID-DD3B220A-7D44-4C55-A274-002F25976D04.htm">双轨</a></span>扫描曲面时，需要了解曲线的方向。如果曲线的方向不同，可能会获得奇怪的扭曲效果。构建曲面之前，确保曲线的方向相同。在“曲线公用”卷展栏中，使用“反转”和“设为第一个”，可以控制曲线的方向，以及起点或 CV 所在的位置。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FBC"></a>要确保对齐曲线，另外一个理想的方法是，绘制一条曲线，然后使用 <span class="keyboardEntry">Shift</span> 键并单击“克隆”创建其他曲线。创建完对齐的曲线之后，可以对 CV 进行变换，使曲面所基于的曲线不同。 
+                  </p> 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DF1"></a> 
+            <h2><a name="GUID-5B44C17C-745C-4C11-B72C-B57E8B787F05"></a>扫描曲线
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DF2"></a><ul>
+               <li>除了期望横截面曲线都位于同一方向外，该横截面与铁轨相交时，<span class="char_link"><a href="GUID-CA0474F1-87AC-4820-B257-2CA8E262D0FB.htm">单轨</a></span>和<span class="char_link"><a href="GUID-DD3B220A-7D44-4C55-A274-002F25976D04.htm">双轨</a></span>扫描曲面性能最佳。要实现这一目标，请先绘制铁轨，然后启用 NURBS <span class="char_link"><a href="GUID-427280CA-8CE8-4C6D-9AF6-8BBDC300BA61.htm">捕捉</a></span>的“曲线端点”和“曲线边”绘制横截面。 
+               </li>
+               <li>双轨扫描曲面有其他要求，即第一个横截面的端点与轨迹的端点相交。借助 NURBS 捕捉也可以实现此目标。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FBB"></a>如果第一个横截面的端点与铁轨的端点不一致，生成的曲面可能不会跟随铁轨。 
+                  </p> 
+               </li>
+               <li>编辑扫描曲面时，使用“编辑曲线”按钮可以直接变换 CV 或铁轨或横截面，而不会更改子对象层级。另外，使用“编辑曲线”还可以访问控制曲线的所有卷展栏。例如，可以使用“优化”或“设为第一个”，而不用更改层级。 </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DF3"></a> 
+            <h2><a name="GUID-D4798D08-BE75-4673-8733-71A502EC62A7"></a>曲面中的曲线和透射曲线
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DF4"></a><ul>
+               <li>绘制<span class="char_link"><a href="GUID-0DB79815-FE8F-494E-BB75-B9AD1F2DCD39.htm">曲面中的曲线</a></span> (COS) 时可以使用视口。但是，这种方法只适用于绘制曲面中的可见部分。要查看整个曲面和透射到平面中的曲线，请使用“编辑曲线”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FBA"></a>如果您的鼠标有鼠标中键，在曲面上绘制曲线时，按住 <span class="keyboardEntry">Alt</span> 键和鼠标中键可以使用<span class="char_link"><a href="GUID-6DA741AB-9941-4957-903A-4B998C1C65E7.htm">“环绕”</a></span>更改视口的方向。 
+                  </p> 
+               </li>
+               <li>曲面上的曲线和透射的曲线都不能通过曲面的边。这包括熔合 CV 的曲面中的接合口。如果尝试通过接合口投射，则只能创建部分曲线投射。 </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DF5"></a> 
+            <h2><a name="GUID-9BCDADF9-C318-4284-8432-76359E5696D4"></a>创建混合曲面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DF6"></a><ul>
+               <li>您可以混合曲线，也可以混合曲面边。（但是，不能从修剪边进行混合。在这种情况下，将会从修剪曲面的曲线混合。） </li>
+               <li>如果需要可以控制切线或张力，则必须对曲面边或曲面中的曲线进行混合。调整张力时，可能会更改混合端点的平整度或“凹凸度”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FB9"></a>如果曲线和曲面彼此靠近，有时很难了解要选择的边。为了帮助您，当前选定的曲面会变成黄色，而要用于混合的边会变成蓝色。确保选择所需的边之前已经选择正确的曲面。 
+                  </p> 
+               </li>
+               <li>如果要混合的边具有不同的点数（一般原因是曲面近似设置不同），渲染时，有时会显示混合和原始曲面之间的间距。如果出现这种情况，请转到<span class="char_link"><a href="GUID-A66E61B1-8B69-4A61-A7AF-40C8927DA00E.htm">“曲面近似”卷展栏</a></span>，然后增加“合并”值，直到间距在渲染时消失为止。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FB8"></a>“合并”设置只会影响产品级渲染器。它不会对视口显示产生任何影响。 
+                  </p> 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DF7"></a> 
+            <h2><a name="GUID-625760A4-9CB7-4996-B9A1-E1119A6099B7"></a>放样
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DF8"></a><ul>
+               <li>如果只有两条曲线之间需要曲面，请使用<span class="char_link"><a href="GUID-364FE529-431B-448A-850B-DD9BBECAC90B.htm">规则曲面</a></span>，而不要使用 U 向放样。这便于加快速度。 
+               </li>
+               <li>如果创建放样显得很慢，请确保禁用“创建时显示”复选框（位于<span class="char_link"><a href="GUID-39CCD58A-4ED2-4339-8B70-89ADEA49B2E8.htm">“U 向放样曲面”卷展栏</a></span>）。 
+               </li>
+               <li>如果 U 向放样不能达到期望值，请尝试对曲线重新参数化。单击“重新参数化”。在“曲线”子对象层级。此时，该按钮在“CV 曲线”卷展栏中处于启用状态。在<span class="char_link"><a href="GUID-6BFE862D-8405-4710-A79D-CACA303637AA.htm">“重新参数化”对话框</a></span>中，选择“弦长重新参数化”。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FB7"></a>如果曲线是不独立或点曲线，首先需要使其独立（这也可以提高性能）。 
+                  </p> 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-6FB6"></a>与其他曲线相比，由两条连接曲线组成的曲线遇到这种问题的频率更高。如果使用连接的曲线作为其中一个曲线构建放样，创建该放样之前，请对其重新参数化，或者对曲线进行设置，使其自动重新参数化。 
+                  </p> 
+               </li>
+               <li>使用“编辑曲线”按钮，可以直接变换 CV 或 U 向放样或 <span class="char_link"><a href="GUID-46FB65D0-DF8B-4A6E-A546-CC52D6092485.htm">UV 放样</a></span>内的曲线，而无需更改子对象层级。另外，使用“编辑曲线”还可以访问控制曲线的所有卷展栏。例如，可以使用“优化”或“设为第一个”，而不用更改层级。 
+               </li>
+               <li>要关闭 UV 放样，可以再收取第一条 V 曲线，使其成为放样中的最后一条曲线。有时，接合口可以显示在 UV 放样中的该位置处。 </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DF9"></a> 
+            <h2><a name="GUID-B04D4298-6545-4015-AACE-D22F8AC52BC9"></a>多边混合曲面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DFA"></a><ul>
+               <li>如果 <span class="charspan-msgph">3ds Max</span> 不创建<span class="char_link"><a href="GUID-CF1CACBC-0304-4650-BF84-DD1F3B547E3E.htm">多边混合</a></span>，请在三或四个转角处熔合 CV。由于 CV 呈圆形，所以，相互捕捉时并不能总是成功。 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DFB"></a> 
+            <h2><a name="GUID-79F1954C-7081-4009-9540-FBC3F970491C"></a>多重曲线修剪曲面
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DFC"></a><ul>
+               <li>多重曲线修剪曲面是创建包含锐角修剪孔洞的唯一途径。 </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DFD"></a> 
+            <h2><a name="GUID-FA94B694-F61C-40E9-BF89-22F56BE0A679"></a>位移贴图
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041DFE"></a><ul>
+               <li>通常，默认的细化设置不适用于置换曲面。使用这些默认的设置，位移贴图可以创建<em class="mild">极其</em> 高的面数，从而使执行速度非常缓慢。将曲面的近似值更改为最低的必需分辨率。缩略时最好从空间近似开始，并且边值为 20。如果分辨率太低，可降低边值直到模型显示正常为止。 
+               </li>
+               <li>使用<span class="char_link"><a href="GUID-6B3BB57D-4C05-47BB-9C85-F6C9AD423B04.htm">“位移 NURBS 世界空间”修改器</a></span>将位移贴图转化为实际的位移贴图，以便可以在视口中查看位移效果。要制作 NURBS 模型的位移网格副本，请使用<span class="char_link"><a href="GUID-F548BC3F-2E01-44DF-A6FA-8C6BBE59555D.htm">快照</a></span>。 
+               </li>
+            </ul> 
+         </div>
+         <div class="section"><a name="WS1A9193826455F5FFBA679E112A6A190041DFF"></a> 
+            <h2><a name="GUID-2069EB56-3F74-41F4-A2F1-D3FD05883660"></a>将手臂与肩膀相连
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A190041E00"></a><ul>
+               <li>最简便的方法是，创建<span class="char_link"><a href="GUID-0DB79815-FE8F-494E-BB75-B9AD1F2DCD39.htm">曲面上的 CV 曲线</a></span>或肩部的<span class="char_link"><a href="GUID-92AB5728-D307-41CD-A3C2-EB01BD980F29.htm">法向投影曲线</a></span>。然后，将手臂作为 <span class="char_link"><a href="GUID-39CCD58A-4ED2-4339-8B70-89ADEA49B2E8.htm">U 向放样</a></span>进行创建。对于 U 向放样的最后一条曲线，请选择曲面上的 CV 曲线或法向投影曲线。然后启用“使用 COS 切线”。该选项可以使放样曲面与手臂与肩膀相连位置处的其他曲面相切。 
+               </li>
+               <li>如果混合显得扭曲，请使用“起点”微调器更改组成 U 向放样曲面的曲线的第一个点的位置。 </li>
+               <li>将 U 向放样与其他曲面相连的另外一种方法是，将 U 向放样中的最后一条曲线投射到其他曲面上。单击“制作 COS”，将投射的曲线转化为曲面上的曲线，然后在“U 向放样曲面”卷展栏中单击“插入”，使曲面上的新曲线成为 U 向放样中的最后一条曲线。您可以对曲面上的曲线进行缩放或移动其
+                  CV，以便获得曲率和所需的混合。 
+               </li>
+            </ul> 
+         </div>
+         <div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

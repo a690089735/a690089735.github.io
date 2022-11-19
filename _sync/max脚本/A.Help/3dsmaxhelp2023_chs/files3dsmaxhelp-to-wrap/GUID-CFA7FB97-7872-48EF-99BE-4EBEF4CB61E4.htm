@@ -1,0 +1,97 @@
+<!DOCTYPE html><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="product" content="3DSMAX">
+      <meta name="release" content="2023">
+      <meta name="book" content="GeneralUser">
+      <meta name="created" content="2022-03-27">
+      <meta name="topicid" content="GUID-CFA7FB97-7872-48EF-99BE-4EBEF4CB61E4">
+      <meta name="description" content="“摄影机跟踪器”工具通过设置 3ds Max 中摄影机运动的动画来同步背景，以便与用于拍摄影片的真实摄影机的运动相匹配。">
+      <meta name="indexterm" content="摄影机跟踪器: 摄影机跟踪器工具">
+      <meta name="indexterm" content="工具: 摄影机跟踪器">
+      <meta name="topic-type" content="concept">
+      <title>摄影机跟踪器工具</title><script language="javascript">var index = 'index3dsmaxhelp.html';</script></head>
+   <body height="100%">
+      <div class="body_content" id="body-content" dir="ltr"><a name="GUID-CFA7FB97-7872-48EF-99BE-4EBEF4CB61E4"></a><div class="head">
+            <h1>摄影机跟踪器工具</h1>
+         </div>
+         <p class="blurb">“摄影机跟踪器”工具通过设置 <span class="charspan-msgph">3ds Max</span> 中摄影机运动的动画来同步背景，以便与用于拍摄影片的真实摄影机的运动相匹配。 
+         </p><a name="UL_0845E20C77FC483784D4557E76C47096"></a><ul>
+            <li> <span class="MenuCascade" id="GUID-633ECA74-4D39-41E5-BBA6-0F80F130B45E"> <img src="../images/GUID-26D492F7-3E48-4209-AB7B-FEC655C6DA3D-low.png">“实用程序”面板  <img src="../images/ac.menuaro.gif"> “实用程序”卷展栏  <img src="../images/ac.menuaro.gif"> “更多”按钮  <img src="../images/ac.menuaro.gif"> “实用程序”对话框  <img src="../images/ac.menuaro.gif"> “摄影机跟踪器”</span> 
+            </li>
+         </ul>
+         <div class="section"><a name="WS1A9193826455F5FF103859C11318F51BDD-3466"></a> 
+            <h2><a name="GUID-7F824570-7704-4BD6-988B-38CBAB7F0DE7"></a>过程
+            </h2> <a name="WS1A9193826455F5FFBA679E112A6A1900453E1"></a><p class="list-intro"><a name="WS1A9193826455F5FFBA679E112A6A1900453E2"></a>要产生一个摄影机匹配移动，请执行以下操作：
+            </p>
+            <ol type="1" start="1">
+               <li>打开 <span class="charspan-msgph">3ds Max</span> 中的工作场景。 
+                  <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3465"></a>此场景应用具有一个“自由”的摄影机来匹配移动，它作为跟踪器不产生匹配移动。场景应该具有一个位于 3D 空间中的“点”集或“CamPoint”辅助对象，来与跟踪特征点相对应。可选择在匹配摄影机视口中安装作为基于贴图背景图像的环境影片。如果使用匹配移动或检查匹配准确性来渲染组合时，这是必要的。它不会自动在视口中显示出背景图像。使用“视图”<img class="adsk-glyph-arrow" src="../images/ac.menuaro.gif">“背景图像”来选择背景影片并在视口中显示出来。 
+                  </p> <a name="WS1A9193826455F5FFBA679E112A6A1900453E3"></a><div class="figure-anchor"><img src="../images/GUID-49F03F89-1AFC-4318-93E3-B3B4E4493B5F-low.png"><p></p>
+                     <p class="figure-title">真实世界中的摄影机拍摄一幅场景（白点是跟踪点）。</p>
+                  </div>  
+               </li>
+               <li>在“摄影机跟踪器工具”中打开影片文件，并为场景中的每一个跟踪特征点创建一个特征点跟踪 gizmo 集合。 <a name="WS1A9193826455F5FFBA679E112A6A1900453E4"></a><div class="figure-anchor"><img src="../images/GUID-68CF741C-D3F9-47D5-A528-91C7F76628D3-low.png"><p></p>
+                     <p class="figure-title">这生成被跟踪的电影胶片，它将用作背景。</p>
+                  </div>  
+               </li>
+               <li>调整每一个 gizmo 的“特征点选择”框和“运动搜索”框的位置，这使它们位于特征点中间，并使运动搜索边界框足够大，可以容纳要跟踪帧的最大“帧到帧”特征点移动范围。 </li>
+               <li>将每一跟踪器与相应的场景点对象关联起来。 <a name="WS1A9193826455F5FFBA679E112A6A1900453E5"></a><div class="figure-anchor"><img src="../images/GUID-0DEA2E66-EDBD-4ADB-95A9-703553BAAD15-low.png"><p></p>
+                     <p class="figure-title">相关联的场景点对象基于现实世界的维度在 3D 空间中设置。</p>
+                  </div>  
+               </li>
+               <li>（可选）如果要匹配的任意帧都在视图外，请使用“影片 Stepper”卷展栏来给每一跟踪器设置起始帧。这在跟踪器在场景中可见时指定帧范围，它将作为匹配过程被跟踪。视图穿过特征点域时，任何时候都只有一些特征点（至少六个）可见的情况下，这种机制允许匹配电影。
+                  
+               </li>
+               <li>（可选）在特征点突然发生运动或形状改变或明显受影响的帧上为每一跟踪器手动设置关键帧，这让计算机来实现跟踪很困难。如果需要，可以在跟踪指示跟踪错误在何处发生后做这项工作。 </li>
+               <li>使用“批量跟踪”卷展栏执行特征点跟踪。这通常是一个迭代过程：通过调整起始帧来改正跟踪错误或手动重新摆放 gizmo 和运动搜索边界框在错误帧上的位置。当在某一帧上重新摆放 gizmo 位置后，这就建立了一个新的目标特征点图像，并为将要跟踪的下一个关键帧设置后续的帧。可以使用跟踪器中的错误探测特征点来一步步的寻找可能的跟踪错误。完成后，此过程为每一特征点建立一个
+                  2D 移动位置表。可以用“影片”卷展栏上的“保存”按钮把此表保存到磁盘上。 
+               </li>
+               <li>在“匹配移动”卷展栏中选择将要匹配的摄影机，选择想要估算的摄影机参数，设置影片和场景动画帧范围并执行匹配。这会产生所选的摄影机参数的关键帧动画。 <a name="WS1A9193826455F5FFBA679E112A6A1900453E6"></a><div class="figure-anchor"><img src="../images/GUID-0566181C-83E0-4479-B5C9-F929C9718742-low.png"><p></p>
+                     <p class="figure-title">在进行摄影机跟踪后，场景几何体（角色）匹配所拍摄的背景。</p>
+                  </div>  
+               </li>
+               <li>在这些帧上检查明显的错误匹配和查看跟踪器 gizmo 位置。可以在这些帧上手动调整 gizmo，并使匹配者交互的重新计算摄影机位置。 </li>
+               <li>（可选）给所选的摄影机参数应用平滑，并为其他重新计算一个补偿匹配。 </li>
+            </ol> 
+            <p><a name="WS1A9193826455F5FF103859C11318F51BDD-3464"></a>摄影机跟踪器还能够跟随 2D 平面中跟踪器的移动来生成 <span class="charspan-msgph">3ds Max</span> 几何体跟随或匹配视频的动画。这种类型的动画不需要测量值。使用摄影机跟踪器的“对象旋转”卷展栏来创建这种类型的跟踪。 
+            </p> 
+         </div><span class="noindex">
+            <div class="topic-list">
+               <h4 class="related">本节内容</h4>
+               <ul class="jumplist">
+                  <li class="topiclist-litem"><a href="GUID-C512DA51-BA3E-47FB-905C-F0C3742F5D81.htm">摄影机跟踪的要求</a><p>使用“摄影机跟踪器”需要一些如本主题中所述的设置。 
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-A21F19F3-57CB-4C0F-9E3C-EF56259BB990.htm">摄影机跟踪器：“影片”卷展栏</a><p>为跟踪打开电影。也提供提供显示的控件，包括为改善跟踪器可见性而使用的褪光显示。提供用于加载和保存存储有跟踪器信息的 MOT 文件的控件。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-7ACA788D-6EAF-46FB-91E8-E4F2E24D92A8.htm">摄影机跟踪器：影片窗口</a><p>显示在“影片”窗口中的跟踪器 Gizmo 含有两个封闭框，一对位于中心的十字线以及一个跟踪器编号。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-CC9AD204-938E-49BD-BEAC-F8272172137B.htm">摄影机跟踪器：“运动跟踪器”卷展栏</a><p>使用“摄影机跟踪器”工具的“运动跟踪器”卷展栏，可以设置和控制图像特征点跟踪器。下面列出了创建的全部跟踪器：显示启用的复选标记、跟踪器编号、相关的场景点对象名称和活动帧范围。要选择某个跟踪器，请在列表中执行单击操作。另外，请提供用于子像素跟踪的控件。
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-5B5DAC20-D89E-424B-ACF6-BE6286AC5ED8.htm">摄影机跟踪器：“影片 Stepper”卷展栏</a><p>“摄影机跟踪器”工具的“影片 Stepper”卷展栏在跟踪相位的过程中浏览电影，可以通过该卷展栏设置开始和结束帧、查看跟踪结果或者在帧序列上手动执行跟踪。“影片 Stepper”卷展栏由一个帧计数器、几个分节器按钮以及一些选项复选框组成。 
+                        
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-43075739-F107-4370-AFB2-B64BDE9CCC4F.htm">摄影机跟踪器：“错误阈值”卷展栏</a><p>“摄影机跟踪器”的“错误阈值”卷展栏通过获取测量值并将它们与您在此卷展栏中设置的阈值相比较，来识别特征点跟踪。您可以在手动跟踪检查（请参见<span class="char_link"><a href="GUID-76E4E728-C376-46DF-A463-DD2582F35768.htm">“批量跟踪”卷展栏</a></span>）过程中或在实际跟踪过程中使用此检测，以便使用<span class="char_link"><a href="GUID-CC9AD204-938E-49BD-BEAC-F8272172137B.htm">“运动跟踪器”卷展栏“设置”组</a></span>中的“错误时重采样”控件更正错误。 
+                     </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-76E4E728-C376-46DF-A463-DD2582F35768.htm">摄影机跟踪器：“批量跟踪”卷展栏</a><p>如果设置跟踪器，可以使用“摄影机跟踪器”工具的“批量跟踪”卷展栏来执行不干涉功能的跟踪。您可以设置一组跟踪器，开始对所有这些跟踪器进行批量跟踪，然后使用该面板中的其他工具来检查和审阅检测到的跟踪错误。此面板还可以检查跟踪完成情况。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-20A738D2-FD55-40CF-AB35-C94D29D94B7D.htm">摄影机跟踪器：“位置数据”卷展栏</a><p>利用该卷展栏可以管理位置数据。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-B0CB4717-0A64-4FAC-BA4C-BE0A8E197D43.htm">摄影机跟踪器：“匹配移动”卷展栏</a><p>通过将在跟踪相位过程中收集的电影特征点 2D 位置数据与 3ds Max 场景中相关的 3D 特征点相关联，“摄影机跟踪器”工具的“匹配移动”卷展栏自动生成摄影机动画。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-FC47D893-41C7-45B4-90CB-314D225E48BB.htm">摄影机跟踪器：“平滑移动”卷展栏</a><p>由于匹配移动算法并非总是精确的，并且非常容易导致现场测量错误或特征点跟踪错误，并且由于对每个帧的匹配是独立计算的，因此结果可能会较“嘈杂”，特别是估计视野时。在真实摄影机执行平滑移动的匹配移动情况下，过滤匹配结果以消除噪波可能非常有用。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-1B81BBAC-FD72-484A-8CA6-FA3C9509BB38.htm">摄影机跟踪器：“对象旋转”卷展栏</a><p>通过“对象锁定”，可以使用 2D 图像特征跟踪数据直接在 3ds Max 场景中为对象设置动画。当移动大致是平面运动时，在场景中使用 3D 对象代替移动特征点是有用的。 </p>
+                  </li>
+                  <li class="topiclist-litem"><a href="GUID-99B9B877-0EC4-4733-9FF8-BEF0573CE577.htm">摄影机跟踪器：故障排除</a><p>本主题介绍了当您使用“摄影机跟踪器”时可能遇到的一些常见问题，并且提供了有关如何解决这些问题的建议。</p>
+                  </li>
+               </ul>
+            </div></span><div class="footer-block"><a href=".." class="comments-anchor" target="_blank"><span class="comments-link">请将您关于此页内容的评论发送给我们</span></a></div><br><p class="footer-license-block"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img alt="Creative Commons License" style="border-width: 0;" src="../images/ccLink.png"></a>&nbsp;<em>除非另有说明，否则此作品受到 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"> Creative Commons 署名-非商业性使用-相同方式共享 3.0 未本地化版本许可证</a>的制约。请参见 <a href="http://autodesk.com/creativecommons" target="_blank">Autodesk Creative Commons 常见问题</a>(英文)以获取更多信息。</em></p><br></div>
+   </body>
+</html>

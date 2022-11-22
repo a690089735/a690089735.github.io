@@ -84,7 +84,8 @@ fn times_data_delete =
 (
 	if (id = times_ddl_list.selection) > 0 then
 	(
-		deletefile times_data_list[id]
+-- 		deletefile times_data_list[id]
+		HiddenDOSCommand("DEL "+ times_data_list[id] +" /F") --强制删除,上边那句可能权限不够
 		deleteitem times_data_list id
 		deleteitem times_ddl_list.items id
 		times_data_list = times_rename_all d:(times_data_list.count as string).count

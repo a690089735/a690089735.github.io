@@ -12,6 +12,8 @@
 -- trackbar.visible = true
 -- timeSlider.setVisible true
 --不论怎么样,时间栏都会自己到底下,不用试了,即使手动切换也是如此
+--关闭了所有排序,即使层次排的很好,同级的子物体仍会有顺序错误,即使我们按名称排序,也无法满足所有要求,所以请让用户认真指定.
+
 ::XAniTools_UI
 (
 try(cui.unRegisterDialogBar XAniTools_UI)catch()
@@ -27,6 +29,7 @@ XAniTools_UI=rollout XAniTools_UI "XAniToolStrip" width:1920 height:52
 	include "Other.ms"
 	
 	local
+	tool_tip = dotnetobject "System.Windows.Forms.ToolTip",
 	wh = sysInfo.desktopSize,
 	--数据变量
 	cfg_file = (GetDir #plugcfg) + @"\XAniTool.ini", --配置目录,各个配置独立,其中还包括高度刷新数据(异常或没有也可以容错的).这个不能写在初始化里,因为初次启动时也要使用.
@@ -43,6 +46,9 @@ XAniTools_UI=rollout XAniTools_UI "XAniToolStrip" width:1920 height:52
 	logo_tick = 0,
 	names_data_list = #(),
 	trans_data_list = #(),
+	trans_copy_list = #(),
+	trans_paste_list = #(),
+	trans_temp_data = #(),
 	trans_mode = (getINISetting cfg_file "ToolState" "trans_mode") as integer, --0.单帧,1.逐帧,2.相对,读取失败时自动默认是0:"" as integer 为 0
 	times_data_list = #()
 	
@@ -56,7 +62,11 @@ XAniTools_UI=rollout XAniTools_UI "XAniToolStrip" width:1920 height:52
 	dotNetControl trans_btn_names_load "Button" text:"选择" width:42 height:22
 	button trans_btn_names_refresh "trans_btn_names_refresh" width:10 height:10 pos:[0,0] visible:false --用于响应外部刷新的隐藏按钮.
 	
-	dotNetControl trans_lbl_mirror_options "label" text:"  粘贴选项: " width:86 height:16
+-- 	dotNetControl trans_lbl_mirror_options "label" text:"  粘贴选项: " width:86 height:16
+	dotNetControl trans_btn_copySet "Button" text:"C" width:30 height:16
+	dotNetControl trans_btn_arrow "Button" text:"\x2192" width:22 height:16 --←"\x2190",→"\x2192"
+	dotNetControl trans_btn_pasteSet "Button" text:"P" width:30 height:16
+	
 	checkbox trans_chk_refObj "" width:14 height:16 toolTip:"勾选来参考物体坐标,不勾选则保持参考世界坐标."
 	pickbutton trans_btn_refObj "参考物体" width:70 height:20 enabled:false message:"选择一个用于镜像变换数据的参考物体" autoDisplay:true toolTip:"拾取参考物体."
 	
@@ -155,12 +165,61 @@ XAniTools_UI=rollout XAniTools_UI "XAniToolStrip" width:1920 height:52
 		enableAccelerators = true
 	)
 	on trans_btn_names_load click s e do
-	(
-		select(names_data_load())
+	undo "Select" on(
+		names_data_select ctrl:keyboard.controlPressed alt:keyboard.altPressed shift:keyboard.shiftPressed
+		enableAccelerators = true
+	)
+	on trans_ddl_names selected sel do
+	undo "Select" on(
+		select(names_data_load id:sel) --我切换就是为了选择嘛,直接选择就好了呀..
 		enableAccelerators = true
 	)
 	
 	--组件功能_trans
+	on trans_btn_copySet click s e do --复制集
+	(
+		trans_copy_list = getCurrentSelection()
+		trans_btn_copySet.text = if trans_copy_list.count > 0 then "C*" else "C"
+		enableAccelerators = true
+	)
+	on trans_btn_arrow click s e do
+	(
+		case of
+		(
+			(keyboard.altPressed) :( --删除镜像偏移
+				local all_list = trans_copy_list+trans_paste_list
+				for o in all_list do setUserProp o "Mirrored_relative_transformation" (Matrix3 1)
+				if all_list.count > 0 do messagebox "重置初始关联完成." --按alt清理
+			)
+			(keyboard.controlPressed) :try( --创建镜像偏移
+				local
+				mAxis = #("x","y","z")[trans_rdo_mirror_axis.state],
+				fAxis = #("x","y","z")[trans_rdo_flip_axis.state]
+				for i = 1 to trans_copy_list.count do
+				(
+					local
+					sel = trans_copy_list[i],sTrans = sel.transform,
+					tag = trans_paste_list[i],tTrans = tag.transform
+					setUserProp sel "Mirrored_relative_transformation" (sTrans * Inverse (buildTransform axis:mAxis flip:fAxis tm:tTrans))
+					setUserProp tag "Mirrored_relative_transformation" (tTrans * Inverse (buildTransform axis:mAxis flip:fAxis tm:sTrans))
+				)
+				if trans_copy_list.count > 0 do messagebox "设置初始关联完成." --按alt清理
+			)catch(messagebox "设置初始关联失败.\n请检查复制集和粘贴集.\t")
+			default :(
+				trans_btn_arrow.text = if trans_btn_arrow.text == "\x2192" then "\x2190" else "\x2192"
+				temp_list = trans_paste_list
+				trans_paste_list = trans_copy_list
+				trans_copy_list = temp_list
+			)
+		)
+		enableAccelerators = true
+	)
+	on trans_btn_pasteSet click s e do --粘贴集
+	(
+		trans_paste_list = getCurrentSelection()
+		trans_btn_pasteSet.text = if trans_paste_list.count > 0 then "P*" else "P"
+		enableAccelerators = true
+	)
 	on trans_ckb_change_mode click s e do  --切换变换工具
 	(
 		trans_change_state s e
@@ -272,12 +331,14 @@ XAniTools_UI=rollout XAniTools_UI "XAniToolStrip" width:1920 height:52
 		ttool_height =  if s.Checked then 51 else 0
 		save_tool_state()
 		change_window_height (main_height + ttool_height + ktool_height) --更新高度
+		enableAccelerators = true
 	)
 	on btn_times_tool Click s e do --不要用CheckedChanged,这样自动加载状态时会无限循环
 	(
 		ktool_height = if s.Checked then 31 else 0
 		save_tool_state()
 		change_window_height (main_height + ttool_height + ktool_height) --更新高度
+		enableAccelerators = true
 	)
 )
 -- get_h = 

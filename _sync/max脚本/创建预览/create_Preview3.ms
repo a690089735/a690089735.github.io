@@ -24,7 +24,7 @@ fn covering_str num d:2 =
 -- 	makeDir imgs_folder
 -- )
 
-fn make_preview str:edt_segment.text clamp:false imgs_folder:temp_folder savepath:edt_path.text fps:spn_rate.value type:ddl_type.selection ffmpeg:@"C:\Users\windows\Desktop\ffmpeg.exe" =
+fn make_preview str:edt_segment.text clamp:false imgs_folder:temp_folder savepath:edt_path.text fps:spn_rate.value type:ddl_type.selection ffmpeg:@"C:\Users\Administrator\Desktop\ffmpeg\ffmpeg.exe" =
 (
 progressEnd()
 progressStart "解析分段信息.."
@@ -159,20 +159,22 @@ progressStart "创建预览.."
 	ci = -1,
 	cstr,
 	suffix
+	--https://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff?_gl=1*1tzx9x0*_ga*OTQyMzE4NzgzLjE2Njc4OTM1MzA.*_ga_S812YQPLT2*MTY2Nzg5MzUzMC4xLjAuMTY2Nzg5MzU2My4wLjAuMA..
 	case type of
 	(
-		1 : (cstr = "\"%\" -vsync passthrough -hwaccel auto -safe 0 -r % -f concat -i \"%\" -c:v mpeg4 -vtag xvid -pix_fmt yuv420p -vf \"crop=trunc(iw/2)*2:trunc(ih/2)*2\" -f avi -y \"%\" -y";suffix = ".avi")
-		2 : (cstr = "\"%\" -vsync passthrough -hwaccel auto -safe 0 -r % -f concat -i \"%\" -c:v libx264 -preset fast -pix_fmt yuv420p -vf \"crop=trunc(iw/2)*2:trunc(ih/2)*2\" -f mp4 -y \"%\" -y";suffix = ".mp4")
-		3 : (cstr = "\"%\" -vsync passthrough -hwaccel auto -safe 0 -r % -f concat -i \"%\" -c:v libx264 -preset fast -pix_fmt yuv420p -vf \"crop=trunc(iw/2)*2:trunc(ih/2)*2\" -f mov -y \"%\" -y";suffix = ".mov")
+		1 : (cstr = "\"%\" -vsync passthrough -hwaccel auto -safe 0 -r % -f concat -i \"%\" -c:v libx264 -crf 10 -preset fast -pix_fmt yuv420p -vf \"crop=trunc(iw/2)*2:trunc(ih/2)*2\" -f avi -y \"%\" -y";suffix = ".avi")
+		2 : (cstr = "\"%\" -vsync passthrough -hwaccel auto -safe 0 -r % -f concat -i \"%\" -c:v libx264 -crf 10 -preset fast -pix_fmt yuv420p -vf \"crop=trunc(iw/2)*2:trunc(ih/2)*2\" -f mp4 -y \"%\" -y";suffix = ".mp4")
+		3 : (cstr = "\"%\" -vsync passthrough -hwaccel auto -safe 0 -r % -f concat -i \"%\" -c:v libx264 -crf 10 -preset fast -pix_fmt yuv420p -vf \"crop=trunc(iw/2)*2:trunc(ih/2)*2\" -f mov -y \"%\" -y";suffix = ".mov")
 		4 : (cstr = "\"%\" -vsync passthrough -hwaccel auto -safe 0 -r % -f concat -i \"%\" -lavfi palettegen=stats_mode=diff[pal],[0:v][pal]paletteuse=new=1:dither=sierra2_4a:diff_mode=rectangle -f gif -y \"%\" -y";suffix = ".gif")
 	)
 	for dt in datas do--ffmpeg 帧率 输入文件 输出文件(MP4)
 	(
-progressUpdate (100.0*(ci+=1)/tcount)
+progressUpdate (50)
 		local command = StringStream ""
 		format cstr ffmpeg fps dt (savepath + getFilenameFile dt + suffix) to:command
-		HiddenDOSCommand(substituteString (command as string) "\\" "/")
+		HiddenDOSCommand (substituteString (command as string) "\\" "/") startpath:imgs_folder
 		print (substituteString (command as string) "\\" "/")
+progressUpdate (100)
 	)
 	
 progressEnd()

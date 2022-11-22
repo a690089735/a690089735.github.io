@@ -16,7 +16,11 @@ fn set_transform_toolstrip_layuout w h ctrl = --各工具的偏移锚点,其中ttool锚点始
 		"trans_btn_names_save":(if ttool_height > 0 and w > 295 then [side + 44, top + 20] else hide_pos ctrl)
 		"trans_btn_names_load":(if ttool_height > 0 and w > 295 then [side + 86, top + 20] else hide_pos ctrl)
 		
-		"trans_lbl_mirror_options":(ctrl.visible = ttool_height > 0 and w > 600 ;[w - side - 42 - 97 - 2 - 140 - 72 - 72 - 18, top + 2])
+-- 		"trans_lbl_mirror_options":(ctrl.visible = ttool_height > 0 and w > 600 ;[w - side - 42 - 97 - 2 - 140 - 72 - 72 - 18, top + 2])
+		"trans_btn_copySet":(ctrl.visible = ttool_height > 0 and w > 600 ;[w - side - 42 - 97 - 2 - 140 - 72 - 72 - 20, top + 2])
+		"trans_btn_arrow":(ctrl.visible = ttool_height > 0 and w > 600 ;[w - side - 42 - 97 - 2 - 140 - 72 - 72 - 20 + 30 + 1, top + 2])
+		"trans_btn_pasteSet":(ctrl.visible = ttool_height > 0 and w > 600 ;[w - side - 42 - 97 - 2 - 140 - 72 - 72 - 20 + 30 + 1 + 22 + 2, top + 2])
+
 		"trans_chk_refObj":(ctrl.visible = ttool_height > 0 and w > 600 ;[w - side - 42 - 97 - 4 - 140 - 72 - 72 - 18 - 2, top + 20])
 		"trans_btn_refObj":(ctrl.visible = ttool_height > 0 and w > 600 ;[w - side - 42 - 97 - 4 - 140 - 72 - 3 - 72 - 2, top + 18])
 		
@@ -202,20 +206,23 @@ fn reg_events =
 	callbacks.addScript #animationRangeChange "XAniTools_UI.set_animation_range_spinner()" id:#XAniTools --时间范围回调
 	registerTimeCallback set_spn_current_time --时间回调(第一次运行时会有问题,以后放在一起就好了)
 )
+
 --窗口初始化
 fn init_XAniTools_UI dialog =
 (
-	
 	--获取色彩转为dotnet
 	fn get_dotnet_color n = (colr = (colorMan.getColor n) * 255; (DotNetClass "System.Drawing.Color").fromARGB colr[1] colr[2] colr[3])
 	
+	--设置工具提示
+	fn set_tool_tip obj str = tool_tip.SetToolTip obj str
+	
 	--dotnet组件合集
 	local
-	titles = #(trans_lbl_mirror_options,times_lbl_times),
+	titles = #(times_lbl_times),--trans_lbl_mirror_options
 	labels = #(lbl_play_speed),
 	sliders = #(sld_play_speed),
 	edits = #(times_edt_times),
-	buttons = #(trans_btn_names_del, trans_btn_names_other, trans_btn_names_save, trans_btn_names_load, trans_ckb_change_mode, trans_btn_del, trans_btn_other, trans_btn_save, trans_btn_load)+
+	buttons = #(trans_btn_copySet,trans_btn_arrow,trans_btn_pasteSet,trans_btn_names_del, trans_btn_names_other, trans_btn_names_save, trans_btn_names_load, trans_ckb_change_mode, trans_btn_del, trans_btn_other, trans_btn_save, trans_btn_load)+
 	#(times_btn_del,times_btn_other,times_btn_save,times_btn_select,btn_set_key),--,track_btn_obj_other,track_btn_obj_add,track_btn_obj_delete
 	checkButtons = #(btn_trans_tool, btn_times_tool, btn_preview_tool, btn_other_tool), --,track_ckb_mode
 	seplist = #(trans_lbl_sep,times_lbl_sep),
@@ -283,6 +290,19 @@ fn init_XAniTools_UI dialog =
 	
 	--创建菜单
 	include "Menus.ms"
+	
+	--设置工具提示
+	tool_tip.tooltipicon = (dotnetclass "System.Windows.Forms.ToolTipIcon").Info
+	tool_tip.ToolTipTitle = "功能"
+	tool_tip.ShowAlways = tool_tip.UseAnimation = tool_tip.UseFading = true
+	
+	set_tool_tip trans_btn_copySet "左键\t\t设定复制集"
+	set_tool_tip trans_btn_pasteSet "左键\t\t设定粘贴集"
+	set_tool_tip trans_btn_arrow "左键\t\t切换复制粘贴方向\n按住ctrl\t\t设置初始关联(提供兼容式镜像)\n按住alt\t\t清除相对关联"
+	
+	set_tool_tip trans_btn_names_load "左键\t\t按记录选择\n按住ctrl\t\t按记录加选\n按住alt\t\t按记录减选\n按住Shift\t\t在选择的物体中选择\n状态键不能组合."
+
+	set_tool_tip times_btn_select "左键\t\t选择时间帧\n\n按住ctrl\t\t不限制操作范围(默认限制在时间范围内)按住alt\t\t选择时间帧之外的帧"
 		
 	--注册事件
 	reg_events()

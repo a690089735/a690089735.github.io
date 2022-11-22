@@ -9,12 +9,15 @@ fn combine_array ary = --合并多维数组
 	for a in ary do new_ary += a
 	new_ary
 )
-fn sort_by_hierarchy obj_list:(getcurrentselection()) combine:false = --按层级匹配物体,combine:true可以把返回值拼合成一个数组.
+fn sort_by_hierarchy obj_list:(getcurrentselection()) split:false = 
 (
-	local
-	prt_list = for o in obj_list where (finditem obj_list o.parent) == 0 collect o, --收集父物体,不单独提取的话,会因为列表的不断删除而发生错过物体的问题
-	all_list = for p in prt_list collect for n in #()+p where (fid = finditem obj_list n)>0 collect (deleteitem obj_list fid;n) --收集父物体和列表中的子物体
-	if combine then combine_array all_list else all_list
+	local sorted_obj_list = for o in execute "$objects/* as array" where findItem obj_list o > 0 collect o
+	if split do
+	(
+		local id_list = for i = 1 to sorted_obj_list.count where findItem sorted_obj_list sorted_obj_list[i].parent == 0 collect i;append id_list (sorted_obj_list.count+1)
+		sorted_obj_list = for i = 1 to id_list.count-1 collect for j = id_list[i] to (id_list[i+1]-1) collect sorted_obj_list[j]
+	)
+	sorted_obj_list
 )
 -- fn set_transform_controller_to_PRS objs:(getcurrentselection()) = --已知限制,目前还未能删除IK目标的问题
 -- (
@@ -28,7 +31,7 @@ fn sort_by_hierarchy obj_list:(getcurrentselection()) combine:false = --按层级匹
 -- )--由于排序的需求,这里不采用mapped
 fn set_transform_controller_to_PRS objs:(getcurrentselection()) = --兼容IK约束
 (
-	objs = sort_by_hierarchy obj_list:objs combine:true
+	objs = sort_by_hierarchy obj_list:objs
 	buffer_transform_list = for obj in objs collect obj.transform
 	for obj in objs do
 	(

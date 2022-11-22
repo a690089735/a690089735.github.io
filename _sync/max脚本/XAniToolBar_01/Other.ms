@@ -6,14 +6,17 @@ fn combine_array ary =
 	new_ary
 )
 
---按层级匹配物体,combine:true可以把返回值拼合成一个数组.
-fn sort_by_hierarchy obj_list:(getcurrentselection()) combine:true =
-(
-	local
-	prt_list = for o in obj_list where ( finditem obj_list o.parent ) == 0 collect o, --收集父物体,不单独提取的话,会因为列表的不断删除而发生错过物体的问题
-	all_list = for p in prt_list collect for n in #( ) + p where ( fid = finditem obj_list n ) > 0 collect ( deleteitem obj_list fid ; n ) --收集父物体和列表中的子物体
-	if combine then combine_array all_list else all_list
-)
+--这里不再使用,因为即使层次排的很好,同级的子物体仍会有顺序错误,即使我们再次按名称进行排序,也无法满足所有要求,所以请让用户认真指定.
+-- fn sort_by_hierarchy obj_list:(getcurrentselection()) split:false = --优秀的排序功能,可能略有点慢,但非常准确,切割功能是给类似 创建相同层次的骨骼 使用的(比如bip转骨骼)
+-- (
+-- 	local sorted_obj_list = for o in execute "$objects/* as array" where findItem obj_list o > 0 collect o
+-- 	if split do
+-- 	(
+-- 		local id_list = for i = 1 to sorted_obj_list.count where findItem sorted_obj_list sorted_obj_list[i].parent == 0 collect i;append id_list (sorted_obj_list.count+1)
+-- 		sorted_obj_list = for i = 1 to id_list.count-1 collect for j = id_list[i] to (id_list[i+1]-1) collect sorted_obj_list[j]
+-- 	)
+-- 	sorted_obj_list
+-- )
 
 --判断是否需要进位
 fn need_carry new_num old_num =

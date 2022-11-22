@@ -4,12 +4,15 @@ fn combine_array ary = --合并多维数组
 	for a in ary do new_ary += a
 	new_ary
 )
-fn sort_by_hierarchy obj_list:( getcurrentselection()) combine:false = --按层级匹配物体,combine:true可以把返回值拼合成一个数组.
+fn sort_by_hierarchy obj_list:(getcurrentselection()) split:false = 
 (
-	local
-	prt_list = for o in obj_list where ( finditem obj_list o.parent ) == 0 collect o, --收集父物体,不单独提取的话,会因为列表的不断删除而发生错过物体的问题
-	all_list = for p in prt_list collect for n in #( ) + p where ( fid = finditem obj_list n ) > 0 collect ( deleteitem obj_list fid ; n ) --收集父物体和列表中的子物体
-	if combine then combine_array all_list else all_list
+	local sorted_obj_list = for o in execute "$objects/* as array" where findItem obj_list o > 0 collect o
+	if split do
+	(
+		local id_list = for i = 1 to sorted_obj_list.count where findItem sorted_obj_list sorted_obj_list[i].parent == 0 collect i;append id_list (sorted_obj_list.count+1)
+		sorted_obj_list = for i = 1 to id_list.count-1 collect for j = id_list[i] to (id_list[i+1]-1) collect sorted_obj_list[j]
+	)
+	sorted_obj_list
 )
 -- 	data文件内容,不需要额外判断,执行时有错误的自动跳过并提示,用户可以自己删除.
 -- 	names
@@ -123,7 +126,7 @@ fn names_data_clear dialog =
 -- 	local data_name = dialog.data_folder+(covering_str new_num d:(new_num as string).count + "..名称集合数据") --构成文件名
 -- 	--创建新数据
 -- 	with printAllElements true(
--- 		obj_list = sort_by_hierarchy obj_list:obj_list combine:true
+-- 		obj_list = sort_by_hierarchy obj_list:obj_list
 -- 		--创建文件
 -- 		deleteFile data_name --反正不允许有重名,重名删了新建就好了
 -- 		f = createFile data_name
@@ -151,7 +154,7 @@ if ( local obj_list = getcurrentselection(); obj_list.count > 0 ) do (
 		deleteFile data_name --反正不允许有重名,重名删了新建就好了
 		local
 		f = createFile data_name,
-		obj_list = sort_by_hierarchy obj_list:obj_list combine:true
+		obj_list = sort_by_hierarchy obj_list:obj_list
 		format "%" ( for o in obj_list collect o.name ) to:f
 		close f
 	)

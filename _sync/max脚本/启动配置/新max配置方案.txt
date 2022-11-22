@@ -9,11 +9,12 @@
 安装杀毒
 7.添加工作脚本按钮
 8.设置右键菜单中的骨骼工具 IK 约束 
-6.设置另存为快捷键ctrl+shift+s,设置另存对象快捷键alt+ctrl+s(默认是保存增量),设置创建关键点为i
- 增量保存是shift+alt+s 设置另存副本为ctrl+shift+alt+s
+6.设置另存为快捷键ctrl+shift+s,设置另存对象快捷键shift+alt+s,设置创建关键点为i
+ 增量保存是ctrl+alt+s 设置另存副本为ctrl+shift+alt+s
 9.设置各启动配置快捷键
 
-10.设置修改器面板 MyModf
+10.设置修改器面板
+MyModfFull
 bonespro skin
 skinwrap polyselect
 editMesh editPoly
@@ -23,17 +24,19 @@ cloth mcloth
 clothgentor linkxform
 symmetry mirror
 
+MyTab
 bonespro skin
 skinwrap editnormal
 editMesh editpoly
 cloth mcloth
 symmetry mirror
 
+MyTabLite
 bonespro skin
 skinwrap editnormal
 editMesh editpoly
 
-11.添加右键菜单(alt动画菜单,左上角变换的下面,注意这个菜单是倒置的)
+11.添加右键菜单(alt动画菜单,左上角变换的下面,注意这个菜单有些版本是倒置的)
 bonetool
 动画-约束
 动画-ik

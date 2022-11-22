@@ -21,12 +21,14 @@ rollout ConvertAnimationToBoneRollout "Untitled" width:120 height:96
 		sel = getcurrentselection(),
 		vertexgroup = #(),
 		count = 0,
-		bobj = (b = BoneSys.createBone [0,0,0] [10,0,0] [0,0,1];b.Taper = 0;b.width = b.height = 1;b.sidefins=b.frontfin=b.backfin = off;bb = b.baseobject;delete b;bb),
-		m = mesh vertices:#() faces:#() wirecolor:gray name:"Ani_Mesh"
+		bobj = animate off(b = BoneSys.createBone [0,0,0] [10,0,0] [0,0,1];b.Taper = 0;b.width = b.height = 1;b.sidefins=b.frontfin=b.backfin = off;bb = b.baseobject;delete b;bb),
+-- 		m = mesh vertices:#() faces:#() wirecolor:gray name:"Ani_Mesh" --这样创建的mesh会损失一部分的贴图坐标,应当新建一个面再删空
+		m = mesh wirecolor:gray name:"Ani_Mesh"
+		meshop.deleteVerts m #{1..36}
 		converttopoly m
 		at time baseTime(
 	-- 			vertexgroup = for n in sel collect (meshop.attach m (copy n);#{(count+1)..(count+=n.numverts)}) --获取顶点集
-			vertexgroup = for n in sel collect (polyop.attach m (copy n);#{(count+1)..(count+=n.numverts)}) --获取顶点集
+			vertexgroup = for n in sel collect (polyop.attach m (copy n);#{(count+1)..(count+=n.mesh.numverts)}) --获取顶点集
 			converttomesh m
 	-- 		print vertexgroup
 			

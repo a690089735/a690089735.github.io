@@ -28,7 +28,7 @@ if (local obj_list = getcurrentselection(); obj_list.count > 0) do
 		deleteFile data_name --反正不允许有重名,重名删了新建就好了
 		local
 		f = createFile data_name,
-		obj_list = sort_by_hierarchy obj_list:obj_list combine:true
+		obj_list = sort_by_hierarchy obj_list:obj_list
 		format "%" (for o in obj_list collect o.name) to:f
 		close f
 	)

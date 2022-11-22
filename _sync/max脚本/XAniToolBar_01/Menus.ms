@@ -150,34 +150,93 @@ ToolTips_keys = #(
 btn_set_key.ContextMenuStrip = BuildMenuStrip Items:items_keys Clicks:clicks_keys ToolTipText:ToolTips_keys BackColor:BackColor ForeColor:ForeColor
 
 
---名称数据菜单,绑定在名称数据合集O按钮
-items_names = #(
-	"重命名集合",
-	"清除所有集合"
+--名称删除菜单,绑定在名称数据合集X按钮
+items_names_del = #(
+	"删除选中集合(默认)",
+	"清除全部集合"
 )
-clicks_names = #(
-	fn rename_data_names = (),
-	fn clear_data_names = ()
+clicks_names_del = #(
+	fn names_del_current = (print "名称:删除当前选中集合"),
+	fn names_del_all = (print "名称:删除全部集合")
 )
-ToolTips_names = #(
-	"重命名选中的数据集合.",
-	"清除所有数据集合."
+ToolTips_names_del = #(
+	"删除当前选中的集合记录",
+	"清除硬盘上全部集合记录"
 )
-trans_btn_names_other.ContextMenuStrip = BuildMenuStrip Items:items_names Clicks:clicks_names ToolTipText:ToolTips_names BackColor:BackColor ForeColor:ForeColor
+trans_btn_names_del.ContextMenuStrip = BuildMenuStrip Items:items_names_del Clicks:clicks_names_del ToolTipText:ToolTips_names_del BackColor:BackColor ForeColor:ForeColor
+
+--名称其他菜单,绑定在名称数据合集O按钮
+items_names_other = #(
+	"重新读取集合列表(默认)",
+	"-",
+	"向下选择全部层级",
+	"选择场景所有"
+)
+clicks_names_other = #(
+	fn names_reload = (print "名称:重新读取记录列表"),
+	0,
+	fn select_by_hierarchy = (select (join #() $)),
+	fn select_scene_all = (select objects),
+	fn select_check_tautonym = (print "选择重名物体")
+)
+ToolTips_names_other = #(
+	"重新读取记录列表",
+	"-",
+	"按当前选中项,选择全部层级(类似Ctrl+pageDown,但可以包括隐藏的物体).",
+	"选择场景中所有的物体",
+	"选择重名物体(默认选择所有重名物体,按住Shift仅选择选中物体中的重名物体.)"
+)
+trans_btn_names_other.ContextMenuStrip = BuildMenuStrip Items:items_names_other Clicks:clicks_names_other ToolTipText:ToolTips_names_other BackColor:BackColor ForeColor:ForeColor
+
+--名称记录菜单,绑定在名称数据合集记录按钮
+items_names_save = #(
+	"新建集合记录(默认)",
+	"重命名集合"
+)
+clicks_names_save = #(
+	fn names_add = (print "名称:新建集合记录"),
+	fn names_rename = (print "名称:重命名集合")
+)
+ToolTips_names_save = #(
+	"按当前选择物体新建集合记录.",
+	"重命名当前选中集合"
+)
+trans_btn_names_save.ContextMenuStrip = BuildMenuStrip Items:items_names_save Clicks:clicks_names_save ToolTipText:ToolTips_names_save BackColor:BackColor ForeColor:ForeColor
+
+--名称选择菜单,绑定在名称数据合集选择按钮
+items_names_select = #(
+	"按名称选择(默认)",
+	"按选中物体过滤(Shift)",
+	"按名称加选(Ctrl)",
+	"按名称减选(Alt)"
+)
+clicks_names_select = #(
+	fn names_select = (names_data_select()),
+	fn names_select_by_selection = (names_data_select shift:true),
+	fn names_select_add = (names_data_select ctrl:true),
+	fn names_select_sub = (names_data_select alt:true)
+)
+ToolTips_names_select = #(
+	"按名称选择(默认)",
+	"按选中物体过滤(Shift).注意:选中物体的重名部分,会全部被选择.",
+	"按名称加选(Ctrl)",
+	"按名称减选(Alt)"
+)
+trans_btn_names_load.ContextMenuStrip = BuildMenuStrip Items:items_names_select Clicks:clicks_names_select ToolTipText:ToolTips_names_select BackColor:BackColor ForeColor:ForeColor
 
 
 --变换数据菜单,绑定在名称数据合集O按钮
 items_trans = #(
 	"重命名集合",
-	"清除所有集合"
+	"清除全部集合"
 )
 clicks_trans = #(
-	fn rename_data_trans = (),
-	fn clear_data_trans = ()
+	fn rename_data_trans = (print "变换:按名称减选"),
+	fn clear_data_trans = (print "变换:按名称减选")
 )
 ToolTips_trans = #(
 	"重命名选中的数据集合.",
-	"清除所有数据集合."
+	"清除全部数据集合."
 )
 trans_btn_other.ContextMenuStrip = BuildMenuStrip Items:items_trans Clicks:clicks_trans ToolTipText:ToolTips_trans BackColor:BackColor ForeColor:ForeColor
 
@@ -187,12 +246,12 @@ items_times = #(
 	"清除所有集合"
 )
 clicks_times = #(
-	fn rename_data_times = (),
-	fn clear_data_times = ()
+	fn rename_data_times = (print "时间:重命名选中的数据集合."),
+	fn clear_data_times = (print "时间:清除所有数据集合.")
 )
 ToolTips_times = #(
 	"重命名选中的数据集合.",
-	"清除所有数据集合."
+	"清除全部数据集合."
 )
 times_btn_other.ContextMenuStrip = BuildMenuStrip Items:items_times Clicks:clicks_times ToolTipText:ToolTips_times BackColor:BackColor ForeColor:ForeColor
 

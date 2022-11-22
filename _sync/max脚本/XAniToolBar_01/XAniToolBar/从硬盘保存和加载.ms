@@ -4,14 +4,17 @@ fn combine_array ary = --合并多维数组
 	for a in ary do new_ary += a
 	new_ary
 )
-fn sort_by_hierarchy obj_list:(getcurrentselection()) combine:false = --按层级匹配物体,combine:true可以把返回值拼合成一个数组.
+fn sort_by_hierarchy obj_list:(getcurrentselection()) split:false = 
 (
-	local
-	prt_list = for o in obj_list where (finditem obj_list o.parent) == 0 collect o, --收集父物体,不单独提取的话,会因为列表的不断删除而发生错过物体的问题
-	all_list = for p in prt_list collect for n in #()+p where (fid = finditem obj_list n)>0 collect (deleteitem obj_list fid;n) --收集父物体和列表中的子物体
-	if combine then combine_array all_list else all_list
+	local sorted_obj_list = for o in execute "$objects/* as array" where findItem obj_list o > 0 collect o
+	if split do
+	(
+		local id_list = for i = 1 to sorted_obj_list.count where findItem sorted_obj_list sorted_obj_list[i].parent == 0 collect i;append id_list (sorted_obj_list.count+1)
+		sorted_obj_list = for i = 1 to id_list.count-1 collect for j = id_list[i] to (id_list[i+1]-1) collect sorted_obj_list[j]
+	)
+	sorted_obj_list
 )
--- select(sort_by_hierarchy combine:true)
+-- select(sort_by_hierarchy())
 fn GetKeys objs:(getcurrentselection()) clamp_range:false clamp_start:animationrange.start clamp_end:animationrange.end = --mapped在处理多物体时返回的是ok,实际上下面的mapkeys就能兼容但物体和多物体,clamp_range钳制范围
 with undo off
 (
@@ -25,7 +28,7 @@ with undo off
 --保存和加载较为缓慢,一定要加个进度条来减少空等(有个进度条参考就不是空等了.)--可以将总数量保存到文件里,方便加载时计算进度.
 fn save_transform obj_list:(getcurrentselection()) keys_range:#(animationrange.start, animationrange.end) buffer_file:(getdir #temp + @"\save_transform.txt") = --根据文件名,可能是Ani001,Ani002
 with printAllElements true(
-	obj_list = sort_by_hierarchy obj_list:obj_list combine:true
+	obj_list = sort_by_hierarchy obj_list:obj_list
 	total = obj_list.count
 	progress = 0.0
 	--创建文件
@@ -91,7 +94,7 @@ fn load_transform obj_list:(getcurrentselection()) start_Key:animationrange.star
 
 fn save_names obj_list:(getcurrentselection()) keys:(for t = animationrange.start to animationrange.end collect t) buffer_file:(getdir #temp + @"\save_names.txt") =
 with printAllElements true(
-	obj_list = sort_by_hierarchy obj_list:obj_list combine:true
+	obj_list = sort_by_hierarchy obj_list:obj_list
 	--创建文件
 	deleteFile buffer_file --反正不允许有重名,重名删了新建就好了
 	f = createFile buffer_file

@@ -43,14 +43,33 @@
 
 # 标识检测 https://intoli.com/blog/not-possible-to-block-chrome-headless/chrome-headless-test.html
 
-import asyncio,os,time
-from pyppeteer import launch
+import asyncio,os,re,wget,requests
+from pyppeteer import launch 
+from urllib3.exceptions import InsecureRequestWarning  
+requests.urllib3.disable_warnings(InsecureRequestWarning)
+'''
+#（1）针对requests 2.5.0版本以下的,不包含2.5.0版本
+from urllib3.exceptions import InsecureRequestWarning  
+#在请求前加入以下代码：　　　　　　requests.urllib3.disable_warnings(InsecureRequestWarning)
+（2） 针对requests 2.5.0版本及以上的版本
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+#在请求前,加入以下代码　　　　　requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+'''
+
+
+save_path :str= r'D:\人周一课'
+page_list = [
+    'http://renzhouyike.oa.wanmei.net/course/enter/videoCoursesDetail.do?videoCoursesId=716'
+]
 
 async def main():
     # 启动和配置zh-CN zh-CN,en,en-GB,en-US
     _temp_img = r'D:/_temp_screenshot.png'
+    _temp_j_img = r'D:/_temp_jump_screenshot.png'
+    _temp_json = r'D:/_temp_json.json'
+
     browser = await launch(
-            headless = True,
+            headless = False, #True
             args = ['--lang=zh-CN,en,en-GB,en-US']
     )
     page = await browser.newPage()
@@ -61,8 +80,34 @@ async def main():
     await page.waitForSelector('body > div > div.main.wrapper_login.media-loginWrapper.media-main.media-loginWrapper-on.media-main-on > div.loginWrap.media-loginWrap.media-loginWrap-on > ul > li.text-left.sao > a')
     await page.click('body > div > div.main.wrapper_login.media-loginWrapper.media-main.media-loginWrapper-on.media-main-on > div.loginWrap.media-loginWrap.media-loginWrap-on > ul > li.text-left.sao > a')
     await page.screenshot({'path': _temp_img})
-    time.sleep(1) #缓一下等图片
-    await os.startfile(_temp_img) #打开太快了,图片还没写完就打开了.所以是空白的,接完图稍微等会,或者有其他方法知道什么时候截图完毕?
-    await browser.close()
+    await asyncio.sleep(2) #缓一下等图片
+    os.startfile(_temp_img) #打开太快了,图片还没写完就打开了.所以是空白的,接完图稍微等会,或者有其他方法知道什么时候截图完毕?
+    await page.waitForNavigation() #这里是被动跳转,click引发的主动跳转不能这么用的,要按顶上参考那样用
 
+    # 登录完成
+    # os.remove(_temp_img)
+    # await page.screenshot({'path': _temp_j_img})
+    # await asyncio.sleep(2) #缓一下等图片
+    # os.startfile(_temp_j_img)
+    # os.remove(_temp_img)
+    # await page.waitForSelector('#video-list')
+
+    # 获取全部课程号
+    # course_all_list = []
+    # course_last_list = []
+    # course_current_list = [item.getProperty('data-id').jsonValue() for item in await page.JJ('#video-list > div.video-item')]
+    # print(course_current_list)
+    # while course_last_list != course_current_list:
+    #     course_all_list += course_current_list
+    #     course_last_list = course_current_list
+    #     await page.click('#list-content > div.page-container > div > a.list-arrow.next.vo-null')
+    #     course_current_list = [item.getProperty('data-id').jsonValue() for item in await page.JJ('#video-list > div.video-item')]
+
+    # # 输出
+    # print(course_all_list)
+
+    # 退出
+    # await browser.close()
+    while True:
+        await page.waitForNavigation()
 asyncio.get_event_loop().run_until_complete(main())

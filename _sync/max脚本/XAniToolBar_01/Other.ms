@@ -6,7 +6,7 @@ fn combine_array ary =
 	new_ary
 )
 
---这里不再使用,因为即使层次排的很好,同级的子物体仍会有顺序错误,即使我们再次按名称进行排序,也无法满足所有要求,所以请让用户认真指定.
+--这里不再使用,因为即使层次排的很好,同级的子物体仍会有顺序错误,即使我们再次按名称进行排序,也无法满足所有要求(比如有同名物体,物体修改过层级等),所以请让用户认真指定.
 -- fn sort_by_hierarchy obj_list:(getcurrentselection()) split:false = --优秀的排序功能,可能略有点慢,但非常准确,切割功能是给类似 创建相同层次的骨骼 使用的(比如bip转骨骼)
 -- (
 -- 	local sorted_obj_list = for o in execute "$objects/* as array" where findItem obj_list o > 0 collect o

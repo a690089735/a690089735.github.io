@@ -59,11 +59,15 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 save_path :str= r'D:\人周一课'
 num_list = [
-    x for x in range(1000)
+    # x for x in range(1000)
+    x for x in range(754,1000)
 ]
 # page_list = [
 #     'http://renzhouyike.oa.wanmei.net/course/enter/videoCoursesDetail.do?videoCoursesId='+str(num) for num in num_list
 # ]
+
+def check_file_name(file_name) :
+    return re.sub(r'(\\|\/|\:|\*|\?|\"|\<|\>|\||\s)',r'_',file_name)
 
 async def main():
     # 启动和配置zh-CN zh-CN,en,en-GB,en-US
@@ -105,7 +109,7 @@ async def main():
         await page.waitForSelector('body > div.ts-content > div > div > div.course-detail > div > div.title')
         course_title = await (await (await page.J('body > div.ts-content > div > div > div.course-detail > div > div.title')).getProperty('textContent')).jsonValue()
         if course_title != '':
-            course_title = re.sub(r'(\\|\/|\:|\*|\?|\"|\<|\>|\|)',r'_',course_title) # 替换不支持的符号
+            course_title = check_file_name(course_title) # 替换不支持的符号
             print('课程{}《{}》可下载.'.format(num, course_title),flush=True) # re.search(r'(?<=videoCoursesId=).*',page_url).group()
             save_course_path = os.path.join(save_path,'[{}]{}'.format(num,course_title))
             # print(type(course_title),dir(course_title),':',course_title)
@@ -124,6 +128,7 @@ async def main():
             
                 for video_url,video_idx,video_nam in [(await (await (await video_info.J('a')).getProperty('href')).jsonValue(),await (await (await video_info.J('a > div.num > span')).getProperty('textContent')).jsonValue(),await (await (await video_info.J('a > div.name')).getProperty('textContent')).jsonValue()) for video_info in await page.JJ('#videos > div.full-item')]:
                     # print(video_url,video_idx,video_nam)
+                    video_nam = check_file_name(video_nam)
                     print('开始分析:第{}个视频:{}'.format(video_idx,video_nam),flush=True)
                     # 截获数据地址
                     await page.tracing.start({'path': _temp_json})
@@ -137,7 +142,7 @@ async def main():
                     # 下载视频
                     print('开始下载:第{}个视频:{}'.format(video_idx,video_nam),flush=True)
                     wget.download(video_link,os.path.join(save_course_path,'{}.{}.mp4'.format(video_idx,video_nam)))
-
+                    print('下载完成.',flush=True)
                     # video_data = requests.get(video_link, verify=False) # 不验证证书
                     # with open(os.path.join(save_course_path,'{}.{}.mp4'.format(video_idx,video_nam)), "wb") as video_file:
                     #     video_file.write(video_data.content)

@@ -28,7 +28,7 @@ fn lineLineIntersect pA pB pC pD preview:true = ( --线段1的起点,线段1的终点,线段
 	result
 )
 -- lineLineIntersect $[1].transform.pos ($[1].transform[1]+$[1].transform.pos) $[2].transform.pos ($[2].transform[1]+$[2].transform.pos)
-lineLineIntersect $[1].transform.pos $[2].transform.pos $[3].transform.pos $[4].transform.pos
+-- lineLineIntersect $[1].transform.pos $[2].transform.pos $[3].transform.pos $[4].transform.pos
 
 -- 线与平面的交点
 fn planelineintersect c n a v= --planelineintersect <plane_point> <plane_normal> <line_point> <line_vector>
@@ -270,7 +270,7 @@ fn GetCurveValue2 t exp1:3.0=
 	if t <= 0.5 then
 		0.5 * (pow (t*2.0) exp1)
 	else
-		1 - GetCurveValue (1-t) exp1:exp1
+		1 - GetCurveValue2 (1-t) exp1:exp1
 )
 -- for i = 0 to 1 by 0.1 do print(GetCurveValue2 i exp1:6)
 -- delete objects
@@ -282,5 +282,24 @@ fn GetCurveValue1 t exp1:3.0=
 	pow t exp1
 )
 -- for i = 0 to 1 by 0.1 do print(GetCurveValue1 i exp1:6)
+delete objects
+-- for i = 0 to 1 by 0.1 do (point pos:[i,0,(GetCurveValue1 i exp1:3)] size:0.1) --11次
+for i = 0 to 1 by 0.1 do (point pos:[i,0,1-(GetCurveValue1 (1-i) exp1:5)] size:0.1) --11次
+--双衰减函数(没搞明白,暂时用不了)
+-- fn GetCurveValue3 t exp1:1.0 exp2:6.0 spl: =
+-- (
+	--if spl == unsupplied do spl = exp1/(exp1+exp2)
+-- 	t = (((t+0.000005)*100000) as integer) * 0.00001 --max底层在计算时会将接近0的数的幂算为无限小引发错误.这里四舍五入限制一下精度.飘带脚本的问题应该也是如此.
+-- 	if t <= .5 then
+-- 	(
+-- 		exp0 = exp1+(exp2-exp1)*t
+-- 		0.5 * (pow (t*2.0) exp0)
+-- 	)
+-- 	else
+-- 		1 - GetCurveValue2 (1-t) exp1:exp2 exp2:exp1 spl:spl
+-- )
 -- delete objects
--- for i = 0 to 1 by 0.1 do (point pos:[i,0,(GetCurveValue1 i exp1:2)] size:0.1) --11次
+-- for i = 0 to 1 by 0.1 do (point pos:[GetCurveValue1 i exp1:((4.0/1)*.5),0,(GetCurveValue3 i exp1:4 exp2:1)] size:0.1) --11次
+--利用上边两个,模拟双衰减函数,倒数得到反效果
+-- delete objects
+-- for i = 0 to 1 by 0.1 do (point pos:[GetCurveValue1 (GetCurveValue1 i exp1:(1.0/2)) exp1:1.5,0,(GetCurveValue2 (GetCurveValue1 i exp1:(1.0/2)) exp1:3)] size:0.1) --11次

@@ -15,6 +15,7 @@ config/description="动态创建实例的测试,包括:
 创建
 播放动画
 删除"
+run/main_scene="res://主池子.tscn"
 config/icon="res://icon.png"
 
 [gui]

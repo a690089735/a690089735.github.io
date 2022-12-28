@@ -1,5 +1,5 @@
 try(DestroyDialog workflowRollout)catch()
-rollout workflowRollout "专有0.1" width:152 height:264
+rollout workflowRollout "专有0.1" width:152 height:320
 (
 	fn get_keys_range objs:(getcurrentselection()) = --获取实际的动画范围
 	with undo off
@@ -7,12 +7,12 @@ rollout workflowRollout "专有0.1" width:152 height:264
 		mapkeys objs (fn CollectKeys t k = (append k t; t)) (keys=#()) #allkeys
 		interval (amin keys) (amax keys)
 	)
-	fn combine_array ary = --合并多维数组
-	(
-		new_ary = #()
-		for a in ary do new_ary += a
-		new_ary
-	)
+-- 	fn combine_array ary = --合并多维数组
+-- 	(
+-- 		new_ary = #()
+-- 		for a in ary do new_ary += a
+-- 		new_ary
+-- 	)
 	fn sort_by_hierarchy obj_list:(getcurrentselection()) split:false = 
 	(
 		local sorted_obj_list = for o in $objects/* as array where findItem obj_list o > 0 collect o
@@ -47,7 +47,7 @@ rollout workflowRollout "专有0.1" width:152 height:264
 		print("原始时间:" + animationRange as string)
 		animationRange = interval (if st < animationRange.start then st else animationRange.start) (if et > animationRange.end then et else animationRange.end)
 	)
-	fn copy_transform objs:(getcurrentselection()) = --加上按实际时间复制
+	fn copy_transform objs:(getcurrentselection()) = --加上了按实际时间复制
 	(
 		local range = get_keys_range objs:objs, st = range.start,et = range.end
 		#(range,for obj in objs collect (for t = st to et collect at time t obj.transform))
@@ -67,24 +67,31 @@ rollout workflowRollout "专有0.1" width:152 height:264
 	fn get_lower_version = (maxversion())[1]/1000+1995
 		
 		
-	GroupBox 'grp1' "塌陷动画" pos:[8,8] width:136 height:48 align:#left
-	button 'btn_collapseAni' "塌陷选择物体的动画" pos:[16,24] width:120 height:24 toolTip:"选中要塌陷动画的物体,点击按钮塌陷动画.\n塌陷动画时,按实际动画时间塌陷动画,这可能会改变时间范围." align:#left
+	GroupBox 'grp1' "塌陷动画" pos:[8,64] width:136 height:48 align:#left
+	button 'btn_collapseAni' "塌陷选择物体的动画" pos:[16,80] width:120 height:24 toolTip:"选中要塌陷动画的物体,点击按钮塌陷动画.\n塌陷动画时,按实际动画时间塌陷动画,这可能会改变时间范围." align:#left
 	
-	GroupBox 'grp2' "手部动画" pos:[8,64] width:136 height:80 align:#left
-	button 'btn_CopyAni' "复制选择动画" pos:[16,80] width:120 height:24 enabled:false align:#left
-	button 'btn_PasteAni' "粘贴选择动画" pos:[16,112] width:120 height:24 enabled:false align:#left
+	GroupBox 'grp2' "手部动画" pos:[8,120] width:136 height:80 align:#left
+	button 'btn_CopyAni' "复制选择动画" pos:[16,136] width:120 height:24 enabled:false align:#left
+	button 'btn_PasteAni' "粘贴选择动画" pos:[16,168] width:120 height:24 enabled:false align:#left
 	
-	GroupBox 'grp3' "输出文件" pos:[8,152] width:136 height:80 align:#left
-	button 'btn_SaveLower' "保存到最低版本" pos:[16,168] width:120 height:24 toolTip:"保存为当前max支持的最低版本: 2020" align:#left
-	button 'btn_PutVideo' "输出录屏文件" pos:[16,200] width:120 height:24 enabled:false toolTip:"按Ctrl点击,在输出后播放录屏文件." align:#left
+	GroupBox 'grp3' "输出文件" pos:[8,208] width:136 height:80 align:#left
+	button 'btn_SaveLower' "保存到最低版本" pos:[16,224] width:120 height:24 toolTip:"保存为当前max支持的最低版本: 2020" align:#left
+	button 'btn_PutVideo' "输出录屏文件" pos:[16,256] width:120 height:24 enabled:false toolTip:"按Ctrl点击,在输出后播放录屏文件." align:#left
 	
-	Timer 'tmr1' "Timer" pos:[136,392] width:24 height:24 interval:3250 active:false
-	label 'bar' "就绪." pos:[8,240] width:136 height:16 style_sunkenedge:true
+	Timer 'tmr1' "Timer" pos:[136,-8] width:24 height:24 interval:3250 active:false align:#left
+	label 'bar' "就绪." pos:[8,296] width:136 height:16 style_sunkenedge:true align:#left
 	
 		
 	fn set_state str = (bar.text = str;tmr1.active = true)
 	
 	
+-- 	on workflowRollout open do
+-- 	(
+-- 		
+-- 	)
+	GroupBox 'grp0' "合并蒙皮" pos:[8,8] width:136 height:48 align:#left
+	button 'btn_copySkin' "复制信息" pos:[16,24] width:56 height:24 toolTip:"选中要塌陷动画的物体,点击按钮塌陷动画.\n塌陷动画时,按实际动画时间塌陷动画,这可能会改变时间范围." align:#left
+	button 'btn_PasteSkin' "粘贴信息" pos:[80,24] width:56 height:24 toolTip:"选中要塌陷动画的物体,点击按钮塌陷动画.\n塌陷动画时,按实际动画时间塌陷动画,这可能会改变时间范围." align:#left
 	on btn_collapseAni pressed do
 	undo "塌陷动画" on(
 		try
@@ -119,17 +126,21 @@ rollout workflowRollout "专有0.1" width:152 height:264
 		)
 	)
 	on btn_PutVideo pressed do
-	(
+		(
 	
 	)
--- 	on workflowRollout open do
--- 	(
--- 		
--- 	)
 	on tmr1 tick do
 	(
 		bar.text = "就绪."
 		tmr1.active = false
+	)
+	on btn_copySkin pressed  do
+	(
+	
+	)
+	on btn_PasteSkin pressed  do
+	(
+	
 	)
 )
 CreateDialog workflowRollout

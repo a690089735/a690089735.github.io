@@ -1,0 +1,972 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icaros\n"
+"POT-Creation-Date: 2014-10-03 15:23:34+0000\n"
+"PO-Revision-Date: 2021-04-04 11:37+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: EXPLORER PROPERTIES
+msgctxt "#VideoTracks"
+msgid "Video tracks"
+msgstr "Видеодорожки"
+
+msgctxt "#AudioTracks"
+msgid "Audio tracks"
+msgstr "Аудиодорожки"
+
+msgctxt "#SubtitleTracks"
+msgid "Subtitle tracks"
+msgstr "Субтитры"
+
+msgctxt "#ContentCompression"
+msgid "Content compression"
+msgstr "Содержит сжатие"
+
+msgctxt "#ContainsChapters"
+msgid "Contains chapters"
+msgstr "Содержит главы"
+
+msgctxt "#BitDepth"
+msgid "Bit depth"
+msgstr "Разрядность"
+
+msgctxt "#SubtitleGroup"
+msgid "Subtitles"
+msgstr "Субтитры"
+
+#: MAIN WINDOW
+msgctxt "tglThumbnail"
+msgid "THUMBNAILING"
+msgstr "ЭСКИЗЫ"
+
+msgctxt "tglProperty"
+msgid "PROPERTIES"
+msgstr "СВОЙСТВА"
+
+msgctxt "tglCache"
+msgid "CACHE"
+msgstr "КЭШ"
+
+msgctxt "tglTools"
+msgid "TOOLS"
+msgstr "ИНСТРУМЕНТЫ"
+
+msgctxt "tglDebug"
+msgid "DEBUG"
+msgstr "ОТЛАДКА"
+
+msgctxt "tglAbout"
+msgid "ABOUT"
+msgstr "О ПРОГРАММЕ"
+
+msgctxt "tglUiSettings"
+msgid "ui settings"
+msgstr "настройки интерфейса"
+
+msgctxt "stActivated"
+msgid "ACTIVATED"
+msgstr "АКТИВИРОВАНЫ"
+
+msgctxt "stDeactivated"
+msgid "DEACTIVATED"
+msgstr "ДЕАКТИВИРОВАНЫ"
+
+msgctxt "stDisabled"
+msgid "DISABLED"
+msgstr "ОТКЛЮЧЕН"
+
+msgctxt "stStatic"
+msgid "ENABLED (STATIC)"
+msgstr "ВКЛЮЧЕН\n(СТАТИЧЕСКИЙ)"
+
+msgctxt "stDynamic"
+msgid "ENABLED (DYNAMIC)"
+msgstr "ВКЛЮЧЕН\n(ДИНАМИЧЕСКИЙ)"
+
+msgctxt "stNotInstalled"
+msgid "NOT INSTALLED"
+msgstr "НЕ УСТАНОВЛЕН"
+
+msgctxt "stIndexing"
+msgid "INDEXING..."
+msgstr "ИНДЕКСИРОВАНИЕ..."
+
+#: THUMBNAIL PAGE
+msgctxt "cptFiletypes"
+msgid "THUMBNAIL FILETYPES"
+msgstr "ЭСКИЗЫ ДЛЯ ФАЙЛОВ"
+
+msgctxt "lblPresets"
+msgid "PRESET:"
+msgstr "СПИСОК:"
+
+msgctxt "cptSettings"
+msgid "SETTINGS"
+msgstr "НАСТРОЙКИ"
+
+msgctxt "lblOffset"
+msgid "Thumbnail Offset"
+msgstr "Позиция извлечения кадра для эскиза"
+
+msgctxt "lblPrefTime"
+msgid "Prefer Timestamp"
+msgstr "Выбирать позицию согласно отметке по времени"
+
+msgctxt "cbxBlkDtct"
+msgid "Enable black/white frame detection"
+msgstr "Включить обнаружение черного/белого кадра"
+
+msgctxt "lblThreshold"
+msgid "Threshold"
+msgstr "Порог"
+
+msgctxt "cbxShowOverlay"
+msgid "Display icon overlays on thumbnails"
+msgstr "Отображать значки файлов на эскизах"
+
+msgctxt "cbxShowVidAdorn"
+msgid "Display movie reel on video thumbnails"
+msgstr "Отображать эффект перфорации на видеоэскизах"
+
+msgctxt "cbxCoverArt"
+msgid "Use embedded Cover Art for thumbnails"
+msgstr "Использовать встроенную обложку для эскиза"
+
+msgctxt "cbxCoverArtAny"
+msgid "Use any embedded image as Cover Art"
+msgstr "Использовать любое встроенное изображение для эскиза"
+
+msgctxt "cbxLandscape"
+msgid "Prefer Landscape Covers"
+msgstr "Приоритет у широкоформатной обложки"
+
+msgctxt "tipAddTypes"
+msgid "Add New Thumbnail Filetypes"
+msgstr "Добавить новое расширение файла"
+
+msgctxt "tipBlkDtct"
+msgid "With this option enabled, Icaros will perform a quick and simple\nscan of the grabbed frame. If the frame is either too dark or too\nlight, Icaros will skip forward and try to find a better suited frame."
+msgstr "Если эта опция включена, Icaros выполнит быстрое сканирование\nзахваченного кадра. Если кадр окажется слишком темным или светлым,\nIcaros пропустит его и попытается извлечь более подходящий кадр."
+
+msgctxt "tipCoverArt"
+msgid "When Cover Art is enabled, Icaros will look for embedded\ncover art in files that support it while generating thumbnails.\nIf a cover is found, it will be used as thumbnail, otherwise\nIcaros will automatically fall back to normal thumbnailing.\n\nNote: This should not affect the thumbnailing speed in any\nnoticeable way."
+msgstr "Icaros будет использовать встроенную обложку для создания\nэскизов в файлах, которые это поддерживают.\nЕсли обложка будет найдена, Icaros будет использовать ее\nв качестве эскиза, в противном случае эскиз будет\nсгенерирован в обычном режиме.\n\nВключение этой опции не должно повлиять\nна скорость создания эскизов."
+
+msgctxt "tipCoverAny"
+msgid "With this option enabled, Icaros will use any embedded image in\nthe file as a cover, whether it follows the file specifications or not.\nImages intended as covers will always be preferred."
+msgstr "Если эта опция включена, Icaros будет использовать любое встроенное изображение\nв файле в качестве эскиза, даже если оно не соответствует спецификациям обложки.\nИзображения в файле, предназначенные для обложек имеют более высокий приоритет."
+
+msgctxt "tipCoverLand"
+msgid "Some MKV files contain multiple covers. With such files\nIcaros will default to using the first normal/vertical cover.\nThis option will make Icaros prioritize landscape/horizontal\ncovers instead."
+msgstr "Некоторые файлы MKV могут содержать несколько обложек.\nДля таких файлов Icaros по умолчанию будет использовать\nпервую обычную/вертикальную обложку.\nЭта опция позволяет по умолчанию использовать\nширокоформатную/горизонтальную обложку."
+
+msgctxt "dlgcptPrstChng"
+msgid "Preset Info"
+msgstr "Дополнительная информация"
+
+msgctxt "dlgPrstChng"
+msgid "The current list contains filetypes that are not included in the selected preset.\n\nDo you wish to include these filetypes in the list?"
+msgstr "Текущий список содержит расширения файлов, которые не входят в выбранную предустановку.\n\nВы желаете добавить эти расширения в новый список?"
+
+msgctxt "dlgPrstPsd"
+msgid "PSD is currently being handled by another thumbnail shell extension.\n\nDo you wish for Icaros to assume control of this filetype?\n(You can always remove the filetype again to undo this action)"
+msgstr "Файлы PSD обрабатываются другим приложением.\n\nВы желаете чтобы обработку этих файлов выполнял Icaros?\n(Вы всегда можете отменить это, удалив тип файла из списка)"
+
+msgctxt "dlgcptThmbCheck"
+msgid "Thumbnail Check"
+msgstr "Проверка эскиза"
+
+msgctxt "dlgThmbCheck"
+msgid "The following filetypes did not pass the thumbnail check:\n\n{0}\n\nDo you still wish to add them?"
+msgstr "Следующие расширения файлов не прошли проверку на наличие возможности создать эскиз:\n\n{0}\n\nВы еще желаете добавить их в список?"
+
+msgctxt "ntfNewFiles"
+msgid "{0} new filetype(s) added ({1})"
+msgstr "Добавлено новых расширений файла: {0} ({1})"
+
+msgctxt "ntfRefresh"
+msgid "Refreshed thumbnails of {0} file(s)"
+msgstr "Обновлено эскизов: {0}"
+
+msgctxt "ntfExtrSuccess"
+msgid "Extraction Succeeded!"
+msgstr "Извлечение выполнено успешно!"
+
+msgctxt "ntfExtrFailed"
+msgid "Extraction Failed!"
+msgstr "Не удалось выполнить извлечение!"
+
+msgctxt "ntfTimeTaken"
+msgid "It took {0}ms"
+msgstr "Это заняло {0} мс"
+
+msgctxt "txtThumbUpdater"
+msgid "Drag and drop one or more files and/or folders to this page to refresh their thumbnails/icons"
+msgstr "Переместите один или несколько файлов/папок на эту страницу для обновления эскизов/иконок"
+
+msgctxt "prstDefault"
+msgid "DEFAULT"
+msgstr "ПО УМОЛЧАНИЮ"
+
+msgctxt "prstCommon"
+msgid "COMMON"
+msgstr "СТАНДАРТНЫЙ"
+
+msgctxt "prstVidOnly"
+msgid "VIDEO ONLY"
+msgstr "ТОЛЬКО ВИДЕО"
+
+msgctxt "prstAudOnly"
+msgid "AUDIO ONLY"
+msgstr "ТОЛЬКО АУДИО"
+
+msgctxt "prstMostKnown"
+msgid "MOST KNOWN"
+msgstr "РАСШИРЕННЫЙ"
+
+msgctxt "prstCustom"
+msgid "CUSTOM"
+msgstr "ПОЛЬЗОВАТЕЛЬСКИЙ"
+
+#: PROPERTIES PAGE
+msgctxt "txtPropInfo"
+msgid "With  PROPERTIES  activated, Icaros will allow you to view information such as length, width, height, artist etc. in Explorer, for any of the checked filetypes below"
+msgstr "Обработка свойств медиафайлов позволит вам просматривать такую информацию как продолжительность, ширина и высота кадра, исполнитель и другие данные в Проводнике Windows для следующих типов файлов"
+
+msgctxt "cptVideo"
+msgid "VIDEO"
+msgstr "ВИДЕО"
+
+msgctxt "cptAudio"
+msgid "AUDIO"
+msgstr "АУДИО"
+
+msgctxt "btnSelectAll"
+msgid "Select All"
+msgstr "Отметить все"
+
+msgctxt "btnDeselectAll"
+msgid "Deselect All"
+msgstr "Снять отметки"
+
+msgctxt "cbxShowUnd"
+msgid "Show [Und] on tracks with an undefined language"
+msgstr ""
+
+#: CACHE PAGE
+msgctxt "tglIndexer"
+msgid "SETTINGS"
+msgstr "НАСТРОЙКИ"
+
+msgctxt "tglIndexLocs"
+msgid "LOCATIONS"
+msgstr "РАСПОЛОЖЕНИЯ ДЛЯ ИНДЕКСИРОВАНИЯ"
+
+msgctxt "lblCacheLocation"
+msgid "Cache Location"
+msgstr "Место сохранения кэша"
+
+msgctxt "tipInvalidLocation"
+msgid "Icaros does not have permission to access current Cache Location.\nClick here to attempt to set the proper permissions.\nIf the error persists, try another directory."
+msgstr ""
+
+msgctxt "lblDriveRoot"
+msgid "Free Space on [{0}] Drive:"
+msgstr "Свободно на диске [{0}]"
+
+msgctxt "lblMinFreeSpace"
+msgid "Min Free Space"
+msgstr "Минимальное пространство"
+
+msgctxt "lblMaxCacheSize"
+msgid "Max Cache Size"
+msgstr "Максимальный размер кэша"
+
+msgctxt "tipMaxCache"
+msgid "Sets the max size limit of the Icaros Cache.\nIf 0 is set, the cache size is unlimited."
+msgstr "Устанавливает ограничение на максимальный размер кэша Icaros.\nЕсли установлено 0 MB - размер кэша не ограничен."
+
+msgctxt "lblExclTypes"
+msgid "Excluded Filetypes"
+msgstr "Исключенные типы файлов"
+
+msgctxt "tipUsedCache"
+msgid "{0:0.00}% of the available cache space is currently used"
+msgstr "{0:0.00}% свободного пространства используется для кэша"
+
+msgctxt "tipCacheSize"
+msgid "Icaros Cache Size"
+msgstr "Размер кэша Icaros"
+
+msgctxt "lblEntries"
+msgid "{0} entries"
+msgstr "Количество записей: {0}"
+
+msgctxt "lblCacheTut1"
+msgid "With the Icaros Cache ENABLED, Icaros will keep a local record of all thumbnails in an internal cache.\nThis allows Icaros to regenerate any cached thumbnail almost instantly in case Windows Explorer loses them.\n"
+msgstr "Включение опции КЭШ позволяет Icaros сохранять локальные записи всех эскизов во внутреннем кэше.\nВ этом случае Icaros может восстановить любые сохраненные эскизы почти мгновенно, если Проводник Windows утратил их.\n"
+
+msgctxt "lblCacheTut2"
+msgid "\nBy adding folders to the LOCATIONS page, and clicking the Build button below, it is possible to fill the cache\ndirectly from within IcarosConfig."
+msgstr "\nПри добавлении папки на вкладку РАСПОЛОЖЕНИЯ ДЛЯ ИНДЕКСИРОВАНИЯ и нажатии кнопки\nСоздать Кэш, можно заполнить кэш непосредственно из интерфейса Icaros."
+
+msgctxt "lblCacheSt1"
+msgid "STATIC"
+msgstr "СТАТИЧЕСКИЙ КЭШ"
+
+msgctxt "lblCacheSt2"
+msgid "DYNAMIC"
+msgstr "ДИНАМИЧИСКИЙ КЭШ"
+
+msgctxt "lblCacheStInfo1"
+msgid "allows Icaros to retrieve cached thumbnails, but only IcarosConfig can modify the cache."
+msgstr "позволяет Icaros восстанавливать кэшированные эскизы, но только Icaros может изменить кэш."
+
+msgctxt "lblCacheStInfo2"
+msgid "allows Icaros to retrieve cached thumbnails, as well as dynamically add any new thumbnails to the cache."
+msgstr "позволяет Icaros восстанавливать кэшированные эскизы, а также динамически добавлять новые эскизы в кэш."
+
+msgctxt "lblStatus"
+msgid "Status:"
+msgstr "Статус:"
+
+msgctxt "lblProgress"
+msgid "Progress:"
+msgstr "Прогресс:"
+
+msgctxt "lblCompleted"
+msgid "Completed:"
+msgstr "Выполнено:"
+
+msgctxt "lblFailed"
+msgid "Failed:"
+msgstr "Ошибок:"
+
+msgctxt "btnFailed"
+msgid "View"
+msgstr "Показать"
+
+msgctxt "btnBuild"
+msgid "Build Cache"
+msgstr "Создать Кэш"
+
+msgctxt "btnRebuild"
+msgid "Rebuild Cache"
+msgstr "Обновить Кэш"
+
+msgctxt "btnCancel"
+msgid "Cancel"
+msgstr "Отмена"
+
+msgctxt "btnClearCache"
+msgid "Clear Cache"
+msgstr "Очистить Кэш"
+
+msgctxt "lblSetLocInfo"
+msgid "At least one location must be added to use the indexer"
+msgstr "Хотя бы одно расположение должно быть добавлено, чтобы использовать индексирование"
+
+msgctxt "dlgClrIcCache"
+msgid "You are about to delete the Icaros Cache.\nDo you still wish to proceed?"
+msgstr "Вы собираетесь удалить кэш Icaros.\nВы желаете продолжить?"
+
+msgctxt "dlgCacheLoc"
+msgid "Select a thumbnail cache location"
+msgstr "Выбрать расположение"
+
+msgctxt "dlgcptFailed"
+msgid "FAILED FILES"
+msgstr "НЕОБРАБОТАННЫЕ ФАЙЛЫ"
+
+msgctxt "tipOpenDirSelect"
+msgid "Open folder and select file"
+msgstr "Открыть папку и выбрать файл"
+
+msgctxt "btnSaveList"
+msgid "Save List"
+msgstr "Сохранить список"
+
+msgctxt "stsIdxerInit"
+msgid "Indexer Initialized"
+msgstr "Инициализация индексирования"
+
+msgctxt "stsCollect"
+msgid "Preparing files for processing..."
+msgstr "Подготовка файлов для обработки..."
+
+msgctxt "stsIdxFiles"
+msgid "Indexing files..."
+msgstr "Индексирование файлов..."
+
+msgctxt "stsIdxFolders"
+msgid "Indexing folders..."
+msgstr "Индексирование папок..."
+
+msgctxt "stsIdxSuccess"
+msgid "Indexing Completed Successfully"
+msgstr "Индексирование выполнено успешно"
+
+msgctxt "stsIdxFailed"
+msgid "Indexing Failed"
+msgstr "Индексирование не выполнено"
+
+msgctxt "stsIdxCancel"
+msgid "Indexing was cancelled"
+msgstr "Индексирование отменено"
+
+msgctxt "stsIdxComplete"
+msgid "Indexing Completed"
+msgstr "Индексирование выполнено"
+
+msgctxt "lblTimeElapsed"
+msgid "Took: {}h {}m {}s {}ms"
+msgstr "Обработка заняла: {}ч {}мин {}сек {}мс"
+
+msgctxt "stsEHash"
+msgid "Failed to calculate proper file hash"
+msgstr "Не удалось вычислить правильный хэш файла"
+
+msgctxt "stsEThread"
+msgid "Failed to initialize thread"
+msgstr "Не удалось инициализировать поток"
+
+msgctxt "stsECacheInit"
+msgid "Failed to initialize Icaros Cache"
+msgstr "Не удалось инициализировать кэш Icaros"
+
+msgctxt "stsEServerInit"
+msgid "Failed to initialize Icaros Thumbnail Provider"
+msgstr "Не удалось инициализировать поставщика эскизов Icaros"
+
+msgctxt "stsECacheLimit"
+msgid "Maximum cache size reached"
+msgstr "Максимальный размер кэша достигнут"
+
+msgctxt "stsESpaceLimit"
+msgid "Minimum space limit reached"
+msgstr "Достигнут минимальный лимит пространства"
+
+msgctxt "stsEDBAccess"
+msgid "Failed to access the database"
+msgstr "Не удалось получить доступ к базе данных"
+
+msgctxt "stsEIDXAccess"
+msgid "Failed to access the index"
+msgstr "Не удалось получить доступ к индексированию"
+
+msgctxt "stsERegAccess"
+msgid "Failed to access the registry"
+msgstr "Не удалось получить доступ к реестру"
+
+msgctxt "stsECleanUp"
+msgid "Clean up was incomplete"
+msgstr "Очистка выполнена не полностью"
+
+msgctxt "stsENoFiles"
+msgid "Indexer found no files with included filetypes in current cache locations"
+msgstr "Не обнаружено файлов, включенных в список для обработки"
+
+msgctxt "stsEUnknown"
+msgid "Undetermined result"
+msgstr "Неопределенный результат"
+
+msgctxt "btnAdd"
+msgid "Add"
+msgstr "Добавить"
+
+msgctxt "btnRemove"
+msgid "Remove"
+msgstr "Удалить"
+
+msgctxt "btnClear"
+msgid "Clear"
+msgstr "Очистить"
+
+msgctxt "hdrLocation"
+msgid "Included Locations"
+msgstr "Включенные расположения"
+
+msgctxt "hdrViewSize"
+msgid "View Size"
+msgstr "Вид"
+
+msgctxt "hdrRecursive"
+msgid "Recursive"
+msgstr "Подпапки"
+
+msgctxt "hdrExcluded"
+msgid "Excluded Locations"
+msgstr "Исключенные расположения"
+
+msgctxt "enuSmall"
+msgid "Small"
+msgstr "Мелкий"
+
+msgctxt "enuMedium"
+msgid "Large"
+msgstr "Обычный"
+
+msgctxt "enuLarge"
+msgid "XL"
+msgstr "Крупный"
+
+msgctxt "enuXL"
+msgid "Win 8 Icons"
+msgstr "Значки Win 8"
+
+msgctxt "enuXXL"
+msgid "Win 10 Icons"
+msgstr "Значки Win 10"
+
+msgctxt "dlgAddDir"
+msgid "Please select the directory, you wish to add to the list"
+msgstr "Пожалуйста, выберите директорию для добавления в список"
+
+msgctxt "dlgClearLocs"
+msgid "Are you sure, you wish to clear all the entries off this list?"
+msgstr "Вы уверены, что желаете удалить все записи из этого списка?"
+
+msgctxt "dlgDirAccessErr"
+msgid "The selected folder does not have the proper Read/Write permissions to use as Cache Location.\nWill you allow Icaros to add the necessary user permissions to this folder?"
+msgstr "Выбранная папка не имеет соответствующих разрешений чтения/записи\nв качестве расположения для кэша Icaros.\nМногие функции могут быть недоступны.\n\nВы еще желаете использовать это расположение?"
+
+msgctxt "dlgMoveCache"
+msgid "You are about to change the Cache Location. Would you like to move the existing cache to new the location?"
+msgstr "Вы собираетесь изменить место расположения кэша.\nЖелаете переместить существующий кэш в новое расположение?"
+
+msgctxt "dlgMoveError"
+msgid "The Icaros Cache is currently locked by another process, please try restarting Explorer, then try again.\nIf it is still locked after restarting Explorer, a reboot may be required."
+msgstr "Кэш Icaros используется другим процессом, попробуйте перезапустить Проводник Windows.\nЕсли это не помогло, попробуйте перезагрузить ПК."
+
+msgctxt "cptIcRunWrn"
+msgid "Close IcarosConfig confirmation"
+msgstr "Подтверждение"
+
+msgctxt "dlgIcRunWrn"
+msgid "The Icaros cache indexer is still running.\nAre you sure you wish to close IcarosConfig and stop the indexer?"
+msgstr "Выполняется индексирование кэша Icaros.\nВы действительно хотите остановить индексирование и выйти из программы?"
+
+#: TOOLS PAGE
+msgctxt "cptWinCache"
+msgid "WINDOWS THUMBNAIL CACHE"
+msgstr "КЭШ ЭСКИЗОВ WINDOWS"
+
+msgctxt "lblWinCacheSize"
+msgid "Cache Size:  {0} MB"
+msgstr "Размер кэша:  {0} MB"
+
+msgctxt "btnWinCacheClear"
+msgid "Clear"
+msgstr "Очистить"
+
+msgctxt "tipOpenCacheLoc"
+msgid "Open Windows thumbnail cache directory"
+msgstr "Открыть папку расположения кэша Windows"
+
+msgctxt "cptExplorer"
+msgid "WINDOWS EXPLORER"
+msgstr "ПРОВОДНИК WINDOWS"
+
+msgctxt "btnExpRefresh"
+msgid "Refresh"
+msgstr "Обновить"
+
+msgctxt "btnExpRestart"
+msgid "Restart"
+msgstr "Перезапустить"
+
+msgctxt "cptResetTypes"
+msgid "RESET NATIVE FILETYPES"
+msgstr "ИСХОДНЫЕ НАСТРОЙКИ WINDOWS"
+
+msgctxt "btnResetThumb"
+msgid "Reset Thumbnail Filetypes"
+msgstr "Сбросить обработку эскизов"
+
+msgctxt "btnResetProps"
+msgid "Reset Property Filetypes"
+msgstr "Сбросить обработку свойств"
+
+msgctxt "txtResetLimits"
+msgid "The native filetypes can only be reset while Icaros thumbnailing\nand/or properties are not activated"
+msgstr "Вернуть стандартные настройки Windows можно только тогда,\nкогда обработка эскизов и/или свойств не активирована"
+
+msgctxt "dlgClrCacheErr"
+msgid "The Thumbnail Cache is currently in use.\n Wait a moment, then try again."
+msgstr "Кэш Windows в настоящее время используется.\nПожалуйста, подождите немного и повторите попытку."
+
+msgctxt "dlgcptExpRestrt"
+msgid "Restart Explorer"
+msgstr "Перезапуск Проводника Windows"
+
+msgctxt "dlgExpRestrt"
+msgid "Warning!\nRestarting Explorer may interrupt file copy/move operations,\nand may cause certain processes to halt.\n\nDo you wish to continue?"
+msgstr "Внимание!\nПерезапуск Проводника Windows прерывает операции копирования/перемещения файлов и может привести к остановке некоторых процессов.\n\nВы желаете продолжить?"
+
+msgctxt "dlgRstThumb"
+msgid "Are you sure, you want to reset all native filetypes back to their default thumbnail providers?"
+msgstr "Вы уверены, что желаете вернуть все исходные настройки Windows по созданию эскизов?"
+
+msgctxt "dlgRstProps"
+msgid "Are you sure, you want to reset all native filetypes back to their default property handlers and property lists?"
+msgstr "Вы уверены, что желаете вернуть все исходные настройки Windows по обработке свойств медиафайлов?"
+
+msgctxt "dlgRstSuccess"
+msgid "All native filetypes was reset successfully!"
+msgstr "Возврат к исходным настройкам выполнен успешно!"
+
+#: DEBUG PAGE
+msgctxt "lblTest"
+msgid "TEST:"
+msgstr "ТЕСТ:"
+
+msgctxt "lblSize"
+msgid "SIZE:"
+msgstr "РАЗМЕР:"
+
+msgctxt "enuThumbnailViaIcaros"
+msgid "THUMBNAILING VIA ICAROS"
+msgstr "ЭСКИЗЫ ЧЕРЕЗ ICAROS"
+
+msgctxt "enuThumbnailViaExplorer"
+msgid "THUMBNAILING VIA EXPLORER"
+msgstr "ЭСКИЗЫ ЧЕРЕЗ ПРОВОДНИК"
+
+msgctxt "enuPropertiesViaIcaros"
+msgid "PROPERTIES VIA ICAROS"
+msgstr "СВОЙСТВА ЧЕРЕЗ ICAROS"
+
+msgctxt "enuPropertiesViaExplorer"
+msgid "PROPERTIES VIA EXPLORER"
+msgstr "СВОЙСТВА ЧЕРЕЗ ПРОВОДНИК"
+
+msgctxt "btnRunAllTest"
+msgid "Run All"
+msgstr "Запустить все"
+
+msgctxt "btnRunTest"
+msgid "Run ({0})"
+msgstr "Запустить ({0})"
+
+msgctxt "hdrTestFiles"
+msgid "Test Files"
+msgstr "Тестируемые файлы"
+
+msgctxt "hdrTime"
+msgid "Time"
+msgstr "Время"
+
+msgctxt "hdrShellExtension"
+msgid "Shell Extension"
+msgstr "Обработчик"
+
+msgctxt "hdrCache"
+msgid "From Cache"
+msgstr "Из кэша"
+
+msgctxt "lblDropFiles"
+msgid "DROP FILES AND/OR FOLDERS YOU WISH TO TEST HERE"
+msgstr "ПЕРЕМЕСТИТЕ СЮДА ФАЙЛЫ И/ИЛИ ПАПКИ ДЛЯ ОТЛАДКИ"
+
+msgctxt "lblNoProperties"
+msgid "NO PROPERTIES HAS BEEN GENERATED FOR THIS FILE\nUSE THE 'PROPERTY TEST' TO VIEW PROPERTIES FOR THIS FILE"
+msgstr "НИКАКИХ СВОЙСТВ НЕ БЫЛО СОЗДАНО ДЛЯ ЭТОГО ФАЙЛА\nИСПОЛЬЗУЙТЕ ФУНКЦИИ ОТЛАДКИ, ЧТОБЫ ПОСМОТРЕТЬ СВОЙСТВА ДЛЯ ЭТОГО ФАЙЛА"
+
+msgctxt "lblLevel"
+msgid "LVL:"
+msgstr "УРОВЕНЬ:"
+
+msgctxt "lblDebugCount"
+msgid "{0} ENTRIES"
+msgstr "ФАЙЛОВ: {0}"
+
+msgctxt "tipRefresh"
+msgid "Refresh the thumbnails of the selected files in Explorer"
+msgstr "Обновить эскизы для выбранных файлов в Проводнике"
+
+msgctxt "tipSubDirDepth"
+msgid "The level/depth of subdirectories to scan through when getting files from a dropped folder (1-9)"
+msgstr "Уровень глубины поиска файлов во вложенных папках (1-9)"
+
+msgctxt "tipClosePanel"
+msgid "Close panel"
+msgstr "Закрыть панель"
+
+msgctxt "tipAutoScrollOn"
+msgid "Disable auto scrolling"
+msgstr "Отключить автоматическую прокрутку"
+
+msgctxt "tipAutoScrollOff"
+msgid "Enable auto scrolling"
+msgstr "Включить автоматическую прокрутку"
+
+msgctxt "tipThumbPlaceholder"
+msgid "Use one of the two 'Thumbnail tests' to view the thumbnail for this file"
+msgstr "Используйте один из двух тестов, чтобы просмотреть эскиз этого файла"
+
+msgctxt "tipThumbPreview"
+msgid "Thumbnail dimensions:\n{0} x {1}"
+msgstr "Размеры эскиза:\n{0} x {1}"
+
+#: ABOUT PAGE
+msgctxt "lnkSupport"
+msgid "Follow Beta development of Icaros or get support"
+msgstr "Следить за релизами Icaros или получить поддержку на форуме"
+
+msgctxt "lblSpcTks"
+msgid "SPECIAL THANKS TO"
+msgstr "ОСОБАЯ БЛАГОДАРНОСТЬ"
+
+#: UI SETTINGS PAGE
+msgctxt "lblLocalize"
+msgid "LOCALIZATION"
+msgstr "ЛОКАЛИЗАЦИЯ"
+
+msgctxt "cbxPropLocal"
+msgid "Enable Property Localization"
+msgstr "Дополнительная локализация свойств файла"
+
+msgctxt "lblTheming"
+msgid "THEME OPTIONS"
+msgstr "ТЕМА ОФОРМЛЕНИЯ"
+
+msgctxt "lblChromeClr"
+msgid "CHROME COLOR"
+msgstr "ЦВЕТОВАЯ ПАЛИТРА"
+
+msgctxt "enuMonoColor"
+msgid "Mono Color"
+msgstr "Монохромная"
+
+msgctxt "enuColorPerPage"
+msgid "Color Per Page"
+msgstr "Разноцветная"
+
+msgctxt "cbxRemWinSize"
+msgid "Remember Window Size"
+msgstr "Запомнить размер окна"
+
+msgctxt "cbxRemWinPos"
+msgid "Remember Window Position"
+msgstr "Запомнить расположение окна"
+
+msgctxt "cbxAnimation"
+msgid "Disable Page Animations"
+msgstr "Отключить анимацию вкладок"
+
+msgctxt "lblGlassOpacity"
+msgid "Glass Overlay Opacity"
+msgstr "Эффект прозрачности"
+
+msgctxt "lblGlassDark"
+msgid "Dark"
+msgstr "Темнее"
+
+msgctxt "lblGlassLight"
+msgid "Light"
+msgstr "Светлее"
+
+msgctxt "tipModSettings"
+msgid "To Export/Import/Reset the Icaros settings, thumbnailing\nand properties must be deactivated"
+msgstr "Для использования операций экспорта/импорта/сброса настроек\nобработку эскизов и свойств необходимо деактивировать"
+
+msgctxt "optExport"
+msgid "Export Settings"
+msgstr "Экспортировать настройки"
+
+msgctxt "optImport"
+msgid "Import Settings"
+msgstr "Импортировать настройки"
+
+msgctxt "optReset"
+msgid "Reset All Settings"
+msgstr "Сбросить все настройки"
+
+msgctxt "dlgThemeAccent"
+msgid "Would you like to use this theme's default chrome colors?\n\nWarning: This will overwrite your current chrome color settings!"
+msgstr "Вы хотите использовать стандартную цветовую палитру этой темы?\n\nВнимание! Эта операция сбросит настройки вашей текущей темы оформления!"
+
+msgctxt "cptThemeAccent"
+msgid "Use default theme chrome colors?"
+msgstr "Использовать стандартную цветовую палитру этой темы?"
+
+msgctxt "dlgExportLoc"
+msgid "Please chose where you wish to export the Icaros settings"
+msgstr "Пожалуйста, укажите расположение для экспорта настроек Icaros"
+
+msgctxt "dlgImportWrn"
+msgid "This will overwrite ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Эта операция изменит все ваши текущие настройки.\n\nВы желаете продолжить?"
+
+msgctxt "dlgResetAll"
+msgid "This will reset ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Эта операция сбросит все ваши текущие настройки.\n\nВы желаете продолжить?"
+
+msgctxt "cptResetWrn"
+msgid "Settings Reset Confirmation"
+msgstr "Подтверждение изменения настроек"
+
+#: WELCOME OVERLAY
+msgctxt "lblWlcIntro1"
+msgid "WELCOME"
+msgstr "ДОБРО ПОЖАЛОВАТЬ"
+
+msgctxt "lblWlcIntro2"
+msgid "TO THE NEW ICAROS GUI"
+msgstr "В ПРОГРАММУ ICAROS"
+
+msgctxt "lblWlcSelect"
+msgid "Please select your preferred"
+msgstr "Выбор"
+
+msgctxt "lblWlcLang"
+msgid "language:"
+msgstr "языка:"
+
+msgctxt "lblWlcTheme"
+msgid "theme:"
+msgstr "темы:"
+
+msgctxt "lblWlcTip1"
+msgid "Click here to change language and ui settings"
+msgstr "Нажмите здесь, чтобы изменить язык и настройки интерфейса"
+
+msgctxt "lblWlcTip2"
+msgid "Click these icons to browse the various pages of settings"
+msgstr "Нажмите на эти иконки, чтобы просмотреть страницы настроек"
+
+msgctxt "lblWlcTip3"
+msgid "Click the 'Activation buttons' to toggle the state of the shell extensions"
+msgstr "Нажмите сюда для изменения состояния активации обработки файлов"
+
+msgctxt "lblWlcTip4"
+msgid "Drag and drop files onto this page to test if Icaros can thumbnail them\nThe filetype will automatically be added to the list of 'Thumbnail filetypes', if it is compatible with Icaros\n\nDropping a file that already exists in the 'Thumbnail filetypes' list, will just refresh that file's thumbnail"
+msgstr "Переместите файлы на эту страницу, чтобы проверить, сможет ли Icaros сделать эскиз\nТип файла будет автоматически добавлен в список, если он совместим с Icaros\n\nЕсли тип файла уже есть в списке, то будет обновлен его эскиз"
+
+#: GLOBAL
+msgctxt "tipAddFiles"
+msgid "Add files"
+msgstr "Добавить файлы"
+
+msgctxt "tipClearList"
+msgid "Clear list"
+msgstr "Очистить список"
+
+msgctxt "tipWow64On"
+msgid "Icaros is enabled for 32-bit file dialogs"
+msgstr "Icaros используется в 32-битных диалоговых окнах"
+
+msgctxt "tipWow64Off"
+msgid "Icaros is disabled for 32-bit file dialogs"
+msgstr "Icaros не используется в 32-битных диалоговых окнах"
+
+msgctxt "tipBrowse"
+msgid "Browse to location"
+msgstr "Выбрать папку"
+
+msgctxt "cptDonate"
+msgid "Donate"
+msgstr "Donate"
+
+msgctxt "lblDonateTxt"
+msgid "If you like Icaros please consider making a donation to keep up the development of Icaros"
+msgstr "Если вам нравится Icaros, вы можете оказать помощь, сделав пожертвование"
+
+msgctxt "lblDonateTxt2"
+msgid "Donations received so far in {0}"
+msgstr "Получено пожертвований в {0}"
+
+msgctxt "lblFlattrTxt"
+msgid "Become a microdonator to continuously support the development of Icaros"
+msgstr "Делая регулярные пожертвования, вы оказываете неоценимую поддержку разработке Icaros"
+
+msgctxt "lblCreatedBy"
+msgid "Created and developed by"
+msgstr "Создано и разработано"
+
+msgctxt "tipMail"
+msgid "Send a mail to the developer of Icaros"
+msgstr "Отправить сообщение разработчику Icaros"
+
+msgctxt "tipTwitter"
+msgid "Follow Icaros development on Twitter"
+msgstr "Следить за разработкой Icaros в Twitter"
+
+msgctxt "swtOn"
+msgid "On"
+msgstr "On"
+
+msgctxt "swtOff"
+msgid "Off"
+msgstr "Off"
+
+msgctxt "btnDone"
+msgid "Done"
+msgstr "Готово"
+
+msgctxt "btnOK"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "btnYes"
+msgid "Yes"
+msgstr "Да"
+
+msgctxt "btnNo"
+msgid "No"
+msgstr "Нет"
+
+msgctxt "btnContinue"
+msgid "Continue"
+msgstr "Продолжить"
+
+msgctxt "btnGotIt"
+msgid "Got It!"
+msgstr "Понятно!"
+
+msgctxt "dlgcptConf"
+msgid "Confirmation"
+msgstr "Подтверждение"
+
+msgctxt "dlgcptInfo"
+msgid "Info"
+msgstr "Дополнительная информация"
+
+msgctxt "dlgcptError"
+msgid "Error"
+msgstr "Ошибка"
+
+msgctxt "btnRstColor"
+msgid "Reset Color"
+msgstr "Сбросить"
+
+msgctxt "btnMin"
+msgid "Minimize"
+msgstr "Свернуть"
+
+msgctxt "btnMax"
+msgid "Maximize"
+msgstr "Развернуть"
+
+msgctxt "btnResDown"
+msgid "Restore Down"
+msgstr "Свернуть в окно"
+
+msgctxt "btnClose"
+msgid "Close"
+msgstr "Закрыть"
+
+#~ msgctxt "dlgClearLocs"
+#~ msgid "Are you sure, you wish to clear all the entries of this list?"
+#~ msgstr "Вы действительно желаете очистить все записи этого списка?"
+
+#~ msgctxt "enuXL"
+#~ msgid "Preview"
+#~ msgstr "Огромный"

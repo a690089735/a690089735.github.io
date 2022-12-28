@@ -104,6 +104,7 @@ rollout springMagic_rol "Spring Magic V1.1" width:230 height:249
 			framestart = aframeStart.value-1f as time
 			frameEnd = aframeEnd.value-1f as time
 		)
+		if loops.checked do frameEnd-=1
 	)
 
 	fn getBoneChain bone = (
@@ -437,6 +438,10 @@ rollout springMagic_rol "Spring Magic V1.1" width:230 height:249
 				)
 			)----end for t
 		)----end for Loops
+-- 		if loops.checked do --适配减一帧的效果
+-- 		(
+-- 			at time frameEnd 
+-- 		)
 		doit_prog.value = 100.0
 		)
 	on btn6 pressed do

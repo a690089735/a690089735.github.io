@@ -1,0 +1,975 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icaros\n"
+"POT-Creation-Date: 2014-10-03 15:23:34+0000\n"
+"PO-Revision-Date: 2019-04-20 01:28+0200\n"
+"Last-Translator: nvi9\n"
+"Language-Team: \n"
+"Language: hu_HU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: EXPLORER PROPERTIES
+msgctxt "#VideoTracks"
+msgid "Video tracks"
+msgstr "Videósávok"
+
+msgctxt "#AudioTracks"
+msgid "Audio tracks"
+msgstr "Hangsávok"
+
+msgctxt "#SubtitleTracks"
+msgid "Subtitle tracks"
+msgstr "Feliratsávok"
+
+msgctxt "#ContentCompression"
+msgid "Content compression"
+msgstr "Tartalom tömörítés"
+
+msgctxt "#ContainsChapters"
+msgid "Contains chapters"
+msgstr "Fejezetek"
+
+msgctxt "#BitDepth"
+msgid "Bit depth"
+msgstr "Bitmélység"
+
+msgctxt "#SubtitleGroup"
+msgid "Subtitles"
+msgstr "Feliratok"
+
+#: MAIN WINDOW
+msgctxt "tglThumbnail"
+msgid "THUMBNAILING"
+msgstr "MINIATŰRÖK"
+
+msgctxt "tglProperty"
+msgid "PROPERTIES"
+msgstr "TULAJDONSÁGOK"
+
+msgctxt "tglCache"
+msgid "CACHE"
+msgstr "GYORSÍTÓTÁR"
+
+msgctxt "tglTools"
+msgid "TOOLS"
+msgstr "ESZKÖZÖK"
+
+msgctxt "tglDebug"
+msgid "DEBUG"
+msgstr ""
+
+msgctxt "tglAbout"
+msgid "ABOUT"
+msgstr "A PROGRAMRÓL"
+
+msgctxt "tglUiSettings"
+msgid "ui settings"
+msgstr "ui beállítások"
+
+msgctxt "stActivated"
+msgid "ACTIVATED"
+msgstr "AKTIVÁLVA"
+
+msgctxt "stDeactivated"
+msgid "DEACTIVATED"
+msgstr "DEAKTIVÁLVA"
+
+msgctxt "stDisabled"
+msgid "DISABLED"
+msgstr "LETILVA"
+
+msgctxt "stStatic"
+msgid "ENABLED (STATIC)"
+msgstr "ENGEDÉLYEZVE (STATIKUS)"
+
+msgctxt "stDynamic"
+msgid "ENABLED (DYNAMIC)"
+msgstr "ENGEDÉLYEZVE (DINAMIKUS)"
+
+msgctxt "stNotInstalled"
+msgid "NOT INSTALLED"
+msgstr "NINCS TELEPÍTVE"
+
+msgctxt "stIndexing"
+msgid "INDEXING..."
+msgstr "INDEXELÉS..."
+
+#: THUMBNAIL PAGE
+msgctxt "cptFiletypes"
+msgid "THUMBNAIL FILETYPES"
+msgstr "MINIATŰR FÁJLTÍPUSOK"
+
+msgctxt "lblPresets"
+msgid "PRESET:"
+msgstr "KÉSZLET:"
+
+msgctxt "cptSettings"
+msgid "SETTINGS"
+msgstr "BEÁLLÍTÁSOK"
+
+msgctxt "lblOffset"
+msgid "Thumbnail Offset"
+msgstr "Miniatűr helye"
+
+msgctxt "lblPrefTime"
+msgid "Prefer Timestamp"
+msgstr "Inkább abszolút helyen"
+
+msgctxt "cbxBlkDtct"
+msgid "Enable black/white frame detection"
+msgstr "Fekete/fehér kép ellenőrzés"
+
+msgctxt "lblThreshold"
+msgid "Threshold"
+msgstr "Érzékenység"
+
+msgctxt "cbxShowOverlay"
+msgid "Display icon overlays on thumbnails"
+msgstr "Fájltípus ikonok megjelenítése a miniatűrökön"
+
+msgctxt "cbxShowVidAdorn"
+msgid "Display movie reel on video thumbnails"
+msgstr "Filmszalag a videó miniatűrökön"
+
+msgctxt "cbxCoverArt"
+msgid "Use embedded Cover Art for thumbnails"
+msgstr "Belső borítókép használata a miniatűrökhöz (ha van)"
+
+msgctxt "cbxCoverArtAny"
+msgid "Use any embedded image as Cover Art"
+msgstr ""
+
+msgctxt "cbxLandscape"
+msgid "Prefer Landscape Covers"
+msgstr "Fekvő képek előnyben részesítése"
+
+msgctxt "tipAddTypes"
+msgid "Add New Thumbnail Filetypes"
+msgstr "Továbbiak hozzáadása"
+
+msgctxt "tipBlkDtct"
+msgid "With this option enabled, Icaros will perform a quick and simple\nscan of the grabbed frame. If the frame is either too dark or too\nlight, Icaros will skip forward and try to find a better suited frame."
+msgstr "Ha ez az opció engedélyezve van, az Icaros egy gyors és egyszerű\nvizsgálatot végez az aktuális képkockán. Ha az túl sötét, vagy túl\nvilágos, a program tovább fog keresni, amíg nem talál egy\njobban megfelelő képet."
+
+#, fuzzy
+msgctxt "tipCoverArt"
+msgid "When Cover Art is enabled, Icaros will look for embedded\ncover art in files that support it while generating thumbnails.\nIf a cover is found, it will be used as thumbnail, otherwise\nIcaros will automatically fall back to normal thumbnailing.\n\nNote: This should not affect the thumbnailing speed in any\nnoticeable way."
+msgstr "Ha ez az opció engedélyezve van, az Icaros a miniatűrök\ngenerálásakor belső borítóképeket fog keresni az azt támogató\nfájltípusokban. Ha talál ilyet, az fog megjelenni miniatűrként,\negyébként az eredeti módszerrel készített kép.\n\nEz a funkció nem csökkenti észrevehető módon a miniatűrök\nlétrehozási sebességét."
+
+msgctxt "tipCoverAny"
+msgid "With this option enabled, Icaros will use any embedded image in\nthe file as a cover, whether it follows the file specifications or not.\nImages intended as covers will always be preferred."
+msgstr ""
+
+msgctxt "tipCoverLand"
+msgid "Some MKV files contain multiple covers. With such files\nIcaros will default to using the first normal/vertical cover.\nThis option will make Icaros prioritize landscape/horizontal\ncovers instead."
+msgstr "Néhány MKV fájl több borítóképet tartalmaz. Ezeknél a\nfájloknál az Icaros alapértelmezetten az első borítóképet\nhasználja. Ha engedélyezi ezt a funkciót, akkor ehelyett\na fekvő borítóképeket fogja a program előnyben részesíteni."
+
+#, fuzzy
+msgctxt "dlgcptPrstChng"
+msgid "Preset Info"
+msgstr "Infó"
+
+msgctxt "dlgPrstChng"
+msgid "The current list contains filetypes that are not included in the selected preset.\n\nDo you wish to include these filetypes in the list?"
+msgstr "A jelenlegi lista tartalmaz olyan fájltípusokat, amelyek nincsenek benne a kiválasztott készletben.\n\nSzeretné megtartani ezeket?"
+
+msgctxt "dlgPrstPsd"
+msgid "PSD is currently being handled by another thumbnail shell extension.\n\nDo you wish for Icaros to assume control of this filetype?\n(You can always remove the filetype again to undo this action)"
+msgstr ""
+
+msgctxt "dlgcptThmbCheck"
+msgid "Thumbnail Check"
+msgstr "Miniatűr ellenőrzés"
+
+msgctxt "dlgThmbCheck"
+msgid "The following filetypes did not pass the thumbnail check:\n\n{0}\n\nDo you still wish to add them?"
+msgstr "A következő fájltípusok nem mentek át a miniatűr ellenőrzésen:\n\n{0}\n\nSzeretné mégis hozzáadni ezeket?"
+
+msgctxt "ntfNewFiles"
+msgid "{0} new filetype(s) added ({1})"
+msgstr ""
+
+msgctxt "ntfRefresh"
+msgid "Refreshed thumbnails of {0} file(s)"
+msgstr ""
+
+msgctxt "ntfExtrSuccess"
+msgid "Extraction Succeeded!"
+msgstr ""
+
+msgctxt "ntfExtrFailed"
+msgid "Extraction Failed!"
+msgstr ""
+
+msgctxt "ntfTimeTaken"
+msgid "It took {0}ms"
+msgstr ""
+
+msgctxt "txtThumbUpdater"
+msgid "Drag and drop one or more files and/or folders to this page to refresh their thumbnails/icons"
+msgstr "Húzzon ide egy vagy több fájlt/mappát, a miniatűrjük frissítéséhez"
+
+msgctxt "prstDefault"
+msgid "DEFAULT"
+msgstr "ALAPÉRTELMEZETT"
+
+msgctxt "prstCommon"
+msgid "COMMON"
+msgstr "ÁLTALÁNOS"
+
+#, fuzzy
+msgctxt "prstVidOnly"
+msgid "VIDEO ONLY"
+msgstr "VIDEÓ"
+
+#, fuzzy
+msgctxt "prstAudOnly"
+msgid "AUDIO ONLY"
+msgstr "AUDIÓ"
+
+msgctxt "prstMostKnown"
+msgid "MOST KNOWN"
+msgstr "ISMERT"
+
+msgctxt "prstCustom"
+msgid "CUSTOM"
+msgstr "EGYÉNI"
+
+#: PROPERTIES PAGE
+msgctxt "txtPropInfo"
+msgid "With  PROPERTIES  activated, Icaros will allow you to view information such as length, width, height, artist etc. in Explorer, for any of the checked filetypes below"
+msgstr "Ha a TULAJDONSÁGOK aktiválva van, az Icaros segítségével további információkat tekinthet meg az Explorer-ben az alább kiválasztott fájltípusokról, mint például hossz, méretek, előadó"
+
+msgctxt "cptVideo"
+msgid "VIDEO"
+msgstr "VIDEÓ"
+
+msgctxt "cptAudio"
+msgid "AUDIO"
+msgstr "AUDIÓ"
+
+msgctxt "btnSelectAll"
+msgid "Select All"
+msgstr "Összes"
+
+msgctxt "btnDeselectAll"
+msgid "Deselect All"
+msgstr "Semelyik"
+
+msgctxt "cbxShowUnd"
+msgid "Show [Und] on tracks with an undefined language"
+msgstr ""
+
+#: CACHE PAGE
+msgctxt "tglIndexer"
+msgid "SETTINGS"
+msgstr "BEÁLLÍTÁSOK"
+
+msgctxt "tglIndexLocs"
+msgid "LOCATIONS"
+msgstr "MAPPÁK"
+
+msgctxt "lblCacheLocation"
+msgid "Cache Location"
+msgstr "Gyorsítótár helye"
+
+msgctxt "tipInvalidLocation"
+msgid "Icaros does not have permission to access current Cache Location.\nClick here to attempt to set the proper permissions.\nIf the error persists, try another directory."
+msgstr ""
+
+msgctxt "lblDriveRoot"
+msgid "Free Space on [{0}] Drive:"
+msgstr "Szabad hely a(z) [{0}] meghajtón:"
+
+msgctxt "lblMinFreeSpace"
+msgid "Min Free Space"
+msgstr "Minimális szabad hely"
+
+msgctxt "lblMaxCacheSize"
+msgid "Max Cache Size"
+msgstr "Maximális méret"
+
+msgctxt "tipMaxCache"
+msgid "Sets the max size limit of the Icaros Cache.\nIf 0 is set, the cache size is unlimited."
+msgstr "Itt állíthatja be az Icaros-gyorsítótár maximális méretét.\nHa ez az érték 0, a gyorsítótár mérete nincs korlátozva."
+
+msgctxt "lblExclTypes"
+msgid "Excluded Filetypes"
+msgstr "Kizárt fájltípusok"
+
+msgctxt "tipUsedCache"
+msgid "{0:0.00}% of the available cache space is currently used"
+msgstr "Jelenleg az elérhető gyorsítótárméret {0:0.00}%-a van használatban"
+
+msgctxt "tipCacheSize"
+msgid "Icaros Cache Size"
+msgstr "Icaros gyorsítótár mérete"
+
+msgctxt "lblEntries"
+msgid "{0} entries"
+msgstr "{0} elem"
+
+msgctxt "lblCacheTut1"
+msgid "With the Icaros Cache ENABLED, Icaros will keep a local record of all thumbnails in an internal cache.\nThis allows Icaros to regenerate any cached thumbnail almost instantly in case Windows Explorer loses them.\n"
+msgstr "Ha az Icaros-gyorsítótár ENGEDÉLYEZVE van, a program eltárolja az összes miniatűr helyi\nmásolatát egy belső gyorsítótárban. Ezzel az Icaros akármelyik gyorsítótárazott miniatűrt\nnagyon gyorsan újra tudja generálni abban az esetben, ha az Explorer gyorsítótárából eltűnne.\n"
+
+msgctxt "lblCacheTut2"
+msgid "\nBy adding folders to the LOCATIONS page, and clicking the Build button below, it is possible to fill the cache\ndirectly from within IcarosConfig."
+msgstr "\nMappák hozzáadásával (a MAPPÁK lapon) és az alábbi Gyorsítótár felépítése gombra kattintva\nlétre lehet hozni a gyorsítótárat a mappák (külön-külön) megnyitása nélkül is."
+
+msgctxt "lblCacheSt1"
+msgid "STATIC"
+msgstr "STATIKUS"
+
+msgctxt "lblCacheSt2"
+msgid "DYNAMIC"
+msgstr "DINAMIKUS"
+
+msgctxt "lblCacheStInfo1"
+msgid "allows Icaros to retrieve cached thumbnails, but only IcarosConfig can modify the cache."
+msgstr "esetben csak ebből az ablakból tudja módosítani a gyorsítótárat."
+
+msgctxt "lblCacheStInfo2"
+msgid "allows Icaros to retrieve cached thumbnails, as well as dynamically add any new thumbnails to the cache."
+msgstr "esetben az Icaros a mappák megnyitásakor is hozzáadhatja az új miniatűröket a gyorsítótárhoz."
+
+msgctxt "lblStatus"
+msgid "Status:"
+msgstr "Állapot:"
+
+msgctxt "lblProgress"
+msgid "Progress:"
+msgstr "Folyamat:"
+
+msgctxt "lblCompleted"
+msgid "Completed:"
+msgstr "Kész:"
+
+msgctxt "lblFailed"
+msgid "Failed:"
+msgstr "Sikertelen:"
+
+msgctxt "btnFailed"
+msgid "View"
+msgstr "Megtekintés"
+
+msgctxt "btnBuild"
+msgid "Build Cache"
+msgstr "Gyorsítótár felépítése"
+
+msgctxt "btnRebuild"
+msgid "Rebuild Cache"
+msgstr "Gyorsítótár újraépítése"
+
+msgctxt "btnCancel"
+msgid "Cancel"
+msgstr "Mégse"
+
+msgctxt "btnClearCache"
+msgid "Clear Cache"
+msgstr "Gyorsítótár törlése"
+
+msgctxt "lblSetLocInfo"
+msgid "At least one location must be added to use the indexer"
+msgstr "Ehhez legalább egy mappának kell lennie a listában"
+
+msgctxt "dlgClrIcCache"
+msgid "You are about to delete the Icaros Cache.\nDo you still wish to proceed?"
+msgstr "Úgy döntött, hogy törli az Icaros-gyorsítótárat.\nBiztosan folytatni szeretné?"
+
+msgctxt "dlgCacheLoc"
+msgid "Select a thumbnail cache location"
+msgstr "Válasszon egy mappát a miniatűr gyorsítótárnak"
+
+msgctxt "dlgcptFailed"
+msgid "FAILED FILES"
+msgstr "SIKERTELEN FÁJLOK"
+
+msgctxt "tipOpenDirSelect"
+msgid "Open folder and select file"
+msgstr "Mappa megnyitása"
+
+msgctxt "btnSaveList"
+msgid "Save List"
+msgstr "Lista mentése"
+
+msgctxt "stsIdxerInit"
+msgid "Indexer Initialized"
+msgstr "Indexelő elindítva"
+
+msgctxt "stsCollect"
+msgid "Preparing files for processing..."
+msgstr "Fájlok előkészítése..."
+
+msgctxt "stsIdxFiles"
+msgid "Indexing files..."
+msgstr "Fájlok indexelése..."
+
+msgctxt "stsIdxFolders"
+msgid "Indexing folders..."
+msgstr "Mappák indexelése..."
+
+msgctxt "stsIdxSuccess"
+msgid "Indexing Completed Successfully"
+msgstr "Az indexelés sikeresen befejeződött"
+
+msgctxt "stsIdxFailed"
+msgid "Indexing Failed"
+msgstr "Az indexelés sikertelen volt"
+
+msgctxt "stsIdxCancel"
+msgid "Indexing was cancelled"
+msgstr "Az indexelés meg lett szakítva"
+
+msgctxt "stsIdxComplete"
+msgid "Indexing Completed"
+msgstr "Az indexelés befejeződött"
+
+msgctxt "lblTimeElapsed"
+msgid "Took: {}h {}m {}s {}ms"
+msgstr ""
+
+msgctxt "stsEHash"
+msgid "Failed to calculate proper file hash"
+msgstr "Nem sikerült a fájl-ellenőrzőösszeg kiszámítása"
+
+msgctxt "stsEThread"
+msgid "Failed to initialize thread"
+msgstr "Nem sikerült a folyamat elindítása"
+
+msgctxt "stsECacheInit"
+msgid "Failed to initialize Icaros Cache"
+msgstr "Nem sikerült az Icaros-gyorsítótár betöltése"
+
+msgctxt "stsEServerInit"
+msgid "Failed to initialize Icaros Thumbnail Provider"
+msgstr "Nem sikerült az Icaros miniatűr-kezelőjének betöltése"
+
+msgctxt "stsECacheLimit"
+msgid "Maximum cache size reached"
+msgstr "A maximális gyorsítótárméret elérve"
+
+msgctxt "stsESpaceLimit"
+msgid "Minimum space limit reached"
+msgstr "Minimális hely limit elérve"
+
+msgctxt "stsEDBAccess"
+msgid "Failed to access the database"
+msgstr "Nem sikerült hozzáférni az adatbázishoz"
+
+msgctxt "stsEIDXAccess"
+msgid "Failed to access the index"
+msgstr "Nem sikerült hozzáférni az indexhez"
+
+msgctxt "stsERegAccess"
+msgid "Failed to access the registry"
+msgstr "Nem sikerült hozzáférni a rendszerleíró-adatbázishoz"
+
+msgctxt "stsECleanUp"
+msgid "Clean up was incomplete"
+msgstr "Az eltávolítás nem volt teljes"
+
+msgctxt "stsENoFiles"
+msgid "Indexer found no files with included filetypes in current cache locations"
+msgstr ""
+
+msgctxt "stsEUnknown"
+msgid "Undetermined result"
+msgstr "Meghatározatlan eredmény"
+
+msgctxt "btnAdd"
+msgid "Add"
+msgstr "Hozzáadás"
+
+msgctxt "btnRemove"
+msgid "Remove"
+msgstr "Eltávolítás"
+
+msgctxt "btnClear"
+msgid "Clear"
+msgstr "Törlés"
+
+msgctxt "hdrLocation"
+msgid "Included Locations"
+msgstr "Mappák"
+
+msgctxt "hdrViewSize"
+msgid "View Size"
+msgstr "Méret"
+
+msgctxt "hdrRecursive"
+msgid "Recursive"
+msgstr "Almappákkal"
+
+msgctxt "hdrExcluded"
+msgid "Excluded Locations"
+msgstr "Kizárt mappák"
+
+msgctxt "enuSmall"
+msgid "Small"
+msgstr "Kicsi"
+
+msgctxt "enuMedium"
+msgid "Large"
+msgstr "Közepes"
+
+msgctxt "enuLarge"
+msgid "XL"
+msgstr "Nagy"
+
+msgctxt "enuXL"
+msgid "Win 8 Icons"
+msgstr "Windows 8 (XL)"
+
+msgctxt "enuXXL"
+msgid "Win 10 Icons"
+msgstr "Windows 10 (XXL)"
+
+msgctxt "dlgAddDir"
+msgid "Please select the directory, you wish to add to the list"
+msgstr "Kérem válassza ki a mappát, amelyet a listához szeretne adni"
+
+msgctxt "dlgClearLocs"
+msgid "Are you sure, you wish to clear all the entries off this list?"
+msgstr ""
+
+#, fuzzy
+msgctxt "dlgDirAccessErr"
+msgid "The selected folder does not have the proper Read/Write permissions to use as Cache Location.\nWill you allow Icaros to add the necessary user permissions to this folder?"
+msgstr "A kiválasztott gyorsítótár mappához nem sikerült megszerezni a szükséges írási/olvasási engedélyeket.\nAz Icaros-gyorsítótár valószínűleg nem fog működni ezzel a mappával.\n\nMégis szeretné ezt használni?"
+
+msgctxt "dlgMoveCache"
+msgid "You are about to change the Cache Location. Would you like to move the existing cache to new the location?"
+msgstr "Úgy döntött, hogy megváltoztatja a gyorsítótár helyét. Szeretné áthelyezni a meglévő gyorsítótárat az új helyre?"
+
+msgctxt "dlgMoveError"
+msgid "The Icaros Cache is currently locked by another process, please try restarting Explorer, then try again.\nIf it is still locked after restarting Explorer, a reboot may be required."
+msgstr ""
+
+msgctxt "cptIcRunWrn"
+msgid "Close IcarosConfig confirmation"
+msgstr ""
+
+msgctxt "dlgIcRunWrn"
+msgid "The Icaros cache indexer is still running.\nAre you sure you wish to close IcarosConfig and stop the indexer?"
+msgstr ""
+
+#: TOOLS PAGE
+msgctxt "cptWinCache"
+msgid "WINDOWS THUMBNAIL CACHE"
+msgstr "WINDOWS MINIATŰR GYORSÍTÓTÁR"
+
+msgctxt "lblWinCacheSize"
+msgid "Cache Size:  {0} MB"
+msgstr "Gyorsítótár mérete: {0} MB"
+
+msgctxt "btnWinCacheClear"
+msgid "Clear"
+msgstr "Törlés"
+
+msgctxt "tipOpenCacheLoc"
+msgid "Open Windows thumbnail cache directory"
+msgstr "A Windows miniatűröket tartalmazó mappa megnyitása"
+
+msgctxt "cptExplorer"
+msgid "WINDOWS EXPLORER"
+msgstr "WINDOWS EXPLORER"
+
+msgctxt "btnExpRefresh"
+msgid "Refresh"
+msgstr "Frissítés"
+
+msgctxt "btnExpRestart"
+msgid "Restart"
+msgstr "Újraindítás"
+
+msgctxt "cptResetTypes"
+msgid "RESET NATIVE FILETYPES"
+msgstr "Fájltípus beállítások visszaállítása"
+
+msgctxt "btnResetThumb"
+msgid "Reset Thumbnail Filetypes"
+msgstr "Miniatűr beállítások visszaállítása"
+
+msgctxt "btnResetProps"
+msgid "Reset Property Filetypes"
+msgstr "Tulajdonság beállítások visszaállítása"
+
+msgctxt "txtResetLimits"
+msgid "The native filetypes can only be reset while Icaros thumbnailing\nand/or properties are not activated"
+msgstr "Az eredeti fájltípus beállításokat csak akkor lehet visszaállítani,\nha az le van tiltva a miniatűrök és a tulajdonságok kezelése"
+
+msgctxt "dlgClrCacheErr"
+msgid "The Thumbnail Cache is currently in use.\n Wait a moment, then try again."
+msgstr "A miniatűr gyorsítótár jelenleg használatban van.\nVárjon egy kicsit és próbálja újra."
+
+msgctxt "dlgcptExpRestrt"
+msgid "Restart Explorer"
+msgstr "Explorer újraindítása"
+
+msgctxt "dlgExpRestrt"
+msgid "Warning!\nRestarting Explorer may interrupt file copy/move operations,\nand may cause certain processes to halt.\n\nDo you wish to continue?"
+msgstr "Figyelem!\nAz Explorer újraindításakor megszakadnak a folyamatban lévő\nfájlműveletek (másolás/áthelyezés/stb.) és további folyamatokat\nis megállíthat.\n\nBiztosan szeretné folytatni?"
+
+msgctxt "dlgRstThumb"
+msgid "Are you sure, you want to reset all native filetypes back to their default thumbnail providers?"
+msgstr "Biztosan vissza szeretné állítani az összes fájltípus eredeti miniatűr-kezelőjét?"
+
+msgctxt "dlgRstProps"
+msgid "Are you sure, you want to reset all native filetypes back to their default property handlers and property lists?"
+msgstr "Biztosan vissza szeretné állítani az összes fájltípus eredeti tulajdonság-kezelőjét és -listaelemét?"
+
+msgctxt "dlgRstSuccess"
+msgid "All native filetypes was reset successfully!"
+msgstr "A fájltípusok visszaállítása sikeres volt!"
+
+#: DEBUG PAGE
+msgctxt "lblTest"
+msgid "TEST:"
+msgstr ""
+
+msgctxt "lblSize"
+msgid "SIZE:"
+msgstr ""
+
+msgctxt "enuThumbnailViaIcaros"
+msgid "THUMBNAILING VIA ICAROS"
+msgstr ""
+
+msgctxt "enuThumbnailViaExplorer"
+msgid "THUMBNAILING VIA EXPLORER"
+msgstr ""
+
+msgctxt "enuPropertiesViaIcaros"
+msgid "PROPERTIES VIA ICAROS"
+msgstr ""
+
+msgctxt "enuPropertiesViaExplorer"
+msgid "PROPERTIES VIA EXPLORER"
+msgstr ""
+
+msgctxt "btnRunAllTest"
+msgid "Run All"
+msgstr ""
+
+msgctxt "btnRunTest"
+msgid "Run ({0})"
+msgstr ""
+
+msgctxt "hdrTestFiles"
+msgid "Test Files"
+msgstr ""
+
+msgctxt "hdrTime"
+msgid "Time"
+msgstr ""
+
+msgctxt "hdrShellExtension"
+msgid "Shell Extension"
+msgstr ""
+
+msgctxt "hdrCache"
+msgid "From Cache"
+msgstr ""
+
+msgctxt "lblDropFiles"
+msgid "DROP FILES AND/OR FOLDERS YOU WISH TO TEST HERE"
+msgstr ""
+
+msgctxt "lblNoProperties"
+msgid "NO PROPERTIES HAS BEEN GENERATED FOR THIS FILE\nUSE THE 'PROPERTY TEST' TO VIEW PROPERTIES FOR THIS FILE"
+msgstr ""
+
+msgctxt "lblLevel"
+msgid "LVL:"
+msgstr ""
+
+msgctxt "lblDebugCount"
+msgid "{0} ENTRIES"
+msgstr ""
+
+msgctxt "tipRefresh"
+msgid "Refresh the thumbnails of the selected files in Explorer"
+msgstr ""
+
+msgctxt "tipSubDirDepth"
+msgid "The level/depth of subdirectories to scan through when getting files from a dropped folder (1-9)"
+msgstr ""
+
+msgctxt "tipClosePanel"
+msgid "Close panel"
+msgstr ""
+
+msgctxt "tipAutoScrollOn"
+msgid "Disable auto scrolling"
+msgstr ""
+
+msgctxt "tipAutoScrollOff"
+msgid "Enable auto scrolling"
+msgstr ""
+
+msgctxt "tipThumbPlaceholder"
+msgid "Use one of the two 'Thumbnail tests' to view the thumbnail for this file"
+msgstr ""
+
+msgctxt "tipThumbPreview"
+msgid "Thumbnail dimensions:\n{0} x {1}"
+msgstr ""
+
+#: ABOUT PAGE
+msgctxt "lnkSupport"
+msgid "Follow Beta development of Icaros or get support"
+msgstr "Kövesse az újabb programverziókat, vagy kérjen segítséget itt"
+
+msgctxt "lblSpcTks"
+msgid "SPECIAL THANKS TO"
+msgstr "KÖSZÖNET"
+
+#: UI SETTINGS PAGE
+msgctxt "lblLocalize"
+msgid "LOCALIZATION"
+msgstr "NYELV"
+
+msgctxt "cbxPropLocal"
+msgid "Enable Property Localization"
+msgstr "Tulajdonságok ugyanezen a nyelven"
+
+msgctxt "lblTheming"
+msgid "THEME OPTIONS"
+msgstr "TÉMA"
+
+msgctxt "lblChromeClr"
+msgid "CHROME COLOR"
+msgstr "SZÍNEK"
+
+msgctxt "enuMonoColor"
+msgid "Mono Color"
+msgstr "Egyszínű"
+
+msgctxt "enuColorPerPage"
+msgid "Color Per Page"
+msgstr "Oldalanként más szín"
+
+msgctxt "cbxRemWinSize"
+msgid "Remember Window Size"
+msgstr "Ablakméret megjegyzése"
+
+msgctxt "cbxRemWinPos"
+msgid "Remember Window Position"
+msgstr "Ablak pozíció megjegyzése"
+
+msgctxt "cbxAnimation"
+msgid "Disable Page Animations"
+msgstr "Animációk letiltása"
+
+msgctxt "lblGlassOpacity"
+msgid "Glass Overlay Opacity"
+msgstr "Üveg-hatás átlátszatlansága"
+
+msgctxt "lblGlassDark"
+msgid "Dark"
+msgstr "Sötét"
+
+msgctxt "lblGlassLight"
+msgid "Light"
+msgstr "Világos"
+
+msgctxt "tipModSettings"
+msgid "To Export/Import/Reset the Icaros settings, thumbnailing\nand properties must be deactivated"
+msgstr "A beállítások exportálásához, importálásához és\nvisszaállításához le kell tiltani a miniatűrök és a\ntulajdonságok kezelését"
+
+msgctxt "optExport"
+msgid "Export Settings"
+msgstr "Beállítások exportálása"
+
+msgctxt "optImport"
+msgid "Import Settings"
+msgstr "Beállítások importálása"
+
+msgctxt "optReset"
+msgid "Reset All Settings"
+msgstr "Beállítások visszaállítása"
+
+msgctxt "dlgThemeAccent"
+msgid "Would you like to use this theme's default chrome colors?\n\nWarning: This will overwrite your current chrome color settings!"
+msgstr ""
+
+msgctxt "cptThemeAccent"
+msgid "Use default theme chrome colors?"
+msgstr ""
+
+msgctxt "dlgExportLoc"
+msgid "Please chose where you wish to export the Icaros settings"
+msgstr "Kérem válassza ki, hova szeretné exportálni az Icaros beállításait"
+
+msgctxt "dlgImportWrn"
+msgid "This will overwrite ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Ezzel az ÖSSZES korábbi beállítása felülírásra kerül.\n\nBiztosan folytatni szeretné?"
+
+msgctxt "dlgResetAll"
+msgid "This will reset ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Ezzel az ÖSSZES korábbi beállítása el fog veszni.\n\nBiztosan folytatni szeretné?"
+
+msgctxt "cptResetWrn"
+msgid "Settings Reset Confirmation"
+msgstr "Beállítások visszaállításának megerősítése"
+
+#: WELCOME OVERLAY
+msgctxt "lblWlcIntro1"
+msgid "WELCOME"
+msgstr ""
+
+msgctxt "lblWlcIntro2"
+msgid "TO THE NEW ICAROS GUI"
+msgstr ""
+
+msgctxt "lblWlcSelect"
+msgid "Please select your preferred"
+msgstr ""
+
+msgctxt "lblWlcLang"
+msgid "language:"
+msgstr ""
+
+msgctxt "lblWlcTheme"
+msgid "theme:"
+msgstr ""
+
+msgctxt "lblWlcTip1"
+msgid "Click here to change language and ui settings"
+msgstr ""
+
+msgctxt "lblWlcTip2"
+msgid "Click these icons to browse the various pages of settings"
+msgstr ""
+
+msgctxt "lblWlcTip3"
+msgid "Click the 'Activation buttons' to toggle the state of the shell extensions"
+msgstr ""
+
+msgctxt "lblWlcTip4"
+msgid "Drag and drop files onto this page to test if Icaros can thumbnail them\nThe filetype will automatically be added to the list of 'Thumbnail filetypes', if it is compatible with Icaros\n\nDropping a file that already exists in the 'Thumbnail filetypes' list, will just refresh that file's thumbnail"
+msgstr ""
+
+#: GLOBAL
+msgctxt "tipAddFiles"
+msgid "Add files"
+msgstr ""
+
+msgctxt "tipClearList"
+msgid "Clear list"
+msgstr ""
+
+#, fuzzy
+msgctxt "tipWow64On"
+msgid "Icaros is enabled for 32-bit file dialogs"
+msgstr "Az Icaros engedélyezve van a 32-bites dialógusokhoz"
+
+#, fuzzy
+msgctxt "tipWow64Off"
+msgid "Icaros is disabled for 32-bit file dialogs"
+msgstr "Az Icaros nincs engedélyezve a 32-bites dialógusokhoz"
+
+msgctxt "tipBrowse"
+msgid "Browse to location"
+msgstr "Mappa kiválasztása"
+
+msgctxt "cptDonate"
+msgid "Donate"
+msgstr "Támogatás"
+
+msgctxt "lblDonateTxt"
+msgid "If you like Icaros please consider making a donation to keep up the development of Icaros"
+msgstr "Ha tetszik önnek az Icaros, kérem, vegye fontolóra a pénzbeli támogatását, ezzel segítve a program fejlesztését"
+
+msgctxt "lblDonateTxt2"
+msgid "Donations received so far in {0}"
+msgstr ""
+
+msgctxt "lblFlattrTxt"
+msgid "Become a microdonator to continuously support the development of Icaros"
+msgstr "Az Icaros fejlesztését itt is támogathatja mikro-fizetésekkel"
+
+msgctxt "lblCreatedBy"
+msgid "Created and developed by"
+msgstr "Fejlesztő:"
+
+msgctxt "tipMail"
+msgid "Send a mail to the developer of Icaros"
+msgstr "E-mail küldése az Icaros fejlesztőjének"
+
+msgctxt "tipTwitter"
+msgid "Follow Icaros development on Twitter"
+msgstr "Icaros-hírek követése a Twitter-en"
+
+msgctxt "swtOn"
+msgid "On"
+msgstr "Be"
+
+msgctxt "swtOff"
+msgid "Off"
+msgstr "Ki"
+
+msgctxt "btnDone"
+msgid "Done"
+msgstr "Kész"
+
+msgctxt "btnOK"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "btnYes"
+msgid "Yes"
+msgstr "Igen"
+
+msgctxt "btnNo"
+msgid "No"
+msgstr "Nem"
+
+msgctxt "btnContinue"
+msgid "Continue"
+msgstr ""
+
+msgctxt "btnGotIt"
+msgid "Got It!"
+msgstr ""
+
+msgctxt "dlgcptConf"
+msgid "Confirmation"
+msgstr "Megerősítés"
+
+msgctxt "dlgcptInfo"
+msgid "Info"
+msgstr "Infó"
+
+msgctxt "dlgcptError"
+msgid "Error"
+msgstr ""
+
+msgctxt "btnRstColor"
+msgid "Reset Color"
+msgstr "Szín visszaállítása"
+
+msgctxt "btnMin"
+msgid "Minimize"
+msgstr "Kis méret"
+
+msgctxt "btnMax"
+msgid "Maximize"
+msgstr "Teljes méret"
+
+msgctxt "btnResDown"
+msgid "Restore Down"
+msgstr "Előző méret"
+
+msgctxt "btnClose"
+msgid "Close"
+msgstr "Bezárás"
+
+#~ msgctxt "dlgClearLocs"
+#~ msgid "Are you sure, you wish to clear all the entries of this list?"
+#~ msgstr "Biztosan el szeretné távolítani az összes elemet a listából?"

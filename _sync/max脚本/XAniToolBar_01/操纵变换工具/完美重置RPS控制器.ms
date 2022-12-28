@@ -11,7 +11,7 @@ fn combine_array ary = --合并多维数组
 )
 fn sort_by_hierarchy obj_list:(getcurrentselection()) split:false = 
 (
-	local sorted_obj_list = for o in execute "$objects/* as array" where findItem obj_list o > 0 collect o
+	local sorted_obj_list = for o in $objects/* as array where findItem obj_list o > 0 collect o
 	if split do
 	(
 		local id_list = for i = 1 to sorted_obj_list.count where findItem sorted_obj_list sorted_obj_list[i].parent == 0 collect i;append id_list (sorted_obj_list.count+1)

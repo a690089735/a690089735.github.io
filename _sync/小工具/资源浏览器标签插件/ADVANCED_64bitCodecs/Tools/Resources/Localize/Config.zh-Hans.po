@@ -1,0 +1,981 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icaros\n"
+"POT-Creation-Date: 2014-10-03 15:23:34+0000\n"
+"PO-Revision-Date: 2019-04-20 01:32+0200\n"
+"Last-Translator: ZerOriLanguage-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+#: EXPLORER PROPERTIES
+msgctxt "#VideoTracks"
+msgid "Video tracks"
+msgstr "视频"
+
+msgctxt "#AudioTracks"
+msgid "Audio tracks"
+msgstr "音频"
+
+msgctxt "#SubtitleTracks"
+msgid "Subtitle tracks"
+msgstr "字幕"
+
+#, fuzzy
+msgctxt "#ContentCompression"
+msgid "Content compression"
+msgstr "压缩"
+
+#, fuzzy
+msgctxt "#ContainsChapters"
+msgid "Contains chapters"
+msgstr "章节"
+
+msgctxt "#BitDepth"
+msgid "Bit depth"
+msgstr "位深"
+
+msgctxt "#SubtitleGroup"
+msgid "Subtitles"
+msgstr "字幕"
+
+#: MAIN WINDOW
+msgctxt "tglThumbnail"
+msgid "THUMBNAILING"
+msgstr "缩略图"
+
+msgctxt "tglProperty"
+msgid "PROPERTIES"
+msgstr "文件属性"
+
+msgctxt "tglCache"
+msgid "CACHE"
+msgstr "缓存"
+
+msgctxt "tglTools"
+msgid "TOOLS"
+msgstr "工具"
+
+msgctxt "tglDebug"
+msgid "DEBUG"
+msgstr "调试"
+
+msgctxt "tglAbout"
+msgid "ABOUT"
+msgstr "关于"
+
+msgctxt "tglUiSettings"
+msgid "ui settings"
+msgstr "界面设置"
+
+msgctxt "stActivated"
+msgid "ACTIVATED"
+msgstr "已启用"
+
+msgctxt "stDeactivated"
+msgid "DEACTIVATED"
+msgstr "未启用"
+
+msgctxt "stDisabled"
+msgid "DISABLED"
+msgstr "禁用"
+
+msgctxt "stStatic"
+msgid "ENABLED (STATIC)"
+msgstr "启用（静态缓存）"
+
+msgctxt "stDynamic"
+msgid "ENABLED (DYNAMIC)"
+msgstr "启用（动态缓存）"
+
+msgctxt "stNotInstalled"
+msgid "NOT INSTALLED"
+msgstr "未安装"
+
+msgctxt "stIndexing"
+msgid "INDEXING..."
+msgstr "索引中..."
+
+#: THUMBNAIL PAGE
+msgctxt "cptFiletypes"
+msgid "THUMBNAIL FILETYPES"
+msgstr "缩略图文件类型"
+
+msgctxt "lblPresets"
+msgid "PRESET:"
+msgstr "方案："
+
+msgctxt "cptSettings"
+msgid "SETTINGS"
+msgstr "设置"
+
+msgctxt "lblOffset"
+msgid "Thumbnail Offset"
+msgstr "缩略图位置"
+
+msgctxt "lblPrefTime"
+msgid "Prefer Timestamp"
+msgstr "使用时长代替百分比"
+
+#, fuzzy
+msgctxt "cbxBlkDtct"
+msgid "Enable black/white frame detection"
+msgstr "启用空白帧检测"
+
+msgctxt "lblThreshold"
+msgid "Threshold"
+msgstr "阈值"
+
+msgctxt "cbxShowOverlay"
+msgid "Display icon overlays on thumbnails"
+msgstr "缩略图上显示类型图标"
+
+msgctxt "cbxShowVidAdorn"
+msgid "Display movie reel on video thumbnails"
+msgstr "在视频缩略图上显示电影卷轴"
+
+msgctxt "cbxCoverArt"
+msgid "Use embedded Cover Art for thumbnails"
+msgstr "使用内置封面作为缩略图"
+
+msgctxt "cbxCoverArtAny"
+msgid "Use any embedded image as Cover Art"
+msgstr "使用任意内置图像作为封面"
+
+msgctxt "cbxLandscape"
+msgid "Prefer Landscape Covers"
+msgstr "优先使用横向封面"
+
+msgctxt "tipAddTypes"
+msgid "Add New Thumbnail Filetypes"
+msgstr "添加新类型"
+
+msgctxt "tipBlkDtct"
+msgid "With this option enabled, Icaros will perform a quick and simple\nscan of the grabbed frame. If the frame is either too dark or too\nlight, Icaros will skip forward and try to find a better suited frame."
+msgstr "当此选项开启时，Icaros 会尝试跳过过暗或是过亮的场景\n避免获取质量不佳的缩略图"
+
+#, fuzzy
+msgctxt "tipCoverArt"
+msgid "When Cover Art is enabled, Icaros will look for embedded\ncover art in files that support it while generating thumbnails.\nIf a cover is found, it will be used as thumbnail, otherwise\nIcaros will automatically fall back to normal thumbnailing.\n\nNote: This should not affect the thumbnailing speed in any\nnoticeable way."
+msgstr "当此选项开启时，Icaros 会优先使用文件内置的缩略图\n该选项不会显著影响生成缩略图的性能"
+
+msgctxt "tipCoverAny"
+msgid "With this option enabled, Icaros will use any embedded image in\nthe file as a cover, whether it follows the file specifications or not.\nImages intended as covers will always be preferred."
+msgstr "启用此选项后，Icaros 将使用文件中任意内置图像作为封面，\n无论它是否遵循文件规范。始终首选用作封面的图像"
+
+msgctxt "tipCoverLand"
+msgid "Some MKV files contain multiple covers. With such files\nIcaros will default to using the first normal/vertical cover.\nThis option will make Icaros prioritize landscape/horizontal\ncovers instead."
+msgstr "有些文件比如 MKV 可以包含多个内置封面当开启此选项时，\nIcaros 会优先使用横向封面否则会优先使用序号靠前的封面"
+
+msgctxt "dlgcptPrstChng"
+msgid "Preset Info"
+msgstr "方案信息"
+
+msgctxt "dlgPrstChng"
+msgid "The current list contains filetypes that are not included in the selected preset.\n\nDo you wish to include these filetypes in the list?"
+msgstr "当前列表中含有不在所选方案中的文件类型\n\n是否将这些文件类型加入到方案中？"
+
+msgctxt "dlgPrstPsd"
+msgid "PSD is currently being handled by another thumbnail shell extension.\n\nDo you wish for Icaros to assume control of this filetype?\n(You can always remove the filetype again to undo this action)"
+msgstr "PSD 当前由另一个缩略图外壳扩展处理。\n\n您希望 Icaros 控制此文件类型吗？\n（您始终可以再次移除文件类型以撤消此操作）"
+
+msgctxt "dlgcptThmbCheck"
+msgid "Thumbnail Check"
+msgstr "缩略图可生成性检查"
+
+msgctxt "dlgThmbCheck"
+msgid "The following filetypes did not pass the thumbnail check:\n\n{0}\n\nDo you still wish to add them?"
+msgstr "如下文件类型没有通过缩略图可生成性检查：\n\n{0}\n\n仍然要添加到列表？"
+
+msgctxt "ntfNewFiles"
+msgid "{0} new filetype(s) added ({1})"
+msgstr "{0} 新文件格式已添加 ({1})"
+
+msgctxt "ntfRefresh"
+msgid "Refreshed thumbnails of {0} file(s)"
+msgstr "刷新{0}个文件的缩略图"
+
+msgctxt "ntfExtrSuccess"
+msgid "Extraction Succeeded!"
+msgstr "提取成功！"
+
+msgctxt "ntfExtrFailed"
+msgid "Extraction Failed!"
+msgstr "提取失败！"
+
+msgctxt "ntfTimeTaken"
+msgid "It took {0}ms"
+msgstr "花费{0}ms"
+
+msgctxt "txtThumbUpdater"
+msgid "Drag and drop one or more files and/or folders to this page to refresh their thumbnails/icons"
+msgstr "请将要更新缩略图的文件或文件夹拖拽到这里"
+
+msgctxt "prstDefault"
+msgid "DEFAULT"
+msgstr "默认"
+
+msgctxt "prstCommon"
+msgid "COMMON"
+msgstr "常用"
+
+#, fuzzy
+msgctxt "prstVidOnly"
+msgid "VIDEO ONLY"
+msgstr "视频"
+
+#, fuzzy
+msgctxt "prstAudOnly"
+msgid "AUDIO ONLY"
+msgstr "音频"
+
+msgctxt "prstMostKnown"
+msgid "MOST KNOWN"
+msgstr "已知类型"
+
+msgctxt "prstCustom"
+msgid "CUSTOM"
+msgstr "自定义"
+
+#: PROPERTIES PAGE
+msgctxt "txtPropInfo"
+msgid "With  PROPERTIES  activated, Icaros will allow you to view information such as length, width, height, artist etc. in Explorer, for any of the checked filetypes below"
+msgstr "在资源管理器中显示下列文件类型的额外属性，如时长、宽度、高度、艺术家等"
+
+msgctxt "cptVideo"
+msgid "VIDEO"
+msgstr "视频"
+
+msgctxt "cptAudio"
+msgid "AUDIO"
+msgstr "音频"
+
+msgctxt "btnSelectAll"
+msgid "Select All"
+msgstr "全选"
+
+msgctxt "btnDeselectAll"
+msgid "Deselect All"
+msgstr "全不选"
+
+msgctxt "cbxShowUnd"
+msgid "Show [Und] on tracks with an undefined language"
+msgstr ""
+
+#: CACHE PAGE
+msgctxt "tglIndexer"
+msgid "SETTINGS"
+msgstr "设置"
+
+msgctxt "tglIndexLocs"
+msgid "LOCATIONS"
+msgstr "索引文件夹"
+
+msgctxt "lblCacheLocation"
+msgid "Cache Location"
+msgstr "缓存位置"
+
+msgctxt "tipInvalidLocation"
+msgid "Icaros does not have permission to access current Cache Location.\nClick here to attempt to set the proper permissions.\nIf the error persists, try another directory."
+msgstr ""
+
+msgctxt "lblDriveRoot"
+msgid "Free Space on [{0}] Drive:"
+msgstr "[{0}] 上的可用空间："
+
+msgctxt "lblMinFreeSpace"
+msgid "Min Free Space"
+msgstr "最小剩余空间"
+
+msgctxt "lblMaxCacheSize"
+msgid "Max Cache Size"
+msgstr "最大缓存占用空间"
+
+msgctxt "tipMaxCache"
+msgid "Sets the max size limit of the Icaros Cache.\nIf 0 is set, the cache size is unlimited."
+msgstr "最大缓存占用空间。\n0 为不限制。"
+
+msgctxt "lblExclTypes"
+msgid "Excluded Filetypes"
+msgstr "排除文件类型"
+
+msgctxt "tipUsedCache"
+msgid "{0:0.00}% of the available cache space is currently used"
+msgstr "缓存已使用 {0:0.00}%"
+
+msgctxt "tipCacheSize"
+msgid "Icaros Cache Size"
+msgstr "Icaros 缓存大小"
+
+msgctxt "lblEntries"
+msgid "{0} entries"
+msgstr "缓存数量：{0}"
+
+msgctxt "lblCacheTut1"
+msgid "With the Icaros Cache ENABLED, Icaros will keep a local record of all thumbnails in an internal cache.\nThis allows Icaros to regenerate any cached thumbnail almost instantly in case Windows Explorer loses them.\n"
+msgstr "当 Icaros 缓存启用时，Icaros 会在指定文件夹下保存缩略图缓存\n当 Windows 缩略图缓存失效时，Icaros 可以立即恢复缩略图\n"
+
+msgctxt "lblCacheTut2"
+msgid "\nBy adding folders to the LOCATIONS page, and clicking the Build button below, it is possible to fill the cache\ndirectly from within IcarosConfig."
+msgstr "\n将需要建立缩略图的文件夹添加到 索引文件夹，并点击 建立缓存 按钮，可立即生成缩略图缓存"
+
+msgctxt "lblCacheSt1"
+msgid "STATIC"
+msgstr "静态缓存"
+
+msgctxt "lblCacheSt2"
+msgid "DYNAMIC"
+msgstr "动态缓存"
+
+msgctxt "lblCacheStInfo1"
+msgid "allows Icaros to retrieve cached thumbnails, but only IcarosConfig can modify the cache."
+msgstr "可以在本程序中修改索引位置，以及建立缓存，"
+
+msgctxt "lblCacheStInfo2"
+msgid "allows Icaros to retrieve cached thumbnails, as well as dynamically add any new thumbnails to the cache."
+msgstr "类似静态缓存，但新的缩略图也会被自动加入缓存。"
+
+msgctxt "lblStatus"
+msgid "Status:"
+msgstr "状态："
+
+msgctxt "lblProgress"
+msgid "Progress:"
+msgstr "进度："
+
+msgctxt "lblCompleted"
+msgid "Completed:"
+msgstr "完成："
+
+msgctxt "lblFailed"
+msgid "Failed:"
+msgstr "失败："
+
+msgctxt "btnFailed"
+msgid "View"
+msgstr "查看"
+
+msgctxt "btnBuild"
+msgid "Build Cache"
+msgstr "建立缓存"
+
+msgctxt "btnRebuild"
+msgid "Rebuild Cache"
+msgstr "重建缓存"
+
+msgctxt "btnCancel"
+msgid "Cancel"
+msgstr "取消"
+
+msgctxt "btnClearCache"
+msgid "Clear Cache"
+msgstr "清空缓存"
+
+msgctxt "lblSetLocInfo"
+msgid "At least one location must be added to use the indexer"
+msgstr "索引文件夹列表不能为空"
+
+msgctxt "dlgClrIcCache"
+msgid "You are about to delete the Icaros Cache.\nDo you still wish to proceed?"
+msgstr "Icaros 缓存将被删除\n确认继续？"
+
+msgctxt "dlgCacheLoc"
+msgid "Select a thumbnail cache location"
+msgstr "选择缓存位置"
+
+msgctxt "dlgcptFailed"
+msgid "FAILED FILES"
+msgstr "失败文件"
+
+msgctxt "tipOpenDirSelect"
+msgid "Open folder and select file"
+msgstr "选择文件"
+
+msgctxt "btnSaveList"
+msgid "Save List"
+msgstr "保存列表"
+
+msgctxt "stsIdxerInit"
+msgid "Indexer Initialized"
+msgstr "索引已初始化"
+
+msgctxt "stsCollect"
+msgid "Preparing files for processing..."
+msgstr "正在准备文件..."
+
+msgctxt "stsIdxFiles"
+msgid "Indexing files..."
+msgstr "索引文件中..."
+
+msgctxt "stsIdxFolders"
+msgid "Indexing folders..."
+msgstr "索引文件夹中..."
+
+msgctxt "stsIdxSuccess"
+msgid "Indexing Completed Successfully"
+msgstr "索引完毕"
+
+msgctxt "stsIdxFailed"
+msgid "Indexing Failed"
+msgstr "索引失败"
+
+msgctxt "stsIdxCancel"
+msgid "Indexing was cancelled"
+msgstr "索引取消"
+
+msgctxt "stsIdxComplete"
+msgid "Indexing Completed"
+msgstr "索引完毕"
+
+msgctxt "lblTimeElapsed"
+msgid "Took: {}h {}m {}s {}ms"
+msgstr "花费: {}h {}m {}s {}ms"
+
+msgctxt "stsEHash"
+msgid "Failed to calculate proper file hash"
+msgstr "无法计算文件校验"
+
+msgctxt "stsEThread"
+msgid "Failed to initialize thread"
+msgstr "无法启动线程"
+
+msgctxt "stsECacheInit"
+msgid "Failed to initialize Icaros Cache"
+msgstr "无法初始化 Icaros 缓存"
+
+msgctxt "stsEServerInit"
+msgid "Failed to initialize Icaros Thumbnail Provider"
+msgstr "无法初始化 Icaros 缩略图程序"
+
+msgctxt "stsECacheLimit"
+msgid "Maximum cache size reached"
+msgstr "已用尽缓存空间"
+
+msgctxt "stsESpaceLimit"
+msgid "Minimum space limit reached"
+msgstr "已达到剩余可用空间限制"
+
+msgctxt "stsEDBAccess"
+msgid "Failed to access the database"
+msgstr "无法访问数据库"
+
+msgctxt "stsEIDXAccess"
+msgid "Failed to access the index"
+msgstr "无法访问索引"
+
+msgctxt "stsERegAccess"
+msgid "Failed to access the registry"
+msgstr "无法访问注册表"
+
+msgctxt "stsECleanUp"
+msgid "Clean up was incomplete"
+msgstr "未完成缓存清理"
+
+msgctxt "stsENoFiles"
+msgid "Indexer found no files with included filetypes in current cache locations"
+msgstr "索引器在当前缓存位置找不到此文件类型的文件"
+
+msgctxt "stsEUnknown"
+msgid "Undetermined result"
+msgstr "未知错误"
+
+msgctxt "btnAdd"
+msgid "Add"
+msgstr "添加"
+
+msgctxt "btnRemove"
+msgid "Remove"
+msgstr "移除"
+
+msgctxt "btnClear"
+msgid "Clear"
+msgstr "清空"
+
+msgctxt "hdrLocation"
+msgid "Included Locations"
+msgstr "包含文件夹"
+
+msgctxt "hdrViewSize"
+msgid "View Size"
+msgstr "查看大小"
+
+msgctxt "hdrRecursive"
+msgid "Recursive"
+msgstr "包含子文件夹"
+
+msgctxt "hdrExcluded"
+msgid "Excluded Locations"
+msgstr "排除文件夹"
+
+msgctxt "enuSmall"
+msgid "Small"
+msgstr "小"
+
+msgctxt "enuMedium"
+msgid "Large"
+msgstr "大"
+
+msgctxt "enuLarge"
+msgid "XL"
+msgstr "超大"
+
+msgctxt "enuXL"
+msgid "Win 8 Icons"
+msgstr "Win 8 图标"
+
+msgctxt "enuXXL"
+msgid "Win 10 Icons"
+msgstr "Win 10 图标"
+
+msgctxt "dlgAddDir"
+msgid "Please select the directory, you wish to add to the list"
+msgstr "请选择文件夹"
+
+msgctxt "dlgClearLocs"
+msgid "Are you sure, you wish to clear all the entries off this list?"
+msgstr "您确定要清除此列表中的所有条目吗？"
+
+#, fuzzy
+msgctxt "dlgDirAccessErr"
+msgid "The selected folder does not have the proper Read/Write permissions to use as Cache Location.\nWill you allow Icaros to add the necessary user permissions to this folder?"
+msgstr "所选文件夹不可读/写。\n缓存可能无法正常工作。\n\n是否继续？"
+
+msgctxt "dlgMoveCache"
+msgid "You are about to change the Cache Location. Would you like to move the existing cache to new the location?"
+msgstr "是否移动旧缓存文件到新缓存文件夹？"
+
+msgctxt "dlgMoveError"
+msgid "The Icaros Cache is currently locked by another process, please try restarting Explorer, then try again.\nIf it is still locked after restarting Explorer, a reboot may be required."
+msgstr "Icaros 缓存当前被另一个进程锁定，请尝试重新启动资源管理器，然后重试。\n如果重启资源管理器后仍处于锁定状态，可能需要重启系统。"
+
+msgctxt "cptIcRunWrn"
+msgid "Close IcarosConfig confirmation"
+msgstr "关闭 Icaros 设置确认信息"
+
+msgctxt "dlgIcRunWrn"
+msgid "The Icaros cache indexer is still running.\nAre you sure you wish to close IcarosConfig and stop the indexer?"
+msgstr "Icaros 缓存索引器仍在运行。\n您确定要关闭 Icaros设置并停止索引器吗？"
+
+#: TOOLS PAGE
+#, fuzzy
+msgctxt "cptWinCache"
+msgid "WINDOWS THUMBNAIL CACHE"
+msgstr "Windows 缩略图缓存"
+
+msgctxt "lblWinCacheSize"
+msgid "Cache Size:  {0} MB"
+msgstr "缓存大小：{0} MB"
+
+msgctxt "btnWinCacheClear"
+msgid "Clear"
+msgstr "清空缓存"
+
+msgctxt "tipOpenCacheLoc"
+msgid "Open Windows thumbnail cache directory"
+msgstr "打开 Windows 缩略图缓存文件夹"
+
+#, fuzzy
+msgctxt "cptExplorer"
+msgid "WINDOWS EXPLORER"
+msgstr "资源管理器"
+
+msgctxt "btnExpRefresh"
+msgid "Refresh"
+msgstr "刷新"
+
+msgctxt "btnExpRestart"
+msgid "Restart"
+msgstr "重启"
+
+msgctxt "cptResetTypes"
+msgid "RESET NATIVE FILETYPES"
+msgstr "重置系统内置缩略图/文件属性"
+
+msgctxt "btnResetThumb"
+msgid "Reset Thumbnail Filetypes"
+msgstr "重置内置缩略图"
+
+msgctxt "btnResetProps"
+msgid "Reset Property Filetypes"
+msgstr "重置内置文件属性"
+
+msgctxt "txtResetLimits"
+msgid "The native filetypes can only be reset while Icaros thumbnailing\nand/or properties are not activated"
+msgstr "内置文件类型只有当 Icaros 缩略图和文件属性未启用时才能被重置。"
+
+msgctxt "dlgClrCacheErr"
+msgid "The Thumbnail Cache is currently in use.\n Wait a moment, then try again."
+msgstr "缩略图缓存使用中。\n请稍后再试。"
+
+msgctxt "dlgcptExpRestrt"
+msgid "Restart Explorer"
+msgstr "重启资源管理器"
+
+msgctxt "dlgExpRestrt"
+msgid "Warning!\nRestarting Explorer may interrupt file copy/move operations,\nand may cause certain processes to halt.\n\nDo you wish to continue?"
+msgstr "注意：重启资源管理器会中断进行中的复制或移动操作。\n\n确认继续？"
+
+msgctxt "dlgRstThumb"
+msgid "Are you sure, you want to reset all native filetypes back to their default thumbnail providers?"
+msgstr "确认将所有内置缩略图生成功能设为系统默认？"
+
+msgctxt "dlgRstProps"
+msgid "Are you sure, you want to reset all native filetypes back to their default property handlers and property lists?"
+msgstr "确认将所有内置文件属性功能设为系统默认？"
+
+msgctxt "dlgRstSuccess"
+msgid "All native filetypes was reset successfully!"
+msgstr "所有系统内置文件类型已被重置！"
+
+#: DEBUG PAGE
+msgctxt "lblTest"
+msgid "TEST:"
+msgstr "测试"
+
+msgctxt "lblSize"
+msgid "SIZE:"
+msgstr "大小"
+
+msgctxt "enuThumbnailViaIcaros"
+msgid "THUMBNAILING VIA ICAROS"
+msgstr "通过ICAROS获取的缩略图"
+
+msgctxt "enuThumbnailViaExplorer"
+msgid "THUMBNAILING VIA EXPLORER"
+msgstr "通过资源管理器获取的缩略图"
+
+msgctxt "enuPropertiesViaIcaros"
+msgid "PROPERTIES VIA ICAROS"
+msgstr "通过ICAROS获取的属性"
+
+msgctxt "enuPropertiesViaExplorer"
+msgid "PROPERTIES VIA EXPLORER"
+msgstr "通过资源管理器获取的属性"
+
+msgctxt "btnRunAllTest"
+msgid "Run All"
+msgstr "全部运行"
+
+msgctxt "btnRunTest"
+msgid "Run ({0})"
+msgstr "运行 ({0})"
+
+msgctxt "hdrTestFiles"
+msgid "Test Files"
+msgstr "测试文件"
+
+msgctxt "hdrTime"
+msgid "Time"
+msgstr "时间"
+
+msgctxt "hdrShellExtension"
+msgid "Shell Extension"
+msgstr "外壳拓展"
+
+msgctxt "hdrCache"
+msgid "From Cache"
+msgstr "从缓存"
+
+msgctxt "lblDropFiles"
+msgid "DROP FILES AND/OR FOLDERS YOU WISH TO TEST HERE"
+msgstr "将您想要测试的文件和/或文件夹放到这里"
+
+msgctxt "lblNoProperties"
+msgid "NO PROPERTIES HAS BEEN GENERATED FOR THIS FILE\nUSE THE 'PROPERTY TEST' TO VIEW PROPERTIES FOR THIS FILE"
+msgstr "尚未为此文件生成任何属性\n使用“属性测试”查看此文件的属性"
+
+msgctxt "lblLevel"
+msgid "LVL:"
+msgstr "LVL"
+
+msgctxt "lblDebugCount"
+msgid "{0} ENTRIES"
+msgstr "{0} 个项目"
+
+msgctxt "tipRefresh"
+msgid "Refresh the thumbnails of the selected files in Explorer"
+msgstr "刷新资源管理器中所选文件的缩略图"
+
+msgctxt "tipSubDirDepth"
+msgid "The level/depth of subdirectories to scan through when getting files from a dropped folder (1-9)"
+msgstr "从拖动的文件夹中获取文件时要扫描的子目录的级别/深度 (1-9)"
+
+msgctxt "tipClosePanel"
+msgid "Close panel"
+msgstr "关闭面板"
+
+msgctxt "tipAutoScrollOn"
+msgid "Disable auto scrolling"
+msgstr "禁用自动滚动"
+
+msgctxt "tipAutoScrollOff"
+msgid "Enable auto scrolling"
+msgstr "启用自动滚动"
+
+msgctxt "tipThumbPlaceholder"
+msgid "Use one of the two 'Thumbnail tests' to view the thumbnail for this file"
+msgstr "使用两个“缩略图测试”之一查看此文件的缩略图"
+
+msgctxt "tipThumbPreview"
+msgid "Thumbnail dimensions:\n{0} x {1}"
+msgstr "缩略图尺寸"
+
+#: ABOUT PAGE
+msgctxt "lnkSupport"
+msgid "Follow Beta development of Icaros or get support"
+msgstr "查看测试版信息或寻求技术支持"
+
+msgctxt "lblSpcTks"
+msgid "SPECIAL THANKS TO"
+msgstr "特别感谢"
+
+#: UI SETTINGS PAGE
+msgctxt "lblLocalize"
+msgid "LOCALIZATION"
+msgstr "语言"
+
+msgctxt "cbxPropLocal"
+msgid "Enable Property Localization"
+msgstr "文件属性使用语言设置"
+
+msgctxt "lblTheming"
+msgid "THEME OPTIONS"
+msgstr "主题选项"
+
+msgctxt "lblChromeClr"
+msgid "CHROME COLOR"
+msgstr "配色"
+
+msgctxt "enuMonoColor"
+msgid "Mono Color"
+msgstr "单色"
+
+msgctxt "enuColorPerPage"
+msgid "Color Per Page"
+msgstr "多色"
+
+msgctxt "cbxRemWinSize"
+msgid "Remember Window Size"
+msgstr "记住窗口尺寸"
+
+msgctxt "cbxRemWinPos"
+msgid "Remember Window Position"
+msgstr "记住窗口位置"
+
+msgctxt "cbxAnimation"
+msgid "Disable Page Animations"
+msgstr "关闭动画效果"
+
+msgctxt "lblGlassOpacity"
+msgid "Glass Overlay Opacity"
+msgstr "毛玻璃效果"
+
+msgctxt "lblGlassDark"
+msgid "Dark"
+msgstr "深色"
+
+msgctxt "lblGlassLight"
+msgid "Light"
+msgstr "浅色"
+
+msgctxt "tipModSettings"
+msgid "To Export/Import/Reset the Icaros settings, thumbnailing\nand properties must be deactivated"
+msgstr "导出/导入/重置 Icaros 设置\n请先禁用缩略图和文件属性设置"
+
+msgctxt "optExport"
+msgid "Export Settings"
+msgstr "导出设置"
+
+msgctxt "optImport"
+msgid "Import Settings"
+msgstr "导入设置"
+
+msgctxt "optReset"
+msgid "Reset All Settings"
+msgstr "重置所有设置"
+
+msgctxt "dlgThemeAccent"
+msgid "Would you like to use this theme's default chrome colors?\n\nWarning: This will overwrite your current chrome color settings!"
+msgstr "您想使用此主题的默认的chrome颜色吗？\n\n警告：这将覆盖您当前的chrome颜色设置！"
+
+msgctxt "cptThemeAccent"
+msgid "Use default theme chrome colors?"
+msgstr "使用默认主题的chrome颜色？"
+
+msgctxt "dlgExportLoc"
+msgid "Please chose where you wish to export the Icaros settings"
+msgstr "请选择导出文件夹"
+
+msgctxt "dlgImportWrn"
+msgid "This will overwrite ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "当前设置将被覆盖。\n\n是否继续？"
+
+msgctxt "dlgResetAll"
+msgid "This will reset ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "所有设置将被重置到默认状态。\n\n是否继续？"
+
+msgctxt "cptResetWrn"
+msgid "Settings Reset Confirmation"
+msgstr "重置设置确认"
+
+#: WELCOME OVERLAY
+msgctxt "lblWlcIntro1"
+msgid "WELCOME"
+msgstr "欢迎"
+
+msgctxt "lblWlcIntro2"
+msgid "TO THE NEW ICAROS GUI"
+msgstr "切换新的ICAROS GUI"
+
+msgctxt "lblWlcSelect"
+msgid "Please select your preferred"
+msgstr "请选择您的偏好"
+
+msgctxt "lblWlcLang"
+msgid "language:"
+msgstr "语言"
+
+msgctxt "lblWlcTheme"
+msgid "theme:"
+msgstr "主题"
+
+msgctxt "lblWlcTip1"
+msgid "Click here to change language and ui settings"
+msgstr "点击此处更改语言和 ui 设置"
+
+msgctxt "lblWlcTip2"
+msgid "Click these icons to browse the various pages of settings"
+msgstr "点击这些图标可浏览设置的各个页面"
+
+msgctxt "lblWlcTip3"
+msgid "Click the 'Activation buttons' to toggle the state of the shell extensions"
+msgstr "点击“激活按钮”以切换外壳扩展的状态"
+
+msgctxt "lblWlcTip4"
+msgid "Drag and drop files onto this page to test if Icaros can thumbnail them\nThe filetype will automatically be added to the list of 'Thumbnail filetypes', if it is compatible with Icaros\n\nDropping a file that already exists in the 'Thumbnail filetypes' list, will just refresh that file's thumbnail"
+msgstr "将文件拖放到此页面以测试 Icaros 是否可以显示其缩略图\n如果 Icaros 兼容，该文件类型将自动添加到“缩略图文件类型”列表中， \n\n如果拖动的文件已经存在于“缩略图文件类型”列表中，只会刷新该文件的缩略图 "
+
+#: GLOBAL
+msgctxt "tipAddFiles"
+msgid "Add files"
+msgstr "添加文件"
+
+msgctxt "tipClearList"
+msgid "Clear list"
+msgstr "清除列表"
+
+msgctxt "tipWow64On"
+msgid "Icaros is enabled for 32-bit file dialogs"
+msgstr "Icaros 已在 32 位文件对话框中启用"
+
+msgctxt "tipWow64Off"
+msgid "Icaros is disabled for 32-bit file dialogs"
+msgstr "Icaros 已在 32 位文件对话框中禁用"
+
+msgctxt "tipBrowse"
+msgid "Browse to location"
+msgstr "更改位置"
+
+msgctxt "cptDonate"
+msgid "Donate"
+msgstr "捐赠"
+
+msgctxt "lblDonateTxt"
+msgid "If you like Icaros please consider making a donation to keep up the development of Icaros"
+msgstr "如果您喜爱 Icaros，请考虑捐赠以支持 Icaros 的开发"
+
+msgctxt "lblDonateTxt2"
+msgid "Donations received so far in {0}"
+msgstr "迄今为止收到的捐款： {0}"
+
+msgctxt "lblFlattrTxt"
+msgid "Become a microdonator to continuously support the development of Icaros"
+msgstr "小额捐赠支持 Icaros 的开发"
+
+msgctxt "lblCreatedBy"
+msgid "Created and developed by"
+msgstr "作者："
+
+msgctxt "tipMail"
+msgid "Send a mail to the developer of Icaros"
+msgstr "向开发者发送邮件"
+
+msgctxt "tipTwitter"
+msgid "Follow Icaros development on Twitter"
+msgstr "Icaros 的 Twitter"
+
+msgctxt "swtOn"
+msgid "On"
+msgstr "开启"
+
+msgctxt "swtOff"
+msgid "Off"
+msgstr "关闭"
+
+msgctxt "btnDone"
+msgid "Done"
+msgstr "完成"
+
+msgctxt "btnOK"
+msgid "OK"
+msgstr "确定"
+
+msgctxt "btnYes"
+msgid "Yes"
+msgstr "确定"
+
+msgctxt "btnNo"
+msgid "No"
+msgstr "取消"
+
+msgctxt "btnContinue"
+msgid "Continue"
+msgstr "继续"
+
+msgctxt "btnGotIt"
+msgid "Got It!"
+msgstr "明白"
+
+msgctxt "dlgcptConf"
+msgid "Confirmation"
+msgstr "确认"
+
+msgctxt "dlgcptInfo"
+msgid "Info"
+msgstr "信息"
+
+msgctxt "dlgcptError"
+msgid "Error"
+msgstr "错误"
+
+msgctxt "btnRstColor"
+msgid "Reset Color"
+msgstr "重置配色"
+
+msgctxt "btnMin"
+msgid "Minimize"
+msgstr "最小化"
+
+msgctxt "btnMax"
+msgid "Maximize"
+msgstr "最大化"
+
+msgctxt "btnResDown"
+msgid "Restore Down"
+msgstr "向下还原"
+
+msgctxt "btnClose"
+msgid "Close"
+msgstr "关闭"
+
+#~ msgctxt "dlgClearLocs"
+#~ msgid "Are you sure, you wish to clear all the entries of this list?"
+#~ msgstr "确认清空列表？"
+
+#~ msgctxt "enuXL"
+#~ msgid "Preview"
+#~ msgstr "预览"

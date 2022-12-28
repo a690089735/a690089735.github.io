@@ -1,0 +1,976 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icaros\n"
+"POT-Creation-Date: 2014-10-03 15:23:34+0000\n"
+"PO-Revision-Date: 2019-04-20 01:29+0200\n"
+"Last-Translator: \n"
+"Language-Team: aramblogoff@gmail.com\n"
+"Language: hy_AM\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: EXPLORER PROPERTIES
+msgctxt "#VideoTracks"
+msgid "Video tracks"
+msgstr "Վիդեո շավիղներ"
+
+msgctxt "#AudioTracks"
+msgid "Audio tracks"
+msgstr "Աուդիո շավիղներ"
+
+msgctxt "#SubtitleTracks"
+msgid "Subtitle tracks"
+msgstr "Ենթագրեր"
+
+msgctxt "#ContentCompression"
+msgid "Content compression"
+msgstr "Պարունակության սեղմում"
+
+msgctxt "#ContainsChapters"
+msgid "Contains chapters"
+msgstr "Պարունակում է գլուխներ"
+
+msgctxt "#BitDepth"
+msgid "Bit depth"
+msgstr ""
+
+msgctxt "#SubtitleGroup"
+msgid "Subtitles"
+msgstr "Ենթագրեր"
+
+#: MAIN WINDOW
+msgctxt "tglThumbnail"
+msgid "THUMBNAILING"
+msgstr "ՄԱՆՐԱՊԱՏԿԵՐ"
+
+msgctxt "tglProperty"
+msgid "PROPERTIES"
+msgstr "ՀԱՏԿՈՒԹՅՈՒՆ"
+
+msgctxt "tglCache"
+msgid "CACHE"
+msgstr "ԳԱՂՏՆԱՐԱՆ"
+
+msgctxt "tglTools"
+msgid "TOOLS"
+msgstr "ԳՈՐԾԻՔՆԵՐ"
+
+msgctxt "tglDebug"
+msgid "DEBUG"
+msgstr ""
+
+msgctxt "tglAbout"
+msgid "ABOUT"
+msgstr "ԾՐԱԳՐԻ ՄԱՍԻՆ"
+
+msgctxt "tglUiSettings"
+msgid "ui settings"
+msgstr "միջերեսի կարգավորումներ"
+
+msgctxt "stActivated"
+msgid "ACTIVATED"
+msgstr "ԱԿՏԻՎԱՑՎԱԾ"
+
+msgctxt "stDeactivated"
+msgid "DEACTIVATED"
+msgstr "ԱՊԱԱԿՏԻՎԱՑՎԱԾ"
+
+msgctxt "stDisabled"
+msgid "DISABLED"
+msgstr "ԱՆՋԱՏՎԱԾ"
+
+msgctxt "stStatic"
+msgid "ENABLED (STATIC)"
+msgstr "ՄԻԱՑՎԱԾ\n(ՍՏԱՏԻԿ)"
+
+msgctxt "stDynamic"
+msgid "ENABLED (DYNAMIC)"
+msgstr "ՄԻԱՑՎԱԾ\n(ԴԻՆԱՄԻԿ)"
+
+msgctxt "stNotInstalled"
+msgid "NOT INSTALLED"
+msgstr "ՉՏԵՂԱԴՐՎԱԾ"
+
+msgctxt "stIndexing"
+msgid "INDEXING..."
+msgstr "ԻՆԴԵՔՍԱՎՈՐՎՈՒՄ Է..."
+
+#: THUMBNAIL PAGE
+msgctxt "cptFiletypes"
+msgid "THUMBNAIL FILETYPES"
+msgstr "ՖԱՅԼԱՏԵՍԱԿԻ ՄԱՆՐԱՊԱՏԿԵՐՆԵՐ"
+
+msgctxt "lblPresets"
+msgid "PRESET:"
+msgstr "ԿԱՆԽԱՆՇՈՒՄˋ"
+
+msgctxt "cptSettings"
+msgid "SETTINGS"
+msgstr "ԿԱՐԳԱՎՈՐՈՒՄՆԵՐ"
+
+msgctxt "lblOffset"
+msgid "Thumbnail Offset"
+msgstr "Մանրապատկերի հավասարացում"
+
+msgctxt "lblPrefTime"
+msgid "Prefer Timestamp"
+msgstr "Նախընտրել ժամակնիք"
+
+msgctxt "cbxBlkDtct"
+msgid "Enable black/white frame detection"
+msgstr "Միացնել սև/սպիտակ կադրի գտնում"
+
+msgctxt "lblThreshold"
+msgid "Threshold"
+msgstr "Շեմˋ"
+
+msgctxt "cbxShowOverlay"
+msgid "Display icon overlays on thumbnails"
+msgstr "Ցուցադրել պատկերակի պատիչները մանրապատկերի վրա"
+
+msgctxt "cbxShowVidAdorn"
+msgid "Display movie reel on video thumbnails"
+msgstr ""
+
+msgctxt "cbxCoverArt"
+msgid "Use embedded Cover Art for thumbnails"
+msgstr "Մանրապատկերների համար կիրառել զետեղված նկարի կազմ"
+
+msgctxt "cbxCoverArtAny"
+msgid "Use any embedded image as Cover Art"
+msgstr ""
+
+msgctxt "cbxLandscape"
+msgid "Prefer Landscape Covers"
+msgstr "Նախընտրել լանդշաֆտային կազմեր"
+
+msgctxt "tipAddTypes"
+msgid "Add New Thumbnail Filetypes"
+msgstr "Ավելացնել ֆայլի նոր մանրապատկեր"
+
+msgctxt "tipBlkDtct"
+msgid "With this option enabled, Icaros will perform a quick and simple\nscan of the grabbed frame. If the frame is either too dark or too\nlight, Icaros will skip forward and try to find a better suited frame."
+msgstr "Այս ընտրանքի միացումով, Icaros-ը հեշտ ու արագ կկատարի\nգրավված կադրի զննում։ Եթե կադրը նույնպես շատ մութ կամ պայծառ է,\nIcaros-ը առաջ կանցնի և կփորձի գտնել ավելի հարմար կադր։"
+
+#, fuzzy
+msgctxt "tipCoverArt"
+msgid "When Cover Art is enabled, Icaros will look for embedded\ncover art in files that support it while generating thumbnails.\nIf a cover is found, it will be used as thumbnail, otherwise\nIcaros will automatically fall back to normal thumbnailing.\n\nNote: This should not affect the thumbnailing speed in any\nnoticeable way."
+msgstr "Երբ կազմի նկարը միացված է, Icaros-ը կփնտրի զետեղված\nկազմի նկարներ ֆայլերում, մինչ առաջանում են մանրապատկերները։\nԵթե կազմ է գտնվել, այն կօգտագործվի որպես մանրապատկեր, այլապես\nIcaros-ը ավտոմատ կանցնի նորմալ մանրապատկերման։\n\nՆշումˋ Սա չպետք է ազդի մանրապատկերման արագությանըˋ որևէ\nնկատելի ելքով։"
+
+msgctxt "tipCoverAny"
+msgid "With this option enabled, Icaros will use any embedded image in\nthe file as a cover, whether it follows the file specifications or not.\nImages intended as covers will always be preferred."
+msgstr ""
+
+msgctxt "tipCoverLand"
+msgid "Some MKV files contain multiple covers. With such files\nIcaros will default to using the first normal/vertical cover.\nThis option will make Icaros prioritize landscape/horizontal\ncovers instead."
+msgstr "Որոշ MKV ֆայլեր կարող են պարունակել բազում կազմեր։ Այդպիսի ֆայլերի հետ\nIcaros-ը լռելյայն կօգտագործի առաջին նորմալ/ուղղահայաց կազմը։\nԱյս ընտրանքը կփոխարինի Icaros-ի առաջնահերթ լանդշաֆտ/հորիզոնական\nկազմերին։"
+
+msgctxt "dlgcptPrstChng"
+msgid "Preset Info"
+msgstr "Կանխանշման մասին"
+
+msgctxt "dlgPrstChng"
+msgid "The current list contains filetypes that are not included in the selected preset.\n\nDo you wish to include these filetypes in the list?"
+msgstr "Ընթացիկ ցանկը պարունակում է ֆայլատեսակներ, որոնք չեն ներառվել ընտրված կանխանշումում։\n\nՑանկանո՞ւմ եք ներառել այս ֆայլատեսակները ցանկում։"
+
+msgctxt "dlgPrstPsd"
+msgid "PSD is currently being handled by another thumbnail shell extension.\n\nDo you wish for Icaros to assume control of this filetype?\n(You can always remove the filetype again to undo this action)"
+msgstr ""
+
+msgctxt "dlgcptThmbCheck"
+msgid "Thumbnail Check"
+msgstr "Մանրապատկերի ստուգում"
+
+msgctxt "dlgThmbCheck"
+msgid "The following filetypes did not pass the thumbnail check:\n\n{0}\n\nDo you still wish to add them?"
+msgstr "Հետևյալ ֆայլատեսակները մանրապատկերի ստուգում չեն անցելˋ\n\n{0}\n\nԴեռ ցանկանո՞ւմ եք ավելացնել դրանք։"
+
+msgctxt "ntfNewFiles"
+msgid "{0} new filetype(s) added ({1})"
+msgstr ""
+
+msgctxt "ntfRefresh"
+msgid "Refreshed thumbnails of {0} file(s)"
+msgstr ""
+
+msgctxt "ntfExtrSuccess"
+msgid "Extraction Succeeded!"
+msgstr ""
+
+msgctxt "ntfExtrFailed"
+msgid "Extraction Failed!"
+msgstr ""
+
+msgctxt "ntfTimeTaken"
+msgid "It took {0}ms"
+msgstr ""
+
+msgctxt "txtThumbUpdater"
+msgid "Drag and drop one or more files and/or folders to this page to refresh their thumbnails/icons"
+msgstr "Քաշեք և գցեք մեկ կամ ավելի ֆայլեր և/կամ պանակներ այս էջում, դրանց մանրապատկերները/պատկերակները թարմացնելու համար"
+
+msgctxt "prstDefault"
+msgid "DEFAULT"
+msgstr "ԼՌԵԼՅԱՅՆ"
+
+msgctxt "prstCommon"
+msgid "COMMON"
+msgstr "ԸՆԴՀԱՆՈՒՐ"
+
+#, fuzzy
+msgctxt "prstVidOnly"
+msgid "VIDEO ONLY"
+msgstr "ՎԻԴԵՈ"
+
+#, fuzzy
+msgctxt "prstAudOnly"
+msgid "AUDIO ONLY"
+msgstr "ԱՈՒԴԻՈ"
+
+msgctxt "prstMostKnown"
+msgid "MOST KNOWN"
+msgstr "ԱՌԱՎԵԼ ՀԱՅՏՆԻ"
+
+msgctxt "prstCustom"
+msgid "CUSTOM"
+msgstr "ԸՆՏՐՈՎԻ"
+
+#: PROPERTIES PAGE
+msgctxt "txtPropInfo"
+msgid "With  PROPERTIES  activated, Icaros will allow you to view information such as length, width, height, artist etc. in Explorer, for any of the checked filetypes below"
+msgstr "ՀԱՏԿՈՒԹՅՈՒՆՆԵՐԻ ակտիվացմամբ, Icaros-ը կթույլատրի տեսնել տեղեկություն, ինչպիսին է երկարությունը, լայնությունը, բարձրությունը, կատարողը և այլն։ Explorer-ում, ներքևի որևէ ստուգված ֆայլատեսակի համար"
+
+msgctxt "cptVideo"
+msgid "VIDEO"
+msgstr "ՎԻԴԵՈ"
+
+msgctxt "cptAudio"
+msgid "AUDIO"
+msgstr "ԱՈՒԴԻՈ"
+
+msgctxt "btnSelectAll"
+msgid "Select All"
+msgstr "Ընտրել բոլորը"
+
+msgctxt "btnDeselectAll"
+msgid "Deselect All"
+msgstr "Հանել ընտրումը"
+
+msgctxt "cbxShowUnd"
+msgid "Show [Und] on tracks with an undefined language"
+msgstr ""
+
+#: CACHE PAGE
+msgctxt "tglIndexer"
+msgid "SETTINGS"
+msgstr "ԿԱՐԳԱՎՈՐՈՒՄՆԵՐ"
+
+msgctxt "tglIndexLocs"
+msgid "LOCATIONS"
+msgstr "ՎԱՅՐԵՐ"
+
+msgctxt "lblCacheLocation"
+msgid "Cache Location"
+msgstr "Գաղտնարանի վայրը"
+
+msgctxt "tipInvalidLocation"
+msgid "Icaros does not have permission to access current Cache Location.\nClick here to attempt to set the proper permissions.\nIf the error persists, try another directory."
+msgstr ""
+
+msgctxt "lblDriveRoot"
+msgid "Free Space on [{0}] Drive:"
+msgstr "[{0}] պնակում ազատ էˋ"
+
+msgctxt "lblMinFreeSpace"
+msgid "Min Free Space"
+msgstr "Նվազ․ ազատ տարածք"
+
+msgctxt "lblMaxCacheSize"
+msgid "Max Cache Size"
+msgstr "Առավ․ գաղտնարանի չափ"
+
+msgctxt "tipMaxCache"
+msgid "Sets the max size limit of the Icaros Cache.\nIf 0 is set, the cache size is unlimited."
+msgstr "Նշում է Icaros-ի գաղտնարանի առավելագույն սահմանաչափ։\nԵթե նշված է 0, ապա գաղտնարանի չափը անսահմանափակ է։"
+
+msgctxt "lblExclTypes"
+msgid "Excluded Filetypes"
+msgstr "Բացառված ֆայլատեսակներ"
+
+msgctxt "tipUsedCache"
+msgid "{0:0.00}% of the available cache space is currently used"
+msgstr "Հասանելի գաղտնարանի տարածքից {0:0.00}% ներկայումս օգտագործվել է"
+
+msgctxt "tipCacheSize"
+msgid "Icaros Cache Size"
+msgstr "Icaros-ի գաղտնարանի չափ"
+
+msgctxt "lblEntries"
+msgid "{0} entries"
+msgstr "{0} գրառումներ"
+
+msgctxt "lblCacheTut1"
+msgid "With the Icaros Cache ENABLED, Icaros will keep a local record of all thumbnails in an internal cache.\nThis allows Icaros to regenerate any cached thumbnail almost instantly in case Windows Explorer loses them.\n"
+msgstr "Icaros-ի գաղտնարանը ՄԻԱՑՆԵԼՈՎ, Icaros-ը կպահի տեղական տեսագրված բոլոր մանրապատկերները ներքին գաղտնարանում։\nՍա գրեթե անմիջապես թույլատրում է Icaros-ին վերստեղծել որևէ պահված մանրապատկեր, երբ Windows Explorer-ը կորցնում է դրանք։\n"
+
+msgctxt "lblCacheTut2"
+msgid "\nBy adding folders to the LOCATIONS page, and clicking the Build button below, it is possible to fill the cache\ndirectly from within IcarosConfig."
+msgstr "\nՊանակները ՎԱՅՐԵՐԻ էջում ավելացնելով և սեղմելով ներքևի Կառուցել կոճակը, հնարավոր է դառնում լրացնել գաղտնարանը\nուղիղ IcarosConfig-ից։"
+
+msgctxt "lblCacheSt1"
+msgid "STATIC"
+msgstr "ՍՏԱՏԻԿ"
+
+msgctxt "lblCacheSt2"
+msgid "DYNAMIC"
+msgstr "ԴԻՆԱՄԻԿ"
+
+msgctxt "lblCacheStInfo1"
+msgid "allows Icaros to retrieve cached thumbnails, but only IcarosConfig can modify the cache."
+msgstr "թույլատրում է Icaros-ին վերստանալ պահված մանրապատկերները, բայց միայն IcarosConfig-ը կարող է փոփոխել գաղտնարանը։"
+
+msgctxt "lblCacheStInfo2"
+msgid "allows Icaros to retrieve cached thumbnails, as well as dynamically add any new thumbnails to the cache."
+msgstr "թույլատրում է Icaros-ին վերստանալ պահված մանրապատկերները, ինչպես նաև դինամիկորեն գաղտնարանում ավելացնել որևէ նոր մանրապատկեր։"
+
+msgctxt "lblStatus"
+msgid "Status:"
+msgstr "Կարգավիճակˋ"
+
+msgctxt "lblProgress"
+msgid "Progress:"
+msgstr "Ընթացքˋ"
+
+msgctxt "lblCompleted"
+msgid "Completed:"
+msgstr "Ավարտվածˋ"
+
+msgctxt "lblFailed"
+msgid "Failed:"
+msgstr "Ձախողվածˋ"
+
+msgctxt "btnFailed"
+msgid "View"
+msgstr "Տեսնել"
+
+msgctxt "btnBuild"
+msgid "Build Cache"
+msgstr "Կառուցել գաղտնարան"
+
+msgctxt "btnRebuild"
+msgid "Rebuild Cache"
+msgstr "Վերակառուցել գաղտնարանը"
+
+msgctxt "btnCancel"
+msgid "Cancel"
+msgstr "Չեղարկել"
+
+msgctxt "btnClearCache"
+msgid "Clear Cache"
+msgstr "Մաքրել գաղտնարանը"
+
+msgctxt "lblSetLocInfo"
+msgid "At least one location must be added to use the indexer"
+msgstr "Համենայնդեպս մեկ վայր պետք է ավելացվի, ինդեքսավորումը կիրառելու համար"
+
+msgctxt "dlgClrIcCache"
+msgid "You are about to delete the Icaros Cache.\nDo you still wish to proceed?"
+msgstr "Դուք պատրաստվում եք ջնջել Icaros-ի գաղտնարանը։\nԴեռ ցանկանո՞ւմ եք կատարել դա։"
+
+msgctxt "dlgCacheLoc"
+msgid "Select a thumbnail cache location"
+msgstr "Ընտրել մանրապատկերի գաղտնարանի վայրը"
+
+msgctxt "dlgcptFailed"
+msgid "FAILED FILES"
+msgstr "ՁԱԽՈՂՎԱԾ ՖԱՅԼԵՐ"
+
+msgctxt "tipOpenDirSelect"
+msgid "Open folder and select file"
+msgstr "Բացել պանակը և ընտրել ֆայլ"
+
+msgctxt "btnSaveList"
+msgid "Save List"
+msgstr "Պահպանել ցանկը"
+
+msgctxt "stsIdxerInit"
+msgid "Indexer Initialized"
+msgstr "Ինդեքսավորման նախապատրաստում"
+
+msgctxt "stsCollect"
+msgid "Preparing files for processing..."
+msgstr "Պատրաստվում է ֆայլերը մշակելու..."
+
+msgctxt "stsIdxFiles"
+msgid "Indexing files..."
+msgstr "Ինդեքսավորվում են ֆայլերը..."
+
+msgctxt "stsIdxFolders"
+msgid "Indexing folders..."
+msgstr "Ինդեքսավորվում են պանակները..."
+
+msgctxt "stsIdxSuccess"
+msgid "Indexing Completed Successfully"
+msgstr "Ինդեքսավորումը ավարտվել է հաջողությամբ"
+
+msgctxt "stsIdxFailed"
+msgid "Indexing Failed"
+msgstr "Ինդեքսավորումը ձախողվել է"
+
+msgctxt "stsIdxCancel"
+msgid "Indexing was cancelled"
+msgstr "Ինդեքսավորումը կասեցվել է"
+
+msgctxt "stsIdxComplete"
+msgid "Indexing Completed"
+msgstr "Ինդեքսավորումը ավարտվել է"
+
+msgctxt "lblTimeElapsed"
+msgid "Took: {}h {}m {}s {}ms"
+msgstr ""
+
+msgctxt "stsEHash"
+msgid "Failed to calculate proper file hash"
+msgstr "Ձախողվել է հաշվարկել ֆայլի ճիշտ հաշ արժեքը"
+
+msgctxt "stsEThread"
+msgid "Failed to initialize thread"
+msgstr "Ձախողվել է նախապատրաստել հոսքը"
+
+msgctxt "stsECacheInit"
+msgid "Failed to initialize Icaros Cache"
+msgstr "Ձախողվել է նախապատրաստել Icaros-ի գաղտնարանը"
+
+msgctxt "stsEServerInit"
+msgid "Failed to initialize Icaros Thumbnail Provider"
+msgstr "Ձախողվել է նախապատրաստել Icaros-ի մանրապատկերի սպասարկիչը"
+
+msgctxt "stsECacheLimit"
+msgid "Maximum cache size reached"
+msgstr "Գաղտնարանի չափը հասել է առավելագույնի"
+
+msgctxt "stsESpaceLimit"
+msgid "Minimum space limit reached"
+msgstr "Տարածքի սահմանը հասել է նվազագույնի"
+
+msgctxt "stsEDBAccess"
+msgid "Failed to access the database"
+msgstr "Ձախողվել է մուտք գործել տվ․ բազա"
+
+msgctxt "stsEIDXAccess"
+msgid "Failed to access the index"
+msgstr "Ձախողվել է մուտք գործել ինդեքս"
+
+msgctxt "stsERegAccess"
+msgid "Failed to access the registry"
+msgstr "Ձախողվել է մուտք գործել գրանցատեղի"
+
+msgctxt "stsECleanUp"
+msgid "Clean up was incomplete"
+msgstr "Մաքրումը եղել է անավարտ"
+
+msgctxt "stsENoFiles"
+msgid "Indexer found no files with included filetypes in current cache locations"
+msgstr ""
+
+msgctxt "stsEUnknown"
+msgid "Undetermined result"
+msgstr "Անորոշ արդյունք"
+
+msgctxt "btnAdd"
+msgid "Add"
+msgstr "Ավելացնել"
+
+msgctxt "btnRemove"
+msgid "Remove"
+msgstr "Ջնջել"
+
+msgctxt "btnClear"
+msgid "Clear"
+msgstr "Մաքրել"
+
+msgctxt "hdrLocation"
+msgid "Included Locations"
+msgstr "Ներառված վայրեր"
+
+msgctxt "hdrViewSize"
+msgid "View Size"
+msgstr "Տեսնել չափը"
+
+msgctxt "hdrRecursive"
+msgid "Recursive"
+msgstr "Ռեկուրսիվ"
+
+msgctxt "hdrExcluded"
+msgid "Excluded Locations"
+msgstr "Բացառված վայրեր"
+
+msgctxt "enuSmall"
+msgid "Small"
+msgstr "Փոքր"
+
+msgctxt "enuMedium"
+msgid "Large"
+msgstr "Պարզ"
+
+msgctxt "enuLarge"
+msgid "XL"
+msgstr "Խոշոր"
+
+msgctxt "enuXL"
+msgid "Win 8 Icons"
+msgstr ""
+
+msgctxt "enuXXL"
+msgid "Win 10 Icons"
+msgstr ""
+
+msgctxt "dlgAddDir"
+msgid "Please select the directory, you wish to add to the list"
+msgstr "Խնդրում ենք ընտրել հասցեագիրք, որտեղ ցանկանում եք ավելացնել ցանկը"
+
+msgctxt "dlgClearLocs"
+msgid "Are you sure, you wish to clear all the entries off this list?"
+msgstr ""
+
+#, fuzzy
+msgctxt "dlgDirAccessErr"
+msgid "The selected folder does not have the proper Read/Write permissions to use as Cache Location.\nWill you allow Icaros to add the necessary user permissions to this folder?"
+msgstr "Ընտրված պանակը չունի ճիշտ կարդալու/գրելու թույլատվություն, այն որպես գաղտնարանի վայր կիրառելու համար։\nIcaros-ի գաղտնարանը կարող է չգործել, եթե այս վայրը կիրառվի։\n\nԴեռ ցանկանո՞ւմ եք օգտագործել այն։"
+
+msgctxt "dlgMoveCache"
+msgid "You are about to change the Cache Location. Would you like to move the existing cache to new the location?"
+msgstr "Դուք պատրաստվում եք փոխել գաղտնարանի վայրը։ Կցանկանայի՞ք եղած գաղտնարանը նոր վայր տեղափոխել։"
+
+msgctxt "dlgMoveError"
+msgid "The Icaros Cache is currently locked by another process, please try restarting Explorer, then try again.\nIf it is still locked after restarting Explorer, a reboot may be required."
+msgstr ""
+
+msgctxt "cptIcRunWrn"
+msgid "Close IcarosConfig confirmation"
+msgstr ""
+
+msgctxt "dlgIcRunWrn"
+msgid "The Icaros cache indexer is still running.\nAre you sure you wish to close IcarosConfig and stop the indexer?"
+msgstr ""
+
+#: TOOLS PAGE
+msgctxt "cptWinCache"
+msgid "WINDOWS THUMBNAIL CACHE"
+msgstr "WINDOWS-Ի ՄԱՆՐԱՊԱՏԿԵՐԻ ԳԱՂՏՆԱՐԱՆ"
+
+msgctxt "lblWinCacheSize"
+msgid "Cache Size:  {0} MB"
+msgstr "Գաղտնարանի չափˋ  {0} ՄԲ"
+
+msgctxt "btnWinCacheClear"
+msgid "Clear"
+msgstr "Մաքրել"
+
+msgctxt "tipOpenCacheLoc"
+msgid "Open Windows thumbnail cache directory"
+msgstr "Բացել Windows մանրապատկերի գաղտնարանի հասցեագիրքը"
+
+msgctxt "cptExplorer"
+msgid "WINDOWS EXPLORER"
+msgstr "WINDOWS EXPLORER"
+
+msgctxt "btnExpRefresh"
+msgid "Refresh"
+msgstr "Թարմացնել"
+
+msgctxt "btnExpRestart"
+msgid "Restart"
+msgstr "Վերսկսել"
+
+msgctxt "cptResetTypes"
+msgid "RESET NATIVE FILETYPES"
+msgstr "ԶՐՈՅԱՑՆԵԼ ՍԵՓԱԿԱՆ ՖԱՅԼԱՏԵՍԱԿՆԵՐԸ"
+
+msgctxt "btnResetThumb"
+msgid "Reset Thumbnail Filetypes"
+msgstr "Զրոյացնել մանրապատկերի ֆայլատեսակները"
+
+msgctxt "btnResetProps"
+msgid "Reset Property Filetypes"
+msgstr "Զրոյացնել հատկության ֆայլատեսակները"
+
+msgctxt "txtResetLimits"
+msgid "The native filetypes can only be reset while Icaros thumbnailing\nand/or properties are not activated"
+msgstr "Սեփական ֆայլատեսակները կարող են միայն զրոյացվել մինչ Icaros-ը մանրապատկերում է\nև/կամ հատկությունները չեն ակտիվացված"
+
+msgctxt "dlgClrCacheErr"
+msgid "The Thumbnail Cache is currently in use.\n Wait a moment, then try again."
+msgstr "Մանրապատկերի գաղտնարանը ներկայումս օգտագործվում է։\n Սպասեք մի պահ, և կրկին փորձեք։"
+
+msgctxt "dlgcptExpRestrt"
+msgid "Restart Explorer"
+msgstr "Վերամեկնարկել Explorer-ը"
+
+msgctxt "dlgExpRestrt"
+msgid "Warning!\nRestarting Explorer may interrupt file copy/move operations,\nand may cause certain processes to halt.\n\nDo you wish to continue?"
+msgstr "Ուշադրությո՛ւն\nExplorer-ի վերամեկնարկումը կարող է ընդհատել ֆայլի պատճենման/տեղափոխման գործողությունները,\nև հանգեցնել որոշակի ընթացքների կանգի։\n\nՑանկանո՞ւմ եք շարունակել։"
+
+msgctxt "dlgRstThumb"
+msgid "Are you sure, you want to reset all native filetypes back to their default thumbnail providers?"
+msgstr "Իսկապե՞ս ցանկանում եք զրոյացնել բոլոր սեփական ֆայլատեսակները, դեպի իրենց լռելյայն մանրապատկերի սպասարկիչներ։"
+
+msgctxt "dlgRstProps"
+msgid "Are you sure, you want to reset all native filetypes back to their default property handlers and property lists?"
+msgstr "Իսկապե՞ս ցանկանում եք զրոյացնել բոլոր սեփական ֆայլատեսակները դեպի իրենց լռելյայն հատկության մշակիչներ և ցանկեր։"
+
+msgctxt "dlgRstSuccess"
+msgid "All native filetypes was reset successfully!"
+msgstr "Բոլոր սեփական ֆայլատեսակները հաջողությա՛մբ զրոյացվել են։"
+
+#: DEBUG PAGE
+msgctxt "lblTest"
+msgid "TEST:"
+msgstr ""
+
+msgctxt "lblSize"
+msgid "SIZE:"
+msgstr ""
+
+msgctxt "enuThumbnailViaIcaros"
+msgid "THUMBNAILING VIA ICAROS"
+msgstr ""
+
+msgctxt "enuThumbnailViaExplorer"
+msgid "THUMBNAILING VIA EXPLORER"
+msgstr ""
+
+msgctxt "enuPropertiesViaIcaros"
+msgid "PROPERTIES VIA ICAROS"
+msgstr ""
+
+msgctxt "enuPropertiesViaExplorer"
+msgid "PROPERTIES VIA EXPLORER"
+msgstr ""
+
+msgctxt "btnRunAllTest"
+msgid "Run All"
+msgstr ""
+
+msgctxt "btnRunTest"
+msgid "Run ({0})"
+msgstr ""
+
+msgctxt "hdrTestFiles"
+msgid "Test Files"
+msgstr ""
+
+msgctxt "hdrTime"
+msgid "Time"
+msgstr ""
+
+msgctxt "hdrShellExtension"
+msgid "Shell Extension"
+msgstr ""
+
+msgctxt "hdrCache"
+msgid "From Cache"
+msgstr ""
+
+msgctxt "lblDropFiles"
+msgid "DROP FILES AND/OR FOLDERS YOU WISH TO TEST HERE"
+msgstr ""
+
+msgctxt "lblNoProperties"
+msgid "NO PROPERTIES HAS BEEN GENERATED FOR THIS FILE\nUSE THE 'PROPERTY TEST' TO VIEW PROPERTIES FOR THIS FILE"
+msgstr ""
+
+msgctxt "lblLevel"
+msgid "LVL:"
+msgstr ""
+
+msgctxt "lblDebugCount"
+msgid "{0} ENTRIES"
+msgstr ""
+
+msgctxt "tipRefresh"
+msgid "Refresh the thumbnails of the selected files in Explorer"
+msgstr ""
+
+msgctxt "tipSubDirDepth"
+msgid "The level/depth of subdirectories to scan through when getting files from a dropped folder (1-9)"
+msgstr ""
+
+msgctxt "tipClosePanel"
+msgid "Close panel"
+msgstr ""
+
+msgctxt "tipAutoScrollOn"
+msgid "Disable auto scrolling"
+msgstr ""
+
+msgctxt "tipAutoScrollOff"
+msgid "Enable auto scrolling"
+msgstr ""
+
+msgctxt "tipThumbPlaceholder"
+msgid "Use one of the two 'Thumbnail tests' to view the thumbnail for this file"
+msgstr ""
+
+msgctxt "tipThumbPreview"
+msgid "Thumbnail dimensions:\n{0} x {1}"
+msgstr ""
+
+#: ABOUT PAGE
+msgctxt "lnkSupport"
+msgid "Follow Beta development of Icaros or get support"
+msgstr "Հետևեք Icaros-ի Բետա զարգացմանը կամ ստացեք օգնություն"
+
+msgctxt "lblSpcTks"
+msgid "SPECIAL THANKS TO"
+msgstr "ՀԱՏՈՒԿ ՇՆՈՐՀԱԿԱԼՈՒԹՅՈՒՆˋ"
+
+#: UI SETTINGS PAGE
+msgctxt "lblLocalize"
+msgid "LOCALIZATION"
+msgstr "ՏԵՂԱՅՆԱՑՈՒՄ"
+
+msgctxt "cbxPropLocal"
+msgid "Enable Property Localization"
+msgstr "Միացնել հատկանիշների տեղայնացումը"
+
+msgctxt "lblTheming"
+msgid "THEME OPTIONS"
+msgstr "ԹԵՄԱՅԻ ԸՆՏՐԱՆՔՆԵՐ"
+
+msgctxt "lblChromeClr"
+msgid "CHROME COLOR"
+msgstr "ԳՈՒՅՆԻ ՆԵՐԿԱՊՆԱԿ"
+
+msgctxt "enuMonoColor"
+msgid "Mono Color"
+msgstr "Մոնոգունային"
+
+msgctxt "enuColorPerPage"
+msgid "Color Per Page"
+msgstr "Տարբեր գույներով"
+
+msgctxt "cbxRemWinSize"
+msgid "Remember Window Size"
+msgstr "Հիշել պատուհանի չափը"
+
+msgctxt "cbxRemWinPos"
+msgid "Remember Window Position"
+msgstr "Հիշել պատուհանի դիրքը"
+
+msgctxt "cbxAnimation"
+msgid "Disable Page Animations"
+msgstr "Անջատել էջի անիմացիաները"
+
+msgctxt "lblGlassOpacity"
+msgid "Glass Overlay Opacity"
+msgstr "Ապակե թափանցիկություն"
+
+msgctxt "lblGlassDark"
+msgid "Dark"
+msgstr "Մութ"
+
+msgctxt "lblGlassLight"
+msgid "Light"
+msgstr "Լուսավոր"
+
+msgctxt "tipModSettings"
+msgid "To Export/Import/Reset the Icaros settings, thumbnailing\nand properties must be deactivated"
+msgstr "Icaros-ի կարգավորումները արտահանելու/ներմուծելու/զրոյացնելու, մանրապատկերման\nև հատկությունների համար պետք է լինի ապաակտիվացված"
+
+msgctxt "optExport"
+msgid "Export Settings"
+msgstr "Արտահանել կարգավորումները"
+
+msgctxt "optImport"
+msgid "Import Settings"
+msgstr "Ներմուծել կարգավորումները"
+
+msgctxt "optReset"
+msgid "Reset All Settings"
+msgstr "Զրոյացնել բոլոր կարգավորումները"
+
+msgctxt "dlgThemeAccent"
+msgid "Would you like to use this theme's default chrome colors?\n\nWarning: This will overwrite your current chrome color settings!"
+msgstr ""
+
+msgctxt "cptThemeAccent"
+msgid "Use default theme chrome colors?"
+msgstr ""
+
+msgctxt "dlgExportLoc"
+msgid "Please chose where you wish to export the Icaros settings"
+msgstr "Խնդրում ենք ընտրել, թե որտեղ եք ցանկանում արտահանել Icaros-ի կարգավորումները"
+
+msgctxt "dlgImportWrn"
+msgid "This will overwrite ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Սա կվրագրի ԲՈԼՈՐ Ձեր եղած կարգավորումները։\n\nԴեռ ցանկանո՞ւմ եք շարունակել։"
+
+msgctxt "dlgResetAll"
+msgid "This will reset ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Սա կզրոյացնի ԲՈԼՈՐ Ձեր եղած կարգավորումները։\n\nԴեռ ցանկանո՞ւմ եք շարունակել։"
+
+msgctxt "cptResetWrn"
+msgid "Settings Reset Confirmation"
+msgstr "Կարգավորումների զրոյացման հաստատում"
+
+#: WELCOME OVERLAY
+msgctxt "lblWlcIntro1"
+msgid "WELCOME"
+msgstr ""
+
+msgctxt "lblWlcIntro2"
+msgid "TO THE NEW ICAROS GUI"
+msgstr ""
+
+msgctxt "lblWlcSelect"
+msgid "Please select your preferred"
+msgstr ""
+
+msgctxt "lblWlcLang"
+msgid "language:"
+msgstr ""
+
+msgctxt "lblWlcTheme"
+msgid "theme:"
+msgstr ""
+
+msgctxt "lblWlcTip1"
+msgid "Click here to change language and ui settings"
+msgstr ""
+
+msgctxt "lblWlcTip2"
+msgid "Click these icons to browse the various pages of settings"
+msgstr ""
+
+msgctxt "lblWlcTip3"
+msgid "Click the 'Activation buttons' to toggle the state of the shell extensions"
+msgstr ""
+
+msgctxt "lblWlcTip4"
+msgid "Drag and drop files onto this page to test if Icaros can thumbnail them\nThe filetype will automatically be added to the list of 'Thumbnail filetypes', if it is compatible with Icaros\n\nDropping a file that already exists in the 'Thumbnail filetypes' list, will just refresh that file's thumbnail"
+msgstr ""
+
+#: GLOBAL
+msgctxt "tipAddFiles"
+msgid "Add files"
+msgstr ""
+
+msgctxt "tipClearList"
+msgid "Clear list"
+msgstr ""
+
+msgctxt "tipWow64On"
+msgid "Icaros is enabled for 32-bit file dialogs"
+msgstr "Icaros-ը միացված է 32 բիթ ֆայլի եկխոսություններում"
+
+msgctxt "tipWow64Off"
+msgid "Icaros is disabled for 32-bit file dialogs"
+msgstr "Icaros-ը անջատված է 32 բիթ ֆայլի եկխոսություններում"
+
+msgctxt "tipBrowse"
+msgid "Browse to location"
+msgstr "Դիտարկել վայր"
+
+msgctxt "cptDonate"
+msgid "Donate"
+msgstr "Նվիրաբերել"
+
+msgctxt "lblDonateTxt"
+msgid "If you like Icaros please consider making a donation to keep up the development of Icaros"
+msgstr "Եթե հավանում եք Icaros-ը, խնդրում ենք կատարել նվիրաբերում, Icaros-ի զարգացումը բարձր պահելու համար"
+
+msgctxt "lblDonateTxt2"
+msgid "Donations received so far in {0}"
+msgstr ""
+
+msgctxt "lblFlattrTxt"
+msgid "Become a microdonator to continuously support the development of Icaros"
+msgstr "Դարձեք փոքր բարերար, Icaros-ի զարգացմանը շարունակական աջակցելու համար"
+
+msgctxt "lblCreatedBy"
+msgid "Created and developed by"
+msgstr "Ստեղծել և զարգացրել էˋ"
+
+msgctxt "tipMail"
+msgid "Send a mail to the developer of Icaros"
+msgstr "Ուղարկել էլ․ նամակ Icaros-ի զարգացնողին"
+
+msgctxt "tipTwitter"
+msgid "Follow Icaros development on Twitter"
+msgstr "Հետևեք Icaros-ի զարգացմանը Twitter-ում"
+
+msgctxt "swtOn"
+msgid "On"
+msgstr "Միաց"
+
+msgctxt "swtOff"
+msgid "Off"
+msgstr "Անջ"
+
+msgctxt "btnDone"
+msgid "Done"
+msgstr "Պատրաստ է"
+
+msgctxt "btnOK"
+msgid "OK"
+msgstr "Լավ"
+
+msgctxt "btnYes"
+msgid "Yes"
+msgstr "Այո"
+
+msgctxt "btnNo"
+msgid "No"
+msgstr "Ոչ"
+
+msgctxt "btnContinue"
+msgid "Continue"
+msgstr ""
+
+msgctxt "btnGotIt"
+msgid "Got It!"
+msgstr ""
+
+msgctxt "dlgcptConf"
+msgid "Confirmation"
+msgstr "Հաստատում"
+
+msgctxt "dlgcptInfo"
+msgid "Info"
+msgstr "Տեղեկություն"
+
+msgctxt "dlgcptError"
+msgid "Error"
+msgstr ""
+
+msgctxt "btnRstColor"
+msgid "Reset Color"
+msgstr "Զրոյացնել գույնը"
+
+msgctxt "btnMin"
+msgid "Minimize"
+msgstr "Փոքրացնել"
+
+msgctxt "btnMax"
+msgid "Maximize"
+msgstr "Խոշորացնել"
+
+msgctxt "btnResDown"
+msgid "Restore Down"
+msgstr "Վերականգնել ցած"
+
+msgctxt "btnClose"
+msgid "Close"
+msgstr "Փակել"
+
+#~ msgctxt "dlgClearLocs"
+#~ msgid "Are you sure, you wish to clear all the entries of this list?"
+#~ msgstr "Իսկապե՞ս ցանկանում եք մաքրել այս ցանկի բոլոր գրառումները։"
+
+#~ msgctxt "enuXL"
+#~ msgid "Preview"
+#~ msgstr "Հսկա"

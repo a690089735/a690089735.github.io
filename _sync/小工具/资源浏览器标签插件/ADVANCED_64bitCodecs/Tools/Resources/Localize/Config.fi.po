@@ -1,0 +1,968 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icaros\n"
+"POT-Creation-Date: 2014-10-03 15:23:34+0000\n"
+"PO-Revision-Date: 2019-04-20 01:28+0200\n"
+"Last-Translator: Juuso 'Nuihc88' Lehtimäki <nuihc88@gmail.com>\n"
+"Language-Team: Juuso 'Nuihc88' Lehtimäki\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#: EXPLORER PROPERTIES
+msgctxt "#VideoTracks"
+msgid "Video tracks"
+msgstr "Video raidat"
+
+msgctxt "#AudioTracks"
+msgid "Audio tracks"
+msgstr "Audio raidat"
+
+msgctxt "#SubtitleTracks"
+msgid "Subtitle tracks"
+msgstr "Tekstitys raidat"
+
+msgctxt "#ContentCompression"
+msgid "Content compression"
+msgstr "Sisällön pakkaus"
+
+msgctxt "#ContainsChapters"
+msgid "Contains chapters"
+msgstr "Sisältää luvut"
+
+msgctxt "#BitDepth"
+msgid "Bit depth"
+msgstr "Bittisyvyys"
+
+msgctxt "#SubtitleGroup"
+msgid "Subtitles"
+msgstr "Tekstitykset"
+
+#: MAIN WINDOW
+msgctxt "tglThumbnail"
+msgid "THUMBNAILING"
+msgstr "PIKKUKUVIEN POIMINTA"
+
+msgctxt "tglProperty"
+msgid "PROPERTIES"
+msgstr "OMINAISUUDET"
+
+msgctxt "tglCache"
+msgid "CACHE"
+msgstr "VÄLIMUISTI"
+
+msgctxt "tglTools"
+msgid "TOOLS"
+msgstr "TYÖKALUT"
+
+msgctxt "tglDebug"
+msgid "DEBUG"
+msgstr ""
+
+msgctxt "tglAbout"
+msgid "ABOUT"
+msgstr "TIETOJA"
+
+msgctxt "tglUiSettings"
+msgid "ui settings"
+msgstr "Käyttöliittymän asetukset"
+
+msgctxt "stActivated"
+msgid "ACTIVATED"
+msgstr "AKTIVOITU"
+
+msgctxt "stDeactivated"
+msgid "DEACTIVATED"
+msgstr "AKTIVOIMATON"
+
+msgctxt "stDisabled"
+msgid "DISABLED"
+msgstr "EI KÄYTÖSSÄ"
+
+msgctxt "stStatic"
+msgid "ENABLED (STATIC)"
+msgstr "KÄYTÖSSÄ (STAATTINEN)"
+
+msgctxt "stDynamic"
+msgid "ENABLED (DYNAMIC)"
+msgstr "KÄYTÖSSÄ (DYNAAMINEN)"
+
+msgctxt "stNotInstalled"
+msgid "NOT INSTALLED"
+msgstr "EI ASENNETTU"
+
+msgctxt "stIndexing"
+msgid "INDEXING..."
+msgstr "INDEKSOI..."
+
+#: THUMBNAIL PAGE
+msgctxt "cptFiletypes"
+msgid "THUMBNAIL FILETYPES"
+msgstr "PIKKUKUVIEN TIEDOSTOTYYPIT"
+
+msgctxt "lblPresets"
+msgid "PRESET:"
+msgstr "ESIASETUS:"
+
+msgctxt "cptSettings"
+msgid "SETTINGS"
+msgstr "ASETUKSET"
+
+msgctxt "lblOffset"
+msgid "Thumbnail Offset"
+msgstr "Pikkukuvan Siirros"
+
+msgctxt "lblPrefTime"
+msgid "Prefer Timestamp"
+msgstr "Suosi Aikaleimaa"
+
+msgctxt "cbxBlkDtct"
+msgid "Enable black/white frame detection"
+msgstr "Käytä mustan/valkoisen kuvan tunnistusta"
+
+msgctxt "lblThreshold"
+msgid "Threshold"
+msgstr "Kynnysarvo"
+
+msgctxt "cbxShowOverlay"
+msgid "Display icon overlays on thumbnails"
+msgstr "Näytä kuvakkeet pikkukuvissa"
+
+msgctxt "cbxShowVidAdorn"
+msgid "Display movie reel on video thumbnails"
+msgstr "Näytä elokuvarulla videoiden pikkukuvissa"
+
+msgctxt "cbxCoverArt"
+msgid "Use embedded Cover Art for thumbnails"
+msgstr "Käytä upotettua Kansitaidetta pikkukuvina"
+
+msgctxt "cbxCoverArtAny"
+msgid "Use any embedded image as Cover Art"
+msgstr ""
+
+msgctxt "cbxLandscape"
+msgid "Prefer Landscape Covers"
+msgstr "Suosi Vaakasuuntaisia Kansikuvia"
+
+msgctxt "tipAddTypes"
+msgid "Add New Thumbnail Filetypes"
+msgstr "Lisää Uusia Pikkukuvien Tiedostotyyppejä"
+
+msgctxt "tipBlkDtct"
+msgid "With this option enabled, Icaros will perform a quick and simple\nscan of the grabbed frame. If the frame is either too dark or too\nlight, Icaros will skip forward and try to find a better suited frame."
+msgstr "Kun tämä asetus on käytössä, Icaros tekee nopean ja yksinkertaisen\nskannauksen napatulle kuvalle. Jos kuva on liian tumma tai vaalea,\nIcaros hyppää eteenpäin ja yrittää löytää sopivamman kuvan."
+
+#, fuzzy
+msgctxt "tipCoverArt"
+msgid "When Cover Art is enabled, Icaros will look for embedded\ncover art in files that support it while generating thumbnails.\nIf a cover is found, it will be used as thumbnail, otherwise\nIcaros will automatically fall back to normal thumbnailing.\n\nNote: This should not affect the thumbnailing speed in any\nnoticeable way."
+msgstr "Kun Kansitaide on käytössä, Icaros etsii upotettua kansi-\ntaidetta sitä tukevista tiedostoista luodessaan pikkukuvia.\nLöydettäessä sitä tullaan käyttämään pikkukuvana, muutoin\nIcaros vaihtaa takaisin normaaliin pikkukuvan luontitilaan.\n\nHuomio: Tämän ei pitäisi vaikuttaa pikkukuvien luomisen\nnopeuteen mitenkään huomattavasti."
+
+msgctxt "tipCoverAny"
+msgid "With this option enabled, Icaros will use any embedded image in\nthe file as a cover, whether it follows the file specifications or not.\nImages intended as covers will always be preferred."
+msgstr ""
+
+msgctxt "tipCoverLand"
+msgid "Some MKV files contain multiple covers. With such files\nIcaros will default to using the first normal/vertical cover.\nThis option will make Icaros prioritize landscape/horizontal\ncovers instead."
+msgstr "Jotkin MKV tiedostot sisältävät useampia kansia.\nTällaisessa tapauksessa Icaros käyttää oletuksena\nensimmäistä normaalia/pystysuuntaista kansikuvaa,\nmutta tällä asetuksella saat Icaroksen suosimaan\nmaisema/vaakasuuntaisia kuvia."
+
+msgctxt "dlgcptPrstChng"
+msgid "Preset Info"
+msgstr "Esiasetuksen Tiedot"
+
+msgctxt "dlgPrstChng"
+msgid "The current list contains filetypes that are not included in the selected preset.\n\nDo you wish to include these filetypes in the list?"
+msgstr "Nykyinen lista sisältää tiedostotyyppejä jotka eivät sisälly valittuun esiasetukseen.\n\nHaluatko lisätä nämä tiedostotyypit listaan?"
+
+msgctxt "dlgPrstPsd"
+msgid "PSD is currently being handled by another thumbnail shell extension.\n\nDo you wish for Icaros to assume control of this filetype?\n(You can always remove the filetype again to undo this action)"
+msgstr ""
+
+msgctxt "dlgcptThmbCheck"
+msgid "Thumbnail Check"
+msgstr "Pikkukuvan Tarkistus"
+
+msgctxt "dlgThmbCheck"
+msgid "The following filetypes did not pass the thumbnail check:\n\n{0}\n\nDo you still wish to add them?"
+msgstr "Seuraavat tiedostotyypit eivät läpäisseet pikkukuvatarkistusta:\n\n{0}\n\nHaluatko silti lisätä ne?"
+
+msgctxt "ntfNewFiles"
+msgid "{0} new filetype(s) added ({1})"
+msgstr "{0} uutta tiedostotyyppiä lisätty ({1})"
+
+msgctxt "ntfRefresh"
+msgid "Refreshed thumbnails of {0} file(s)"
+msgstr "Uudelleenladattiin pikkukuvat {0} tiedosto(i)lle"
+
+msgctxt "ntfExtrSuccess"
+msgid "Extraction Succeeded!"
+msgstr ""
+
+msgctxt "ntfExtrFailed"
+msgid "Extraction Failed!"
+msgstr ""
+
+msgctxt "ntfTimeTaken"
+msgid "It took {0}ms"
+msgstr ""
+
+msgctxt "txtThumbUpdater"
+msgid "Drag and drop one or more files and/or folders to this page to refresh their thumbnails/icons"
+msgstr "Vedä ja pudota yksi tai useampi tiedosto ja/tai kansio tähän sivuun, uudelleenladataksesi niiden pikkukuvat/kuvakkeet"
+
+msgctxt "prstDefault"
+msgid "DEFAULT"
+msgstr "OLETUS"
+
+msgctxt "prstCommon"
+msgid "COMMON"
+msgstr "YLEISET"
+
+msgctxt "prstVidOnly"
+msgid "VIDEO ONLY"
+msgstr "VAIN VIDEO"
+
+msgctxt "prstAudOnly"
+msgid "AUDIO ONLY"
+msgstr "VAIN AUDIO"
+
+msgctxt "prstMostKnown"
+msgid "MOST KNOWN"
+msgstr "TUNNETUIMMAT"
+
+msgctxt "prstCustom"
+msgid "CUSTOM"
+msgstr "MUKAUTETTU"
+
+#: PROPERTIES PAGE
+msgctxt "txtPropInfo"
+msgid "With  PROPERTIES  activated, Icaros will allow you to view information such as length, width, height, artist etc. in Explorer, for any of the checked filetypes below"
+msgstr "Kun OMINAISUUDET on aktivoitu, Icaros antaa sinun tarkastella tietoja kuten pituus, leveys, korkeus, artisti, jne. Resurssienhallinnasta, mille tahansa alapuolella valituista tiedostotyypeistä"
+
+msgctxt "cptVideo"
+msgid "VIDEO"
+msgstr "VIDEO"
+
+msgctxt "cptAudio"
+msgid "AUDIO"
+msgstr "AUDIO"
+
+msgctxt "btnSelectAll"
+msgid "Select All"
+msgstr "Valitse Kaikki"
+
+msgctxt "btnDeselectAll"
+msgid "Deselect All"
+msgstr "Poista Valinta Kaikista"
+
+msgctxt "cbxShowUnd"
+msgid "Show [Und] on tracks with an undefined language"
+msgstr ""
+
+#: CACHE PAGE
+msgctxt "tglIndexer"
+msgid "SETTINGS"
+msgstr "ASETUKSET"
+
+msgctxt "tglIndexLocs"
+msgid "LOCATIONS"
+msgstr "SIJAINNIT"
+
+msgctxt "lblCacheLocation"
+msgid "Cache Location"
+msgstr "Välimuistin Sijainti"
+
+msgctxt "tipInvalidLocation"
+msgid "Icaros does not have permission to access current Cache Location.\nClick here to attempt to set the proper permissions.\nIf the error persists, try another directory."
+msgstr ""
+
+msgctxt "lblDriveRoot"
+msgid "Free Space on [{0}] Drive:"
+msgstr "Vapaata Tilaa [{0}] Asemassa:"
+
+msgctxt "lblMinFreeSpace"
+msgid "Min Free Space"
+msgstr "Vapaan Tilan Minimi"
+
+msgctxt "lblMaxCacheSize"
+msgid "Max Cache Size"
+msgstr "Välimuistin Maksimikoko"
+
+msgctxt "tipMaxCache"
+msgid "Sets the max size limit of the Icaros Cache.\nIf 0 is set, the cache size is unlimited."
+msgstr "Asettaa Icaroksen Välimuistin maksimikoko rajoituksen.\nAsetettaessa nollaan, välimuistin koko on rajoittamaton."
+
+msgctxt "lblExclTypes"
+msgid "Excluded Filetypes"
+msgstr "Poissuljetut Tiedostotyypit"
+
+msgctxt "tipUsedCache"
+msgid "{0:0.00}% of the available cache space is currently used"
+msgstr "{0:0.00}% saatavilla olevasta välimuistitilasta on tällä hetkellä käytössä"
+
+msgctxt "tipCacheSize"
+msgid "Icaros Cache Size"
+msgstr "Icaroksen Välimuistin Koko"
+
+msgctxt "lblEntries"
+msgid "{0} entries"
+msgstr "{0} merkintää"
+
+msgctxt "lblCacheTut1"
+msgid "With the Icaros Cache ENABLED, Icaros will keep a local record of all thumbnails in an internal cache.\nThis allows Icaros to regenerate any cached thumbnail almost instantly in case Windows Explorer loses them.\n"
+msgstr "Icaroksen Välimuistin ollessa KÄYTÖSSÄ, Icaros pitää kirjaa kaikista pikkukuvista sisäisessä välimuistissaan.\nTämä antaa Icaroksen uudelleenluoda minkä tahansa välimuistiin lisätyn pikkukuvan lähes välittömästi mikäli\nResurssienhallinta kadottaa sen.\n"
+
+msgctxt "lblCacheTut2"
+msgid "\nBy adding folders to the LOCATIONS page, and clicking the Build button below, it is possible to fill the cache\ndirectly from within IcarosConfig."
+msgstr "\nLisäämällä kansioita SIJAINNIT sivulle ja klikkaamalla alapuolista Rakenna-nappia,\non mahdollista täyttää välimuisti suoraan Icaroksen Asetusvalikosta."
+
+msgctxt "lblCacheSt1"
+msgid "STATIC"
+msgstr "STAATTINEN"
+
+msgctxt "lblCacheSt2"
+msgid "DYNAMIC"
+msgstr "DYNAAMINEN"
+
+msgctxt "lblCacheStInfo1"
+msgid "allows Icaros to retrieve cached thumbnails, but only IcarosConfig can modify the cache."
+msgstr "Antaa Icaroksen hakea pikkukuvat välimuistista, mutta välimuistia voi muokata vain Icaroksen Asetuksista."
+
+msgctxt "lblCacheStInfo2"
+msgid "allows Icaros to retrieve cached thumbnails, as well as dynamically add any new thumbnails to the cache."
+msgstr "Antaa Icaroksen hakea pikkukuvat välimuistista, sekä dynaamisesti lisätä uusia esikatselukuvia välimuistiin."
+
+msgctxt "lblStatus"
+msgid "Status:"
+msgstr "Tila:"
+
+msgctxt "lblProgress"
+msgid "Progress:"
+msgstr "Edistys:"
+
+msgctxt "lblCompleted"
+msgid "Completed:"
+msgstr "Valmistunut:"
+
+msgctxt "lblFailed"
+msgid "Failed:"
+msgstr "Epäonnistunut:"
+
+msgctxt "btnFailed"
+msgid "View"
+msgstr "Näkymä"
+
+msgctxt "btnBuild"
+msgid "Build Cache"
+msgstr "Rakenna Välimuisti"
+
+msgctxt "btnRebuild"
+msgid "Rebuild Cache"
+msgstr "Uudelleenrakenna Välimuisti"
+
+msgctxt "btnCancel"
+msgid "Cancel"
+msgstr "Peruuta"
+
+msgctxt "btnClearCache"
+msgid "Clear Cache"
+msgstr "Tyhjää Välimuisti"
+
+msgctxt "lblSetLocInfo"
+msgid "At least one location must be added to use the indexer"
+msgstr "Ainakin yksi sijainti täytyy lisätä ennen kuin voit käyttää indeksoijaa"
+
+msgctxt "dlgClrIcCache"
+msgid "You are about to delete the Icaros Cache.\nDo you still wish to proceed?"
+msgstr "Olet poistamassa Icaroksen Välimuistia.\nHaluatko varmasti jatkaa?"
+
+msgctxt "dlgCacheLoc"
+msgid "Select a thumbnail cache location"
+msgstr "Valitse pikkukuvien välimuistin sijainti"
+
+msgctxt "dlgcptFailed"
+msgid "FAILED FILES"
+msgstr "EPÄONNISTUNEET TIEDOSTOT"
+
+msgctxt "tipOpenDirSelect"
+msgid "Open folder and select file"
+msgstr "Avaa kansia ja valitse tiedosto"
+
+msgctxt "btnSaveList"
+msgid "Save List"
+msgstr "Tallenna Lista"
+
+msgctxt "stsIdxerInit"
+msgid "Indexer Initialized"
+msgstr "Indeksoija Alustettu"
+
+msgctxt "stsCollect"
+msgid "Preparing files for processing..."
+msgstr "Valmistellaan tiedostoja käsittelyä varten..."
+
+msgctxt "stsIdxFiles"
+msgid "Indexing files..."
+msgstr "Indeksoi tiedostoja..."
+
+msgctxt "stsIdxFolders"
+msgid "Indexing folders..."
+msgstr "Indeksoi kansioita..."
+
+msgctxt "stsIdxSuccess"
+msgid "Indexing Completed Successfully"
+msgstr "Indeksointi Suoritettu Onnistuneesti"
+
+msgctxt "stsIdxFailed"
+msgid "Indexing Failed"
+msgstr "Indeksointi Epäonnistui"
+
+msgctxt "stsIdxCancel"
+msgid "Indexing was cancelled"
+msgstr "Indeksointi peruutettiin"
+
+msgctxt "stsIdxComplete"
+msgid "Indexing Completed"
+msgstr "Indeksointi Valmistui"
+
+msgctxt "lblTimeElapsed"
+msgid "Took: {}h {}m {}s {}ms"
+msgstr ""
+
+msgctxt "stsEHash"
+msgid "Failed to calculate proper file hash"
+msgstr "Ei onnistuttu laskemaan oikeaa tiedostotarkistetta"
+
+msgctxt "stsEThread"
+msgid "Failed to initialize thread"
+msgstr "Ei onnistuttu alustamaan säiettä"
+
+msgctxt "stsECacheInit"
+msgid "Failed to initialize Icaros Cache"
+msgstr "Ei onnistuttu alustamaan Icaroksen Välimuistia"
+
+msgctxt "stsEServerInit"
+msgid "Failed to initialize Icaros Thumbnail Provider"
+msgstr "Ei onnistuttu alustamaan Icaroksen pikkukuvien Poimijaa"
+
+msgctxt "stsECacheLimit"
+msgid "Maximum cache size reached"
+msgstr "Välimuistikoon maksimi tavoitettu"
+
+msgctxt "stsESpaceLimit"
+msgid "Minimum space limit reached"
+msgstr "Vapaan tilan minimiraja tavoitettu"
+
+msgctxt "stsEDBAccess"
+msgid "Failed to access the database"
+msgstr "Ei onnistuttu avaamaan tietokantaa"
+
+msgctxt "stsEIDXAccess"
+msgid "Failed to access the index"
+msgstr "Ei onnistuttu avaamaan indeksiä"
+
+msgctxt "stsERegAccess"
+msgid "Failed to access the registry"
+msgstr "Ei onnistuttu avaamaan rekisteriä"
+
+msgctxt "stsECleanUp"
+msgid "Clean up was incomplete"
+msgstr "Puhdistus oli keskeneräinen"
+
+msgctxt "stsENoFiles"
+msgid "Indexer found no files with included filetypes in current cache locations"
+msgstr ""
+
+msgctxt "stsEUnknown"
+msgid "Undetermined result"
+msgstr "Selvittämätön tulos"
+
+msgctxt "btnAdd"
+msgid "Add"
+msgstr "Lisää"
+
+msgctxt "btnRemove"
+msgid "Remove"
+msgstr "Poista"
+
+msgctxt "btnClear"
+msgid "Clear"
+msgstr "Tyhjää"
+
+msgctxt "hdrLocation"
+msgid "Included Locations"
+msgstr "Sisällytetyt Sijainnit"
+
+msgctxt "hdrViewSize"
+msgid "View Size"
+msgstr "Katselukoko"
+
+msgctxt "hdrRecursive"
+msgid "Recursive"
+msgstr "Rekursiivinen"
+
+msgctxt "hdrExcluded"
+msgid "Excluded Locations"
+msgstr "Poissuljetut Sijainnit"
+
+msgctxt "enuSmall"
+msgid "Small"
+msgstr "Pieni"
+
+msgctxt "enuMedium"
+msgid "Large"
+msgstr "Keskikokoinen"
+
+msgctxt "enuLarge"
+msgid "XL"
+msgstr "Suuri"
+
+msgctxt "enuXL"
+msgid "Win 8 Icons"
+msgstr "Win 8 Kuvakkeet"
+
+msgctxt "enuXXL"
+msgid "Win 10 Icons"
+msgstr "Win 10 Kuvakkeet"
+
+msgctxt "dlgAddDir"
+msgid "Please select the directory, you wish to add to the list"
+msgstr "Ole hyvä ja valitse se hakemisto jonka haluat lisätä listaan"
+
+msgctxt "dlgClearLocs"
+msgid "Are you sure, you wish to clear all the entries off this list?"
+msgstr ""
+
+msgctxt "dlgDirAccessErr"
+msgid "The selected folder does not have the proper Read/Write permissions to use as Cache Location.\nWill you allow Icaros to add the necessary user permissions to this folder?"
+msgstr "Valitulla kansiolla ei ole kelvollisia Luku/Kirjoitus-oikeuksia Välimuistisijaintina käytettäväksi.\nAnnatko Icarosin lisätä tarvittavat käyttöoikeudet tähän kansioon?"
+
+msgctxt "dlgMoveCache"
+msgid "You are about to change the Cache Location. Would you like to move the existing cache to new the location?"
+msgstr "Olet muuttamaisillasi Välimuistin Sijaintia. Haluaisitko siirtää olemassaolevan välimuistin uuteen sijaintiin?"
+
+msgctxt "dlgMoveError"
+msgid "The Icaros Cache is currently locked by another process, please try restarting Explorer, then try again.\nIf it is still locked after restarting Explorer, a reboot may be required."
+msgstr ""
+
+msgctxt "cptIcRunWrn"
+msgid "Close IcarosConfig confirmation"
+msgstr ""
+
+msgctxt "dlgIcRunWrn"
+msgid "The Icaros cache indexer is still running.\nAre you sure you wish to close IcarosConfig and stop the indexer?"
+msgstr ""
+
+#: TOOLS PAGE
+msgctxt "cptWinCache"
+msgid "WINDOWS THUMBNAIL CACHE"
+msgstr "WINDOWSIN PIKKUKUVAVÄLIMUISTI"
+
+msgctxt "lblWinCacheSize"
+msgid "Cache Size:  {0} MB"
+msgstr "Välimuistin Koko:  {0} MB"
+
+msgctxt "btnWinCacheClear"
+msgid "Clear"
+msgstr "Tyhjää"
+
+msgctxt "tipOpenCacheLoc"
+msgid "Open Windows thumbnail cache directory"
+msgstr "Avaa Windowsin pikkukuvien välimuistihakemisto"
+
+msgctxt "cptExplorer"
+msgid "WINDOWS EXPLORER"
+msgstr "RESURSSIENHALLINTA"
+
+msgctxt "btnExpRefresh"
+msgid "Refresh"
+msgstr "Uudelleenlataa"
+
+msgctxt "btnExpRestart"
+msgid "Restart"
+msgstr "Uudelleenkäynnistä"
+
+msgctxt "cptResetTypes"
+msgid "RESET NATIVE FILETYPES"
+msgstr "PALAUTA ALKUPERÄISET TIEDOSTOTYYPIT"
+
+msgctxt "btnResetThumb"
+msgid "Reset Thumbnail Filetypes"
+msgstr "Palauta Pikkukuvien Tiedostotyypit"
+
+msgctxt "btnResetProps"
+msgid "Reset Property Filetypes"
+msgstr "Palauta Ominaisuuksien Tiedostotyypit"
+
+msgctxt "txtResetLimits"
+msgid "The native filetypes can only be reset while Icaros thumbnailing\nand/or properties are not activated"
+msgstr "Alkuperäiset tiedostotyypit voidaan palauttaa vain\nIcaroksen pikkukuvien ja ominaisuuksien poiminnan\nollessa aktivoimattomassa tilassa"
+
+msgctxt "dlgClrCacheErr"
+msgid "The Thumbnail Cache is currently in use.\n Wait a moment, then try again."
+msgstr "Pikkukuvien Välimuisti on vielä käytössä.\nOdota hetki ja yritä sitten uudelleen."
+
+msgctxt "dlgcptExpRestrt"
+msgid "Restart Explorer"
+msgstr "Uudelleenkäynnistä Resurssienhallinta"
+
+msgctxt "dlgExpRestrt"
+msgid "Warning!\nRestarting Explorer may interrupt file copy/move operations,\nand may cause certain processes to halt.\n\nDo you wish to continue?"
+msgstr "Varoitus!\nResurssienhallinnan uudelleenkäynnistys saattaa keskeyttää tiedostojen\nkopiointi/siirto operaatioita ja aiheuttaa tiettyjen prosessien pysähtymisen\n\nHaluatko silti jatkaa?"
+
+msgctxt "dlgRstThumb"
+msgid "Are you sure, you want to reset all native filetypes back to their default thumbnail providers?"
+msgstr "Oletko varma että haluat palauttaa kaikki tiedostotyypit niiden alkuperäisille pikkukuvien poimijoille?"
+
+msgctxt "dlgRstProps"
+msgid "Are you sure, you want to reset all native filetypes back to their default property handlers and property lists?"
+msgstr "Oletko varma että haluat palauttaa kaikki tiedostotyypit niiden alkuperäisille ominaisuuskäsittelijöille ja ominaisuusluetteloille?"
+
+msgctxt "dlgRstSuccess"
+msgid "All native filetypes was reset successfully!"
+msgstr "Kaikki alkuperäiset tiedostotyypit palautettiin onnistuneesti!"
+
+#: DEBUG PAGE
+msgctxt "lblTest"
+msgid "TEST:"
+msgstr ""
+
+msgctxt "lblSize"
+msgid "SIZE:"
+msgstr ""
+
+msgctxt "enuThumbnailViaIcaros"
+msgid "THUMBNAILING VIA ICAROS"
+msgstr ""
+
+msgctxt "enuThumbnailViaExplorer"
+msgid "THUMBNAILING VIA EXPLORER"
+msgstr ""
+
+msgctxt "enuPropertiesViaIcaros"
+msgid "PROPERTIES VIA ICAROS"
+msgstr ""
+
+msgctxt "enuPropertiesViaExplorer"
+msgid "PROPERTIES VIA EXPLORER"
+msgstr ""
+
+msgctxt "btnRunAllTest"
+msgid "Run All"
+msgstr ""
+
+msgctxt "btnRunTest"
+msgid "Run ({0})"
+msgstr ""
+
+msgctxt "hdrTestFiles"
+msgid "Test Files"
+msgstr ""
+
+msgctxt "hdrTime"
+msgid "Time"
+msgstr ""
+
+msgctxt "hdrShellExtension"
+msgid "Shell Extension"
+msgstr ""
+
+msgctxt "hdrCache"
+msgid "From Cache"
+msgstr ""
+
+msgctxt "lblDropFiles"
+msgid "DROP FILES AND/OR FOLDERS YOU WISH TO TEST HERE"
+msgstr ""
+
+msgctxt "lblNoProperties"
+msgid "NO PROPERTIES HAS BEEN GENERATED FOR THIS FILE\nUSE THE 'PROPERTY TEST' TO VIEW PROPERTIES FOR THIS FILE"
+msgstr ""
+
+msgctxt "lblLevel"
+msgid "LVL:"
+msgstr ""
+
+msgctxt "lblDebugCount"
+msgid "{0} ENTRIES"
+msgstr ""
+
+msgctxt "tipRefresh"
+msgid "Refresh the thumbnails of the selected files in Explorer"
+msgstr ""
+
+msgctxt "tipSubDirDepth"
+msgid "The level/depth of subdirectories to scan through when getting files from a dropped folder (1-9)"
+msgstr ""
+
+msgctxt "tipClosePanel"
+msgid "Close panel"
+msgstr ""
+
+msgctxt "tipAutoScrollOn"
+msgid "Disable auto scrolling"
+msgstr ""
+
+msgctxt "tipAutoScrollOff"
+msgid "Enable auto scrolling"
+msgstr ""
+
+msgctxt "tipThumbPlaceholder"
+msgid "Use one of the two 'Thumbnail tests' to view the thumbnail for this file"
+msgstr ""
+
+msgctxt "tipThumbPreview"
+msgid "Thumbnail dimensions:\n{0} x {1}"
+msgstr ""
+
+#: ABOUT PAGE
+msgctxt "lnkSupport"
+msgid "Follow Beta development of Icaros or get support"
+msgstr "Seuraa Icaroksen Beta-kehitystä tai hae teknistä tukea"
+
+msgctxt "lblSpcTks"
+msgid "SPECIAL THANKS TO"
+msgstr "ERITYISET KIITOKSET"
+
+#: UI SETTINGS PAGE
+msgctxt "lblLocalize"
+msgid "LOCALIZATION"
+msgstr "LOKALISOINTI"
+
+msgctxt "cbxPropLocal"
+msgid "Enable Property Localization"
+msgstr "Käytä Ominaisuuksien Lokalisointia"
+
+msgctxt "lblTheming"
+msgid "THEME OPTIONS"
+msgstr "TEEMA ASETUKSET"
+
+msgctxt "lblChromeClr"
+msgid "CHROME COLOR"
+msgstr "KROMAUKSEN VÄRI"
+
+msgctxt "enuMonoColor"
+msgid "Mono Color"
+msgstr "Yksivärinen"
+
+msgctxt "enuColorPerPage"
+msgid "Color Per Page"
+msgstr "Väri Sivua Kohti"
+
+msgctxt "cbxRemWinSize"
+msgid "Remember Window Size"
+msgstr "Muista Ikkunan Koko"
+
+msgctxt "cbxRemWinPos"
+msgid "Remember Window Position"
+msgstr "Muista Ikkunan Sijainti"
+
+msgctxt "cbxAnimation"
+msgid "Disable Page Animations"
+msgstr "Poista Sivuanimaatiot Käytöstä"
+
+msgctxt "lblGlassOpacity"
+msgid "Glass Overlay Opacity"
+msgstr "Ikkunakehyksen Läpinäkyvyys"
+
+msgctxt "lblGlassDark"
+msgid "Dark"
+msgstr "Pimeä"
+
+msgctxt "lblGlassLight"
+msgid "Light"
+msgstr "Valoisa"
+
+msgctxt "tipModSettings"
+msgid "To Export/Import/Reset the Icaros settings, thumbnailing\nand properties must be deactivated"
+msgstr "Viedäksesi/Tuodaksesi/Palauttaaksesi Icaroksen asetukset,\npikkukuvien ja ominaisuuksien poiminta täytyy olla\naktivoimattomassa tilassa"
+
+msgctxt "optExport"
+msgid "Export Settings"
+msgstr "Vie Asetukset"
+
+msgctxt "optImport"
+msgid "Import Settings"
+msgstr "Tuo Asetukset"
+
+msgctxt "optReset"
+msgid "Reset All Settings"
+msgstr "Palauta Kaikki Asetukset"
+
+msgctxt "dlgThemeAccent"
+msgid "Would you like to use this theme's default chrome colors?\n\nWarning: This will overwrite your current chrome color settings!"
+msgstr ""
+
+msgctxt "cptThemeAccent"
+msgid "Use default theme chrome colors?"
+msgstr ""
+
+msgctxt "dlgExportLoc"
+msgid "Please chose where you wish to export the Icaros settings"
+msgstr "Valitse minne haluat viedä Icaroksen asetukset"
+
+msgctxt "dlgImportWrn"
+msgid "This will overwrite ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Tämä ylikirjoittaa KAIKKI asetuksesi.\n\nHaluatko silti jatkaa?"
+
+msgctxt "dlgResetAll"
+msgid "This will reset ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Tämä palauttaa KAIKKI asetuksesi.\n\nHaluatko silti jatkaa?"
+
+msgctxt "cptResetWrn"
+msgid "Settings Reset Confirmation"
+msgstr "Asetuksien Palautuksen Varmistus"
+
+#: WELCOME OVERLAY
+msgctxt "lblWlcIntro1"
+msgid "WELCOME"
+msgstr ""
+
+msgctxt "lblWlcIntro2"
+msgid "TO THE NEW ICAROS GUI"
+msgstr ""
+
+msgctxt "lblWlcSelect"
+msgid "Please select your preferred"
+msgstr ""
+
+msgctxt "lblWlcLang"
+msgid "language:"
+msgstr ""
+
+msgctxt "lblWlcTheme"
+msgid "theme:"
+msgstr ""
+
+msgctxt "lblWlcTip1"
+msgid "Click here to change language and ui settings"
+msgstr ""
+
+msgctxt "lblWlcTip2"
+msgid "Click these icons to browse the various pages of settings"
+msgstr ""
+
+msgctxt "lblWlcTip3"
+msgid "Click the 'Activation buttons' to toggle the state of the shell extensions"
+msgstr ""
+
+msgctxt "lblWlcTip4"
+msgid "Drag and drop files onto this page to test if Icaros can thumbnail them\nThe filetype will automatically be added to the list of 'Thumbnail filetypes', if it is compatible with Icaros\n\nDropping a file that already exists in the 'Thumbnail filetypes' list, will just refresh that file's thumbnail"
+msgstr ""
+
+#: GLOBAL
+msgctxt "tipAddFiles"
+msgid "Add files"
+msgstr ""
+
+msgctxt "tipClearList"
+msgid "Clear list"
+msgstr ""
+
+msgctxt "tipWow64On"
+msgid "Icaros is enabled for 32-bit file dialogs"
+msgstr "Icaros on käytössä 32-bitin tiedostovalikoille"
+
+msgctxt "tipWow64Off"
+msgid "Icaros is disabled for 32-bit file dialogs"
+msgstr "Icaros on poistettu käytöstä 32-bitin tiedostovalikoille"
+
+msgctxt "tipBrowse"
+msgid "Browse to location"
+msgstr "Selaa sijaintiin"
+
+msgctxt "cptDonate"
+msgid "Donate"
+msgstr "Lahjoita"
+
+msgctxt "lblDonateTxt"
+msgid "If you like Icaros please consider making a donation to keep up the development of Icaros"
+msgstr "Mikäli pidät Icaroksesta ole hyvä ja harkitse Icaroksen kehityksen tukemista lahjoituksella"
+
+msgctxt "lblDonateTxt2"
+msgid "Donations received so far in {0}"
+msgstr "Lahjoituksia saatu tähän mennessä {0}"
+
+msgctxt "lblFlattrTxt"
+msgid "Become a microdonator to continuously support the development of Icaros"
+msgstr "Ryhdy mikrolahjoittajaksi tukeaksesi keskeytymättömästi Icaroksen kehitystä"
+
+msgctxt "lblCreatedBy"
+msgid "Created and developed by"
+msgstr "Ohjelman on luonut ja kehittänyt"
+
+msgctxt "tipMail"
+msgid "Send a mail to the developer of Icaros"
+msgstr "Lähetä sähköpostia Icaroksen kehittäjälle"
+
+msgctxt "tipTwitter"
+msgid "Follow Icaros development on Twitter"
+msgstr "Seuraa Icaroksen kehitystä Twitterissä"
+
+msgctxt "swtOn"
+msgid "On"
+msgstr "Päällä"
+
+msgctxt "swtOff"
+msgid "Off"
+msgstr "Pois Päältä"
+
+msgctxt "btnDone"
+msgid "Done"
+msgstr "Tehty"
+
+msgctxt "btnOK"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "btnYes"
+msgid "Yes"
+msgstr "Kyllä"
+
+msgctxt "btnNo"
+msgid "No"
+msgstr "Ei"
+
+msgctxt "btnContinue"
+msgid "Continue"
+msgstr ""
+
+msgctxt "btnGotIt"
+msgid "Got It!"
+msgstr ""
+
+msgctxt "dlgcptConf"
+msgid "Confirmation"
+msgstr "Varmistus"
+
+msgctxt "dlgcptInfo"
+msgid "Info"
+msgstr "Tietoja"
+
+msgctxt "dlgcptError"
+msgid "Error"
+msgstr ""
+
+msgctxt "btnRstColor"
+msgid "Reset Color"
+msgstr "Palauta Väri"
+
+msgctxt "btnMin"
+msgid "Minimize"
+msgstr "Minimoi"
+
+msgctxt "btnMax"
+msgid "Maximize"
+msgstr "Maksimoi"
+
+msgctxt "btnResDown"
+msgid "Restore Down"
+msgstr "Palauta pienemmäksi ikkunaksi"
+
+msgctxt "btnClose"
+msgid "Close"
+msgstr "Sulje"
+
+#~ msgctxt "dlgClearLocs"
+#~ msgid "Are you sure, you wish to clear all the entries of this list?"
+#~ msgstr "Oletko varma että haluat tyhjätä kaikki listan merkinnät?"

@@ -1,0 +1,969 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icaros\n"
+"POT-Creation-Date: 2014-10-03 15:23:34+0000\n"
+"PO-Revision-Date: 2019-04-20 01:32+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ur_PK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: EXPLORER PROPERTIES
+msgctxt "#VideoTracks"
+msgid "Video tracks"
+msgstr "ویڈیو ٹریک"
+
+msgctxt "#AudioTracks"
+msgid "Audio tracks"
+msgstr "آڈیو ٹریک"
+
+msgctxt "#SubtitleTracks"
+msgid "Subtitle tracks"
+msgstr "ذیلی ٹریک"
+
+msgctxt "#ContentCompression"
+msgid "Content compression"
+msgstr "مواد کمپریشن"
+
+msgctxt "#ContainsChapters"
+msgid "Contains chapters"
+msgstr "بابوں پر مشتمل"
+
+msgctxt "#BitDepth"
+msgid "Bit depth"
+msgstr "بٹ گہرائی"
+
+msgctxt "#SubtitleGroup"
+msgid "Subtitles"
+msgstr "ذیلی عنوان"
+
+#: MAIN WINDOW
+msgctxt "tglThumbnail"
+msgid "THUMBNAILING"
+msgstr "تھمب نیل"
+
+msgctxt "tglProperty"
+msgid "PROPERTIES"
+msgstr "خصوصیات"
+
+msgctxt "tglCache"
+msgid "CACHE"
+msgstr "کیش"
+
+msgctxt "tglTools"
+msgid "TOOLS"
+msgstr "آلے"
+
+msgctxt "tglDebug"
+msgid "DEBUG"
+msgstr ""
+
+msgctxt "tglAbout"
+msgid "ABOUT"
+msgstr "بارے میں"
+
+msgctxt "tglUiSettings"
+msgid "ui settings"
+msgstr "ui ترتیبات"
+
+msgctxt "stActivated"
+msgid "ACTIVATED"
+msgstr "چالو"
+
+msgctxt "stDeactivated"
+msgid "DEACTIVATED"
+msgstr "غیر فعال"
+
+msgctxt "stDisabled"
+msgid "DISABLED"
+msgstr "غیر فعال"
+
+msgctxt "stStatic"
+msgid "ENABLED (STATIC)"
+msgstr "فعال (اسٹیٹک)"
+
+msgctxt "stDynamic"
+msgid "ENABLED (DYNAMIC)"
+msgstr "فعال (متحرک)"
+
+msgctxt "stNotInstalled"
+msgid "NOT INSTALLED"
+msgstr "انسٹال نہیں"
+
+msgctxt "stIndexing"
+msgid "INDEXING..."
+msgstr "انڈیکسنگ..."
+
+#: THUMBNAIL PAGE
+msgctxt "cptFiletypes"
+msgid "THUMBNAIL FILETYPES"
+msgstr "تھمب نیل فائل کی اقسام"
+
+msgctxt "lblPresets"
+msgid "PRESET:"
+msgstr "پیش سیٹ:"
+
+msgctxt "cptSettings"
+msgid "SETTINGS"
+msgstr "ترتیبات"
+
+msgctxt "lblOffset"
+msgid "Thumbnail Offset"
+msgstr "تھمب نیل آفسیٹ"
+
+msgctxt "lblPrefTime"
+msgid "Prefer Timestamp"
+msgstr "ٹائمسٹیمپ ترجیح دیں"
+
+msgctxt "cbxBlkDtct"
+msgid "Enable black/white frame detection"
+msgstr "سیاہ / سفید فریم  کهوج  کو فعال کریں"
+
+msgctxt "lblThreshold"
+msgid "Threshold"
+msgstr "تھراشول"
+
+msgctxt "cbxShowOverlay"
+msgid "Display icon overlays on thumbnails"
+msgstr "نمائش آئکن تھمب نیل پر اووریاں"
+
+msgctxt "cbxShowVidAdorn"
+msgid "Display movie reel on video thumbnails"
+msgstr "ویڈیو تمبنےلوں پر فلم رییل نمائش کریں"
+
+msgctxt "cbxCoverArt"
+msgid "Use embedded Cover Art for thumbnails"
+msgstr "تمبنےل کے لئے سرایت شدہ آرٹ فن کا استعمال کریں"
+
+msgctxt "cbxCoverArtAny"
+msgid "Use any embedded image as Cover Art"
+msgstr ""
+
+msgctxt "cbxLandscape"
+msgid "Prefer Landscape Covers"
+msgstr "Landscape Coverترجیح دیں"
+
+msgctxt "tipAddTypes"
+msgid "Add New Thumbnail Filetypes"
+msgstr "نئی تھمب نیل فائل ٹائپ شامل کریں"
+
+msgctxt "tipBlkDtct"
+msgid "With this option enabled, Icaros will perform a quick and simple\nscan of the grabbed frame. If the frame is either too dark or too\nlight, Icaros will skip forward and try to find a better suited frame."
+msgstr "س اختیار کے ساتھ فعال ہونے کے باوجود، Icaros ایک تیز اور سادہ کام کرے گا\nپکڑا فریم کی اسکین. اگر فریم بہت تاریک یا بہت ہی ہے\nروشنی، آئیرس آگے بڑھیں گے اور بہتر مناسب فریم تلاش کرنے کی کوشش کریں گے."
+
+#, fuzzy
+msgctxt "tipCoverArt"
+msgid "When Cover Art is enabled, Icaros will look for embedded\ncover art in files that support it while generating thumbnails.\nIf a cover is found, it will be used as thumbnail, otherwise\nIcaros will automatically fall back to normal thumbnailing.\n\nNote: This should not affect the thumbnailing speed in any\nnoticeable way."
+msgstr "جب آرٹ آرٹ کو فعال کیا جاتا ہے تو، Icaros سرایت کے لئے نظر آئے گا\nفائلوں میں کور آرٹ اس کی حمایت کرتے ہیں، جبکہ تمبنےل پیدا کرتے ہیں.\nاگر کوئی ڈھونڈتا ہے، تو اس کا تھمب نیل کے طور پر استعمال کیا جائے گا، دوسری صورت میں\nIcaros خود کار طریقے سے عام تھمب نیل کرنے کے لئے واپس آ جائے گا.\n\nنوٹ: یہ کسی میں تھمب نیل کی رفتار کو متاثر نہیں کرنا چاہئے\nنمایاں انداز."
+
+msgctxt "tipCoverAny"
+msgid "With this option enabled, Icaros will use any embedded image in\nthe file as a cover, whether it follows the file specifications or not.\nImages intended as covers will always be preferred."
+msgstr ""
+
+msgctxt "tipCoverLand"
+msgid "Some MKV files contain multiple covers. With such files\nIcaros will default to using the first normal/vertical cover.\nThis option will make Icaros prioritize landscape/horizontal\ncovers instead."
+msgstr "کچھ MKV فائلوں میں ایک سے زیادہ کا احاطہ ہوتا ہے. ایسی فائلوں کے ساتھ\nIcaros پہلے عام / عمودی کور کا استعمال کرنے کے لئے ڈیفالٹ کریں گے.\nاس اختیار کو آئرکوس زمین کی تزئین / افقی کی ترجیح دیتے ہیں\nبجائے اس کا احاطہ"
+
+msgctxt "dlgcptPrstChng"
+msgid "Preset Info"
+msgstr "پیش سیٹ معلومات"
+
+msgctxt "dlgPrstChng"
+msgid "The current list contains filetypes that are not included in the selected preset.\n\nDo you wish to include these filetypes in the list?"
+msgstr "موجودہ فہرست میں فائل کی قسمیں شامل ہیں جو منتخب کردہ پیش سیٹ میں شامل نہیں ہیں.\n\nکیا آپ اس فہرست میں ان فائلوں میں شامل کرنا چاہتے ہیں؟"
+
+msgctxt "dlgPrstPsd"
+msgid "PSD is currently being handled by another thumbnail shell extension.\n\nDo you wish for Icaros to assume control of this filetype?\n(You can always remove the filetype again to undo this action)"
+msgstr ""
+
+msgctxt "dlgcptThmbCheck"
+msgid "Thumbnail Check"
+msgstr "تھمب نیل چیک"
+
+msgctxt "dlgThmbCheck"
+msgid "The following filetypes did not pass the thumbnail check:\n\n{0}\n\nDo you still wish to add them?"
+msgstr "مندرجہ بالا فائل فائلوں نے تھمب نیل کی جانچ کو منظور نہیں کیا.\n\n{0}\n\nکیا آپ اب بھی انہیں شامل کرنا چاہتے ہیں؟"
+
+msgctxt "ntfNewFiles"
+msgid "{0} new filetype(s) added ({1})"
+msgstr "{0} نئے فائل ٹائپ (شامل کردہ) ({1}) شامل ہیں"
+
+msgctxt "ntfRefresh"
+msgid "Refreshed thumbnails of {0} file(s)"
+msgstr "{0} فائل (ے) کی تازہ ترین تھمب نیل"
+
+msgctxt "ntfExtrSuccess"
+msgid "Extraction Succeeded!"
+msgstr ""
+
+msgctxt "ntfExtrFailed"
+msgid "Extraction Failed!"
+msgstr ""
+
+msgctxt "ntfTimeTaken"
+msgid "It took {0}ms"
+msgstr ""
+
+msgctxt "txtThumbUpdater"
+msgid "Drag and drop one or more files and/or folders to this page to refresh their thumbnails/icons"
+msgstr "اپنے تھمب نیل شبیہیں کو تازہ کرنے کے لئے ایک یا زیادہ فائلوں اور فولڈر کو اس صفحہ پر گھسیٹیں اور ڈراپیں"
+
+msgctxt "prstDefault"
+msgid "DEFAULT"
+msgstr "پہلے سے طے شدہ"
+
+msgctxt "prstCommon"
+msgid "COMMON"
+msgstr "عام"
+
+msgctxt "prstVidOnly"
+msgid "VIDEO ONLY"
+msgstr "صرف ویڈیو"
+
+msgctxt "prstAudOnly"
+msgid "AUDIO ONLY"
+msgstr "صرف آڈیو"
+
+msgctxt "prstMostKnown"
+msgid "MOST KNOWN"
+msgstr "سب سے زیادہ مشہور"
+
+msgctxt "prstCustom"
+msgid "CUSTOM"
+msgstr "مرضی کے مطابق"
+
+#: PROPERTIES PAGE
+msgctxt "txtPropInfo"
+msgid "With  PROPERTIES  activated, Icaros will allow you to view information such as length, width, height, artist etc. in Explorer, for any of the checked filetypes below"
+msgstr "کاروباری خصوصیات کے ساتھ، آئکوس آپ کو ذیل میں سے کسی کی جانچ پڑتال کی فائلوں کے لئے، ایکسپلورر میں لمبائی، چوڑائی، اونچائی، فنکار وغیرہ جیسے معلومات کو دیکھنے کی اجازت دے گی."
+
+msgctxt "cptVideo"
+msgid "VIDEO"
+msgstr "ویڈیو"
+
+msgctxt "cptAudio"
+msgid "AUDIO"
+msgstr "آڈیو"
+
+msgctxt "btnSelectAll"
+msgid "Select All"
+msgstr "تمام منتخب کریں"
+
+msgctxt "btnDeselectAll"
+msgid "Deselect All"
+msgstr "تمام غیر منتخب کریں"
+
+msgctxt "cbxShowUnd"
+msgid "Show [Und] on tracks with an undefined language"
+msgstr ""
+
+#: CACHE PAGE
+msgctxt "tglIndexer"
+msgid "SETTINGS"
+msgstr "ترتیبات"
+
+msgctxt "tglIndexLocs"
+msgid "LOCATIONS"
+msgstr "مقامات"
+
+msgctxt "lblCacheLocation"
+msgid "Cache Location"
+msgstr "کیش کا مقام"
+
+msgctxt "tipInvalidLocation"
+msgid "Icaros does not have permission to access current Cache Location.\nClick here to attempt to set the proper permissions.\nIf the error persists, try another directory."
+msgstr ""
+
+msgctxt "lblDriveRoot"
+msgid "Free Space on [{0}] Drive:"
+msgstr "مفت جگہ پر [{0}] ڈرائیو:"
+
+msgctxt "lblMinFreeSpace"
+msgid "Min Free Space"
+msgstr "کم سے کم خالی جگہ"
+
+msgctxt "lblMaxCacheSize"
+msgid "Max Cache Size"
+msgstr "زیادہ سے زیادہ کیش سائز"
+
+msgctxt "tipMaxCache"
+msgid "Sets the max size limit of the Icaros Cache.\nIf 0 is set, the cache size is unlimited."
+msgstr "Icaros کیش کی زیادہ سے زیادہ سائز کی حد سیٹ کرتا ہے.\nاگر 0 مقرر کیا جاتا ہے تو، کیش کا سائز لامحدود ہے."
+
+msgctxt "lblExclTypes"
+msgid "Excluded Filetypes"
+msgstr "خارج کر دیا فائل ٹائپ"
+
+msgctxt "tipUsedCache"
+msgid "{0:0.00}% of the available cache space is currently used"
+msgstr "{0: 0.00}٪ دستیاب کیش خلائی فی الحال استعمال کیا جاتا ہے"
+
+msgctxt "tipCacheSize"
+msgid "Icaros Cache Size"
+msgstr "Icaros کیش کا سائز"
+
+msgctxt "lblEntries"
+msgid "{0} entries"
+msgstr "{0} اندراجات"
+
+msgctxt "lblCacheTut1"
+msgid "With the Icaros Cache ENABLED, Icaros will keep a local record of all thumbnails in an internal cache.\nThis allows Icaros to regenerate any cached thumbnail almost instantly in case Windows Explorer loses them.\n"
+msgstr "Icaros کیش ENLLED کے ساتھ، Icaros ایک اندرونی کیش میں تمام تمبنےلوں کی ایک مقامی ریکارڈ رکھیں گے.\nیہ Icaros ونڈوز ایکسپلورر ان کو کھو دیا ہے کے طور پر تقریبا فوری طور پر کسی بھی کیش تھمب نیل کی بحال کرنے کی اجازت دیتا ہے.\n"
+
+msgctxt "lblCacheTut2"
+msgid "\nBy adding folders to the LOCATIONS page, and clicking the Build button below, it is possible to fill the cache\ndirectly from within IcarosConfig."
+msgstr "\nLOCATIONS کے صفحے پر فولڈرز کو جوڑ کر اور نیچے کی تعمیر کے بٹن کو کلک کرکے، کیش کو بھرنے کے لئے ممکن ہے\nبراہ راست IcarosConfig کے اندر سے."
+
+msgctxt "lblCacheSt1"
+msgid "STATIC"
+msgstr "جامد"
+
+msgctxt "lblCacheSt2"
+msgid "DYNAMIC"
+msgstr "متحرک"
+
+msgctxt "lblCacheStInfo1"
+msgid "allows Icaros to retrieve cached thumbnails, but only IcarosConfig can modify the cache."
+msgstr "Icaros کیشف تمبنےلوں کو دوبارہ حاصل کرنے کی اجازت دیتا ہے، لیکن صرف IcarosConfig کیش میں ترمیم کرسکتا ہے."
+
+msgctxt "lblCacheStInfo2"
+msgid "allows Icaros to retrieve cached thumbnails, as well as dynamically add any new thumbnails to the cache."
+msgstr "Icaros کیشمی تمبنےلوں کو دوبارہ حاصل کرنے کے ساتھ ساتھ کسی بھی نئے تمبنےل کیش میں متحرک طور پر شامل کرنے کی اجازت دیتا ہے."
+
+msgctxt "lblStatus"
+msgid "Status:"
+msgstr "حالت:"
+
+msgctxt "lblProgress"
+msgid "Progress:"
+msgstr "پیش رفت:"
+
+msgctxt "lblCompleted"
+msgid "Completed:"
+msgstr "مکمل:"
+
+msgctxt "lblFailed"
+msgid "Failed:"
+msgstr "ناکامی:"
+
+msgctxt "btnFailed"
+msgid "View"
+msgstr "دیکھیں"
+
+msgctxt "btnBuild"
+msgid "Build Cache"
+msgstr "کیش تعمیر کریں"
+
+msgctxt "btnRebuild"
+msgid "Rebuild Cache"
+msgstr "کیش بنانا"
+
+msgctxt "btnCancel"
+msgid "Cancel"
+msgstr "منسوخ کریں"
+
+msgctxt "btnClearCache"
+msgid "Clear Cache"
+msgstr "صاف کیش"
+
+msgctxt "lblSetLocInfo"
+msgid "At least one location must be added to use the indexer"
+msgstr "انڈیکس کا استعمال کرنے کے لئے کم سے کم ایک جگہ شامل کرنا لازمی ہے"
+
+msgctxt "dlgClrIcCache"
+msgid "You are about to delete the Icaros Cache.\nDo you still wish to proceed?"
+msgstr "آپ Icaros کیش کو ختم کرنے کے بارے میں ہیں.\nکیا آپ اب بھی آگے بڑھنا چاہتے ہیں؟"
+
+msgctxt "dlgCacheLoc"
+msgid "Select a thumbnail cache location"
+msgstr "تھمب نیل کیش کا مقام منتخب کریں"
+
+msgctxt "dlgcptFailed"
+msgid "FAILED FILES"
+msgstr "ناکام فائلوں"
+
+msgctxt "tipOpenDirSelect"
+msgid "Open folder and select file"
+msgstr "فولڈر کھولیں اور فائل منتخب کریں"
+
+msgctxt "btnSaveList"
+msgid "Save List"
+msgstr "محفوظ کریں فہرست"
+
+msgctxt "stsIdxerInit"
+msgid "Indexer Initialized"
+msgstr "انڈیکس کا آغاز"
+
+msgctxt "stsCollect"
+msgid "Preparing files for processing..."
+msgstr "پروسیسنگ کے لئے فائلوں کی تیاری ..."
+
+msgctxt "stsIdxFiles"
+msgid "Indexing files..."
+msgstr "مسلوں کی اشاریہ سازی..."
+
+msgctxt "stsIdxFolders"
+msgid "Indexing folders..."
+msgstr "پوشے کی اشاریہ کاری..."
+
+msgctxt "stsIdxSuccess"
+msgid "Indexing Completed Successfully"
+msgstr "کامیابی سے مکمل اشاریہ کاری"
+
+msgctxt "stsIdxFailed"
+msgid "Indexing Failed"
+msgstr "اشاریہ کاری ناکام"
+
+msgctxt "stsIdxCancel"
+msgid "Indexing was cancelled"
+msgstr "اشاریہ کاری منسوخ کر دی گئی"
+
+msgctxt "stsIdxComplete"
+msgid "Indexing Completed"
+msgstr "اشاریہ کاری مکمل"
+
+msgctxt "lblTimeElapsed"
+msgid "Took: {}h {}m {}s {}ms"
+msgstr ""
+
+msgctxt "stsEHash"
+msgid "Failed to calculate proper file hash"
+msgstr "مناسب مسل ہیش کا حساب لگانے میں ناکام"
+
+msgctxt "stsEThread"
+msgid "Failed to initialize thread"
+msgstr "موضوعات کو شروعات کرنے میں ناکام"
+
+msgctxt "stsECacheInit"
+msgid "Failed to initialize Icaros Cache"
+msgstr "Icaros کیش کو شروعات کرنے میں ناکام"
+
+msgctxt "stsEServerInit"
+msgid "Failed to initialize Icaros Thumbnail Provider"
+msgstr "Icaros  تھمب نیل مھیا ابتدا کرنے میں ناکام ہو گیا"
+
+msgctxt "stsECacheLimit"
+msgid "Maximum cache size reached"
+msgstr "زیادہ سے زیادہ کیش سائز تک پہنچ گئی"
+
+msgctxt "stsESpaceLimit"
+msgid "Minimum space limit reached"
+msgstr "کم از کم جگہ حد تک پہنچ گئی"
+
+msgctxt "stsEDBAccess"
+msgid "Failed to access the database"
+msgstr "ڈیٹا بیس تک رسائی حاصل کرنے میں ناکام"
+
+msgctxt "stsEIDXAccess"
+msgid "Failed to access the index"
+msgstr "انڈیکس تک رسائی حاصل کرنے میں ناکام"
+
+msgctxt "stsERegAccess"
+msgid "Failed to access the registry"
+msgstr "رجسٹری تک رسائی حاصل کرنے میں ناکام"
+
+msgctxt "stsECleanUp"
+msgid "Clean up was incomplete"
+msgstr "صاف کرنا نامکمل تھا"
+
+msgctxt "stsENoFiles"
+msgid "Indexer found no files with included filetypes in current cache locations"
+msgstr ""
+
+msgctxt "stsEUnknown"
+msgid "Undetermined result"
+msgstr "غیر معتبر نتائج"
+
+msgctxt "btnAdd"
+msgid "Add"
+msgstr "شامل کریں"
+
+msgctxt "btnRemove"
+msgid "Remove"
+msgstr "ہٹا دیں"
+
+msgctxt "btnClear"
+msgid "Clear"
+msgstr "واضح کریں"
+
+msgctxt "hdrLocation"
+msgid "Included Locations"
+msgstr "شامل مقامات"
+
+msgctxt "hdrViewSize"
+msgid "View Size"
+msgstr "سائز دیکھیں"
+
+msgctxt "hdrRecursive"
+msgid "Recursive"
+msgstr "دوبارہ"
+
+msgctxt "hdrExcluded"
+msgid "Excluded Locations"
+msgstr "خارج کردہ مقامات"
+
+msgctxt "enuSmall"
+msgid "Small"
+msgstr "چھوٹے"
+
+msgctxt "enuMedium"
+msgid "Large"
+msgstr "بڑے"
+
+msgctxt "enuLarge"
+msgid "XL"
+msgstr "اضافی بڑا"
+
+msgctxt "enuXL"
+msgid "Win 8 Icons"
+msgstr "ونڈوز 8 شبیہیں"
+
+msgctxt "enuXXL"
+msgid "Win 10 Icons"
+msgstr "ونڈوز 10 شبیہیں"
+
+msgctxt "dlgAddDir"
+msgid "Please select the directory, you wish to add to the list"
+msgstr "براہ مہربانی ڈائرکٹری کو منتخب کریں، آپ اس فہرست میں شامل کرنا چاہتے ہیں"
+
+msgctxt "dlgClearLocs"
+msgid "Are you sure, you wish to clear all the entries off this list?"
+msgstr ""
+
+msgctxt "dlgDirAccessErr"
+msgid "The selected folder does not have the proper Read/Write permissions to use as Cache Location.\nWill you allow Icaros to add the necessary user permissions to this folder?"
+msgstr "منتخب کردہ فولڈر میں کیش کی جگہ کے طور پر استعمال کرنے کے لئے جائز پڑھنے / لکھنا اجازت نہیں ہے.\nکیا آپ کو اس فولڈر کو لازمی صارف کی اجازتوں کو شامل کرنے کے لئے Icaros کی اجازت دی جائے گی؟"
+
+msgctxt "dlgMoveCache"
+msgid "You are about to change the Cache Location. Would you like to move the existing cache to new the location?"
+msgstr "آپ کیش کا مقام تبدیل کرنے کے بارے میں ہیں. کیا آپ موجودہ کیش نئے جگہ پر منتقل کرنا چاہتے ہیں؟"
+
+msgctxt "dlgMoveError"
+msgid "The Icaros Cache is currently locked by another process, please try restarting Explorer, then try again.\nIf it is still locked after restarting Explorer, a reboot may be required."
+msgstr ""
+
+msgctxt "cptIcRunWrn"
+msgid "Close IcarosConfig confirmation"
+msgstr ""
+
+msgctxt "dlgIcRunWrn"
+msgid "The Icaros cache indexer is still running.\nAre you sure you wish to close IcarosConfig and stop the indexer?"
+msgstr ""
+
+#: TOOLS PAGE
+msgctxt "cptWinCache"
+msgid "WINDOWS THUMBNAIL CACHE"
+msgstr "ونڈوز تھامنییل کاکی"
+
+msgctxt "lblWinCacheSize"
+msgid "Cache Size:  {0} MB"
+msgstr "کیش سائز: {0} ایم بی"
+
+msgctxt "btnWinCacheClear"
+msgid "Clear"
+msgstr "صاف کریں"
+
+msgctxt "tipOpenCacheLoc"
+msgid "Open Windows thumbnail cache directory"
+msgstr "ونڈوز تھمب نیل کیش ڈائرکٹری کھولیں"
+
+msgctxt "cptExplorer"
+msgid "WINDOWS EXPLORER"
+msgstr "ونڈوز ایکسپلورر"
+
+msgctxt "btnExpRefresh"
+msgid "Refresh"
+msgstr "ریفریش کریں"
+
+msgctxt "btnExpRestart"
+msgid "Restart"
+msgstr "دوبارہ شروع کریں"
+
+msgctxt "cptResetTypes"
+msgid "RESET NATIVE FILETYPES"
+msgstr "ری سیٹ نیٹ ورک کے اقسام"
+
+msgctxt "btnResetThumb"
+msgid "Reset Thumbnail Filetypes"
+msgstr "تھمب نیل فائل ٹائپ دوبارہ کریں"
+
+msgctxt "btnResetProps"
+msgid "Reset Property Filetypes"
+msgstr "تھمب نیل فائل ٹائپ دوبارہ کریں"
+
+msgctxt "txtResetLimits"
+msgid "The native filetypes can only be reset while Icaros thumbnailing\nand/or properties are not activated"
+msgstr "آئی آر آر تھمب نیل ہونے کے دوران مقامی فائل ٹائپ صرف ری سیٹ کیے جا سکتے ہیں\nاور / یا خصوصیات فعال نہیں ہیں"
+
+msgctxt "dlgClrCacheErr"
+msgid "The Thumbnail Cache is currently in use.\n Wait a moment, then try again."
+msgstr "تھمب نیل کیش میں اس وقت استعمال میں ہے.\n  ایک لمحہ انتظار کرو، پھر دوبارہ کوشش کریں."
+
+msgctxt "dlgcptExpRestrt"
+msgid "Restart Explorer"
+msgstr "ایکسپلورر دوبارہ شروع کریں"
+
+msgctxt "dlgExpRestrt"
+msgid "Warning!\nRestarting Explorer may interrupt file copy/move operations,\nand may cause certain processes to halt.\n\nDo you wish to continue?"
+msgstr "انتباہ!\nایکسپلورر دوبارہ شروع کر سکتے ہیں فائل کاپی / منتقل آپریشن میں مداخلت کر سکتے ہیں،\nاور بعض عمل کو روکنے کی وجہ سے ہوسکتا ہے.\n\nکیا آپ جاری رکھنا چاہتے ہیں؟"
+
+msgctxt "dlgRstThumb"
+msgid "Are you sure, you want to reset all native filetypes back to their default thumbnail providers?"
+msgstr "کیا آپ واقعی یقین رکھتے ہیں، آپ اپنی اصل فائل فائلوں کو اپنے ڈیفالٹ تھمب نیل فراہم کرنے والوں کو دوبارہ ری سیٹ کرنا چاہتے ہیں؟"
+
+msgctxt "dlgRstProps"
+msgid "Are you sure, you want to reset all native filetypes back to their default property handlers and property lists?"
+msgstr "کیا آپ واقعی اس بات کا یقین کر رہے ہیں، آپ اپنے مقامی فائل ٹائپز کو اپنے ڈیفالٹ پراپرٹی ہینڈلر اور جائیداد کی فہرستوں میں دوبارہ ری سیٹ کرنا چاہتے ہیں؟"
+
+msgctxt "dlgRstSuccess"
+msgid "All native filetypes was reset successfully!"
+msgstr "تمام مقامی فائلوں کی قسمیں کامیابی سے دوبارہ ترتیب دی گئی تھیں!"
+
+#: DEBUG PAGE
+msgctxt "lblTest"
+msgid "TEST:"
+msgstr ""
+
+msgctxt "lblSize"
+msgid "SIZE:"
+msgstr ""
+
+msgctxt "enuThumbnailViaIcaros"
+msgid "THUMBNAILING VIA ICAROS"
+msgstr ""
+
+msgctxt "enuThumbnailViaExplorer"
+msgid "THUMBNAILING VIA EXPLORER"
+msgstr ""
+
+msgctxt "enuPropertiesViaIcaros"
+msgid "PROPERTIES VIA ICAROS"
+msgstr ""
+
+msgctxt "enuPropertiesViaExplorer"
+msgid "PROPERTIES VIA EXPLORER"
+msgstr ""
+
+msgctxt "btnRunAllTest"
+msgid "Run All"
+msgstr ""
+
+msgctxt "btnRunTest"
+msgid "Run ({0})"
+msgstr ""
+
+msgctxt "hdrTestFiles"
+msgid "Test Files"
+msgstr ""
+
+msgctxt "hdrTime"
+msgid "Time"
+msgstr ""
+
+msgctxt "hdrShellExtension"
+msgid "Shell Extension"
+msgstr ""
+
+msgctxt "hdrCache"
+msgid "From Cache"
+msgstr ""
+
+msgctxt "lblDropFiles"
+msgid "DROP FILES AND/OR FOLDERS YOU WISH TO TEST HERE"
+msgstr ""
+
+msgctxt "lblNoProperties"
+msgid "NO PROPERTIES HAS BEEN GENERATED FOR THIS FILE\nUSE THE 'PROPERTY TEST' TO VIEW PROPERTIES FOR THIS FILE"
+msgstr ""
+
+msgctxt "lblLevel"
+msgid "LVL:"
+msgstr ""
+
+msgctxt "lblDebugCount"
+msgid "{0} ENTRIES"
+msgstr ""
+
+msgctxt "tipRefresh"
+msgid "Refresh the thumbnails of the selected files in Explorer"
+msgstr ""
+
+msgctxt "tipSubDirDepth"
+msgid "The level/depth of subdirectories to scan through when getting files from a dropped folder (1-9)"
+msgstr ""
+
+msgctxt "tipClosePanel"
+msgid "Close panel"
+msgstr ""
+
+msgctxt "tipAutoScrollOn"
+msgid "Disable auto scrolling"
+msgstr ""
+
+msgctxt "tipAutoScrollOff"
+msgid "Enable auto scrolling"
+msgstr ""
+
+msgctxt "tipThumbPlaceholder"
+msgid "Use one of the two 'Thumbnail tests' to view the thumbnail for this file"
+msgstr ""
+
+msgctxt "tipThumbPreview"
+msgid "Thumbnail dimensions:\n{0} x {1}"
+msgstr ""
+
+#: ABOUT PAGE
+msgctxt "lnkSupport"
+msgid "Follow Beta development of Icaros or get support"
+msgstr "Icaros کی ترقی کے لئے بیٹا یا حمایت حاصل کریں"
+
+msgctxt "lblSpcTks"
+msgid "SPECIAL THANKS TO"
+msgstr "خصوصی شکریہ"
+
+#: UI SETTINGS PAGE
+msgctxt "lblLocalize"
+msgid "LOCALIZATION"
+msgstr "لوکلائزیشن"
+
+msgctxt "cbxPropLocal"
+msgid "Enable Property Localization"
+msgstr "پراپرٹی لوکلائزیشن کو فعال کریں"
+
+msgctxt "lblTheming"
+msgid "THEME OPTIONS"
+msgstr "خیالیہ کے اختیارات"
+
+msgctxt "lblChromeClr"
+msgid "CHROME COLOR"
+msgstr "کروم رنگ"
+
+msgctxt "enuMonoColor"
+msgid "Mono Color"
+msgstr "مونو رنگ"
+
+msgctxt "enuColorPerPage"
+msgid "Color Per Page"
+msgstr "فی صفحہ رنگ"
+
+msgctxt "cbxRemWinSize"
+msgid "Remember Window Size"
+msgstr "ونڈو کا سائز یاد رکھیں"
+
+msgctxt "cbxRemWinPos"
+msgid "Remember Window Position"
+msgstr "ونڈو کی حیثیت کو یاد رکھیں"
+
+msgctxt "cbxAnimation"
+msgid "Disable Page Animations"
+msgstr "پیج متحرک غیر فعال کریں"
+
+msgctxt "lblGlassOpacity"
+msgid "Glass Overlay Opacity"
+msgstr "شیشے اوورلے کی دھندلاپن"
+
+msgctxt "lblGlassDark"
+msgid "Dark"
+msgstr "گہرا"
+
+msgctxt "lblGlassLight"
+msgid "Light"
+msgstr "دهیما"
+
+msgctxt "tipModSettings"
+msgid "To Export/Import/Reset the Icaros settings, thumbnailing\nand properties must be deactivated"
+msgstr "تھمب نیلنگ، آئکاروس ترتیبات کو برآمد / برآمد / ری سیٹ کرنے کے لئے\nاور خصوصیات غیر فعال ہونا ضروری ہے"
+
+msgctxt "optExport"
+msgid "Export Settings"
+msgstr "برآمد کی ترتیبات"
+
+msgctxt "optImport"
+msgid "Import Settings"
+msgstr "ترتیبات درآمد کریں"
+
+msgctxt "optReset"
+msgid "Reset All Settings"
+msgstr "تمام ترتیبات کو دوبارہ ترتیب دیں"
+
+msgctxt "dlgThemeAccent"
+msgid "Would you like to use this theme's default chrome colors?\n\nWarning: This will overwrite your current chrome color settings!"
+msgstr ""
+
+msgctxt "cptThemeAccent"
+msgid "Use default theme chrome colors?"
+msgstr ""
+
+msgctxt "dlgExportLoc"
+msgid "Please chose where you wish to export the Icaros settings"
+msgstr "برائے مہربانی منتخب کریں کہ آپ آئیروس کی ترتیبات کہاں برآمد کرنا چاہتے ہیں"
+
+msgctxt "dlgImportWrn"
+msgid "This will overwrite ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "یہ آپ کی تمام موجودہ ترتیبات کو اوور کر دیں گے.\n\nکیا آپ اب بھی جاری رکھنا چاہتے ہیں؟"
+
+msgctxt "dlgResetAll"
+msgid "This will reset ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "یہ آپ کی تمام موجودہ ترتیبات کو دوبارہ ترتیب دے گا.\n\nکیا آپ اب بھی جاری رکھنا چاہتے ہیں؟"
+
+msgctxt "cptResetWrn"
+msgid "Settings Reset Confirmation"
+msgstr "ترتیبات کی تصدیق دوبارہ ترتیب دیں"
+
+#: WELCOME OVERLAY
+msgctxt "lblWlcIntro1"
+msgid "WELCOME"
+msgstr ""
+
+msgctxt "lblWlcIntro2"
+msgid "TO THE NEW ICAROS GUI"
+msgstr ""
+
+msgctxt "lblWlcSelect"
+msgid "Please select your preferred"
+msgstr ""
+
+msgctxt "lblWlcLang"
+msgid "language:"
+msgstr ""
+
+msgctxt "lblWlcTheme"
+msgid "theme:"
+msgstr ""
+
+msgctxt "lblWlcTip1"
+msgid "Click here to change language and ui settings"
+msgstr ""
+
+msgctxt "lblWlcTip2"
+msgid "Click these icons to browse the various pages of settings"
+msgstr ""
+
+msgctxt "lblWlcTip3"
+msgid "Click the 'Activation buttons' to toggle the state of the shell extensions"
+msgstr ""
+
+msgctxt "lblWlcTip4"
+msgid "Drag and drop files onto this page to test if Icaros can thumbnail them\nThe filetype will automatically be added to the list of 'Thumbnail filetypes', if it is compatible with Icaros\n\nDropping a file that already exists in the 'Thumbnail filetypes' list, will just refresh that file's thumbnail"
+msgstr ""
+
+#: GLOBAL
+msgctxt "tipAddFiles"
+msgid "Add files"
+msgstr ""
+
+msgctxt "tipClearList"
+msgid "Clear list"
+msgstr ""
+
+msgctxt "tipWow64On"
+msgid "Icaros is enabled for 32-bit file dialogs"
+msgstr "32-بٹ فائل ڈائیلاگ کے لئے Icaros فعال ہے"
+
+msgctxt "tipWow64Off"
+msgid "Icaros is disabled for 32-bit file dialogs"
+msgstr "32-بٹ فائل ڈائیلاگ کے لئے Icaros غیر فعال ہے"
+
+msgctxt "tipBrowse"
+msgid "Browse to location"
+msgstr "مقام پر براؤز کریں"
+
+msgctxt "cptDonate"
+msgid "Donate"
+msgstr "عطیہ"
+
+msgctxt "lblDonateTxt"
+msgid "If you like Icaros please consider making a donation to keep up the development of Icaros"
+msgstr "اگر آپ Icaros پسند کرتے ہیں تو براہ مہربانی Icaros کی ترقی کو برقرار رکھنے کے لئے عطیہ بنانے پر غور کریں"
+
+msgctxt "lblDonateTxt2"
+msgid "Donations received so far in {0}"
+msgstr "امداد میں ابھی تک {0}"
+
+msgctxt "lblFlattrTxt"
+msgid "Become a microdonator to continuously support the development of Icaros"
+msgstr "Icaros کی ترقی کو مسلسل حمایت کرنے کے لئے مائیکروڈنٹر بنیں"
+
+msgctxt "lblCreatedBy"
+msgid "Created and developed by"
+msgstr "پیدا اور کی طرف سے تیار"
+
+msgctxt "tipMail"
+msgid "Send a mail to the developer of Icaros"
+msgstr "Icaros کے ڈویلپر کو میل بھیجیں"
+
+msgctxt "tipTwitter"
+msgid "Follow Icaros development on Twitter"
+msgstr "ٹویٹر پر Icaros ترقی کی پیروی کریں"
+
+msgctxt "swtOn"
+msgid "On"
+msgstr "شروع"
+
+msgctxt "swtOff"
+msgid "Off"
+msgstr "بند"
+
+msgctxt "btnDone"
+msgid "Done"
+msgstr "ہو گیا"
+
+msgctxt "btnOK"
+msgid "OK"
+msgstr "ٹھیک ہے"
+
+msgctxt "btnYes"
+msgid "Yes"
+msgstr "جی ہاں"
+
+msgctxt "btnNo"
+msgid "No"
+msgstr "نہیں"
+
+msgctxt "btnContinue"
+msgid "Continue"
+msgstr ""
+
+msgctxt "btnGotIt"
+msgid "Got It!"
+msgstr ""
+
+msgctxt "dlgcptConf"
+msgid "Confirmation"
+msgstr "تصدیق"
+
+msgctxt "dlgcptInfo"
+msgid "Info"
+msgstr "معلومات"
+
+msgctxt "dlgcptError"
+msgid "Error"
+msgstr ""
+
+msgctxt "btnRstColor"
+msgid "Reset Color"
+msgstr "رنگ ری سیٹ کریں"
+
+msgctxt "btnMin"
+msgid "Minimize"
+msgstr "کم سے کم"
+
+msgctxt "btnMax"
+msgid "Maximize"
+msgstr "زیادہ سے زیادہ"
+
+msgctxt "btnResDown"
+msgid "Restore Down"
+msgstr "نیچے بحال کریں"
+
+msgctxt "btnClose"
+msgid "Close"
+msgstr "بند کریں"
+
+#~ msgctxt "dlgClearLocs"
+#~ msgid "Are you sure, you wish to clear all the entries of this list?"
+#~ msgstr "کیا آپ واقعی اس فہرست کے تمام درجے کو صاف کرنا چاہتے ہیں؟"

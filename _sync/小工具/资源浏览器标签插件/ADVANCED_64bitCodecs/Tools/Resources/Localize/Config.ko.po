@@ -1,0 +1,985 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icaros_v3.1.0\n"
+"POT-Creation-Date: 2014-10-03 15:23:34+0000\n"
+"PO-Revision-Date: 2020-02-25 14:15+0900\n"
+"Last-Translator: jewani <akrsodhk@naver.com>\n"
+"Language-Team: jewani\n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: EXPLORER PROPERTIES
+msgctxt "#VideoTracks"
+msgid "Video tracks"
+msgstr "비디오 트랙"
+
+msgctxt "#AudioTracks"
+msgid "Audio tracks"
+msgstr "오디오 트랙"
+
+msgctxt "#SubtitleTracks"
+msgid "Subtitle tracks"
+msgstr "자막 트랙"
+
+msgctxt "#ContentCompression"
+msgid "Content compression"
+msgstr "콘텐츠 압축"
+
+msgctxt "#ContainsChapters"
+msgid "Contains chapters"
+msgstr "챕터 포함"
+
+msgctxt "#BitDepth"
+msgid "Bit depth"
+msgstr "비트 심도"
+
+msgctxt "#SubtitleGroup"
+msgid "Subtitles"
+msgstr "자막"
+
+#: MAIN WINDOW
+msgctxt "tglThumbnail"
+msgid "THUMBNAILING"
+msgstr "썸네일"
+
+msgctxt "tglProperty"
+msgid "PROPERTIES"
+msgstr "속성"
+
+msgctxt "tglCache"
+msgid "CACHE"
+msgstr "캐시"
+
+msgctxt "tglTools"
+msgid "TOOLS"
+msgstr "도구"
+
+msgctxt "tglDebug"
+msgid "DEBUG"
+msgstr ""
+
+msgctxt "tglAbout"
+msgid "ABOUT"
+msgstr "이카로스에 관해서"
+
+msgctxt "tglUiSettings"
+msgid "ui settings"
+msgstr "인터페이스 설정"
+
+msgctxt "stActivated"
+msgid "ACTIVATED"
+msgstr "활성화"
+
+msgctxt "stDeactivated"
+msgid "DEACTIVATED"
+msgstr "비활성화"
+
+msgctxt "stDisabled"
+msgid "DISABLED"
+msgstr "해제"
+
+msgctxt "stStatic"
+msgid "ENABLED (STATIC)"
+msgstr "사용(고정)"
+
+msgctxt "stDynamic"
+msgid "ENABLED (DYNAMIC)"
+msgstr "사용(동적"
+
+msgctxt "stNotInstalled"
+msgid "NOT INSTALLED"
+msgstr "설치안함"
+
+msgctxt "stIndexing"
+msgid "INDEXING..."
+msgstr "색인중..."
+
+#: THUMBNAIL PAGE
+msgctxt "cptFiletypes"
+msgid "THUMBNAIL FILETYPES"
+msgstr "썸네일 확장자"
+
+msgctxt "lblPresets"
+msgid "PRESET:"
+msgstr "기본 설정:"
+
+msgctxt "cptSettings"
+msgid "SETTINGS"
+msgstr "설정"
+
+msgctxt "lblOffset"
+msgid "Thumbnail Offset"
+msgstr "썸네일 위치 조정"
+
+msgctxt "lblPrefTime"
+msgid "Prefer Timestamp"
+msgstr "타임스템프 우선(선호)"
+
+msgctxt "cbxBlkDtct"
+msgid "Enable black/white frame detection"
+msgstr "흑백 프레임 감지 적용"
+
+msgctxt "lblThreshold"
+msgid "Threshold"
+msgstr "임계값"
+
+msgctxt "cbxShowOverlay"
+msgid "Display icon overlays on thumbnails"
+msgstr "썸네일에 아이콘 표시"
+
+msgctxt "cbxShowVidAdorn"
+msgid "Display movie reel on video thumbnails"
+msgstr "비디오 썸네일에 영화 릴정보 표시"
+
+msgctxt "cbxCoverArt"
+msgid "Use embedded Cover Art for thumbnails"
+msgstr "내장된 썸네일용 표지 사용"
+
+msgctxt "cbxCoverArtAny"
+msgid "Use any embedded image as Cover Art"
+msgstr ""
+
+msgctxt "cbxLandscape"
+msgid "Prefer Landscape Covers"
+msgstr "파노라마/수평 형식 표지 선호"
+
+msgctxt "tipAddTypes"
+msgid "Add New Thumbnail Filetypes"
+msgstr "썸네일에 새로운 파일형식 추가"
+
+msgctxt "tipBlkDtct"
+msgid "With this option enabled, Icaros will perform a quick and simple\nscan of the grabbed frame. If the frame is either too dark or too\nlight, Icaros will skip forward and try to find a better suited frame."
+msgstr "이 옵션을 활성화하면 이카로스는 캡쳐된 프레임을 간단하고 빠르게 스캔합니다.\n 프레임이 너무 어둡거나 밝으면 \n이카로스는 프레임을 건너뛰고 좀더 나은 프레임을 찾습니다."
+
+msgctxt "tipCoverArt"
+msgid "When Cover Art is enabled, Icaros will look for embedded\ncover art in files that support it while generating thumbnails.\nIf a cover is found, it will be used as thumbnail, otherwise\nIcaros will automatically fall back to normal thumbnailing.\n\nNote: This should not affect the thumbnailing speed in any\nnoticeable way."
+msgstr ""
+
+msgctxt "tipCoverAny"
+msgid "With this option enabled, Icaros will use any embedded image in\nthe file as a cover, whether it follows the file specifications or not.\nImages intended as covers will always be preferred."
+msgstr ""
+
+msgctxt "tipCoverLand"
+msgid "Some MKV files contain multiple covers. With such files\nIcaros will default to using the first normal/vertical cover.\nThis option will make Icaros prioritize landscape/horizontal\ncovers instead."
+msgstr "일부 MKV 파일에는 여러 개의 표지가 포함되어 있습니다.\n이런 파일을 사용하면 이카로스는 첫번째에 존재하는 일반/세로 표지를 사용합니다. \n이 옵션을 사용하면 이카로스에서 파노라마/가로 표지를 우선순위로 선택합니다.\n표지를 설치합니다."
+
+msgctxt "dlgcptPrstChng"
+msgid "Preset Info"
+msgstr "사전 설정 정보"
+
+msgctxt "dlgPrstChng"
+msgid "The current list contains filetypes that are not included in the selected preset.\n\nDo you wish to include these filetypes in the list?"
+msgstr "현재 목록에는 사전 설정에 포함되지 않은 파일 형식이 포함되어 있습니다.\n\n이 파일 형식을 목록에 포함합니까?"
+
+msgctxt "dlgPrstPsd"
+msgid "PSD is currently being handled by another thumbnail shell extension.\n\nDo you wish for Icaros to assume control of this filetype?\n(You can always remove the filetype again to undo this action)"
+msgstr ""
+
+msgctxt "dlgcptThmbCheck"
+msgid "Thumbnail Check"
+msgstr "썸네일 확인"
+
+msgctxt "dlgThmbCheck"
+msgid "The following filetypes did not pass the thumbnail check:\n\n{0}\n\nDo you still wish to add them?"
+msgstr "다음 파일 형식은 썸네일에 적용되지 않습니다.\n\n{0}\n\n그래도 추가하겠습니까?"
+
+msgctxt "ntfNewFiles"
+msgid "{0} new filetype(s) added ({1})"
+msgstr "{0}새로운 파일 형식이 추가되었습니다 ({1})"
+
+msgctxt "ntfRefresh"
+msgid "Refreshed thumbnails of {0} file(s)"
+msgstr "새로 수정된 섬네일 파일 {0}개"
+
+msgctxt "ntfExtrSuccess"
+msgid "Extraction Succeeded!"
+msgstr ""
+
+msgctxt "ntfExtrFailed"
+msgid "Extraction Failed!"
+msgstr ""
+
+msgctxt "ntfTimeTaken"
+msgid "It took {0}ms"
+msgstr ""
+
+msgctxt "txtThumbUpdater"
+msgid "Drag and drop one or more files and/or folders to this page to refresh their thumbnails/icons"
+msgstr "하나 이상의 파일(폴더)를 이 페이지에 드래그하여 썸네일/아이콘을 갱신합니다"
+
+msgctxt "prstDefault"
+msgid "DEFAULT"
+msgstr "기본 설정"
+
+msgctxt "prstCommon"
+msgid "COMMON"
+msgstr "공통 설정"
+
+msgctxt "prstVidOnly"
+msgid "VIDEO ONLY"
+msgstr "비디오만 적용"
+
+msgctxt "prstAudOnly"
+msgid "AUDIO ONLY"
+msgstr "오디오만 적용"
+
+msgctxt "prstMostKnown"
+msgid "MOST KNOWN"
+msgstr "알려진 파일만 적용"
+
+msgctxt "prstCustom"
+msgid "CUSTOM"
+msgstr "사용자 설정"
+
+#: PROPERTIES PAGE
+msgctxt "txtPropInfo"
+msgid "With  PROPERTIES  activated, Icaros will allow you to view information such as length, width, height, artist etc. in Explorer, for any of the checked filetypes below"
+msgstr "속성이 활성화 되면\n이카로스는 길이, 너비, 높이, 아티스트, 오디오 트랙, 자막 트랙등과 같은 추가 정보를 정보를 탐색기에 표시합니다"
+
+msgctxt "cptVideo"
+msgid "VIDEO"
+msgstr "비디오"
+
+msgctxt "cptAudio"
+msgid "AUDIO"
+msgstr "오디오"
+
+msgctxt "btnSelectAll"
+msgid "Select All"
+msgstr "전부 선택"
+
+msgctxt "btnDeselectAll"
+msgid "Deselect All"
+msgstr "전부 해제"
+
+msgctxt "cbxShowUnd"
+msgid "Show [Und] on tracks with an undefined language"
+msgstr ""
+
+#: CACHE PAGE
+msgctxt "tglIndexer"
+msgid "SETTINGS"
+msgstr "설정"
+
+msgctxt "tglIndexLocs"
+msgid "LOCATIONS"
+msgstr "색인 위치"
+
+msgctxt "lblCacheLocation"
+msgid "Cache Location"
+msgstr "캐시 저장 장소"
+
+msgctxt "tipInvalidLocation"
+msgid "Icaros does not have permission to access current Cache Location.\nClick here to attempt to set the proper permissions.\nIf the error persists, try another directory."
+msgstr ""
+
+msgctxt "lblDriveRoot"
+msgid "Free Space on [{0}] Drive:"
+msgstr "하드 여유 공간 [{0}]"
+
+msgctxt "lblMinFreeSpace"
+msgid "Min Free Space"
+msgstr "최소 여유 공간"
+
+msgctxt "lblMaxCacheSize"
+msgid "Max Cache Size"
+msgstr "최대 캐시 크기"
+
+msgctxt "tipMaxCache"
+msgid "Sets the max size limit of the Icaros Cache.\nIf 0 is set, the cache size is unlimited."
+msgstr "이카로스가 사용하는 캐시의 최대 크기를 설정합니다.\n캐시값을 0으로 설정할 경우 캐쉬를 무제한으로 사용합니다."
+
+msgctxt "lblExclTypes"
+msgid "Excluded Filetypes"
+msgstr "제외 된 파일 형식"
+
+msgctxt "tipUsedCache"
+msgid "{0:0.00}% of the available cache space is currently used"
+msgstr "사용 가능한 캐시 용량중 {0 : 0.00} %를 캐시로 사용하고 있습니다"
+
+msgctxt "tipCacheSize"
+msgid "Icaros Cache Size"
+msgstr "이카로스 캐시 크기"
+
+msgctxt "lblEntries"
+msgid "{0} entries"
+msgstr "{0} 항목"
+
+msgctxt "lblCacheTut1"
+msgid "With the Icaros Cache ENABLED, Icaros will keep a local record of all thumbnails in an internal cache.\nThis allows Icaros to regenerate any cached thumbnail almost instantly in case Windows Explorer loses them.\n"
+msgstr "이카로스 캐시를 활성화하면 이카로스는 모든 썸네일을 저장 위치에 보관합니다. \n윈도우 탐색기에서 썸네일 이미지가 손실되어도 이카로스에 보관된 썸네일을 통해 즉시 재생성할 수 있습니다.\n"
+
+msgctxt "lblCacheTut2"
+msgid "\nBy adding folders to the LOCATIONS page, and clicking the Build button below, it is possible to fill the cache\ndirectly from within IcarosConfig."
+msgstr "\n색인 위치 탭에 폴더를 추가하고 아래의 캐시 구축을 클릭하면\n이카로스 구성에서 직접 캐시를 만들 수 있습니다."
+
+msgctxt "lblCacheSt1"
+msgid "STATIC"
+msgstr "고정"
+
+msgctxt "lblCacheSt2"
+msgid "DYNAMIC"
+msgstr "동적"
+
+msgctxt "lblCacheStInfo1"
+msgid "allows Icaros to retrieve cached thumbnails, but only IcarosConfig can modify the cache."
+msgstr "이카로스는 캐시에 저장된 썸네일을 검색할 수 있지만, 이카로스 구성에 존재하는 썸네일만 수정할 수 있습니다."
+
+msgctxt "lblCacheStInfo2"
+msgid "allows Icaros to retrieve cached thumbnails, as well as dynamically add any new thumbnails to the cache."
+msgstr "이카로스는 기록된 썸네일을 검색하고, 새로운 썸네일을 추가할 수 있습니다."
+
+msgctxt "lblStatus"
+msgid "Status:"
+msgstr "상태:"
+
+msgctxt "lblProgress"
+msgid "Progress:"
+msgstr "진행:"
+
+msgctxt "lblCompleted"
+msgid "Completed:"
+msgstr "완료:"
+
+msgctxt "lblFailed"
+msgid "Failed:"
+msgstr "실패:"
+
+msgctxt "btnFailed"
+msgid "View"
+msgstr "보기"
+
+msgctxt "btnBuild"
+msgid "Build Cache"
+msgstr "캐시 생성"
+
+msgctxt "btnRebuild"
+msgid "Rebuild Cache"
+msgstr "캐시 재생성"
+
+msgctxt "btnCancel"
+msgid "Cancel"
+msgstr "취소"
+
+msgctxt "btnClearCache"
+msgid "Clear Cache"
+msgstr "캐시 초기화"
+
+msgctxt "lblSetLocInfo"
+msgid "At least one location must be added to use the indexer"
+msgstr "색인을 사용하려면 하나 이상의 위치를 추가해야합니다"
+
+msgctxt "dlgClrIcCache"
+msgid "You are about to delete the Icaros Cache.\nDo you still wish to proceed?"
+msgstr "이카로스 캐시를 삭제하려고합니다.\n계속 진행 하시겠습니까?"
+
+msgctxt "dlgCacheLoc"
+msgid "Select a thumbnail cache location"
+msgstr "썸네일 캐시 위치 선택"
+
+msgctxt "dlgcptFailed"
+msgid "FAILED FILES"
+msgstr "실패한 파일"
+
+msgctxt "tipOpenDirSelect"
+msgid "Open folder and select file"
+msgstr "폴더를 열고 파일을 선택하세요"
+
+msgctxt "btnSaveList"
+msgid "Save List"
+msgstr "리스트 저장"
+
+msgctxt "stsIdxerInit"
+msgid "Indexer Initialized"
+msgstr "색인 초기화"
+
+msgctxt "stsCollect"
+msgid "Preparing files for processing..."
+msgstr "파일 처리중..."
+
+msgctxt "stsIdxFiles"
+msgid "Indexing files..."
+msgstr "파일 색인중..."
+
+msgctxt "stsIdxFolders"
+msgid "Indexing folders..."
+msgstr "폴더 색인중..."
+
+msgctxt "stsIdxSuccess"
+msgid "Indexing Completed Successfully"
+msgstr "색인이 성공적으로 완료되었습니다"
+
+msgctxt "stsIdxFailed"
+msgid "Indexing Failed"
+msgstr "색인 실패"
+
+msgctxt "stsIdxCancel"
+msgid "Indexing was cancelled"
+msgstr "색인이 취소되었습니다"
+
+msgctxt "stsIdxComplete"
+msgid "Indexing Completed"
+msgstr "색인 완료"
+
+msgctxt "lblTimeElapsed"
+msgid "Took: {}h {}m {}s {}ms"
+msgstr ""
+
+msgctxt "stsEHash"
+msgid "Failed to calculate proper file hash"
+msgstr "올바른 파일 해시를 계산하지 못했습니다"
+
+msgctxt "stsEThread"
+msgid "Failed to initialize thread"
+msgstr "스레드를 초기화 실패"
+
+msgctxt "stsECacheInit"
+msgid "Failed to initialize Icaros Cache"
+msgstr "이카로스 캐시 초기화 실패"
+
+msgctxt "stsEServerInit"
+msgid "Failed to initialize Icaros Thumbnail Provider"
+msgstr "이카로스 썸네일 공급자 초기화 실패"
+
+msgctxt "stsECacheLimit"
+msgid "Maximum cache size reached"
+msgstr "최대 캐시 크기에 도달"
+
+msgctxt "stsESpaceLimit"
+msgid "Minimum space limit reached"
+msgstr "최소 공간 제한에 도달"
+
+msgctxt "stsEDBAccess"
+msgid "Failed to access the database"
+msgstr "데이터베이스 접근 실패"
+
+msgctxt "stsEIDXAccess"
+msgid "Failed to access the index"
+msgstr "색인 접근 실패"
+
+msgctxt "stsERegAccess"
+msgid "Failed to access the registry"
+msgstr "레지스트리 접근 실패"
+
+msgctxt "stsECleanUp"
+msgid "Clean up was incomplete"
+msgstr "정리가 완료되지 않았습니다"
+
+msgctxt "stsENoFiles"
+msgid "Indexer found no files with included filetypes in current cache locations"
+msgstr ""
+
+msgctxt "stsEUnknown"
+msgid "Undetermined result"
+msgstr "미확인 결과"
+
+msgctxt "btnAdd"
+msgid "Add"
+msgstr "추가"
+
+msgctxt "btnRemove"
+msgid "Remove"
+msgstr "삭제"
+
+msgctxt "btnClear"
+msgid "Clear"
+msgstr "모두 지우기"
+
+msgctxt "hdrLocation"
+msgid "Included Locations"
+msgstr "포함 항목"
+
+msgctxt "hdrViewSize"
+msgid "View Size"
+msgstr "썸네일  크기"
+
+msgctxt "hdrRecursive"
+msgid "Recursive"
+msgstr "정렬"
+
+msgctxt "hdrExcluded"
+msgid "Excluded Locations"
+msgstr "제외 항목"
+
+msgctxt "enuSmall"
+msgid "Small"
+msgstr "작게"
+
+msgctxt "enuMedium"
+msgid "Large"
+msgstr "크게"
+
+msgctxt "enuLarge"
+msgid "XL"
+msgstr "XL 크기"
+
+msgctxt "enuXL"
+msgid "Win 8 Icons"
+msgstr "윈도우 8 아이콘"
+
+msgctxt "enuXXL"
+msgid "Win 10 Icons"
+msgstr "윈도우 10 아이콘"
+
+msgctxt "dlgAddDir"
+msgid "Please select the directory, you wish to add to the list"
+msgstr "목록에 추가 할 디렉토리를 선택하십시오"
+
+msgctxt "dlgClearLocs"
+msgid "Are you sure, you wish to clear all the entries off this list?"
+msgstr ""
+
+msgctxt "dlgDirAccessErr"
+msgid "The selected folder does not have the proper Read/Write permissions to use as Cache Location.\nWill you allow Icaros to add the necessary user permissions to this folder?"
+msgstr "선택한 폴더에 캐시 위치로 사용할 적절한 읽기/쓰기 권한이 없습니다.\n이카로스 폴더에 필요한 사용자 권한을 추가 하시겠습니까?"
+
+msgctxt "dlgMoveCache"
+msgid "You are about to change the Cache Location. Would you like to move the existing cache to new the location?"
+msgstr "캐시 위치를 변경하려고합니다. 기존 캐시를 새 위치로 이동 하시겠습니까?"
+
+msgctxt "dlgMoveError"
+msgid "The Icaros Cache is currently locked by another process, please try restarting Explorer, then try again.\nIf it is still locked after restarting Explorer, a reboot may be required."
+msgstr ""
+
+msgctxt "cptIcRunWrn"
+msgid "Close IcarosConfig confirmation"
+msgstr ""
+
+msgctxt "dlgIcRunWrn"
+msgid "The Icaros cache indexer is still running.\nAre you sure you wish to close IcarosConfig and stop the indexer?"
+msgstr ""
+
+#: TOOLS PAGE
+msgctxt "cptWinCache"
+msgid "WINDOWS THUMBNAIL CACHE"
+msgstr "윈도우 썸네일 캐시"
+
+msgctxt "lblWinCacheSize"
+msgid "Cache Size:  {0} MB"
+msgstr "캐시 크기:  {0} MB"
+
+msgctxt "btnWinCacheClear"
+msgid "Clear"
+msgstr "지우기"
+
+msgctxt "tipOpenCacheLoc"
+msgid "Open Windows thumbnail cache directory"
+msgstr "윈도우 썸네일 캐시 디렉토리를 엽니다"
+
+msgctxt "cptExplorer"
+msgid "WINDOWS EXPLORER"
+msgstr "윈도우 탐색기"
+
+msgctxt "btnExpRefresh"
+msgid "Refresh"
+msgstr "재설정"
+
+msgctxt "btnExpRestart"
+msgid "Restart"
+msgstr "재시작"
+
+msgctxt "cptResetTypes"
+msgid "RESET NATIVE FILETYPES"
+msgstr "고유 파일 유형 재설정"
+
+msgctxt "btnResetThumb"
+msgid "Reset Thumbnail Filetypes"
+msgstr "썸네일 파일 형식 재설정"
+
+msgctxt "btnResetProps"
+msgid "Reset Property Filetypes"
+msgstr "특성 파일 유형 재설정"
+
+msgctxt "txtResetLimits"
+msgid "The native filetypes can only be reset while Icaros thumbnailing\nand/or properties are not activated"
+msgstr "기본 파일 형식은 이카로스 썸내일이 갱신되는 동안만 재설정할 수 있습니다\n아울러, 속성이 활성화되지 않은 상태여야 합니다"
+
+msgctxt "dlgClrCacheErr"
+msgid "The Thumbnail Cache is currently in use.\n Wait a moment, then try again."
+msgstr "썸네일 캐시를 사용하고 있습니다.\n잠시후 다시 시도해 주세요."
+
+msgctxt "dlgcptExpRestrt"
+msgid "Restart Explorer"
+msgstr "탐색기 다시 시작"
+
+msgctxt "dlgExpRestrt"
+msgid "Warning!\nRestarting Explorer may interrupt file copy/move operations,\nand may cause certain processes to halt.\n\nDo you wish to continue?"
+msgstr "경고!!\n탐색기를 다시 시작하면 파일 복사/이동 작업이 중단될 수 있으며,\n특정 프로세스가 중단될 수 있습니다.\n\n계속하시겠습니까?"
+
+msgctxt "dlgRstThumb"
+msgid "Are you sure, you want to reset all native filetypes back to their default thumbnail providers?"
+msgstr "모든 기본 파일 형식을 기본 썸네일 공급자로 재설정 하시겠습니까?"
+
+msgctxt "dlgRstProps"
+msgid "Are you sure, you want to reset all native filetypes back to their default property handlers and property lists?"
+msgstr "모든 기본 파일 유형을 기본 특성 핸들러 및 특성 목록으로 다시 설정 하시겠습니까?"
+
+msgctxt "dlgRstSuccess"
+msgid "All native filetypes was reset successfully!"
+msgstr "모든 내용이 성공적으로 재설정되었습니다!"
+
+#: DEBUG PAGE
+msgctxt "lblTest"
+msgid "TEST:"
+msgstr ""
+
+msgctxt "lblSize"
+msgid "SIZE:"
+msgstr ""
+
+msgctxt "enuThumbnailViaIcaros"
+msgid "THUMBNAILING VIA ICAROS"
+msgstr ""
+
+msgctxt "enuThumbnailViaExplorer"
+msgid "THUMBNAILING VIA EXPLORER"
+msgstr ""
+
+msgctxt "enuPropertiesViaIcaros"
+msgid "PROPERTIES VIA ICAROS"
+msgstr ""
+
+msgctxt "enuPropertiesViaExplorer"
+msgid "PROPERTIES VIA EXPLORER"
+msgstr ""
+
+msgctxt "btnRunAllTest"
+msgid "Run All"
+msgstr ""
+
+msgctxt "btnRunTest"
+msgid "Run ({0})"
+msgstr ""
+
+msgctxt "hdrTestFiles"
+msgid "Test Files"
+msgstr ""
+
+msgctxt "hdrTime"
+msgid "Time"
+msgstr ""
+
+msgctxt "hdrShellExtension"
+msgid "Shell Extension"
+msgstr ""
+
+msgctxt "hdrCache"
+msgid "From Cache"
+msgstr ""
+
+msgctxt "lblDropFiles"
+msgid "DROP FILES AND/OR FOLDERS YOU WISH TO TEST HERE"
+msgstr ""
+
+msgctxt "lblNoProperties"
+msgid "NO PROPERTIES HAS BEEN GENERATED FOR THIS FILE\nUSE THE 'PROPERTY TEST' TO VIEW PROPERTIES FOR THIS FILE"
+msgstr ""
+
+msgctxt "lblLevel"
+msgid "LVL:"
+msgstr ""
+
+msgctxt "lblDebugCount"
+msgid "{0} ENTRIES"
+msgstr ""
+
+msgctxt "tipRefresh"
+msgid "Refresh the thumbnails of the selected files in Explorer"
+msgstr ""
+
+msgctxt "tipSubDirDepth"
+msgid "The level/depth of subdirectories to scan through when getting files from a dropped folder (1-9)"
+msgstr ""
+
+msgctxt "tipClosePanel"
+msgid "Close panel"
+msgstr ""
+
+msgctxt "tipAutoScrollOn"
+msgid "Disable auto scrolling"
+msgstr ""
+
+msgctxt "tipAutoScrollOff"
+msgid "Enable auto scrolling"
+msgstr ""
+
+msgctxt "tipThumbPlaceholder"
+msgid "Use one of the two 'Thumbnail tests' to view the thumbnail for this file"
+msgstr ""
+
+msgctxt "tipThumbPreview"
+msgid "Thumbnail dimensions:\n{0} x {1}"
+msgstr ""
+
+#: ABOUT PAGE
+msgctxt "lnkSupport"
+msgid "Follow Beta development of Icaros or get support"
+msgstr "이카로스의 베타버전을 팔로우 하거나 지원을 받으십시오"
+
+msgctxt "lblSpcTks"
+msgid "SPECIAL THANKS TO"
+msgstr "SPECIAL THANKS TO"
+
+#: UI SETTINGS PAGE
+msgctxt "lblLocalize"
+msgid "LOCALIZATION"
+msgstr "사용언어"
+
+msgctxt "cbxPropLocal"
+msgid "Enable Property Localization"
+msgstr "속성 로컬화 사용"
+
+msgctxt "lblTheming"
+msgid "THEME OPTIONS"
+msgstr "테마 옵션"
+
+msgctxt "lblChromeClr"
+msgid "CHROME COLOR"
+msgstr "기본 색상"
+
+msgctxt "enuMonoColor"
+msgid "Mono Color"
+msgstr "단일 색상"
+
+msgctxt "enuColorPerPage"
+msgid "Color Per Page"
+msgstr "페이지 색상"
+
+msgctxt "cbxRemWinSize"
+msgid "Remember Window Size"
+msgstr "창 크기 기억"
+
+msgctxt "cbxRemWinPos"
+msgid "Remember Window Position"
+msgstr "창 위치 기억"
+
+msgctxt "cbxAnimation"
+msgid "Disable Page Animations"
+msgstr "페이지 애니메이션 비활성화"
+
+msgctxt "lblGlassOpacity"
+msgid "Glass Overlay Opacity"
+msgstr "메뉴 오버레이 불투명도"
+
+msgctxt "lblGlassDark"
+msgid "Dark"
+msgstr "명암"
+
+msgctxt "lblGlassLight"
+msgid "Light"
+msgstr "밝음 정도"
+
+msgctxt "tipModSettings"
+msgid "To Export/Import/Reset the Icaros settings, thumbnailing\nand properties must be deactivated"
+msgstr "이카로스 설정시 가져 오기/내보내기/재설정 및 썸네일 \n그리고 속성을 비활성화해야합니다"
+
+msgctxt "optExport"
+msgid "Export Settings"
+msgstr "내보내기 설정"
+
+msgctxt "optImport"
+msgid "Import Settings"
+msgstr "가져오기 설정"
+
+msgctxt "optReset"
+msgid "Reset All Settings"
+msgstr "모든 설정 초기화"
+
+msgctxt "dlgThemeAccent"
+msgid "Would you like to use this theme's default chrome colors?\n\nWarning: This will overwrite your current chrome color settings!"
+msgstr ""
+
+msgctxt "cptThemeAccent"
+msgid "Use default theme chrome colors?"
+msgstr ""
+
+msgctxt "dlgExportLoc"
+msgid "Please chose where you wish to export the Icaros settings"
+msgstr "이카로스 설정을 내보낼 위치를 선택해 주세요"
+
+msgctxt "dlgImportWrn"
+msgid "This will overwrite ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "기존의 모든 설정을 덮어 씁니다.\n\n계속 하시겠습니까?"
+
+msgctxt "dlgResetAll"
+msgid "This will reset ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "기존 설정이 모두 재설정됩니다.\n\n계속 하시겠습니까?"
+
+msgctxt "cptResetWrn"
+msgid "Settings Reset Confirmation"
+msgstr "설정 리셋 확인"
+
+#: WELCOME OVERLAY
+msgctxt "lblWlcIntro1"
+msgid "WELCOME"
+msgstr ""
+
+msgctxt "lblWlcIntro2"
+msgid "TO THE NEW ICAROS GUI"
+msgstr ""
+
+msgctxt "lblWlcSelect"
+msgid "Please select your preferred"
+msgstr ""
+
+msgctxt "lblWlcLang"
+msgid "language:"
+msgstr ""
+
+msgctxt "lblWlcTheme"
+msgid "theme:"
+msgstr ""
+
+msgctxt "lblWlcTip1"
+msgid "Click here to change language and ui settings"
+msgstr ""
+
+msgctxt "lblWlcTip2"
+msgid "Click these icons to browse the various pages of settings"
+msgstr ""
+
+msgctxt "lblWlcTip3"
+msgid "Click the 'Activation buttons' to toggle the state of the shell extensions"
+msgstr ""
+
+msgctxt "lblWlcTip4"
+msgid "Drag and drop files onto this page to test if Icaros can thumbnail them\nThe filetype will automatically be added to the list of 'Thumbnail filetypes', if it is compatible with Icaros\n\nDropping a file that already exists in the 'Thumbnail filetypes' list, will just refresh that file's thumbnail"
+msgstr ""
+
+#: GLOBAL
+msgctxt "tipAddFiles"
+msgid "Add files"
+msgstr ""
+
+msgctxt "tipClearList"
+msgid "Clear list"
+msgstr ""
+
+msgctxt "tipWow64On"
+msgid "Icaros is enabled for 32-bit file dialogs"
+msgstr "64-bit 용 이카로스(Icaros)를 사용할 수 없습니다"
+
+msgctxt "tipWow64Off"
+msgid "Icaros is disabled for 32-bit file dialogs"
+msgstr "32-bit 용 이카로스(Icaros)를 사용할 수 없습니다"
+
+msgctxt "tipBrowse"
+msgid "Browse to location"
+msgstr "브라우져 위치 찾아보기"
+
+msgctxt "cptDonate"
+msgid "Donate"
+msgstr "기부하기"
+
+msgctxt "lblDonateTxt"
+msgid "If you like Icaros please consider making a donation to keep up the development of Icaros"
+msgstr "이카로스를 잘 사용하셨다면,  이카로스의 발전을 위해 기부를 고려해 주세요"
+
+msgctxt "lblDonateTxt2"
+msgid "Donations received so far in {0}"
+msgstr "지금까지받은 기부금 {0}"
+
+msgctxt "lblFlattrTxt"
+msgid "Become a microdonator to continuously support the development of Icaros"
+msgstr "이카로스 개발을 지원하는 소액 기부자"
+
+msgctxt "lblCreatedBy"
+msgid "Created and developed by"
+msgstr "제작 및 개발"
+
+msgctxt "tipMail"
+msgid "Send a mail to the developer of Icaros"
+msgstr "Icaros 개발자에게 메일 보내기"
+
+msgctxt "tipTwitter"
+msgid "Follow Icaros development on Twitter"
+msgstr "트위터에서 Icaros development를 팔로우 하세요"
+
+msgctxt "swtOn"
+msgid "On"
+msgstr "켜기"
+
+msgctxt "swtOff"
+msgid "Off"
+msgstr "끄기"
+
+msgctxt "btnDone"
+msgid "Done"
+msgstr "마침"
+
+msgctxt "btnOK"
+msgid "OK"
+msgstr "확인"
+
+msgctxt "btnYes"
+msgid "Yes"
+msgstr "네"
+
+msgctxt "btnNo"
+msgid "No"
+msgstr "아니오"
+
+msgctxt "btnContinue"
+msgid "Continue"
+msgstr ""
+
+msgctxt "btnGotIt"
+msgid "Got It!"
+msgstr ""
+
+msgctxt "dlgcptConf"
+msgid "Confirmation"
+msgstr "확정"
+
+msgctxt "dlgcptInfo"
+msgid "Info"
+msgstr "정보"
+
+msgctxt "dlgcptError"
+msgid "Error"
+msgstr ""
+
+msgctxt "btnRstColor"
+msgid "Reset Color"
+msgstr "색상 재설정"
+
+msgctxt "btnMin"
+msgid "Minimize"
+msgstr "최소화"
+
+msgctxt "btnMax"
+msgid "Maximize"
+msgstr "최대화"
+
+msgctxt "btnResDown"
+msgid "Restore Down"
+msgstr "복원"
+
+msgctxt "btnClose"
+msgid "Close"
+msgstr "Close"
+
+#~ msgctxt "dlgClearLocs"
+#~ msgid "Are you sure, you wish to clear all the entries of this list?"
+#~ msgstr "이 목록의 모든 항목을 지우시겠습니까?"
+
+#~ msgctxt "tipCoverArt"
+#~ msgid ""
+#~ "When Cover Art is enabled, Icaros will look for embedded\n"
+#~ "cover art in files that support it, while generating thumbnails.\n"
+#~ "If a cover is found, it will be used as thumbnail, otherwise\n"
+#~ "Icaros will automatically fall back to normal thumbnailing.\n"
+#~ "\n"
+#~ "Note: This should not affect the thumbnailing speed in any\n"
+#~ "noticeable way."
+#~ msgstr ""
+#~ "표지를 활성화하면 이카로스는 썸네일을 생성하는동안\n"
+#~ "이를 지원하는 파일에 포함된 표지를 찾습니다.\n"
+#~ "표지가 발견되면 이카로스는 자동으로 썸네일로 사용하며,\n"
+#~ "표지가 발견되지 않는경우 자동으로 일반 썸네일 화면으로 돌아옵니다. \n"
+#~ "\n"
+#~ "참고: 이것은 썸네일의 속도에 영향을 미치지 않습니다."

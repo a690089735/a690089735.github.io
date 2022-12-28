@@ -1,0 +1,972 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icaros\n"
+"POT-Creation-Date: 2014-10-03 15:23:34+0000\n"
+"PO-Revision-Date: 2019-04-20 01:30+0200\n"
+"Last-Translator: Cemil Kaynar <http://www.netemlak.net/>\n"
+"Language-Team: \n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: EXPLORER PROPERTIES
+msgctxt "#VideoTracks"
+msgid "Video tracks"
+msgstr "Görüntü izleri:"
+
+msgctxt "#AudioTracks"
+msgid "Audio tracks"
+msgstr "Ses parçaları"
+
+msgctxt "#SubtitleTracks"
+msgid "Subtitle tracks"
+msgstr "Altyazı parçaları"
+
+msgctxt "#ContentCompression"
+msgid "Content compression"
+msgstr "İçerik sıkıştırması"
+
+msgctxt "#ContainsChapters"
+msgid "Contains chapters"
+msgstr "Bölümleri içeriyor"
+
+msgctxt "#BitDepth"
+msgid "Bit depth"
+msgstr "Bit derinliği"
+
+msgctxt "#SubtitleGroup"
+msgid "Subtitles"
+msgstr "Altyazılar"
+
+#: MAIN WINDOW
+msgctxt "tglThumbnail"
+msgid "THUMBNAILING"
+msgstr "ÖNİZLEME"
+
+msgctxt "tglProperty"
+msgid "PROPERTIES"
+msgstr "ÖZELLİKLER"
+
+msgctxt "tglCache"
+msgid "CACHE"
+msgstr "ÖNBELLEK"
+
+msgctxt "tglTools"
+msgid "TOOLS"
+msgstr "ARAÇLAR"
+
+msgctxt "tglDebug"
+msgid "DEBUG"
+msgstr ""
+
+msgctxt "tglAbout"
+msgid "ABOUT"
+msgstr "HAKKINDA"
+
+msgctxt "tglUiSettings"
+msgid "ui settings"
+msgstr "Arayüz ayarları"
+
+msgctxt "stActivated"
+msgid "ACTIVATED"
+msgstr "AKTİF"
+
+msgctxt "stDeactivated"
+msgid "DEACTIVATED"
+msgstr "DEVRE DIŞI"
+
+msgctxt "stDisabled"
+msgid "DISABLED"
+msgstr "DEVRE DIŞI"
+
+msgctxt "stStatic"
+msgid "ENABLED (STATIC)"
+msgstr "AKTİF (STATİK)"
+
+msgctxt "stDynamic"
+msgid "ENABLED (DYNAMIC)"
+msgstr "AKTİF (DİNAMİK)"
+
+msgctxt "stNotInstalled"
+msgid "NOT INSTALLED"
+msgstr "KURULMADI"
+
+msgctxt "stIndexing"
+msgid "INDEXING..."
+msgstr "İNDEKLENİYOR..."
+
+#: THUMBNAIL PAGE
+msgctxt "cptFiletypes"
+msgid "THUMBNAIL FILETYPES"
+msgstr "ÖNİZLEMESİ OLUŞTURULACAK DOSYA TÜRLERİ"
+
+msgctxt "lblPresets"
+msgid "PRESET:"
+msgstr "ÖN AYAR:"
+
+msgctxt "cptSettings"
+msgid "SETTINGS"
+msgstr "AYARLAR"
+
+msgctxt "lblOffset"
+msgid "Thumbnail Offset"
+msgstr "Önizlenecek Zaman Yüzdesi"
+
+msgctxt "lblPrefTime"
+msgid "Prefer Timestamp"
+msgstr "Zaman seç"
+
+msgctxt "cbxBlkDtct"
+msgid "Enable black/white frame detection"
+msgstr "Beyaz/Siyah çerçeve tanımasını etkinleştir"
+
+msgctxt "lblThreshold"
+msgid "Threshold"
+msgstr "Eşik"
+
+msgctxt "cbxShowOverlay"
+msgid "Display icon overlays on thumbnails"
+msgstr "Simge kaplamalarını önizlemelerde göster"
+
+msgctxt "cbxShowVidAdorn"
+msgid "Display movie reel on video thumbnails"
+msgstr "Film makaralarını önizlemelerde göster"
+
+msgctxt "cbxCoverArt"
+msgid "Use embedded Cover Art for thumbnails"
+msgstr "Önizlemeler için gömülü Kapak Resimlerini kullan"
+
+msgctxt "cbxCoverArtAny"
+msgid "Use any embedded image as Cover Art"
+msgstr ""
+
+msgctxt "cbxLandscape"
+msgid "Prefer Landscape Covers"
+msgstr "Yatay kapak resimlerini tercih et"
+
+msgctxt "tipAddTypes"
+msgid "Add New Thumbnail Filetypes"
+msgstr "Yeni Önizlemesi Oluşturulacak Dosya Türü Ekle"
+
+msgctxt "tipBlkDtct"
+msgid "With this option enabled, Icaros will perform a quick and simple\nscan of the grabbed frame. If the frame is either too dark or too\nlight, Icaros will skip forward and try to find a better suited frame."
+msgstr "Bu ayar aktifken, Icaros, yakalanmış çerçevenin hızlı ve basit \nbir taramasını gerçekleştirecek. Eğer çerçeve çok karanlık veya \nçok aydınlıksa, ileri atlayıp daha uygun bir çerçeve bulmaya çalışacak."
+
+#, fuzzy
+msgctxt "tipCoverArt"
+msgid "When Cover Art is enabled, Icaros will look for embedded\ncover art in files that support it while generating thumbnails.\nIf a cover is found, it will be used as thumbnail, otherwise\nIcaros will automatically fall back to normal thumbnailing.\n\nNote: This should not affect the thumbnailing speed in any\nnoticeable way."
+msgstr "Kapak Resmi aktifken, Icaros önizlemeleri oluştururken,\ndesteklenen gömülü kapak resmini arayacak.\nEğer kapak resmi bulunursa, önizleme resmi olarak kullanılacak,\nyoksa Icaros normal önizleme oluşturmaya geri dönecek.\n\nNot: Bu ayar önizleme oluşturma hızını gözle görülür şekilde\netkilemeyecektir."
+
+msgctxt "tipCoverAny"
+msgid "With this option enabled, Icaros will use any embedded image in\nthe file as a cover, whether it follows the file specifications or not.\nImages intended as covers will always be preferred."
+msgstr ""
+
+msgctxt "tipCoverLand"
+msgid "Some MKV files contain multiple covers. With such files\nIcaros will default to using the first normal/vertical cover.\nThis option will make Icaros prioritize landscape/horizontal\ncovers instead."
+msgstr "Bazı MKV dosyaları birden çok kapak resmi içeriyor.\nIcaros bu dosyalara ilk normal/dikey kapak resmini uygulayacak.\nBu ayar ise Icaros'un manzara/yatay kapak resimlerine öncelik vermesini\nsağlayacak."
+
+msgctxt "dlgcptPrstChng"
+msgid "Preset Info"
+msgstr "Ön Ayar Bilgisi"
+
+msgctxt "dlgPrstChng"
+msgid "The current list contains filetypes that are not included in the selected preset.\n\nDo you wish to include these filetypes in the list?"
+msgstr "Şu anki liste, seçili olan ön ayara dahil olmayan dosya türleri içeriyor.\n\nBu dosya türlerini listeye dahil etmek istiyor musunuz?"
+
+msgctxt "dlgPrstPsd"
+msgid "PSD is currently being handled by another thumbnail shell extension.\n\nDo you wish for Icaros to assume control of this filetype?\n(You can always remove the filetype again to undo this action)"
+msgstr ""
+
+msgctxt "dlgcptThmbCheck"
+msgid "Thumbnail Check"
+msgstr "Önizleme Kontrolü"
+
+msgctxt "dlgThmbCheck"
+msgid "The following filetypes did not pass the thumbnail check:\n\n{0}\n\nDo you still wish to add them?"
+msgstr "Aşağıdaki dosya türleri önizleme kontrolünü geçemedi:\n\n{0}\n\nYine de eklemek istiyor musunuz?"
+
+msgctxt "ntfNewFiles"
+msgid "{0} new filetype(s) added ({1})"
+msgstr "{0} yeni dosya türü (leri) eklendi ({1})"
+
+msgctxt "ntfRefresh"
+msgid "Refreshed thumbnails of {0} file(s)"
+msgstr "Yenilenmiş küçük resimler {0} dosya"
+
+msgctxt "ntfExtrSuccess"
+msgid "Extraction Succeeded!"
+msgstr ""
+
+msgctxt "ntfExtrFailed"
+msgid "Extraction Failed!"
+msgstr ""
+
+msgctxt "ntfTimeTaken"
+msgid "It took {0}ms"
+msgstr ""
+
+msgctxt "txtThumbUpdater"
+msgid "Drag and drop one or more files and/or folders to this page to refresh their thumbnails/icons"
+msgstr "Önizlemelerini yenilemek için bir veya daha fazla dosyayı ve/veya klasörü sürükleyip bırakın."
+
+msgctxt "prstDefault"
+msgid "DEFAULT"
+msgstr "VARSAYILAN"
+
+msgctxt "prstCommon"
+msgid "COMMON"
+msgstr "GENEL"
+
+#, fuzzy
+msgctxt "prstVidOnly"
+msgid "VIDEO ONLY"
+msgstr "VİDEO"
+
+#, fuzzy
+msgctxt "prstAudOnly"
+msgid "AUDIO ONLY"
+msgstr "SES"
+
+msgctxt "prstMostKnown"
+msgid "MOST KNOWN"
+msgstr "EN BİLİNEN"
+
+msgctxt "prstCustom"
+msgid "CUSTOM"
+msgstr "ÖZEL"
+
+#: PROPERTIES PAGE
+msgctxt "txtPropInfo"
+msgid "With  PROPERTIES  activated, Icaros will allow you to view information such as length, width, height, artist etc. in Explorer, for any of the checked filetypes below"
+msgstr "ÖZELLİKLER aktifken, Icaros aşağıda seçilmiş olan dosya türleri için Gezgin'de uzunluk, genişlik, yükseklik, artist vb. gibi bilgileri görmenize olanak sağlayacak."
+
+msgctxt "cptVideo"
+msgid "VIDEO"
+msgstr "VİDEO"
+
+msgctxt "cptAudio"
+msgid "AUDIO"
+msgstr "SES"
+
+msgctxt "btnSelectAll"
+msgid "Select All"
+msgstr "Tümünü Seç"
+
+msgctxt "btnDeselectAll"
+msgid "Deselect All"
+msgstr "Hiçbirini Seçme"
+
+msgctxt "cbxShowUnd"
+msgid "Show [Und] on tracks with an undefined language"
+msgstr ""
+
+#: CACHE PAGE
+msgctxt "tglIndexer"
+msgid "SETTINGS"
+msgstr "AYARLAR"
+
+msgctxt "tglIndexLocs"
+msgid "LOCATIONS"
+msgstr "KONUMLAR"
+
+msgctxt "lblCacheLocation"
+msgid "Cache Location"
+msgstr "Önbellek Konumu"
+
+msgctxt "tipInvalidLocation"
+msgid "Icaros does not have permission to access current Cache Location.\nClick here to attempt to set the proper permissions.\nIf the error persists, try another directory."
+msgstr ""
+
+msgctxt "lblDriveRoot"
+msgid "Free Space on [{0}] Drive:"
+msgstr "[{0}] Sürücüsündeki Boş Alan:"
+
+msgctxt "lblMinFreeSpace"
+msgid "Min Free Space"
+msgstr "Minimum Boş Alan"
+
+msgctxt "lblMaxCacheSize"
+msgid "Max Cache Size"
+msgstr "Maksimum Önbellek Boyutu"
+
+msgctxt "tipMaxCache"
+msgid "Sets the max size limit of the Icaros Cache.\nIf 0 is set, the cache size is unlimited."
+msgstr "Icaros Önbelleğinin çıkabileceği maks boyutu ayarlar.\nEğer 0 ise, önbellek boyutu sınırsızdır."
+
+msgctxt "lblExclTypes"
+msgid "Excluded Filetypes"
+msgstr "Hariç Tutulan Dosya Türleri"
+
+msgctxt "tipUsedCache"
+msgid "{0:0.00}% of the available cache space is currently used"
+msgstr "Mevcut önbellek alanının {0:0.00}% kısmı kullanıldı"
+
+msgctxt "tipCacheSize"
+msgid "Icaros Cache Size"
+msgstr "Icaros Önbellek Boyutu"
+
+msgctxt "lblEntries"
+msgid "{0} entries"
+msgstr "{0} dosya"
+
+msgctxt "lblCacheTut1"
+msgid "With the Icaros Cache ENABLED, Icaros will keep a local record of all thumbnails in an internal cache.\nThis allows Icaros to regenerate any cached thumbnail almost instantly in case Windows Explorer loses them.\n"
+msgstr "Icaros Önbellek AKTİF iken, Icaros iç önbellekte tüm yerel önizleme resimlerinin kaydını tutacak.\nBu, Icaros'un belleğe alınmış önizleme resimlerinin Windows Gezgininin kaybetmesine karşın\nyeniden oluşturmasına izin verir.\n"
+
+msgctxt "lblCacheTut2"
+msgid "\nBy adding folders to the LOCATIONS page, and clicking the Build button below, it is possible to fill the cache\ndirectly from within IcarosConfig."
+msgstr "\nKONUMLAR sayfasına klasör ekleyerek, ve aşağıdaki Önbellek Oluştur butonuna tıklayarak,\n IcarosConfig içerisinden direkt olarak önbelleği doldurmanız mümkün"
+
+msgctxt "lblCacheSt1"
+msgid "STATIC"
+msgstr "STATİK"
+
+msgctxt "lblCacheSt2"
+msgid "DYNAMIC"
+msgstr "DİNAMİK"
+
+msgctxt "lblCacheStInfo1"
+msgid "allows Icaros to retrieve cached thumbnails, but only IcarosConfig can modify the cache."
+msgstr "Icaros'un önbelleğe alınmış önizleme resimlerine ulaşmasına izin verir, ama önbellekte sadece IcarosConfig değişiklik yapabilir."
+
+msgctxt "lblCacheStInfo2"
+msgid "allows Icaros to retrieve cached thumbnails, as well as dynamically add any new thumbnails to the cache."
+msgstr "Icaros'un önbelleğe alınmış önizleme resimlerine ulaşmasına izin verir, ayrıca dinamik olarak önbelleğe yeni önizlemeler ekler."
+
+msgctxt "lblStatus"
+msgid "Status:"
+msgstr "Durum:"
+
+msgctxt "lblProgress"
+msgid "Progress:"
+msgstr "İlerleme:"
+
+msgctxt "lblCompleted"
+msgid "Completed:"
+msgstr "Tamamlanan:"
+
+msgctxt "lblFailed"
+msgid "Failed:"
+msgstr "Başarısız Olan:"
+
+msgctxt "btnFailed"
+msgid "View"
+msgstr "Görünüm"
+
+msgctxt "btnBuild"
+msgid "Build Cache"
+msgstr "Önbellek Oluştur"
+
+msgctxt "btnRebuild"
+msgid "Rebuild Cache"
+msgstr "Önbelleği Yeniden Oluştur"
+
+msgctxt "btnCancel"
+msgid "Cancel"
+msgstr "Vazgeç"
+
+msgctxt "btnClearCache"
+msgid "Clear Cache"
+msgstr "Önbelleği Temizle"
+
+msgctxt "lblSetLocInfo"
+msgid "At least one location must be added to use the indexer"
+msgstr "İndeksleyici kullanmak için en az bir konum eklenmeli"
+
+msgctxt "dlgClrIcCache"
+msgid "You are about to delete the Icaros Cache.\nDo you still wish to proceed?"
+msgstr "Icaros Önbelleğini silmek üzeresiniz.\nYine de devam etmek istiyor musunuz?"
+
+msgctxt "dlgCacheLoc"
+msgid "Select a thumbnail cache location"
+msgstr "Önizleme önbelleği konumu seç"
+
+msgctxt "dlgcptFailed"
+msgid "FAILED FILES"
+msgstr "BAŞARISIZ OLAN DOSYALAR"
+
+msgctxt "tipOpenDirSelect"
+msgid "Open folder and select file"
+msgstr "Klasör aç ve dosya seç"
+
+msgctxt "btnSaveList"
+msgid "Save List"
+msgstr "Listeyi Kaydet"
+
+msgctxt "stsIdxerInit"
+msgid "Indexer Initialized"
+msgstr "İndeksleyici Başlatıldı"
+
+msgctxt "stsCollect"
+msgid "Preparing files for processing..."
+msgstr "İşleme için dosyalar hazırlanıyor..."
+
+msgctxt "stsIdxFiles"
+msgid "Indexing files..."
+msgstr "Dosyalar indeksleniyor..."
+
+msgctxt "stsIdxFolders"
+msgid "Indexing folders..."
+msgstr "Klasörler indeksleniyor..."
+
+msgctxt "stsIdxSuccess"
+msgid "Indexing Completed Successfully"
+msgstr "İndeksleme Başarıyla Tamamlandı"
+
+msgctxt "stsIdxFailed"
+msgid "Indexing Failed"
+msgstr "İndeksleme Başarısız Oldu"
+
+msgctxt "stsIdxCancel"
+msgid "Indexing was cancelled"
+msgstr "İndeksleme iptal edildi"
+
+msgctxt "stsIdxComplete"
+msgid "Indexing Completed"
+msgstr "İndeksleme Tamamlandı"
+
+msgctxt "lblTimeElapsed"
+msgid "Took: {}h {}m {}s {}ms"
+msgstr ""
+
+msgctxt "stsEHash"
+msgid "Failed to calculate proper file hash"
+msgstr "Dosya hash hesaplaması başarısız oldu"
+
+msgctxt "stsEThread"
+msgid "Failed to initialize thread"
+msgstr "İş parçası başlatılamadı"
+
+msgctxt "stsECacheInit"
+msgid "Failed to initialize Icaros Cache"
+msgstr "Icaros Önbelleği başlatılamadı"
+
+msgctxt "stsEServerInit"
+msgid "Failed to initialize Icaros Thumbnail Provider"
+msgstr "Icaros Önizleme Sağlayıcısı başlatılamadı"
+
+msgctxt "stsECacheLimit"
+msgid "Maximum cache size reached"
+msgstr "Maksimum önbellek boyutuna ulaşıldı"
+
+msgctxt "stsESpaceLimit"
+msgid "Minimum space limit reached"
+msgstr "Minimum alan sınırına ulaşıldı"
+
+msgctxt "stsEDBAccess"
+msgid "Failed to access the database"
+msgstr "Veritabanına erişme başarısız oldu"
+
+msgctxt "stsEIDXAccess"
+msgid "Failed to access the index"
+msgstr "İndekse erişme başarısız oldu"
+
+msgctxt "stsERegAccess"
+msgid "Failed to access the registry"
+msgstr "Kayıt anahtarına erişme başarısız oldu"
+
+msgctxt "stsECleanUp"
+msgid "Clean up was incomplete"
+msgstr "Temizleme tamamlanmadı"
+
+msgctxt "stsENoFiles"
+msgid "Indexer found no files with included filetypes in current cache locations"
+msgstr ""
+
+msgctxt "stsEUnknown"
+msgid "Undetermined result"
+msgstr "Belirsiz sonuç"
+
+msgctxt "btnAdd"
+msgid "Add"
+msgstr "Ekle"
+
+msgctxt "btnRemove"
+msgid "Remove"
+msgstr "Sil"
+
+msgctxt "btnClear"
+msgid "Clear"
+msgstr "Temizle"
+
+msgctxt "hdrLocation"
+msgid "Included Locations"
+msgstr "Dahil Edilen Konumlar"
+
+msgctxt "hdrViewSize"
+msgid "View Size"
+msgstr "Görünüm Boyutu"
+
+msgctxt "hdrRecursive"
+msgid "Recursive"
+msgstr "Yineleme"
+
+msgctxt "hdrExcluded"
+msgid "Excluded Locations"
+msgstr "Hariç Tutulan Konumlar"
+
+msgctxt "enuSmall"
+msgid "Small"
+msgstr "Küçük"
+
+msgctxt "enuMedium"
+msgid "Large"
+msgstr "Büyük"
+
+msgctxt "enuLarge"
+msgid "XL"
+msgstr "Çok Büyük"
+
+msgctxt "enuXL"
+msgid "Win 8 Icons"
+msgstr "Win 8 Simgeleri"
+
+msgctxt "enuXXL"
+msgid "Win 10 Icons"
+msgstr "Win 10 Simgeleri"
+
+msgctxt "dlgAddDir"
+msgid "Please select the directory, you wish to add to the list"
+msgstr "Lütfen listeye eklemek istediğiniz klasörü seçin."
+
+msgctxt "dlgClearLocs"
+msgid "Are you sure, you wish to clear all the entries off this list?"
+msgstr ""
+
+#, fuzzy
+msgctxt "dlgDirAccessErr"
+msgid "The selected folder does not have the proper Read/Write permissions to use as Cache Location.\nWill you allow Icaros to add the necessary user permissions to this folder?"
+msgstr "Seçilen klasör, Önbellek Konumu'nu kullanmak için uygun Okuma/Yazma iznine sahip değil.\nEğer bu konum kullanırsa Icaros Önbelleği çalışmayabilir.\n\nYine de devam etmek istiyor musunuz?"
+
+msgctxt "dlgMoveCache"
+msgid "You are about to change the Cache Location. Would you like to move the existing cache to new the location?"
+msgstr "Önbellek Konumunu değiştirmek üzeresiniz. Var olan önbelleği yeni konuma taşımak ister misiniz?"
+
+msgctxt "dlgMoveError"
+msgid "The Icaros Cache is currently locked by another process, please try restarting Explorer, then try again.\nIf it is still locked after restarting Explorer, a reboot may be required."
+msgstr ""
+
+msgctxt "cptIcRunWrn"
+msgid "Close IcarosConfig confirmation"
+msgstr ""
+
+msgctxt "dlgIcRunWrn"
+msgid "The Icaros cache indexer is still running.\nAre you sure you wish to close IcarosConfig and stop the indexer?"
+msgstr ""
+
+#: TOOLS PAGE
+msgctxt "cptWinCache"
+msgid "WINDOWS THUMBNAIL CACHE"
+msgstr "WINDOWS ÖNİZLEME ÖNBELLEĞİ"
+
+msgctxt "lblWinCacheSize"
+msgid "Cache Size:  {0} MB"
+msgstr "Önbellek Boyutu: {0} MB"
+
+msgctxt "btnWinCacheClear"
+msgid "Clear"
+msgstr "Temizle"
+
+msgctxt "tipOpenCacheLoc"
+msgid "Open Windows thumbnail cache directory"
+msgstr "Windows önizleme önbelleği klasörünü aç"
+
+msgctxt "cptExplorer"
+msgid "WINDOWS EXPLORER"
+msgstr "WINDOWS GEZGİNİ"
+
+msgctxt "btnExpRefresh"
+msgid "Refresh"
+msgstr "Yenile"
+
+msgctxt "btnExpRestart"
+msgid "Restart"
+msgstr "Tekrar Başlat"
+
+msgctxt "cptResetTypes"
+msgid "RESET NATIVE FILETYPES"
+msgstr "YEREL DOSYA TÜRLERİNİ SIFIRLA"
+
+msgctxt "btnResetThumb"
+msgid "Reset Thumbnail Filetypes"
+msgstr "Önizlemesi oluşturlacak Dosya Türlerini sıfırla"
+
+msgctxt "btnResetProps"
+msgid "Reset Property Filetypes"
+msgstr "Özellikleri oluşturulacak Dosya Türlerini sıfırla"
+
+msgctxt "txtResetLimits"
+msgid "The native filetypes can only be reset while Icaros thumbnailing\nand/or properties are not activated"
+msgstr "Yerel dosya türleri yalnızca Icaros önizleme ve/veya özellikler\naktifleştirilmediğinde sıfırlanabilir."
+
+msgctxt "dlgClrCacheErr"
+msgid "The Thumbnail Cache is currently in use.\n Wait a moment, then try again."
+msgstr "Önizleme Önbelleği şu an kullanımda.\n Biraz bekleyin, sonar tekrar deneyin."
+
+msgctxt "dlgcptExpRestrt"
+msgid "Restart Explorer"
+msgstr "Gezgini Tekrar Başlat"
+
+msgctxt "dlgExpRestrt"
+msgid "Warning!\nRestarting Explorer may interrupt file copy/move operations,\nand may cause certain processes to halt.\n\nDo you wish to continue?"
+msgstr "Uyarı!\nGezgini tekrar başlatmak dosya kopyalama/taşıma işlemlerinizi\nkeser, ve bazı işlemlerin durmasına sebep olabilir.\n\nDevam etmek istiyor musunuz?"
+
+msgctxt "dlgRstThumb"
+msgid "Are you sure, you want to reset all native filetypes back to their default thumbnail providers?"
+msgstr "Tüm yerel dosya türlerini varsayılan önizleme sağlayıcılarına sıfırlamak istediğinize emin misiniz?"
+
+msgctxt "dlgRstProps"
+msgid "Are you sure, you want to reset all native filetypes back to their default property handlers and property lists?"
+msgstr "Tüm yerel dosya türlerini, varsayılan özellik işleyicilerine ve özellik listelerine sıfırlamak istediğinize emin misiniz?"
+
+msgctxt "dlgRstSuccess"
+msgid "All native filetypes was reset successfully!"
+msgstr "Tüm yerel dosya türleri başarıyla sıfırlandı!"
+
+#: DEBUG PAGE
+msgctxt "lblTest"
+msgid "TEST:"
+msgstr ""
+
+msgctxt "lblSize"
+msgid "SIZE:"
+msgstr ""
+
+msgctxt "enuThumbnailViaIcaros"
+msgid "THUMBNAILING VIA ICAROS"
+msgstr ""
+
+msgctxt "enuThumbnailViaExplorer"
+msgid "THUMBNAILING VIA EXPLORER"
+msgstr ""
+
+msgctxt "enuPropertiesViaIcaros"
+msgid "PROPERTIES VIA ICAROS"
+msgstr ""
+
+msgctxt "enuPropertiesViaExplorer"
+msgid "PROPERTIES VIA EXPLORER"
+msgstr ""
+
+msgctxt "btnRunAllTest"
+msgid "Run All"
+msgstr ""
+
+msgctxt "btnRunTest"
+msgid "Run ({0})"
+msgstr ""
+
+msgctxt "hdrTestFiles"
+msgid "Test Files"
+msgstr ""
+
+msgctxt "hdrTime"
+msgid "Time"
+msgstr ""
+
+msgctxt "hdrShellExtension"
+msgid "Shell Extension"
+msgstr ""
+
+msgctxt "hdrCache"
+msgid "From Cache"
+msgstr ""
+
+msgctxt "lblDropFiles"
+msgid "DROP FILES AND/OR FOLDERS YOU WISH TO TEST HERE"
+msgstr ""
+
+msgctxt "lblNoProperties"
+msgid "NO PROPERTIES HAS BEEN GENERATED FOR THIS FILE\nUSE THE 'PROPERTY TEST' TO VIEW PROPERTIES FOR THIS FILE"
+msgstr ""
+
+msgctxt "lblLevel"
+msgid "LVL:"
+msgstr ""
+
+msgctxt "lblDebugCount"
+msgid "{0} ENTRIES"
+msgstr ""
+
+msgctxt "tipRefresh"
+msgid "Refresh the thumbnails of the selected files in Explorer"
+msgstr ""
+
+msgctxt "tipSubDirDepth"
+msgid "The level/depth of subdirectories to scan through when getting files from a dropped folder (1-9)"
+msgstr ""
+
+msgctxt "tipClosePanel"
+msgid "Close panel"
+msgstr ""
+
+msgctxt "tipAutoScrollOn"
+msgid "Disable auto scrolling"
+msgstr ""
+
+msgctxt "tipAutoScrollOff"
+msgid "Enable auto scrolling"
+msgstr ""
+
+msgctxt "tipThumbPlaceholder"
+msgid "Use one of the two 'Thumbnail tests' to view the thumbnail for this file"
+msgstr ""
+
+msgctxt "tipThumbPreview"
+msgid "Thumbnail dimensions:\n{0} x {1}"
+msgstr ""
+
+#: ABOUT PAGE
+msgctxt "lnkSupport"
+msgid "Follow Beta development of Icaros or get support"
+msgstr "Icaros Beta gelişmesini takip et veya destek al"
+
+msgctxt "lblSpcTks"
+msgid "SPECIAL THANKS TO"
+msgstr "ÖZEL TEŞEKKÜRLER"
+
+#: UI SETTINGS PAGE
+msgctxt "lblLocalize"
+msgid "LOCALIZATION"
+msgstr "YERELLEŞTİRME"
+
+msgctxt "cbxPropLocal"
+msgid "Enable Property Localization"
+msgstr "Özellik Yerelleştirmeyi Etkinleştir"
+
+msgctxt "lblTheming"
+msgid "THEME OPTIONS"
+msgstr "TEMA AYARLARI"
+
+msgctxt "lblChromeClr"
+msgid "CHROME COLOR"
+msgstr "KROM RENGİ"
+
+msgctxt "enuMonoColor"
+msgid "Mono Color"
+msgstr "Tek Renk"
+
+msgctxt "enuColorPerPage"
+msgid "Color Per Page"
+msgstr "Sayfa Başına Renk"
+
+msgctxt "cbxRemWinSize"
+msgid "Remember Window Size"
+msgstr "Pencere Boyutunu Hatırla"
+
+msgctxt "cbxRemWinPos"
+msgid "Remember Window Position"
+msgstr "Pencere Konumunu Hatırla"
+
+msgctxt "cbxAnimation"
+msgid "Disable Page Animations"
+msgstr "Sayfa Animasyonlarını Devre dışı Bırak"
+
+msgctxt "lblGlassOpacity"
+msgid "Glass Overlay Opacity"
+msgstr "Pencere Kaplama Opaklığı"
+
+msgctxt "lblGlassDark"
+msgid "Dark"
+msgstr "Koyu"
+
+msgctxt "lblGlassLight"
+msgid "Light"
+msgstr "Açık"
+
+msgctxt "tipModSettings"
+msgid "To Export/Import/Reset the Icaros settings, thumbnailing\nand properties must be deactivated"
+msgstr "Icaros ayarlarını Dışa Aktarmak/İçe Aktarmak/Sıfırlamak için, önizleme\nve özellikler devre dışı bırakılmalı"
+
+msgctxt "optExport"
+msgid "Export Settings"
+msgstr "Ayarları Dışa Aktar"
+
+msgctxt "optImport"
+msgid "Import Settings"
+msgstr "Ayarları İçe Aktar"
+
+msgctxt "optReset"
+msgid "Reset All Settings"
+msgstr "Tüm Ayarları Sıfırla"
+
+msgctxt "dlgThemeAccent"
+msgid "Would you like to use this theme's default chrome colors?\n\nWarning: This will overwrite your current chrome color settings!"
+msgstr ""
+
+msgctxt "cptThemeAccent"
+msgid "Use default theme chrome colors?"
+msgstr ""
+
+msgctxt "dlgExportLoc"
+msgid "Please chose where you wish to export the Icaros settings"
+msgstr "Lütfen Icaros ayarlarını nereye aktarmak istediğinizi seçin"
+
+msgctxt "dlgImportWrn"
+msgid "This will overwrite ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Bu TÜM var olan ayarlarınızın üzerine yazacak.\n\nYine de devam etmek istiyor musunuz?"
+
+msgctxt "dlgResetAll"
+msgid "This will reset ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Bu TÜM var olan ayarlarınızı sıfırlayacak.\n\nYine de devam etmek istiyor musunuz?"
+
+msgctxt "cptResetWrn"
+msgid "Settings Reset Confirmation"
+msgstr "Ayarları Sıfırlama Onayı"
+
+#: WELCOME OVERLAY
+msgctxt "lblWlcIntro1"
+msgid "WELCOME"
+msgstr ""
+
+msgctxt "lblWlcIntro2"
+msgid "TO THE NEW ICAROS GUI"
+msgstr ""
+
+msgctxt "lblWlcSelect"
+msgid "Please select your preferred"
+msgstr ""
+
+msgctxt "lblWlcLang"
+msgid "language:"
+msgstr ""
+
+msgctxt "lblWlcTheme"
+msgid "theme:"
+msgstr ""
+
+msgctxt "lblWlcTip1"
+msgid "Click here to change language and ui settings"
+msgstr ""
+
+msgctxt "lblWlcTip2"
+msgid "Click these icons to browse the various pages of settings"
+msgstr ""
+
+msgctxt "lblWlcTip3"
+msgid "Click the 'Activation buttons' to toggle the state of the shell extensions"
+msgstr ""
+
+msgctxt "lblWlcTip4"
+msgid "Drag and drop files onto this page to test if Icaros can thumbnail them\nThe filetype will automatically be added to the list of 'Thumbnail filetypes', if it is compatible with Icaros\n\nDropping a file that already exists in the 'Thumbnail filetypes' list, will just refresh that file's thumbnail"
+msgstr ""
+
+#: GLOBAL
+msgctxt "tipAddFiles"
+msgid "Add files"
+msgstr ""
+
+msgctxt "tipClearList"
+msgid "Clear list"
+msgstr ""
+
+msgctxt "tipWow64On"
+msgid "Icaros is enabled for 32-bit file dialogs"
+msgstr "Icaros 32-bit dosya diyalogları için aktif edildi"
+
+msgctxt "tipWow64Off"
+msgid "Icaros is disabled for 32-bit file dialogs"
+msgstr "Icaros 32-bit dosya diyalogları için devre dışı bırakıldı"
+
+msgctxt "tipBrowse"
+msgid "Browse to location"
+msgstr "Konuma gözat"
+
+msgctxt "cptDonate"
+msgid "Donate"
+msgstr "Bağış yap"
+
+msgctxt "lblDonateTxt"
+msgid "If you like Icaros please consider making a donation to keep up the development of Icaros"
+msgstr "Eğer Icaros'u beğendiyseniz bağış yapmayı göz önünde bulundurarak Icaros'un gelişimini sürdürün"
+
+msgctxt "lblDonateTxt2"
+msgid "Donations received so far in {0}"
+msgstr "Şimdiye kadar yapılan bağışlar {0}"
+
+msgctxt "lblFlattrTxt"
+msgid "Become a microdonator to continuously support the development of Icaros"
+msgstr "Mikrobağışçı olarak, sürekli olarak Icaros'un gelişimine destek sağlayın"
+
+msgctxt "lblCreatedBy"
+msgid "Created and developed by"
+msgstr "Oluşturan ve geliştiren"
+
+msgctxt "tipMail"
+msgid "Send a mail to the developer of Icaros"
+msgstr "Icaros geliştiricilerine mail gönderin"
+
+msgctxt "tipTwitter"
+msgid "Follow Icaros development on Twitter"
+msgstr "Icaros'un gelişimini Twitter üzerinden takip edin"
+
+msgctxt "swtOn"
+msgid "On"
+msgstr "Açık"
+
+msgctxt "swtOff"
+msgid "Off"
+msgstr "Kapalı"
+
+msgctxt "btnDone"
+msgid "Done"
+msgstr "Tamamdır"
+
+msgctxt "btnOK"
+msgid "OK"
+msgstr "Tamam"
+
+msgctxt "btnYes"
+msgid "Yes"
+msgstr "Evet"
+
+msgctxt "btnNo"
+msgid "No"
+msgstr "Hayır"
+
+msgctxt "btnContinue"
+msgid "Continue"
+msgstr ""
+
+msgctxt "btnGotIt"
+msgid "Got It!"
+msgstr ""
+
+msgctxt "dlgcptConf"
+msgid "Confirmation"
+msgstr "Onay"
+
+msgctxt "dlgcptInfo"
+msgid "Info"
+msgstr "Bilgi"
+
+msgctxt "dlgcptError"
+msgid "Error"
+msgstr ""
+
+msgctxt "btnRstColor"
+msgid "Reset Color"
+msgstr "Rengi Sıfırla"
+
+msgctxt "btnMin"
+msgid "Minimize"
+msgstr "Küçült"
+
+msgctxt "btnMax"
+msgid "Maximize"
+msgstr "Büyült"
+
+msgctxt "btnResDown"
+msgid "Restore Down"
+msgstr "Eski Konuma Dön"
+
+msgctxt "btnClose"
+msgid "Close"
+msgstr "Kapat"
+
+#~ msgctxt "dlgClearLocs"
+#~ msgid "Are you sure, you wish to clear all the entries of this list?"
+#~ msgstr "Listenin tüm kayıtlarını temizlemek istediğinize emin misiniz?"

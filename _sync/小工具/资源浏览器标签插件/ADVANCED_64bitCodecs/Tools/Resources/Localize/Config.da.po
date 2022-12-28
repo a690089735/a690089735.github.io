@@ -1,0 +1,975 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icaros\n"
+"POT-Creation-Date: 2014-10-03 15:23:34+0000\n"
+"PO-Revision-Date: 2021-04-03 17:06+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4\n"
+
+#: EXPLORER PROPERTIES
+msgctxt "#VideoTracks"
+msgid "Video tracks"
+msgstr "Video spor"
+
+msgctxt "#AudioTracks"
+msgid "Audio tracks"
+msgstr "Audio spor"
+
+msgctxt "#SubtitleTracks"
+msgid "Subtitle tracks"
+msgstr "Undertekster"
+
+msgctxt "#ContentCompression"
+msgid "Content compression"
+msgstr "Komprimeret indhold"
+
+msgctxt "#ContainsChapters"
+msgid "Contains chapters"
+msgstr "Indeholder kapitler"
+
+msgctxt "#BitDepth"
+msgid "Bit depth"
+msgstr "Bitdybde"
+
+msgctxt "#SubtitleGroup"
+msgid "Subtitles"
+msgstr "Undertekster"
+
+#: MAIN WINDOW
+msgctxt "tglThumbnail"
+msgid "THUMBNAILING"
+msgstr "MINIATURER"
+
+msgctxt "tglProperty"
+msgid "PROPERTIES"
+msgstr "FILDETALJER"
+
+msgctxt "tglCache"
+msgid "CACHE"
+msgstr "CACHE"
+
+msgctxt "tglTools"
+msgid "TOOLS"
+msgstr "VÆRKTØJER"
+
+msgctxt "tglDebug"
+msgid "DEBUG"
+msgstr "DEBUG"
+
+msgctxt "tglAbout"
+msgid "ABOUT"
+msgstr "OM"
+
+msgctxt "tglUiSettings"
+msgid "ui settings"
+msgstr "ui instillinger"
+
+msgctxt "stActivated"
+msgid "ACTIVATED"
+msgstr "AKTIVERET"
+
+msgctxt "stDeactivated"
+msgid "DEACTIVATED"
+msgstr "DEAKTIVERET"
+
+msgctxt "stDisabled"
+msgid "DISABLED"
+msgstr "INAKTIV"
+
+msgctxt "stStatic"
+msgid "ENABLED (STATIC)"
+msgstr "AKTIVERET (STATISK)"
+
+msgctxt "stDynamic"
+msgid "ENABLED (DYNAMIC)"
+msgstr "AKTIVERET (DYNAMISK)"
+
+msgctxt "stNotInstalled"
+msgid "NOT INSTALLED"
+msgstr "IKKE INSTALLERET"
+
+msgctxt "stIndexing"
+msgid "INDEXING..."
+msgstr "INDEKSERE..."
+
+#: THUMBNAIL PAGE
+msgctxt "cptFiletypes"
+msgid "THUMBNAIL FILETYPES"
+msgstr "MINIATURE FILTYPER"
+
+msgctxt "lblPresets"
+msgid "PRESET:"
+msgstr "PRESET:"
+
+msgctxt "cptSettings"
+msgid "SETTINGS"
+msgstr "INSTILLINGER"
+
+msgctxt "lblOffset"
+msgid "Thumbnail Offset"
+msgstr "Miniature Offset"
+
+msgctxt "lblPrefTime"
+msgid "Prefer Timestamp"
+msgstr "Foretræk Tidspunkt"
+
+msgctxt "cbxBlkDtct"
+msgid "Enable black/white frame detection"
+msgstr "Aktivér sort/hvid billed detektion"
+
+msgctxt "lblThreshold"
+msgid "Threshold"
+msgstr "Tærskel"
+
+msgctxt "cbxShowOverlay"
+msgid "Display icon overlays on thumbnails"
+msgstr "Vis programikoner på miniaturene"
+
+msgctxt "cbxShowVidAdorn"
+msgid "Display movie reel on video thumbnails"
+msgstr "Vis filmrulleramme på miniaturene"
+
+msgctxt "cbxCoverArt"
+msgid "Use embedded Cover Art for thumbnails"
+msgstr "Vis Cover billeder for filer der indeholder dem"
+
+msgctxt "cbxCoverArtAny"
+msgid "Use any embedded image as Cover Art"
+msgstr "Brug et hvilket som helst billede i filen som Cover"
+
+msgctxt "cbxLandscape"
+msgid "Prefer Landscape Covers"
+msgstr "Foretræk Landskabs Covers"
+
+msgctxt "tipAddTypes"
+msgid "Add New Thumbnail Filetypes"
+msgstr "Tilføj Nye Miniature Filtyper"
+
+msgctxt "tipBlkDtct"
+msgid "With this option enabled, Icaros will perform a quick and simple\nscan of the grabbed frame. If the frame is either too dark or too\nlight, Icaros will skip forward and try to find a better suited frame."
+msgstr "Med denne indstilling aktiveret, vil Icaros udføre en hurtig og enkel\nscanning af den valgte frame. Hvis framen enten er for mørk eller for lys,\nvil Icaros springe frem og forsøge at finde en bedre egnet frame."
+
+msgctxt "tipCoverArt"
+msgid "When Cover Art is enabled, Icaros will look for embedded\ncover art in files that support it while generating thumbnails.\nIf a cover is found, it will be used as thumbnail, otherwise\nIcaros will automatically fall back to normal thumbnailing.\n\nNote: This should not affect the thumbnailing speed in any\nnoticeable way."
+msgstr "Når Cover Art er aktiveret, vil Icaros kigge efter indlejrede Covers i filer\nder understøtter det, når den generere miniaturer. Hvis et Cover bliver \nfundet, vil det blive brugt som miniature. Hvis intet Cover bliver fundet,\nvil Icaros istedet bare generere en normal miniature for filen. \n\nBemærk: Dette vil ikke påvirke hastigheden på Icaros på nogen mærkbar måde."
+
+msgctxt "tipCoverAny"
+msgid "With this option enabled, Icaros will use any embedded image in\nthe file as a cover, whether it follows the file specifications or not.\nImages intended as covers will always be preferred."
+msgstr "Med denne indstilling slået til, vil Icaros bruge et hvilket som helst billede \ni filen som Cover, \nuanset om det er sat ind ifølge filspecifikationerne eller ej.\nDe billeder der er ment som Covers vil altid blive valgt først."
+
+msgctxt "tipCoverLand"
+msgid "Some MKV files contain multiple covers. With such files\nIcaros will default to using the first normal/vertical cover.\nThis option will make Icaros prioritize landscape/horizontal\ncovers instead."
+msgstr "Nogle MKV filer indeholde mere end et cover. Med sådanne filer \nvil Icaros normalt bruge den første normale/vertikale cover.\nDenne instilling vil sætte Icaros til at prioritere landskab/horisontale\ncovers i stedet."
+
+msgctxt "dlgcptPrstChng"
+msgid "Preset Info"
+msgstr "Preset Info"
+
+msgctxt "dlgPrstChng"
+msgid "The current list contains filetypes that are not included in the selected preset.\n\nDo you wish to include these filetypes in the list?"
+msgstr "Den nuværende liste indeholder filtyper der ikke er inkluderet i det valgte preset.\n\nØnsker du at inkludere disse filtyper i listen?"
+
+msgctxt "dlgPrstPsd"
+msgid "PSD is currently being handled by another thumbnail shell extension.\n\nDo you wish for Icaros to assume control of this filetype?\n(You can always remove the filetype again to undo this action)"
+msgstr "PSD er i øjeblikket håndteret af en anden miniature shell extension.\n\nØnsker du at lade Icaros overtage håndteringen af denne filtype?\n(Du kan altid fjerne denne filtype fra Icaros igen for at annullerer denne handling)"
+
+msgctxt "dlgcptThmbCheck"
+msgid "Thumbnail Check"
+msgstr "Miniature Tjek"
+
+msgctxt "dlgThmbCheck"
+msgid "The following filetypes did not pass the thumbnail check:\n\n{0}\n\nDo you still wish to add them?"
+msgstr "De følgende filtyper bestod ikke miniature tjekket:\n\n{0}\n\nVil du stadig tilføje dem?"
+
+msgctxt "ntfNewFiles"
+msgid "{0} new filetype(s) added ({1})"
+msgstr "{0} ny(e) filetype(r) er blevet tilføjet ({1})"
+
+msgctxt "ntfRefresh"
+msgid "Refreshed thumbnails of {0} file(s)"
+msgstr "{0} fil(er) fik opdateret deres miniaturer"
+
+msgctxt "ntfExtrSuccess"
+msgid "Extraction Succeeded!"
+msgstr "Udtrækningen Lykkedes!"
+
+msgctxt "ntfExtrFailed"
+msgid "Extraction Failed!"
+msgstr "Udtrækningen Fejlede!"
+
+msgctxt "ntfTimeTaken"
+msgid "It took {0}ms"
+msgstr "Det tog {0}ms"
+
+msgctxt "txtThumbUpdater"
+msgid "Drag and drop one or more files and/or folders to this page to refresh their thumbnails/icons"
+msgstr "Drag og drop en eller flere filer og/eller mapper til denne side for at opdatere deres miniaturer/ikoner"
+
+msgctxt "prstDefault"
+msgid "DEFAULT"
+msgstr "STANDARD"
+
+msgctxt "prstCommon"
+msgid "COMMON"
+msgstr "GENERELLE"
+
+msgctxt "prstVidOnly"
+msgid "VIDEO ONLY"
+msgstr "KUN VIDEO"
+
+msgctxt "prstAudOnly"
+msgid "AUDIO ONLY"
+msgstr "KUN AUDIO"
+
+msgctxt "prstMostKnown"
+msgid "MOST KNOWN"
+msgstr "FLEST KENDTE"
+
+msgctxt "prstCustom"
+msgid "CUSTOM"
+msgstr "BRUGERDEFINERET"
+
+#: PROPERTIES PAGE
+msgctxt "txtPropInfo"
+msgid "With  PROPERTIES  activated, Icaros will allow you to view information such as length, width, height, artist etc. in Explorer, for any of the checked filetypes below"
+msgstr "Med FILDETALJER aktiveret, vil Icaros tillade dig at se oplysninger om længde, bredde, højde, kunstner osv i Explorer, for hvilken som helst af de markerede filtyper nedenfor"
+
+msgctxt "cptVideo"
+msgid "VIDEO"
+msgstr "VIDEO"
+
+msgctxt "cptAudio"
+msgid "AUDIO"
+msgstr "AUDIO"
+
+msgctxt "btnSelectAll"
+msgid "Select All"
+msgstr "Vælg Alle"
+
+msgctxt "btnDeselectAll"
+msgid "Deselect All"
+msgstr "Fravælg Alle"
+
+msgctxt "cbxShowUnd"
+msgid "Show [Und] on tracks with an undefined language"
+msgstr ""
+
+#: CACHE PAGE
+msgctxt "tglIndexer"
+msgid "SETTINGS"
+msgstr "INSTILLINGER"
+
+msgctxt "tglIndexLocs"
+msgid "LOCATIONS"
+msgstr "INDEKSEREDE MAPPER"
+
+msgctxt "lblCacheLocation"
+msgid "Cache Location"
+msgstr "Cache placering"
+
+msgctxt "tipInvalidLocation"
+msgid "Icaros does not have permission to access current Cache Location.\nClick here to attempt to set the proper permissions.\nIf the error persists, try another directory."
+msgstr ""
+
+msgctxt "lblDriveRoot"
+msgid "Free Space on [{0}] Drive:"
+msgstr "Fri Plads på Drev [{0}]:"
+
+msgctxt "lblMinFreeSpace"
+msgid "Min Free Space"
+msgstr "Min Fri Plads"
+
+msgctxt "lblMaxCacheSize"
+msgid "Max Cache Size"
+msgstr "Max Cache Størrelse"
+
+msgctxt "tipMaxCache"
+msgid "Sets the max size limit of the Icaros Cache.\nIf 0 is set, the cache size is unlimited."
+msgstr "Sætter den maximale størrelse på Icaros Cachen.\nHvis værdien er 0, så er cache størrelsen ubegrænset."
+
+msgctxt "lblExclTypes"
+msgid "Excluded Filetypes"
+msgstr "Ekskluderede filtyper"
+
+msgctxt "tipUsedCache"
+msgid "{0:0.00}% of the available cache space is currently used"
+msgstr "{0:0.00}% af den tilgængelige cache plads er i øjeblikket opbrugt"
+
+msgctxt "tipCacheSize"
+msgid "Icaros Cache Size"
+msgstr "Icaros Cache Størrelse"
+
+msgctxt "lblEntries"
+msgid "{0} entries"
+msgstr "{0} poster"
+
+msgctxt "lblCacheTut1"
+msgid "With the Icaros Cache ENABLED, Icaros will keep a local record of all thumbnails in an internal cache.\nThis allows Icaros to regenerate any cached thumbnail almost instantly in case Windows Explorer loses them.\n"
+msgstr "Når Icaros Cache er AKTIVERET, vil Icaros holde en lokal kopi af alle miniaturer i en intern cache. \nDette gør det muligt for Icaros at rekonstruere enhver af de cachede miniature, næsten øjeblikkeligt, i det tilfælde at Windows Stifinder mister dem.\n"
+
+msgctxt "lblCacheTut2"
+msgid "\nBy adding folders to the LOCATIONS page, and clicking the Build button below, it is possible to fill the cache\ndirectly from within IcarosConfig."
+msgstr "\nVed at tilføje mapper til INDEKSEREDE MAPPER, og klikke på Byg knappen nedenfor, er det muligt at fylde cachen\ndirekte fra IcarosConfig."
+
+msgctxt "lblCacheSt1"
+msgid "STATIC"
+msgstr "STATISK"
+
+msgctxt "lblCacheSt2"
+msgid "DYNAMIC"
+msgstr "DYNAMISK"
+
+msgctxt "lblCacheStInfo1"
+msgid "allows Icaros to retrieve cached thumbnails, but only IcarosConfig can modify the cache."
+msgstr "tillader Icaros at hente cachede miniaturer, men kun IcarosConfig kan ændre cachen."
+
+msgctxt "lblCacheStInfo2"
+msgid "allows Icaros to retrieve cached thumbnails, as well as dynamically add any new thumbnails to the cache."
+msgstr "tillader Icaros at hente cachede miniaturer, samt at tilføje nye miniaturer til cachen dynamisk."
+
+msgctxt "lblStatus"
+msgid "Status:"
+msgstr "Status:"
+
+msgctxt "lblProgress"
+msgid "Progress:"
+msgstr "Status:"
+
+msgctxt "lblCompleted"
+msgid "Completed:"
+msgstr "Fuldført:"
+
+msgctxt "lblFailed"
+msgid "Failed:"
+msgstr "Fejlet:"
+
+msgctxt "btnFailed"
+msgid "View"
+msgstr "Vis"
+
+msgctxt "btnBuild"
+msgid "Build Cache"
+msgstr "Byg Cache"
+
+msgctxt "btnRebuild"
+msgid "Rebuild Cache"
+msgstr "Genopbyg Cache"
+
+msgctxt "btnCancel"
+msgid "Cancel"
+msgstr "Annuller"
+
+msgctxt "btnClearCache"
+msgid "Clear Cache"
+msgstr "Tøm Cache"
+
+msgctxt "lblSetLocInfo"
+msgid "At least one location must be added to use the indexer"
+msgstr "Mindst én mappe skal tilføjes før du kan bruge indekseren"
+
+msgctxt "dlgClrIcCache"
+msgid "You are about to delete the Icaros Cache.\nDo you still wish to proceed?"
+msgstr "Du er i gang med at slette Icaros Cachen.\nEr du sikker på at du vil fortsætte?"
+
+msgctxt "dlgCacheLoc"
+msgid "Select a thumbnail cache location"
+msgstr "Vælg en miniature-cache placering"
+
+msgctxt "dlgcptFailed"
+msgid "FAILED FILES"
+msgstr "FEJLEDE FILER"
+
+msgctxt "tipOpenDirSelect"
+msgid "Open folder and select file"
+msgstr "Åben mappe og vælg fil"
+
+msgctxt "btnSaveList"
+msgid "Save List"
+msgstr "Gem Liste"
+
+msgctxt "stsIdxerInit"
+msgid "Indexer Initialized"
+msgstr "Indekser Initialiseret"
+
+msgctxt "stsCollect"
+msgid "Preparing files for processing..."
+msgstr "Forbereder filer til behandling..."
+
+msgctxt "stsIdxFiles"
+msgid "Indexing files..."
+msgstr "Indeksere filer..."
+
+msgctxt "stsIdxFolders"
+msgid "Indexing folders..."
+msgstr "Indeksere mapper..."
+
+msgctxt "stsIdxSuccess"
+msgid "Indexing Completed Successfully"
+msgstr "Indeksering Fuldført Fejlfrit"
+
+msgctxt "stsIdxFailed"
+msgid "Indexing Failed"
+msgstr "Indeksering Fejlede"
+
+msgctxt "stsIdxCancel"
+msgid "Indexing was cancelled"
+msgstr "Indeksering blev annulleret"
+
+msgctxt "stsIdxComplete"
+msgid "Indexing Completed"
+msgstr "Indeksering Fuldført"
+
+msgctxt "lblTimeElapsed"
+msgid "Took: {}h {}m {}s {}ms"
+msgstr "Tog: {} t {} m {} s {} ms"
+
+msgctxt "stsEHash"
+msgid "Failed to calculate proper file hash"
+msgstr "Kunne ikke udregne filhashen ordenligt"
+
+msgctxt "stsEThread"
+msgid "Failed to initialize thread"
+msgstr "Kunne ikke initialisere thread'en"
+
+msgctxt "stsECacheInit"
+msgid "Failed to initialize Icaros Cache"
+msgstr "Kunne ikke initialisere Icaros Cache"
+
+msgctxt "stsEServerInit"
+msgid "Failed to initialize Icaros Thumbnail Provider"
+msgstr "Kunne ikke initialisere Icaros Thumbnail Provider"
+
+msgctxt "stsECacheLimit"
+msgid "Maximum cache size reached"
+msgstr "Maksimum cache størrelse nået"
+
+msgctxt "stsESpaceLimit"
+msgid "Minimum space limit reached"
+msgstr "Minimum fri plads nået"
+
+msgctxt "stsEDBAccess"
+msgid "Failed to access the database"
+msgstr "Kunne ikke opnå adgang til databasen"
+
+msgctxt "stsEIDXAccess"
+msgid "Failed to access the index"
+msgstr "Kunne ikke opnå adgang til indekset"
+
+msgctxt "stsERegAccess"
+msgid "Failed to access the registry"
+msgstr "Kunne ikke få adgang til registreringsdatabasen"
+
+msgctxt "stsECleanUp"
+msgid "Clean up was incomplete"
+msgstr "Oprydningen var ufuldendt"
+
+msgctxt "stsENoFiles"
+msgid "Indexer found no files with included filetypes in current cache locations"
+msgstr "Indekseren fandt ingen filer med nogen af de registrerede filetyper i de valgte indekserede mapper"
+
+msgctxt "stsEUnknown"
+msgid "Undetermined result"
+msgstr "Ubestemt resultat"
+
+msgctxt "btnAdd"
+msgid "Add"
+msgstr "Tilføj"
+
+msgctxt "btnRemove"
+msgid "Remove"
+msgstr "Fjern"
+
+msgctxt "btnClear"
+msgid "Clear"
+msgstr "Ryd"
+
+msgctxt "hdrLocation"
+msgid "Included Locations"
+msgstr "Inkluderede Mapper"
+
+msgctxt "hdrViewSize"
+msgid "View Size"
+msgstr "Størrelse på Visning"
+
+msgctxt "hdrRecursive"
+msgid "Recursive"
+msgstr "Rekursiv"
+
+msgctxt "hdrExcluded"
+msgid "Excluded Locations"
+msgstr "Ekskluderede Mapper"
+
+msgctxt "enuSmall"
+msgid "Small"
+msgstr "Små"
+
+msgctxt "enuMedium"
+msgid "Large"
+msgstr "Store"
+
+msgctxt "enuLarge"
+msgid "XL"
+msgstr "XL"
+
+msgctxt "enuXL"
+msgid "Win 8 Icons"
+msgstr "Win 8 Ikoner"
+
+msgctxt "enuXXL"
+msgid "Win 10 Icons"
+msgstr "Win 10 Ikoner"
+
+msgctxt "dlgAddDir"
+msgid "Please select the directory, you wish to add to the list"
+msgstr "Vælg venligst en mappe du gerne vil tilføje til listen"
+
+msgctxt "dlgClearLocs"
+msgid "Are you sure, you wish to clear all the entries off this list?"
+msgstr "Er du sikker på at du rydde alle poster fra listen?"
+
+msgctxt "dlgDirAccessErr"
+msgid "The selected folder does not have the proper Read/Write permissions to use as Cache Location.\nWill you allow Icaros to add the necessary user permissions to this folder?"
+msgstr "Den valgte mappe har ikke de rette læse/skrive tilladelser til at holde Icaros Cache filerne.\nVil du tillade Icaros at tilføje de nødvendige brugertilladelser til denne mappe?"
+
+msgctxt "dlgMoveCache"
+msgid "You are about to change the Cache Location. Would you like to move the existing cache to new the location?"
+msgstr "Du er ved at ændre Cachens placering. Vil du gerne flytte den eksiterende cache til den nye placering?"
+
+msgctxt "dlgMoveError"
+msgid "The Icaros Cache is currently locked by another process, please try restarting Explorer, then try again.\nIf it is still locked after restarting Explorer, a reboot may be required."
+msgstr "Icaros Cachen er i øjeblikket låst af en anden process, prøv venligst at genstarte Windows Stifinder, og prøv så at slette Cachen igen.\nHvis Cachen stadig er låst efter Stifinder er blevet genstartet, så er det muligt at computeren skal genstartes for at låse Cachen op igen."
+
+msgctxt "cptIcRunWrn"
+msgid "Close IcarosConfig confirmation"
+msgstr "Afslut IcarosConfig bekræftelse"
+
+msgctxt "dlgIcRunWrn"
+msgid "The Icaros cache indexer is still running.\nAre you sure you wish to close IcarosConfig and stop the indexer?"
+msgstr "Icaros cache indekseringen stadig kører.\nEr du sikker på du ønsker at lukke IcarosConfig og stoppe indekseringen?"
+
+#: TOOLS PAGE
+msgctxt "cptWinCache"
+msgid "WINDOWS THUMBNAIL CACHE"
+msgstr "WINDOWS MINIATURE CACHE"
+
+msgctxt "lblWinCacheSize"
+msgid "Cache Size:  {0} MB"
+msgstr "Cache Størrelse: {0} MB"
+
+msgctxt "btnWinCacheClear"
+msgid "Clear"
+msgstr "Tøm"
+
+msgctxt "tipOpenCacheLoc"
+msgid "Open Windows thumbnail cache directory"
+msgstr "Åbn Windows miniture cache mappen"
+
+msgctxt "cptExplorer"
+msgid "WINDOWS EXPLORER"
+msgstr "WINDOWS EXPLORER"
+
+msgctxt "btnExpRefresh"
+msgid "Refresh"
+msgstr "Opdater"
+
+msgctxt "btnExpRestart"
+msgid "Restart"
+msgstr "Genstart"
+
+msgctxt "cptResetTypes"
+msgid "RESET NATIVE FILETYPES"
+msgstr "NULSTIL OPRINDELIGE FILTYPER"
+
+msgctxt "btnResetThumb"
+msgid "Reset Thumbnail Filetypes"
+msgstr "Nulstil Miniature Filtyper"
+
+msgctxt "btnResetProps"
+msgid "Reset Property Filetypes"
+msgstr "Nulstil Fildetalje Filtyper"
+
+msgctxt "txtResetLimits"
+msgid "The native filetypes can only be reset while Icaros thumbnailing\nand/or properties are not activated"
+msgstr "De oprindelige filtyper kan kun nulstilles hvis Icaros miniaturer\nog/eller fildetaljer er deaktiveret"
+
+msgctxt "dlgClrCacheErr"
+msgid "The Thumbnail Cache is currently in use.\n Wait a moment, then try again."
+msgstr "Miniature Cachen er i brug.\nVent venligst et øjeblik, og prøv så igen."
+
+msgctxt "dlgcptExpRestrt"
+msgid "Restart Explorer"
+msgstr "Genstart Explorer"
+
+msgctxt "dlgExpRestrt"
+msgid "Warning!\nRestarting Explorer may interrupt file copy/move operations,\nand may cause certain processes to halt.\n\nDo you wish to continue?"
+msgstr "Advarsel!\nNår Explorer genstarter kan det afbryde filkopiering- og filflytningsoperationer,\nog kan forårsage at andre processer stopper.\n\nEr du sikker på at du vil fortsætte?"
+
+msgctxt "dlgRstThumb"
+msgid "Are you sure, you want to reset all native filetypes back to their default thumbnail providers?"
+msgstr "Er du sikker på at du gerne vil nulstille alle Windows medie filtyper tilbage til deres oprindelige miniature providere?"
+
+msgctxt "dlgRstProps"
+msgid "Are you sure, you want to reset all native filetypes back to their default property handlers and property lists?"
+msgstr "Er du sikker på at du gerne vil nulstille alle Windows medie filtyper tilbage til deres oprindelige fildetaljer?"
+
+msgctxt "dlgRstSuccess"
+msgid "All native filetypes was reset successfully!"
+msgstr "Alle oprindelige filtyper blev genskabt uden problemer!"
+
+#: DEBUG PAGE
+msgctxt "lblTest"
+msgid "TEST:"
+msgstr "TEST:"
+
+msgctxt "lblSize"
+msgid "SIZE:"
+msgstr "STØRRELSE:"
+
+msgctxt "enuThumbnailViaIcaros"
+msgid "THUMBNAILING VIA ICAROS"
+msgstr "MINIATURER VIA ICAROS"
+
+msgctxt "enuThumbnailViaExplorer"
+msgid "THUMBNAILING VIA EXPLORER"
+msgstr "MINIATURER VIA STIFINDER"
+
+msgctxt "enuPropertiesViaIcaros"
+msgid "PROPERTIES VIA ICAROS"
+msgstr "FILDETALJER VIA ICAROS"
+
+msgctxt "enuPropertiesViaExplorer"
+msgid "PROPERTIES VIA EXPLORER"
+msgstr "FILDETALJER VIA STIFINDER"
+
+msgctxt "btnRunAllTest"
+msgid "Run All"
+msgstr "Kør Alle"
+
+msgctxt "btnRunTest"
+msgid "Run ({0})"
+msgstr "Kør ({0})"
+
+msgctxt "hdrTestFiles"
+msgid "Test Files"
+msgstr "Test Filer"
+
+msgctxt "hdrTime"
+msgid "Time"
+msgstr "Tid"
+
+msgctxt "hdrShellExtension"
+msgid "Shell Extension"
+msgstr "Shell Extension"
+
+msgctxt "hdrCache"
+msgid "From Cache"
+msgstr "Fra Cachen"
+
+msgctxt "lblDropFiles"
+msgid "DROP FILES AND/OR FOLDERS YOU WISH TO TEST HERE"
+msgstr "DRAG OG DROP DE FILER OG/ELLER MAPPER DU GERNE VIL TESTE HER"
+
+msgctxt "lblNoProperties"
+msgid "NO PROPERTIES HAS BEEN GENERATED FOR THIS FILE\nUSE THE 'PROPERTY TEST' TO VIEW PROPERTIES FOR THIS FILE"
+msgstr "INGEN FILDETALJER ER BLEVET GENERERET FOR DENNE FIL\nBRUG 'FILDETALJE TESTEN' FOR AT SE FILDETALJERNE FOR DENNE FIL"
+
+msgctxt "lblLevel"
+msgid "LVL:"
+msgstr "LVL:"
+
+msgctxt "lblDebugCount"
+msgid "{0} ENTRIES"
+msgstr "{0} POSTER"
+
+msgctxt "tipRefresh"
+msgid "Refresh the thumbnails of the selected files in Explorer"
+msgstr "Opdatér miniaturerne for de valgte filer i Windows Stifinder"
+
+msgctxt "tipSubDirDepth"
+msgid "The level/depth of subdirectories to scan through when getting files from a dropped folder (1-9)"
+msgstr "Niveauet/dybden af de undermapper, der skal scannes igennem, når du henter filer fra en \"dropped\" mappe (1-9)"
+
+msgctxt "tipClosePanel"
+msgid "Close panel"
+msgstr "Luk panel"
+
+msgctxt "tipAutoScrollOn"
+msgid "Disable auto scrolling"
+msgstr "Deaktiver automatisk rulning"
+
+msgctxt "tipAutoScrollOff"
+msgid "Enable auto scrolling"
+msgstr "Aktiver automatisk rulning"
+
+msgctxt "tipThumbPlaceholder"
+msgid "Use one of the two 'Thumbnail tests' to view the thumbnail for this file"
+msgstr "Brug en af de to 'Miniaturetest' til at få vist miniaturebilledet for denne fil"
+
+msgctxt "tipThumbPreview"
+msgid "Thumbnail dimensions:\n{0} x {1}"
+msgstr "Miniaturedimensioner:\n{0} x {1}"
+
+#: ABOUT PAGE
+msgctxt "lnkSupport"
+msgid "Follow Beta development of Icaros or get support"
+msgstr "Følg Beta udviklingen af Icaros eller få support"
+
+msgctxt "lblSpcTks"
+msgid "SPECIAL THANKS TO"
+msgstr "SÆRLIG TAK TIL"
+
+#: UI SETTINGS PAGE
+msgctxt "lblLocalize"
+msgid "LOCALIZATION"
+msgstr "LOKALISERING"
+
+msgctxt "cbxPropLocal"
+msgid "Enable Property Localization"
+msgstr "Aktiver Lokaliserede Fildetaljer"
+
+msgctxt "lblTheming"
+msgid "THEME OPTIONS"
+msgstr "TEMA INSTILLINGER"
+
+msgctxt "lblChromeClr"
+msgid "CHROME COLOR"
+msgstr "KROM FARVE"
+
+msgctxt "enuMonoColor"
+msgid "Mono Color"
+msgstr "Enkelt Farve"
+
+msgctxt "enuColorPerPage"
+msgid "Color Per Page"
+msgstr "Farve Per Side"
+
+msgctxt "cbxRemWinSize"
+msgid "Remember Window Size"
+msgstr "Husk Vinduesstørrelse"
+
+msgctxt "cbxRemWinPos"
+msgid "Remember Window Position"
+msgstr "Husk Vinduesposition"
+
+msgctxt "cbxAnimation"
+msgid "Disable Page Animations"
+msgstr "Deaktiver Side Animationer"
+
+msgctxt "lblGlassOpacity"
+msgid "Glass Overlay Opacity"
+msgstr "Glas Gennemsigtighed"
+
+msgctxt "lblGlassDark"
+msgid "Dark"
+msgstr "Mørkt"
+
+msgctxt "lblGlassLight"
+msgid "Light"
+msgstr "Lyst"
+
+msgctxt "tipModSettings"
+msgid "To Export/Import/Reset the Icaros settings, thumbnailing\nand properties must be deactivated"
+msgstr "For at eksportere/importere/nulstille Icaroses indstillinger skal\nminiaturer og fildetaljer først være deaktiveret"
+
+msgctxt "optExport"
+msgid "Export Settings"
+msgstr "Eksportér Indstillinger"
+
+msgctxt "optImport"
+msgid "Import Settings"
+msgstr "Importér Indstillinger"
+
+msgctxt "optReset"
+msgid "Reset All Settings"
+msgstr "Nulstil Alle Indstillinger"
+
+msgctxt "dlgThemeAccent"
+msgid "Would you like to use this theme's default chrome colors?\n\nWarning: This will overwrite your current chrome color settings!"
+msgstr "Vil du gerne bruge dette temas standard krom farver?\n\nAdvarsel: Dette vil overskrive dine aktuelle krom farveindstillinger!"
+
+msgctxt "cptThemeAccent"
+msgid "Use default theme chrome colors?"
+msgstr "Brug temaets standard krom farver?"
+
+msgctxt "dlgExportLoc"
+msgid "Please chose where you wish to export the Icaros settings"
+msgstr "Vælg venligst hvilken mappe du vil eksportere dine Icaros instillinger til"
+
+msgctxt "dlgImportWrn"
+msgid "This will overwrite ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Dette vil overskrive alle dine eksisterende indstillinger. \n\nØnsker du stadig at fortsætte?"
+
+msgctxt "dlgResetAll"
+msgid "This will reset ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Dette vil nulstille alle dine eksisterende indstillinger. \n\nØnsker du stadig at fortsætte?"
+
+msgctxt "cptResetWrn"
+msgid "Settings Reset Confirmation"
+msgstr "Bekræft nulstilling af instillinger"
+
+#: WELCOME OVERLAY
+msgctxt "lblWlcIntro1"
+msgid "WELCOME"
+msgstr "VELKOMMEN"
+
+msgctxt "lblWlcIntro2"
+msgid "TO THE NEW ICAROS GUI"
+msgstr "TIL DEN NYE ICAROS GUI"
+
+msgctxt "lblWlcSelect"
+msgid "Please select your preferred"
+msgstr "Vælg venligst dit foretrukne"
+
+msgctxt "lblWlcLang"
+msgid "language:"
+msgstr "sprog:"
+
+msgctxt "lblWlcTheme"
+msgid "theme:"
+msgstr "tema:"
+
+msgctxt "lblWlcTip1"
+msgid "Click here to change language and ui settings"
+msgstr "Klik her for at ændre sprog og UI instillinger"
+
+msgctxt "lblWlcTip2"
+msgid "Click these icons to browse the various pages of settings"
+msgstr "Klik disse ikoner for skifte mellem de forskellige sider med Icaros instillinger"
+
+msgctxt "lblWlcTip3"
+msgid "Click the 'Activation buttons' to toggle the state of the shell extensions"
+msgstr "Klik 'Aktivationsknapperne' for at aktivere eller deaktivere de forskellige 'Shell Extensions'"
+
+msgctxt "lblWlcTip4"
+msgid "Drag and drop files onto this page to test if Icaros can thumbnail them\nThe filetype will automatically be added to the list of 'Thumbnail filetypes', if it is compatible with Icaros\n\nDropping a file that already exists in the 'Thumbnail filetypes' list, will just refresh that file's thumbnail"
+msgstr "Træk og slip filer på denne side for at teste om Icaros kan generere miniature for dem.\nFiltypen bliver automatisk tilføjet til listen 'Miniature filtyper', hvis de er kompatible med Icaros\n\nHvis filtypen på den sluppede fil allerede er tilføjet til Icaros, vil filens miniature i stedet blive opdateret"
+
+#: GLOBAL
+msgctxt "tipAddFiles"
+msgid "Add files"
+msgstr "Tilføj filer"
+
+msgctxt "tipClearList"
+msgid "Clear list"
+msgstr "Ryd liste"
+
+msgctxt "tipWow64On"
+msgid "Icaros is enabled for 32-bit file dialogs"
+msgstr "Icaros er aktiveret for 32-bit dialogbokse"
+
+msgctxt "tipWow64Off"
+msgid "Icaros is disabled for 32-bit file dialogs"
+msgstr "Icaros er deaktiveret for 32-bit dialogbokse"
+
+msgctxt "tipBrowse"
+msgid "Browse to location"
+msgstr "Find mappe"
+
+msgctxt "cptDonate"
+msgid "Donate"
+msgstr "Donér"
+
+msgctxt "lblDonateTxt"
+msgid "If you like Icaros please consider making a donation to keep up the development of Icaros"
+msgstr "Hvis du synes godt om Icaros er det muligt at hjælpe med udviklingen af Icaros ved at give en donation"
+
+msgctxt "lblDonateTxt2"
+msgid "Donations received so far in {0}"
+msgstr "Donationer modtaget indtil videre i {0}"
+
+msgctxt "lblFlattrTxt"
+msgid "Become a microdonator to continuously support the development of Icaros"
+msgstr "Ved at blive microdonator kan du kontinuerligt støtte til udviklingen af Icaros"
+
+msgctxt "lblCreatedBy"
+msgid "Created and developed by"
+msgstr "Skabt og udviklet af"
+
+msgctxt "tipMail"
+msgid "Send a mail to the developer of Icaros"
+msgstr "Send en mail til udvikleren af Icaros"
+
+msgctxt "tipTwitter"
+msgid "Follow Icaros development on Twitter"
+msgstr "Følg udviklingen af Icaros på Twitter"
+
+msgctxt "swtOn"
+msgid "On"
+msgstr "On"
+
+msgctxt "swtOff"
+msgid "Off"
+msgstr "Off"
+
+msgctxt "btnDone"
+msgid "Done"
+msgstr "Færdig"
+
+msgctxt "btnOK"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "btnYes"
+msgid "Yes"
+msgstr "Ja"
+
+msgctxt "btnNo"
+msgid "No"
+msgstr "Nej"
+
+msgctxt "btnContinue"
+msgid "Continue"
+msgstr "Fortsæt"
+
+msgctxt "btnGotIt"
+msgid "Got It!"
+msgstr "Forstået!"
+
+msgctxt "dlgcptConf"
+msgid "Confirmation"
+msgstr "Konfirmation"
+
+msgctxt "dlgcptInfo"
+msgid "Info"
+msgstr "Info"
+
+msgctxt "dlgcptError"
+msgid "Error"
+msgstr "Fejl"
+
+msgctxt "btnRstColor"
+msgid "Reset Color"
+msgstr "Nulstil farve"
+
+msgctxt "btnMin"
+msgid "Minimize"
+msgstr "Minimer"
+
+msgctxt "btnMax"
+msgid "Maximize"
+msgstr "Maksimer"
+
+msgctxt "btnResDown"
+msgid "Restore Down"
+msgstr "Gendan"
+
+msgctxt "btnClose"
+msgid "Close"
+msgstr "Luk"
+
+#~ msgctxt "dlgClearLocs"
+#~ msgid "Are you sure, you wish to clear all the entries of this list?"
+#~ msgstr "Er du sikker på at du rydde alle poster fra listen?"
+
+#~ msgctxt "lblDebugCount"
+#~ msgid "{0} entries in list"
+#~ msgstr "{0} filer på listen"
+
+#~ msgctxt "enuXL"
+#~ msgid "Preview"
+#~ msgstr "Preview"

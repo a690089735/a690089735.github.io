@@ -1,0 +1,976 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icaros\n"
+"POT-Creation-Date: 2014-10-03 15:23:34+0000\n"
+"PO-Revision-Date: 2019-04-20 01:29+0200\n"
+"Last-Translator: \n"
+"Language-Team: Donkichirou <donkichirou@gmail.com>\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: EXPLORER PROPERTIES
+msgctxt "#VideoTracks"
+msgid "Video tracks"
+msgstr "ビデオトラック"
+
+msgctxt "#AudioTracks"
+msgid "Audio tracks"
+msgstr "オーディオトラック"
+
+msgctxt "#SubtitleTracks"
+msgid "Subtitle tracks"
+msgstr "字幕トラック"
+
+msgctxt "#ContentCompression"
+msgid "Content compression"
+msgstr "コンテンツの圧縮"
+
+msgctxt "#ContainsChapters"
+msgid "Contains chapters"
+msgstr "コンテインズチャプター"
+
+msgctxt "#BitDepth"
+msgid "Bit depth"
+msgstr "ビット深度"
+
+msgctxt "#SubtitleGroup"
+msgid "Subtitles"
+msgstr "字幕"
+
+#: MAIN WINDOW
+msgctxt "tglThumbnail"
+msgid "THUMBNAILING"
+msgstr "サムネイル"
+
+msgctxt "tglProperty"
+msgid "PROPERTIES"
+msgstr "プロパティ"
+
+msgctxt "tglCache"
+msgid "CACHE"
+msgstr "キャッシュ"
+
+msgctxt "tglTools"
+msgid "TOOLS"
+msgstr "ツール"
+
+msgctxt "tglDebug"
+msgid "DEBUG"
+msgstr ""
+
+msgctxt "tglAbout"
+msgid "ABOUT"
+msgstr "バージョン"
+
+msgctxt "tglUiSettings"
+msgid "ui settings"
+msgstr "UI 設定"
+
+msgctxt "stActivated"
+msgid "ACTIVATED"
+msgstr "アクティブ"
+
+msgctxt "stDeactivated"
+msgid "DEACTIVATED"
+msgstr "非アクティブ"
+
+msgctxt "stDisabled"
+msgid "DISABLED"
+msgstr "無効"
+
+msgctxt "stStatic"
+msgid "ENABLED (STATIC)"
+msgstr "有効（静的）"
+
+msgctxt "stDynamic"
+msgid "ENABLED (DYNAMIC)"
+msgstr "有効（動的）"
+
+msgctxt "stNotInstalled"
+msgid "NOT INSTALLED"
+msgstr "未インストール"
+
+msgctxt "stIndexing"
+msgid "INDEXING..."
+msgstr "インデックス中..."
+
+#: THUMBNAIL PAGE
+msgctxt "cptFiletypes"
+msgid "THUMBNAIL FILETYPES"
+msgstr "サムネイルファイルの種類"
+
+msgctxt "lblPresets"
+msgid "PRESET:"
+msgstr "プリセット："
+
+msgctxt "cptSettings"
+msgid "SETTINGS"
+msgstr "設定"
+
+msgctxt "lblOffset"
+msgid "Thumbnail Offset"
+msgstr "サムネイルオフセット"
+
+msgctxt "lblPrefTime"
+msgid "Prefer Timestamp"
+msgstr "タイムスタンプ優先"
+
+msgctxt "cbxBlkDtct"
+msgid "Enable black/white frame detection"
+msgstr "黒/白のフレーム検出を有効にする"
+
+msgctxt "lblThreshold"
+msgid "Threshold"
+msgstr "しきい値"
+
+msgctxt "cbxShowOverlay"
+msgid "Display icon overlays on thumbnails"
+msgstr "サムネイル表示アイコンオーバーレイ"
+
+msgctxt "cbxShowVidAdorn"
+msgid "Display movie reel on video thumbnails"
+msgstr ""
+
+msgctxt "cbxCoverArt"
+msgid "Use embedded Cover Art for thumbnails"
+msgstr "サムネイル用カバーアート組込み用途"
+
+msgctxt "cbxCoverArtAny"
+msgid "Use any embedded image as Cover Art"
+msgstr ""
+
+msgctxt "cbxLandscape"
+msgid "Prefer Landscape Covers"
+msgstr "ランドスケープカバー優先"
+
+msgctxt "tipAddTypes"
+msgid "Add New Thumbnail Filetypes"
+msgstr "新しいサムネイルファイルタイプ追加"
+
+msgctxt "tipBlkDtct"
+msgid "With this option enabled, Icaros will perform a quick and simple\nscan of the grabbed frame. If the frame is either too dark or too\nlight, Icaros will skip forward and try to find a better suited frame."
+msgstr "このオプションを有効にすると、Icarosは、取り込んだフレームを迅速かつ簡単な\nスキャンを実行します。フレームが暗すぎたり明るすぎるのいずれかである場合、\nIcarosは前方にスキップして、より適したフレームを見つけようとします。"
+
+#, fuzzy
+msgctxt "tipCoverArt"
+msgid "When Cover Art is enabled, Icaros will look for embedded\ncover art in files that support it while generating thumbnails.\nIf a cover is found, it will be used as thumbnail, otherwise\nIcaros will automatically fall back to normal thumbnailing.\n\nNote: This should not affect the thumbnailing speed in any\nnoticeable way."
+msgstr "カバーアートを有効にするとサムネイルを生成しながら、Icarosは、\nそれをサポートするファイルに埋め込まれたカバーアートを探します。\nカバーが見つかった場合、Icarosは自動的に通常のサムネイルに\n分類され、サムネイルとして使用されます。\n\n注：これは、任意の顕著な方法でサムネイルの速度に影響を\n与えるべきではありません。"
+
+msgctxt "tipCoverAny"
+msgid "With this option enabled, Icaros will use any embedded image in\nthe file as a cover, whether it follows the file specifications or not.\nImages intended as covers will always be preferred."
+msgstr ""
+
+msgctxt "tipCoverLand"
+msgid "Some MKV files contain multiple covers. With such files\nIcaros will default to using the first normal/vertical cover.\nThis option will make Icaros prioritize landscape/horizontal\ncovers instead."
+msgstr "いくつかのMKVファイルには、複数のカバーが含まれています。\nこのようなファイルでIcarosは、最初に通常/垂直カバーを使用する\nようにデフォルト設定されます。\nこのオプションは、Icarosではなく風景/水平カバーに優先順位を付け\nるようになります。"
+
+msgctxt "dlgcptPrstChng"
+msgid "Preset Info"
+msgstr "プリセット情報"
+
+msgctxt "dlgPrstChng"
+msgid "The current list contains filetypes that are not included in the selected preset.\n\nDo you wish to include these filetypes in the list?"
+msgstr "現在のリストは、選択したプリセットに含まれていないファイルの種類が含まれています。\n\nリスト内のこれらのファイルタイプを含めますか？"
+
+msgctxt "dlgPrstPsd"
+msgid "PSD is currently being handled by another thumbnail shell extension.\n\nDo you wish for Icaros to assume control of this filetype?\n(You can always remove the filetype again to undo this action)"
+msgstr ""
+
+msgctxt "dlgcptThmbCheck"
+msgid "Thumbnail Check"
+msgstr "サムネイルチェック"
+
+msgctxt "dlgThmbCheck"
+msgid "The following filetypes did not pass the thumbnail check:\n\n{0}\n\nDo you still wish to add them?"
+msgstr "次のファイルの種類は、サムネイル検査に合格しませんでした：\n\n{0}\n\nそれらを追加しますか？"
+
+msgctxt "ntfNewFiles"
+msgid "{0} new filetype(s) added ({1})"
+msgstr ""
+
+msgctxt "ntfRefresh"
+msgid "Refreshed thumbnails of {0} file(s)"
+msgstr ""
+
+msgctxt "ntfExtrSuccess"
+msgid "Extraction Succeeded!"
+msgstr ""
+
+msgctxt "ntfExtrFailed"
+msgid "Extraction Failed!"
+msgstr ""
+
+msgctxt "ntfTimeTaken"
+msgid "It took {0}ms"
+msgstr ""
+
+msgctxt "txtThumbUpdater"
+msgid "Drag and drop one or more files and/or folders to this page to refresh their thumbnails/icons"
+msgstr "サムネイル/アイコンをリフレッシュするには、このページに1つ以上のファイルおよび（または）フォルダをドラッグ＆ドロップします。"
+
+msgctxt "prstDefault"
+msgid "DEFAULT"
+msgstr "デフォルト"
+
+msgctxt "prstCommon"
+msgid "COMMON"
+msgstr "一般的な"
+
+#, fuzzy
+msgctxt "prstVidOnly"
+msgid "VIDEO ONLY"
+msgstr "ビデオ"
+
+#, fuzzy
+msgctxt "prstAudOnly"
+msgid "AUDIO ONLY"
+msgstr "オーディオ"
+
+msgctxt "prstMostKnown"
+msgid "MOST KNOWN"
+msgstr "有名"
+
+msgctxt "prstCustom"
+msgid "CUSTOM"
+msgstr "カスタム"
+
+#: PROPERTIES PAGE
+msgctxt "txtPropInfo"
+msgid "With  PROPERTIES  activated, Icaros will allow you to view information such as length, width, height, artist etc. in Explorer, for any of the checked filetypes below"
+msgstr "PROPERTIESが作動すると、Icarosは、以下のチェックされたファイルタイプについてエクスプローラによって長さ、幅、高さなどの情報を表示することができます。"
+
+msgctxt "cptVideo"
+msgid "VIDEO"
+msgstr "ビデオ"
+
+msgctxt "cptAudio"
+msgid "AUDIO"
+msgstr "オーディオ"
+
+msgctxt "btnSelectAll"
+msgid "Select All"
+msgstr "すべて選択"
+
+msgctxt "btnDeselectAll"
+msgid "Deselect All"
+msgstr "選択解除"
+
+msgctxt "cbxShowUnd"
+msgid "Show [Und] on tracks with an undefined language"
+msgstr ""
+
+#: CACHE PAGE
+msgctxt "tglIndexer"
+msgid "SETTINGS"
+msgstr "設定"
+
+msgctxt "tglIndexLocs"
+msgid "LOCATIONS"
+msgstr "場所"
+
+msgctxt "lblCacheLocation"
+msgid "Cache Location"
+msgstr "キャッシュの場所"
+
+msgctxt "tipInvalidLocation"
+msgid "Icaros does not have permission to access current Cache Location.\nClick here to attempt to set the proper permissions.\nIf the error persists, try another directory."
+msgstr ""
+
+msgctxt "lblDriveRoot"
+msgid "Free Space on [{0}] Drive:"
+msgstr "[{0}] ドライブの空き容量："
+
+msgctxt "lblMinFreeSpace"
+msgid "Min Free Space"
+msgstr "最小空き容量"
+
+msgctxt "lblMaxCacheSize"
+msgid "Max Cache Size"
+msgstr "最大キャッシュサイズ"
+
+msgctxt "tipMaxCache"
+msgid "Sets the max size limit of the Icaros Cache.\nIf 0 is set, the cache size is unlimited."
+msgstr "Icarosキャッシュの最大サイズ制限を設定します。\n0が設定されている場合、キャッシュサイズは無制限です。"
+
+msgctxt "lblExclTypes"
+msgid "Excluded Filetypes"
+msgstr "除外ファイルの種類"
+
+msgctxt "tipUsedCache"
+msgid "{0:0.00}% of the available cache space is currently used"
+msgstr "{0:0.00}% の利用可能なキャッシュ空間は、現在使用されています。"
+
+msgctxt "tipCacheSize"
+msgid "Icaros Cache Size"
+msgstr "Icarosキャッシュサイズ"
+
+msgctxt "lblEntries"
+msgid "{0} entries"
+msgstr "{0} エントリー"
+
+msgctxt "lblCacheTut1"
+msgid "With the Icaros Cache ENABLED, Icaros will keep a local record of all thumbnails in an internal cache.\nThis allows Icaros to regenerate any cached thumbnail almost instantly in case Windows Explorer loses them.\n"
+msgstr "Icarosキャッシュを有効にすると、Icarosは内部キャッシュにすべてのサムネイルのローカルレコードを維持します。\nこれはIcarosは、ほぼ瞬時にWindowsエクスプローラがそれらを失った場合にキャッシュされたサムネイルを再生成することができます。\n"
+
+msgctxt "lblCacheTut2"
+msgid "\nBy adding folders to the LOCATIONS page, and clicking the Build button below, it is possible to fill the cache\ndirectly from within IcarosConfig."
+msgstr "\nLOCATIONSページにフォルダを追加し、以下のビルドボタンをクリックすると、IcarosConfig内から直接キャッシュを\n充填することができます。"
+
+msgctxt "lblCacheSt1"
+msgid "STATIC"
+msgstr "静的"
+
+msgctxt "lblCacheSt2"
+msgid "DYNAMIC"
+msgstr "動的"
+
+msgctxt "lblCacheStInfo1"
+msgid "allows Icaros to retrieve cached thumbnails, but only IcarosConfig can modify the cache."
+msgstr "Icarosは、キャッシュされたサムネイルを取得することができますが、Icaros Configが唯一キャッシュを変更することができます。"
+
+msgctxt "lblCacheStInfo2"
+msgid "allows Icaros to retrieve cached thumbnails, as well as dynamically add any new thumbnails to the cache."
+msgstr "Icarosは、キャッシュされたサムネイルを取得するだけでなく動的にキャッシュに新しいサムネイルを追加することができます。"
+
+msgctxt "lblStatus"
+msgid "Status:"
+msgstr "状態："
+
+msgctxt "lblProgress"
+msgid "Progress:"
+msgstr "進捗状況："
+
+msgctxt "lblCompleted"
+msgid "Completed:"
+msgstr "完了："
+
+msgctxt "lblFailed"
+msgid "Failed:"
+msgstr "失敗："
+
+msgctxt "btnFailed"
+msgid "View"
+msgstr "表示"
+
+msgctxt "btnBuild"
+msgid "Build Cache"
+msgstr "キャッシュ構築"
+
+msgctxt "btnRebuild"
+msgid "Rebuild Cache"
+msgstr "キャッシュ再構築"
+
+msgctxt "btnCancel"
+msgid "Cancel"
+msgstr "キャンセル"
+
+msgctxt "btnClearCache"
+msgid "Clear Cache"
+msgstr "キャッシュクリア"
+
+msgctxt "lblSetLocInfo"
+msgid "At least one location must be added to use the indexer"
+msgstr "少なくとも一つの場所を、インデクサを使用するために追加する必要があります。"
+
+msgctxt "dlgClrIcCache"
+msgid "You are about to delete the Icaros Cache.\nDo you still wish to proceed?"
+msgstr "Icarosキャッシュを削除しようとしています。\n続行しますか？"
+
+msgctxt "dlgCacheLoc"
+msgid "Select a thumbnail cache location"
+msgstr "サムネイルキャッシュの場所を選択"
+
+msgctxt "dlgcptFailed"
+msgid "FAILED FILES"
+msgstr "失敗したファイル"
+
+msgctxt "tipOpenDirSelect"
+msgid "Open folder and select file"
+msgstr "フォルダと選択ファイルを開く"
+
+msgctxt "btnSaveList"
+msgid "Save List"
+msgstr "リスト保存"
+
+msgctxt "stsIdxerInit"
+msgid "Indexer Initialized"
+msgstr "インデクサ初期化"
+
+msgctxt "stsCollect"
+msgid "Preparing files for processing..."
+msgstr "処理するファイルを準備しています..."
+
+msgctxt "stsIdxFiles"
+msgid "Indexing files..."
+msgstr "ファイルインデックス中..."
+
+msgctxt "stsIdxFolders"
+msgid "Indexing folders..."
+msgstr "フォルダインデックス中..."
+
+msgctxt "stsIdxSuccess"
+msgid "Indexing Completed Successfully"
+msgstr "インデックス作成は正常に完了しました。"
+
+msgctxt "stsIdxFailed"
+msgid "Indexing Failed"
+msgstr "インデックス作成に失敗しました。"
+
+msgctxt "stsIdxCancel"
+msgid "Indexing was cancelled"
+msgstr "インデックス作成がキャンセルされました。"
+
+msgctxt "stsIdxComplete"
+msgid "Indexing Completed"
+msgstr "インデックス作成に完了しました。"
+
+msgctxt "lblTimeElapsed"
+msgid "Took: {}h {}m {}s {}ms"
+msgstr ""
+
+msgctxt "stsEHash"
+msgid "Failed to calculate proper file hash"
+msgstr "適切なファイルハッシュ計算に失敗しました。"
+
+msgctxt "stsEThread"
+msgid "Failed to initialize thread"
+msgstr "スレッドの初期化に失敗しました。"
+
+msgctxt "stsECacheInit"
+msgid "Failed to initialize Icaros Cache"
+msgstr "Icarosキャッシュの初期化に失敗しました。"
+
+msgctxt "stsEServerInit"
+msgid "Failed to initialize Icaros Thumbnail Provider"
+msgstr "Icarosサムネイルプロバイダの初期化に失敗しました。"
+
+msgctxt "stsECacheLimit"
+msgid "Maximum cache size reached"
+msgstr "最大キャッシュサイズに達しました。"
+
+msgctxt "stsESpaceLimit"
+msgid "Minimum space limit reached"
+msgstr "最小スペースの限界に達しました。"
+
+msgctxt "stsEDBAccess"
+msgid "Failed to access the database"
+msgstr "データベースへのアクセスに失敗しました。"
+
+msgctxt "stsEIDXAccess"
+msgid "Failed to access the index"
+msgstr "インデックスへのアクセスに失敗しました。"
+
+msgctxt "stsERegAccess"
+msgid "Failed to access the registry"
+msgstr "レジストリへのアクセスに失敗しました。"
+
+msgctxt "stsECleanUp"
+msgid "Clean up was incomplete"
+msgstr "クリーンアップは不完全です。"
+
+msgctxt "stsENoFiles"
+msgid "Indexer found no files with included filetypes in current cache locations"
+msgstr ""
+
+msgctxt "stsEUnknown"
+msgid "Undetermined result"
+msgstr "判別できない結果"
+
+msgctxt "btnAdd"
+msgid "Add"
+msgstr "追加"
+
+msgctxt "btnRemove"
+msgid "Remove"
+msgstr "削除"
+
+msgctxt "btnClear"
+msgid "Clear"
+msgstr "クリア"
+
+msgctxt "hdrLocation"
+msgid "Included Locations"
+msgstr "含まれる場所"
+
+msgctxt "hdrViewSize"
+msgid "View Size"
+msgstr "表示サイズ"
+
+msgctxt "hdrRecursive"
+msgid "Recursive"
+msgstr "再帰的"
+
+msgctxt "hdrExcluded"
+msgid "Excluded Locations"
+msgstr "除外場所"
+
+msgctxt "enuSmall"
+msgid "Small"
+msgstr "小さい"
+
+msgctxt "enuMedium"
+msgid "Large"
+msgstr "普通"
+
+msgctxt "enuLarge"
+msgid "XL"
+msgstr "大きい"
+
+msgctxt "enuXL"
+msgid "Win 8 Icons"
+msgstr "Win 8 アイコン"
+
+msgctxt "enuXXL"
+msgid "Win 10 Icons"
+msgstr "Win 10 アイコン"
+
+msgctxt "dlgAddDir"
+msgid "Please select the directory, you wish to add to the list"
+msgstr "リストに追加するフォルダを選択してください。"
+
+msgctxt "dlgClearLocs"
+msgid "Are you sure, you wish to clear all the entries off this list?"
+msgstr ""
+
+#, fuzzy
+msgctxt "dlgDirAccessErr"
+msgid "The selected folder does not have the proper Read/Write permissions to use as Cache Location.\nWill you allow Icaros to add the necessary user permissions to this folder?"
+msgstr "選択したフォルダは、キャッシュの場所として使用するための適切な読み取り/書き込み権限がありません。\nこの場所が使用されている場合Icarosキャッシュが動作しない場合があります。\n\nこのフォルダを使用しますか？"
+
+msgctxt "dlgMoveCache"
+msgid "You are about to change the Cache Location. Would you like to move the existing cache to new the location?"
+msgstr "あなたはキャッシュの場所を変更しようとしています。新しい場所に既存のキャッシュを移動しますか？"
+
+msgctxt "dlgMoveError"
+msgid "The Icaros Cache is currently locked by another process, please try restarting Explorer, then try again.\nIf it is still locked after restarting Explorer, a reboot may be required."
+msgstr ""
+
+msgctxt "cptIcRunWrn"
+msgid "Close IcarosConfig confirmation"
+msgstr ""
+
+msgctxt "dlgIcRunWrn"
+msgid "The Icaros cache indexer is still running.\nAre you sure you wish to close IcarosConfig and stop the indexer?"
+msgstr ""
+
+#: TOOLS PAGE
+msgctxt "cptWinCache"
+msgid "WINDOWS THUMBNAIL CACHE"
+msgstr "WINDOWSサムネイルキャッシュ"
+
+msgctxt "lblWinCacheSize"
+msgid "Cache Size:  {0} MB"
+msgstr "キャッシュサイズ： {0} MB"
+
+msgctxt "btnWinCacheClear"
+msgid "Clear"
+msgstr "クリア"
+
+msgctxt "tipOpenCacheLoc"
+msgid "Open Windows thumbnail cache directory"
+msgstr "開いているWindowsサムネイルキャッシュフォルダ"
+
+msgctxt "cptExplorer"
+msgid "WINDOWS EXPLORER"
+msgstr "Windowsエクスプローラ"
+
+msgctxt "btnExpRefresh"
+msgid "Refresh"
+msgstr "再表示"
+
+msgctxt "btnExpRestart"
+msgid "Restart"
+msgstr "再起動"
+
+msgctxt "cptResetTypes"
+msgid "RESET NATIVE FILETYPES"
+msgstr "NATIVEファイルタイプリセット"
+
+msgctxt "btnResetThumb"
+msgid "Reset Thumbnail Filetypes"
+msgstr "サムネイルファイルタイプリセット"
+
+msgctxt "btnResetProps"
+msgid "Reset Property Filetypes"
+msgstr "プロパティファイルタイプをリセット"
+
+msgctxt "txtResetLimits"
+msgid "The native filetypes can only be reset while Icaros thumbnailing\nand/or properties are not activated"
+msgstr "ネイティブのファイルタイプのみIcarosのサムネイルおよび（または）プロパティを非アクティブにすることができます。"
+
+msgctxt "dlgClrCacheErr"
+msgid "The Thumbnail Cache is currently in use.\n Wait a moment, then try again."
+msgstr "サムネイルキャッシュは現在使用中です。\n しばらく待って、再度実行してください。"
+
+msgctxt "dlgcptExpRestrt"
+msgid "Restart Explorer"
+msgstr "エクスプローラー再起動"
+
+msgctxt "dlgExpRestrt"
+msgid "Warning!\nRestarting Explorer may interrupt file copy/move operations,\nand may cause certain processes to halt.\n\nDo you wish to continue?"
+msgstr "警告！\n再起動中のエクスプローラはファイルコピー／移動操作を中断し、\n一定のプロセスを停止させる可能性があります。\n\n続行しますか？"
+
+msgctxt "dlgRstThumb"
+msgid "Are you sure, you want to reset all native filetypes back to their default thumbnail providers?"
+msgstr "デフォルトのサムネイルプロバイダへのすべてのネイティブファイルタイプをリセットしますか？"
+
+msgctxt "dlgRstProps"
+msgid "Are you sure, you want to reset all native filetypes back to their default property handlers and property lists?"
+msgstr "デフォルトプロパティハンドラおよびプロパティリストへのすべてのネイティブファイルタイプをリセットしますか？"
+
+msgctxt "dlgRstSuccess"
+msgid "All native filetypes was reset successfully!"
+msgstr "すべてのネイティブファイルタイプが正常にリセットされました！"
+
+#: DEBUG PAGE
+msgctxt "lblTest"
+msgid "TEST:"
+msgstr ""
+
+msgctxt "lblSize"
+msgid "SIZE:"
+msgstr ""
+
+msgctxt "enuThumbnailViaIcaros"
+msgid "THUMBNAILING VIA ICAROS"
+msgstr ""
+
+msgctxt "enuThumbnailViaExplorer"
+msgid "THUMBNAILING VIA EXPLORER"
+msgstr ""
+
+msgctxt "enuPropertiesViaIcaros"
+msgid "PROPERTIES VIA ICAROS"
+msgstr ""
+
+msgctxt "enuPropertiesViaExplorer"
+msgid "PROPERTIES VIA EXPLORER"
+msgstr ""
+
+msgctxt "btnRunAllTest"
+msgid "Run All"
+msgstr ""
+
+msgctxt "btnRunTest"
+msgid "Run ({0})"
+msgstr ""
+
+msgctxt "hdrTestFiles"
+msgid "Test Files"
+msgstr ""
+
+msgctxt "hdrTime"
+msgid "Time"
+msgstr ""
+
+msgctxt "hdrShellExtension"
+msgid "Shell Extension"
+msgstr ""
+
+msgctxt "hdrCache"
+msgid "From Cache"
+msgstr ""
+
+msgctxt "lblDropFiles"
+msgid "DROP FILES AND/OR FOLDERS YOU WISH TO TEST HERE"
+msgstr ""
+
+msgctxt "lblNoProperties"
+msgid "NO PROPERTIES HAS BEEN GENERATED FOR THIS FILE\nUSE THE 'PROPERTY TEST' TO VIEW PROPERTIES FOR THIS FILE"
+msgstr ""
+
+msgctxt "lblLevel"
+msgid "LVL:"
+msgstr ""
+
+msgctxt "lblDebugCount"
+msgid "{0} ENTRIES"
+msgstr ""
+
+msgctxt "tipRefresh"
+msgid "Refresh the thumbnails of the selected files in Explorer"
+msgstr ""
+
+msgctxt "tipSubDirDepth"
+msgid "The level/depth of subdirectories to scan through when getting files from a dropped folder (1-9)"
+msgstr ""
+
+msgctxt "tipClosePanel"
+msgid "Close panel"
+msgstr ""
+
+msgctxt "tipAutoScrollOn"
+msgid "Disable auto scrolling"
+msgstr ""
+
+msgctxt "tipAutoScrollOff"
+msgid "Enable auto scrolling"
+msgstr ""
+
+msgctxt "tipThumbPlaceholder"
+msgid "Use one of the two 'Thumbnail tests' to view the thumbnail for this file"
+msgstr ""
+
+msgctxt "tipThumbPreview"
+msgid "Thumbnail dimensions:\n{0} x {1}"
+msgstr ""
+
+#: ABOUT PAGE
+msgctxt "lnkSupport"
+msgid "Follow Beta development of Icaros or get support"
+msgstr "Icarosのベータ版開発に従うか、サポートを受けます"
+
+msgctxt "lblSpcTks"
+msgid "SPECIAL THANKS TO"
+msgstr "感謝します..."
+
+#: UI SETTINGS PAGE
+msgctxt "lblLocalize"
+msgid "LOCALIZATION"
+msgstr "言語"
+
+msgctxt "cbxPropLocal"
+msgid "Enable Property Localization"
+msgstr "プロパティローカライズを有効にする"
+
+msgctxt "lblTheming"
+msgid "THEME OPTIONS"
+msgstr "テーマオプション"
+
+msgctxt "lblChromeClr"
+msgid "CHROME COLOR"
+msgstr "クロムカラー"
+
+msgctxt "enuMonoColor"
+msgid "Mono Color"
+msgstr "モノカラー"
+
+msgctxt "enuColorPerPage"
+msgid "Color Per Page"
+msgstr "色/ページ"
+
+msgctxt "cbxRemWinSize"
+msgid "Remember Window Size"
+msgstr "ウィンドウサイズを記憶する"
+
+msgctxt "cbxRemWinPos"
+msgid "Remember Window Position"
+msgstr "ウィンドウ位置を記憶する"
+
+msgctxt "cbxAnimation"
+msgid "Disable Page Animations"
+msgstr "ページアニメーションを無効にする"
+
+msgctxt "lblGlassOpacity"
+msgid "Glass Overlay Opacity"
+msgstr "ガラスオーバーレイ不透明度"
+
+msgctxt "lblGlassDark"
+msgid "Dark"
+msgstr "ダーク"
+
+msgctxt "lblGlassLight"
+msgid "Light"
+msgstr "ライト"
+
+msgctxt "tipModSettings"
+msgid "To Export/Import/Reset the Icaros settings, thumbnailing\nand properties must be deactivated"
+msgstr "Icaros設定、サムネイルをエクスポート/インポート/リセットする場合プロパティを非アクティブにする必要があります。"
+
+msgctxt "optExport"
+msgid "Export Settings"
+msgstr "エクスポート設定"
+
+msgctxt "optImport"
+msgid "Import Settings"
+msgstr "インポート設定"
+
+msgctxt "optReset"
+msgid "Reset All Settings"
+msgstr "すべての設定をリセット"
+
+msgctxt "dlgThemeAccent"
+msgid "Would you like to use this theme's default chrome colors?\n\nWarning: This will overwrite your current chrome color settings!"
+msgstr ""
+
+msgctxt "cptThemeAccent"
+msgid "Use default theme chrome colors?"
+msgstr ""
+
+msgctxt "dlgExportLoc"
+msgid "Please chose where you wish to export the Icaros settings"
+msgstr "Icaros設定をエクスポートする場所を選択してください。"
+
+msgctxt "dlgImportWrn"
+msgid "This will overwrite ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "すべての既存の設定が上書きされます。\n\n続行しますか？"
+
+msgctxt "dlgResetAll"
+msgid "This will reset ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "既存のすべての設定をリセットします。\n\n続行しますか？"
+
+msgctxt "cptResetWrn"
+msgid "Settings Reset Confirmation"
+msgstr "設定のリセット確認"
+
+#: WELCOME OVERLAY
+msgctxt "lblWlcIntro1"
+msgid "WELCOME"
+msgstr ""
+
+msgctxt "lblWlcIntro2"
+msgid "TO THE NEW ICAROS GUI"
+msgstr ""
+
+msgctxt "lblWlcSelect"
+msgid "Please select your preferred"
+msgstr ""
+
+msgctxt "lblWlcLang"
+msgid "language:"
+msgstr ""
+
+msgctxt "lblWlcTheme"
+msgid "theme:"
+msgstr ""
+
+msgctxt "lblWlcTip1"
+msgid "Click here to change language and ui settings"
+msgstr ""
+
+msgctxt "lblWlcTip2"
+msgid "Click these icons to browse the various pages of settings"
+msgstr ""
+
+msgctxt "lblWlcTip3"
+msgid "Click the 'Activation buttons' to toggle the state of the shell extensions"
+msgstr ""
+
+msgctxt "lblWlcTip4"
+msgid "Drag and drop files onto this page to test if Icaros can thumbnail them\nThe filetype will automatically be added to the list of 'Thumbnail filetypes', if it is compatible with Icaros\n\nDropping a file that already exists in the 'Thumbnail filetypes' list, will just refresh that file's thumbnail"
+msgstr ""
+
+#: GLOBAL
+msgctxt "tipAddFiles"
+msgid "Add files"
+msgstr ""
+
+msgctxt "tipClearList"
+msgid "Clear list"
+msgstr ""
+
+msgctxt "tipWow64On"
+msgid "Icaros is enabled for 32-bit file dialogs"
+msgstr "Icarosは、32ビットファイルダイアログが有効になっています。"
+
+msgctxt "tipWow64Off"
+msgid "Icaros is disabled for 32-bit file dialogs"
+msgstr "Icarosは、32ビットファイルダイアログが無効になっています"
+
+msgctxt "tipBrowse"
+msgid "Browse to location"
+msgstr "場所を参照"
+
+msgctxt "cptDonate"
+msgid "Donate"
+msgstr "寄付する"
+
+msgctxt "lblDonateTxt"
+msgid "If you like Icaros please consider making a donation to keep up the development of Icaros"
+msgstr "Icarosを気に入って頂けた場合、Icarosの発展を維持するために寄付をすることをご検討ください。"
+
+msgctxt "lblDonateTxt2"
+msgid "Donations received so far in {0}"
+msgstr ""
+
+msgctxt "lblFlattrTxt"
+msgid "Become a microdonator to continuously support the development of Icaros"
+msgstr "継続的にIcarosの開発をサポートする寄付者になる"
+
+msgctxt "lblCreatedBy"
+msgid "Created and developed by"
+msgstr "作成、開発者"
+
+msgctxt "tipMail"
+msgid "Send a mail to the developer of Icaros"
+msgstr "Icarosの開発者にメールを送信"
+
+msgctxt "tipTwitter"
+msgid "Follow Icaros development on Twitter"
+msgstr "TwitterでIcaros開発をフォロー"
+
+msgctxt "swtOn"
+msgid "On"
+msgstr "オン"
+
+msgctxt "swtOff"
+msgid "Off"
+msgstr "オフ"
+
+msgctxt "btnDone"
+msgid "Done"
+msgstr "完了"
+
+msgctxt "btnOK"
+msgid "OK"
+msgstr "ΟΚ"
+
+msgctxt "btnYes"
+msgid "Yes"
+msgstr "はい"
+
+msgctxt "btnNo"
+msgid "No"
+msgstr "いいえ"
+
+msgctxt "btnContinue"
+msgid "Continue"
+msgstr ""
+
+msgctxt "btnGotIt"
+msgid "Got It!"
+msgstr ""
+
+msgctxt "dlgcptConf"
+msgid "Confirmation"
+msgstr "確認"
+
+msgctxt "dlgcptInfo"
+msgid "Info"
+msgstr "情報"
+
+msgctxt "dlgcptError"
+msgid "Error"
+msgstr ""
+
+msgctxt "btnRstColor"
+msgid "Reset Color"
+msgstr "カラーをリセット"
+
+msgctxt "btnMin"
+msgid "Minimize"
+msgstr "最小化"
+
+msgctxt "btnMax"
+msgid "Maximize"
+msgstr "最大化"
+
+msgctxt "btnResDown"
+msgid "Restore Down"
+msgstr "ダウンの復元"
+
+msgctxt "btnClose"
+msgid "Close"
+msgstr "閉じる"
+
+#~ msgctxt "dlgClearLocs"
+#~ msgid "Are you sure, you wish to clear all the entries of this list?"
+#~ msgstr "このリストのすべてのエントリをクリアしてもよろしいいですか？"
+
+#~ msgctxt "enuXL"
+#~ msgid "Preview"
+#~ msgstr "Προεπισκόπηση"

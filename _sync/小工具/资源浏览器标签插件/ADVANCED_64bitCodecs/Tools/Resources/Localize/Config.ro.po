@@ -1,0 +1,965 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Icaros\n"
+"POT-Creation-Date: 2014-10-03 15:23:34+0000\n"
+"PO-Revision-Date: 2022-09-30 10:09+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
+"%100<=19) ? 1 : 2);\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: EXPLORER PROPERTIES
+msgctxt "#VideoTracks"
+msgid "Video tracks"
+msgstr "Piste video"
+
+msgctxt "#AudioTracks"
+msgid "Audio tracks"
+msgstr "Piste Audio"
+
+msgctxt "#SubtitleTracks"
+msgid "Subtitle tracks"
+msgstr "Piste de subtitrare"
+
+msgctxt "#ContentCompression"
+msgid "Content compression"
+msgstr "Comprimare Conținut"
+
+msgctxt "#ContainsChapters"
+msgid "Contains chapters"
+msgstr "Conține capitole"
+
+msgctxt "#BitDepth"
+msgid "Bit depth"
+msgstr "Adâncime Bit"
+
+msgctxt "#SubtitleGroup"
+msgid "Subtitles"
+msgstr "Subtitrări"
+
+#: MAIN WINDOW
+msgctxt "tglThumbnail"
+msgid "THUMBNAILING"
+msgstr "CREEAZĂ MINIATURI"
+
+msgctxt "tglProperty"
+msgid "PROPERTIES"
+msgstr "PROPRIETĂȚI"
+
+msgctxt "tglCache"
+msgid "CACHE"
+msgstr "CACHE"
+
+msgctxt "tglTools"
+msgid "TOOLS"
+msgstr "UNELTE"
+
+msgctxt "tglDebug"
+msgid "DEBUG"
+msgstr "DEPANARE"
+
+msgctxt "tglAbout"
+msgid "ABOUT"
+msgstr "DESPRE"
+
+msgctxt "tglUiSettings"
+msgid "ui settings"
+msgstr "Setări Interfață Utilizator"
+
+msgctxt "stActivated"
+msgid "ACTIVATED"
+msgstr "ACTIVAT"
+
+msgctxt "stDeactivated"
+msgid "DEACTIVATED"
+msgstr "DEZACTIVAT"
+
+msgctxt "stDisabled"
+msgid "DISABLED"
+msgstr "DEZACTIVAT"
+
+msgctxt "stStatic"
+msgid "ENABLED (STATIC)"
+msgstr "ACTIVAT"
+
+msgctxt "stDynamic"
+msgid "ENABLED (DYNAMIC)"
+msgstr "ACTIVAT (DINAMIC)"
+
+msgctxt "stNotInstalled"
+msgid "NOT INSTALLED"
+msgstr "NU ESTE INSTALAT"
+
+msgctxt "stIndexing"
+msgid "INDEXING..."
+msgstr "SE INDEXEAZĂ..."
+
+#: THUMBNAIL PAGE
+msgctxt "cptFiletypes"
+msgid "THUMBNAIL FILETYPES"
+msgstr "TIPURI DE FIȘIERE PENTRU CARE SE CREAZĂ O MINIATURĂ"
+
+msgctxt "lblPresets"
+msgid "PRESET:"
+msgstr "ACUM:"
+
+msgctxt "cptSettings"
+msgid "SETTINGS"
+msgstr "SETĂRI"
+
+msgctxt "lblOffset"
+msgid "Thumbnail Offset"
+msgstr "DECALAJ MINIATURĂ"
+
+msgctxt "lblPrefTime"
+msgid "Prefer Timestamp"
+msgstr "SETEAZĂ DECALAJUL DE TIMP PREFERAT"
+
+msgctxt "cbxBlkDtct"
+msgid "Enable black/white frame detection"
+msgstr "Activează detectarea cadrelor alb/negru"
+
+msgctxt "lblThreshold"
+msgid "Threshold"
+msgstr "Prag Limită"
+
+msgctxt "cbxShowOverlay"
+msgid "Display icon overlays on thumbnails"
+msgstr "Afișează icoane peste miniaturi"
+
+msgctxt "cbxShowVidAdorn"
+msgid "Display movie reel on video thumbnails"
+msgstr "Afișează margini „rolă de film” pe miniaturile video"
+
+msgctxt "cbxCoverArt"
+msgid "Use embedded Cover Art for thumbnails"
+msgstr "Folosește Copertele Integrate pentru generearea miniaturilor"
+
+msgctxt "cbxCoverArtAny"
+msgid "Use any embedded image as Cover Art"
+msgstr "Folosește orice imagine internă ca și Copertă"
+
+msgctxt "cbxLandscape"
+msgid "Prefer Landscape Covers"
+msgstr "Prefer Coperțile"
+
+msgctxt "tipAddTypes"
+msgid "Add New Thumbnail Filetypes"
+msgstr "Adaugă Noi Tipuri de Fișiere pentru Miniaturi"
+
+msgctxt "tipBlkDtct"
+msgid "With this option enabled, Icaros will perform a quick and simple\nscan of the grabbed frame. If the frame is either too dark or too\nlight, Icaros will skip forward and try to find a better suited frame."
+msgstr "Cu această opțiune activată, Icaros va efectua o scanare rapidă și simplă\na cadrului capturat. În cazul în care cadrul este fie prea întunecat, fie prea \ndeschis, Icaros va sări înainte și va încerca să găsească un cadru mai potrivit."
+
+msgctxt "tipCoverArt"
+msgid "When Cover Art is enabled, Icaros will look for embedded\ncover art in files that support it while generating thumbnails.\nIf a cover is found, it will be used as thumbnail, otherwise\nIcaros will automatically fall back to normal thumbnailing.\n\nNote: This should not affect the thumbnailing speed in any\nnoticeable way."
+msgstr "Când Încarcă Copertă este activat, Icaros va căuta coperta \nîn fișierele care o au în timp ce generează miniaturi.\nDacă se găsește o copertă, aceasta va fi utilizată ca miniatură,\nîn caz contrar Icaros va reveni automat la generarea normală de miniaturi.\n\nNotă: Acest lucru nu ar trebui să afecteze viteza de creare a miniaturii într-un mod perceptibil."
+
+msgctxt "tipCoverAny"
+msgid "With this option enabled, Icaros will use any embedded image in\nthe file as a cover, whether it follows the file specifications or not.\nImages intended as covers will always be preferred."
+msgstr "Cu această opțiune activată, Icaros va folosi orice imagine încorporată\nîn fișier ca și copertă, indiferent dacă aceasta respectă sau nu specificațiile \nfișierului. Imaginile destinate ca și coperți vor fi întotdeauna preferate."
+
+msgctxt "tipCoverLand"
+msgid "Some MKV files contain multiple covers. With such files\nIcaros will default to using the first normal/vertical cover.\nThis option will make Icaros prioritize landscape/horizontal\ncovers instead."
+msgstr "Unele fișiere MKV conțin mai multe coperți. Cu astfel de fișiere, \nIcaros va utiliza în mod implicit prima copertă normală/verticală. \nAceastă opțiune va face ca Icaros să prioritizeze coperțile \npeisaj/orizontale."
+
+msgctxt "dlgcptPrstChng"
+msgid "Preset Info"
+msgstr "Informație Implicită"
+
+msgctxt "dlgPrstChng"
+msgid "The current list contains filetypes that are not included in the selected preset.\n\nDo you wish to include these filetypes in the list?"
+msgstr "Lista curentă conține tipuri de fișiere care nu sunt incluse în preselecția aleasă.\n\nDorești să incluzi aceste tipuri de fișiere în listă?"
+
+msgctxt "dlgPrstPsd"
+msgid "PSD is currently being handled by another thumbnail shell extension.\n\nDo you wish for Icaros to assume control of this filetype?\n(You can always remove the filetype again to undo this action)"
+msgstr "În acest moment, PSD este gestionat de o altă extensie shell  de generare miniaturi.\n\nDorești ca Icaros să preia controlul asupra acestui tip de fișier?\n( Poți oricând să elimini tipul acesta de fișier pentru a anula această acțiune.)"
+
+msgctxt "dlgcptThmbCheck"
+msgid "Thumbnail Check"
+msgstr "Verifică Miniatură"
+
+msgctxt "dlgThmbCheck"
+msgid "The following filetypes did not pass the thumbnail check:\n\n{0}\n\nDo you still wish to add them?"
+msgstr "Următoarele tipuri de fișiere nu au trecut de verificarea miniaturii:\n\n{0}\nDorești să continui să le adaugi?"
+
+msgctxt "ntfNewFiles"
+msgid "{0} new filetype(s) added ({1})"
+msgstr "{0} noi tipuri de fișiere adăugate ({1})"
+
+msgctxt "ntfRefresh"
+msgid "Refreshed thumbnails of {0} file(s)"
+msgstr "Reîmprospătează miniaturile a {0} fișiere"
+
+msgctxt "ntfExtrSuccess"
+msgid "Extraction Succeeded!"
+msgstr "Extracție Reușită!"
+
+msgctxt "ntfExtrFailed"
+msgid "Extraction Failed!"
+msgstr "Extracție Eșuată!"
+
+msgctxt "ntfTimeTaken"
+msgid "It took {0}ms"
+msgstr "A durat {0}ms"
+
+msgctxt "txtThumbUpdater"
+msgid "Drag and drop one or more files and/or folders to this page to refresh their thumbnails/icons"
+msgstr "Trage și plasează unul sau mai multe fișiere și/sau foldere în această pagină pentru a reîmprospăta miniaturile/icoanele acestora"
+
+msgctxt "prstDefault"
+msgid "DEFAULT"
+msgstr "PRESTABILIT"
+
+msgctxt "prstCommon"
+msgid "COMMON"
+msgstr "COMUN"
+
+msgctxt "prstVidOnly"
+msgid "VIDEO ONLY"
+msgstr "DOAR VIDEO"
+
+msgctxt "prstAudOnly"
+msgid "AUDIO ONLY"
+msgstr "DOAR AUDIO"
+
+msgctxt "prstMostKnown"
+msgid "MOST KNOWN"
+msgstr "CELE MAI CUNOSCUTE"
+
+msgctxt "prstCustom"
+msgid "CUSTOM"
+msgstr "PERSONALIZAT"
+
+#: PROPERTIES PAGE
+msgctxt "txtPropInfo"
+msgid "With  PROPERTIES  activated, Icaros will allow you to view information such as length, width, height, artist etc. in Explorer, for any of the checked filetypes below"
+msgstr "Cu opțiunea PROPRIETĂȚI activată, Icaros vă va permite să vizualizați informații precum lungimea,\nlățimea, înălțimea, artistul etc. în Explorer, pentru oricare dintre tipurile de fișiere verificate mai jos"
+
+msgctxt "cptVideo"
+msgid "VIDEO"
+msgstr "VIDEO"
+
+msgctxt "cptAudio"
+msgid "AUDIO"
+msgstr "AUDIO"
+
+msgctxt "btnSelectAll"
+msgid "Select All"
+msgstr "Selectează Tot"
+
+msgctxt "btnDeselectAll"
+msgid "Deselect All"
+msgstr "Deselectează Tot"
+
+msgctxt "cbxShowUnd"
+msgid "Show [Und] on tracks with an undefined language"
+msgstr "Afișează [Und] pe piesele care au limba nespecificată"
+
+#: CACHE PAGE
+msgctxt "tglIndexer"
+msgid "SETTINGS"
+msgstr "SETĂRI"
+
+msgctxt "tglIndexLocs"
+msgid "LOCATIONS"
+msgstr "LOCAȚII"
+
+msgctxt "lblCacheLocation"
+msgid "Cache Location"
+msgstr "Locație Memorie Cache"
+
+msgctxt "tipInvalidLocation"
+msgid "Icaros does not have permission to access current Cache Location.\nClick here to attempt to set the proper permissions.\nIf the error persists, try another directory."
+msgstr "Icaros nu are permisiunea de a accesa locația curentă a Memorie Cache. \nFaceți clic aici pentru a încerca să setați permisiunile corespunzătoare.\nDacă eroarea persistă, încercați un alt director."
+
+msgctxt "lblDriveRoot"
+msgid "Free Space on [{0}] Drive:"
+msgstr "Spațiu Liber pe Discul [{0}]:"
+
+msgctxt "lblMinFreeSpace"
+msgid "Min Free Space"
+msgstr "Spațiu Liber Minim"
+
+msgctxt "lblMaxCacheSize"
+msgid "Max Cache Size"
+msgstr "Dimensiune Cache Maximă"
+
+msgctxt "tipMaxCache"
+msgid "Sets the max size limit of the Icaros Cache.\nIf 0 is set, the cache size is unlimited."
+msgstr "Stabilește limita maximă a dimensiunii memoriei cache a lui Icaros. \nDacă este setat pe 0, dimensiunea cache-ului este nelimitată."
+
+msgctxt "lblExclTypes"
+msgid "Excluded Filetypes"
+msgstr "Tipuri de Fișiere Excluse"
+
+msgctxt "tipUsedCache"
+msgid "{0:0.00}% of the available cache space is currently used"
+msgstr "În prezent, este utilizat {0:0.00}% din spațiul cache disponibil"
+
+msgctxt "tipCacheSize"
+msgid "Icaros Cache Size"
+msgstr "Dimensiune Memorie Cache Icaros"
+
+msgctxt "lblEntries"
+msgid "{0} entries"
+msgstr "{0} intrări"
+
+msgctxt "lblCacheTut1"
+msgid "With the Icaros Cache ENABLED, Icaros will keep a local record of all thumbnails in an internal cache.\nThis allows Icaros to regenerate any cached thumbnail almost instantly in case Windows Explorer loses them.\n"
+msgstr "Cu Icaros CACHE ACTIVAT, Icaros va păstra o înregistrare locală a tuturor miniaturilor într-o memorie cache internă. \nAcest lucru îi permite lui Icaros să regenereze aproape instant orice miniatură din memoria cache în cazul în care \nWindows Explorer le pierde.\n"
+
+msgctxt "lblCacheTut2"
+msgid "\nBy adding folders to the LOCATIONS page, and clicking the Build button below, it is possible to fill the cache\ndirectly from within IcarosConfig."
+msgstr "\nCând se adaugă foldere în pagina LOCAȚII și când se face clic pe butonul Reconstruiește Cache de mai jos, este posibilă umplerea\ncache-ului direct din cadrul IcarosConfig."
+
+msgctxt "lblCacheSt1"
+msgid "STATIC"
+msgstr "STATIC"
+
+msgctxt "lblCacheSt2"
+msgid "DYNAMIC"
+msgstr "DINAMIC"
+
+msgctxt "lblCacheStInfo1"
+msgid "allows Icaros to retrieve cached thumbnails, but only IcarosConfig can modify the cache."
+msgstr "permite lui Icaros să recupereze miniaturi din memoria cache, dar numai IcarosConfig poate modifica memoria cache."
+
+msgctxt "lblCacheStInfo2"
+msgid "allows Icaros to retrieve cached thumbnails, as well as dynamically add any new thumbnails to the cache."
+msgstr "permite lui Icaros să recupereze miniaturi din memoria cache, precum și să adauge dinamic orice miniaturi noi în memoria cache."
+
+msgctxt "lblStatus"
+msgid "Status:"
+msgstr "Stare:"
+
+msgctxt "lblProgress"
+msgid "Progress:"
+msgstr "Progres:"
+
+msgctxt "lblCompleted"
+msgid "Completed:"
+msgstr "Finalizate:"
+
+msgctxt "lblFailed"
+msgid "Failed:"
+msgstr "Nereușite:"
+
+msgctxt "btnFailed"
+msgid "View"
+msgstr "Vizualizează"
+
+msgctxt "btnBuild"
+msgid "Build Cache"
+msgstr "Construiește Cache"
+
+msgctxt "btnRebuild"
+msgid "Rebuild Cache"
+msgstr "Reconstruiește Cache"
+
+msgctxt "btnCancel"
+msgid "Cancel"
+msgstr "Anulează"
+
+msgctxt "btnClearCache"
+msgid "Clear Cache"
+msgstr "Șterge Cache"
+
+msgctxt "lblSetLocInfo"
+msgid "At least one location must be added to use the indexer"
+msgstr "Pentru a a utiliza indexatorul, trebuie adăugată cel puțin o locație"
+
+msgctxt "dlgClrIcCache"
+msgid "You are about to delete the Icaros Cache.\nDo you still wish to proceed?"
+msgstr "Ești pe cale să ștergi memoria cache Icaros.\nDorești să continui cu această acțiune?"
+
+msgctxt "dlgCacheLoc"
+msgid "Select a thumbnail cache location"
+msgstr "Selectează o locație pentru memoria cache a miniaturilor"
+
+msgctxt "dlgcptFailed"
+msgid "FAILED FILES"
+msgstr "FIȘIERE EȘUATE"
+
+msgctxt "tipOpenDirSelect"
+msgid "Open folder and select file"
+msgstr "Deschide folderul și alege fișierul dorit"
+
+msgctxt "btnSaveList"
+msgid "Save List"
+msgstr "Salvează Lista"
+
+msgctxt "stsIdxerInit"
+msgid "Indexer Initialized"
+msgstr "Indexator Inițializat"
+
+msgctxt "stsCollect"
+msgid "Preparing files for processing..."
+msgstr "Pregătesc fișierele pentru procesare..."
+
+msgctxt "stsIdxFiles"
+msgid "Indexing files..."
+msgstr "Indexez fișierele..."
+
+msgctxt "stsIdxFolders"
+msgid "Indexing folders..."
+msgstr "Indexez folderele..."
+
+msgctxt "stsIdxSuccess"
+msgid "Indexing Completed Successfully"
+msgstr "Indexare Finalizată cu Succes"
+
+msgctxt "stsIdxFailed"
+msgid "Indexing Failed"
+msgstr "Indexare Eșuată"
+
+msgctxt "stsIdxCancel"
+msgid "Indexing was cancelled"
+msgstr "Indexarea a Fost Anulată"
+
+msgctxt "stsIdxComplete"
+msgid "Indexing Completed"
+msgstr "Indexare Finalizată"
+
+msgctxt "lblTimeElapsed"
+msgid "Took: {}h {}m {}s {}ms"
+msgstr "Durată: {}h {}m {}s {}ms"
+
+msgctxt "stsEHash"
+msgid "Failed to calculate proper file hash"
+msgstr "Calcularea hash-ul corect al fișierului a eșuat"
+
+msgctxt "stsEThread"
+msgid "Failed to initialize thread"
+msgstr "Inițializarea thread-ului a eșuat"
+
+msgctxt "stsECacheInit"
+msgid "Failed to initialize Icaros Cache"
+msgstr "Eșuare inițializare Cache Icaros"
+
+msgctxt "stsEServerInit"
+msgid "Failed to initialize Icaros Thumbnail Provider"
+msgstr "Eșuare Inițializare Creator Miniaturi Icaros"
+
+msgctxt "stsECacheLimit"
+msgid "Maximum cache size reached"
+msgstr "Dimensiune maximă memorie cache atinsă"
+
+msgctxt "stsESpaceLimit"
+msgid "Minimum space limit reached"
+msgstr "Limita minimă de spațiu atinsă"
+
+msgctxt "stsEDBAccess"
+msgid "Failed to access the database"
+msgstr "Eșuare accesare bază de date"
+
+msgctxt "stsEIDXAccess"
+msgid "Failed to access the index"
+msgstr "Eșuare accesare index"
+
+msgctxt "stsERegAccess"
+msgid "Failed to access the registry"
+msgstr "Eșuare accesare regiștri"
+
+msgctxt "stsECleanUp"
+msgid "Clean up was incomplete"
+msgstr "Curățare a fost incompletă"
+
+msgctxt "stsENoFiles"
+msgid "Indexer found no files with included filetypes in current cache locations"
+msgstr "Indexatorul nu a găsit niciun fișier de tipul specificat în locațiile cache curente"
+
+msgctxt "stsEUnknown"
+msgid "Undetermined result"
+msgstr "Rezultat nedeterminat"
+
+msgctxt "btnAdd"
+msgid "Add"
+msgstr "Adaugă"
+
+msgctxt "btnRemove"
+msgid "Remove"
+msgstr "Elimină"
+
+msgctxt "btnClear"
+msgid "Clear"
+msgstr "Golește"
+
+msgctxt "hdrLocation"
+msgid "Included Locations"
+msgstr "Locații Incluse"
+
+msgctxt "hdrViewSize"
+msgid "View Size"
+msgstr "Vizualizează Dimensiune"
+
+msgctxt "hdrRecursive"
+msgid "Recursive"
+msgstr "Recursiv"
+
+msgctxt "hdrExcluded"
+msgid "Excluded Locations"
+msgstr "Locații Excluse"
+
+msgctxt "enuSmall"
+msgid "Small"
+msgstr "Mic"
+
+msgctxt "enuMedium"
+msgid "Large"
+msgstr "Mare"
+
+msgctxt "enuLarge"
+msgid "XL"
+msgstr ""
+
+msgctxt "enuXL"
+msgid "Win 8 Icons"
+msgstr "Iconițe stil Windows 8"
+
+msgctxt "enuXXL"
+msgid "Win 10 Icons"
+msgstr "Iconițe stil Windows 10"
+
+msgctxt "dlgAddDir"
+msgid "Please select the directory, you wish to add to the list"
+msgstr "Te rog alege directorul pe care vrei să-l adaugi în listă"
+
+msgctxt "dlgClearLocs"
+msgid "Are you sure, you wish to clear all the entries off this list?"
+msgstr "Ești sigur că vrei să elimini toate intrările din această listă?"
+
+msgctxt "dlgDirAccessErr"
+msgid "The selected folder does not have the proper Read/Write permissions to use as Cache Location.\nWill you allow Icaros to add the necessary user permissions to this folder?"
+msgstr "Folderul selectat nu are permisiunile de citire/scriere adecvate pentru a fi utilizat ca locație cache.\nÎi permiteți lui Icaros să adauge permisiunile de utilizator necesare pentru acest folder?"
+
+msgctxt "dlgMoveCache"
+msgid "You are about to change the Cache Location. Would you like to move the existing cache to new the location?"
+msgstr "Ești pe cale să modifici locația cache-ului. Dorești să muți memoria cache existentă în noua locație?"
+
+msgctxt "dlgMoveError"
+msgid "The Icaros Cache is currently locked by another process, please try restarting Explorer, then try again.\nIf it is still locked after restarting Explorer, a reboot may be required."
+msgstr "Memoria cache Icaros este blocată în prezent de un alt proces, vă rugăm să încercați să reporniți Explorer, apoi încercați din nou. \nDacă este încă blocată după repornirea Explorer, este posibil să fie necesară o repornire a pc-ului."
+
+msgctxt "cptIcRunWrn"
+msgid "Close IcarosConfig confirmation"
+msgstr "Închide confirmarea IcarosConfig"
+
+msgctxt "dlgIcRunWrn"
+msgid "The Icaros cache indexer is still running.\nAre you sure you wish to close IcarosConfig and stop the indexer?"
+msgstr "Indexatorul de cache Icaros încă rulează. Ești sigur că dorești să închizi IcarosConfig și să oprești indexatorul?"
+
+#: TOOLS PAGE
+msgctxt "cptWinCache"
+msgid "WINDOWS THUMBNAIL CACHE"
+msgstr "CACHE MINIATURI ÎN WINDOWS"
+
+msgctxt "lblWinCacheSize"
+msgid "Cache Size:  {0} MB"
+msgstr "Dimensiune Cache: {0} MB"
+
+msgctxt "btnWinCacheClear"
+msgid "Clear"
+msgstr "Golește"
+
+msgctxt "tipOpenCacheLoc"
+msgid "Open Windows thumbnail cache directory"
+msgstr "Deschide directorul cache de miniaturi din Windows"
+
+msgctxt "cptExplorer"
+msgid "WINDOWS EXPLORER"
+msgstr "WINDOWS EXPLORER"
+
+msgctxt "btnExpRefresh"
+msgid "Refresh"
+msgstr "Reîmprospătează"
+
+msgctxt "btnExpRestart"
+msgid "Restart"
+msgstr "Repornește"
+
+msgctxt "cptResetTypes"
+msgid "RESET NATIVE FILETYPES"
+msgstr "Resetează la tipurile de fișier native."
+
+msgctxt "btnResetThumb"
+msgid "Reset Thumbnail Filetypes"
+msgstr "Resetează Tipuri Fișier Miniaturi"
+
+msgctxt "btnResetProps"
+msgid "Reset Property Filetypes"
+msgstr "Resetează Proprietăți Tipuri Fișier"
+
+msgctxt "txtResetLimits"
+msgid "The native filetypes can only be reset while Icaros thumbnailing\nand/or properties are not activated"
+msgstr "Tipurile de fișiere native pot fi resetate doar când opțiunile Icaros\nCREEAZĂ MINIATURI și/sau PROPRIETĂȚI nu sunt activate."
+
+msgctxt "dlgClrCacheErr"
+msgid "The Thumbnail Cache is currently in use.\n Wait a moment, then try again."
+msgstr "Memoria Cache pentru Miniaturi este în curs de utilizare.\nAșteptați puțin, apoi încercați din nou."
+
+msgctxt "dlgcptExpRestrt"
+msgid "Restart Explorer"
+msgstr "Repornește Explorer"
+
+msgctxt "dlgExpRestrt"
+msgid "Warning!\nRestarting Explorer may interrupt file copy/move operations,\nand may cause certain processes to halt.\n\nDo you wish to continue?"
+msgstr "Atenție!\nRepornirea Explorer poate întrerupe operațiunile de copiere/mutare a fișierelor, \nși poate provoca oprirea anumitor procese.\n\nDorești să continui?"
+
+msgctxt "dlgRstThumb"
+msgid "Are you sure, you want to reset all native filetypes back to their default thumbnail providers?"
+msgstr "Ești sigur că dorești să resetezi toate tipurile de fișiere native înapoi la furnizorii lor impliciți de miniaturi?"
+
+msgctxt "dlgRstProps"
+msgid "Are you sure, you want to reset all native filetypes back to their default property handlers and property lists?"
+msgstr "Ești sigur că dorești să resetezi toate tipurile de fișiere native înapoi la gestionarii de proprietăți și listele de proprietăți implicite?"
+
+msgctxt "dlgRstSuccess"
+msgid "All native filetypes was reset successfully!"
+msgstr "Toate tipurile de fișiere native au fost resetate cu succes!"
+
+#: DEBUG PAGE
+msgctxt "lblTest"
+msgid "TEST:"
+msgstr "TEST:"
+
+msgctxt "lblSize"
+msgid "SIZE:"
+msgstr "DIMENSIUNE:"
+
+msgctxt "enuThumbnailViaIcaros"
+msgid "THUMBNAILING VIA ICAROS"
+msgstr "CREARE MINIATURI VIA ICAROS"
+
+msgctxt "enuThumbnailViaExplorer"
+msgid "THUMBNAILING VIA EXPLORER"
+msgstr "CREARE MINIATURI VIA EXPLORER"
+
+msgctxt "enuPropertiesViaIcaros"
+msgid "PROPERTIES VIA ICAROS"
+msgstr "PROPRIETĂȚI VIA ICAROS"
+
+msgctxt "enuPropertiesViaExplorer"
+msgid "PROPERTIES VIA EXPLORER"
+msgstr "PROPRIETĂȚI VIA EXPLORER"
+
+msgctxt "btnRunAllTest"
+msgid "Run All"
+msgstr "Rulează Tot"
+
+msgctxt "btnRunTest"
+msgid "Run ({0})"
+msgstr "Rulate ({0})"
+
+msgctxt "hdrTestFiles"
+msgid "Test Files"
+msgstr "Testează Fișiere"
+
+msgctxt "hdrTime"
+msgid "Time"
+msgstr "Timp"
+
+msgctxt "hdrShellExtension"
+msgid "Shell Extension"
+msgstr "Extensii Shell"
+
+msgctxt "hdrCache"
+msgid "From Cache"
+msgstr "Din Cache"
+
+msgctxt "lblDropFiles"
+msgid "DROP FILES AND/OR FOLDERS YOU WISH TO TEST HERE"
+msgstr "TRAGE ȘI DĂ DRUMUL AICI FIȘIERELOR ȘI/SAU FOLDERELOR PE CARE DOREȘTI SĂ LE TESTEZI"
+
+msgctxt "lblNoProperties"
+msgid "NO PROPERTIES HAS BEEN GENERATED FOR THIS FILE\nUSE THE 'PROPERTY TEST' TO VIEW PROPERTIES FOR THIS FILE"
+msgstr "NU AU FOST GENERATE PROPRIETĂȚI PENTRU ACEST FIȘIER\nUTILIZAȚI „PROPERTY TEST” PENTRU A VIZUALIZA PROPRIETĂȚILE ACESTUI FIȘIER"
+
+msgctxt "lblLevel"
+msgid "LVL:"
+msgstr "LVL:"
+
+msgctxt "lblDebugCount"
+msgid "{0} ENTRIES"
+msgstr "{0} INTRĂRI"
+
+msgctxt "tipRefresh"
+msgid "Refresh the thumbnails of the selected files in Explorer"
+msgstr "Actualizează în Explorer miniaturilor fișierelor selectate"
+
+msgctxt "tipSubDirDepth"
+msgid "The level/depth of subdirectories to scan through when getting files from a dropped folder (1-9)"
+msgstr "Nivelul/adâncimea subdirectoarelor care trebuie scanate atunci când se obțin fișiere dintr-un dosar abandonat (1-9)"
+
+msgctxt "tipClosePanel"
+msgid "Close panel"
+msgstr "Închide panoul"
+
+msgctxt "tipAutoScrollOn"
+msgid "Disable auto scrolling"
+msgstr "Dezactivează derularea automată"
+
+msgctxt "tipAutoScrollOff"
+msgid "Enable auto scrolling"
+msgstr "Activează derularea automată"
+
+msgctxt "tipThumbPlaceholder"
+msgid "Use one of the two 'Thumbnail tests' to view the thumbnail for this file"
+msgstr "Folosește unul dintre cele două \"Teste de miniatură\" pentru a vizualiza miniatura pentru acest fișier"
+
+msgctxt "tipThumbPreview"
+msgid "Thumbnail dimensions:\n{0} x {1}"
+msgstr "Dimensiune Miniatură:\n{0} x {1}"
+
+#: ABOUT PAGE
+msgctxt "lnkSupport"
+msgid "Follow Beta development of Icaros or get support"
+msgstr "Urmărește dezvoltarea Beta a Icaros sau solicită asistență"
+
+msgctxt "lblSpcTks"
+msgid "SPECIAL THANKS TO"
+msgstr "MULȚUMIRI SPECIALE CELOR DE MAI JOS"
+
+#: UI SETTINGS PAGE
+msgctxt "lblLocalize"
+msgid "LOCALIZATION"
+msgstr "LOCALIZARE"
+
+msgctxt "cbxPropLocal"
+msgid "Enable Property Localization"
+msgstr "Activează Localizarea Proprietăților"
+
+msgctxt "lblTheming"
+msgid "THEME OPTIONS"
+msgstr "OPȚIUNI TEME"
+
+msgctxt "lblChromeClr"
+msgid "CHROME COLOR"
+msgstr "CULOARE CHROME"
+
+msgctxt "enuMonoColor"
+msgid "Mono Color"
+msgstr "O Singură Culoare"
+
+msgctxt "enuColorPerPage"
+msgid "Color Per Page"
+msgstr "Culori Diferite în Fiecare Pagină"
+
+msgctxt "cbxRemWinSize"
+msgid "Remember Window Size"
+msgstr "Ține Minte Dimensiunea Ferestrei"
+
+msgctxt "cbxRemWinPos"
+msgid "Remember Window Position"
+msgstr "Ține Minte Poziția Ferestrei"
+
+msgctxt "cbxAnimation"
+msgid "Disable Page Animations"
+msgstr "Dezactivează Animațiile din Pagină"
+
+msgctxt "lblGlassOpacity"
+msgid "Glass Overlay Opacity"
+msgstr "Opacitate Straturi Sticlă Meniu Stânga"
+
+msgctxt "lblGlassDark"
+msgid "Dark"
+msgstr "Saturație"
+
+msgctxt "lblGlassLight"
+msgid "Light"
+msgstr "Luminozitate"
+
+msgctxt "tipModSettings"
+msgid "To Export/Import/Reset the Icaros settings, thumbnailing\nand properties must be deactivated"
+msgstr "Pentru a Exporta/Importa/Reinițializa setările Icaros, miniaturizarea \nși proprietățile trebuie să fie dezactivate"
+
+msgctxt "optExport"
+msgid "Export Settings"
+msgstr "Exportă Setări"
+
+msgctxt "optImport"
+msgid "Import Settings"
+msgstr "Importă Setări"
+
+msgctxt "optReset"
+msgid "Reset All Settings"
+msgstr "Resetează Toate Setările"
+
+msgctxt "dlgThemeAccent"
+msgid "Would you like to use this theme's default chrome colors?\n\nWarning: This will overwrite your current chrome color settings!"
+msgstr "Dorești să folosești culorile crom implicite ale acestei teme?\n\nAvertisment: Acest lucru va suprascrie setările actuale ale culorilor Chrome!"
+
+msgctxt "cptThemeAccent"
+msgid "Use default theme chrome colors?"
+msgstr "Dorești să utilizezi culorile crom ale temei implicite?"
+
+msgctxt "dlgExportLoc"
+msgid "Please chose where you wish to export the Icaros settings"
+msgstr "Te rog să alegi unde dorești să exporți setările Icaros"
+
+msgctxt "dlgImportWrn"
+msgid "This will overwrite ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Această acțiune va suprascrie TOATE setările existente.\n\nDorești să continui?"
+
+msgctxt "dlgResetAll"
+msgid "This will reset ALL your existing settings.\n\nDo you still wish to continue?"
+msgstr "Această acțiune va reseta TOATE setările existente.\n\nDorești să continui?"
+
+msgctxt "cptResetWrn"
+msgid "Settings Reset Confirmation"
+msgstr "Confirmare Resetare Setări"
+
+#: WELCOME OVERLAY
+msgctxt "lblWlcIntro1"
+msgid "WELCOME"
+msgstr "BUN VENIT"
+
+msgctxt "lblWlcIntro2"
+msgid "TO THE NEW ICAROS GUI"
+msgstr "CĂTRE NOUA INTERFAȚĂ ICAROS"
+
+msgctxt "lblWlcSelect"
+msgid "Please select your preferred"
+msgstr "Vă rog alegeți-vă pe cea care o preferați"
+
+msgctxt "lblWlcLang"
+msgid "language:"
+msgstr "limbă:"
+
+msgctxt "lblWlcTheme"
+msgid "theme:"
+msgstr "temă:"
+
+msgctxt "lblWlcTip1"
+msgid "Click here to change language and ui settings"
+msgstr "Faceți clic aici pentru a schimba setările de limbă și interfață"
+
+msgctxt "lblWlcTip2"
+msgid "Click these icons to browse the various pages of settings"
+msgstr "Fă clic pe aceste pictograme pentru a parcurge diferitele pagini de setări"
+
+msgctxt "lblWlcTip3"
+msgid "Click the 'Activation buttons' to toggle the state of the shell extensions"
+msgstr "Fă clic pe \" Butoanele de Activare \" pentru a comuta starea extensiilor shell"
+
+msgctxt "lblWlcTip4"
+msgid "Drag and drop files onto this page to test if Icaros can thumbnail them\nThe filetype will automatically be added to the list of 'Thumbnail filetypes', if it is compatible with Icaros\n\nDropping a file that already exists in the 'Thumbnail filetypes' list, will just refresh that file's thumbnail"
+msgstr "Trage și plasează fișiere în această pagină pentru a testa dacă Icaros poate crea miniaturi pentru ele\nTipul de fișier va fi adăugat automat la lista „Tip Fișiere Miniaturi”, dacă este compatibil cu Icaros.\n\nAdăugarea unui fișier care există deja în listă „Tipuri de fișiere în miniatură” va reîmprospăta doar miniatura fișierului respectiv"
+
+#: GLOBAL
+msgctxt "tipAddFiles"
+msgid "Add files"
+msgstr "Adaugă fișiere"
+
+msgctxt "tipClearList"
+msgid "Clear list"
+msgstr "Golește lista"
+
+msgctxt "tipWow64On"
+msgid "Icaros is enabled for 32-bit file dialogs"
+msgstr "Icaros este activat pentru dialoguri de fișiere pe 32 de biți"
+
+msgctxt "tipWow64Off"
+msgid "Icaros is disabled for 32-bit file dialogs"
+msgstr "Icaros este dezactivat pentru dialoguri de fișiere pe 32 de biți"
+
+msgctxt "tipBrowse"
+msgid "Browse to location"
+msgstr "Navighează către locația"
+
+msgctxt "cptDonate"
+msgid "Donate"
+msgstr "Donează"
+
+msgctxt "lblDonateTxt"
+msgid "If you like Icaros please consider making a donation to keep up the development of Icaros"
+msgstr "Dacă îți place Icaros, te rog să iei în considerare să faci o donație pentru a continua dezvoltarea sa."
+
+msgctxt "lblDonateTxt2"
+msgid "Donations received so far in {0}"
+msgstr "Donații primite până acum în {0}"
+
+msgctxt "lblFlattrTxt"
+msgid "Become a microdonator to continuously support the development of Icaros"
+msgstr "Devino un microdonator pentru a sprijini în mod continuu dezvoltarea lui Icaros"
+
+msgctxt "lblCreatedBy"
+msgid "Created and developed by"
+msgstr "Creat și dezvoltat de"
+
+msgctxt "tipMail"
+msgid "Send a mail to the developer of Icaros"
+msgstr "Trimite un e-mail la dezvoltatorul lui Icaros"
+
+msgctxt "tipTwitter"
+msgid "Follow Icaros development on Twitter"
+msgstr "Urmărește dezvoltarea aplicației Icaros pe Twitter"
+
+msgctxt "swtOn"
+msgid "On"
+msgstr "Pornit"
+
+msgctxt "swtOff"
+msgid "Off"
+msgstr "Oprit"
+
+msgctxt "btnDone"
+msgid "Done"
+msgstr "Gata"
+
+msgctxt "btnOK"
+msgid "OK"
+msgstr "OK"
+
+msgctxt "btnYes"
+msgid "Yes"
+msgstr "Da"
+
+msgctxt "btnNo"
+msgid "No"
+msgstr "Nu"
+
+msgctxt "btnContinue"
+msgid "Continue"
+msgstr "Continuă"
+
+msgctxt "btnGotIt"
+msgid "Got It!"
+msgstr "Am primit!"
+
+msgctxt "dlgcptConf"
+msgid "Confirmation"
+msgstr "Confirmare"
+
+msgctxt "dlgcptInfo"
+msgid "Info"
+msgstr "Informații"
+
+msgctxt "dlgcptError"
+msgid "Error"
+msgstr "Eroare"
+
+msgctxt "btnRstColor"
+msgid "Reset Color"
+msgstr "Resetează Culoare"
+
+msgctxt "btnMin"
+msgid "Minimize"
+msgstr "Minimizează"
+
+msgctxt "btnMax"
+msgid "Maximize"
+msgstr "Maximizează"
+
+msgctxt "btnResDown"
+msgid "Restore Down"
+msgstr "Restaurare Jos"
+
+msgctxt "btnClose"
+msgid "Close"
+msgstr "Închide"

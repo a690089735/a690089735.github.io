@@ -24,7 +24,7 @@ fn covering_str num d:2 =
 -- 	makeDir imgs_folder
 -- )
 
-fn make_preview str:edt_segment.text clamp:false imgs_folder:temp_folder savepath:edt_path.text fps:spn_rate.value type:ddl_type.selection ffmpeg:@"C:\Users\Administrator\Desktop\ffmpeg\ffmpeg.exe" =
+fn make_preview str:edt_segment.text clamp:false imgs_folder:temp_folder savepath:edt_path.text fps:spn_rate.value type:ddl_type.selection ffmpeg:@"E:\BaiduSyncdisk\我的坚果云\实用软件包\录屏截屏\ScreenToGif\ffmpeg.exe" =
 (
 progressEnd()
 progressStart "解析分段信息.."

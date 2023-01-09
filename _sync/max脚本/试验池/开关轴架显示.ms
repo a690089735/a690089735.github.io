@@ -1,0 +1,1 @@
+(((dotnetclass "autodesk.max.globalinterface").instance).utilgetcoreinterface16()).showworldaxis = false

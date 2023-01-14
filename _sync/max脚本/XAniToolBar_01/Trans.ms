@@ -150,7 +150,7 @@ fn trans_data_delete =
 	trans_data_list = trans_rename_all d:(trans_data_list.count as string).count
 )
 
--- 保存变换数据
+-- 保存变换数据-正常和按alt两种模式(按alt不记录文件到硬盘)
 fn trans_data_save obj_list:trans_copy_list =  --呼叫进度条
 if obj_list.count > 0 then(
 	local
@@ -225,10 +225,11 @@ fn trans_data_load =
 undo "Paste Transform" on( --呼叫进度条
 /*
 单帧模式(正常:按选中物体粘贴 ctrl:按记录的名称粘贴 shift粘贴数轴,alt临时模式,临时模式也可粘贴枢轴)
-逐帧模式(ctrl按记录的名称粘贴,按shift按关键帧粘贴,alt按现有帧粘贴, 高级模式:右键菜单->不粘贴缩放的逐帧粘贴,依然遵守CSA三个功能键(或者,仅粘贴位置,仅粘贴旋转,仅粘贴缩放))
-相对模式(相对模式,正常:按选中物体粘贴 ctrl:按记录的名称粘贴  高级模式:右键菜单->创建相对动画)
+逐帧模式(ctrl按记录的名称粘贴,按shift按关键帧粘贴,alt临时模式, 高级模式:右键菜单->不粘贴缩放的逐帧粘贴,依然遵守CSA三个功能键(或者,仅粘贴位置,仅粘贴旋转,仅粘贴缩放))
+	--注意逐帧模式删除了按现有帧粘贴的功能,这个功能可以被时间功能取代.
+相对模式(正常:按选中物体粘贴 ctrl:按记录的名称粘贴, alt临时模式 高级模式:右键菜单->创建相对动画)
 
-除非在单帧临时模式,否则列表选择必须大于0
+除非在单帧临时模式,或相对临时模式,否则列表选择必须大于0
 	
 	*/
 	local

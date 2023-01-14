@@ -1,5 +1,6 @@
 max showaxisicon --切换坐标轴显示
 ViewCubeOps.Visibility=true --设置视图方块显示
+ViewportButtonMgr.EnableButtons = true --设置视口按钮显示
 
 NitrousGraphicsManager.IsEnabled() --是否启用了Nitrous
 -- NitrousGraphicsManager.ChangeCursorOnMouseMove = true --是否在鼠标移动时改变光标状态
@@ -8,8 +9,21 @@ NitrousGraphicsManager.ProgressiveRendering() --触发渐进式渲染
 NitrousGraphicsManager.IsProgressiveRenderingFinished() --返回渐进式渲染状态
 
 
-NitrousGraphicsManager.PinViewPanelSize 10000 100 --高版本可用 目前>=2020可用,看判断是>2013都可以(包括最新版补丁),实测2014没问题
+NitrousGraphicsManager.PinViewPanelSize 6400 4800 --高版本可用 目前>=2020可用,看判断是>2013都可以(包括最新版补丁),实测2014没问题
 NitrousGraphicsManager.UnpinViewPanelSize()
+function SetViewpanelSize w h=
+(
+	if( MaxVersionMajor >= 15900 ) then
+		Nitrousgraphicsmanager.PinViewPanelSize w h
+	else
+	(
+		oldViewPanelRect = PPHelper.User32Dll.GetWindowRectangle (PPHelper.GetViewPanelHandle())
+		PPHelper.User32Dll.SetWindowSize (PPHelper.GetViewPanelHandle()) (currentProject.targetWidth+4) (currentProject.targetHeight+4)
+	)
+	
+	-- not required, just a performance hit 
+	-- PPHelper.User32Dll.RedrawWindow ( windows.getMAXHWND() )
+)
 function RestoreViewpanelSize=
 (
 	if( MaxVersionMajor >= 15900 ) then
@@ -22,8 +36,10 @@ function RestoreViewpanelSize=
 )
 
 disableSceneRedraw()
-modpanel.setPinStack false
+-- modpanel.setPinStack false --设置修改面板固定状态,不知道有啥用
 forceCompleteRedraw doDisabled:true 
+-- completeRedraw()      
+-- forceCompleteRedraw [ doDisabled:<boolean> ]   
 enableSceneRedraw()
 
 maxversion()

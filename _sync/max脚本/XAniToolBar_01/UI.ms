@@ -293,12 +293,20 @@ fn init_XAniTools_UI dialog =
 	
 	--设置工具提示
 	tool_tip.tooltipicon = (dotnetclass "System.Windows.Forms.ToolTipIcon").Info
-	tool_tip.ToolTipTitle = "功能"
+	tool_tip.ToolTipTitle = "帮助"
 	tool_tip.ShowAlways = tool_tip.UseAnimation = tool_tip.UseFading = true
 	
-	set_tool_tip trans_btn_copySet "左键\t\t设定复制集"
-	set_tool_tip trans_btn_pasteSet "左键\t\t设定粘贴集"
-	set_tool_tip trans_btn_arrow "左键\t\t切换复制粘贴方向\n按住ctrl\t\t设置初始关联(提供兼容式镜像)\n按住alt\t\t清除相对关联"
+	set_tool_tip trans_ckb_change_mode "左键切换模式,依次切换单帧-逐帧-相对\n右键显示对应模式的高级功能"
+	
+	set_tool_tip trans_btn_copySet "左键\t\t设定C\x0332opy列表"
+	set_tool_tip trans_btn_arrow "左键\t\t切换复制粘贴方向\n按住ctrl\t\t设置C和P的相对关联(用于兼容式镜像)\n按住alt\t\t清除相对关联数据"
+	set_tool_tip trans_btn_pasteSet "左键\t\t设置P\x0332\x0061ste列表"
+	
+	set_tool_tip trans_btn_del "删除选中的数据"
+	set_tool_tip trans_btn_other "点击重命名数据\n右键显示其他功能"
+	set_tool_tip trans_btn_save "按C\x0332opy列表记录变换数据"
+	set_tool_tip trans_btn_load "加载变换数据到P\x0332\x0061ste列表"
+	
 	
 	set_tool_tip trans_btn_names_load "左键\t\t按记录选择\n按住ctrl\t\t按记录加选\n按住alt\t\t按记录减选\n按住Shift\t\t在选择的物体中选择\n状态键不能组合."
 

@@ -216,8 +216,9 @@ rollout PoseLibRollout "MiniPoseLib" width:184 height:360
 	listbox 'lbx_datas' "" pos:[8,66] width:144 height:20 --toolTip:"pose数据列表" align:#left
 	
 	button 'btn_pose_apply' "A" pos:[152,72] width:24 height:24 align:#left toolTip:"加载并应用pose"
-	dotNetControl 'btn_pose_set' "button" pos:[152,96] width:24 height:24 align:#left tooltip:"应用一定比例的pose"
-	dotNetControl 'btn_pose_blend' "button" pos:[152,120] width:24 height:24 align:#left tooltip:"混合一定比例的pose"
+	dotNetControl 'btn_pose_blend' "button" pos:[152,96] width:24 height:24 align:#left tooltip:"混合一定比例pose"
+-- 	dotNetControl 'btn_pose_set' "button" pos:[152,96] width:24 height:24 align:#left tooltip:"应用一定比例的pose"
+-- 	dotNetControl 'btn_pose_blend' "button" pos:[152,120] width:24 height:24 align:#left tooltip:"混合一定比例的pose"
 	
 	
 	checkbutton 'btn_pose_preview' "P" pos:[152,192] width:24 height:24 align:#left toolTip:"打开pose预览窗口"
@@ -446,11 +447,11 @@ rollout PoseLibRollout "MiniPoseLib" width:184 height:360
 	(
 		makedir dataPath all:true
 		--设置dotnet按钮
-		btn_pose_set.BackColor = btn_pose_blend.BackColor = (colr = (colorMan.getColor #background) * 255; (DotNetClass "System.Drawing.Color").fromARGB colr[1] colr[2] colr[3])
-		btn_pose_set.ForeColor = btn_pose_blend.ForeColor = (colr = (colorMan.getColor #text) * 255; (DotNetClass "System.Drawing.Color").fromARGB colr[1] colr[2] colr[3])
-		btn_pose_set.Flatstyle = btn_pose_blend.Flatstyle = (dotnetclass "System.Windows.Forms.FlatStyle").Flat
-		btn_pose_set.Flatappearance.borderSize = btn_pose_blend.Flatappearance.borderSize = 0
-		btn_pose_set.text = "\x21D2\x033B"
+		btn_pose_blend.BackColor = (colr = (colorMan.getColor #background) * 255; (DotNetClass "System.Drawing.Color").fromARGB colr[1] colr[2] colr[3])
+		btn_pose_blend.ForeColor = (colr = (colorMan.getColor #text) * 255; (DotNetClass "System.Drawing.Color").fromARGB colr[1] colr[2] colr[3])
+		btn_pose_blend.Flatstyle = (dotnetclass "System.Windows.Forms.FlatStyle").Flat
+		btn_pose_blend.Flatappearance.borderSize = 0
+-- 		btn_pose_set.text = "\x21D2\x033B"
 		btn_pose_blend.text = "\x21D2\x030A\x033B"--"\x27FE"--"\x00BB"
 		(dotnetobject "System.Windows.Forms.ToolTip").SetToolTip btn_pose_blend "按一定比例混合pose"
 		--层次列表

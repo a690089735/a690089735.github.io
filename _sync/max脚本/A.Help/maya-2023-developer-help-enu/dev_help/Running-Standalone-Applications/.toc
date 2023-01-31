@@ -1,3 +1,0 @@
-RunOnWindows
-RunOnLinux
-RunOnMacOS

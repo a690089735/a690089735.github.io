@@ -1,3 +1,0 @@
-SettingUpYourProject
-Hello-World-Explained
-HelloWorldComplete

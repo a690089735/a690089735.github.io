@@ -1,5 +1,0 @@
-<map id="Ufe::ObjectReparent" name="Ufe::ObjectReparent">
-<area shape="rect" id="node2" href="$class_ufe_1_1_object_path_change.html" title="Base class for object path change scene notifications. " alt="" coords="5,155,163,181"/>
-<area shape="rect" id="node3" href="$class_ufe_1_1_scene_changed.html" title="Base class for all scene notifications. " alt="" coords="16,80,152,107"/>
-<area shape="rect" id="node4" href="$class_ufe_1_1_notification.html" title="Base class for all notifications. " alt="" coords="26,5,142,32"/>
-</map>

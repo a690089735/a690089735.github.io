@@ -1,5 +1,0 @@
-<map id="Ufe::ObjectPostDelete" name="Ufe::ObjectPostDelete">
-<area shape="rect" id="node2" href="$class_ufe_1_1_object_delete.html" title="Base class for object delete scene notifications. " alt="" coords="17,155,144,181"/>
-<area shape="rect" id="node3" href="$class_ufe_1_1_scene_changed.html" title="Base class for all scene notifications. " alt="" coords="13,80,149,107"/>
-<area shape="rect" id="node4" href="$class_ufe_1_1_notification.html" title="Base class for all notifications. " alt="" coords="23,5,139,32"/>
-</map>

@@ -1,7 +1,0 @@
-global workscript_global_path = @"\\192.168.1.241\work\临时交换\动作\工作脚本"
-try(filein (workscript_global_path + @"\工作脚本.ms"))catch(messagebox("未能成功连接服务器..."))
-
-按F11打开侦听器,把上面的代码粘贴进去,然后全选文本拖拽到工具栏即可
-
-global workscript_global_path = @"H:\01经验\03.MyMaxScript\工作脚本\工作脚本(抗数据移动)"
-try(filein (workscript_global_path + @"\工作脚本.ms"))catch(messagebox("未能成功连接服务器..."))

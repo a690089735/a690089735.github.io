@@ -1,4 +1,0 @@
-DoItAndRedoIt
-UndoableCommands
-Command-Arguments-and-Flags
-Querying-the-Scene-Graph

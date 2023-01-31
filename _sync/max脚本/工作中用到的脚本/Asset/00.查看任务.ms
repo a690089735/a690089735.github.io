@@ -1,1 +1,0 @@
-shellLaunch "explorer" "\\\\Desktop-s0ef9oi\\工作中用到的脚本\\doc\\任务.xls"

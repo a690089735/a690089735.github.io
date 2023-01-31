@@ -1,3 +1,0 @@
-up to date documentation and examples:
-
-http://www.jdbgraphics.nl/maxscripts/maxsql

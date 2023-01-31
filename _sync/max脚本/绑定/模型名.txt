@@ -1,4 +1,0 @@
-adou:
-#("adou_body_RenderMesh","adou_caomaohair_Hmesh","adou_caomaoshengzi_Hmesh","adou_caomao_Hmesh","adou_caomao_LowMesh","adou_caomaohair_Lowmesh","adou_brow_Hmesh","adou_brow_LowMesh","adou_teeth_Dw_mesh","adou_tongue_mesh","adou_teeth_Up_mesh","adou_eyeball_L_O_mesh","adou_eyeball_L_I_mesh","adou_eyeball_R_O_mesh","adou_eyeball_R_I_mesh","adou_bengdai_Hmesh","adou_trousers_Hmesh","adou_belt_Hmesh","adou_bottom_L_Hmesh","adou_shoes_L_Hmesh","adou_shoe_R_Hmesh","adou_bottom_R_Hmesh","adou_sock_Hmesh","adou_belt_LowMesh","adou_trousers_Lowmesh","adou_cloth_Hmesh","adou_cloth_Lowmesh","adou_hat2_rope_HMesh","adou_hat2_ropeRib_HMesh","adou_hat2_ropeRib_Lowmesh","adou_douli_Hmesh","adou_douli_LowMesh","adou_rope_LowMesh","adou_nail_mesh")
-
-XRK:

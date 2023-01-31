@@ -1,1 +1,0 @@
-macroScript Next_Frame category:"My_Macors" toolTip:"02.Next Frame" (::MyCustomFn 2)

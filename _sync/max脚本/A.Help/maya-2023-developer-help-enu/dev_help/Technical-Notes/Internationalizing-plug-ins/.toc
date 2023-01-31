@@ -1,5 +1,0 @@
-Overview-of-the-Maya-API
-Internationalization-Process
-Localization-Process
-Example-code
-Translated-version-of-the

@@ -1,5 +1,0 @@
-Drag-and-Drop the DViewPaint_II.mzp file into a 3dsMax viewport.
-
-- OR -
-
-In 3dsMax, go to MaxScript / Run Script ... and then select the DViewPaint_II.mzp file.

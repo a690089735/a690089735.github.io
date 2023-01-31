@@ -1,1 +1,0 @@
-messageBox "PS Installed!\n\nYou can find the macro in the 'JDBgraphics' category."

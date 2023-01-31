@@ -1,4 +1,0 @@
-showInterfaces 
-show
-showproperties
-showmethods

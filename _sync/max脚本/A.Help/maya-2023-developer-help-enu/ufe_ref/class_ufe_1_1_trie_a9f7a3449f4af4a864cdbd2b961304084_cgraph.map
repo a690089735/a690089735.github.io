@@ -1,6 +1,0 @@
-<map id="Ufe::Trie::cleanUpNode" name="Ufe::Trie::cleanUpNode">
-<area shape="rect" id="node2" href="$class_ufe_1_1_trie_node.html#a0f1830fbb34576fc5f4392f10f3b2c63" title="Ufe::TrieNode::empty" alt="" coords="221,5,371,32"/>
-<area shape="rect" id="node3" href="$class_ufe_1_1_trie_node.html#a5c3b389d0f37fa0121deaf467293a04c" title="Ufe::TrieNode::hasData" alt="" coords="215,56,377,83"/>
-<area shape="rect" id="node4" href="$class_ufe_1_1_trie_node.html#afc64a0343e62803e2a85286c9daf97d3" title="Ufe::TrieNode::parent" alt="" coords="220,107,372,133"/>
-<area shape="rect" id="node5" href="$class_ufe_1_1_trie_node.html#a095d6cab2b11dff37ed364a34b7a555e" title="Ufe::TrieNode::remove" alt="" coords="217,157,375,184"/>
-</map>

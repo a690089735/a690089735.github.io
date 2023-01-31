@@ -1,7 +1,0 @@
-<map id="Ufe::ObjectDelete" name="Ufe::ObjectDelete">
-<area shape="rect" id="node4" href="$class_ufe_1_1_object_destroyed.html" title="Object destroyed scene notification that occurs once an object is destroyed. " alt="" coords="5,229,153,256"/>
-<area shape="rect" id="node5" href="$class_ufe_1_1_object_post_delete.html" title="Object delete scene notifications that occur after the object was deleted. " alt="" coords="177,229,328,256"/>
-<area shape="rect" id="node6" href="$class_ufe_1_1_object_pre_delete.html" title="Object delete scene notifications that occur before the object is deleted. " alt="" coords="352,229,497,256"/>
-<area shape="rect" id="node2" href="$class_ufe_1_1_scene_changed.html" title="Base class for all scene notifications. " alt="" coords="185,80,321,107"/>
-<area shape="rect" id="node3" href="$class_ufe_1_1_notification.html" title="Base class for all notifications. " alt="" coords="195,5,311,32"/>
-</map>

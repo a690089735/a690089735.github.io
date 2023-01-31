@@ -43,9 +43,13 @@
 
 # 标识检测 https://intoli.com/blog/not-possible-to-block-chrome-headless/chrome-headless-test.html
 
-import asyncio,os,re,wget,requests
-from pyppeteer import launch 
-from urllib3.exceptions import InsecureRequestWarning  
+import asyncio
+import os
+import re
+import wget
+import requests
+from pyppeteer import launch
+from urllib3.exceptions import InsecureRequestWarning
 requests.urllib3.disable_warnings(InsecureRequestWarning)
 '''
 #（1）针对requests 2.5.0版本以下的,不包含2.5.0版本
@@ -57,18 +61,20 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 '''
 
 
-save_path :str= r'D:\人周一课'
+save_path: str = r'D:\人周一课'
 num_start = 793
 num_list = [
     # x for x in range(1000)
-    x for x in range(num_start-1,num_start+100)
+    x for x in range(num_start-1, num_start+100)
 ]
 # page_list = [
 #     'http://renzhouyike.oa.wanmei.net/course/enter/videoCoursesDetail.do?videoCoursesId='+str(num) for num in num_list
 # ]
 
-def check_file_name(file_name) :
-    return re.sub(r'(\\|\/|\:|\*|\?|\"|\<|\>|\||\s)',r'_',file_name)
+
+def check_file_name(file_name):
+    return re.sub(r'(\\|\/|\:|\*|\?|\"|\<|\>|\||\s)', r'_', file_name)
+
 
 async def main():
     # 启动和配置zh-CN zh-CN,en,en-GB,en-US
@@ -77,8 +83,8 @@ async def main():
     _temp_json = r'D:/_temp_json.json'
 
     browser = await launch(
-            headless = True,
-            args = ['--lang=zh-CN,en,en-GB,en-US']
+        headless=True,
+        args=['--lang=zh-CN,en,en-GB,en-US']
     )
     page = await browser.newPage()
     await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.42")
@@ -88,9 +94,10 @@ async def main():
     await page.waitForSelector('body > div > div.main.wrapper_login.media-loginWrapper.media-main.media-loginWrapper-on.media-main-on > div.loginWrap.media-loginWrap.media-loginWrap-on > ul > li.text-left.sao > a')
     await page.click('body > div > div.main.wrapper_login.media-loginWrapper.media-main.media-loginWrapper-on.media-main-on > div.loginWrap.media-loginWrap.media-loginWrap-on > ul > li.text-left.sao > a')
     await page.screenshot({'path': _temp_img})
-    await asyncio.sleep(2) #缓一下等图片
-    os.startfile(_temp_img) #打开太快了,图片还没写完就打开了.所以是空白的,接完图稍微等会,或者有其他方法知道什么时候截图完毕?
-    await page.waitForNavigation() #这里是被动跳转,click引发的主动跳转不能这么用的,要按顶上参考那样用
+    await asyncio.sleep(2)  # 缓一下等图片
+    # 打开太快了,图片还没写完就打开了.所以是空白的,接完图稍微等会,或者有其他方法知道什么时候截图完毕?
+    os.startfile(_temp_img)
+    await page.waitForNavigation()  # 这里是被动跳转,click引发的主动跳转不能这么用的,要按顶上参考那样用
 
     # 登录完成
     os.remove(_temp_img)
@@ -100,9 +107,10 @@ async def main():
     # os.remove(_temp_img)
 
     # 跳转页面
-    print('准备处理{}个地址'.format(len(num_list)),flush=True)
+    print('准备处理{}个地址'.format(len(num_list)), flush=True)
     for num in num_list:
-        page_url = 'http://renzhouyike.oa.wanmei.net/course/enter/videoCoursesDetail.do?videoCoursesId=' + str(num)
+        page_url = 'http://renzhouyike.oa.wanmei.net/course/enter/videoCoursesDetail.do?videoCoursesId=' + \
+            str(num)
         await page.goto(page_url)
         # await page.screenshot({'path': _temp_j_img})
         # await asyncio.sleep(2) #缓一下等图片
@@ -110,14 +118,16 @@ async def main():
         await page.waitForSelector('body > div.ts-content > div > div > div.course-detail > div > div.title')
         course_title = await (await (await page.J('body > div.ts-content > div > div > div.course-detail > div > div.title')).getProperty('textContent')).jsonValue()
         if course_title != '':
-            course_title = check_file_name(course_title) # 替换不支持的符号
-            print('课程{}《{}》可下载.'.format(num, course_title),flush=True) # re.search(r'(?<=videoCoursesId=).*',page_url).group()
-            save_course_path = os.path.join(save_path,'[{}]{}'.format(num,course_title))
+            course_title = check_file_name(course_title)  # 替换不支持的符号
+            # re.search(r'(?<=videoCoursesId=).*',page_url).group()
+            print('课程{}《{}》可下载.'.format(num, course_title), flush=True)
+            save_course_path = os.path.join(
+                save_path, '[{}]{}'.format(num, course_title))
             # print(type(course_title),dir(course_title),':',course_title)
-            if os.path.exists(save_course_path) and os.listdir(save_course_path):#存在且不为空
-                print('非空同名目录,跳过课程:《{}》 '.format(course_title),flush=True)
+            if os.path.exists(save_course_path) and os.listdir(save_course_path):  # 存在且不为空
+                print('非空同名目录,跳过课程:《{}》 '.format(course_title), flush=True)
             else:
-                print('开始下载课程:《{}》'.format(course_title),flush=True)
+                print('开始下载课程:《{}》'.format(course_title), flush=True)
                 if not os.path.exists(save_course_path):
                     os.makedirs(save_course_path)
 
@@ -126,28 +136,32 @@ async def main():
                 #     video_url = await (await (await video_info.J('a')).getProperty('href')).jsonValue()
                 #     video_idx = await (await (await video_info.J('a > div.num > span')).getProperty('textContent')).jsonValue()
                 #     video_nam = await (await (await video_info.J('a > div.name')).getProperty('textContent')).jsonValue()
-            
-                for video_url,video_idx,video_nam in [(await (await (await video_info.J('a')).getProperty('href')).jsonValue(),await (await (await video_info.J('a > div.num > span')).getProperty('textContent')).jsonValue(),await (await (await video_info.J('a > div.name')).getProperty('textContent')).jsonValue()) for video_info in await page.JJ('#videos > div.full-item')]:
+
+                for video_url, video_idx, video_nam in [(await (await (await video_info.J('a')).getProperty('href')).jsonValue(), await (await (await video_info.J('a > div.num > span')).getProperty('textContent')).jsonValue(), await (await (await video_info.J('a > div.name')).getProperty('textContent')).jsonValue()) for video_info in await page.JJ('#videos > div.full-item')]:
                     # print(video_url,video_idx,video_nam)
                     video_nam = check_file_name(video_nam)
-                    print('开始分析:第{}个视频:{}'.format(video_idx,video_nam),flush=True)
+                    print('开始分析:第{}个视频:{}'.format(
+                        video_idx, video_nam), flush=True)
                     # 截获数据地址
                     await page.tracing.start({'path': _temp_json})
                     await page.goto(video_url)
                     await page.tracing.stop()
                     with open(_temp_json, 'r', encoding='utf-8') as f:
                         data = f.read()
-                    video_link = re.search(r'(?<=")(https.*\.[m|M][p|P]4)(?=")', data).group()
+                    video_link = re.search(
+                        r'(?<=")(https.*\.[m|M][p|P]4)(?=")', data).group()
                     os.remove(_temp_json)
 
                     # 下载视频
-                    print('开始下载:第{}个视频:{}'.format(video_idx,video_nam),flush=True)
-                    wget.download(video_link,os.path.join(save_course_path,'{}.{}.mp4'.format(video_idx,video_nam)))
-                    print('下载完成.',flush=True)
+                    print('开始下载:第{}个视频:{}'.format(
+                        video_idx, video_nam), flush=True)
+                    wget.download(video_link, os.path.join(
+                        save_course_path, '{}.{}.mp4'.format(video_idx, video_nam)))
+                    print('下载完成.', flush=True)
                     # video_data = requests.get(video_link, verify=False) # 不验证证书
                     # with open(os.path.join(save_course_path,'{}.{}.mp4'.format(video_idx,video_nam)), "wb") as video_file:
                     #     video_file.write(video_data.content)
-                print('课程《{}》下载完成.\n'.format(course_title),flush=True)
+                print('课程《{}》下载完成.\n'.format(course_title), flush=True)
     # 退出
     await browser.close()
 

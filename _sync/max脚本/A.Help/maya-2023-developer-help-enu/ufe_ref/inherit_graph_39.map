@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_ufe_1_1_selection.html" title="Selection list for objects in the scene. " alt="" coords="5,5,108,32"/>
-<area shape="rect" id="node2" href="$class_ufe_1_1_observable_selection.html" title="Observable selection for objects in the scene. " alt="" coords="156,5,324,32"/>
-<area shape="rect" id="node3" href="$class_ufe_1_1_subject.html" title="Observer pattern Subject class. " alt="" coords="9,56,104,83"/>
-<area shape="rect" id="node4" href="$class_ufe_1_1_scene.html" title="Singleton class to manage UFE scenes. " alt="" coords="197,56,283,83"/>
-</map>

@@ -1,1 +1,0 @@
-macroScript Hide_Bones_Toggle category:"My_Macors" toolTip:"09.Hide bones toggle" (::MyCustomFn 9)

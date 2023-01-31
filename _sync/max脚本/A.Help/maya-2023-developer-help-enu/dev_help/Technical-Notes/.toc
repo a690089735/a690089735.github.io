@@ -1,3 +1,0 @@
-Generic-Attributes
-Threading-and-Maya-API
-Internationalizing-plug-ins

@@ -1,1 +1,0 @@
-with printAllElements on (print (for i = 1 to 100 collect i) #nomap)

@@ -1,8 +1,0 @@
-1.必须使用英文版本max(其连线参数只提供英文参数)
-2.在生成绑定之前不要保存,也不要开启自动保存(如果开启了,请将其关闭)(在创建绑定期间保存,会导致某些变量丢失)(防病毒脚本导致)
-3.如果发现绑定不定时损坏,则是因为防病毒脚本运行时误删了绑定节点,请联系作者修复,或者使用
-Bnode = box length:0 width:0 height:0
-for i in $*_hiddenNodes_* do if classof i == point do i.baseobject = Bnode.baseobject
-delete Bnode
-来替换掉点辅助对象.
-4.使用bonespro蒙皮,moveBone功能引发异常(某次使用时导致所有骨骼变成了蓝色,可能会有问题,也可能只是颜色出现问题)

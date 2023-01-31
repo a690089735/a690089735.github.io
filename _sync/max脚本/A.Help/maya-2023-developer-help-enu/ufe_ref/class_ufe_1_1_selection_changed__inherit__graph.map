@@ -1,9 +1,0 @@
-<map id="Ufe::SelectionChanged" name="Ufe::SelectionChanged">
-<area shape="rect" id="node3" href="$class_ufe_1_1_selection_cleared.html" title="Selection cleared notification. " alt="" coords="411,5,557,32"/>
-<area shape="rect" id="node4" href="$class_ufe_1_1_selection_composite_notification.html" title="Selection composite notification. " alt="" coords="371,56,597,83"/>
-<area shape="rect" id="node5" href="$class_ufe_1_1_selection_item_appended.html" title="Item added to selection notification. " alt="" coords="391,107,577,133"/>
-<area shape="rect" id="node6" href="$class_ufe_1_1_selection_item_inserted.html" title="Item inserted into selection notification. " alt="" coords="395,157,573,184"/>
-<area shape="rect" id="node7" href="$class_ufe_1_1_selection_item_removed.html" title="Item removed from selection notification. " alt="" coords="392,208,576,235"/>
-<area shape="rect" id="node8" href="$class_ufe_1_1_selection_replaced.html" title="Selection replaced notification. " alt="" coords="407,259,561,285"/>
-<area shape="rect" id="node2" href="$class_ufe_1_1_notification.html" title="Base class for all notifications. " alt="" coords="5,132,121,159"/>
-</map>

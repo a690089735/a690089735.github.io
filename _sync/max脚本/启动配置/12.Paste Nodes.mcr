@@ -1,1 +1,0 @@
-macroScript Paste_Nodes category:"My_Macors" toolTip:"12.Paste Nodes" (::MyCustomFn 12)

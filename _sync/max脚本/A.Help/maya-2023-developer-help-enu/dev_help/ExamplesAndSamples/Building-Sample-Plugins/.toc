@@ -1,3 +1,0 @@
-Building-Windows-Samples
-Building-Linux-Samples
-Building-Mac-Samples

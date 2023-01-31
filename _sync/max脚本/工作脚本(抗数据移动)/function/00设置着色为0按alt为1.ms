@@ -1,1 +1,0 @@
-with animate off lightLevel = if keyboard.altPressed then 1 else 0

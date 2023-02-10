@@ -67,27 +67,30 @@ async def main():
             for line in ini:
                 index+=1
                 novelName, novelUrl = line.replace('\n', ''), next(ini).replace('\n', '')
-                # print([novelName,novelUrl])
-                await page.goto(novelUrl, options={"waitUntil": 'load', "timeout": 100000})
-                await page.waitForSelector('ul.downurllist > strong:last-child > a')
-                downloadPage_url = (await (await (await page.J('ul.downurllist > strong:last-child > a')).getProperty('href')).jsonValue())
-                await page.goto(downloadPage_url, options={"waitUntil": 'load', "timeout": 100000})
-                await page.waitForSelector('div.panel > div.panel-body > span.downfile > a')
-                download_url = unquote((await (await (await page.J('div.panel > div.panel-body > span.downfile > a')).getProperty('href')).jsonValue()),'utf-8')
-                # print(download_url)
-                print('Download:[{}]{}'.format(index, novelName))
-                packageName = os.path.join(savePath, os.path.split(download_url)[1])
-                # 下载
-                if Download(download_url, packageName):
-                    # 解压,解压的时间也可以给网站缓解压力.
-                    # print('Extract:[{}]{}'.format(index, novelName))
-                    # if rarfile.is_rarfile(rarname):
-                    #     rar = rarfile.RarFile(rarname)
-                    #     rar.extractall(extractPath)
+                try:
+                    # print([novelName,novelUrl])
+                    await page.goto(novelUrl, options={"waitUntil": 'load', "timeout": 100000})
+                    await page.waitForSelector('ul.downurllist > strong:last-child > a')
+                    downloadPage_url = (await (await (await page.J('ul.downurllist > strong:last-child > a')).getProperty('href')).jsonValue())
+                    await page.goto(downloadPage_url, options={"waitUntil": 'load', "timeout": 100000})
+                    await page.waitForSelector('div.panel > div.panel-body > span.downfile > a')
+                    download_url = unquote((await (await (await page.J('div.panel > div.panel-body > span.downfile > a')).getProperty('href')).jsonValue()),'utf-8')
+                    # print(download_url)
+                    print('Download:[{}]{}'.format(index, novelName))
+                    packageName = os.path.join(savePath, os.path.split(download_url)[1])
+                    # 下载
+                    # if :
+                        # 解压,解压的时间也可以给网站缓解压力.
+                        # print('Extract:[{}]{}'.format(index, novelName))
+                        # if rarfile.is_rarfile(rarname):
+                        #     rar = rarfile.RarFile(rarname)
+                        #     rar.extractall(extractPath)
+                        # else:
+                        #     print("ExtractFailed:[{}]{}非rar! {}".format(id,novelName,rarname), flush=True)
+                    #     pass
                     # else:
-                    #     print("ExtractFailed:[{}]{}非rar! {}".format(id,novelName,rarname), flush=True)
-                    pass
-                else:
+                    assert Download(download_url, packageName)
+                except:
                     e = "DownloadFailed:[{}]{}:{}".format(index,novelName,download_url)
                     # print(e, flush=True)
                     with open(errorFile,'a',encoding='utf-8') as f:

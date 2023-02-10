@@ -108,10 +108,11 @@ with open(tagetPath, 'a', encoding='utf-8') as tagetFile:
 
             content = re.sub(r'\r\n', r'\n', content, flags=re.M)  # 替换其他换行符
             content = re.sub(r'.*\(.*完\).*', r'\n', content, flags=re.M)
-            content = re.sub(r'^\S.*', r'\n', content, flags=re.M)
+            content = re.sub(r'^\S.*', r'\n', content, flags=re.M) #开头不是空的删除,全角空格很有意思,\s和\S都匹配不到它...
+            content = re.sub(r'.*(作者:|博客:|字数:|点击:|书名:|原书名:|原书名《.*》|又名:|注:|契子|引子|内容简介|完本感言).*', r'\n', content, flags=re.M)  # 替换
             content = re.sub(r'^\n+', r'\n', content, flags=re.M)  # 替换连续换行
 
-            content = re.sub(r'.*(作者:|博客:|字数:|点击:|书名:|原书名:|原书名《.*》|又名:|注:|契子|引子|内容简介|完本感言).*', r'\n', content, flags=re.M)  # 替换
+            
             content = re.sub(r' ', r'　', content, flags=re.M)  # 换回全角空格
             content = re.sub(r'\(', r'（', content, flags=re.M)  # 换回括号
             content = re.sub(r'\)', r'）', content, flags=re.M)  # 换回括号

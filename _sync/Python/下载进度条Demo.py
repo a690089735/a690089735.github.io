@@ -30,7 +30,7 @@ def Download(url,path):
                 for data in response.iter_content(chunk_size = chunk_size):
                     file.write(data)
                     size +=len(data)
-                    print('\r'+'[下载进度]:%s%.2f%%' % ('>'*int(size*50/ content_size), float(size / content_size * 100)) ,end=' ')
+                    print('\r'+'[下载进度]:%s%.2f%%' % ('>'*int(size*50/ content_size), float(size / content_size * 100)), flush=True, end='')
         end = time.time()   #下载结束时间
         print('Download completed!,times: %.2f秒' % (end - start))  #输出下载用时时间
     except:

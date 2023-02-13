@@ -1,7 +1,8 @@
 # import asyncio
 from playwright.sync_api import sync_playwright
 from time import sleep
-import re
+import re,os
+from 下载进度条Demo import Download
 # # from playwright.async_api import async_playwright
 # # pip install pytest-playwright
 urlList = [
@@ -10,6 +11,8 @@ urlList = [
 #注意,画板标签规则和搜索标签规则不同
 # url = urlList[0]
 url = 'https://www.pinterest.com/11uuohczsenvmdgu3qhbj16ze54a2u/%E7%9F%B3%E8%86%8F%E9%9D%99%E7%89%A9/'
+
+savePath = r'C:\Users\Administrator\Desktop\testFolder'
 
 with sync_playwright() as p:
     # p.firefox伪装性最好,不会被识别为webDriver
@@ -37,7 +40,8 @@ with sync_playwright() as p:
             imgUrl = re.sub('(?<=https://i\.pinimg\.com/).*?(?=/)', 'originals', imgUrl) # pythonRE,后视只能固定宽度
             if imgUrl not in imgUrls:
                 imgUrls.append(imgUrl)
-                print(imgUrl)
+                # print(imgUrl)
+                Download(imgUrl, os.path.join(savePath, (str(len(imgUrls))+os.path.splitext(imgUrl)[-1])))
     print(len(imgUrls))
     browser.close()
 

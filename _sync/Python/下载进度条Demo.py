@@ -36,7 +36,7 @@ def Download(url, savePath):
                     print('\r'+'下载进度:%s%.2f%%' % ('>'*int(size*50 / content_size),
                           float(size / content_size * 100)), flush=True, end='')
         end = time.time()  # 下载结束时间
-        print('\b\b\b\b\b\b\b下载完成!用时:%.2f秒' % (end - start))  # 输出下载用时时间
+        print('\b\b\b\b\b\b\b%.2f秒,下载完成!' % (end - start))  # 输出下载用时时间
     except:
         print('下载出错!')
 

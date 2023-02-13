@@ -1,5 +1,6 @@
 import asyncio
 from playwright.async_api import async_playwright
+# pip install pytest-playwright
 classList = [
     "https://www.zei8.vip/xuanhuan",
     "https://www.zei8.vip/chuantongwuxia",

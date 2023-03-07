@@ -7,12 +7,12 @@ import time
 # m = PyMouse()  # 建立鼠标对象
 # k = PyKeyboard()  # 建立键盘对象
 
-# def getMousePosition():
-#     m = PyMouse()
-#     for i in range(10):
-#         print(m.position())
-#         sleep(1)
-# getMousePosition()
+def getMousePosition():
+    m = PyMouse()
+    for i in range(10):
+        print(m.position())
+        sleep(2)
+getMousePosition()
 
 # print(time.time())  # 当前时间戳
 # print(time.ctime())  # 当前时间
@@ -36,11 +36,12 @@ import time
 
 # (2055, 249)
 # (3027, 610)
-def Task_TimeOut_ClickPosition(posList:list, endTime: str, endTimeFormat: str, tick:int = 1, sep: int = 1):
-    et = time.mktime(time.strptime(endTime, endTimeFormat))
-    while et > time.time():
-        sleep(tick)
-    for pos in posList:
-        PyMouse().click(pos[0], pos[1])
-        sleep(sep)
-Task_TimeOut_ClickPosition([(2055, 249),(3027, 610)], 'Mon Feb 13 21:02:05 2023', '%a %b %d %H:%M:%S %Y')
+# def Task_TimeOut_ClickPosition(posList:list, endTime: str, endTimeFormat: str, tick:int = 1, sep: int = 3):
+#     et = time.mktime(time.strptime(endTime, endTimeFormat))
+#     while et > time.time():
+#         sleep(tick)
+#     for pos in posList:
+#         PyMouse().click(pos[0], pos[1])
+#         sleep(sep)
+# Task_TimeOut_ClickPosition([(2055, 249),(3027, 610)], 'Tue Feb 21 21:10:30 2023', '%a %b %d %H:%M:%S %Y')
+# Task_TimeOut_ClickPosition([(3152, 493)], 'Sat Feb 18 19:15:52 2023', '%a %b %d %H:%M:%S %Y')

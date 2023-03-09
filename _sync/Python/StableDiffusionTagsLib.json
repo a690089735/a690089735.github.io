@@ -1,3953 +1,4021 @@
 {
     "常用": {
         "图像优化": {
-            "大师作品 masterpiece": {
+            "大师作品": {
                 "text": "masterpiece",
-                "order": 0
+                "order": -1
             },
-            "最好画质 best quality": {
+            "最好画质": {
                 "text": "best quality",
-                "order": 0
+                "order": -1
             },
-            "更高质量 official art, extremely d...": {
-                "text": "official art, extremely d...",
-                "order": 0
+            "更高质量": {
+                "text": "official art, extremely detailed CG unity 8k wallpaper",
+                "order": -1
             },
-            "高细节 highly detailed": {
+            "高细节": {
                 "text": "highly detailed",
-                "order": 0
+                "order": -1
             },
-            "超高分辨率 absurdres": {
+            "超高分辨率": {
                 "text": "absurdres",
-                "order": 0
+                "order": -1
             },
-            "8k分辨率 8k resolution": {
+            "8k分辨率": {
                 "text": "8k resolution",
-                "order": 0
+                "order": -1
             }
         },
         "镜头视角": {
-            "景深 Depth of field": {
+            "透视": {
+                "text": "perspective",
+                "order": -1
+            },
+            "正前缩距透视": {
+                "text": "foreshortening",
+                "order": -1
+            },
+            "景深": {
                 "text": "Depth of field",
-                "order": 0
+                "order": -1
             },
-            "全景 Panorama": {
-                "text": "Panorama",
-                "order": 0
+            "全景": {
+                "text": "overall view",
+                "order": -1
             },
-            "长焦镜头 telephoto lens": {
-                "text": "telephoto lens",
-                "order": 0
+            "远景镜头": {
+                "text": "wide shot",
+                "order": -1
             },
-            "微距镜头 macro lens": {
-                "text": "macro lens",
-                "order": 0
-            },
-            "全身镜头 full body": {
-                "text": "full body",
-                "order": 0
-            },
-            "中景镜头 medium shot": {
+            "中景镜头": {
                 "text": "medium shot",
-                "order": 0
+                "order": -1
             },
-            "七分身镜头 cowboy shot": {
+            "广角": {
+                "text": "Panorama",
+                "order": -1
+            },
+            "长焦镜头": {
+                "text": "telephoto lens",
+                "order": -1
+            },
+            "微距镜头": {
+                "text": "macro lens",
+                "order": -1
+            },
+            "全身镜头": {
+                "text": "full body",
+                "order": -1
+            },
+            "七分身镜头": {
                 "text": "cowboy shot",
-                "order": 0
+                "order": -1
             },
-            "半身像 (profile picture)": {
+            "半身像": {
                 "text": "(profile picture)",
-                "order": 0
+                "order": -1
             },
-            "写实肖像 close up portrait": {
+            "写实肖像": {
                 "text": "close up portrait",
-                "order": 0
+                "order": -1
             },
-            "第一人称视角 POV": {
+            "第一人称视角": {
                 "text": "POV",
-                "order": 0
+                "order": -1
             },
-            "鱼眼镜头 fisheye": {
+            "鱼眼镜头": {
                 "text": "fisheye",
-                "order": 0
+                "order": -1
             },
-            "部分水下拍摄 partially underwater shot": {
+            "部分水下拍摄": {
                 "text": "partially underwater shot",
-                "order": 0
+                "order": -1
+            },
+            "斜角镜头": {
+                "text": "dutch angle",
+                "order": -1
+            },
+            "强烈镜头": {
+                "text": "intense angle",
+                "order": -1
+            },
+            "电影角度": {
+                "text": "cinematic angle",
+                "order": -1
+            },
+            "戏剧性角度": {
+                "text": "dramatic angle",
+                "order": -1
+            },
+            "动态角度": {
+                "text": "dynamic angle",
+                "order": -1
             }
         },
         "其他常用": {
-            "精致的五官 exquisite facial features": {
+            "精致的五官": {
                 "text": "exquisite facial features",
-                "order": 0
+                "order": -1
             },
-            "完美的脸 prefect face": {
+            "完美的脸": {
                 "text": "prefect face",
-                "order": 0
+                "order": -1
             },
-            "发光皮肤 shiny skin": {
+            "发光皮肤": {
                 "text": "shiny skin",
-                "order": 0
+                "order": -1
             },
-            "抽象背景 abstract background": {
+            "抽象背景": {
                 "text": "abstract background",
-                "order": 0
+                "order": -1
             },
-            "蒸汽朋克 steampunk": {
+            "蒸汽朋克": {
                 "text": "steampunk",
-                "order": 0
+                "order": -1
             },
-            "赛博朋克 cyberpunk": {
+            "赛博朋克": {
                 "text": "cyberpunk",
-                "order": 0
+                "order": -1
             }
         }
     },
     "人物": {
         "人物": {
-            "女性 female": {
+            "女性": {
                 "text": "female",
-                "order": 0
+                "order": -1
             },
-            "男性 male": {
+            "男性": {
                 "text": "male",
-                "order": 0
+                "order": -1
             },
-            "女孩 girl": {
+            "女孩": {
                 "text": "girl",
-                "order": 0
+                "order": -1
             },
-            "男孩 boy": {
+            "男孩": {
                 "text": "boy",
-                "order": 0
+                "order": -1
             },
-            "正太 shota": {
+            "正太": {
                 "text": "shota",
-                "order": 0
+                "order": -1
             },
-            "萝莉 loli": {
+            "萝莉": {
                 "text": "loli",
-                "order": 0
+                "order": -1
             },
-            "美少女 bishoujo": {
+            "美少女": {
                 "text": "bishoujo",
-                "order": 0
+                "order": -1
             },
-            "美少男 bishounen": {
+            "美少男": {
                 "text": "bishounen",
-                "order": 0
+                "order": -1
             },
-            "辣妹 gyaru": {
+            "辣妹": {
                 "text": "gyaru",
-                "order": 0
+                "order": -1
             },
-            "熟女 mature female": {
+            "熟女": {
                 "text": "mature female",
-                "order": 0
+                "order": -1
             },
-            "大小姐 ojousama": {
+            "大小姐": {
                 "text": "ojousama",
-                "order": 0
+                "order": -1
             },
-            "Q版人物 chibi": {
+            "Q版人物": {
                 "text": "chibi",
-                "order": 0
+                "order": -1
             },
-            "胖子 fat man": {
+            "胖子": {
                 "text": "fat man",
-                "order": 0
+                "order": -1
             },
-            "伪娘 crossdressing": {
+            "伪娘": {
                 "text": "crossdressing",
-                "order": 0
+                "order": -1
             },
-            "天使 angel": {
+            "天使": {
                 "text": "angel",
-                "order": 0
+                "order": -1
             },
-            "魔鬼 devil": {
+            "魔鬼": {
                 "text": "devil",
-                "order": 0
+                "order": -1
             },
-            "迷你女孩 minigirl": {
+            "迷你女孩": {
                 "text": "minigirl",
-                "order": 0
+                "order": -1
             },
-            "非人 no_humans": {
+            "非人": {
                 "text": "no_humans",
-                "order": 0
+                "order": -1
             },
-            "雌小鬼 mesugaki": {
+            "雌小鬼": {
                 "text": "mesugaki",
-                "order": 0
+                "order": -1
             },
-            "怪物 monster": {
+            "怪物": {
                 "text": "monster",
-                "order": 0
+                "order": -1
             },
-            "老人 elder": {
+            "老人": {
                 "text": "elder",
-                "order": 0
+                "order": -1
             },
-            "富豪 rich man": {
+            "富豪": {
                 "text": "rich man",
-                "order": 0
+                "order": -1
             },
-            "乞丐 beggar": {
+            "乞丐": {
                 "text": "beggar",
-                "order": 0
+                "order": -1
             },
-            "巨人 titans": {
+            "巨人": {
                 "text": "titans",
-                "order": 0
+                "order": -1
             },
-            "侏儒 dwarf": {
+            "侏儒": {
                 "text": "dwarf",
-                "order": 0
+                "order": -1
             },
-            "小丑 clown": {
+            "小丑": {
                 "text": "clown",
-                "order": 0
+                "order": -1
             },
-            "奴隶 slave": {
+            "奴隶": {
                 "text": "slave",
-                "order": 0
+                "order": -1
             },
-            "雪女 yukiwo": {
+            "雪女": {
                 "text": "yukiwo",
-                "order": 0
+                "order": -1
             },
-            "酋长 sheik": {
+            "酋长": {
                 "text": "sheik",
-                "order": 0
+                "order": -1
             },
-            "女王 queen": {
+            "女王": {
                 "text": "queen",
-                "order": 0
+                "order": -1
             },
-            "女神 goddess": {
+            "女神": {
                 "text": "goddess",
-                "order": 0
+                "order": -1
             },
-            "公主 princess": {
+            "公主": {
                 "text": "princess",
-                "order": 0
+                "order": -1
             },
-            "王子 prince": {
+            "王子": {
                 "text": "prince",
-                "order": 0
+                "order": -1
             },
-            "新娘 bride": {
+            "新娘": {
                 "text": "bride",
-                "order": 0
+                "order": -1
             },
-            "新郎 bridegroom": {
+            "新郎": {
                 "text": "bridegroom",
-                "order": 0
+                "order": -1
             },
-            "肌肉男 muscle man": {
+            "肌肉男": {
                 "text": "muscle man",
-                "order": 0
+                "order": -1
             },
-            "偶像 idol": {
+            "偶像": {
                 "text": "idol",
-                "order": 0
+                "order": -1
             },
-            "兔女郎 bunny girl": {
+            "兔女郎": {
                 "text": "bunny girl",
-                "order": 0
+                "order": -1
             },
-            "怪物女孩 monster girl": {
+            "怪物女孩": {
                 "text": "monster girl",
-                "order": 0
+                "order": -1
             },
-            "狐狸女孩 fox girl": {
+            "狐狸女孩": {
                 "text": "fox girl",
-                "order": 0
+                "order": -1
             },
-            "狼女孩 wolf girl": {
+            "狼女孩": {
                 "text": "wolf girl",
-                "order": 0
+                "order": -1
             },
-            "猫女孩 cat girl": {
+            "猫女孩": {
                 "text": "cat girl",
-                "order": 0
+                "order": -1
             },
-            "木偶 marionette": {
+            "木偶": {
                 "text": "marionette",
-                "order": 0
+                "order": -1
             },
-            "黏土手办 nendoroid": {
+            "黏土手办": {
                 "text": "nendoroid",
-                "order": 0
+                "order": -1
             }
         },
         "数量": {
-            "单人 solo": {
+            "单人": {
                 "text": "solo",
-                "order": 0
+                "order": -1
             },
-            "多个女孩 multiple girls": {
+            "多个女孩": {
                 "text": "multiple girls",
-                "order": 0
+                "order": -1
             },
-            "双胞胎 twins": {
+            "双胞胎": {
                 "text": "twins",
-                "order": 0
+                "order": -1
             },
-            "三胞胎 triplets": {
+            "三胞胎": {
                 "text": "triplets",
-                "order": 0
+                "order": -1
             },
-            "兄弟姐妹 brother and sister": {
+            "兄弟姐妹": {
                 "text": "brother and sister",
-                "order": 0
+                "order": -1
             }
         }
     },
     "角色": {
         "职业": {
-            "救生员 lifeguard": {
+            "救生员": {
                 "text": "lifeguard",
-                "order": 0
+                "order": -1
             },
-            "拳击手 boxer": {
+            "拳击手": {
                 "text": "boxer",
-                "order": 0
+                "order": -1
             },
-            "科学家 scientist": {
+            "科学家": {
                 "text": "scientist",
-                "order": 0
+                "order": -1
             },
-            "运动员 athletes": {
+            "运动员": {
                 "text": "athletes",
-                "order": 0
+                "order": -1
             },
-            "职场女性 office lady": {
+            "职场女性": {
                 "text": "office lady",
-                "order": 0
+                "order": -1
             },
-            "和尚 monk": {
+            "和尚": {
                 "text": "monk",
-                "order": 0
+                "order": -1
             },
-            "杂技演员 crobat": {
+            "杂技演员": {
                 "text": "crobat",
-                "order": 0
+                "order": -1
             },
-            "修女 nun": {
+            "修女": {
                 "text": "nun",
-                "order": 0
+                "order": -1
             },
-            "护士 nurse": {
+            "护士": {
                 "text": "nurse",
-                "order": 0
+                "order": -1
             },
-            "空姐 stewardess": {
+            "空姐": {
                 "text": "stewardess",
-                "order": 0
+                "order": -1
             },
-            "学生 student": {
+            "学生": {
                 "text": "student",
-                "order": 0
+                "order": -1
             },
-            "女服务员 waitress": {
+            "女服务员": {
                 "text": "waitress",
-                "order": 0
+                "order": -1
             },
-            "老师 teacher": {
+            "老师": {
                 "text": "teacher",
-                "order": 0
+                "order": -1
             },
-            "赛车手 racer": {
+            "赛车手": {
                 "text": "racer",
-                "order": 0
+                "order": -1
             },
-            "警察 police": {
+            "警察": {
                 "text": "police",
-                "order": 0
+                "order": -1
             },
-            "士兵 soldier": {
+            "士兵": {
                 "text": "soldier",
-                "order": 0
+                "order": -1
             },
-            "啦啦队 cheerleader": {
+            "啦啦队": {
                 "text": "cheerleader",
-                "order": 0
+                "order": -1
             },
-            "男演员 actor": {
+            "男演员": {
                 "text": "actor",
-                "order": 0
+                "order": -1
             },
-            "女演员 actress": {
+            "女演员": {
                 "text": "actress",
-                "order": 0
+                "order": -1
             },
-            "间谍 spy": {
+            "间谍": {
                 "text": "spy",
-                "order": 0
+                "order": -1
             },
-            "特工 agent": {
+            "特工": {
                 "text": "agent",
-                "order": 0
+                "order": -1
             },
-            "刺客 assassin": {
+            "刺客": {
                 "text": "assassin",
-                "order": 0
+                "order": -1
             },
-            "诗人 poet": {
+            "诗人": {
                 "text": "poet",
-                "order": 0
+                "order": -1
             },
-            "日本武士 samurai": {
+            "日本武士": {
                 "text": "samurai",
-                "order": 0
+                "order": -1
             },
-            "舞女 dancing girl": {
+            "舞女": {
                 "text": "dancing girl",
-                "order": 0
+                "order": -1
             },
-            "摩托车手 motorcyclist": {
+            "摩托车手": {
                 "text": "motorcyclist",
-                "order": 0
+                "order": -1
             },
-            "黑客 hacker": {
+            "黑客": {
                 "text": "hacker",
-                "order": 0
+                "order": -1
             },
-            "魔术师 magician": {
+            "魔术师": {
                 "text": "magician",
-                "order": 0
+                "order": -1
             },
-            "侦探 detective": {
+            "侦探": {
                 "text": "detective",
-                "order": 0
+                "order": -1
             },
-            "人偶 doll": {
+            "人偶": {
                 "text": "doll",
-                "order": 0
+                "order": -1
             },
-            "女仆 maid": {
+            "女仆": {
                 "text": "maid",
-                "order": 0
+                "order": -1
             },
-            "飞行员 pilot": {
+            "飞行员": {
                 "text": "pilot",
-                "order": 0
+                "order": -1
             },
-            "潜水员 diver": {
+            "潜水员": {
                 "text": "diver",
-                "order": 0
+                "order": -1
             },
-            "酒吧审查员 bar censor": {
+            "酒吧审查员": {
                 "text": "bar censor",
-                "order": 0
+                "order": -1
             },
-            "传教士 missionary": {
+            "传教士": {
                 "text": "missionary",
-                "order": 0
+                "order": -1
             },
-            "消防员 firefighter": {
+            "消防员": {
                 "text": "firefighter",
-                "order": 0
+                "order": -1
             },
-            "守门员 goalkeeper": {
+            "守门员": {
                 "text": "goalkeeper",
-                "order": 0
+                "order": -1
             },
-            "厨师 chef": {
+            "厨师": {
                 "text": "chef",
-                "order": 0
+                "order": -1
             },
-            "宇航员 astronaut": {
+            "宇航员": {
                 "text": "astronaut",
-                "order": 0
+                "order": -1
             },
-            "收银员 cashier": {
+            "收银员": {
                 "text": "cashier",
-                "order": 0
+                "order": -1
             },
-            "邮递员 mailman": {
+            "邮递员": {
                 "text": "mailman",
-                "order": 0
+                "order": -1
             },
-            "咖啡师 barista": {
+            "咖啡师": {
                 "text": "barista",
-                "order": 0
+                "order": -1
             },
-            "隐士 the hermit": {
+            "隐士": {
                 "text": "the hermit",
-                "order": 0
+                "order": -1
             },
-            "牧羊人 makihitsuji": {
+            "牧羊人": {
                 "text": "makihitsuji",
-                "order": 0
+                "order": -1
             }
         },
-        "动漫": {
-            "宝可梦 pokemon": {
+        "特定角色": {
+            "宝可梦": {
                 "text": "pokemon",
-                "order": 0
+                "order": -1
             },
-            "泰迪熊 teddy bear": {
+            "泰迪熊": {
                 "text": "teddy bear",
-                "order": 0
+                "order": -1
             },
-            "马里奥 mario": {
+            "马里奥": {
                 "text": "mario",
-                "order": 0
+                "order": -1
             },
-            "皮卡丘 pikachu": {
+            "皮卡丘": {
                 "text": "pikachu",
-                "order": 0
+                "order": -1
             },
-            "新世纪福音战士 neon genesis evangelion": {
+            "新世纪福音战士": {
                 "text": "neon genesis evangelion",
-                "order": 0
+                "order": -1
             },
-            "初音未来 hatsune miku": {
+            "初音未来": {
                 "text": "hatsune miku",
-                "order": 0
+                "order": -1
             },
-            "哈利波特 harry potter": {
+            "哈利波特": {
                 "text": "harry potter",
-                "order": 0
+                "order": -1
             },
-            "哆啦A梦 doraemon": {
+            "哆啦A梦": {
                 "text": "doraemon",
-                "order": 0
+                "order": -1
             },
-            "圣斗士星矢 saint seiya": {
+            "圣斗士星矢": {
                 "text": "saint seiya",
-                "order": 0
+                "order": -1
             },
-            "五条悟 gojou satoru": {
+            "五条悟": {
                 "text": "gojou satoru",
-                "order": 0
+                "order": -1
             },
-            "复仇者联盟 avengers": {
+            "复仇者联盟": {
                 "text": "avengers",
-                "order": 0
+                "order": -1
             },
-            "神奇女侠 mazinger ": {
+            "神奇女侠": {
                 "text": "mazinger ",
-                "order": 0
+                "order": -1
             },
-            "美国队长 captain america": {
+            "美国队长": {
                 "text": "captain america",
-                "order": 0
+                "order": -1
             },
-            "蜡笔小新 crayon shin-chan": {
+            "蜡笔小新": {
                 "text": "crayon shin-chan",
-                "order": 0
+                "order": -1
             },
-            "灌篮高手 slam dunk": {
+            "灌篮高手": {
                 "text": "slam dunk",
-                "order": 0
+                "order": -1
             },
-            "孙悟空 sun wukong": {
+            "孙悟空": {
                 "text": "sun wukong",
-                "order": 0
+                "order": -1
             },
-            "女巫 witch": {
+            "女巫": {
                 "text": "witch",
-                "order": 0
+                "order": -1
             },
-            "忍者 ninja": {
+            "忍者": {
                 "text": "ninja",
-                "order": 0
+                "order": -1
             },
-            "吸血鬼 vampire": {
+            "吸血鬼": {
                 "text": "vampire",
-                "order": 0
+                "order": -1
             },
-            "骑士 knight": {
+            "骑士": {
                 "text": "knight",
-                "order": 0
+                "order": -1
             },
-            "魔法少女 magical_girl": {
+            "魔法少女": {
                 "text": "magical_girl",
-                "order": 0
+                "order": -1
             },
-            "半兽人 orc": {
+            "半兽人": {
                 "text": "orc",
-                "order": 0
+                "order": -1
             },
-            "德鲁伊 druid": {
+            "德鲁伊": {
                 "text": "druid",
-                "order": 0
+                "order": -1
             },
-            "妖精 elf": {
+            "妖精": {
                 "text": "elf",
-                "order": 0
+                "order": -1
             },
-            "小精灵 fairy": {
+            "小精灵": {
                 "text": "fairy",
-                "order": 0
+                "order": -1
             },
-            "兽人 furry": {
+            "兽人": {
                 "text": "furry",
-                "order": 0
+                "order": -1
             },
-            "美人鱼 mermaid": {
+            "美人鱼": {
                 "text": "mermaid",
-                "order": 0
+                "order": -1
             },
-            "假面骑士 kamen rider": {
+            "假面骑士": {
                 "text": "kamen rider",
-                "order": 0
+                "order": -1
             },
-            "魔导师 magister": {
+            "魔导师": {
                 "text": "magister",
-                "order": 0
+                "order": -1
             },
-            "蜘蛛侠 spider-man": {
+            "蜘蛛侠": {
                 "text": "spider-man",
-                "order": 0
+                "order": -1
             },
-            "圣诞老人 santa alter": {
+            "圣诞老人": {
                 "text": "santa alter",
-                "order": 0
+                "order": -1
             }
         }
     },
     "五官": {
         "眉毛": {
-            "浓眉 thick eyebrows": {
+            "浓眉": {
                 "text": "thick eyebrows",
-                "order": 0
+                "order": -1
             },
-            "眉毛翘起 cocked eyebrow": {
+            "眉毛翘起": {
                 "text": "cocked eyebrow",
-                "order": 0
+                "order": -1
             },
-            "短眉毛 short eyebrows": {
+            "短眉毛": {
                 "text": "short eyebrows",
-                "order": 0
+                "order": -1
             },
-            "V字眉 v-shaped eyebrows": {
+            "V字眉": {
                 "text": "v-shaped eyebrows",
-                "order": 0
+                "order": -1
             }
         },
         "眼睛": {
-            "空洞眼睛 empty eyes": {
+            "空洞眼睛": {
                 "text": "empty eyes",
-                "order": 0
+                "order": -1
             },
-            "睁大眼睛 wide eyes": {
+            "睁大眼睛": {
                 "text": "wide eyes",
-                "order": 0
+                "order": -1
             },
-            "闭上一只眼 one eye closed": {
+            "闭上一只眼": {
                 "text": "one eye closed",
-                "order": 0
+                "order": -1
             },
-            "半闭眼睛 half-closed eyes": {
+            "半闭眼睛": {
                 "text": "half-closed eyes",
-                "order": 0
+                "order": -1
             },
-            "渐变眼 gradient_eyes": {
+            "渐变眼": {
                 "text": "gradient_eyes",
-                "order": 0
+                "order": -1
             },
-            "水汪汪大眼 aqua eyes": {
+            "水汪汪大眼": {
                 "text": "aqua eyes",
-                "order": 0
+                "order": -1
             },
-            "翻白眼 rolling eyes": {
+            "翻白眼": {
                 "text": "rolling eyes",
-                "order": 0
+                "order": -1
             },
-            "斗鸡眼 cross-eyed": {
+            "斗鸡眼": {
                 "text": "cross-eyed",
-                "order": 0
+                "order": -1
             },
-            "猫眼 slit pupils": {
+            "猫眼": {
                 "text": "slit pupils",
-                "order": 0
+                "order": -1
             },
-            "布满血丝的眼睛 bloodshot eyes": {
+            "布满血丝的眼睛": {
                 "text": "bloodshot eyes",
-                "order": 0
+                "order": -1
             },
-            "发光眼睛 glowing eyes": {
+            "发光眼睛": {
                 "text": "glowing eyes",
-                "order": 0
+                "order": -1
             },
-            "吊眼角 tsurime": {
+            "吊眼角": {
                 "text": "tsurime",
-                "order": 0
+                "order": -1
             },
-            "垂眼角 tareme": {
+            "垂眼角": {
                 "text": "tareme",
-                "order": 0
+                "order": -1
             },
-            "恶魔眼 devil eyes": {
+            "恶魔眼": {
                 "text": "devil eyes",
-                "order": 0
+                "order": -1
             },
-            "收缩的瞳孔 constricted pupils": {
+            "收缩的瞳孔": {
                 "text": "constricted pupils",
-                "order": 0
+                "order": -1
             },
-            "魔瞳 devil pupils": {
+            "魔瞳": {
                 "text": "devil pupils",
-                "order": 0
+                "order": -1
             },
-            "蛇瞳 snake pupils": {
+            "蛇瞳": {
                 "text": "snake pupils",
-                "order": 0
+                "order": -1
             },
-            "闪闪发光瞳 pupils sparkling": {
+            "闪闪发光瞳": {
                 "text": "pupils sparkling",
-                "order": 0
+                "order": -1
             },
-            "花形瞳 flower-shaped pupils": {
+            "花形瞳": {
                 "text": "flower-shaped pupils",
-                "order": 0
+                "order": -1
             },
-            "爱心瞳 heart-shaped pupils": {
+            "爱心瞳": {
                 "text": "heart-shaped pupils",
-                "order": 0
+                "order": -1
             },
-            "异色瞳 heterochromia": {
+            "异色瞳": {
                 "text": "heterochromia",
-                "order": 0
+                "order": -1
             },
-            "美瞳 color contact lenses": {
+            "美瞳": {
                 "text": "color contact lenses",
-                "order": 0
+                "order": -1
             },
-            "长睫毛 longeyelashes": {
+            "长睫毛": {
                 "text": "longeyelashes",
-                "order": 0
+                "order": -1
             },
-            "彩色睫毛 colored eyelashes": {
+            "彩色睫毛": {
                 "text": "colored eyelashes",
-                "order": 0
+                "order": -1
             },
-            "眼下痣 mole under eye": {
+            "眼下痣": {
                 "text": "mole under eye",
-                "order": 0
+                "order": -1
             }
         },
         "嘴巴": {
-            "栗子嘴 chestnut mouth": {
+            "栗子嘴": {
                 "text": "chestnut mouth",
-                "order": 0
+                "order": -1
             },
-            "厚嘴唇 thick lips": {
+            "厚嘴唇": {
                 "text": "thick lips",
-                "order": 0
+                "order": -1
             },
-            "嘴唇浮肿 puffy lips": {
+            "嘴唇浮肿": {
                 "text": "puffy lips",
-                "order": 0
+                "order": -1
             },
-            "口红 lipstick": {
+            "口红": {
                 "text": "lipstick",
-                "order": 0
+                "order": -1
             },
-            "心形嘴 heart-shaped mouth": {
+            "心形嘴": {
                 "text": "heart-shaped mouth",
-                "order": 0
+                "order": -1
             },
-            "嘟嘴 pout": {
+            "嘟嘴": {
                 "text": "pout",
-                "order": 0
+                "order": -1
             },
-            "张嘴 open mouth": {
+            "张嘴": {
                 "text": "open mouth",
-                "order": 0
+                "order": -1
             },
-            "闭嘴 closed mouth": {
+            "闭嘴": {
                 "text": "closed mouth",
-                "order": 0
+                "order": -1
             },
-            "猫咪嘴 ：3": {
+            "猫咪嘴": {
                 "text": "：3",
-                "order": 0
+                "order": -1
             },
-            "鲨鱼嘴 shark mouth": {
+            "鲨鱼嘴": {
                 "text": "shark mouth",
-                "order": 0
+                "order": -1
             },
-            "吐舌头 :p": {
+            "吐舌头": {
                 "text": ":p",
-                "order": 0
+                "order": -1
             },
-            "分开嘴唇 parted lips": {
+            "分开嘴唇": {
                 "text": "parted lips",
-                "order": 0
+                "order": -1
             },
-            "嘴下痣 mole under mouth": {
+            "嘴下痣": {
                 "text": "mole under mouth",
-                "order": 0
+                "order": -1
             }
         },
         "耳朵": {
-            "动物耳朵 fake animal ears": {
+            "动物耳朵": {
                 "text": "fake animal ears",
-                "order": 0
+                "order": -1
             },
-            "猫耳朵 cat ears": {
+            "猫耳朵": {
                 "text": "cat ears",
-                "order": 0
+                "order": -1
             },
-            "狗耳朵 dog ears": {
+            "狗耳朵": {
                 "text": "dog ears",
-                "order": 0
+                "order": -1
             },
-            "狐狸耳朵 fox ears": {
+            "狐狸耳朵": {
                 "text": "fox ears",
-                "order": 0
+                "order": -1
             },
-            "兔子耳朵 bunny ears": {
+            "兔子耳朵": {
                 "text": "bunny ears",
-                "order": 0
+                "order": -1
             },
-            "熊耳朵 bear ears": {
+            "熊耳朵": {
                 "text": "bear ears",
-                "order": 0
+                "order": -1
             }
         },
         "胡子&牙": {
-            "胡须 beard": {
+            "胡须": {
                 "text": "beard",
-                "order": 0
+                "order": -1
             },
-            "小胡子 mustache": {
+            "小胡子": {
                 "text": "mustache",
-                "order": 0
+                "order": -1
             },
-            "山羊胡 goatee": {
+            "山羊胡": {
                 "text": "goatee",
-                "order": 0
+                "order": -1
             },
-            "长鬓角 long sideburns": {
+            "长鬓角": {
                 "text": "long sideburns",
-                "order": 0
+                "order": -1
             },
-            "尖牙 fangs": {
+            "尖牙": {
                 "text": "fangs",
-                "order": 0
+                "order": -1
             },
-            "虎牙 canine teeth": {
+            "虎牙": {
                 "text": "canine teeth",
-                "order": 0
+                "order": -1
             },
-            "咬紧牙关 clenched teeth": {
+            "咬紧牙关": {
                 "text": "clenched teeth",
-                "order": 0
+                "order": -1
             }
         }
     },
     "表情": {
         "表情": {
-            "无表情 expressionless": {
+            "无表情": {
                 "text": "expressionless",
-                "order": 0
+                "order": -1
             },
-            "脸色苍白 turn pale": {
+            "脸色苍白": {
                 "text": "turn pale",
-                "order": 0
+                "order": -1
             },
-            "2D脸红 blush stickers": {
+            "2D脸红": {
                 "text": "blush stickers",
-                "order": 0
+                "order": -1
             },
-            "脸红 blush": {
+            "脸红": {
                 "text": "blush",
-                "order": 0
+                "order": -1
             },
-            "两眼发直 blank stare": {
+            "两眼发直": {
                 "text": "blank stare",
-                "order": 0
+                "order": -1
             },
-            "青筋凸起 anger vein": {
+            "青筋凸起": {
                 "text": "anger vein",
-                "order": 0
+                "order": -1
             },
-            "尴尬 embarrassed": {
+            "尴尬": {
                 "text": "embarrassed",
-                "order": 0
+                "order": -1
             },
-            "傲慢 hubrael": {
+            "傲慢": {
                 "text": "hubrael",
-                "order": 0
+                "order": -1
             },
-            "郁闷 depressed": {
+            "郁闷": {
                 "text": "depressed",
-                "order": 0
+                "order": -1
             },
-            "畏缩 wince": {
+            "畏缩": {
                 "text": "wince",
-                "order": 0
+                "order": -1
             },
-            "烦恼 kilesha": {
+            "烦恼": {
                 "text": "kilesha",
-                "order": 0
+                "order": -1
             },
-            "阴暗脸 shaded face": {
+            "阴暗脸": {
                 "text": "shaded face",
-                "order": 0
+                "order": -1
             },
-            "疼痛 pain": {
+            "疼痛": {
                 "text": "pain",
-                "order": 0
+                "order": -1
             },
-            "尖叫 screaming": {
+            "尖叫": {
                 "text": "screaming",
-                "order": 0
+                "order": -1
             },
-            "叹息 sigh": {
+            "叹息": {
                 "text": "sigh",
-                "order": 0
+                "order": -1
             },
-            "紧张 nervous": {
+            "紧张": {
                 "text": "nervous",
-                "order": 0
+                "order": -1
             },
-            "困惑 confused": {
+            "困惑": {
                 "text": "confused",
-                "order": 0
+                "order": -1
             },
-            "害怕 scared": {
+            "害怕": {
                 "text": "scared",
-                "order": 0
+                "order": -1
             },
-            "喝醉 drunk": {
+            "喝醉": {
                 "text": "drunk",
-                "order": 0
+                "order": -1
             },
-            "哭 tears": {
+            "哭": {
                 "text": "tears",
-                "order": 0
+                "order": -1
             },
-            "悲伤 sad": {
+            "悲伤": {
                 "text": "sad",
-                "order": 0
+                "order": -1
             },
-            "生气 angry": {
+            "生气": {
                 "text": "angry",
-                "order": 0
+                "order": -1
             },
-            "害羞 nose blush": {
+            "害羞": {
                 "text": "nose blush",
-                "order": 0
+                "order": -1
             },
-            "严肃 serious": {
+            "严肃": {
                 "text": "serious",
-                "order": 0
+                "order": -1
             },
-            "鄙夷 jitome": {
+            "鄙夷": {
                 "text": "jitome",
-                "order": 0
+                "order": -1
             },
-            "疯狂 crazy": {
+            "疯狂": {
                 "text": "crazy",
-                "order": 0
+                "order": -1
             },
-            "黑化 dark_persona": {
+            "黑化": {
                 "text": "dark_persona",
-                "order": 0
+                "order": -1
             },
-            "得意 smug": {
+            "得意": {
                 "text": "smug",
-                "order": 0
+                "order": -1
             },
-            "思考中 thinking": {
+            "思考中": {
                 "text": "thinking",
-                "order": 0
+                "order": -1
             },
-            "扬眉 raised eyebrow": {
+            "扬眉": {
                 "text": "raised eyebrow",
-                "order": 0
+                "order": -1
             },
-            "轻皱眉 light frown": {
+            "轻皱眉": {
                 "text": "light frown",
-                "order": 0
+                "order": -1
             },
-            "皱眉 frown": {
+            "皱眉": {
                 "text": "frown",
-                "order": 0
+                "order": -1
             },
-            "调皮脸 naughty face": {
+            "调皮脸": {
                 "text": "naughty face",
-                "order": 0
+                "order": -1
             },
-            "做鬼脸 eyeid pull": {
+            "做鬼脸": {
                 "text": "eyeid pull",
-                "order": 0
+                "order": -1
             },
-            "流鼻血 nosebleed": {
+            "流鼻血": {
                 "text": "nosebleed",
-                "order": 0
+                "order": -1
             },
-            "困 sleepy": {
+            "困": {
                 "text": "sleepy",
-                "order": 0
+                "order": -1
             },
-            "眯眼 zzz": {
+            "眯眼": {
                 "text": "zzz",
-                "order": 0
+                "order": -1
             },
-            "流口水 drooling": {
+            "流口水": {
                 "text": "drooling",
-                "order": 0
+                "order": -1
             }
         },
         "笑容": {
-            "微笑 light smile": {
+            "微笑": {
                 "text": "light smile",
-                "order": 0
+                "order": -1
             },
-            "假笑 false smile": {
+            "假笑": {
                 "text": "false smile",
-                "order": 0
+                "order": -1
             },
-            "挑逗笑容 seductive smile": {
+            "挑逗笑容": {
                 "text": "seductive smile",
-                "order": 0
+                "order": -1
             },
-            "疯狂笑容 crazy smile": {
+            "疯狂笑容": {
                 "text": "crazy smile",
-                "order": 0
+                "order": -1
             },
-            "邪恶笑容 evil smile": {
+            "邪恶笑容": {
                 "text": "evil smile",
-                "order": 0
+                "order": -1
             },
-            "单侧嘴角上扬 smirk": {
+            "单侧嘴角上扬": {
                 "text": "smirk",
-                "order": 0
+                "order": -1
             },
-            "诱人笑容 seductive smile": {
+            "诱人笑容": {
                 "text": "seductive smile",
-                "order": 0
+                "order": -1
             },
-            "露齿笑 grin": {
+            "露齿笑": {
                 "text": "grin",
-                "order": 0
+                "order": -1
             },
-            "大笑 laughing": {
+            "大笑": {
                 "text": "laughing",
-                "order": 0
+                "order": -1
             },
-            "杯型笑脸 :d": {
+            "杯型笑脸": {
                 "text": ":d",
-                "order": 0
+                "order": -1
             }
         }
     },
     "头发": {
         "长度": {
-            "短发 short hair": {
+            "短发": {
                 "text": "short hair",
-                "order": 0
+                "order": -1
             },
-            "中发 medium hair": {
+            "中发": {
                 "text": "medium hair",
-                "order": 0
+                "order": -1
             },
-            "长发 long hair": {
+            "长发": {
                 "text": "long hair",
-                "order": 0
+                "order": -1
             },
-            "头发过肩 hair over shoulder": {
+            "头发过肩": {
                 "text": "hair over shoulder",
-                "order": 0
+                "order": -1
             }
         },
         "颜色": {
-            "白发 white hair": {
+            "白发": {
                 "text": "white hair",
-                "order": 0
+                "order": -1
             },
-            "金发 blonde hair": {
+            "金发": {
                 "text": "blonde hair",
-                "order": 0
+                "order": -1
             },
-            "银发 silver hair": {
+            "银发": {
                 "text": "silver hair",
-                "order": 0
+                "order": -1
             },
-            "灰发 grey hair": {
+            "灰发": {
                 "text": "grey hair",
-                "order": 0
+                "order": -1
             },
-            "棕发 brown hair": {
+            "棕发": {
                 "text": "brown hair",
-                "order": 0
+                "order": -1
             },
-            "黑发 black hair": {
+            "黑发": {
                 "text": "black hair",
-                "order": 0
+                "order": -1
             },
-            "紫发 purple hair": {
+            "紫发": {
                 "text": "purple hair",
-                "order": 0
+                "order": -1
             },
-            "红发 red hair": {
+            "红发": {
                 "text": "red hair",
-                "order": 0
+                "order": -1
             },
-            "蓝发 blue hair": {
+            "蓝发": {
                 "text": "blue hair",
-                "order": 0
+                "order": -1
             },
-            "绿发 green hair": {
+            "绿发": {
                 "text": "green hair",
-                "order": 0
+                "order": -1
             },
-            "粉发 pink hair": {
+            "粉发": {
                 "text": "pink hair",
-                "order": 0
+                "order": -1
             },
-            "橙发 orange hair": {
+            "橙发": {
                 "text": "orange hair",
-                "order": 0
+                "order": -1
             },
-            "挑染 streaked hair": {
+            "挑染": {
                 "text": "streaked hair",
-                "order": 0
+                "order": -1
             },
-            "彩发 multicolored hair": {
+            "彩发": {
                 "text": "multicolored hair",
-                "order": 0
+                "order": -1
             },
-            "彩虹发 rainbow-like hair": {
+            "彩虹发": {
                 "text": "rainbow-like hair",
-                "order": 0
+                "order": -1
             }
         },
         "刘海": {
-            "刘海 bangs": {
+            "刘海": {
                 "text": "bangs",
-                "order": 0
+                "order": -1
             },
-            "交叉刘海 crossed bang": {
+            "交叉刘海": {
                 "text": "crossed bang",
-                "order": 0
+                "order": -1
             },
-            "眉间刘海 hair between eye": {
+            "眉间刘海": {
                 "text": "hair between eye",
-                "order": 0
+                "order": -1
             },
-            "齐刘海 blunt bangs": {
+            "齐刘海": {
                 "text": "blunt bangs",
-                "order": 0
+                "order": -1
             },
-            "斜刘海 diagonal bangs": {
+            "斜刘海": {
                 "text": "diagonal bangs",
-                "order": 0
+                "order": -1
             },
-            "不对称刘海 asymmetrical bangs": {
+            "不对称刘海": {
                 "text": "asymmetrical bangs",
-                "order": 0
+                "order": -1
             },
-            "编织刘海 braided bangs": {
+            "编织刘海": {
                 "text": "braided bangs",
-                "order": 0
+                "order": -1
             }
         },
         "辫子": {
-            "短马尾 short ponytail": {
+            "短马尾": {
                 "text": "short ponytail",
-                "order": 0
+                "order": -1
             },
-            "侧马尾辫 side ponytail": {
+            "侧马尾辫": {
                 "text": "side ponytail",
-                "order": 0
+                "order": -1
             },
-            "前马尾辫 front ponytail": {
+            "前马尾辫": {
                 "text": "front ponytail",
-                "order": 0
+                "order": -1
             },
-            "分裂马尾辫 split ponytail": {
+            "分裂马尾辫": {
                 "text": "split ponytail",
-                "order": 0
+                "order": -1
             },
-            "低马尾辩 low twintails": {
+            "低马尾辩": {
                 "text": "low twintails",
-                "order": 0
+                "order": -1
             },
-            "短马尾辫 short twintails": {
+            "短马尾辫": {
                 "text": "short twintails",
-                "order": 0
+                "order": -1
             },
-            "侧边辫子 side braid": {
+            "侧边辫子": {
                 "text": "side braid",
-                "order": 0
+                "order": -1
             },
-            "辫子 braid": {
+            "辫子": {
                 "text": "braid",
-                "order": 0
+                "order": -1
             },
-            "双辫子 twin braids": {
+            "双辫子": {
                 "text": "twin braids",
-                "order": 0
+                "order": -1
             },
-            "马尾辫 ponytail": {
+            "马尾辫": {
                 "text": "ponytail",
-                "order": 0
+                "order": -1
             },
-            "编织马尾 braided ponytail": {
+            "编织马尾": {
                 "text": "braided ponytail",
-                "order": 0
+                "order": -1
             },
-            "法式辫 french braid": {
+            "法式辫": {
                 "text": "french braid",
-                "order": 0
+                "order": -1
             },
-            "高马尾 high ponytail": {
+            "高马尾": {
                 "text": "high ponytail",
-                "order": 0
+                "order": -1
             }
         },
         "发型": {
-            "扎头发 tied hair": {
+            "扎头发": {
                 "text": "tied hair",
-                "order": 0
+                "order": -1
             },
-            "单侧发髻 single side bun": {
+            "单侧发髻": {
                 "text": "single side bun",
-                "order": 0
+                "order": -1
             },
-            "卷发 curly hair": {
+            "卷发": {
                 "text": "curly hair",
-                "order": 0
+                "order": -1
             },
-            "直发 straight hair": {
+            "直发": {
                 "text": "straight hair",
-                "order": 0
+                "order": -1
             },
-            "波浪头 wavy hair": {
+            "波浪头": {
                 "text": "wavy hair",
-                "order": 0
+                "order": -1
             },
-            "波波头 bob hair": {
+            "波波头": {
                 "text": "bob hair",
-                "order": 0
+                "order": -1
             },
-            "侧分 slicked-back": {
+            "侧分": {
                 "text": "slicked-back",
-                "order": 0
+                "order": -1
             },
-            "雷鬼头 Reggae hair": {
+            "雷鬼头": {
                 "text": "Reggae hair",
-                "order": 0
+                "order": -1
             },
-            "蓬巴杜发型 pompadour": {
+            "蓬巴杜发型": {
                 "text": "pompadour",
-                "order": 0
+                "order": -1
             },
-            "莫西干头 Mohawk": {
+            "莫西干头": {
                 "text": "Mohawk",
-                "order": 0
+                "order": -1
             },
-            "锅盖头 bowl cut": {
+            "锅盖头": {
                 "text": "bowl cut",
-                "order": 0
+                "order": -1
             },
-            "呆毛 ahoge": {
+            "呆毛": {
                 "text": "ahoge",
-                "order": 0
+                "order": -1
             },
-            "天线呆毛 antenna hair": {
+            "天线呆毛": {
                 "text": "antenna hair",
-                "order": 0
+                "order": -1
             },
-            "心形呆毛 heart ahoge": {
+            "心形呆毛": {
                 "text": "heart ahoge",
-                "order": 0
+                "order": -1
             },
-            "公主卷 drill hair": {
+            "公主卷": {
                 "text": "drill hair",
-                "order": 0
+                "order": -1
             },
-            "翼状发 hair wings": {
+            "翼状发": {
                 "text": "hair wings",
-                "order": 0
+                "order": -1
             },
-            "蓬发 disheveled hair": {
+            "蓬发": {
                 "text": "disheveled hair",
-                "order": 0
+                "order": -1
             },
-            "凌乱发 messy hair": {
+            "凌乱发": {
                 "text": "messy hair",
-                "order": 0
+                "order": -1
             },
-            "露颈盘发 chignon": {
+            "露颈盘发": {
                 "text": "chignon",
-                "order": 0
+                "order": -1
             },
-            "编织发髻 braided bun": {
+            "编织发髻": {
                 "text": "braided bun",
-                "order": 0
+                "order": -1
             },
-            "公主切 hime_cut": {
+            "公主切": {
                 "text": "hime_cut",
-                "order": 0
+                "order": -1
             },
-            "妹妹切 bob cut": {
+            "妹妹切": {
                 "text": "bob cut",
-                "order": 0
+                "order": -1
             },
-            "刺猬头 spiked hair": {
+            "刺猬头": {
                 "text": "spiked hair",
-                "order": 0
+                "order": -1
             },
-            "盘发 updo": {
+            "盘发": {
                 "text": "updo",
-                "order": 0
+                "order": -1
             },
-            "精灵短发 pixie cut": {
+            "精灵短发": {
                 "text": "pixie cut",
-                "order": 0
+                "order": -1
             },
-            "长发绺 dreadlocks": {
+            "长发绺": {
                 "text": "dreadlocks",
-                "order": 0
+                "order": -1
             },
-            "爆炸头 afro": {
+            "爆炸头": {
                 "text": "afro",
-                "order": 0
+                "order": -1
             },
-            "秃头 bald": {
+            "秃头": {
                 "text": "bald",
-                "order": 0
+                "order": -1
             },
-            "双丸子头 double bun": {
+            "双丸子头": {
                 "text": "double bun",
-                "order": 0
+                "order": -1
             },
-            "美式寸头 buzz cut": {
+            "美式寸头": {
                 "text": "buzz cut",
-                "order": 0
+                "order": -1
             },
-            "大体积蓬松头发 big hair": {
+            "大体积蓬松头发": {
                 "text": "big hair",
-                "order": 0
+                "order": -1
             },
-            "闪亮的头发 shiny hair": {
+            "闪亮的头发": {
                 "text": "shiny hair",
-                "order": 0
+                "order": -1
             },
-            "发光的头发 glowing hair": {
+            "发光的头发": {
                 "text": "glowing hair",
-                "order": 0
+                "order": -1
             },
-            "眼睛间的头发 hair between eyes": {
+            "眼睛间的头发": {
                 "text": "hair between eyes",
-                "order": 0
+                "order": -1
             },
-            "撩到耳后 hair behind ear": {
+            "撩到耳后": {
                 "text": "hair behind ear",
-                "order": 0
+                "order": -1
             }
         }
     },
     "装饰": {
         "发饰": {
-            "发带 hair ribbon": {
+            "发带": {
                 "text": "hair ribbon",
-                "order": 0
+                "order": -1
             },
-            "头巾 head scarf": {
+            "头巾": {
                 "text": "head scarf",
-                "order": 0
+                "order": -1
             },
-            "动物头巾 animal hood": {
+            "动物头巾": {
                 "text": "animal hood",
-                "order": 0
+                "order": -1
             },
-            "蝴蝶结发饰 hair bow": {
+            "蝴蝶结发饰": {
                 "text": "hair bow",
-                "order": 0
+                "order": -1
             },
-            "新月发饰 crescent hair ornament": {
+            "新月发饰": {
                 "text": "crescent hair ornament",
-                "order": 0
+                "order": -1
             },
-            "洛丽塔发饰 lolita hairband": {
+            "洛丽塔发饰": {
                 "text": "lolita hairband",
-                "order": 0
+                "order": -1
             },
-            "羽毛发饰 feather hair ornament": {
+            "羽毛发饰": {
                 "text": "feather hair ornament",
-                "order": 0
+                "order": -1
             },
-            "头花 hair flower": {
+            "头花": {
                 "text": "hair flower",
-                "order": 0
+                "order": -1
             },
-            "发髻 hair bun": {
+            "发髻": {
                 "text": "hair bun",
-                "order": 0
+                "order": -1
             },
-            "发夹 hairclip": {
+            "发夹": {
                 "text": "hairclip",
-                "order": 0
+                "order": -1
             },
-            "发箍 hair scrunchie": {
+            "发箍": {
                 "text": "hair scrunchie",
-                "order": 0
+                "order": -1
             },
-            "发圈 hair rings": {
+            "发圈": {
                 "text": "hair rings",
-                "order": 0
+                "order": -1
             },
-            "发饰 hair ornament": {
+            "发饰": {
                 "text": "hair ornament",
-                "order": 0
+                "order": -1
             },
-            "发棒 hair stick": {
+            "发棒": {
                 "text": "hair stick",
-                "order": 0
+                "order": -1
             },
-            "心形发饰 heart hair ornament": {
+            "心形发饰": {
                 "text": "heart hair ornament",
-                "order": 0
+                "order": -1
             }
         },
         "首饰": {
-            "手链 bracelet": {
+            "手链": {
                 "text": "bracelet",
-                "order": 0
+                "order": -1
             },
-            "项圈 choker": {
+            "项圈": {
                 "text": "choker",
-                "order": 0
+                "order": -1
             },
-            "金属项圈 metal collar": {
+            "金属项圈": {
                 "text": "metal collar",
-                "order": 0
+                "order": -1
             },
-            "戒指 ring": {
+            "戒指": {
                 "text": "ring",
-                "order": 0
+                "order": -1
             },
-            "腕带 wristband": {
+            "腕带": {
                 "text": "wristband",
-                "order": 0
+                "order": -1
             },
-            "吊坠 pendant": {
+            "吊坠": {
                 "text": "pendant",
-                "order": 0
+                "order": -1
             },
-            "胸针 brooch": {
+            "胸针": {
                 "text": "brooch",
-                "order": 0
+                "order": -1
             },
-            "圈形耳环 hoop earrings": {
+            "圈形耳环": {
                 "text": "hoop earrings",
-                "order": 0
+                "order": -1
             },
-            "手镯 bangle": {
+            "手镯": {
                 "text": "bangle",
-                "order": 0
+                "order": -1
             },
-            "耳钉 stud earrings": {
+            "耳钉": {
                 "text": "stud earrings",
-                "order": 0
+                "order": -1
             },
-            "旭日形首饰 sunburst": {
+            "旭日形首饰": {
                 "text": "sunburst",
-                "order": 0
+                "order": -1
             },
-            "珍珠手链 pearl bracelet": {
+            "珍珠手链": {
                 "text": "pearl bracelet",
-                "order": 0
+                "order": -1
             },
-            "耳坠 drop earrings": {
+            "耳坠": {
                 "text": "drop earrings",
-                "order": 0
+                "order": -1
             },
-            "木偶戒指 puppet rings": {
+            "木偶戒指": {
                 "text": "puppet rings",
-                "order": 0
+                "order": -1
             },
-            "胸花 corsage": {
+            "胸花": {
                 "text": "corsage",
-                "order": 0
+                "order": -1
             },
-            "蓝宝石胸针 sapphire brooch": {
+            "蓝宝石胸针": {
                 "text": "sapphire brooch",
-                "order": 0
+                "order": -1
             },
-            "珠宝首饰 jewelry": {
+            "珠宝首饰": {
                 "text": "jewelry",
-                "order": 0
+                "order": -1
             },
-            "项链 necklace": {
+            "项链": {
                 "text": "necklace",
-                "order": 0
+                "order": -1
             }
         },
         "装饰": {
-            "丝带 ribbon": {
+            "丝带": {
                 "text": "ribbon",
-                "order": 0
+                "order": -1
             },
-            "丝带饰边 ribbon trim": {
+            "丝带饰边": {
                 "text": "ribbon trim",
-                "order": 0
+                "order": -1
             },
-            "蕾丝饰边 lace trim": {
+            "蕾丝饰边": {
                 "text": "lace trim",
-                "order": 0
+                "order": -1
             },
-            "裙撑 skirt lift": {
+            "裙撑": {
                 "text": "skirt lift",
-                "order": 0
+                "order": -1
             },
-            "护手 gauntlets": {
+            "护手": {
                 "text": "gauntlets",
-                "order": 0
+                "order": -1
             },
-            "领巾 neckerchief": {
+            "领巾": {
                 "text": "neckerchief",
-                "order": 0
+                "order": -1
             },
-            "红领巾 red neckerchief": {
+            "红领巾": {
                 "text": "red neckerchief",
-                "order": 0
+                "order": -1
             },
-            "肩章 pauldrons": {
+            "肩章": {
                 "text": "pauldrons",
-                "order": 0
+                "order": -1
             },
-            "臂带 arm strap": {
+            "臂带": {
                 "text": "arm strap",
-                "order": 0
+                "order": -1
             },
-            "臂镯 armlet": {
+            "臂镯": {
                 "text": "armlet",
-                "order": 0
+                "order": -1
             },
-            "细肩带 spaghetti strap": {
+            "细肩带": {
                 "text": "spaghetti strap",
-                "order": 0
+                "order": -1
             },
-            "般若面具 Prajna in mask": {
+            "般若面具": {
                 "text": "Prajna in mask",
-                "order": 0
+                "order": -1
             },
-            "面纱 veil": {
+            "面纱": {
                 "text": "veil",
-                "order": 0
+                "order": -1
             },
-            "新娘面纱 bridal veil": {
+            "新娘面纱": {
                 "text": "bridal veil",
-                "order": 0
+                "order": -1
             },
-            "皇冠 tiara": {
+            "皇冠": {
                 "text": "tiara",
-                "order": 0
+                "order": -1
             },
-            "迷你皇冠 mini crown": {
+            "迷你皇冠": {
                 "text": "mini crown",
-                "order": 0
+                "order": -1
             },
-            "耳罩 ear covers": {
+            "耳罩": {
                 "text": "ear covers",
-                "order": 0
+                "order": -1
             },
-            "飞行员太阳镜 aviator sunglasses": {
+            "飞行员太阳镜": {
                 "text": "aviator sunglasses",
-                "order": 0
+                "order": -1
             },
-            "无边框眼镜 semi-rimless eyewear": {
+            "无边框眼镜": {
                 "text": "semi-rimless eyewear",
-                "order": 0
+                "order": -1
             },
-            "半无框眼镜 semi-rimless eyewear": {
+            "半无框眼镜": {
                 "text": "semi-rimless eyewear",
-                "order": 0
+                "order": -1
             },
-            "太阳镜 sunglasses": {
+            "太阳镜": {
                 "text": "sunglasses",
-                "order": 0
+                "order": -1
             },
-            "风镜 goggles": {
+            "风镜": {
                 "text": "goggles",
-                "order": 0
+                "order": -1
             },
-            "独眼眼罩 eyepatch": {
+            "独眼眼罩": {
                 "text": "eyepatch",
-                "order": 0
+                "order": -1
             },
-            "黑色眼罩 black blindfold": {
+            "黑色眼罩": {
                 "text": "black blindfold",
-                "order": 0
+                "order": -1
             },
-            "铁棘 metal thorns": {
+            "铁棘": {
                 "text": "metal thorns",
-                "order": 0
+                "order": -1
             },
-            "光环 halo": {
+            "光环": {
                 "text": "halo",
-                "order": 0
+                "order": -1
             },
-            "口罩 mouth mask": {
+            "口罩": {
                 "text": "mouth mask",
-                "order": 0
+                "order": -1
             },
-            "创口贴 bandaid hair ornament": {
+            "创口贴": {
                 "text": "bandaid hair ornament",
-                "order": 0
+                "order": -1
             },
-            "指甲油 nail polish": {
+            "指甲油": {
                 "text": "nail polish",
-                "order": 0
+                "order": -1
             },
-            "玩偶关节 doll joints": {
+            "玩偶关节": {
                 "text": "doll joints",
-                "order": 0
+                "order": -1
             },
-            "机械义肢  cybernetic prosthesis": {
+            "机械义肢": {
                 "text": " cybernetic prosthesis",
-                "order": 0
+                "order": -1
             },
-            "机械腿 mechanical legs": {
+            "机械腿": {
                 "text": "mechanical legs",
-                "order": 0
+                "order": -1
             },
-            "沙滩巾 beach towel": {
+            "沙滩巾": {
                 "text": "beach towel",
-                "order": 0
+                "order": -1
             },
-            "雨披 poncho": {
+            "雨披": {
                 "text": "poncho",
-                "order": 0
+                "order": -1
             },
-            "浓妆 make up": {
+            "浓妆": {
                 "text": "make up",
-                "order": 0
+                "order": -1
             }
         }
     },
     "服装": {
         "上装": {
-            "过手袖 sleeves_past_fingers": {
+            "过手袖": {
                 "text": "sleeves_past_fingers",
-                "order": 0
+                "order": -1
             },
-            "背心 tank top": {
+            "背心": {
                 "text": "tank top",
-                "order": 0
+                "order": -1
             },
-            "背心式内衣 camisole": {
+            "背心式内衣": {
                 "text": "camisole",
-                "order": 0
+                "order": -1
             },
-            "白衬衫 white shirt": {
+            "白衬衫": {
                 "text": "white shirt",
-                "order": 0
+                "order": -1
             },
-            "水手衬衫 sailor shirt": {
+            "水手衬衫": {
                 "text": "sailor shirt",
-                "order": 0
+                "order": -1
             },
-            "T恤 T-shirt": {
+            "T恤": {
                 "text": "T-shirt",
-                "order": 0
+                "order": -1
             },
-            "毛衣 sweater": {
+            "毛衣": {
                 "text": "sweater",
-                "order": 0
+                "order": -1
             },
-            "夏日长裙 summer dress": {
+            "夏日长裙": {
                 "text": "summer dress",
-                "order": 0
+                "order": -1
             },
-            "连帽衫 hoodie": {
+            "连帽衫": {
                 "text": "hoodie",
-                "order": 0
+                "order": -1
             },
-            "毛领 fur trimmed colla": {
+            "毛领": {
                 "text": "fur trimmed colla",
-                "order": 0
+                "order": -1
             },
-            "兜帽斗篷 hooded cloak": {
+            "兜帽斗篷": {
                 "text": "hooded cloak",
-                "order": 0
+                "order": -1
             },
-            "夹克 jacket": {
+            "夹克": {
                 "text": "jacket",
-                "order": 0
+                "order": -1
             },
-            "皮夹克 leather jacket": {
+            "皮夹克": {
                 "text": "leather jacket",
-                "order": 0
+                "order": -1
             },
-            "探险家夹克 safari jacket": {
+            "探险家夹克": {
                 "text": "safari jacket",
-                "order": 0
+                "order": -1
             },
-            "兜帽 hood": {
+            "兜帽": {
                 "text": "hood",
-                "order": 0
+                "order": -1
             },
-            "牛仔夹克 denim jacket": {
+            "牛仔夹克": {
                 "text": "denim jacket",
-                "order": 0
+                "order": -1
             },
-            "高领夹克 turtleneck jacket": {
+            "高领夹克": {
                 "text": "turtleneck jacket",
-                "order": 0
+                "order": -1
             },
-            "消防员夹克 firefighter jacket": {
+            "消防员夹克": {
                 "text": "firefighter jacket",
-                "order": 0
+                "order": -1
             },
-            "透明夹克 see-through jacket": {
+            "透明夹克": {
                 "text": "see-through jacket",
-                "order": 0
+                "order": -1
             },
-            "战壕大衣 trench coat": {
+            "战壕大衣": {
                 "text": "trench coat",
-                "order": 0
+                "order": -1
             },
-            "实验室外套 lab coat": {
+            "实验室外套": {
                 "text": "lab coat",
-                "order": 0
+                "order": -1
             },
-            "羽绒服 Down Jackets": {
+            "羽绒服": {
                 "text": "Down Jackets",
-                "order": 0
+                "order": -1
             },
-            "防弹盔甲 body armor": {
+            "防弹盔甲": {
                 "text": "body armor",
-                "order": 0
+                "order": -1
             },
-            "防弹衣 flak jacket": {
+            "防弹衣": {
                 "text": "flak jacket",
-                "order": 0
+                "order": -1
             },
-            "大衣 overcoat": {
+            "大衣": {
                 "text": "overcoat",
-                "order": 0
+                "order": -1
             },
-            "粗呢大衣 duffel coat": {
+            "粗呢大衣": {
                 "text": "duffel coat",
-                "order": 0
+                "order": -1
             }
         },
         "服装": {
-            "透视装 transparent clothes": {
+            "透视装": {
                 "text": "transparent clothes",
-                "order": 0
+                "order": -1
             },
-            "燕尾服 tailcoat": {
+            "燕尾服": {
                 "text": "tailcoat",
-                "order": 0
+                "order": -1
             },
-            "乳胶连体衣 latex bodysuit": {
+            "乳胶连体衣": {
                 "text": "latex bodysuit",
-                "order": 0
+                "order": -1
             },
-            "女仆装 Victoria black maid dress": {
+            "女仆装": {
                 "text": "Victoria black maid dress",
-                "order": 0
+                "order": -1
             },
-            "水手服 sailor suit": {
+            "水手服": {
                 "text": "sailor suit",
-                "order": 0
+                "order": -1
             },
-            "学生服 school uniform": {
+            "学生服": {
                 "text": "school uniform",
-                "order": 0
+                "order": -1
             },
-            "职场制服 bussiness suit": {
+            "职场制服": {
                 "text": "bussiness suit",
-                "order": 0
+                "order": -1
             },
-            "西装 suit": {
+            "西装": {
                 "text": "suit",
-                "order": 0
+                "order": -1
             },
-            "军装 military uniform": {
+            "军装": {
                 "text": "military uniform",
-                "order": 0
+                "order": -1
             },
-            "礼服 lucency full dress": {
+            "礼服": {
                 "text": "lucency full dress",
-                "order": 0
+                "order": -1
             },
-            "汉服 hanfu": {
+            "汉服": {
                 "text": "hanfu",
-                "order": 0
+                "order": -1
             },
-            "旗袍 cheongsam": {
+            "旗袍": {
                 "text": "cheongsam",
-                "order": 0
+                "order": -1
             },
-            "和服 japanses clothes": {
+            "和服": {
                 "text": "japanses clothes",
-                "order": 0
+                "order": -1
             },
-            "运动服 sportswear": {
+            "运动服": {
                 "text": "sportswear",
-                "order": 0
+                "order": -1
             },
-            "工装服 dungarees": {
+            "工装服": {
                 "text": "dungarees",
-                "order": 0
+                "order": -1
             },
-            "婚纱 wedding dress": {
+            "婚纱": {
                 "text": "wedding dress",
-                "order": 0
+                "order": -1
             },
-            "银色连衣裙 silvercleavage dress": {
+            "银色连衣裙": {
                 "text": "silvercleavage dress",
-                "order": 0
+                "order": -1
             },
-            "长袍 robe": {
+            "长袍": {
                 "text": "robe",
-                "order": 0
+                "order": -1
             },
-            "围裙 apron": {
+            "围裙": {
                 "text": "apron",
-                "order": 0
+                "order": -1
             },
-            "泳装 swimsuit": {
+            "泳装": {
                 "text": "swimsuit",
-                "order": 0
+                "order": -1
             },
-            "比基尼 bikini": {
+            "比基尼": {
                 "text": "bikini",
-                "order": 0
+                "order": -1
             },
-            "死库水 Sukumizu": {
+            "死库水": {
                 "text": "Sukumizu",
-                "order": 0
+                "order": -1
             },
-            "快餐制服 fast food uniform": {
+            "快餐制服": {
                 "text": "fast food uniform",
-                "order": 0
+                "order": -1
             },
-            "JK制服 JK": {
+            "JK制服": {
                 "text": "JK",
-                "order": 0
+                "order": -1
             },
-            "健身服 gym_uniform": {
+            "健身服": {
                 "text": "gym_uniform",
-                "order": 0
+                "order": -1
             },
-            "巫女服 miko attire": {
+            "巫女服": {
                 "text": "miko attire",
-                "order": 0
+                "order": -1
             },
-            "海军陆战队服 SWAT uniform": {
+            "海军陆战队服": {
                 "text": "SWAT uniform",
-                "order": 0
+                "order": -1
             },
-            "无袖连衣裙 sleeveless dress": {
+            "无袖连衣裙": {
                 "text": "sleeveless dress",
-                "order": 0
+                "order": -1
             },
-            "雨衣 raincoat": {
+            "雨衣": {
                 "text": "raincoat",
-                "order": 0
+                "order": -1
             },
-            "透明雨衣 see-through raincoat": {
+            "透明雨衣": {
                 "text": "see-through raincoat",
-                "order": 0
+                "order": -1
             },
-            "机甲衣 mech suit": {
+            "机甲衣": {
                 "text": "mech suit",
-                "order": 0
+                "order": -1
             },
-            "巫师法袍 wizard robe": {
+            "巫师法袍": {
                 "text": "wizard robe",
-                "order": 0
+                "order": -1
             },
-            "刺客装束 assassin-style": {
+            "刺客装束": {
                 "text": "assassin-style",
-                "order": 0
+                "order": -1
             }
         },
         "下装": {
-            "牛仔短裤 denim shorts": {
+            "牛仔短裤": {
                 "text": "denim shorts",
-                "order": 0
+                "order": -1
             },
-            "百褶裙 pleated skirt": {
+            "百褶裙": {
                 "text": "pleated skirt",
-                "order": 0
+                "order": -1
             },
-            "热裤 short shorts": {
+            "热裤": {
                 "text": "short shorts",
-                "order": 0
+                "order": -1
             },
-            "铅笔裙 pencil skirt": {
+            "铅笔裙": {
                 "text": "pencil skirt",
-                "order": 0
+                "order": -1
             },
-            "皮裙 leather skirt": {
+            "皮裙": {
                 "text": "leather skirt",
-                "order": 0
+                "order": -1
             },
-            "黑色紧身裤 black leggings": {
+            "黑色紧身裤": {
                 "text": "black leggings",
-                "order": 0
+                "order": -1
             },
-            "和服下的裙子 skirt under kimono": {
+            "和服下的裙子": {
                 "text": "skirt under kimono",
-                "order": 0
+                "order": -1
             }
         },
         "其他服装": {
-            "褶边 frills": {
+            "褶边": {
                 "text": "frills",
-                "order": 0
+                "order": -1
             },
-            "花边 lace": {
+            "花边": {
                 "text": "lace",
-                "order": 0
+                "order": -1
             },
-            "哥特风格 gothic": {
+            "哥特风格": {
                 "text": "gothic",
-                "order": 0
+                "order": -1
             },
-            "洛丽塔风格 lolita fashion": {
+            "洛丽塔风格": {
                 "text": "lolita fashion",
-                "order": 0
+                "order": -1
             },
-            "西部风格 western": {
+            "西部风格": {
                 "text": "western",
-                "order": 0
+                "order": -1
             },
-            "湿身 wet clothes": {
+            "湿身": {
                 "text": "wet clothes",
-                "order": 0
+                "order": -1
             },
-            "露单肩 off_shoulder": {
+            "露单肩": {
                 "text": "off_shoulder",
-                "order": 0
+                "order": -1
             },
-            "露双肩 bare_shoulders": {
+            "露双肩": {
                 "text": "bare_shoulders",
-                "order": 0
+                "order": -1
             },
-            "格子花纹 tartan": {
+            "格子花纹": {
                 "text": "tartan",
-                "order": 0
+                "order": -1
             },
-            "横条花纹 striped": {
+            "横条花纹": {
                 "text": "striped",
-                "order": 0
+                "order": -1
             },
-            "撕裂的衣服 torn clothes": {
+            "撕裂的衣服": {
                 "text": "torn clothes",
-                "order": 0
+                "order": -1
             },
-            "披甲 armored skirt": {
+            "披甲": {
                 "text": "armored skirt",
-                "order": 0
+                "order": -1
             },
-            "盔甲 armor": {
+            "盔甲": {
                 "text": "armor",
-                "order": 0
+                "order": -1
             },
-            "金属盔甲 metal armor": {
+            "金属盔甲": {
                 "text": "metal armor",
-                "order": 0
+                "order": -1
             },
-            "狂战士铠甲 berserker armor": {
+            "狂战士铠甲": {
                 "text": "berserker armor",
-                "order": 0
+                "order": -1
             },
-            "腰带 belt": {
+            "腰带": {
                 "text": "belt",
-                "order": 0
+                "order": -1
             },
-            "围巾 scarf": {
+            "围巾": {
                 "text": "scarf",
-                "order": 0
+                "order": -1
             },
-            "披肩 cape": {
+            "披肩": {
                 "text": "cape",
-                "order": 0
+                "order": -1
             },
-            "皮草披肩 fur shawl": {
+            "皮草披肩": {
                 "text": "fur shawl",
-                "order": 0
+                "order": -1
             }
         }
     },
     "鞋饰": {
         "帽饰": {
-            "棒球帽 Baseball cap": {
+            "棒球帽": {
                 "text": "Baseball cap",
-                "order": 0
+                "order": -1
             },
-            "针织帽 Beanie": {
+            "针织帽": {
                 "text": "Beanie",
-                "order": 0
+                "order": -1
             },
-            "拿破仑帽 Bicorne": {
+            "拿破仑帽": {
                 "text": "Bicorne",
-                "order": 0
+                "order": -1
             },
-            "太阳帽 Boater hat": {
+            "太阳帽": {
                 "text": "Boater hat",
-                "order": 0
+                "order": -1
             },
-            "遮阳帽 Visor cap": {
+            "遮阳帽": {
                 "text": "Visor cap",
-                "order": 0
+                "order": -1
             },
-            "圆顶礼帽 Bowler hat": {
+            "圆顶礼帽": {
                 "text": "Bowler hat",
-                "order": 0
+                "order": -1
             },
-            "报童帽 Cabbie hat": {
+            "报童帽": {
                 "text": "Cabbie hat",
-                "order": 0
+                "order": -1
             },
-            "渔夫帽 Bucket hat": {
+            "渔夫帽": {
                 "text": "Bucket hat",
-                "order": 0
+                "order": -1
             },
-            "侦探帽 Fedora": {
+            "侦探帽": {
                 "text": "Fedora",
-                "order": 0
+                "order": -1
             },
-            "牛仔帽 Cowboy hat": {
+            "牛仔帽": {
                 "text": "Cowboy hat",
-                "order": 0
+                "order": -1
             },
-            "厨师帽 Chef hat": {
+            "厨师帽": {
                 "text": "Chef hat",
-                "order": 0
+                "order": -1
             },
-            "军官帽 Military hat": {
+            "军官帽": {
                 "text": "Military hat",
-                "order": 0
+                "order": -1
             },
-            "圣诞帽 Santa hat": {
+            "圣诞帽": {
                 "text": "Santa hat",
-                "order": 0
+                "order": -1
             },
-            "派对帽 Party hat": {
+            "派对帽": {
                 "text": "Party hat",
-                "order": 0
+                "order": -1
             },
-            "小丑帽 Jester cap": {
+            "小丑帽": {
                 "text": "Jester cap",
-                "order": 0
+                "order": -1
             },
-            "安全帽 Hardhat": {
+            "安全帽": {
                 "text": "Hardhat",
-                "order": 0
+                "order": -1
             },
-            "棒球头盔 Baseball helmet": {
+            "棒球头盔": {
                 "text": "Baseball helmet",
-                "order": 0
+                "order": -1
             },
-            "橄榄球头盔 Football helmet": {
+            "橄榄球头盔": {
                 "text": "Football helmet",
-                "order": 0
+                "order": -1
             },
-            "动物头盔 animal helmet": {
+            "动物头盔": {
                 "text": "animal helmet",
-                "order": 0
+                "order": -1
             },
-            "女巫帽 witch hat": {
+            "女巫帽": {
                 "text": "witch hat",
-                "order": 0
+                "order": -1
             },
-            "贝雷帽 beret": {
+            "贝雷帽": {
                 "text": "beret",
-                "order": 0
+                "order": -1
             },
-            "鸭舌帽 peaked cap": {
+            "鸭舌帽": {
                 "text": "peaked cap",
-                "order": 0
+                "order": -1
             },
-            "草帽 Straw hat": {
+            "草帽": {
                 "text": "Straw hat",
-                "order": 0
+                "order": -1
             }
         },
         "鞋类": {
-            "裸足 bare_legs": {
+            "裸足": {
                 "text": "bare_legs",
-                "order": 0
+                "order": -1
             },
-            "靴子 boots": {
+            "靴子": {
                 "text": "boots",
-                "order": 0
+                "order": -1
             },
-            "马丁靴 knee boots": {
+            "马丁靴": {
                 "text": "knee boots",
-                "order": 0
+                "order": -1
             },
-            "脚踝靴 ankle boots": {
+            "脚踝靴": {
                 "text": "ankle boots",
-                "order": 0
+                "order": -1
             },
-            "系带靴 cross-laced_footwear": {
+            "系带靴": {
                 "text": "cross-laced_footwear",
-                "order": 0
+                "order": -1
             },
-            "战斗靴 combat boots": {
+            "战斗靴": {
                 "text": "combat boots",
-                "order": 0
+                "order": -1
             },
-            "装甲靴 armored boots": {
+            "装甲靴": {
                 "text": "armored boots",
-                "order": 0
+                "order": -1
             },
-            "过膝靴 knee boots": {
+            "过膝靴": {
                 "text": "knee boots",
-                "order": 0
+                "order": -1
             },
-            "防水橡胶靴 rubber boots": {
+            "防水橡胶靴": {
                 "text": "rubber boots",
-                "order": 0
+                "order": -1
             },
-            "皮靴 leather boots": {
+            "皮靴": {
                 "text": "leather boots",
-                "order": 0
+                "order": -1
             },
-            "雪地靴 snow boots": {
+            "雪地靴": {
                 "text": "snow boots",
-                "order": 0
+                "order": -1
             },
-            "圣诞靴 santa boots": {
+            "圣诞靴": {
                 "text": "santa boots",
-                "order": 0
+                "order": -1
             },
-            "鞋子 shoes": {
+            "鞋子": {
                 "text": "shoes",
-                "order": 0
+                "order": -1
             },
-            "厚底鞋 platform footwear": {
+            "厚底鞋": {
                 "text": "platform footwear",
-                "order": 0
+                "order": -1
             },
-            "尖头鞋 pointy footwear": {
+            "尖头鞋": {
                 "text": "pointy footwear",
-                "order": 0
+                "order": -1
             },
-            "芭蕾舞鞋 ballet slippers": {
+            "芭蕾舞鞋": {
                 "text": "ballet slippers",
-                "order": 0
+                "order": -1
             },
-            "运动鞋 sneakers": {
+            "运动鞋": {
                 "text": "sneakers",
-                "order": 0
+                "order": -1
             },
-            "旱冰鞋 roller skates": {
+            "旱冰鞋": {
                 "text": "roller skates",
-                "order": 0
+                "order": -1
             },
-            "溜冰鞋 ice skates": {
+            "溜冰鞋": {
                 "text": "ice skates",
-                "order": 0
+                "order": -1
             },
-            "钉鞋 spiked shoes": {
+            "钉鞋": {
                 "text": "spiked shoes",
-                "order": 0
+                "order": -1
             },
-            "高跟鞋 high heels": {
+            "高跟鞋": {
                 "text": "high heels",
-                "order": 0
+                "order": -1
             },
-            "玛丽珍鞋 mary janes": {
+            "玛丽珍鞋": {
                 "text": "mary janes",
-                "order": 0
+                "order": -1
             },
-            "乐福鞋 loafers": {
+            "乐福鞋": {
                 "text": "loafers",
-                "order": 0
+                "order": -1
             },
-            "女式学生鞋 uwabaki": {
+            "女式学生鞋": {
                 "text": "uwabaki",
-                "order": 0
+                "order": -1
             },
-            "凉鞋 sandals": {
+            "凉鞋": {
                 "text": "sandals",
-                "order": 0
+                "order": -1
             },
-            "木屐 geta": {
+            "木屐": {
                 "text": "geta",
-                "order": 0
+                "order": -1
             },
-            "拖鞋 slippers": {
+            "拖鞋": {
                 "text": "slippers",
-                "order": 0
+                "order": -1
             },
-            "人字拖 flip-flops": {
+            "人字拖": {
                 "text": "flip-flops",
-                "order": 0
+                "order": -1
             }
         },
         "袜类": {
-            "不穿袜子 no socks": {
+            "不穿袜子": {
                 "text": "no socks",
-                "order": 0
+                "order": -1
             },
-            "短袜 socks": {
+            "短袜": {
                 "text": "socks",
-                "order": 0
+                "order": -1
             },
-            "日式厚底短袜 tabi": {
+            "日式厚底短袜": {
                 "text": "tabi",
-                "order": 0
+                "order": -1
             },
-            "丝袜 stockings": {
+            "丝袜": {
                 "text": "stockings",
-                "order": 0
+                "order": -1
             },
-            "圣诞袜 christmas stocking": {
+            "圣诞袜": {
                 "text": "christmas stocking",
-                "order": 0
+                "order": -1
             },
-            "暖腿袜 leg warmers": {
+            "暖腿袜": {
                 "text": "leg warmers",
-                "order": 0
+                "order": -1
             },
-            "荷叶边袜子 frilled socks": {
+            "荷叶边袜子": {
                 "text": "frilled socks",
-                "order": 0
+                "order": -1
             },
-            "丝带边袜子 ribbon-trimmed legwear": {
+            "丝带边袜子": {
                 "text": "ribbon-trimmed legwear",
-                "order": 0
+                "order": -1
             },
-            "闪亮袜子 shiny legwear": {
+            "闪亮袜子": {
                 "text": "shiny legwear",
-                "order": 0
+                "order": -1
             },
-            "褶边长筒袜 frilled thighhighs": {
+            "褶边长筒袜": {
                 "text": "frilled thighhighs",
-                "order": 0
+                "order": -1
             },
-            "过膝袜 thighhighs": {
+            "过膝袜": {
                 "text": "thighhighs",
-                "order": 0
+                "order": -1
             },
-            "渔网袜 fishnet stockings": {
+            "渔网袜": {
                 "text": "fishnet stockings",
-                "order": 0
+                "order": -1
             },
-            "堆堆袜 loose socks": {
+            "堆堆袜": {
                 "text": "loose socks",
-                "order": 0
+                "order": -1
             },
-            "裤袜 leggings": {
+            "裤袜": {
                 "text": "leggings",
-                "order": 0
+                "order": -1
             },
-            "蕾丝裤袜 lace legwear": {
+            "蕾丝裤袜": {
                 "text": "lace legwear",
-                "order": 0
+                "order": -1
             },
-            "罗纹裤袜 ribbed legwear": {
+            "罗纹裤袜": {
                 "text": "ribbed legwear",
-                "order": 0
+                "order": -1
             },
-            "湿连裤袜 wet pantyhose": {
+            "湿连裤袜": {
                 "text": "wet pantyhose",
-                "order": 0
+                "order": -1
             },
-            "格子裤袜 plaid legwear": {
+            "格子裤袜": {
                 "text": "plaid legwear",
-                "order": 0
+                "order": -1
             },
-            "透视裤袜 see-through legwear": {
+            "透视裤袜": {
                 "text": "see-through legwear",
-                "order": 0
+                "order": -1
             },
-            "连裤袜 pantyhose": {
+            "连裤袜": {
                 "text": "pantyhose",
-                "order": 0
+                "order": -1
             },
-            "撕裂的连裤袜 torn pantyhose": {
+            "撕裂的连裤袜": {
                 "text": "torn pantyhose",
-                "order": 0
+                "order": -1
             },
-            "单腿连裤袜 single leg pantyhose": {
+            "单腿连裤袜": {
                 "text": "single leg pantyhose",
-                "order": 0
+                "order": -1
             },
-            "荷叶边连裤袜 frilled pantyhose": {
+            "荷叶边连裤袜": {
                 "text": "frilled pantyhose",
-                "order": 0
+                "order": -1
             },
-            "柳丁吊袜带 studded garter belt": {
+            "柳丁吊袜带": {
                 "text": "studded garter belt",
-                "order": 0
+                "order": -1
             },
-            "吊袜带 sock dangle": {
+            "吊袜带": {
                 "text": "sock dangle",
-                "order": 0
+                "order": -1
             },
-            "大腿系带 thigh strap": {
+            "大腿系带": {
                 "text": "thigh strap",
-                "order": 0
+                "order": -1
             },
-            "腿部花边环 leg_garter": {
+            "腿部花边环": {
                 "text": "leg_garter",
-                "order": 0
+                "order": -1
             },
-            "包扎腿 bandaged leg": {
+            "包扎腿": {
                 "text": "bandaged leg",
-                "order": 0
+                "order": -1
             }
         }
     },
     "尾&翅&角": {
         "尾巴": {
-            "宝可梦尾巴 pokemon tail": {
+            "宝可梦尾巴": {
                 "text": "pokemon tail",
-                "order": 0
+                "order": -1
             },
-            "皮卡丘尾巴 pikachu tail": {
+            "皮卡丘尾巴": {
                 "text": "pikachu tail",
-                "order": 0
+                "order": -1
             },
-            "水獭尾巴 otter tail": {
+            "水獭尾巴": {
                 "text": "otter tail",
-                "order": 0
+                "order": -1
             },
-            "蝎尾 scorpion tail": {
+            "蝎尾": {
                 "text": "scorpion tail",
-                "order": 0
+                "order": -1
             },
-            "鹿尾 deer tail": {
+            "鹿尾": {
                 "text": "deer tail",
-                "order": 0
+                "order": -1
             },
-            "黄鼠狼尾巴 weasel tail": {
+            "黄鼠狼尾巴": {
                 "text": "weasel tail",
-                "order": 0
+                "order": -1
             },
-            "羊驼尾巴 alpaca tail": {
+            "羊驼尾巴": {
                 "text": "alpaca tail",
-                "order": 0
+                "order": -1
             },
-            "恐龙尾巴 dinosaur tail": {
+            "恐龙尾巴": {
                 "text": "dinosaur tail",
-                "order": 0
+                "order": -1
             },
-            "企鹅尾巴 penguin tail": {
+            "企鹅尾巴": {
                 "text": "penguin tail",
-                "order": 0
+                "order": -1
             },
-            "羊尾巴 sheep tail": {
+            "羊尾巴": {
                 "text": "sheep tail",
-                "order": 0
+                "order": -1
             },
-            "山羊尾巴 goat tail": {
+            "山羊尾巴": {
                 "text": "goat tail",
-                "order": 0
+                "order": -1
             },
-            "海狸尾巴 beaver tail": {
+            "海狸尾巴": {
                 "text": "beaver tail",
-                "order": 0
+                "order": -1
             },
-            "小熊猫尾巴 red panda tail": {
+            "小熊猫尾巴": {
                 "text": "red panda tail",
-                "order": 0
+                "order": -1
             },
-            "豺尾巴 jackal tail": {
+            "豺尾巴": {
                 "text": "jackal tail",
-                "order": 0
+                "order": -1
             },
-            "食蚁兽尾巴 anteater tail": {
+            "食蚁兽尾巴": {
                 "text": "anteater tail",
-                "order": 0
+                "order": -1
             },
-            "土狼尾巴 aardwolf tail": {
+            "土狼尾巴": {
                 "text": "aardwolf tail",
-                "order": 0
+                "order": -1
             },
-            "猎豹尾巴 panther tail": {
+            "猎豹尾巴": {
                 "text": "panther tail",
-                "order": 0
+                "order": -1
             },
-            "熊猫尾巴 panda tail": {
+            "熊猫尾巴": {
                 "text": "panda tail",
-                "order": 0
+                "order": -1
             },
-            "天使尾巴 Angel wings": {
+            "天使尾巴": {
                 "text": "Angel wings",
-                "order": 0
+                "order": -1
             }
         },
         "翅膀": {
-            "蝴蝶翅膀 Butterfly wings": {
+            "蝴蝶翅膀": {
                 "text": "Butterfly wings",
-                "order": 0
+                "order": -1
             },
-            "昆虫翅膀 insect wings": {
+            "昆虫翅膀": {
                 "text": "insect wings",
-                "order": 0
+                "order": -1
             },
-            "蝙蝠翅膀 Bat wings": {
+            "蝙蝠翅膀": {
                 "text": "Bat wings",
-                "order": 0
+                "order": -1
             },
-            "鸟翼 bird wings": {
+            "鸟翼": {
                 "text": "bird wings",
-                "order": 0
+                "order": -1
             },
-            "羽翼 feathered wings": {
+            "羽翼": {
                 "text": "feathered wings",
-                "order": 0
+                "order": -1
             },
-            "妖精翅膀 Fairy wings": {
+            "妖精翅膀": {
                 "text": "Fairy wings",
-                "order": 0
+                "order": -1
             },
-            "龙之翼 Dragon wings": {
+            "龙之翼": {
                 "text": "Dragon wings",
-                "order": 0
+                "order": -1
             },
-            "恶魔之翼 Demon wings": {
+            "恶魔之翼": {
                 "text": "Demon wings",
-                "order": 0
+                "order": -1
             },
-            "火焰翅膀 Fiery wings": {
+            "火焰翅膀": {
                 "text": "Fiery wings",
-                "order": 0
+                "order": -1
             },
-            "机械翅膀 Mechanical wings": {
+            "机械翅膀": {
                 "text": "Mechanical wings",
-                "order": 0
+                "order": -1
             },
-            "冰翅 ice crystal texture": {
+            "冰翅": {
                 "text": "ice crystal texture",
-                "order": 0
+                "order": -1
             },
-            "冰火之翼 ((burning feathers)),(fea...": {
-                "text": "((burning feathers)),(fea...",
-                "order": 0
+            "冰火之翼": {
+                "text": "((burning feathers)),(feathers_made_of_ice),(frozen feathers),(((ice and fire together)))",
+                "order": -1
             }
         },
         "角": {
-            "羚羊角 antelope horns": {
+            "羚羊角": {
                 "text": "antelope horns",
-                "order": 0
+                "order": -1
             },
-            "山羊角 goat horns": {
+            "山羊角": {
                 "text": "goat horns",
-                "order": 0
+                "order": -1
             },
-            "羊角 sheep horns": {
+            "羊角": {
                 "text": "sheep horns",
-                "order": 0
+                "order": -1
             },
-            "奶牛角 cow horns": {
+            "奶牛角": {
                 "text": "cow horns",
-                "order": 0
+                "order": -1
             },
-            "公牛角 ox horns": {
+            "公牛角": {
                 "text": "ox horns",
-                "order": 0
+                "order": -1
             },
-            "鬼角 oni horns": {
+            "鬼角": {
                 "text": "oni horns",
-                "order": 0
+                "order": -1
             },
-            "断角 broken horn": {
+            "断角": {
                 "text": "broken horn",
-                "order": 0
+                "order": -1
             },
-            "机械角 mechanical horns": {
+            "机械角": {
                 "text": "mechanical horns",
-                "order": 0
+                "order": -1
             },
-            "恶魔之角 demon horns": {
+            "恶魔之角": {
                 "text": "demon horns",
-                "order": 0
+                "order": -1
             },
-            "龙之角 dragon horns": {
+            "龙之角": {
                 "text": "dragon horns",
-                "order": 0
+                "order": -1
             }
         }
     },
     "姿势": {
         "姿态": {
-            "侧身坐 yokozuwari": {
+            "侧身坐": {
                 "text": "yokozuwari",
-                "order": 0
+                "order": -1
             },
-            "鸭子坐 ahirusuwari": {
+            "鸭子坐": {
                 "text": "ahirusuwari",
-                "order": 0
+                "order": -1
             },
-            "跷二郎腿 crossed legs": {
+            "跷二郎腿": {
                 "text": "crossed legs",
-                "order": 0
+                "order": -1
             },
-            "盘腿 indian style": {
+            "盘腿": {
                 "text": "indian style",
-                "order": 0
+                "order": -1
             },
-            "抱腿 leg hug": {
+            "抱腿": {
                 "text": "leg hug",
-                "order": 0
+                "order": -1
             },
-            "跪着 kneeling": {
+            "跪着": {
                 "text": "kneeling",
-                "order": 0
+                "order": -1
             },
-            "翘臀 bent over": {
+            "翘臀": {
                 "text": "bent over",
-                "order": 0
+                "order": -1
             },
-            "躬躯 arched back": {
+            "躬躯": {
                 "text": "arched back",
-                "order": 0
+                "order": -1
             },
-            "露肚子 on stomach": {
+            "露肚子": {
                 "text": "on stomach",
-                "order": 0
+                "order": -1
             },
-            "膝枕 lap pillow": {
+            "膝枕": {
                 "text": "lap pillow",
-                "order": 0
+                "order": -1
             },
-            "抬一条腿 leg_lift": {
+            "抬一条腿": {
                 "text": "leg_lift",
-                "order": 0
+                "order": -1
             },
-            "抬两只脚 legs_up": {
+            "抬两只脚": {
                 "text": "legs_up",
-                "order": 0
+                "order": -1
             },
-            "学猫叫 paw pose": {
+            "学猫叫": {
                 "text": "paw pose",
-                "order": 0
+                "order": -1
             },
-            "单膝跪地 one knee": {
+            "单膝跪地": {
                 "text": "one knee",
-                "order": 0
+                "order": -1
             },
-            "蜷起身子侧躺 fetal position": {
+            "蜷起身子侧躺": {
                 "text": "fetal position",
-                "order": 0
+                "order": -1
             },
-            "仰卧 on back": {
+            "仰卧": {
                 "text": "on back",
-                "order": 0
+                "order": -1
             },
-            "俯卧 on stomach": {
+            "俯卧": {
                 "text": "on stomach",
-                "order": 0
+                "order": -1
             },
-            "坐着 sitting": {
+            "坐着": {
                 "text": "sitting",
-                "order": 0
+                "order": -1
             },
-            "屈膝抱腿坐 hugging own legs": {
+            "屈膝抱腿坐": {
                 "text": "hugging own legs",
-                "order": 0
+                "order": -1
             },
-            "立式跨骑 upright straddle": {
+            "立式跨骑": {
                 "text": "upright straddle",
-                "order": 0
+                "order": -1
             },
-            "站着 standing": {
+            "站着": {
                 "text": "standing",
-                "order": 0
+                "order": -1
             },
-            "蹲着 squatting": {
+            "蹲着": {
                 "text": "squatting",
-                "order": 0
+                "order": -1
             },
-            "绑在十字架上 crucifixion": {
+            "绑在十字架上": {
                 "text": "crucifixion",
-                "order": 0
+                "order": -1
             },
-            "双腿缠绕 leg lock": {
+            "双腿缠绕": {
                 "text": "leg lock",
-                "order": 0
+                "order": -1
             },
-            "四肢着地 all fours": {
+            "四肢着地": {
                 "text": "all fours",
-                "order": 0
+                "order": -1
             },
-            "戴耳机 hand on headphones": {
+            "戴耳机": {
                 "text": "hand on headphones",
-                "order": 0
+                "order": -1
             },
-            "鬼姿势 ghost pose": {
+            "鬼姿势": {
                 "text": "ghost pose",
-                "order": 0
+                "order": -1
             },
-            "回头 turning around": {
+            "回头": {
                 "text": "turning around",
-                "order": 0
+                "order": -1
             },
-            "歪头 head tilt": {
+            "歪头": {
                 "text": "head tilt",
-                "order": 0
+                "order": -1
             },
-            "前倾 leaning forward": {
+            "前倾": {
                 "text": "leaning forward",
-                "order": 0
+                "order": -1
             }
         },
         "手势": {
-            "嘘手势 shushing": {
+            "嘘手势": {
                 "text": "shushing",
-                "order": 0
+                "order": -1
             },
-            "翘大拇指 thumbs up": {
+            "翘大拇指": {
                 "text": "thumbs up",
-                "order": 0
+                "order": -1
             },
-            "手放脑后 arms behind head": {
+            "手放脑后": {
                 "text": "arms behind head",
-                "order": 0
+                "order": -1
             },
-            "手放身后 arms behind back": {
+            "手放身后": {
                 "text": "arms behind back",
-                "order": 0
+                "order": -1
             },
-            "手放胸前 hand on own chest": {
+            "手放胸前": {
                 "text": "hand on own chest",
-                "order": 0
+                "order": -1
             },
-            "手交叉在胸前 arms_crossed": {
+            "手交叉在胸前": {
                 "text": "arms_crossed",
-                "order": 0
+                "order": -1
             },
-            "手插口袋 hand in pocket": {
+            "手插口袋": {
                 "text": "hand in pocket",
-                "order": 0
+                "order": -1
             },
-            "双手插口袋 hands in pocket": {
+            "双手插口袋": {
                 "text": "hands in pocket",
-                "order": 0
+                "order": -1
             },
-            "十指相扣 interlocked fingers": {
+            "十指相扣": {
                 "text": "interlocked fingers",
-                "order": 0
+                "order": -1
             },
-            "V字手势 victory pose": {
+            "V字手势": {
                 "text": "victory pose",
-                "order": 0
+                "order": -1
             },
-            "手在地板上 hand on floor": {
+            "手在地板上": {
                 "text": "hand on floor",
-                "order": 0
+                "order": -1
             },
-            "手在额头上 hand on forehead": {
+            "手在额头上": {
                 "text": "hand on forehead",
-                "order": 0
+                "order": -1
             },
-            "手在肚子上 hand on own stomach": {
+            "手在肚子上": {
                 "text": "hand on own stomach",
-                "order": 0
+                "order": -1
             },
-            "手在肩膀上 arm over shoulder": {
+            "手在肩膀上": {
                 "text": "arm over shoulder",
-                "order": 0
+                "order": -1
             },
-            "手搭别人的腿 hand on another's leg": {
+            "手搭别人的腿": {
                 "text": "hand on another's leg",
-                "order": 0
+                "order": -1
             },
-            "手搭别人的腰 hand on another's waist": {
+            "手搭别人的腰": {
                 "text": "hand on another's waist",
-                "order": 0
+                "order": -1
             },
-            "双手合十 own hands clasped": {
+            "双手合十": {
                 "text": "own hands clasped",
-                "order": 0
+                "order": -1
             },
-            "翼展双臂 wide open arms": {
+            "翼展双臂": {
                 "text": "wide open arms",
-                "order": 0
+                "order": -1
             },
-            "手放嘴边 hand to mouth": {
+            "手放嘴边": {
                 "text": "hand to mouth",
-                "order": 0
+                "order": -1
             },
-            "手枪手势 finger gun": {
+            "手枪手势": {
                 "text": "finger gun",
-                "order": 0
+                "order": -1
             },
-            "猫爪手势 cat pose": {
+            "猫爪手势": {
                 "text": "cat pose",
-                "order": 0
+                "order": -1
             }
         },
         "视线": {
-            "远眺 looking afar": {
+            "远眺": {
                 "text": "looking afar",
-                "order": 0
+                "order": -1
             },
-            "照镜子 looking at mirror": {
+            "照镜子": {
                 "text": "looking at mirror",
-                "order": 0
+                "order": -1
             },
-            "看手机 looking at phone": {
+            "看手机": {
                 "text": "looking at phone",
-                "order": 0
+                "order": -1
             },
-            "看向别处 looking away": {
+            "看向别处": {
                 "text": "looking away",
-                "order": 0
+                "order": -1
             },
-            "透过刘海看 visible through hair": {
+            "透过刘海看": {
                 "text": "visible through hair",
-                "order": 0
+                "order": -1
             },
-            "透过眼镜看 looking over glasses": {
+            "透过眼镜看": {
                 "text": "looking over glasses",
-                "order": 0
+                "order": -1
             },
-            "面向观者 look at viewer": {
+            "面向观者": {
                 "text": "look at viewer",
-                "order": 0
+                "order": -1
             },
-            "靠近观者 close to viewer": {
+            "靠近观者": {
                 "text": "close to viewer",
-                "order": 0
+                "order": -1
             },
-            "动态角度 dynamic angle ": {
+            "动态角度": {
                 "text": "dynamic angle ",
-                "order": 0
+                "order": -1
             },
-            "舞台角度 dramatic angle": {
+            "舞台角度": {
                 "text": "dramatic angle",
-                "order": 0
+                "order": -1
             },
-            "凝视 stare": {
+            "凝视": {
                 "text": "stare",
-                "order": 0
+                "order": -1
             },
-            "向上看 looking up": {
+            "向上看": {
                 "text": "looking up",
-                "order": 0
+                "order": -1
             },
-            "向下看 looking down": {
+            "向下看": {
                 "text": "looking down",
-                "order": 0
+                "order": -1
             },
-            "看向旁边 looking to the side": {
+            "看向旁边": {
                 "text": "looking to the side",
-                "order": 0
+                "order": -1
             },
-            "移开目光 looking away": {
+            "移开目光": {
                 "text": "looking away",
-                "order": 0
+                "order": -1
             }
         }
     },
     "动作": {
         "整体": {
-            "嗅闻 smelling": {
+            "嗅闻": {
                 "text": "smelling",
-                "order": 0
+                "order": -1
             },
-            "公主抱 princess carry": {
+            "公主抱": {
                 "text": "princess carry",
-                "order": 0
+                "order": -1
             },
-            "拥抱 hug": {
+            "拥抱": {
                 "text": "hug",
-                "order": 0
+                "order": -1
             },
-            "背对背 back-to-back": {
+            "背对背": {
                 "text": "back-to-back",
-                "order": 0
+                "order": -1
             },
-            "洗澡 bathing": {
+            "洗澡": {
                 "text": "bathing",
-                "order": 0
+                "order": -1
             },
-            "耶 peace symbol": {
+            "耶": {
                 "text": "peace symbol",
-                "order": 0
+                "order": -1
             },
-            "调整过膝袜 adjusting_thighhigh": {
+            "调整过膝袜": {
                 "text": "adjusting_thighhigh",
-                "order": 0
+                "order": -1
             },
-            "抓住 grabbing": {
+            "抓住": {
                 "text": "grabbing",
-                "order": 0
+                "order": -1
             },
-            "战斗姿态 fighting_stance": {
+            "战斗姿态": {
                 "text": "fighting_stance",
-                "order": 0
+                "order": -1
             },
-            "走 walking": {
+            "走": {
                 "text": "walking",
-                "order": 0
+                "order": -1
             },
-            "跑 running": {
+            "跑": {
                 "text": "running",
-                "order": 0
+                "order": -1
             },
-            "跨坐 straddling": {
+            "跨坐": {
                 "text": "straddling",
-                "order": 0
+                "order": -1
             },
-            "跳 jump": {
+            "跳": {
                 "text": "jump",
-                "order": 0
+                "order": -1
             },
-            "飞 fly": {
+            "飞": {
                 "text": "fly",
-                "order": 0
+                "order": -1
             },
-            "靠墙 against wall": {
+            "靠墙": {
                 "text": "against wall",
-                "order": 0
+                "order": -1
             },
-            "躺 lie": {
+            "躺": {
                 "text": "lie",
-                "order": 0
+                "order": -1
             },
-            "从背后抱 hug from behind": {
+            "从背后抱": {
                 "text": "hug from behind",
-                "order": 0
+                "order": -1
             },
-            "遛狗 walk the dog": {
+            "遛狗": {
                 "text": "walk the dog",
-                "order": 0
+                "order": -1
             },
-            "提裙 skirt lift": {
+            "提裙": {
                 "text": "skirt lift",
-                "order": 0
+                "order": -1
             },
-            "泡温泉 half body under water": {
+            "泡温泉": {
                 "text": "half body under water",
-                "order": 0
+                "order": -1
             },
-            "骑马 horse riding": {
+            "骑马": {
                 "text": "horse riding",
-                "order": 0
+                "order": -1
             },
-            "自拍 selfie": {
+            "自拍": {
                 "text": "selfie",
-                "order": 0
+                "order": -1
             },
-            "一字马 standing split": {
+            "一字马": {
                 "text": "standing split",
-                "order": 0
+                "order": -1
             },
-            "敬礼 salute": {
+            "敬礼": {
                 "text": "salute",
-                "order": 0
+                "order": -1
             },
-            "祈祷 pray": {
+            "祈祷": {
                 "text": "pray",
-                "order": 0
+                "order": -1
             },
-            "冥想 doing a meditation": {
+            "冥想": {
                 "text": "doing a meditation",
-                "order": 0
+                "order": -1
             }
         },
         "上半身": {
-            "伸懒腰 stretch": {
+            "伸懒腰": {
                 "text": "stretch",
-                "order": 0
+                "order": -1
             },
-            "托腮 gill support": {
+            "托腮": {
                 "text": "gill support",
-                "order": 0
+                "order": -1
             },
-            "牵手 holding hands": {
+            "牵手": {
                 "text": "holding hands",
-                "order": 0
+                "order": -1
             },
-            "手放臀 hand on another's hip": {
+            "手放臀": {
                 "text": "hand on another's hip",
-                "order": 0
+                "order": -1
             },
-            "单手叉腰 hand_on_hip": {
+            "单手叉腰": {
                 "text": "hand_on_hip",
-                "order": 0
+                "order": -1
             },
-            "双手叉腰 hands_on_hips": {
+            "双手叉腰": {
                 "text": "hands_on_hips",
-                "order": 0
+                "order": -1
             },
-            "招手 waving": {
+            "招手": {
                 "text": "waving",
-                "order": 0
+                "order": -1
             },
-            "撮头发 hair scrunchie": {
+            "撮头发": {
                 "text": "hair scrunchie",
-                "order": 0
+                "order": -1
             },
-            "拉头发 hair_pull": {
+            "拉头发": {
                 "text": "hair_pull",
-                "order": 0
+                "order": -1
             },
-            "抓别人的头发 grabbing another's hair": {
+            "抓别人的头发": {
                 "text": "grabbing another's hair",
-                "order": 0
+                "order": -1
             },
-            "竖中指 middle_finger": {
+            "竖中指": {
                 "text": "middle_finger",
-                "order": 0
+                "order": -1
             },
-            "弯腰 bent over": {
+            "弯腰": {
                 "text": "bent over",
-                "order": 0
+                "order": -1
             },
-            "掀起上衣 shirt lift": {
+            "掀起上衣": {
                 "text": "shirt lift",
-                "order": 0
+                "order": -1
             },
-            "亲吻脸颊 kissing cheek": {
+            "亲吻脸颊": {
                 "text": "kissing cheek",
-                "order": 0
+                "order": -1
             },
-            "亲吻额头 kissing forehead": {
+            "亲吻额头": {
                 "text": "kissing forehead",
-                "order": 0
+                "order": -1
             },
-            "踮起脚尖吻 tiptoe kiss": {
+            "踮起脚尖吻": {
                 "text": "tiptoe kiss",
-                "order": 0
+                "order": -1
             },
-            "头顶水果 fruit on head": {
+            "头顶水果": {
                 "text": "fruit on head",
-                "order": 0
+                "order": -1
             },
-            "咬手套 glove biting": {
+            "咬手套": {
                 "text": "glove biting",
-                "order": 0
+                "order": -1
             },
-            "脸贴脸 cheek-to-cheek": {
+            "脸贴脸": {
                 "text": "cheek-to-cheek",
-                "order": 0
+                "order": -1
             },
-            "手牵手 hand on another's hand": {
+            "手牵手": {
                 "text": "hand on another's hand",
-                "order": 0
+                "order": -1
             },
-            "双手交叉 crossed arms": {
+            "双手交叉": {
                 "text": "crossed arms",
-                "order": 0
+                "order": -1
             },
-            "双手张开伸直 spread arms": {
+            "双手张开伸直": {
                 "text": "spread arms",
-                "order": 0
+                "order": -1
             },
-            "挥动手臂 waving arms": {
+            "挥动手臂": {
                 "text": "waving arms",
-                "order": 0
+                "order": -1
             },
-            "伸出手臂 outstretched arm": {
+            "伸出手臂": {
                 "text": "outstretched arm",
-                "order": 0
+                "order": -1
             },
-            "用手臂支撑 carrying": {
+            "用手臂支撑": {
                 "text": "carrying",
-                "order": 0
+                "order": -1
             },
-            "搂着手臂 arm hug": {
+            "搂着手臂": {
                 "text": "arm hug",
-                "order": 0
+                "order": -1
             },
-            "拿着 holding": {
+            "拿着": {
                 "text": "holding",
-                "order": 0
+                "order": -1
             },
-            "拿着餐刀 holding knife": {
+            "拿着餐刀": {
                 "text": "holding knife",
-                "order": 0
+                "order": -1
             },
-            "拿着枪 holding gun": {
+            "拿着枪": {
                 "text": "holding gun",
-                "order": 0
+                "order": -1
             },
-            "拿着杯子 holding cup": {
+            "拿着杯子": {
                 "text": "holding cup",
-                "order": 0
+                "order": -1
             },
-            "拿着食物 holding food": {
+            "拿着食物": {
                 "text": "holding food",
-                "order": 0
+                "order": -1
             },
-            "拿着书 holding book": {
+            "拿着书": {
                 "text": "holding book",
-                "order": 0
+                "order": -1
             },
-            "拿着魔杖 holding wand": {
+            "拿着魔杖": {
                 "text": "holding wand",
-                "order": 0
+                "order": -1
             },
-            "打着伞 holding umbrella": {
+            "打着伞": {
                 "text": "holding umbrella",
-                "order": 0
+                "order": -1
             },
-            "捧着花 holding flower": {
+            "捧着花": {
                 "text": "holding flower",
-                "order": 0
+                "order": -1
             },
-            "拿着麦克风 holding microphone": {
+            "拿着麦克风": {
                 "text": "holding microphone",
-                "order": 0
+                "order": -1
             },
-            "抱着物品 object hug": {
+            "抱着物品": {
                 "text": "object hug",
-                "order": 0
+                "order": -1
             },
-            "抱着心 holding heart": {
+            "抱着心": {
                 "text": "holding heart",
-                "order": 0
+                "order": -1
             }
         }
     },
     "环境": {
         "四季朝暮": {
-            "春天 in spring": {
+            "春天": {
                 "text": "in spring",
-                "order": 0
+                "order": -1
             },
-            "夏天 in summer": {
+            "夏天": {
                 "text": "in summer",
-                "order": 0
+                "order": -1
             },
-            "秋天 in autumn": {
+            "秋天": {
                 "text": "in autumn",
-                "order": 0
+                "order": -1
             },
-            "冬天 in winter": {
+            "冬天": {
                 "text": "in winter",
-                "order": 0
+                "order": -1
             },
-            "黄昏 dusk": {
+            "黄昏": {
                 "text": "dusk",
-                "order": 0
+                "order": -1
             },
-            "夜晚 night": {
+            "夜晚": {
                 "text": "night",
-                "order": 0
+                "order": -1
             },
-            "秋景 (autumn maple forest:1.3)...": {
-                "text": "(autumn maple forest:1.3)...",
-                "order": 0
+            "枫林路": {
+                "text": "(autumn maple forest:1.3),(very few fallen leaves),(path)",
+                "order": -1
             }
         },
         "日月星辰": {
-            "太阳 sun": {
+            "太阳": {
                 "text": "sun",
-                "order": 0
+                "order": -1
             },
-            "落日 sunset": {
+            "落日": {
                 "text": "sunset",
-                "order": 0
+                "order": -1
             },
-            "月亮 moon": {
+            "月亮": {
                 "text": "moon",
-                "order": 0
+                "order": -1
             },
-            "满月 full_moon": {
+            "满月": {
                 "text": "full_moon",
-                "order": 0
+                "order": -1
             },
-            "星星 stars": {
+            "星星": {
                 "text": "stars",
-                "order": 0
+                "order": -1
             },
-            "天空 sky": {
+            "天空": {
                 "text": "sky",
-                "order": 0
+                "order": -1
             },
-            "多云 cloudy": {
+            "多云": {
                 "text": "cloudy",
-                "order": 0
+                "order": -1
             },
-            "雨天 rain": {
+            "雨天": {
                 "text": "rain",
-                "order": 0
+                "order": -1
             },
-            "冰雪 snow,ice": {
+            "冰雪": {
                 "text": "snow,ice",
-                "order": 0
+                "order": -1
             },
-            "雪花 snowflakes": {
+            "雪花": {
                 "text": "snowflakes",
-                "order": 0
+                "order": -1
             },
-            "闪电 lighting": {
+            "闪电": {
                 "text": "lighting",
-                "order": 0
+                "order": -1
             },
-            "彩虹 rainbow": {
+            "彩虹": {
                 "text": "rainbow",
-                "order": 0
+                "order": -1
             },
-            "流星雨 meteor shower": {
+            "流星雨": {
                 "text": "meteor shower",
-                "order": 0
+                "order": -1
             },
-            "宇宙 universe": {
+            "宇宙": {
                 "text": "universe",
-                "order": 0
+                "order": -1
             }
         },
         "天涯海角": {
-            "大海 sea": {
+            "大海": {
                 "text": "sea",
-                "order": 0
+                "order": -1
             },
-            "山丘 hills": {
+            "山丘": {
                 "text": "hills",
-                "order": 0
+                "order": -1
             },
-            "草地 in a meadow": {
+            "草地": {
                 "text": "in a meadow",
-                "order": 0
+                "order": -1
             },
-            "海滩 on the beach": {
+            "海滩": {
                 "text": "on the beach",
-                "order": 0
+                "order": -1
             },
-            "水中 underwater": {
+            "水中": {
                 "text": "underwater",
-                "order": 0
+                "order": -1
             },
-            "海边 over the sea": {
+            "海边": {
                 "text": "over the sea",
-                "order": 0
+                "order": -1
             },
-            "树林 grove": {
+            "树林": {
                 "text": "grove",
-                "order": 0
+                "order": -1
             },
-            "沙漠 on a desert": {
+            "沙漠": {
                 "text": "on a desert",
-                "order": 0
+                "order": -1
             },
-            "高原 plateau": {
+            "高原": {
                 "text": "plateau",
-                "order": 0
+                "order": -1
             },
-            "悬崖 cliff": {
+            "悬崖": {
                 "text": "cliff",
-                "order": 0
+                "order": -1
             },
-            "峡谷 canyon": {
+            "峡谷": {
                 "text": "canyon",
-                "order": 0
+                "order": -1
             },
-            "绿洲 oasis": {
+            "绿洲": {
                 "text": "oasis",
-                "order": 0
+                "order": -1
             },
-            "竹林 bamboo forest": {
+            "竹林": {
                 "text": "bamboo forest",
-                "order": 0
+                "order": -1
             },
-            "冰川 glacier": {
+            "冰川": {
                 "text": "glacier",
-                "order": 0
+                "order": -1
             },
-            "浮岛 floating island": {
+            "浮岛": {
                 "text": "floating island",
-                "order": 0
+                "order": -1
             },
-            "火山 volcano": {
+            "火山": {
                 "text": "volcano",
-                "order": 0
+                "order": -1
             },
-            "大草原 savanna": {
+            "大草原": {
                 "text": "savanna",
-                "order": 0
+                "order": -1
             },
-            "瀑布 waterfall": {
+            "瀑布": {
                 "text": "waterfall",
-                "order": 0
+                "order": -1
             },
-            "溪流 stream": {
+            "溪流": {
                 "text": "stream",
-                "order": 0
+                "order": -1
             },
-            "荒地 wasteland": {
+            "荒地": {
                 "text": "wasteland",
-                "order": 0
+                "order": -1
             },
-            "稻田 rice paddy": {
+            "稻田": {
                 "text": "rice paddy",
-                "order": 0
+                "order": -1
             },
-            "麦田 wheat field": {
+            "麦田": {
                 "text": "wheat field",
-                "order": 0
+                "order": -1
             },
-            "花田 flower field": {
+            "花田": {
                 "text": "flower field",
-                "order": 0
+                "order": -1
             },
-            "花海 flower sea": {
+            "花海": {
                 "text": "flower sea",
-                "order": 0
+                "order": -1
             }
         },
         "室内场景": {
-            "室内 indoor": {
+            "室内": {
                 "text": "indoor",
-                "order": 0
+                "order": -1
             },
-            "窗帘 curtain": {
+            "窗帘": {
                 "text": "curtain",
-                "order": 0
+                "order": -1
             },
-            "床 bed": {
+            "床": {
                 "text": "bed",
-                "order": 0
+                "order": -1
             },
-            "浴室 bathroom": {
+            "浴室": {
                 "text": "bathroom",
-                "order": 0
+                "order": -1
             },
-            "厕所隔间 toilet stall": {
+            "厕所隔间": {
                 "text": "toilet stall",
-                "order": 0
+                "order": -1
             },
-            "宅男房间 otaku room": {
+            "宅男房间": {
                 "text": "otaku room",
-                "order": 0
+                "order": -1
             },
-            "自助餐厅 cafeteria": {
+            "自助餐厅": {
                 "text": "cafeteria",
-                "order": 0
+                "order": -1
             },
-            "教室 classroom": {
+            "教室": {
                 "text": "classroom",
-                "order": 0
+                "order": -1
             },
-            "俱乐部 clubroom": {
+            "俱乐部": {
                 "text": "clubroom",
-                "order": 0
+                "order": -1
             },
-            "沙龙 salon": {
+            "沙龙": {
                 "text": "salon",
-                "order": 0
+                "order": -1
             },
-            "酒吧 bar": {
+            "酒吧": {
                 "text": "bar",
-                "order": 0
+                "order": -1
             },
-            "居酒屋 izakaya": {
+            "居酒屋": {
                 "text": "izakaya",
-                "order": 0
+                "order": -1
             },
-            "咖啡馆 cafe": {
+            "咖啡馆": {
                 "text": "cafe",
-                "order": 0
+                "order": -1
             },
-            "面包店 bakery": {
+            "面包店": {
                 "text": "bakery",
-                "order": 0
+                "order": -1
             },
-            "便利店 convenience store": {
+            "便利店": {
                 "text": "convenience store",
-                "order": 0
+                "order": -1
             },
-            "超市 supermarket": {
+            "超市": {
                 "text": "supermarket",
-                "order": 0
+                "order": -1
             },
-            "书店 bookstore": {
+            "书店": {
                 "text": "bookstore",
-                "order": 0
+                "order": -1
             },
-            "药店 pharmacy": {
+            "药店": {
                 "text": "pharmacy",
-                "order": 0
+                "order": -1
             },
-            "剧院 theater": {
+            "剧院": {
                 "text": "theater",
-                "order": 0
+                "order": -1
             },
-            "电影院 movie theater": {
+            "电影院": {
                 "text": "movie theater",
-                "order": 0
+                "order": -1
             },
-            "温室 greenhouse": {
+            "温室": {
                 "text": "greenhouse",
-                "order": 0
+                "order": -1
             },
-            "地库 dungeon": {
+            "地库": {
                 "text": "dungeon",
-                "order": 0
+                "order": -1
             },
-            "健身房 gym": {
+            "健身房": {
                 "text": "gym",
-                "order": 0
+                "order": -1
             },
-            "医务室 infirmary": {
+            "医务室": {
                 "text": "infirmary",
-                "order": 0
+                "order": -1
             },
-            "实验室 laboratory": {
+            "实验室": {
                 "text": "laboratory",
-                "order": 0
+                "order": -1
             },
-            "图书馆 library": {
+            "图书馆": {
                 "text": "library",
-                "order": 0
+                "order": -1
             },
-            "工作坊 workshop": {
+            "工作坊": {
                 "text": "workshop",
-                "order": 0
+                "order": -1
             },
-            "舞台 stage": {
+            "舞台": {
                 "text": "stage",
-                "order": 0
+                "order": -1
             },
-            "法庭 courtroom": {
+            "法庭": {
                 "text": "courtroom",
-                "order": 0
+                "order": -1
             }
         },
         "城市建筑": {
-            "城堡 castle": {
+            "城堡": {
                 "text": "castle",
-                "order": 0
+                "order": -1
             },
-            "城市 city": {
+            "城市": {
                 "text": "city",
-                "order": 0
+                "order": -1
             },
-            "水上乐园 waterpark": {
+            "水上乐园": {
                 "text": "waterpark",
-                "order": 0
+                "order": -1
             },
-            "旋转木马 carousel": {
+            "旋转木马": {
                 "text": "carousel",
-                "order": 0
+                "order": -1
             },
-            "摩天轮 ferris wheel": {
+            "摩天轮": {
                 "text": "ferris wheel",
-                "order": 0
+                "order": -1
             },
-            "水族馆 aquarium": {
+            "水族馆": {
                 "text": "aquarium",
-                "order": 0
+                "order": -1
             },
-            "动物园 zoo": {
+            "动物园": {
                 "text": "zoo",
-                "order": 0
+                "order": -1
             },
-            "保龄球馆 bowling alley": {
+            "保龄球馆": {
                 "text": "bowling alley",
-                "order": 0
+                "order": -1
             },
-            "美术馆 art gallery": {
+            "美术馆": {
                 "text": "art gallery",
-                "order": 0
+                "order": -1
             },
-            "博物馆 museum": {
+            "博物馆": {
                 "text": "museum",
-                "order": 0
+                "order": -1
             },
-            "天文馆 planetarium": {
+            "天文馆": {
                 "text": "planetarium",
-                "order": 0
+                "order": -1
             },
-            "游泳池 swimming pool": {
+            "游泳池": {
                 "text": "swimming pool",
-                "order": 0
+                "order": -1
             },
-            "体育场 stadium": {
+            "体育场": {
                 "text": "stadium",
-                "order": 0
+                "order": -1
             },
-            "寺庙 temple": {
+            "寺庙": {
                 "text": "temple",
-                "order": 0
+                "order": -1
             },
-            "巴士车站 bus stop": {
+            "巴士车站": {
                 "text": "bus stop",
-                "order": 0
+                "order": -1
             },
-            "火车站 train station": {
+            "火车站": {
                 "text": "train station",
-                "order": 0
+                "order": -1
             },
-            "喷泉 fountain": {
+            "喷泉": {
                 "text": "fountain",
-                "order": 0
+                "order": -1
             },
-            "游乐场 playground": {
+            "游乐场": {
                 "text": "playground",
-                "order": 0
+                "order": -1
             },
-            "市场摊位 market stall": {
+            "市场摊位": {
                 "text": "market stall",
-                "order": 0
+                "order": -1
             },
-            "电话亭 phone booth": {
+            "电话亭": {
                 "text": "phone booth",
-                "order": 0
+                "order": -1
             },
-            "铁轨 railroad tracks": {
+            "铁轨": {
                 "text": "railroad tracks",
-                "order": 0
+                "order": -1
             },
-            "机场 airport": {
+            "机场": {
                 "text": "airport",
-                "order": 0
+                "order": -1
             },
-            "隧道 tunnel": {
+            "隧道": {
                 "text": "tunnel",
-                "order": 0
+                "order": -1
             }
         },
         "背景氛围": {
-            "新年 new year": {
+            "新年": {
                 "text": "new year",
-                "order": 0
+                "order": -1
             },
-            "兔年 year of the rabbit": {
+            "兔年": {
                 "text": "year of the rabbit",
-                "order": 0
+                "order": -1
             },
-            "情人节 valentine": {
+            "情人节": {
                 "text": "valentine",
-                "order": 0
+                "order": -1
             },
-            "元宵节 lantern festival": {
+            "元宵节": {
                 "text": "lantern festival",
-                "order": 0
+                "order": -1
             },
-            "夏日祭 summer festival": {
+            "夏日祭": {
                 "text": "summer festival",
-                "order": 0
+                "order": -1
             },
-            "七夕节 tanabata": {
+            "七夕节": {
                 "text": "tanabata",
-                "order": 0
+                "order": -1
             },
-            "中秋节 mid-autumn festival": {
+            "中秋节": {
                 "text": "mid-autumn festival",
-                "order": 0
+                "order": -1
             },
-            "万圣节 halloween": {
+            "万圣节": {
                 "text": "halloween",
-                "order": 0
+                "order": -1
             },
-            "圣诞节 christmas": {
+            "圣诞节": {
                 "text": "christmas",
-                "order": 0
+                "order": -1
             },
-            "爆炸 explosion": {
+            "爆炸": {
                 "text": "explosion",
-                "order": 0
+                "order": -1
             },
-            "蒸汽 water vapor": {
+            "蒸汽": {
                 "text": "water vapor",
-                "order": 0
+                "order": -1
             },
-            "焰火 fireworks": {
+            "焰火": {
                 "text": "fireworks",
-                "order": 0
+                "order": -1
             },
-            "落地窗 ceiling window": {
+            "落地窗": {
                 "text": "ceiling window",
-                "order": 0
+                "order": -1
             },
-            "彩色玻璃 colourful glass": {
+            "彩色玻璃": {
                 "text": "colourful glass",
-                "order": 0
+                "order": -1
             },
-            "染色玻璃 stain glass": {
+            "染色玻璃": {
                 "text": "stain glass",
-                "order": 0
+                "order": -1
             },
-            "涂鸦墙 Graffiti wall": {
+            "涂鸦墙": {
                 "text": "Graffiti wall",
-                "order": 0
+                "order": -1
             },
-            "马赛克背景 mosaic background": {
+            "马赛克背景": {
                 "text": "mosaic background",
-                "order": 0
+                "order": -1
             },
-            "液体背景 liquid background, Sputte...": {
-                "text": "liquid background, Sputte...",
-                "order": 0
+            "液体背景": {
+                "text": "liquid background, Sputtered water",
+                "order": -1
             },
-            "魔法环 magic circles": {
+            "魔法环": {
                 "text": "magic circles",
-                "order": 0
+                "order": -1
             },
-            "荧光蘑菇森林 fluorescent mushroom fore...": {
-                "text": "fluorescent mushroom fore...",
-                "order": 0
+            "荧光蘑菇森林": {
+                "text": "fluorescent mushroom forests background",
+                "order": -1
             },
-            "彩色泡泡 (((colorful bubble)))": {
+            "彩色泡泡": {
                 "text": "(((colorful bubble)))",
-                "order": 0
+                "order": -1
+            }
+        }
+    },
+    "特效": {
+        "镜头效果": {
+            "运动模糊": {
+                "text": "motion blur",
+                "order": -1
+            },
+            "色差": {
+                "text": "chromatic aberration",
+                "order": -1
+            }
+        },
+        "光照": {
+            "轮廓光": {
+                "text": "rim light",
+                "order": -1
+            },
+            "体积光": {
+                "text": "Volumetric Lighting",
+                "order": -1
+            },
+            "背光": {
+                "text": "backlight",
+                "order": -1
+            },
+            "霓虹灯": {
+                "text": "glowing neon lights",
+                "order": -1
+            },
+            "电影级光照": {
+                "text": "Cinematic Lighting",
+                "order": -1
+            },
+            "镜头光晕": {
+                "text": "lens flare",
+                "order": -1
+            },
+            "金属光泽": {
+                "text": "metallic luster",
+                "order": -1
+            },
+            "氛围光照": {
+                "text": "moody lighting",
+                "order": -1
+            },
+            "丁达尔效应": {
+                "text": "Tyndall effect",
+                "order": -1
+            },
+            "漏光光效": {
+                "text": "light leaks",
+                "order": -1
+            },
+            "背景光": {
+                "text": "background light",
+                "order": -1
+            },
+            "自然光": {
+                "text": "available light",
+                "order": -1
+            },
+            "阳光": {
+                "text": "sunlight",
+                "order": -1
+            },
+            "自上而下的光": {
+                "text": "god rays",
+                "order": -1
+            },
+            "荧光": {
+                "text": "glowing light",
+                "order": -1
+            },
+            "反射光": {
+                "text": "reflection light",
+                "order": -1
             }
         }
     },
     "风格": {
         "艺术风格": {
-            "8bit游戏 8 Bit Game": {
+            "8bit游戏": {
                 "text": "8 Bit Game",
-                "order": 0
+                "order": -1
             },
-            "80年代动画 1980s anime": {
+            "80年代动画": {
                 "text": "1980s anime",
-                "order": 0
+                "order": -1
             },
-            "迪士尼电影 disney movie": {
+            "迪士尼电影": {
                 "text": "disney movie",
-                "order": 0
+                "order": -1
             },
-            "哥特摇滚 goth": {
+            "哥特摇滚": {
                 "text": "goth",
-                "order": 0
+                "order": -1
             },
-            "80年代电影 80s movie": {
+            "80年代电影": {
                 "text": "80s movie",
-                "order": 0
+                "order": -1
             },
-            "泡泡龙 bubble bobble": {
+            "泡泡龙": {
                 "text": "bubble bobble",
-                "order": 0
+                "order": -1
             },
-            "皮克斯动画 style of Pixar": {
+            "皮克斯动画": {
                 "text": "style of Pixar",
-                "order": 0
+                "order": -1
             },
-            "宝丽来艺术 Polaroid art": {
+            "宝丽来艺术": {
                 "text": "Polaroid art",
-                "order": 0
+                "order": -1
             },
-            "万花筒摄影 Kaleidoscope Photography": {
+            "万花筒摄影": {
                 "text": "Kaleidoscope Photography",
-                "order": 0
+                "order": -1
             },
-            "欧泊渲染 opal render": {
+            "欧泊渲染": {
                 "text": "opal render",
-                "order": 0
+                "order": -1
             },
-            "色谱图 chemigram": {
+            "色谱图": {
                 "text": "chemigram",
-                "order": 0
+                "order": -1
             },
-            "吉卜力风格 Studio Ghibli": {
+            "吉卜力风格": {
                 "text": "Studio Ghibli",
-                "order": 0
+                "order": -1
             },
-            "梦幻 dreamlike": {
+            "梦幻": {
                 "text": "dreamlike",
-                "order": 0
+                "order": -1
             },
-            "签绘风格 (faux traditional media)": {
+            "签绘风格": {
                 "text": "(faux traditional media)",
-                "order": 0
+                "order": -1
             },
-            "原神冲击 genshin impact": {
+            "原神冲击": {
                 "text": "genshin impact",
-                "order": 0
+                "order": -1
             },
-            "碧蓝航线 azur lane": {
+            "碧蓝航线": {
                 "text": "azur lane",
-                "order": 0
+                "order": -1
             },
-            "舰队收藏 kantai collection": {
+            "舰队收藏": {
                 "text": "kantai collection",
-                "order": 0
+                "order": -1
             },
-            "边缘行者 rebecca (cyberpunk) ": {
+            "边缘行者": {
                 "text": "rebecca (cyberpunk) ",
-                "order": 0
+                "order": -1
             },
-            "电锯人 chainsaw man": {
+            "电锯人": {
                 "text": "chainsaw man",
-                "order": 0
+                "order": -1
             },
-            "魔法旋涡 Magic Vortex": {
+            "魔法旋涡": {
                 "text": "Magic Vortex",
-                "order": 0
+                "order": -1
             },
-            "柴油朋克 ((dieselpunk))": {
+            "柴油朋克": {
                 "text": "((dieselpunk))",
-                "order": 0
+                "order": -1
             },
-            "四格 4koma": {
+            "四格": {
                 "text": "4koma",
-                "order": 0
+                "order": -1
             },
-            "杂志扫描 magazine scan": {
+            "杂志扫描": {
                 "text": "magazine scan",
-                "order": 0
+                "order": -1
             },
-            "专辑封面 album cover": {
+            "专辑封面": {
                 "text": "album cover",
-                "order": 0
+                "order": -1
             },
-            "线条变粗  (lineart)": {
+            "线条变粗": {
                 "text": " (lineart)",
-                "order": 0
+                "order": -1
             },
-            "蒸汽波 synthwave": {
+            "蒸汽波": {
                 "text": "synthwave",
-                "order": 0
+                "order": -1
             },
-            "洛可可 (illustration),(paper fig...": {
-                "text": "(illustration),(paper fig...",
-                "order": 0
+            "洛可可": {
+                "text": "(illustration),(paper figure),(lococo),((impasto)),(shiny skin)",
+                "order": -1
             }
         },
         "艺术类型": {
-            "单色图片 monochrome": {
+            "单色图片": {
                 "text": "monochrome",
-                "order": 0
+                "order": -1
             },
-            "拼贴艺术 Collage": {
+            "拼贴艺术": {
                 "text": "Collage",
-                "order": 0
+                "order": -1
             },
-            "彩色玻璃工艺 Dalle de verre": {
+            "彩色玻璃工艺": {
                 "text": "Dalle de verre",
-                "order": 0
+                "order": -1
             },
-            "像素画 pixel art": {
+            "像素画": {
                 "text": "pixel art",
-                "order": 0
+                "order": -1
             },
-            "瓷画 Encaustic painting": {
+            "瓷画": {
                 "text": "Encaustic painting",
-                "order": 0
+                "order": -1
             },
-            "水墨画 Ink wash painting": {
+            "水墨画": {
                 "text": "Ink wash painting",
-                "order": 0
+                "order": -1
             },
-            "铜版雕刻 Mezzotint": {
+            "铜版雕刻": {
                 "text": "Mezzotint",
-                "order": 0
+                "order": -1
             },
-            "剪影 silhouette": {
+            "剪影": {
                 "text": "silhouette",
-                "order": 0
+                "order": -1
             },
-            "插画 illustration": {
+            "插画": {
                 "text": "illustration",
-                "order": 0
+                "order": -1
             },
-            "水彩画 (((ink))), ((watercolor))": {
+            "水彩画": {
                 "text": "(((ink))), ((watercolor))",
-                "order": 0
+                "order": -1
             },
-            "浮世绘 illustration,(((ukiyoe)))...": {
-                "text": "illustration,(((ukiyoe)))...",
-                "order": 0
+            "浮世绘": {
+                "text": "illustration,(((ukiyoe))),((sketch)),((japanese_art))",
+                "order": -1
             },
-            "中国风 ((wash painting)),((ink s...": {
-                "text": "((wash painting)),((ink s...",
-                "order": 0
+            "中国风": {
+                "text": "((wash painting)),((ink splashing)),((color splashing)),((((dyeing)))),((chinese style))",
+                "order": -1
             },
-            "油画 ((dyeing)),((oil painting...": {
-                "text": "((dyeing)),((oil painting...",
-                "order": 0
+            "油画": {
+                "text": "((dyeing)),((oil painting)),((impasto))",
+                "order": -1
             },
-            "黑白草图  (posing sketch), (monoch...": {
-                "text": " (posing sketch), (monoch...",
-                "order": 0
+            "黑白草图": {
+                "text": "(posing sketch), (monochrome)",
+                "order": -1
             },
-            "手画草稿 sketch": {
+            "手画草稿": {
                 "text": "sketch",
-                "order": 0
+                "order": -1
             },
-            "铅笔速写 (monochrome), (gray scale...": {
-                "text": "(monochrome), (gray scale...",
-                "order": 0
+            "铅笔速写": {
+                "text": "(monochrome), (gray scale), (pencil sketch lines)",
+                "order": -1
             },
-            "彩铅画 (watercolor pencil)": {
+            "彩铅画": {
                 "text": "(watercolor pencil)",
-                "order": 0
+                "order": -1
             }
         },
         "艺术派系": {
-            "新艺术主义 ((art nouveau))": {
+            "新艺术主义": {
                 "text": "((art nouveau))",
-                "order": 0
+                "order": -1
             },
-            "古典主义 ((classicism))": {
+            "古典主义": {
                 "text": "((classicism))",
-                "order": 0
+                "order": -1
             },
-            "未来主义 ((futurism))": {
+            "未来主义": {
                 "text": "((futurism))",
-                "order": 0
+                "order": -1
             },
-            "达达主义 ((Dadaism))": {
+            "达达主义": {
                 "text": "((Dadaism))",
-                "order": 0
+                "order": -1
             },
-            "抽象艺术 ((abstract art))": {
+            "抽象艺术": {
                 "text": "((abstract art))",
-                "order": 0
+                "order": -1
             },
-            "ASCII艺术 ((ASCII art))": {
+            "ASCII艺术": {
                 "text": "((ASCII art))",
-                "order": 0
+                "order": -1
             }
         },
         "艺术家风格": {
-            "穆夏风格 ((alphonse mucha))": {
+            "穆夏风格": {
                 "text": "((alphonse mucha))",
-                "order": 0
+                "order": -1
             },
-            "莫奈风格 ((Monet style))": {
+            "莫奈风格": {
                 "text": "((Monet style))",
-                "order": 0
-            }
-        },
-        "光照": {
-            "轮廓光 rim light": {
-                "text": "rim light",
-                "order": 0
-            },
-            "体积光 Volumetric Lighting": {
-                "text": "Volumetric Lighting",
-                "order": 0
-            },
-            "霓虹灯 glowing neon lights": {
-                "text": "glowing neon lights",
-                "order": 0
-            },
-            "电影级光照 Cinematic Lighting": {
-                "text": "Cinematic Lighting",
-                "order": 0
-            },
-            "透镜光晕 lens flare": {
-                "text": "lens flare",
-                "order": 0
-            },
-            "金属光泽 metallic luster": {
-                "text": "metallic luster",
-                "order": 0
-            },
-            "氛围光照 moody lighting": {
-                "text": "moody lighting",
-                "order": 0
-            },
-            "丁达尔效应 Tyndall effect": {
-                "text": "Tyndall effect",
-                "order": 0
-            },
-            "漏光光效 light leaks": {
-                "text": "light leaks",
-                "order": 0
-            },
-            "背景光 background light": {
-                "text": "background light",
-                "order": 0
-            },
-            "自然光 available light": {
-                "text": "available light",
-                "order": 0
+                "order": -1
             }
         }
     },
     "魔法": {
         "魔法1.0": {
-            "水魔法 ((water drops)),wet cloth...": {
-                "text": "((water drops)),wet cloth...",
-                "order": 0
+            "水魔法": {
+                "text": "((water drops)),wet clothes,((beautiful detailed water)),((floating)),dynamic angle",
+                "order": -1
             },
-            "冰魔法 beautiful detailed glow, ...": {
-                "text": "beautiful detailed glow, ...",
-                "order": 0
+            "冰魔法": {
+                "text": "beautiful detailed glow, (detailed ice), beautiful detailed water",
+                "order": -1
             },
-            "冰系改 beautiful detailed glow,d...": {
-                "text": "beautiful detailed glow,d...",
-                "order": 0
+            "冰系改": {
+                "text": "beautiful detailed glow,detailed ice,beautiful detailed water,(floating palaces:1.2),(ice crystal texture wings),（Iridescence and rainbow hair:2.5）",
+                "order": -1
             },
-            "星冰乐 beautiful detailed glow,d...": {
-                "text": "beautiful detailed glow,d...",
-                "order": 0
+            "星冰乐": {
+                "text": "beautiful detailed glow,detailed ice,beautiful detailed water, (floating palaces:1.3),(((ice crystal texture wings)))",
+                "order": -1
             },
-            "森林冰 ((detailed beautiful snow...": {
-                "text": "((detailed beautiful snow...",
-                "order": 0
+            "森林冰": {
+                "text": "((detailed beautiful snow forest with trees)), ((snowflakes)), floating",
+                "order": -1
             },
-            "结晶法 (((crystals texture Hair)...": {
-                "text": "(((crystals texture Hair)...",
-                "order": 0
+            "结晶法": {
+                "text": "(((crystals texture Hair))),((beautiful detailed glass hair)),((glass shaped texture hand)),((crystallize texture body)),gem body,hands as clear as jewels,crystallization of clothes,((crystals texture skin)),sparkle, lens flare, light leaks,broken glass,detailed glass shaped clothes,beautiful detailed gemstone sky, gemstone sea, crystals texture flowers,((detailed crystallized clothing))",
+                "order": -1
             },
-            "核爆法 beautiful detailed glow,(...": {
-                "text": "beautiful detailed glow,(...",
-                "order": 0
+            "核爆法": {
+                "text": "beautiful detailed glow,((flames of war)),(((nuclear explosion behide)))",
+                "order": -1
             },
-            "风魔法 ((breeze)), flying splash...": {
-                "text": "((breeze)), flying splash...",
-                "order": 0
+            "风魔法": {
+                "text": "((breeze)), flying splashes,  flying petals, wind",
+                "order": -1
             },
-            "流沙法 ((surrounded by heavy flo...": {
-                "text": "((surrounded by heavy flo...",
-                "order": 0
+            "流沙法": {
+                "text": "((surrounded by heavy floating sand flow and floating sharp stones)),((((ink)))),((illustration)),((watercolor))",
+                "order": -1
             },
-            "雷电法  (detailed light), ((ligh...": {
-                "text": " (detailed light), ((ligh...",
-                "order": 0
+            "雷电法": {
+                "text": "(detailed light), ((lightning in hand)),lightning surrounds,(((lightning chain)))",
+                "order": -1
             },
-            "圣光法 (sunlight),(angel),dynami...": {
-                "text": "(sunlight),(angel),dynami...",
-                "order": 0
+            "圣光法": {
+                "text": "(sunlight),(angel),dynamic angle, floating, wing, halo, floating white silk,(Holy Light),silver stars",
+                "order": -1
             },
-            "苇名法 beautiful detailed pampas...": {
-                "text": "beautiful detailed pampas...",
-                "order": 0
+            "苇名法": {
+                "text": "beautiful detailed pampas grass field, open hakama, surrounded by floating sakura, yellow full moon, beautiful detailed dark midnight sky, messy white long hair",
+                "order": -1
             },
-            "自然法 beautiful and delicate wa...": {
-                "text": "beautiful and delicate wa...",
-                "order": 0
+            "自然法": {
+                "text": "beautiful and delicate water, the finest grass, very delicate light, nature, painting, water spray, breeze, flowers and grass meadow, near the water edge, (sunset, starry sky in a circle), randomly distributed clouds, river, splashing water, falling petals",
+                "order": -1
             },
-            "森林法 (detailed light) , feathe...": {
-                "text": "(detailed light) , feathe...",
-                "order": 0
+            "森林法": {
+                "text": "(detailed light) , feather, leaves, nature, (sunlight), river, (forest),(bloom)",
+                "order": -1
             },
-            "虹彩法 floating and rainbow long...": {
-                "text": "floating and rainbow long...",
-                "order": 0
+            "虹彩法": {
+                "text": "floating and rainbow long hair,Iridescence and rainbow, beautiful detailed starry sky",
+                "order": -1
             },
-            "暗锁法 chain ring, chain storm, ...": {
-                "text": "chain ring, chain storm, ...",
-                "order": 0
+            "暗锁法": {
+                "text": "chain ring, chain storm, dark chain,((wholeblack bloomer)), darkside, night, deep dark, darkness, ((dark clouds)),((ruins)),shadow, death garden",
+                "order": -1
             },
-            "火烧云 beautiful detailed glow, ...": {
-                "text": "beautiful detailed glow, ...",
-                "order": 0
+            "火烧云": {
+                "text": "beautiful detailed glow, floating ashes, beautiful and detailed explosion, red moon, fire, fire cloud, wings on fire, a cloudy sky, smoke of gunpowder, burning, black dress, dove of peace, (floating cloud:1.2)",
+                "order": -1
             },
-            "城堡法 beautiful detailed glow, ...": {
-                "text": "beautiful detailed glow, ...",
-                "order": 0
+            "城堡法": {
+                "text": "beautiful detailed glow, detailed ice, beautiful detailed water, (magic circle:1.2), (floating palaces:1.3)",
+                "order": -1
             },
-            "黄昏法 (water bloom), (delicate ...": {
-                "text": "(water bloom), (delicate ...",
-                "order": 0
+            "黄昏法": {
+                "text": "(water bloom), (delicate glow),  (breeze), long   Flowers meadow,(((sunset)), (less stars form a circle), randomly distributed clouds, (rivers), (willows with branches falling into the water)",
+                "order": -1
             },
-            "泡泡法  (((colorful bubble))),(f...": {
-                "text": " (((colorful bubble))),(f...",
-                "order": 0
+            "泡泡法": {
+                "text": "(((colorful bubble))),(floating),detailed light",
+                "order": -1
             },
-            "蔷薇法 ((rose)), (vine), cage, b...": {
-                "text": "((rose)), (vine), cage, b...",
-                "order": 0
+            "蔷薇法": {
+                "text": "((rose)), (vine), cage, bandage, red rope, (detail light), falling rose petals",
+                "order": -1
             },
-            "星空法 (starry tornado:1.4), sta...": {
-                "text": "(starry tornado:1.4), sta...",
-                "order": 0
+            "星空法": {
+                "text": "(starry tornado:1.4), starry Nebula, beautiful detailed sky",
+                "order": -1
             },
-            "月亮法 ((moon)), starry sky, (li...": {
-                "text": "((moon)), starry sky, (li...",
-                "order": 0
+            "月亮法": {
+                "text": "((moon)), starry sky, (lighting particle), fog, snow,(bloom)",
+                "order": -1
             },
-            "雪月法 beautiful detailed glow, ...": {
-                "text": "beautiful detailed glow, ...",
-                "order": 0
+            "雪月法": {
+                "text": "beautiful detailed glow, detailed ice, beautiful detailed water, (cold full moon), snowflake, (floating cloud:1.2)",
+                "order": -1
             },
-            "森火法 ((burning forest)), spark...": {
-                "text": "((burning forest)), spark...",
-                "order": 0
+            "森火法": {
+                "text": "((burning forest)), spark, light leaks, burning sky, flame, flames burning around, (flying sparks)",
+                "order": -1
             },
-            "废土法 ((destroyed)),explosion, ...": {
-                "text": "((destroyed)),explosion, ...",
-                "order": 0
+            "废土法": {
+                "text": "((destroyed)),explosion, buildings in disarray, The residual eaves DuanBi, cumulus, mouldy, floating, wind, Dead end machine,(broken robot),(Mechanical robot girl), in the rubble of a devastated city",
+                "order": -1
             },
-            "战甲法 mecha clothes, robot girl...": {
-                "text": "mecha clothes, robot girl...",
-                "order": 0
+            "战甲法": {
+                "text": "mecha clothes, robot girl, sliver bodysuit,((sliver)) and (broken) body",
+                "order": -1
             },
-            "黄金法 Extremely gorgeous metal ...": {
-                "text": "Extremely gorgeous metal ...",
-                "order": 0
+            "黄金法": {
+                "text": "Extremely gorgeous metal style, Metal crown with ornate stripes, Various metals background, Sputtered molten iron, floating hair, Hair like melted metal, Clothes made of silver, Clothes with gold lace, flowing gold and silver, everything flowing and melt, flowing iron, flowing silver, lace flowing and melt",
+                "order": -1
             },
-            "机娘法 mecha clothes, robot girl": {
+            "机娘法": {
                 "text": "mecha clothes, robot girl",
-                "order": 0
+                "order": -1
             },
-            "死灵法 ink,(((bone))), (((ribs))...": {
-                "text": "ink,(((bone))), (((ribs))...",
-                "order": 0
+            "死灵法": {
+                "text": "ink,(((bone))), (((ribs))), rose, black hair, blue eyes, greyscale, no shadow, simple background, bright skin",
+                "order": -1
             },
-            "水晶法 (((gorgeous crystal armor...": {
-                "text": "(((gorgeous crystal armor...",
-                "order": 0
+            "水晶法": {
+                "text": "(((gorgeous crystal armor))),(((crystal wings))),((altocumulus)),(clear_sky),(snow mountain),((flowery flowers)),(flowery bubbles),cloud map plane, crystal, crystal poppies,Brilliant light, thick_coating, glass tint,(watercolor)",
+                "order": -1
             },
-            "水森法 ((an extremely delicate a...": {
-                "text": "((an extremely delicate a...",
-                "order": 0
+            "水森法": {
+                "text": "((an extremely delicate and beautiful)),floating, (detailed wet clothes), (detailed light),feather, nature, (sunlight), river, floating palace, beautiful and delicate water,(bloom),(shine)",
+                "order": -1
             },
-            "冰火法 (blue spark),(red and blu...": {
-                "text": "(blue spark),(red and blu...",
-                "order": 0
+            "冰火法": {
+                "text": "(blue spark),(red and blue hair),blue eyes, burning sky,flame,Rainbow in the sky,((Flames burning ice)),(((fire  butterflies))),(((ice crystal texture wings))),(Flying sparks),(detailed ice),((a lot of luminous ice crystals)),((burning feathers)),(feathers made of ice),(frozen feathers),(((ice and fire together)))",
+                "order": -1
             },
-            "龙骑士  (anger), dragon horns, (...": {
-                "text": " (anger), dragon horns, (...",
-                "order": 0
+            "龙骑士": {
+                "text": "(anger), dragon horns, (silver armor), metal, complex pattern, cape, indifference",
+                "order": -1
             },
-            "坠落法 ((full body)),(helpless),...": {
-                "text": "((full body)),(helpless),...",
-                "order": 0
+            "坠落法": {
+                "text": "((full body)),(helpless),tear, crying,(((((falling from the sky))))),((Weathering With You)),((falling)),((face towards the sky))，(hair flows upwards),((disheveled hair)),(1 girl), floating, beautiful detailed sky",
+                "order": -1
             },
-            "水下法 ((underwater)),(beautiful...": {
-                "text": "((underwater)),(beautiful...",
-                "order": 0
+            "水下法": {
+                "text": "((underwater)),(beautiful detailed water),((coral)),dynamic angle, floating,(detailed light),floating hair,(splash),((fishes)),leaves dress, feather, nature,(sunlight),(underwater forest),(bloom),(detailed glow),drenched, seaweed, fish,(((Tyndall effect)))",
+                "order": -1
             },
-            "秘境法 (extremely detailed CG un...": {
-                "text": "(extremely detailed CG un...",
-                "order": 0
+            "秘境法": {
+                "text": "(extremely detailed CG unity 8k wallpaper),(((masterpiece))), (((best quality))), ((ultra-detailed)), (best illustration),(best shadow), ((an extremely delicate and beautiful)),dynamic angle,floating, fairyland,dynamic angle,sea of flowers,beautiful detailed garden,wind,classic,spring, (detailed light),feather, nature, (sunlight), river, forest,(((floating palace))),((the best building)),beautiful and delicate water,(painting),(sketch),(bloom),(shine)",
+                "order": -1
             },
-            "摄影法 (((masterpiece))), ((the ...": {
-                "text": "(((masterpiece))), ((the ...",
-                "order": 0
+            "摄影法": {
+                "text": "(((masterpiece))), ((the best quality, super fine illustrations, beautiful and delicate water)), ((very delicate light)), ((nature, painting)), ((fine lighting, more transparent stars, high-quality snowflakes, high-quality mountains, very fine 8KCG wallpapers)), (plateau), (((snow mountain))), sunrise, randomly distributed clouds, (snow field), cliff, ((rotating star sky)), ((lake in mountain stream)), luminous particles",
+                "order": -1
             },
-            "摩登法 1980s (style),simple back...": {
-                "text": "1980s (style),simple back...",
-                "order": 0
+            "摩登法": {
+                "text": "1980s (style),simple background, retro artstyle",
+                "order": -1
             },
-            "血魔法 (white hair), red long ha...": {
-                "text": "(white hair), red long ha...",
-                "order": 0
+            "血魔法": {
+                "text": "(white hair), red long hair, red eyes, (full body), (((with sword))), angry face, (beautiful detailed eyes), Blood drop,Blood fog, floating hair, disheveled hair,  Splashing blood,(Bloodstain)",
+                "order": -1
             },
-            "唤龙术 ((dragon)), ((dragon back...": {
-                "text": "((dragon)), ((dragon back...",
-                "order": 0
+            "唤龙术": {
+                "text": "((dragon)), ((dragon background))",
+                "order": -1
             },
-            "战姬法 hair fluttering in the wi...": {
-                "text": "hair fluttering in the wi...",
-                "order": 0
+            "战姬法": {
+                "text": "hair fluttering in the wind,((mechanical arm armor)),((mechanical body armor)),riding motor, bodysuit,((ruins of city in war, fire, burning cars, burning buildings)),air force fleet in the sky",
+                "order": -1
             },
-            "龙机法 mecha clothes, robot girl...": {
-                "text": "mecha clothes, robot girl...",
-                "order": 0
+            "龙机法": {
+                "text": "mecha clothes, robot girl, sliver bodysuit, dragon wings, ((a dragon  stands behind the girl)), beautiful detailed sliver dragon armor",
+                "order": -1
             },
-            "星蝶术 ((Beautiful butterflies i...": {
-                "text": "((Beautiful butterflies i...",
-                "order": 0
+            "星蝶术": {
+                "text": "((Beautiful butterflies in detail)),((Beautiful stars in detail)),(((halter dress ))),particle,(Starry sky in beautiful detail),(Hazy fog),(Ruins of beautiful details),(((Standing on the surface of the sea)))",
+                "order": -1
             },
-            "学院法 blonde wavy hair, (shiny ...": {
-                "text": "blonde wavy hair, (shiny ...",
-                "order": 0
+            "学院法": {
+                "text": "blonde wavy hair, (shiny long hair), ((Gothic Lolita)), blue white skirt, ((short skirt)), black Headdress, bowknot, (((hair ornament))), (hair flower), Lace, cross-laced footwear, ribbon-trimmed sleeves, building architecture, ((gothic architecture)), starry sky, outdoors, church, (castle)",
+                "order": -1
             },
-            "星霞海 walking, waves, wind,(((g...": {
-                "text": "walking, waves, wind,(((g...",
-                "order": 0
+            "星霞海": {
+                "text": "walking, waves, wind,(((glistening light of waves))),(detailed sunset glow),(floating flow),((coral)),(Luminous),coast,(floating colorful bubbles),beautiful detailed sky,(fluorescence),detailed shadow,(conch),beautiful detailed water, starfish, meteor, rainbow,(seabirds),(glinting stars), (glowworm),(splash),detailed cloud, shell,(fireworks)",
+                "order": -1
             },
-            "冬雪法 beautiful detailed sky, n...": {
-                "text": "beautiful detailed sky, n...",
-                "order": 0
+            "冬雪法": {
+                "text": "beautiful detailed sky, night, stars, (red plum blossom),((winter)),(((snowflakes))), ((red and white flowers))，(starry sky),(sitting),((colorful)),scenery, lantern,(starfall)",
+                "order": -1
             }
         }
     }

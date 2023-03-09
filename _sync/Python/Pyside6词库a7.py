@@ -39,7 +39,7 @@ dataPath = os.path.join(os.path.dirname(
 with open(dataPath, 'r', encoding='utf-8') as f:
     jsonData: dict = json.load(f)
 
-def abstractText(t: str) -> str:
+def shortText(t: str) -> str:
     if len(t) > 28:
         return t[:25]+'...'
     else:
@@ -67,10 +67,10 @@ class WordLibrary(QTabWidget):
                 layout.heightChanged.connect(group.setMaximumHeight)
                 for parameter, value in parameters.items():
                     qPushButton: QPushButton = QPushButton(
-                        f'{parameter}', group)
+                        f'{parameter} {shortText(value["text"])}', group)
                     qPushButton.setCheckable(True)
                     qPushButton.clicked.connect(
-                        (lambda qPushButton=qPushButton, text=value['text'], order=value['order']: self.buttonClicked(qPushButton, text, order)))  # 这里坑了很长时间,lambda表达式在循环中有惰性问题(只在运行时找变量),所以指定一下lambda表达式的默认参数
+                        (lambda qPushButton=qPushButton, text=value["text"], order=value["order"]: self.buttonClicked(qPushButton, text, order)))  # 这里坑了很长时间,lambda表达式在循环中有惰性问题(只在运行时找变量),所以指定一下lambda表达式的默认参数
                     layout.addWidget(qPushButton)
 
                 container_layout.addWidget(group)

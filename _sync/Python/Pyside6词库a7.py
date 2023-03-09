@@ -33,6 +33,8 @@ import os
 质量指示,画风引导,镜头效果,光照效果,人物元素,服装饰品,场景元素,纹理细节,画面特效,画风滤镜
 (强调:1.1)[弱化:1.1]
 '''
+textContent :QTextBrowser
+testText = ['你好','再见']
 
 dataPath = os.path.join(os.path.dirname(
     sys.argv[0]), r'StableDiffusionTagsLib.json')
@@ -85,14 +87,15 @@ class WordLibrary(QTabWidget):
         sender.setChecked = not sender.isChecked()
         print(sender, sender.text())
         print(f'del:{sender.isChecked()}', text, order)
+        print(random.choice(testText))
 
 
 class ControlBoard(QWidget):
     def __init__(self):
         super().__init__()
-        textContent = QTextBrowser()
+        self.textContent = QTextBrowser()
         borderLayout = BorderLayout()
-        borderLayout.addWidget(textContent, Position.Center)
+        borderLayout.addWidget(self.textContent, Position.Center)
 
         btn_preset = QPushButton('预设')
         borderLayout.addWidget(btn_preset, Position.North)
@@ -114,7 +117,8 @@ if __name__ == '__main__':
 
             wordLibrary = WordLibrary(data=jsonData)  # 左侧数据
             controlBoard = ControlBoard()  # 右侧栏
-
+            textContent = controlBoard.textContent
+            help(textContent)
             # 主窗口设置
             border_layout = BorderLayout()
             border_layout.addWidget(wordLibrary, Position.Center)

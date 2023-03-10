@@ -120,17 +120,23 @@ class ControlBoard(QWidget):
 
         btn_preset = QPushButton('预设')
         borderLayout.addWidget(btn_preset, Position.North)
-
-        btn_copy = QPushButton('复制')
-        borderLayout.addWidget(btn_copy, Position.South)
-
-        btn_random = QPushButton('随机')
-        borderLayout.addWidget(btn_random, Position.South)
-        btn_random.isEnabled = False
+        btn_preset.setEnabled(False)
+## 添加中英,四按钮布局
+        layout1 = QVBoxLayout()
+        btn_language = QPushButton('英>中')
+        borderLayout.addWidget(btn_language, Position.South)
+        btn_language.setEnabled(False)
 
         btn_clear = QPushButton('清空')
         borderLayout.addWidget(btn_clear, Position.South)
         btn_clear.clicked.connect(self.clear)
+
+        btn_random = QPushButton('随机')
+        borderLayout.addWidget(btn_random, Position.South)
+        btn_random.setEnabled(False)
+
+        btn_copy = QPushButton('复制')
+        borderLayout.addWidget(btn_copy, Position.South)
 
         self.setLayout(borderLayout)
 
@@ -138,7 +144,6 @@ class ControlBoard(QWidget):
         for obj in self.wordLibrary.findChildren(QPushButton):
             obj.setChecked(False)
         self.textContent.setText("")
-
 
 if __name__ == '__main__':
     class Window(QWidget):

@@ -10,7 +10,7 @@
                 "order": -1
             },
             "更高质量": {
-                "text": "official art, extremely detailed CG unity 8k wallpaper",
+                "text": "official art,extremely detailed,CG,8k wallpaper",
                 "order": -1
             },
             "高细节": {
@@ -566,7 +566,7 @@
                 "order": -1
             },
             "神奇女侠": {
-                "text": "mazinger ",
+                "text": "mazinger",
                 "order": -1
             },
             "美国队长": {
@@ -1644,7 +1644,7 @@
                 "order": -1
             },
             "机械义肢": {
-                "text": " cybernetic prosthesis",
+                "text": "cybernetic prosthesis",
                 "order": -1
             },
             "机械腿": {
@@ -2754,7 +2754,7 @@
                 "order": -1
             },
             "动态角度": {
-                "text": "dynamic angle ",
+                "text": "dynamic angle",
                 "order": -1
             },
             "舞台角度": {
@@ -3514,7 +3514,7 @@
                 "order": -1
             },
             "液体背景": {
-                "text": "liquid background, Sputtered water",
+                "text": "liquid background,Sputtered water",
                 "order": -1
             },
             "魔法环": {
@@ -3680,7 +3680,7 @@
                 "order": -1
             },
             "边缘行者": {
-                "text": "rebecca (cyberpunk) ",
+                "text": "rebecca (cyberpunk)",
                 "order": -1
             },
             "电锯人": {
@@ -3708,7 +3708,7 @@
                 "order": -1
             },
             "线条变粗": {
-                "text": " (lineart)",
+                "text": "(lineart)",
                 "order": -1
             },
             "蒸汽波": {
@@ -3758,7 +3758,7 @@
                 "order": -1
             },
             "水彩画": {
-                "text": "(((ink))), ((watercolor))",
+                "text": "(((ink))),((watercolor))",
                 "order": -1
             },
             "浮世绘": {
@@ -3774,7 +3774,7 @@
                 "order": -1
             },
             "黑白草图": {
-                "text": "(posing sketch), (monochrome)",
+                "text": "(posing sketch),(monochrome)",
                 "order": -1
             },
             "手画草稿": {
@@ -3782,7 +3782,7 @@
                 "order": -1
             },
             "铅笔速写": {
-                "text": "(monochrome), (gray scale), (pencil sketch lines)",
+                "text": "(monochrome),(gray scale),(pencil sketch lines)",
                 "order": -1
             },
             "彩铅画": {
@@ -3834,7 +3834,7 @@
                 "order": -1
             },
             "冰魔法": {
-                "text": "beautiful detailed glow, (detailed ice), beautiful detailed water",
+                "text": "beautiful detailed glow,(detailed ice),beautiful detailed water",
                 "order": -1
             },
             "冰系改": {
@@ -3842,15 +3842,15 @@
                 "order": -1
             },
             "星冰乐": {
-                "text": "beautiful detailed glow,detailed ice,beautiful detailed water, (floating palaces:1.3),(((ice crystal texture wings)))",
+                "text": "beautiful detailed glow,detailed ice,beautiful detailed water,(floating palaces:1.3),(((ice crystal texture wings)))",
                 "order": -1
             },
             "森林冰": {
-                "text": "((detailed beautiful snow forest with trees)), ((snowflakes)), floating",
+                "text": "((detailed beautiful snow forest with trees)),((snowflakes)),floating",
                 "order": -1
             },
             "结晶法": {
-                "text": "(((crystals texture Hair))),((beautiful detailed glass hair)),((glass shaped texture hand)),((crystallize texture body)),gem body,hands as clear as jewels,crystallization of clothes,((crystals texture skin)),sparkle, lens flare, light leaks,broken glass,detailed glass shaped clothes,beautiful detailed gemstone sky, gemstone sea, crystals texture flowers,((detailed crystallized clothing))",
+                "text": "(((crystals texture Hair))),((beautiful detailed glass hair)),((glass shaped texture hand)),((crystallize texture body)),gem body,hands as clear as jewels,crystallization of clothes,((crystals texture skin)),sparkle,lens flare,light leaks,broken glass,detailed glass shaped clothes,beautiful detailed gemstone sky,gemstone sea,crystals texture flowers,((detailed crystallized clothing))",
                 "order": -1
             },
             "核爆法": {
@@ -3858,7 +3858,7 @@
                 "order": -1
             },
             "风魔法": {
-                "text": "((breeze)), flying splashes,  flying petals, wind",
+                "text": "((breeze)),flying splashes, flying petals,wind",
                 "order": -1
             },
             "流沙法": {
@@ -3866,43 +3866,43 @@
                 "order": -1
             },
             "雷电法": {
-                "text": "(detailed light), ((lightning in hand)),lightning surrounds,(((lightning chain)))",
+                "text": "(detailed light),((lightning in hand)),lightning surrounds,(((lightning chain)))",
                 "order": -1
             },
             "圣光法": {
-                "text": "(sunlight),(angel),dynamic angle, floating, wing, halo, floating white silk,(Holy Light),silver stars",
+                "text": "(sunlight),(angel),dynamic angle,floating,wing,halo,floating white silk,(Holy Light),silver stars",
                 "order": -1
             },
             "苇名法": {
-                "text": "beautiful detailed pampas grass field, open hakama, surrounded by floating sakura, yellow full moon, beautiful detailed dark midnight sky, messy white long hair",
+                "text": "beautiful detailed pampas grass field,open hakama,surrounded by floating sakura,yellow full moon,beautiful detailed dark midnight sky,messy white long hair",
                 "order": -1
             },
             "自然法": {
-                "text": "beautiful and delicate water, the finest grass, very delicate light, nature, painting, water spray, breeze, flowers and grass meadow, near the water edge, (sunset, starry sky in a circle), randomly distributed clouds, river, splashing water, falling petals",
+                "text": "beautiful and delicate water,the finest grass,very delicate light,nature,painting,water spray,breeze,flowers and grass meadow,near the water edge,(sunset,starry sky in a circle),randomly distributed clouds,river,splashing water,falling petals",
                 "order": -1
             },
             "森林法": {
-                "text": "(detailed light) , feather, leaves, nature, (sunlight), river, (forest),(bloom)",
+                "text": "(detailed light) ,feather,leaves,nature,(sunlight),river,(forest),(bloom)",
                 "order": -1
             },
             "虹彩法": {
-                "text": "floating and rainbow long hair,Iridescence and rainbow, beautiful detailed starry sky",
+                "text": "floating and rainbow long hair,Iridescence and rainbow,beautiful detailed starry sky",
                 "order": -1
             },
             "暗锁法": {
-                "text": "chain ring, chain storm, dark chain,((wholeblack bloomer)), darkside, night, deep dark, darkness, ((dark clouds)),((ruins)),shadow, death garden",
+                "text": "chain ring,chain storm,dark chain,((wholeblack bloomer)),darkside,night,deep dark,darkness,((dark clouds)),((ruins)),shadow,death garden",
                 "order": -1
             },
             "火烧云": {
-                "text": "beautiful detailed glow, floating ashes, beautiful and detailed explosion, red moon, fire, fire cloud, wings on fire, a cloudy sky, smoke of gunpowder, burning, black dress, dove of peace, (floating cloud:1.2)",
+                "text": "beautiful detailed glow,floating ashes,beautiful and detailed explosion,red moon,fire,fire cloud,wings on fire,a cloudy sky,smoke of gunpowder,burning,black dress,dove of peace,(floating cloud:1.2)",
                 "order": -1
             },
             "城堡法": {
-                "text": "beautiful detailed glow, detailed ice, beautiful detailed water, (magic circle:1.2), (floating palaces:1.3)",
+                "text": "beautiful detailed glow,detailed ice,beautiful detailed water,(magic circle:1.2),(floating palaces:1.3)",
                 "order": -1
             },
             "黄昏法": {
-                "text": "(water bloom), (delicate glow),  (breeze), long   Flowers meadow,(((sunset)), (less stars form a circle), randomly distributed clouds, (rivers), (willows with branches falling into the water)",
+                "text": "(water bloom),(delicate glow), (breeze),long   Flowers meadow,(((sunset)),(less stars form a circle),randomly distributed clouds,(rivers),(willows with branches falling into the water)",
                 "order": -1
             },
             "泡泡法": {
@@ -3910,95 +3910,95 @@
                 "order": -1
             },
             "蔷薇法": {
-                "text": "((rose)), (vine), cage, bandage, red rope, (detail light), falling rose petals",
+                "text": "((rose)),(vine),cage,bandage,red rope,(detail light),falling rose petals",
                 "order": -1
             },
             "星空法": {
-                "text": "(starry tornado:1.4), starry Nebula, beautiful detailed sky",
+                "text": "(starry tornado:1.4),starry Nebula,beautiful detailed sky",
                 "order": -1
             },
             "月亮法": {
-                "text": "((moon)), starry sky, (lighting particle), fog, snow,(bloom)",
+                "text": "((moon)),starry sky,(lighting particle),fog,snow,(bloom)",
                 "order": -1
             },
             "雪月法": {
-                "text": "beautiful detailed glow, detailed ice, beautiful detailed water, (cold full moon), snowflake, (floating cloud:1.2)",
+                "text": "beautiful detailed glow,detailed ice,beautiful detailed water,(cold full moon),snowflake,(floating cloud:1.2)",
                 "order": -1
             },
             "森火法": {
-                "text": "((burning forest)), spark, light leaks, burning sky, flame, flames burning around, (flying sparks)",
+                "text": "((burning forest)),spark,light leaks,burning sky,flame,flames burning around,(flying sparks)",
                 "order": -1
             },
             "废土法": {
-                "text": "((destroyed)),explosion, buildings in disarray, The residual eaves DuanBi, cumulus, mouldy, floating, wind, Dead end machine,(broken robot),(Mechanical robot girl), in the rubble of a devastated city",
+                "text": "((destroyed)),explosion,buildings in disarray,The residual eaves DuanBi,cumulus,mouldy,floating,wind,Dead end machine,(broken robot),(Mechanical robot girl),in the rubble of a devastated city",
                 "order": -1
             },
             "战甲法": {
-                "text": "mecha clothes, robot girl, sliver bodysuit,((sliver)) and (broken) body",
+                "text": "mecha clothes,robot girl,sliver bodysuit,((sliver)) and (broken) body",
                 "order": -1
             },
             "黄金法": {
-                "text": "Extremely gorgeous metal style, Metal crown with ornate stripes, Various metals background, Sputtered molten iron, floating hair, Hair like melted metal, Clothes made of silver, Clothes with gold lace, flowing gold and silver, everything flowing and melt, flowing iron, flowing silver, lace flowing and melt",
+                "text": "Extremely gorgeous metal style,Metal crown with ornate stripes,Various metals background,Sputtered molten iron,floating hair,Hair like melted metal,Clothes made of silver,Clothes with gold lace,flowing gold and silver,everything flowing and melt,flowing iron,flowing silver,lace flowing and melt",
                 "order": -1
             },
             "机娘法": {
-                "text": "mecha clothes, robot girl",
+                "text": "mecha clothes,robot girl",
                 "order": -1
             },
             "死灵法": {
-                "text": "ink,(((bone))), (((ribs))), rose, black hair, blue eyes, greyscale, no shadow, simple background, bright skin",
+                "text": "ink,(((bone))),(((ribs))),rose,black hair,blue eyes,greyscale,no shadow,simple background,bright skin",
                 "order": -1
             },
             "水晶法": {
-                "text": "(((gorgeous crystal armor))),(((crystal wings))),((altocumulus)),(clear_sky),(snow mountain),((flowery flowers)),(flowery bubbles),cloud map plane, crystal, crystal poppies,Brilliant light, thick_coating, glass tint,(watercolor)",
+                "text": "(((gorgeous crystal armor))),(((crystal wings))),((altocumulus)),(clear_sky),(snow mountain),((flowery flowers)),(flowery bubbles),cloud map plane,crystal,crystal poppies,Brilliant light,thick_coating,glass tint,(watercolor)",
                 "order": -1
             },
             "水森法": {
-                "text": "((an extremely delicate and beautiful)),floating, (detailed wet clothes), (detailed light),feather, nature, (sunlight), river, floating palace, beautiful and delicate water,(bloom),(shine)",
+                "text": "((an extremely delicate and beautiful)),floating,(detailed wet clothes),(detailed light),feather,nature,(sunlight),river,floating palace,beautiful and delicate water,(bloom),(shine)",
                 "order": -1
             },
             "冰火法": {
-                "text": "(blue spark),(red and blue hair),blue eyes, burning sky,flame,Rainbow in the sky,((Flames burning ice)),(((fire  butterflies))),(((ice crystal texture wings))),(Flying sparks),(detailed ice),((a lot of luminous ice crystals)),((burning feathers)),(feathers made of ice),(frozen feathers),(((ice and fire together)))",
+                "text": "(blue spark),(red and blue hair),blue eyes,burning sky,flame,Rainbow in the sky,((Flames burning ice)),(((fire  butterflies))),(((ice crystal texture wings))),(Flying sparks),(detailed ice),((a lot of luminous ice crystals)),((burning feathers)),(feathers made of ice),(frozen feathers),(((ice and fire together)))",
                 "order": -1
             },
             "龙骑士": {
-                "text": "(anger), dragon horns, (silver armor), metal, complex pattern, cape, indifference",
+                "text": "(anger),dragon horns,(silver armor),metal,complex pattern,cape,indifference",
                 "order": -1
             },
             "坠落法": {
-                "text": "((full body)),(helpless),tear, crying,(((((falling from the sky))))),((Weathering With You)),((falling)),((face towards the sky))，(hair flows upwards),((disheveled hair)),(1 girl), floating, beautiful detailed sky",
+                "text": "((full body)),(helpless),tear,crying,(((((falling from the sky))))),((Weathering With You)),((falling)),((face towards the sky))，(hair flows upwards),((disheveled hair)),(1 girl),floating,beautiful detailed sky",
                 "order": -1
             },
             "水下法": {
-                "text": "((underwater)),(beautiful detailed water),((coral)),dynamic angle, floating,(detailed light),floating hair,(splash),((fishes)),leaves dress, feather, nature,(sunlight),(underwater forest),(bloom),(detailed glow),drenched, seaweed, fish,(((Tyndall effect)))",
+                "text": "((underwater)),(beautiful detailed water),((coral)),dynamic angle,floating,(detailed light),floating hair,(splash),((fishes)),leaves dress,feather,nature,(sunlight),(underwater forest),(bloom),(detailed glow),drenched,seaweed,fish,(((Tyndall effect)))",
                 "order": -1
             },
             "秘境法": {
-                "text": "(extremely detailed CG unity 8k wallpaper),(((masterpiece))), (((best quality))), ((ultra-detailed)), (best illustration),(best shadow), ((an extremely delicate and beautiful)),dynamic angle,floating, fairyland,dynamic angle,sea of flowers,beautiful detailed garden,wind,classic,spring, (detailed light),feather, nature, (sunlight), river, forest,(((floating palace))),((the best building)),beautiful and delicate water,(painting),(sketch),(bloom),(shine)",
+                "text": "(extremely detailed CG unity 8k wallpaper),(((masterpiece))),(((best quality))),((ultra-detailed)),(best illustration),(best shadow),((an extremely delicate and beautiful)),dynamic angle,floating,fairyland,dynamic angle,sea of flowers,beautiful detailed garden,wind,classic,spring,(detailed light),feather,nature,(sunlight),river,forest,(((floating palace))),((the best building)),beautiful and delicate water,(painting),(sketch),(bloom),(shine)",
                 "order": -1
             },
             "摄影法": {
-                "text": "(((masterpiece))), ((the best quality, super fine illustrations, beautiful and delicate water)), ((very delicate light)), ((nature, painting)), ((fine lighting, more transparent stars, high-quality snowflakes, high-quality mountains, very fine 8KCG wallpapers)), (plateau), (((snow mountain))), sunrise, randomly distributed clouds, (snow field), cliff, ((rotating star sky)), ((lake in mountain stream)), luminous particles",
+                "text": "(((masterpiece))),((the best quality,super fine illustrations,beautiful and delicate water)),((very delicate light)),((nature,painting)),((fine lighting,more transparent stars,high-quality snowflakes,high-quality mountains,very fine 8KCG wallpapers)),(plateau),(((snow mountain))),sunrise,randomly distributed clouds,(snow field),cliff,((rotating star sky)),((lake in mountain stream)),luminous particles",
                 "order": -1
             },
             "摩登法": {
-                "text": "1980s (style),simple background, retro artstyle",
+                "text": "1980s (style),simple background,retro artstyle",
                 "order": -1
             },
             "血魔法": {
-                "text": "(white hair), red long hair, red eyes, (full body), (((with sword))), angry face, (beautiful detailed eyes), Blood drop,Blood fog, floating hair, disheveled hair,  Splashing blood,(Bloodstain)",
+                "text": "(white hair),red long hair,red eyes,(full body),(((with sword))),angry face,(beautiful detailed eyes),Blood drop,Blood fog,floating hair,disheveled hair, Splashing blood,(Bloodstain)",
                 "order": -1
             },
             "唤龙术": {
-                "text": "((dragon)), ((dragon background))",
+                "text": "((dragon)),((dragon background))",
                 "order": -1
             },
             "战姬法": {
-                "text": "hair fluttering in the wind,((mechanical arm armor)),((mechanical body armor)),riding motor, bodysuit,((ruins of city in war, fire, burning cars, burning buildings)),air force fleet in the sky",
+                "text": "hair fluttering in the wind,((mechanical arm armor)),((mechanical body armor)),riding motor,bodysuit,((ruins of city in war,fire,burning cars,burning buildings)),air force fleet in the sky",
                 "order": -1
             },
             "龙机法": {
-                "text": "mecha clothes, robot girl, sliver bodysuit, dragon wings, ((a dragon  stands behind the girl)), beautiful detailed sliver dragon armor",
+                "text": "mecha clothes,robot girl,sliver bodysuit,dragon wings,((a dragon  stands behind the girl)),beautiful detailed sliver dragon armor",
                 "order": -1
             },
             "星蝶术": {
@@ -4006,15 +4006,15 @@
                 "order": -1
             },
             "学院法": {
-                "text": "blonde wavy hair, (shiny long hair), ((Gothic Lolita)), blue white skirt, ((short skirt)), black Headdress, bowknot, (((hair ornament))), (hair flower), Lace, cross-laced footwear, ribbon-trimmed sleeves, building architecture, ((gothic architecture)), starry sky, outdoors, church, (castle)",
+                "text": "blonde wavy hair,(shiny long hair),((Gothic Lolita)),blue white skirt,((short skirt)),black Headdress,bowknot,(((hair ornament))),(hair flower),Lace,cross-laced footwear,ribbon-trimmed sleeves,building architecture,((gothic architecture)),starry sky,outdoors,church,(castle)",
                 "order": -1
             },
             "星霞海": {
-                "text": "walking, waves, wind,(((glistening light of waves))),(detailed sunset glow),(floating flow),((coral)),(Luminous),coast,(floating colorful bubbles),beautiful detailed sky,(fluorescence),detailed shadow,(conch),beautiful detailed water, starfish, meteor, rainbow,(seabirds),(glinting stars), (glowworm),(splash),detailed cloud, shell,(fireworks)",
+                "text": "walking,waves,wind,(((glistening light of waves))),(detailed sunset glow),(floating flow),((coral)),(Luminous),coast,(floating colorful bubbles),beautiful detailed sky,(fluorescence),detailed shadow,(conch),beautiful detailed water,starfish,meteor,rainbow,(seabirds),(glinting stars),(glowworm),(splash),detailed cloud,shell,(fireworks)",
                 "order": -1
             },
             "冬雪法": {
-                "text": "beautiful detailed sky, night, stars, (red plum blossom),((winter)),(((snowflakes))), ((red and white flowers))，(starry sky),(sitting),((colorful)),scenery, lantern,(starfall)",
+                "text": "beautiful detailed sky,night,stars,(red plum blossom),((winter)),(((snowflakes))),((red and white flowers))，(starry sky),(sitting),((colorful)),scenery,lantern,(starfall)",
                 "order": -1
             }
         }

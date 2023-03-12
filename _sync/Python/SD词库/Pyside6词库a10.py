@@ -8,6 +8,7 @@ from PySide6.QtWidgets import (
     QPushButton,
     QScrollArea,
     QVBoxLayout,
+    QHBoxLayout,
     QWidget,
     QGroupBox,
     QTabWidget,
@@ -41,12 +42,15 @@ categorys = ["0质量指示", "1画风引导", "2镜头效果", "3光照效果",
 # textContent: QTextBrowser
 parameters = [[] for category in categorys]
 
-dataPath = [
+# dataPath = os.path.join(os.path.dirname(sys.argv[0]), r'文本.json')
+dataPaths = [
     os.path.join(os.path.dirname(sys.argv[0]), r'文本.json'),
     os.path.join(os.path.dirname(sys.argv[0]), r'Emoji.json')
 ]
-with open(dataPath, 'r', encoding='utf-8') as f:
-    jsonData: dict = json.load(f)
+jsonData: dict = {}
+for dataPath in dataPaths:
+    with open(dataPath, 'r', encoding='utf-8') as f:
+        jsonData[os.path.splitext(os.path.split(dataPath)[-1])[0]] = json.load(f)
 
 
 def shortText(t: str) -> str:
@@ -54,6 +58,7 @@ def shortText(t: str) -> str:
         return t[:25]+'...'
     else:
         return t
+
 
 # tabs
 class WordLibrary(QTabWidget):
@@ -107,6 +112,8 @@ class WordLibrary(QTabWidget):
         return result[:-1].replace(',', ', ')
 
 # board
+
+
 class ControlBoard(QWidget):
     def __init__(self):
         super().__init__()
@@ -119,21 +126,38 @@ class ControlBoard(QWidget):
         borderLayout.addWidget(btn_preset, Position.North)
         btn_preset.setEnabled(False)
 # 添加中英,四按钮布局
-        layout1 = QVBoxLayout()
-        btn_language = QPushButton('英>中')
-        borderLayout.addWidget(btn_language, Position.South)
-        btn_language.setEnabled(False)
-
-        btn_clear = QPushButton('清空')
-        borderLayout.addWidget(btn_clear, Position.South)
-        btn_clear.clicked.connect(self.clear)
+        layoutV = QVBoxLayout()
+        layoutH1 = QHBoxLayout()
+        layoutH2 = QHBoxLayout()
+        # layoutV.setStretch()
+        # layoutH1.setStretch()
+        # layoutH2.setStretch()
+        # layoutV.setWidgetResizable(True)
+        # layoutH1.setWidgetResizable(True)
+        # layoutH2.setWidgetResizable(True)
 
         btn_random = QPushButton('随机')
-        borderLayout.addWidget(btn_random, Position.South)
+        layoutH1.addWidget(btn_random)
         btn_random.setEnabled(False)
 
         btn_copy = QPushButton('复制')
-        borderLayout.addWidget(btn_copy, Position.South)
+        layoutH1.addWidget(btn_copy)
+
+        btn_language = QPushButton('英>中')
+        layoutH2.addWidget(btn_language)
+        btn_language.setEnabled(False)
+
+        btn_clear = QPushButton('清空')
+        layoutH2.addWidget(btn_clear)
+        btn_clear.clicked.connect(self.clear)
+
+        layoutV.addLayout(layoutH1)
+        layoutV.addLayout(layoutH2)
+
+        widget = QWidget()
+        widget.setLayout(layoutV)
+
+        borderLayout.addWidget(widget, Position.South)
 
         self.setLayout(borderLayout)
 
@@ -148,17 +172,23 @@ if __name__ == '__main__':
         def __init__(self):
             super().__init__()
 
-            wordLibrary = WordLibrary(data=jsonData)  # 左侧数据
             controlBoard = ControlBoard()  # 右侧栏
             controlBoard.setFixedWidth(320)
-            wordLibrary.textChange.connect(controlBoard.textContent.setText)
-            controlBoard.wordLibrary = wordLibrary
+
+            tabs = QTabWidget()
+            for data, value in jsonData.items():
+                wordLibrary = WordLibrary(data=value)  # 左侧数据
+                tabs.addTab(wordLibrary, data)
+                wordLibrary.textChange.connect(controlBoard.textContent.setText)
+            # tabs.addTab( QTabWidget(), 'data')
+            
+            controlBoard.wordLibrary = tabs
             # help(textContent)
             # textContent.text
 
             # 主窗口设置
             border_layout = BorderLayout()
-            border_layout.addWidget(wordLibrary, Position.Center)
+            border_layout.addWidget(tabs, Position.Center)
             border_layout.addWidget(controlBoard, Position.East)
             self.setLayout(border_layout)
             self.setMinimumWidth(500)

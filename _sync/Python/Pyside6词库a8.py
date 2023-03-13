@@ -33,14 +33,18 @@ import os
 2.KREA.ai
 3.promptoMANIA
 4.OpenArt.ai
-质量指示,画风引导,镜头效果,光照效果,人物元素,服装饰品,场景元素,纹理细节,画面特效,画风滤镜
+
 (强调:1.1)[弱化:1.1]
 '''
+categorys = ["0质量指示", "1画风引导", "2镜头效果", "3光照效果", "4人物元素", "5人物描述", "6人物表情",
+             "7人物动作", "8服装饰品", "9场景元素", "10纹理细节", "11Emoji", "12画面特效", "13画风滤镜", "其他"]
 # textContent: QTextBrowser
-parameters = [[], [], [], [], [], [], [], [], [], [], []]
+parameters = [[] for category in categorys]
 
-dataPath = os.path.join(os.path.dirname(
-    sys.argv[0]), r'StableDiffusionTagsLib.json')
+dataPath = [
+    os.path.join(os.path.dirname(sys.argv[0]), r'文本.json'),
+    os.path.join(os.path.dirname(sys.argv[0]), r'Emoji.json')
+]
 with open(dataPath, 'r', encoding='utf-8') as f:
     jsonData: dict = json.load(f)
 
@@ -50,19 +54,15 @@ def shortText(t: str) -> str:
         return t[:25]+'...'
     else:
         return t
-# abstractText('dasddddqwdewd,sddsd34dafdgwrrfsfa,asafafaffd')
-# abstractText('dasddddqwdewd,sd')
 
-# 更改布局,让滚动在tabs之下
-
-
+# tabs
 class WordLibrary(QTabWidget):
     textChange = Signal(str)
 
     def __init__(self, data: dict = {}):
         super().__init__()
-        categorys = jsonData.keys()
-        contents = iter(jsonData.values())
+        categorys = data.keys()
+        contents = iter(data.values())
 
         for category in categorys:
             area = QScrollArea(self)
@@ -91,10 +91,6 @@ class WordLibrary(QTabWidget):
             self.addTab(area, f'{category}')
 
     def buttonClicked(self, sender: QPushButton, text: str, order: int):
-        # sender.setChecked = not sender.isChecked()
-        # print(sender, sender.text())
-        # print(f'del:{sender.isChecked()}', text, order)
-        # print(random.choice(testText))
         if sender.isChecked():
             parameters[order].append(text)
         else:
@@ -102,7 +98,7 @@ class WordLibrary(QTabWidget):
 
         self.textChange.emit(self.combineText(parameters))
 
-    @staticmethod # 不用传self的方法
+    @staticmethod  # 不用传self的方法
     def combineText(strList: list):
         result = ""
         for strItems in strList:
@@ -110,10 +106,11 @@ class WordLibrary(QTabWidget):
                 result += f'{str},'
         return result[:-1].replace(',', ', ')
 
+# board
 class ControlBoard(QWidget):
     def __init__(self):
         super().__init__()
-        self.wordLibrary :WordLibrary
+        self.wordLibrary: WordLibrary
         self.textContent = QTextBrowser()
         borderLayout = BorderLayout()
         borderLayout.addWidget(self.textContent, Position.Center)
@@ -121,7 +118,7 @@ class ControlBoard(QWidget):
         btn_preset = QPushButton('预设')
         borderLayout.addWidget(btn_preset, Position.North)
         btn_preset.setEnabled(False)
-## 添加中英,四按钮布局
+# 添加中英,四按钮布局
         layout1 = QVBoxLayout()
         btn_language = QPushButton('英>中')
         borderLayout.addWidget(btn_language, Position.South)
@@ -144,6 +141,7 @@ class ControlBoard(QWidget):
         for obj in self.wordLibrary.findChildren(QPushButton):
             obj.setChecked(False)
         self.textContent.setText("")
+
 
 if __name__ == '__main__':
     class Window(QWidget):
@@ -168,6 +166,6 @@ if __name__ == '__main__':
 
     app = QApplication(sys.argv)
     window = Window()
-    window.resize(680, 240)  # 32:9 也有21:9 * 50:20 1050, 180(可以换成40:20)
+    window.resize(823, 430)  # 32:9 也有21:9 * 50:20 1050, 180(可以换成40:20)
     window.show()
     sys.exit(app.exec())

@@ -3,113 +3,113 @@
         "图像优化": {
             "大师作品": {
                 "text": "masterpiece",
-                "order": -1
+                "order": 0
             },
             "最好画质": {
                 "text": "best quality",
-                "order": -1
+                "order": 0
             },
             "更高质量": {
                 "text": "official art,extremely detailed,CG,8k wallpaper",
-                "order": -1
+                "order": 0
             },
             "高细节": {
                 "text": "highly detailed",
-                "order": -1
+                "order": 0
             },
             "超高分辨率": {
                 "text": "absurdres",
-                "order": -1
+                "order": 0
             },
             "8k分辨率": {
                 "text": "8k resolution",
-                "order": -1
+                "order": 0
             }
         },
         "镜头视角": {
             "透视": {
                 "text": "perspective",
-                "order": -1
+                "order": 2
             },
             "正前缩距透视": {
                 "text": "foreshortening",
-                "order": -1
+                "order": 2
             },
             "景深": {
                 "text": "Depth of field",
-                "order": -1
+                "order": 2
             },
             "全景": {
                 "text": "overall view",
-                "order": -1
+                "order": 2
             },
             "远景镜头": {
                 "text": "wide shot",
-                "order": -1
+                "order": 2
             },
             "中景镜头": {
                 "text": "medium shot",
-                "order": -1
+                "order": 2
             },
             "广角": {
                 "text": "Panorama",
-                "order": -1
+                "order": 2
             },
             "长焦镜头": {
                 "text": "telephoto lens",
-                "order": -1
+                "order": 2
             },
             "微距镜头": {
                 "text": "macro lens",
-                "order": -1
+                "order": 2
             },
             "全身镜头": {
                 "text": "full body",
-                "order": -1
+                "order": 2
             },
             "七分身镜头": {
                 "text": "cowboy shot",
-                "order": -1
+                "order": 2
             },
             "半身像": {
                 "text": "(profile picture)",
-                "order": -1
+                "order": 2
             },
             "写实肖像": {
                 "text": "close up portrait",
-                "order": -1
+                "order": 2
             },
             "第一人称视角": {
                 "text": "POV",
-                "order": -1
+                "order": 2
             },
             "鱼眼镜头": {
                 "text": "fisheye",
-                "order": -1
+                "order": 2
             },
             "部分水下拍摄": {
                 "text": "partially underwater shot",
-                "order": -1
+                "order": 2
             },
             "斜角镜头": {
                 "text": "dutch angle",
-                "order": -1
+                "order": 2
             },
             "强烈镜头": {
                 "text": "intense angle",
-                "order": -1
+                "order": 2
             },
             "电影角度": {
                 "text": "cinematic angle",
-                "order": -1
+                "order": 2
             },
             "戏剧性角度": {
                 "text": "dramatic angle",
-                "order": -1
+                "order": 2
             },
             "动态角度": {
                 "text": "dynamic angle",
-                "order": -1
+                "order": 2
             }
         },
         "其他常用": {
@@ -345,305 +345,305 @@
         "职业": {
             "救生员": {
                 "text": "lifeguard",
-                "order": -1
+                "order": 4
             },
             "拳击手": {
                 "text": "boxer",
-                "order": -1
+                "order": 4
             },
             "科学家": {
                 "text": "scientist",
-                "order": -1
+                "order": 4
             },
             "运动员": {
                 "text": "athletes",
-                "order": -1
+                "order": 4
             },
             "职场女性": {
                 "text": "office lady",
-                "order": -1
+                "order": 4
             },
             "和尚": {
                 "text": "monk",
-                "order": -1
+                "order": 4
             },
             "杂技演员": {
                 "text": "crobat",
-                "order": -1
+                "order": 4
             },
             "修女": {
                 "text": "nun",
-                "order": -1
+                "order": 4
             },
             "护士": {
                 "text": "nurse",
-                "order": -1
+                "order": 4
             },
             "空姐": {
                 "text": "stewardess",
-                "order": -1
+                "order": 4
             },
             "学生": {
                 "text": "student",
-                "order": -1
+                "order": 4
             },
             "女服务员": {
                 "text": "waitress",
-                "order": -1
+                "order": 4
             },
             "老师": {
                 "text": "teacher",
-                "order": -1
+                "order": 4
             },
             "赛车手": {
                 "text": "racer",
-                "order": -1
+                "order": 4
             },
             "警察": {
                 "text": "police",
-                "order": -1
+                "order": 4
             },
             "士兵": {
                 "text": "soldier",
-                "order": -1
+                "order": 4
             },
             "啦啦队": {
                 "text": "cheerleader",
-                "order": -1
+                "order": 4
             },
             "男演员": {
                 "text": "actor",
-                "order": -1
+                "order": 4
             },
             "女演员": {
                 "text": "actress",
-                "order": -1
+                "order": 4
             },
             "间谍": {
                 "text": "spy",
-                "order": -1
+                "order": 4
             },
             "特工": {
                 "text": "agent",
-                "order": -1
+                "order": 4
             },
             "刺客": {
                 "text": "assassin",
-                "order": -1
+                "order": 4
             },
             "诗人": {
                 "text": "poet",
-                "order": -1
+                "order": 4
             },
             "日本武士": {
                 "text": "samurai",
-                "order": -1
+                "order": 4
             },
             "舞女": {
                 "text": "dancing girl",
-                "order": -1
+                "order": 4
             },
             "摩托车手": {
                 "text": "motorcyclist",
-                "order": -1
+                "order": 4
             },
             "黑客": {
                 "text": "hacker",
-                "order": -1
+                "order": 4
             },
             "魔术师": {
                 "text": "magician",
-                "order": -1
+                "order": 4
             },
             "侦探": {
                 "text": "detective",
-                "order": -1
+                "order": 4
             },
             "人偶": {
                 "text": "doll",
-                "order": -1
+                "order": 4
             },
             "女仆": {
                 "text": "maid",
-                "order": -1
+                "order": 4
             },
             "飞行员": {
                 "text": "pilot",
-                "order": -1
+                "order": 4
             },
             "潜水员": {
                 "text": "diver",
-                "order": -1
+                "order": 4
             },
             "酒吧审查员": {
                 "text": "bar censor",
-                "order": -1
+                "order": 4
             },
             "传教士": {
                 "text": "missionary",
-                "order": -1
+                "order": 4
             },
             "消防员": {
                 "text": "firefighter",
-                "order": -1
+                "order": 4
             },
             "守门员": {
                 "text": "goalkeeper",
-                "order": -1
+                "order": 4
             },
             "厨师": {
                 "text": "chef",
-                "order": -1
+                "order": 4
             },
             "宇航员": {
                 "text": "astronaut",
-                "order": -1
+                "order": 4
             },
             "收银员": {
                 "text": "cashier",
-                "order": -1
+                "order": 4
             },
             "邮递员": {
                 "text": "mailman",
-                "order": -1
+                "order": 4
             },
             "咖啡师": {
                 "text": "barista",
-                "order": -1
+                "order": 4
             },
             "隐士": {
                 "text": "the hermit",
-                "order": -1
+                "order": 4
             },
             "牧羊人": {
                 "text": "makihitsuji",
-                "order": -1
+                "order": 4
             }
         },
         "特定角色": {
             "宝可梦": {
                 "text": "pokemon",
-                "order": -1
+                "order": 4
             },
             "泰迪熊": {
                 "text": "teddy bear",
-                "order": -1
+                "order": 4
             },
             "马里奥": {
                 "text": "mario",
-                "order": -1
+                "order": 4
             },
             "皮卡丘": {
                 "text": "pikachu",
-                "order": -1
+                "order": 4
             },
             "新世纪福音战士": {
                 "text": "neon genesis evangelion",
-                "order": -1
+                "order": 4
             },
             "初音未来": {
                 "text": "hatsune miku",
-                "order": -1
+                "order": 4
             },
             "哈利波特": {
                 "text": "harry potter",
-                "order": -1
+                "order": 4
             },
             "哆啦A梦": {
                 "text": "doraemon",
-                "order": -1
+                "order": 4
             },
             "圣斗士星矢": {
                 "text": "saint seiya",
-                "order": -1
+                "order": 4
             },
             "五条悟": {
                 "text": "gojou satoru",
-                "order": -1
+                "order": 4
             },
             "复仇者联盟": {
                 "text": "avengers",
-                "order": -1
+                "order": 4
             },
             "神奇女侠": {
                 "text": "mazinger",
-                "order": -1
+                "order": 4
             },
             "美国队长": {
                 "text": "captain america",
-                "order": -1
+                "order": 4
             },
             "蜡笔小新": {
                 "text": "crayon shin-chan",
-                "order": -1
+                "order": 4
             },
             "灌篮高手": {
                 "text": "slam dunk",
-                "order": -1
+                "order": 4
             },
             "孙悟空": {
                 "text": "sun wukong",
-                "order": -1
+                "order": 4
             },
             "女巫": {
                 "text": "witch",
-                "order": -1
+                "order": 4
             },
             "忍者": {
                 "text": "ninja",
-                "order": -1
+                "order": 4
             },
             "吸血鬼": {
                 "text": "vampire",
-                "order": -1
+                "order": 4
             },
             "骑士": {
                 "text": "knight",
-                "order": -1
+                "order": 4
             },
             "魔法少女": {
                 "text": "magical_girl",
-                "order": -1
+                "order": 4
             },
             "半兽人": {
                 "text": "orc",
-                "order": -1
+                "order": 4
             },
             "德鲁伊": {
                 "text": "druid",
-                "order": -1
+                "order": 4
             },
             "妖精": {
                 "text": "elf",
-                "order": -1
+                "order": 4
             },
             "小精灵": {
                 "text": "fairy",
-                "order": -1
+                "order": 4
             },
             "兽人": {
                 "text": "furry",
-                "order": -1
+                "order": 4
             },
             "美人鱼": {
                 "text": "mermaid",
-                "order": -1
+                "order": 4
             },
             "假面骑士": {
                 "text": "kamen rider",
-                "order": -1
+                "order": 4
             },
             "魔导师": {
                 "text": "magister",
-                "order": -1
+                "order": 4
             },
             "蜘蛛侠": {
                 "text": "spider-man",
-                "order": -1
+                "order": 4
             },
             "圣诞老人": {
                 "text": "santa alter",
-                "order": -1
+                "order": 4
             }
         }
     },
@@ -651,231 +651,231 @@
         "眉毛": {
             "浓眉": {
                 "text": "thick eyebrows",
-                "order": -1
+                "order": 5
             },
             "眉毛翘起": {
                 "text": "cocked eyebrow",
-                "order": -1
+                "order": 5
             },
             "短眉毛": {
                 "text": "short eyebrows",
-                "order": -1
+                "order": 5
             },
             "V字眉": {
                 "text": "v-shaped eyebrows",
-                "order": -1
+                "order": 5
             }
         },
         "眼睛": {
             "空洞眼睛": {
                 "text": "empty eyes",
-                "order": -1
+                "order": 5
             },
             "睁大眼睛": {
                 "text": "wide eyes",
-                "order": -1
+                "order": 5
             },
             "闭上一只眼": {
                 "text": "one eye closed",
-                "order": -1
+                "order": 5
             },
             "半闭眼睛": {
                 "text": "half-closed eyes",
-                "order": -1
+                "order": 5
             },
             "渐变眼": {
                 "text": "gradient_eyes",
-                "order": -1
+                "order": 5
             },
             "水汪汪大眼": {
                 "text": "aqua eyes",
-                "order": -1
+                "order": 5
             },
             "翻白眼": {
                 "text": "rolling eyes",
-                "order": -1
+                "order": 5
             },
             "斗鸡眼": {
                 "text": "cross-eyed",
-                "order": -1
+                "order": 5
             },
             "猫眼": {
                 "text": "slit pupils",
-                "order": -1
+                "order": 5
             },
             "布满血丝的眼睛": {
                 "text": "bloodshot eyes",
-                "order": -1
+                "order": 5
             },
             "发光眼睛": {
                 "text": "glowing eyes",
-                "order": -1
+                "order": 5
             },
             "吊眼角": {
                 "text": "tsurime",
-                "order": -1
+                "order": 5
             },
             "垂眼角": {
                 "text": "tareme",
-                "order": -1
+                "order": 5
             },
             "恶魔眼": {
                 "text": "devil eyes",
-                "order": -1
+                "order": 5
             },
             "收缩的瞳孔": {
                 "text": "constricted pupils",
-                "order": -1
+                "order": 5
             },
             "魔瞳": {
                 "text": "devil pupils",
-                "order": -1
+                "order": 5
             },
             "蛇瞳": {
                 "text": "snake pupils",
-                "order": -1
+                "order": 5
             },
             "闪闪发光瞳": {
                 "text": "pupils sparkling",
-                "order": -1
+                "order": 5
             },
             "花形瞳": {
                 "text": "flower-shaped pupils",
-                "order": -1
+                "order": 5
             },
             "爱心瞳": {
                 "text": "heart-shaped pupils",
-                "order": -1
+                "order": 5
             },
             "异色瞳": {
                 "text": "heterochromia",
-                "order": -1
+                "order": 5
             },
             "美瞳": {
                 "text": "color contact lenses",
-                "order": -1
+                "order": 5
             },
             "长睫毛": {
                 "text": "longeyelashes",
-                "order": -1
+                "order": 5
             },
             "彩色睫毛": {
                 "text": "colored eyelashes",
-                "order": -1
+                "order": 5
             },
             "眼下痣": {
                 "text": "mole under eye",
-                "order": -1
+                "order": 5
             }
         },
         "嘴巴": {
             "栗子嘴": {
                 "text": "chestnut mouth",
-                "order": -1
+                "order": 5
             },
             "厚嘴唇": {
                 "text": "thick lips",
-                "order": -1
+                "order": 5
             },
             "嘴唇浮肿": {
                 "text": "puffy lips",
-                "order": -1
+                "order": 5
             },
             "口红": {
                 "text": "lipstick",
-                "order": -1
+                "order": 5
             },
             "心形嘴": {
                 "text": "heart-shaped mouth",
-                "order": -1
+                "order": 5
             },
             "嘟嘴": {
                 "text": "pout",
-                "order": -1
+                "order": 5
             },
             "张嘴": {
                 "text": "open mouth",
-                "order": -1
+                "order": 5
             },
             "闭嘴": {
                 "text": "closed mouth",
-                "order": -1
+                "order": 5
             },
             "猫咪嘴": {
                 "text": "：3",
-                "order": -1
+                "order": 5
             },
             "鲨鱼嘴": {
                 "text": "shark mouth",
-                "order": -1
+                "order": 5
             },
             "吐舌头": {
                 "text": ":p",
-                "order": -1
+                "order": 5
             },
             "分开嘴唇": {
                 "text": "parted lips",
-                "order": -1
+                "order": 5
             },
             "嘴下痣": {
                 "text": "mole under mouth",
-                "order": -1
+                "order": 5
             }
         },
         "耳朵": {
             "动物耳朵": {
                 "text": "fake animal ears",
-                "order": -1
+                "order": 5
             },
             "猫耳朵": {
                 "text": "cat ears",
-                "order": -1
+                "order": 5
             },
             "狗耳朵": {
                 "text": "dog ears",
-                "order": -1
+                "order": 5
             },
             "狐狸耳朵": {
                 "text": "fox ears",
-                "order": -1
+                "order": 5
             },
             "兔子耳朵": {
                 "text": "bunny ears",
-                "order": -1
+                "order": 5
             },
             "熊耳朵": {
                 "text": "bear ears",
-                "order": -1
+                "order": 5
             }
         },
         "胡子&牙": {
             "胡须": {
                 "text": "beard",
-                "order": -1
+                "order": 5
             },
             "小胡子": {
                 "text": "mustache",
-                "order": -1
+                "order": 5
             },
             "山羊胡": {
                 "text": "goatee",
-                "order": -1
+                "order": 5
             },
             "长鬓角": {
                 "text": "long sideburns",
-                "order": -1
+                "order": 5
             },
             "尖牙": {
                 "text": "fangs",
-                "order": -1
+                "order": 5
             },
             "虎牙": {
                 "text": "canine teeth",
-                "order": -1
+                "order": 5
             },
             "咬紧牙关": {
                 "text": "clenched teeth",
-                "order": -1
+                "order": 5
             }
         }
     },
@@ -883,155 +883,155 @@
         "表情": {
             "无表情": {
                 "text": "expressionless",
-                "order": -1
+                "order": 6
             },
             "脸色苍白": {
                 "text": "turn pale",
-                "order": -1
+                "order": 6
             },
             "2D脸红": {
                 "text": "blush stickers",
-                "order": -1
+                "order": 6
             },
             "脸红": {
                 "text": "blush",
-                "order": -1
+                "order": 6
             },
             "两眼发直": {
                 "text": "blank stare",
-                "order": -1
+                "order": 6
             },
             "青筋凸起": {
                 "text": "anger vein",
-                "order": -1
+                "order": 6
             },
             "尴尬": {
                 "text": "embarrassed",
-                "order": -1
+                "order": 6
             },
             "傲慢": {
                 "text": "hubrael",
-                "order": -1
+                "order": 6
             },
             "郁闷": {
                 "text": "depressed",
-                "order": -1
+                "order": 6
             },
             "畏缩": {
                 "text": "wince",
-                "order": -1
+                "order": 6
             },
             "烦恼": {
                 "text": "kilesha",
-                "order": -1
+                "order": 6
             },
             "阴暗脸": {
                 "text": "shaded face",
-                "order": -1
+                "order": 6
             },
             "疼痛": {
                 "text": "pain",
-                "order": -1
+                "order": 6
             },
             "尖叫": {
                 "text": "screaming",
-                "order": -1
+                "order": 6
             },
             "叹息": {
                 "text": "sigh",
-                "order": -1
+                "order": 6
             },
             "紧张": {
                 "text": "nervous",
-                "order": -1
+                "order": 6
             },
             "困惑": {
                 "text": "confused",
-                "order": -1
+                "order": 6
             },
             "害怕": {
                 "text": "scared",
-                "order": -1
+                "order": 6
             },
             "喝醉": {
                 "text": "drunk",
-                "order": -1
+                "order": 6
             },
             "哭": {
                 "text": "tears",
-                "order": -1
+                "order": 6
             },
             "悲伤": {
                 "text": "sad",
-                "order": -1
+                "order": 6
             },
             "生气": {
                 "text": "angry",
-                "order": -1
+                "order": 6
             },
             "害羞": {
                 "text": "nose blush",
-                "order": -1
+                "order": 6
             },
             "严肃": {
                 "text": "serious",
-                "order": -1
+                "order": 6
             },
             "鄙夷": {
                 "text": "jitome",
-                "order": -1
+                "order": 6
             },
             "疯狂": {
                 "text": "crazy",
-                "order": -1
+                "order": 6
             },
             "黑化": {
                 "text": "dark_persona",
-                "order": -1
+                "order": 6
             },
             "得意": {
                 "text": "smug",
-                "order": -1
+                "order": 6
             },
             "思考中": {
                 "text": "thinking",
-                "order": -1
+                "order": 6
             },
             "扬眉": {
                 "text": "raised eyebrow",
-                "order": -1
+                "order": 6
             },
             "轻皱眉": {
                 "text": "light frown",
-                "order": -1
+                "order": 6
             },
             "皱眉": {
                 "text": "frown",
-                "order": -1
+                "order": 6
             },
             "调皮脸": {
                 "text": "naughty face",
-                "order": -1
+                "order": 6
             },
             "做鬼脸": {
                 "text": "eyeid pull",
-                "order": -1
+                "order": 6
             },
             "流鼻血": {
                 "text": "nosebleed",
-                "order": -1
+                "order": 6
             },
             "困": {
                 "text": "sleepy",
-                "order": -1
+                "order": 6
             },
             "眯眼": {
                 "text": "zzz",
-                "order": -1
+                "order": 6
             },
             "流口水": {
                 "text": "drooling",
-                "order": -1
+                "order": 6
             }
         },
         "笑容": {
@@ -3527,6 +3527,14 @@
             },
             "彩色泡泡": {
                 "text": "(((colorful bubble)))",
+                "order": -1
+            }
+        }
+    },
+    "Emoji": {
+        "表情与情感": {
+            "运动模糊": {
+                "text": "🥸",
                 "order": -1
             }
         }

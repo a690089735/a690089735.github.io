@@ -29,6 +29,7 @@ import os
 # 基本功能
 # 支持动态布局
 # 支持json数据
+# 按规则组合描述词
 
 
 # 本版
@@ -227,7 +228,7 @@ if __name__ == '__main__':
             border_layout.addWidget(controlBoard, Position.East)
             self.setLayout(border_layout)
             self.setMinimumWidth(500)
-            self.setWindowTitle('AI绘画辞典0.11')
+            self.setWindowTitle('SD辞典0.11')
 
     app = QApplication(sys.argv)
     window = Window()

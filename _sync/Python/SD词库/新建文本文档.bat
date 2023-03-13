@@ -1,0 +1,1 @@
+pyinstaller -F -w -i icon.ico Pyside6´Ê¿âa12.py

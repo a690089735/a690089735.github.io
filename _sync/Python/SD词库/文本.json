@@ -115,27 +115,27 @@
         "其他常用": {
             "精致的五官": {
                 "text": "exquisite facial features",
-                "order": -1
+                "order": 0
             },
             "完美的脸": {
                 "text": "prefect face",
-                "order": -1
+                "order": 0
             },
             "发光皮肤": {
                 "text": "shiny skin",
-                "order": -1
+                "order": 5
             },
             "抽象背景": {
                 "text": "abstract background",
-                "order": -1
+                "order": 9
             },
             "蒸汽朋克": {
                 "text": "steampunk",
-                "order": -1
+                "order": 13
             },
             "赛博朋克": {
                 "text": "cyberpunk",
-                "order": -1
+                "order": 13
             }
         }
     },
@@ -143,179 +143,179 @@
         "人物": {
             "女性": {
                 "text": "female",
-                "order": -1
+                "order": 4
             },
             "男性": {
                 "text": "male",
-                "order": -1
+                "order": 4
             },
             "女孩": {
                 "text": "girl",
-                "order": -1
+                "order": 4
             },
             "男孩": {
                 "text": "boy",
-                "order": -1
+                "order": 4
             },
             "正太": {
                 "text": "shota",
-                "order": -1
+                "order": 4
             },
             "萝莉": {
                 "text": "loli",
-                "order": -1
+                "order": 4
             },
             "美少女": {
                 "text": "bishoujo",
-                "order": -1
+                "order": 4
             },
             "美少男": {
                 "text": "bishounen",
-                "order": -1
+                "order": 4
             },
             "辣妹": {
                 "text": "gyaru",
-                "order": -1
+                "order": 4
             },
             "熟女": {
                 "text": "mature female",
-                "order": -1
+                "order": 4
             },
             "大小姐": {
                 "text": "ojousama",
-                "order": -1
+                "order": 4
             },
             "Q版人物": {
                 "text": "chibi",
-                "order": -1
+                "order": 4
             },
             "胖子": {
                 "text": "fat man",
-                "order": -1
+                "order": 4
             },
             "伪娘": {
                 "text": "crossdressing",
-                "order": -1
+                "order": 4
             },
             "天使": {
                 "text": "angel",
-                "order": -1
+                "order": 4
             },
             "魔鬼": {
                 "text": "devil",
-                "order": -1
+                "order": 4
             },
             "迷你女孩": {
                 "text": "minigirl",
-                "order": -1
+                "order": 4
             },
             "非人": {
                 "text": "no_humans",
-                "order": -1
+                "order": 4
             },
             "雌小鬼": {
                 "text": "mesugaki",
-                "order": -1
+                "order": 4
             },
             "怪物": {
                 "text": "monster",
-                "order": -1
+                "order": 4
             },
             "老人": {
                 "text": "elder",
-                "order": -1
+                "order": 4
             },
             "富豪": {
                 "text": "rich man",
-                "order": -1
+                "order": 4
             },
             "乞丐": {
                 "text": "beggar",
-                "order": -1
+                "order": 4
             },
             "巨人": {
                 "text": "titans",
-                "order": -1
+                "order": 4
             },
             "侏儒": {
                 "text": "dwarf",
-                "order": -1
+                "order": 4
             },
             "小丑": {
                 "text": "clown",
-                "order": -1
+                "order": 4
             },
             "奴隶": {
                 "text": "slave",
-                "order": -1
+                "order": 4
             },
             "雪女": {
                 "text": "yukiwo",
-                "order": -1
+                "order": 4
             },
             "酋长": {
                 "text": "sheik",
-                "order": -1
+                "order": 4
             },
             "女王": {
                 "text": "queen",
-                "order": -1
+                "order": 4
             },
             "女神": {
                 "text": "goddess",
-                "order": -1
+                "order": 4
             },
             "公主": {
                 "text": "princess",
-                "order": -1
+                "order": 4
             },
             "王子": {
                 "text": "prince",
-                "order": -1
+                "order": 4
             },
             "新娘": {
                 "text": "bride",
-                "order": -1
+                "order": 4
             },
             "新郎": {
                 "text": "bridegroom",
-                "order": -1
+                "order": 4
             },
             "肌肉男": {
                 "text": "muscle man",
-                "order": -1
+                "order": 4
             },
             "偶像": {
                 "text": "idol",
-                "order": -1
+                "order": 4
             },
             "兔女郎": {
                 "text": "bunny girl",
-                "order": -1
+                "order": 4
             },
             "怪物女孩": {
                 "text": "monster girl",
-                "order": -1
+                "order": 4
             },
             "狐狸女孩": {
                 "text": "fox girl",
-                "order": -1
+                "order": 4
             },
             "狼女孩": {
                 "text": "wolf girl",
-                "order": -1
+                "order": 4
             },
             "猫女孩": {
                 "text": "cat girl",
-                "order": -1
+                "order": 4
             },
             "木偶": {
                 "text": "marionette",
-                "order": -1
+                "order": 4
             },
             "黏土手办": {
                 "text": "nendoroid",
-                "order": -1
+                "order": 4
             }
         },
         "数量": {
@@ -3553,67 +3553,67 @@
         "光照": {
             "轮廓光": {
                 "text": "rim light",
-                "order": -1
+                "order": 3
             },
             "体积光": {
                 "text": "Volumetric Lighting",
-                "order": -1
+                "order": 3
             },
             "背光": {
                 "text": "backlight",
-                "order": -1
+                "order": 3
             },
             "霓虹灯": {
                 "text": "glowing neon lights",
-                "order": -1
+                "order": 3
             },
             "电影级光照": {
                 "text": "Cinematic Lighting",
-                "order": -1
+                "order": 3
             },
             "镜头光晕": {
                 "text": "lens flare",
-                "order": -1
+                "order": 3
             },
             "金属光泽": {
                 "text": "metallic luster",
-                "order": -1
+                "order": 3
             },
             "氛围光照": {
                 "text": "moody lighting",
-                "order": -1
+                "order": 3
             },
             "丁达尔效应": {
                 "text": "Tyndall effect",
-                "order": -1
+                "order": 3
             },
             "漏光光效": {
                 "text": "light leaks",
-                "order": -1
+                "order": 3
             },
             "背景光": {
                 "text": "background light",
-                "order": -1
+                "order": 3
             },
             "自然光": {
                 "text": "available light",
-                "order": -1
+                "order": 3
             },
             "阳光": {
                 "text": "sunlight",
-                "order": -1
+                "order": 3
             },
             "自上而下的光": {
                 "text": "god rays",
-                "order": -1
+                "order": 3
             },
             "荧光": {
                 "text": "glowing light",
-                "order": -1
+                "order": 3
             },
             "反射光": {
                 "text": "reflection light",
-                "order": -1
+                "order": 3
             }
         }
     },
@@ -3621,111 +3621,111 @@
         "艺术风格": {
             "8bit游戏": {
                 "text": "8 Bit Game",
-                "order": -1
+                "order": 1
             },
             "80年代动画": {
                 "text": "1980s anime",
-                "order": -1
+                "order": 1
             },
             "迪士尼电影": {
                 "text": "disney movie",
-                "order": -1
+                "order": 1
             },
             "哥特摇滚": {
                 "text": "goth",
-                "order": -1
+                "order": 1
             },
             "80年代电影": {
                 "text": "80s movie",
-                "order": -1
+                "order": 1
             },
             "泡泡龙": {
                 "text": "bubble bobble",
-                "order": -1
+                "order": 1
             },
             "皮克斯动画": {
                 "text": "style of Pixar",
-                "order": -1
+                "order": 1
             },
             "宝丽来艺术": {
                 "text": "Polaroid art",
-                "order": -1
+                "order": 1
             },
             "万花筒摄影": {
                 "text": "Kaleidoscope Photography",
-                "order": -1
+                "order": 1
             },
             "欧泊渲染": {
                 "text": "opal render",
-                "order": -1
+                "order": 1
             },
             "色谱图": {
                 "text": "chemigram",
-                "order": -1
+                "order": 1
             },
             "吉卜力风格": {
                 "text": "Studio Ghibli",
-                "order": -1
+                "order": 1
             },
             "梦幻": {
                 "text": "dreamlike",
-                "order": -1
+                "order": 1
             },
             "签绘风格": {
                 "text": "(faux traditional media)",
-                "order": -1
+                "order": 1
             },
             "原神冲击": {
                 "text": "genshin impact",
-                "order": -1
+                "order": 1
             },
             "碧蓝航线": {
                 "text": "azur lane",
-                "order": -1
+                "order": 1
             },
             "舰队收藏": {
                 "text": "kantai collection",
-                "order": -1
+                "order": 1
             },
             "边缘行者": {
                 "text": "rebecca (cyberpunk)",
-                "order": -1
+                "order": 1
             },
             "电锯人": {
                 "text": "chainsaw man",
-                "order": -1
+                "order": 1
             },
             "魔法旋涡": {
                 "text": "Magic Vortex",
-                "order": -1
+                "order": 1
             },
             "柴油朋克": {
                 "text": "((dieselpunk))",
-                "order": -1
+                "order": 1
             },
             "四格": {
                 "text": "4koma",
-                "order": -1
+                "order": 1
             },
             "杂志扫描": {
                 "text": "magazine scan",
-                "order": -1
+                "order": 1
             },
             "专辑封面": {
                 "text": "album cover",
-                "order": -1
+                "order": 1
             },
             "线条变粗": {
                 "text": "(lineart)",
-                "order": -1
+                "order": 1
             },
             "蒸汽波": {
                 "text": "synthwave",
-                "order": -1
+                "order": 1
             },
             "洛可可": {
                 "text": "(illustration),(paper figure),(lococo),((impasto)),(shiny skin)",
-                "order": -1
+                "order": 1
             }
         },
         "艺术类型": {

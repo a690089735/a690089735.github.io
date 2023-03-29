@@ -1,7 +1,37 @@
-3060super 4060出来换大显存的4060 尽量24GB显存
+3060super 4060出来换大显存的4060(目前是8G) 409024GB显存 尽量24G显存
 64GB-128GB内存(大内存能加载更大的训练数据)
-1T-2TM.2(主分区)
-2T机械*3-4T机械*3()
+1T-2T SSD (主分区)
+2T3T4T机械*3(6-12T空间(实际差不多5T-10T空间))
+电源1500W
+风道设计较好的机箱,可以搞接近裸漏式的机箱(有个快速拆装的外壳),个人倾向风冷,但显卡80℃工作可能压不住.
 
 
 群晖
+UPS*2(电脑一个,群晖一个)
+
+
+软件
+AnaConda([C盘不够大的话别安C盘]开机就装个AnaConda,真特娘的好用,开发环境一键配置,多个环境随时选用,有问题不影响本机和其他环境,爽死.minicoda里面的环境会自动配置到系统环境)
+python(安完了再卸载,主要用里面的pylauncher,对py文件添加直接运行和拖放运行的功能)
+vscode
+SVN[C盘不够大的话别安C盘]
+Chrome
+有道词典
+Snipaste
+ScreenToGif
+Typora
+FFmpeg(和相关工具)
+youtubeDL
+OBS
+Steam
+Epic [C盘不够大的话别安C盘]
+Unity
+Unreal
+Laya,Cocos,StableDiffusion
+Blender
+photoshop
+3dsmax 14 17 20 23
+maya 23
+houdini
+godot
+夜神安卓模拟器 [C盘不够大的话别安C盘]

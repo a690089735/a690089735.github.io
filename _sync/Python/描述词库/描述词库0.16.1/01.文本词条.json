@@ -1,0 +1,4030 @@
+{
+    "常用": {
+        "图像优化": {
+            "大师作品": {
+                "text": "masterpiece",
+                "order": 0
+            },
+            "最好画质": {
+                "text": "best quality",
+                "order": 0
+            },
+            "更高质量": {
+                "text": "official art,extremely detailed,CG,8k wallpaper",
+                "order": 0
+            },
+            "高细节": {
+                "text": "highly detailed",
+                "order": 0
+            },
+            "超高分辨率": {
+                "text": "absurdres",
+                "order": 0
+            },
+            "8k分辨率": {
+                "text": "8k resolution",
+                "order": 0
+            }
+        },
+        "镜头视角": {
+            "透视": {
+                "text": "perspective",
+                "order": 2
+            },
+            "正前缩距透视": {
+                "text": "foreshortening",
+                "order": 2
+            },
+            "景深": {
+                "text": "Depth of field",
+                "order": 2
+            },
+            "全景": {
+                "text": "overall view",
+                "order": 2
+            },
+            "远景镜头": {
+                "text": "wide shot",
+                "order": 2
+            },
+            "中景镜头": {
+                "text": "medium shot",
+                "order": 2
+            },
+            "广角": {
+                "text": "Panorama",
+                "order": 2
+            },
+            "长焦镜头": {
+                "text": "telephoto lens",
+                "order": 2
+            },
+            "微距镜头": {
+                "text": "macro lens",
+                "order": 2
+            },
+            "全身镜头": {
+                "text": "full body",
+                "order": 2
+            },
+            "七分身镜头": {
+                "text": "cowboy shot",
+                "order": 2
+            },
+            "半身像": {
+                "text": "(profile picture)",
+                "order": 2
+            },
+            "写实肖像": {
+                "text": "close up portrait",
+                "order": 2
+            },
+            "第一人称视角": {
+                "text": "POV",
+                "order": 2
+            },
+            "鱼眼镜头": {
+                "text": "fisheye",
+                "order": 2
+            },
+            "部分水下拍摄": {
+                "text": "partially underwater shot",
+                "order": 2
+            },
+            "斜角镜头": {
+                "text": "dutch angle",
+                "order": 2
+            },
+            "强烈镜头": {
+                "text": "intense angle",
+                "order": 2
+            },
+            "电影角度": {
+                "text": "cinematic angle",
+                "order": 2
+            },
+            "戏剧性角度": {
+                "text": "dramatic angle",
+                "order": 2
+            },
+            "动态角度": {
+                "text": "dynamic angle",
+                "order": 2
+            }
+        },
+        "其他常用": {
+            "精致的五官": {
+                "text": "exquisite facial features",
+                "order": 0
+            },
+            "完美的脸": {
+                "text": "prefect face",
+                "order": 0
+            },
+            "发光皮肤": {
+                "text": "shiny skin",
+                "order": 5
+            },
+            "抽象背景": {
+                "text": "abstract background",
+                "order": 9
+            },
+            "蒸汽朋克": {
+                "text": "steampunk",
+                "order": 13
+            },
+            "赛博朋克": {
+                "text": "cyberpunk",
+                "order": 13
+            }
+        }
+    },
+    "人物": {
+        "人物": {
+            "女性": {
+                "text": "female",
+                "order": 4
+            },
+            "男性": {
+                "text": "male",
+                "order": 4
+            },
+            "女孩": {
+                "text": "girl",
+                "order": 4
+            },
+            "男孩": {
+                "text": "boy",
+                "order": 4
+            },
+            "正太": {
+                "text": "shota",
+                "order": 4
+            },
+            "萝莉": {
+                "text": "loli",
+                "order": 4
+            },
+            "美少女": {
+                "text": "bishoujo",
+                "order": 4
+            },
+            "美少男": {
+                "text": "bishounen",
+                "order": 4
+            },
+            "辣妹": {
+                "text": "gyaru",
+                "order": 4
+            },
+            "熟女": {
+                "text": "mature female",
+                "order": 4
+            },
+            "大小姐": {
+                "text": "ojousama",
+                "order": 4
+            },
+            "Q版人物": {
+                "text": "chibi",
+                "order": 4
+            },
+            "胖子": {
+                "text": "fat man",
+                "order": 4
+            },
+            "伪娘": {
+                "text": "crossdressing",
+                "order": 4
+            },
+            "天使": {
+                "text": "angel",
+                "order": 4
+            },
+            "魔鬼": {
+                "text": "devil",
+                "order": 4
+            },
+            "迷你女孩": {
+                "text": "minigirl",
+                "order": 4
+            },
+            "非人": {
+                "text": "no_humans",
+                "order": 4
+            },
+            "雌小鬼": {
+                "text": "mesugaki",
+                "order": 4
+            },
+            "怪物": {
+                "text": "monster",
+                "order": 4
+            },
+            "老人": {
+                "text": "elder",
+                "order": 4
+            },
+            "富豪": {
+                "text": "rich man",
+                "order": 4
+            },
+            "乞丐": {
+                "text": "beggar",
+                "order": 4
+            },
+            "巨人": {
+                "text": "titans",
+                "order": 4
+            },
+            "侏儒": {
+                "text": "dwarf",
+                "order": 4
+            },
+            "小丑": {
+                "text": "clown",
+                "order": 4
+            },
+            "奴隶": {
+                "text": "slave",
+                "order": 4
+            },
+            "雪女": {
+                "text": "yukiwo",
+                "order": 4
+            },
+            "酋长": {
+                "text": "sheik",
+                "order": 4
+            },
+            "女王": {
+                "text": "queen",
+                "order": 4
+            },
+            "女神": {
+                "text": "goddess",
+                "order": 4
+            },
+            "公主": {
+                "text": "princess",
+                "order": 4
+            },
+            "王子": {
+                "text": "prince",
+                "order": 4
+            },
+            "新娘": {
+                "text": "bride",
+                "order": 4
+            },
+            "新郎": {
+                "text": "bridegroom",
+                "order": 4
+            },
+            "肌肉男": {
+                "text": "muscle man",
+                "order": 4
+            },
+            "偶像": {
+                "text": "idol",
+                "order": 4
+            },
+            "兔女郎": {
+                "text": "bunny girl",
+                "order": 4
+            },
+            "怪物女孩": {
+                "text": "monster girl",
+                "order": 4
+            },
+            "狐狸女孩": {
+                "text": "fox girl",
+                "order": 4
+            },
+            "狼女孩": {
+                "text": "wolf girl",
+                "order": 4
+            },
+            "猫女孩": {
+                "text": "cat girl",
+                "order": 4
+            },
+            "木偶": {
+                "text": "marionette",
+                "order": 4
+            },
+            "黏土手办": {
+                "text": "nendoroid",
+                "order": 4
+            }
+        },
+        "数量": {
+            "单人": {
+                "text": "solo",
+                "order": -1
+            },
+            "多个女孩": {
+                "text": "multiple girls",
+                "order": -1
+            },
+            "双胞胎": {
+                "text": "twins",
+                "order": -1
+            },
+            "三胞胎": {
+                "text": "triplets",
+                "order": -1
+            },
+            "兄弟姐妹": {
+                "text": "brother and sister",
+                "order": -1
+            }
+        }
+    },
+    "角色": {
+        "职业": {
+            "救生员": {
+                "text": "lifeguard",
+                "order": 4
+            },
+            "拳击手": {
+                "text": "boxer",
+                "order": 4
+            },
+            "科学家": {
+                "text": "scientist",
+                "order": 4
+            },
+            "运动员": {
+                "text": "athletes",
+                "order": 4
+            },
+            "职场女性": {
+                "text": "office lady",
+                "order": 4
+            },
+            "和尚": {
+                "text": "monk",
+                "order": 4
+            },
+            "杂技演员": {
+                "text": "crobat",
+                "order": 4
+            },
+            "修女": {
+                "text": "nun",
+                "order": 4
+            },
+            "护士": {
+                "text": "nurse",
+                "order": 4
+            },
+            "空姐": {
+                "text": "stewardess",
+                "order": 4
+            },
+            "学生": {
+                "text": "student",
+                "order": 4
+            },
+            "女服务员": {
+                "text": "waitress",
+                "order": 4
+            },
+            "老师": {
+                "text": "teacher",
+                "order": 4
+            },
+            "赛车手": {
+                "text": "racer",
+                "order": 4
+            },
+            "警察": {
+                "text": "police",
+                "order": 4
+            },
+            "士兵": {
+                "text": "soldier",
+                "order": 4
+            },
+            "啦啦队": {
+                "text": "cheerleader",
+                "order": 4
+            },
+            "男演员": {
+                "text": "actor",
+                "order": 4
+            },
+            "女演员": {
+                "text": "actress",
+                "order": 4
+            },
+            "间谍": {
+                "text": "spy",
+                "order": 4
+            },
+            "特工": {
+                "text": "agent",
+                "order": 4
+            },
+            "刺客": {
+                "text": "assassin",
+                "order": 4
+            },
+            "诗人": {
+                "text": "poet",
+                "order": 4
+            },
+            "日本武士": {
+                "text": "samurai",
+                "order": 4
+            },
+            "舞女": {
+                "text": "dancing girl",
+                "order": 4
+            },
+            "摩托车手": {
+                "text": "motorcyclist",
+                "order": 4
+            },
+            "黑客": {
+                "text": "hacker",
+                "order": 4
+            },
+            "魔术师": {
+                "text": "magician",
+                "order": 4
+            },
+            "侦探": {
+                "text": "detective",
+                "order": 4
+            },
+            "人偶": {
+                "text": "doll",
+                "order": 4
+            },
+            "女仆": {
+                "text": "maid",
+                "order": 4
+            },
+            "飞行员": {
+                "text": "pilot",
+                "order": 4
+            },
+            "潜水员": {
+                "text": "diver",
+                "order": 4
+            },
+            "酒吧审查员": {
+                "text": "bar censor",
+                "order": 4
+            },
+            "传教士": {
+                "text": "missionary",
+                "order": 4
+            },
+            "消防员": {
+                "text": "firefighter",
+                "order": 4
+            },
+            "守门员": {
+                "text": "goalkeeper",
+                "order": 4
+            },
+            "厨师": {
+                "text": "chef",
+                "order": 4
+            },
+            "宇航员": {
+                "text": "astronaut",
+                "order": 4
+            },
+            "收银员": {
+                "text": "cashier",
+                "order": 4
+            },
+            "邮递员": {
+                "text": "mailman",
+                "order": 4
+            },
+            "咖啡师": {
+                "text": "barista",
+                "order": 4
+            },
+            "隐士": {
+                "text": "the hermit",
+                "order": 4
+            },
+            "牧羊人": {
+                "text": "makihitsuji",
+                "order": 4
+            }
+        },
+        "特定角色": {
+            "宝可梦": {
+                "text": "pokemon",
+                "order": 4
+            },
+            "泰迪熊": {
+                "text": "teddy bear",
+                "order": 4
+            },
+            "马里奥": {
+                "text": "mario",
+                "order": 4
+            },
+            "皮卡丘": {
+                "text": "pikachu",
+                "order": 4
+            },
+            "新世纪福音战士": {
+                "text": "neon genesis evangelion",
+                "order": 4
+            },
+            "初音未来": {
+                "text": "hatsune miku",
+                "order": 4
+            },
+            "哈利波特": {
+                "text": "harry potter",
+                "order": 4
+            },
+            "哆啦A梦": {
+                "text": "doraemon",
+                "order": 4
+            },
+            "圣斗士星矢": {
+                "text": "saint seiya",
+                "order": 4
+            },
+            "五条悟": {
+                "text": "gojou satoru",
+                "order": 4
+            },
+            "复仇者联盟": {
+                "text": "avengers",
+                "order": 4
+            },
+            "神奇女侠": {
+                "text": "mazinger",
+                "order": 4
+            },
+            "美国队长": {
+                "text": "captain america",
+                "order": 4
+            },
+            "蜡笔小新": {
+                "text": "crayon shin-chan",
+                "order": 4
+            },
+            "灌篮高手": {
+                "text": "slam dunk",
+                "order": 4
+            },
+            "孙悟空": {
+                "text": "sun wukong",
+                "order": 4
+            },
+            "女巫": {
+                "text": "witch",
+                "order": 4
+            },
+            "忍者": {
+                "text": "ninja",
+                "order": 4
+            },
+            "吸血鬼": {
+                "text": "vampire",
+                "order": 4
+            },
+            "骑士": {
+                "text": "knight",
+                "order": 4
+            },
+            "魔法少女": {
+                "text": "magical_girl",
+                "order": 4
+            },
+            "半兽人": {
+                "text": "orc",
+                "order": 4
+            },
+            "德鲁伊": {
+                "text": "druid",
+                "order": 4
+            },
+            "妖精": {
+                "text": "elf",
+                "order": 4
+            },
+            "小精灵": {
+                "text": "fairy",
+                "order": 4
+            },
+            "兽人": {
+                "text": "furry",
+                "order": 4
+            },
+            "美人鱼": {
+                "text": "mermaid",
+                "order": 4
+            },
+            "假面骑士": {
+                "text": "kamen rider",
+                "order": 4
+            },
+            "魔导师": {
+                "text": "magister",
+                "order": 4
+            },
+            "蜘蛛侠": {
+                "text": "spider-man",
+                "order": 4
+            },
+            "圣诞老人": {
+                "text": "santa alter",
+                "order": 4
+            }
+        }
+    },
+    "五官": {
+        "眉毛": {
+            "浓眉": {
+                "text": "thick eyebrows",
+                "order": 5
+            },
+            "眉毛翘起": {
+                "text": "cocked eyebrow",
+                "order": 5
+            },
+            "短眉毛": {
+                "text": "short eyebrows",
+                "order": 5
+            },
+            "V字眉": {
+                "text": "v-shaped eyebrows",
+                "order": 5
+            }
+        },
+        "眼睛": {
+            "空洞眼睛": {
+                "text": "empty eyes",
+                "order": 5
+            },
+            "睁大眼睛": {
+                "text": "wide eyes",
+                "order": 5
+            },
+            "闭上一只眼": {
+                "text": "one eye closed",
+                "order": 5
+            },
+            "半闭眼睛": {
+                "text": "half-closed eyes",
+                "order": 5
+            },
+            "渐变眼": {
+                "text": "gradient_eyes",
+                "order": 5
+            },
+            "水汪汪大眼": {
+                "text": "aqua eyes",
+                "order": 5
+            },
+            "翻白眼": {
+                "text": "rolling eyes",
+                "order": 5
+            },
+            "斗鸡眼": {
+                "text": "cross-eyed",
+                "order": 5
+            },
+            "猫眼": {
+                "text": "slit pupils",
+                "order": 5
+            },
+            "布满血丝的眼睛": {
+                "text": "bloodshot eyes",
+                "order": 5
+            },
+            "发光眼睛": {
+                "text": "glowing eyes",
+                "order": 5
+            },
+            "吊眼角": {
+                "text": "tsurime",
+                "order": 5
+            },
+            "垂眼角": {
+                "text": "tareme",
+                "order": 5
+            },
+            "恶魔眼": {
+                "text": "devil eyes",
+                "order": 5
+            },
+            "收缩的瞳孔": {
+                "text": "constricted pupils",
+                "order": 5
+            },
+            "魔瞳": {
+                "text": "devil pupils",
+                "order": 5
+            },
+            "蛇瞳": {
+                "text": "snake pupils",
+                "order": 5
+            },
+            "闪闪发光瞳": {
+                "text": "pupils sparkling",
+                "order": 5
+            },
+            "花形瞳": {
+                "text": "flower-shaped pupils",
+                "order": 5
+            },
+            "爱心瞳": {
+                "text": "heart-shaped pupils",
+                "order": 5
+            },
+            "异色瞳": {
+                "text": "heterochromia",
+                "order": 5
+            },
+            "美瞳": {
+                "text": "color contact lenses",
+                "order": 5
+            },
+            "长睫毛": {
+                "text": "longeyelashes",
+                "order": 5
+            },
+            "彩色睫毛": {
+                "text": "colored eyelashes",
+                "order": 5
+            },
+            "眼下痣": {
+                "text": "mole under eye",
+                "order": 5
+            }
+        },
+        "嘴巴": {
+            "栗子嘴": {
+                "text": "chestnut mouth",
+                "order": 5
+            },
+            "厚嘴唇": {
+                "text": "thick lips",
+                "order": 5
+            },
+            "嘴唇浮肿": {
+                "text": "puffy lips",
+                "order": 5
+            },
+            "口红": {
+                "text": "lipstick",
+                "order": 5
+            },
+            "心形嘴": {
+                "text": "heart-shaped mouth",
+                "order": 5
+            },
+            "嘟嘴": {
+                "text": "pout",
+                "order": 5
+            },
+            "张嘴": {
+                "text": "open mouth",
+                "order": 5
+            },
+            "闭嘴": {
+                "text": "closed mouth",
+                "order": 5
+            },
+            "猫咪嘴": {
+                "text": "：3",
+                "order": 5
+            },
+            "鲨鱼嘴": {
+                "text": "shark mouth",
+                "order": 5
+            },
+            "吐舌头": {
+                "text": ":p",
+                "order": 5
+            },
+            "分开嘴唇": {
+                "text": "parted lips",
+                "order": 5
+            },
+            "嘴下痣": {
+                "text": "mole under mouth",
+                "order": 5
+            }
+        },
+        "耳朵": {
+            "动物耳朵": {
+                "text": "fake animal ears",
+                "order": 5
+            },
+            "猫耳朵": {
+                "text": "cat ears",
+                "order": 5
+            },
+            "狗耳朵": {
+                "text": "dog ears",
+                "order": 5
+            },
+            "狐狸耳朵": {
+                "text": "fox ears",
+                "order": 5
+            },
+            "兔子耳朵": {
+                "text": "bunny ears",
+                "order": 5
+            },
+            "熊耳朵": {
+                "text": "bear ears",
+                "order": 5
+            }
+        },
+        "胡子&牙": {
+            "胡须": {
+                "text": "beard",
+                "order": 5
+            },
+            "小胡子": {
+                "text": "mustache",
+                "order": 5
+            },
+            "山羊胡": {
+                "text": "goatee",
+                "order": 5
+            },
+            "长鬓角": {
+                "text": "long sideburns",
+                "order": 5
+            },
+            "尖牙": {
+                "text": "fangs",
+                "order": 5
+            },
+            "虎牙": {
+                "text": "canine teeth",
+                "order": 5
+            },
+            "咬紧牙关": {
+                "text": "clenched teeth",
+                "order": 5
+            }
+        }
+    },
+    "表情": {
+        "表情": {
+            "无表情": {
+                "text": "expressionless",
+                "order": 6
+            },
+            "脸色苍白": {
+                "text": "turn pale",
+                "order": 6
+            },
+            "2D脸红": {
+                "text": "blush stickers",
+                "order": 6
+            },
+            "脸红": {
+                "text": "blush",
+                "order": 6
+            },
+            "两眼发直": {
+                "text": "blank stare",
+                "order": 6
+            },
+            "青筋凸起": {
+                "text": "anger vein",
+                "order": 6
+            },
+            "尴尬": {
+                "text": "embarrassed",
+                "order": 6
+            },
+            "傲慢": {
+                "text": "hubrael",
+                "order": 6
+            },
+            "郁闷": {
+                "text": "depressed",
+                "order": 6
+            },
+            "畏缩": {
+                "text": "wince",
+                "order": 6
+            },
+            "烦恼": {
+                "text": "kilesha",
+                "order": 6
+            },
+            "阴暗脸": {
+                "text": "shaded face",
+                "order": 6
+            },
+            "疼痛": {
+                "text": "pain",
+                "order": 6
+            },
+            "尖叫": {
+                "text": "screaming",
+                "order": 6
+            },
+            "叹息": {
+                "text": "sigh",
+                "order": 6
+            },
+            "紧张": {
+                "text": "nervous",
+                "order": 6
+            },
+            "困惑": {
+                "text": "confused",
+                "order": 6
+            },
+            "害怕": {
+                "text": "scared",
+                "order": 6
+            },
+            "喝醉": {
+                "text": "drunk",
+                "order": 6
+            },
+            "哭": {
+                "text": "tears",
+                "order": 6
+            },
+            "悲伤": {
+                "text": "sad",
+                "order": 6
+            },
+            "生气": {
+                "text": "angry",
+                "order": 6
+            },
+            "害羞": {
+                "text": "nose blush",
+                "order": 6
+            },
+            "严肃": {
+                "text": "serious",
+                "order": 6
+            },
+            "鄙夷": {
+                "text": "jitome",
+                "order": 6
+            },
+            "疯狂": {
+                "text": "crazy",
+                "order": 6
+            },
+            "黑化": {
+                "text": "dark_persona",
+                "order": 6
+            },
+            "得意": {
+                "text": "smug",
+                "order": 6
+            },
+            "思考中": {
+                "text": "thinking",
+                "order": 6
+            },
+            "扬眉": {
+                "text": "raised eyebrow",
+                "order": 6
+            },
+            "轻皱眉": {
+                "text": "light frown",
+                "order": 6
+            },
+            "皱眉": {
+                "text": "frown",
+                "order": 6
+            },
+            "调皮脸": {
+                "text": "naughty face",
+                "order": 6
+            },
+            "做鬼脸": {
+                "text": "eyeid pull",
+                "order": 6
+            },
+            "流鼻血": {
+                "text": "nosebleed",
+                "order": 6
+            },
+            "困": {
+                "text": "sleepy",
+                "order": 6
+            },
+            "眯眼": {
+                "text": "zzz",
+                "order": 6
+            },
+            "流口水": {
+                "text": "drooling",
+                "order": 6
+            }
+        },
+        "笑容": {
+            "微笑": {
+                "text": "light smile",
+                "order": -1
+            },
+            "假笑": {
+                "text": "false smile",
+                "order": -1
+            },
+            "挑逗笑容": {
+                "text": "seductive smile",
+                "order": -1
+            },
+            "疯狂笑容": {
+                "text": "crazy smile",
+                "order": -1
+            },
+            "邪恶笑容": {
+                "text": "evil smile",
+                "order": -1
+            },
+            "单侧嘴角上扬": {
+                "text": "smirk",
+                "order": -1
+            },
+            "诱人笑容": {
+                "text": "seductive smile",
+                "order": -1
+            },
+            "露齿笑": {
+                "text": "grin",
+                "order": -1
+            },
+            "大笑": {
+                "text": "laughing",
+                "order": -1
+            },
+            "杯型笑脸": {
+                "text": ":d",
+                "order": -1
+            }
+        }
+    },
+    "头发": {
+        "长度": {
+            "短发": {
+                "text": "short hair",
+                "order": -1
+            },
+            "中发": {
+                "text": "medium hair",
+                "order": -1
+            },
+            "长发": {
+                "text": "long hair",
+                "order": -1
+            },
+            "头发过肩": {
+                "text": "hair over shoulder",
+                "order": -1
+            }
+        },
+        "颜色": {
+            "白发": {
+                "text": "white hair",
+                "order": -1
+            },
+            "金发": {
+                "text": "blonde hair",
+                "order": -1
+            },
+            "银发": {
+                "text": "silver hair",
+                "order": -1
+            },
+            "灰发": {
+                "text": "grey hair",
+                "order": -1
+            },
+            "棕发": {
+                "text": "brown hair",
+                "order": -1
+            },
+            "黑发": {
+                "text": "black hair",
+                "order": -1
+            },
+            "紫发": {
+                "text": "purple hair",
+                "order": -1
+            },
+            "红发": {
+                "text": "red hair",
+                "order": -1
+            },
+            "蓝发": {
+                "text": "blue hair",
+                "order": -1
+            },
+            "绿发": {
+                "text": "green hair",
+                "order": -1
+            },
+            "粉发": {
+                "text": "pink hair",
+                "order": -1
+            },
+            "橙发": {
+                "text": "orange hair",
+                "order": -1
+            },
+            "挑染": {
+                "text": "streaked hair",
+                "order": -1
+            },
+            "彩发": {
+                "text": "multicolored hair",
+                "order": -1
+            },
+            "彩虹发": {
+                "text": "rainbow-like hair",
+                "order": -1
+            }
+        },
+        "刘海": {
+            "刘海": {
+                "text": "bangs",
+                "order": -1
+            },
+            "交叉刘海": {
+                "text": "crossed bang",
+                "order": -1
+            },
+            "眉间刘海": {
+                "text": "hair between eye",
+                "order": -1
+            },
+            "齐刘海": {
+                "text": "blunt bangs",
+                "order": -1
+            },
+            "斜刘海": {
+                "text": "diagonal bangs",
+                "order": -1
+            },
+            "不对称刘海": {
+                "text": "asymmetrical bangs",
+                "order": -1
+            },
+            "编织刘海": {
+                "text": "braided bangs",
+                "order": -1
+            }
+        },
+        "辫子": {
+            "短马尾": {
+                "text": "short ponytail",
+                "order": -1
+            },
+            "侧马尾辫": {
+                "text": "side ponytail",
+                "order": -1
+            },
+            "前马尾辫": {
+                "text": "front ponytail",
+                "order": -1
+            },
+            "分裂马尾辫": {
+                "text": "split ponytail",
+                "order": -1
+            },
+            "低马尾辩": {
+                "text": "low twintails",
+                "order": -1
+            },
+            "短马尾辫": {
+                "text": "short twintails",
+                "order": -1
+            },
+            "侧边辫子": {
+                "text": "side braid",
+                "order": -1
+            },
+            "辫子": {
+                "text": "braid",
+                "order": -1
+            },
+            "双辫子": {
+                "text": "twin braids",
+                "order": -1
+            },
+            "马尾辫": {
+                "text": "ponytail",
+                "order": -1
+            },
+            "编织马尾": {
+                "text": "braided ponytail",
+                "order": -1
+            },
+            "法式辫": {
+                "text": "french braid",
+                "order": -1
+            },
+            "高马尾": {
+                "text": "high ponytail",
+                "order": -1
+            }
+        },
+        "发型": {
+            "扎头发": {
+                "text": "tied hair",
+                "order": -1
+            },
+            "单侧发髻": {
+                "text": "single side bun",
+                "order": -1
+            },
+            "卷发": {
+                "text": "curly hair",
+                "order": -1
+            },
+            "直发": {
+                "text": "straight hair",
+                "order": -1
+            },
+            "波浪头": {
+                "text": "wavy hair",
+                "order": -1
+            },
+            "波波头": {
+                "text": "bob hair",
+                "order": -1
+            },
+            "侧分": {
+                "text": "slicked-back",
+                "order": -1
+            },
+            "雷鬼头": {
+                "text": "Reggae hair",
+                "order": -1
+            },
+            "蓬巴杜发型": {
+                "text": "pompadour",
+                "order": -1
+            },
+            "莫西干头": {
+                "text": "Mohawk",
+                "order": -1
+            },
+            "锅盖头": {
+                "text": "bowl cut",
+                "order": -1
+            },
+            "呆毛": {
+                "text": "ahoge",
+                "order": -1
+            },
+            "天线呆毛": {
+                "text": "antenna hair",
+                "order": -1
+            },
+            "心形呆毛": {
+                "text": "heart ahoge",
+                "order": -1
+            },
+            "公主卷": {
+                "text": "drill hair",
+                "order": -1
+            },
+            "翼状发": {
+                "text": "hair wings",
+                "order": -1
+            },
+            "蓬发": {
+                "text": "disheveled hair",
+                "order": -1
+            },
+            "凌乱发": {
+                "text": "messy hair",
+                "order": -1
+            },
+            "露颈盘发": {
+                "text": "chignon",
+                "order": -1
+            },
+            "编织发髻": {
+                "text": "braided bun",
+                "order": -1
+            },
+            "公主切": {
+                "text": "hime_cut",
+                "order": -1
+            },
+            "妹妹切": {
+                "text": "bob cut",
+                "order": -1
+            },
+            "刺猬头": {
+                "text": "spiked hair",
+                "order": -1
+            },
+            "盘发": {
+                "text": "updo",
+                "order": -1
+            },
+            "精灵短发": {
+                "text": "pixie cut",
+                "order": -1
+            },
+            "长发绺": {
+                "text": "dreadlocks",
+                "order": -1
+            },
+            "爆炸头": {
+                "text": "afro",
+                "order": -1
+            },
+            "秃头": {
+                "text": "bald",
+                "order": -1
+            },
+            "双丸子头": {
+                "text": "double bun",
+                "order": -1
+            },
+            "美式寸头": {
+                "text": "buzz cut",
+                "order": -1
+            },
+            "大体积蓬松头发": {
+                "text": "big hair",
+                "order": -1
+            },
+            "闪亮的头发": {
+                "text": "shiny hair",
+                "order": -1
+            },
+            "发光的头发": {
+                "text": "glowing hair",
+                "order": -1
+            },
+            "眼睛间的头发": {
+                "text": "hair between eyes",
+                "order": -1
+            },
+            "撩到耳后": {
+                "text": "hair behind ear",
+                "order": -1
+            }
+        }
+    },
+    "装饰": {
+        "发饰": {
+            "发带": {
+                "text": "hair ribbon",
+                "order": -1
+            },
+            "头巾": {
+                "text": "head scarf",
+                "order": -1
+            },
+            "动物头巾": {
+                "text": "animal hood",
+                "order": -1
+            },
+            "蝴蝶结发饰": {
+                "text": "hair bow",
+                "order": -1
+            },
+            "新月发饰": {
+                "text": "crescent hair ornament",
+                "order": -1
+            },
+            "洛丽塔发饰": {
+                "text": "lolita hairband",
+                "order": -1
+            },
+            "羽毛发饰": {
+                "text": "feather hair ornament",
+                "order": -1
+            },
+            "头花": {
+                "text": "hair flower",
+                "order": -1
+            },
+            "发髻": {
+                "text": "hair bun",
+                "order": -1
+            },
+            "发夹": {
+                "text": "hairclip",
+                "order": -1
+            },
+            "发箍": {
+                "text": "hair scrunchie",
+                "order": -1
+            },
+            "发圈": {
+                "text": "hair rings",
+                "order": -1
+            },
+            "发饰": {
+                "text": "hair ornament",
+                "order": -1
+            },
+            "发棒": {
+                "text": "hair stick",
+                "order": -1
+            },
+            "心形发饰": {
+                "text": "heart hair ornament",
+                "order": -1
+            }
+        },
+        "首饰": {
+            "手链": {
+                "text": "bracelet",
+                "order": -1
+            },
+            "项圈": {
+                "text": "choker",
+                "order": -1
+            },
+            "金属项圈": {
+                "text": "metal collar",
+                "order": -1
+            },
+            "戒指": {
+                "text": "ring",
+                "order": -1
+            },
+            "腕带": {
+                "text": "wristband",
+                "order": -1
+            },
+            "吊坠": {
+                "text": "pendant",
+                "order": -1
+            },
+            "胸针": {
+                "text": "brooch",
+                "order": -1
+            },
+            "圈形耳环": {
+                "text": "hoop earrings",
+                "order": -1
+            },
+            "手镯": {
+                "text": "bangle",
+                "order": -1
+            },
+            "耳钉": {
+                "text": "stud earrings",
+                "order": -1
+            },
+            "旭日形首饰": {
+                "text": "sunburst",
+                "order": -1
+            },
+            "珍珠手链": {
+                "text": "pearl bracelet",
+                "order": -1
+            },
+            "耳坠": {
+                "text": "drop earrings",
+                "order": -1
+            },
+            "木偶戒指": {
+                "text": "puppet rings",
+                "order": -1
+            },
+            "胸花": {
+                "text": "corsage",
+                "order": -1
+            },
+            "蓝宝石胸针": {
+                "text": "sapphire brooch",
+                "order": -1
+            },
+            "珠宝首饰": {
+                "text": "jewelry",
+                "order": -1
+            },
+            "项链": {
+                "text": "necklace",
+                "order": -1
+            }
+        },
+        "装饰": {
+            "丝带": {
+                "text": "ribbon",
+                "order": -1
+            },
+            "丝带饰边": {
+                "text": "ribbon trim",
+                "order": -1
+            },
+            "蕾丝饰边": {
+                "text": "lace trim",
+                "order": -1
+            },
+            "裙撑": {
+                "text": "skirt lift",
+                "order": -1
+            },
+            "护手": {
+                "text": "gauntlets",
+                "order": -1
+            },
+            "领巾": {
+                "text": "neckerchief",
+                "order": -1
+            },
+            "红领巾": {
+                "text": "red neckerchief",
+                "order": -1
+            },
+            "肩章": {
+                "text": "pauldrons",
+                "order": -1
+            },
+            "臂带": {
+                "text": "arm strap",
+                "order": -1
+            },
+            "臂镯": {
+                "text": "armlet",
+                "order": -1
+            },
+            "细肩带": {
+                "text": "spaghetti strap",
+                "order": -1
+            },
+            "般若面具": {
+                "text": "Prajna in mask",
+                "order": -1
+            },
+            "面纱": {
+                "text": "veil",
+                "order": -1
+            },
+            "新娘面纱": {
+                "text": "bridal veil",
+                "order": -1
+            },
+            "皇冠": {
+                "text": "tiara",
+                "order": -1
+            },
+            "迷你皇冠": {
+                "text": "mini crown",
+                "order": -1
+            },
+            "耳罩": {
+                "text": "ear covers",
+                "order": -1
+            },
+            "飞行员太阳镜": {
+                "text": "aviator sunglasses",
+                "order": -1
+            },
+            "无边框眼镜": {
+                "text": "semi-rimless eyewear",
+                "order": -1
+            },
+            "半无框眼镜": {
+                "text": "semi-rimless eyewear",
+                "order": -1
+            },
+            "太阳镜": {
+                "text": "sunglasses",
+                "order": -1
+            },
+            "风镜": {
+                "text": "goggles",
+                "order": -1
+            },
+            "独眼眼罩": {
+                "text": "eyepatch",
+                "order": -1
+            },
+            "黑色眼罩": {
+                "text": "black blindfold",
+                "order": -1
+            },
+            "铁棘": {
+                "text": "metal thorns",
+                "order": -1
+            },
+            "光环": {
+                "text": "halo",
+                "order": -1
+            },
+            "口罩": {
+                "text": "mouth mask",
+                "order": -1
+            },
+            "创口贴": {
+                "text": "bandaid hair ornament",
+                "order": -1
+            },
+            "指甲油": {
+                "text": "nail polish",
+                "order": -1
+            },
+            "玩偶关节": {
+                "text": "doll joints",
+                "order": -1
+            },
+            "机械义肢": {
+                "text": "cybernetic prosthesis",
+                "order": -1
+            },
+            "机械腿": {
+                "text": "mechanical legs",
+                "order": -1
+            },
+            "沙滩巾": {
+                "text": "beach towel",
+                "order": -1
+            },
+            "雨披": {
+                "text": "poncho",
+                "order": -1
+            },
+            "浓妆": {
+                "text": "make up",
+                "order": -1
+            }
+        }
+    },
+    "服装": {
+        "上装": {
+            "过手袖": {
+                "text": "sleeves_past_fingers",
+                "order": -1
+            },
+            "背心": {
+                "text": "tank top",
+                "order": -1
+            },
+            "背心式内衣": {
+                "text": "camisole",
+                "order": -1
+            },
+            "白衬衫": {
+                "text": "white shirt",
+                "order": -1
+            },
+            "水手衬衫": {
+                "text": "sailor shirt",
+                "order": -1
+            },
+            "T恤": {
+                "text": "T-shirt",
+                "order": -1
+            },
+            "毛衣": {
+                "text": "sweater",
+                "order": -1
+            },
+            "夏日长裙": {
+                "text": "summer dress",
+                "order": -1
+            },
+            "连帽衫": {
+                "text": "hoodie",
+                "order": -1
+            },
+            "毛领": {
+                "text": "fur trimmed colla",
+                "order": -1
+            },
+            "兜帽斗篷": {
+                "text": "hooded cloak",
+                "order": -1
+            },
+            "夹克": {
+                "text": "jacket",
+                "order": -1
+            },
+            "皮夹克": {
+                "text": "leather jacket",
+                "order": -1
+            },
+            "探险家夹克": {
+                "text": "safari jacket",
+                "order": -1
+            },
+            "兜帽": {
+                "text": "hood",
+                "order": -1
+            },
+            "牛仔夹克": {
+                "text": "denim jacket",
+                "order": -1
+            },
+            "高领夹克": {
+                "text": "turtleneck jacket",
+                "order": -1
+            },
+            "消防员夹克": {
+                "text": "firefighter jacket",
+                "order": -1
+            },
+            "透明夹克": {
+                "text": "see-through jacket",
+                "order": -1
+            },
+            "战壕大衣": {
+                "text": "trench coat",
+                "order": -1
+            },
+            "实验室外套": {
+                "text": "lab coat",
+                "order": -1
+            },
+            "羽绒服": {
+                "text": "Down Jackets",
+                "order": -1
+            },
+            "防弹盔甲": {
+                "text": "body armor",
+                "order": -1
+            },
+            "防弹衣": {
+                "text": "flak jacket",
+                "order": -1
+            },
+            "大衣": {
+                "text": "overcoat",
+                "order": -1
+            },
+            "粗呢大衣": {
+                "text": "duffel coat",
+                "order": -1
+            }
+        },
+        "服装": {
+            "透视装": {
+                "text": "transparent clothes",
+                "order": -1
+            },
+            "燕尾服": {
+                "text": "tailcoat",
+                "order": -1
+            },
+            "乳胶连体衣": {
+                "text": "latex bodysuit",
+                "order": -1
+            },
+            "女仆装": {
+                "text": "Victoria black maid dress",
+                "order": -1
+            },
+            "水手服": {
+                "text": "sailor suit",
+                "order": -1
+            },
+            "学生服": {
+                "text": "school uniform",
+                "order": -1
+            },
+            "职场制服": {
+                "text": "bussiness suit",
+                "order": -1
+            },
+            "西装": {
+                "text": "suit",
+                "order": -1
+            },
+            "军装": {
+                "text": "military uniform",
+                "order": -1
+            },
+            "礼服": {
+                "text": "lucency full dress",
+                "order": -1
+            },
+            "汉服": {
+                "text": "hanfu",
+                "order": -1
+            },
+            "旗袍": {
+                "text": "cheongsam",
+                "order": -1
+            },
+            "和服": {
+                "text": "japanses clothes",
+                "order": -1
+            },
+            "运动服": {
+                "text": "sportswear",
+                "order": -1
+            },
+            "工装服": {
+                "text": "dungarees",
+                "order": -1
+            },
+            "婚纱": {
+                "text": "wedding dress",
+                "order": -1
+            },
+            "银色连衣裙": {
+                "text": "silvercleavage dress",
+                "order": -1
+            },
+            "长袍": {
+                "text": "robe",
+                "order": -1
+            },
+            "围裙": {
+                "text": "apron",
+                "order": -1
+            },
+            "泳装": {
+                "text": "swimsuit",
+                "order": -1
+            },
+            "比基尼": {
+                "text": "bikini",
+                "order": -1
+            },
+            "死库水": {
+                "text": "Sukumizu",
+                "order": -1
+            },
+            "快餐制服": {
+                "text": "fast food uniform",
+                "order": -1
+            },
+            "JK制服": {
+                "text": "JK",
+                "order": -1
+            },
+            "健身服": {
+                "text": "gym_uniform",
+                "order": -1
+            },
+            "巫女服": {
+                "text": "miko attire",
+                "order": -1
+            },
+            "海军陆战队服": {
+                "text": "SWAT uniform",
+                "order": -1
+            },
+            "无袖连衣裙": {
+                "text": "sleeveless dress",
+                "order": -1
+            },
+            "雨衣": {
+                "text": "raincoat",
+                "order": -1
+            },
+            "透明雨衣": {
+                "text": "see-through raincoat",
+                "order": -1
+            },
+            "机甲衣": {
+                "text": "mech suit",
+                "order": -1
+            },
+            "巫师法袍": {
+                "text": "wizard robe",
+                "order": -1
+            },
+            "刺客装束": {
+                "text": "assassin-style",
+                "order": -1
+            }
+        },
+        "下装": {
+            "牛仔短裤": {
+                "text": "denim shorts",
+                "order": -1
+            },
+            "百褶裙": {
+                "text": "pleated skirt",
+                "order": -1
+            },
+            "热裤": {
+                "text": "short shorts",
+                "order": -1
+            },
+            "铅笔裙": {
+                "text": "pencil skirt",
+                "order": -1
+            },
+            "皮裙": {
+                "text": "leather skirt",
+                "order": -1
+            },
+            "黑色紧身裤": {
+                "text": "black leggings",
+                "order": -1
+            },
+            "和服下的裙子": {
+                "text": "skirt under kimono",
+                "order": -1
+            }
+        },
+        "其他服装": {
+            "褶边": {
+                "text": "frills",
+                "order": -1
+            },
+            "花边": {
+                "text": "lace",
+                "order": -1
+            },
+            "哥特风格": {
+                "text": "gothic",
+                "order": -1
+            },
+            "洛丽塔风格": {
+                "text": "lolita fashion",
+                "order": -1
+            },
+            "西部风格": {
+                "text": "western",
+                "order": -1
+            },
+            "湿身": {
+                "text": "wet clothes",
+                "order": -1
+            },
+            "露单肩": {
+                "text": "off_shoulder",
+                "order": -1
+            },
+            "露双肩": {
+                "text": "bare_shoulders",
+                "order": -1
+            },
+            "格子花纹": {
+                "text": "tartan",
+                "order": -1
+            },
+            "横条花纹": {
+                "text": "striped",
+                "order": -1
+            },
+            "撕裂的衣服": {
+                "text": "torn clothes",
+                "order": -1
+            },
+            "披甲": {
+                "text": "armored skirt",
+                "order": -1
+            },
+            "盔甲": {
+                "text": "armor",
+                "order": -1
+            },
+            "金属盔甲": {
+                "text": "metal armor",
+                "order": -1
+            },
+            "狂战士铠甲": {
+                "text": "berserker armor",
+                "order": -1
+            },
+            "腰带": {
+                "text": "belt",
+                "order": -1
+            },
+            "围巾": {
+                "text": "scarf",
+                "order": -1
+            },
+            "披肩": {
+                "text": "cape",
+                "order": -1
+            },
+            "皮草披肩": {
+                "text": "fur shawl",
+                "order": -1
+            }
+        }
+    },
+    "鞋饰": {
+        "帽饰": {
+            "棒球帽": {
+                "text": "Baseball cap",
+                "order": -1
+            },
+            "针织帽": {
+                "text": "Beanie",
+                "order": -1
+            },
+            "拿破仑帽": {
+                "text": "Bicorne",
+                "order": -1
+            },
+            "太阳帽": {
+                "text": "Boater hat",
+                "order": -1
+            },
+            "遮阳帽": {
+                "text": "Visor cap",
+                "order": -1
+            },
+            "圆顶礼帽": {
+                "text": "Bowler hat",
+                "order": -1
+            },
+            "报童帽": {
+                "text": "Cabbie hat",
+                "order": -1
+            },
+            "渔夫帽": {
+                "text": "Bucket hat",
+                "order": -1
+            },
+            "侦探帽": {
+                "text": "Fedora",
+                "order": -1
+            },
+            "牛仔帽": {
+                "text": "Cowboy hat",
+                "order": -1
+            },
+            "厨师帽": {
+                "text": "Chef hat",
+                "order": -1
+            },
+            "军官帽": {
+                "text": "Military hat",
+                "order": -1
+            },
+            "圣诞帽": {
+                "text": "Santa hat",
+                "order": -1
+            },
+            "派对帽": {
+                "text": "Party hat",
+                "order": -1
+            },
+            "小丑帽": {
+                "text": "Jester cap",
+                "order": -1
+            },
+            "安全帽": {
+                "text": "Hardhat",
+                "order": -1
+            },
+            "棒球头盔": {
+                "text": "Baseball helmet",
+                "order": -1
+            },
+            "橄榄球头盔": {
+                "text": "Football helmet",
+                "order": -1
+            },
+            "动物头盔": {
+                "text": "animal helmet",
+                "order": -1
+            },
+            "女巫帽": {
+                "text": "witch hat",
+                "order": -1
+            },
+            "贝雷帽": {
+                "text": "beret",
+                "order": -1
+            },
+            "鸭舌帽": {
+                "text": "peaked cap",
+                "order": -1
+            },
+            "草帽": {
+                "text": "Straw hat",
+                "order": -1
+            }
+        },
+        "鞋类": {
+            "裸足": {
+                "text": "bare_legs",
+                "order": -1
+            },
+            "靴子": {
+                "text": "boots",
+                "order": -1
+            },
+            "马丁靴": {
+                "text": "knee boots",
+                "order": -1
+            },
+            "脚踝靴": {
+                "text": "ankle boots",
+                "order": -1
+            },
+            "系带靴": {
+                "text": "cross-laced_footwear",
+                "order": -1
+            },
+            "战斗靴": {
+                "text": "combat boots",
+                "order": -1
+            },
+            "装甲靴": {
+                "text": "armored boots",
+                "order": -1
+            },
+            "过膝靴": {
+                "text": "knee boots",
+                "order": -1
+            },
+            "防水橡胶靴": {
+                "text": "rubber boots",
+                "order": -1
+            },
+            "皮靴": {
+                "text": "leather boots",
+                "order": -1
+            },
+            "雪地靴": {
+                "text": "snow boots",
+                "order": -1
+            },
+            "圣诞靴": {
+                "text": "santa boots",
+                "order": -1
+            },
+            "鞋子": {
+                "text": "shoes",
+                "order": -1
+            },
+            "厚底鞋": {
+                "text": "platform footwear",
+                "order": -1
+            },
+            "尖头鞋": {
+                "text": "pointy footwear",
+                "order": -1
+            },
+            "芭蕾舞鞋": {
+                "text": "ballet slippers",
+                "order": -1
+            },
+            "运动鞋": {
+                "text": "sneakers",
+                "order": -1
+            },
+            "旱冰鞋": {
+                "text": "roller skates",
+                "order": -1
+            },
+            "溜冰鞋": {
+                "text": "ice skates",
+                "order": -1
+            },
+            "钉鞋": {
+                "text": "spiked shoes",
+                "order": -1
+            },
+            "高跟鞋": {
+                "text": "high heels",
+                "order": -1
+            },
+            "玛丽珍鞋": {
+                "text": "mary janes",
+                "order": -1
+            },
+            "乐福鞋": {
+                "text": "loafers",
+                "order": -1
+            },
+            "女式学生鞋": {
+                "text": "uwabaki",
+                "order": -1
+            },
+            "凉鞋": {
+                "text": "sandals",
+                "order": -1
+            },
+            "木屐": {
+                "text": "geta",
+                "order": -1
+            },
+            "拖鞋": {
+                "text": "slippers",
+                "order": -1
+            },
+            "人字拖": {
+                "text": "flip-flops",
+                "order": -1
+            }
+        },
+        "袜类": {
+            "不穿袜子": {
+                "text": "no socks",
+                "order": -1
+            },
+            "短袜": {
+                "text": "socks",
+                "order": -1
+            },
+            "日式厚底短袜": {
+                "text": "tabi",
+                "order": -1
+            },
+            "丝袜": {
+                "text": "stockings",
+                "order": -1
+            },
+            "圣诞袜": {
+                "text": "christmas stocking",
+                "order": -1
+            },
+            "暖腿袜": {
+                "text": "leg warmers",
+                "order": -1
+            },
+            "荷叶边袜子": {
+                "text": "frilled socks",
+                "order": -1
+            },
+            "丝带边袜子": {
+                "text": "ribbon-trimmed legwear",
+                "order": -1
+            },
+            "闪亮袜子": {
+                "text": "shiny legwear",
+                "order": -1
+            },
+            "褶边长筒袜": {
+                "text": "frilled thighhighs",
+                "order": -1
+            },
+            "过膝袜": {
+                "text": "thighhighs",
+                "order": -1
+            },
+            "渔网袜": {
+                "text": "fishnet stockings",
+                "order": -1
+            },
+            "堆堆袜": {
+                "text": "loose socks",
+                "order": -1
+            },
+            "裤袜": {
+                "text": "leggings",
+                "order": -1
+            },
+            "蕾丝裤袜": {
+                "text": "lace legwear",
+                "order": -1
+            },
+            "罗纹裤袜": {
+                "text": "ribbed legwear",
+                "order": -1
+            },
+            "湿连裤袜": {
+                "text": "wet pantyhose",
+                "order": -1
+            },
+            "格子裤袜": {
+                "text": "plaid legwear",
+                "order": -1
+            },
+            "透视裤袜": {
+                "text": "see-through legwear",
+                "order": -1
+            },
+            "连裤袜": {
+                "text": "pantyhose",
+                "order": -1
+            },
+            "撕裂的连裤袜": {
+                "text": "torn pantyhose",
+                "order": -1
+            },
+            "单腿连裤袜": {
+                "text": "single leg pantyhose",
+                "order": -1
+            },
+            "荷叶边连裤袜": {
+                "text": "frilled pantyhose",
+                "order": -1
+            },
+            "柳丁吊袜带": {
+                "text": "studded garter belt",
+                "order": -1
+            },
+            "吊袜带": {
+                "text": "sock dangle",
+                "order": -1
+            },
+            "大腿系带": {
+                "text": "thigh strap",
+                "order": -1
+            },
+            "腿部花边环": {
+                "text": "leg_garter",
+                "order": -1
+            },
+            "包扎腿": {
+                "text": "bandaged leg",
+                "order": -1
+            }
+        }
+    },
+    "尾&翅&角": {
+        "尾巴": {
+            "宝可梦尾巴": {
+                "text": "pokemon tail",
+                "order": -1
+            },
+            "皮卡丘尾巴": {
+                "text": "pikachu tail",
+                "order": -1
+            },
+            "水獭尾巴": {
+                "text": "otter tail",
+                "order": -1
+            },
+            "蝎尾": {
+                "text": "scorpion tail",
+                "order": -1
+            },
+            "鹿尾": {
+                "text": "deer tail",
+                "order": -1
+            },
+            "黄鼠狼尾巴": {
+                "text": "weasel tail",
+                "order": -1
+            },
+            "羊驼尾巴": {
+                "text": "alpaca tail",
+                "order": -1
+            },
+            "恐龙尾巴": {
+                "text": "dinosaur tail",
+                "order": -1
+            },
+            "企鹅尾巴": {
+                "text": "penguin tail",
+                "order": -1
+            },
+            "羊尾巴": {
+                "text": "sheep tail",
+                "order": -1
+            },
+            "山羊尾巴": {
+                "text": "goat tail",
+                "order": -1
+            },
+            "海狸尾巴": {
+                "text": "beaver tail",
+                "order": -1
+            },
+            "小熊猫尾巴": {
+                "text": "red panda tail",
+                "order": -1
+            },
+            "豺尾巴": {
+                "text": "jackal tail",
+                "order": -1
+            },
+            "食蚁兽尾巴": {
+                "text": "anteater tail",
+                "order": -1
+            },
+            "土狼尾巴": {
+                "text": "aardwolf tail",
+                "order": -1
+            },
+            "猎豹尾巴": {
+                "text": "panther tail",
+                "order": -1
+            },
+            "熊猫尾巴": {
+                "text": "panda tail",
+                "order": -1
+            },
+            "天使尾巴": {
+                "text": "Angel wings",
+                "order": -1
+            }
+        },
+        "翅膀": {
+            "蝴蝶翅膀": {
+                "text": "Butterfly wings",
+                "order": -1
+            },
+            "昆虫翅膀": {
+                "text": "insect wings",
+                "order": -1
+            },
+            "蝙蝠翅膀": {
+                "text": "Bat wings",
+                "order": -1
+            },
+            "鸟翼": {
+                "text": "bird wings",
+                "order": -1
+            },
+            "羽翼": {
+                "text": "feathered wings",
+                "order": -1
+            },
+            "妖精翅膀": {
+                "text": "Fairy wings",
+                "order": -1
+            },
+            "龙之翼": {
+                "text": "Dragon wings",
+                "order": -1
+            },
+            "恶魔之翼": {
+                "text": "Demon wings",
+                "order": -1
+            },
+            "火焰翅膀": {
+                "text": "Fiery wings",
+                "order": -1
+            },
+            "机械翅膀": {
+                "text": "Mechanical wings",
+                "order": -1
+            },
+            "冰翅": {
+                "text": "ice crystal texture",
+                "order": -1
+            },
+            "冰火之翼": {
+                "text": "((burning feathers)),(feathers_made_of_ice),(frozen feathers),(((ice and fire together)))",
+                "order": -1
+            }
+        },
+        "角": {
+            "羚羊角": {
+                "text": "antelope horns",
+                "order": -1
+            },
+            "山羊角": {
+                "text": "goat horns",
+                "order": -1
+            },
+            "羊角": {
+                "text": "sheep horns",
+                "order": -1
+            },
+            "奶牛角": {
+                "text": "cow horns",
+                "order": -1
+            },
+            "公牛角": {
+                "text": "ox horns",
+                "order": -1
+            },
+            "鬼角": {
+                "text": "oni horns",
+                "order": -1
+            },
+            "断角": {
+                "text": "broken horn",
+                "order": -1
+            },
+            "机械角": {
+                "text": "mechanical horns",
+                "order": -1
+            },
+            "恶魔之角": {
+                "text": "demon horns",
+                "order": -1
+            },
+            "龙之角": {
+                "text": "dragon horns",
+                "order": -1
+            }
+        }
+    },
+    "姿势": {
+        "姿态": {
+            "侧身坐": {
+                "text": "yokozuwari",
+                "order": -1
+            },
+            "鸭子坐": {
+                "text": "ahirusuwari",
+                "order": -1
+            },
+            "跷二郎腿": {
+                "text": "crossed legs",
+                "order": -1
+            },
+            "盘腿": {
+                "text": "indian style",
+                "order": -1
+            },
+            "抱腿": {
+                "text": "leg hug",
+                "order": -1
+            },
+            "跪着": {
+                "text": "kneeling",
+                "order": -1
+            },
+            "翘臀": {
+                "text": "bent over",
+                "order": -1
+            },
+            "躬躯": {
+                "text": "arched back",
+                "order": -1
+            },
+            "露肚子": {
+                "text": "on stomach",
+                "order": -1
+            },
+            "膝枕": {
+                "text": "lap pillow",
+                "order": -1
+            },
+            "抬一条腿": {
+                "text": "leg_lift",
+                "order": -1
+            },
+            "抬两只脚": {
+                "text": "legs_up",
+                "order": -1
+            },
+            "学猫叫": {
+                "text": "paw pose",
+                "order": -1
+            },
+            "单膝跪地": {
+                "text": "one knee",
+                "order": -1
+            },
+            "蜷起身子侧躺": {
+                "text": "fetal position",
+                "order": -1
+            },
+            "仰卧": {
+                "text": "on back",
+                "order": -1
+            },
+            "俯卧": {
+                "text": "on stomach",
+                "order": -1
+            },
+            "坐着": {
+                "text": "sitting",
+                "order": -1
+            },
+            "屈膝抱腿坐": {
+                "text": "hugging own legs",
+                "order": -1
+            },
+            "立式跨骑": {
+                "text": "upright straddle",
+                "order": -1
+            },
+            "站着": {
+                "text": "standing",
+                "order": -1
+            },
+            "蹲着": {
+                "text": "squatting",
+                "order": -1
+            },
+            "绑在十字架上": {
+                "text": "crucifixion",
+                "order": -1
+            },
+            "双腿缠绕": {
+                "text": "leg lock",
+                "order": -1
+            },
+            "四肢着地": {
+                "text": "all fours",
+                "order": -1
+            },
+            "戴耳机": {
+                "text": "hand on headphones",
+                "order": -1
+            },
+            "鬼姿势": {
+                "text": "ghost pose",
+                "order": -1
+            },
+            "回头": {
+                "text": "turning around",
+                "order": -1
+            },
+            "歪头": {
+                "text": "head tilt",
+                "order": -1
+            },
+            "前倾": {
+                "text": "leaning forward",
+                "order": -1
+            }
+        },
+        "手势": {
+            "嘘手势": {
+                "text": "shushing",
+                "order": -1
+            },
+            "翘大拇指": {
+                "text": "thumbs up",
+                "order": -1
+            },
+            "手放脑后": {
+                "text": "arms behind head",
+                "order": -1
+            },
+            "手放身后": {
+                "text": "arms behind back",
+                "order": -1
+            },
+            "手放胸前": {
+                "text": "hand on own chest",
+                "order": -1
+            },
+            "手交叉在胸前": {
+                "text": "arms_crossed",
+                "order": -1
+            },
+            "手插口袋": {
+                "text": "hand in pocket",
+                "order": -1
+            },
+            "双手插口袋": {
+                "text": "hands in pocket",
+                "order": -1
+            },
+            "十指相扣": {
+                "text": "interlocked fingers",
+                "order": -1
+            },
+            "V字手势": {
+                "text": "victory pose",
+                "order": -1
+            },
+            "手在地板上": {
+                "text": "hand on floor",
+                "order": -1
+            },
+            "手在额头上": {
+                "text": "hand on forehead",
+                "order": -1
+            },
+            "手在肚子上": {
+                "text": "hand on own stomach",
+                "order": -1
+            },
+            "手在肩膀上": {
+                "text": "arm over shoulder",
+                "order": -1
+            },
+            "手搭别人的腿": {
+                "text": "hand on another's leg",
+                "order": -1
+            },
+            "手搭别人的腰": {
+                "text": "hand on another's waist",
+                "order": -1
+            },
+            "双手合十": {
+                "text": "own hands clasped",
+                "order": -1
+            },
+            "翼展双臂": {
+                "text": "wide open arms",
+                "order": -1
+            },
+            "手放嘴边": {
+                "text": "hand to mouth",
+                "order": -1
+            },
+            "手枪手势": {
+                "text": "finger gun",
+                "order": -1
+            },
+            "猫爪手势": {
+                "text": "cat pose",
+                "order": -1
+            }
+        },
+        "视线": {
+            "远眺": {
+                "text": "looking afar",
+                "order": -1
+            },
+            "照镜子": {
+                "text": "looking at mirror",
+                "order": -1
+            },
+            "看手机": {
+                "text": "looking at phone",
+                "order": -1
+            },
+            "看向别处": {
+                "text": "looking away",
+                "order": -1
+            },
+            "透过刘海看": {
+                "text": "visible through hair",
+                "order": -1
+            },
+            "透过眼镜看": {
+                "text": "looking over glasses",
+                "order": -1
+            },
+            "面向观者": {
+                "text": "look at viewer",
+                "order": -1
+            },
+            "靠近观者": {
+                "text": "close to viewer",
+                "order": -1
+            },
+            "动态角度": {
+                "text": "dynamic angle",
+                "order": -1
+            },
+            "舞台角度": {
+                "text": "dramatic angle",
+                "order": -1
+            },
+            "凝视": {
+                "text": "stare",
+                "order": -1
+            },
+            "向上看": {
+                "text": "looking up",
+                "order": -1
+            },
+            "向下看": {
+                "text": "looking down",
+                "order": -1
+            },
+            "看向旁边": {
+                "text": "looking to the side",
+                "order": -1
+            },
+            "移开目光": {
+                "text": "looking away",
+                "order": -1
+            }
+        }
+    },
+    "动作": {
+        "整体": {
+            "嗅闻": {
+                "text": "smelling",
+                "order": -1
+            },
+            "公主抱": {
+                "text": "princess carry",
+                "order": -1
+            },
+            "拥抱": {
+                "text": "hug",
+                "order": -1
+            },
+            "背对背": {
+                "text": "back-to-back",
+                "order": -1
+            },
+            "洗澡": {
+                "text": "bathing",
+                "order": -1
+            },
+            "耶": {
+                "text": "peace symbol",
+                "order": -1
+            },
+            "调整过膝袜": {
+                "text": "adjusting_thighhigh",
+                "order": -1
+            },
+            "抓住": {
+                "text": "grabbing",
+                "order": -1
+            },
+            "战斗姿态": {
+                "text": "fighting_stance",
+                "order": -1
+            },
+            "走": {
+                "text": "walking",
+                "order": -1
+            },
+            "跑": {
+                "text": "running",
+                "order": -1
+            },
+            "跨坐": {
+                "text": "straddling",
+                "order": -1
+            },
+            "跳": {
+                "text": "jump",
+                "order": -1
+            },
+            "飞": {
+                "text": "fly",
+                "order": -1
+            },
+            "靠墙": {
+                "text": "against wall",
+                "order": -1
+            },
+            "躺": {
+                "text": "lie",
+                "order": -1
+            },
+            "从背后抱": {
+                "text": "hug from behind",
+                "order": -1
+            },
+            "遛狗": {
+                "text": "walk the dog",
+                "order": -1
+            },
+            "提裙": {
+                "text": "skirt lift",
+                "order": -1
+            },
+            "泡温泉": {
+                "text": "half body under water",
+                "order": -1
+            },
+            "骑马": {
+                "text": "horse riding",
+                "order": -1
+            },
+            "自拍": {
+                "text": "selfie",
+                "order": -1
+            },
+            "一字马": {
+                "text": "standing split",
+                "order": -1
+            },
+            "敬礼": {
+                "text": "salute",
+                "order": -1
+            },
+            "祈祷": {
+                "text": "pray",
+                "order": -1
+            },
+            "冥想": {
+                "text": "doing a meditation",
+                "order": -1
+            }
+        },
+        "上半身": {
+            "伸懒腰": {
+                "text": "stretch",
+                "order": -1
+            },
+            "托腮": {
+                "text": "gill support",
+                "order": -1
+            },
+            "牵手": {
+                "text": "holding hands",
+                "order": -1
+            },
+            "手放臀": {
+                "text": "hand on another's hip",
+                "order": -1
+            },
+            "单手叉腰": {
+                "text": "hand_on_hip",
+                "order": -1
+            },
+            "双手叉腰": {
+                "text": "hands_on_hips",
+                "order": -1
+            },
+            "招手": {
+                "text": "waving",
+                "order": -1
+            },
+            "撮头发": {
+                "text": "hair scrunchie",
+                "order": -1
+            },
+            "拉头发": {
+                "text": "hair_pull",
+                "order": -1
+            },
+            "抓别人的头发": {
+                "text": "grabbing another's hair",
+                "order": -1
+            },
+            "竖中指": {
+                "text": "middle_finger",
+                "order": -1
+            },
+            "弯腰": {
+                "text": "bent over",
+                "order": -1
+            },
+            "掀起上衣": {
+                "text": "shirt lift",
+                "order": -1
+            },
+            "亲吻脸颊": {
+                "text": "kissing cheek",
+                "order": -1
+            },
+            "亲吻额头": {
+                "text": "kissing forehead",
+                "order": -1
+            },
+            "踮起脚尖吻": {
+                "text": "tiptoe kiss",
+                "order": -1
+            },
+            "头顶水果": {
+                "text": "fruit on head",
+                "order": -1
+            },
+            "咬手套": {
+                "text": "glove biting",
+                "order": -1
+            },
+            "脸贴脸": {
+                "text": "cheek-to-cheek",
+                "order": -1
+            },
+            "手牵手": {
+                "text": "hand on another's hand",
+                "order": -1
+            },
+            "双手交叉": {
+                "text": "crossed arms",
+                "order": -1
+            },
+            "双手张开伸直": {
+                "text": "spread arms",
+                "order": -1
+            },
+            "挥动手臂": {
+                "text": "waving arms",
+                "order": -1
+            },
+            "伸出手臂": {
+                "text": "outstretched arm",
+                "order": -1
+            },
+            "用手臂支撑": {
+                "text": "carrying",
+                "order": -1
+            },
+            "搂着手臂": {
+                "text": "arm hug",
+                "order": -1
+            },
+            "拿着": {
+                "text": "holding",
+                "order": -1
+            },
+            "拿着餐刀": {
+                "text": "holding knife",
+                "order": -1
+            },
+            "拿着枪": {
+                "text": "holding gun",
+                "order": -1
+            },
+            "拿着杯子": {
+                "text": "holding cup",
+                "order": -1
+            },
+            "拿着食物": {
+                "text": "holding food",
+                "order": -1
+            },
+            "拿着书": {
+                "text": "holding book",
+                "order": -1
+            },
+            "拿着魔杖": {
+                "text": "holding wand",
+                "order": -1
+            },
+            "打着伞": {
+                "text": "holding umbrella",
+                "order": -1
+            },
+            "捧着花": {
+                "text": "holding flower",
+                "order": -1
+            },
+            "拿着麦克风": {
+                "text": "holding microphone",
+                "order": -1
+            },
+            "抱着物品": {
+                "text": "object hug",
+                "order": -1
+            },
+            "抱着心": {
+                "text": "holding heart",
+                "order": -1
+            }
+        }
+    },
+    "环境": {
+        "四季朝暮": {
+            "春天": {
+                "text": "in spring",
+                "order": -1
+            },
+            "夏天": {
+                "text": "in summer",
+                "order": -1
+            },
+            "秋天": {
+                "text": "in autumn",
+                "order": -1
+            },
+            "冬天": {
+                "text": "in winter",
+                "order": -1
+            },
+            "黄昏": {
+                "text": "dusk",
+                "order": -1
+            },
+            "夜晚": {
+                "text": "night",
+                "order": -1
+            },
+            "枫林路": {
+                "text": "(autumn maple forest:1.3),(very few fallen leaves),(path)",
+                "order": -1
+            }
+        },
+        "日月星辰": {
+            "太阳": {
+                "text": "sun",
+                "order": -1
+            },
+            "落日": {
+                "text": "sunset",
+                "order": -1
+            },
+            "月亮": {
+                "text": "moon",
+                "order": -1
+            },
+            "满月": {
+                "text": "full_moon",
+                "order": -1
+            },
+            "星星": {
+                "text": "stars",
+                "order": -1
+            },
+            "天空": {
+                "text": "sky",
+                "order": -1
+            },
+            "多云": {
+                "text": "cloudy",
+                "order": -1
+            },
+            "雨天": {
+                "text": "rain",
+                "order": -1
+            },
+            "冰雪": {
+                "text": "snow,ice",
+                "order": -1
+            },
+            "雪花": {
+                "text": "snowflakes",
+                "order": -1
+            },
+            "闪电": {
+                "text": "lighting",
+                "order": -1
+            },
+            "彩虹": {
+                "text": "rainbow",
+                "order": -1
+            },
+            "流星雨": {
+                "text": "meteor shower",
+                "order": -1
+            },
+            "宇宙": {
+                "text": "universe",
+                "order": -1
+            }
+        },
+        "天涯海角": {
+            "大海": {
+                "text": "sea",
+                "order": -1
+            },
+            "山丘": {
+                "text": "hills",
+                "order": -1
+            },
+            "草地": {
+                "text": "in a meadow",
+                "order": -1
+            },
+            "海滩": {
+                "text": "on the beach",
+                "order": -1
+            },
+            "水中": {
+                "text": "underwater",
+                "order": -1
+            },
+            "海边": {
+                "text": "over the sea",
+                "order": -1
+            },
+            "树林": {
+                "text": "grove",
+                "order": -1
+            },
+            "沙漠": {
+                "text": "on a desert",
+                "order": -1
+            },
+            "高原": {
+                "text": "plateau",
+                "order": -1
+            },
+            "悬崖": {
+                "text": "cliff",
+                "order": -1
+            },
+            "峡谷": {
+                "text": "canyon",
+                "order": -1
+            },
+            "绿洲": {
+                "text": "oasis",
+                "order": -1
+            },
+            "竹林": {
+                "text": "bamboo forest",
+                "order": -1
+            },
+            "冰川": {
+                "text": "glacier",
+                "order": -1
+            },
+            "浮岛": {
+                "text": "floating island",
+                "order": -1
+            },
+            "火山": {
+                "text": "volcano",
+                "order": -1
+            },
+            "大草原": {
+                "text": "savanna",
+                "order": -1
+            },
+            "瀑布": {
+                "text": "waterfall",
+                "order": -1
+            },
+            "溪流": {
+                "text": "stream",
+                "order": -1
+            },
+            "荒地": {
+                "text": "wasteland",
+                "order": -1
+            },
+            "稻田": {
+                "text": "rice paddy",
+                "order": -1
+            },
+            "麦田": {
+                "text": "wheat field",
+                "order": -1
+            },
+            "花田": {
+                "text": "flower field",
+                "order": -1
+            },
+            "花海": {
+                "text": "flower sea",
+                "order": -1
+            }
+        },
+        "室内场景": {
+            "室内": {
+                "text": "indoor",
+                "order": -1
+            },
+            "窗帘": {
+                "text": "curtain",
+                "order": -1
+            },
+            "床": {
+                "text": "bed",
+                "order": -1
+            },
+            "浴室": {
+                "text": "bathroom",
+                "order": -1
+            },
+            "厕所隔间": {
+                "text": "toilet stall",
+                "order": -1
+            },
+            "宅男房间": {
+                "text": "otaku room",
+                "order": -1
+            },
+            "自助餐厅": {
+                "text": "cafeteria",
+                "order": -1
+            },
+            "教室": {
+                "text": "classroom",
+                "order": -1
+            },
+            "俱乐部": {
+                "text": "clubroom",
+                "order": -1
+            },
+            "沙龙": {
+                "text": "salon",
+                "order": -1
+            },
+            "酒吧": {
+                "text": "bar",
+                "order": -1
+            },
+            "居酒屋": {
+                "text": "izakaya",
+                "order": -1
+            },
+            "咖啡馆": {
+                "text": "cafe",
+                "order": -1
+            },
+            "面包店": {
+                "text": "bakery",
+                "order": -1
+            },
+            "便利店": {
+                "text": "convenience store",
+                "order": -1
+            },
+            "超市": {
+                "text": "supermarket",
+                "order": -1
+            },
+            "书店": {
+                "text": "bookstore",
+                "order": -1
+            },
+            "药店": {
+                "text": "pharmacy",
+                "order": -1
+            },
+            "剧院": {
+                "text": "theater",
+                "order": -1
+            },
+            "电影院": {
+                "text": "movie theater",
+                "order": -1
+            },
+            "温室": {
+                "text": "greenhouse",
+                "order": -1
+            },
+            "地库": {
+                "text": "dungeon",
+                "order": -1
+            },
+            "健身房": {
+                "text": "gym",
+                "order": -1
+            },
+            "医务室": {
+                "text": "infirmary",
+                "order": -1
+            },
+            "实验室": {
+                "text": "laboratory",
+                "order": -1
+            },
+            "图书馆": {
+                "text": "library",
+                "order": -1
+            },
+            "工作坊": {
+                "text": "workshop",
+                "order": -1
+            },
+            "舞台": {
+                "text": "stage",
+                "order": -1
+            },
+            "法庭": {
+                "text": "courtroom",
+                "order": -1
+            }
+        },
+        "城市建筑": {
+            "城堡": {
+                "text": "castle",
+                "order": -1
+            },
+            "城市": {
+                "text": "city",
+                "order": -1
+            },
+            "水上乐园": {
+                "text": "waterpark",
+                "order": -1
+            },
+            "旋转木马": {
+                "text": "carousel",
+                "order": -1
+            },
+            "摩天轮": {
+                "text": "ferris wheel",
+                "order": -1
+            },
+            "水族馆": {
+                "text": "aquarium",
+                "order": -1
+            },
+            "动物园": {
+                "text": "zoo",
+                "order": -1
+            },
+            "保龄球馆": {
+                "text": "bowling alley",
+                "order": -1
+            },
+            "美术馆": {
+                "text": "art gallery",
+                "order": -1
+            },
+            "博物馆": {
+                "text": "museum",
+                "order": -1
+            },
+            "天文馆": {
+                "text": "planetarium",
+                "order": -1
+            },
+            "游泳池": {
+                "text": "swimming pool",
+                "order": -1
+            },
+            "体育场": {
+                "text": "stadium",
+                "order": -1
+            },
+            "寺庙": {
+                "text": "temple",
+                "order": -1
+            },
+            "巴士车站": {
+                "text": "bus stop",
+                "order": -1
+            },
+            "火车站": {
+                "text": "train station",
+                "order": -1
+            },
+            "喷泉": {
+                "text": "fountain",
+                "order": -1
+            },
+            "游乐场": {
+                "text": "playground",
+                "order": -1
+            },
+            "市场摊位": {
+                "text": "market stall",
+                "order": -1
+            },
+            "电话亭": {
+                "text": "phone booth",
+                "order": -1
+            },
+            "铁轨": {
+                "text": "railroad tracks",
+                "order": -1
+            },
+            "机场": {
+                "text": "airport",
+                "order": -1
+            },
+            "隧道": {
+                "text": "tunnel",
+                "order": -1
+            }
+        },
+        "背景氛围": {
+            "新年": {
+                "text": "new year",
+                "order": -1
+            },
+            "兔年": {
+                "text": "year of the rabbit",
+                "order": -1
+            },
+            "情人节": {
+                "text": "valentine",
+                "order": -1
+            },
+            "元宵节": {
+                "text": "lantern festival",
+                "order": -1
+            },
+            "夏日祭": {
+                "text": "summer festival",
+                "order": -1
+            },
+            "七夕节": {
+                "text": "tanabata",
+                "order": -1
+            },
+            "中秋节": {
+                "text": "mid-autumn festival",
+                "order": -1
+            },
+            "万圣节": {
+                "text": "halloween",
+                "order": -1
+            },
+            "圣诞节": {
+                "text": "christmas",
+                "order": -1
+            },
+            "爆炸": {
+                "text": "explosion",
+                "order": -1
+            },
+            "蒸汽": {
+                "text": "water vapor",
+                "order": -1
+            },
+            "焰火": {
+                "text": "fireworks",
+                "order": -1
+            },
+            "落地窗": {
+                "text": "ceiling window",
+                "order": -1
+            },
+            "彩色玻璃": {
+                "text": "colourful glass",
+                "order": -1
+            },
+            "染色玻璃": {
+                "text": "stain glass",
+                "order": -1
+            },
+            "涂鸦墙": {
+                "text": "Graffiti wall",
+                "order": -1
+            },
+            "马赛克背景": {
+                "text": "mosaic background",
+                "order": -1
+            },
+            "液体背景": {
+                "text": "liquid background,Sputtered water",
+                "order": -1
+            },
+            "魔法环": {
+                "text": "magic circles",
+                "order": -1
+            },
+            "荧光蘑菇森林": {
+                "text": "fluorescent mushroom forests background",
+                "order": -1
+            },
+            "彩色泡泡": {
+                "text": "(((colorful bubble)))",
+                "order": -1
+            }
+        }
+    },
+    "Emoji": {
+        "表情与情感": {
+            "运动模糊": {
+                "text": "🥸",
+                "order": -1
+            }
+        }
+    },
+    "特效": {
+        "镜头效果": {
+            "运动模糊": {
+                "text": "motion blur",
+                "order": -1
+            },
+            "色差": {
+                "text": "chromatic aberration",
+                "order": -1
+            }
+        },
+        "光照": {
+            "轮廓光": {
+                "text": "rim light",
+                "order": 3
+            },
+            "体积光": {
+                "text": "Volumetric Lighting",
+                "order": 3
+            },
+            "背光": {
+                "text": "backlight",
+                "order": 3
+            },
+            "霓虹灯": {
+                "text": "glowing neon lights",
+                "order": 3
+            },
+            "电影级光照": {
+                "text": "Cinematic Lighting",
+                "order": 3
+            },
+            "镜头光晕": {
+                "text": "lens flare",
+                "order": 3
+            },
+            "金属光泽": {
+                "text": "metallic luster",
+                "order": 3
+            },
+            "氛围光照": {
+                "text": "moody lighting",
+                "order": 3
+            },
+            "丁达尔效应": {
+                "text": "Tyndall effect",
+                "order": 3
+            },
+            "漏光光效": {
+                "text": "light leaks",
+                "order": 3
+            },
+            "背景光": {
+                "text": "background light",
+                "order": 3
+            },
+            "自然光": {
+                "text": "available light",
+                "order": 3
+            },
+            "阳光": {
+                "text": "sunlight",
+                "order": 3
+            },
+            "自上而下的光": {
+                "text": "god rays",
+                "order": 3
+            },
+            "荧光": {
+                "text": "glowing light",
+                "order": 3
+            },
+            "反射光": {
+                "text": "reflection light",
+                "order": 3
+            }
+        }
+    },
+    "风格": {
+        "艺术风格": {
+            "8bit游戏": {
+                "text": "8 Bit Game",
+                "order": 1
+            },
+            "80年代动画": {
+                "text": "1980s anime",
+                "order": 1
+            },
+            "迪士尼电影": {
+                "text": "disney movie",
+                "order": 1
+            },
+            "哥特摇滚": {
+                "text": "goth",
+                "order": 1
+            },
+            "80年代电影": {
+                "text": "80s movie",
+                "order": 1
+            },
+            "泡泡龙": {
+                "text": "bubble bobble",
+                "order": 1
+            },
+            "皮克斯动画": {
+                "text": "style of Pixar",
+                "order": 1
+            },
+            "宝丽来艺术": {
+                "text": "Polaroid art",
+                "order": 1
+            },
+            "万花筒摄影": {
+                "text": "Kaleidoscope Photography",
+                "order": 1
+            },
+            "欧泊渲染": {
+                "text": "opal render",
+                "order": 1
+            },
+            "色谱图": {
+                "text": "chemigram",
+                "order": 1
+            },
+            "吉卜力风格": {
+                "text": "Studio Ghibli",
+                "order": 1
+            },
+            "梦幻": {
+                "text": "dreamlike",
+                "order": 1
+            },
+            "签绘风格": {
+                "text": "(faux traditional media)",
+                "order": 1
+            },
+            "原神冲击": {
+                "text": "genshin impact",
+                "order": 1
+            },
+            "碧蓝航线": {
+                "text": "azur lane",
+                "order": 1
+            },
+            "舰队收藏": {
+                "text": "kantai collection",
+                "order": 1
+            },
+            "边缘行者": {
+                "text": "rebecca (cyberpunk)",
+                "order": 1
+            },
+            "电锯人": {
+                "text": "chainsaw man",
+                "order": 1
+            },
+            "魔法旋涡": {
+                "text": "Magic Vortex",
+                "order": 1
+            },
+            "柴油朋克": {
+                "text": "((dieselpunk))",
+                "order": 1
+            },
+            "四格": {
+                "text": "4koma",
+                "order": 1
+            },
+            "杂志扫描": {
+                "text": "magazine scan",
+                "order": 1
+            },
+            "专辑封面": {
+                "text": "album cover",
+                "order": 1
+            },
+            "线条变粗": {
+                "text": "(lineart)",
+                "order": 1
+            },
+            "蒸汽波": {
+                "text": "synthwave",
+                "order": 1
+            },
+            "洛可可": {
+                "text": "(illustration),(paper figure),(lococo),((impasto)),(shiny skin)",
+                "order": 1
+            }
+        },
+        "艺术类型": {
+            "单色图片": {
+                "text": "monochrome",
+                "order": -1
+            },
+            "拼贴艺术": {
+                "text": "Collage",
+                "order": -1
+            },
+            "彩色玻璃工艺": {
+                "text": "Dalle de verre",
+                "order": -1
+            },
+            "像素画": {
+                "text": "pixel art",
+                "order": -1
+            },
+            "瓷画": {
+                "text": "Encaustic painting",
+                "order": -1
+            },
+            "水墨画": {
+                "text": "Ink wash painting",
+                "order": -1
+            },
+            "铜版雕刻": {
+                "text": "Mezzotint",
+                "order": -1
+            },
+            "剪影": {
+                "text": "silhouette",
+                "order": -1
+            },
+            "插画": {
+                "text": "illustration",
+                "order": -1
+            },
+            "水彩画": {
+                "text": "(((ink))),((watercolor))",
+                "order": -1
+            },
+            "浮世绘": {
+                "text": "illustration,(((ukiyoe))),((sketch)),((japanese_art))",
+                "order": -1
+            },
+            "中国风": {
+                "text": "((wash painting)),((ink splashing)),((color splashing)),((((dyeing)))),((chinese style))",
+                "order": -1
+            },
+            "油画": {
+                "text": "((dyeing)),((oil painting)),((impasto))",
+                "order": -1
+            },
+            "黑白草图": {
+                "text": "(posing sketch),(monochrome)",
+                "order": -1
+            },
+            "手画草稿": {
+                "text": "sketch",
+                "order": -1
+            },
+            "铅笔速写": {
+                "text": "(monochrome),(gray scale),(pencil sketch lines)",
+                "order": -1
+            },
+            "彩铅画": {
+                "text": "(watercolor pencil)",
+                "order": -1
+            }
+        },
+        "艺术派系": {
+            "新艺术主义": {
+                "text": "((art nouveau))",
+                "order": -1
+            },
+            "古典主义": {
+                "text": "((classicism))",
+                "order": -1
+            },
+            "未来主义": {
+                "text": "((futurism))",
+                "order": -1
+            },
+            "达达主义": {
+                "text": "((Dadaism))",
+                "order": -1
+            },
+            "抽象艺术": {
+                "text": "((abstract art))",
+                "order": -1
+            },
+            "ASCII艺术": {
+                "text": "((ASCII art))",
+                "order": -1
+            }
+        },
+        "艺术家风格": {
+            "穆夏风格": {
+                "text": "((alphonse mucha))",
+                "order": -1
+            },
+            "莫奈风格": {
+                "text": "((Monet style))",
+                "order": -1
+            }
+        }
+    },
+    "魔法": {
+        "魔法1.0": {
+            "水魔法": {
+                "text": "((water drops)),wet clothes,((beautiful detailed water)),((floating)),dynamic angle",
+                "order": -1
+            },
+            "冰魔法": {
+                "text": "beautiful detailed glow,(detailed ice),beautiful detailed water",
+                "order": -1
+            },
+            "冰系改": {
+                "text": "beautiful detailed glow,detailed ice,beautiful detailed water,(floating palaces:1.2),(ice crystal texture wings),（Iridescence and rainbow hair:2.5）",
+                "order": -1
+            },
+            "星冰乐": {
+                "text": "beautiful detailed glow,detailed ice,beautiful detailed water,(floating palaces:1.3),(((ice crystal texture wings)))",
+                "order": -1
+            },
+            "森林冰": {
+                "text": "((detailed beautiful snow forest with trees)),((snowflakes)),floating",
+                "order": -1
+            },
+            "结晶法": {
+                "text": "(((crystals texture Hair))),((beautiful detailed glass hair)),((glass shaped texture hand)),((crystallize texture body)),gem body,hands as clear as jewels,crystallization of clothes,((crystals texture skin)),sparkle,lens flare,light leaks,broken glass,detailed glass shaped clothes,beautiful detailed gemstone sky,gemstone sea,crystals texture flowers,((detailed crystallized clothing))",
+                "order": -1
+            },
+            "核爆法": {
+                "text": "beautiful detailed glow,((flames of war)),(((nuclear explosion behide)))",
+                "order": -1
+            },
+            "风魔法": {
+                "text": "((breeze)),flying splashes, flying petals,wind",
+                "order": -1
+            },
+            "流沙法": {
+                "text": "((surrounded by heavy floating sand flow and floating sharp stones)),((((ink)))),((illustration)),((watercolor))",
+                "order": -1
+            },
+            "雷电法": {
+                "text": "(detailed light),((lightning in hand)),lightning surrounds,(((lightning chain)))",
+                "order": -1
+            },
+            "圣光法": {
+                "text": "(sunlight),(angel),dynamic angle,floating,wing,halo,floating white silk,(Holy Light),silver stars",
+                "order": -1
+            },
+            "苇名法": {
+                "text": "beautiful detailed pampas grass field,open hakama,surrounded by floating sakura,yellow full moon,beautiful detailed dark midnight sky,messy white long hair",
+                "order": -1
+            },
+            "自然法": {
+                "text": "beautiful and delicate water,the finest grass,very delicate light,nature,painting,water spray,breeze,flowers and grass meadow,near the water edge,(sunset,starry sky in a circle),randomly distributed clouds,river,splashing water,falling petals",
+                "order": -1
+            },
+            "森林法": {
+                "text": "(detailed light) ,feather,leaves,nature,(sunlight),river,(forest),(bloom)",
+                "order": -1
+            },
+            "虹彩法": {
+                "text": "floating and rainbow long hair,Iridescence and rainbow,beautiful detailed starry sky",
+                "order": -1
+            },
+            "暗锁法": {
+                "text": "chain ring,chain storm,dark chain,((wholeblack bloomer)),darkside,night,deep dark,darkness,((dark clouds)),((ruins)),shadow,death garden",
+                "order": -1
+            },
+            "火烧云": {
+                "text": "beautiful detailed glow,floating ashes,beautiful and detailed explosion,red moon,fire,fire cloud,wings on fire,a cloudy sky,smoke of gunpowder,burning,black dress,dove of peace,(floating cloud:1.2)",
+                "order": -1
+            },
+            "城堡法": {
+                "text": "beautiful detailed glow,detailed ice,beautiful detailed water,(magic circle:1.2),(floating palaces:1.3)",
+                "order": -1
+            },
+            "黄昏法": {
+                "text": "(water bloom),(delicate glow), (breeze),long   Flowers meadow,(((sunset)),(less stars form a circle),randomly distributed clouds,(rivers),(willows with branches falling into the water)",
+                "order": -1
+            },
+            "泡泡法": {
+                "text": "(((colorful bubble))),(floating),detailed light",
+                "order": -1
+            },
+            "蔷薇法": {
+                "text": "((rose)),(vine),cage,bandage,red rope,(detail light),falling rose petals",
+                "order": -1
+            },
+            "星空法": {
+                "text": "(starry tornado:1.4),starry Nebula,beautiful detailed sky",
+                "order": -1
+            },
+            "月亮法": {
+                "text": "((moon)),starry sky,(lighting particle),fog,snow,(bloom)",
+                "order": -1
+            },
+            "雪月法": {
+                "text": "beautiful detailed glow,detailed ice,beautiful detailed water,(cold full moon),snowflake,(floating cloud:1.2)",
+                "order": -1
+            },
+            "森火法": {
+                "text": "((burning forest)),spark,light leaks,burning sky,flame,flames burning around,(flying sparks)",
+                "order": -1
+            },
+            "废土法": {
+                "text": "((destroyed)),explosion,buildings in disarray,The residual eaves DuanBi,cumulus,mouldy,floating,wind,Dead end machine,(broken robot),(Mechanical robot girl),in the rubble of a devastated city",
+                "order": -1
+            },
+            "战甲法": {
+                "text": "mecha clothes,robot girl,sliver bodysuit,((sliver)) and (broken) body",
+                "order": -1
+            },
+            "黄金法": {
+                "text": "Extremely gorgeous metal style,Metal crown with ornate stripes,Various metals background,Sputtered molten iron,floating hair,Hair like melted metal,Clothes made of silver,Clothes with gold lace,flowing gold and silver,everything flowing and melt,flowing iron,flowing silver,lace flowing and melt",
+                "order": -1
+            },
+            "机娘法": {
+                "text": "mecha clothes,robot girl",
+                "order": -1
+            },
+            "死灵法": {
+                "text": "ink,(((bone))),(((ribs))),rose,black hair,blue eyes,greyscale,no shadow,simple background,bright skin",
+                "order": -1
+            },
+            "水晶法": {
+                "text": "(((gorgeous crystal armor))),(((crystal wings))),((altocumulus)),(clear_sky),(snow mountain),((flowery flowers)),(flowery bubbles),cloud map plane,crystal,crystal poppies,Brilliant light,thick_coating,glass tint,(watercolor)",
+                "order": -1
+            },
+            "水森法": {
+                "text": "((an extremely delicate and beautiful)),floating,(detailed wet clothes),(detailed light),feather,nature,(sunlight),river,floating palace,beautiful and delicate water,(bloom),(shine)",
+                "order": -1
+            },
+            "冰火法": {
+                "text": "(blue spark),(red and blue hair),blue eyes,burning sky,flame,Rainbow in the sky,((Flames burning ice)),(((fire  butterflies))),(((ice crystal texture wings))),(Flying sparks),(detailed ice),((a lot of luminous ice crystals)),((burning feathers)),(feathers made of ice),(frozen feathers),(((ice and fire together)))",
+                "order": -1
+            },
+            "龙骑士": {
+                "text": "(anger),dragon horns,(silver armor),metal,complex pattern,cape,indifference",
+                "order": -1
+            },
+            "坠落法": {
+                "text": "((full body)),(helpless),tear,crying,(((((falling from the sky))))),((Weathering With You)),((falling)),((face towards the sky))，(hair flows upwards),((disheveled hair)),(1 girl),floating,beautiful detailed sky",
+                "order": -1
+            },
+            "水下法": {
+                "text": "((underwater)),(beautiful detailed water),((coral)),dynamic angle,floating,(detailed light),floating hair,(splash),((fishes)),leaves dress,feather,nature,(sunlight),(underwater forest),(bloom),(detailed glow),drenched,seaweed,fish,(((Tyndall effect)))",
+                "order": -1
+            },
+            "秘境法": {
+                "text": "(extremely detailed CG unity 8k wallpaper),(((masterpiece))),(((best quality))),((ultra-detailed)),(best illustration),(best shadow),((an extremely delicate and beautiful)),dynamic angle,floating,fairyland,dynamic angle,sea of flowers,beautiful detailed garden,wind,classic,spring,(detailed light),feather,nature,(sunlight),river,forest,(((floating palace))),((the best building)),beautiful and delicate water,(painting),(sketch),(bloom),(shine)",
+                "order": -1
+            },
+            "摄影法": {
+                "text": "(((masterpiece))),((the best quality,super fine illustrations,beautiful and delicate water)),((very delicate light)),((nature,painting)),((fine lighting,more transparent stars,high-quality snowflakes,high-quality mountains,very fine 8KCG wallpapers)),(plateau),(((snow mountain))),sunrise,randomly distributed clouds,(snow field),cliff,((rotating star sky)),((lake in mountain stream)),luminous particles",
+                "order": -1
+            },
+            "摩登法": {
+                "text": "1980s (style),simple background,retro artstyle",
+                "order": -1
+            },
+            "血魔法": {
+                "text": "(white hair),red long hair,red eyes,(full body),(((with sword))),angry face,(beautiful detailed eyes),Blood drop,Blood fog,floating hair,disheveled hair, Splashing blood,(Bloodstain)",
+                "order": -1
+            },
+            "唤龙术": {
+                "text": "((dragon)),((dragon background))",
+                "order": -1
+            },
+            "战姬法": {
+                "text": "hair fluttering in the wind,((mechanical arm armor)),((mechanical body armor)),riding motor,bodysuit,((ruins of city in war,fire,burning cars,burning buildings)),air force fleet in the sky",
+                "order": -1
+            },
+            "龙机法": {
+                "text": "mecha clothes,robot girl,sliver bodysuit,dragon wings,((a dragon  stands behind the girl)),beautiful detailed sliver dragon armor",
+                "order": -1
+            },
+            "星蝶术": {
+                "text": "((Beautiful butterflies in detail)),((Beautiful stars in detail)),(((halter dress ))),particle,(Starry sky in beautiful detail),(Hazy fog),(Ruins of beautiful details),(((Standing on the surface of the sea)))",
+                "order": -1
+            },
+            "学院法": {
+                "text": "blonde wavy hair,(shiny long hair),((Gothic Lolita)),blue white skirt,((short skirt)),black Headdress,bowknot,(((hair ornament))),(hair flower),Lace,cross-laced footwear,ribbon-trimmed sleeves,building architecture,((gothic architecture)),starry sky,outdoors,church,(castle)",
+                "order": -1
+            },
+            "星霞海": {
+                "text": "walking,waves,wind,(((glistening light of waves))),(detailed sunset glow),(floating flow),((coral)),(Luminous),coast,(floating colorful bubbles),beautiful detailed sky,(fluorescence),detailed shadow,(conch),beautiful detailed water,starfish,meteor,rainbow,(seabirds),(glinting stars),(glowworm),(splash),detailed cloud,shell,(fireworks)",
+                "order": -1
+            },
+            "冬雪法": {
+                "text": "beautiful detailed sky,night,stars,(red plum blossom),((winter)),(((snowflakes))),((red and white flowers))，(starry sky),(sitting),((colorful)),scenery,lantern,(starfall)",
+                "order": -1
+            }
+        }
+    }
+}

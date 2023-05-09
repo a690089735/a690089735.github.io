@@ -162,3 +162,4 @@ https://cascadeur.com/help/tools/animation_tools/rotation_trajectories
 	看一段跳舞的时候,不会在意衣服的飘动,肌肉的震颤,只会注意脚踩到了哪,手指向了哪,躯干向哪个方向弯曲--这些就是构成关键帧.
 	在试着模仿舞蹈的时候,能帮助我们学会一段动作的pose,就是运动分解帧.
 
+小旗子可以对关键帧做标记

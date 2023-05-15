@@ -1,0 +1,3 @@
+wasm包大小.
+godot开发微信小游戏(Godot 导出到 HTML5 实践)
+https://www.gameweibo.com/article-519984.html

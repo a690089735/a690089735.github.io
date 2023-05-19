@@ -1,0 +1,6 @@
+wasm包大小.
+godot开发微信小游戏(Godot 导出到 HTML5 实践)
+https://www.gameweibo.com/article-519984.html
+
+减小wasm包大小
+https://www.reddit.com/r/godot/comments/125naw2/you_can_reduce_web_build_file_size_by_4mb_by/

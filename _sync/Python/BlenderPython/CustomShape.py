@@ -16,13 +16,15 @@ import bpy
 # if active_object is not None and active_object.type == 'ARMATURE':
 #     print(active_object.data.bones.active.name)
 
-def genShapeFormMeshByBone(m,b):
-    pass
+
+def genShapeFormMeshByBone(bObj, mObj):
+    return mObj.data
+
 
 # 应用
 
 selectedObjects = bpy.context.selected_objects
-# selectedTypes = [obj.type for obj in selectedObjects]
+selectedTypes = [obj.type for obj in selectedObjects]
 activeObject = bpy.context.active_object
 
 
@@ -30,9 +32,11 @@ activeObject = bpy.context.active_object
 # print(len(selectedObjects))
 # 注意,这个方案是绝对替换,也就是物体保持当前样子进行替换
 # 条件:(活动物体)是骨架,刚好俩物体,第一个是网格,骨架里选中了一个骨骼
-if activeObject.type == "ARMATURE" and len(selectedObjects) == 2 and selectedObjects[0].type == "MESH":
-    selectedBones =  [bone for bone in activeObject.data.bones if bone.select]
+if activeObject.type == "ARMATURE" and len(selectedObjects) == 2 and "MESH" in selectedTypes:
+    # selectedBones = [bone for bone in activeObject.data.bones if bone.select]
+    selectedPoseBones = bpy.context.selected_pose_bones_from_active_object()
     # 绝对替换模式,只能选择一个骨骼(其实也可以多个,但实在想不到有啥用处,后面可以考虑考虑)
-    if len(selectedBones) == 1:
+    if len(selectedPoseBones) == 1:
         # print("合适")
-        meshData = genShapeFormMeshByBone(selectedObjects[0],selectedBones[0])
+        meshData = genShapeFormMeshByBone(selectedPoseBones[0], selectedObjects[0])
+        selectedPoseBones[0].custom_shape = meshData

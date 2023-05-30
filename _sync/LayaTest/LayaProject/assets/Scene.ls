@@ -7,6 +7,17 @@
   "top": 0,
   "bottom": 0,
   "name": "Scene2D",
+  "_$comp": [
+    {
+      "_$type": "9f85d930-3b2b-4ed7-b880-968bc868bb6f",
+      "scriptPath": "../src/ShootBullet.ts",
+      "text": "",
+      "bulletPrefab": {
+        "_$uuid": "5cf1c18e-7259-4620-881f-419da5b40397",
+        "_$type": "Prefab"
+      }
+    }
+  ],
   "_$child": [
     {
       "_$id": "lnu3eob9",

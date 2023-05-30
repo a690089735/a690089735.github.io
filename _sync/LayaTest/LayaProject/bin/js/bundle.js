@@ -12,8 +12,51 @@
     return result;
   };
 
-  // src/DragMove.ts
+  // src/BulletMovent.ts
   var { regClass, property } = Laya;
+  var Script = class extends Laya.Script {
+    constructor() {
+      super();
+      this.text = "";
+    }
+    /**
+     * 第一次执行update之前执行，只会执行一次
+     */
+    onStart() {
+      this.sprite = this.owner;
+      this.sprite.rotation = Math.random() * 360;
+    }
+    /**
+     * 手动调用节点销毁时执行
+     */
+    //onDestroy(): void {
+    /**
+     * 每帧更新时执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
+     */
+    onUpdate() {
+      let forward = new Laya.Vector2(0, -1 * Laya.timer.delta);
+      this.sprite.x += forward.x;
+      this.sprite.y += forward.y;
+    }
+    /**
+     * 每帧更新时执行，在update之后执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
+     */
+    //onLateUpdate(): void {}
+    /**
+     * 鼠标点击后执行。与交互相关的还有onMouseDown等十多个函数，具体请参阅文档。
+     */
+    //onMouseClick(): void {}
+  };
+  __name(Script, "Script");
+  __decorateClass([
+    property(String)
+  ], Script.prototype, "text", 2);
+  Script = __decorateClass([
+    regClass("669cd7de-4b84-42b7-b4ad-ffd6ccb19356", "../src/BulletMovent.ts")
+  ], Script);
+
+  // src/DragMove.ts
+  var { regClass: regClass2, property: property2 } = Laya;
   var Sprite = Laya.Sprite;
   var DragMove = class extends Laya.Script {
     get sprite() {
@@ -73,14 +116,14 @@
   };
   __name(DragMove, "DragMove");
   __decorateClass([
-    property({ type: Sprite })
+    property2({ type: Sprite })
   ], DragMove.prototype, "sprite", 1);
   DragMove = __decorateClass([
-    regClass("ad0e797a-dc3d-491a-bba5-ab456c661981", "../src/DragMove.ts")
+    regClass2("ad0e797a-dc3d-491a-bba5-ab456c661981", "../src/DragMove.ts")
   ], DragMove);
 
   // src/Main.ts
-  var { regClass: regClass2, property: property2 } = Laya;
+  var { regClass: regClass3, property: property3 } = Laya;
   var Main = class extends Laya.Script {
     onStart() {
       console.log("Game start");
@@ -88,7 +131,31 @@
   };
   __name(Main, "Main");
   Main = __decorateClass([
-    regClass2("7bad1742-6eed-4d8d-81c0-501dc5bf03d6", "../src/Main.ts")
+    regClass3("7bad1742-6eed-4d8d-81c0-501dc5bf03d6", "../src/Main.ts")
   ], Main);
+
+  // src/ShootBullet.ts
+  var { regClass: regClass4, property: property4 } = Laya;
+  var Script2 = class extends Laya.Script {
+    constructor() {
+      super();
+      this.text = "";
+    }
+    // this.stage.on(Laya.Event.CLICK, this, this.onStageClick);
+    onMouseDown(evt) {
+      let bullet = this.bulletPrefab.create();
+      Laya.stage.addChild(bullet);
+    }
+  };
+  __name(Script2, "Script");
+  __decorateClass([
+    property4(String)
+  ], Script2.prototype, "text", 2);
+  __decorateClass([
+    property4(Laya.Prefab)
+  ], Script2.prototype, "bulletPrefab", 2);
+  Script2 = __decorateClass([
+    regClass4("9f85d930-3b2b-4ed7-b880-968bc868bb6f", "../src/ShootBullet.ts")
+  ], Script2);
 })();
 //# sourceMappingURL=bundle.js.map

@@ -23,7 +23,7 @@ vscode可能需要配置一下terminal.integrated.inheritEnv为false
 vscode
 SVN[C盘不够大的话别安C盘]
 Typora
-
+drawio-desktop
 photoshop
 3dsmax 14 17 20 23
 maya 23

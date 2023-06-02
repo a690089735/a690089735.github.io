@@ -32,11 +32,21 @@ export class Script extends Laya.Script {
     onUpdate(): void {
         // this.sprite.x
         // 获取当前对象的朝向向量
-        let forward = new Laya.Vector2(0, -1 * Laya.timer.delta); // 默认朝上方向
+        let radian = (this.sprite.rotation - 90) * Math.PI / 180
+        let forward = new Laya.Vector2(Math.cos(radian) * 10, Math.sin(radian) * 10); // 默认朝上方向
 
         // 移动对象
         this.sprite.x += forward.x;
         this.sprite.y += forward.y;
+
+        // Laya.Vector2.normalize(new Laya.Vector2(Math.cos(radian) * 10, Math.sin(radian) * 10), forward)
+        // Laya.Vector2.
+
+        // var vector = new Laya.Vector2(3, 4); // 创建一个二维向量
+        // var length = vector. // 计算向量的长度
+        // console.log(length); // 输出结果：5
+        var vector = new Laya.Vector2(3, 4);
+        // vector.length();
     }
 
     /**

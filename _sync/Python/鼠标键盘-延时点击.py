@@ -26,4 +26,4 @@ def Task_TimeOut_ClickPosition(posList:list, tick: int = 1000, sep: int = 1):
     for pos in posList:
         PyMouse().click(pos[0], pos[1])
         sleep(sep)
-Task_TimeOut_ClickPosition([(2055, 249),(3027, 610)], tick = (Get_Offset())[1], sep = 3) ##右侧网页
+Task_TimeOut_ClickPosition([(2055, 249),(3027, 610)], tick = (Get_Offset())[0], sep = 3) ##右侧网页

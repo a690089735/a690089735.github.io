@@ -38,6 +38,8 @@
       let forward = new Laya.Vector2(Math.cos(radian) * 10, Math.sin(radian) * 10);
       this.sprite.x += forward.x;
       this.sprite.y += forward.y;
+      var vector = new Laya.Vector2(3, 4);
+      new Laya.Vector2(3);
     }
     /**
      * 每帧更新时执行，在update之后执行，尽量不要在这里写大循环逻辑或者使用getComponent方法

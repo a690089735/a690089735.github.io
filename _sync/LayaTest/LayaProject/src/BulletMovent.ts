@@ -47,6 +47,7 @@ export class Script extends Laya.Script {
         // console.log(length); // 输出结果：5
         var vector = new Laya.Vector2(3, 4);
         // vector.length();
+        new Laya.Vector2(3);
     }
 
     /**

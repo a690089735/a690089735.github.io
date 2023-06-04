@@ -8,6 +8,8 @@ export class Script extends Laya.Script {
     public text: string = "";
     @property(Laya.Prefab)
     public bulletPrefab: Laya.Prefab;
+    @property(Laya.Sprite)
+    public birthplace: Laya.Sprite;
 
     constructor() {
         super();
@@ -16,6 +18,7 @@ export class Script extends Laya.Script {
 
     onMouseDown(evt: Laya.Event): void {
         let bullet = this.bulletPrefab.create();
+        (bullet as Laya.Sprite).pos = this.birthplace.pos
         Laya.stage.addChild(bullet);
     }
 }

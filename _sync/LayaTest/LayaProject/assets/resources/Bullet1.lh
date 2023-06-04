@@ -1,17 +1,16 @@
 {
   "_$ver": 1,
-  "_$id": "8a4w6501",
-  "_$type": "Image",
-  "name": "Image",
-  "x": 568,
-  "y": 288,
+  "_$id": "dunpe190",
+  "_$type": "Sprite",
+  "name": "Bullet1",
   "width": 32,
   "height": 64,
   "anchorX": 0.5,
-  "centerX": 0,
-  "centerY": 0,
-  "skin": "res://8daa4e1f-cba7-4117-b0d3-eb5c7ad9eefa",
-  "color": "#ffffff",
+  "anchorY": 0.5,
+  "texture": {
+    "_$uuid": "41488331-0ed3-4c38-959b-6ecc4fdac7e6",
+    "_$type": "Texture"
+  },
   "_$comp": [
     {
       "_$type": "669cd7de-4b84-42b7-b4ad-ffd6ccb19356",

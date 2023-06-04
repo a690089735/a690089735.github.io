@@ -1,0 +1,29 @@
+{
+  "__version__": "3.0.7",
+  "game": {
+    "name": "UNKNOW GAME",
+    "app_id": "UNKNOW",
+    "c_id": "0"
+  },
+  "appConfigMaps": [
+    {
+      "app_id": "UNKNOW",
+      "config_id": "6e78d2"
+    }
+  ],
+  "configs": [
+    {
+      "app_id": "UNKNOW",
+      "config_id": "6e78d2",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": [
+        {
+          "service_id": "316",
+          "enable": false,
+          "param": {}
+        }
+      ]
+    }
+  ]
+}

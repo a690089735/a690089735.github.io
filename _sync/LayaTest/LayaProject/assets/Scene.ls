@@ -13,8 +13,11 @@
       "scriptPath": "../src/shootBullet.ts",
       "text": "",
       "bulletPrefab": {
-        "_$uuid": "5cf1c18e-7259-4620-881f-419da5b40397",
+        "_$uuid": "bba45635-0882-4200-81af-3652f7a81121",
         "_$type": "Prefab"
+      },
+      "birthplace": {
+        "_$ref": "lnu3eob9"
       }
     },
     {

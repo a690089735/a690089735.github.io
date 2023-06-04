@@ -34,9 +34,12 @@
      * 每帧更新时执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
      */
     onUpdate() {
-      let forward = new Laya.Vector2(0, -1 * Laya.timer.delta);
+      let radian = (this.sprite.rotation - 90) * Math.PI / 180;
+      let forward = new Laya.Vector2(Math.cos(radian) * 10, Math.sin(radian) * 10);
       this.sprite.x += forward.x;
       this.sprite.y += forward.y;
+      var vector = new Laya.Vector2(3, 4);
+      new Laya.Vector2(3);
     }
     /**
      * 每帧更新时执行，在update之后执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
@@ -144,6 +147,7 @@
     // this.stage.on(Laya.Event.CLICK, this, this.onStageClick);
     onMouseDown(evt) {
       let bullet = this.bulletPrefab.create();
+      bullet.pos = this.birthplace.pos;
       Laya.stage.addChild(bullet);
     }
   };
@@ -154,6 +158,9 @@
   __decorateClass([
     property4(Laya.Prefab)
   ], Script2.prototype, "bulletPrefab", 2);
+  __decorateClass([
+    property4(Laya.Sprite)
+  ], Script2.prototype, "birthplace", 2);
   Script2 = __decorateClass([
     regClass4("9f85d930-3b2b-4ed7-b880-968bc868bb6f", "../src/shootBullet.ts")
   ], Script2);

@@ -16,6 +16,7 @@ grow_vertical = 2
 mouse_filter = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(288, 324)
 texture = ExtResource("2_nlwbp")
 

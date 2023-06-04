@@ -10,12 +10,17 @@
   "_$comp": [
     {
       "_$type": "9f85d930-3b2b-4ed7-b880-968bc868bb6f",
-      "scriptPath": "../src/ShootBullet.ts",
+      "scriptPath": "../src/shootBullet.ts",
       "text": "",
       "bulletPrefab": {
         "_$uuid": "5cf1c18e-7259-4620-881f-419da5b40397",
         "_$type": "Prefab"
       }
+    },
+    {
+      "_$type": "daf2f70e-d217-4a17-b1d9-41ffcab1b6b3",
+      "scriptPath": "../src/Touching.ts",
+      "text": ""
     }
   ],
   "_$child": [

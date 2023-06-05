@@ -11,7 +11,7 @@ import datetime
 def Get_Offset():
     result = []
     now = datetime.datetime.now().time()
-    for t in ['19:01:00','20:36:00','21:01:00']:
+    for t in ['19:02:00','20:36:00','21:01:00']:
         target_time = datetime.datetime.strptime(t, '%H:%M:%S').time()
         time_diff = datetime.datetime.combine(datetime.date.min, target_time) - datetime.datetime.combine(datetime.date.min, now)
         seconds_diff = time_diff.total_seconds()

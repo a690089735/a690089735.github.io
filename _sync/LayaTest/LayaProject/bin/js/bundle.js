@@ -137,7 +137,7 @@
     regClass3("7bad1742-6eed-4d8d-81c0-501dc5bf03d6", "../src/Main.ts")
   ], Main);
 
-  // src/shootBullet.ts
+  // src/ShootBullet.ts
   var { regClass: regClass4, property: property4 } = Laya;
   var Script2 = class extends Laya.Script {
     constructor() {
@@ -162,7 +162,7 @@
     property4(Laya.Sprite)
   ], Script2.prototype, "birthplace", 2);
   Script2 = __decorateClass([
-    regClass4("9f85d930-3b2b-4ed7-b880-968bc868bb6f", "../src/shootBullet.ts")
+    regClass4("9f85d930-3b2b-4ed7-b880-968bc868bb6f", "../src/ShootBullet.ts")
   ], Script2);
 
   // src/Touching.ts
@@ -212,5 +212,66 @@
   Touching = __decorateClass([
     regClass5("daf2f70e-d217-4a17-b1d9-41ffcab1b6b3", "../src/Touching.ts")
   ], Touching);
+
+  // src/ScreenHalf.ts
+  var { regClass: regClass6, property: property6 } = Laya;
+  var Left = class extends Laya.Script {
+    constructor() {
+      super();
+      this.text = "";
+    }
+    /**
+     * 组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次
+     */
+    onAwake() {
+      var box = this.owner;
+      box.width = Laya.stage.width * 0.5;
+      box.height = Laya.stage.height;
+      function onResizeBox(theBox = box) {
+        theBox.width = Laya.stage.width * 0.5;
+        theBox.height = Laya.stage.height;
+        console.log(Laya.stage.width);
+      }
+      __name(onResizeBox, "onResizeBox");
+      Laya.stage.on(Laya.Event.RESIZE, this, onResizeBox);
+    }
+    /**
+     * 组件被启用后执行，例如节点被添加到舞台后
+     */
+    //onEnable(): void {}
+    /**
+     * 组件被禁用时执行，例如从节点从舞台移除后
+     */
+    //onDisable(): void {}
+    /**
+     * 第一次执行update之前执行，只会执行一次
+     */
+    //onStart(): void {}
+    /**
+     * 手动调用节点销毁时执行
+     */
+    //onDestroy(): void {
+    /**
+     * 每帧更新时执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
+     */
+    //onUpdate(): void {}
+    /**
+     * 每帧更新时执行，在update之后执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
+     */
+    //onLateUpdate(): void {}
+    /**
+     * 鼠标点击后执行。与交互相关的还有onMouseDown等十多个函数，具体请参阅文档。
+     */
+    onMouseClick() {
+      console.log(this.owner.name);
+    }
+  };
+  __name(Left, "Left");
+  __decorateClass([
+    property6(String)
+  ], Left.prototype, "text", 2);
+  Left = __decorateClass([
+    regClass6("86cee8ba-e66a-4ce5-93a0-4e55ef2bdec5", "../src/ScreenHalf.ts")
+  ], Left);
 })();
 //# sourceMappingURL=bundle.js.map

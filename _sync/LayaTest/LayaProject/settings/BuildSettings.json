@@ -1,3 +1,8 @@
 {
-  "name": "LayaProject"
+  "name": "LayaProject",
+  "startupScene": "res://9b931ecf-fde9-44dd-acf3-15f8dc807965",
+  "includedScenes": [
+    "res://ab1ea70d-78c8-4295-b498-87c96a165240"
+  ],
+  "alwaysIncluded": []
 }

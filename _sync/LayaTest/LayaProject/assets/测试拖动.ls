@@ -10,7 +10,7 @@
   "_$comp": [
     {
       "_$type": "9f85d930-3b2b-4ed7-b880-968bc868bb6f",
-      "scriptPath": "../src/shootBullet.ts",
+      "scriptPath": "../src/ShootBullet.ts",
       "text": "",
       "bulletPrefab": {
         "_$uuid": "bba45635-0882-4200-81af-3652f7a81121",

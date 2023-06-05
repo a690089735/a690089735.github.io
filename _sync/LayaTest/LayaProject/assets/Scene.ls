@@ -10,7 +10,7 @@
   "_$comp": [
     {
       "_$type": "9f85d930-3b2b-4ed7-b880-968bc868bb6f",
-      "scriptPath": "../src/ShootBullet.ts",
+      "scriptPath": "../src/shootBullet.ts",
       "text": "",
       "bulletPrefab": {
         "_$uuid": "bba45635-0882-4200-81af-3652f7a81121",
@@ -19,6 +19,11 @@
       "birthplace": {
         "_$ref": "lnu3eob9"
       }
+    },
+    {
+      "_$type": "daf2f70e-d217-4a17-b1d9-41ffcab1b6b3",
+      "scriptPath": "../src/Touching.ts",
+      "text": ""
     }
   ],
   "_$child": [

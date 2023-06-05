@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://fy2m4v4xvgnl"]
+
+[ext_resource type="Script" path="res://虚拟摇杆/触摸虚拟摇杆.gd" id="1_jwifk"]
+[ext_resource type="Texture2D" uid="uid://6dk31vlhhwox" path="res://icon.svg" id="2_nlwbp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mh652"]
+size = Vector2(576, 648)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(288, 324)
+texture = ExtResource("2_nlwbp")
+
+[node name="摇杆触发器" type="TouchScreenButton" parent="."]
+position = Vector2(288, 324)
+shape = SubResource("RectangleShape2D_mh652")
+script = ExtResource("1_jwifk")
+
+[connection signal="item_rect_changed" from="." to="摇杆触发器" method="_on_control_item_rect_changed"]
+[connection signal="pressed" from="摇杆触发器" to="摇杆触发器" method="_on_pressed"]
+[connection signal="released" from="摇杆触发器" to="摇杆触发器" method="_on_released"]

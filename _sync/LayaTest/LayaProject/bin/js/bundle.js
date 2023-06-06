@@ -313,38 +313,113 @@
       }
     }
     //实例版本
+    /**
+     * 2D向量加法
+     * @param	b  另一个向量.
+     * @return 新的2D向量
+     */
     add(b) {
       return new Vector2D(this.x + b.x, this.y + b.y);
     }
+    /**
+     * 2D向量减法
+     * @param	b  另一个向量.
+     * @return 新的2D向量
+     */
     sub(b) {
       return new Vector2D(this.x - b.x, this.y - b.y);
     }
+    /**
+     * 2D向量乘法
+     * @param	b  另一个向量.
+     * @return 新的2D向量
+     */
     mul(b) {
       return new Vector2D(this.x * b.x, this.y * b.y);
     }
+    /**
+     * 2D向量除法
+     * @param	b  另一个向量.
+     * @return 新的2D向量
+     */
     div(b) {
       return new Vector2D(this.x / b.x, this.y / b.y);
     }
+    /**
+     * 2D向量缩放(标量乘法)
+     * @param	b  另一个向量.
+     * @return 新的2D向量
+     */
     scale(b) {
       return new Vector2D(this.x * b, this.y * b);
     }
+    /**
+     * 2D向量点乘
+     * @param	b  另一个向量.
+     * @return 两个向量的点乘值(未规一化)
+     */
     dot(b) {
       return this.x * b.x + this.y * b.y;
     }
+    /**
+     * 2D向量求距离
+     * @param	b  另一个向量.
+     * @return 两个向量之间的距离
+     */
     distance(b) {
       const dx = this.x - b.x;
       const dy = this.y - b.y;
       return Math.sqrt(dx * dx + dy * dy);
     }
+    /**
+     * 2D向量减法
+     * @return 向量的模长 
+     */
     magnitude() {
       return Math.sqrt(this.x * this.x + this.y * this.y);
     }
+    /**
+     * 2D向量归一化
+     * @return 新的2D向量
+     */
     normalize() {
       const len = this.magnitude();
       if (len === 0) {
-        return new Vector2D(0, 0);
+        return new Vector2D(this.x, this.y);
       }
       return new Vector2D(this.x / len, this.y / len);
+    }
+    /**
+     * 2D向量求角度
+     * @return 向量角度
+     */
+    toAngle() {
+      var angle = Math.atan2(this.y, this.x) * 180 / Math.PI;
+      if (angle < 0) {
+        angle += 360;
+      }
+      return angle;
+    }
+    /**
+     * 2D向量旋转
+     * @param	angle  旋转角度
+     * @return 新的2D向量
+     */
+    rotate(angle) {
+      const radian = angle * Math.PI / 180;
+      const cos = Math.cos(radian);
+      const sin = Math.sin(radian);
+      return new Vector2D(this.x * cos - this.y * sin, this.x * sin + this.y * cos);
+    }
+    /**
+     * 求两个2D向量夹角
+     * @param	b  另一个向量.
+     * @return 两个向量之间的角度
+     */
+    angleTo(b) {
+      const dot = this.x * b.x + this.y * b.y;
+      const det = this.x * b.y - this.y * b.x;
+      return Math.atan2(det, dot) * 180 / Math.PI;
     }
     //静态版本
     // public static distance(a: Vector2D, b: Vector2D): number {

@@ -22,8 +22,11 @@
       "_$comp": [
         {
           "_$type": "86cee8ba-e66a-4ce5-93a0-4e55ef2bdec5",
-          "scriptPath": "../src/ScreenHalf.ts",
-          "text": ""
+          "scriptPath": "../src/虚拟摇杆/ScreenHalf.ts",
+          "virtualStickPrefab": {
+            "_$uuid": "029cd8dc-dba0-4faf-baab-ddd43c493269",
+            "_$type": "Prefab"
+          }
         }
       ]
     },
@@ -43,8 +46,11 @@
       "_$comp": [
         {
           "_$type": "86cee8ba-e66a-4ce5-93a0-4e55ef2bdec5",
-          "scriptPath": "../src/ScreenHalf.ts",
-          "text": ""
+          "scriptPath": "../src/虚拟摇杆/ScreenHalf.ts",
+          "virtualStickPrefab": {
+            "_$uuid": "029cd8dc-dba0-4faf-baab-ddd43c493269",
+            "_$type": "Prefab"
+          }
         }
       ]
     }

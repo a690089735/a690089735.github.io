@@ -21,4 +21,5 @@ export class Script extends Laya.Script {
         (bullet as Laya.Sprite).pos = this.birthplace.pos
         Laya.stage.addChild(bullet);
     }
+    
 }

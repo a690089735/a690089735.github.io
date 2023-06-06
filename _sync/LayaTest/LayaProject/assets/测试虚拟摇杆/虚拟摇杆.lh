@@ -9,7 +9,7 @@
     {
       "_$id": "yrt1i3o3",
       "_$type": "Sprite",
-      "name": "基座",
+      "name": "Base",
       "width": 100,
       "height": 100,
       "anchorX": 0.5,
@@ -22,7 +22,7 @@
     {
       "_$id": "dy1e5oxg",
       "_$type": "Sprite",
-      "name": "摇杆",
+      "name": "Button",
       "width": 100,
       "height": 100,
       "anchorX": 0.5,

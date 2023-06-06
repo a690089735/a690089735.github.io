@@ -1,5 +1,6 @@
 const { regClass, property } = Laya;
-import { Vector2D } from 'Vector2D数学/Vector2D';
+import { Vector2D } from '../Vector2D数学/Vector2D';
+
 @regClass()
 export class Left extends Laya.Script {
 
@@ -89,8 +90,19 @@ export class Left extends Laya.Script {
     onMouseDrag(evt: Laya.Event): void {
 
         // console.log(evt.stageX,evt.stageY);y
-        this.virtualStickButton.pos(evt.stageX - this.virtualStick.x, evt.stageY - this.virtualStick.y);
-        this.virtualStickBase.pos(evt.stageX - this.virtualStick.x, evt.stageY - this.virtualStick.y);
+        // this.virtualStickButton.pos(evt.stageX - this.virtualStick.x, evt.stageY - this.virtualStick.y);
+        // this.virtualStickBase.pos(evt.stageX - this.virtualStick.x, evt.stageY - this.virtualStick.y);
+
+        var buttonPos = new Vector2D(evt.stageX - this.virtualStick.x, evt.stageY - this.virtualStick.y);
+        var basePos = new Vector2D(this.virtualStickBase.x, this.virtualStickBase.y);
+        var distanceLimit = 40;
+        var distance = buttonPos.distance(basePos);
+        if (distance > distanceLimit) {
+            basePos = basePos.add(buttonPos.sub(basePos).normalize().scale(distance - distanceLimit));
+        }
+
+        this.virtualStickButton.pos(buttonPos.x, buttonPos.y);
+        this.virtualStickBase.pos(basePos.x, basePos.y);
     }
 
     /**

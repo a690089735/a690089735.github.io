@@ -1,10 +1,10 @@
 2a60927148abd1d33b818b535e306557
-::res://::1686062102
+::res://::1686149364
 export_presets.cfg::TextFile::-1::1685888269::0::1::::<><>::
 icon.svg::CompressedTexture2D::2182705856755626515::1685802698::1685979187::1::::<><>::
-::res://虚拟摇杆/::1685981059
-半屏场景.tscn::PackedScene::402151629586392533::1685981059::0::1::::<><>::res://虚拟摇杆/触摸虚拟摇杆.gd<>uid://6dk31vlhhwox
-虚拟摇杆.tscn::PackedScene::7840244172403210435::1685981059::0::1::::<><>::uid://yvtffdqv7rqy<>uid://s0h8h0ekuh3o
+::res://虚拟摇杆/::1686149082
+半屏场景.tscn::PackedScene::402151629586392533::1686149082::0::1::::<><>::res://虚拟摇杆/触摸虚拟摇杆.gd<>uid://6dk31vlhhwox
+虚拟摇杆.tscn::PackedScene::7840244172403210435::1686149082::0::1::::<><>::uid://yvtffdqv7rqy<>uid://s0h8h0ekuh3o
 触摸虚拟摇杆.gd::GDScript::-1::1685978973::0::1::::<>TouchScreenButton<>::
 ::res://虚拟摇杆/images/::1685802772
 Joystick.png::CompressedTexture2D::2467151037702465110::1563647341::1685802772::1::::<><>::

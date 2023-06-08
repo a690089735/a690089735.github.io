@@ -16,27 +16,42 @@ import bpy
 # if active_object is not None and active_object.type == 'ARMATURE':
 #     print(active_object.data.bones.active.name)
 
+def clearTempData():
+    # 删除未使用的物体
+    for obj in bpy.data.objects:
+        if obj.users == 0:
+            bpy.data.objects.remove(obj)
 
-def genShapeFormMeshByBone(bObj, mObj):
-    return mObj.data
+    # 删除未使用的物体数据
+    for mesh in bpy.data.meshes:
+        if mesh.users == 0:
+            bpy.data.meshes.remove(mesh)
+
+def genShapeFormMeshByBone(boneObject:object, oldObject:object):
+    oldMesh :bpy.types.Mesh= oldObject.data
+    newMesh= bpy.data.meshes.new("BoneShape")
+    newMesh.from_pydata(oldMesh.vertices.items(),oldMesh.edges.items(),oldMesh.polygons.items())
+    # .new_from_object(mObj)
+    newObject = bpy.data.objects.new("BoneShape",newMesh)
+    return newObject
 
 
 # 应用
 
 selectedObjects = bpy.context.selected_objects
-selectedTypes = [obj.type for obj in selectedObjects]
-activeObject = bpy.context.active_object
-
+selectedMesh = [obj for obj in bpy.context.selected_objects if obj.type == "MESH"][0]
+activeArmature = bpy.context.active_object
 
 # activeObject.data.bones.active.name
 # print(len(selectedObjects))
 # 注意,这个方案是绝对替换,也就是物体保持当前样子进行替换
 # 条件:(活动物体)是骨架,刚好俩物体,第一个是网格,骨架里选中了一个骨骼
-if activeObject.type == "ARMATURE" and len(selectedObjects) == 2 and "MESH" in selectedTypes:
+if len(selectedObjects) == 2 and activeArmature.type == "ARMATURE" and selectedMesh.type == "MESH":
     # selectedBones = [bone for bone in activeObject.data.bones if bone.select]
-    selectedPoseBones = bpy.context.selected_pose_bones_from_active_object()
+    selectedPoseBone = bpy.context.active_pose_bone
     # 绝对替换模式,只能选择一个骨骼(其实也可以多个,但实在想不到有啥用处,后面可以考虑考虑)
-    if len(selectedPoseBones) == 1:
+    if selectedPoseBone.bone.select:
         # print("合适")
-        meshData = genShapeFormMeshByBone(selectedPoseBones[0], selectedObjects[0])
-        selectedPoseBones[0].custom_shape = meshData
+        objectData = genShapeFormMeshByBone(selectedPoseBone, selectedMesh)
+        selectedPoseBone.custom_shape = objectData
+clearTempData()

@@ -31,6 +31,7 @@ declare class Laya {
      * @param	plugins 参数已失效。
      */
     static init(width: number, height: number, ...plugins: any[]): Promise<void>;
+    static createRender(): Laya.Render;
     static addWasmModule(id: string, exports: WebAssembly.Exports, memory: WebAssembly.Memory): void;
     /**
      * 表示是否捕获全局错误并弹出提示。默认为false。
@@ -123,6 +124,7 @@ declare module Laya {
         static fontFamilyMap: any;
         /**tempConfig Fixed number of frames */
         static fixedFrames: boolean;
+        static destroyResourceImmediatelyDefault: boolean;
     }
     /**
      * <code>Config3D</code> 类用于创建3D初始化配置。
@@ -168,6 +170,10 @@ declare module Laya {
         * X、Y、Z轴的光照集群数量,Z值会影响Cluster接受区域光(点光、聚光)影响的数量,Math.floor(2048 / lightClusterCount.z - 1) * 4 为每个Cluster的最大平均接受区域光数量,如果每个Cluster所接受光源影响的平均数量大于该值，则较远的Cluster会忽略其中多余的光照影响。
         */
         static lightClusterCount: Vector3;
+        /**
+         * 最大形变数量
+         */
+        static maxMorphTargetCount: number;
         /**
         * 设置分辨率大小（并不是实际渲染分辨率）
         * @param width
@@ -219,7 +225,7 @@ declare module Laya {
          *
          *      number : 数字输入。
          *      string : 字符串输入。默认为单行输入，如果是多行，需要激活multiline选项。
-         *      boolean : 多选框。
+         *      boolean : 布尔值输入，用于单选框或多选框。
          *      color : 一个颜色框+调色盘+拾色器
          *      vec2 : XY输入的组合
          *      vec3 : XYZ输入的组合
@@ -233,20 +239,20 @@ declare module Laya {
          * inspector为null的话则是完全不创建。
          */
         inspector: string;
-        /** 隐藏控制。
-         * 可以用表达式，支持的语法有：
-         * 1. 字符串。例如"!data.a && !data.b"，表示属性a和属性b均为空时，隐藏这个属性。隐含的变量有两个，data为当前数据，field为IPropertyField接口。
-         * 2. 函数。函数原型为func(data:any, field:IPropertyField)。
+        /** 隐藏控制:true隐藏，false显示。常用于关联属性的情况。
+         * 1. 可以用表达式，通过将条件表达式放到字符串里，获得布尔类型的运算结果，例如"!data.a && !data.b"，表示属性a和属性b均为空时，条件成立（true），隐藏这个属性。
+         * 2. 这里的data为当前组件的对象数据，data.a与data.b属性字段的a与b就是指当前组件中的a与b属性值，通过这种方法取到组件对象数据中的属性值，用于条件判断，作用于当前属性是否隐藏。
          */
         hidden: boolean | string;
-        /** 只读控制。可以用表达式，参考隐藏控制。 */
-        readonly: boolean | string | Function;
+        /** 只读控制。
+         * 1. 可以用表达式，通过将条件表达式放到字符串里，获得布尔类型的运算结果，例如"!data.a && !data.b"，表示属性a和属性b均为空时，条件成立（true），该属性只读。
+         * 2. 这里的data为当前组件的对象数据，data.a与data.b属性字段的a与b就是指当前组件中的a与b属性值，通过这种方法取到组件对象数据中的属性值，用于条件判断，作用于当前属性是否隐藏。
+         */
+        readonly: boolean | string;
         /** 数据检查机制。
-         * 可以用表达式，支持的语法有：
-         * 1. 字符串。例如"data.a"， 如果data.a是一个字符串，表示验证不通过，这个字符串作为错误提示信息显示；如果是其他值，则表示验证通过。
-         *    隐含的变量有三个，data为当前数据，value为当前用户输入的值，field为IPropertyField接口。
-         * 2. 函数。函数原型为func(data:any, value:any, field:IPropertyField)。
-         *    如果返回值是一个字符串，表示验证不通过，这个字符串作为错误提示信息显示；如果是其他值，则表示验证通过。
+         * 1. 将包括表达式的字符串传入，用于判断检查是否符合表达式的条件。符合条件，需要返回报错信息。
+         * 2. 使用示例为："if(value == data.a) return '不能与a的值相同'"
+         * 其中的value为当前用户在该属性输入的值，data为当前组件的对象数据，data.a是当前组件中的a属性值
          */
         validator: string;
         /** 是否序列化 */
@@ -1513,13 +1519,6 @@ declare module Laya {
          */
         private _setClipDatasToNode;
         /**
-         * 启用过渡
-         * @param layerindex
-         * @param transition
-         * @returns
-         */
-        private _applyTransition;
-        /**
          * 播放动画
          * @param name 动画名称
          * @param layerIndex 层索引
@@ -1587,6 +1586,7 @@ declare module Laya {
          * @param data
          */
         constructor(data: any);
+        private _getAnimatorTransition2D;
     }
     class AnimatorControllerLayer2D implements IClone {
         /**混合模式_覆盖。 */
@@ -1719,6 +1719,7 @@ declare module Laya {
     interface TypeAnimatorState {
         x: number;
         y: number;
+        /**-1代表enter，-2代表exit，-3代表anyState */
         id: string;
         name: string;
         speed?: number;
@@ -1792,6 +1793,8 @@ declare module Laya {
      * <code>Animator</code> 类用于创建动画组件。
      */
     class AnimatorState2D extends EventDispatcher implements IClone {
+        /**play on awake start offset*/
+        cycleOffset: number;
         /**
          * 名称
          */
@@ -2750,6 +2753,8 @@ declare module Laya {
          * 动画事件 离开时调用
          */
         static EVENT_OnStateExit: string;
+        /**是否循环播放,为0时则使用_clip.islooping，1为循环，2为不循环 */
+        _isLooping: 0 | 1 | 2;
         curTransition: AnimatorTransition;
         /**名称。*/
         name: string;
@@ -2759,11 +2764,14 @@ declare module Laya {
         clipStart: number;
         /**动作播放结束时间。*/
         clipEnd: number;
+        /**play on awake start offset*/
+        cycleOffset: number;
         /**
          * 动作。
          */
         get clip(): AnimationClip | null;
         set clip(value: AnimationClip | null);
+        get islooping(): boolean;
         /**
          * IDE
          */
@@ -2911,6 +2919,7 @@ declare module Laya {
         cloneTo(destObject: any): void;
     }
     enum KeyFrameValueType {
+        None = -1,
         Float = 0,
         Position = 1,
         Rotation = 2,
@@ -2920,6 +2929,142 @@ declare module Laya {
         Vector3 = 6,
         Vector4 = 7,
         Color = 8
+    }
+    class HLOD extends Component {
+        constructor();
+        /**
+         * IDE
+         */
+        get bounds(): Bounds;
+        set bounds(value: Bounds);
+        /**
+         * IDE
+         */
+        get lodResource(): HLODResourceGroup[];
+        set lodResource(value: HLODResourceGroup[]);
+        /**
+         * lod裁剪过滤
+         */
+        set lodCullRateArray(value: number[]);
+        get lodCullRateArray(): number[];
+        private _applyLODResource;
+        private _releaseGroupRender;
+        onUpdate(): void;
+        applyResource(resource: HLODResourceGroup): void;
+        onEnable(): void;
+        onDisable(): void;
+        onDestroy(): void;
+        _cloneTo(dest: HLOD): void;
+    }
+    class HLODBatchMesh extends GeometryElement {
+        /**
+         * instance HLODBatchMesh
+         */
+        constructor();
+        /**
+         * 合批后的mesh
+         * @param mesh
+         * @param bounds
+         */
+        set batchMesh(mesh: Mesh);
+        get batchMesh(): Mesh;
+        /**
+         * 合批子mesh信息
+         */
+        set batchSubMeshInfo(value: HLODBatchSubMesh[]);
+        get batchSubMeshInfo(): HLODBatchSubMesh[];
+        get drawSubMeshs(): HLODBatchSubMesh[];
+        /**
+         * 销毁
+         */
+        destroy(): void;
+    }
+    class HLODRender extends BaseRender {
+        constructor();
+        /**
+         * set HLOD element
+         */
+        get curHLODRS(): HLODElement;
+        set curHLODRS(value: HLODElement);
+        /**
+         * 根据LOD资源生成渲染节点
+         * @param source
+         * @returns
+         */
+        private _createRenderelementByHLODElement;
+        /**
+         * change Render Mesh
+         */
+        private _changeMesh;
+        /**
+         * re caculate BoundBox
+         */
+        _calculateBoundingBox(): void;
+        /**
+         * update data
+         * @param context
+         * @param transform
+         */
+        _renderUpdate(context: RenderContext3D, transform: Transform3D): void;
+        _needRender(boundFrustum: BoundFrustum, context: RenderContext3D): boolean;
+        onEnable(): void;
+        onDisable(): void;
+        onDestroy(): void;
+        _cloneTo(dest: HLODRender): void;
+    }
+    /**
+     * HLOD的设置
+     */
+    class HLODConfig {
+        releaseCallTime: number;
+        releaseTime: number;
+    }
+    /**
+     * HLODBatch resource
+     */
+    class HLODBatchSubMesh {
+        bounds: Bounds;
+        drawPramas: Vector2;
+    }
+    /**
+     * HLODElement 一组HLODRenderElement资源
+     */
+    class HLODElement {
+        /**batch mesh */
+        HLODMesh: HLODBatchMesh;
+        /**material */
+        private _material;
+        get material(): Material;
+        set material(value: Material);
+        /**lightmap */
+        private _lightmap;
+        get lightmap(): Lightmap;
+        set lightmap(value: Lightmap);
+        /**
+         * 释放资源
+         * lightmap direct destroy
+         */
+        release(): void;
+    }
+    /**
+     * HLOD Resource
+     * Load/release
+     */
+    class HLODResourceGroup {
+        url: string;
+        updateMark: number;
+        resources: HLODElement[];
+        loaded: boolean;
+        /**
+         * loaded
+         * @param callFun
+         * @param hlod
+         */
+        load(callFun: Function, hlod: any): void;
+        /**
+         * 释放HLODGourp资源
+         */
+        release(): void;
     }
     /**
      * 此类描述Lod数据
@@ -3081,10 +3226,6 @@ declare module Laya {
     type Script3D = Script;
     class StaticBatchMesh {
         static create(info: StaticMeshMergeInfo): StaticBatchMesh;
-        _bufferState: BufferState;
-        _vertexBuffer: VertexBuffer3D;
-        _indexBuffer: IndexBuffer3D;
-        _staticSubMeshes: Map<Material, StaticBatchSubMesh>;
         bounds: Bounds;
         constructor();
         setBuffer(vertex: VertexBuffer3D, index: IndexBuffer3D): void;
@@ -3128,8 +3269,17 @@ declare module Laya {
     }
     class StaticMeshMergeInfo {
         static create(render: MeshRenderer): StaticMeshMergeInfo;
+        /**
+         * receiveShadow接受阴影
+         */
         receiveShadow: boolean;
+        /**
+         * 光照贴图索引
+         */
         lightmapIndex: number;
+        /**
+         * 顶点描述
+         */
         vertexDec: VertexDeclaration;
         private _renders;
         get renders(): MeshRenderer[];
@@ -3631,13 +3781,16 @@ declare module Laya {
      */
     class VolumeManager implements IVolumeManager {
         static ReflectionProbeVolumeType: number;
+        static VolumetricGIType: number;
         /** 有些Volume需要特殊的管理能力 */
         private _regVolumeManager;
+        _volumetricGIManager: VolumetricGIManager;
         constructor();
         /**
          * get reflection manager
          */
         get reflectionProbeManager(): ReflectionProbeManager;
+        get volumetricGIManager(): VolumetricGIManager;
         /**
          * add volume
          * @param volume
@@ -3664,6 +3817,32 @@ declare module Laya {
          */
         reCaculateAllRenderObjects(baseRenders: SingletonList<BaseRender>): void;
         needreCaculateAllRenderObjects(): boolean;
+    }
+    class VolumetricGI extends Volume {
+        probeCounts: Vector3;
+        probeStep: Vector3;
+        /**
+         * x: irradiance probe texel size
+         * y: distance probe texel size
+         * z: normalBias
+         * w: viewBias
+         */
+        private _params;
+        private _irradiance;
+        set irradiance(value: Texture2D);
+        private _distance;
+        set distance(value: Texture2D);
+        intensity: number;
+        constructor();
+        get normalBias(): number;
+        set normalBias(value: number);
+        get viewBias(): number;
+        set viewBias(value: number);
+        get irradianceTexel(): number;
+        get distanceTexel(): number;
+        applyVolumetricGI(shaderData: ShaderData): void;
+        _onDestroy(): void;
+        _cloneTo(dest: VolumetricGI): void;
     }
     /**
      * <code>BaseCamera</code> 类用于创建摄像机的父类。
@@ -4889,6 +5068,12 @@ declare module Laya {
          */
         removeDefine(define: ShaderDefine): void;
         /**
+         * 开启 或 关闭 shader 宏定义
+         * @param define
+         * @param value true: addDefine, false: removeDefine
+         */
+        setDefine(define: ShaderDefine, value: boolean): void;
+        /**
          * 是否包含Shader宏定义。
          * @param value 宏定义。
          */
@@ -5326,10 +5511,6 @@ declare module Laya {
         /**透明混合_物理上看似合理的透明。*/
         Transparent = 3
     }
-    enum PBRMaterialType {
-        Standard = 0,
-        Anisotropy = 1
-    }
     /**
      * PBR材质的父类,该类为抽象类。
      */
@@ -5436,14 +5617,56 @@ declare module Laya {
          * 渲染模式。
          */
         set renderMode(value: number);
-        private resetNeedTBN;
+        /**
+         * 是否开启 anisotropy
+         */
+        get anisotropyEnable(): boolean;
+        set anisotropyEnable(value: boolean);
+        /**
+         * anisotropy 强度
+         */
         get anisotropy(): number;
         set anisotropy(value: number);
-        get tangentTexture(): Texture2D;
-        set tangentTexture(value: Texture2D);
-        private _materialType;
-        get materialType(): PBRMaterialType;
-        set materialType(value: PBRMaterialType);
+        /**
+         * anisotropy 强度贴图
+         */
+        get anisotropyTexture(): Texture2D;
+        set anisotropyTexture(value: Texture2D);
+        /**
+         * anisotropy 在 切线空间 中的旋转
+         */
+        get anisotropyRotation(): number;
+        set anisotropyRotation(value: number);
+        /**
+         * 是否开启 clear coat
+         */
+        get clearCoatEnable(): boolean;
+        set clearCoatEnable(value: boolean);
+        /**
+         * clear coat 层 强度
+         */
+        get clearCoat(): number;
+        set clearCoat(value: number);
+        /**
+         * clear coat 强度贴图
+         */
+        get clearCoatTexture(): BaseTexture;
+        set clearCoatTexture(value: BaseTexture);
+        /**
+         * clear coat 层 粗糙度
+         */
+        get clearCoatRoughness(): number;
+        set clearCoatRoughness(value: number);
+        /**
+         * clear coat 层 粗糙度贴图
+         */
+        get clearCoatRoughnessTexture(): BaseTexture;
+        set clearCoatRoughnessTexture(value: BaseTexture);
+        /**
+         * clear coat 法线贴图
+         */
+        get clearCoatNormalTexture(): BaseTexture;
+        set clearCoatNormalTexture(value: BaseTexture);
         constructor();
         /**
          * @deprecated
@@ -5765,6 +5988,11 @@ declare module Laya {
      * <code>MeshRenderer</code> 类用于网格渲染器。
      */
     class MeshRenderer extends BaseRender {
+        private morphTargetActiveCount;
+        private morphTargetActiveWeight;
+        private morphTargetActiveIndex;
+        private morphtargetChannels;
+        private _morphWeightChange;
         /**
          * 创建一个新的 <code>MeshRender</code> 实例。
          */
@@ -5772,6 +6000,17 @@ declare module Laya {
         /**@intermal */
         getMesh(): Mesh;
         protected _changeVertexDefine(mesh: Mesh): void;
+        private _morphTargetValues;
+        setMorphChannelWeight(channelName: string, weight: number): void;
+        /**
+         * 更新 morph target 数据
+         */
+        protected _applyMorphdata(): void;
+        /**
+         * 更新 mesh 时 更新 morph target data (shader define)
+         * @param mesh
+         */
+        protected _changeMorphData(mesh: Mesh): void;
         protected _onDestroy(): void;
         /**
          * @override
@@ -7789,10 +8028,6 @@ declare module Laya {
         set volume(value: Volume);
         get volume(): Volume;
         /**
-         * 设置反射球
-         */
-        set probReflection(voluemProbe: ReflectionProbe);
-        /**
          * 创建一个新的 <code>BaseRender</code> 实例。
          */
         constructor();
@@ -8194,9 +8429,8 @@ declare module Laya {
     }
     class InstanceRenderElement extends RenderElement {
         static create(): InstanceRenderElement;
-        /**判断是否需要更新数据 */
-        _isUpdataData: boolean;
         constructor();
+        set InvertFront(value: boolean);
         protected _createRenderElementOBJ(): void;
         compileShader(context: IRenderContext3D): void;
         _renderUpdatePre(context: RenderContext3D): void;
@@ -8719,6 +8953,7 @@ declare module Laya {
     class Sprite3DRenderDeclaration {
         /**盒子反射宏 */
         static SHADERDEFINE_SPECCUBE_BOX_PROJECTION: ShaderDefine;
+        static SHADERDEFINE_VOLUMETRICGI: ShaderDefine;
     }
     /**
      * <code>RenderableSprite3D</code> 类用于可渲染3D精灵的父类，抽象类不允许实例。
@@ -8742,6 +8977,17 @@ declare module Laya {
         static REFLECTIONCUBE_PROBEPOSITION: number;
         static REFLECTIONCUBE_PROBEBOXMAX: number;
         static REFLECTIONCUBE_PROBEBOXMIN: number;
+        /** volumetric GI */
+        static VOLUMETRICGI_PROBECOUNTS: number;
+        static VOLUMETRICGI_PROBESTEPS: number;
+        static VOLUMETRICGI_PROBESTARTPOS: number;
+        static VOLUMETRICGI_PROBEPARAMS: number;
+        static VOLUMETRICGI_IRRADIANCE: number;
+        static VOLUMETRICGI_DISTANCE: number;
+        static SHADERDEFINE_MORPHTARGET: ShaderDefine;
+        static SHADERDEFINE_MORPHTARGET_POSITION: ShaderDefine;
+        static SHADERDEFINE_MORPHTARGET_NORMAL: ShaderDefine;
+        static SHADERDEFINE_MORPHTARGET_TANGENT: ShaderDefine;
         /**
          * @deprecated
          *  反射贴图
@@ -9537,6 +9783,7 @@ declare module Laya {
      * <code>Sprite3D</code> 类用于实现3D精灵。
      */
     class Sprite3D extends Node {
+        static WORLDINVERTFRONT: number;
         /**
          * 创建精灵的克隆实例。
          * @param	original  原始精灵。
@@ -9882,6 +10129,9 @@ declare module Laya {
      * <code>Transform3D</code> 类用于实现3D变换。
      */
     class Transform3D extends EventDispatcher {
+        protected _faceInvert: boolean;
+        protected _frontFaceValue: number;
+        getFrontFaceValue(): number;
         /**
          * 所属精灵。
          */
@@ -10105,6 +10355,7 @@ declare module Laya {
         set sprite(value: Sprite);
         get sprite(): Sprite;
         /**
+         * IDE
          * 3D渲染的UI预制体
          */
         set prefab(value: Prefab);
@@ -10118,7 +10369,7 @@ declare module Laya {
          * UI渲染模式
          */
         set renderMode(value: MaterialRenderMode);
-        get renderMode(): number;
+        get renderMode(): MaterialRenderMode;
         /**
          * 分辨率比例
          */
@@ -13502,6 +13753,7 @@ declare module Laya {
          * @param complete 完成回调。
          */
         static load(url: string, complete: Handler): void;
+        morphTargetData: MorphTargetData;
         /**
          * 网格的全局默认绑定动作逆矩阵。
          */
@@ -13666,6 +13918,51 @@ declare module Laya {
         clone(): any;
     }
     /**
+     * <code>Mesh</code> 类用于创建文件网格数据模板。
+     */
+    class MeshUtil {
+        /**
+         * 获得mesh的宏
+         * @param mesh Mesh
+         * @param out define
+         */
+        static getMeshDefine(mesh: Mesh, out: Array<ShaderDefine>): void;
+    }
+    class MorphTarget {
+        name: string;
+        fullWeight: number;
+        data: Float32Array;
+        constructor();
+    }
+    class MorphTargetChannel {
+        name: string;
+        targetCount: number;
+        constructor();
+        getTargetByIndex(index: number): MorphTarget;
+        addTarget(target: MorphTarget): void;
+    }
+    class MorphTargetData {
+        private targets;
+        private channels;
+        vertexCount: number;
+        /**
+         * // todo 移除
+         * // 改为 从 VertexDeclaration 中获取
+         * morph target attribute element count
+         */
+        elementCount: number;
+        vertexDec: VertexDeclaration;
+        bounds: Bounds;
+        constructor();
+        addMorphChannel(channel: MorphTargetChannel): void;
+        getMorphChannel(name: string): MorphTargetChannel;
+        getMorphChannelbyIndex(index: number): MorphTargetChannel;
+        get channelCount(): number;
+        initData(): void;
+        destroy(): void;
+        clone(): MorphTargetData;
+    }
+    /**
      * <code>PrimitiveMesh</code> 类用于创建简单网格。
      */
     class PrimitiveMesh {
@@ -13801,73 +14098,23 @@ declare module Laya {
          */
         destroy(): void;
     }
-    /**
-     * <code>SpotLight</code> 类用于创建RenderTextureCube。
-     */
-    class RenderTextureCube extends RenderTexture {
-        /**
-         * +x, -x, +y, -y, +z, -z
-         */
-        faceIndex: number;
-        /**
-         * 实例化一个RendertextureCube
-         * @param size 像素
-         * @param colorFormat 颜色格式
-         * @param depthFormat 深度格式
-         * @param generateMipmap 是否生成mipmap
-         * @param multiSamples
-         */
-        constructor(size: number, colorFormat: RenderTargetFormat, depthFormat: RenderTargetFormat, generateMipmap: boolean, multiSamples: number);
-        _start(): void;
-    }
-    enum TextureCubeFace {
-        /**+x */
-        PositiveX = 0,
-        /**-x */
-        NegativeX = 1,
-        /**+y */
-        PositiveY = 2,
-        /**-y */
-        NegativeY = 3,
-        /**+z */
-        PositiveZ = 4,
-        /**-z */
-        NegativeZ = 5
-    }
-    /**
-     * <code>TextureCube</code> 类用于生成立方体纹理。
-     */
-    class TextureCube extends BaseTexture {
-        /**@private*/
-        private static _blackTexture;
-        /**@private*/
-        private static _grayTexture;
-        /**@private*/
-        private static _whiteTexture;
-        /**
-         * 黑色纯色纹理。
-         */
-        static get blackTexture(): TextureCube;
-        /**
-         * 灰色纯色纹理。
-         */
-        static get grayTexture(): TextureCube;
-        /**
-         * 白色纯色纹理。
-         */
-        static get whiteTexture(): TextureCube;
-        constructor(size: number, format: TextureFormat, mipmap?: boolean, sRGB?: boolean);
-        setImageData(source: (HTMLImageElement | HTMLCanvasElement | ImageBitmap)[], premultiplyAlpha: boolean, invertY: boolean): void;
-        setPixelsData(source: ArrayBufferView[], premultiplyAlpha: boolean, invertY: boolean): void;
-        updateSubPixelsData(source: ArrayBufferView[], xOffset: number, yOffset: number, width: number, height: number, mipmapLevel: number, generateMipmap: boolean, premultiplyAlpha: boolean, invertY: boolean): void;
-        setDDSData(ddsInfo: DDSTextureInfo): void;
-        setKTXData(ktxInfo: KTXTextureInfo): void;
-        get defaultTexture(): BaseTexture;
-    }
     class BlinnPhongShaderInit {
         static init(): void;
     }
     class PBRShaderLib {
+        /**
+         * emission
+         */
+        static DEFINE_EMISSION: ShaderDefine;
+        /**
+         * clear coat
+         */
+        static DEFINE_CLEARCOAT: ShaderDefine;
+        static DEFINE_CLEARCOAT_NORMAL: ShaderDefine;
+        /**
+         * anisotropy
+         */
+        static DEFINE_ANISOTROPY: ShaderDefine;
         static init(): void;
     }
     class PBRStandardShaderInit {
@@ -15360,17 +15607,16 @@ declare module Laya {
      * @see http://ldc2.layabox.com/doc/?nav=ch-js-1-2-5
      */
     class BitmapFont extends Resource {
-        private _texture;
-        private _fontCharDic;
-        private _fontWidthMap;
-        private _maxWidth;
-        private _spaceWidth;
-        private _padding;
+        texture: Texture;
+        dict: Record<string, BMGlyph>;
+        padding: any[];
         /**当前位图字体字号，使用时，如果字号和设置不同，并且autoScaleSize=true，则按照设置字号比率进行缩放显示。*/
         fontSize: number;
         /**表示是否根据实际使用的字体大小缩放位图字体大小。*/
         autoScaleSize: boolean;
-        /**字符间距（以像素为单位）。*/
+        tint: boolean;
+        maxWidth: number;
+        lineHeight: number;
         letterSpacing: number;
         /**
          * 通过指定位图字体文件路径，加载位图字体文件，加载完成后会自动解析。
@@ -15384,48 +15630,33 @@ declare module Laya {
          * @param	xml			字体文件XML。
          * @param	texture		字体的纹理。
          */
-        parseFont(xml: XMLDocument, texture: Texture): void;
-        /**
-         * 解析字体文件。
-         * @param	xml			字体文件XML。
-         * @param	texture		字体的纹理。
-         */
-        protected parseFont2(xml: XMLDocument, texture: Texture): void;
-        /**
-         * 获取指定字符的字体纹理对象。
-         * @param	char 字符。
-         * @return 指定的字体纹理对象。
-         */
-        getCharTexture(char: string): Texture;
+        parseFont(xml: XML, texture: Texture): void;
         /**
          * 销毁位图字体，调用Text.unregisterBitmapFont 时，默认会销毁。
          */
         protected _disposeResource(): void;
         /**
-         * 设置空格的宽（如果字体库有空格，这里就可以不用设置了）。
-         * @param	spaceWidth 宽度，单位为像素。
-         */
-        setSpaceWidth(spaceWidth: number): void;
-        /**
-         * 获取指定字符的宽度。
-         * @param	char 字符。
-         * @return  宽度。
-         */
-        getCharWidth(char: string): number;
-        /**
          * 获取指定文本内容的宽度。
          * @param	text 文本内容。
          * @return  宽度。
          */
-        getTextWidth(text: string): number;
+        getTextWidth(text: string, fontSize?: number): number;
         /**
          * 获取最大字符宽度。
          */
-        getMaxWidth(): number;
+        getMaxWidth(fontSize?: number): number;
         /**
          * 获取最大字符高度。
          */
-        getMaxHeight(): number;
+        getMaxHeight(fontSize?: number): number;
+    }
+    interface BMGlyph {
+        x?: number;
+        y?: number;
+        width?: number;
+        height?: number;
+        advance?: number;
+        texture?: Texture;
     }
     /**
      * 透明命令
@@ -15764,8 +15995,6 @@ declare module Laya {
          * 扇形半径。
          */
         radius: number;
-        private _startAngle;
-        private _endAngle;
         /**
          * 填充颜色，或者填充绘图的渐变对象。
          */
@@ -15778,6 +16007,8 @@ declare module Laya {
          * （可选）边框宽度。
          */
         lineWidth: number;
+        private _startAngle;
+        private _endAngle;
         /**@private */
         static create(x: number, y: number, radius: number, startAngle: number, endAngle: number, fillColor: any, lineColor: any, lineWidth: number): DrawPieCmd;
         /**
@@ -15832,8 +16063,6 @@ declare module Laya {
          * 可选）边框宽度。
          */
         lineWidth: number;
-        /**@private */
-        isConvexPolygon: boolean;
         /**@private */
         static create(x: number, y: number, points: any[], fillColor: any, lineColor: any, lineWidth: number): DrawPolyCmd;
         /**
@@ -15934,7 +16163,6 @@ declare module Laya {
          * （可选）颜色滤镜。
          */
         color: number;
-        colorFlt: ColorFilter | null;
         /**
          * （可选）混合模式。
          */
@@ -16021,10 +16249,9 @@ declare module Laya {
         /**
          * 颜色变换
          */
-        color: ColorFilter;
-        colorNum: number | null;
+        color: number | null;
         /**@private */
-        static create(texture: Texture, x: number, y: number, vertices: Float32Array, uvs: Float32Array, indices: Uint16Array, matrix: Matrix | null, alpha: number, color: string | null, blendMode: string | null, colorNum: number | null): DrawTrianglesCmd;
+        static create(texture: Texture, x: number, y: number, vertices: Float32Array, uvs: Float32Array, indices: Uint16Array, matrix: Matrix | null, alpha: number, color: string | number, blendMode: string | null): DrawTrianglesCmd;
         /**
          * 回收到对象池
          */
@@ -16053,15 +16280,13 @@ declare module Laya {
         y: number;
         private _text;
         private _wordText;
-        private _words;
         private _font;
         private _color;
         private _borderColor;
         private _lineWidth;
         private _textAlign;
         private _fontObj;
-        private _nTexAlign;
-        static create(text: string | WordText | null, words: HTMLChar[] | null, x: number, y: number, font: string, color: string | null, textAlign: string, lineWidth: number, borderColor: string | null): FillTextCmd;
+        static create(text: string | WordText | null, x: number, y: number, font: string, color: string | null, textAlign: string, lineWidth: number, borderColor: string | null): FillTextCmd;
         /**
          * 回收到对象池
          */
@@ -16070,11 +16295,6 @@ declare module Laya {
         run(context: Context, gx: number, gy: number): void;
         /**@private */
         get cmdID(): string;
-        /**
-         * 在画布上输出的文本。
-         */
-        get text(): string;
-        set text(value: string);
         /**
          * 定义字号和字体，比如"20px Arial"。
          */
@@ -16085,11 +16305,6 @@ declare module Laya {
          */
         get color(): string;
         set color(value: string);
-        /**
-         * 文本对齐方式，可选值："left"，"center"，"right"。
-         */
-        get textAlign(): string;
-        set textAlign(value: string);
     }
     /**
      * 填充贴图
@@ -16315,7 +16530,7 @@ declare module Laya {
         /**视口 */
         viewport: Rectangle;
         /**点击区域 */
-        hitArea: any;
+        hitArea: IHitArea;
         /**滑动 */
         dragging: Dragging;
         /**混合模式 */
@@ -16337,49 +16552,38 @@ declare module Laya {
     /**
      * 文本的样式类
      */
-    class TextStyle extends SpriteStyle {
-        /**
-        * 一个已初始化的 <code>TextStyle</code> 实例。
-        */
-        static EMPTY: TextStyle;
+    class TextStyle {
+        /**字体*/
+        font: string;
+        /**字号*/
+        fontSize: number;
+        /**文字颜色*/
+        color: string;
+        /**是否为粗体*/
+        bold: boolean;
         /**
          * 表示使用此文本格式的文本是否为斜体。
          * @default false
          */
         italic: boolean;
+        /**是否显示下划线*/
+        underline: boolean;
+        /**下划线颜色*/
+        underlineColor: string;
         /**
          * <p>表示使用此文本格式的文本段落的水平对齐方式。</p>
          * @default  "left"
          */
         align: string;
         /**
-         * <p>表示使用此文本格式的文本字段是否自动换行。</p>
-         * 如果 wordWrap 的值为 true，则该文本字段自动换行；如果值为 false，则该文本字段不自动换行。
-         * @default false。
+         * <p>表示使用此文本格式的文本段落的垂直对齐方式。</p>
+         * @default  "top"
          */
-        wordWrap: boolean;
+        valign: string;
         /**
          * <p>垂直行间距（以像素为单位）</p>
          */
         leading: number;
-        /**
-         * <p>默认边距信息</p>
-         * <p>[左边距，上边距，右边距，下边距]（边距以像素为单位）</p>
-         */
-        padding: any[];
-        /**
-         * 文本背景颜色，以字符串表示。
-         */
-        bgColor: string | null;
-        /**
-         * 文本边框背景颜色，以字符串表示。
-         */
-        borderColor: string | null;
-        /**
-         * <p>指定文本字段是否是密码文本字段。</p>
-         * 如果此属性的值为 true，则文本字段被视为密码文本字段，并使用星号而不是实际字符来隐藏输入的字符。如果为 false，则不会将文本字段视为密码文本字段。
-         */
-        asPassword: boolean;
         /**
          * <p>描边宽度（以像素为单位）。</p>
          * 默认值0，表示不描边。
@@ -16391,28 +16595,8 @@ declare module Laya {
          * @default "#000000";
          */
         strokeColor: string;
-        /**是否为粗体*/
-        bold: boolean;
-        /**是否显示下划线*/
-        underline: boolean;
-        /**下划线颜色*/
-        underlineColor: string | null;
-        /**当前使用的位图字体。*/
-        currBitmapFont: BitmapFont | null;
-        /**
-         * @override
-         */
-        reset(): SpriteStyle;
-        /**
-         * @override
-         */
-        recover(): void;
-        /**
-         * 从对象池中创建
-         */
-        static create(): TextStyle;
-        /**@inheritDoc	 */
-        render(sprite: Sprite, context: Context, x: number, y: number): void;
+        strikethrough: boolean;
+        constructor();
     }
     /**
      * <p> 动效模板。用于为指定目标对象添加动画效果。每个动效有唯一的目标对象，而同一个对象可以添加多个动效。 当一个动效开始播放时，其他动效会自动停止播放。</p>
@@ -16678,7 +16862,7 @@ declare module Laya {
          * @param color		颜色变换
          * @param blendMode	blend模式
          */
-        drawTriangles(texture: Texture, x: number, y: number, vertices: Float32Array, uvs: Float32Array, indices: Uint16Array, matrix?: Matrix | null, alpha?: number, color?: string | null, blendMode?: string | null, colorNum?: number): DrawTrianglesCmd;
+        drawTriangles(texture: Texture, x: number, y: number, vertices: Float32Array, uvs: Float32Array, indices: Uint16Array, matrix?: Matrix | null, alpha?: number, color?: string | number, blendMode?: string | null): DrawTrianglesCmd;
         /**
          * 用 texture 填充。
          * @param texture		纹理。
@@ -16722,10 +16906,6 @@ declare module Laya {
          * @param borderColor	定义镶边文本颜色。
          */
         fillBorderText(text: string | WordText, x: number, y: number, font: string, fillColor: string, textAlign: string, lineWidth: number, borderColor: string): FillTextCmd;
-        /*** @private */
-        fillWords(words: HTMLChar[], x: number, y: number, font: string, color: string): FillTextCmd;
-        /*** @private */
-        fillBorderWords(words: HTMLChar[], x: number, y: number, font: string, fillColor: string, borderColor: string, lineWidth: number): FillTextCmd;
         /**
          * 在画布上绘制文本（没有填色）。文本的默认颜色是黑色。
          * @param text		在画布上输出的文本。
@@ -16778,13 +16958,6 @@ declare module Laya {
          * 返回之前保存过的路径状态和属性。
          */
         restore(): RestoreCmd;
-        /**
-         * @private
-         * 替换文本内容。
-         * @param text 文本内容。
-         * @return 替换成功则值为true，否则值为flase。
-         */
-        replaceText(text: string): boolean;
         /**
          * @private
          * 替换文本颜色。
@@ -17016,12 +17189,6 @@ declare module Laya {
         /**@private */
         protected _maxChars: number;
         private _type;
-        /**输入提示符。*/
-        private _prompt;
-        /**输入提示符颜色。*/
-        private _promptColor;
-        private _originColor;
-        private _content;
         /**@private */
         static IOS_IFRAME: boolean;
         static isAppUseNewInput: boolean;
@@ -17047,7 +17214,6 @@ declare module Laya {
         get nativeInput(): HTMLInputElement | HTMLTextAreaElement;
         private _onUnDisplay;
         private _onMouseDown;
-        private static stageMatrix;
         /**
          * 在输入期间，如果 Input 实例的位置改变，调用_syncInputTransform同步输入框的位置。
          */
@@ -17079,17 +17245,10 @@ declare module Laya {
          * @override
          */
         get text(): string;
-        /**
-         *
-         * @param text
-         * @override
-         */
-        changeText(text: string): void;
         /**@inheritDoc
          * @override
         */
-        set color(value: string);
-        get color(): string;
+        set_color(value: string): void;
         /**@inheritDoc
          * @override
         */
@@ -17168,6 +17327,8 @@ declare module Laya {
         _extra?: INodeExtra;
         /**节点名称。*/
         name: string;
+        /** 节点标签 */
+        tag?: string;
         /**
          * 如果节点从资源中创建，这里记录是他的url
          */
@@ -17184,6 +17345,7 @@ declare module Laya {
         get destroyed(): boolean;
         constructor();
         protected onStartListeningToType(type: string): void;
+        bubbleEvent(type: string, ev: Event): void;
         hasHideFlag(flag: number): boolean;
         /**
          * <p>销毁此对象。destroy对象默认会把自己从父节点移除，并且清理自身引用关系，等待js自动垃圾回收机制回收。destroy后不能再使用。</p>
@@ -18213,8 +18375,8 @@ declare module Laya {
          * <p>可以设置一个Rectangle区域作为点击区域，或者设置一个<code>HitArea</code>实例作为点击区域，HitArea内可以设置可点击和不可点击区域。</p>
          * <p>如果不设置hitArea，则根据宽高形成的区域进行碰撞。</p>
          */
-        get hitArea(): any;
-        set hitArea(value: any);
+        get hitArea(): IHitArea;
+        set hitArea(value: IHitArea);
         /**
          * <p>遮罩，可以设置一个对象(支持位图和矢量图)，根据对象形状进行遮罩显示。</p>
          * <p>【注意】遮罩对象坐标系是相对遮罩对象本身的，和Flash机制不同</p>
@@ -18712,52 +18874,73 @@ declare module Laya {
         static SCROLL: string;
         /**hidden 不显示超出文本域的字符。*/
         static HIDDEN: string;
+        static FIT_HEIGHT: string;
+        static FIT_BOTH: string;
         /**语言包，是一个包含key:value的集合，用key索引，替换为目标value语言*/
-        static langPacks: any;
-        /**@private 位图字体字典。*/
-        private static _bitmapFonts;
-        static CharacterCache: boolean;
+        static langPacks: Record<string, string>;
         /**是否是从右向左的显示顺序*/
         static RightToLeft: boolean;
-        /**@private */
-        private _clipPoint;
-        /**@private 表示文本内容字符串。*/
+        static _passwordChar: string;
+        /**@private 位图字体字典。*/
+        private static _bitmapFonts;
+        /** 标记此文本是否忽略语言包 */
+        ignoreLang: boolean;
+        /**表示文本内容字符串。*/
         protected _text: string;
-        /**@private 表示文本内容是否发生改变。*/
+        protected _overflow: string;
+        protected _singleCharRender: boolean;
+        protected _textStyle: TextStyle;
+        protected _prompt: string;
+        /**输入提示符颜色。*/
+        protected _promptColor: string;
+        /**
+         * 文本背景颜色，以字符串表示。
+         */
+        protected _bgColor: string;
+        /**
+         * 文本边框背景颜色，以字符串表示。
+         */
+        protected _borderColor: string;
+        /**
+         * <p>默认边距信息</p>
+         * <p>[左边距，上边距，右边距，下边距]（边距以像素为单位）</p>
+         */
+        protected _padding: number[];
+        /**
+         * <p>表示使用此文本格式的文本字段是否自动换行。</p>
+         * 如果 wordWrap 的值为 true，则该文本字段自动换行；如果值为 false，则该文本字段不自动换行。
+         * @default false。
+         */
+        protected _wordWrap: boolean;
+        /**
+         * <p>指定文本字段是否是密码文本字段。</p>
+         * 如果此属性的值为 true，则文本字段被视为密码文本字段，并使用星号而不是实际字符来隐藏输入的字符。如果为 false，则不会将文本字段视为密码文本字段。
+         */
+        protected _asPassword: boolean;
+        protected _htmlParseOptions: HtmlParseOptions;
+        protected _templateVars: Record<string, string>;
+        /**表示文本内容是否发生改变。*/
         protected _isChanged: boolean;
-        /**@private 表示文本的宽度，以像素为单位。*/
+        /**表示文本的宽度，以像素为单位。*/
         protected _textWidth: number;
-        /**@private 表示文本的高度，以像素为单位。*/
+        /**表示文本的高度，以像素为单位。*/
         protected _textHeight: number;
-        /**@private 存储文字行数信息。*/
-        protected _lines: string[] | null;
-        /**@private 保存每行宽度*/
-        protected _lineWidths: number[] | null;
-        /**@private 文本的内容位置 X 轴信息。*/
-        protected _startX: number;
-        /**@private 文本的内容位置X轴信息。 */
-        protected _startY: number;
-        /**@private */
-        protected _words: WordText[] | null;
-        /**@private */
-        protected _charSize: any;
-        /**@private */
-        protected _valign: string;
-        _overflow: string;
-        /**@private */
-        private _singleCharRender;
+        protected _realFont: string;
+        protected _bitmapFont: BitmapFont;
+        protected _scrollPos: Point | null;
+        protected _bgDrawCmd: DrawRectCmd;
+        protected _html: boolean;
+        protected _ubb: boolean;
+        protected _lines: Array<ITextLine>;
+        protected _elements: Array<HtmlElement>;
+        protected _objContainer: Sprite;
+        protected _maxWidth: number;
+        private _updatingLayout;
+        _onPostLayout: () => void;
         /**
          * 创建一个新的 <code>Text</code> 实例。
          */
         constructor();
-        /**
-         * @private
-         * 获取样式。
-         * @return  样式 Style 。
-         * @override
-         */
-        getStyle(): SpriteStyle;
-        protected _getTextStyle(): TextStyle;
         /**
          * 注册位图字体。
          * @param	name		位图字体的名称。
@@ -18822,9 +19005,11 @@ declare module Laya {
          * </li>
          * </p>
          * @param	text 文本内容。
-         * @param	...args 文本替换参数。
+         * @param	args 文本替换参数。
          */
-        lang(text: string, arg1?: any, arg2?: any, arg3?: any, arg4?: any, arg5?: any, arg6?: any, arg7?: any, arg8?: any, arg9?: any, arg10?: any): void;
+        lang(text: string, ...args: any[]): void;
+        /** @deprecated **/
+        changeText(text: string): void;
         /**
          * <p>文本的字体名称，以字符串形式表示。</p>
          * <p>默认值为："Arial"，可以通过Config.defaultFont设置默认字体。</p>
@@ -18839,18 +19024,18 @@ declare module Laya {
         get fontSize(): number;
         set fontSize(value: number);
         /**
-         * <p>指定文本是否为粗体字。</p>
-         * <p>默认值为 false，这意味着不使用粗体字。如果值为 true，则文本为粗体字。</p>
-         */
-        get bold(): boolean;
-        set bold(value: boolean);
-        /**
          * <p>表示文本的颜色值。可以通过 <code>Text.defaultColor</code> 设置默认颜色。</p>
          * <p>默认值为黑色。</p>
          */
         get color(): string;
         set color(value: string);
         set_color(value: string): void;
+        /**
+         * <p>指定文本是否为粗体字。</p>
+         * <p>默认值为 false，这意味着不使用粗体字。如果值为 true，则文本为粗体字。</p>
+         */
+        get bold(): boolean;
+        set bold(value: boolean);
         /**
          * <p>表示使用此文本格式的文本是否为斜体。</p>
          * <p>默认值为 false，这意味着不使用斜体。如果值为 true，则文本为斜体。</p>
@@ -18892,14 +19077,13 @@ declare module Laya {
          * <p>边距信息。</p>
          * <p>数据格式：[上边距，右边距，下边距，左边距]（边距以像素为单位）。</p>
          */
-        get padding(): any[];
-        set padding(value: any[]);
+        get padding(): number[];
+        set padding(value: number[] | string);
         /**
          * 文本背景颜色，以字符串表示。
          */
         get bgColor(): string;
         set bgColor(value: string);
-        set_bgColor(value: string): void;
         /**
          * 文本边框背景颜色，以字符串表示。
          */
@@ -18923,90 +19107,34 @@ declare module Laya {
          */
         get overflow(): string;
         set overflow(value: string);
+        /**是否显示下划线。*/
+        get underline(): boolean;
+        set underline(value: boolean);
+        /**下划线的颜色，为null则使用字体颜色。*/
+        get underlineColor(): string;
+        set underlineColor(value: string);
+        get singleCharRender(): boolean;
+        /** 设置是否单个字符渲染，如果Textd的内容一直改变，例如是一个增加的数字，就设置这个，防止无效占用缓存 */
+        set singleCharRender(value: boolean);
+        get html(): boolean;
+        /** 设置是否富文本，支持html语法 */
+        set html(value: boolean);
+        get ubb(): boolean;
+        /** 设置是否使用UBB语法解析文本 */
+        set ubb(value: boolean);
+        get maxWidth(): number;
+        /** 设置当文本达到最大允许的宽度时，自定换行，设置为0则此限制不生效。*/
+        set maxWidth(value: number);
+        get htmlParseOptions(): HtmlParseOptions;
+        set htmlParseOptions(value: HtmlParseOptions);
+        protected parseTemplate(template: string): string;
+        get templateVars(): Record<string, any>;
+        set templateVars(value: Record<string, any> | boolean);
+        setVar(name: string, value: any): Text;
         /**
-         * @private
-         * 一个布尔值，表示文本的属性是否有改变。若为true表示有改变。
-         */
-        protected set isChanged(value: boolean);
-        /**
-         * @private
-         */
-        protected _getContextFont(): string;
-        /**
-         * @private
-         */
-        protected _isPassWordMode(): boolean;
-        /**
-         * @private
-         */
-        protected _getPassWordTxt(txt: string): string;
-        /**
-         * @private
-         * 渲染文字。
-         * @param	begin 开始渲染的行索引。
-         * @param	visibleLineCount 渲染的行数。
-         */
-        protected _renderText(): void;
-        /**
-         * @private
-         * 绘制下划线
-         * @param	x 本行坐标
-         * @param	y 本行坐标
-         * @param	lineIndex 本行索引
-         */
-        private _drawUnderline;
-        /**
-         * <p>排版文本。</p>
-         * <p>进行宽高计算，渲染、重绘文本。</p>
-         */
-        typeset(): void;
-        /**@private */
-        private _evalTextSize;
-        /**@private */
-        private _checkEnabledViewportOrNot;
-        /**
-         * <p>快速更改显示文本。不进行排版计算，效率较高。</p>
-         * <p>如果只更改文字内容，不更改文字样式，建议使用此接口，能提高效率。</p>
-         * @param text 文本内容。
-         */
-        changeText(text: string): void;
-        /**
-         * @private
-         * 分析文本换行。
-         */
-        protected _parseLines(text: string): void;
-        /**
-         * @private
-         * 判断某个字符串里面是否包含emoji表情
-         * @param str
-         * @returns
-         */
-        private _isEmoji;
-        /**
-         * @private
-         * 解析行文本。
-         * @param	line 某行的文本。
-         * @param	wordWrapWidth 文本的显示宽度。
-         */
-        protected _parseLine(line: string, wordWrapWidth: number): void;
-        /**@private */
-        private _getTextWidth;
-        /**
-         * @private
-         * 获取换行所需的宽度。
-         */
-        private _getWordWrapWidth;
-        /**
-         * 返回字符在本类实例的父坐标系下的坐标。
-         * @param charIndex	索引位置。
-         * @param out		（可选）输出的Point引用。
-         * @return Point 字符在本类实例的父坐标系下的坐标。如果out参数不为空，则将结果赋值给指定的Point对象，否则创建一个新的Point对象返回。建议使用Point.TEMP作为out参数，可以省去Point对象创建和垃圾回收的开销，尤其是在需要频繁执行的逻辑中，比如帧循环和MOUSE_MOVE事件回调函数里面。
-         */
-        getCharPoint(charIndex: number, out?: Point): Point;
-        /**
-         * <p>设置横向滚动量。</p>
-         * <p>即使设置超出滚动范围的值，也会被自动限制在可能的最大值处。</p>
-         */
+        * <p>设置横向滚动量。</p>
+        * <p>即使设置超出滚动范围的值，也会被自动限制在可能的最大值处。</p>
+        */
         set scrollX(value: number);
         /**
          * 获取横向滚动量。
@@ -19029,16 +19157,50 @@ declare module Laya {
          */
         get maxScrollY(): number;
         /**返回文字行信息*/
-        get lines(): any[];
-        /**下划线的颜色，为null则使用字体颜色。*/
-        get underlineColor(): string;
-        set underlineColor(value: string);
-        /**是否显示下划线。*/
-        get underline(): boolean;
-        set underline(value: boolean);
-        /** 设置是否单个字符渲染，如果Textd的内容一直改变，例如是一个增加的数字，就设置这个，防止无效占用缓存 */
-        set singleCharRender(value: boolean);
-        get singleCharRender(): boolean;
+        get lines(): ReadonlyArray<ITextLine>;
+        /**
+         * @private
+         */
+        protected markChanged(): void;
+        typeset(): void;
+        refreshLayout(): void;
+        get objContainer(): Sprite;
+        /**
+         * <p>排版文本。</p>
+         * <p>进行宽高计算，渲染、重绘文本。</p>
+         */
+        private _typeset;
+        /**
+         * @private
+         * 分析文本换行。
+         */
+        protected doLayout(): void;
+        /**
+        * @private
+        * 渲染文字。
+        * @param	begin 开始渲染的行索引。
+        * @param	visibleLineCount 渲染的行数。
+        */
+        protected renderText(): void;
+        protected drawBg(): void;
+    }
+    interface ITextCmd {
+        x: number;
+        y: number;
+        width: number;
+        height: number;
+        style: TextStyle;
+        wt: WordText;
+        obj: IHtmlObject;
+        linkEnd: boolean;
+        next: ITextCmd;
+    }
+    interface ITextLine {
+        x: number;
+        y: number;
+        height: number;
+        width: number;
+        cmd: ITextCmd;
     }
     /**
      * @Script {name:ButtonEffect}
@@ -19276,6 +19438,8 @@ declare module Laya {
         touchId: number;
         /** 点击坐标 */
         readonly touchPos: Point;
+        /** 是否双击 */
+        isDblClick: boolean;
         /**滚轮滑动增量*/
         delta: number;
         /** 原生浏览器事件。*/
@@ -19459,7 +19623,6 @@ declare module Laya {
         getSprite3DUnderPoint(x: number, y: number): Node;
         hitTest(sp: Sprite, x: number, y: number, editing?: boolean): boolean;
         private handleRollOver;
-        protected bubbleEvent(type: string, ev: Event, initiator: Node): void;
     }
     class TouchInfo implements ITouchInfo {
         readonly event: Event;
@@ -19929,654 +20092,227 @@ declare module Laya {
         get type(): number;
         static _filter: (this: RenderSprite, sprite: Sprite, context: any, x: number, y: number) => void;
     }
-    /**
-     * HTML图文类，用于显示html内容
-     *
-     * 支持的标签如下:
-     * a:链接标签，点击后会派发"link"事件 比如:<a href='alink'>a</a>
-     * div:div容器标签，比如:<div>abc</div>
-     * span:行内元素标签，比如:<span style='color:#ff0000'>abc</span>
-     * p:行元素标签，p标签会自动换行，div不会，比如:<p>abc</p>
-     * img:图片标签，比如:<img src='res/boy.png'></img>
-     * br:换行标签，比如:<div>abc<br/>def</div>
-     * style:样式标签，比如:<div style='width:130px;height:50px;color:#ff0000'>abc</div>
-     * link:外链样式标签，可以加载一个css文件来当style使用，比如:<link type='text/css' href='html/test.css'/>
-     *
-     * style支持的属性如下:
-     * italic:true|false;					是否是斜体
-     * bold:true|false;						是否是粗体
-     * letter-spacing:10px;					字间距
-     * font-family:宋体; 					字体
-     * font-size:20px;						字体大小
-     * font-weight:bold:none;				字体是否是粗体，功能同bold
-     * color:#ff0000;						字体颜色
-     * stroke:2px;							字体描边宽度
-     * strokeColor:#ff0000;					字体描边颜色
-     * padding:10px 10px 20px 20px;			边缘的距离
-     * vertical-align:top|bottom|middle;	垂直对齐方式
-     * align:left|right|center;				水平对齐方式
-     * line-height:20px;					行高
-     * background-color:#ff0000;			背景颜色
-     * border-color:#ff0000;				边框颜色
-     * width:100px;							对象宽度
-     * height:100px;						对象高度
-     *
-     * 示例用法：
-     * var div:HTMLDivElement=new HTMLDivElement();
-     * div.innerHTML = "<link type='text/css' href='html/test.css'/><a href='alink'>a</a><div style='width:130px;height:50px;color:#ff0000'>div</div><br/><span style='font-weight:bold;color:#ffffff;font-size:30px;stroke:2px;italic:true;'>span</span><span style='letter-spacing:5px'>span2</span><p>p</p><img src='res/boy.png'></img>";
-     */
-    class HTMLDivElement extends Sprite {
-        /**@private */
-        private _recList;
-        /**@private */
-        private _innerHTML;
-        /**@private */
-        private _repaintState;
+    module "../glTFInterface" {
+        interface glTFMaterialAnisotropy {
+            /** The anisotropy strength. When anisotropyTexture is present, this value is multiplied by the blue channel. default: 0.0 */
+            anisotropyStrength: number;
+            /** The rotation of the anisotropy in tangent, bitangent space, measured in radians counter-clockwise from the tangent. When anisotropyTexture is present, anisotropyRotation provides additional rotation to the vectors in the texture. default: 0.0 */
+            anisotropyRotation: number;
+            /** The anisotropy texture. Red and green channels represent the anisotropy direction in [-1, 1] tangent, bitangent space, to be rotated by anisotropyRotation. The blue channel contains strength as [0, 1] to be multiplied by anisotropyStrength. */
+            anisotropyTexture: glTFTextureInfo;
+        }
+    }
+    class KHR_materials_anisotropy implements glTFExtension {
+        readonly name: string;
+        private _resource;
+        constructor(resource: glTFResource);
+        loadTextures(basePath: string, progress?: IBatchProgress): Promise<any>;
+        additionMaterialProperties(glTFMaterial: glTFMaterial, material: Material): void;
+    }
+    module "../glTFInterface" {
+        interface glTFMaterialClearCoat {
+            /** The clearcoat layer intensity. default: 0.0*/
+            clearcoatFactor?: number;
+            /** The base color texture */
+            clearcoatTexture?: glTFTextureInfo;
+            /** The clearcoat layer roughness.  default: 0.0*/
+            clearcoatRoughnessFactor?: number;
+            /** The clearcoat layer roughness texture.*/
+            clearcoatRoughnessTexture?: glTFTextureInfo;
+            /** The clearcoat normal map texture. */
+            clearcoatNormalTexture?: glTFMaterialNormalTextureInfo;
+        }
+    }
+    module "../glTFInterface" {
+        interface glTFMaterialEmissionStrength {
+            /** The strength adjustment to be multiplied with the material's emissive value. default: 1.0 */
+            emissiveStrength: number;
+        }
+    }
+    class KHR_materials_emissive_strength implements glTFExtension {
+        readonly name: string;
+        private _resource;
+        constructor(resource: glTFResource);
+        additionMaterialProperties?(glTFMaterial: glTFMaterial, material: Material): void;
+    }
+    enum HtmlElementType {
+        Text = 0,
+        Link = 1,
+        Image = 2,
+        Input = 3,
+        Select = 4,
+        Object = 5,
+        LinkEnd = 6
+    }
+    class HtmlElement {
+        type: HtmlElementType;
+        name: string;
+        text: string;
+        style: TextStyle;
+        obj: IHtmlObject;
+        space: number;
+        _attrs: Record<string, any>;
         constructor();
-        /**@private
-         * @override
-        */
-        destroy(destroyChild?: boolean): void;
-        /**@private */
-        private _htmlDivRepaint;
-        private _updateGraphicWork;
-        private _setGraphicDirty;
-        /**@private */
-        private _doClears;
-        /**@private */
-        private _updateGraphic;
-        /**
-         * 获取HTML样式
-         */
-        get style(): HTMLStyle;
-        get innerHTML(): string;
-        /**
-         * 设置标签内容
-         */
-        set innerHTML(text: string);
-        private _refresh;
-        set width(value: number);
-        get width(): number;
-        set height(value: number);
-        get height(): number;
-        /**
-         * 获取內容宽度
-         */
-        get contextWidth(): number;
-        /**
-         * 获取內容高度
-         */
-        get contextHeight(): number;
-        /**@private */
-        private _onMouseClick;
-        /**@private */
-        private _eventLink;
+        getAttr(attrName: string): any;
+        setAttr(attrName: string, attrValue: any): void;
+        getAttrString(attrName: string, defValue?: string): string;
+        getAttrInt(attrName: string, defValue?: number): number;
+        getAttrFloat(attrName: string, defValue?: number): number;
+        getAttrBool(attrName: string, defValue?: boolean): boolean;
+        fetchAttributes(): void;
+        reset(): void;
+        static pool: Array<HtmlElement>;
+        static getFromPool(type: HtmlElementType): HtmlElement;
+        static returnToPool(ele: HtmlElement | Array<HtmlElement>): void;
     }
-    /**
-     * @private
-     */
-    class HTMLDivParser extends HTMLElement {
-        /** 实际内容的高 */
-        contextHeight: number;
-        /** 实际内容的宽 */
-        contextWidth: number;
-        /** @private */
-        private _htmlBounds;
-        /** @private */
-        private _boundsRec;
-        /** 重绘回调 */
-        repaintHandler: Handler;
-        /**
-         * @override
-         */
-        reset(): HTMLElement;
-        /**
-         * 设置标签内容
-         */
-        set innerHTML(text: string);
-        /**
-         * @override
-         */
-        set width(value: number);
-        /**
-         * 追加内容，解析并对显示对象排版
-         * @param	text
-         */
-        appendHTML(text: string): void;
-        /**
-         * 获取bounds
-         * @return
-         */
-        getBounds(): Rectangle;
-        /**
-         * @override
-         */
-        parentRepaint(recreate?: boolean): void;
-        /**
-         * @private
-         * 对显示内容进行排版
-         */
-        layout(): void;
-        /**
-         * 获取对象的高
-         * @override
-         */
-        get height(): number;
-        /**
-         * @override
-         */
-        set height(value: number);
-        /**
-         * 获取对象的宽
-         * @override
-         */
-        get width(): number;
-    }
-    /**
-     * @private
-     */
-    class HTMLDocument {
-        static document: HTMLDocument;
-        all: {
-            [key: string]: HTMLElement;
-        };
-        styleSheets: any;
-        getElementById(id: string): HTMLElement;
-        setElementById(id: string, e: HTMLElement): void;
-    }
-    /**HTML元素类型 */
-    enum HTMLElementType {
-        /**基础类型 */
-        BASE = 0,
-        /**图片类型 */
-        IMAGE = 1
-    }
-    /**
-     * @private
-     */
-    class HTMLElement {
-        private static _EMPTYTEXT;
-        eletype: HTMLElementType;
-        URI: URL;
-        parent: HTMLElement;
-        _style: HTMLStyle;
-        protected _text: any;
-        protected _children: any[];
-        protected _x: number;
-        protected _y: number;
-        protected _width: number;
-        protected _height: number;
+    class HtmlImage implements IHtmlObject {
+        readonly obj: Sprite;
+        private _owner;
+        private _element;
         constructor();
-        protected _creates(): void;
-        /**
-         * 重置
-         */
-        reset(): HTMLElement;
-        set id(value: string);
-        repaint(recreate?: boolean): void;
-        parentRepaint(recreate?: boolean): void;
-        set innerTEXT(value: string);
-        get innerTEXT(): string;
-        protected _setParent(value: HTMLElement): void;
-        appendChild(c: HTMLElement): HTMLElement;
-        addChild(c: HTMLElement): HTMLElement;
-        removeChild(c: HTMLElement): HTMLElement;
-        static getClassName(tar: any): string;
-        /**
-         * <p>销毁此对象。destroy对象默认会把自己从父节点移除，并且清理自身引用关系，等待js自动垃圾回收机制回收。destroy后不能再使用。</p>
-         * <p>destroy时会移除自身的事情监听，自身的timer监听，移除子对象及从父节点移除自己。</p>
-         * @param destroyChild	（可选）是否同时销毁子节点，若值为true,则销毁子节点，否则不销毁子节点。
-         */
+        get element(): HtmlElement;
+        get width(): number;
+        get height(): number;
+        create(owner: Text, element: HtmlElement): void;
+        protected loadTexture(src: string): void;
+        pos(x: number, y: number): void;
+        release(): void;
         destroy(): void;
-        /**
-         * 销毁所有子对象，不销毁自己本身。
-         */
-        destroyChildren(): void;
-        get style(): HTMLStyle;
-        set x(v: number);
-        get x(): number;
-        set y(v: number);
-        get y(): number;
+    }
+    class HtmlLink implements IHtmlObject, IHitArea {
+        private _owner;
+        private _element;
+        private _shape;
+        private _rects;
+        private _rectCnt;
+        constructor();
+        get element(): HtmlElement;
         get width(): number;
-        set width(value: number);
         get height(): number;
-        set height(value: number);
-        set href(url: string);
-        get href(): string;
-        set color(value: string);
-        set className(value: string);
-        drawToGraphic(graphic: Graphics, gX: number, gY: number, recList: any[]): void;
-        renderSelfToGraphic(graphic: Graphics, gX: number, gY: number, recList: any[]): void;
-        private workLines;
-        private createOneLine;
+        create(owner: Text, element: HtmlElement): void;
+        resetArea(): void;
+        addRect(x: number, y: number, width: number, height: number): void;
+        contains(x: number, y: number): boolean;
+        pos(x: number, y: number): void;
+        release(): void;
+        destroy(): void;
     }
-    /**
-     * @private
-     */
-    class HTMLHitRect {
-        rec: Rectangle;
-        href: string;
+    class HtmlParseOptions {
+        linkUnderline: boolean;
+        linkColor: string;
+        ignoreWhiteSpace: boolean;
+        static defaultLinkUnderline: boolean;
+        static defaultLinkColor: string;
         constructor();
-        reset(): HTMLHitRect;
-        recover(): void;
-        static create(): HTMLHitRect;
     }
-    /**
-     * iframe标签类，目前用于加载外并解析数据
-     */
-    class HTMLIframeElement extends HTMLDivElement {
+    class HtmlParser {
+        static defaultParser: HtmlParser;
+        static classMap: Record<number, new () => IHtmlObject>;
+        protected _styleStack: Array<TextStyle>;
+        protected _styleStackTop: number;
+        protected _style: TextStyle;
+        protected _elements: Array<HtmlElement>;
+        protected _options: HtmlParseOptions;
         constructor();
-        /**
-         * 加载html文件，并解析数据
-         * @param	url
-         */
-        set href(url: string);
+        parse(aSource: string, style: TextStyle, out: Array<HtmlElement>, options?: HtmlParseOptions): void;
+        protected pushStyle(): void;
+        protected popStyle(): void;
+        protected isNewLine(): boolean;
+        protected appendText(text: string): void;
     }
-    /**
-     * @private
-     */
-    class HTMLImageElement extends HTMLElement {
-        private _tex;
-        private _url;
-        constructor();
-        /**
-         * @override
-         */
-        reset(): HTMLElement;
-        set src(url: string);
-        private onloaded;
-        /**
-         *
-         * @param graphic
-         * @param gX
-         * @param gY
-         * @param recList
-         * @override
-         */
-        renderSelfToGraphic(graphic: Graphics, gX: number, gY: number, recList: any[]): void;
-    }
-    /**
-     * @private
-     */
-    class HTMLLinkElement extends HTMLElement {
-        static _cuttingStyle: RegExp;
-        type: string;
-        /**
-         * @override
-         */
-        protected _creates(): void;
-        /**
-         *
-         * @param graphic
-         * @param gX
-         * @param gY
-         * @param recList
-         * @override
-         */
-        drawToGraphic(graphic: Graphics, gX: number, gY: number, recList: any[]): void;
-        /**
-         * @override
-         */
-        reset(): HTMLElement;
-        /**
-         * @override
-         */
-        set href(url: string);
-        /**
-         * @override
-         */
-        get href(): string;
-    }
-    /**
-     * @private
-     */
-    class HTMLStyleElement extends HTMLElement {
-        /**
-         * @override
-         */
-        protected _creates(): void;
-        /**
-         *
-         * @param graphic
-         * @param gX
-         * @param gY
-         * @param recList
-         * @override
-         */
-        drawToGraphic(graphic: Graphics, gX: number, gY: number, recList: any[]): void;
-        /**
-         * @override
-         */
-        reset(): HTMLElement;
-        /**
-         * 解析样式
-         * @override
-         */
-        set innerTEXT(value: string);
-        /**
-         * @override
-         */
-        get innerTEXT(): string;
-    }
-    /**
-     * @private
-     */
-    class HTMLExtendStyle {
-        static EMPTY: HTMLExtendStyle;
-        /**
-         * <p>描边宽度（以像素为单位）。</p>
-         * 默认值0，表示不描边。
-         * @default 0
-         */
-        stroke: number;
-        /**
-         * <p>描边颜色，以字符串表示。</p>
-         * @default "#000000";
-         */
-        strokeColor: string;
-        /**
-         * <p>垂直行间距（以像素为单位）</p>
-         */
-        leading: number;
-        /**行高。 */
-        lineHeight: number;
-        letterSpacing: number;
-        href: string;
-        constructor();
-        reset(): HTMLExtendStyle;
-        recover(): void;
-        /**
-         * 从对象池中创建
-         */
-        static create(): HTMLExtendStyle;
-    }
-    /**
-     * @private
-     */
-    class HTMLParse {
-        private static char255;
-        private static spacePattern;
-        private static char255AndOneSpacePattern;
-        private static _htmlClassMapShort;
-        /**
-         * 根据类型获取对应的节点
-         * @param type
-         */
-        static getInstance(type: string): any;
-        /**
-         * 解析HTML
-         * @param	ower
-         * @param	xmlString
-         * @param	url
-         */
-        static parse(ower: HTMLDivParser, xmlString: string, url: URL): void;
-        /**
-         * 解析xml节点 该函数会被递归调用
-         * @param xml
-         */
-        private static _parseXML;
-    }
-    /**
-     * @private
-     */
-    class HTMLStyle {
-        private static _CSSTOVALUE;
-        private static _parseCSSRegExp;
-        /**
-         * 需要继承的属性
-         */
-        private static _inheritProps;
-        /**水平居左对齐方式。 */
-        static ALIGN_LEFT: string;
-        /**水平居中对齐方式。 */
-        static ALIGN_CENTER: string;
-        /**水平居右对齐方式。 */
-        static ALIGN_RIGHT: string;
-        /**垂直居中对齐方式。 */
-        static VALIGN_TOP: string;
-        /**垂直居中对齐方式。 */
-        static VALIGN_MIDDLE: string;
-        /**垂直居底部对齐方式。 */
-        static VALIGN_BOTTOM: string;
-        /** 样式表信息。*/
-        static styleSheets: any;
-        /**添加布局。 */
-        static ADDLAYOUTED: number;
-        private static _PADDING;
-        protected static _HEIGHT_SET: number;
-        protected static _LINE_ELEMENT: number;
-        protected static _NOWARP: number;
-        protected static _WIDTHAUTO: number;
-        protected static _BOLD: number;
-        protected static _ITALIC: number;
-        /**@private */
-        protected static _CSS_BLOCK: number;
-        /**@private */
-        protected static _DISPLAY_NONE: number;
-        /**@private */
-        protected static _ABSOLUTE: number;
-        /**@private */
-        protected static _WIDTH_SET: number;
-        protected static alignVDic: any;
-        protected static align_Value: any;
-        protected static vAlign_Value: any;
-        protected static _ALIGN: number;
-        protected static _VALIGN: number;
-        fontSize: number;
-        family: string;
-        color: string;
-        ower: HTMLElement;
-        private _extendStyle;
-        textDecoration: string;
-        /**
-         * 文本背景颜色，以字符串表示。
-         */
-        bgColor: string;
-        /**
-         * 文本边框背景颜色，以字符串表示。
-         */
-        borderColor: string;
-        /**
-         * 边距信息。
-         */
-        padding: any[];
-        constructor();
-        private _getExtendStyle;
-        get href(): string;
-        set href(value: string);
-        /**
-         * <p>描边宽度（以像素为单位）。</p>
-         * 默认值0，表示不描边。
-         * @default 0
-         */
-        get stroke(): number;
-        set stroke(value: number);
-        /**
-         * <p>描边颜色，以字符串表示。</p>
-         * @default "#000000";
-         */
-        get strokeColor(): string;
-        set strokeColor(value: string);
-        /**
-         * <p>垂直行间距（以像素为单位）</p>
-         */
-        get leading(): number;
-        set leading(value: number);
-        /**行高。 */
-        get lineHeight(): number;
-        set lineHeight(value: number);
-        set align(v: string);
-        /**
-         * <p>表示使用此文本格式的文本段落的水平对齐方式。</p>
-         * @default  "left"
-         */
-        get align(): string;
-        set valign(v: string);
-        /**
-         * <p>表示使用此文本格式的文本段落的水平对齐方式。</p>
-         * @default  "left"
-         */
-        get valign(): string;
-        /**
-         * 字体样式字符串。
-         */
-        set font(value: string);
-        get font(): string;
-        /**
-         * 是否显示为块级元素。
-         */
-        set block(value: boolean);
-        /**表示元素是否显示为块级元素。*/
-        get block(): boolean;
-        /**
-         * 重置，方便下次复用
-         */
-        reset(): HTMLStyle;
-        /**
-         * 回收
-         */
-        recover(): void;
-        /**
-         * 从对象池中创建
-         */
-        static create(): HTMLStyle;
-        /**
-         * 复制传入的 CSSStyle 属性值。
-         * @param	src 待复制的 CSSStyle 对象。
-         */
-        inherit(src: HTMLStyle): void;
-        /**
-         * 表示是否换行。
-         */
-        get wordWrap(): boolean;
-        set wordWrap(value: boolean);
-        /**是否为粗体*/
-        get bold(): boolean;
-        set bold(value: boolean);
-        get fontWeight(): string;
-        set fontWeight(value: string);
-        /**
-         * 表示使用此文本格式的文本是否为斜体。
-         * @default false
-         */
-        get italic(): boolean;
-        set italic(value: boolean);
-        /**@inheritDoc	 */
-        widthed(sprite: any): boolean;
-        set whiteSpace(type: string);
-        /**
-         * 设置如何处理元素内的空白。
-         */
-        get whiteSpace(): string;
-        /**
-         * 宽度。
-         */
-        set width(w: any);
-        /**
-         * 高度。
-         */
-        set height(h: any);
-        /**
-         * 是否已设置高度。
-         * @param	sprite 显示对象 Sprite。
-         * @return 一个Boolean 表示是否已设置高度。
-         */
-        heighted(sprite: any): boolean;
-        /**
-         * 设置宽高。
-         * @param	w 宽度。
-         * @param	h 高度。
-         */
-        size(w: number, h: number): void;
-        /**
-         * 是否是行元素。
-         */
-        getLineElement(): boolean;
-        setLineElement(value: boolean): void;
-        /**
-         * 间距。
-         */
-        get letterSpacing(): number;
-        set letterSpacing(d: number);
-        /**
-         * 设置 CSS 样式字符串。
-         * @param	text CSS样式字符串。
-         */
-        cssText(text: string): void;
-        /**
-         * 根据传入的属性名、属性值列表，设置此对象的属性值。
-         * @param	attrs 属性名与属性值列表。
-         */
-        attrs(attrs: any[]): void;
-        set position(value: string);
-        /**
-         * 元素的定位类型。
-         */
-        get position(): string;
-        /**@inheritDoc	 */
-        get absolute(): boolean;
-        /**@inheritDoc	 */
-        get paddingLeft(): number;
-        /**@inheritDoc	 */
-        get paddingTop(): number;
-        /**
-         * 通过传入的分割符，分割解析CSS样式字符串，返回样式列表。
-         * @param	text CSS样式字符串。
-         * @param	clipWord 分割符；
-         * @return 样式列表。
-         */
-        static parseOneCSS(text: string, clipWord: string): any[];
-        /**
-         * 解析 CSS 样式文本。
-         * @param	text CSS 样式文本。
-         * @param	uri URL对象。
-         */
-        static parseCSS(text: string, uri: URL): void;
-    }
-    /**
-         * @private
-         *  <code>ILayout</code> 类是显示对象的布局接口。
-         */
-    interface ILayout {
-        x: number;
-        y: number;
+    interface IHtmlObject {
         width: number;
         height: number;
+        element: HtmlElement;
+        loading?: boolean;
+        create(owner: Text, element: HtmlElement): void;
+        pos(x: number, y: number): void;
+        release(): void;
+        destroy(): void;
     }
-    /**
-     * @private
-     * HTML的布局类
-     * 对HTML的显示对象进行排版
-     */
-    class Layout {
-        private static DIV_ELEMENT_PADDING;
-        private static _will;
-        static later(element: HTMLElement): void;
-        static layout(element: HTMLElement): any[];
-        static _multiLineLayout(element: HTMLElement): any[];
+    interface IHtmlPageContext {
+        createObject(owner: Text, element: HtmlElement): IHtmlObject;
+        freeObject(obj: IHtmlObject): void;
     }
-    /**
-     * @private
-     */
-    class LayoutLine {
-        elements: ILayout[];
-        x: number;
-        y: number;
-        w: number;
-        h: number;
-        wordStartIndex: number;
-        minTextHeight: number;
-        mWidth: number;
-        /**
-         * 底对齐（默认）
-         * @param	left
-         * @param	width
-         * @param	dy
-         * @param	align		水平
-         * @param	valign		垂直
-         * @param	lineHeight	行高
-         */
-        updatePos(left: number, width: number, lineNum: number, dy: number, align: string, valign: string, lineHeight: number): void;
+    interface ITagHandler {
+        (tagName: string, end: boolean, attr: string): string;
+    }
+    class UBBParser {
+        static defaultParser: UBBParser;
+        private _text;
+        private _readPos;
+        protected _handlers: Record<string, ITagHandler>;
+        defaultImgWidth: number;
+        defaultImgHeight: number;
+        lastColor: string;
+        lastSize: string;
+        constructor();
+        protected onTag_URL(tagName: string, end: boolean, attr: string): string;
+        protected onTag_IMG(tagName: string, end: boolean, attr: string): string;
+        protected onTag_B(tagName: string, end: boolean, attr: string): string;
+        protected onTag_I(tagName: string, end: boolean, attr: string): string;
+        protected onTag_U(tagName: string, end: boolean, attr: string): string;
+        protected onTag_Simple(tagName: string, end: boolean, attr: string): string;
+        protected onTag_COLOR(tagName: string, end: boolean, attr: string): string;
+        protected onTag_FONT(tagName: string, end: boolean, attr: string): string;
+        protected onTag_SIZE(tagName: string, end: boolean, attr: string): string;
+        protected getTagText(remove?: boolean): string;
+        parse(text: string, remove?: boolean): string;
+    }
+    class XML {
+        name: string;
+        text: string;
+        private _attrs;
+        private _children;
+        constructor(XmlString?: string);
+        get attributes(): Record<string, string>;
+        getAttrString(attrName: string, defValue?: string): string;
+        getAttrInt(attrName: string, defValue?: number): number;
+        getAttrFloat(attrName: string, defValue?: number): number;
+        getAttrBool(attrName: string, defValue?: boolean): boolean;
+        setAttribute(attrName: string, attrValue: string): void;
+        getNode(selector: string): XML;
+        elements(selector?: string): Array<XML>;
+        parse(aSource: string): void;
+        reset(): void;
+    }
+    enum XMLTagType {
+        Start = 0,
+        End = 1,
+        Void = 2,
+        CDATA = 3,
+        Comment = 4,
+        Instruction = 5
+    }
+    class XMLIterator {
+        static tagName: string;
+        static tagType: XMLTagType;
+        static lastTagName: string;
+        static source: string;
+        static sourceLen: number;
+        static parsePos: number;
+        static tagPos: number;
+        static tagLength: number;
+        static lastTagEnd: number;
+        static attrParsed: boolean;
+        static lowerCaseName: boolean;
+        private static _attrs;
+        static begin(source: string, lowerCaseName?: boolean): void;
+        static nextTag(): boolean;
+        static getTagSource(): string;
+        static getRawText(trim?: boolean): string;
+        static getText(trim?: boolean): string;
+        static get attributes(): any;
+        static getAttribute(attrName: string): string;
+        static parseAttributes(attrs: any): void;
+    }
+    class XMLUtils {
+        static decodeString(aSource: string): string;
+        static encodeString(str: string): string;
+        static getString(attrs: any, attrName: string, defValue?: string): string;
+        static getInt(attrs: any, attrName: string, defValue?: number): number;
+        static getFloat(attrs: any, attrName: string, defValue?: number): number;
+        static getBool(attrs: any, attrName: string, defValue?: boolean): boolean;
     }
     /**
      * @private
@@ -21942,6 +21678,7 @@ declare module Laya {
     class Matrix4x4 implements IClone {
         /**默认矩阵,禁止修改*/
         static readonly DEFAULT: Readonly<Matrix4x4>;
+        static readonly DEFAULTINVERT: Readonly<Matrix4x4>;
         /**默认矩阵,禁止修改*/
         static readonly ZERO: Readonly<Matrix4x4>;
         /**
@@ -23532,7 +23269,7 @@ declare module Laya {
         reload(): void;
         /**
          * 检测是否支持播放指定格式视频。
-         * @param type	参数为Video.MP4 / Video.OGG / Video.WEBM之一。
+         * @param type	"mp4","ogg","webm","m3u8"等。
          * @return 表示支持的级别。可能的值：
          * <ul>
          * <li>"probably" - 浏览器最可能支持该音频/视频类型</li>
@@ -23540,7 +23277,7 @@ declare module Laya {
          * <li>"" - （空字符串）浏览器不支持该音频/视频类型</li>
          * </ul>
          */
-        canPlayType(type: number): CanPlayTypeResult;
+        canPlayType(type: string): CanPlayTypeResult;
         private onVideoMetaLoaded;
         /**
          * buffered 属性返回 TimeRanges(JS)对象。TimeRanges 对象表示用户的音视频缓冲范围。缓冲范围指的是已缓冲音视频的时间范围。如果用户在音视频中跳跃播放，会得到多个缓冲范围。
@@ -23658,12 +23395,6 @@ declare module Laya {
          */
         destroy(detroyChildren?: boolean): void;
     }
-    const enum VideoType {
-        MP4 = 1,
-        OGG = 2,
-        CAMERA = 4,
-        WEBM = 8
-    }
     /**
      * <code>VideoTexture</code> 多媒体纹理
      */
@@ -23714,7 +23445,7 @@ declare module Laya {
         load(): void;
         /**
          * 检测是否支持播放指定格式视频。
-         * @param type	参数为Video.MP4 / Video.OGG / Video.WEBM之一。
+         * @param type	"mp4","ogg","webm","m3u8"等。
          * @return 表示支持的级别。可能的值：
          * <ul>
          * <li>"probably" - 浏览器最可能支持该音频/视频类型</li>
@@ -23722,7 +23453,7 @@ declare module Laya {
          * <li>"" - （空字符串）浏览器不支持该音频/视频类型</li>
          * </ul>
          */
-        canPlayType(type: number): CanPlayTypeResult;
+        canPlayType(type: string): CanPlayTypeResult;
         /**
          * buffered 属性返回 TimeRanges(JS)对象。TimeRanges 对象表示用户的音视频缓冲范围。缓冲范围指的是已缓冲音视频的时间范围。如果用户在音视频中跳跃播放，会得到多个缓冲范围。
          * <p>buffered.length返回缓冲范围个数。如获取第一个缓冲范围则是buffered.start(0)和buffered.end(0)。以秒计。</p>
@@ -23967,6 +23698,7 @@ declare module Laya {
         get volume(): number;
     }
     /**
+     * 自动图集管理类
      * @private
      */
     class AtlasInfoManager {
@@ -23975,7 +23707,11 @@ declare module Laya {
             baseUrl?: string;
         }>;
         static enable(infoFile: string, callback?: Handler | null): void;
-        static addToDict(data: any): void;
+        static addAtlases(data: Record<string, [
+            string,
+            string[]
+        ]>): void;
+        static addAtlas(atlasUrl: string, prefix: string, frames: Array<string>): void;
         static getFileLoadPath(file: string): {
             url: string;
             baseUrl?: string;
@@ -24118,7 +23854,6 @@ declare module Laya {
         constructParams?: TextureConstructParams;
         propertyParams?: TexturePropertyParams;
         blob?: ArrayBuffer;
-        noMetaFile?: boolean;
         [key: string]: any;
     }
     interface ILoadURL extends ILoadOptions {
@@ -24127,7 +23862,7 @@ declare module Laya {
     interface ContentTypeMap {
         "text": string;
         "json": any;
-        "xml": XMLDocument;
+        "xml": XML;
         "arraybuffer": ArrayBuffer;
         "image": HTMLImageElement | ImageBitmap;
         "sound": HTMLAudioElement;
@@ -24253,12 +23988,13 @@ declare module Laya {
          * 从指定URL下载。这是较为底层的下载资源的方法，它和load方法不同，不对返回的数据进行解析，也不会缓存下载的内容。
          * 成功则返回下载的数据，失败返回null。
          */
-        fetch<K extends keyof ContentTypeMap>(url: string, contentType: K, onProgress?: (progress: number) => void, options?: Readonly<ILoadOptions>): Promise<ContentTypeMap[K]>;
+        fetch<K extends keyof ContentTypeMap>(url: string, contentType: K, onProgress?: ProgressCallback, options?: Readonly<ILoadOptions>): Promise<ContentTypeMap[K]>;
         private queueToDownload;
         private download;
         private completeItem;
         private static getURLInfo;
-        private static warn;
+        private static warnFailed;
+        static warn(msg: string, err?: any): void;
         /**
          * 获取指定资源地址的资源。
          * @param url 资源地址。
@@ -24339,6 +24075,21 @@ declare module Laya {
          * @param url 资源地址
          */
         cancelLoadByUrl(url: string): void;
+        /**
+         * 载入一个分包
+         * @path 小游戏的分包路径
+         * @onProgress 加载进度回调
+         */
+        loadPackage(path: string, onProgress?: ProgressCallback): Promise<void>;
+        /**
+         * 载入一个分包。
+         * @path 分包路径
+         * @remoteUrl 如果分包是一个远程包，那需要提供远程资源服务器的地址，例如"http://cdn.com/"
+         * @onProgress 加载进度回调
+         */
+        loadPackage(path: string, remoteUrl?: string, onProgress?: ProgressCallback): Promise<void>;
+        private _loadMiniPackage;
+        private _loadSubFileConfig;
     }
     /**
      * <p> <code>LocalStorage</code> 类用于没有时间限制的数据存储。</p>
@@ -24387,34 +24138,6 @@ declare module Laya {
          * 清除本地存储信息。
          */
         static clear(): void;
-    }
-    /**
-     * <p>资源版本的生成由layacmd或IDE完成，使用 <code>ResourceVersion</code> 简化使用过程。</p>
-     * <p>调用 <code>enable</code> 启用资源版本管理。</p>
-     */
-    class ResourceVersion {
-        /**基于文件夹的资源管理方式（老版本IDE默认类型）*/
-        static FOLDER_VERSION: number;
-        /**基于文件名映射管理方式（新版本IDE默认类型）*/
-        static FILENAME_VERSION: number;
-        /**版本清单*/
-        static manifest: any;
-        /**当前使用的版本管理类型*/
-        static type: number;
-        /**
-         * <p>启用资源版本管理。</p>
-         * <p>由于只有发布版本需要资源管理。因此没有资源管理文件时，可以设置manifestFile为null或者不存在的路径。</p>
-         * @param	manifestFile	清单（json）文件的路径。
-         * @param   callback		清单（json）文件加载完成后执行。
-         * @param   type			FOLDER_VERSION为基于文件夹管理方式（老版本IDE默认类型），FILENAME_VERSION为基于文件名映射管理（新版本IDE默认类型
-         */
-        static enable(manifestFile: string, callback: Handler, type?: number): void;
-        /**
-         * 为加载路径添加版本前缀。
-         * @param	originURL	源路径。
-         * @return 格式化后的新路径。
-         */
-        static addVersionPrefix(originURL: string): string;
     }
     /**
      * 连接建立成功后调度。
@@ -24560,14 +24283,14 @@ declare module Laya {
      * <p>引擎加载资源的时候，会自动调用formatURL函数格式化URL路径</p>
      * <p>通过basePath属性可以设置网络基础路径</p>
      * <p>通过设置customFormat函数，可以自定义URL格式化的方式</p>
-     * <p>除了默认的通过增加后缀的格式化外，通过VersionManager类，可以开启IDE提供的，基于目录的管理方式来替代 "?v=" 的管理方式</p>
-     * @see laya.net.VersionManager
      */
     class URL {
-        /**URL地址版本映射表，比如{"aaa/bb.png":99,"aaa/bb.png":12}，默认情况下，通过formatURL格式化后，会自动生成为"aaa/bb.png?v=99"的一个地址*/
-        static version: Record<string, number | string>;
+        /**URL地址版本映射表，比如{"aaa/bb.png":"edcba","aaa/bb.png":"1342a"}，默认情况下，通过formatURL格式化后，会自动生成为"aaa/bb-1342a.png"的一个地址*/
+        static version: Record<string, string>;
         /**基础路径。如果不设置，默认为当前网页的路径。最终地址将被格式化为 basePath+相对URL地址，*/
         static basePath: string;
+        /**扩展的基础路径映射表，比如{"aa/":"http://abc.com/"},则把路径以aa/开头的资源映射到http://abc.com/下*/
+        static basePaths: Record<string, string>;
         /**root路径。只针对'~'类型的url路径有效*/
         static rootPath: string;
         /**@private */
@@ -25080,6 +24803,10 @@ declare module Laya {
          * @override
          */
         protected getDef(): any;
+        /**
+         * @override 初始化设置为当前显示对象的宽和高
+         */
+        protected _onAdded(): void;
         private _setShape;
         /**相对节点的x轴偏移*/
         get x(): number;
@@ -25144,6 +24871,10 @@ declare module Laya {
          * @override
          */
         protected getDef(): any;
+        /**
+         * @override 初始化设置为当前显示对象的宽和高
+         */
+        protected _onAdded(): void;
         private _setShape;
         /**相对节点的x轴偏移*/
         get x(): number;
@@ -26064,37 +25795,6 @@ declare module Laya {
         static getDDSTextureInfo(source: ArrayBuffer): DDSTextureInfo;
     }
     class DepthState {
-    }
-    /**
-     * https://openexr.readthedocs.io/en/latest/OpenEXRFileLayout.html
-     */
-    enum AttributeType {
-        box2i = "box2i",
-        box2f = "box2f",
-        chlist = "chlist",
-        chromaticities = "chromaticities",
-        compression = "compression",
-        double = "double",
-        envmap = "envmap",
-        float = "float",
-        int = "int",
-        keycode = "keycode",
-        lineOrder = "lineOrder",
-        m33f = "m33f",
-        m44f = "m44f",
-        preview = "preview",
-        rational = "rational",
-        string = "string",
-        stringvector = "stringvector",
-        titledesc = "titledesc",
-        timecode = "timecode",
-        v2i = "v2i",
-        v2f = "v2f",
-        v3i = "v3i",
-        v3f = "v3f"
-    }
-    class EXRTextureInfo {
-        static getEXRInfo(buffer: ArrayBuffer): void;
     }
     /**
      * https://floyd.lbl.gov/radiance/framer.html
@@ -27899,6 +27599,7 @@ declare module Laya {
      */
     class ShaderData implements IClone {
         get uniformBuffersMap(): Map<number, UniformBufferObject>;
+        applyUBOData(): void;
         /**
          * 增加Shader宏定义。
          * @param value 宏定义。
@@ -27945,7 +27646,7 @@ declare module Laya {
         /**
          * 获取浮点。
          * @param	index shader索引。
-         * @return  浮点。
+         * @return	浮点。
          */
         getNumber(index: number): number;
         /**
@@ -28820,8 +28521,6 @@ declare module Laya {
          * 元资源 数据
          */
         metaMap: Record<string, any>;
-        /** 是否下载图片的描述信息 */
-        enableImageMetaFile: boolean;
         /**
          * uuid获得url
          * @param uuid uuid
@@ -28860,7 +28559,7 @@ declare module Laya {
          * @param uuid
          * @returns
          */
-        getMeta(url: string, uuid: string): any;
+        getMeta(url: string, uuid: string): Promise<any>;
         /**
          * 获得子资源路径
          * @param url
@@ -29118,11 +28817,8 @@ declare module Laya {
         set font(str: string);
         fillText(txt: string | WordText, x: number, y: number, fontStr: string, color: string, align: string, lineWidth?: number, borderColor?: string): void;
         drawText(text: string | WordText, x: number, y: number, font: string, color: string, textAlign: string): void;
-        fillWords(words: HTMLChar[], x: number, y: number, fontStr: string, color: string): void;
         strokeWord(text: string | WordText, x: number, y: number, font: string, color: string, lineWidth: number, textAlign: string): void;
         fillBorderText(txt: string | WordText, x: number, y: number, font: string, color: string, borderColor: string, lineWidth: number, textAlign: string): void;
-        fillBorderWords(words: HTMLChar[], x: number, y: number, font: string, color: string, borderColor: string, lineWidth: number): void;
-        fillWords11(data: HTMLChar[], x: number, y: number, fontStr: FontInfo, color: string, strokeColor: string | null, lineWidth: number): void;
         filltext11(data: string | WordText, x: number, y: number, fontStr: string, color: string, strokeColor: string, lineWidth: number, textAlign: string): void;
         private _fillRect;
         fillRect(x: number, y: number, width: number, height: number, fillStyle: any): void;
@@ -29192,7 +28888,7 @@ declare module Laya {
          * @param	ty
          * @param	alpha
          */
-        drawTextureWithTransform(tex: Texture, x: number, y: number, width: number, height: number, transform: Matrix | null, tx: number, ty: number, alpha: number, blendMode: string | null, colorfilter?: ColorFilter | null, uv?: number[], color?: number): void;
+        drawTextureWithTransform(tex: Texture, x: number, y: number, width: number, height: number, transform: Matrix | null, tx: number, ty: number, alpha: number, blendMode: string | null, uv?: number[], color?: number): void;
         /**
          * * 把ctx中的submits提交。结果渲染到target上
          * @param	ctx
@@ -29201,7 +28897,7 @@ declare module Laya {
         private _flushToTarget;
         drawCanvas(canvas: HTMLCanvas, x: number, y: number, width: number, height: number): void;
         drawTarget(rt: RenderTexture2D, x: number, y: number, width: number, height: number, m: Matrix, shaderValue: Value2D, uv?: ArrayLike<number> | null, blend?: number, color?: number): boolean;
-        drawTriangles(tex: Texture, x: number, y: number, vertices: Float32Array, uvs: Float32Array, indices: Uint16Array, matrix: Matrix, alpha: number, color: ColorFilter, blendMode: string, colorNum?: number): void;
+        drawTriangles(tex: Texture, x: number, y: number, vertices: Float32Array, uvs: Float32Array, indices: Uint16Array, matrix: Matrix, alpha: number, blendMode: string, colorNum?: number): void;
         transform(a: number, b: number, c: number, d: number, tx: number, ty: number): void;
         setTransformByMatrix(value: Matrix): void;
         rotate(angle: number): void;
@@ -29692,6 +29388,25 @@ declare module Laya {
         getData(x: number, y: number, width: number, height: number): ArrayBufferView;
     }
     /**
+     * <code>SpotLight</code> 类用于创建RenderTextureCube。
+     */
+    class RenderTextureCube extends RenderTexture {
+        /**
+         * +x, -x, +y, -y, +z, -z
+         */
+        faceIndex: number;
+        /**
+         * 实例化一个RendertextureCube
+         * @param size 像素
+         * @param colorFormat 颜色格式
+         * @param depthFormat 深度格式
+         * @param generateMipmap 是否生成mipmap
+         * @param multiSamples
+         */
+        constructor(size: number, colorFormat: RenderTargetFormat, depthFormat: RenderTargetFormat, generateMipmap: boolean, multiSamples: number);
+        _start(): void;
+    }
+    /**
      * <code>Resource</code> 资源存取类。
      */
     class Resource extends EventDispatcher {
@@ -29732,7 +29447,7 @@ declare module Laya {
         /**获取资源的UUID。 */
         uuid: string;
         /**是否在引用计数为0的时候立马删除他 */
-        destoryedImmediately: boolean;
+        destroyedImmediately: boolean;
         /**
          * 获取唯一标识ID,通常用于识别。
          */
@@ -29982,7 +29697,7 @@ declare module Laya {
         /**默认法线纹理 */
         static normalTexture: Texture2D;
         /**错误纹理 */
-        static erroTextur: Texture2D;
+        static errorTexture: Texture2D;
         /**Default Toggle Texture */
         static defalutUITexture: Texture2D;
         /**
@@ -30090,6 +29805,52 @@ declare module Laya {
          * @param invertY 是否反转 Y 轴
          */
         setSubPixelsData(xOffset: number, yOffset: number, zOffset: number, width: number, height: number, depth: number, pixels: ArrayBufferView, mipmapLevel: number, generateMipmap: boolean, premultiplyAlpha: boolean, invertY: boolean): void;
+    }
+    enum TextureCubeFace {
+        /**+x */
+        PositiveX = 0,
+        /**-x */
+        NegativeX = 1,
+        /**+y */
+        PositiveY = 2,
+        /**-y */
+        NegativeY = 3,
+        /**+z */
+        PositiveZ = 4,
+        /**-z */
+        NegativeZ = 5
+    }
+    /**
+     * <code>TextureCube</code> 类用于生成立方体纹理。
+     */
+    class TextureCube extends BaseTexture {
+        /**@private*/
+        private static _blackTexture;
+        /**@private*/
+        private static _grayTexture;
+        /**@private*/
+        private static _whiteTexture;
+        private static _errorTexture;
+        /**
+         * 黑色纯色纹理。
+         */
+        static get blackTexture(): TextureCube;
+        /**
+         * 灰色纯色纹理。
+         */
+        static get grayTexture(): TextureCube;
+        /**
+         * 白色纯色纹理。
+         */
+        static get whiteTexture(): TextureCube;
+        static get errorTexture(): TextureCube;
+        constructor(size: number, format: TextureFormat, mipmap?: boolean, sRGB?: boolean);
+        setImageData(source: (HTMLImageElement | HTMLCanvasElement | ImageBitmap)[], premultiplyAlpha: boolean, invertY: boolean): void;
+        setPixelsData(source: ArrayBufferView[], premultiplyAlpha: boolean, invertY: boolean): void;
+        updateSubPixelsData(source: ArrayBufferView[], xOffset: number, yOffset: number, width: number, height: number, mipmapLevel: number, generateMipmap: boolean, premultiplyAlpha: boolean, invertY: boolean): void;
+        setDDSData(ddsInfo: DDSTextureInfo): void;
+        setKTXData(ktxInfo: KTXTextureInfo): void;
+        get defaultTexture(): BaseTexture;
     }
     /**
      * WebGLRTMgr 管理WebGLRenderTarget的创建和回收
@@ -30695,13 +30456,13 @@ declare module Laya {
         protected changeState(): void;
         /**
          * 表示按钮各个状态下的文本颜色。
-         * <p><b>格式:</b> "upColor,overColor,downColor,disableColor"。</p>
+         * <p><b>格式:</b> "upColor,overColor,downColor"。</p>
          */
         get labelColors(): string;
         set labelColors(value: string);
         /**
          * 表示按钮各个状态下的描边颜色。
-         * <p><b>格式:</b> "upColor,overColor,downColor,disableColor"。</p>
+         * <p><b>格式:</b> "upColor,overColor,downColor"。</p>
          */
         get strokeColors(): string;
         set strokeColors(value: string);
@@ -31712,7 +31473,7 @@ declare module Laya {
         set_dataSource(value: any): void;
         /**
          * 获取或设置对 <code>ComboBox</code> 组件所包含的 <code>Button</code> 组件的文本标签颜色。
-         * <p><b>格式：</b>upColor,overColor,downColor,disableColor</p>
+         * <p><b>格式：</b>upColor,overColor,downColor</p>
          */
         get labelColors(): string;
         set labelColors(value: string);
@@ -32496,9 +32257,6 @@ declare module Laya {
         get skin(): string;
         set skin(value: string);
         _setSkin(url: string): Promise<void>;
-        /**
-         * @copy laya.ui.AutoBitmap#source
-         */
         get source(): Texture;
         set source(value: Texture);
         get color(): string;
@@ -32672,6 +32430,7 @@ declare module Laya {
          * 文本 <code>Text</code> 实例。
          */
         protected _tf: Text;
+        protected _fitContent: boolean;
         /**
          * 创建一个新的 <code>Label</code> 实例。
          * @param text 文本内容字符串。
@@ -32682,15 +32441,13 @@ declare module Laya {
          * @inheritDoc
         */
         protected createChildren(): void;
+        protected _onPostLayout(): void;
         /**
          * 当前文本内容字符串。
          * @see laya.display.Text.text
          */
         get text(): string;
         set text(value: string);
-        /**@copy laya.display.Text#changeText()
-         **/
-        changeText(text: string): void;
         /**
          * @copy laya.display.Text#wordWrap
          */
@@ -32742,7 +32499,6 @@ declare module Laya {
         /**
          * <p>边距信息</p>
          * <p>"上边距，右边距，下边距 , 左边距（边距以像素为单位）"</p>
-         * @see laya.display.Text.padding
          */
         get padding(): string;
         set padding(value: string);
@@ -32766,6 +32522,18 @@ declare module Laya {
          */
         get strokeColor(): string;
         set strokeColor(value: string);
+        get html(): boolean;
+        /** 设置是否富文本，支持html语法 */
+        set html(value: boolean);
+        get ubb(): boolean;
+        /** 设置是否使用UBB语法解析文本 */
+        set ubb(value: boolean);
+        get maxWidth(): number;
+        /** 设置当文本达到最大允许的宽度时，自定换行，设置为0则此限制不生效。*/
+        set maxWidth(value: number);
+        get fitContent(): boolean;
+        /** 设置文本框大小是否自动适应文本内容的大小。可取值为both或者height */
+        set fitContent(value: boolean);
         /**
          * 文本控件实体 <code>Text</code> 实例。
          */
@@ -32829,6 +32597,17 @@ declare module Laya {
          * @copy laya.display.Text#underlineColor
          */
         set underlineColor(value: string);
+        /**
+         * @copy laya.display.Text#ignoreLang
+         */
+        get ignoreLang(): boolean;
+        /**
+         * @copy laya.display.Text#ignoreLang
+         */
+        set ignoreLang(value: boolean);
+        get templateVars(): Record<string, any>;
+        set templateVars(value: Record<string, any> | boolean);
+        setVar(name: string, value: any): Label;
     }
     /**
      * <code>LayoutBox</code> 是一个布局容器类。
@@ -33349,6 +33128,51 @@ declare module Laya {
         protected _setCellChanged(): void;
         /**@override */
         protected commitMeasure(): void;
+    }
+    /**
+     * 微信开放数据展示组件，直接实例本组件，即可根据组件宽高，位置，以最优的方式显示开放域数据
+     */
+    class OpenDataContextView extends UIComponent {
+        private _fps;
+        constructor();
+        get fps(): number;
+        set fps(value: number);
+        /**
+         * @override
+         */
+        _onActive(): void;
+        /**
+         * @override
+         */
+        _onInActive(): void;
+        private _onLoop;
+        /**
+         * @override
+         */
+        _setWidth(value: number): void;
+        /**
+         * @override
+         */
+        _setHeight(value: number): void;
+        /**
+         * @override
+         */
+        set x(value: number);
+        /**
+         * @override
+         */
+        get x(): number;
+        /**
+         * @override
+         */
+        set y(value: number);
+        /**
+         * @override
+         */
+        get y(): number;
+        private updateViewPort;
+        /**向开放数据域发送消息*/
+        postMsg(msg: any): void;
     }
     /**
      * <code>Panel</code> 是一个面板容器类。
@@ -34279,7 +34103,7 @@ declare module Laya {
         static buttonStateNum: number;
         /**
          * 按钮标签颜色。
-         * <p><b>格式：</b>[upColor,overColor,downColor,disableColor]。</p>
+         * <p><b>格式：</b>[upColor,overColor,downColor]。</p>
          */
         static buttonLabelColors: any[];
         /**
@@ -34478,7 +34302,7 @@ declare module Laya {
          * @param text 文本内容字符串。
          */
         constructor(text?: string);
-        private _onTextChange;
+        protected _onPostLayout(): void;
         /**
          *
          * @param destroyChild
@@ -35162,12 +34986,12 @@ declare module Laya {
         /**
          *  xml结构的数据源。
          */
-        set xml(value: XMLDocument);
+        set xml(value: XML);
         /**
          * @private
          * 解析并处理XML类型的数据源。
          */
-        protected parseXml(xml: ChildNode, source: any[], nodeParent: any, isRoot: boolean): void;
+        protected parseXml(xml: XML, source: any[], nodeParent: any, isRoot: boolean): void;
         /**
          * @private
          * 处理数据项的打开状态。
@@ -35205,8 +35029,6 @@ declare module Laya {
         protected _dataSource: any;
         /**@private 鼠标悬停提示 */
         protected _toolTip: any;
-        /**@private 标签 */
-        protected _tag: any;
         /**@private 禁用 */
         protected _disabled: boolean;
         /**@private 变灰*/
@@ -35310,12 +35132,6 @@ declare module Laya {
         set centerY(value: number);
         protected _shouldRefreshLayout(): void;
         protected _sizeChanged(): void;
-        /**
-         * <p>对象的标签。</p>
-         * 冗余字段，可以用来储存数据。
-         */
-        get tag(): any;
-        set tag(value: any);
         /**
          * <p>鼠标悬停提示。</p>
          * <p>可以赋值为文本 <code>String</code> 或函数 <code>Handler</code> ，用来实现自定义样式的鼠标提示和参数携带等。</p>
@@ -35710,6 +35526,7 @@ declare module Laya {
         protected _setIndexHandler: Handler;
         /**@private */
         protected _selectedIndex: number;
+        constructor();
         /**
          * 批量设置视图对象。
          * @param views 视图对象数组。
@@ -35929,48 +35746,6 @@ declare module Laya {
      * @see laya.ui.Slider
      */
     class VSlider extends Slider {
-    }
-    /**
-     * 微信开放数据展示组件，直接实例本组件，即可根据组件宽高，位置，以最优的方式显示开放域数据
-     */
-    class WXOpenDataViewer extends UIComponent {
-        constructor();
-        /**
-         * @override
-         */
-        onEnable(): void;
-        /**
-         * @override
-         */
-        onDisable(): void;
-        private _onLoop;
-        /**
-         * @override
-         */
-        _setWidth(value: number): void;
-        /**
-         * @override
-         */
-        _setHeight(value: number): void;
-        /**
-         * @override
-         */
-        set x(value: number);
-        /**
-         * @override
-         */
-        get x(): number;
-        /**
-         * @override
-         */
-        set y(value: number);
-        /**
-         * @override
-         */
-        get y(): number;
-        private _postMsg;
-        /**向开放数据域发送消息*/
-        postMsg(msg: any): void;
     }
     class Base64Tool {
         static chars: string;
@@ -37112,11 +36887,7 @@ declare module Laya {
         static circOut(t: number, b: number, c: number, d: number): number;
     }
     class FontInfo {
-        static EMPTY: FontInfo;
         private static _cache;
-        private static _gfontID;
-        private static _lastFont;
-        private static _lastFontInfo;
         /**
          * 解析字体模型
          * @param font
@@ -37212,7 +36983,7 @@ declare module Laya {
      * 鼠标点击区域，可以设置绘制一系列矢量图作为点击区域和非点击区域（目前只支持圆形，矩形，多边形）
      *
      */
-    class HitArea {
+    class HitArea implements IHitArea {
         _hit: Graphics;
         _unHit: Graphics;
         /**
@@ -37236,58 +37007,14 @@ declare module Laya {
     }
     /**
      * @private
-     * <code>HTMLChar</code> 是一个 HTML 字符类。
-     */
-    class HTMLChar {
-        private static _isWordRegExp;
-        /** x坐标*/
-        x: number;
-        /** y坐标*/
-        y: number;
-        /** 宽*/
-        width: number;
-        /** 高*/
-        height: number;
-        /** 表示是否是正常单词(英文|.|数字)。*/
-        isWord: boolean;
-        /** 字符。*/
-        char: string | null;
-        /** 字符数量。*/
-        charNum: number;
-        /** CSS 样式。*/
-        style: any;
-        /**
-         * 创建实例
-         */
-        constructor();
-        /**
-         * 根据指定的字符、宽高、样式，创建一个 <code>HTMLChar</code> 类的实例。
-         * @param	char 字符。
-         * @param	w 宽度。
-         * @param	h 高度。
-         * @param	style CSS 样式。
-         */
-        setData(char: string, w: number, h: number, style: any): HTMLChar;
-        /**
-         * 重置
-         */
-        reset(): HTMLChar;
-        /**
-         * 回收
-         */
-        recover(): void;
-        /**
-         * 创建
-         */
-        static create(): HTMLChar;
-    }
-    /**
-     * @private
      * <code>IClone</code> 资源克隆接口。
      */
     interface IClone {
         clone(): any;
         cloneTo(destObject: any): void;
+    }
+    interface IHitArea {
+        contains(x: number, y: number, sp?: Sprite): boolean;
     }
     /**
     * 图片二进制处理类
@@ -37407,13 +37134,6 @@ declare module Laya {
          * 显示鼠标
          */
         static show(): void;
-    }
-    class NativeWordText {
-        _nativeObj: any;
-        constructor();
-        setText(txt: string): void;
-        cleanCache(): void;
-        set splitRender(value: boolean);
     }
     /**
      * <p> <code>Pool</code> 是对象池类，用于对象的存储、重复使用。</p>
@@ -38192,12 +37912,6 @@ declare module Laya {
         /**获取一个全局唯一ID。*/
         static getGID(): number;
         /**
-         * 将字符串解析成 XML 对象。
-         * @param value 需要解析的字符串。
-         * @return js原生的XML对象。
-         */
-        static parseXMLFromString: Function;
-        /**
          * @private
          * 清空source数组，复制array数组的值。
          * @param	source 需要赋值的数组。
@@ -38331,29 +38045,26 @@ declare module Laya {
      * @private
      */
     class WordText {
-        id: number;
-        save: any[];
-        toUpperCase: string;
-        changed: boolean;
+        text: string;
         width: number;
         pageChars: any[];
-        startID: number;
-        startIDStroke: number;
-        lastGCCnt: number;
-        splitRender: boolean;
+        pagecharsCtx: Context;
         scalex: number;
         scaley: number;
+        _nativeObj: any;
+        _splitRender: boolean;
+        constructor();
         setText(txt: string): void;
         toString(): string;
         get length(): number;
-        charCodeAt(i: number): number;
-        charAt(i: number): string;
         /**
          * 自己主动清理缓存，需要把关联的贴图删掉
          * 不做也可以，textrender会自动清理不用的
          * TODO 重用
          */
         cleanCache(): void;
+        get splitRender(): boolean;
+        set splitRender(value: boolean);
     }
     class BlendMode {
         static activeBlendFunction: Function;
@@ -39218,9 +38929,8 @@ declare module Laya {
          * @param	start	开始位置
          */
         getNextChar(str: string): string | null;
-        filltext(ctx: Context, data: string | WordText, x: number, y: number, fontStr: string, color: string, strokeColor: string, lineWidth: number, textAlign: string, underLine?: number): void;
-        fillWords(ctx: Context, data: HTMLChar[], x: number, y: number, fontStr: string | FontInfo, color: string, strokeColor: string | null, lineWidth: number): void;
-        _fast_filltext(ctx: Context, data: string | WordText | null, htmlchars: HTMLChar[] | null, x: number, y: number, font: FontInfo, color: string, strokeColor: string | null, lineWidth: number, textAlign: number, underLine?: number): void;
+        filltext(ctx: Context, data: string | WordText, x: number, y: number, fontStr: string, color: string, strokeColor: string, lineWidth: number, textAlign: string): void;
+        _fast_filltext(ctx: Context, data: string | WordText | null, x: number, y: number, font: FontInfo, color: string, strokeColor: string | null, lineWidth: number, textAlign: number): void;
         /**
          * 画出重新按照贴图顺序分组的文字。
          * @param	samePagesData
@@ -39272,7 +38982,7 @@ declare module Laya {
         getFontSizeInfo(font: string): number;
         printDbgInfo(): void;
         showAtlas(n: number, bgcolor: string, x: number, y: number, w: number, h: number): Sprite;
-        filltext_native(ctx: Context, data: string | WordText, htmlchars: HTMLChar[], x: number, y: number, fontStr: string, color: string, strokeColor: string, lineWidth: number, textAlign: string, underLine?: number): void;
+        filltext_native(ctx: Context, data: string | WordText, x: number, y: number, fontStr: string, color: string, strokeColor: string, lineWidth: number, textAlign: string): void;
     }
     class TextTexture extends Resource {
         private static pool;

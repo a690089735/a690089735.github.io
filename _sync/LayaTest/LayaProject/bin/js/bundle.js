@@ -70,7 +70,7 @@
     regClass2("7bad1742-6eed-4d8d-81c0-501dc5bf03d6", "../src/Main.ts")
   ], Main);
 
-  // src/shootBullet.ts
+  // src/ShootBullet.ts
   var { regClass: regClass3, property: property3 } = Laya;
   var Script2 = class extends Laya.Script {
     constructor() {
@@ -95,7 +95,7 @@
     property3(Laya.Sprite)
   ], Script2.prototype, "birthplace", 2);
   Script2 = __decorateClass([
-    regClass3("9f85d930-3b2b-4ed7-b880-968bc868bb6f", "../src/shootBullet.ts")
+    regClass3("9f85d930-3b2b-4ed7-b880-968bc868bb6f", "../src/ShootBullet.ts")
   ], Script2);
 
   // src/Touching.ts

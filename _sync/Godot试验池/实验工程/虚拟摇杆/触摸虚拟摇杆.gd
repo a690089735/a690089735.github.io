@@ -1,15 +1,15 @@
 extends TouchScreenButton
 @onready var root = get_tree().root
-@onready var 虚拟摇杆 :Node2D= (preload("res://虚拟摇杆/虚拟摇杆.tscn")).instantiate()
-@onready var 摇杆按钮 :Sprite2D= 虚拟摇杆.get_node("摇杆")
-@onready var 摇杆基座 :Sprite2D= 虚拟摇杆.get_node("基座")
+@onready var 虚拟摇杆: Node2D = (preload("res://虚拟摇杆/虚拟摇杆.tscn")).instantiate()
+@onready var 摇杆按钮: Sprite2D = 虚拟摇杆.get_node("摇杆")
+@onready var 摇杆基座: Sprite2D = 虚拟摇杆.get_node("基座")
 
-@onready var 角色 :Sprite2D = $"../Sprite2D"
-@export var 移动速度 :int = 270
+@onready var 角色: Sprite2D = $"../Sprite2D"
+@export var 移动速度: int = 270
 
-var 距离限制 :int = 40
-var 偏移距离 :float
-var 操作方向 :Vector2
+var 距离限制: int = 40
+var 偏移距离: float
+var 操作方向: Vector2
 
 func _process(delta):
 #	角色控制功能

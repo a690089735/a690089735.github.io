@@ -1,4 +1,5 @@
 import bpy
+import mathutils
 
 # 测试
 
@@ -16,6 +17,7 @@ import bpy
 # if active_object is not None and active_object.type == 'ARMATURE':
 #     print(active_object.data.bones.active.name)
 
+
 def clearTempData():
     # 删除未使用的物体
     for obj in bpy.data.objects:
@@ -27,12 +29,20 @@ def clearTempData():
         if mesh.users == 0:
             bpy.data.meshes.remove(mesh)
 
-def genShapeFormMeshByBone(boneObject:object, oldObject:object):
-    oldMesh :bpy.types.Mesh= oldObject.data
-    newMesh= bpy.data.meshes.new("BoneShape")
-    newMesh.from_pydata(oldMesh.vertices.items(),oldMesh.edges.items(),oldMesh.polygons.items())
+
+def genShapeFormMeshByBone(boneObject: object, oldObject: object):
+    originMatrix = oldObject.matrix_world
+    boneMatrixInverted = (boneObject.id_data.matrix_world @ boneObject.matrix).inverted()
+
+    oldMesh: bpy.types.Mesh = oldObject.data
+    newMesh: bpy.types.Object = bpy.data.meshes.new("BoneShape")
+
+    vertices = [boneMatrixInverted @ (originMatrix @ v.co) for v in oldMesh.vertices]
+    edges = [e.vertices for e in oldMesh.edges]
+    faces = [f.vertices for f in oldMesh.polygons]
+    newMesh.from_pydata(vertices, edges, faces)
     # .new_from_object(mObj)
-    newObject = bpy.data.objects.new("BoneShape",newMesh)
+    newObject = bpy.data.objects.new("BoneShape", newMesh)
     return newObject
 
 

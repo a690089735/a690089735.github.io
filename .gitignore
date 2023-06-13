@@ -1,1 +1,8 @@
+# Windows:
+Thumbs.db
+
+# Office:
 ~$*
+
+# Blender:
+*.blend1

@@ -64,4 +64,5 @@ if len(selectedObjects) == 2 and activeArmature.type == "ARMATURE" and selectedM
         # print("合适")
         objectData = genShapeFormMeshByBone(selectedPoseBone, selectedMesh)
         selectedPoseBone.custom_shape = objectData
+        selectedPoseBone.use_custom_shape_bone_size = False
 clearTempData()

@@ -302,6 +302,8 @@ declare module Laya {
         hideHeader: boolean;
         /** 对对象类型属性适用。对象创建时可以下拉选择一个类型。如果显示设置为null，则禁止菜单。默认是显示一个创建基类的菜单。*/
         createObjectMenu: Array<string>;
+        /** 说明此属性是引用一个资源 */
+        isAsset?: boolean;
         /** 对资源类型的属性适用。多个资源类型用逗号分隔，例如“Image,Audio"。*/
         assetTypeFilter: string;
         /** 如果属性类型是string，并且进行资源选择时，这个选项决定属性值是资源原始路径还是res://uuid这样的格式。如果是true，则是资源原始路径。默认false。*/
@@ -17345,7 +17347,7 @@ declare module Laya {
         get destroyed(): boolean;
         constructor();
         protected onStartListeningToType(type: string): void;
-        bubbleEvent(type: string, ev: Event): void;
+        bubbleEvent(type: string, data?: any): void;
         hasHideFlag(flag: number): boolean;
         /**
          * <p>销毁此对象。destroy对象默认会把自己从父节点移除，并且清理自身引用关系，等待js自动垃圾回收机制回收。destroy后不能再使用。</p>
@@ -30503,9 +30505,16 @@ declare module Laya {
          */
         get labelFont(): string;
         set labelFont(value: string);
-        /**标签对齐模式，默认为居中对齐。*/
+        /**
+         * 标签对齐模式，
+         */
         get labelAlign(): string;
         set labelAlign(value: string);
+        /**
+         * 标签垂直对齐模式，
+         */
+        get labelVAlign(): string;
+        set labelVAlign(value: string);
         /**
          * 对象的点击事件处理器函数（无默认参数）。
          * @implements
@@ -31303,6 +31312,7 @@ declare module Laya {
          * @private
          */
         protected _scrollBarSkin: string;
+        protected _scrollType: ScrollType;
         /**
          * @private
          */
@@ -31441,6 +31451,11 @@ declare module Laya {
          * 关闭下拉列表。
          */
         protected removeList(e: Event): void;
+        /**
+         * 滚动类型
+         */
+        get scrollType(): ScrollType;
+        set scrollType(value: ScrollType);
         /**
          * 滚动条皮肤。
          */
@@ -32553,6 +32568,7 @@ declare module Laya {
          * @override
          */
         get_width(): number;
+        set_width(value: number): void;
         /**
          * @inheritDoc
          * @override
@@ -32563,6 +32579,7 @@ declare module Laya {
          * @override
          */
         get_height(): number;
+        set_height(value: number): void;
         /**
          * @inheritDoc
          * @override
@@ -32891,6 +32908,9 @@ declare module Laya {
          * 获取对 <code>List</code> 组件所包含的内容容器 <code>Box</code> 组件的引用。
          */
         get content(): Box;
+        /**
+         * 滚动类型
+         */
         get scrollType(): ScrollType;
         set scrollType(value: ScrollType);
         /**

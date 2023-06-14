@@ -15,6 +15,10 @@ run/main_scene="res://虚拟摇杆/半屏场景.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[filesystem]
+
+import/fbx/enabled=false
+
 [input_devices]
 
 pointing/emulate_touch_from_mouse=true

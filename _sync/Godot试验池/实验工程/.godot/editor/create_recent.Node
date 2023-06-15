@@ -1,3 +1,11 @@
+CollisionShape3D
+StaticBody3D
+DirectionalLight3D
+CSGBox3D
+CSGPolygon3D
+Camera3D
+CharacterBody3D
+Area3D
 Sprite2D
 Node2D
 TouchScreenButton

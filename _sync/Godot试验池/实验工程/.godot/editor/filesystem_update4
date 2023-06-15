@@ -1,3 +1,6 @@
+res://3D资源/3D场景.tscn
 res://创建实例/主池子.gd
 res://创建实例/组件测试.gd
-res://3D资源/node_3d.tscn
+res://3D资源/地面灰色.tres
+res://3D资源/八方向移动.gd
+res://3D资源/简易角色.tscn

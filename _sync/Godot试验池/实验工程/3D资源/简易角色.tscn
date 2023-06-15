@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjky3t8ue8mpd"]
+
+[ext_resource type="Script" path="res://3D资源/八方向移动.gd" id="1_5x86g"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3elu4"]
+size = Vector3(0.02, 0.04, 0.02)
+
+[node name="Node3D" type="CharacterBody3D"]
+script = ExtResource("1_5x86g")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
+size = Vector3(0.02, 0.04, 0.02)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
+shape = SubResource("BoxShape3D_3elu4")

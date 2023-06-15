@@ -1,11 +1,12 @@
 {
   "_$ver": 1,
-  "_$id": "jn2nqhsc",
+  "_$id": "ku50m5rf",
   "_$type": "Scene",
   "left": 0,
   "right": 0,
   "top": 0,
   "bottom": 0,
+  "name": "Scene2D",
   "_$child": [
     {
       "_$id": "n9gjxcltvl",
@@ -43,11 +44,17 @@
           "transform": {
             "localPosition": {
               "_$type": "Vector3",
-              "y": 0.033357469255733,
-              "z": 0.09599960004466127
+              "y": 1,
+              "z": 1
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": -0.3826834323650898,
+              "w": 0.9238795325112867
             }
           },
-          "orthographicVerticalSize": 10,
+          "orthographic": true,
+          "orthographicVerticalSize": 0.18,
           "fieldOfView": 60,
           "nearPlane": 0.01,
           "farPlane": 1000,
@@ -67,9 +74,50 @@
           "depthTextureFormat": 35
         },
         {
-          "_$id": "tfn8cic1",
-          "_$prefab": "31e44b03-4cf0-4317-abc6-558980cd9705",
-          "name": "ZeroB@Ani",
+          "_$id": "6ni3p096l5",
+          "_$type": "Sprite3D",
+          "name": "Direction Light",
+          "transform": {
+            "localPosition": {
+              "_$type": "Vector3",
+              "y": 5
+            },
+            "localRotation": {
+              "_$type": "Quaternion",
+              "x": -0.40821789367673483,
+              "y": 0.23456971600980447,
+              "z": 0.109381654946615,
+              "w": 0.875426098065593
+            }
+          },
+          "_$comp": [
+            {
+              "_$type": "DirectionLightCom",
+              "color": {
+                "_$type": "Color",
+                "r": 0.6,
+                "g": 0.6,
+                "b": 0.6
+              },
+              "intensity": 1,
+              "lightmapBakedType": 1,
+              "shadowMode": 0,
+              "shadowStrength": 1,
+              "shadowDistance": 50,
+              "shadowDepthBias": 1,
+              "shadowNormalBias": 1,
+              "shadowNearPlane": 0.1,
+              "shadowCascadesMode": 0,
+              "strength": null,
+              "angle": null,
+              "maxBounces": null
+            }
+          ]
+        },
+        {
+          "_$id": "nfnvbcft",
+          "_$prefab": "657a56e3-5d5a-4362-9cf6-4d97500c627f",
+          "name": "简易角色",
           "active": true,
           "layer": 0,
           "transform": {
@@ -85,15 +133,19 @@
               "y": 0,
               "z": 0,
               "w": 1
+            },
+            "localScale": {
+              "_$type": "Vector3",
+              "x": 1,
+              "y": 1,
+              "z": 1
             }
           },
           "_$comp": [
             {
-              "_$override": "Animator",
-              "controller": {
-                "_$uuid": "c50743d7-d184-4bf8-8769-229827da3951",
-                "_$type": "AnimationController"
-              }
+              "_$type": "5678592e-1b52-4bc7-a179-023727e58750",
+              "scriptPath": "3D资源/八方向移动.ts",
+              "speed": 0.01
             }
           ]
         }

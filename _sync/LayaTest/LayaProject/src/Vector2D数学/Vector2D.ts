@@ -115,7 +115,7 @@ export class Vector2D {
     return Math.sqrt(dx * dx + dy * dy);
   }
   /**
-   * 2D向量减法
+   * 2D向量取模长
    * @return 向量的模长 
    */
   public magnitude(): number {
@@ -127,8 +127,8 @@ export class Vector2D {
    */
   public normalize(): Vector2D {
     const len = this.magnitude();
-    if (len === 0) {
-      return new Vector2D(this.x, this.y);
+    if (len == 0) {
+      return new Vector2D(0, 0);
     }
     return new Vector2D(this.x / len, this.y / len);
   }
@@ -166,6 +166,29 @@ export class Vector2D {
     return Math.atan2(det, dot) * 180 / Math.PI;
   }
 
+  /**
+   * 复制一个新的2D向量
+   * @return 新的2D向量
+   */
+  public copy(): Vector2D {
+    return new Vector2D(this.x, this.y);
+  }
+
+  /**
+   * 转为系统默认的Vector2
+   * @return 默认的新Vector2
+   */
+  public toVector2(): Laya.Vector2 {
+    return new Laya.Vector2(this.x, this.y);
+  }
+
+  /**
+   * 按文本输出Vector2D
+   * @return Vector2D字符串
+   */
+  toString() {
+    return `Vector2D(X: ${this.x}, Y: ${this.y})`;
+  }
 
   //静态版本
   // public static distance(a: Vector2D, b: Vector2D): number {

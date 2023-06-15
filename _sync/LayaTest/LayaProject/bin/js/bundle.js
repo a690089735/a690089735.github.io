@@ -58,20 +58,8 @@
     regClass("669cd7de-4b84-42b7-b4ad-ffd6ccb19356", "../src/BulletMovent.ts")
   ], Script);
 
-  // src/Main.ts
-  var { regClass: regClass2, property: property2 } = Laya;
-  var Main = class extends Laya.Script {
-    onStart() {
-      console.log("Game start");
-    }
-  };
-  __name(Main, "Main");
-  Main = __decorateClass([
-    regClass2("7bad1742-6eed-4d8d-81c0-501dc5bf03d6", "../src/Main.ts")
-  ], Main);
-
   // src/ShootBullet.ts
-  var { regClass: regClass3, property: property3 } = Laya;
+  var { regClass: regClass2, property: property2 } = Laya;
   var Script2 = class extends Laya.Script {
     constructor() {
       super();
@@ -86,68 +74,20 @@
   };
   __name(Script2, "Script");
   __decorateClass([
-    property3(String)
+    property2(String)
   ], Script2.prototype, "text", 2);
   __decorateClass([
-    property3(Laya.Prefab)
+    property2(Laya.Prefab)
   ], Script2.prototype, "bulletPrefab", 2);
   __decorateClass([
-    property3(Laya.Sprite)
+    property2(Laya.Sprite)
   ], Script2.prototype, "birthplace", 2);
   Script2 = __decorateClass([
-    regClass3("9f85d930-3b2b-4ed7-b880-968bc868bb6f", "../src/ShootBullet.ts")
+    regClass2("9f85d930-3b2b-4ed7-b880-968bc868bb6f", "../src/ShootBullet.ts")
   ], Script2);
 
-  // src/Touching.ts
-  var { regClass: regClass4, property: property4 } = Laya;
-  var Touching = class extends Laya.Script {
-    constructor() {
-      super();
-      this.text = "";
-    }
-    /**
-     * 组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次
-     */
-    //onAwake(): void {}
-    /**
-     * 组件被启用后执行，例如节点被添加到舞台后
-     */
-    //onEnable(): void {}
-    /**
-     * 组件被禁用时执行，例如从节点从舞台移除后
-     */
-    //onDisable(): void {}
-    /**
-     * 第一次执行update之前执行，只会执行一次
-     */
-    //onStart(): void {}
-    /**
-     * 手动调用节点销毁时执行
-     */
-    //onDestroy(): void {
-    /**
-     * 每帧更新时执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
-     */
-    //onUpdate(): void {}
-    /**
-     * 每帧更新时执行，在update之后执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
-     */
-    //onLateUpdate(): void {}
-    /**
-     * 鼠标点击后执行。与交互相关的还有onMouseDown等十多个函数，具体请参阅文档。
-     */
-    //onMouseClick(): void {}
-  };
-  __name(Touching, "Touching");
-  __decorateClass([
-    property4(String)
-  ], Touching.prototype, "text", 2);
-  Touching = __decorateClass([
-    regClass4("daf2f70e-d217-4a17-b1d9-41ffcab1b6b3", "../src/Touching.ts")
-  ], Touching);
-
   // src/Vector2D数学/Vector2D.ts
-  var { regClass: regClass5 } = Laya;
+  var { regClass: regClass3 } = Laya;
   var Vector2D = class {
     // 有参数构建向量
     constructor(xOrAngle, y) {
@@ -224,7 +164,7 @@
       return Math.sqrt(dx * dx + dy * dy);
     }
     /**
-     * 2D向量减法
+     * 2D向量取模长
      * @return 向量的模长 
      */
     magnitude() {
@@ -236,8 +176,8 @@
      */
     normalize() {
       const len = this.magnitude();
-      if (len === 0) {
-        return new Vector2D(this.x, this.y);
+      if (len == 0) {
+        return new Vector2D(0, 0);
       }
       return new Vector2D(this.x / len, this.y / len);
     }
@@ -273,6 +213,27 @@
       const det = this.x * b.y - this.y * b.x;
       return Math.atan2(det, dot) * 180 / Math.PI;
     }
+    /**
+     * 复制一个新的2D向量
+     * @return 新的2D向量
+     */
+    copy() {
+      return new Vector2D(this.x, this.y);
+    }
+    /**
+     * 转为系统默认的Vector2
+     * @return 默认的新Vector2
+     */
+    toVector2() {
+      return new Laya.Vector2(this.x, this.y);
+    }
+    /**
+     * 按文本输出Vector2D
+     * @return Vector2D字符串
+     */
+    toString() {
+      return `Vector2D(X: ${this.x}, Y: ${this.y})`;
+    }
     //静态版本
     // public static distance(a: Vector2D, b: Vector2D): number {
     //   const dx = a.x - b.x;
@@ -304,11 +265,11 @@
   /**右向量,禁止修改*/
   Vector2D.RIGHT = new Vector2D(1, 0);
   Vector2D = __decorateClass([
-    regClass5("693d1921-b8f7-434b-a378-62d388b706fb", "../src/Vector2D\u6570\u5B66/Vector2D.ts")
+    regClass3("693d1921-b8f7-434b-a378-62d388b706fb", "../src/Vector2D\u6570\u5B66/Vector2D.ts")
   ], Vector2D);
 
-  // src/拖拽移动/DragMove.ts
-  var { regClass: regClass6, property: property5 } = Laya;
+  // assets/拖拽移动/DragMove.ts
+  var { regClass: regClass4, property: property3 } = Laya;
   var DragMove = class extends Laya.Script {
     constructor() {
       super();
@@ -365,17 +326,17 @@
   };
   __name(DragMove, "DragMove");
   __decorateClass([
-    property5(Boolean)
+    property3(Boolean)
   ], DragMove.prototype, "lockX", 2);
   __decorateClass([
-    property5(Boolean)
+    property3(Boolean)
   ], DragMove.prototype, "lockY", 2);
   DragMove = __decorateClass([
-    regClass6("ad0e797a-dc3d-491a-bba5-ab456c661981", "../src/\u62D6\u62FD\u79FB\u52A8/DragMove.ts")
+    regClass4("ad0e797a-dc3d-491a-bba5-ab456c661981", "\u62D6\u62FD\u79FB\u52A8/DragMove.ts")
   ], DragMove);
 
-  // src/虚拟摇杆/ScreenHalf.ts
-  var { regClass: regClass7, property: property6 } = Laya;
+  // assets/虚拟摇杆/ScreenHalf.ts
+  var { regClass: regClass5, property: property4 } = Laya;
   var Left = class extends Laya.Script {
     constructor() {
       super();
@@ -456,10 +417,333 @@
   };
   __name(Left, "Left");
   __decorateClass([
-    property6(Laya.Prefab)
+    property4(Laya.Prefab)
   ], Left.prototype, "virtualStickPrefab", 2);
   Left = __decorateClass([
-    regClass7("86cee8ba-e66a-4ce5-93a0-4e55ef2bdec5", "../src/\u865A\u62DF\u6447\u6746/ScreenHalf.ts")
+    regClass5("86cee8ba-e66a-4ce5-93a0-4e55ef2bdec5", "\u865A\u62DF\u6447\u6746/ScreenHalf.ts")
   ], Left);
+
+  // assets/3D资源/八方向移动.ts
+  var { regClass: regClass6, property: property5 } = Laya;
+  var \u516B\u65B9\u5411\u79FB\u52A8 = class extends Laya.Script {
+    constructor() {
+      super();
+      this.speed = 0.01;
+      this.up_pressd = false;
+      this.down_pressd = false;
+      this.left_pressd = false;
+      this.right_pressd = false;
+      this.preDirection = new Vector2D();
+      this.direction = new Vector2D();
+      this.offset = new Laya.Vector3();
+    }
+    /**
+     * 组件被激活后执行，此时所有节点和组件均已创建完毕，此方法只执行一次
+     */
+    //onAwake(): void {}
+    /**
+     * 组件被启用后执行，例如节点被添加到舞台后
+     */
+    //onEnable(): void {}
+    /**
+     * 组件被禁用时执行，例如从节点从舞台移除后
+     */
+    //onDisable(): void {}
+    /**
+     * 第一次执行update之前执行，只会执行一次
+     */
+    //onStart(): void {}
+    /**
+     * 手动调用节点销毁时执行
+     */
+    //onDestroy(): void {
+    /**
+     * 每帧更新时执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
+     */
+    onUpdate() {
+      if (this.direction.distance(this.preDirection) > 0) {
+        this.preDirection = this.direction.copy();
+      } else if (this.direction.magnitude() > 0) {
+        this.owner.transform.translate(this.offset);
+      }
+    }
+    /**
+     * 每帧更新时执行，在update之后执行，尽量不要在这里写大循环逻辑或者使用getComponent方法
+     */
+    //onLateUpdate(): void {}
+    /**
+     * 鼠标点击后执行。与交互相关的还有onMouseDown等十多个函数，具体请参阅文档。
+     */
+    //onMouseClick(): void {}
+    onKeyDown(evt) {
+      console.log("keyDown:" + evt.keyCode);
+      switch (evt.keyCode) {
+        case Laya.Keyboard.W:
+          this.up_pressd = true;
+          break;
+        case Laya.Keyboard.S:
+          this.down_pressd = true;
+          break;
+        case Laya.Keyboard.A:
+          this.left_pressd = true;
+          break;
+        case Laya.Keyboard.D:
+          this.right_pressd = true;
+          break;
+        default:
+          break;
+      }
+      this.calcDirection();
+    }
+    onKeyUp(evt) {
+      console.log("keyUp:" + evt.keyCode);
+      switch (evt.keyCode) {
+        case Laya.Keyboard.W:
+          this.up_pressd = false;
+          break;
+        case Laya.Keyboard.S:
+          this.down_pressd = false;
+          break;
+        case Laya.Keyboard.A:
+          this.left_pressd = false;
+          break;
+        case Laya.Keyboard.D:
+          this.right_pressd = false;
+          break;
+        default:
+          break;
+      }
+      this.calcDirection();
+    }
+    calcDirection() {
+      this.direction = new Vector2D();
+      if (this.up_pressd) {
+        this.direction = this.direction.add(new Vector2D(0, -1));
+      }
+      if (this.down_pressd) {
+        this.direction = this.direction.add(new Vector2D(0, 1));
+      }
+      if (this.left_pressd) {
+        this.direction = this.direction.add(new Vector2D(-1, 0));
+      }
+      if (this.right_pressd) {
+        this.direction = this.direction.add(new Vector2D(1, 0));
+      }
+      this.direction = this.direction.normalize();
+      this.offset = new Laya.Vector3(this.direction.x * this.speed, 0, this.direction.y * this.speed);
+    }
+  };
+  __name(\u516B\u65B9\u5411\u79FB\u52A8, "\u516B\u65B9\u5411\u79FB\u52A8");
+  __decorateClass([
+    property5(Number)
+  ], \u516B\u65B9\u5411\u79FB\u52A8.prototype, "speed", 2);
+  \u516B\u65B9\u5411\u79FB\u52A8 = __decorateClass([
+    regClass6("5678592e-1b52-4bc7-a179-023727e58750", "3D\u8D44\u6E90/\u516B\u65B9\u5411\u79FB\u52A8.ts")
+  ], \u516B\u65B9\u5411\u79FB\u52A8);
+
+  // src/Vector2D数学/Vector3D.ts
+  var { regClass: regClass7 } = Laya;
+  var Vector3D = class {
+    /**
+     * 创建一个 <code>Vector3D</code> 实例。
+     * @param	x = 0  X轴坐标。
+     * @param	y = 0  Y轴坐标。
+     * @param	z = 0  Z轴坐标。
+     */
+    // constructor(); // 无参数构建0向量
+    // /**
+    //  * 从角度创建一个 <code>Vector3D</code> 实例。
+    //  * @param	angle  旋转角度。
+    //  */
+    // constructor(angle: number); // 从角度构建向量
+    // /**
+    //  * 创建一个 <code>Vector3D</code> 实例。
+    //  * @param	x  X轴坐标。
+    //  * @param	y  Y轴坐标。
+    //  * @param	z  Z轴坐标。
+    //  */
+    // constructor(x: number, y: number, z: number); // 有参数构建向量
+    // constructor(x?: number, y?: number, z?: number) {
+    //   if (x === undefined && y === undefined && z === undefined) {
+    //     this.x = 0;
+    //     this.y = 0;
+    //     this.z = 0;
+    //   } else {
+    //     this.x = x;
+    //     this.y = y;
+    //     this.z = z;
+    //   }
+    // }
+    /**
+     * 创建一个 <code>Vector3D</code> 实例。
+     * @param	x  X轴坐标。
+     * @param	y  Y轴坐标。
+     * @param	z  Z轴坐标。
+     */
+    // 有参数构建向量
+    constructor(x, y, z) {
+      this.x = x;
+      this.y = y;
+      this.z = z;
+    }
+    //实例版本
+    /**
+     * 3D向量加法
+     * @param	b  另一个向量.
+     * @return 新的3D向量
+     */
+    add(b) {
+      return new Vector3D(this.x + b.x, this.y + b.y, this.z + b.z);
+    }
+    /**
+     * 3D向量减法
+     * @param	b  另一个向量.
+     * @return 新的3D向量
+     */
+    sub(b) {
+      return new Vector3D(this.x - b.x, this.y - b.y, this.z - b.z);
+    }
+    /**
+     * 3D向量乘法
+     * @param	b  另一个向量.
+     * @return 新的3D向量
+     */
+    mul(b) {
+      return new Vector3D(this.x * b.x, this.y * b.y, this.z * b.z);
+    }
+    /**
+     * 3D向量除法
+     * @param	b  另一个向量.
+     * @return 新的3D向量
+     */
+    div(b) {
+      return new Vector3D(this.x / b.x, this.y / b.y, this.z / b.z);
+    }
+    /**
+     * 3D向量缩放(标量乘法)
+     * @param	b  另一个向量.
+     * @return 新的3D向量
+     */
+    scale(b) {
+      return new Vector3D(this.x * b, this.y * b, this.z * b);
+    }
+    /**
+     * 3D向量点乘
+     * @param	b  另一个向量.
+     * @return 两个向量的点乘值(未规一化)
+     */
+    dot(b) {
+      return this.x * b.x + this.y * b.y + this.z * b.z;
+    }
+    /**
+     * 3D向量求距离
+     * @param	b  另一个向量.
+     * @return 两个向量之间的距离
+     */
+    distance(b) {
+      const dx = this.x - b.x;
+      const dy = this.y - b.y;
+      const dz = this.z - b.z;
+      return Math.sqrt(dx * dx + dy * dy + dz * dz);
+    }
+    /**
+     * 3D向量取模长
+     * @return 向量的模长 
+     */
+    magnitude() {
+      return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
+    }
+    /**
+     * 3D向量归一化
+     * @return 新的3D向量
+     */
+    normalize() {
+      const len = this.magnitude();
+      if (len == 0) {
+        return new Vector3D(0, 0, 0);
+      }
+      return new Vector3D(this.x / len, this.y / len, this.z / len);
+    }
+    // /**
+    //  * 3D向量求角度
+    //  * @return 向量角度
+    //  */
+    // public toAngle(): number {
+    //   var angle = Math.atan2(this.y, this.x) * 180 / Math.PI;
+    //   if (angle < 0) {
+    //     angle += 360;
+    //   }
+    //   return angle;
+    // }
+    /**
+     * 3D向量旋转
+     * @param	axis  旋转轴
+     * @param	angle  旋转角度
+     * @return 新的3D向量
+     */
+    rotate(axis, angle) {
+      let radians = angle * Math.PI / 180;
+      let cos = Math.cos(radians);
+      let sin = Math.sin(radians);
+      let newX = this.x * (cos + (1 - cos) * axis.x * axis.x) + this.y * ((1 - cos) * axis.x * axis.y - sin * axis.z) + this.z * ((1 - cos) * axis.x * axis.z + sin * axis.y);
+      let newY = this.x * ((1 - cos) * axis.x * axis.y + sin * axis.z) + this.y * (cos + (1 - cos) * axis.y * axis.y) + this.z * ((1 - cos) * axis.y * axis.z - sin * axis.x);
+      let newZ = this.x * ((1 - cos) * axis.x * axis.z - sin * axis.y) + this.y * ((1 - cos) * axis.y * axis.z + sin * axis.x) + this.z * (cos + (1 - cos) * axis.z * axis.z);
+      return new Vector3D(newX, newY, newZ);
+    }
+    /**
+     * 求两个3D向量夹角
+     * @param	b  另一个向量.
+     * @return 两个向量之间的角度
+     */
+    angleTo(vector) {
+      let thisLength = this.magnitude();
+      let vectorLength = vector.magnitude();
+      let dotProduct = this.dot(vector);
+      let cosAngle = dotProduct / (thisLength * vectorLength);
+      return Math.acos(cosAngle) * 180 / Math.PI;
+    }
+    /**
+     * 复制一个新的3D向量
+     * @return 新的3D向量
+     */
+    copy() {
+      return new Vector3D(this.x, this.y, this.z);
+    }
+    /**
+     * 转为系统默认的Vector3
+     * @return 默认的新Vector3
+     */
+    toVector3() {
+      return new Laya.Vector3(this.x, this.y, this.z);
+    }
+    /**
+     * 按文本输出Vector3D
+     * @return Vector3D字符串
+     */
+    toString() {
+      return `Vector3D(X: ${this.x}, Y: ${this.y}, Z: ${this.z})`;
+    }
+    //静态版本
+  };
+  __name(Vector3D, "Vector3D");
+  /**零向量,禁止修改*/
+  Vector3D.ZERO = new Vector3D(0, 0, 0);
+  /**一向量,禁止修改*/
+  Vector3D.ONE = new Vector3D(1, 1, 1);
+  /**上向量,禁止修改*/
+  Vector3D.UP = new Vector3D(0, 1, 0);
+  /**下向量,禁止修改*/
+  Vector3D.DOWN = new Vector3D(0, -1, 0);
+  /**左向量,禁止修改*/
+  Vector3D.LEFT = new Vector3D(-1, 0, 0);
+  /**右向量,禁止修改*/
+  Vector3D.RIGHT = new Vector3D(1, 0, 0);
+  /**左向量,禁止修改*/
+  Vector3D.Front = new Vector3D(0, 0, -1);
+  /**右向量,禁止修改*/
+  Vector3D.BACK = new Vector3D(0, 0, 1);
+  Vector3D = __decorateClass([
+    regClass7("9617496d-363c-4a20-ad0d-cba63c909506", "../src/Vector2D\u6570\u5B66/Vector3D.ts")
+  ], Vector3D);
 })();
 //# sourceMappingURL=bundle.js.map

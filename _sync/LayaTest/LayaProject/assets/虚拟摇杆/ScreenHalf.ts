@@ -1,5 +1,5 @@
 const { regClass, property } = Laya;
-import { Vector2D } from '../Vector2D数学/Vector2D';
+import { Vector2D } from '../../src/Vector2D数学/Vector2D'
 
 @regClass()
 export class Left extends Laya.Script {

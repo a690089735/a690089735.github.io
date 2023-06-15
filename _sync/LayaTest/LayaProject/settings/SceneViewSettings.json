@@ -1,5 +1,6 @@
 {
   "camera": {
+    "fieldOfView": 18,
     "nearPlane": 0.01
   }
 }

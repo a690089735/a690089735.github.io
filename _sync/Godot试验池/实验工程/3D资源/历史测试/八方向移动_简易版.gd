@@ -6,21 +6,22 @@ const verify_time_max :float = 2
 var verify_time :float = 0
 
 var direction: Vector2 = Vector2()
+var new_angle: float = 0
 	
 func _input(event):
 	direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down").normalized()
+	new_angle = direction.angle()
 	
 func _physics_process(delta):
 	velocity.x = 0
 	velocity.z = 0
 	
-	var new_angle = direction.angle()
-	if rotation.y == new_angle:
-		if direction:
-			velocity.x = direction.x * delta * SPEED
-			velocity.z = direction.y * delta * SPEED
-	else:
+	if direction:
 		rotation.y = new_angle
+		velocity.x = direction.x * delta * SPEED
+		velocity.z = direction.y * delta * SPEED
+		move_and_slide()
 		
-	move_and_slide()
+		
+	
 	

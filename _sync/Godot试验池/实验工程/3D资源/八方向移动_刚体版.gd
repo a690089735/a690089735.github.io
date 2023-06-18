@@ -1,4 +1,5 @@
-extends CharacterBody3D
+extends RigidBody3D
+
 #@onready var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 #@onready var max_physics_steps_per_frame = ProjectSettings.get_setting("physics/common/max_physics_steps_per_frame")
 
@@ -20,14 +21,18 @@ func _input(event):
 		pre_direction = direction
 	
 func _physics_process(delta):
-	velocity.x = 0
-	velocity.z = 0
+	linear_velocity = Vector3()
+#	velocity.x = 0
+#	velocity.z = 0
 	if direction:
 		if direction == pre_direction:
 			verify_time += 1
 		if verify_time >= verify_time_max:
 			rotation.y = -new_angle
-			velocity.x = direction.x * SPEED
-			velocity.z = direction.y * SPEED
-			move_and_slide()
+			linear_velocity.x = direction.x * SPEED
+			linear_velocity.z = direction.y * SPEED
+#			velocity.x = direction.x * SPEED
+#			velocity.z = direction.y * SPEED
+#			move_and_slide()
+
 

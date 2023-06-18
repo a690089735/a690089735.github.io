@@ -127,7 +127,7 @@ _data = {
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mtqbg"]
-size = Vector3(0.016, 0.039, 0.016)
+size = Vector3(0.016, 0.04, 0.016)
 
 [node name="CharacterBody3D" type="CharacterBody3D"]
 
@@ -140,7 +140,7 @@ bones/0/name = "DEF.Body"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.012, 0)
 bones/0/enabled = true
-bones/0/position = Vector3(0, 0.0110634, 0)
+bones/0/position = Vector3(0, 0.0108296, 0)
 bones/0/rotation = Quaternion(0, 0, 0, 1)
 bones/0/scale = Vector3(1, 1, 1)
 bones/1/name = "DEF.Hand.R"
@@ -189,5 +189,5 @@ libraries = {
 }
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0194453, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02, 0)
 shape = SubResource("BoxShape3D_mtqbg")

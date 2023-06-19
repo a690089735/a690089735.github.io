@@ -11,7 +11,7 @@ import datetime
 def Get_Offset():
     result = []
     now = datetime.datetime.now().time()
-    for t in ['19:02:00','20:02:00','21:01:00']:
+    for t in ['19:05:00','20:02:00','21:01:00']:
         target_time = datetime.datetime.strptime(t, '%H:%M:%S').time()
         time_diff = datetime.datetime.combine(datetime.date.min, target_time) - datetime.datetime.combine(datetime.date.min, now)
         seconds_diff = time_diff.total_seconds()
@@ -26,4 +26,4 @@ def Task_TimeOut_ClickPosition(posList:list, tick: int = 1000, sep: int = 1):
     for pos in posList:
         PyMouse().click(pos[0], pos[1])
         sleep(sep)
-Task_TimeOut_ClickPosition([(2055, 249),(3027, 610)], tick = (Get_Offset())[1], sep = 3) ##右侧网页
+Task_TimeOut_ClickPosition([(2055, 249),(3027, 610)], tick = (Get_Offset())[0], sep = 3) ##右侧网页

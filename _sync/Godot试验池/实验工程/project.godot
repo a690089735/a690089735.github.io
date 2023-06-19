@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="实验工程"
-run/main_scene="res://3D资源/3D场景.tscn"
+run/main_scene="res://3D资源/3D场景230614.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 boot_splash/show_image=false
 

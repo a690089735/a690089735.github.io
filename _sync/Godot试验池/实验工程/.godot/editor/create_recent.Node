@@ -1,6 +1,6 @@
 CollisionShape3D
-CSGSphere3D
 RigidBody3D
+CSGSphere3D
 CSGBox3D
 CSGCombiner3D
 CharacterBody3D

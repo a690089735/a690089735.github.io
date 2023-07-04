@@ -1,8 +1,0 @@
-仍然建议LayaAir做微信小游戏,导出适配简单
-2D3D支持,功能更丰富.
-
-Laya项目轻松上线微信小游戏
-https://tingsven.com/2020/01/18/Laya-Wechat-MiniGame.html
-
-微信小游戏的分包（Laya引擎）
-https://www.jianshu.com/p/50ee976fdf99

@@ -1,2 +1,0 @@
-1.用mkcert生成key.pem和pem
-2.用openssl转换key.pem和pem为key和crt

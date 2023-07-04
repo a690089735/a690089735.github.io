@@ -1,6 +1,0 @@
-import bpy
-import bmesh
-
-mesh = bpy.context.active_object.data
-
-print(mesh)

@@ -1,7 +1,0 @@
-ModelImporter modelImporter = AssetImporter.GetAtPath("") as ModelImporter;
-
-modelImporter.referencedClips
-modelImporter.clipAnimations
-modelImporter.defaultClipAnimations
-
-modelImporter.clipAnimations[0].curves

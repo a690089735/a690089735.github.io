@@ -1,4 +1,0 @@
-GDC游戏开发者大会 https://gdconf.com/
-GTC英伟达全球AI大会
-SIGGRAPH 国际计算机图形学学术大会
-SIGGRAPH Asia 亚洲计算机图形学学术大会

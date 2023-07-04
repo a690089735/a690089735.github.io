@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://crdepcqn7k6b0"]
-
-[ext_resource type="Script" path="res://创建实例/主池子.gd" id="1_ambft"]
-
-[node name="Node2D" type="Node2D"]
-script = ExtResource("1_ambft")

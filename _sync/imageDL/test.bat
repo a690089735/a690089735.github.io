@@ -1,1 +1,0 @@
-gallery-dl "www.pinterest.com/11uuohczsenvmdgu3qhbj16ze54a2u/ Ø∏‡Õ∑/"
